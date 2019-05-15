@@ -1,0 +1,30 @@
+# It might be better to just run the 
+image: invivoai/dev:bitbucket
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - pip
+    - step:
+        name: Test 
+        script: 
+            - pip install -e .
+            - git config --global user.name $GIT_ROBOT_USERNAME
+            - pytest -v tests/
+            - pip install pytest pylint sphinx sphinx_rtd_theme
+            - bash scripts/update_doc.sh -n $BITBUCKET_REPO_SLUG -u -c 
+    - step:
+        name: Notify
+        script:
+          - pipe: atlassian/slack-notify:0.2.0
+            variables:
+              WEBHOOK_URL: $SLACK_WEB_HOOK
+              MESSAGE: "Project $BITBUCKET_REPO_SLUG latest build is a success"
+
+  pull-requests:
+     dev: #this will run for pull request on master
+       - step:
+          script:
+            - echo 'Merging on master' # will think of test to do later
+            - make tag

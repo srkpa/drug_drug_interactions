@@ -1,0 +1,7 @@
+Exception during training: $ Torch: not enough memory: you tried to allocate 3GB. Buy new RAM! at /opt/conda/conda-bld/pytorch_1535491974311/work/aten/src/TH/THGeneral.cpp:204
+Traceback (most recent call last):
+  File "/home/rogia/Documents/git/invivoprojects/side_effects/bin/train", line 35, in main
+    input_path=input_path)
+  File "/home/rogia/Documents/git/invivoprojects/side_effects/side_effects/utils.py", line 79, in run_experiment
+    x_train = torch.stack([torch.cat(pair) for pair in x_train])
+RuntimeError: $ Torch: not enough memory: you tried to allocate 3GB. Buy new RAM! at /opt/conda/conda-bld/pytorch_1535491974311/work/aten/src/TH/THGeneral.cpp:204

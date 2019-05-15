@@ -1,0 +1,798 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{Rapport}
+    
+    
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{Image}\PY{p}{,} \PY{n}{HTML}\PY{p}{,} \PY{n}{display}
+        \PY{k+kn}{from} \PY{n+nn}{external\PYZus{}utils}\PY{n+nn}{.}\PY{n+nn}{graphics} \PY{k}{import} \PY{o}{*}
+        \PY{k+kn}{from} \PY{n+nn}{external\PYZus{}utils}\PY{n+nn}{.}\PY{n+nn}{load\PYZus{}and\PYZus{}test} \PY{k}{import} \PY{o}{*}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        \PY{k+kn}{from} \PY{n+nn}{glob} \PY{k}{import} \PY{n}{glob}
+        \PY{k+kn}{from} \PY{n+nn}{datasets}\PY{n+nn}{.}\PY{n+nn}{dataset} \PY{k}{import} \PY{o}{*}
+\end{Verbatim}
+
+    \subsection{Train test split original -
+DeepDDI}\label{train-test-split-original---deepddi}
+
+    Dans ce rapport, nous utilisons le split fourni par l'équipe de Ryu pour
+reproduire leurs résultats puis nous comparer au modèle de l'article.
+
+    \subsubsection{1. Description des jeux de
+données}\label{description-des-jeux-de-donnuxe9es}
+
+    \paragraph{1.1 Sommaire- Train test split
+original}\label{sommaire--train-test-split-original}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{train}\PY{p}{,} \PY{n}{test}\PY{p}{,} \PY{n}{valid}\PY{p}{,} \PY{n}{train\PYZus{}test}\PY{p}{,} \PY{n}{train\PYZus{}valid}\PY{p}{,} \PY{n}{test\PYZus{}valid} \PY{o}{=} \PY{n}{deepddi\PYZus{}initial\PYZus{}train}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/deepddi/drugbank}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Quick Summary \#1.
+ There are:
+- 192284 interactions
+- 86 side effects
+- 191878 pairs of drugs
+- 115305 pairs of drugs and  115446 interactions for train 
+- 38405 pairs of drugs and  38419 interactions for test
+- 38399 pairs of drug and  38419 interactions for valid
+- 141 pairs of drugs with 2 type of ddi in train subset only.
+- 20 pairs of drugs with 2 type of ddi in valid subset only.
+- 14 pairs of drugs with 2 type of ddi in test subset only.
+
+Quick Summary \#2
+ There are:
+- 114 pairs of drugs are present in train and test subsets.
+- 93 pairs of drugs are present in train and valid subsets.
+- 24 pairs of drugs are present in test and valid subsets.
+- 0 pairs of drugs are present in train, test and valid subsets.
+
+Quick Summary \#3:
+- pairs of drugs that belong to two of the three subsets have always two types of ddi which have been split into the subsets
+- pairs of drugs that belong only to one of the three subsets, can have 1 or 2 types of ddi, but all the type will belong to the choosen subset
+
+    \end{Verbatim}
+
+    \paragraph{1.2 Analyse des ensembles d'entrainement, de validation et de
+test}\label{analyse-des-ensembles-dentrainement-de-validation-et-de-test}
+
+    \begin{itemize}
+\item
+  Le tableau qui suit indique décrit les 114 paires de médicaments qui
+  apparaissent à la fois dans le train et le test.
+\item
+  Les chiffres incrits sous les colonnes train et test sont des types
+  d'effets secondaires.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{o}{.}\PY{n}{from\PYZus{}records}\PY{p}{(}\PY{n}{train\PYZus{}test}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pairs of drugs}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{train}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{test}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+         pairs of drugs train test
+0    (DB00254, DB00997)     6   10
+1    (DB00401, DB01601)     6   10
+2    (DB00997, DB01118)    10    6
+3    (DB00836, DB00997)    10    6
+4    (DB00997, DB01104)    10    6
+5    (DB00420, DB00834)    76   10
+6    (DB00938, DB01072)     6   10
+7    (DB00705, DB00997)    10    6
+8    (DB00401, DB01232)    10    6
+9    (DB00541, DB12332)     6   10
+10   (DB00938, DB09065)    10    6
+11   (DB00285, DB00541)     6   10
+12   (DB00661, DB01219)    61    6
+13   (DB00215, DB01100)    32    6
+14   (DB00715, DB00997)    10    6
+15   (DB00752, DB00956)    54   26
+16   (DB00834, DB08903)    76   10
+17   (DB00243, DB09280)    10    9
+18   (DB00752, DB00921)    26   54
+19   (DB00334, DB00349)    26    6
+20   (DB00624, DB00997)    10    6
+21   (DB00224, DB00997)    10    6
+22   (DB00343, DB00997)    10    6
+23   (DB00938, DB01264)    10    6
+24   (DB00243, DB01174)     9   10
+25   (DB00564, DB06414)     9    7
+26   (DB00752, DB00924)    79   26
+27   (DB00834, DB09078)    10   76
+28   (DB00794, DB06708)     7    9
+29   (DB00541, DB01076)    26   10
+..                  ...   ...  ...
+84   (DB00220, DB00997)    10    6
+85   (DB00613, DB01029)    10    6
+86   (DB00997, DB04855)     6   10
+87   (DB00188, DB00997)    10    6
+88   (DB00997, DB01221)    10    6
+89   (DB00206, DB09027)     9   10
+90   (DB00401, DB01201)     7    9
+91   (DB00390, DB00541)    17    9
+92   (DB01320, DB06697)     9   12
+93   (DB00938, DB01263)    10    6
+94   (DB00608, DB00997)    10   15
+95   (DB00683, DB09027)    10    9
+96   (DB00238, DB06697)    12    9
+97   (DB00834, DB01182)    76   10
+98   (DB00182, DB00921)    26   44
+99   (DB00477, DB00997)    10    6
+100  (DB00683, DB00997)    10    6
+101  (DB00541, DB08865)     6   10
+102  (DB00196, DB00541)    10    6
+103  (DB00196, DB00997)     6   10
+104  (DB00541, DB00834)    10    9
+105  (DB00363, DB00997)    10   26
+106  (DB00396, DB09027)     9   10
+107  (DB00312, DB06708)     7    9
+108  (DB01115, DB09027)    10    9
+109  (DB00501, DB00884)     2   10
+110  (DB00401, DB01118)    10    6
+111  (DB00327, DB00752)     6   26
+112  (DB00541, DB00615)     7    9
+113  (DB00541, DB08873)    10    6
+
+[114 rows x 3 columns]
+    \end{verbatim}
+
+    
+    \begin{itemize}
+\item
+  Le tableau qui suit indique décrit les 93 paires de médicaments qui
+  apparaissent à la fois dans le train et le valid.
+\item
+  Les chiffres incrits sous les colonnes train et valid sont des types
+  d'effets secondaires.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{o}{.}\PY{n}{from\PYZus{}records}\PY{p}{(}\PY{n}{train\PYZus{}valid}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pairs of drugs}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{train}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{valid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+        pairs of drugs train valid
+0   (DB00220, DB00541)     6    10
+1   (DB00238, DB06708)     7     9
+2   (DB00263, DB00997)    10     6
+3   (DB00613, DB00675)    10     6
+4   (DB00997, DB01072)    10     6
+5   (DB00613, DB08880)    10     6
+6   (DB00257, DB00541)     6     9
+7   (DB00997, DB04871)    10     6
+8   (DB00997, DB01076)    10    26
+9   (DB00312, DB00541)     9     7
+10  (DB00476, DB00997)    10     6
+11  (DB00541, DB01026)    10     6
+12  (DB00220, DB00401)    10     6
+13  (DB00541, DB01263)    26    10
+14  (DB01201, DB09123)     7     9
+15  (DB00401, DB00794)     7     9
+16  (DB00997, DB01403)    10     6
+17  (DB01201, DB06708)     9     7
+18  (DB00997, DB09054)    10     6
+19  (DB00541, DB01200)    26    10
+20  (DB00541, DB01253)    26    10
+21  (DB00834, DB09027)    10     9
+22  (DB00422, DB01626)    55    35
+23  (DB00224, DB09027)    10     9
+24  (DB00997, DB01167)    10     6
+25  (DB01224, DB01233)    76    26
+26  (DB00238, DB00541)     9     7
+27  (DB00694, DB09027)     9    10
+28  (DB01045, DB09027)     9    10
+29  (DB00503, DB00541)     9    10
+..                 ...   ...   ...
+63  (DB00997, DB01200)    26    10
+64  (DB01174, DB09123)    13     9
+65  (DB00997, DB01026)    10     6
+66  (DB00091, DB00541)     9     6
+67  (DB00924, DB01367)    26    79
+68  (DB00349, DB00997)    10     6
+69  (DB00541, DB01045)     7     9
+70  (DB00582, DB00938)     6    10
+71  (DB00951, DB00997)     6    10
+72  (DB00613, DB00625)    20    10
+73  (DB00312, DB00997)     7     9
+74  (DB00208, DB00997)    10     6
+75  (DB00794, DB01115)     9     7
+76  (DB00924, DB01037)    79    26
+77  (DB00875, DB01233)    76    26
+78  (DB00613, DB01132)     6    10
+79  (DB00997, DB08873)    10     6
+80  (DB00564, DB06697)     7    12
+81  (DB01233, DB01624)    76    26
+82  (DB00401, DB01167)     6    10
+83  (DB00195, DB00997)     6    10
+84  (DB00401, DB01263)     6    10
+85  (DB00613, DB01685)     6    10
+86  (DB00220, DB09027)     9    10
+87  (DB00338, DB00884)    10    13
+88  (DB00997, DB08865)    10     6
+89  (DB00514, DB00997)     6    10
+90  (DB00701, DB09027)    10     9
+91  (DB01156, DB01171)     6    26
+92  (DB00541, DB00864)    26     9
+
+[93 rows x 3 columns]
+    \end{verbatim}
+
+    
+    \begin{itemize}
+\item
+  Le tableau qui suit indique décrit les 24 paires de médicaments qui
+  apparaissent à la fois dans le test et le valid.
+\item
+  Les chiffres incrits sous les colonnes test et valid sont des types
+  d'effets secondaires.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{o}{.}\PY{n}{from\PYZus{}records}\PY{p}{(}\PY{n}{test\PYZus{}valid}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pairs of drugs}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{train}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{valid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+        pairs of drugs train valid
+0   (DB01234, DB09027)     9    10
+1   (DB00482, DB00613)     6    10
+2   (DB00363, DB01233)    76    26
+3   (DB00877, DB09027)    10     9
+4   (DB00169, DB00997)     6    10
+5   (DB00997, DB01320)     9     7
+6   (DB00997, DB11613)    10     6
+7   (DB01118, DB09027)    10     9
+8   (DB00541, DB00976)    10     6
+9   (DB09027, DB09280)     9    10
+10  (DB01045, DB06708)     7     9
+11  (DB00541, DB00696)    26    10
+12  (DB00932, DB00997)     6    10
+13  (DB00182, DB00327)    26    44
+14  (DB00564, DB09123)     9    13
+15  (DB00613, DB01015)     6    10
+16  (DB00390, DB09027)    10     9
+17  (DB00997, DB04868)     6    10
+18  (DB00834, DB00976)    76    10
+19  (DB00834, DB01232)    10    76
+20  (DB00401, DB01026)    10     6
+21  (DB01115, DB01174)     7     9
+22  (DB00270, DB00997)     6    10
+23  (DB00091, DB09027)     9    10
+    \end{verbatim}
+
+    
+    \begin{itemize}
+\tightlist
+\item
+  Comme on peut le remarquer, le spit est fait au niveau des types
+  d'effets secondaires, pas au niveau des paires de médicaments.
+\end{itemize}
+
+    Les tableaux et figures qui suivent décrivent la répartition des labels
+dans le dataset final.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{x\PYZus{}train}\PY{p}{,} \PY{n}{x\PYZus{}test}\PY{p}{,} \PY{n}{x\PYZus{}valid}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}valid} \PY{o}{=} \PY{n}{load}\PY{p}{(}\PY{n}{train}\PY{p}{,} \PY{n}{test}\PY{p}{,} \PY{n}{valid}\PY{p}{,} \PY{l+m+mi}{86}\PY{p}{,} \PY{n}{method}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{deepddi}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{input\PYZus{}path}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/deepddi/drugbank}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/home/rogia/Documents/code/side\_effects/feature\_extraction/transformers/molecules.py:521: RuntimeWarning: Some out of vocabulary encounter during the transformation.Please make sure you vocabulary is exhaustive.
+  'Please make sure you vocabulary is exhaustive.', RuntimeWarning)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Quick summary \#4
+ Final subsets:
+
+- 115266 pairs of drugs for train
+- 38387 pairs of drugs for test
+- 38389 pairs of drug for valid
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{df} \PY{o}{=} \PY{n}{describe\PYZus{}data}\PY{p}{(}\PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}valid}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+            1     2     3      4     5        6       7     8       9  \
+train   634.0  50.0  27.0  313.0   7.0  20616.0  3007.0   7.0  5687.0   
+test    207.0  16.0   9.0  103.0   2.0   6872.0  1002.0   2.0  1895.0   
+valid   214.0  16.0   9.0  103.0   2.0   6872.0  1002.0   2.0  1895.0   
+Total  1055.0  82.0  45.0  519.0  11.0  34360.0  5011.0  11.0  9477.0   
+
+            10  ...     77      78     79    80     81     82    83     84  \
+train  14269.0  ...  180.0   609.0  483.0  34.0  224.0   66.0  27.0   67.0   
+test    4755.0  ...   60.0   203.0  160.0  11.0   74.0   21.0   8.0   21.0   
+valid   4755.0  ...   60.0   203.0  160.0  11.0   74.0   21.0   8.0   21.0   
+Total  23779.0  ...  300.0  1015.0  803.0  56.0  372.0  108.0  43.0  109.0   
+
+         85    86  
+train  21.0  39.0  
+test    6.0  13.0  
+valid   6.0  13.0  
+Total  33.0  65.0  
+
+[4 rows x 86 columns]
+    \end{verbatim}
+
+    
+    \subsubsection{2. Analyse de l'évolution de la perte en entrainement et
+en validation et des performances en
+test}\label{analyse-de-luxe9volution-de-la-perte-en-entrainement-et-en-validation-et-des-performances-en-test}
+
+    \subsection{Train test suggéré -
+DeepDDI}\label{train-test-sugguxe9ruxe9---deepddi}
+
+    \begin{itemize}
+\tightlist
+\item
+  Dans ce split, la séparation est faite au niveau des paires. On
+  s'assure à ce que:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Les paires de médicaments présents dans les ensembles
+    d'entrainement, de validation et de test soient distincts
+  \item
+    Seulement un des médicaments des paires dans le test et le valid
+    aient été vu à l'entrainement avec d,autres médicaments.
+  \end{itemize}
+\end{itemize}
+
+    \paragraph{2.1 Analyse des ensembles d'entrainement, de validation et de
+test}\label{analyse-des-ensembles-dentrainement-de-validation-et-de-test}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{drugbk}\PY{p}{,} \PY{n}{dbk\PYZus{}labels} \PY{o}{=} \PY{n}{describe\PYZus{}dataset}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/violette/drugbank}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{drugbank}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_22_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+/home/rogia/Documents/code/side\_effects/feature\_extraction/transformers/molecules.py:521: RuntimeWarning: Some out of vocabulary encounter during the transformation.Please make sure you vocabulary is exhaustive.
+  'Please make sure you vocabulary is exhaustive.', RuntimeWarning)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+len train 119336
+len test 26044
+len valid 37961
+There are 0 intersections entre train et test
+There are 0 intersections entre train et valid
+There are 0 intersections entre train et test
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_22_3.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{cols} \PY{o}{=} \PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of drugs}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of samples}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Drug with the longest smiles}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Longest smile length}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of side effects}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{train}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{valid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{test}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}
+         \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{o}{.}\PY{n}{from\PYZus{}records}\PY{p}{(}\PY{p}{[}\PY{n}{drugbk}\PY{p}{]}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{n}{cols}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Drugbank}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+          Number of drugs  Number of samples Drug with the longest smiles  \
+Drugbank             1709             183341                      DB05528   
+
+          Longest smile length  Number of side effects   train   test  valid  
+Drugbank                   850                      86  119336  37961  26044  
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{display}\PY{p}{(}\PY{n}{dbk\PYZus{}labels}\PY{p}{)}
+\end{Verbatim}
+
+    
+    \begin{verbatim}
+           1       10     11     12      13     14      15    16      17  \
+train  519.0  15106.0  404.0  224.0  4690.0  187.0  1153.0   3.0   801.0   
+test   259.0   3751.0   60.0   26.0  1243.0   20.0   231.0   0.0   113.0   
+valid  185.0   3957.0   72.0   56.0  1484.0   38.0   365.0  20.0   129.0   
+Total  963.0  22814.0  536.0  306.0  7417.0  245.0  1749.0  23.0  1043.0   
+
+          18  ...     79    8    80     81     82    83     84    85    86  \
+train  154.0  ...  571.0  2.0  31.0  236.0   82.0   0.0   69.0  27.0  32.0   
+test    22.0  ...   60.0  7.0   9.0   42.0   17.0  34.0    4.0   6.0   4.0   
+valid   26.0  ...  156.0  0.0  14.0   82.0    9.0   0.0   35.0   0.0  24.0   
+Total  202.0  ...  787.0  9.0  54.0  360.0  108.0  34.0  108.0  33.0  60.0   
+
+            9  
+train  5879.0  
+test   1159.0  
+valid  2027.0  
+Total  9065.0  
+
+[4 rows x 86 columns]
+    \end{verbatim}
+
+    
+    \paragraph{2.1 Analyse de l'évolution de la perte en entrainement et en
+validation et des performances en
+test}\label{analyse-de-luxe9volution-de-la-perte-en-entrainement-et-en-validation-et-des-performances-en-test}
+
+    Resumé:
+
+Ici, nous testons DeepDDI et notre modèle sur le nouveau train test
+split. Les hyperparamètres utilisés pour DeepDDI sont ceux de l'article.
+Pour notre modèle, seule la meilleure combinaison sera retenue.
+
+    \paragraph{2.1.1 DeepDDI}\label{deepddi}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{met1} \PY{o}{=} \PY{n}{describe\PYZus{}expt}\PY{p}{(}\PY{n+nb}{dir}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{expts/deepdddi\PYZhy{}new\PYZus{}drugbank\PYZus{}init}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{display}\PY{p}{(}\PY{n}{met1}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_28_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    
+    \begin{verbatim}
+     mean_acc  micro_f1  macro_f1  macro_prc  micro_prc  micro_rec  macro_rec
+0.5  0.988856   0.41424  0.154039   0.244687   0.535039   0.337941   0.126998
+    \end{verbatim}
+
+    
+    \paragraph{2.1.2 Notre modèle}\label{notre-moduxe8le}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{met2} \PY{o}{=} \PY{n}{describe\PYZus{}expt}\PY{p}{(}\PY{n+nb}{dir}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{expts/ours\PYZus{}new\PYZus{}drugb\PYZus{}emb}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n}{display}\PY{p}{(}\PY{n}{met2}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_30_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_30_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    
+    \begin{verbatim}
+      mean_acc  micro_f1  macro_f1  macro_prc  micro_prc  micro_rec  macro_rec
+0.38   0.99106  0.561435  0.122772   0.245889   0.655903   0.490753   0.100161
+    \end{verbatim}
+
+    
+    \paragraph{2.1.2 Comparaison}\label{comparaison}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{compare}\PY{p}{(}\PY{n}{met1}\PY{p}{,} \PY{n}{met2}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{deepddi}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ours}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_32_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

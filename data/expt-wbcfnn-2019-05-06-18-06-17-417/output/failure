@@ -1,0 +1,13 @@
+Exception during training: classes should have valid labels that are in y
+Traceback (most recent call last):
+  File "/opt/program/bin/train", line 35, in main
+    input_path=input_path)
+  File "/opt/program/side_effects/utils.py", line 98, in run_experiment
+    w = compute_classes_weight(y=y_train)
+  File "/opt/program/side_effects/utils.py", line 19, in compute_classes_weight
+    for target in y.T], dtype=torch.float32).t()
+  File "/opt/program/side_effects/utils.py", line 19, in <listcomp>
+    for target in y.T], dtype=torch.float32).t()
+  File "/root/miniconda3/lib/python3.7/site-packages/sklearn/utils/class_weight.py", line 52, in compute_class_weight
+    raise ValueError("classes should have valid labels that are in y")
+ValueError: classes should have valid labels that are in y
