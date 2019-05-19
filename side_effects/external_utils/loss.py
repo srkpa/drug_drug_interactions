@@ -1,15 +1,15 @@
-import torch
 import numpy as np
+import torch
 from sklearn.utils import compute_sample_weight
 from torch.nn import BCELoss
 from torch.nn import Module
-from torch.nn.functional import binary_cross_entropy, binary_cross_entropy_with_logits, cross_entropy
+from torch.nn.functional import binary_cross_entropy
 
 
 class Weighted_binary_cross_entropy1(Module):
 
     def __init__(self, weights_per_targets=None,
-                 reduction='mean'):
+                 reduction='elementwise_mean'):
         super(Weighted_binary_cross_entropy1, self).__init__()
         self.weights = weights_per_targets
         self.reduction = reduction

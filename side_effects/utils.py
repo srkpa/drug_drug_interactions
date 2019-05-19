@@ -1,25 +1,12 @@
-import os
-import json
 import ast
-import torch.optim as optim
-from sklearn.utils import compute_class_weight
-from side_effects.preprocess.dataset import load_train_test_files
-from side_effects.external_utils.loss import Weighted_binary_cross_entropy1, Weighted_cross_entropy, mloss
-from ivbase.nn.extractors.cnn import Cnn1dFeatExtractor
-from side_effects.models.model import DDIModel, DDINetwork, DeepDDI, PCNN
-
-from side_effects.models.test import Cnn1d
-
-from side_effects.external_utils.init import *
-from ivbase.utils.gradcheck import *
-from ivbase.utils.gradinspect import *
+import pickle
 from ivbase.utils.datasets.datacache import DataCache
-from side_effects.preprocess.transforms import fingerprints_transformer, sequence_transformer
+from ivbase.utils.datasets.dataset import GenericDataset
 
-
-def compute_classes_weight(y):
-    return torch.tensor([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
-       if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T], dtype=torch.float32).t()
+from side_effects.external_utils.utils import *
+from side_effects.models.model import *
+from side_effects.models.training import DDIModel
+from side_effects.preprocess.dataset import load_train_test_files
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -50,108 +37,73 @@ def run_experiment(model_params, input_path, output_path="expts"):
 		This function return is not used by the train script. But you could do anything with that.
     """
 
-    print("model_params", model_params)
-
     # Load the appropriate folder from s3
     if input_path.startswith("/opt/ml"):
         cach_path = input_path
-        train_params = {arg: ast.literal_eval(val) if arg not in ['dataset_name', "method"] else val for arg, val in
-                        model_params.items()}
+        expt_params = {arg: ast.literal_eval(val) if arg not in ['dataset', "arch"] else val for arg, val in
+                       model_params.items()}
     else:
         dc = DataCache()
         cach_path = dc.get_dir(dir_path=input_path)
-        train_params = model_params
+        expt_params = model_params
 
-    print("train_params", train_params)
-    print(cach_path, os.listdir(cach_path))
+    print(f"Input folder: {cach_path}")
+    print(f"Files in {cach_path}, {os.listdir(cach_path)}")
+    print(f"Config params: {expt_params}\n")
 
-    method = train_params["method"]
-    dataset_name = train_params["dataset_name"]
-    batch_size = train_params["fit_params"]["batch_size"]
-    lr = train_params["fit_params"]["lr"]
-    n_epochs = train_params["fit_params"]["n_epochs"]
-    early_stopping = train_params["fit_params"]["with_early_stopping"]
-    thresholds = [i/100 for i in range(101)]
-
-    # load train and test files
-    _, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
-                                                                              dataset_name=dataset_name,
-                                                                              method=method,
-                                                                              transformer=fingerprints_transformer)
-    x_train = torch.stack([torch.cat(pair) for pair in x_train])
-    print(x_train.shape)
-    x_test = torch.stack([torch.cat(pair) for pair in x_test])
-    print(x_test.shape)
-    x_val = torch.stack([torch.cat(pair) for pair in x_val])
-    print(x_val.shape)
-
-    # w = compute_classes_weight(y=y_train)
-    # print("weight", w.shape)
-    # print("weight", w)
-    #
-    # # Loss function
-    # if torch.cuda.is_available():
-    #     w = w.cuda()
-    #
-    # loss_function = Weighted_binary_cross_entropy1(weights_per_targets=w)
-    # print("loss_function", loss_function)
-    loss_function = nn.BCEWithLogitsLoss()
-    print("loss_function", loss_function)
-    if method == "deepddi":
-        net = DeepDDI(input_dim=100, output_dim=y_test.shape[1], hidden_sizes=[2048] * 9)
-        net.apply(init_uniform)
-    else:
-
-        # Set hps and params
-        use_targets = train_params["classifier"]["use_targets"]
-        hidden_sizes = train_params["classifier"]["hidden_sizes"]
-        extractor_params = train_params['feature_extractor_params']
-
-        params = dict(
-            drugs_feature_extractor=Cnn1dFeatExtractor(**extractor_params),
-            hidden_sizes=hidden_sizes,
-            use_tar=use_targets
-        )
-
-        # Build the network
-        net = DDINetwork(**params, output_dim=y_test.shape[1])
-        # net = PCNN(150, 20, [32]*3,  [3, 5, 7])
-    # Next step: Choose the optimizer
-    optimizer = optim.Adam(net.parameters(), lr=lr)
-
-    # Build the pytoune model
-    model = DDIModel(net=net, lr=lr, loss=loss_function, optimizer=optimizer)
-    print(model.model)
-
-    # Move to gpu
+    gpu = False
     if torch.cuda.is_available():
-        model = model.cuda()
-        x_train = x_train.cuda()
-        x_test = x_test.cuda()
-        x_val = x_val.cuda()
-        y_train = torch.from_numpy(y_train).cuda()
-        y_val = torch.from_numpy(y_val).cuda()
-        y_test = torch.from_numpy(y_test).cuda()
+        gpu = True
+
+    # Dataset
+    dataset = expt_params["dataset"]["name"]
+    data_transformer = get_transformer(expt_params["dataset"]["transformer"])
+    # load train and test files
+    targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
+                                                                                    dataset_name=dataset,
+                                                                                    transformer=data_transformer)
+
+    x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
+
+    # i'll be back -- must be more flexible on which dataset type
+    train_dt = GenericDataset(x_train, y_train[:32, :], cuda=gpu)
+    test_dt = GenericDataset(x_test, y_test[:32, :], cuda=gpu)
+    valid_dt = GenericDataset(x_val, y_val[:32, :], cuda=gpu)
+
+    # The loss function
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
+    print(f"Loss Function: {loss_fn}")
+
+    # Initialization
+    init_fn = expt_params["arch"]["init_fn"]
+    print(f"Initialization: {init_fn}")
+
+    #  which network
+    method = expt_params["arch"]["net"]
+    # The network + Initialization
+    arch_params = expt_params["arch"]["params"]
+    arch_params.update({"output_dim": train_dt.y.shape[1]})
+    network = get_network(method, params=arch_params)
+    if init_fn is not None:
+        network.apply(get_init_fn(init_fn))
+    print(f"Architecture:\n\tname: {method}\n\tparams: {arch_params}\n\tnetwork:{network}")
+
+    #  The optimizer
+    op = expt_params["optimizer"]["optim"]
+    op_params = expt_params["optimizer"]["params"]
+    optimizer = get_optimizer(op, network, op_params)
+    print(f"Optimizer:\n\tname: {op}\n\tparams: {op_params}")
+
+    # The pytoune model
+    model = DDIModel(network, optimizer, loss_fn, model_dir=output_path, gpu=gpu)  # i doubt about the output path
 
     # Train and save
-    model.train(x_train, y_train, x_val, y_val, n_epochs=n_epochs, batch_size=batch_size,
-                with_early_stopping=early_stopping)
+    trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
+    print(f"Training details: \n{trainin}")
+    model.train(train_dt=train_dt, valid_dt=valid_dt, **expt_params["train_params"])
+    save(expt_params, "configs.json", output_path)
 
-    with open(os.path.join(output_path, "config.json"), 'w') as CNF:
-        json.dump(train_params, CNF)
-
-    with open(os.path.join(output_path, "history.json"), 'w') as HIST:
-        json.dump(model.history, HIST)
-
-    model.save(os.path.join(output_path, "weights.json"))
-
-    # Test and save metrics
-    y_true, y_pred = model.test(x_test, y_test)
-
-    for threshold in thresholds:
-        expts_out = model.cmetrics(y_true, y_pred, threshold=threshold, dataset_name=dataset_name)
-        with open(os.path.join(output_path, f"{threshold}_out.json"), 'w') as OUT:
-            json.dump(expts_out, OUT)
-
-#dispatcher -n "side_effects_label_weight" -e "expt-testML" -x 86400 -v 100 -t "ml.p2.xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p configs_3.json
-#side_effect_finger_no_bfc
+    # Test and save
+    y_true, y_probs = model.test(test_dt.X, test_dt.y)
+    output = model.predictions_given_scores(y_true, y_probs)
+    pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))

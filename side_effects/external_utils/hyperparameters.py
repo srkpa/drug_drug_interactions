@@ -92,5 +92,5 @@ if __name__ == '__main__':
                                                "pooling_len": 2, "normalize_features": True}], classifier=[{'hidden_sizes': [512], 'use_targets': False}],
                     test=[{"thresholds": [0.47, 0.5]}])
 
-    config_file(params=template_2, config_path="../../expts/configs_1.json")
+    config_file(params=template_2, config_path="../../expts/ex_configs_2.json")
     config_file(params=template_2, config_path="../../expts/configs_2.json")

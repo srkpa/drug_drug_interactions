@@ -24,3 +24,4 @@ def init_xavier_normal(layer):
 def init_kaiming_uniform(layer):
     if isinstance(layer, nn.Linear):
         nn.init.kaiming_uniform_(layer.weight.data, a=1)
+

@@ -63,7 +63,7 @@ def load_and_test(input_path, output_path, thresholds):
                 loss_function = Weighted_binary_cross_entropy1(weights_per_targets=w)
 
         # Build the network
-        net = DDINetwork(**params, output_dim=y_test.shape[1])
+        net = DRUUD(**params, output_dim=y_test.shape[1])
 
     # Next step: Choose the optimizer
     optimizer = optim.Adam(net.parameters(), lr=lr)
@@ -76,7 +76,7 @@ def load_and_test(input_path, output_path, thresholds):
     print(model.model)
 
     print("Loading finished.........")
-    y_true, y_pred = model.test(x_test, y_test, batch_size=32)
+    y_true, y_pred = model.predict_proba(x_test, y_test, batch_size=32)
     print("Testing finished")
 
     y_pred = np.where(y_pred >= 0.47, 1, 0)

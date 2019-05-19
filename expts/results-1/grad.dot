@@ -1,0 +1,134 @@
+digraph cluster_legend {
+	graph [size="4,8" splines=ortho]
+	node [align=center color="#333333" fontsize=7 height=0.2 shape=box style=filled]
+	accum [label="Grad Accum" fillcolor="#62E0AB" shape=box]
+	zero [label="Zero Grad" fillcolor="#C8CBCE" shape=hexagon]
+	expl [label="Large Grad" fillcolor="#56B6FF" shape=box]
+	nan [label="NaN Grad" fillcolor="#FF9191" shape=box]
+	bad [label="Bad Grad" fillcolor="#211D1E" fontcolor=white shape=ellipse]
+	accum -> zero [style=invis]
+	zero -> expl [style=invis]
+	expl -> nan [style=invis]
+	nan -> bad [style=invis]
+	{
+		graph [size="12,12"]
+		node [align=left color="#333333" fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+		139859195295000 [label=BinaryCrossEntropyBackward fillcolor=white shape=box]
+		139859195295056 -> 139859195295000
+		139859195295056 [label=SigmoidBackward fillcolor=white shape=box]
+		139859195294776 -> 139859195295056
+		139859195294776 [label=ThAddmmBackward fillcolor=white shape=box]
+		139859195294832 -> 139859195294776
+		139859195294888 -> 139859195294776
+		139859195294608 -> 139859195294776
+		139859195294608 [label=TBackward fillcolor=white shape=box]
+		139859208321424 -> 139859195294608
+		139859208321424 [label="Variable
+ (86, 256)" fillcolor="#62E0AB"]
+		139859195294888 [label=SqueezeBackward0 fillcolor=white shape=box]
+		139859195294720 -> 139859195294888
+		139859195294720 [label=CatBackward fillcolor=white shape=box]
+		139859195294440 -> 139859195294720
+		139859195294496 -> 139859195294720
+		139859195294496 [label=DivBackward1 fillcolor=white shape=box]
+		139859195294552 -> 139859195294496
+		139859195294328 -> 139859195294496
+		139859195294328 [label=ExpandBackward fillcolor=white shape=box]
+		139859195294160 -> 139859195294328
+		139859195294160 [label=ClampMinBackward fillcolor=white shape=box]
+		139859195294384 -> 139859195294160
+		139859195294384 [label=NormBackward1 fillcolor=white shape=box]
+		139859195294552 -> 139859195294384
+		139859195294552 [label=MaxBackward0 fillcolor=white shape=box]
+		139859195294216 -> 139859195294552
+		139859195294216 [label=TransposeBackward0 fillcolor=white shape=box]
+		139859195294272 -> 139859195294216
+		139859195294272 [label=SqueezeBackward1 fillcolor=white shape=box]
+		139859195293992 -> 139859195294272
+		139859195293992 [label=MaxPool2DWithIndicesBackward fillcolor=white shape=box]
+		139859195294048 -> 139859195293992
+		139859195294048 [label=UnsqueezeBackward0 fillcolor=white shape=box]
+		139859208652336 -> 139859195294048
+		139859208652336 [label=DropoutBackward fillcolor=white shape=box]
+		139859195294104 -> 139859208652336
+		139859195294104 [label=ThresholdBackward0 fillcolor=white shape=box]
+		139859195293824 -> 139859195294104
+		139859195293824 [label=ThnnBatchNormBackward fillcolor=white shape=box]
+		139859195293880 -> 139859195293824
+		139859208321712 -> 139859195293824
+		139859208320632 -> 139859195293824
+		139859208320632 [label="Variable
+ (128)" fillcolor="#62E0AB"]
+		139859208321712 [label="Variable
+ (128)" fillcolor="#62E0AB"]
+		139859195293880 [label=SqueezeBackward1 fillcolor=white shape=box]
+		139859195211672 -> 139859195293880
+		139859195211672 [label=ThnnConv2DBackward fillcolor=white shape=box]
+		139859195211728 -> 139859195211672
+		139859195211560 -> 139859195211672
+		139859208319336 -> 139859195211672
+		139859208319336 [label="Variable
+ (128)" fillcolor="#62E0AB"]
+		139859195211560 [label=UnsqueezeBackward0 fillcolor=white shape=box]
+		139859208319552 -> 139859195211560
+		139859208319552 [label="Variable
+ (128, 20, 3)" fillcolor="#62E0AB"]
+		139859195211728 [label=UnsqueezeBackward0 fillcolor=white shape=box]
+		139859195211280 -> 139859195211728
+		139859195211280 [label=CloneBackward fillcolor=white shape=box]
+		139859195211504 -> 139859195211280
+		139859195211504 [label=TransposeBackward0 fillcolor=white shape=box]
+		139859195211336 -> 139859195211504
+		139859195211336 [label=EmbeddingBackward fillcolor=white shape=box]
+		139859208320560 -> 139859195211336
+		139859208320560 [label="Variable
+ (150, 20)" fillcolor="#62E0AB"]
+		139859195294440 [label=DivBackward1 fillcolor=white shape=box]
+		139859195211168 -> 139859195294440
+		139859195211056 -> 139859195294440
+		139859195211056 [label=ExpandBackward fillcolor=white shape=box]
+		139859195211224 -> 139859195211056
+		139859195211224 [label=ClampMinBackward fillcolor=white shape=box]
+		139859195210888 -> 139859195211224
+		139859195210888 [label=NormBackward1 fillcolor=white shape=box]
+		139859195211168 -> 139859195210888
+		139859195211168 [label=MaxBackward0 fillcolor=white shape=box]
+		139859195211112 -> 139859195211168
+		139859195211112 [label=TransposeBackward0 fillcolor=white shape=box]
+		139859195210944 -> 139859195211112
+		139859195210944 [label=SqueezeBackward1 fillcolor=white shape=box]
+		139859195211000 -> 139859195210944
+		139859195211000 [label=MaxPool2DWithIndicesBackward fillcolor=white shape=box]
+		139859195210776 -> 139859195211000
+		139859195210776 [label=UnsqueezeBackward0 fillcolor=white shape=box]
+		139859208651832 -> 139859195210776
+		139859208651832 [label=DropoutBackward fillcolor=white shape=box]
+		139859195210608 -> 139859208651832
+		139859195210608 [label=ThresholdBackward0 fillcolor=white shape=box]
+		139859195210832 -> 139859195210608
+		139859195210832 [label=ThnnBatchNormBackward fillcolor=white shape=box]
+		139859195208984 -> 139859195210832
+		139859208321712 -> 139859195210832
+		139859208320632 -> 139859195210832
+		139859195208984 [label=SqueezeBackward1 fillcolor="#C8CBCE" shape=hexagon]
+		139859195211392 -> 139859195208984
+		139859195211392 [label=ThnnConv2DBackward fillcolor="#C8CBCE" shape=hexagon]
+		139859195210664 -> 139859195211392
+		139859195211616 -> 139859195211392
+		139859208319336 -> 139859195211392
+		139859195211616 [label=UnsqueezeBackward0 fillcolor="#C8CBCE" shape=hexagon]
+		139859208319552 -> 139859195211616
+		139859195210664 [label=UnsqueezeBackward0 fillcolor="#C8CBCE" shape=hexagon]
+		139859195211448 -> 139859195210664
+		139859195211448 [label=CloneBackward fillcolor="#C8CBCE" shape=hexagon]
+		139859195208704 -> 139859195211448
+		139859195208704 [label=TransposeBackward0 fillcolor="#C8CBCE" shape=hexagon]
+		139859195208760 -> 139859195208704
+		139859195208760 [label=EmbeddingBackward fillcolor="#C8CBCE" shape=hexagon]
+		139859208320560 -> 139859195208760
+		139859195294832 [label=ExpandBackward fillcolor=white shape=box]
+		139859208322072 -> 139859195294832
+		139859208322072 [label="Variable
+ (86)" fillcolor="#62E0AB"]
+	}
+}

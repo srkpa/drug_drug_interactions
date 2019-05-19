@@ -1,0 +1,42 @@
+{
+  "dataset": [
+    {
+      "name": "drugbank",
+      "transformer": "deepddi"
+    }
+  ],
+  "arch": [
+    {
+      "net": "deepddi",
+      "params": {
+        "input_dim": 100,
+        "hidden_sizes": [
+          2000
+        ]
+      },
+      "init_fn": null
+    }
+  ],
+  "loss_function": [
+    "weighted"
+  ],
+  "optimizer": [
+    {
+      "optim": "sgd",
+      "params": {
+        "lr": 0.01,
+        "weight_decay": 0
+      }
+    }
+  ],
+  "train_params": [
+    {
+      "n_epochs": 1,
+      "batch_size": 32,
+      "early_stopping": true,
+      "reduce_lr": true
+    }
+  ]
+}
+
+

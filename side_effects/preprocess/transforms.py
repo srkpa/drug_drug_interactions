@@ -11,26 +11,23 @@ from ivbase.transformers.features.molecules import FingerprintsTransformer
 
 
 def fingerprints_transformer(drugs, smiles):
-    transf = FingerprintsTransformer()
-    out = transf.transform(smiles)
+    transformer = FingerprintsTransformer()
+    out = transformer.transform(smiles)
     res = np.stack(out)
     res = torch.from_numpy(res)
     print("fingerprint vectorized out", res.shape)
     return dict(zip(drugs, res))
 
 
-def sequence_transformer(drugs, smiles, one_hot=False):
-    sequence_transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=one_hot)
-    out = sequence_transformer.fit_transform(smiles)
+def sequence_transformer(smiles, drugs, one_hot=False):
+    transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=one_hot)
+    out = transformer.fit_transform(smiles)
     out = torch.from_numpy(out)
     print("Sequence vectorized out", out.shape)
     return dict(zip(drugs, out))
 
 
-def deepddi_transformer(inputs, approved_drug):
-    drugs = list(inputs.keys())
-    smiles = list(inputs.values())
-
+def deepddi_transformer(smiles, drugs, approved_drug):
     appr_drugs_mol = [Chem.MolFromSmiles(X) for X in approved_drug]
     appr_drugs_fps = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in appr_drugs_mol]
     drugs_involved_in_mol = [Chem.MolFromSmiles(m) for m in smiles]
@@ -41,3 +38,4 @@ def deepddi_transformer(inputs, approved_drug):
     reduced_ssp = pca.fit_transform(np.array(all_ssp))
 
     return dict(zip(drugs, torch.from_numpy(reduced_ssp)))
+

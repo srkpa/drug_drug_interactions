@@ -1,31 +1,16 @@
+import inspect
 import math
-import pandas as pd
+import re
 from collections import defaultdict
+from itertools import product
 
 import numpy as np
-from sklearn.preprocessing import MultiLabelBinarizer
-from side_effects.preprocess.transforms import fingerprints_transformer, sequence_transformer, deepddi_transformer
+import pandas as pd
 from sklearn.model_selection import train_test_split
-import re
-from torch.utils.data import Dataset
+from sklearn.preprocessing import MultiLabelBinarizer
 
+from side_effects.preprocess.transforms import deepddi_transformer
 
-# class DRUUD(Dataset):
-#
-#     def __init__(self, X, y):
-#         """
-#         :param X: a list of tuple of tensors
-#         :param y: an array of labels
-#         """
-#         super(DRUUD, self).__init__()
-#         self.inputs = X
-#         self.labels = y
-#
-#     def __len__(self):
-#         return len(self.inputs)
-#
-#     def __getitem__(self, idx):
-#
 
 def load_smiles(fname, download=False, dataset_name="twosides"):
     smiles = {}
@@ -116,20 +101,23 @@ def train_test_split_1(fname, header=True, train_split=0.8, shuffle=True, save=N
         fn.close()
 
 
-def load_train_test_files(input_path, dataset_name, method, transformer):
+def load_train_test_files(input_path, dataset_name, transformer):
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
     train_path = f"{input_path}/{dataset_name}-train_samples.csv"
     test_path = f"{input_path}/{dataset_name}-test_samples.csv"
     valid_path = f"{input_path}/{dataset_name}-valid_samples.csv"
-    approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
 
     drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
-    drugs = transformer(drugs=list(drugs2smiles.keys()), smiles=list(drugs2smiles.values()))
-
-    if method == "deepddi":
+    drugs = list(drugs2smiles.keys())
+    smiles = list(drugs2smiles.values())
+    args = inspect.signature(transformer)
+    if 'approved_drug' in args.parameters:
+        approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
         approved_drug = pd.read_csv(approved_drugs_path, sep=",").dropna()
         approved_drug = approved_drug['PubChem Canonical Smiles'].values.tolist()
-        drugs = deepddi_transformer(inputs=drugs2smiles, approved_drug=approved_drug)
+        drugs = transformer(drugs=drugs, smiles=smiles, approved_drug=approved_drug)
+    else:
+        drugs = transformer(drugs=drugs, smiles=smiles)
 
     train_data = load_ddis_combinations(fname=train_path, header=False, dataset_name="split")
     test_data = load_ddis_combinations(fname=test_path, header=False, dataset_name="split")
@@ -460,7 +448,7 @@ def deepddi_train_test_split(input_path):
 
 
 # correct finalement
-def load(train, test, valid, method, input_path="../data/violette/drugbank/"):
+def load(train, test, valid, method, input_path="../data/violette/drugbank/", transformer=None):
     dataset_name = "drugbank"
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
     approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
