@@ -4,10 +4,12 @@ from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
 from sklearn.decomposition import PCA
+from operator import itemgetter
 from ivbase.transformers.features.molecules import SequenceTransformer
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 from ivbase.transformers.features.molecules import FingerprintsTransformer
+from ivbase.transformers.features import AdjGraphTransformer, DGLGraphTransformer
 
 
 def fingerprints_transformer(drugs, smiles):
@@ -39,3 +41,13 @@ def deepddi_transformer(smiles, drugs, approved_drug):
 
     return dict(zip(drugs, torch.from_numpy(reduced_ssp)))
 
+
+def dgl_transformer(drugs, smiles):
+    trans = DGLGraphTransformer()  # Initialize the transformer
+    X, ids = trans(smiles, dtype=np.float32)  # Call the transformer on the smiles using the __call__ method.
+    # Keep only the ids where the transformation succeeded
+    # (the failed transformations are not present in ids)
+    drugs = list(itemgetter(*ids)(drugs))
+    assert len(X) == len(ids)
+    assert len(X) == len(drugs)
+    return dict(zip(drugs, X))
