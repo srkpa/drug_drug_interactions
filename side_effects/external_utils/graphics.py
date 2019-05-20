@@ -53,13 +53,13 @@ def plot_losses(fname, save_as=None, text=None):
     epoches = list(range(1, len(loss) + 1))
     f = plt.figure()
     ax = f.add_subplot(1, 1, 1)
-    ax.plot(epoches, loss, 'r--', label='train loss')
-    ax.plot(epoches, val_loss, 'b--', label='val loss')
+    ax.plot(epoches, loss, '-ko', label='train loss', markersize=6)
+    ax.plot(epoches, val_loss, '-ro', label='val loss', markersize=6)
     anchored_text = AnchoredText(text, loc="center")
     ax.add_artist(anchored_text)
     ax.set_title('model loss evolution ')
-    ax.set_xlabel("epochs")
-    ax.set_ylabel("loss")
+    ax.set_xlabel("epochs", fontsize=14)
+    ax.set_ylabel("loss", fontsize=14)
 
     plt.legend()
     if save_as is not None:
