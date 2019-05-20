@@ -1,5 +1,6 @@
 import ast
 import pickle
+from functools import partial
 from ivbase.utils.datasets.datacache import DataCache
 from ivbase.utils.datasets.dataset import GenericDataset
 
@@ -65,10 +66,9 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
 
-    # i'll be back -- must be more flexible on which dataset type
-    train_dt = GenericDataset(x_train, y_train[:32, :], cuda=gpu)
-    test_dt = GenericDataset(x_test, y_test[:32, :], cuda=gpu)
-    valid_dt = GenericDataset(x_val, y_val[:32, :], cuda=gpu)
+    train_dt, test_dt, valid_dt = list(
+        map(partial(GenericDataset, cuda=gpu), [x_train, x_test, x_val],
+            [y_train[:32, :], y_test[:32, :], y_val[:32, :]]))
 
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
