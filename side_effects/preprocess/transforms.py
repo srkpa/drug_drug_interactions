@@ -50,4 +50,4 @@ def dgl_transformer(drugs, smiles):
     drugs = list(itemgetter(*ids)(drugs))
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
-    return dict(zip(drugs, X))
+    return dict(zip(drugs, X)), trans.atom_dim

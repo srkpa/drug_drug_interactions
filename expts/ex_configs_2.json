@@ -2,7 +2,8 @@
   "dataset": [
     {
       "name": "drugbank",
-      "transformer": "seq"
+      "smi_transf": "seq",
+      "dt_transf": "generic"
     }
   ],
   "arch": [
@@ -23,20 +24,21 @@
             "b_norm": true,
             "pooling_len": 2,
             "normalize_features": true
-          }
+          },
+          "fc_layers_dim": [1000]
         }
       },
-      "init_fn": "constant"
+      "init_fn": null
     }
   ],
   "loss_function": [
-    "weighted"
+    "bce"
   ],
   "optimizer": [
     {
-      "optim": "sgd",
+      "optim": "adam",
       "params": {
-        "lr": 0.01,
+        "lr": 0.0001,
         "weight_decay": 0
       }
     }

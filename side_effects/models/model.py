@@ -3,6 +3,7 @@ import torch.nn as nn
 from ivbase.nn.base import FCLayer
 from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
 from torch.nn import Conv1d, Embedding, Module
+from ivbase.nn.graphs.conv.gcn import GCNLayer
 
 import ivbase.nn.extractors as feat
 
@@ -24,7 +25,7 @@ class PCNN(nn.Module):
         self.gpool = GlobalMaxPool1d(dim=1)
         layers = []
         for i, (out_channel, ksize) in \
-                enumerate(zip(cnn_sizes, kernel_size, )):
+                enumerate(zip(cnn_sizes, kernel_size)):
             pad = ((dilatation_rate ** i) * (ksize - 1) + 1) // 2
             layers.append(Conv1d(embedding_size, out_channel, padding=pad,
                                  kernel_size=ksize, dilation=dilatation_rate ** i))
@@ -66,40 +67,68 @@ class DeepDDI(nn.Module):
 
 
 class FCNet(Module):
-    def __init__(self, fc_layer_dims, activation='relu', dropout=0., b_norm=False, bias=True, init_fn=None):
+    def __init__(self, input_size, fc_layer_dims, output_dim, activation='relu', dropout=0., b_norm=False, bias=True,
+                 init_fn=None, batch_norm=True):
         super(FCNet, self).__init__()
         layers = []
-        in_size = fc_layer_dims[0]
-        for layer_dim in fc_layer_dims[1:]:
+        in_size = input_size
+        for layer_dim in fc_layer_dims:
             fc = FCLayer(in_size=in_size, out_size=layer_dim, activation=activation, dropout=dropout, b_norm=b_norm,
                          bias=bias, init_fn=init_fn)
             layers.append(fc)
             in_size = layer_dim
-
-        self.net = nn.Sequential(*layers)
+        layers.append(nn.Linear(in_features=input_size, out_features=output_dim))
+        if batch_norm:
+            layers.append(nn.BatchNorm1d(output_dim))  # Add batch normalization if specified
+        self.net = nn.Sequential(*layers, nn.Sigmoid())
 
     def forward(self, inputs):
         return self.net(inputs)
+
+
+class DGLGraph(nn.Module):
+    def __init__(self, input_dim, conv_layer_dims, dropout=0., activation="relu",
+                 b_norm=False, pooling='sum',
+                 bias=False, init_fn=None):
+        super(DGLGraph, self).__init__()
+
+        self.conv_layers = nn.ModuleList()
+        in_size = input_dim
+        for dim in conv_layer_dims:
+            gconv = GCNLayer(in_size=in_size, out_size=dim, dropout=dropout, activation=activation, b_norm=b_norm,
+                             pooling=pooling, bias=bias, init_fn=init_fn)
+            self.conv_layers.append(gconv)
+            in_size = dim
+        self.output_dim = in_size
+
+    def forward(self, x):
+        h = 0
+        G = x
+        for cv_layer in self.conv_layers:
+            G, h = cv_layer(G)
+        return h
 
 
 # this above is the main architecture
 
 class DRUUD(nn.Module):
 
-    def __init__(self, drug_feature_extractor, output_dim):
+    def __init__(self, drug_feature_extractor, fc_layers_dim, output_dim, **kwargs):
         super(DRUUD, self).__init__()
         self.__extractors = dict(
             pcnn=PCNN,
             conv1d=feat.Cnn1dFeatExtractor,
             lstm=feat.LSTMFeatExtractor,
-            fcfeat=feat.FcFeatExtractor
+            fcfeat=feat.FcFeatExtractor,
+            dgl=DGLGraph
         )
         self.__drug_feature_extractor_network = drug_feature_extractor["net"]
         self.__drug_feature_extractor_params = drug_feature_extractor["params"]
         self.__drug_feature_extractor = _get_network(self.__extractors, self.__drug_feature_extractor_network,
                                                      self.__drug_feature_extractor_params)
         in_size = 2 * self.__drug_feature_extractor.output_dim  # usually check your dim
-        self.classifier = nn.Sequential(nn.Linear(in_size, output_dim), nn.Sigmoid())
+
+        self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)
 
     def forward(self, batch):
         x = batch

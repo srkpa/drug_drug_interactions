@@ -2,6 +2,7 @@ import inspect
 import math
 import re
 from collections import defaultdict
+from functools import partial
 from itertools import product
 
 import numpy as np
@@ -101,15 +102,32 @@ def train_test_split_1(fname, header=True, train_split=0.8, shuffle=True, save=N
         fn.close()
 
 
+def _filter(transformed_smiles_dict, samples):
+    return {(transformed_smiles_dict[id_1], transformed_smiles_dict[id_2]): y for (id_1, id_2), y in samples.items() if
+            id_1 in transformed_smiles_dict and id_2 in transformed_smiles_dict}
+
+
 def load_train_test_files(input_path, dataset_name, transformer):
+    # My paths
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
     train_path = f"{input_path}/{dataset_name}-train_samples.csv"
     test_path = f"{input_path}/{dataset_name}-test_samples.csv"
     valid_path = f"{input_path}/{dataset_name}-valid_samples.csv"
 
-    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
+    # Load files
+    files = [train_path, test_path, valid_path]
+    train_data, test_data, valid_data = list(
+        map(partial(load_ddis_combinations, dataset_name=dataset_name, header=False), files))
+    x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
+    assert len(set(x_train) - set(x_test)) == len(train_data)
+    assert len(set(x_test) - set(x_valid)) == len(test_data)
+
+    # Load smiles
+    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name, )
     drugs = list(drugs2smiles.keys())
     smiles = list(drugs2smiles.values())
+
+    # Transformer
     args = inspect.signature(transformer)
     if 'approved_drug' in args.parameters:
         approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
@@ -119,42 +137,25 @@ def load_train_test_files(input_path, dataset_name, transformer):
     else:
         drugs = transformer(drugs=drugs, smiles=smiles)
 
-    train_data = load_ddis_combinations(fname=train_path, header=False, dataset_name="split")
-    test_data = load_ddis_combinations(fname=test_path, header=False, dataset_name="split")
-    valid_data = load_ddis_combinations(fname=valid_path, header=False, dataset_name="split")
+    atom_dim = 0
+    if isinstance(drugs, tuple):
+        drugs = drugs[0]
+        atom_dim = drugs[-1]
 
-    assert len(set(train_data.keys()) - set(test_data.keys())) == len(train_data)
-    assert len(set(test_data.keys()) - set(valid_data.keys())) == len(test_data)
-
-    x_train = [(drugs[drug1_id], drugs[drug2_id]) for drug1_id, drug2_id in list(train_data.keys()) if
-               drug1_id in drugs and drug2_id in drugs]
-    x_test = [(drugs[drug1_id], drugs[drug2_id]) for drug1_id, drug2_id in list(test_data.keys()) if
-              drug1_id in drugs and drug2_id in drugs]
-    x_valid = [(drugs[drug1_id], drugs[drug2_id]) for drug1_id, drug2_id in list(valid_data.keys()) if
-               drug1_id in drugs and drug2_id in drugs]
-
-    train_data = {(drug1_id, drug2_id): train_data[(drug1_id, drug2_id)] for drug1_id, drug2_id in train_data if
-                  drug1_id in drugs and drug2_id in drugs}
-    test_data = {(drug1_id, drug2_id): test_data[(drug1_id, drug2_id)] for drug1_id, drug2_id in test_data if
-                 drug1_id in drugs and drug2_id in drugs}
-    valid_data = {(drug1_id, drug2_id): valid_data[(drug1_id, drug2_id)] for drug1_id, drug2_id in valid_data if
-                  drug1_id in drugs and drug2_id in drugs}
+    train_data, test_data, valid_data = list(
+        map(partial(_filter, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
 
     print("len train", len(train_data))
     print("len test", len(test_data))
     print("len valid", len(valid_data))
 
-    labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
-
     mbl = MultiLabelBinarizer()
+    labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     targets = mbl.fit_transform(labels).astype(np.float32)
+    y_train, y_test, y_valid = targets[:len(train_data), :], targets[len(train_data):len(train_data) + len(test_data),
+                                                             :], targets[len(train_data) + len(test_data):, ]
 
-    y_train, y_test, y_valid = targets[:len(x_train), :], targets[len(x_train):len(x_train) + len(x_test), :], targets[
-                                                                                                               len(
-                                                                                                                   x_train) + len(
-                                                                                                                   x_test):, ]
-
-    return list(mbl.classes_), x_train, x_test, x_valid, y_train, y_test, y_valid
+    return atom_dim, list(mbl.classes_), x_train, x_test, x_valid, y_train, y_test, y_valid
 
 
 def split(fname, train_split=0.8, shuffle=True, prefix="twosides"):
@@ -400,7 +401,8 @@ def deepddi_train_test_split(input_path):
     k = list(train.keys()) + list(test.keys()) + list(valid.keys())
     print(f"- {len(set(k))} pairs of drugs")
 
-    print(f"- {len(train)} pairs of drugs and ", f"{sum([len(v) for i, v in train.items() if len])} interactions for train ")
+    print(f"- {len(train)} pairs of drugs and ",
+          f"{sum([len(v) for i, v in train.items() if len])} interactions for train ")
     print(f"- {len(test)} pairs of drugs and ", f"{sum([len(v) for i, v in test.items()])} interactions for test")
     print(f"- {len(valid)} pairs of drug and ", f"{sum([len(v) for i, v in valid.items()])} interactions for valid")
 
@@ -441,8 +443,9 @@ def deepddi_train_test_split(input_path):
     print("\nQuick Summary #3:")
     print(
         "- pairs of drugs that belong to two of the three subsets have always two types of ddi which have been split into the subsets")
-    print("- pairs of drugs that belong only to one of the three subsets, can have 1 or 2 types of ddi, but all the type "
-          "will belong to the choosen subset")
+    print(
+        "- pairs of drugs that belong only to one of the three subsets, can have 1 or 2 types of ddi, but all the type "
+        "will belong to the choosen subset")
 
     return train, test, valid, train_and_test, train_and_valid, test_and_valid
 
@@ -474,7 +477,7 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
     mbl = MultiLabelBinarizer()
     targets = mbl.fit_transform(labels).astype(np.float32)
 
-    y_train, y_test, y_valid = targets[:len(x_train), :], targets[len(x_train):len(x_train) + len(x_test), :],\
+    y_train, y_test, y_valid = targets[:len(x_train), :], targets[len(x_train):len(x_train) + len(x_test), :], \
                                targets[len(x_train) + len(x_test):, ]
 
     assert len(x_valid) == len(y_valid)
@@ -484,16 +487,17 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
     print(f"- {len(test_data)} pairs of drugs for test")
     print(f"- {len(valid_data)} pairs of drug for valid")
 
-    return x_train, x_test, x_valid, np.array(y_train).astype(np.float32) , np.array(y_test).astype(np.float32) , np.array(y_valid).astype(np.float32)
-
+    return x_train, x_test, x_valid, np.array(y_train).astype(np.float32), np.array(y_test).astype(
+        np.float32), np.array(y_valid).astype(np.float32)
 
 
 if __name__ == '__main__':
     # train_test_valid_split(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",
     # dataset_name="drugbank")
-    #train_test_valid_split_3(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",dataset_name = "drugbank")
+    # train_test_valid_split_3(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",dataset_name = "drugbank")
 
     # ['Sentences describing the reported drug-drug interactions', 'Data type used to optimize the DNN architecture']
-    #train, test, valid, train_test, train_valid, test_valid = deepddi_train_test_split("/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
+    # train, test, valid, train_test, train_valid, test_valid = deepddi_train_test_split("/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
     # x_train, x_test, x_valid, y_train, y_test, y_valid = load(train, test, valid, 86)
-    load_train_test_files(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank", dataset_name="drugbank", method="ours", one_hot=False)
+    load_train_test_files(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",
+                          dataset_name="drugbank", method="ours", one_hot=False)

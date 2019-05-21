@@ -2,7 +2,8 @@
   "dataset": [
     {
       "name": "drugbank",
-      "transformer": "deepddi"
+      "smi_transf": "deepddi",
+      "dt_transf": "generic"
     }
   ],
   "arch": [

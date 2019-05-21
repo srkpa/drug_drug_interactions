@@ -2,7 +2,6 @@ import ast
 import pickle
 from functools import partial
 from ivbase.utils.datasets.datacache import DataCache
-from ivbase.utils.datasets.dataset import GenericDataset
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
@@ -58,16 +57,21 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     # Dataset
     dataset = expt_params["dataset"]["name"]
-    data_transformer = get_transformer(expt_params["dataset"]["transformer"])
-    # load train and test files
-    targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
-                                                                                    dataset_name=dataset,
-                                                                                    transformer=data_transformer)
+    smi_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
+    dataset_fn = get_dataset(expt_params["dataset"]["dt_transf"])
 
+    # load train and test files
+    atom_dim, targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
+                                                                                              dataset_name=dataset,
+                                                                                              transformer=smi_transformer)
+
+    print("atom", atom_dim)
+    exit()
     x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
 
+    # Create dataset fn object
     train_dt, test_dt, valid_dt = list(
-        map(partial(GenericDataset, cuda=gpu), [x_train, x_test, x_val],
+        map(partial(dataset_fn, cuda=gpu), [x_train, x_test, x_val],
             [y_train[:32, :], y_test[:32, :], y_val[:32, :]]))
 
     # The loss function
@@ -80,9 +84,12 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     #  which network
     method = expt_params["arch"]["net"]
+
     # The network + Initialization
     arch_params = expt_params["arch"]["params"]
     arch_params.update({"output_dim": train_dt.y.shape[1]})
+    if atom_dim != 0:
+        arch_params.update({"input_dim": atom_dim})
     network = get_network(method, params=arch_params)
     if init_fn is not None:
         network.apply(get_init_fn(init_fn))
