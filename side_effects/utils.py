@@ -85,7 +85,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     #  which network
     method = expt_params["arch"]["net"]
 
-    # The network + Initialization
+    # The network + Initializations
     arch_params = expt_params["arch"]["params"]
     arch_params.update({"output_dim": train_dt.y.shape[1]})
     if atom_dim != 0:
