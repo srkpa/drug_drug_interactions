@@ -6,10 +6,11 @@ import torch.optim as optim
 from pytoune.framework.metrics import get_loss_or_metric
 from side_effects.external_utils.loss import Weighted_binary_cross_entropy1
 from sklearn.utils import compute_class_weight
-from side_effects.models.model import _get_network, PCNN, FCNet, DRUUD, DeepDDI, feat
+from side_effects.models.model import _get_network, PCNN, FCNet, DRUUD, DeepDDI, feat, DGLGraph
 from side_effects.preprocess.transforms import *
 from side_effects.external_utils.init import *
 
+from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 
 all_networks_dict = dict(
     pcnn=PCNN,
@@ -18,13 +19,15 @@ all_networks_dict = dict(
     druud=DRUUD,
     conv1d=feat.Cnn1dFeatExtractor,
     lstm=feat.LSTMFeatExtractor,
-    fcfeat=feat.FcFeatExtractor
+    fcfeat=feat.FcFeatExtractor,
+    dglgraph=DGLGraph
 )
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
     fgp=fingerprints_transformer,
-    deepddi=deepddi_transformer
+    deepddi=deepddi_transformer,
+    dgl=dgl_transformer
 )
 
 all_init_fn_dict = dict(
@@ -48,6 +51,11 @@ all_optimizers_dict = dict(
     sgd=optim.SGD,
 )
 
+all_dataset_fn = dict(
+    generic=GenericDataset,
+    dgl=DGLDataset
+)
+
 
 def compute_classes_weight(y):
     return torch.tensor([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
@@ -68,6 +76,10 @@ def make_tensor(X):
 
 def create_dataset(dataset_fn, **kwargs):
     return dataset_fn(**kwargs)
+
+
+def get_dataset(dt):
+    return all_dataset_fn[dt]
 
 
 def get_loss(loss, **kwargs):
