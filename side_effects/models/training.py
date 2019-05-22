@@ -29,7 +29,7 @@ def generator(dataset, batch_size=32, infinite=True, shuffle=True):
                 end = min(i + batch_size, len(dataset))  # ending index of the batch
                 a = [dataset[idx[ii]] for ii in range(start, end)]  # Generate the batch 'a'
                 x, y = zip(*a)
-                x, y = list(map(torch.stack, [x, y]))
+                y = torch.cat(y, dim=0)
                 yield x, y  # return the x and y values of the batch
             loop += 1
 
@@ -59,6 +59,7 @@ class DDIModel(Trainer):
                  validation_steps=nb_step_valid, reduce_lr=reduce_lr, early_stopping=early_stopping)
 
     def test(self, x, y):
+        print(type(x))
         y_pred = self.predict_on_batch(x)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
@@ -66,27 +67,27 @@ class DDIModel(Trainer):
             y_true = y.numpy()
         return y_true, y_pred
 
-    @staticmethod
-    def predictions_given_scores(y_true, y_pred):
-        # AUROC and AUPRC are not dependent on the thresholds
-        thresholds, average_precisions, precision, recall = auprc(actual=y_true, scores=y_pred)
-        false_pos_rates, true_pos_rates, roc_auc_scores = auroc(actual=y_true, scores=y_pred)
 
-        best_thresholds = thresholds["micro"]
+def compute_metrics(y_true, y_pred):
+    # AUROC and AUPRC are not dependent on the thresholds
+    thresholds, average_precisions, precision, recall = auprc(actual=y_true, scores=y_pred)
+    false_pos_rates, true_pos_rates, roc_auc_scores = auroc(actual=y_true, scores=y_pred)
 
-        # Theses metrics below are dependent on the thresholds
-        predicted = list(map(predict, [y_pred] * len(best_thresholds), best_thresholds))
-        assert len(predicted) == len(best_thresholds)
-        macro_metrics = list(map(acc_precision_f1_recall, [y_true] * len(predicted), predicted))
-        assert len(predicted) == len(macro_metrics)
-        micro_metrics = list(
-            map(acc_precision_f1_recall, [y_true] * len(predicted), predicted, ["micro"] * len(predicted)))
-        assert len(predicted) == len(micro_metrics)
+    best_thresholds = thresholds["micro"]
 
-        classification_reports = list(map(model_classification_report, [y_true] * len(predicted), predicted))
-        assert len(predicted) == len(classification_reports)
+    # Theses metrics below are dependent on the thresholds
+    predicted = list(map(predict, [y_pred] * len(best_thresholds), best_thresholds))
+    assert len(predicted) == len(best_thresholds)
+    macro_metrics = list(map(acc_precision_f1_recall, [y_true] * len(predicted), predicted))
+    assert len(predicted) == len(macro_metrics)
+    micro_metrics = list(
+        map(acc_precision_f1_recall, [y_true] * len(predicted), predicted, ["micro"] * len(predicted)))
+    assert len(predicted) == len(micro_metrics)
 
-        return dict(zip(["thresholds", "ap", "prec", "recall", "fpr", "tpr", "ROC", "macro", "micro", "report"],
-                        [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
-                         roc_auc_scores,
-                         macro_metrics, micro_metrics, classification_reports]))
+    classification_reports = list(map(model_classification_report, [y_true] * len(predicted), predicted))
+    assert len(predicted) == len(classification_reports)
+
+    return dict(zip(["thresholds", "ap", "prec", "recall", "fpr", "tpr", "ROC", "macro", "micro", "report"],
+                    [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
+                     roc_auc_scores,
+                     macro_metrics, micro_metrics, classification_reports]))

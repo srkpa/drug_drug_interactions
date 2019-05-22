@@ -8,6 +8,7 @@ from operator import itemgetter
 from ivbase.transformers.features.molecules import SequenceTransformer
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
+import dgl
 from ivbase.transformers.features.molecules import FingerprintsTransformer
 from ivbase.transformers.features import AdjGraphTransformer, DGLGraphTransformer
 
@@ -16,7 +17,7 @@ def fingerprints_transformer(drugs, smiles):
     transformer = FingerprintsTransformer()
     out = transformer.transform(smiles)
     res = np.stack(out)
-    res = torch.from_numpy(res)
+    res = torch.from_numpy(res).type("torch.FloatTensor")
     print("fingerprint vectorized out", res.shape)
     return dict(zip(drugs, res))
 
@@ -24,7 +25,7 @@ def fingerprints_transformer(drugs, smiles):
 def sequence_transformer(smiles, drugs, one_hot=False):
     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=one_hot)
     out = transformer.fit_transform(smiles)
-    out = torch.from_numpy(out)
+    out = torch.from_numpy(out).type("torch.LongTensor")
     print("Sequence vectorized out", out.shape)
     return dict(zip(drugs, out))
 
@@ -43,11 +44,18 @@ def deepddi_transformer(smiles, drugs, approved_drug):
 
 
 def dgl_transformer(drugs, smiles):
+    assert len(drugs) == len(smiles)
     trans = DGLGraphTransformer()  # Initialize the transformer
-    X, ids = trans(smiles, dtype=np.float32)  # Call the transformer on the smiles using the __call__ method.
+    X, ids = trans(smiles)  # Call the transformer on the smiles using the __call__ method.
     # Keep only the ids where the transformation succeeded
     # (the failed transformations are not present in ids)
-    drugs = list(itemgetter(*ids)(drugs))
+
+    for index, g in enumerate(X):
+        if len(g.edata["he"]) == 0:
+            del X[index]
+            del ids[index]
+
+    drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
-    return dict(zip(drugs, X)), trans.atom_dim
+    return dict(zip(drugs, X))

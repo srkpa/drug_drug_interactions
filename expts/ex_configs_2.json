@@ -3,7 +3,7 @@
     {
       "name": "drugbank",
       "smi_transf": "seq",
-      "dt_transf": "generic"
+      "dt_transf": "common"
     }
   ],
   "arch": [
@@ -24,9 +24,8 @@
             "b_norm": true,
             "pooling_len": 2,
             "normalize_features": true
-          },
+          }},
           "fc_layers_dim": [1000]
-        }
       },
       "init_fn": null
     }

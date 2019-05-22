@@ -11,6 +11,43 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from side_effects.preprocess.transforms import deepddi_transformer
+from ivbase.utils.datasets.dataset import DGLDataset, GenericDataset
+from torch.utils.data import Dataset
+from ivbase.utils.commons import to_tensor
+
+
+class TDGLDataset(DGLDataset):
+
+    def __init__(self, X, y, cuda=True):
+        assert isinstance(X[0], (tuple, list))
+        x_1, x_2 = zip(*X)
+        assert len(x_1) == len(X)
+        assert len(x_1) == len(x_2)
+        self.x1 = DGLDataset(x_1, y, cuda=cuda)
+        self.x2 = DGLDataset(x_2, y, cuda=cuda)
+        assert len(self.x1.G) == len(self.x2.G)
+        assert self.x1.y.shape == self.x2.y.shape
+        self.y = self.x2.y
+        self.X = list(zip(self.x1.G, self.x2.G))
+
+    def __len__(self):
+        return len(self.x1.G)
+
+    def __getitem__(self, idx):
+        return (self.x1.G[idx], self.x2.G[idx]), self.y[idx, None]
+
+
+class MyDataset(Dataset):
+    def __init__(self, X, y, cuda):
+        super(MyDataset, self).__init__()
+        self.X = X
+        self.y = to_tensor(y, gpu=cuda)
+
+    def __len__(self):
+        return len(self.X)
+
+    def __getitem__(self, index):
+        return self.X[index], self.y[index, None]
 
 
 def load_smiles(fname, download=False, dataset_name="twosides"):
@@ -102,7 +139,7 @@ def train_test_split_1(fname, header=True, train_split=0.8, shuffle=True, save=N
         fn.close()
 
 
-def _filter(transformed_smiles_dict, samples):
+def _filter(samples, transformed_smiles_dict=None):
     return {(transformed_smiles_dict[id_1], transformed_smiles_dict[id_2]): y for (id_1, id_2), y in samples.items() if
             id_1 in transformed_smiles_dict and id_2 in transformed_smiles_dict}
 
@@ -117,13 +154,10 @@ def load_train_test_files(input_path, dataset_name, transformer):
     # Load files
     files = [train_path, test_path, valid_path]
     train_data, test_data, valid_data = list(
-        map(partial(load_ddis_combinations, dataset_name=dataset_name, header=False), files))
-    x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
-    assert len(set(x_train) - set(x_test)) == len(train_data)
-    assert len(set(x_test) - set(x_valid)) == len(test_data)
+        map(partial(load_ddis_combinations, dataset_name="split", header=False), files))
 
     # Load smiles
-    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name, )
+    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
     drugs = list(drugs2smiles.keys())
     smiles = list(drugs2smiles.values())
 
@@ -137,13 +171,12 @@ def load_train_test_files(input_path, dataset_name, transformer):
     else:
         drugs = transformer(drugs=drugs, smiles=smiles)
 
-    atom_dim = 0
-    if isinstance(drugs, tuple):
-        drugs = drugs[0]
-        atom_dim = drugs[-1]
-
     train_data, test_data, valid_data = list(
         map(partial(_filter, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
+    x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
+
+    assert len(set(x_train) - set(x_test)) == len(train_data)
+    assert len(set(x_test) - set(x_valid)) == len(test_data)
 
     print("len train", len(train_data))
     print("len test", len(test_data))
@@ -155,7 +188,7 @@ def load_train_test_files(input_path, dataset_name, transformer):
     y_train, y_test, y_valid = targets[:len(train_data), :], targets[len(train_data):len(train_data) + len(test_data),
                                                              :], targets[len(train_data) + len(test_data):, ]
 
-    return atom_dim, list(mbl.classes_), x_train, x_test, x_valid, y_train, y_test, y_valid
+    return list(mbl.classes_), x_train, x_test, x_valid, y_train, y_test, y_valid
 
 
 def split(fname, train_split=0.8, shuffle=True, prefix="twosides"):
@@ -489,15 +522,3 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
 
     return x_train, x_test, x_valid, np.array(y_train).astype(np.float32), np.array(y_test).astype(
         np.float32), np.array(y_valid).astype(np.float32)
-
-
-if __name__ == '__main__':
-    # train_test_valid_split(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",
-    # dataset_name="drugbank")
-    # train_test_valid_split_3(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",dataset_name = "drugbank")
-
-    # ['Sentences describing the reported drug-drug interactions', 'Data type used to optimize the DNN architecture']
-    # train, test, valid, train_test, train_valid, test_valid = deepddi_train_test_split("/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
-    # x_train, x_test, x_valid, y_train, y_test, y_valid = load(train, test, valid, 86)
-    load_train_test_files(input_path="/home/rogia/Documents/code/side_effects/data/violette/drugbank",
-                          dataset_name="drugbank", method="ours", one_hot=False)

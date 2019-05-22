@@ -77,10 +77,12 @@ class FCNet(Module):
                          bias=bias, init_fn=init_fn)
             layers.append(fc)
             in_size = layer_dim
-        layers.append(nn.Linear(in_features=input_size, out_features=output_dim))
+
+        layers.append(nn.Linear(in_features=in_size, out_features=output_dim))
         if batch_norm:
             layers.append(nn.BatchNorm1d(output_dim))  # Add batch normalization if specified
         self.net = nn.Sequential(*layers, nn.Sigmoid())
+        self.output_dim = output_dim
 
     def forward(self, inputs):
         return self.net(inputs)
@@ -104,8 +106,10 @@ class DGLGraph(nn.Module):
     def forward(self, x):
         h = 0
         G = x
+
         for cv_layer in self.conv_layers:
             G, h = cv_layer(G)
+
         return h
 
 
@@ -120,7 +124,7 @@ class DRUUD(nn.Module):
             conv1d=feat.Cnn1dFeatExtractor,
             lstm=feat.LSTMFeatExtractor,
             fcfeat=feat.FcFeatExtractor,
-            dgl=DGLGraph
+            dglgraph=DGLGraph,
         )
         self.__drug_feature_extractor_network = drug_feature_extractor["net"]
         self.__drug_feature_extractor_params = drug_feature_extractor["params"]
@@ -131,11 +135,15 @@ class DRUUD(nn.Module):
         self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)
 
     def forward(self, batch):
-        x = batch
-        x = x.type("torch.cuda.LongTensor") if torch.cuda.is_available() else x.type("torch.LongTensor")
-        n = x.shape[1]
-        drug1, drug2 = x[:, : n // 2], x[:, n // 2:]
-        features_drug1, features_drug2 = self.__drug_feature_extractor(drug1), self.__drug_feature_extractor(drug2)
-        ddi = torch.cat((features_drug1, features_drug2), 1).squeeze()
+        drug1, drug2 = zip(*batch)
+        drug1, drug2 = list(drug1), list(drug2)
+
+        if isinstance(batch[0][0], torch.Tensor):
+            drug1 = torch.stack(drug1)
+            drug2 = torch.stack(drug2)
+
+        features_drug1 = self.__drug_feature_extractor(drug1)
+        features_drug2 = self.__drug_feature_extractor(drug2)
+        ddi = torch.cat((features_drug1, features_drug2), 1)
         out = self.classifier(ddi)
         return out

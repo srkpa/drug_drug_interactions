@@ -5,7 +5,7 @@ from ivbase.utils.datasets.datacache import DataCache
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
-from side_effects.models.training import DDIModel
+from side_effects.models.training import DDIModel, compute_metrics
 from side_effects.preprocess.dataset import load_train_test_files
 
 
@@ -37,7 +37,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
 		This function return is not used by the train script. But you could do anything with that.
     """
 
-    # Load the appropriate folder from s3
+    # Load the appropriate folder from s3 # i ll be back
     if input_path.startswith("/opt/ml"):
         cach_path = input_path
         expt_params = {arg: ast.literal_eval(val) if arg not in ['dataset', "arch"] else val for arg, val in
@@ -61,13 +61,12 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dataset_fn = get_dataset(expt_params["dataset"]["dt_transf"])
 
     # load train and test files
-    atom_dim, targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
-                                                                                              dataset_name=dataset,
-                                                                                              transformer=smi_transformer)
+    targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
+                                                                                    dataset_name=dataset,
+                                                                                    transformer=smi_transformer)
 
-    print("atom", atom_dim)
-    exit()
-    x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
+    #x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
+    x_train, x_test, x_val= x_train[:32], x_test[:32], x_val[:32]
 
     # Create dataset fn object
     train_dt, test_dt, valid_dt = list(
@@ -87,9 +86,9 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     # The network + Initializations
     arch_params = expt_params["arch"]["params"]
+    print(train_dt.y.shape)
     arch_params.update({"output_dim": train_dt.y.shape[1]})
-    if atom_dim != 0:
-        arch_params.update({"input_dim": atom_dim})
+
     network = get_network(method, params=arch_params)
     if init_fn is not None:
         network.apply(get_init_fn(init_fn))
@@ -109,8 +108,9 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Training details: \n{trainin}")
     model.train(train_dt=train_dt, valid_dt=valid_dt, **expt_params["train_params"])
     save(expt_params, "configs.json", output_path)
+    model.save_weights(os.path.join(output_path, "weights"))
 
     # Test and save
     y_true, y_probs = model.test(test_dt.X, test_dt.y)
-    output = model.predictions_given_scores(y_true, y_probs)
+    output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))

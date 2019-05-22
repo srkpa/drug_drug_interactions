@@ -9,6 +9,7 @@ from sklearn.utils import compute_class_weight
 from side_effects.models.model import _get_network, PCNN, FCNet, DRUUD, DeepDDI, feat, DGLGraph
 from side_effects.preprocess.transforms import *
 from side_effects.external_utils.init import *
+from side_effects.preprocess.dataset import TDGLDataset, MyDataset
 
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 
@@ -53,7 +54,9 @@ all_optimizers_dict = dict(
 
 all_dataset_fn = dict(
     generic=GenericDataset,
-    dgl=DGLDataset
+    dgl=DGLDataset,
+    tdgl=TDGLDataset,
+    common=MyDataset
 )
 
 
@@ -69,6 +72,9 @@ def save(obj, filename, output_path):
 
 
 def make_tensor(X):
+    # This means that the transformer have return a non tensor instance
+    if not isinstance(X[0][0], torch.Tensor):
+        return X
     return torch.stack([torch.cat(pair) for pair in X]).type("torch.FloatTensor")
 
 # need to be tested
