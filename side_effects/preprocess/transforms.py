@@ -18,6 +18,8 @@ def fingerprints_transformer(drugs, smiles):
     out = transformer.transform(smiles)
     res = np.stack(out)
     res = torch.from_numpy(res).type("torch.FloatTensor")
+    if torch.cuda.is_available():
+        res = res.cuda()
     print("fingerprint vectorized out", res.shape)
     return dict(zip(drugs, res))
 
@@ -26,6 +28,8 @@ def sequence_transformer(smiles, drugs, one_hot=False):
     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=one_hot)
     out = transformer.fit_transform(smiles)
     out = torch.from_numpy(out).type("torch.LongTensor")
+    if torch.cuda.is_available():
+        out = out.cuda()
     print("Sequence vectorized out", out.shape)
     return dict(zip(drugs, out))
 
@@ -39,8 +43,10 @@ def deepddi_transformer(smiles, drugs, approved_drug):
                ids, drg in enumerate(drugs_involved_in_fps)]
     pca = PCA(n_components=50)
     reduced_ssp = pca.fit_transform(np.array(all_ssp))
-
-    return dict(zip(drugs, torch.from_numpy(reduced_ssp)))
+    out = torch.from_numpy(reduced_ssp)
+    if torch.cuda.is_available():
+        out = out.cuda()
+    return dict(zip(drugs, out))
 
 
 def dgl_transformer(drugs, smiles):

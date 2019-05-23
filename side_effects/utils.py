@@ -64,8 +64,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
                                                                                     dataset_name=dataset,
                                                                                     transformer=smi_transformer)
-
-    #x_train, x_test, x_val = list(map(make_tensor, [x_train[:32], x_test[:32], x_val[:32]]))
     x_train, x_test, x_val= x_train[:32], x_test[:32], x_val[:32]
 
     # Create dataset fn object
