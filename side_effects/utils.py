@@ -37,10 +37,11 @@ def run_experiment(model_params, input_path, output_path="expts"):
 		This function return is not used by the train script. But you could do anything with that.
     """
 
+    items = ["init_fn", "extractor", "arch", "loss_function", "optimizer"]
     # Load the appropriate folder from s3 # i ll be back
     if input_path.startswith("/opt/ml"):
         cach_path = input_path
-        expt_params = {arg: ast.literal_eval(val) if arg not in ['dataset', "arch"] else val for arg, val in
+        expt_params = {arg: ast.literal_eval(val) if arg not in items else val for arg, val in
                        model_params.items()}
     else:
         dc = DataCache()
@@ -64,12 +65,12 @@ def run_experiment(model_params, input_path, output_path="expts"):
     targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
                                                                                     dataset_name=dataset,
                                                                                     transformer=smi_transformer)
-    x_train, x_test, x_val= x_train[:32], x_test[:32], x_val[:32]
+    # x_train, x_test, x_val = x_train[:32], x_test[:32], x_val[:32]
 
     # Create dataset fn object
     train_dt, test_dt, valid_dt = list(
         map(partial(dataset_fn, cuda=gpu), [x_train, x_test, x_val],
-            [y_train[:32, :], y_test[:32, :], y_val[:32, :]]))
+            [y_train, y_test, y_val]))
 
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
@@ -85,16 +86,16 @@ def run_experiment(model_params, input_path, output_path="expts"):
     # The network + Initializations
     arch_params = {
         "drug_feature_extractor": {
-          "net": expt_params["extractor"],
-          "params": expt_params["extractor_params"]
+            "net": expt_params["extractor"],
+            "params": expt_params["extractor_params"]
         },
         "fc_layers_dim": expt_params["fc_layers_dim"]
-      }
+    }
     print(train_dt.y.shape)
     arch_params.update({"output_dim": train_dt.y.shape[1]})
 
     network = get_network(method, params=arch_params)
-    if init_fn is not None:
+    if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
     print(f"Architecture:\n\tname: {method}\n\tparams: {arch_params}\n\tnetwork:{network}")
 
@@ -106,7 +107,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     # The pytoune model
     model = DDIModel(network, optimizer, loss_fn, model_dir=output_path, gpu=gpu)  # i doubt about the output path
-
+    model.cuda()
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
     print(f"Training details: \n{trainin}")

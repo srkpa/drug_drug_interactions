@@ -7,41 +7,43 @@
     }
   ],
   "arch": [
+    "druud"
+  ],
+  "extractor": [
+    "dglgraph"
+  ],
+  "extractor_params": [
     {
-      "net": "druud",
-      "params": {
-        "drug_feature_extractor": {
-          "net": "dglgraph",
-          "params": {
-            "input_dim": 79,
-            "conv_layer_dims": [
-              128
-            ]
-          }
-        },
-        "fc_layers_dim": [
-          1000
-        ]
-      },
-      "init_fn": null
+      "input_dim": 79,
+      "conv_layer_dims": [
+        128
+      ]
     }
+  ],
+  "fc_layers_dim": [
+    [
+      1000
+    ]
+  ],
+  "init_fn": [
+    null
   ],
   "loss_function": [
     "bce"
   ],
-  "optimizer": [
+ "optimizer": [
+    "adam"
+  ],
+  "optimizer_params": [
     {
-      "optim": "adam",
-      "params": {
-        "lr": 0.0001,
-        "weight_decay": 0
-      }
+      "lr": 0.0001,
+      "weight_decay": 0
     }
   ],
   "train_params": [
     {
-      "n_epochs": 2,
-      "batch_size": 32,
+      "n_epochs": 100,
+      "batch_size": 256,
       "early_stopping": true,
       "reduce_lr": true
     }
