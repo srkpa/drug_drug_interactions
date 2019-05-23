@@ -113,7 +113,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Training details: \n{trainin}")
     model.train(train_dt=train_dt, valid_dt=valid_dt, **expt_params["train_params"])
     save(expt_params, "configs.json", output_path)
-    model.save_weights(os.path.join(output_path, "weights"))
 
     # Test and save
     y_true, y_probs = model.test(test_dt.X, test_dt.y)
