@@ -76,14 +76,20 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Loss Function: {loss_fn}")
 
     # Initialization
-    init_fn = expt_params["arch"]["init_fn"]
+    init_fn = expt_params["init_fn"]
     print(f"Initialization: {init_fn}")
 
     #  which network
-    method = expt_params["arch"]["net"]
+    method = expt_params["arch"]
 
     # The network + Initializations
-    arch_params = expt_params["arch"]["params"]
+    arch_params = {
+        "drug_feature_extractor": {
+          "net": expt_params["extractor"],
+          "params": expt_params["extractor_params"]
+        },
+        "fc_layers_dim": expt_params["fc_layers_dim"]
+      }
     print(train_dt.y.shape)
     arch_params.update({"output_dim": train_dt.y.shape[1]})
 
@@ -93,8 +99,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Architecture:\n\tname: {method}\n\tparams: {arch_params}\n\tnetwork:{network}")
 
     #  The optimizer
-    op = expt_params["optimizer"]["optim"]
-    op_params = expt_params["optimizer"]["params"]
+    op = expt_params["optimizer"]
+    op_params = expt_params["optimizer_params"]
     optimizer = get_optimizer(op, network, op_params)
     print(f"Optimizer:\n\tname: {op}\n\tparams: {op_params}")
 
