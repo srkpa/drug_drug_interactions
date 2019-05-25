@@ -1,17 +1,17 @@
-import numpy as np
-import os
 import json
+import os
+
+import ivbase.nn.extractors as feat
 import torch.optim as optim
-
-from pytoune.framework.metrics import get_loss_or_metric
-from side_effects.external_utils.loss import Weighted_binary_cross_entropy1
-from sklearn.utils import compute_class_weight
-from side_effects.models.model import _get_network, PCNN, FCNet, DRUUD, DeepDDI, feat, DGLGraph
-from side_effects.preprocess.transforms import *
-from side_effects.external_utils.init import *
-from side_effects.preprocess.dataset import TDGLDataset, MyDataset
-
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
+from pytoune.framework.metrics import get_loss_or_metric
+from sklearn.utils import compute_class_weight
+
+from side_effects.external_utils.init import *
+from side_effects.external_utils.loss import Weighted_binary_cross_entropy1
+from side_effects.models.model import PCNN, FCNet, DRUUD, DeepDDI, DGLGraph
+from side_effects.preprocess.dataset import TDGLDataset, MyDataset
+from side_effects.preprocess.transforms import *
 
 all_networks_dict = dict(
     pcnn=PCNN,
@@ -77,6 +77,7 @@ def make_tensor(X):
         return X
     return torch.stack([torch.cat(pair) for pair in X]).type("torch.FloatTensor")
 
+
 # need to be tested
 
 
@@ -103,8 +104,10 @@ def get_init_fn(init_fn):
     return all_init_fn_dict[init_fn]
 
 
-def get_network(net, params):
-    return _get_network(all_networks_dict, net, params)
+def get_network(network, parameters):
+    assert isinstance(network, str)
+    net = network.lower()
+    return all_networks_dict[net](**parameters)
 
 
 def get_transformer(transformation):

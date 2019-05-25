@@ -1,16 +1,15 @@
-import torch
+from operator import itemgetter
+
 import numpy as np
+import torch
+from ivbase.transformers.features import DGLGraphTransformer
+from ivbase.transformers.features.molecules import FingerprintsTransformer
+from ivbase.transformers.features.molecules import SequenceTransformer
+from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
 from sklearn.decomposition import PCA
-from operator import itemgetter
-from ivbase.transformers.features.molecules import SequenceTransformer
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
-
-import dgl
-from ivbase.transformers.features.molecules import FingerprintsTransformer
-from ivbase.transformers.features import AdjGraphTransformer, DGLGraphTransformer
 
 
 def fingerprints_transformer(drugs, smiles):

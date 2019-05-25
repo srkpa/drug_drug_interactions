@@ -1,5 +1,6 @@
-import torch
 import os
+
+import torch
 from ivbase.utils.gradcheck import GradFlow
 from ivbase.utils.gradinspect import GradientInspector
 from ivbase.utils.trainer import Trainer

@@ -5,14 +5,6 @@ from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
 from torch.nn import Conv1d, Embedding, Module
 from ivbase.nn.graphs.conv.gcn import GCNLayer
 
-import ivbase.nn.extractors as feat
-
-
-def _get_network(all_networks, network, parameters):
-    assert isinstance(network, str)
-    net = network.lower()
-    return all_networks[net](**parameters)
-
 
 class PCNN(nn.Module):
 
@@ -119,17 +111,7 @@ class DRUUD(nn.Module):
 
     def __init__(self, drug_feature_extractor, fc_layers_dim, output_dim, **kwargs):
         super(DRUUD, self).__init__()
-        self.__extractors = dict(
-            pcnn=PCNN,
-            conv1d=feat.Cnn1dFeatExtractor,
-            lstm=feat.LSTMFeatExtractor,
-            fcfeat=feat.FcFeatExtractor,
-            dglgraph=DGLGraph,
-        )
-        self.__drug_feature_extractor_network = drug_feature_extractor["net"]
-        self.__drug_feature_extractor_params = drug_feature_extractor["params"]
-        self.__drug_feature_extractor = _get_network(self.__extractors, self.__drug_feature_extractor_network,
-                                                     self.__drug_feature_extractor_params)
+        self.__drug_feature_extractor = drug_feature_extractor
         in_size = 2 * self.__drug_feature_extractor.output_dim  # usually check your dim
 
         self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)

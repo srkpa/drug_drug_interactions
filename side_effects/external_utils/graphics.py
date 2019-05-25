@@ -11,6 +11,11 @@ from matplotlib.offsetbox import AnchoredText
 from side_effects.preprocess.dataset import *
 
 
+#def unpack_results(outfile):
+
+
+
+
 def plot_bar_x(labels, values, x_label, y_label, title, save_to, rot):
     # this is for plotting purpose
     index = np.arange(len(labels))
@@ -48,7 +53,7 @@ def plot_dataframe(df, save_as=None, kind='bar', legend=False):
 
 
 def plot_losses(fname, save_as=None, text=None):
-    training_res = json.load(open(fname, "r"))
+    training_res = pd.read_csv(fname, sep="\t")
     loss, val_loss = [epoch['loss'] for epoch in training_res], [epoch['val_loss'] for epoch in training_res]
     epoches = list(range(1, len(loss) + 1))
     f = plt.figure()

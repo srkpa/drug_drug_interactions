@@ -65,7 +65,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
                                                                                     dataset_name=dataset,
                                                                                     transformer=smi_transformer)
-    # x_train, x_test, x_val = x_train[:32], x_test[:32], x_val[:32]
 
     # Create dataset fn object
     train_dt, test_dt, valid_dt = list(
@@ -84,20 +83,14 @@ def run_experiment(model_params, input_path, output_path="expts"):
     method = expt_params["arch"]
 
     # The network + Initializations
-    arch_params = {
-        "drug_feature_extractor": {
-            "net": expt_params["extractor"],
-            "params": expt_params["extractor_params"]
-        },
-        "fc_layers_dim": expt_params["fc_layers_dim"]
-    }
-    print(train_dt.y.shape)
-    arch_params.update({"output_dim": train_dt.y.shape[1]})
-
-    network = get_network(method, params=arch_params)
+    # a) Build the drug feature extractor network
+    dg_net = get_network(expt_params["extractor"], expt_params["extractor_params"])
+    # b) Build the model
+    network = DRUUD(drug_feature_extractor=dg_net, fc_layers_dim=expt_params["fc_layers_dim"],
+                    output_dim=train_dt.y.shape[1])
     if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
-    print(f"Architecture:\n\tname: {method}\n\tparams: {arch_params}\n\tnetwork:{network}")
+    print(f"Architecture:\n\tname: {method}\n\ttnetwork:{network}")
 
     #  The optimizer
     op = expt_params["optimizer"]
@@ -106,7 +99,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Optimizer:\n\tname: {op}\n\tparams: {op_params}")
 
     # The pytoune model
-    model = DDIModel(network, optimizer, loss_fn, model_dir=output_path, gpu=gpu)  # i doubt about the output path
+    model = DDIModel(network, optimizer, loss_fn, model_dir=output_path, gpu=gpu)
     model.cuda()
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
