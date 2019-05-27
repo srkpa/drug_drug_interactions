@@ -117,15 +117,12 @@ class DRUUD(nn.Module):
         self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)
 
     def forward(self, batch):
-        drug1, drug2 = zip(*batch)
-        drug1, drug2 = list(drug1), list(drug2)
-
-        if isinstance(batch[0][0], torch.Tensor):
-            drug1 = torch.stack(drug1)
-            drug2 = torch.stack(drug2)
-
-        features_drug1 = self.__drug_feature_extractor(drug1)
-        features_drug2 = self.__drug_feature_extractor(drug2)
+        n2 = batch.shape[0]
+        drug1, drug2 = torch.split(batch, batch.shape[1] // 2, 1)
+        features = self.__drug_feature_extractor(torch.cat((drug1, drug2)))
+        features_drug1, features_drug2 = torch.split(features, n2)
         ddi = torch.cat((features_drug1, features_drug2), 1)
         out = self.classifier(ddi)
         return out
+
+# dispatcher -n "temp_ddi" -e "expt-convnet" -x 86400 -v 100 -t "ml.p3.2xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json

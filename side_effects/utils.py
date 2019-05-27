@@ -1,12 +1,13 @@
 import ast
 import pickle
+import torch
 from functools import partial
 from ivbase.utils.datasets.datacache import DataCache
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files
+from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -59,18 +60,16 @@ def run_experiment(model_params, input_path, output_path="expts"):
     # Dataset
     dataset = expt_params["dataset"]["name"]
     smi_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
-    dataset_fn = get_dataset(expt_params["dataset"]["dt_transf"])
 
     # load train and test files
     targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
                                                                                     dataset_name=dataset,
                                                                                     transformer=smi_transformer)
 
-    # Create dataset fn object
-    train_dt, test_dt, valid_dt = list(
-        map(partial(dataset_fn, cuda=gpu), [x_train, x_test, x_val],
-            [y_train, y_test, y_val]))
+    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
+    y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
 
+    print(x_train.shape, y_train.shape)
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
@@ -87,7 +86,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dg_net = get_network(expt_params["extractor"], expt_params["extractor_params"])
     # b) Build the model
     network = DRUUD(drug_feature_extractor=dg_net, fc_layers_dim=expt_params["fc_layers_dim"],
-                    output_dim=train_dt.y.shape[1])
+                    output_dim=y_train.shape[1])
     if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
     print(f"Architecture:\n\tname: {method}\n\ttnetwork:{network}")
@@ -99,15 +98,18 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(f"Optimizer:\n\tname: {op}\n\tparams: {op_params}")
 
     # The pytoune model
-    model = DDIModel(network, optimizer, loss_fn, model_dir=output_path, gpu=gpu)
-    model.cuda()
+    model = DDIModel(network, optimizer, loss_fn)
+    if torch.cuda.is_available():
+        model = model.cuda()
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
     print(f"Training details: \n{trainin}")
-    model.train(train_dt=train_dt, valid_dt=valid_dt, **expt_params["train_params"])
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_val, y_valid=y_val, **expt_params["train_params"])
     save(expt_params, "configs.json", output_path)
+    save(model.history, "history.json", output_path)
+    model.save(os.path.join(output_path, "weights.json"))
 
     # Test and save
-    y_true, y_probs = model.test(test_dt.X, test_dt.y)
+    y_true, y_probs = model.test(x_test, y_test)
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))

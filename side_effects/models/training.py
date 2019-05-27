@@ -1,72 +1,65 @@
-import os
+from math import ceil
 
 import torch
-from ivbase.utils.gradcheck import GradFlow
-from ivbase.utils.gradinspect import GradientInspector
-from ivbase.utils.trainer import Trainer
+from pytoune.framework import Model
 from pytoune.framework.callbacks import BestModelRestore
+from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from sklearn.metrics import roc_auc_score as auroc, average_precision_score as auprc
 
 from side_effects.external_utils.metrics import *
 
 
-def generator(dataset, batch_size=32, infinite=True, shuffle=True):
-    # If the batch_size is chosen to be -1, then we assume all the elements are in the same batch
-    if batch_size == -1:
-        while True:
-            yield dataset  # return the complete dataset
-    else:
-        # Prepare the indexes necessary for the batch selection
-        loop = 0
-        idx = np.arange(len(dataset))
-        if shuffle:
-            np.random.shuffle(idx)
+class DDIModel(Model):
 
-        # Loop the dataset once (for testing and validation) or infinite times (for training)
-        while loop < 1 or infinite:
+    def __init__(self, network, optimizer, loss=None, patience=3):
+        self.history = None
+        self.patience = patience
+        Model.__init__(self, model=network, optimizer=optimizer, loss_function=loss)
 
-            # Loop the whole dataset and create the batches according to batch_size
-            for i in range(0, len(dataset), batch_size):
-                start = i  # starting index of the batch
-                end = min(i + batch_size, len(dataset))  # ending index of the batch
-                a = [dataset[idx[ii]] for ii in range(start, end)]  # Generate the batch 'a'
-                x, y = zip(*a)
-                y = torch.cat(y, dim=0)
-                yield x, y  # return the x and y values of the batch
-            loop += 1
+    def train(self, x_train, y_train, x_valid, y_valid, n_epochs=10, batch_size=256,
+              log_filename=None, checkpoint_filename=None, with_early_stopping=False):
 
-
-class DDIModel(Trainer):
-
-    def __init__(self, network, optimizer, loss, model_dir, gpu):
-        super(DDIModel, self).__init__(net=network, optimizer=optimizer, loss_fn=loss, model_dir=model_dir, gpu=gpu)
-        self.__grad_outfile = os.path.join(model_dir, "grad.dot")
-        self.__tboardx = "tlogs"
-        self.__history = "history"
-        self.__checkpoint = "checkpoint"
-
-    def train(self, train_dt, valid_dt, n_epochs, batch_size, early_stopping=True, reduce_lr=True):
+        callbacks = []
+        if with_early_stopping:
+            early_stopping = EarlyStopping(monitor='val_loss', patience=self.patience, verbose=True)
+            callbacks += [early_stopping]
+        reduce_lr = ReduceLROnPlateau(patience=2, factor=1 / 2, min_lr=1e-6, verbose=True)
         best_model_restore = BestModelRestore()
-        gradflow = GradFlow(outfile=self.__grad_outfile, enforce_sanity=False, max_val=1e4)
-        gradinspector = GradientInspector(top_zoom=0.2, update_at="epoch")
+        callbacks += [reduce_lr, best_model_restore]
+        if log_filename:
+            logger = CSVLogger(log_filename, batch_granularity=False, separator='\t')
+            callbacks += [logger]
+        if checkpoint_filename:
+            checkpointer = ModelCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
+            callbacks += [checkpointer]
 
-        callbacks = [best_model_restore, gradflow, gradinspector]
+        nb_steps_train, nb_step_valid = int(len(x_train) / batch_size), int(len(x_valid) / batch_size)
+        self.history = self.fit_generator(train_generator=generator(x_train, y_train, batch_size),
+                                          steps_per_epoch=nb_steps_train,
+                                          valid_generator=generator(x_valid, y_valid, batch_size),
+                                          validation_steps=nb_step_valid,
+                                          epochs=n_epochs, callbacks=callbacks)
 
-        nb_steps_train, nb_step_valid = int(len(train_dt) / batch_size), int(len(valid_dt) / batch_size)
+        return self
 
-        self.fit(train_dt, valid_dt, epochs=n_epochs, shuffle=True, batch_size=batch_size,
-                 callbacks=callbacks, log_path=self.__history, checkpoint=self.__checkpoint,
-                 tboardX=self.__tboardx,
-                 steps_per_epoch=nb_steps_train, generator_fn=generator,
-                 validation_steps=nb_step_valid, reduce_lr=reduce_lr, early_stopping=early_stopping)
-
-    def test(self, x, y):
-        print(type(x))
-        y_pred = self.predict_on_batch(x)
+    def test(self, x, y, batch_size=256):
+        valid_gen = generator(x, y, batch=batch_size)
+        nsteps = ceil(len(x) / (batch_size * 1.0))
+        _, y_pred = self.evaluate_generator(valid_gen, steps=nsteps, return_pred=True)
+        y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
+
         else:
             y_true = y.numpy()
+
         return y_true, y_pred
+
+    def load(self, checkpoint_filename):
+        self.load_weights(checkpoint_filename)
+
+    def save(self, save_filename):
+        self.save_weights(save_filename)
 
 
 def compute_metrics(y_true, y_pred):
@@ -92,3 +85,10 @@ def compute_metrics(y_true, y_pred):
                     [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
                      roc_auc_scores,
                      macro_metrics, micro_metrics, classification_reports]))
+
+
+def generator(x, y, batch):
+    n = len(x)
+    while True:
+        for i in range(0, n, batch):
+            yield x[i:i + batch], y[i:i + batch]

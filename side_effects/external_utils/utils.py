@@ -71,16 +71,6 @@ def save(obj, filename, output_path):
         json.dump(obj, CNF)
 
 
-def make_tensor(X):
-    # This means that the transformer have return a non tensor instance
-    if not isinstance(X[0][0], torch.Tensor):
-        return X
-    return torch.stack([torch.cat(pair) for pair in X]).type("torch.FloatTensor")
-
-
-# need to be tested
-
-
 def create_dataset(dataset_fn, **kwargs):
     return dataset_fn(**kwargs)
 

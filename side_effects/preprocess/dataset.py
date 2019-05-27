@@ -7,13 +7,21 @@ from itertools import product
 
 import numpy as np
 import pandas as pd
+import torch as th
+from ivbase.utils.commons import to_tensor
+from ivbase.utils.datasets.dataset import DGLDataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
+from torch.utils.data import Dataset
 
 from side_effects.preprocess.transforms import deepddi_transformer
-from ivbase.utils.datasets.dataset import DGLDataset, GenericDataset
-from torch.utils.data import Dataset
-from ivbase.utils.commons import to_tensor
+
+
+def make_tensor(X, gpu=False):
+    a = th.stack([th.cat(pair) for pair in X])
+    if gpu:
+        a = a.cuda()
+    return a
 
 
 class TDGLDataset(DGLDataset):
@@ -40,14 +48,17 @@ class TDGLDataset(DGLDataset):
 class MyDataset(Dataset):
     def __init__(self, X, y, cuda):
         super(MyDataset, self).__init__()
-        self.X = X
+        self.X = make_tensor(X)
+        #
+        if cuda & th.cuda.is_available():
+            self.X = self.X.cuda()
         self.y = to_tensor(y, gpu=cuda)
 
     def __len__(self):
         return len(self.X)
 
     def __getitem__(self, index):
-        return self.X[index], self.y[index, None]
+        return (self.X[index, :self.X.shape[1] // 2], self.X[index, self.X.shape[1] // 2:]), self.y[index, None]
 
 
 def load_smiles(fname, download=False, dataset_name="twosides"):
