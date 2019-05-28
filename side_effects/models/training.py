@@ -4,8 +4,6 @@ import torch
 from pytoune.framework import Model
 from pytoune.framework.callbacks import BestModelRestore
 from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from sklearn.metrics import roc_auc_score as auroc, average_precision_score as auprc
-
 from side_effects.external_utils.metrics import *
 
 
@@ -67,8 +65,21 @@ def compute_metrics(y_true, y_pred):
     thresholds, average_precisions, precision, recall = auprc(actual=y_true, scores=y_pred)
     false_pos_rates, true_pos_rates, roc_auc_scores = auroc(actual=y_true, scores=y_pred)
 
-    best_thresholds = thresholds["micro"]
+    print('Micro ROC score: {0:0.2f}'.format(
+        roc_auc_scores["micro"]))
 
+    print('Average precision-recall score: {0:0.2f}'.format(
+        average_precisions["micro"]))
+
+    best_thresholds = thresholds["micro"]
+    print(f"Length Best thresholds: {len(best_thresholds)}")
+
+    return dict(zip(["thresholds", "ap", "prec", "recall", "fpr", "tpr", "ROC"],
+                    [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
+                     roc_auc_scores]))
+
+
+def compute_macro_m(y_true, y_pred, best_thresholds):
     # Theses metrics below are dependent on the thresholds
     predicted = list(map(predict, [y_pred] * len(best_thresholds), best_thresholds))
     assert len(predicted) == len(best_thresholds)
@@ -81,10 +92,8 @@ def compute_metrics(y_true, y_pred):
     classification_reports = list(map(model_classification_report, [y_true] * len(predicted), predicted))
     assert len(predicted) == len(classification_reports)
 
-    return dict(zip(["thresholds", "ap", "prec", "recall", "fpr", "tpr", "ROC", "macro", "micro", "report"],
-                    [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
-                     roc_auc_scores,
-                     macro_metrics, micro_metrics, classification_reports]))
+    return dict(zip(["macro", "micro", "report"],
+                    [macro_metrics, micro_metrics, classification_reports]))
 
 
 def generator(x, y, batch):

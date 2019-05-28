@@ -57,6 +57,7 @@ def dgl_transformer(drugs, smiles):
             del ids[index]
 
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
+    print("Dgl transformer ---> {len(drugs}")
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
     return dict(zip(drugs, X))

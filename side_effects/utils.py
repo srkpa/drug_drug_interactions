@@ -7,7 +7,7 @@ from ivbase.utils.datasets.datacache import DataCache
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor
+from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, TDGLDataset
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -66,10 +66,14 @@ def run_experiment(model_params, input_path, output_path="expts"):
                                                                                     dataset_name=dataset,
                                                                                     transformer=smi_transformer)
 
-    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
+    x_train,x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
 
-    print(x_train.shape, y_train.shape)
+    # Create dataset fn object
+    # train_dt, test_dt, valid_dt = list(
+    #     map(partial(TDGLDataset, cuda=gpu), [x_train, x_test, x_val],
+    #         [y_train, y_test, y_val]))
+
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
@@ -101,6 +105,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     model = DDIModel(network, optimizer, loss_fn)
     if torch.cuda.is_available():
         model = model.cuda()
+
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
     print(f"Training details: \n{trainin}")
@@ -110,6 +115,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     model.save(os.path.join(output_path, "weights.json"))
 
     # Test and save
-    y_true, y_probs = model.test(x_test, y_test)
+    y_true, y_probs = model.test(x_test, y_val)
+    pickle.dump(y_true, open(os.path.join(output_path, "true_labels.pkl"), "wb"))
+    pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))

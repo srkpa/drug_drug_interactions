@@ -86,13 +86,15 @@ class DGLGraph(nn.Module):
                  bias=False, init_fn=None):
         super(DGLGraph, self).__init__()
 
-        self.conv_layers = nn.ModuleList()
+        conv_layers = []
         in_size = input_dim
         for dim in conv_layer_dims:
             gconv = GCNLayer(in_size=in_size, out_size=dim, dropout=dropout, activation=activation, b_norm=b_norm,
                              pooling=pooling, bias=bias, init_fn=init_fn)
-            self.conv_layers.append(gconv)
+
+            conv_layers.append(gconv)
             in_size = dim
+        self.conv_layers = nn.ModuleList(conv_layers)
         self.output_dim = in_size
 
     def forward(self, x):
@@ -117,9 +119,10 @@ class DRUUD(nn.Module):
         self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)
 
     def forward(self, batch):
+        n1 = batch.shape[1] // 2
         n2 = batch.shape[0]
-        drug1, drug2 = torch.split(batch, batch.shape[1] // 2, 1)
-        features = self.__drug_feature_extractor(torch.cat((drug1, drug2)))
+        drug1, drug2 = torch.split(batch, n1, 1)
+        features = self.__drug_feature_extractor(torch.cat((drug1, drug2)))  # normal
         features_drug1, features_drug2 = torch.split(features, n2)
         ddi = torch.cat((features_drug1, features_drug2), 1)
         out = self.classifier(ddi)
