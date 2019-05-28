@@ -115,7 +115,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     model.save(os.path.join(output_path, "weights.json"))
 
     # Test and save
-    y_true, y_probs = model.test(x_test, y_val)
+    y_true, y_probs = model.test(x_test, y_test)
     pickle.dump(y_true, open(os.path.join(output_path, "true_labels.pkl"), "wb"))
     pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
     output = compute_metrics(y_true, y_probs)

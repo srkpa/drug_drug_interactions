@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expts/ex_configs_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/expts/ex_configs_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/models/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/models/training.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/transforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/preprocess/transforms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/side_effects/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/models/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="86" column="47" lean-forward="true" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+            <state relative-caret-position="1376">
+              <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -56,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/side_effects/external_utils/metrics.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="736">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/models/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="743">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -85,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1193">
-              <caret lean-forward="true" />
+            <state relative-caret-position="693">
+              <caret line="117" column="47" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -151,12 +147,12 @@
         <option value="$PROJECT_DIR$/expts/ex_configs_3.json" />
         <option value="$PROJECT_DIR$/side_effects/external_utils/utils.py" />
         <option value="$PROJECT_DIR$/side_effects/models/training.py" />
-        <option value="$PROJECT_DIR$/side_effects/utils.py" />
         <option value="$PROJECT_DIR$/side_effects/models/model.py" />
+        <option value="$PROJECT_DIR$/side_effects/utils.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="4" />
     <option name="y" value="18" />
     <option name="width" value="1880" />
@@ -445,12 +441,13 @@
       <workItem from="1558963845792" duration="4859000" />
       <workItem from="1558974683670" duration="6463000" />
       <workItem from="1558999845496" duration="5064000" />
-      <workItem from="1559047974423" duration="5749000" />
+      <workItem from="1559047974423" duration="6648000" />
+      <workItem from="1559065793725" duration="843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288516000" />
+    <option name="totallyTimeSpent" value="290258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,8 +459,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14369658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -815,10 +811,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1376">
+          <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/external_utils/metrics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -832,32 +838,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1193">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/models/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="86" column="47" lean-forward="true" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/models/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="743">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="117" column="47" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
