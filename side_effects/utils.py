@@ -120,3 +120,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
+
+
+# dispatcher -n "mix_ddi" -e "test-conv" -x 86400 -v 100 -t "ml.p3.16xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json

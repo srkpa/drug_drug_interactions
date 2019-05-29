@@ -1,6 +1,6 @@
 import json
 import os
-
+import torch as th
 import ivbase.nn.extractors as feat
 import torch.optim as optim
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
@@ -82,6 +82,8 @@ def get_dataset(dt):
 def get_loss(loss, **kwargs):
     if loss == "weighted":
         y = kwargs.get("y_train")
+        if isinstance(y, th.Tensor):
+            y = y.numpy()
         w = compute_classes_weight(y=y)
         print("weight", w.shape)
         if torch.cuda.is_available():

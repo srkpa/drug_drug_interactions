@@ -36,6 +36,36 @@ def config_file(params, config_path="../../expts/configs.json"):
 
 
 if __name__ == '__main__':
+    # noublie pas le transpose dans loss weightes
+    import json
+    import os
+    filename = "/home/rogia/Documents/git/side_effects/expts/ex_configs_2.json"
+    configs = json.load(open(filename, "r"))
+    kernel_sizes = [3]
+    extractor = configs["extractor_params"][-1]
+    losses = ["weighted"]
+    initializations = ["constant",
+                       "kaiming_uniform",
+                       "normal",
+                       "uniform",
+                       "xavier"]
+    print(kernel_sizes, extractor)
+    extractors = []
+    for ks in kernel_sizes:
+        a = {k:v if k != "kernel_size" else ks for k, v in extractor.items()}
+        extractors.append(a)
+    print(extractors)
+    configs["init_fn"].extend(initializations)
+    configs["loss_function"] = losses
+    configs["extractor_params"] = extractors
+
+    output_path = "/home/rogia/Documents/git/side_effects/expts/"
+    filename = "configs.json"
+    with open(os.path.join(output_path, filename), 'w') as CNF:
+        json.dump(configs, CNF)
+
+    exit()
+
     template = dict(dataset_name=["drugbank"], method=["DRUUD"],
                     fit_params=[{'n_epochs': 100, 'lr': 1e-04, 'batch_size': 256, 'with_early_stopping': True}],
                     feature_extractor_params=[{"vocab_size": 151, "embedding_size": 151, "cnn_sizes": [84],
@@ -86,11 +116,12 @@ if __name__ == '__main__':
                     test=[{"thresholds": [0.47, 0.5]}])
 
     template_2 = dict(dataset_name=["drugbank"], method=["DRUUD"],
-                    fit_params=[{'n_epochs': 100, 'lr': 1e-04, 'batch_size': 256, 'with_early_stopping': True}],
-                    feature_extractor_params=[{"vocab_size": 150, "embedding_size": 20, "cnn_sizes": [128],
-                                               "kernel_size": 3, "dropout": 0.0, "pooling": "max", "b_norm": True,
-                                               "pooling_len": 2, "normalize_features": True}], classifier=[{'hidden_sizes': [512], 'use_targets': False}],
-                    test=[{"thresholds": [0.47, 0.5]}])
+                      fit_params=[{'n_epochs': 100, 'lr': 1e-04, 'batch_size': 256, 'with_early_stopping': True}],
+                      feature_extractor_params=[{"vocab_size": 150, "embedding_size": 20, "cnn_sizes": [128],
+                                                 "kernel_size": 3, "dropout": 0.0, "pooling": "max", "b_norm": True,
+                                                 "pooling_len": 2, "normalize_features": True}],
+                      classifier=[{'hidden_sizes': [512], 'use_targets': False}],
+                      test=[{"thresholds": [0.47, 0.5]}])
 
     config_file(params=template_2, config_path="../../expts/ex_configs_2.json")
     config_file(params=template_2, config_path="../../expts/configs_2.json")
