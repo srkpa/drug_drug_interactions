@@ -11,7 +11,7 @@ def auroc(actual, scores):
     for i in range(n_classes):
         fpr[i], tpr[i], _ = roc_curve(actual[:, i], scores[:, i], pos_label=1)
         roc_auc[i] = auc(fpr[i], tpr[i])
-    fpr["micro"], tpr["micro"], _ = roc_curve(actual.ravel(), actual.ravel(), pos_label=1)
+    fpr["micro"], tpr["micro"], _ = roc_curve(actual.ravel(), scores.ravel(), pos_label=1)
     roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
 
     return fpr, tpr, roc_auc

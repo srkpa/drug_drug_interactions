@@ -64,15 +64,15 @@ class FCNet(Module):
         super(FCNet, self).__init__()
         layers = []
         in_size = input_size
+        fc_layer_dims.append(output_dim)
         for layer_dim in fc_layer_dims:
             fc = FCLayer(in_size=in_size, out_size=layer_dim, activation=activation, dropout=dropout, b_norm=b_norm,
                          bias=bias, init_fn=init_fn)
             layers.append(fc)
+            if batch_norm:
+                layers.append(nn.BatchNorm1d(layer_dim))
             in_size = layer_dim
 
-        layers.append(nn.Linear(in_features=in_size, out_features=output_dim))
-        if batch_norm:
-            layers.append(nn.BatchNorm1d(output_dim))  # Add batch normalization if specified
         self.net = nn.Sequential(*layers, nn.Sigmoid())
         self.output_dim = output_dim
 

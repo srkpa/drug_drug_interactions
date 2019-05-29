@@ -53,13 +53,13 @@ def plot_dataframe(df, save_as=None, kind='bar', legend=False):
 
 
 def plot_losses(fname, save_as=None, text=None):
-    training_res = pd.read_csv(fname, sep="\t")
+    training_res = json.load(open(fname, "rb"))
     loss, val_loss = [epoch['loss'] for epoch in training_res], [epoch['val_loss'] for epoch in training_res]
     epoches = list(range(1, len(loss) + 1))
     f = plt.figure()
     ax = f.add_subplot(1, 1, 1)
-    ax.plot(epoches, loss, '-ko', label='train loss', markersize=6)
-    ax.plot(epoches, val_loss, '-ro', label='val loss', markersize=6)
+    ax.plot(epoches, loss, '-ko', label='train loss', markersize=2)
+    ax.plot(epoches, val_loss, '-ro', label='val loss', markersize=2)
     anchored_text = AnchoredText(text, loc="center")
     ax.add_artist(anchored_text)
     ax.set_title('model loss evolution ')
@@ -397,8 +397,6 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    plot_losses(fname="/home/rogia/Documents/git/invivoprojects/side_effects/data/expt-testFGP-emb151-sep-2019-05-10-05-34-39-233/output/history.json")
+    plot_losses(fname="/home/rogia/Documents/git/side_effects/expts/test/history.json")
+    exit()
     # # Revoir axes graphiques
-    e = describe_expt(
-        dir="/home/rogia/Documents/git/invivoprojects/side_effects/data/expt-testFGP-emb151-sep-2019-05-10-05-34-39-233/output/", best_metric="micro_prc")
-    print(e)
