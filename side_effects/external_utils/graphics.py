@@ -1,19 +1,61 @@
-from sklearn.preprocessing import MultiLabelBinarizer
+import collections
+import json
 import operator
+import os
+import pickle
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import os
-import json
-import collections
-import argparse
 from matplotlib.offsetbox import AnchoredText
+
 from side_effects.preprocess.dataset import *
 
 
-#def unpack_results(outfile):
+def unpack_results(outrepo):
+    confs = json.load(open(os.path.join(outrepo, "configs.json"), "rb"))
+    out = pickle.load(open(os.path.join(outrepo, "output.pkl"), "rb"))
+    y_true = pickle.load(open(os.path.join(outrepo, "true_labels.pkl"), "rb"))
+    y_probs = pickle.load(open(os.path.join(outrepo, "predicted_labels.pkl"), "rb"))
+    losses = json.load(open(os.path.join(outrepo, "history.json"), "rb"))
+    return confs, out, y_true, y_probs, losses
 
 
+def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side_effects/figures"):
+    params, out, y_true, y_scores, losses = unpack_results(output_path)
+    init_fn = params["init_fn"]
+    loss_function = params["loss_function"]
+    extractor_network = params["extractor"]
+    extractor_params = params["extractor_params"]
+    anchored_text = "\n".join([f"{hp}:{val}" for hp, val in extractor_params.items()])
+    # results
+    results = {
+        "network": extractor_network,
+        "loss": loss_function,
+        "init_fn":init_fn,
+        "AUPRC-micro": out["ap"]['micro'],
+        "AUROC-micro": out["ROC"]['micro']
+    }
+
+    #   Plot losses
+    plot_losses(losses, text=anchored_text, save_as=os.path.join(save, f"1_losses.png"))
+
+    return results
+
+
+def describe_all_experiments(output_folder):
+    out = []
+    for c in os.listdir(output_folder):
+
+        folder = os.path.join(output_folder, c)
+        if os.path.isdir(folder) and c != "__pycache__":
+            print(folder)
+            res = describe_expt(output_path=folder)
+            out.append(res)
+    df = pd.DataFrame(out)
+    df = df.groupby(["network", "loss", "init_fn"])
+    s = df.style.applymap(highlight_max)
+    return s
 
 
 def plot_bar_x(labels, values, x_label, y_label, title, save_to, rot):
@@ -44,6 +86,24 @@ def plot_pie(sizes, labels, colors, save_to):
     plt.show()
 
 
+def color_negative_red(val):
+    """
+    Takes a scalar and returns a string with
+    the css property `'color: red'` for negative
+    strings, black otherwise.
+    """
+    color = 'red' if val < 0 else 'black'
+    return 'color: %s' % color
+
+
+def highlight_max(s):
+    '''
+    highlight the maximum in a Series yellow.
+    '''
+    is_max = s == s.max()
+    return ['background-color: yellow' if v else '' for v in is_max]
+
+
 def plot_dataframe(df, save_as=None, kind='bar', legend=False):
     fig, ax = plt.subplots(1, 1)
     ax.get_xaxis().set_visible(False)
@@ -52,19 +112,47 @@ def plot_dataframe(df, save_as=None, kind='bar', legend=False):
     plt.show()
 
 
-def plot_losses(fname, save_as=None, text=None):
-    training_res = json.load(open(fname, "rb"))
+#
+# def plot_roc():
+#     plt.figure()
+#     plt.plot(fpr["micro"], tpr["micro"],
+#              label='micro-average ROC curve (area = {0:0.2f})'
+#                    ''.format(roc_auc["micro"]),
+#              color='deeppink', linestyle=':', linewidth=4)
+#
+#     plt.plot(fpr["macro"], tpr["macro"],
+#              label='macro-average ROC curve (area = {0:0.2f})'
+#                    ''.format(roc_auc["macro"]),
+#              color='navy', linestyle=':', linewidth=4)
+#
+#     colors = cycle(['aqua', 'darkorange', 'cornflowerblue'])
+#     for i, color in zip(range(n_classes), colors):
+#         plt.plot(fpr[i], tpr[i], color=color, lw=lw,
+#                  label='ROC curve of class {0} (area = {1:0.2f})'
+#                        ''.format(i, roc_auc[i]))
+#
+#     plt.plot([0, 1], [0, 1], 'k--', lw=lw)
+#     plt.xlim([0.0, 1.0])
+#     plt.ylim([0.0, 1.05])
+#     plt.xlabel('False Positive Rate')
+#     plt.ylabel('True Positive Rate')
+#     plt.title('Some extension of Receiver operating characteristic to multi-class')
+#     plt.legend(loc="lower right")
+#     plt.show()
+
+
+def plot_losses(training_res, save_as=None, text=None):
     loss, val_loss = [epoch['loss'] for epoch in training_res], [epoch['val_loss'] for epoch in training_res]
     epoches = list(range(1, len(loss) + 1))
-    f = plt.figure()
+    f = plt.figure(figsize=(8, 8))
     ax = f.add_subplot(1, 1, 1)
-    ax.plot(epoches, loss, '-ko', label='train loss', markersize=2)
-    ax.plot(epoches, val_loss, '-ro', label='val loss', markersize=2)
+    ax.plot(epoches, loss, '-ko', label='train loss', markersize=3, markerfacecolor='w')
+    ax.plot(epoches, val_loss, '-ro', label='val loss', markersize=3, markerfacecolor='w')
     anchored_text = AnchoredText(text, loc="center")
     ax.add_artist(anchored_text)
-    ax.set_title('model loss evolution ')
-    ax.set_xlabel("epochs", fontsize=14)
-    ax.set_ylabel("loss", fontsize=14)
+    ax.set_title('model loss evolution ', fontsize=10)
+    ax.set_xlabel("epochs", fontsize=10)
+    ax.set_ylabel("loss", fontsize=10)
 
     plt.legend()
     if save_as is not None:
@@ -201,49 +289,6 @@ def describe_dataset(input_path, dataset_name, save=None):
     df.loc['Total'] = df.sum()
 
     return summary_1, df
-
-
-# pour décrire une experience et plusieur outp
-def describe_expt(dir, best_metric="macro_prc"):
-    hp, expt, res = {}, None, {}
-    hist = False
-    method = ""
-    for file in os.listdir(dir):
-        if file.endswith("config.json"):
-            with open(os.path.join(dir, file), "r") as CONF:
-                conf = json.load(CONF)
-                method = conf["method"]
-                hp = conf["fit_params"] if method == "deepddi" else conf["feature_extractor_params"]
-
-        if file.endswith("out.json"):
-            with open(os.path.join(dir, file), "r") as OUT:
-                cont = json.load(OUT)["0"]
-                threshold = float(file.split("_")[0])
-                res[threshold] = {i:v for i, v in cont.items() if not i.startswith("wei")}
-        if file.endswith("history.json"):
-            hist = True
-    if hist:
-        path = os.path.join(dir, "history.json")
-        with open(path, "r"):
-            plot_losses(fname=f"{path}", text="\n".join([f"{hp}:{val}" for hp, val in hp.items()]),
-                        save_as=None)
-
-    temp = [(thres, val[best_metric]) for thres, val in res.items()]
-    best = max(temp, key=operator.itemgetter(1))
-    df = pd.DataFrame(res[best[0]], index=[best[0]])
-
-    if method != "deepddi":
-        x = [thres for (thres, _) in temp]
-        y = [val for (_, val) in temp]
-        fig1 = plt.figure(figsize=(8, 8))
-        ax = fig1.add_subplot(1, 1, 1)
-        ax.plot(x, y, '.', label=best_metric)
-        ax.set_xlabel('thresholds')
-        ax.set_ylabel('values (%)')
-        ax.set_title(best_metric, fontsize='large')
-        plt.show()
-
-    return df
 
 
 def compare(e, f, n1, n2):
@@ -397,6 +442,6 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    plot_losses(fname="/home/rogia/Documents/git/side_effects/expts/test/history.json")
+    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/side_effects/models")
     exit()
     # # Revoir axes graphiques

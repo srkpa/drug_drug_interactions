@@ -12,6 +12,7 @@ from side_effects.external_utils.loss import Weighted_binary_cross_entropy1
 from side_effects.models.model import PCNN, FCNet, DRUUD, DeepDDI, DGLGraph
 from side_effects.preprocess.dataset import TDGLDataset, MyDataset
 from side_effects.preprocess.transforms import *
+from ivbase.nn.base import FCLayer
 
 all_networks_dict = dict(
     pcnn=PCNN,
@@ -20,7 +21,7 @@ all_networks_dict = dict(
     druud=DRUUD,
     conv1d=feat.Cnn1dFeatExtractor,
     lstm=feat.LSTMFeatExtractor,
-    fcfeat=feat.FcFeatExtractor,
+    fcfeat=FCLayer,
     dglgraph=DGLGraph
 )
 

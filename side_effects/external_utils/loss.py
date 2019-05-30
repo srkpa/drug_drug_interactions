@@ -9,7 +9,7 @@ from torch.nn.functional import binary_cross_entropy
 class Weighted_binary_cross_entropy1(Module):
 
     def __init__(self, weights_per_targets=None,
-                 reduction='elementwise_mean'):
+                 reduction='mean'):
         super(Weighted_binary_cross_entropy1, self).__init__()
         self.weights = weights_per_targets
         self.reduction = reduction
