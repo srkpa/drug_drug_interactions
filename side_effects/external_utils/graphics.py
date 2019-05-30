@@ -6,13 +6,15 @@ import pickle
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pdfkit
 import pandas as pd
 from matplotlib.offsetbox import AnchoredText
-
+from weasyprint import HTML
 from side_effects.preprocess.dataset import *
 
+from django.template.loader import get_template
 
-def save_results(filename,  contents, engine='xlsxwriter'):
+def save_results(filename, contents, engine='xlsxwriter'):
     writer = pd.ExcelWriter(filename, engine=engine)
     for sheet, data in contents:
         data.to_excel(writer, sheet_name=sheet)
@@ -28,29 +30,41 @@ def unpack_results(outrepo):
     return confs, out, y_true, y_probs, losses
 
 
-def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side_effects/figures"):
+def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side_effects/figures", outfiles='png'):
     params, out, y_true, y_scores, losses = unpack_results(output_path)
     init_fn = params["init_fn"]
     loss_function = params["loss_function"]
     extractor_network = params["extractor"]
     extractor_params = params["extractor_params"]
     anchored_text = "\n".join([f"{hp}:{val}" for hp, val in extractor_params.items()])
-    # results
+    # Build pandas dataframe objet
+    # 1 - micro and macro metrics
     results = {
         "network": extractor_network,
         "loss": loss_function,
-        "init_fn":init_fn,
+        "init_fn": init_fn,
         "AUPRC-micro": out["ap"]['micro'],
         "AUROC-micro": out["ROC"]['micro']
     }
+    out["ap"].pop("micro")
+    out["ROC"].pop("micro")
+    a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
+    i = a.plot(kind='bar',  figsize=(20, 16), fontsize=26).get_figure()
+    i.savefig("e.png")
+    exit()
+    # on verra plus tard pour a = pickle.load(open("/home/rogia/Documents/git/side_effects/data/labels_code.pkl", "rb"))
+    html_out = "hia.html"
+    a.to_html(html_out)
+    pdfkit.from_file("hia.html", "out.pdf")
 
+    exit()
     #   Plot losses
     plot_losses(losses, text=anchored_text, save_as=os.path.join(save, f"1_losses.png"))
 
     return results
 
 
-def describe_all_experiments(output_folder, group_by=("network", "loss", "init_fn")):
+def describe_all_experiments(output_folder):
     out = []
     for c in os.listdir(output_folder):
         folder = os.path.join(output_folder, c)
@@ -59,10 +73,9 @@ def describe_all_experiments(output_folder, group_by=("network", "loss", "init_f
             res = describe_expt(output_path=folder)
             out.append(res)
     df = pd.DataFrame(out)
-    df = df.groupby(list(group_by))
-    s = df.style.applymap(highlight_max)
+# df.style.applymap(highlight_max)
 
-    return s
+    return df
 
 
 def plot_bar_x(labels, values, x_label, y_label, title, save_to, rot):
@@ -449,6 +462,8 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/side_effects/models")
+    df = describe_all_experiments("/home/rogia/Downloads/test/")
+    print(df)
+    save_results(filename="bob.xlsx", contents=[("bob", df)])
     exit()
     # # Revoir axes graphiques
