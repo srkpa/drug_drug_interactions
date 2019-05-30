@@ -12,6 +12,13 @@ from matplotlib.offsetbox import AnchoredText
 from side_effects.preprocess.dataset import *
 
 
+def save_results(filename,  contents, engine='xlsxwriter'):
+    writer = pd.ExcelWriter(filename, engine=engine)
+    for sheet, data in contents:
+        data.to_excel(writer, sheet_name=sheet)
+    writer.save()
+
+
 def unpack_results(outrepo):
     confs = json.load(open(os.path.join(outrepo, "configs.json"), "rb"))
     out = pickle.load(open(os.path.join(outrepo, "output.pkl"), "rb"))
@@ -43,18 +50,18 @@ def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side
     return results
 
 
-def describe_all_experiments(output_folder):
+def describe_all_experiments(output_folder, group_by=("network", "loss", "init_fn")):
     out = []
     for c in os.listdir(output_folder):
-
         folder = os.path.join(output_folder, c)
-        if os.path.isdir(folder) and c != "__pycache__":
+        if os.path.isdir(folder):
             print(folder)
             res = describe_expt(output_path=folder)
             out.append(res)
     df = pd.DataFrame(out)
-    df = df.groupby(["network", "loss", "init_fn"])
+    df = df.groupby(list(group_by))
     s = df.style.applymap(highlight_max)
+
     return s
 
 
