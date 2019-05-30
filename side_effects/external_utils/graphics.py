@@ -3,7 +3,7 @@ import json
 import operator
 import os
 import pickle
-
+import matplotlib.ticker as mtick
 import matplotlib.pyplot as plt
 import numpy as np
 import pdfkit
@@ -49,7 +49,10 @@ def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side
     out["ap"].pop("micro")
     out["ROC"].pop("micro")
     a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
-    i = a.plot(kind='bar',  figsize=(20, 16), fontsize=26).get_figure()
+    i = a.plot(kind='bar',  figsize=(8, 8), fontsize=14, stacked=True).get_figure()
+    #plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter())
+    plt.show()
+    exit()
     i.savefig("e.png")
     exit()
     # on verra plus tard pour a = pickle.load(open("/home/rogia/Documents/git/side_effects/data/labels_code.pkl", "rb"))

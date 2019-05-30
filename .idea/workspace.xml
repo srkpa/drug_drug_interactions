@@ -6,9 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/1_losses.png" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/figures/1_losses.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/side_effects$hyperparameters.coverage" NAME="hyperparameters Coverage Results" MODIFIED="1559163238930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
-    <SUITE FILE_PATH="coverage/side_effects$graphics.coverage" NAME="graphics Coverage Results" MODIFIED="1559235201165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
+    <SUITE FILE_PATH="coverage/side_effects$graphics.coverage" NAME="graphics Coverage Results" MODIFIED="1559236123135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
     <SUITE FILE_PATH="coverage/side_effects$reload.coverage" NAME="reload Coverage Results" MODIFIED="1557625669343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
     <SUITE FILE_PATH="coverage/side_effects$model.coverage" NAME="model Coverage Results" MODIFIED="1558404179621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/models" />
     <SUITE FILE_PATH="coverage/side_effects$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1558450755923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/preprocess" />
@@ -89,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            <state relative-caret-position="191">
+              <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -194,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="4" />
     <option name="y" value="18" />
     <option name="width" value="1880" />
@@ -482,12 +480,12 @@
       <workItem from="1559147168772" duration="6308000" />
       <workItem from="1559162935130" duration="4438000" />
       <workItem from="1559169234387" duration="10690000" />
-      <workItem from="1559221106582" duration="13303000" />
+      <workItem from="1559221106582" duration="14220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327593000" />
+    <option name="totallyTimeSpent" value="328510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,15 +497,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14850427" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14850427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32790446" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" visible="true" weight="0.2844734" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893162" visible="true" weight="0.2844734" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -524,7 +521,7 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32959402" />
       <window_info anchor="right" id="Database" order="5" weight="0.32905984" />
       <window_info anchor="right" id="R Packages" order="6" weight="0.32959402" />
-      <window_info anchor="right" id="SciView" order="7" weight="0.27724358" />
+      <window_info anchor="right" id="SciView" order="7" weight="0.47863248" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14369658" />
@@ -888,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="191">
+          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
