@@ -1,0 +1,31 @@
+Exception during training: code is too big
+Traceback (most recent call last):
+  File "/opt/program/bin/train", line 35, in main
+    input_path=input_path)
+  File "/opt/program/side_effects/utils.py", line 112, in run_experiment
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_val, y_valid=y_val, **expt_params["train_params"])
+  File "/opt/program/side_effects/models/training.py", line 39, in train
+    epochs=n_epochs, callbacks=callbacks)
+  File "/root/miniconda3/lib/python3.7/site-packages/poutyne/framework/model.py", line 312, in fit_generator
+    step=step.number)
+  File "/root/miniconda3/lib/python3.7/site-packages/poutyne/framework/model.py", line 326, in _fit_batch
+    x, y, return_loss_tensor=True, return_pred=return_pred
+  File "/root/miniconda3/lib/python3.7/site-packages/poutyne/framework/model.py", line 599, in _compute_loss_and_metrics
+    pred_y = self.model(x)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/program/side_effects/models/model.py", line 123, in forward
+    features = self.__drug_feature_extractor(torch.cat((drug1, drug2)))  # normal
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/app/invivobase/ivbase/nn/extractors/cnn.py", line 148, in forward
+    return self.extractor(x)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 187, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: code is too big

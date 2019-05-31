@@ -13,9 +13,9 @@
     "fcfeat"
   ],
   "extractor_params": [
-    {
+     {
       "in_size": 2000,
-      "out_size": 100,
+      "out_size": 1000,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": true,
@@ -29,15 +29,10 @@
     ]
   ],
  "init_fn": [
-    null,
-    "constant",
-    "kaiming_uniform",
-    "normal",
-    "uniform",
-    "xavier"
+    "normal"
   ],
   "loss_function": [
-    "bce", "weighted"
+    "bce"
   ],
   "optimizer": [
     "adam"

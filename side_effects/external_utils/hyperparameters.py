@@ -39,16 +39,13 @@ if __name__ == '__main__':
     # noublie pas le transpose dans loss weightes
     import json
     import os
-    filename = "/home/rogia/Documents/git/side_effects/expts/ex_configs_2.json"
+    filename = "/home/rogia/Documents/git/side_effects/expts/configs/ex_configs_2.json"
     configs = json.load(open(filename, "r"))
-    kernel_sizes = [3]
+    kernel_sizes = [5, 7, 9, 11, 13, 15, 17, 19, 23, 25]
     extractor = configs["extractor_params"][-1]
-    losses = ["weighted"]
-    initializations = ["constant",
-                       "kaiming_uniform",
-                       "normal",
-                       "uniform",
-                       "xavier"]
+    losses = ["bce"]
+    initializations = [
+                       "normal"]
     print(kernel_sizes, extractor)
     extractors = []
     for ks in kernel_sizes:
@@ -60,7 +57,7 @@ if __name__ == '__main__':
     configs["extractor_params"] = extractors
 
     output_path = "/home/rogia/Documents/git/side_effects/expts/"
-    filename = "configs.json"
+    filename = "k-configs.json"
     with open(os.path.join(output_path, filename), 'w') as CNF:
         json.dump(configs, CNF)
 

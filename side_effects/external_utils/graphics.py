@@ -11,8 +11,11 @@ import pandas as pd
 from matplotlib.offsetbox import AnchoredText
 from weasyprint import HTML
 from side_effects.preprocess.dataset import *
-
+from sklearn.metrics import auc
 from django.template.loader import get_template
+
+from scipy import interp
+
 
 def save_results(filename, contents, engine='xlsxwriter'):
     writer = pd.ExcelWriter(filename, engine=engine)
@@ -30,41 +33,31 @@ def unpack_results(outrepo):
     return confs, out, y_true, y_probs, losses
 
 
-def describe_expt(output_path, save="/home/rogia/Documents/git/side_effects/side_effects/figures", outfiles='png'):
-    params, out, y_true, y_scores, losses = unpack_results(output_path)
+def describe_expt(input_path, output_path="/home/rogia/Documents/git/side_effects/side_effects/figures"):
+    params, out, y_true, y_scores, losses = unpack_results(input_path)
     init_fn = params["init_fn"]
     loss_function = params["loss_function"]
     extractor_network = params["extractor"]
     extractor_params = params["extractor_params"]
-    anchored_text = "\n".join([f"{hp}:{val}" for hp, val in extractor_params.items()])
-    # Build pandas dataframe objet
-    # 1 - micro and macro metrics
+    anchored_text = "\n".join([f"{hp}:{val}" for hp, val in [("network", extractor_network), ("loss", loss_function), ("init", init_fn)]])
+
     results = {
+        #"fc out size": extractor_params["out_size"],
         "network": extractor_network,
         "loss": loss_function,
         "init_fn": init_fn,
-        "AUPRC-micro": out["ap"]['micro'],
-        "AUROC-micro": out["ROC"]['micro']
+        "micro auprc": out["ap"]['micro'],
+        "micro auroc": out["ROC"]['micro']
     }
     out["ap"].pop("micro")
     out["ROC"].pop("micro")
-    a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
-    i = a.plot(kind='bar',  figsize=(8, 8), fontsize=14, stacked=True).get_figure()
-    #plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter())
-    plt.show()
-    exit()
-    i.savefig("e.png")
-    exit()
-    # on verra plus tard pour a = pickle.load(open("/home/rogia/Documents/git/side_effects/data/labels_code.pkl", "rb"))
-    html_out = "hia.html"
-    a.to_html(html_out)
-    pdfkit.from_file("hia.html", "out.pdf")
 
-    exit()
     #   Plot losses
-    plot_losses(losses, text=anchored_text, save_as=os.path.join(save, f"1_losses.png"))
+    plot_losses(losses, text=anchored_text, save_as=os.path.join(output_path, f"{os.path.basename(input_path)}.png"))
 
     return results
+
+# Update until now
 
 
 def describe_all_experiments(output_folder):
@@ -72,11 +65,12 @@ def describe_all_experiments(output_folder):
     for c in os.listdir(output_folder):
         folder = os.path.join(output_folder, c)
         if os.path.isdir(folder):
-            print(folder)
-            res = describe_expt(output_path=folder)
-            out.append(res)
+            files = os.listdir(folder)
+            if len(files) > 2:
+                print(folder)
+                res = describe_expt(input_path=folder)
+                out.append(res)
     df = pd.DataFrame(out)
-# df.style.applymap(highlight_max)
 
     return df
 
@@ -438,6 +432,19 @@ def describe_data(y_train, y_test, y_valid, dataset_name="drugbank"):
 
 if __name__ == '__main__':
     #
+    # a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
+    # i = a.plot(kind='bar',  figsize=(8, 8), fontsize=14, stacked=True).get_figure()
+    # #plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter())
+    # plt.show()
+    # exit()
+    # i.savefig("e.png")
+    # exit()
+    # # on verra plus tard pour a = pickle.load(open("/home/rogia/Documents/git/side_effects/data/labels_code.pkl", "rb"))
+    # html_out = "hia.html"
+    # a.to_html(html_out)
+    # pdfkit.from_file("hia.html", "out.pdf")
+    #
+    # exit()
     #     all_drugs_path = "/home/rogia/Documents/code/side_effects/data/violette/twosides/twosides-drugs-all.csv"
     #     train_path = "/home/rogia/Documents/code/side_effects/data/violette/twosides/twosides-train_samples.csv"
     #     test_path = "/home/rogia/Documents/code/side_effects/data/violette/twosides/twosides-test_samples.csv"
@@ -465,8 +472,8 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    df = describe_all_experiments("/home/rogia/Downloads/test/")
+    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/fcfeat")
     print(df)
-    save_results(filename="bob.xlsx", contents=[("bob", df)])
+    save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/fcfeat.xlsx", contents=[("fc_experiments", df)])
     exit()
     # # Revoir axes graphiques
