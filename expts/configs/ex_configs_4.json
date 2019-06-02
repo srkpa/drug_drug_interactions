@@ -13,10 +13,9 @@
     "fcfeat"
   ],
   "extractor_params": [
-
-     {
+  {
       "in_size": 2000,
-      "out_size": 25,
+      "out_size": 16,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,
@@ -25,7 +24,7 @@
     },
      {
       "in_size": 2000,
-      "out_size": 150,
+      "out_size": 32,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,
@@ -34,7 +33,7 @@
     },
      {
       "in_size": 2000,
-      "out_size": 200,
+      "out_size": 128,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,
@@ -43,7 +42,7 @@
     },
      {
       "in_size": 2000,
-      "out_size": 250,
+      "out_size": 256,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,
@@ -52,7 +51,7 @@
     },
      {
       "in_size": 2000,
-      "out_size": 300,
+      "out_size": 512,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,
@@ -61,34 +60,7 @@
     },
      {
       "in_size": 2000,
-      "out_size": 350,
-      "activation": "relu",
-      "dropout": 0.0,
-      "b_norm": false,
-      "bias": true,
-      "init_fn": null
-    },
-     {
-      "in_size": 2000,
-      "out_size": 400,
-      "activation": "relu",
-      "dropout": 0.0,
-      "b_norm": false,
-      "bias": true,
-      "init_fn": null
-    },
-    {
-      "in_size": 2000,
-      "out_size": 450,
-      "activation": "relu",
-      "dropout": 0.0,
-      "b_norm": false,
-      "bias": true,
-      "init_fn": null
-    },
-     {
-      "in_size": 2000,
-      "out_size": 500,
+      "out_size": 1024,
       "activation": "relu",
       "dropout": 0.0,
       "b_norm": false,

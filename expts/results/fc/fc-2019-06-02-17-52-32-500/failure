@@ -1,7 +1,0 @@
-Exception during training: 'fc_reg'
-Traceback (most recent call last):
-  File "/opt/program/bin/train", line 35, in main
-    input_path=input_path)
-  File "/opt/program/side_effects/utils.py", line 88, in run_experiment
-    output_dim=y_train.shape[1], **expt_params["fc_reg"])
-KeyError: 'fc_reg'
