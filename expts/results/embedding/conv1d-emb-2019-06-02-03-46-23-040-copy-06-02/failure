@@ -1,0 +1,13 @@
+Exception during training: bool value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/opt/program/bin/train", line 35, in main
+    input_path=input_path)
+  File "/opt/program/side_effects/utils.py", line 67, in run_experiment
+    transformer=smi_transformer)
+  File "/opt/program/side_effects/preprocess/dataset.py", line 186, in load_train_test_files
+    map(partial(_filter, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
+  File "/opt/program/side_effects/preprocess/dataset.py", line 154, in _filter
+    return {(transformed_smiles_dict[id_1], transformed_smiles_dict[id_2]): y for (id_1, id_2), y in samples.items() if
+  File "/opt/program/side_effects/preprocess/dataset.py", line 155, in <dictcomp>
+    id_1 in transformed_smiles_dict and id_2 in transformed_smiles_dict}
+RuntimeError: bool value of Tensor with more than one value is ambiguous

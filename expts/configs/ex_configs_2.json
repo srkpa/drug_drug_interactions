@@ -15,11 +15,24 @@
   "extractor_params": [
     {
       "vocab_size": 851,
-      "embedding_size": 2048,
+      "embedding_size": 32,
       "cnn_sizes": [
         32
       ],
-      "kernel_size": 3,
+      "kernel_size": 8,
+      "dropout": 0.0,
+      "pooling": "max",
+      "b_norm": false,
+      "pooling_len": 2,
+      "normalize_features": true
+    },
+     {
+      "vocab_size": 851,
+      "embedding_size": 32,
+      "cnn_sizes": [
+        32
+      ],
+      "kernel_size": 9,
       "dropout": 0.0,
       "pooling": "max",
       "b_norm": false,

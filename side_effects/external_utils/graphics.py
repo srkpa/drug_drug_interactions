@@ -43,11 +43,13 @@ def describe_expt(input_path, output_path="/home/rogia/Documents/git/side_effect
 
     results = {
         #"fc out size": extractor_params["out_size"],
-        "network": extractor_network,
-        "loss": loss_function,
-        "init_fn": init_fn,
+        #"network": extractor_network,
+        #"loss": loss_function,
+        #"init_fn": init_fn,
+        #"embedding ": (extractor_params["vocab_size"], extractor_params["embedding_size"]),
+        "kernel size": extractor_params["kernel_size"],
         "micro auprc": out["ap"]['micro'],
-        "micro auroc": out["ROC"]['micro']
+        "micro rocauc": out["ROC"]['micro']
     }
     out["ap"].pop("micro")
     out["ROC"].pop("micro")
@@ -472,8 +474,8 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/fcfeat")
+    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/kernel")
     print(df)
-    save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/fcfeat.xlsx", contents=[("fc_experiments", df)])
+    save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/kernel.xlsx", contents=[("kernel", df)])
     exit()
     # # Revoir axes graphiques

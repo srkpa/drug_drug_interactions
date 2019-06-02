@@ -533,3 +533,16 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
 
     return x_train, x_test, x_valid, np.array(y_train).astype(np.float32), np.array(y_test).astype(
         np.float32), np.array(y_valid).astype(np.float32)
+
+
+if __name__ == '__main__':
+    import pandas as pd
+    from side_effects.external_utils.graphics import save_results
+
+    train, test, valid, train_and_test, train_and_valid, test_and_valid = deepddi_train_test_split(
+        input_path="/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
+    # d1 = pd.DataFrame(train_and_valid)
+    # d2 = pd.DataFrame(train_and_test)
+    # d3 = pd.DataFrame(test_and_valid)
+    # save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/embedding.xlsx",
+    #              contents=[("train-valid", d1), ("train-test", d2), ("test-valid", d3)])

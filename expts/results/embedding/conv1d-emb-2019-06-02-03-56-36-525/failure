@@ -1,0 +1,17 @@
+Exception during training: CUDA out of memory. Tried to allocate 3.32 GiB (GPU 0; 11.17 GiB total capacity; 5.77 GiB already allocated; 1.85 GiB free; 3.27 GiB cached)
+Traceback (most recent call last):
+  File "/opt/program/bin/train", line 35, in main
+    input_path=input_path)
+  File "/opt/program/side_effects/utils.py", line 107, in run_experiment
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_val, y_valid=y_val, **expt_params["train_params"])
+  File "/opt/program/side_effects/models/training.py", line 39, in train
+    epochs=n_epochs, callbacks=callbacks)
+  File "/root/miniconda3/lib/python3.7/site-packages/poutyne/framework/model.py", line 312, in fit_generator
+    step=step.number)
+  File "/root/miniconda3/lib/python3.7/site-packages/poutyne/framework/model.py", line 329, in _fit_batch
+    loss_tensor.backward()
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/tensor.py", line 102, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/root/miniconda3/lib/python3.7/site-packages/torch/autograd/__init__.py", line 90, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 3.32 GiB (GPU 0; 11.17 GiB total capacity; 5.77 GiB already allocated; 1.85 GiB free; 3.27 GiB cached)
