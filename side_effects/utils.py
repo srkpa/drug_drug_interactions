@@ -69,11 +69,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     x_train,x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
 
-    # Create dataset fn object
-    # train_dt, test_dt, valid_dt = list(
-    #     map(partial(TDGLDataset, cuda=gpu), [x_train, x_test, x_val],
-    #         [y_train, y_test, y_val]))
-
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
@@ -90,7 +85,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dg_net = get_network(expt_params["extractor"], expt_params["extractor_params"])
     # b) Build the model
     network = DRUUD(drug_feature_extractor=dg_net, fc_layers_dim=expt_params["fc_layers_dim"],
-                    output_dim=y_train.shape[1])
+                    output_dim=y_train.shape[1], **expt_params["fc_reg"])
     if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
     print(f"Architecture:\n\tname: {method}\n\ttnetwork:{network}")
