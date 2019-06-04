@@ -16,7 +16,7 @@ from django.template.loader import get_template
 
 from scipy import interp
 
-
+# not good but i have to duplicate it
 def save_results(filename, contents, engine='xlsxwriter'):
     writer = pd.ExcelWriter(filename, engine=engine)
     for sheet, data in contents:

@@ -4,7 +4,7 @@ import re
 from collections import defaultdict
 from functools import partial
 from itertools import product
-
+from operator import itemgetter
 import numpy as np
 import pandas as pd
 import torch as th
@@ -15,6 +15,13 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
 
 from side_effects.preprocess.transforms import deepddi_transformer
+
+
+def save_results(filename, contents, engine='xlsxwriter'):
+    writer = pd.ExcelWriter(filename, engine=engine)
+    for sheet, data in contents:
+        data.to_excel(writer, sheet_name=sheet)
+    writer.save()
 
 
 def make_tensor(X, gpu=False):
@@ -86,6 +93,7 @@ def load_ddis_combinations(fname, header=True, dataset_name="twosides"):
         drug1 = content[0]
         drug2 = content[1]
         se = content[-1].strip("\n").split(";")
+        print(drug1, drug2, se)
         combo2se[(drug1, drug2)] = list(set(se))
     return combo2se
 
@@ -402,7 +410,79 @@ def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True
     fn.close()
 
 
-def deepddi_train_test_split(input_path):
+def _extract_interactions(phrase):
+    ans = list(re.findall(pattern="DB[0-9]+", string=phrase))
+    ans = np.unique(ans)
+    indexes = []
+    for elem in ans:
+        indexes.append(phrase.find(elem))
+    if indexes[0] > indexes[-1]:
+        ans = ans[::-1]
+        # print(indexes, ans)
+        #print(phrase, "give", ans, label)
+
+    return f"{ans[0]},{ans[-1]}"
+
+
+def jy_train_test_split(input_path):
+    filepath1 = f"{input_path}/pnas.1803294115.sd02.xlsx"
+    filepath2 = f"{input_path}/pnas.1803294115.sd01.xlsx"
+
+    df1 = pd.read_excel("/home/rogia/Documents/git/side_effects/data/S2_Dataset_mapping.xlsx", sheet_name="interactions")
+    df2 = pd.read_excel(filepath2, sheet_name="Dataset S1")
+    side_effects = df2.values.tolist()
+    side_effects = {description: ddi_type for ddi_type, description in side_effects}
+
+    df = pd.read_excel(filepath1, sheet_name="Dataset S2")
+    print(list(df))
+    print(len(df))
+    print(len(side_effects))
+
+    df3 = pd.merge(df, df1, on='Sentences describing the reported drug-drug interactions')
+    df3.to_excel("/home/rogia/Documents/git/side_effects/data/Full_S2_Dataset.xlsx", header=True)
+
+    training_set = df3[df3['Data type used to optimize the DNN architecture'] == "training"]
+    testing_set = df3[df3['Data type used to optimize the DNN architecture'] == "testing"]
+    validation_set = df3[df3['Data type used to optimize the DNN architecture'] == "validation"]
+
+    print("train", len(training_set), " interactions")
+    print("test", len(testing_set), " interactions")
+    print("validation", len(validation_set), " interactions")
+
+    training_set["resume"] = training_set["Sentences describing the reported drug-drug interactions"].apply(
+       _extract_interactions)
+    training_set["resume"] = training_set["resume"].astype(str).str.cat(training_set["ddi type"].astype(str), sep=';')
+    print(training_set)
+    print("train done")
+    testing_set["resume"] = testing_set["Sentences describing the reported drug-drug interactions"].apply(
+        _extract_interactions)
+    testing_set["resume"] = testing_set["resume"].astype(str).str.cat(testing_set["ddi type"].astype(str), sep=';')
+    print(testing_set)
+    print("test done")
+    validation_set["resume"] = validation_set["Sentences describing the reported drug-drug interactions"].apply(
+        _extract_interactions)
+    validation_set["resume"] = validation_set["resume"].astype(str).str.cat(validation_set["ddi type"].astype(str), sep=';')
+    print("validation done")
+    print(validation_set)
+    save_results(filename="/home/rogia/Documents/git/side_effects/data/jy_split.xlsx",
+                 contents=[("train", training_set), ("test", testing_set), ("validation", validation_set)])
+
+    print("Save step 1 done")
+    input_path = "/home/rogia/Documents/git/side_effects/data"
+    dataset_name = "drugbank"
+    fn = open(f"{input_path}/{dataset_name}-train_samples.csv", "w")
+    fn.write("\n".join(training_set["resume"].values.tolist()))
+    fn.close()
+    fn = open(f"{input_path}/{dataset_name}-test_samples.csv", "w")
+    fn.write("\n".join(testing_set["resume"].values.tolist()))
+    fn.close()
+    fn = open(f"{input_path}/{dataset_name}-valid_samples.csv", "w")
+    fn.write("\n".join(validation_set["resume"].values.tolist()))
+    fn.close()
+    print("all saved")
+
+
+def analyze_jy_split(input_path):
     pattern = "DB[0-9]+"
     filepath1 = f"{input_path}/pnas.1803294115.sd02.xlsx"
     filepath2 = f"{input_path}/pnas.1803294115.sd01.xlsx"
@@ -414,12 +494,14 @@ def deepddi_train_test_split(input_path):
     df = pd.read_excel(filepath1, sheet_name="Dataset S2")
     data = df.values.tolist()
     train, test, valid = defaultdict(list), defaultdict(list), defaultdict(list)
+    interactions_mapping = {}
 
     i = 0
     for desc, partition in data:
         tr = False
         ddi = [word for word in desc.split() if not word.startswith("DB")]
         drugs = list(re.findall(pattern, desc))
+        ddi_type = None
         for info, ddi_type in side_effects.items():
             inter = set(desc.split()).intersection(set(info.split()))
             if inter == set(ddi):
@@ -435,8 +517,12 @@ def deepddi_train_test_split(input_path):
                 break
         if not tr:
             print(desc, ddi)
+        print(desc, ddi_type)
+        interactions_mapping[desc] = ddi_type
 
     assert len(data) == i
+    d1 = pd.DataFrame(list(interactions_mapping.items()), columns=["interaction", "ddi type"])
+    d1.to_excel("/home/rogia/Documents/git/side_effects/data/S2_Dataset_mapping.xlsx", index=None, header=True)
     #### Analysis.
 
     print("Quick Summary #1.\n There are:")
@@ -506,7 +592,11 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
     if method == "deepddi":
         approved_drug = pd.read_csv(approved_drugs_path, sep=",").dropna()
         approved_drug = approved_drug['PubChem Canonical Smiles'].values.tolist()
+
         res = deepddi_transformer(list(drugs2smiles.keys()), list(drugs2smiles.values()), approved_drug=approved_drug)
+
+        res = deepddi_transformer(smiles=list(drugs2smiles.values()), drugs=list(drugs2smiles.keys()),
+                                  approved_drug=approved_drug)
 
     train_data = {(res[drug1_id], res[drug2_id]): train[(drug1_id, drug2_id)] for drug1_id, drug2_id in train if
                   drug1_id in res and drug2_id in res}
@@ -535,17 +625,19 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
         np.float32), np.array(y_valid).astype(np.float32)
 
 
-def yy_train_test_split():
-
-
 if __name__ == '__main__':
     import pandas as pd
     from side_effects.external_utils.graphics import save_results
 
-    train, test, valid, train_and_test, train_and_valid, test_and_valid = deepddi_train_test_split(
-        input_path="/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
+    # train, test, valid, train_and_test, train_and_valid, test_and_valid = analyze_jy_split(
+    #   input_path="/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
+
+    input_path = "/home/rogia/Documents/code/side_effects/data/deepddi/drugbank"
+    jy_train_test_split(input_path=input_path)
     # d1 = pd.DataFrame(train_and_valid)
     # d2 = pd.DataFrame(train_and_test)
     # d3 = pd.DataFrame(test_and_valid)
     # save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/embedding.xlsx",
     #              contents=[("train-valid", d1), ("train-test", d2), ("test-valid", d3)])
+
+    # load_ddis_combinations(fname=f"{input_path}/drugbank-test_samples.csv", header=False)
