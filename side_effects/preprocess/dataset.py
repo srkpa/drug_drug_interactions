@@ -506,7 +506,7 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
     if method == "deepddi":
         approved_drug = pd.read_csv(approved_drugs_path, sep=",").dropna()
         approved_drug = approved_drug['PubChem Canonical Smiles'].values.tolist()
-        res = deepddi_transformer(inputs=drugs2smiles, approved_drug=approved_drug)
+        res = deepddi_transformer(list(drugs2smiles.keys()), list(drugs2smiles.values()), approved_drug=approved_drug)
 
     train_data = {(res[drug1_id], res[drug2_id]): train[(drug1_id, drug2_id)] for drug1_id, drug2_id in train if
                   drug1_id in res and drug2_id in res}
@@ -533,6 +533,9 @@ def load(train, test, valid, method, input_path="../data/violette/drugbank/", tr
 
     return x_train, x_test, x_valid, np.array(y_train).astype(np.float32), np.array(y_test).astype(
         np.float32), np.array(y_valid).astype(np.float32)
+
+
+def yy_train_test_split():
 
 
 if __name__ == '__main__':

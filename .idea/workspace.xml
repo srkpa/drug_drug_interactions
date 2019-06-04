@@ -6,9 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/fc-output.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/rapport/fc-output.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +38,25 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state relative-caret-position="-2505">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/preprocess/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1227">
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +66,40 @@
         <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="508" column="90" selection-start-line="508" selection-start-column="90" selection-end-line="508" selection-end-column="90" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/preprocess/transforms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -123,9 +165,9 @@
         <option value="$PROJECT_DIR$/side_effects/models/model.py" />
         <option value="$PROJECT_DIR$/side_effects/utils.py" />
         <option value="$PROJECT_DIR$/expts/configs/ex_configs_2.json" />
-        <option value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
         <option value="$PROJECT_DIR$/expts/configs/ex_configs_4.json" />
         <option value="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
+        <option value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
       </list>
     </option>
   </component>
@@ -157,7 +199,7 @@
               <item name="side_effects" type="b2602c69:ProjectViewProjectNode" />
               <item name="side_effects" type="462c0819:PsiDirectoryNode" />
               <item name="side_effects" type="462c0819:PsiDirectoryNode" />
-              <item name="rapport" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,11 +464,12 @@
       <workItem from="1559475368545" duration="7459000" />
       <workItem from="1559487946058" duration="10445000" />
       <workItem from="1559536459196" duration="683000" />
+      <workItem from="1559606974304" duration="2683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373030000" />
+    <option name="totallyTimeSpent" value="375713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,7 +483,7 @@
   <component name="ToolWindowManager">
     <frame x="22" y="18" width="1804" height="1006" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1309795" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13268793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -454,11 +497,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5016026" side_tool="true" weight="0.1791531" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49946582" weight="0.4039088" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49946582" visible="true" weight="0.40389016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49893162" visible="true" weight="0.33143508" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" sideWeight="0.49893162" visible="true" weight="0.393508" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32930845" />
       <window_info anchor="right" id="Database" order="5" weight="0.32905984" />
       <window_info anchor="right" id="R Packages" order="6" weight="0.32959402" />
@@ -494,16 +537,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/e.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/figures/1_losses.png" />
     <entry file="file://$PROJECT_DIR$/side_effects/external_utils/utils.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,26 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="506" column="38" selection-start-line="506" selection-start-column="38" selection-end-line="506" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,13 +710,6 @@
     <entry file="file://$PROJECT_DIR$/side_effects/figures/fc-2019-06-02-18-40-33-624.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d-fmap-512.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -713,12 +719,55 @@
     <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d-fmap-16.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1227">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="-2505">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/transforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="508" column="90" selection-start-line="508" selection-start-column="90" selection-end-line="508" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
