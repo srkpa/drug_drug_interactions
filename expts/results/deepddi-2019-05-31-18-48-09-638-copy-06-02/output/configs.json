@@ -1,0 +1,35 @@
+{
+  "extractor_params": {
+    "input_dim": 100,
+    "hidden_sizes": [
+      2048,
+      2048,
+      2048,
+      2048,
+      2048,
+      2048,
+      2048,
+      2048,
+      2048
+    ],
+    "output_dim": 86
+  },
+  "optimizer": "adam",
+  "train_params": {
+    "n_epochs": 100,
+    "batch_size": 256,
+    "with_early_stopping": false
+  },
+  "init_fn": "uniform",
+  "loss_function": "bce",
+  "extractor": "deepddi",
+  "optimizer_params": {
+    "lr": 0.0001,
+    "weight_decay": 0
+  },
+  "dataset": {
+    "name": "drugbank",
+    "smi_transf": "deepddi",
+    "dt_transf": "common"
+  }
+}

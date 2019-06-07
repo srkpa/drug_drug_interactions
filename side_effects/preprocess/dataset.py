@@ -7,12 +7,14 @@ from itertools import product
 from operator import itemgetter
 import numpy as np
 import pandas as pd
+import csv
 import torch as th
 from ivbase.utils.commons import to_tensor
 from ivbase.utils.datasets.dataset import DGLDataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
+import ast
 
 from side_effects.preprocess.transforms import deepddi_transformer
 
@@ -93,7 +95,6 @@ def load_ddis_combinations(fname, header=True, dataset_name="twosides"):
         drug1 = content[0]
         drug2 = content[1]
         se = content[-1].strip("\n").split(";")
-        print(drug1, drug2, se)
         combo2se[(drug1, drug2)] = list(set(se))
     return combo2se
 
@@ -159,6 +160,7 @@ def train_test_split_1(fname, header=True, train_split=0.8, shuffle=True, save=N
 
 
 def _filter(samples, transformed_smiles_dict=None):
+    print(transformed_smiles_dict)
     return {(transformed_smiles_dict[id_1], transformed_smiles_dict[id_2]): y for (id_1, id_2), y in samples.items() if
             id_1 in transformed_smiles_dict and id_2 in transformed_smiles_dict}
 
@@ -194,10 +196,11 @@ def load_train_test_files(input_path, dataset_name, transformer):
         map(partial(_filter, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
 
     x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
+    print(len(x_train), len(x_test), len(x_valid))
 
     # This will not mind in jy case
-    #assert len(set(x_train) - set(x_test)) == len(train_data)
-    #assert len(set(x_test) - set(x_valid)) == len(test_data)
+    # assert len(set(x_train) - set(x_test)) == len(train_data)
+    # assert len(set(x_test) - set(x_valid)) == len(test_data)
 
     print("len train", len(train_data))
     print("len test", len(test_data))
@@ -205,7 +208,12 @@ def load_train_test_files(input_path, dataset_name, transformer):
 
     mbl = MultiLabelBinarizer()
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
+
+    print(np.unique(labels))
     targets = mbl.fit_transform(labels).astype(np.float32)
+    print(list(mbl.classes_))
+    print(len(list(mbl.classes_)))
+    #
     y_train, y_test, y_valid = targets[:len(train_data), :], targets[len(train_data):len(train_data) + len(test_data),
                                                              :], targets[len(train_data) + len(test_data):, ]
 
@@ -415,73 +423,64 @@ def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True
 def _extract_interactions(phrase):
     ans = list(re.findall(pattern="DB[0-9]+", string=phrase))
     ans = np.unique(ans)
-    indexes = []
-    for elem in ans:
-        indexes.append(phrase.find(elem))
-    if indexes[0] > indexes[-1]:
-        ans = ans[::-1]
-        # print(indexes, ans)
-        #print(phrase, "give", ans, label)
+    # indexes = []
+    # for elem in ans:
+    #     indexes.append(phrase.find(elem))
+    # if indexes[0] > indexes[-1]:
+    #     ans = ans[::-1]
+    #     # print(indexes, ans)
+    #     # print(phrase, "give", ans, label)
 
-    return f"{ans[0]},{ans[-1]}"
+    return tuple(ans)
 
 
 def jy_train_test_split(input_path):
-    filepath1 = f"{input_path}/pnas.1803294115.sd02.xlsx"
-    filepath2 = f"{input_path}/pnas.1803294115.sd01.xlsx"
-
-    df1 = pd.read_excel("/home/rogia/Documents/git/side_effects/data/S2_Dataset_mapping.xlsx", sheet_name="interactions")
-    df2 = pd.read_excel(filepath2, sheet_name="Dataset S1")
-    side_effects = df2.values.tolist()
-    side_effects = {description: ddi_type for ddi_type, description in side_effects}
-
-    df = pd.read_excel(filepath1, sheet_name="Dataset S2")
-    print(list(df))
-    print(len(df))
-    print(len(side_effects))
-
-    df3 = pd.merge(df, df1, on='Sentences describing the reported drug-drug interactions')
-    df3.to_excel("/home/rogia/Documents/git/side_effects/data/Full_S2_Dataset.xlsx", header=True)
-
-    training_set = df3[df3['Data type used to optimize the DNN architecture'] == "training"]
-    testing_set = df3[df3['Data type used to optimize the DNN architecture'] == "testing"]
-    validation_set = df3[df3['Data type used to optimize the DNN architecture'] == "validation"]
+    df = pd.read_csv("s2_mapping_01.csv", sep=",")
+    training_set = df[df['Data type used to optimize the DNN architecture'] == "training"]
+    testing_set = df[df['Data type used to optimize the DNN architecture'] == "testing"]
+    validation_set = df[df['Data type used to optimize the DNN architecture'] == "validation"]
 
     print("train", len(training_set), " interactions")
     print("test", len(testing_set), " interactions")
     print("validation", len(validation_set), " interactions")
 
-    training_set["resume"] = training_set["Sentences describing the reported drug-drug interactions"].apply(
-       _extract_interactions)
-    training_set["resume"] = training_set["resume"].astype(str).str.cat(training_set["ddi type"].astype(str), sep=',')
-    print(training_set)
-    print("train done")
-    testing_set["resume"] = testing_set["Sentences describing the reported drug-drug interactions"].apply(
-        _extract_interactions)
-    testing_set["resume"] = testing_set["resume"].astype(str).str.cat(testing_set["ddi type"].astype(str), sep=',')
-    print(testing_set)
-    print("test done")
-    validation_set["resume"] = validation_set["Sentences describing the reported drug-drug interactions"].apply(
-        _extract_interactions)
-    validation_set["resume"] = validation_set["resume"].astype(str).str.cat(validation_set["ddi type"].astype(str), sep=',')
-    print("validation done")
-    print(validation_set)
-    save_results(filename="/home/rogia/Documents/git/side_effects/data/jy_split.xlsx",
-                 contents=[("train", training_set), ("test", testing_set), ("validation", validation_set)])
+    save_results("jy_split.xlsx", contents=[("train", training_set), ("test", testing_set), ("valid", validation_set)])
 
-    print("Save step 1 done")
-    input_path = "/home/rogia/Documents/git/side_effects/data"
-    dataset_name = "drugbank"
-    fn = open(f"{input_path}/{dataset_name}-train_samples.csv", "w")
-    fn.write("\n".join(training_set["resume"].values.tolist()))
-    fn.close()
-    fn = open(f"{input_path}/{dataset_name}-test_samples.csv", "w")
-    fn.write("\n".join(testing_set["resume"].values.tolist()))
-    fn.close()
-    fn = open(f"{input_path}/{dataset_name}-valid_samples.csv", "w")
-    fn.write("\n".join(validation_set["resume"].values.tolist()))
-    fn.close()
-    print("all saved")
+    training_set_ref = training_set.groupby('paire')
+    testing_set_ref = testing_set.groupby('paire')
+    val_set_ref = validation_set.groupby('paire')
+    print("len train drugs paires", len(training_set_ref))
+    print("len train drugs paires", len(testing_set_ref))
+    print("len train drugs paires", len(val_set_ref))
+
+    a = csv.writer(open("drugbank-train_samples.csv", "w"))
+    b = csv.writer(open("drugbank-test_samples.csv", "w"))
+    d = csv.writer(open("drugbank-valid_samples.csv", "w"))
+
+    for dar, gr in training_set_ref:
+        dar = ast.literal_eval(dar)
+        print(type(dar))
+        liste = []
+        for desc in gr.values:
+            typ = desc[-1]
+            liste.append(str(typ))
+        a.writerow([dar[0], dar[1], ";".join(liste)])
+
+    for dar, gr in testing_set_ref:
+        dar = ast.literal_eval(dar)
+        liste = []
+        for desc in gr.values:
+            typ = desc[-1]
+            liste.append(str(typ))
+        b.writerow([dar[0], dar[1], ";".join(liste)])
+
+    for dar, gr in val_set_ref:
+        dar = ast.literal_eval(dar)
+        liste = []
+        for desc in gr.values:
+            typ = desc[-1]
+            liste.append(str(typ))
+        d.writerow([dar[0], dar[1], ";".join(liste)])
 
 
 def analyze_jy_split(input_path):
@@ -498,31 +497,44 @@ def analyze_jy_split(input_path):
     train, test, valid = defaultdict(list), defaultdict(list), defaultdict(list)
     interactions_mapping = {}
 
-    i = 0
-    for desc, partition in data:
-        tr = False
-        ddi = [word for word in desc.split() if not word.startswith("DB")]
-        drugs = list(re.findall(pattern, desc))
-        ddi_type = None
-        for info, ddi_type in side_effects.items():
-            inter = set(desc.split()).intersection(set(info.split()))
-            if inter == set(ddi):
-                tr = True
-                i += 1
-                cle = tuple(np.unique(drugs))
-                if partition == "training":
-                    train[cle].append(ddi_type)
-                elif partition == "testing":
-                    test[cle].append(ddi_type)
-                else:
-                    valid[cle].append(ddi_type)
-                break
-        if not tr:
-            print(desc, ddi)
-        print(desc, ddi_type)
-        interactions_mapping[desc] = ddi_type
+    c = load_ddis_combinations(fname="directed-drugbank-combo.csv",
+                               header=True, dataset_name="split")
 
+    print(len(c))  # ok
+    i = 0
+    # hum hum
+    d = []
+    for desc, partition in data:
+        paire = _extract_interactions(desc)
+        ddi_type = c[paire]
+        print(paire)
+        d.append(paire)
+    print(len(set(d)))
+    # tr = False
+    # ddi = [word for word in desc.split() if not word.startswith("DB")]
+    # drugs = list(re.findall(pattern, desc))
+    # ddi_type = None
+    # for info, ddi_type in side_effects.items():
+    #     inter = set(desc.split()).intersection(set(info.split()))
+    #     if inter == set(ddi):
+    #         tr = True
+    #         i += 1
+    #         cle = tuple(np.unique(drugs))
+    #         if partition == "training":
+    #             train[cle].append(ddi_type)
+    #         elif partition == "testing":
+    #             test[cle].append(ddi_type)
+    #         else:
+    #             valid[cle].append(ddi_type)
+    #         break
+    # if not tr:
+    #     print(desc, ddi)
+    # print(desc, ddi_type)
+    # interactions_mapping[desc] = ddi_type
+
+    exit()
     assert len(data) == i
+    exit()
     d1 = pd.DataFrame(list(interactions_mapping.items()), columns=["interaction", "ddi type"])
     d1.to_excel("/home/rogia/Documents/git/side_effects/data/S2_Dataset_mapping.xlsx", index=None, header=True)
     #### Analysis.

@@ -69,6 +69,14 @@ def run_experiment(model_params, input_path, output_path="expts"):
     x_train,x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
 
+
+    print(x_train.shape, y_train.shape)
+    exit()
+    # Create dataset fn object
+    # train_dt, test_dt, valid_dt = list(
+    #     map(partial(TDGLDataset, cuda=gpu), [x_train, x_test, x_val],
+    #         [y_train, y_test, y_val]))
+
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
