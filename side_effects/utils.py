@@ -7,7 +7,8 @@ from ivbase.utils.datasets.datacache import DataCache
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, TDGLDataset
+from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, load_dataset
+from sklearn.model_selection import train_test_split
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -56,19 +57,23 @@ def run_experiment(model_params, input_path, output_path="expts"):
     gpu = False
     if torch.cuda.is_available():
         gpu = True
-
-    # Dataset
+    # seed
     dataset = expt_params["dataset"]["name"]
     smi_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
 
-    # load train and test files
-    targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
-                                                                                    dataset_name=dataset,
-                                                                                    transformer=smi_transformer)
+    rstate = expt_params["dataset"]["seed"]
+    if rstate not in ('None', None):
+        x, y = load_dataset(cach_path, dset_name=dataset)
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25)
+    else:
+        # load train and test files
+        targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
+                                                                                        dataset_name=dataset,
+                                                                                        transformer=smi_transformer)
 
-    x_train,x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
+    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
-
 
     print(x_train.shape, y_train.shape)
     exit()
@@ -123,6 +128,5 @@ def run_experiment(model_params, input_path, output_path="expts"):
     pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
-
 
 # dispatcher -n "mix_ddi" -e "test-conv" -x 86400 -v 100 -t "ml.p3.16xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json
