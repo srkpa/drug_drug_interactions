@@ -16,7 +16,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
 import ast
 
-from side_effects.preprocess.transforms import AllChem, DataStructs, Chem, PCA
+from side_effects.preprocess.transforms import AllChem, DataStructs, Chem, PCA, sequence_transformer
 
 
 def save_results(filename, contents, engine='xlsxwriter'):
@@ -600,36 +600,35 @@ def analyze_jy_split(input_path):
     return train, test, valid, train_and_test, train_and_valid, test_and_valid
 
 
-def load_dataset(input_path):
-    drug_drug_comb = pd.read_csv(f"{input_path}/directed-drugbank-combo.csv", sep=",")
-    drug_to_smiles = pd.read_csv(f"{input_path}/drugbank-drugs-all.csv", sep=",")
-    approved_drug = pd.read_csv(f"{input_path}/drugbank_approved_drugs.csv", sep=",").dropna()
+def load_dataset(input_path, dset_name):
+    # My paths
+    all_drugs_path = f"{input_path}/drugbank-drugs-all.csv"  # j'avoue que le nom des fichiers est trop contraignat
+    all_combo_path = f"{input_path}/directed-drugbank-combo.csv"
 
-    inputs, targets = [], []
-    involved_drugs = drug_to_smiles['drug_id'].values.tolist()
-    appr_drugs_mol = [Chem.MolFromSmiles(X) for X in approved_drug['PubChem Canonical Smiles'].values.tolist()]
-    appr_drugs_mol = [AllChem.AddHs(mol) for mol in appr_drugs_mol]
-    appr_drugs_fps = [AllChem.GetMorganFingerprint(mol, 2) for mol in appr_drugs_mol]
-    drugs_involved_in_mol = [Chem.MolFromSmiles(m) for m in drug_to_smiles['PubChem Canonical Smiles'].values.tolist()]
-    drugs_involved_in_mol = [AllChem.AddHs(mol) for mol in drugs_involved_in_mol]
-    drugs_involved_in_fps = [AllChem.GetMorganFingerprint(X, 2) for X in drugs_involved_in_mol]
-    all_ssp = [[DataStructs.DiceSimilarity(drg, appr_drugs_fps[i]) for i in range(len(appr_drugs_fps))] for
-               ids, drg in enumerate(drugs_involved_in_fps)]
-    pca = PCA(n_components=50)
-    reduced_ssp = pca.fit_transform(np.array(all_ssp))
+    # Load files
+    data = load_ddis_combinations(all_combo_path, header=True)
+    print("data", len(data))
 
-    for _, row in drug_drug_comb.iterrows():
-        drug_a, drug_b = row['Drug 1'], row['Drug 2']
-        if drug_a in involved_drugs and drug_b in involved_drugs:
-            targets.append(str(row['ddi type']).split(";"))
-            pos_a, pos_b = involved_drugs.index(drug_a), involved_drugs.index(drug_b)
-            combined_ssp = np.append(reduced_ssp[pos_a,], reduced_ssp[pos_b,]).tolist()
-            inputs.append(combined_ssp)
+    # Load smiles
+    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dset_name)
+    drugs = list(drugs2smiles.keys())
+    smiles = list(drugs2smiles.values())
 
-    inputs = np.array(inputs).astype(np.float32)
-    targets = MultiLabelBinarizer().fit_transform(targets).astype(np.float32)
-    print(inputs.shape, targets.shape)
-    return inputs, targets
+    # Transformer
+    drugs = sequence_transformer(drugs=drugs, smiles=smiles)
+    data = _filter(data, drugs)
+    x_data = list(data.keys())
+    print("data after filter", len(x_data))
+
+    mbl = MultiLabelBinarizer()
+    labels = list(data.values())
+    print(np.unique(labels))
+    targets = mbl.fit_transform(labels).astype(np.float32)
+    print("target", targets.shape)
+    print(list(mbl.classes_))
+    print(len(list(mbl.classes_)))
+
+    return x_data, targets
 
 
 def mytest(input_path):
@@ -660,6 +659,8 @@ def mytest(input_path):
 if __name__ == '__main__':
     import pandas as pd
 
+    load_dataset("/home/rogia/Documents/git/side_effects/side_effects/preprocess/", "drugbank")
+    exit()
     # mytest(input_path="/home/rogia/Bureau/new")
     train, test, valid, train_and_test, train_and_valid, test_and_valid = analyze_jy_split("/home/rogia/Bureau/new")
     df1 = pd.DataFrame(train_and_test, columns=["paire", "train", "test"])
