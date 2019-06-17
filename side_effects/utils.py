@@ -68,12 +68,12 @@ def run_experiment(model_params, input_path, output_path="expts"):
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25)
     else:
         # load train and test files
-        targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
+        targets, x_train, x_test, x_valid, y_train, y_test, y_valid = load_train_test_files(input_path=f"{cach_path}",
                                                                                         dataset_name=dataset,
                                                                                         transformer=smi_transformer)
 
-    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
-    y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
+    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_valid]))
+    y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
 
     print(x_train.shape, y_train.shape)
     exit()
