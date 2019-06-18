@@ -64,8 +64,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     rstate = expt_params["dataset"]["seed"]
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
-        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
-        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25)
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
+        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
     else:
         # load train and test files
         targets, x_train, x_test, x_valid, y_train, y_test, y_valid = load_train_test_files(input_path=f"{cach_path}",
@@ -76,11 +76,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
 
     print(x_train.shape, y_train.shape)
-    exit()
-    # Create dataset fn object
-    # train_dt, test_dt, valid_dt = list(
-    #     map(partial(TDGLDataset, cuda=gpu), [x_train, x_test, x_val],
-    #         [y_train, y_test, y_val]))
 
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
