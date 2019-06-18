@@ -3,7 +3,14 @@
     {
       "name": "drugbank",
       "smi_transf": "seq",
-      "dt_transf": "common"
+      "dt_transf": "common",
+      "seed": 55
+    },
+     {
+      "name": "drugbank",
+      "smi_transf": "seq",
+      "dt_transf": "common",
+      "seed": 42
     }
   ],
   "arch": [
@@ -13,26 +20,13 @@
     "conv1d"
   ],
   "extractor_params": [
-    {
-      "vocab_size": 851,
-      "embedding_size": 32,
-      "cnn_sizes": [
-        32
-      ],
-      "kernel_size": 8,
-      "dropout": 0.0,
-      "pooling": "max",
-      "b_norm": false,
-      "pooling_len": 2,
-      "normalize_features": true
-    },
      {
-      "vocab_size": 851,
-      "embedding_size": 32,
+      "vocab_size": 151,
+      "embedding_size": 512,
       "cnn_sizes": [
-        32
+        1024
       ],
-      "kernel_size": 9,
+      "kernel_size": 17,
       "dropout": 0.0,
       "pooling": "max",
       "b_norm": false,
@@ -46,7 +40,7 @@
     ]],
    "fc_reg":[{
       "dropout":0,
-      "b_norm": false
+      "b_norm": true
     }
   ],
   "init_fn": [
@@ -68,7 +62,8 @@
     {
       "n_epochs": 100,
       "batch_size": 256,
-      "with_early_stopping": true
+      "with_early_stopping": true,
+      "patience": 3
     }
   ]
 }
