@@ -110,10 +110,14 @@ def weighted_binary_cross_entropy2(output, target, weights_per_targets=None,
 
 def weighted_binary_cross_entropy3(output, target):
     assert output.shape == target.shape
-    w = torch.tensor([compute_sample_weight(class_weight='balanced', y=i) for i in target], dtype=torch.float32)
+    y = target.cpu().numpy()
+    w = torch.tensor([compute_sample_weight(class_weight='balanced', y=i) for i in y], dtype=torch.float32)
+    if torch.cuda.is_available():
+        w = w.cuda()
     assert w.shape == target.shape
-    loss = BCELoss(reduction='none', weight=w)
-    return torch.mean(loss(output, target))
+    print(output.shape, w.shape, target.shape)
+    loss = BCELoss(reduction='mean', weight=w)
+    return loss(output, target)
 
 
 def test():

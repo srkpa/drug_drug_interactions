@@ -9,6 +9,7 @@ from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
 from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, load_dataset
 from sklearn.model_selection import train_test_split
+from side_effects.external_utils.loss import weighted_binary_cross_entropy3
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -36,7 +37,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     Returns
     -------
-		This function return is not used by the train script. But you could do anything with that.
+		# This function return is not used by the train script. But you could do anything with that.
     """
 
     items = ["init_fn", "extractor", "arch", "loss_function", "optimizer"]
@@ -69,8 +70,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     else:
         # load train and test files
         targets, x_train, x_test, x_valid, y_train, y_test, y_valid = load_train_test_files(input_path=f"{cach_path}",
-                                                                                        dataset_name=dataset,
-                                                                                        transformer=smi_transformer)
+                                                                                            dataset_name=dataset,
+                                                                                            transformer=smi_transformer)
 
     x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_valid]))
     y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
@@ -78,7 +79,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(x_train.shape, y_train.shape)
 
     # The loss function
-    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
+    loss_fn = weighted_binary_cross_entropy3 #get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization

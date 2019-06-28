@@ -477,6 +477,9 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
+    a = unpack_results("/home/rogia/Téléchargements")
+    print(a[1]["ap"]["micro"])
+    exit()
     df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/fmap")
     print(df)
     save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/fmap-output.xlsx", contents=[("fc map", df)])

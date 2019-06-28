@@ -205,7 +205,6 @@ def load_train_test_files(input_path, dataset_name, transformer):
 
     x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
     print(len(x_train), len(x_test), len(x_valid))
-    exit()
 
     assert len(set(x_train) - set(x_test)) == len(train_data)
     assert len(set(x_test) - set(x_valid)) == len(test_data)

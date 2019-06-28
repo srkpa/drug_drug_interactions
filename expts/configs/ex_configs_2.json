@@ -1,16 +1,10 @@
 {
   "dataset": [
     {
-      "name": "drugbank",
+      "name": "twosides",
       "smi_transf": "seq",
       "dt_transf": "common",
-      "seed": 55
-    },
-     {
-      "name": "drugbank",
-      "smi_transf": "seq",
-      "dt_transf": "common",
-      "seed": 42
+      "seed": null
     }
   ],
   "arch": [
@@ -54,7 +48,7 @@
   ],
   "optimizer_params": [
     {
-      "lr": 0.0001,
+      "lr": 0.00001,
       "weight_decay": 0
     }
   ],
