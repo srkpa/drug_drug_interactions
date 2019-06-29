@@ -79,7 +79,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(x_train.shape, y_train.shape)
 
     # The loss function
-    loss_fn = weighted_binary_cross_entropy3 #get_loss(expt_params["loss_function"], y_train=y_train)
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization
