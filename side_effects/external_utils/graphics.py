@@ -3,18 +3,12 @@ import json
 import operator
 import os
 import pickle
-import matplotlib.ticker as mtick
-import matplotlib.pyplot as plt
-import numpy as np
-import pdfkit
-import pandas as pd
-from matplotlib.offsetbox import AnchoredText
-from weasyprint import HTML
-from side_effects.preprocess.dataset import *
-from sklearn.metrics import auc
-from django.template.loader import get_template
 
-from scipy import interp
+import matplotlib.pyplot as plt
+from matplotlib.offsetbox import AnchoredText
+
+from side_effects.preprocess.dataset import *
+
 
 # not good but i have to duplicate it
 def save_results(filename, contents, engine='xlsxwriter'):

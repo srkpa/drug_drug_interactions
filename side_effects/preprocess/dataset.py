@@ -170,12 +170,12 @@ def _filter(samples, transformed_smiles_dict=None):
     return results
 
 
-def load_train_test_files(input_path, dataset_name, transformer):
+def load_train_test_files(input_path, dataset_name, transformer, seed):
     # My paths
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
-    train_path = f"{input_path}/{dataset_name}-train_samples.csv"
-    test_path = f"{input_path}/{dataset_name}-test_samples.csv"
-    valid_path = f"{input_path}/{dataset_name}-valid_samples.csv"
+    train_path = f"{input_path}/{dataset_name}-train_samples_{seed}.csv"
+    test_path = f"{input_path}/{dataset_name}-test_samples_{seed}.csv"
+    valid_path = f"{input_path}/{dataset_name}-valid_samples_{seed}.csv"
 
     # Load files
     files = [train_path, test_path, valid_path]
@@ -392,12 +392,12 @@ def train_test_valid_split_2(input_path, dataset_name, header=True, train_split=
     fn.close()
 
 
-def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True):
+def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True, seed=42):
     combo_path = f"{input_path}/{dataset_name}-combo.csv"
     interactions = load_ddis_combinations(fname=combo_path, header=header, dataset_name=dataset_name)
     drugs = list(set([x1 for (x1, _) in interactions] + [x2 for (_, x2) in interactions]))
 
-    np.random.seed(42)
+    np.random.seed(seed=seed)
     train_idx, test_idx = train_test_split(drugs, test_size=0.1, shuffle=shuffle)
     train_idx, valid_idx = train_test_split(train_idx, test_size=0.15, shuffle=shuffle)
 
@@ -412,16 +412,16 @@ def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True
     print('len train', len(list(train)))
     print('len test', len(list(test)))
     print('len valid', len(list(valid)))
-    print("len region grise", len(interactions) - (len(train) + len(test) + len(valid)))
+    print("len gray region", len(interactions) - (len(train) + len(test) + len(valid)))
 
-    fn = open(f"{input_path}/{dataset_name}-train_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-train_samples_{seed}.csv", "w")
     fn.writelines(["{}"
                    ",{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in train])
     fn.close()
-    fn = open(f"{input_path}/{dataset_name}-test_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-test_samples_{seed}.csv", "w")
     fn.writelines(["{},{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in test])
     fn.close()
-    fn = open(f"{input_path}/{dataset_name}-valid_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-valid_samples_{seed}.csv", "w")
     fn.writelines(["{}"
                    ",{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in valid])
     fn.close()
@@ -656,13 +656,10 @@ def mytest(input_path):
 
 
 if __name__ == '__main__':
-    import pandas as pd
+    twosides_path = "/home/rogia/Downloads/INV_TWO"
+    drugb_path = "/home/rogia/Downloads/INV_DRUGB"
+    all_seeds = [0, 64, 55, 101, 350, 21, 33, 10, 505]
+    for seed in all_seeds:
+        train_test_valid_split_3(input_path=twosides_path, dataset_name="twosides", seed=seed)
+        train_test_valid_split_3(input_path=drugb_path, dataset_name="drugbank", seed=seed)
 
-    load_dataset("/home/rogia/Documents/git/side_effects/side_effects/preprocess/", "drugbank")
-    exit()
-    # mytest(input_path="/home/rogia/Bureau/new")
-    train, test, valid, train_and_test, train_and_valid, test_and_valid = analyze_jy_split("/home/rogia/Bureau/new")
-    df1 = pd.DataFrame(train_and_test, columns=["paire", "train", "test"])
-    df2 = pd.DataFrame(train_and_valid, columns=["paire", "train", "valid"])
-    df3 = pd.DataFrame(test_and_valid, columns=["paire", "test", "valid"])
-    save_results("jy_split_analysis.xlsx", contents=[("train-test", df1), ("train-valid", df2), ("test_valid", df3)])

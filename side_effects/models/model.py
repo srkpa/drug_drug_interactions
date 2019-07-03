@@ -4,6 +4,7 @@ from ivbase.nn.base import FCLayer
 from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
 from torch.nn import Conv1d, Embedding, Module
 from ivbase.nn.graphs.conv.gcn import GCNLayer
+from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, load_dataset
 
 
 class PCNN(nn.Module):
@@ -109,21 +110,39 @@ class DGLGraph(nn.Module):
 
 class DRUUD(nn.Module):
 
-    def __init__(self, drug_feature_extractor, fc_layers_dim, output_dim, **kwargs):
+    def __init__(self, drug_feature_extractor, fc_layers_dim, output_dim, use_gpu, mode='concat', **kwargs):
         super(DRUUD, self).__init__()
-        self.__drug_feature_extractor = drug_feature_extractor
-        in_size = 2 * self.__drug_feature_extractor.output_dim  # usually check your dim
+        self.use_gpu = use_gpu
+        self.mode = mode
+        self.drug_feature_extractor = drug_feature_extractor
+
+        in_size = 2 * self.drug_feature_extractor.output_dim
+        if self.mode in ['sum', 'max', "elementwise"]:
+            in_size = self.drug_feature_extractor.output_dim
 
         self.classifier = FCNet(input_size=in_size, fc_layer_dims=fc_layers_dim, output_dim=output_dim, **kwargs)
 
     def forward(self, batch):
-        n1 = batch.shape[1] // 2
-        n2 = batch.shape[0]
-        drug1, drug2 = torch.split(batch, n1, 1)
-        features = self.__drug_feature_extractor(torch.cat((drug1, drug2)))  # normal
-        features_drug1, features_drug2 = torch.split(features, n2)
-        ddi = torch.cat((features_drug1, features_drug2), 1)
+        drugs_a, drugs_b = list(zip(*batch))
+        drugs_a, drugs_b = torch.stack(drugs_a), torch.stack(drugs_b)
+
+        if self.use_gpu:
+            drugs_a = drugs_a.cuda()
+            drugs_b = drugs_b.cuda()
+
+        features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
+
+        if self.mode == "elementwise":
+            ddi = torch.mul(features_drug1, features_drug2)
+        elif self.mode == "sum":
+            ddi = torch.add(features_drug1, features_drug2)
+        elif self.mode == "max":
+            ddi = torch.max(features_drug1, features_drug2)
+        else:
+            ddi = torch.cat((features_drug1, features_drug2), 1)
+
         out = self.classifier(ddi)
+
         return out
 
 # dispatcher -n "temp_ddi" -e "expt-convnet" -x 86400 -v 100 -t "ml.p3.2xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json

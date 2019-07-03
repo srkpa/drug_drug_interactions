@@ -1,15 +1,14 @@
 import ast
 import pickle
-import torch
 from functools import partial
+
 from ivbase.utils.datasets.datacache import DataCache
+from sklearn.model_selection import train_test_split
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, load_dataset
-from sklearn.model_selection import train_test_split
-from side_effects.external_utils.loss import weighted_binary_cross_entropy3
+from side_effects.preprocess.dataset import load_train_test_files, load_dataset
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -60,23 +59,23 @@ def run_experiment(model_params, input_path, output_path="expts"):
         gpu = True
     # seed
     dataset = expt_params["dataset"]["name"]
-    smi_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
-
+    smiles_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
     rstate = expt_params["dataset"]["seed"]
+    mode = expt_params["dataset"]["mode"]
+
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
     else:
         # load train and test files
+        inv_seed = expt_params["dataset"]["inv_seed"]
         targets, x_train, x_test, x_valid, y_train, y_test, y_valid = load_train_test_files(input_path=f"{cach_path}",
                                                                                             dataset_name=dataset,
-                                                                                            transformer=smi_transformer)
-
-    x_train, x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_valid]))
-    y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
-
-    print(x_train.shape, y_train.shape)
+                                                                                            transformer=smiles_transformer,
+                                                                                            seed=inv_seed)
+    y_train, y_test, y_valid = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
+    print(y_train.shape, y_test.shape, y_valid.shape)
 
     # The loss function
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
@@ -94,7 +93,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dg_net = get_network(expt_params["extractor"], expt_params["extractor_params"])
     # b) Build the model
     network = DRUUD(drug_feature_extractor=dg_net, fc_layers_dim=expt_params["fc_layers_dim"],
-                    output_dim=y_train.shape[1], **expt_params["fc_reg"])
+                    output_dim=y_train.shape[1], use_gpu=gpu, mode=mode, **expt_params["fc_reg"])
     if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
     print(f"Architecture:\n\tname: {method}\n\ttnetwork:{network}")
@@ -113,7 +112,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
     print(f"Training details: \n{trainin}")
-    model.train(x_train=x_train, y_train=y_train, x_valid=x_val, y_valid=y_val, **expt_params["train_params"])
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_valid, y_valid=y_valid, **expt_params["train_params"])
     save(expt_params, "configs.json", output_path)
     save(model.history, "history.json", output_path)
     model.save(os.path.join(output_path, "weights.json"))
