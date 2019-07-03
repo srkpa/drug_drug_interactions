@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files, load_dataset
+from side_effects.preprocess.dataset import load_train_test_files, load_dataset, to_tensor
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
