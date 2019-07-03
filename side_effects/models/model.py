@@ -2,9 +2,8 @@ import torch
 import torch.nn as nn
 from ivbase.nn.base import FCLayer
 from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
-from torch.nn import Conv1d, Embedding, Module
 from ivbase.nn.graphs.conv.gcn import GCNLayer
-from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, load_dataset
+from torch.nn import Conv1d, Embedding, Module
 
 
 class PCNN(nn.Module):
@@ -144,5 +143,3 @@ class DRUUD(nn.Module):
         out = self.classifier(ddi)
 
         return out
-
-# dispatcher -n "temp_ddi" -e "expt-convnet" -x 86400 -v 100 -t "ml.p3.2xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json

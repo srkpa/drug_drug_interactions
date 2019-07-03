@@ -3,7 +3,21 @@
     {
       "name": "twosides",
       "smi_transf": "seq",
-      "inv_seed": 64,
+      "inv_seed": 42,
+      "seed": null,
+      "mode": "max"
+    },
+    {
+      "name": "twosides",
+      "smi_transf": "seq",
+      "inv_seed": 42,
+      "seed": null,
+      "mode": "sum"
+    },
+    {
+      "name": "twosides",
+      "smi_transf": "seq",
+      "inv_seed": 42,
       "seed": null,
       "mode": "elementwise"
     }
@@ -55,8 +69,8 @@
   ],
   "train_params": [
     {
-      "n_epochs": 1,
-      "batch_size": 8,
+      "n_epochs": 100,
+      "batch_size": 256,
       "with_early_stopping": true,
       "patience": 3
     }
