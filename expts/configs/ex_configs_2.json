@@ -1,9 +1,16 @@
 {
   "dataset": [
     {
-      "name": "twosides",
+      "name": "drugbank",
       "smi_transf": "seq",
-      "inv_seed": 505,
+      "inv_seed": 101,
+      "seed": null,
+      "mode": "concat"
+    },
+     {
+      "name": "drugbank",
+      "smi_transf": "seq",
+      "inv_seed": 21,
       "seed": null,
       "mode": "concat"
     }
