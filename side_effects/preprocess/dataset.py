@@ -394,7 +394,7 @@ def train_test_valid_split_2(input_path, dataset_name, header=True, train_split=
 
 def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True, seed=42):
     combo_path = f"{input_path}/{dataset_name}-combo.csv"
-    interactions = load_ddis_combinations(fname=combo_path, header=header, dataset_name=dataset_name)
+    interactions = load_ddis_combinations(fname=combo_path, header=header, dataset_name="twosides")
     drugs = list(set([x1 for (x1, _) in interactions] + [x2 for (_, x2) in interactions]))
 
     np.random.seed(seed=seed)
