@@ -3,23 +3,9 @@
     {
       "name": "twosides",
       "smi_transf": "seq",
-      "inv_seed": 42,
+      "inv_seed": 505,
       "seed": null,
-      "mode": "max"
-    },
-    {
-      "name": "twosides",
-      "smi_transf": "seq",
-      "inv_seed": 42,
-      "seed": null,
-      "mode": "sum"
-    },
-    {
-      "name": "twosides",
-      "smi_transf": "seq",
-      "inv_seed": 42,
-      "seed": null,
-      "mode": "elementwise"
+      "mode": "concat"
     }
   ],
   "arch": [

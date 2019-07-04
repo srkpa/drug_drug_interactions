@@ -101,22 +101,22 @@ def generator(x, y, batch):
         for i in range(0, n, batch):
             yield x[i:i + batch], y[i:i + batch]
 
-
-def batch_generator(X, Y, batch_size=32, infinite=True):
-    # Prepare the indexes necessary for the batch selection
-    loop = 0
-    n = len(X)
-    idx = np.arange(n)
-    np.random.shuffle(idx)
-
-    # Loop the dataset once (for testing and validation) or infinite times (for training)
-    while loop < 1 or infinite:
-        # Loop the whole dataset and create the batches according to batch_size
-        for i in range(0, len(X), batch_size):
-            start = i  # starting index of the batch
-            end = min(i + batch_size, len(X))  # ending index of the batch
-            x = [X[idx[ii]] for ii in range(start, end)]  # Generate the batch 'x'
-            y = [Y[idx[ii, None]] for ii in range(start, end)]
-            y = torch.cat(y, dim=0)
-            yield x, y  # return the x and y values of the batch
-        loop += 1
+#
+# def batch_generator(X, Y, batch_size=32, infinite=True):
+#     # Prepare the indexes necessary for the batch selection
+#     loop = 0
+#     n = len(X)
+#     idx = np.arange(n)
+#     np.random.shuffle(idx)
+#
+#     # Loop the dataset once (for testing and validation) or infinite times (for training)
+#     while loop < 1 or infinite:
+#         # Loop the whole dataset and create the batches according to batch_size
+#         for i in range(0, len(X), batch_size):
+#             start = i  # starting index of the batch
+#             end = min(i + batch_size, len(X))  # ending index of the batch
+#             x = [X[idx[ii]] for ii in range(start, end)]  # Generate the batch 'x'
+#             y = [Y[idx[ii, None]] for ii in range(start, end)]
+#             y = torch.cat(y, dim=0)
+#             yield x, y  # return the x and y values of the batch
+#         loop += 1
