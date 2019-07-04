@@ -31,16 +31,16 @@ class DDIModel(Model):
             callbacks += [checkpointer]
 
         nb_steps_train, nb_step_valid = int(len(x_train) / batch_size), int(len(x_valid) / batch_size)
-        self.history = self.fit_generator(train_generator=batch_generator(x_train, y_train, batch_size),
+        self.history = self.fit_generator(train_generator=generator(x_train, y_train, batch_size),
                                           steps_per_epoch=nb_steps_train,
-                                          valid_generator=batch_generator(x_valid, y_valid, batch_size),
+                                          valid_generator=generator(x_valid, y_valid, batch_size),
                                           validation_steps=nb_step_valid,
                                           epochs=n_epochs, callbacks=callbacks)
 
         return self
 
     def test(self, x, y, batch_size=256):
-        valid_gen = batch_generator(x, y, batch_size)
+        valid_gen = generator(x, y, batch_size)
         nsteps = ceil(len(x) / (batch_size * 1.0))
         _, y_pred = self.evaluate_generator(valid_gen, steps=nsteps, return_pred=True)
         y_pred = np.concatenate(y_pred, axis=0)
