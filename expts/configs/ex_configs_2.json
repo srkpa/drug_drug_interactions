@@ -1,19 +1,15 @@
 {
   "dataset": [
     {
-      "name": "drugbank",
+      "name": "twosides",
       "smi_transf": "seq",
-      "inv_seed": 101,
-      "seed": null,
-      "mode": "concat"
-    },
-     {
-      "name": "drugbank",
-      "smi_transf": "seq",
-      "inv_seed": 21,
-      "seed": null,
+      "inv_seed": null,
+      "seed": 42,
       "mode": "concat"
     }
+  ],
+  "pos_weights": [
+    2, 5
   ],
   "arch": [
     "druud"
@@ -49,7 +45,7 @@
     null
   ],
   "loss_function": [
-    "bce"
+    "weighted"
   ],
   "optimizer": [
     "adam"

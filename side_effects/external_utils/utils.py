@@ -83,13 +83,14 @@ def get_dataset(dt):
 def get_loss(loss, **kwargs):
     if loss == "weighted":
         y = kwargs.get("y_train")
+        n_pos = kwargs.get("n_pos")
         if isinstance(y, th.Tensor):
-            y = y.numpy()
+            y = y.cpu().numpy()
         w = compute_classes_weight(y=y)
         print("weight", w.shape)
         if torch.cuda.is_available():
             w = w.cuda()
-        return Weighted_binary_cross_entropy1(weights_per_targets=w)
+        return Weighted_binary_cross_entropy1(weights_per_targets=w, n_pos=n_pos)
     return get_loss_or_metric(loss)
 
 

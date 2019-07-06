@@ -9,10 +9,11 @@ from torch.nn.functional import binary_cross_entropy
 class Weighted_binary_cross_entropy1(Module):
 
     def __init__(self, weights_per_targets=None,
-                 reduction='mean'):
+                 reduction='mean', n_pos=1):
         super(Weighted_binary_cross_entropy1, self).__init__()
         self.weights = weights_per_targets
         self.reduction = reduction
+        self.n_pos = n_pos
 
     def forward(self, input, target):
         assert input.shape == target.shape
@@ -22,7 +23,7 @@ class Weighted_binary_cross_entropy1(Module):
             weights = torch.zeros_like(input)
             zero_w = self.weights[0].unsqueeze(0).expand(*input.shape)
             weights = torch.where(target == 0, zero_w, weights)
-            one_w = self.weights[1].unsqueeze(0).expand(*input.shape)
+            one_w = self.weights[1].unsqueeze(0).expand(*input.shape) * self.n_pos
             weights = torch.where(target == 1, one_w, weights)
         else:
             weights = None
@@ -32,7 +33,7 @@ class Weighted_binary_cross_entropy1(Module):
 
 class Weighted_cross_entropy(Module):
 
-    def __init__(self,  weights_per_labels):
+    def __init__(self, weights_per_labels):
         super(Weighted_cross_entropy, self).__init__()
         self.weights = weights_per_labels
 

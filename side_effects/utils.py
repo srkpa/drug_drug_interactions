@@ -78,7 +78,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(y_train.shape, y_test.shape, y_valid.shape)
 
     # The loss function
-    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
+    n_pos = expt_params["pos_weights"]
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, n_pos=n_pos)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization
@@ -123,3 +124,5 @@ def run_experiment(model_params, input_path, output_path="expts"):
     pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
+
+#dispatcher -n "ddi_deepddi" -e "deepddi-real-drugbank-inv-seeds" -x 86400 -v 100 -t "ml.c4.8xlarge" -i "s3://datasets-ressources/DDI/INV_DRUGB_REAL" -o  "s3://rogia/EXPT-RES/DEEPDDI/INVIVO/DRUGBANK"  -p ex_configs_1.json -c 9

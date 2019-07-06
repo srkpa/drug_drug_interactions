@@ -27,7 +27,7 @@ def unpack_results(outrepo):
     return confs, out, y_true, y_probs, losses
 
 
-def describe_expt(input_path, output_path="/home/rogia/Documents/git/side_effects/side_effects/figures"):
+def describe_expt(input_path, output_path="/home/rogia/Documents/analysis//figures"):
     params, out, y_true, y_scores, losses = unpack_results(input_path)
     init_fn = params["init_fn"]
     loss_function = params["loss_function"]
@@ -471,11 +471,11 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    a = unpack_results("/home/rogia/Téléchargements")
-    print(a[1]["ap"]["micro"])
-    exit()
-    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/fmap")
+    # a = unpack_results("/home/rogia/Téléchargements")
+    # plot_losses(a[-1])
+    # exit()
+    df = describe_all_experiments("/home/rogia/Documents/analysis/results")
     print(df)
-    save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/fmap-output.xlsx", contents=[("fc map", df)])
+    save_results(filename="//home/rogia/Documents/analysis/rapport/druud-all-invivo-drugbank-seeds.xlsx", contents=[("res", df)])
     exit()
     # # Revoir axes graphiques
