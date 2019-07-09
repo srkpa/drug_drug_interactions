@@ -33,16 +33,17 @@ def describe_expt(input_path, output_path="/home/rogia/Documents/analysis//figur
     loss_function = params["loss_function"]
     extractor_network = params["extractor"]
     extractor_params = params["extractor_params"]
-    anchored_text = "\n".join([f"{hp}:{val}" for hp, val in [("network", extractor_network), ("loss", loss_function), ("init", init_fn)]])
+    anchored_text = "\n".join(
+        [f"{hp}:{val}" for hp, val in [("network", extractor_network), ("loss", loss_function), ("init", init_fn)]])
 
     results = {
-        #"fc out size": extractor_params["out_size"],
-        #"network": extractor_network,
-        #"loss": loss_function,
-        #"init_fn": init_fn,
-        #"embedding ": (extractor_params["vocab_size"], extractor_params["embedding_size"]),
-        #"out size": extractor_params["out_size"],
-        #"kernel size": extractor_params["kernel_size"],
+        # "fc out size": extractor_params["out_size"],
+        # "network": extractor_network,
+        # "loss": loss_function,
+        # "init_fn": init_fn,
+        # "embedding ": (extractor_params["vocab_size"], extractor_params["embedding_size"]),
+        # "out size": extractor_params["out_size"],
+        # "kernel size": extractor_params["kernel_size"],
 
         "micro auprc": out["ap"]['micro'],
         "micro rocauc": out["ROC"]['micro'],
@@ -55,6 +56,7 @@ def describe_expt(input_path, output_path="/home/rogia/Documents/analysis//figur
     plot_losses(losses, text=anchored_text, save_as=os.path.join(output_path, f"{os.path.basename(input_path)}.png"))
 
     return results
+
 
 # Update until now
 
@@ -471,11 +473,17 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    # a = unpack_results("/home/rogia/Téléchargements")
-    # plot_losses(a[-1])
-    # exit()
+    from sklearn.metrics import roc_auc_score, average_precision_score
+
+    a = unpack_results("/home/rogia/Téléchargements")
+    print(a[1]["ap"]["micro"])
+    print(a[1]["ROC"]["micro"])
+    print(average_precision_score(a[2], a[3], "micro"))
+    plot_losses(a[-1])
+    exit()
     df = describe_all_experiments("/home/rogia/Documents/analysis/results")
     print(df)
-    save_results(filename="//home/rogia/Documents/analysis/rapport/druud-all-invivo-drugbank-seeds.xlsx", contents=[("res", df)])
+    save_results(filename="//home/rogia/Documents/analysis/rapport/druud-all-invivo-drugbank-seeds.xlsx",
+                 contents=[("res", df)])
     exit()
     # # Revoir axes graphiques

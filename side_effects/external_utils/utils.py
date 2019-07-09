@@ -5,10 +5,10 @@ import ivbase.nn.extractors as feat
 import torch.optim as optim
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 from pytoune.framework.metrics import get_loss_or_metric
-from sklearn.utils import compute_class_weight
+from side_effects.external_utils.loss import compute_classes_weight
 
 from side_effects.external_utils.init import *
-from side_effects.external_utils.loss import Weighted_binary_cross_entropy1
+from side_effects.external_utils.loss import Weighted_binary_cross_entropy1, weighted_binary_cross_entropy3
 from side_effects.models.model import PCNN, FCNet, DRUUD, DeepDDI, DGLGraph
 from side_effects.preprocess.dataset import TDGLDataset, MyDataset
 from side_effects.preprocess.transforms import *
@@ -61,12 +61,6 @@ all_dataset_fn = dict(
 )
 
 
-def compute_classes_weight(y):
-    return torch.tensor([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
-                         if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T],
-                        dtype=torch.float32).t()
-
-
 def save(obj, filename, output_path):
     with open(os.path.join(output_path, filename), 'w') as CNF:
         json.dump(obj, CNF)
@@ -81,7 +75,7 @@ def get_dataset(dt):
 
 
 def get_loss(loss, **kwargs):
-    if loss == "weighted":
+    if loss == "weighted-1":
         y = kwargs.get("y_train")
         n_pos = kwargs.get("n_pos")
         if isinstance(y, th.Tensor):
@@ -91,6 +85,9 @@ def get_loss(loss, **kwargs):
         if torch.cuda.is_available():
             w = w.cuda()
         return Weighted_binary_cross_entropy1(weights_per_targets=w, n_pos=n_pos)
+    elif loss == "weighted-3":
+        return weighted_binary_cross_entropy3
+
     return get_loss_or_metric(loss)
 
 

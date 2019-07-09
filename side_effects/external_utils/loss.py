@@ -1,9 +1,14 @@
 import numpy as np
 import torch
-from sklearn.utils import compute_sample_weight
-from torch.nn import BCELoss
+from sklearn.utils import compute_class_weight
 from torch.nn import Module
 from torch.nn.functional import binary_cross_entropy
+
+
+def compute_classes_weight(y):
+    return torch.tensor([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
+                         if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T],
+                        dtype=torch.float32).t()
 
 
 class Weighted_binary_cross_entropy1(Module):
@@ -29,24 +34,6 @@ class Weighted_binary_cross_entropy1(Module):
             weights = None
 
         return binary_cross_entropy(input, target, weight=weights, reduction=self.reduction)
-
-
-class Weighted_cross_entropy(Module):
-
-    def __init__(self, weights_per_labels):
-        super(Weighted_cross_entropy, self).__init__()
-        self.weights = weights_per_labels
-
-    def forward(self, input, target):
-        assert input.shape == target.shape
-        assert input.shape[1] == len(self.weights)
-        return sum([self.weights[i] * binary_cross_entropy(input[:, i], target[:, i]) for i in range(target.shape[1])])
-
-
-def mloss(y_pred, y_true):
-    epsilon = np.finfo(float).eps
-    y_pred = torch.clamp(y_pred, epsilon, 1 - epsilon)
-    return torch.mean(torch.sum(- y_true * torch.log(y_pred) - (1 - y_true) * torch.log(1 - y_pred), dim=1))
 
 
 def weighted_binary_cross_entropy1(output, target, weights_per_targets=None,
@@ -109,16 +96,20 @@ def weighted_binary_cross_entropy2(output, target, weights_per_targets=None,
     return torch.neg(torch.mean(loss))
 
 
-def weighted_binary_cross_entropy3(output, target):
-    assert output.shape == target.shape
-    y = target.cpu().numpy()
-    w = torch.tensor([compute_sample_weight(class_weight='balanced', y=i) for i in y], dtype=torch.float32)
+def weighted_binary_cross_entropy3(inputs, targets):
+    assert inputs.shape == targets.shape
+    y = targets.cpu().numpy()
+    weights_per_targets = compute_classes_weight(y)
     if torch.cuda.is_available():
-        w = w.cuda()
-    assert w.shape == target.shape
-    print(output.shape, w.shape, target.shape)
-    loss = BCELoss(reduction='mean', weight=w)
-    return loss(output, target)
+        weights_per_targets = weights_per_targets.cuda()
+    weights = torch.zeros_like(inputs)
+    zero_w = weights_per_targets[0].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(targets == 0, zero_w, weights)
+    one_w = weights_per_targets[1].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(targets == 1, one_w, weights)
+    assert weights.shape == targets.shape
+
+    return binary_cross_entropy(inputs, targets, weight=weights, reduction="mean")
 
 
 def test():
