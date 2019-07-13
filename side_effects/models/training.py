@@ -14,13 +14,13 @@ class DDIModel(Model):
         Model.__init__(self, model=network, optimizer=optimizer, loss_function=loss)
 
     def train(self, x_train, y_train, x_valid, y_valid, n_epochs=10, batch_size=256,
-              log_filename=None, checkpoint_filename=None, with_early_stopping=False, patience=3):
+              log_filename=None, checkpoint_filename=None, with_early_stopping=False, patience=3, min_lr=1e-06):
 
         callbacks = []
         if with_early_stopping:
             early_stopping = EarlyStopping(monitor='val_loss', patience=patience, verbose=True)
             callbacks += [early_stopping]
-        reduce_lr = ReduceLROnPlateau(patience=2, factor=1 / 2, min_lr=1e-6, verbose=True)
+        reduce_lr = ReduceLROnPlateau(patience=2, factor=1 / 4, min_lr=min_lr, verbose=True)
         best_model_restore = BestModelRestore()
         callbacks += [reduce_lr, best_model_restore]
         if log_filename:

@@ -475,10 +475,10 @@ if __name__ == '__main__':
     #
     from sklearn.metrics import roc_auc_score, average_precision_score
 
-    a = unpack_results("/home/rogia/Téléchargements")
+    a = unpack_results("/home/rogia/Images")
     print(a[1]["ap"]["micro"])
     print(a[1]["ROC"]["micro"])
-    print(average_precision_score(a[2], a[3], "micro"))
+    print(average_precision_score(a[2], a[3], "micro", pos_label=0))
     plot_losses(a[-1])
     exit()
     df = describe_all_experiments("/home/rogia/Documents/analysis/results")

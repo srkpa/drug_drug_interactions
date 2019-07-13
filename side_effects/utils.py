@@ -9,7 +9,6 @@ from side_effects.external_utils.utils import *
 from side_effects.models.model import *
 from side_effects.models.training import DDIModel, compute_metrics
 from side_effects.preprocess.dataset import load_train_test_files, load_dataset, to_tensor
-from skmultilearn.model_selection import iterative_train_test_split
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -62,19 +61,24 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dataset = expt_params["dataset"]["name"]
     smiles_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
     rstate = expt_params["dataset"]["seed"]
-    iterative = expt_params["dataset"]["stratify"]
     mode = expt_params["dataset"]["mode"]
 
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
+        e = np.sum(y, axis=0)
+        c = [int(i / y.shape[0] * 100) for i in e]
+        print(max(c))
+        exit()
+        # Just keep labels that are around [0, 20]
+        labels = []
+        for i, j in enumerate(c):
+            if j <= 20:
+                labels.append(i)
+        y = y[:, labels]
+        print("final", y.shape)
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
-        #won 't work
-    # elif iterative not in ('None', None):
-    #     x, y = load_dataset(cach_path, dset_name=dataset)
-    #     x_train, y_train, x_test, y_test = iterative_train_test_split(x, y, test_size=0.5)
-    #     x_train, x_valid, y_train, y_valid = iterative_train_test_split(x_train, y_train, test_size=0.25)
-    #
+
     else:
         # load train and test files
         inv_seed = expt_params["dataset"]["inv_seed"]
@@ -133,4 +137,4 @@ def run_experiment(model_params, input_path, output_path="expts"):
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
 
-#dispatcher -n "ddi_deepddi" -e "deepddi-real-drugbank-inv-seeds" -x 86400 -v 100 -t "ml.c4.8xlarge" -i "s3://datasets-ressources/DDI/INV_DRUGB_REAL" -o  "s3://rogia/EXPT-RES/DEEPDDI/INVIVO/DRUGBANK"  -p ex_configs_1.json -c 9
+# dispatcher -n "ddi_deepddi" -e "deepddi-real-drugbank-inv-seeds" -x 86400 -v 100 -t "ml.c4.8xlarge" -i "s3://datasets-ressources/DDI/INV_DRUGB_REAL" -o  "s3://rogia/EXPT-RES/DEEPDDI/INVIVO/DRUGBANK"  -p ex_configs_1.json -c 9
