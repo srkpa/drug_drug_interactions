@@ -1,25 +1,17 @@
-Exception during training: Unknown property kind
+Exception during training: zero-dimensional tensor (at position 0) cannot be concatenated
 Traceback (most recent call last):
   File "/home/rogia/Documents/git/side_effects/bin/train", line 35, in main
     input_path=input_path)
-  File "/home/rogia/Documents/git/side_effects/side_effects/utils.py", line 76, in run_experiment
-    x_label="number of side effects", kind="cat", x_col="y_col", y_col="x_col")
-  File "/home/rogia/Documents/git/side_effects/side_effects/external_utils/plotting.py", line 25, in plot_distribution
-    sns.barplot(x=x_col, y=y_col, data=dist, color=sns.xkcd_rgb['darkish blue'], kind="bar")
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/seaborn/categorical.py", line 3154, in barplot
-    plotter.plot(ax, kwargs)
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/seaborn/categorical.py", line 1661, in plot
-    self.draw_bars(ax, bar_kws)
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/seaborn/categorical.py", line 1627, in draw_bars
-    color=self.colors, align="center", **kws)
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/matplotlib/__init__.py", line 1810, in inner
-    return func(ax, *args, **kwargs)
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/matplotlib/axes/_axes.py", line 2298, in bar
-    r.update(kwargs)
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/matplotlib/artist.py", line 916, in update
-    ret = [_update_property(self, k, v) for k, v in props.items()]
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/matplotlib/artist.py", line 916, in <listcomp>
-    ret = [_update_property(self, k, v) for k, v in props.items()]
-  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/matplotlib/artist.py", line 912, in _update_property
-    raise AttributeError('Unknown property %s' % k)
-AttributeError: Unknown property kind
+  File "/home/rogia/Documents/git/side_effects/side_effects/utils.py", line 129, in run_experiment
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_valid, y_valid=y_valid, **expt_params["train_params"])
+  File "/home/rogia/Documents/git/side_effects/side_effects/models/training.py", line 38, in train
+    epochs=n_epochs, callbacks=callbacks)
+  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/model.py", line 310, in fit_generator
+    step=step.number)
+  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/model.py", line 325, in _fit_batch
+    x, y, return_loss_tensor=True, return_pred=return_pred
+  File "/home/rogia/miniconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/model.py", line 601, in _compute_loss_and_metrics
+    loss = self.loss_function(pred_y, y)
+  File "/home/rogia/Documents/git/side_effects/side_effects/external_utils/loss.py", line 117, in weighted_binary_cross_entropy3
+    a))
+RuntimeError: zero-dimensional tensor (at position 0) cannot be concatenated

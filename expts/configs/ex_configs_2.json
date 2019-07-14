@@ -1,7 +1,7 @@
 {
   "dataset": [
     {
-      "name": "drugbank",
+      "name": "twosides",
       "smi_transf": "seq",
       "inv_seed": null,
       "seed": 42,
@@ -45,7 +45,7 @@
     null
   ],
   "loss_function": [
-    "bce"
+    "weighted-3"
   ],
   "optimizer": [
     "adam"
@@ -58,8 +58,8 @@
   ],
   "train_params": [
     {
-      "n_epochs": 200,
-      "batch_size": 256,
+      "n_epochs": 2,
+      "batch_size": 50,
       "with_early_stopping": false,
       "patience": 3,
       "min_lr": 1e-10

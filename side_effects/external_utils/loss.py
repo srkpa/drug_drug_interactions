@@ -108,8 +108,12 @@ def weighted_binary_cross_entropy3(inputs, targets):
     one_w = weights_per_targets[1].unsqueeze(0).expand(*inputs.shape)
     weights = torch.where(targets == 1, one_w, weights)
     assert weights.shape == targets.shape
-
-    return binary_cross_entropy(inputs, targets, weight=weights, reduction="mean")
+    x = torch.sum(targets, dim=0) / targets.shape[0]
+    # assert x.nelement() == targets.shape[1]
+    # print(x)
+    # a = [binary_cross_entropy(inputs[:, j], targets[:, j], weight=weights[:, j]) for j in range(targets.shape[1])]
+    # print(a)
+    return x
 
 
 def test():

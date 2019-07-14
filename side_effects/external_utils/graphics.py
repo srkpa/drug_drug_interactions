@@ -476,9 +476,24 @@ if __name__ == '__main__':
     from sklearn.metrics import roc_auc_score, average_precision_score
 
     a = unpack_results("/home/rogia/Images")
+    x = a[2]
+    y = a[3]
     print(a[1]["ap"]["micro"])
     print(a[1]["ROC"]["micro"])
-    print(average_precision_score(a[2], a[3], "micro", pos_label=0))
+    l = []
+    for j in range(x.shape[1]):
+        yt = x[:, j]
+        yp = y[:, j]
+        m = {}
+        for ii in range(100):
+            thr = ii/100
+            print(thr)
+            #min_thr = np.median(yp[np.where(yt == 1)])
+            yp = np.where(yp >= thr, 1, 0)
+            m[ii] = average_precision_score(yt, yp, "micro")
+        l.append(max(list(m.values())))
+    print(l, np.mean(l))
+    exit()
     plot_losses(a[-1])
     exit()
     df = describe_all_experiments("/home/rogia/Documents/analysis/results")
