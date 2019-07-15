@@ -8,9 +8,10 @@
       "mode": "concat"
     }
   ],
-  "pos_weights": [
-    1
-  ],
+  "weights": {
+    "use_exp":false,
+    "exp":1
+  },
   "arch": [
     "druud"
   ],
@@ -45,7 +46,7 @@
     null
   ],
   "loss_function": [
-    "weighted-3"
+    "weighted-1"
   ],
   "optimizer": [
     "adam"
@@ -59,7 +60,7 @@
   "train_params": [
     {
       "n_epochs": 2,
-      "batch_size": 50,
+      "batch_size": 5,
       "with_early_stopping": false,
       "patience": 3,
       "min_lr": 1e-10

@@ -1,26 +1,17 @@
-import numpy as np
-import torch
-from sklearn.utils import compute_class_weight
 from torch.nn import Module
 from torch.nn.functional import binary_cross_entropy
-
-
-def compute_classes_weight(y):
-    return torch.tensor([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
-                         if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T],
-                        dtype=torch.float32).t()
 
 
 class Weighted_binary_cross_entropy1(Module):
 
     def __init__(self, weights_per_targets=None,
-                 reduction='mean', n_pos=1):
+                 reduction='elementwise_mean'):
         super(Weighted_binary_cross_entropy1, self).__init__()
         self.weights = weights_per_targets
         self.reduction = reduction
-        self.n_pos = n_pos
 
     def forward(self, input, target):
+
         assert input.shape == target.shape
         assert input.shape[1] == self.weights.shape[1]
         if self.weights is not None:
@@ -28,12 +19,12 @@ class Weighted_binary_cross_entropy1(Module):
             weights = torch.zeros_like(input)
             zero_w = self.weights[0].unsqueeze(0).expand(*input.shape)
             weights = torch.where(target == 0, zero_w, weights)
-            one_w = self.weights[1].unsqueeze(0).expand(*input.shape) * self.n_pos
+            one_w = self.weights[1].unsqueeze(0).expand(*input.shape)
             weights = torch.where(target == 1, one_w, weights)
         else:
             weights = None
 
-        return binary_cross_entropy(input, target, weight=weights, reduction=self.reduction)
+        return binary_cross_entropy(input, target, weight=weights, reduction=None)
 
 
 def weighted_binary_cross_entropy1(output, target, weights_per_targets=None,
@@ -116,29 +107,45 @@ def weighted_binary_cross_entropy3(inputs, targets):
     return x
 
 
-def test():
+# def test():
+#     import torch
+#     import numpy as np
+#     from numpy.random import binomial, uniform
+#     from sklearn.utils import compute_class_weight
+#     batch_size, nb_targets = 32, 10
+#     outputs = uniform(0, 1, size=(batch_size, nb_targets))
+#     targets = np.array([binomial(1, uniform(0.1, 0.9), size=batch_size)
+#                         for _ in range(nb_targets)]).T
+#
+#     targets = np.array([1, 1, 0, 0, 0])
+#     print(compute_class_weight(class_weight=None, classes=np.array([0, 1]), y=targets))
+#     exit()
+#     # Here you should compute the class_weights using the targets for all your training data
+#     w = torch.tensor([
+#         compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
+#         for target in targets.T], dtype=torch.float32).t()
+#     outputs = torch.Tensor(outputs)
+#     targets = torch.Tensor(targets)
+#
+#     # I have a preference for 1 over 2 because 1 is numerically more stable since it use bce function from pytorch
+#     loss1 = weighted_binary_cross_entropy1(outputs, targets, w)
+#     loss2 = weighted_binary_cross_entropy2(outputs, targets, w)
+#     loss3 = binary_cross_entropy(outputs, targets)
+#     print(loss1, loss2, loss3)
+
+
+if __name__ == '__main__':
+    # test()
     import torch
     import numpy as np
     from numpy.random import binomial, uniform
     from sklearn.utils import compute_class_weight
+    from side_effects.external_utils.utils import compute_classes_weight
+
     batch_size, nb_targets = 32, 10
     outputs = uniform(0, 1, size=(batch_size, nb_targets))
     targets = np.array([binomial(1, uniform(0.1, 0.9), size=batch_size)
                         for _ in range(nb_targets)]).T
 
-    # Here you should compute the class_weights using the targets for all your training data
-    w = torch.tensor([
-        compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
-        for target in targets.T], dtype=torch.float32).t()
-    outputs = torch.Tensor(outputs)
-    targets = torch.Tensor(targets)
-
-    # I have a preference for 1 over 2 because 1 is numerically more stable since it use bce function from pytorch
-    loss1 = weighted_binary_cross_entropy1(outputs, targets, w)
-    loss2 = weighted_binary_cross_entropy2(outputs, targets, w)
-    loss3 = binary_cross_entropy(outputs, targets)
-    print(loss1, loss2, loss3)
-
-
-if __name__ == '__main__':
-    test()
+    print(compute_classes_weight(targets, use_exp=False, exp=1))
+    print(compute_classes_weight(targets, use_exp=True, exp=0.5))

@@ -5,7 +5,7 @@ import ivbase.nn.extractors as feat
 import torch.optim as optim
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 from pytoune.framework.metrics import get_loss_or_metric
-from side_effects.external_utils.loss import compute_classes_weight
+from sklearn.utils import compute_class_weight
 
 from side_effects.external_utils.init import *
 from side_effects.external_utils.loss import Weighted_binary_cross_entropy1, weighted_binary_cross_entropy3
@@ -61,6 +61,22 @@ all_dataset_fn = dict(
 )
 
 
+def compute_classes_weight(y, use_exp=False, exp=1):
+    weights = np.array([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
+                        if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T], dtype=np.float32)
+    weights = torch.from_numpy(weights).t()
+    if use_exp:
+        weights = exp * weights
+        return torch.exp(weights)
+    return weights
+
+
+def non_zeros_distribution(y):
+    one_w = np.sum(y, axis=0)
+    zero_w = [len(y) - w for w in one_w]
+    return np.array([zero_w, one_w])
+
+
 def save(obj, filename, output_path):
     with open(os.path.join(output_path, filename), 'w') as CNF:
         json.dump(obj, CNF)
@@ -75,19 +91,21 @@ def get_dataset(dt):
 
 
 def get_loss(loss, **kwargs):
-    if loss == "weighted-1":
+    if loss.startswith("weighted"):
         y = kwargs.get("y_train")
-        n_pos = kwargs.get("n_pos")
+        weigths_options = {
+            "use_exp": kwargs.get("use_exp"),
+            "exp": kwargs.get("exp")
+        }
         if isinstance(y, th.Tensor):
             y = y.cpu().numpy()
-        w = compute_classes_weight(y=y)
-        print("weight", w.shape)
+        w = compute_classes_weight(y=y, **weigths_options)
         if torch.cuda.is_available():
             w = w.cuda()
-        return Weighted_binary_cross_entropy1(weights_per_targets=w, n_pos=n_pos)
-    elif loss == "weighted-3":
-        return weighted_binary_cross_entropy3
-
+        if loss == "weighted-1":
+            return Weighted_binary_cross_entropy1(weights_per_targets=w)
+        elif loss == "weighted-3":
+            return weighted_binary_cross_entropy3
     return get_loss_or_metric(loss)
 
 

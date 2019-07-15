@@ -473,26 +473,24 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
+#     #0.6801937729260233
+# 0.05206946540451112
+# micro auprc 0.40784270916052795
+# micro roc 0.8766985058130636
+# macro  auprc 0.27097838779478367
+# macro roc 0.8253382149872388
+
     from sklearn.metrics import roc_auc_score, average_precision_score
 
     a = unpack_results("/home/rogia/Images")
     x = a[2]
     y = a[3]
-    print(a[1]["ap"]["micro"])
-    print(a[1]["ROC"]["micro"])
-    l = []
-    for j in range(x.shape[1]):
-        yt = x[:, j]
-        yp = y[:, j]
-        m = {}
-        for ii in range(100):
-            thr = ii/100
-            print(thr)
-            #min_thr = np.median(yp[np.where(yt == 1)])
-            yp = np.where(yp >= thr, 1, 0)
-            m[ii] = average_precision_score(yt, yp, "micro")
-        l.append(max(list(m.values())))
-    print(l, np.mean(l))
+    print(max(list(a[1]["ap"].values())))
+    print(min(list(a[1]["ap"].values())))
+    print("micro auprc", a[1]["ap"]["micro"])
+    print("micro roc", a[1]["ROC"]["micro"])
+    print("macro  auprc", average_precision_score(x, y, "macro"))
+    print("macro roc", roc_auc_score(x, y, "macro"))
     exit()
     plot_losses(a[-1])
     exit()

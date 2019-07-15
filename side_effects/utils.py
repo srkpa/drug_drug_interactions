@@ -65,21 +65,27 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
-        print(y.sum(axis=0))
-
-        e = np.sum(y, axis=0)
-        c = [int(i / y.shape[0] * 100) for i in e]
-        print(max(c))
-        # Just keep labels that are around [0, 20]
-        labels = []
-        for i, j in enumerate(c):
-            if j >= 10:
-                labels.append(i)
-        y = y[:, labels]
-        print("final", y.shape)
-        #x, y = x[:100], y[:100, :]
+        # print(y.sum(axis=0))
+        #
+        # e = np.sum(y, axis=0)
+        # c = [int(i / y.shape[0] * 100) for i in e]
+        # print(max(c))
+        # # Just keep labels that are around [0, 20]
+        # labels = []
+        # for i, j in enumerate(c):
+        #     if j >= 10:
+        #         labels.append(i)
+        # y = y[:, labels]
+        # print("final", y.shape)
+        # x, y = x[:100], y[:100, :]
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
+        a = compute_classes_weight(y_train)
+        print(np.where(a == 1))
+        b = non_zeros_distribution(y_train)
+        print(b)
+        print(a)
+
 
     else:
         # load train and test files
@@ -92,8 +98,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(y_train.shape, y_test.shape, y_valid.shape)
 
     # The loss function
-    n_pos = expt_params["pos_weights"]
-    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, n_pos=n_pos)
+    weights = expt_params["weights"]
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, **weights)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization
