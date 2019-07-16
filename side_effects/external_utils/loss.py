@@ -1,3 +1,4 @@
+import torch
 from torch.nn import Module
 from torch.nn.functional import binary_cross_entropy
 
@@ -24,7 +25,7 @@ class Weighted_binary_cross_entropy1(Module):
         else:
             weights = None
 
-        return binary_cross_entropy(input, target, weight=weights, reduction=None)
+        return binary_cross_entropy(input, target, weight=weights, reduction=self.reduction)
 
 
 def weighted_binary_cross_entropy1(output, target, weights_per_targets=None,

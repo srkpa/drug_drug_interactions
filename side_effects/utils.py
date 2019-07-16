@@ -86,7 +86,6 @@ def run_experiment(model_params, input_path, output_path="expts"):
         print(b)
         print(a)
 
-
     else:
         # load train and test files
         inv_seed = expt_params["dataset"]["inv_seed"]
@@ -99,6 +98,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     # The loss function
     weights = expt_params["weights"]
+    print(weights)
     loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, **weights)
     print(f"Loss Function: {loss_fn}")
 
