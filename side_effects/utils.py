@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
-from side_effects.models.training import DDIModel, compute_metrics
+from side_effects.models.trainer import DDIModel, compute_metrics
 from side_effects.preprocess.dataset import load_train_test_files, load_dataset, to_tensor
 
 
@@ -47,7 +47,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
                        model_params.items()}
     else:
         dc = DataCache()
-        cach_path = dc.get_dir(dir_path=input_path)
+        cach_path = dc.get_dir(dir_path=input_path, force=True)
         expt_params = model_params
 
     print(f"Input folder: {cach_path}")
@@ -65,26 +65,12 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
-        # print(y.sum(axis=0))
-        #
-        # e = np.sum(y, axis=0)
-        # c = [int(i / y.shape[0] * 100) for i in e]
-        # print(max(c))
-        # # Just keep labels that are around [0, 20]
-        # labels = []
-        # for i, j in enumerate(c):
-        #     if j >= 10:
-        #         labels.append(i)
-        # y = y[:, labels]
-        # print("final", y.shape)
-        # x, y = x[:100], y[:100, :]
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
-        a = compute_classes_weight(y_train)
-        print(np.where(a == 1))
-        b = non_zeros_distribution(y_train)
-        print(b)
-        print(a)
+        z = dict(zip(range(y_train.shape[1]), label_distribution(y_train)))
+        print(z)
+        pickle.dump(z, open(os.path.join(output_path, "labels_distribution.pkl"), "wb"))
+        exit()
 
     else:
         # load train and test files
@@ -97,9 +83,11 @@ def run_experiment(model_params, input_path, output_path="expts"):
     print(y_train.shape, y_test.shape, y_valid.shape)
 
     # The loss function
-    weights = expt_params["weights"]
+    weights = expt_params["weights_options"]
     print(weights)
-    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, **weights)
+    batch_weights = expt_params["batch_weights"]
+    print("use batch weights: ", batch_weights)
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, batch_weights=batch_weights, **weights)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization

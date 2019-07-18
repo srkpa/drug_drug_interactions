@@ -473,26 +473,49 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-#     #0.6801937729260233
-# 0.05206946540451112
-# micro auprc 0.40784270916052795
-# micro roc 0.8766985058130636
-# macro  auprc 0.27097838779478367
-# macro roc 0.8253382149872388
-
+    from math import ceil
     from sklearn.metrics import roc_auc_score, average_precision_score
 
-    a = unpack_results("/home/rogia/Images")
-    x = a[2]
-    y = a[3]
-    print(max(list(a[1]["ap"].values())))
-    print(min(list(a[1]["ap"].values())))
-    print("micro auprc", a[1]["ap"]["micro"])
-    print("micro roc", a[1]["ROC"]["micro"])
+    out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test/labels_distribution.pkl",
+                           "rb"))
+
+    #cuttoff = list(range(0, max(list(out.items())), 30))
+    print(out)
+    cl = [c for c in out if out[c] >= 30]
+    print(len(cl))
+    print(cl)
+
+    i2 = "/home/rogia/Musique"
+    i1 = "/home/rogia/Images"
+    a2 = unpack_results(i2)
+    a1 = unpack_results(i1)
+    x = a1[2][:, cl]
+    y = a1[3][:, cl]
+    print(x.shape, y.shape)
+    print(a2[1]["ap"])
+    exit()
+    res2 = list(a2[1]["ap"].values())
+    res1 = list(a1[1]["ap"].values())
+    comb = dict(zip(list(out.values()), res1))
+    comb2 = dict(zip(list(out.values()), res2))
+    print(comb)
+    print(comb2)
+
+    print(max(list(a1[1]["ap"].values())))
+    print(min(list(a1[1]["ap"].values())))
+
+    print("old micro auprc", a1[1]["ap"]["micro"])
+    print("old micro roc", a1[1]["ROC"]["micro"])
+    print("new micro  auprc", average_precision_score(x, y, "micro"))
+    print("new micro roc", roc_auc_score(x, y, "micro"))
     print("macro  auprc", average_precision_score(x, y, "macro"))
     print("macro roc", roc_auc_score(x, y, "macro"))
+    print("hier")
+    print("w  auprc", average_precision_score(x, y, "weighted"))
+    print("w", roc_auc_score(x, y, "weighted"))
+    plot_losses(a2[-1], save_as="label_density_plus_batch_elem_weights.png")
     exit()
-    plot_losses(a[-1])
+    plot_losses(a2[-1])
     exit()
     df = describe_all_experiments("/home/rogia/Documents/analysis/results")
     print(df)
