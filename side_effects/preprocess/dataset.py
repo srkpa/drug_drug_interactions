@@ -189,6 +189,8 @@ def load_train_test_files(input_path, dataset_name, transformer, seed):
     drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
     drugs = list(drugs2smiles.keys())
     smiles = list(drugs2smiles.values())
+    print(drugs)
+    print(smiles)
 
     # Transformer
     args = inspect.signature(transformer)
@@ -612,7 +614,8 @@ def load_dataset(input_path, dset_name):
     drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dset_name)
     drugs = list(drugs2smiles.keys())
     smiles = list(drugs2smiles.values())
-
+    print(drugs)
+    #print(smiles)
     # Transformer
     drugs = sequence_transformer(drugs=drugs, smiles=smiles)
     data = _filter(data, drugs)

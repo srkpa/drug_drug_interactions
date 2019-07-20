@@ -6,7 +6,7 @@ import pickle
 
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import AnchoredText
-
+from collections import Counter
 from side_effects.preprocess.dataset import *
 
 
@@ -431,7 +431,57 @@ def describe_data(y_train, y_test, y_valid, dataset_name="drugbank"):
     return df
 
 
+def load_raw_twosides(f="/home/rogia/Documents/raw_data/3003377s-twosides.tsv"):
+    g = open(f)
+    g.readline()
+    i = 0
+    res = {}
+    for line in g:
+        a = line.split("\t")
+        stitch_id1 = a[0]
+        stitch_id2 = a[1]
+        event_name = str(a[5]).lower()
+        conf_score = a[8]
+        res[(stitch_id1, stitch_id2, event_name)] = conf_score
+
+    return res
+
+
+def load_test_file(f="/home/rogia/Documents/analysis/data/INV_TWO_SEEDS/twosides-test_samples_0.csv", results=None):
+    l = []
+    res = load_ddis_combinations(f, header=False)
+    labels = list(set([j for ens in res.values() for j in ens]))
+    print(len(labels))
+    labels.sort()
+    res_1 = load_raw_twosides()
+    test = []
+    g = open(f)
+    g.readline()
+    i = 0
+    fin = defaultdict(list)
+    for line in g:
+        content = line.split(",")
+        drug1 = content[0]
+        drug2 = content[1]
+        se = content[-1].strip("\n").split(";")
+        for e in se:
+            pos = labels.index(e)
+            a = res_1[(drug1, drug2, e)]
+            l.append(a)
+            fin[a].append(y[i, pos])
+
+    c = dict(Counter(l))
+    print(fin["5"])
+
 if __name__ == '__main__':
+    i1 = "/home/rogia/Documents/analysis/results/output"
+    a1 = unpack_results(i1)
+    x = a1[2]
+    y = a1[3]
+    load_test_file(results=y)
+    exit()
+
+    exit()
     #
     # a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
     # i = a.plot(kind='bar',  figsize=(8, 8), fontsize=14, stacked=True).get_figure()
@@ -476,24 +526,27 @@ if __name__ == '__main__':
     from math import ceil
     from sklearn.metrics import roc_auc_score, average_precision_score
 
-    out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test/labels_distribution.pkl",
-                           "rb"))
+    #  out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test/labels_distribution.pkl",
+    #  "rb"))
 
-    #cuttoff = list(range(0, max(list(out.items())), 30))
-    print(out)
-    cl = [c for c in out if out[c] >= 30]
-    print(len(cl))
-    print(cl)
+    # cuttoff = list(range(0, max(list(out.items())), 30))
+    # print(out)
+    # cl = [c for c in out if out[c] >= 0]
+    # print(len(cl))
+    # print(cl)
+    from sklearn.metrics import accuracy_score
 
     i2 = "/home/rogia/Musique"
-    i1 = "/home/rogia/Images"
+    i1 = "/home/rogia/Documents/analysis/results/output"
     a2 = unpack_results(i2)
     a1 = unpack_results(i1)
-    x = a1[2][:, cl]
-    y = a1[3][:, cl]
+    x = a1[2]
+    y = a1[3]
+    print(x.shape)
+    exit()
     print(x.shape, y.shape)
     print(a2[1]["ap"])
-    exit()
+    # exit()
     res2 = list(a2[1]["ap"].values())
     res1 = list(a1[1]["ap"].values())
     comb = dict(zip(list(out.values()), res1))

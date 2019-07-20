@@ -62,15 +62,13 @@ def run_experiment(model_params, input_path, output_path="expts"):
     smiles_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
     rstate = expt_params["dataset"]["seed"]
     mode = expt_params["dataset"]["mode"]
+    test_size = expt_params["split_proportion"]["test_size"]
 
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
-        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=rstate)
-        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=0.25, random_state=rstate)
-        z = dict(zip(range(y_train.shape[1]), label_distribution(y_train)))
-        print(z)
-        pickle.dump(z, open(os.path.join(output_path, "labels_distribution.pkl"), "wb"))
-        exit()
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=rstate)
+        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=test_size + 0.05,
+                                                              random_state=rstate)
 
     else:
         # load train and test files
@@ -81,7 +79,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
                                                                                             seed=inv_seed)
     y_train, y_test, y_valid = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
     print(y_train.shape, y_test.shape, y_valid.shape)
-
+    exit()
     # The loss function
     weights = expt_params["weights_options"]
     print(weights)
