@@ -659,8 +659,8 @@ def mytest(input_path):
 
 
 if __name__ == '__main__':
-    drugb_path = "/home/rogia/Documents/code/INV_DRUGB_REAL"
-    all_seeds = [0, 64, 55, 101, 350, 21, 33, 10, 505]
+    drugb_path = "/home/rogia/Documents/analysis/data/TS23_INV"
+    all_seeds = [0, 64, 55, 101, 350, 21, 33, 10, 505, 42]
     for seed in all_seeds:
-        train_test_valid_split_3(input_path=drugb_path, dataset_name="drugbank", seed=seed)
+        train_test_valid_split_3(input_path=drugb_path, dataset_name="twosides", seed=seed)
 
