@@ -66,6 +66,8 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     if rstate not in ('None', None):
         x, y = load_dataset(cach_path, dset_name=dataset)
+        corr(y, output_path=output_path)
+        exit()
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=rstate)
         x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=test_size + 0.05,
                                                               random_state=rstate)

@@ -169,8 +169,20 @@ def get_optimizer(optimizer, module, params):
     return all_optimizers_dict[optimizer](module.parameters(), **params)
 
 
-def corr(y):
+def corr(y, output_path):
     col = [str(i) for i in range(y.shape[1])]
     data = pd.DataFrame(y, columns=col)
-    pd.scatter_matrix(data, figsize=(30, 30))
-    plt.show()
+    corr = data.corr()
+    print(corr)
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    cax = ax.matshow(corr, cmap='coolwarm', vmin=-1, vmax=1)
+    fig.colorbar(cax)
+    ticks = np.arange(0, len(data.columns), 1)
+    ax.set_xticks(ticks)
+    plt.xticks(rotation=90)
+    ax.set_yticks(ticks)
+    ax.set_xticklabels(data.columns)
+    ax.set_yticklabels(data.columns)
+    plt.savefig("{}/{}".format(output_path, "correlation.png"))
+    #plt.show()
