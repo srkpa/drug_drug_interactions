@@ -1,9 +1,25 @@
 {
   "dataset": [
     {
-      "name": "drugbank",
+      "name": "twosides",
       "smi_transf": "seq",
-      "dt_transf": "common"
+      "inv_seed": null,
+      "seed": 42,
+      "mode": "concat"
+    }
+  ],
+  "split_proportion": [
+    {
+      "test_size": 0.2
+    }
+  ],
+  "batch_weights": [
+    false
+  ],
+  "weights_options": [
+    {
+      "use_exp": false,
+      "exp": 1
     }
   ],
   "arch": [
@@ -14,25 +30,12 @@
   ],
   "extractor_params": [
     {
-      "vocab_size": 851,
-      "embedding_size": 32,
+      "vocab_size": 151,
+      "embedding_size": 512,
       "cnn_sizes": [
-        32
+        1024
       ],
-      "kernel_size": 8,
-      "dropout": 0.0,
-      "pooling": "max",
-      "b_norm": false,
-      "pooling_len": 2,
-      "normalize_features": true
-    },
-     {
-      "vocab_size": 851,
-      "embedding_size": 32,
-      "cnn_sizes": [
-        32
-      ],
-      "kernel_size": 9,
+      "kernel_size": 17,
       "dropout": 0.0,
       "pooling": "max",
       "b_norm": false,
@@ -43,10 +46,12 @@
   "fc_layers_dim": [
     [
       1024
-    ]],
-   "fc_reg":[{
-      "dropout":0,
-      "b_norm": false
+    ]
+  ],
+  "fc_reg": [
+    {
+      "dropout": 0,
+      "b_norm": true
     }
   ],
   "init_fn": [
@@ -60,7 +65,7 @@
   ],
   "optimizer_params": [
     {
-      "lr": 0.0001,
+      "lr": 0.00001,
       "weight_decay": 0
     }
   ],
@@ -68,7 +73,9 @@
     {
       "n_epochs": 100,
       "batch_size": 256,
-      "with_early_stopping": true
+      "with_early_stopping": false,
+      "patience": 3,
+      "min_lr": 1e-10
     }
   ]
 }

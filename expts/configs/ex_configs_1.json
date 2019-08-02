@@ -6,38 +6,38 @@
       "dt_transf": "common"
     }
   ],
-  "arch": [
+  "extractor": [
+    "deepddi"
+  ],
+   "extractor_params": [
     {
-      "net": "deepddi",
-      "params": {
-        "input_dim": 100,
+      "input_dim": 100,
         "hidden_sizes": [
-          2000
+          2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048
         ]
-      },
-      "init_fn": null
     }
   ],
+  "init_fn": [
+    null
+  ],
   "loss_function": [
-    "weighted"
+    "bce"
   ],
   "optimizer": [
+    "adam"
+  ],
+  "optimizer_params": [
     {
-      "optim": "sgd",
-      "params": {
-        "lr": 0.01,
-        "weight_decay": 0
-      }
+      "lr": 0.0001,
+      "weight_decay": 0
     }
   ],
   "train_params": [
     {
-      "n_epochs": 1,
-      "batch_size": 32,
-      "early_stopping": true,
-      "reduce_lr": true
+      "n_epochs": 1000,
+      "batch_size": 256,
+      "with_early_stopping": false
     }
   ]
 }
-
 

@@ -41,9 +41,9 @@ def model_classification_report(actual, predicted):
 def acc_precision_f1_recall(actual, predicted, average='macro'):
     return dict(
         acc=_accuracy(actual, predicted, average=average),
-        macro_f1=f1_score(actual, predicted, average=average),
-        macro_prc=precision_score(actual, predicted, average=average),
-        macro_rec=recall_score(actual, predicted, average=average))
+        f1=f1_score(actual, predicted, average=average),
+        prc=precision_score(actual, predicted, average=average),
+        rec=recall_score(actual, predicted, average=average))
 
 
 def _accuracy(actual, predicted, average=None):

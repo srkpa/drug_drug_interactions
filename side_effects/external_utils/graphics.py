@@ -3,20 +3,14 @@ import json
 import operator
 import os
 import pickle
-import matplotlib.ticker as mtick
+
 import matplotlib.pyplot as plt
-import numpy as np
-import pdfkit
-import pandas as pd
 from matplotlib.offsetbox import AnchoredText
-from weasyprint import HTML
+from collections import Counter
 from side_effects.preprocess.dataset import *
-from sklearn.metrics import auc
-from django.template.loader import get_template
-
-from scipy import interp
 
 
+# not good but i have to duplicate it
 def save_results(filename, contents, engine='xlsxwriter'):
     writer = pd.ExcelWriter(filename, engine=engine)
     for sheet, data in contents:
@@ -33,23 +27,27 @@ def unpack_results(outrepo):
     return confs, out, y_true, y_probs, losses
 
 
-def describe_expt(input_path, output_path="/home/rogia/Documents/git/side_effects/side_effects/figures"):
+def describe_expt(input_path, output_path="/home/rogia/Documents/analysis//figures"):
     params, out, y_true, y_scores, losses = unpack_results(input_path)
     init_fn = params["init_fn"]
     loss_function = params["loss_function"]
     extractor_network = params["extractor"]
     extractor_params = params["extractor_params"]
-    anchored_text = "\n".join([f"{hp}:{val}" for hp, val in [("network", extractor_network), ("loss", loss_function), ("init", init_fn)]])
+    anchored_text = "\n".join(
+        [f"{hp}:{val}" for hp, val in [("network", extractor_network), ("loss", loss_function), ("init", init_fn)]])
 
     results = {
-        #"fc out size": extractor_params["out_size"],
-        #"network": extractor_network,
-        #"loss": loss_function,
-        #"init_fn": init_fn,
-        #"embedding ": (extractor_params["vocab_size"], extractor_params["embedding_size"]),
-        "kernel size": extractor_params["kernel_size"],
+        # "fc out size": extractor_params["out_size"],
+        # "network": extractor_network,
+        # "loss": loss_function,
+        # "init_fn": init_fn,
+        # "embedding ": (extractor_params["vocab_size"], extractor_params["embedding_size"]),
+        # "out size": extractor_params["out_size"],
+        # "kernel size": extractor_params["kernel_size"],
+
         "micro auprc": out["ap"]['micro'],
-        "micro rocauc": out["ROC"]['micro']
+        "micro rocauc": out["ROC"]['micro'],
+        "n features map": extractor_params["cnn_sizes"][-1]
     }
     out["ap"].pop("micro")
     out["ROC"].pop("micro")
@@ -58,6 +56,7 @@ def describe_expt(input_path, output_path="/home/rogia/Documents/git/side_effect
     plot_losses(losses, text=anchored_text, save_as=os.path.join(output_path, f"{os.path.basename(input_path)}.png"))
 
     return results
+
 
 # Update until now
 
@@ -432,7 +431,57 @@ def describe_data(y_train, y_test, y_valid, dataset_name="drugbank"):
     return df
 
 
+def load_raw_twosides(f="/home/rogia/Documents/raw_data/3003377s-twosides.tsv"):
+    g = open(f)
+    g.readline()
+    i = 0
+    res = {}
+    for line in g:
+        a = line.split("\t")
+        stitch_id1 = a[0]
+        stitch_id2 = a[1]
+        event_name = str(a[5]).lower()
+        conf_score = a[8]
+        res[(stitch_id1, stitch_id2, event_name)] = conf_score
+
+    return res
+
+
+def load_test_file(f="/home/rogia/Documents/analysis/data/INV_TWO_SEEDS/twosides-test_samples_0.csv", results=None):
+    l = []
+    res = load_ddis_combinations(f, header=False)
+    labels = list(set([j for ens in res.values() for j in ens]))
+    print(len(labels))
+    labels.sort()
+    res_1 = load_raw_twosides()
+    test = []
+    g = open(f)
+    g.readline()
+    i = 0
+    fin = defaultdict(list)
+    for line in g:
+        content = line.split(",")
+        drug1 = content[0]
+        drug2 = content[1]
+        se = content[-1].strip("\n").split(";")
+        for e in se:
+            pos = labels.index(e)
+            a = res_1[(drug1, drug2, e)]
+            l.append(a)
+            fin[a].append(y[i, pos])
+
+    c = dict(Counter(l))
+    print(fin["5"])
+
 if __name__ == '__main__':
+    i1 = "/home/rogia/Documents/analysis/results/output"
+    a1 = unpack_results(i1)
+    x = a1[2]
+    y = a1[3]
+    load_test_file(results=y)
+    exit()
+
+    exit()
     #
     # a = pd.DataFrame([out["ap"], out["ROC"]], index=["AUPRC", "AUROC"]).transpose()
     # i = a.plot(kind='bar',  figsize=(8, 8), fontsize=14, stacked=True).get_figure()
@@ -474,8 +523,56 @@ if __name__ == '__main__':
     #     # print(top_expts)
     #     # expts_figs(recap)
     #
-    df = describe_all_experiments("/home/rogia/Documents/git/side_effects/expts/results/kernel")
+    from math import ceil
+    from sklearn.metrics import roc_auc_score, average_precision_score
+
+    #  out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test/labels_distribution.pkl",
+    #  "rb"))
+
+    # cuttoff = list(range(0, max(list(out.items())), 30))
+    # print(out)
+    # cl = [c for c in out if out[c] >= 0]
+    # print(len(cl))
+    # print(cl)
+    from sklearn.metrics import accuracy_score
+
+    i2 = "/home/rogia/Musique"
+    i1 = "/home/rogia/Documents/analysis/results/output"
+    a2 = unpack_results(i2)
+    a1 = unpack_results(i1)
+    x = a1[2]
+    y = a1[3]
+    print(x.shape)
+    exit()
+    print(x.shape, y.shape)
+    print(a2[1]["ap"])
+    # exit()
+    res2 = list(a2[1]["ap"].values())
+    res1 = list(a1[1]["ap"].values())
+    comb = dict(zip(list(out.values()), res1))
+    comb2 = dict(zip(list(out.values()), res2))
+    print(comb)
+    print(comb2)
+
+    print(max(list(a1[1]["ap"].values())))
+    print(min(list(a1[1]["ap"].values())))
+
+    print("old micro auprc", a1[1]["ap"]["micro"])
+    print("old micro roc", a1[1]["ROC"]["micro"])
+    print("new micro  auprc", average_precision_score(x, y, "micro"))
+    print("new micro roc", roc_auc_score(x, y, "micro"))
+    print("macro  auprc", average_precision_score(x, y, "macro"))
+    print("macro roc", roc_auc_score(x, y, "macro"))
+    print("hier")
+    print("w  auprc", average_precision_score(x, y, "weighted"))
+    print("w", roc_auc_score(x, y, "weighted"))
+    plot_losses(a2[-1], save_as="label_density_plus_batch_elem_weights.png")
+    exit()
+    plot_losses(a2[-1])
+    exit()
+    df = describe_all_experiments("/home/rogia/Documents/analysis/results")
     print(df)
-    save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/kernel.xlsx", contents=[("kernel", df)])
+    save_results(filename="//home/rogia/Documents/analysis/rapport/druud-all-invivo-drugbank-seeds.xlsx",
+                 contents=[("res", df)])
     exit()
     # # Revoir axes graphiques

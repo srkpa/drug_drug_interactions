@@ -1,0 +1,107 @@
+{
+  "fc_layers_dim": [[
+    1024
+  ]],
+  "extractor_params": [{
+    "vocab_size": 151,
+    "embedding_size": 512,
+    "cnn_sizes": [
+      1024
+    ],
+    "kernel_size": 17,
+    "dropout": 0.0,
+    "pooling": "max",
+    "b_norm": false,
+    "pooling_len": 2,
+    "normalize_features": true
+  }],
+  "optimizer": ["adam"],
+  "train_params": [{
+    "n_epochs": 100,
+    "batch_size": 256,
+    "with_early_stopping": false,
+    "patience": 3
+  }],
+  "init_fn": ["None"],
+  "loss_function": ["bce"],
+  "extractor": ["conv1d"],
+  "arch": ["druud"],
+  "fc_reg": [{
+    "dropout": 0,
+    "b_norm": true
+  }],
+  "optimizer_params": [{
+    "lr": 1e-05,
+    "weight_decay": 0
+  }],
+  "dataset": [{
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 0,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 64,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 55,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 101,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 350,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 21,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 33,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 10,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 505,
+    "seed": null,
+    "mode": "concat"
+  },
+  {
+    "name": "twosides",
+    "smi_transf": "seq",
+    "inv_seed": 42,
+    "seed": null,
+    "mode": "concat"
+  }]
+}

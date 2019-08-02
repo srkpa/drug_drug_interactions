@@ -60,7 +60,7 @@ def load_and_test(input_path, output_path, thresholds):
                 w = w.cuda()
             # Choose the loss function
             if loss == "weighted":
-                loss_function = Weighted_binary_cross_entropy1(weights_per_targets=w)
+                loss_function = WeightedBinaryCrossEntropy1(weights_per_batch_element=w)
 
         # Build the network
         net = DRUUD(**params, output_dim=y_test.shape[1])
