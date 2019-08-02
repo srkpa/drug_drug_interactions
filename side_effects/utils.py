@@ -1,13 +1,14 @@
 import ast
 import pickle
-import torch
 from functools import partial
+
 from ivbase.utils.datasets.datacache import DataCache
+from sklearn.model_selection import train_test_split
 
 from side_effects.external_utils.utils import *
 from side_effects.models.model import *
-from side_effects.models.training import DDIModel, compute_metrics
-from side_effects.preprocess.dataset import load_train_test_files, make_tensor, to_tensor, TDGLDataset
+from side_effects.models.trainer import DDIModel, compute_metrics
+from side_effects.preprocess.dataset import load_train_test_files, load_dataset, to_tensor
 
 
 def run_experiment(model_params, input_path, output_path="expts"):
@@ -35,42 +36,59 @@ def run_experiment(model_params, input_path, output_path="expts"):
 
     Returns
     -------
-		This function return is not used by the train script. But you could do anything with that.
+		# This function return is not used by the train script. But you could do anything with that.
     """
 
-    items = ["init_fn", "extractor", "arch", "loss_function", "optimizer"]
-    # Load the appropriate folder from s3 # i ll be back
-    if input_path.startswith("/opt/ml"):
-        cach_path = input_path
-        expt_params = {arg: ast.literal_eval(val) if arg not in items else val for arg, val in
-                       model_params.items()}
-    else:
-        dc = DataCache()
-        cach_path = dc.get_dir(dir_path=input_path)
-        expt_params = model_params
+    # items = ["init_fn", "extractor", "arch", "loss_function", "optimizer"]
+    # # Load the appropriate folder from s3 # i ll be back
+    # if input_path.startswith("/opt/ml"):
+    #     cach_path = input_path
+    #     expt_params = {arg: ast.literal_eval(val) if arg not in items else val for arg, val in
+    #                    model_params.items()}
+    # else:
+    dc = DataCache()
+    cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/twosides-for-seed", force=True)
+    expt_params = model_params
 
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
 
+
     gpu = False
     if torch.cuda.is_available():
         gpu = True
-
-    # Dataset
+    # seed
     dataset = expt_params["dataset"]["name"]
-    smi_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
+    smiles_transformer = get_transformer(expt_params["dataset"]["smi_transf"])
+    rstate = expt_params["dataset"]["seed"]
+    mode = expt_params["dataset"]["mode"]
+    test_size = expt_params["split_proportion"]["test_size"]
 
-    # load train and test files
-    targets, x_train, x_test, x_val, y_train, y_test, y_val = load_train_test_files(input_path=f"{cach_path}",
-                                                                                    dataset_name=dataset,
-                                                                                    transformer=smi_transformer)
+    if rstate not in ('None', None):
+        x, y = load_dataset(cach_path, dset_name=dataset)
+        corr(y, output_path=output_path)
+        exit()
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=rstate)
+        x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train, test_size=test_size + 0.05,
+                                                              random_state=rstate)
 
-    x_train,x_test, x_val = list(map(partial(make_tensor, gpu=gpu), [x_train, x_test, x_val]))
-    y_train, y_test, y_val = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_val]))
-
+    else:
+        # load train and test files
+        inv_seed = expt_params["dataset"]["inv_seed"]
+        targets, x_train, x_test, x_valid, y_train, y_test, y_valid = load_train_test_files(input_path=f"{cach_path}",
+                                                                                            dataset_name=dataset,
+                                                                                            transformer=smiles_transformer,
+                                                                                            seed=inv_seed)
+    y_train, y_test, y_valid = list(map(partial(to_tensor, gpu=gpu), [y_train, y_test, y_valid]))
+    print(y_train.shape, y_test.shape, y_valid.shape)
+    exit()
     # The loss function
-    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train)
+    weights = expt_params["weights_options"]
+    print(weights)
+    batch_weights = expt_params["batch_weights"]
+    print("use batch weights: ", batch_weights)
+    loss_fn = get_loss(expt_params["loss_function"], y_train=y_train, batch_weights=batch_weights, **weights)
     print(f"Loss Function: {loss_fn}")
 
     # Initialization
@@ -85,7 +103,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     dg_net = get_network(expt_params["extractor"], expt_params["extractor_params"])
     # b) Build the model
     network = DRUUD(drug_feature_extractor=dg_net, fc_layers_dim=expt_params["fc_layers_dim"],
-                    output_dim=y_train.shape[1], **expt_params["fc_reg"])
+                    output_dim=y_train.shape[1], use_gpu=gpu, mode=mode, **expt_params["fc_reg"])
     if init_fn not in ('None', None):
         network.apply(get_init_fn(init_fn))
     print(f"Architecture:\n\tname: {method}\n\ttnetwork:{network}")
@@ -104,7 +122,7 @@ def run_experiment(model_params, input_path, output_path="expts"):
     # Train and save
     trainin = "\n".join([f"{i}:\t{v}" for (i, v) in expt_params["train_params"].items()])
     print(f"Training details: \n{trainin}")
-    model.train(x_train=x_train, y_train=y_train, x_valid=x_val, y_valid=y_val, **expt_params["train_params"])
+    model.train(x_train=x_train, y_train=y_train, x_valid=x_valid, y_valid=y_valid, **expt_params["train_params"])
     save(expt_params, "configs.json", output_path)
     save(model.history, "history.json", output_path)
     model.save(os.path.join(output_path, "weights.json"))
@@ -116,5 +134,4 @@ def run_experiment(model_params, input_path, output_path="expts"):
     output = compute_metrics(y_true, y_probs)
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
 
-
-# dispatcher -n "mix_ddi" -e "test-conv" -x 86400 -v 100 -t "ml.p3.16xlarge" -i "s3://datasets-ressources/DDI/drugbank" -o  "s3://invivoai-sagemaker-artifacts/ddi"  -p ex_configs_2.json
+# dispatcher -n "ddi_deepddi" -e "deepddi-real-drugbank-inv-seeds" -x 86400 -v 100 -t "ml.c4.8xlarge" -i "s3://datasets-ressources/DDI/INV_DRUGB_REAL" -o  "s3://rogia/EXPT-RES/DEEPDDI/INVIVO/DRUGBANK"  -p ex_configs_1.json -c 9

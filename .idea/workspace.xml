@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py" line="23" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/expts/configs/k-configs.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/expts/prototype/configs.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/external_utils/corre2se.pkl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/labels" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset_checking.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset_parser.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/mapi.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bin/train" afterPath="$PROJECT_DIR$/bin/train" />
+      <change beforePath="$PROJECT_DIR$/expts/configs/171e57a4-a989-494a-aef0-d35650b8ccd7.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/expts/configs/3c3c67ee-51f4-41b6-aace-66af7ff4d82f.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/expts/configs/ex_configs_1.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_1.json" />
+      <change beforePath="$PROJECT_DIR$/expts/configs/ex_configs_4.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_4.json" />
+      <change beforePath="$PROJECT_DIR$/expts/k-configs.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_2.json" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/e.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/loss.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/loss.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/metrics.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/metrics.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/reload.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/reload.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/utils.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/utils.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901-copy-06-03-copy-06-06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901-copy-06-03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-24-470.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-40-30-081.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-40-35-618.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-46-23-040.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-46-28-591.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-48-07-224.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-04-57-56-177.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-19-572-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-19-572.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-25-205-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-25-205.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-31-54-442-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-31-54-442.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-32-00-092-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-32-00-092.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-26-290-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-26-290.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-31-858-copy-06-02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-31-858.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/models/model.py" afterPath="$PROJECT_DIR$/side_effects/models/model.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/models/training.py" afterPath="$PROJECT_DIR$/side_effects/models/trainer.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/.~lock.kernel.xlsx#" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/Rapport.tex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/embedding.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/fcfeat.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/kernel.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_16_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_22_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_22_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_28_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_30_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_30_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_32_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/rapport/results.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/utils.py" afterPath="$PROJECT_DIR$/side_effects/utils.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/side_effects$hyperparameters.coverage" NAME="hyperparameters Coverage Results" MODIFIED="1559296243205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
+    <SUITE FILE_PATH="coverage/side_effects$graphics.coverage" NAME="graphics Coverage Results" MODIFIED="1559488514594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
+    <SUITE FILE_PATH="coverage/side_effects$reload.coverage" NAME="reload Coverage Results" MODIFIED="1557625669343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
+    <SUITE FILE_PATH="coverage/side_effects$model.coverage" NAME="model Coverage Results" MODIFIED="1558404179621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/models" />
+    <SUITE FILE_PATH="coverage/side_effects$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1559480361830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/preprocess" />
+    <SUITE FILE_PATH="coverage/side_effects$utils.coverage" NAME="utils Coverage Results" MODIFIED="1558413519392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects" />
+    <SUITE FILE_PATH="coverage/side_effects$dispatcher_config.coverage" NAME="dispatcher_config Coverage Results" MODIFIED="1556828139095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/side_effects/external_utils" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-615">
+              <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="launch_settings.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="launcher.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/expts/prototype/launcher.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>th.</find>
+      <find>dgl</find>
+      <find>set_e_initializer</find>
+      <find>.fit</find>
+      <find>save</find>
+      <find>tag</find>
+      <find>user_name</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="deepddi" />
+        <entry key="$PROJECT_DIR$" value="deepddi" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/side_effects/t.py" />
+        <option value="$PROJECT_DIR$/side_effects/dispatcher.py" />
+        <option value="$PROJECT_DIR$/side_effects/datasets/transforms.py" />
+        <option value="$PROJECT_DIR$/side_effects/feature_extraction/nn/cnn.py" />
+        <option value="$PROJECT_DIR$/side_effects/preprocess/data.py" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/load_and_test.py" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/dispatcher_config.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/test.py" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/reload.py" />
+        <option value="$PROJECT_DIR$/expts/configs_3.json" />
+        <option value="$PROJECT_DIR$/expts/ex_configs_1.json" />
+        <option value="$PROJECT_DIR$/../invivobase/ivbase/nn/extractors/fc.py" />
+        <option value="$PROJECT_DIR$/side_effects/preprocess/transforms.py" />
+        <option value="$PROJECT_DIR$/expts/ex_configs_3.json" />
+        <option value="$PROJECT_DIR$/side_effects/models/training.py" />
+        <option value="$PROJECT_DIR$/expts/ex_configs_2.json" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/utils.py" />
+        <option value="$PROJECT_DIR$/expts/configs.json" />
+        <option value="$PROJECT_DIR$/expts/ex_configs_4.json" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/loss.py" />
+        <option value="$PROJECT_DIR$/expts/results/configs.json" />
+        <option value="$PROJECT_DIR$/side_effects/models/results-1/configs.json" />
+        <option value="$PROJECT_DIR$/expts/configs/ex_configs_3.json" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/funtar.sh" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/metrics.py" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/hyperparameters.py" />
+        <option value="$PROJECT_DIR$/expts/k-configs.json" />
+        <option value="$PROJECT_DIR$/expts/configs/ex_configs_4.json" />
+        <option value="$PROJECT_DIR$/side_effects/models/model.py" />
+        <option value="$PROJECT_DIR$/expts/configs/ex_configs_2.json" />
+        <option value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
+        <option value="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/expts/prototype/configs.json" />
+        <option value="$PROJECT_DIR$/bin/train" />
+        <option value="$PROJECT_DIR$/side_effects/utils.py" />
+        <option value="$PROJECT_DIR$/expts/prototype/launcher.sh" />
+        <option value="$PROJECT_DIR$/expts/prototype/launch_settings.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3" />
+    <option name="y" value="-1" />
+    <option name="width" value="1926" />
+    <option name="height" value="1054" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="expts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="expts" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="expts" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../molecular_meta_features/expts/results_notebooks/heatmap.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/expts/prototype" />
+      <recent name="$PROJECT_DIR$/side_effects/rapport" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/expts/configs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/expts/prototype" />
+      <recent name="$PROJECT_DIR$/side_effects/models/results-1" />
+      <recent name="$PROJECT_DIR$/side_effects/models" />
+      <recent name="$PROJECT_DIR$/scripts/sagemaker" />
+      <recent name="$PROJECT_DIR$/side_effects/datasets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects/preprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="graphics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects/external_utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="hyperparameters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects/external_utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/external_utils/hyperparameters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/models/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="reload" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects/external_utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/external_utils/reload.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/side_effects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="side_effects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.utils" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dataset" />
+      <item index="2" class="java.lang.String" itemvalue="Python.graphics" />
+      <item index="3" class="java.lang.String" itemvalue="Python.hyperparameters" />
+      <item index="4" class="java.lang.String" itemvalue="Python.model" />
+      <item index="5" class="java.lang.String" itemvalue="Python.reload" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="" />
+      <created>1553547353005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553547353005</updated>
+      <workItem from="1553547355587" duration="176000" />
+      <workItem from="1553547545901" duration="307000" />
+      <workItem from="1553549247172" duration="1405000" />
+      <workItem from="1553558850805" duration="2018000" />
+      <workItem from="1553633223807" duration="1100000" />
+      <workItem from="1553720839434" duration="1278000" />
+      <workItem from="1553722132124" duration="24000" />
+      <workItem from="1553722313535" duration="4920000" />
+      <workItem from="1553728798529" duration="1790000" />
+      <workItem from="1553739538577" duration="52000" />
+      <workItem from="1553799691595" duration="1726000" />
+      <workItem from="1553813339479" duration="125000" />
+      <workItem from="1553814200596" duration="617000" />
+      <workItem from="1553988416752" duration="598000" />
+      <workItem from="1553994423049" duration="88000" />
+      <workItem from="1556747381621" duration="3500000" />
+      <workItem from="1556770126571" duration="2534000" />
+      <workItem from="1556801332522" duration="31056000" />
+      <workItem from="1556905982454" duration="11419000" />
+      <workItem from="1556973108701" duration="9945000" />
+      <workItem from="1557147634554" duration="342000" />
+      <workItem from="1557237097263" duration="18386000" />
+      <workItem from="1557320113255" duration="972000" />
+      <workItem from="1557337825556" duration="6469000" />
+      <workItem from="1557361120333" duration="4932000" />
+      <workItem from="1557373026741" duration="2975000" />
+      <workItem from="1557406231950" duration="4398000" />
+      <workItem from="1557458814174" duration="5133000" />
+      <workItem from="1557505207748" duration="13000" />
+      <workItem from="1557574773603" duration="28247000" />
+      <workItem from="1557752149854" duration="6749000" />
+      <workItem from="1557770965147" duration="2512000" />
+      <workItem from="1557860579371" duration="1181000" />
+      <workItem from="1558316879537" duration="1764000" />
+      <workItem from="1558364035230" duration="4926000" />
+      <workItem from="1558400434942" duration="12368000" />
+      <workItem from="1558412822203" duration="3884000" />
+      <workItem from="1558444022123" duration="20211000" />
+      <workItem from="1558493257140" duration="3672000" />
+      <workItem from="1558531091635" duration="17338000" />
+      <workItem from="1558576715610" duration="715000" />
+      <workItem from="1558616736932" duration="12461000" />
+      <workItem from="1558634284852" duration="3037000" />
+      <workItem from="1558655074775" duration="1630000" />
+      <workItem from="1558702922822" duration="5272000" />
+      <workItem from="1558717164880" duration="3599000" />
+      <workItem from="1558741974931" duration="5205000" />
+      <workItem from="1558776827632" duration="2138000" />
+      <workItem from="1558788582668" duration="225000" />
+      <workItem from="1558789120731" duration="2144000" />
+      <workItem from="1558796026570" duration="618000" />
+      <workItem from="1558802128485" duration="293000" />
+      <workItem from="1558829030070" duration="2153000" />
+      <workItem from="1558874682666" duration="851000" />
+      <workItem from="1558963845792" duration="4859000" />
+      <workItem from="1558974683670" duration="6463000" />
+      <workItem from="1558999845496" duration="5064000" />
+      <workItem from="1559047974423" duration="6648000" />
+      <workItem from="1559065793725" duration="843000" />
+      <workItem from="1559147168772" duration="6308000" />
+      <workItem from="1559162935130" duration="4438000" />
+      <workItem from="1559169234387" duration="10690000" />
+      <workItem from="1559221106582" duration="14220000" />
+      <workItem from="1559237258208" duration="832000" />
+      <workItem from="1559253701050" duration="8537000" />
+      <workItem from="1559295968414" duration="2729000" />
+      <workItem from="1559307550722" duration="5612000" />
+      <workItem from="1559323028943" duration="845000" />
+      <workItem from="1559475368545" duration="7459000" />
+      <workItem from="1559487946058" duration="1517000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="363419000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="-1" width="1926" height="1054" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3405876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/dgl/contrib/data/__init__.py" />
+    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/sklearn/metrics/ranking.py" />
+    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/dgl/contrib/data/knowledge_graph.py" />
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/transforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/graphs/conv/gcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5504">
+          <caret line="349" column="12" lean-forward="false" selection-start-line="349" selection-start-column="8" selection-end-line="349" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/test/history.json" />
+    <entry file="file://$PROJECT_DIR$/expts/ex_configs_5.json" />
+    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1536">
+          <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/results/configs.json" />
+    <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d_bce_None_losses.png" />
+    <entry file="file://$PROJECT_DIR$/side_effects/models/results-1/configs.json" />
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/ec2_run_expts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/hia" />
+    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/figures/1_losses.png" />
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/k-configs.json" />
+    <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d-2019-05-29-18-02-22-563.png" />
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/hyperparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/training.py" />
+    <entry file="file://$PROJECT_DIR$/side_effects/models/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="35" column="78" lean-forward="false" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/configs/configs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/funtar.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10290">
+          <caret line="506" column="38" lean-forward="false" selection-start-line="506" selection-start-column="38" selection-end-line="506" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="468" column="10" lean-forward="false" selection-start-line="468" selection-start-column="10" selection-end-line="468" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/bin/dispatcher">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/bin/user_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/bin/exp_info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../adkl/expts/shared/run_expts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/bin/exp_run">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-496">
+          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/prototype/failure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/configs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../adkl/expts/shared/build_personal_image.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../phd/dkl_molecule/scripts/update_doc.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../phd/dkl_molecule/scripts/init_rep.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/bin/exp_launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/scripts/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3465">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../adkl/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/temp_4e002c47-a83b-419f-8b5a-851a322db157.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../molecular_meta_features/expts/results_notebooks/heatmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-615">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/launcher.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -13,23 +13,73 @@
     "fcfeat"
   ],
   "extractor_params": [
-     {
+  {
       "in_size": 2000,
-      "out_size": 1000,
+      "out_size": 16,
       "activation": "relu",
       "dropout": 0.0,
-      "b_norm": true,
+      "b_norm": false,
+      "bias": true,
+      "init_fn": null
+    },
+     {
+      "in_size": 2000,
+      "out_size": 32,
+      "activation": "relu",
+      "dropout": 0.0,
+      "b_norm": false,
+      "bias": true,
+      "init_fn": null
+    },
+     {
+      "in_size": 2000,
+      "out_size": 128,
+      "activation": "relu",
+      "dropout": 0.0,
+      "b_norm": false,
+      "bias": true,
+      "init_fn": null
+    },
+     {
+      "in_size": 2000,
+      "out_size": 256,
+      "activation": "relu",
+      "dropout": 0.0,
+      "b_norm": false,
+      "bias": true,
+      "init_fn": null
+    },
+     {
+      "in_size": 2000,
+      "out_size": 512,
+      "activation": "relu",
+      "dropout": 0.0,
+      "b_norm": false,
+      "bias": true,
+      "init_fn": null
+    },
+     {
+      "in_size": 2000,
+      "out_size": 1024,
+      "activation": "relu",
+      "dropout": 0.0,
+      "b_norm": false,
       "bias": true,
       "init_fn": null
     }
   ],
   "fc_layers_dim": [
     [
-      1000
+      1024
     ]
   ],
  "init_fn": [
-    "normal"
+    null
+  ],
+  "fc_reg":[{
+      "dropout":0,
+      "b_norm": false
+    }
   ],
   "loss_function": [
     "bce"

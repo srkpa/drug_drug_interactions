@@ -19,7 +19,7 @@ PREFIX = '/opt/ml/'
 
 @click.command()
 @click.option('--config_file', '-p', default=os.path.join(PREFIX, 'input/config/hyperparameters.json'), help="Path to the config file (json) that contains the parameters for the experiment.")
-@click.option('--input_path', '-i', default=os.path.join(PREFIX, 'input/data/training'),  help="Location of the input data files")
+@click.option('--input_path', '-i', default="s3://datasets-ressources/DDI/twosides-for-seed",  help="Location of the input data files")
 @click.option('--output_path', '-o', default=os.path.join(PREFIX, 'model'), help="Location for saving the training results (model artifacts and output files).")
 def main(config_file, input_path, output_path):
     print('Starting the training.')

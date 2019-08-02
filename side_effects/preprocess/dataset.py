@@ -4,17 +4,26 @@ import re
 from collections import defaultdict
 from functools import partial
 from itertools import product
-
+from operator import itemgetter
 import numpy as np
 import pandas as pd
+import csv
 import torch as th
 from ivbase.utils.commons import to_tensor
 from ivbase.utils.datasets.dataset import DGLDataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
+import ast
 
-from side_effects.preprocess.transforms import deepddi_transformer
+from side_effects.preprocess.transforms import AllChem, DataStructs, Chem, PCA, sequence_transformer
+
+
+def save_results(filename, contents, engine='xlsxwriter'):
+    writer = pd.ExcelWriter(filename, engine=engine)
+    for sheet, data in contents:
+        data.to_excel(writer, sheet_name=sheet)
+    writer.save()
 
 
 def make_tensor(X, gpu=False):
@@ -151,26 +160,37 @@ def train_test_split_1(fname, header=True, train_split=0.8, shuffle=True, save=N
 
 
 def _filter(samples, transformed_smiles_dict=None):
-    return {(transformed_smiles_dict[id_1], transformed_smiles_dict[id_2]): y for (id_1, id_2), y in samples.items() if
-            id_1 in transformed_smiles_dict and id_2 in transformed_smiles_dict}
+    print(len(transformed_smiles_dict))
+    results = {}
+    for (id_1, id_2), y in samples.items():
+        if id_1 in transformed_smiles_dict:
+            if id_2 in transformed_smiles_dict:
+                cle = (transformed_smiles_dict[id_1], transformed_smiles_dict[id_2])
+                results[cle] = y
+    return results
 
 
-def load_train_test_files(input_path, dataset_name, transformer):
+def load_train_test_files(input_path, dataset_name, transformer, seed):
     # My paths
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
-    train_path = f"{input_path}/{dataset_name}-train_samples.csv"
-    test_path = f"{input_path}/{dataset_name}-test_samples.csv"
-    valid_path = f"{input_path}/{dataset_name}-valid_samples.csv"
+    train_path = f"{input_path}/{dataset_name}-train_samples_{seed}.csv"
+    test_path = f"{input_path}/{dataset_name}-test_samples_{seed}.csv"
+    valid_path = f"{input_path}/{dataset_name}-valid_samples_{seed}.csv"
 
     # Load files
     files = [train_path, test_path, valid_path]
     train_data, test_data, valid_data = list(
         map(partial(load_ddis_combinations, dataset_name="split", header=False), files))
+    print(len(train_data))
+    print(len(test_data))
+    print(len(valid_data))
 
     # Load smiles
     drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
     drugs = list(drugs2smiles.keys())
     smiles = list(drugs2smiles.values())
+    print(drugs)
+    print(smiles)
 
     # Transformer
     args = inspect.signature(transformer)
@@ -184,7 +204,9 @@ def load_train_test_files(input_path, dataset_name, transformer):
 
     train_data, test_data, valid_data = list(
         map(partial(_filter, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
+
     x_train, x_test, x_valid = list(map(lambda x: list(x.keys()), [train_data, test_data, valid_data]))
+    print(len(x_train), len(x_test), len(x_valid))
 
     assert len(set(x_train) - set(x_test)) == len(train_data)
     assert len(set(x_test) - set(x_valid)) == len(test_data)
@@ -195,7 +217,12 @@ def load_train_test_files(input_path, dataset_name, transformer):
 
     mbl = MultiLabelBinarizer()
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
+
+    print(np.unique(labels))
     targets = mbl.fit_transform(labels).astype(np.float32)
+    print(list(mbl.classes_))
+    print(len(list(mbl.classes_)))
+    #
     y_train, y_test, y_valid = targets[:len(train_data), :], targets[len(train_data):len(train_data) + len(test_data),
                                                              :], targets[len(train_data) + len(test_data):, ]
 
@@ -367,12 +394,12 @@ def train_test_valid_split_2(input_path, dataset_name, header=True, train_split=
     fn.close()
 
 
-def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True):
+def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True, seed=42):
     combo_path = f"{input_path}/{dataset_name}-combo.csv"
-    interactions = load_ddis_combinations(fname=combo_path, header=header, dataset_name=dataset_name)
+    interactions = load_ddis_combinations(fname=combo_path, header=header, dataset_name="twosides")
     drugs = list(set([x1 for (x1, _) in interactions] + [x2 for (_, x2) in interactions]))
 
-    np.random.seed(42)
+    np.random.seed(seed=seed)
     train_idx, test_idx = train_test_split(drugs, test_size=0.1, shuffle=shuffle)
     train_idx, valid_idx = train_test_split(train_idx, test_size=0.15, shuffle=shuffle)
 
@@ -387,57 +414,144 @@ def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True
     print('len train', len(list(train)))
     print('len test', len(list(test)))
     print('len valid', len(list(valid)))
-    print("len region grise", len(interactions) - (len(train) + len(test) + len(valid)))
+    print("len gray region", len(interactions) - (len(train) + len(test) + len(valid)))
 
-    fn = open(f"{input_path}/{dataset_name}-train_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-train_samples_{seed}.csv", "w")
     fn.writelines(["{}"
                    ",{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in train])
     fn.close()
-    fn = open(f"{input_path}/{dataset_name}-test_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-test_samples_{seed}.csv", "w")
     fn.writelines(["{},{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in test])
     fn.close()
-    fn = open(f"{input_path}/{dataset_name}-valid_samples.csv", "w")
+    fn = open(f"{input_path}/{dataset_name}-valid_samples_{seed}.csv", "w")
     fn.writelines(["{}"
                    ",{},{}\n".format(comb[0], comb[1], ";".join(interactions[comb])) for comb in valid])
     fn.close()
 
 
-def deepddi_train_test_split(input_path):
-    pattern = "DB[0-9]+"
-    filepath1 = f"{input_path}/pnas.1803294115.sd02.xlsx"
+def _extract_interactions(phrase):
+    ans = list(re.findall(pattern="DB[0-9]+", string=phrase))
+    ans = np.unique(ans)
+    # indexes = []
+    # for elem in ans:
+    #     indexes.append(phrase.find(elem))
+    # if indexes[0] > indexes[-1]:
+    #     ans = ans[::-1]
+    #     # print(indexes, ans)
+    #     # print(phrase, "give", ans, label)
+
+    return tuple(ans)
+
+
+def invivo_directed_train_test_split(input_path, dataset_name="drugbank"):
+    train_path = f"{input_path}/{dataset_name}-train_samples.csv"
+    test_path = f"{input_path}/{dataset_name}-test_samples.csv"
+    valid_path = f"{input_path}/{dataset_name}-valid_samples.csv"
+
+    # Prepare the writer
+    a = csv.writer(open("drugbank-train_samples.csv", "w"))
+    b = csv.writer(open("drugbank-test_samples.csv", "w"))
+    d = csv.writer(open("drugbank-valid_samples.csv", "w"))
+    # Load files
+    files = [train_path, test_path, valid_path]
+    train_data, test_data, valid_data = list(
+        map(partial(load_ddis_combinations, dataset_name="split", header=False), files))
+
+    c = load_ddis_combinations(fname=f"{input_path}/directed-drugbank-combo.csv",
+                               header=True, dataset_name="split")
+    for paire in train_data:
+        rev_paire = (paire[-1], paire[0])
+        if paire in c:
+            a.writerow([paire[0], paire[1], ";".join(c[paire])])
+        if rev_paire in c:
+            a.writerow([rev_paire[0], rev_paire[1], ";".join(c[rev_paire])])
+
+    for paire in test_data:
+        rev_paire = (paire[-1], paire[0])
+        if paire in c:
+            b.writerow([paire[0], paire[1], ";".join(c[paire])])
+        if rev_paire in c:
+            b.writerow([rev_paire[0], rev_paire[1], ";".join(c[rev_paire])])
+
+    for paire in valid_data:
+        rev_paire = (paire[-1], paire[0])
+        if paire in c:
+            d.writerow([paire[0], paire[1], ";".join(c[paire])])
+        if rev_paire in c:
+            d.writerow([rev_paire[0], rev_paire[1], ";".join(c[rev_paire])])
+
+
+def jy_train_test_split(input_path):
+    df = pd.read_csv("s2_mapping_01.csv", sep=",")
+    training_set = df[df['Data type used to optimize the DNN architecture'] == "training"]
+    testing_set = df[df['Data type used to optimize the DNN architecture'] == "testing"]
+    validation_set = df[df['Data type used to optimize the DNN architecture'] == "validation"]
+
+    print("train", len(training_set), " interactions")
+    print("test", len(testing_set), " interactions")
+    print("validation", len(validation_set), " interactions")
+
+    save_results("jy_split.xlsx", contents=[("train", training_set), ("test", testing_set), ("valid", validation_set)])
+
+    training_set_ref = training_set.groupby('paire')
+    testing_set_ref = testing_set.groupby('paire')
+    val_set_ref = validation_set.groupby('paire')
+    print("len train drugs paires", len(training_set_ref))
+    print("len train drugs paires", len(testing_set_ref))
+    print("len train drugs paires", len(val_set_ref))
+
+    a = csv.writer(open("drugbank-train_samples.csv", "w"))
+    b = csv.writer(open("drugbank-test_samples.csv", "w"))
+    d = csv.writer(open("drugbank-valid_samples.csv", "w"))
+    c = load_ddis_combinations(fname="directed-drugbank-combo.csv",
+                               header=True, dataset_name="split")
+    #
+    for dar, gr in training_set_ref:
+        dar = ast.literal_eval(dar)
+        # print(type(dar))
+        # liste = []
+        # for desc in gr.values:
+        #     typ = desc[-1]
+        #     liste.append(str(typ))
+        a.writerow([dar[0], dar[1], ";".join(c[dar])])
+
+    for dar, gr in testing_set_ref:
+        dar = ast.literal_eval(dar)
+        # liste = []
+        # for desc in gr.values:
+        #     typ = desc[-1]
+        #     liste.append(str(typ))
+        b.writerow([dar[0], dar[1], ";".join(c[dar])])
+
+    for dar, gr in val_set_ref:
+        dar = ast.literal_eval(dar)
+        # liste = []
+        # for desc in gr.values:
+        #     typ = desc[-1]
+        #     liste.append(str(typ))
+        d.writerow([dar[0], dar[1], ";".join(c[dar])])
+
+
+def analyze_jy_split(input_path):
     filepath2 = f"{input_path}/pnas.1803294115.sd01.xlsx"
 
     df2 = pd.read_excel(filepath2, sheet_name="Dataset S1")
     side_effects = df2.values.tolist()
-    side_effects = {description: ddi_type for ddi_type, description in side_effects}
+    df = pd.read_csv(f"{input_path}/s2_mapping_01.csv", sep=",")
+    data = df.values
 
-    df = pd.read_excel(filepath1, sheet_name="Dataset S2")
-    data = df.values.tolist()
     train, test, valid = defaultdict(list), defaultdict(list), defaultdict(list)
+    inter = defaultdict(list)
+    for _, desc, partition, paire, ddi_type in data:
+        cle = paire
+        inter[cle].append((desc, partition))
+        if partition == "training":
+            train[cle].append(ddi_type)
 
-    i = 0
-    for desc, partition in data:
-        tr = False
-        ddi = [word for word in desc.split() if not word.startswith("DB")]
-        drugs = list(re.findall(pattern, desc))
-        for info, ddi_type in side_effects.items():
-            inter = set(desc.split()).intersection(set(info.split()))
-            if inter == set(ddi):
-                tr = True
-                i += 1
-                cle = tuple(np.unique(drugs))
-                if partition == "training":
-                    train[cle].append(ddi_type)
-                elif partition == "testing":
-                    test[cle].append(ddi_type)
-                else:
-                    valid[cle].append(ddi_type)
-                break
-        if not tr:
-            print(desc, ddi)
-
-    assert len(data) == i
-    #### Analysis.
+        elif partition == "testing":
+            test[cle].append(ddi_type)
+        else:
+            valid[cle].append(ddi_type)
 
     print("Quick Summary #1.\n There are:")
     print(f"- {len(data)} interactions")
@@ -484,65 +598,69 @@ def deepddi_train_test_split(input_path):
     train_test_valid_inter = set(train.keys()).intersection(set(test.keys())).intersection(set(valid.keys()))
     print(f"- {len(train_test_valid_inter)} pairs of drugs are present in train, test and valid subsets.")
 
-    print("\nQuick Summary #3:")
-    print(
-        "- pairs of drugs that belong to two of the three subsets have always two types of ddi which have been split into the subsets")
-    print(
-        "- pairs of drugs that belong only to one of the three subsets, can have 1 or 2 types of ddi, but all the type "
-        "will belong to the choosen subset")
-
     return train, test, valid, train_and_test, train_and_valid, test_and_valid
 
 
-# correct finalement
-def load(train, test, valid, method, input_path="../data/violette/drugbank/", transformer=None):
-    dataset_name = "drugbank"
-    all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
-    approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
+def load_dataset(input_path, dset_name):
+    # My paths
+    all_drugs_path = f"{input_path}/drugbank-drugs-all.csv"  # j'avoue que le nom des fichiers est trop contraignat
+    all_combo_path = f"{input_path}/directed-drugbank-combo.csv"
 
-    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
-    res = transformer(drugs=list(drugs2smiles.keys()), smiles=list(drugs2smiles.values()), return_one_hot=False)
+    # Load files
+    data = load_ddis_combinations(all_combo_path, header=True)
+    print("data", len(data))
 
-    if method == "deepddi":
-        approved_drug = pd.read_csv(approved_drugs_path, sep=",").dropna()
-        approved_drug = approved_drug['PubChem Canonical Smiles'].values.tolist()
-        res = deepddi_transformer(inputs=drugs2smiles, approved_drug=approved_drug)
+    # Load smiles
+    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dset_name)
+    drugs = list(drugs2smiles.keys())
+    smiles = list(drugs2smiles.values())
+    print(drugs)
+    #print(smiles)
+    # Transformer
+    drugs = sequence_transformer(drugs=drugs, smiles=smiles)
+    data = _filter(data, drugs)
+    x_data = list(data.keys())
+    print("data after filter", len(x_data))
 
-    train_data = {(res[drug1_id], res[drug2_id]): train[(drug1_id, drug2_id)] for drug1_id, drug2_id in train if
-                  drug1_id in res and drug2_id in res}
-    test_data = {(res[drug1_id], res[drug2_id]): test[(drug1_id, drug2_id)] for drug1_id, drug2_id in test if
-                 drug1_id in res and drug2_id in res}
-    valid_data = {(res[drug1_id], res[drug2_id]): valid[(drug1_id, drug2_id)] for drug1_id, drug2_id in valid if
-                  drug1_id in res and drug2_id in res}
-
-    x_train, x_test, x_valid = list(train_data.keys()), list(test_data.keys()), list(valid_data.keys())
-
-    labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer()
+    labels = list(data.values())
+    print(np.unique(labels))
     targets = mbl.fit_transform(labels).astype(np.float32)
+    print("target", targets.shape)
+    print(list(mbl.classes_))
+    print(len(list(mbl.classes_)))
 
-    y_train, y_test, y_valid = targets[:len(x_train), :], targets[len(x_train):len(x_train) + len(x_test), :], \
-                               targets[len(x_train) + len(x_test):, ]
+    return x_data, targets
 
-    assert len(x_valid) == len(y_valid)
-    print("Quick summary #4\n Final subsets:\n")
-    print(f"- {targets.shape[1]} side effects")
-    print(f"- {len(train_data)} pairs of drugs for train")
-    print(f"- {len(test_data)} pairs of drugs for test")
-    print(f"- {len(valid_data)} pairs of drug for valid")
 
-    return x_train, x_test, x_valid, np.array(y_train).astype(np.float32), np.array(y_test).astype(
-        np.float32), np.array(y_valid).astype(np.float32)
+def mytest(input_path):
+    dir = load_ddis_combinations(fname=f"{input_path}/directed-drugbank-combo.csv",
+                                 header=True, dataset_name="split")
+    undir = load_ddis_combinations(fname=f"{input_path}/drugbank-combo.csv", header=True,
+                                   dataset_name="drugbank")
+
+    for cle, val in dir.items():
+        found = False
+        paire = None
+        rev = (cle[-1], cle[0])
+        labels = val
+        if rev in dir:
+            labels += dir[rev]
+        if cle in undir:
+            found = True
+            paire = cle
+        elif rev in undir:
+            found = True
+            paire = rev
+
+        if found:
+            if set(undir[paire]) != set(labels):
+                print(paire, print(labels), print(undir[paire]))
 
 
 if __name__ == '__main__':
-    import pandas as pd
-    from side_effects.external_utils.graphics import save_results
+    drugb_path = "/home/rogia/Documents/analysis/data/TS23_INV"
+    all_seeds = [0, 64, 55, 101, 350, 21, 33, 10, 505, 42]
+    for seed in all_seeds:
+        train_test_valid_split_3(input_path=drugb_path, dataset_name="twosides", seed=seed)
 
-    train, test, valid, train_and_test, train_and_valid, test_and_valid = deepddi_train_test_split(
-        input_path="/home/rogia/Documents/code/side_effects/data/deepddi/drugbank")
-    # d1 = pd.DataFrame(train_and_valid)
-    # d2 = pd.DataFrame(train_and_test)
-    # d3 = pd.DataFrame(test_and_valid)
-    # save_results(filename="/home/rogia/Documents/git/side_effects/side_effects/rapport/embedding.xlsx",
-    #              contents=[("train-valid", d1), ("train-test", d2), ("test-valid", d3)])

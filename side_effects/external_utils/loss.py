@@ -1,23 +1,21 @@
-import numpy as np
 import torch
-from sklearn.utils import compute_sample_weight
-from torch.nn import BCELoss
 from torch.nn import Module
-from torch.nn.functional import binary_cross_entropy
+from torch.nn.functional import binary_cross_entropy, binary_cross_entropy_with_logits
 
 
-class Weighted_binary_cross_entropy1(Module):
+class WeightedBinaryCrossEntropy1(Module):
 
-    def __init__(self, weights_per_targets=None,
+    def __init__(self, weights_per_batch_element=None,
                  reduction='mean'):
-        super(Weighted_binary_cross_entropy1, self).__init__()
-        self.weights = weights_per_targets
+        super(WeightedBinaryCrossEntropy1, self).__init__()
+        self.weights = weights_per_batch_element
         self.reduction = reduction
 
     def forward(self, input, target):
+
         assert input.shape == target.shape
-        assert input.shape[1] == self.weights.shape[1]
         if self.weights is not None:
+            assert input.shape[1] == self.weights.shape[1]
             assert len(self.weights) == 2
             weights = torch.zeros_like(input)
             zero_w = self.weights[0].unsqueeze(0).expand(*input.shape)
@@ -30,22 +28,20 @@ class Weighted_binary_cross_entropy1(Module):
         return binary_cross_entropy(input, target, weight=weights, reduction=self.reduction)
 
 
-class Weighted_cross_entropy(Module):
+class WeightedBinaryCrossEntropy5(Module):
 
-    def __init__(self,  weights_per_labels):
-        super(Weighted_cross_entropy, self).__init__()
-        self.weights = weights_per_labels
+    def __init__(self, weights_per_label=None, weights_per_batch_element=None):
+        super(WeightedBinaryCrossEntropy5, self).__init__()
+        self.weights_per_label = weights_per_label
+        self.criterion = WeightedBinaryCrossEntropy1(weights_per_batch_element=weights_per_batch_element,
+                                                     reduction='none')
 
     def forward(self, input, target):
-        assert input.shape == target.shape
-        assert input.shape[1] == len(self.weights)
-        return sum([self.weights[i] * binary_cross_entropy(input[:, i], target[:, i]) for i in range(target.shape[1])])
-
-
-def mloss(y_pred, y_true):
-    epsilon = np.finfo(float).eps
-    y_pred = torch.clamp(y_pred, epsilon, 1 - epsilon)
-    return torch.mean(torch.sum(- y_true * torch.log(y_pred) - (1 - y_true) * torch.log(1 - y_pred), dim=1))
+        batch_losses = self.criterion(input, target)
+        assert batch_losses.shape == target.shape
+        mean_per_targets = torch.mean(batch_losses, dim=0)
+        assert mean_per_targets.nelement() == target.shape[1]
+        return torch.sum(torch.mul(self.weights_per_label, mean_per_targets))
 
 
 def weighted_binary_cross_entropy1(output, target, weights_per_targets=None,
@@ -108,12 +104,49 @@ def weighted_binary_cross_entropy2(output, target, weights_per_targets=None,
     return torch.neg(torch.mean(loss))
 
 
-def weighted_binary_cross_entropy3(output, target):
-    assert output.shape == target.shape
-    w = torch.tensor([compute_sample_weight(class_weight='balanced', y=i) for i in target], dtype=torch.float32)
-    assert w.shape == target.shape
-    loss = BCELoss(reduction='none', weight=w)
-    return torch.mean(loss(output, target))
+def weighted_binary_cross_entropy3(inputs, targets):
+    assert inputs.shape == targets.shape
+    y = targets.cpu().numpy()
+    weights_per_targets = compute_classes_weight(y)
+    if torch.cuda.is_available():
+        weights_per_targets = weights_per_targets.cuda()
+    weights = torch.zeros_like(inputs)
+    zero_w = weights_per_targets[0].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(targets == 0, zero_w, weights)
+    one_w = weights_per_targets[1].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(targets == 1, one_w, weights)
+    assert weights.shape == targets.shape
+    x = torch.sum(targets, dim=0) / targets.shape[0]
+    # assert x.nelement() == targets.shape[1]
+    # print(x)
+    # a = [binary_cross_entropy(inputs[:, j], targets[:, j], weight=weights[:, j]) for j in range(targets.shape[1])]
+    # print(a)
+    return x
+
+
+class WeightedBinaryCrossEntropy4(Module):
+
+    def __init__(self, weights_per_targets):
+        super(WeightedBinaryCrossEntropy4, self).__init__()
+        self.weights = weights_per_targets
+
+    def forward(self, input, target):
+        assert input.shape == target.shape
+        assert input.shape[1] == self.weights.shape[1]
+        if self.weights is not None:
+            assert len(self.weights) == 2
+            weights = torch.zeros_like(input)
+            zero_w = self.weights[0].unsqueeze(0).expand(*input.shape)
+            weights = torch.where(target == 0, zero_w, weights)
+            one_w = self.weights[1].unsqueeze(0).expand(*input.shape)
+            weights = torch.where(target == 1, one_w, weights)
+        else:
+            weights = None
+
+        losses = binary_cross_entropy(input, target, reduction='none')
+        assert losses.shape == target.shape
+
+        return torch.sum(weights * losses) / losses.nelement()
 
 
 def test():
@@ -126,6 +159,9 @@ def test():
     targets = np.array([binomial(1, uniform(0.1, 0.9), size=batch_size)
                         for _ in range(nb_targets)]).T
 
+    targets = np.array([1, 1, 0, 0, 0])
+    print(compute_class_weight(class_weight=None, classes=np.array([0, 1]), y=targets))
+    exit()
     # Here you should compute the class_weights using the targets for all your training data
     w = torch.tensor([
         compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
@@ -141,4 +177,17 @@ def test():
 
 
 if __name__ == '__main__':
-    test()
+    # test()
+    import torch
+    import numpy as np
+    from numpy.random import binomial, uniform
+    from sklearn.utils import compute_class_weight
+    from side_effects.external_utils.utils import compute_classes_weight
+
+    batch_size, nb_targets = 32, 10
+    outputs = uniform(0, 1, size=(batch_size, nb_targets))
+    targets = np.array([binomial(1, uniform(0.1, 0.9), size=batch_size)
+                        for _ in range(nb_targets)]).T
+
+    print(compute_classes_weight(targets, use_exp=False, exp=1))
+    print(compute_classes_weight(targets, use_exp=True, exp=0.5))
