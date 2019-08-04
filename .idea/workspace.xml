@@ -6,66 +6,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00cf566c-71cb-4c11-86a7-94fbf06327fc" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/expts/configs/k-configs.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/expts/prototype/configs.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/external_utils/corre2se.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/labels" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset_checking.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset_parser.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/preprocess/mapi.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/expts/prototype/config.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/data/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/data/loader.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/models/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/models/attention.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/models/bmn_ddi.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/models/deepddi.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/side_effects/models/features_extraction.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/bin/train" afterPath="$PROJECT_DIR$/bin/train" />
-      <change beforePath="$PROJECT_DIR$/expts/configs/171e57a4-a989-494a-aef0-d35650b8ccd7.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/expts/configs/3c3c67ee-51f4-41b6-aace-66af7ff4d82f.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/expts/configs/ex_configs_1.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_1.json" />
-      <change beforePath="$PROJECT_DIR$/expts/configs/ex_configs_4.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_4.json" />
-      <change beforePath="$PROJECT_DIR$/expts/k-configs.json" afterPath="$PROJECT_DIR$/expts/configs/ex_configs_2.json" />
-      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/e.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/expts/prototype/configs.json" afterPath="$PROJECT_DIR$/expts/prototype/configs.json" />
+      <change beforePath="$PROJECT_DIR$/expts/prototype/launcher.sh" afterPath="$PROJECT_DIR$/expts/prototype/launcher.sh" />
+      <change beforePath="$PROJECT_DIR$/scripts/run_expts.sh" afterPath="$PROJECT_DIR$/scripts/run_expts.sh" />
+      <change beforePath="$PROJECT_DIR$/side_effects/__init__.py" afterPath="$PROJECT_DIR$/side_effects/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/ec2_run_expts.sh" afterPath="$PROJECT_DIR$/side_effects/external_utils/ec2_run_expts.sh" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/graham-submit.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/graham-submit.py" />
       <change beforePath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/loss.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/loss.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/metrics.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/metrics.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/loss.py" afterPath="$PROJECT_DIR$/side_effects/loss.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/metrics.py" afterPath="$PROJECT_DIR$/side_effects/metrics.py" />
       <change beforePath="$PROJECT_DIR$/side_effects/external_utils/reload.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/reload.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/utils.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/utils.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901-copy-06-03-copy-06-06.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901-copy-06-03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-18-901.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-23-24-470.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-40-30-081.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-40-35-618.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-46-23-040.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-46-28-591.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-03-48-07-224.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-emb-2019-06-02-04-57-56-177.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-19-572-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-19-572.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-25-205-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-20-25-205.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-31-54-442-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-31-54-442.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-32-00-092-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-32-00-092.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-26-290-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-26-290.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-31-858-copy-06-02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/figures/conv1d-ker-2019-06-02-12-36-31-858.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/models/model.py" afterPath="$PROJECT_DIR$/side_effects/models/model.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/models/training.py" afterPath="$PROJECT_DIR$/side_effects/models/trainer.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/.~lock.kernel.xlsx#" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/Rapport.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/embedding.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/fcfeat.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/kernel.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_16_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_22_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_22_3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_28_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_30_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_30_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/output_32_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/rapport/results.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/side_effects/utils.py" afterPath="$PROJECT_DIR$/side_effects/utils.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/external_utils/utils.py" afterPath="$PROJECT_DIR$/side_effects/external_utils/utils_to_remove.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/models/model.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/models/trainer.py" afterPath="$PROJECT_DIR$/side_effects/trainer.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/dataset.py" afterPath="$PROJECT_DIR$/side_effects/data/utils.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/dataset_checking.py" afterPath="$PROJECT_DIR$/side_effects/preprocess/dataset_checking.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/mapi.py" afterPath="$PROJECT_DIR$/side_effects/preprocess/mapi.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/preprocess/transforms.py" afterPath="$PROJECT_DIR$/side_effects/data/transforms.py" />
+      <change beforePath="$PROJECT_DIR$/side_effects/side_effects.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/side_effects/utils.py" afterPath="$PROJECT_DIR$/side_effects/expts_routines.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,41 +68,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
+      <file leaf-file-name="expts_routines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/expts_routines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-615">
-              <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+            <state relative-caret-position="290">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reload.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/external_utils/reload.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="launch_settings.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
+      <file leaf-file-name="utils_to_remove.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/external_utils/utils_to_remove.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="479">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="107" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/data/loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bmn_ddi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/models/bmn_ddi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="launcher.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expts/prototype/launcher.sh">
+      <file leaf-file-name="metrics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="-949">
+              <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loss.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/loss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="183" column="34" lean-forward="false" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="122" column="37" lean-forward="true" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_data.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt">
+      <file leaf-file-name="metrics.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="462">
+              <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -157,6 +198,7 @@
       <find>save</find>
       <find>tag</find>
       <find>user_name</find>
+      <find>non_zeros_distribution</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,10 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/side_effects/t.py" />
-        <option value="$PROJECT_DIR$/side_effects/dispatcher.py" />
-        <option value="$PROJECT_DIR$/side_effects/datasets/transforms.py" />
-        <option value="$PROJECT_DIR$/side_effects/feature_extraction/nn/cnn.py" />
         <option value="$PROJECT_DIR$/side_effects/preprocess/data.py" />
         <option value="$PROJECT_DIR$/side_effects/external_utils/load_and_test.py" />
         <option value="$PROJECT_DIR$/side_effects/external_utils/dispatcher_config.py" />
@@ -199,24 +237,41 @@
         <option value="$PROJECT_DIR$/side_effects/external_utils/hyperparameters.py" />
         <option value="$PROJECT_DIR$/expts/k-configs.json" />
         <option value="$PROJECT_DIR$/expts/configs/ex_configs_4.json" />
-        <option value="$PROJECT_DIR$/side_effects/models/model.py" />
         <option value="$PROJECT_DIR$/expts/configs/ex_configs_2.json" />
         <option value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
         <option value="$PROJECT_DIR$/side_effects/external_utils/graphics.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/expts/prototype/configs.json" />
         <option value="$PROJECT_DIR$/bin/train" />
-        <option value="$PROJECT_DIR$/side_effects/utils.py" />
-        <option value="$PROJECT_DIR$/expts/prototype/launcher.sh" />
         <option value="$PROJECT_DIR$/expts/prototype/launch_settings.json" />
+        <option value="$PROJECT_DIR$/side_effects/models/attention.py" />
+        <option value="$PROJECT_DIR$/expts/prototype/launcher.sh" />
+        <option value="$PROJECT_DIR$/side_effects/models/trainer.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/deepddi.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/model.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/__init__.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/features_extraction.py" />
+        <option value="$PROJECT_DIR$/side_effects/models/bmn_ddi.py" />
+        <option value="$PROJECT_DIR$/side_effects/data/transforms.py" />
+        <option value="$PROJECT_DIR$/side_effects/data/dataset.py" />
+        <option value="$PROJECT_DIR$/side_effects/data/utils.py" />
+        <option value="$PROJECT_DIR$/side_effects/__init__.py" />
+        <option value="$PROJECT_DIR$/side_effects/data/dataloader.py" />
+        <option value="$PROJECT_DIR$/side_effects/utils.py" />
+        <option value="$PROJECT_DIR$/side_effects/metrics.py" />
+        <option value="$PROJECT_DIR$/expts/prototype/config.py" />
+        <option value="$PROJECT_DIR$/side_effects/data/loader.py" />
+        <option value="$PROJECT_DIR$/side_effects/expts_routines.py" />
+        <option value="$PROJECT_DIR$/side_effects/loss.py" />
+        <option value="$PROJECT_DIR$/side_effects/trainer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
+    <option name="x" value="1917" />
     <option name="y" value="-1" />
     <option name="width" value="1926" />
-    <option name="height" value="1054" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,11 +299,6 @@
             <path>
               <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,12 +310,6 @@
               <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="expts" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
-              <item name="expts" type="462c0819:PsiDirectoryNode" />
               <item name="prototype" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,11 +322,45 @@
               <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="results" type="462c0819:PsiDirectoryNode" />
               <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+              <item name="external_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="side_effects.egg-info" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,24 +372,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../molecular_meta_features/expts/results_notebooks/heatmap.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/side_effects/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/expts/prototype" />
-      <recent name="$PROJECT_DIR$/side_effects/rapport" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/expts/configs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/side_effects" />
       <recent name="$PROJECT_DIR$/expts/prototype" />
       <recent name="$PROJECT_DIR$/side_effects/models/results-1" />
       <recent name="$PROJECT_DIR$/side_effects/models" />
       <recent name="$PROJECT_DIR$/scripts/sagemaker" />
-      <recent name="$PROJECT_DIR$/side_effects/datasets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/side_effects" />
+      <recent name="$PROJECT_DIR$/side_effects/data" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/expts/prototype" />
+      <recent name="$PROJECT_DIR$/side_effects/rapport" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,7 +419,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="side_effects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/preprocess/dataset.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/data/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -397,7 +476,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="side_effects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/models/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/models/bmn_ddi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -435,7 +514,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="side_effects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/side_effects/expts_routines.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -549,16 +628,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="-1" width="1926" height="1054" extended-state="6" />
+    <frame x="1917" y="-1" width="1926" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3405876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -566,9 +647,27 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -581,189 +680,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/dgl/contrib/data/__init__.py" />
-    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/sklearn/metrics/ranking.py" />
-    <entry file="file://$USER_HOME$/miniconda3/envs/invivo/lib/python3.6/site-packages/dgl/contrib/data/knowledge_graph.py" />
-    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/graphs/conv/gcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5504">
-          <caret line="349" column="12" lean-forward="false" selection-start-line="349" selection-start-column="8" selection-end-line="349" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/test/history.json" />
-    <entry file="file://$PROJECT_DIR$/expts/ex_configs_5.json" />
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/results/configs.json" />
-    <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d_bce_None_losses.png" />
-    <entry file="file://$PROJECT_DIR$/side_effects/models/results-1/configs.json" />
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/ec2_run_expts.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/hia" />
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/figures/1_losses.png" />
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/k-configs.json" />
-    <entry file="file://$PROJECT_DIR$/side_effects/figures/conv1d-2019-05-29-18-02-22-563.png" />
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/hyperparameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/models/training.py" />
-    <entry file="file://$PROJECT_DIR$/side_effects/models/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="35" column="78" lean-forward="false" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/configs/configs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/funtar.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10290">
-          <caret line="506" column="38" lean-forward="false" selection-start-line="506" selection-start-column="38" selection-end-line="506" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expts/configs/ex_configs_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="468" column="10" lean-forward="false" selection-start-line="468" selection-start-column="10" selection-end-line="468" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/bin/dispatcher">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/bin/user_data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/bin/exp_info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../adkl/expts/shared/run_expts.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invivobase/bin/exp_run">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/prototype/failure">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -772,29 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/configs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#23#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../adkl/expts/shared/build_personal_image.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3465">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,11 +727,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/temp_4e002c47-a83b-419f-8b5a-851a322db157.json" />
+    <entry file="file://$PROJECT_DIR$/../molecular_meta_features/expts/results_notebooks/heatmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/temp_4e002c47-a83b-419f-8b5a-851a322db157.json">
+    <entry file="file://$PROJECT_DIR$/../molecular_meta_features/molecular_meta/models/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="189" column="65" lean-forward="false" selection-start-line="189" selection-start-column="65" selection-end-line="189" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../adkl/adkl/models/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/dataset_checking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expts/prototype/temp_56d5d559-6c22-459d-bf72-e5c6da33a3c8.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -846,44 +787,318 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../molecular_meta_features/expts/results_notebooks/heatmap.py">
+    <entry file="file://$PROJECT_DIR$/expts/prototype/launcher.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="468" column="10" lean-forward="false" selection-start-line="468" selection-start-column="10" selection-end-line="468" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="false" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/funtar.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/extractors/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/nn/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="517" column="4" lean-forward="false" selection-start-line="517" selection-start-column="4" selection-end-line="517" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/features_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="84" column="120" lean-forward="false" selection-start-line="84" selection-start-column="120" selection-end-line="84" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/deepddi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/attention.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivoprojects/fs_molecule_generation/fs_molecule_generation/fp_decoder/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/torch/utils/data/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/preprocess/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2358">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/data/transforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1422">
+          <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/data/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7870">
+          <caret line="501" column="0" lean-forward="true" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../invivobase/ivbase/utils/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="342" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/labels">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/side_effects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        <state relative-caret-position="-1485">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt">
+    <entry file="file://$PROJECT_DIR$/expts/prototype/configs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="84">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/launcher.sh">
+    <entry file="file://$PROJECT_DIR$/expts/prototype/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/reload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
+    <entry file="file://$PROJECT_DIR$/side_effects/external_utils/utils_to_remove.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="479">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="107" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/data/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/models/bmn_ddi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-949">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/expts_routines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="183" column="34" lean-forward="false" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="122" column="37" lean-forward="true" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/invivo/lib/python3.6/site-packages/pytoune/framework/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
           <folding />
         </state>
       </provider>

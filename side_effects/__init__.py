@@ -4,7 +4,7 @@ Predict DDI and their side effects
 """
 
 # Add imports here
-from .side_effects import *
+
 
 # Handle versioneer
 from ._version import get_versions

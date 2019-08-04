@@ -1,5 +1,5 @@
 import pandas as pd
-from side_effects.preprocess.dataset import _extract_interactions, load_ddis_combinations
+from side_effects.data.utils import _extract_interactions, load_ddis_combinations
 
 import csv
 
@@ -29,7 +29,6 @@ def combo():
     df2.to_csv("/home/rogia/Bureau/new/drugbank-combo.csv", sep=",")
 
 
-import numpy as np
 from collections import defaultdict
 
 

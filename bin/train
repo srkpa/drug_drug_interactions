@@ -6,7 +6,7 @@ import sys
 import traceback
 import click
 import numpy as np
-from side_effects.utils import run_experiment
+from side_effects.expts_routines import run_experiment
 
 TORCH = True
 try:

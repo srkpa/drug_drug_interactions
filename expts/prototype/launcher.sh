@@ -19,7 +19,7 @@ set -e
 #server={server:-local}
 server=${server:=local}
 name=ddi-test
-instance_type="c5.4xlarge"
+instance_type="c5.2xlarge"
 
 case ${server} in
   aws)

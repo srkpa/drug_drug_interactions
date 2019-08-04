@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import re
-from side_effects.preprocess.dataset import load_ddis_combinations
+from side_effects.data.utils import load_ddis_combinations
 from collections import defaultdict
 
 

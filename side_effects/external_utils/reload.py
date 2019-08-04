@@ -1,9 +1,9 @@
-from side_effects.utils import *
-from side_effects.preprocess.dataset import *
+from side_effects.expts_routines import *
+from side_effects.data.utils import *
 import os
 import json
-from sklearn.metrics import classification_report, accuracy_score
-from side_effects.preprocess.transforms import fingerprints_transformer, sequence_transformer
+from sklearn.metrics import classification_report
+from side_effects.data.transforms import fingerprints_transformer
 from side_effects.models.test import Cnn1d
 
 
@@ -63,13 +63,13 @@ def load_and_test(input_path, output_path, thresholds):
                 loss_function = WeightedBinaryCrossEntropy1(weights_per_batch_element=w)
 
         # Build the network
-        net = DRUUD(**params, output_dim=y_test.shape[1])
+        net = BMNDDI(**params, output_dim=y_test.shape[1])
 
     # Next step: Choose the optimizer
     optimizer = optim.Adam(net.parameters(), lr=lr)
 
     # Build the pytoune model
-    model = DDIModel(net=net, lr=lr, loss=loss_function, optimizer=optimizer)
+    model = Trainer(net=net, lr=lr, loss=loss_function, optimizer=optimizer)
     model.load(os.path.join(dir, "weights.json"))
     model.model.eval()
 

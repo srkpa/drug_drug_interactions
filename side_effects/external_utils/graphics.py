@@ -7,7 +7,7 @@ import pickle
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import AnchoredText
 from collections import Counter
-from side_effects.preprocess.dataset import *
+from side_effects.data.utils import *
 
 
 # not good but i have to duplicate it
@@ -534,7 +534,6 @@ if __name__ == '__main__':
     # cl = [c for c in out if out[c] >= 0]
     # print(len(cl))
     # print(cl)
-    from sklearn.metrics import accuracy_score
 
     i2 = "/home/rogia/Musique"
     i1 = "/home/rogia/Documents/analysis/results/output"

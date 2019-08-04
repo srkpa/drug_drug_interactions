@@ -29,9 +29,9 @@ def submit_sh(config_path, output, expt_output, step=5, project="/home/maoss2/ro
             OUT.writelines("\n".join(head))
             for file in f[:-1]:
                 if file.endswith("_config.json"):
-                    OUT.write(f"python {project}/utils.py -p {os.path.join(config_path, file)} -o {expt_output} -i {project}/{input} & \n")
+                    OUT.write(f"python {project}/expts_routines.py -p {os.path.join(config_path, file)} -o {expt_output} -i {project}/{input} & \n")
 
-            OUT.write(f"python {project}/utils.py -p {os.path.join(config_path, f[-1])} -o {expt_output} -i {project}/{input}\n")
+            OUT.write(f"python {project}/expts_routines.py -p {os.path.join(config_path, f[-1])} -o {expt_output} -i {project}/{input}\n")
             OUT.write("wait")
 
 
