@@ -106,7 +106,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Config params: {expt_params}\n")
 
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    model_params['network_params'].update(dict(output_dim=train_data.nb_labels, use_gpu=torch.cuda.is_available()))
+    model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
     model = Trainer(**model_params)
 
     # Train and save

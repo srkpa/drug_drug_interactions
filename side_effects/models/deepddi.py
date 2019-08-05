@@ -15,6 +15,4 @@ class DeepDDI(nn.Module):
         self.net = nn.Sequential(*layers, nn.Linear(in_, output_dim), nn.Sigmoid())
 
     def forward(self, batch):
-        x = batch
-        ddi = x.type('torch.cuda.FloatTensor') if torch.cuda.is_available() else x.type('torch.FloatTensor')
-        return self.net(ddi)
+        return self.net(batch)

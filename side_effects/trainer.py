@@ -5,14 +5,9 @@ from pytoune.framework.callbacks import BestModelRestore
 from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
 from tensorboardX.writer import SummaryWriter
 from side_effects.metrics import *
-from side_effects.models import *
+from side_effects.models import all_networks_dict
 from side_effects.loss import get_loss
 from ivbase.nn.commons import get_optimizer
-
-all_networks_dict = dict(
-    deepddi=DeepDDI,
-    bmnddi=BMNDDI
-)
 
 
 class TensorBoardLogger2(TensorBoardLogger):

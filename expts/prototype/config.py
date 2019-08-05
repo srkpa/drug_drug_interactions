@@ -33,14 +33,26 @@ drug_features_extractor_params = list(ParameterGrid(
 ))
 
 
+# network_params = list(ParameterGrid(dict(
+#     network_name=['bmnddi'],
+#     drug_feature_extractor_params=drug_features_extractor_params,
+#     fc_layers_dim=[[128]*4],
+#     mode= ["concat"],
+#     dropout=[0],
+#     b_norm=[True],
+# )))
+
+
 network_params = list(ParameterGrid(dict(
-    network_name=['bmnddi'],
+    network_name=['bmnddi_att'],
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128]*4],
-    mode= ["concat"],
+    mode=["concat"],
+    att_hidden_size=[20],
     dropout=[0],
     b_norm=[True],
 )))
+
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
