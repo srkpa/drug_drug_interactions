@@ -71,13 +71,8 @@ class Trainer(Model):
         self.metrics_names = metrics_names
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
-<<<<<<< HEAD
-              log_filename=None, checkpoint_filename=None, tensorbord_dir=None, with_early_stopping=False,
-              patience=3, min_lr=1e-06):
-=======
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
               patience=3, min_lr=1e-06, **kwargs):
->>>>>>> 533f3e85f8544deb74d2406b1c8a6994c29ac2ce
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
         self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
