@@ -15,6 +15,27 @@ all_networks_dict = dict(
 )
 
 
+class TensorBoardLogger2(TensorBoardLogger):
+    def __init__(self, writer):
+        super().__init__(writer)
+
+    def _on_epoch_end_write(self, epoch, logs):
+        grouped_items = dict()
+        for k, v in logs.items():
+            if 'val_' in k:
+                primary_key = k[4:]
+                if primary_key not in grouped_items:
+                    grouped_items[primary_key] = dict()
+                grouped_items[k[4:]][k] = v
+            else:
+                if k not in grouped_items:
+                    grouped_items[k] = dict()
+                grouped_items[k][k] = v
+        for k, v in grouped_items.items():
+            if k not in ['epoch', 'time']:
+                self.writer.add_scalars(k, v, epoch)
+
+
 class Trainer(Model):
 
     def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None, **loss_params):
@@ -29,8 +50,8 @@ class Trainer(Model):
         Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce')
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
-              log_filename=None, checkpoint_filename=None, tensorbord_dir=None, with_early_stopping=False,
-              patience=3, min_lr=1e-06, ):
+              log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
+              patience=3, min_lr=1e-06, **kwargs):
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
         self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
@@ -48,14 +69,13 @@ class Trainer(Model):
         if checkpoint_filename:
             checkpointer = ModelCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
             callbacks += [checkpointer]
-        if tensorbord_dir:
-            tboard = TensorBoardLogger(SummaryWriter(tensorbord_dir))
+        if tensorboard_dir:
+            tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
 
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
                                           epochs=n_epochs, callbacks=callbacks)
-        exit(33)
 
         return self
 
