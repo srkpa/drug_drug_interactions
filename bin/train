@@ -31,7 +31,7 @@ def main(config_file, input_path, output_path):
         with open(config_file, 'r') as tc:
             train_params = json.load(tc)
         # the function below does all the data loading, run, validate and test the algo
-        run_experiment(train_params, output_path=output_path,
+        run_experiment(**train_params, output_path=output_path,
                        input_path=input_path)
         print("Launching with {}".format(train_params))
 
