@@ -1,13 +1,32 @@
 import torch
-from torch.utils.data import DataLoader
+from ivbase.nn.commons import get_optimizer
 from pytoune.framework import Model
 from pytoune.framework.callbacks import BestModelRestore
 from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
 from tensorboardX.writer import SummaryWriter
+from torch.utils.data import DataLoader
 from side_effects.metrics import *
 from side_effects.models import all_networks_dict
 from side_effects.loss import get_loss
 from ivbase.nn.commons import get_optimizer
+
+
+all_metrics_dict = dict(
+    micro_roc=wrapped_partial(roc_auc_score, average='micro'),
+    macro_roc=wrapped_partial(roc_auc_score, average='macro'),
+    micro_auprc=wrapped_partial(auprc_score, average='micro'),
+    macro_auprc=wrapped_partial(auprc_score, average='macro'),
+    micro_f1=wrapped_partial(ivbm.f1_score, average='micro'),
+    macro_f1=wrapped_partial(ivbm.f1_score, average='macro'),
+    micro_acc=wrapped_partial(accuracy_score, average='micro'),
+    macro_acc=wrapped_partial(accuracy_score, average='macro'),
+    micro_prec=wrapped_partial(precision_score, average='micro'),
+    macro_prec=wrapped_partial(precision_score, average='macro'),
+    micro_rec=wrapped_partial(recall_score, average='micro'),
+    macro_rec=wrapped_partial(recall_score, average='macro'),
+    apk=apk,
+    mapk=mapk
+)
 
 
 class TensorBoardLogger2(TensorBoardLogger):
@@ -33,7 +52,8 @@ class TensorBoardLogger2(TensorBoardLogger):
 
 class Trainer(Model):
 
-    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None, **loss_params):
+    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None, metrics_names=[],
+                 **loss_params):
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
@@ -42,7 +62,9 @@ class Trainer(Model):
         optimizer = get_optimizer(optimizer)(network.parameters(), lr=lr, weight_decay=weight_decay)
         self.loss_name = loss
         self.loss_params = loss_params
-        Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce')
+        metrics = [all_metrics_dict[name] for name in metrics_names]
+        Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce', metrics=metrics)
+        self.metrics_names = metrics_names
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
@@ -91,39 +113,3 @@ class Trainer(Model):
 
     def save(self, save_filename):
         self.save_weights(save_filename)
-
-
-def compute_metrics(y_true, y_pred):
-    # AUROC and AUPRC are not dependent on the thresholds
-    thresholds, average_precisions, precision, recall = auprc(actual=y_true, scores=y_pred)
-    false_pos_rates, true_pos_rates, roc_auc_scores = auroc(actual=y_true, scores=y_pred)
-
-    print('Micro ROC score: {0:0.2f}'.format(
-        roc_auc_scores["micro"]))
-
-    print('Average precision-recall score: {0:0.2f}'.format(
-        average_precisions["micro"]))
-
-    best_thresholds = thresholds["micro"]
-    print(f"Length Best thresholds: {len(best_thresholds)}")
-
-    return dict(zip(["thresholds", "ap", "prec", "recall", "fpr", "tpr", "ROC"],
-                    [thresholds, average_precisions, precision, recall, false_pos_rates, true_pos_rates,
-                     roc_auc_scores]))
-
-
-def compute_macro_m(y_true, y_pred, best_thresholds):
-    # Theses metrics below are dependent on the thresholds
-    predicted = list(map(predict, [y_pred] * len(best_thresholds), best_thresholds))
-    assert len(predicted) == len(best_thresholds)
-    macro_metrics = list(map(acc_precision_f1_recall, [y_true] * len(predicted), predicted))
-    assert len(predicted) == len(macro_metrics)
-    micro_metrics = list(
-        map(acc_precision_f1_recall, [y_true] * len(predicted), predicted, ["micro"] * len(predicted)))
-    assert len(predicted) == len(micro_metrics)
-
-    classification_reports = list(map(model_classification_report, [y_true] * len(predicted), predicted))
-    assert len(predicted) == len(classification_reports)
-
-    return dict(zip(["macro", "micro", "report"],
-                    [macro_metrics, micro_metrics, classification_reports]))
