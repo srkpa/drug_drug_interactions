@@ -16,15 +16,11 @@ class BMNDDI(nn.Module):
         if self.mode in ['sum', 'max', "elementwise"]:
             in_size = self.drug_feature_extractor.output_dim
 
-        self.classifier = fe_factory(arch='fc', input_size=in_size, fc_layer_dims=fc_layers_dim,
+        self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                      output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
 
     def forward(self, batch):
-        drugs_a, drugs_b = list(zip(*batch))
-        drugs_a, drugs_b = torch.stack(drugs_a), torch.stack(drugs_b)
-        if self.use_gpu:
-            drugs_a = drugs_a.cuda()
-            drugs_b = drugs_b.cuda()
+        drugs_a, drugs_b = batch
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         if self.mode == "elementwise":
             ddi = torch.mul(features_drug1, features_drug2)

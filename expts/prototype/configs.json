@@ -1,41 +1,56 @@
 {
   "model_params": [
     {
-      "b_norm": true,
-      "dropout": 0,
-      "drug_feature_extractor_params": {
-        "arch": "cnn",
-        "b_norm": false,
-        "cnn_sizes": [
+      "loss": "bce",
+      "lr": 0.001,
+      "network_params": {
+        "b_norm": true,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
           128,
           128,
           128,
           128
         ],
-        "dilatation_rate": 1,
-        "embedding_size": 20,
-        "kernel_sizes": [
-          5
-        ],
-        "pooling_len": 2,
-        "vocab_size": 152
+        "mode": "concat",
+        "network_name": "bmnddi"
       },
-      "fc_layers_dim": [
-        128,
-        128,
-        128,
-        128
-      ],
-      "mode": "concat",
-      "model_name": "bmnddi"
+      "optimizer": "adam"
     }
   ],
   "dataset_params": [
     {
-      "name": "twosides",
-      "smi_transf": "seq",
-      "inv_seed": null,
-      "seed": 42
+      "dataset_name": "twosides",
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "valid_size": 0.1
     }
   ],
   "fit_params": [

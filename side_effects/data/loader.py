@@ -3,6 +3,7 @@ import inspect
 import pandas as pd
 from functools import partial
 from collections import defaultdict
+from itertools import product
 from torch.utils.data import Dataset
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split
@@ -58,7 +59,7 @@ def _filter_samples(samples, transformed_smiles_dict=None):
 
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer):
-        self.samples = samples
+        self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.labels_vectorizer = label_vectorizer
         self.gpu = torch.cuda.is_available()
@@ -67,8 +68,8 @@ class DDIdataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, item):
-        (drug1, drug2), label = self.samples[item]
-        target = self.labels_vectorizer.transformer([label]).astype(np.float32)[0]
+        drug1, drug2, label = self.samples[item]
+        target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         return ((to_tensor(self.drug_to_smiles[drug1], self.gpu),
                  to_tensor(self.drug_to_smiles[drug1], self.gpu)),
                 to_tensor(target, self.gpu))
@@ -78,36 +79,59 @@ class DDIdataset(Dataset):
         return len(self.labels_vectorizer.classes_)
 
     def get_targets(self):
-        y = zip(*self.samples)[1]
-        return to_tensor(self.labels_vectorizer.transformer(y).astype(np.float32), self.gpu)
+        y = list(zip(*self.samples))[2]
+        return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)
 
 
-def get_data_partitions(dataset_name, input_path, transformer, seed=None, test_size=0.25, valid_size=0.25):
-    # My paths
-    all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
-    if seed is None:
-        all_combo_path = f"{input_path}/directed-drugbank-combo.csv"
-        data = load_ddis_combinations(all_combo_path, header=True)
-        train_data, test_data = train_test_split(data, test_size=test_size)
-        train_data, valid_data = train_test_split(train_data, test_size=valid_size)
+def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42):
+    assert mode.lower() in ['random', 'leave_drugs_out']
+    if mode == 'random':
+        train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
+        train, valid = train_test_split(train, test_size=valid_size)
     else:
-        train_path = f"{input_path}/{dataset_name}-train_samples_{seed}.csv"
-        test_path = f"{input_path}/{dataset_name}-test_samples_{seed}.csv"
-        valid_path = f"{input_path}/{dataset_name}-valid_samples_{seed}.csv"
-        # Load files
-        files = [train_path, test_path, valid_path]
-        train_data, test_data, valid_data = list(
-            map(partial(load_ddis_combinations, dataset_name="split", header=False), files))
+        drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
+        drugs = sorted(drugs)
+
+        train_idx, test_idx = train_test_split(drugs, test_size=test_size, random_state=seed)
+        train_idx, valid_idx = train_test_split(train_idx, test_size=valid_size, random_state=seed)
+
+        train = set(product(train_idx, repeat=2))
+        valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
+        test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
+
+        train = set(data.keys()).intersection(train)
+        valid = set(data.keys()).intersection(valid)
+        test = set(data.keys()).intersection(test)
+
+        print('len train', len(list(train)))
+        print('len test', len(list(test)))
+        print('len valid', len(list(valid)))
+        print("len gray region", len(data) - (len(train) + len(test) + len(valid)))
+
+    train_data = {k: data[k] for k in train}
+    valid_data = {k: data[k] for k in valid}
+    test_data = {k: data[k] for k in test}
+    return train_data, valid_data, test_data
+
+
+def get_data_partitions(dataset_name, input_path, transformer, split_mode, seed=None, test_size=0.25, valid_size=0.25):
+    # My paths
+    all_combo_path = f"{input_path}/{dataset_name}.csv"
+    data = load_ddis_combinations(all_combo_path, header=True)
+    train_data, test_data, valid_data = train_test_valid_split(data, split_mode, seed=seed,
+                                                               test_size=test_size, valid_size=valid_size)
     print(f"len train {len(train_data)}\nlen test {len(test_data)}\nlen valid {len(valid_data)}")
 
     # Load smiles
+    all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
     drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
 
     # Transformer
+    transformer = all_transformers_dict.get(transformer)
     args = inspect.signature(transformer)
     if 'approved_drug' in args.parameters:
-        approved_drugs_path = f"{input_path}/drugbank_approved_drugs.csv"
+        approved_drugs_path = f"{input_path}/approved_drugs.csv"
         approved_drug = pd.read_csv(approved_drugs_path, sep=",").dropna()
         approved_drug = approved_drug['PubChem Canonical Smiles'].values.tolist()
         drugs2smiles = transformer(drugs=drugs, smiles=smiles, approved_drug=approved_drug)
@@ -123,4 +147,3 @@ def get_data_partitions(dataset_name, input_path, transformer, seed=None, test_s
     test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
 
     return train_dataset, valid_dataset, test_dataset
-

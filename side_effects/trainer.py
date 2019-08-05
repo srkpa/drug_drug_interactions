@@ -16,9 +16,9 @@ all_networks_dict = dict(
 
 class Trainer(Model):
 
-    def __init__(self, network_params, optimizer, lr, weight_decay, loss=None, **loss_params):
+    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None, **loss_params):
         self.history = None
-        network_name = network_params.pop('name')
+        network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
         if torch.cuda.is_available():
             network = network.cuda()
@@ -32,7 +32,7 @@ class Trainer(Model):
               patience=3, min_lr=1e-06, ):
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
-        self.loss_function = get_loss(self.loss_name, y_train=train_dataset.targets(), **self.loss_params)
+        self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
 
         callbacks = []
         if with_early_stopping:

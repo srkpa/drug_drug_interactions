@@ -15,16 +15,16 @@ from sklearn.decomposition import PCA
 def fingerprints_transformer(drugs, smiles):
     transformer = FingerprintsTransformer()
     out = transformer.transform(smiles)
-    res = np.stack(out)
-    res = torch.from_numpy(res).type("torch.FloatTensor")
+    res = np.stack(out).astype(np.float32)
+    # res = torch.from_numpy(res).type("torch.FloatTensor")
     print("fingerprint vectorized out", res.shape)
     return dict(zip(drugs, res))
 
 
 def sequence_transformer(drugs, smiles, one_hot=False):
     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=one_hot)
-    out = transformer.fit_transform(smiles)
-    out = torch.from_numpy(out).type("torch.LongTensor")
+    out = transformer.fit_transform(smiles).astype(np.int64)
+    # out = torch.from_numpy(out).type("torch.LongTensor")
     print("Sequence vectorized out", out.shape)
     return dict(zip(drugs, out))
 
@@ -37,10 +37,10 @@ def deepddi_transformer(drugs, smiles, approved_drug):
     all_ssp = [[DataStructs.FingerprintSimilarity(drg, appr_drugs_fps[i]) for i in range(len(appr_drugs_fps))] for
                ids, drg in enumerate(drugs_involved_in_fps)]
     pca = PCA(n_components=50)
-    reduced_ssp = pca.fit_transform(np.array(all_ssp))
-    out = torch.from_numpy(reduced_ssp)
-    if torch.cuda.is_available():
-        out = out.cuda()
+    out = pca.fit_transform(np.array(all_ssp)).astype(np.float32)
+    # out = torch.from_numpy(reduced_ssp)
+    # if torch.cuda.is_available():
+    #     out = out.cuda()
     return dict(zip(drugs, out))
 
 

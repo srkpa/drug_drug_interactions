@@ -1,5 +1,6 @@
 import os
 import json
+import torch
 import pickle
 from ivbase.utils.datasets.datacache import DataCache
 from side_effects.trainer import Trainer, compute_metrics
@@ -47,15 +48,15 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     """
 
     dc = DataCache()
-    cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/twosides-for-seed", force=True)
+    cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/twosides", force=True)
     expt_params = model_params
 
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
 
-    train_data, valid_data, test_data = get_data_partitions(**dataset_params)
-    model_params.update(dict(output_dim=train_data.nb_labels))
+    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
+    model_params['network_params'].update(dict(output_dim=train_data.nb_labels, use_gpu=torch.cuda.is_available()))
     model = Trainer(**model_params)
 
     # Train and save

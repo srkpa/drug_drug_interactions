@@ -21,6 +21,7 @@ server=${server:=local}
 name=ddi-test
 instance_type="c5.2xlarge"
 
+python config.py -o configs.json
 case ${server} in
   aws)
     exp_launch --launch-config launch_settings.json --exp-config configs.json --exp-name ${name} -t $instance_type
