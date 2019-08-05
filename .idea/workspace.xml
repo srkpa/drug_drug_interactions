@@ -9,10 +9,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/prototype/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/expts/prototype/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/prototype/configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/expts/prototype/configs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/expts_routines.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/expts_routines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/side_effects/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/side_effects/trainer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/expts_routines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+            <state relative-caret-position="276">
+              <caret line="119" column="80" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="80" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -60,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="168">
+              <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -72,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/expts/prototype/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="197">
+              <caret line="46" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -93,10 +89,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/side_effects/metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1694">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="408">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/side_effects/loss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,7 +219,7 @@
             <path>
               <item name="drug_drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_drug_interactions" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drug_drug_interactions" type="b2602c69:ProjectViewProjectNode" />
@@ -228,18 +236,6 @@
               <item name="drug_drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="side_effects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_drug_interactions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_drug_interactions" type="462c0819:PsiDirectoryNode" />
-              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_drug_interactions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_drug_interactions" type="462c0819:PsiDirectoryNode" />
-              <item name="side_effects" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,12 +413,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.utils" />
       <item itemvalue="Python.dataset" />
       <item itemvalue="Python.graphics" />
       <item itemvalue="Python.hyperparameters" />
       <item itemvalue="Python.model" />
       <item itemvalue="Python.reload" />
-      <item itemvalue="Python.utils" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -505,12 +501,12 @@
       <workItem from="1559323028943" duration="845000" />
       <workItem from="1559475368545" duration="7459000" />
       <workItem from="1559487946058" duration="1517000" />
-      <workItem from="1565025253880" duration="14040000" />
+      <workItem from="1565025253880" duration="15545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377459000" />
+    <option name="totallyTimeSpent" value="378964000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,14 +526,14 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5363735" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.45059717" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.44408253" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.41476655" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Database" weight="0.32959402" />
@@ -576,6 +572,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/expts/prototype/launch_settings.json">
@@ -807,16 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/side_effects/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/models/features_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
@@ -860,18 +872,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1694">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="408">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/side_effects/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/expts_routines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+        <state relative-caret-position="276">
+          <caret line="119" column="80" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="80" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -880,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/side_effects/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="168">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -890,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expts/prototype/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="197">
+          <caret line="46" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

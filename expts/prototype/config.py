@@ -43,7 +43,7 @@ model_params = list(ParameterGrid(dict(
     optimizer=['adam'],
     lr=[1e-3],
     loss=['bce'],
-    metrics_names=[['micro_roc', 'micro_auprc', 'macro_roc', 'macro_auprc', 'micro_f1', 'macro_f1']]
+    metrics_names=[['micro_roc', 'micro_auprc']]
 )))
 
 
