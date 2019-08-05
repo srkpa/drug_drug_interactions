@@ -2,7 +2,8 @@ import torch
 from torch.utils.data import DataLoader
 from pytoune.framework import Model
 from pytoune.framework.callbacks import BestModelRestore
-from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
+from tensorboardX.writer import SummaryWriter
 from side_effects.metrics import *
 from side_effects.models import *
 from side_effects.loss import get_loss
@@ -28,7 +29,7 @@ class Trainer(Model):
         Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce')
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
-              log_filename=None, checkpoint_filename=None, with_early_stopping=False,
+              log_filename=None, checkpoint_filename=None, tensorbord_dir=None, with_early_stopping=False,
               patience=3, min_lr=1e-06, ):
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
@@ -47,6 +48,9 @@ class Trainer(Model):
         if checkpoint_filename:
             checkpointer = ModelCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
             callbacks += [checkpointer]
+        if tensorbord_dir:
+            tboard = TensorBoardLogger(SummaryWriter(tensorbord_dir))
+            callbacks += [tboard]
 
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
