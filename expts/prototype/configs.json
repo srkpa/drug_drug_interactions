@@ -3,6 +3,14 @@
     {
       "loss": "bce",
       "lr": 0.001,
+      "metrics_names": [
+        "micro_roc",
+        "micro_auprc",
+        "macro_roc",
+        "macro_auprc",
+        "micro_f1",
+        "macro_f1"
+      ],
       "network_params": {
         "b_norm": true,
         "dropout": 0,

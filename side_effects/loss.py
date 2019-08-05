@@ -4,6 +4,7 @@ from torch.nn.functional import binary_cross_entropy, binary_cross_entropy_with_
 from pytoune.framework.metrics import get_loss_or_metric
 from sklearn.utils import compute_class_weight
 
+
 class WeightedBinaryCrossEntropy1(Module):
 
     def __init__(self, weights_per_batch_element=None,

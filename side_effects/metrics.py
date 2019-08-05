@@ -1,60 +1,72 @@
 import numpy as np
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import roc_curve, auc, average_precision_score, precision_recall_curve
+import sklearn.metrics as skm
+import ivbase.utils.metrics as ivbm
+from functools import partial, update_wrapper
 
 
-def auroc(actual, scores):
-    assert scores.shape == actual.shape
-    n_classes = actual.shape[1]
-    fpr, tpr, roc_auc = {}, {}, {}
-    for i in range(n_classes):
-        fpr[i], tpr[i], _ = roc_curve(actual[:, i], scores[:, i], pos_label=1)
-        roc_auc[i] = auc(fpr[i], tpr[i])
-    fpr["micro"], tpr["micro"], _ = roc_curve(actual.ravel(), scores.ravel(), pos_label=1)
-    roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
-
-    return fpr, tpr, roc_auc
+def wrapped_partial(func, **kwargs):
+    partial_func = partial(func, **kwargs)
+    update_wrapper(partial_func, func)
+    return partial_func
 
 
-def auprc(actual, scores):
-    assert scores.shape == actual.shape
-    n_classes = actual.shape[1]
-    average_precisions, precision, recall, thresholds = {}, {}, {}, {}
-    for i in range(n_classes):
-        precision[i], recall[i], thresholds[i] = precision_recall_curve(actual[:, i], scores[:, i])
-        average_precisions[i] = average_precision_score(actual[:, i], scores[:, i])
-    precision["micro"], recall["micro"], thresholds["micro"] = precision_recall_curve(actual.ravel(), scores.ravel())
-    average_precisions["micro"] = average_precision_score(actual, scores, average="micro")
-    return thresholds, average_precisions, precision, recall
+def roc_auc_score(y_pred, y_true, average):
+    assert y_true.shape == y_pred.shape
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    if average == 'macro':
+        out = []
+        for i in range(y_true.shape[1]):
+            roc_score = skm.roc_auc_score(y_true[:, i], y_pred[:, i], average='micro') if len(
+                np.unique(y_true[:, i])) > 1 else 0.5
+            out.append(roc_score)
+        return np.mean(out)
+    return ivbm.roc_auc_score(y_pred, y_true, average=average)
 
 
-def predict(y_scores, threshold):
-    y_pred = np.where(y_scores >= threshold, 1, 0)
-    return y_pred
+def auprc_score(y_pred, y_true, average):
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    if average == 'macro':
+        out = []
+        for i in range(y_true.shape[1]):
+            roc_score = skm.average_precision_score(y_true[:, i], y_pred[:, i], average='micro') if len(
+                np.unique(y_true[:, i])) > 1 else 0.5
+            out.append(roc_score)
+        return np.mean(out)
+    return skm.average_precision_score(y_true, y_pred, average=average)
 
 
-def model_classification_report(actual, predicted):
-    return classification_report(actual, predicted, output_dict=True)
+def model_classification_report(y_pred, y_true, threshold=0.5):
+    assert y_true.shape == y_pred.shape
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    y_pred = np.where(y_pred >= threshold, 1, 0)
+    return skm.classification_report(y_true, y_pred, output_dict=True)
 
 
-def acc_precision_f1_recall(actual, predicted, average='macro'):
-    return dict(
-        acc=_accuracy(actual, predicted, average=average),
-        f1=f1_score(actual, predicted, average=average),
-        prc=precision_score(actual, predicted, average=average),
-        rec=recall_score(actual, predicted, average=average))
+def precision_score(y_pred, y_true, average, threshold=0.5):
+    assert y_true.shape == y_pred.shape
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    y_pred = np.where(y_pred >= threshold, 1, 0)
+    return skm.precision_score(y_true, y_pred, average=average)
 
 
-def _accuracy(actual, predicted, average=None):
-    assert actual.shape == predicted.shape
+def recall_score(y_pred, y_true, average, threshold=0.5):
+    assert y_true.shape == y_pred.shape
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    y_pred = np.where(y_pred >= threshold, 1, 0)
+    skm.recall_score(y_true, y_pred, average=average)
+
+
+def accuracy_score(y_pred, y_true, average, threshold=0.5):
+    assert y_true.shape == y_pred.shape
+    y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
+    y_pred = np.where(y_pred >= threshold, 1, 0)
     if average == "macro":
         return np.mean(
-            np.array([accuracy_score(actual[:, i], predicted[:, i]) for i in range(actual.shape[1])])),
-    return accuracy_score(actual, predicted)
+            np.array([skm.accuracy_score(y_true[:, i], y_pred[:, i]) for i in range(y_true.shape[1])])),
+    return skm.accuracy_score(y_true, y_pred)
 
 
-def apk(actual, predicted, k=10):
+def apk(predicted, actual, k=10):
     """
     Computes the average precision at k.
     This function computes the average precision at k between two lists of
@@ -89,7 +101,7 @@ def apk(actual, predicted, k=10):
     return score / min(len(actual), k)
 
 
-def mapk(actual, predicted, k=10):
+def mapk(predicted, actual, k=10):
     """
     Computes the mean average precision at k.
     This function computes the mean average precision at k between two lists
@@ -109,4 +121,5 @@ def mapk(actual, predicted, k=10):
     score : double
             The mean average precision at k over the input lists
     """
+
     return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])

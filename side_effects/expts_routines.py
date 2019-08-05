@@ -3,7 +3,7 @@ import json
 import torch
 import pickle
 from ivbase.utils.datasets.datacache import DataCache
-from side_effects.trainer import Trainer, compute_metrics
+from side_effects.trainer import Trainer
 from side_effects.data.loader import get_data_partitions
 
 
@@ -31,20 +31,20 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
         The fitting parameter, loaded from a json file. This corresponds to the parameters
         that the train script will send you.
 
-	output_path : str
-		Path to the Location where all training results will be saved.
-		This will be provided to you by the train script
+    output_path : str
+        Path to the Location where all training results will be saved.
+        This will be provided to you by the train script
 
-	input_path : str, optional
-		Path to the Location where input data are. This will be provided to you by the train script.
-		You might discard this, if your data can be found in a path inside your package that you could load yourself.
+    input_path : str, optional
+        Path to the Location where input data are. This will be provided to you by the train script.
+        You might discard this, if your data can be found in a path inside your package that you could load yourself.
 
-	**kwargs : optional
-		Additional named parameters
+    **kwargs : optional
+        Additional named parameters
 
     Returns
     -------
-		# This function return is not used by the train script. But you could do anything with that.
+        # This function return is not used by the train script. But you could do anything with that.
     """
 
     dc = DataCache()
@@ -71,5 +71,6 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     y_true, y_probs = model.test(test_data)
     pickle.dump(y_true, open(os.path.join(output_path, "true_labels.pkl"), "wb"))
     pickle.dump(y_probs, open(os.path.join(output_path, "predicted_labels.pkl"), "wb"))
-    output = compute_metrics(y_true, y_probs)
+    output = {metric_name: metric_fn(y_probs, y_true) for metric_name, metric_fn in
+              list(zip(model.metrics_names, model.metrics))}
     pickle.dump(output, open(os.path.join(output_path, "output.pkl"), "wb"))
