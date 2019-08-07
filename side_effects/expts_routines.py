@@ -117,10 +117,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     model.train(train_data, valid_data, **fit_params, **paths)
 
     # Test and save
-    y_true, y_probs = model.test(test_data)
-    output = {metric_name: metric_fn(y_probs, y_true) for metric_name, metric_fn in
-              list(zip(model.metrics_names, model.metrics))}
-
+    y_true, y_probs, output = model.test(test_data)
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
