@@ -1,6 +1,7 @@
 import torch
 from torch import nn
 
+
 class DeepDDI(nn.Module):
 
     def __init__(self, input_dim, hidden_sizes, output_dim):

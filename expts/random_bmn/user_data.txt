@@ -1,0 +1,35 @@
+Content-Type: multipart/mixed; boundary="//"
+MIME-Version: 1.0
+
+--//
+Content-Type: text/cloud-config; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="cloud-config.txt"
+
+#cloud-config
+cloud_final_modules:
+- [scripts-user, always]
+
+--//
+Content-Type: text/x-shellscript; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="userdata.txt"
+
+#!/bin/bash
+source /home/ec2-user/.bashrc
+mkfs.ext4 /dev/sdb
+mount /dev/sdb /home/ec2-user/.invivo/
+mkdir -p $INVIVO_CACHE_ROOT $INVIVO_LOG_ROOT $INVIVO_RESULTS_ROOT
+export AMI_LAUNCH_INDEX=`curl http://169.254.169.254/latest/meta-data/ami-launch-index`
+export INSTANCE_ID=`curl http://169.254.169.254/latest/meta-data/instance-id`
+cd $INVIVO_GIT_ROOT
+git pull "https://$GIT_ROBOT_USERNAME:$GIT_ROBOT_PASSWD@bitbucket.org/invivoai/invivobase.git" aws
+cd ..
+git clone "https://$GIT_ROBOT_USERNAME:$GIT_ROBOT_PASSWD@$GitRepository" -b $GitBranch project
+cd project/$GitInnerPath
+python setup.py develop
+$INVIVO_GIT_ROOT/bin/exp_run -n $exp_name -i $instance_count -t $task_ids
+--//
+

@@ -56,7 +56,8 @@ class TensorBoardLogger2(TensorBoardLogger):
 
 class Trainer(Model):
 
-    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None, metrics_names=[],
+    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
+                 metrics_names=None,
                  **loss_params):
         self.history = None
         network_name = network_params.pop('network_name')
@@ -66,6 +67,7 @@ class Trainer(Model):
         optimizer = get_optimizer(optimizer)(network.parameters(), lr=lr, weight_decay=weight_decay)
         self.loss_name = loss
         self.loss_params = loss_params
+        metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
         metrics = [all_metrics_dict[name] for name in metrics_names]
         Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce', metrics=metrics)
         self.metrics_names = metrics_names
@@ -103,14 +105,14 @@ class Trainer(Model):
     def test(self, dataset, batch_size=256):
         loader = DataLoader(dataset, batch_size=batch_size)
         y = dataset.get_targets()
-        _, y_pred = self.evaluate_generator(loader, return_pred=True)
+        _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
         y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
         else:
             y_true = y.numpy()
 
-        return y_true, y_pred
+        return y_true, y_pred, dict(zip(self.metrics_names, metrics_val))
 
     def load(self, checkpoint_filename):
         self.load_weights(checkpoint_filename)
