@@ -15,8 +15,8 @@
       <change beforePath="$PROJECT_DIR$/expts/deepddi_expts/launcher.sh" afterPath="" />
       <change beforePath="$PROJECT_DIR$/expts/deepddi_expts/launcher.sh" afterPath="$PROJECT_DIR$/expts/launcher.sh" />
       <change beforePath="$PROJECT_DIR$/expts/deepddi_expts/user_data.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/expts/prototype/config.py" afterPath="$PROJECT_DIR$/expts/prototype/config.py" />
-      <change beforePath="$PROJECT_DIR$/expts/prototype/configs.json" afterPath="$PROJECT_DIR$/expts/prototype/configs.json" />
+      <change beforePath="$PROJECT_DIR$/expts/prototype/config.py" afterPath="$PROJECT_DIR$/expts/ddi_prototype/config.py" />
+      <change beforePath="$PROJECT_DIR$/expts/prototype/configs.json" afterPath="$PROJECT_DIR$/expts/ddi_prototype/configs.json" />
       <change beforePath="$PROJECT_DIR$/expts/prototype/launch_settings.json" afterPath="$PROJECT_DIR$/expts/launch_settings.json" />
       <change beforePath="$PROJECT_DIR$/expts/prototype/launcher.sh" afterPath="" />
       <change beforePath="$PROJECT_DIR$/expts/prototype/user_data.txt" afterPath="$PROJECT_DIR$/expts/user_data.txt" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="launcher.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/expts/launcher.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="735">
+              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -98,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/side_effects/preprocess/transforms.py" />
         <option value="$PROJECT_DIR$/expts/ex_configs_3.json" />
         <option value="$PROJECT_DIR$/side_effects/models/training.py" />
         <option value="$PROJECT_DIR$/expts/ex_configs_2.json" />
@@ -149,6 +148,7 @@
         <option value="$PROJECT_DIR$/side_effects/models/bmn_ddi.py" />
         <option value="$PROJECT_DIR$/expts/prototype/user_data.txt" />
         <option value="$PROJECT_DIR$/expts/prototype/launcher.sh" />
+        <option value="$PROJECT_DIR$/expts/launcher.sh" />
       </list>
     </option>
   </component>
@@ -186,6 +186,12 @@
               <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
               <item name="expts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_interactions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_interactions" type="462c0819:PsiDirectoryNode" />
+              <item name="expts" type="462c0819:PsiDirectoryNode" />
+              <item name="ddi_prototype" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,6 +473,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3837" y="-1" width="1926" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -475,7 +482,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -524,7 +531,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/expts/prototype/config.py">
+    <entry file="file://$PROJECT_DIR$/expts/ddi_prototype/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -552,7 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/configs.json">
+    <entry file="file://$PROJECT_DIR$/expts/ddi_prototype/configs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
@@ -759,7 +766,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expts/prototype/configs.json">
+    <entry file="file://$PROJECT_DIR$/expts/ddi_prototype/configs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
@@ -804,7 +811,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/expts/prototype/user_data.txt" />
-    <entry file="file://$PROJECT_DIR$/expts/prototype/config.py">
+    <entry file="file://$PROJECT_DIR$/expts/ddi_prototype/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
@@ -824,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expts/launcher.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        <state relative-caret-position="735">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding />
         </state>
       </provider>
