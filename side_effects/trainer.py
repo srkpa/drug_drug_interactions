@@ -1,8 +1,8 @@
 import torch
 from ivbase.nn.commons import get_optimizer
-from pytoune.framework import Model
-from pytoune.framework.callbacks import BestModelRestore
-from pytoune.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
+from poutyne.framework import Model
+from poutyne.framework.callbacks import BestModelRestore
+from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
 from tensorboardX.writer import SummaryWriter
 from torch.utils.data import DataLoader
 from side_effects.metrics import *

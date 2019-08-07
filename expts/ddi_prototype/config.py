@@ -41,11 +41,11 @@ drug_features_extractor_params = list(ParameterGrid(
 
 
 network_params = list(ParameterGrid(dict(
-    network_name=['bmnddi_att'],
+    network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128]*4],
     mode=["concat"],
-    att_hidden_size=[20],
+    att_hidden_dim=[None, 20],
     dropout=[0],
     b_norm=[True],
 )))

@@ -1,5 +1,5 @@
 from .deepddi import DeepDDI
-from .bmn_ddi import BMNDDI, BMNDDI_with_Attention
+from .bmn_ddi import BMNDDI
 
 all_networks_dict = dict(
     deepddi=DeepDDI,
