@@ -2,34 +2,35 @@
   "model_params": [
     {
       "loss": "bce",
-      "lr": 1e-05,
+      "lr": 0.0001,
       "metrics_names": null,
       "network_params": {
-        "b_norm": true,
-        "dropout": 0,
-        "drug_feature_extractor_params": {
-          "arch": "conv1d",
-          "b_norm": false,
-          "cnn_sizes": [
-            1024
-          ],
-          "embedding_size": 512,
-          "kernel_size": [
-            17
-          ],
-          "pooling_len": 2,
-          "vocab_size": 151
-        },
-        "fc_layers_dim": [
-          1024
+        "hidden_sizes": [
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048
         ],
-        "mode": "concat",
-        "network_name": "bmnddi"
+        "input_dim": 100,
+        "network_name": "deepddi"
       },
       "optimizer": "adam"
     }
   ],
   "dataset_params": [
+    {
+      "dataset_name": "twosides",
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "valid_size": 0.1
+    },
     {
       "dataset_name": "twosides",
       "seed": 42,

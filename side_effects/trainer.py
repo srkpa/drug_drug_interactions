@@ -10,7 +10,6 @@ from side_effects.models import all_networks_dict
 from side_effects.loss import get_loss
 from ivbase.nn.commons import get_optimizer
 
-
 all_metrics_dict = dict(
     micro_roc=wrapped_partial(roc_auc_score, average='micro'),
     macro_roc=wrapped_partial(roc_auc_score, average='macro'),

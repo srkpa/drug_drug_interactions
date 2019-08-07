@@ -9,6 +9,7 @@ class SelfAttentionLayer(AttentionLayer):
     A self-attention block. The only difference is that the key,
     query and value tensors are one and the same.
     """
+
     def __init__(self, key_dim, pooling_function=None):
         super().__init__(1, 1, key_dim, pooling_function)
         self.query_network = self.key_network
@@ -28,7 +29,7 @@ class SelfAttentionLayer(AttentionLayer):
             The attention block.
         """
         x = x.reshape(*x.shape, 1)
-        return super().forward(x, x, x).unsqueeze(-1)
+        return super().forward(x, x, x).squeeze(-1)
 
 
 class BMNDDI(nn.Module):
@@ -77,8 +78,7 @@ class BMNDDI_with_Attention(BMNDDI):
 
         self.classifier = nn.Sequential(
             fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                                output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs),
+                       output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs),
             SelfAttentionLayer(1, att_hidden_size),
             nn.Sigmoid()
         )
-        print('here\n'*20)

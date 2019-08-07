@@ -34,14 +34,12 @@ class AttentionLayer(nn.Module):
         attention_matrix = torch.bmm(query, key.transpose(1, 2))
         attention_matrix = attention_matrix / np.sqrt(query.size(2))
         attention_matrix = self.softmax(attention_matrix)
-
         res = self.norm_layer(torch.bmm(attention_matrix, value))
 
         if self.pooling_function == 'max':
             res = torch.max(res, dim=1)[0]
         elif self.pooling_function == 'mean':
             res = torch.mean(res, dim=1)
-
         return res
 
     @property

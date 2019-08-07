@@ -18,7 +18,7 @@ set -e
 
 #server={server:-local}
 server=${server:=local}
-name=ddi-test
+name=bmn_expts
 instance_type="c5.2xlarge"
 
 python config.py -o configs.json
