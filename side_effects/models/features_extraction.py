@@ -81,8 +81,10 @@ class FCNet(nn.Module):
             layers.append(fc)
             in_size = layer_dim
 
-        last_layer_activation = get_activation(last_layer_activation)
-        self.net = nn.Sequential(*layers, nn.Linear(in_features=in_size, out_features=output_dim), last_layer_activation)
+        self.net = nn.Sequential(*layers, nn.Linear(in_features=in_size, out_features=output_dim))
+        if last_layer_activation is not None:
+            self.net.add_module('last_layer_activation', get_activation(last_layer_activation))
+
         self.output_dim = output_dim
 
     def forward(self, inputs):

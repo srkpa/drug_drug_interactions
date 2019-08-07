@@ -5,6 +5,7 @@
       "lr": 0.001,
       "metrics_names": null,
       "network_params": {
+        "att_hidden_size": 20,
         "b_norm": true,
         "dropout": 0,
         "drug_feature_extractor_params": {
@@ -31,7 +32,7 @@
           128
         ],
         "mode": "concat",
-        "network_name": "bmnddi"
+        "network_name": "bmnddi_att"
       },
       "optimizer": "adam"
     }
