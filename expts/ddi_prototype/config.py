@@ -14,18 +14,47 @@ dataset_params = list(ParameterGrid(
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[1], batch_size=[256], with_early_stopping=[True])))
+
+drug_features_extractor_params = list(ParameterGrid(
+    dict(arch=['conv1d'],
+         vocab_size=[len(SMILES_ALPHABET) + 2],
+         embedding_size=[20],
+         cnn_sizes=[
+             [128 for _ in range(4)]
+         ],
+         kernel_size=[[5], ],
+         dilatation_rate=[1],
+         pooling_len=[2],
+         b_norm=[False])
+))
+
+
+# network_params = list(ParameterGrid(dict(
+#     network_name=['bmnddi'],
+#     drug_feature_extractor_params=drug_features_extractor_params,
+#     fc_layers_dim=[[128]*4],
+#     mode= ["concat"],
+#     dropout=[0],
+#     b_norm=[True],
+# )))
+
 
 network_params = list(ParameterGrid(dict(
-    network_name=['deepddi'],
-    input_dim=[100],
-    hidden_sizes=[[2048] * 9]
+    network_name=['bmnddi'],
+    drug_feature_extractor_params=drug_features_extractor_params,
+    fc_layers_dim=[[128]*4],
+    mode=["concat"],
+    att_hidden_dim=[None, 20],
+    dropout=[0],
+    b_norm=[True],
 )))
+
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-4],
+    lr=[1e-3],
     loss=['bce'],
     metrics_names=[None]
 )))
