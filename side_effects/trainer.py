@@ -70,6 +70,8 @@ class Trainer(Model):
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
               patience=3, min_lr=1e-06, **kwargs):
+        if hasattr(self.model, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
+            self.model.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
         self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
