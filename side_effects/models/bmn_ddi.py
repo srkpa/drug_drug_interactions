@@ -34,16 +34,18 @@ class SelfAttentionLayer(AttentionLayer):
 
 
 class BMNDDI(nn.Module):
-
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim, mode='concat', att_hidden_dim=None,
                  graph_network_params=None, edges_embedding_dim=None, tied_weights=True, **kwargs):
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
         self.mode = mode
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
+        dfe_out_dim = self.drug_feature_extractor.output_dim
 
         if graph_network_params is not None:
-            self.graph_net = GINConv(**graph_network_params)
+            gcnn = GINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
+                                     **graph_network_params)
+            self.graph_net = nn.Sequential(gcnn, nn.Linear(gcnn.output_dim, dfe_out_dim))
             if tied_weights:
                 self.node_feature_extractor = self.drug_feature_extractor
             else:
@@ -70,23 +72,28 @@ class BMNDDI(nn.Module):
 
     def forward(self, batch):
         drugs_a, drugs_b = batch
+        print(drugs_a.shape, drugs_b.shape)
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
             if self.training:
+                drugs_a, drugs_b = drugs_a.view(-1), drugs_b.view(-1)
                 mask = torch.ones(self.nb_nodes)
                 mask[drugs_b] = 0
+                print(self.adj_mat.dtype, mask.dtype)
                 adj_mat = self.adj_mat * mask[None, :] * mask[:, None]
                 features_drug2 = self.drug_feature_extractor(torch.index_select(self.nodes, dim=0, index=drugs_b))
             else:
+                drugs_b = drugs_b.view(-1)
                 adj_mat = self.adj_mat
                 features_drug2 = self.drug_feature_extractor(drugs_b)
 
-            edges_features = self.edge_embedding_layer(self.adj_edges)
+            edges_features = self.edge_embedding_layer(self.edges)
             nodes_features = self.node_feature_extractor(self.nodes)
-            _, nodes_features, _ = self.graph_net(adj_mat, nodes_features, edges_features)
+            _, nodes_features, _ = self.graph_net.forward((adj_mat, nodes_features, edges_features))
             features_drug1 = torch.index_select(nodes_features, dim=0, index=drugs_a)
 
+        print(features_drug1.shape, features_drug2.shape)
         if self.mode == "elementwise":
             ddi = torch.mul(features_drug1, features_drug2)
         elif self.mode == "sum":
@@ -98,29 +105,8 @@ class BMNDDI(nn.Module):
         out = self.classifier(ddi)
         return out
 
-
-class BMNDDI_with_Attention(BMNDDI):
-
-    def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim,
-                 mode='concat', att_hidden_size=20, **kwargs):
-        super().__init__(drug_feature_extractor_params, fc_layers_dim, output_dim, mode, **kwargs)
-        fe_factory = FeaturesExtractorFactory()
-        self.mode = mode
-        self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
-
-        in_size = 2 * self.drug_feature_extractor.output_dim
-        if self.mode in ['sum', 'max', "elementwise"]:
-            in_size = self.drug_feature_extractor.output_dim
-
-        self.classifier = nn.Sequential(
-            fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                       output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs),
-            SelfAttentionLayer(1, att_hidden_size),
-            nn.Sigmoid()
-        )
-
     def set_graph(self, nodes, edges):
         self.nb_nodes = len(nodes)
         self.nodes = nodes
         self.edges = edges
-        self.adj_mat = (edges.sum(2) > 0).long()
+        self.adj_mat = (edges.sum(2) > 0).float()

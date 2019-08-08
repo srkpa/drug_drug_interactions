@@ -59,13 +59,13 @@ def _filter_samples(samples, transformed_smiles_dict=None):
 
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
-                 build_graph=False, graph_nodes_mapping=None):
+                 build_graph=False, graph_drugs_mapping=None):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.labels_vectorizer = label_vectorizer
         self.gpu = torch.cuda.is_available()
         self.has_graph = build_graph
-        self.graph_nodes_mapping = graph_nodes_mapping
+        self.graph_drugs_mapping = graph_drugs_mapping
         if self.has_graph:
             self.build_graph()
 
@@ -74,12 +74,15 @@ class DDIdataset(Dataset):
 
     def __getitem__(self, item):
         drug1, drug2, label = self.samples[item]
-        if self.graph_nodes_mapping is None:
+        if self.graph_drugs_mapping is None:
             drug1, drug2 = self.drug_to_smiles[drug1], self.drug_to_smiles[drug2]
         elif self.has_graph:
-            drug1, drug2 = self.graph_nodes_mapping[drug1], self.graph_nodes_mapping[drug2]
+            drug1, drug2 = np.array([self.graph_drugs_mapping[drug1]]), np.array([self.graph_drugs_mapping[drug2]])
         else:
-            drug1 = self.graph_nodes_mapping[drug1]
+            if drug1 not in self.graph_drugs_mapping:
+                drug1, drug2 = drug2, drug1
+            assert drug1 in self.graph_drugs_mapping, "None of those drug is in the train, check your train test split"
+            drug1 = self.graph_drugs_mapping[drug1]
             drug2 = self.drug_to_smiles[drug2]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)), to_tensor(target, self.gpu))
@@ -94,14 +97,18 @@ class DDIdataset(Dataset):
         return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)
 
     def build_graph(self):
-        self.graph_nodes = list(set([d1 for (d1, d2, _) in self.samples] + [d1 for (d1, d2) in self.samples]))
-        self.graph_nodes_mapping = {node: i for i, node in enumerate(self.graph_nodes)}
-        n_nodes = len(self.graph_nodes)
+        graph_drugs = list(set([d1 for (d1, d2, _) in self.samples] + [d2 for (d1, d2, _) in self.samples]))
+        self.graph_drugs_mapping = {node: i for i, node in enumerate(graph_drugs)}
+        n_nodes = len(graph_drugs)
         n_edge_labels = len(self.labels_vectorizer.classes_)
-        self.graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))
-        for (drug1, drug2, label) in self.samples.items():
-            i, j = self.graph_nodes_mapping[drug1], self.graph_nodes_mapping[drug2]
-            self.graph_edges[i, j] = self.labels_vectorizer.transform([label])[0]
+        graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))
+        for (drug1, drug2, label) in self.samples:
+            i, j = self.graph_drugs_mapping[drug1], self.graph_drugs_mapping[drug2]
+            graph_edges[i, j] = self.labels_vectorizer.transform([label])[0]
+
+        graph_nodes = np.stack([self.drug_to_smiles[drug] for drug in graph_drugs], axis=0)
+        self.graph_nodes = to_tensor(graph_nodes, self.gpu)
+        self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 
 def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42):
@@ -164,14 +171,14 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
-    if model_name.lower() == 'bmn_ddi' and split_mode == 'leave_drugs_out':
+    if model_name.lower() == 'bmnddi' and split_mode == 'leave_drugs_out':
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_nodes_mapping=train_dataset.graph_nodes_mapping)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_nodes_mapping=train_dataset.graph_nodes_mapping)
+        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
     elif model_name.lower() == 'decagon':
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_nodes_mapping=train_dataset.graph_nodes_mapping)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_nodes_mapping=train_dataset.graph_nodes_mapping)
+        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
     else:
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
         valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
