@@ -8,7 +8,6 @@ from ivbase.utils.datasets.datacache import DataCache
 from side_effects.trainer import Trainer
 from side_effects.data.loader import get_data_partitions
 
-
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
 
 
@@ -32,8 +31,8 @@ def get_outfname_prefix(all_params):
 
 def get_all_output_filenames(output_path, all_params):
     out_prefix = get_outfname_prefix(all_params)
-    model_name = all_params.get('model_params').get('network_params').get('network_name')
-    data_name = all_params.get('dataset_params').get('dataset_name')
+    model_name = all_params.get('model_params')[-1].get('network_params').get('network_name')
+    data_name = all_params.get('dataset_params')[-1].get('dataset_name')
     return dict(
         config_filename="{}/{}_{}_{}_params.json".format(output_path, data_name, model_name, out_prefix),
         checkpoint_filename="{}/{}_{}_{}_ckp.ckp".format(output_path, data_name, model_name, out_prefix),
@@ -96,9 +95,10 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
 
-    dc = DataCache()
-    cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
-        dataset_params.get('dataset_name')), force=True)
+    # dc = DataCache()
+    # cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
+    #     dataset_params.get('dataset_name')), force=True)
+    cach_path = "side_effects/dataset"
     expt_params = model_params
 
     print(f"Input folder: {cach_path}")
@@ -121,4 +121,3 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
-

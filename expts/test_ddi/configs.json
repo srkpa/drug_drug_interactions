@@ -30,6 +30,14 @@
       "test_size": 0.15,
       "transformer": "deepddi",
       "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "deepddi",
+      "valid_size": 0.1
     }
   ],
   "fit_params": [

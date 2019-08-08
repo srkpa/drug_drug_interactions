@@ -1,7 +1,7 @@
 import torch
 from torch.nn import Module
 from torch.nn.functional import binary_cross_entropy, binary_cross_entropy_with_logits
-from pytoune.framework.metrics import get_loss_or_metric
+from poutyne.framework.metrics import get_loss_or_metric
 from sklearn.utils import compute_class_weight
 
 
@@ -234,7 +234,7 @@ def test():
 
 
 if __name__ == '__main__':
-    # test()
+    # test_ddi()
     import torch
     import numpy as np
     from numpy.random import binomial, uniform

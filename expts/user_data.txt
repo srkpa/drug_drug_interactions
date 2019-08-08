@@ -30,7 +30,6 @@ cd ..
 git clone "https://$GIT_ROBOT_USERNAME:$GIT_ROBOT_PASSWD@$GitRepository" -b $GitBranch project
 cd project/$GitInnerPath
 curl -X POST --data-urlencode "payload={\"text\": \"New experiment for \`$exp_name\` launched, monitor it here : http://${INSTANCE_URL}\"}" $SLACK_WEBHOOK
-python setup.py develop
-pip install -e .
+sudo python setup.py develop
 $INVIVO_GIT_ROOT/bin/exp_run -n $exp_name -i $instance_count -t $task_ids
 --//

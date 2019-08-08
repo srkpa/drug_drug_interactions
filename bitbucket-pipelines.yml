@@ -26,5 +26,5 @@ pipelines:
      dev: #this will run for pull request on master
        - step:
           script:
-            - echo 'Merging on master' # will think of test to do later
+            - echo 'Merging on master' # will think of test_ddi to do later
             - make tag
