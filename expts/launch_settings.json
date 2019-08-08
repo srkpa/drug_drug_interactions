@@ -1,13 +1,13 @@
 {
-    "GitRepository": "bitbucket.org/invivoai/drug_interactions.git",
+    "GitRepository": "bitbucket.org/invivoai/drug_drug_interactions.git",
     "GitBranch": "master",
-    "GitInnerPath": "dev",
+    "GitInnerPath": "",
     "InstanceCount": 2,
-    "MaxRuntime": 60,
+    "MaxRuntime": 360,
     "SpotPrice": "On-Demand",
     "LaunchSpecification":  {
     "ImageId": "ami-075cf07e422882061",
-    "KeyName": "dev",
+    "KeyName": "rogia",
     "SecurityGroupIds": ["sg-c576d9af"],
     "InstanceType": "t3.large",
     "Placement": {

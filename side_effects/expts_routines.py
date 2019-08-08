@@ -8,7 +8,6 @@ from ivbase.utils.datasets.datacache import DataCache
 from side_effects.trainer import Trainer
 from side_effects.data.loader import get_data_partitions
 
-
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
 
 
@@ -124,4 +123,3 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
-

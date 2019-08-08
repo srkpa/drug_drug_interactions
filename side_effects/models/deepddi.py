@@ -16,4 +16,5 @@ class DeepDDI(nn.Module):
         self.net = nn.Sequential(*layers, nn.Linear(in_, output_dim), nn.Sigmoid())
 
     def forward(self, batch):
-        return self.net(batch)
+        inputs = torch.cat(batch, 1)
+        return self.net(inputs)

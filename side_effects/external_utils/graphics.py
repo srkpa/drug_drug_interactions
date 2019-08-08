@@ -282,7 +282,7 @@ def describe_dataset(input_path, dataset_name, save=None):
         one_hot=False, method="Not important")
     x_axis = [i for i in range(len(labels))]
     plt.plot(x_axis, y_train.sum(axis=0).tolist(), "-", label="train")
-    plt.plot(x_axis, y_test.sum(axis=0).tolist(), "-", label="test")
+    plt.plot(x_axis, y_test.sum(axis=0).tolist(), "-", label="test_ddi")
     plt.plot(x_axis, y_valid.sum(axis=0).tolist(), "-", label="valid")
     plt.xlabel('type of side effects')
     plt.ylabel('number of samples')
@@ -303,7 +303,7 @@ def describe_dataset(input_path, dataset_name, save=None):
 
     df = pd.DataFrame.from_records(
         [y_train.sum(axis=0).tolist(), y_test.sum(axis=0).tolist(), y_valid.sum(axis=0).tolist()], columns=labels,
-        index=["train", "test", "valid"])
+        index=["train", "test_ddi", "valid"])
     df.loc['Total'] = df.sum()
 
     return summary_1, df
@@ -413,7 +413,7 @@ def describe_data(y_train, y_test, y_valid, dataset_name="drugbank"):
     len_labels = y_train.shape[1]
     x_axis = [i for i in range(len_labels)]
     plt.plot(x_axis, y_train.sum(axis=0).tolist(), "-", label="train")
-    plt.plot(x_axis, y_test.sum(axis=0).tolist(), "-", label="test")
+    plt.plot(x_axis, y_test.sum(axis=0).tolist(), "-", label="test_ddi")
     plt.plot(x_axis, y_valid.sum(axis=0).tolist(), "-", label="valid")
     plt.xlabel('type of side effects')
     plt.ylabel('number of samples')
@@ -425,7 +425,7 @@ def describe_data(y_train, y_test, y_valid, dataset_name="drugbank"):
     df = pd.DataFrame.from_records(
         [y_train.sum(axis=0).tolist(), y_test.sum(axis=0).tolist(), y_valid.sum(axis=0).tolist()],
         columns=[str(i) for i in range(1, len_labels + 1)],
-        index=["train", "test", "valid"])
+        index=["train", "test_ddi", "valid"])
     df.loc['Total'] = df.sum()
 
     return df
@@ -526,7 +526,7 @@ if __name__ == '__main__':
     from math import ceil
     from sklearn.metrics import roc_auc_score, average_precision_score
 
-    #  out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test/labels_distribution.pkl",
+    #  out = pickle.load(open("/home/rogia/Documents/git/side_effects/expts/configs/test_ddi/labels_distribution.pkl",
     #  "rb"))
 
     # cuttoff = list(range(0, max(list(out.items())), 30))

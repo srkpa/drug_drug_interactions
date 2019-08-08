@@ -236,10 +236,10 @@ def train_test_valid_split_2(input_path, dataset_name, header=True, train_split=
 
     result_1 = {drug: set(res_1[drug]) - train for drug in drug_i}
     temp_list = [len(values.intersection(train)) for _, values in result_1.items()]
-    assert sum(temp_list) == 0, 'There is some example that are availbale in the train and the test/valid subsets'
+    assert sum(temp_list) == 0, 'There is some example that are availbale in the train and the test_ddi/valid subsets'
     result_2 = {drug: set(res_2[drug]) - train for drug in drug_j}
     temp_list = [len(values.intersection(train)) for _, values in result_2.items()]
-    assert sum(temp_list) == 0, 'There is some example that are availbale in the train and the test/valid subsets'
+    assert sum(temp_list) == 0, 'There is some example that are availbale in the train and the test_ddi/valid subsets'
 
     temp_list = [cle for cle in result_1 if len(list(result_1[cle])) == 0]
     with open('result_1_unique_example_only_available_in_the_train_set.txt', 'w') as f:
@@ -277,7 +277,7 @@ def train_test_valid_split_2(input_path, dataset_name, header=True, train_split=
         valid_samples.extend(valid)
         test_samples.extend(test)
     print('len train', len(list(train)))
-    print('len test', len(list(test_samples)))
+    print('len test_ddi', len(list(test_samples)))
     print('len valid', len(list(valid_samples)))
 
     print(len(train), len(test_samples), len(valid_samples))
@@ -312,7 +312,7 @@ def train_test_valid_split_3(input_path, dataset_name, header=True, shuffle=True
     test = set(interactions.keys()).intersection(test)
 
     print('len train', len(list(train)))
-    print('len test', len(list(test)))
+    print('len test_ddi', len(list(test)))
     print('len valid', len(list(valid)))
     print("len gray region", len(interactions) - (len(train) + len(test) + len(valid)))
 
@@ -388,10 +388,10 @@ def jy_train_test_split(input_path):
     validation_set = df[df['Data type used to optimize the DNN architecture'] == "validation"]
 
     print("train", len(training_set), " interactions")
-    print("test", len(testing_set), " interactions")
+    print("test_ddi", len(testing_set), " interactions")
     print("validation", len(validation_set), " interactions")
 
-    save_results("jy_split.xlsx", contents=[("train", training_set), ("test", testing_set), ("valid", validation_set)])
+    save_results("jy_split.xlsx", contents=[("train", training_set), ("test_ddi", testing_set), ("valid", validation_set)])
 
     training_set_ref = training_set.groupby('paire')
     testing_set_ref = testing_set.groupby('paire')
@@ -461,7 +461,7 @@ def analyze_jy_split(input_path):
 
     print(f"- {len(train)} pairs of drugs and ",
           f"{sum([len(v) for i, v in train.items() if len])} interactions for train ")
-    print(f"- {len(test)} pairs of drugs and ", f"{sum([len(v) for i, v in test.items()])} interactions for test")
+    print(f"- {len(test)} pairs of drugs and ", f"{sum([len(v) for i, v in test.items()])} interactions for test_ddi")
     print(f"- {len(valid)} pairs of drug and ", f"{sum([len(v) for i, v in valid.items()])} interactions for valid")
 
     b = [pair for pair, se in train.items() if len(se) > 1]
@@ -471,7 +471,7 @@ def analyze_jy_split(input_path):
     print(f"- {len(c)} pairs of drugs with 2 type of ddi in valid subset only.")
 
     d = [pair for pair, se in test.items() if len(se) > 1]
-    print(f"- {len(d)} pairs of drugs with 2 type of ddi in test subset only.")
+    print(f"- {len(d)} pairs of drugs with 2 type of ddi in test_ddi subset only.")
 
     ####
     train_and_test, train_and_valid, test_and_valid = [], [], []
@@ -479,7 +479,7 @@ def analyze_jy_split(input_path):
     print("\nQuick Summary #2\n There are:")
     train_test_inter = set(train.keys()).intersection(set(test.keys()))
     if len(train_test_inter) > 0:
-        print(f"- {len(train_test_inter)} pairs of drugs are present in train and test subsets.")
+        print(f"- {len(train_test_inter)} pairs of drugs are present in train and test_ddi subsets.")
     for k in train_test_inter:
         train_and_test.append([k, "-".join([str(x) for x in train[k]]), "-".join([str(x) for x in test[k]])])
 
@@ -491,12 +491,12 @@ def analyze_jy_split(input_path):
 
     test_valid_inter = set(valid.keys()).intersection(set(test.keys()))
     if len(test_valid_inter) > 0:
-        print(f"- {len(test_valid_inter)} pairs of drugs are present in test and valid subsets.")
+        print(f"- {len(test_valid_inter)} pairs of drugs are present in test_ddi and valid subsets.")
     for k in test_valid_inter:
         test_and_valid.append([k, "-".join([str(x) for x in test[k]]), "-".join([str(x) for x in valid[k]])])
 
     train_test_valid_inter = set(train.keys()).intersection(set(test.keys())).intersection(set(valid.keys()))
-    print(f"- {len(train_test_valid_inter)} pairs of drugs are present in train, test and valid subsets.")
+    print(f"- {len(train_test_valid_inter)} pairs of drugs are present in train, test_ddi and valid subsets.")
 
     return train, test, valid, train_and_test, train_and_valid, test_and_valid
 

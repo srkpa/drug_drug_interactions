@@ -132,7 +132,7 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         test = set(data.keys()).intersection(test)
 
         print('len train', len(list(train)))
-        print('len test', len(list(test)))
+        print('len test_ddi', len(list(test)))
         print('len valid', len(list(valid)))
         print("len gray region", len(data) - (len(train) + len(test) + len(valid)))
 
@@ -149,7 +149,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     data = load_ddis_combinations(all_combo_path, header=True)
     train_data, test_data, valid_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                test_size=test_size, valid_size=valid_size)
-    print(f"len train {len(train_data)}\nlen test {len(test_data)}\nlen valid {len(valid_data)}")
+    print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
 
     # Load smiles
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"

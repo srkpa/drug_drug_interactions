@@ -28,7 +28,7 @@
       "seed": 42,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "valid_size": 0.1
     },
     {
@@ -36,7 +36,7 @@
       "seed": 42,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "valid_size": 0.1
     }
   ],

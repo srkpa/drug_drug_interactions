@@ -5,7 +5,7 @@ from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
-         transformer=["seq"],
+         transformer=["deepddi"],
          split_mode=["leave_drugs_out", "random"],
          test_size=[0.15],
          valid_size=[0.10],
