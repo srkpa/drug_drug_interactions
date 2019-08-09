@@ -77,23 +77,23 @@ class BMNDDI(nn.Module):
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
             if self.training:
-                drugs_a, drugs_b = drugs_a.view(-1), drugs_b.view(-1)
+                drugs_b = drugs_b.view(-1)
                 mask = torch.ones(self.nb_nodes)
                 mask[drugs_b] = 0
                 print(self.adj_mat.dtype, mask.dtype)
                 adj_mat = self.adj_mat * mask[None, :] * mask[:, None]
                 features_drug2 = self.drug_feature_extractor(torch.index_select(self.nodes, dim=0, index=drugs_b))
             else:
-                drugs_b = drugs_b.view(-1)
+                print(drugs_a.shape, drugs_b.shape)
+                drugs_b = drugs_b
                 adj_mat = self.adj_mat
                 features_drug2 = self.drug_feature_extractor(drugs_b)
 
             edges_features = self.edge_embedding_layer(self.edges)
             nodes_features = self.node_feature_extractor(self.nodes)
-            _, nodes_features, _ = self.graph_net.forward((adj_mat, nodes_features, edges_features))
-            features_drug1 = torch.index_select(nodes_features, dim=0, index=drugs_a)
+            nodes_features = self.graph_net((adj_mat, nodes_features, edges_features))
+            features_drug1 = torch.index_select(nodes_features, dim=0, index=drugs_a.view(-1))
 
-        print(features_drug1.shape, features_drug2.shape)
         if self.mode == "elementwise":
             ddi = torch.mul(features_drug1, features_drug2)
         elif self.mode == "sum":

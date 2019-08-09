@@ -79,7 +79,7 @@ class GINConv(nn.Module):
         except:
             pass
 
-    def forward(self, *x):
+    def forward(self, x):
         adj, nodes_features, edges_features = x
         new_nodes_features = nodes_features
         for i, _ in enumerate(self.kernel_sizes):
@@ -93,7 +93,7 @@ class GINConv(nn.Module):
             # print(new_nodes_features.shape, msg.shape)
             out = ((1 + self.eps) * new_nodes_features) + msg
             new_nodes_features = self.net[i](out)
-        return adj, new_nodes_features, edges_features
+        return new_nodes_features
 
     @property
     def output_dim(self):
