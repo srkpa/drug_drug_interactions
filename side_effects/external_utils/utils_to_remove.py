@@ -1,6 +1,5 @@
 import json
 import os
-import torch as th
 import pandas as pd
 import ivbase.nn.extractors as feat
 import matplotlib.pyplot as plt
@@ -9,7 +8,7 @@ from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 from pytoune.framework.metrics import get_loss_or_metric
 from sklearn.utils import compute_class_weight
 
-from side_effects.external_utils.init import *
+from side_effects.inits import *
 from side_effects.loss import WeightedBinaryCrossEntropy1, weighted_binary_cross_entropy3, \
     WeightedBinaryCrossEntropy5
 from side_effects.models.bmn_ddi import PCNN, FCNet, BMNDDI, DeepDDI, DGLGraph

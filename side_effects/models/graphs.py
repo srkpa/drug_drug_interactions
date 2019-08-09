@@ -1,4 +1,5 @@
 import torch
+from side_effects import inits
 from torch import nn
 from ivbase.nn.base import FCLayer
 
@@ -94,7 +95,34 @@ class GINConv(nn.Module):
             new_nodes_features = self.net[i](out)
         return adj, new_nodes_features, edges_features
 
-
     @property
     def output_dim(self):
         return self._output_dim
+
+
+class GraphConvolutionMulti(nn.Module):
+    """Basic graph convolution layer for undirected graph without edge labels."""
+
+    def __init__(self, input_dim, output_dim, adj_mats, init_fn, dropout=0., act=nn.ReLU, edge_type=(), num_types=-1):
+        super(GraphConvolutionMulti, self).__init__()
+        self.edge_type = edge_type
+        self.num_types = num_types
+        self.adj_mats = adj_mats
+        self.dropout = nn.Dropout(1 - dropout)
+        self.act = act
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.init_fn = init_fn
+        for k in range(self.num_types):
+            self.vars['weights_%d' % k] = inits.weight_variable_glorot(
+                self.input_dim, self.output_dim)
+
+    def forward(self, inputs):
+        outputs = 0
+        for k in range(self.num_types):
+            x = self.dropout(inputs)
+            x = torch.mm(x, self.vars['weights_%d' % k])
+            x = torch.mv(self.adj_mats[self.edge_type][k], x)
+            outputs += self.act(x)
+        outputs = torch.norm(outputs, p=None, dim=1)
+        return outputs
