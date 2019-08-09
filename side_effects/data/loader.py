@@ -161,7 +161,7 @@ class DDIdataset(Dataset):
 
 
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
-                        seed=None, test_size=0.25, valid_size=0.25, model_name=False):
+                        seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False):
     # My paths
     all_combo_path = f"{input_path}/{dataset_name}.csv"
     data = load_ddis_combinations(all_combo_path, header=True)
@@ -190,17 +190,18 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
-    if model_name.lower() == 'bmnddi' and split_mode == 'leave_drugs_out':
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-    elif model_name.lower() == 'decagon':
+    if decagon:
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
         valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
     else:
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
+        if use_graph:
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+        else:
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
 
     return train_dataset, valid_dataset, test_dataset

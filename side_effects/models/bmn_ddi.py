@@ -29,6 +29,7 @@ class SelfAttentionLayer(AttentionLayer):
         attention: torch.Tensor
             The attention block.
         """
+        # print('here in attention')
         x = x.reshape(*x.shape, 1)
         return super().forward(x, x, x).squeeze(-1)
 
@@ -59,7 +60,7 @@ class BMNDDI(nn.Module):
         if self.mode in ['sum', 'max', "elementwise"]:
             in_size = self.drug_feature_extractor.output_dim
 
-        if att_hidden_dim is not None:
+        if att_hidden_dim is None:
             self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                          output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
         else:
@@ -72,7 +73,6 @@ class BMNDDI(nn.Module):
 
     def forward(self, batch):
         drugs_a, drugs_b = batch
-        print(drugs_a.shape, drugs_b.shape)
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
@@ -80,11 +80,11 @@ class BMNDDI(nn.Module):
                 drugs_b = drugs_b.view(-1)
                 mask = torch.ones(self.nb_nodes)
                 mask[drugs_b] = 0
-                print(self.adj_mat.dtype, mask.dtype)
+                # print(self.adj_mat.dtype, mask.dtype)
                 adj_mat = self.adj_mat * mask[None, :] * mask[:, None]
                 features_drug2 = self.drug_feature_extractor(torch.index_select(self.nodes, dim=0, index=drugs_b))
             else:
-                print(drugs_a.shape, drugs_b.shape)
+                # print(drugs_a.shape, drugs_b.shape)
                 drugs_b = drugs_b
                 adj_mat = self.adj_mat
                 features_drug2 = self.drug_feature_extractor(drugs_b)
@@ -103,6 +103,7 @@ class BMNDDI(nn.Module):
         else:
             ddi = torch.cat((features_drug1, features_drug2), 1)
         out = self.classifier(ddi)
+        # print(out.shape)
         return out
 
     def set_graph(self, nodes, edges):

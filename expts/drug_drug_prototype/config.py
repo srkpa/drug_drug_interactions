@@ -11,6 +11,7 @@ dataset_params = list(ParameterGrid(
          valid_size=[0.10],
          seed=[42],
          use_graph=[False],
+         decagon=[False]
          )
 ))
 
@@ -44,9 +45,9 @@ drug_features_extractor_params = list(ParameterGrid(
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    fc_layers_dim=[[128]*4],
+    fc_layers_dim=[[64]*4],
     mode=["concat"],
-    att_hidden_dim=[None, 20],
+    att_hidden_dim=[None],
     dropout=[0],
     b_norm=[True],
 )))
