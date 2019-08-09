@@ -57,6 +57,32 @@ def _filter_samples(samples, transformed_smiles_dict=None):
     return samples
 
 
+def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42):
+    assert mode.lower() in ['random', 'leave_drugs_out']
+    if mode == 'random':
+        train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
+        train, valid = train_test_split(train, test_size=valid_size)
+    else:
+        drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
+        drugs = sorted(drugs)
+
+        train_idx, test_idx = train_test_split(drugs, test_size=test_size, random_state=seed)
+        train_idx, valid_idx = train_test_split(train_idx, test_size=valid_size, random_state=seed)
+
+        train = set(product(train_idx, repeat=2))
+        valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
+        test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
+
+        train = set(data.keys()).intersection(train)
+        valid = set(data.keys()).intersection(valid)
+        test = set(data.keys()).intersection(test)
+
+    train_data = {k: data[k] for k in train}
+    valid_data = {k: data[k] for k in valid}
+    test_data = {k: data[k] for k in test}
+    return train_data, valid_data, test_data
+
+
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
                  build_graph=False, graph_drugs_mapping=None):
@@ -81,8 +107,11 @@ class DDIdataset(Dataset):
         else:
             if drug1 not in self.graph_drugs_mapping:
                 drug1, drug2 = drug2, drug1
-            assert drug1 in self.graph_drugs_mapping, "None of those drug is in the train, check your train test split"
-            drug1 = self.graph_drugs_mapping[drug1]
+            if drug1 not in self.graph_drugs_mapping:
+                with open('toto.txt', 'w') as fd:
+                    fd.writelines([f'{d}' for d in self.graph_drugs_mapping])
+            assert drug1 in self.graph_drugs_mapping, f"None of those drugs ({drug1}-{drug2}) is in the train, check your train test split"
+            drug1 = np.array([self.graph_drugs_mapping[drug1]])
             drug2 = self.drug_to_smiles[drug2]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)), to_tensor(target, self.gpu))
@@ -97,7 +126,7 @@ class DDIdataset(Dataset):
         return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)
 
     def build_graph(self):
-        graph_drugs = list(set([d1 for (d1, d2, _) in self.samples] + [d2 for (d1, d2, _) in self.samples]))
+        graph_drugs = list(set([d1 for (d1, _, _) in self.samples] + [d2 for (_, d2, _) in self.samples]))
         self.graph_drugs_mapping = {node: i for i, node in enumerate(graph_drugs)}
         n_nodes = len(graph_drugs)
         n_edge_labels = len(self.labels_vectorizer.classes_)
@@ -111,45 +140,11 @@ class DDIdataset(Dataset):
         self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 
-def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42):
-    assert mode.lower() in ['random', 'leave_drugs_out']
-    if mode == 'random':
-        train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
-        train, valid = train_test_split(train, test_size=valid_size)
-    else:
-        drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
-        drugs = sorted(drugs)
-
-        train_idx, test_idx = train_test_split(drugs, test_size=test_size, random_state=seed)
-        train_idx, valid_idx = train_test_split(train_idx, test_size=valid_size, random_state=seed)
-
-        train = set(product(train_idx, repeat=2))
-        valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
-        test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
-
-        train = set(data.keys()).intersection(train)
-        valid = set(data.keys()).intersection(valid)
-        test = set(data.keys()).intersection(test)
-
-        print('len train', len(list(train)))
-        print('len test_ddi', len(list(test)))
-        print('len valid', len(list(valid)))
-        print("len gray region", len(data) - (len(train) + len(test) + len(valid)))
-
-    train_data = {k: data[k] for k in train}
-    valid_data = {k: data[k] for k in valid}
-    test_data = {k: data[k] for k in test}
-    return train_data, valid_data, test_data
-
-
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, model_name=False):
     # My paths
     all_combo_path = f"{input_path}/{dataset_name}.csv"
     data = load_ddis_combinations(all_combo_path, header=True)
-    train_data, test_data, valid_data = train_test_valid_split(data, split_mode, seed=seed,
-                                                               test_size=test_size, valid_size=valid_size)
-    print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
 
     # Load smiles
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
@@ -166,8 +161,12 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         drugs2smiles = transformer(drugs=drugs, smiles=smiles, approved_drug=approved_drug)
     else:
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
-    train_data, test_data, valid_data = list(
-        map(partial(_filter_samples, transformed_smiles_dict=drugs), [train_data, test_data, valid_data]))
+
+    data = _filter_samples(data, transformed_smiles_dict=drugs)
+    train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
+                                                               test_size=test_size, valid_size=valid_size)
+    print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
+
 
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
