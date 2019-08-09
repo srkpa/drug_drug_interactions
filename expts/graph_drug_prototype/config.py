@@ -14,7 +14,7 @@ dataset_params = list(ParameterGrid(
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[1], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],

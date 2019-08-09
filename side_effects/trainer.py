@@ -94,8 +94,12 @@ class Trainer(Model):
             callbacks += [tboard]
 
         self.history = self.fit_generator(train_generator=train_loader,
-                                          valid_generator=valid_loader, steps_per_epoch=5,
-                                          epochs=n_epochs, validation_steps=5, callbacks=callbacks)
+                                          valid_generator=valid_loader,
+                                          # steps_per_epoch=5,
+                                          # validation_steps=5,
+                                          # epochs=1,
+                                          epochs=n_epochs,
+                                          callbacks=callbacks)
 
         return self
 

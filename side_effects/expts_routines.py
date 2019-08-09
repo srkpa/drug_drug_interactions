@@ -38,9 +38,9 @@ def get_all_output_filenames(output_path, all_params):
         checkpoint_filename="{}/{}_{}_{}_ckp.ckp".format(output_path, data_name, model_name, out_prefix),
         log_filename="{}/{}_{}_{}_log.log".format(output_path, data_name, model_name, out_prefix),
         tensorboard_dir="{}/{}_{}_{}".format(output_path, data_name, model_name, out_prefix),
-        result_filename="{}/{}_{}_{}_res.csv".format(output_path, data_name, model_name, out_prefix),
-        targets_filename="{}/{}_{}_{}_targets.csv".format(output_path, data_name, model_name, out_prefix),
-        preds_filename="{}/{}_{}_{}_preds.csv".format(output_path, data_name, model_name, out_prefix),
+        result_filename="{}/{}_{}_{}_res.pkl".format(output_path, data_name, model_name, out_prefix),
+        targets_filename="{}/{}_{}_{}_targets.pkl".format(output_path, data_name, model_name, out_prefix),
+        preds_filename="{}/{}_{}_{}_preds.pkl".format(output_path, data_name, model_name, out_prefix),
     ), out_prefix
 
 

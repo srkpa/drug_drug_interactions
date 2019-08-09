@@ -47,10 +47,20 @@ def load_ddis_combinations(fname, header=True, dataset_name="twosides"):
     return combo2se
 
 
-def _filter_samples(samples, transformed_smiles_dict=None):
+def _filter_pairs_both_exists(samples, filtering_set=None):
     to_remove = [
-        (id_1, id_2) for (id_1, id_2), y in samples.items()
-        if (id_1 not in transformed_smiles_dict) or (id_2 not in transformed_smiles_dict)
+        (id_1, id_2) for (id_1, id_2) in samples
+        if (id_1 not in filtering_set) or (id_2 not in filtering_set)
+    ]
+    for key in to_remove:
+        samples.pop(key)
+    return samples
+
+
+def _filter_pairs_one_exists(samples, filtering_set=None):
+    to_remove = [
+        (id_1, id_2) for (id_1, id_2) in samples
+        if (id_1 not in filtering_set) and (id_2 not in filtering_set)
     ]
     for key in to_remove:
         samples.pop(key)
@@ -62,6 +72,10 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
     if mode == 'random':
         train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
         train, valid = train_test_split(train, test_size=valid_size)
+
+        train_data = {k: data[k] for k in train}
+        valid_data = {k: data[k] for k in valid}
+        test_data = {k: data[k] for k in test}
     else:
         drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
         drugs = sorted(drugs)
@@ -76,10 +90,16 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train = set(data.keys()).intersection(train)
         valid = set(data.keys()).intersection(valid)
         test = set(data.keys()).intersection(test)
+        train_drugs = list(set([x1 for (x1, _) in train] + [x2 for (_, x2) in train]))
 
-    train_data = {k: data[k] for k in train}
-    valid_data = {k: data[k] for k in valid}
-    test_data = {k: data[k] for k in test}
+        train_data = {k: data[k] for k in train}
+        valid_data = {k: data[k] for k in valid}
+        test_data = {k: data[k] for k in test}
+
+        # filter out some pairs due to the intersection
+        valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
+        test_data = _filter_pairs_one_exists(test_data, train_drugs)
+
     return train_data, valid_data, test_data
 
 
@@ -109,7 +129,7 @@ class DDIdataset(Dataset):
                 drug1, drug2 = drug2, drug1
             if drug1 not in self.graph_drugs_mapping:
                 with open('toto.txt', 'w') as fd:
-                    fd.writelines([f'{d}' for d in self.graph_drugs_mapping])
+                    fd.writelines([f'{d}\n' for d in self.graph_drugs_mapping])
             assert drug1 in self.graph_drugs_mapping, f"None of those drugs ({drug1}-{drug2}) is in the train, check your train test split"
             drug1 = np.array([self.graph_drugs_mapping[drug1]])
             drug2 = self.drug_to_smiles[drug2]
@@ -162,7 +182,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     else:
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
 
-    data = _filter_samples(data, transformed_smiles_dict=drugs)
+    data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                test_size=test_size, valid_size=valid_size)
     print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")

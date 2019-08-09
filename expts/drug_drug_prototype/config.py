@@ -9,7 +9,8 @@ dataset_params = list(ParameterGrid(
          split_mode=["leave_drugs_out", "random"],
          test_size=[0.15],
          valid_size=[0.10],
-         seed=[42]
+         seed=[42],
+         use_graph=[False],
          )
 ))
 
