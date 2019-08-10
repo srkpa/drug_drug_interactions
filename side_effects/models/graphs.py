@@ -103,7 +103,7 @@ class GINConv(nn.Module):
 class GraphConvolutionMulti(nn.Module):
     """Basic graph convolution layer for undirected graph without edge labels."""
 
-    def __init__(self, input_dim, output_dim, adj_mats, init_fn, dropout=0., act=nn.ReLU, edge_type=(), num_types=-1):
+    def __init__(self, input_dim, output_dim, adj_mats, dropout=0., act=nn.ReLU, edge_type=(), num_types=-1):
         super(GraphConvolutionMulti, self).__init__()
         self.edge_type = edge_type
         self.num_types = num_types
@@ -112,7 +112,6 @@ class GraphConvolutionMulti(nn.Module):
         self.act = act
         self.input_dim = input_dim
         self.output_dim = output_dim
-        self.init_fn = init_fn
         for k in range(self.num_types):
             self.vars['weights_%d' % k] = inits.weight_variable_glorot(
                 self.input_dim, self.output_dim)

@@ -131,7 +131,8 @@ def extract_ddis(fname='../dataset/files/3003377s-twosides.tsv', save=None, cuto
     return twoside2se
 
 
-def download_targets(drugbank_parsed_filename="../data/drugbank_preprocess.csv", fname="../data/violette/drugbank/drugbank-drugs-all.csv"):
+def download_targets(drugbank_parsed_filename="../data/drugbank_preprocess.csv",
+                     fname="../data/violette/drugbank/drugbank-drugs-all.csv"):
     fn = open(fname, "r")
     fn.readline()
     drugbank = pd.read_table(drugbank_parsed_filename, sep='|', encoding='utf-8')
@@ -146,5 +147,5 @@ def download_targets(drugbank_parsed_filename="../data/drugbank_preprocess.csv",
 
 
 if __name__ == '__main__':
-    e= download_targets()
+    e = download_targets()
     print(e)
