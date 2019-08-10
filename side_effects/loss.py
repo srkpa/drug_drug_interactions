@@ -2,6 +2,7 @@ import torch
 from torch.nn import Module
 from torch.nn.functional import binary_cross_entropy, binary_cross_entropy_with_logits
 from poutyne.framework.metrics import get_loss_or_metric
+from torch.distributions.categorical import Categorical
 from sklearn.utils import compute_class_weight
 
 
@@ -149,6 +150,30 @@ class WeightedBinaryCrossEntropy4(Module):
         assert losses.shape == target.shape
 
         return torch.sum(weights * losses) / losses.nelement()
+
+
+class BinaryCrossEntropyP(Module):
+
+    def __init__(self, use_negative_sampling):
+        super(BinaryCrossEntropyP, self).__init__()
+        self.use_negative_sampling = use_negative_sampling
+
+    def forward(self, input, target):
+        assert input.shape == target.shape
+
+        if self.use_negative_sampling and self.training:
+            mask = (target == 1).float()
+            for i, col in enumerate(target.t()):
+                nb_pos = int(col.sum())
+                if nb_pos > 0:
+                    idx = Categorical((col == 0).float().flatten()).sample((nb_pos,))
+                    mask[idx, i] = 1.0
+            # print(input.shape, target.shape, mask.shape)
+            loss = (binary_cross_entropy(input, target, reduction='none') * mask).mean()
+        else:
+            loss = binary_cross_entropy(input, target)
+
+        return loss
 
 
 def compute_labels_density(y):

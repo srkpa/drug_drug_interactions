@@ -13,8 +13,8 @@ class SelfAttentionLayer(AttentionLayer):
 
     def __init__(self, key_dim, pooling_function=None):
         super().__init__(1, 1, key_dim, pooling_function)
-        self.query_network = self.key_network
-        self.value_network = nn.Sequential()
+        # self.query_network = self.key_network
+        # self.value_network = nn.Sequential()
 
     def forward(self, x):
         """
@@ -66,8 +66,8 @@ class BMNDDI(nn.Module):
         else:
             self.classifier = nn.Sequential(
                 fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                           output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs),
-                SelfAttentionLayer(1, att_hidden_dim),
+                           output_dim=output_dim, last_layer_activation='relu', **kwargs),
+                SelfAttentionLayer(att_hidden_dim),
                 nn.Sigmoid()
             )
 

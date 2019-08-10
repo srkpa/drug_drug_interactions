@@ -1,13 +1,14 @@
 import torch
 from ivbase.nn.commons import get_optimizer
+from torch.nn.functional import binary_cross_entropy
 from poutyne.framework import Model
 from poutyne.framework.callbacks import BestModelRestore
-from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoardLogger
+from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, Logger
 from tensorboardX.writer import SummaryWriter
 from torch.utils.data import DataLoader
 from side_effects.metrics import *
 from side_effects.models import all_networks_dict
-from side_effects.loss import get_loss
+from side_effects.loss import get_loss, BinaryCrossEntropyP
 from ivbase.nn.commons import get_optimizer
 
 all_metrics_dict = dict(
@@ -28,32 +29,42 @@ all_metrics_dict = dict(
 )
 
 
-class TensorBoardLogger2(TensorBoardLogger):
+class TensorBoardLogger2(Logger):
     def __init__(self, writer):
-        super().__init__(writer)
+        super().__init__(batch_granularity=True)
+        self.writer = writer
+        self.train_step = 0
+        self.test_step = 0
 
-    def _on_epoch_end_write(self, epoch, logs):
-        grouped_items = dict()
+    def get_scalars(self, logs):
+        is_val = False
         for k, v in logs.items():
             if 'val_' in k:
-                primary_key = k[4:]
-                if primary_key not in grouped_items:
-                    grouped_items[primary_key] = dict()
-                grouped_items[k[4:]][k] = v
-            else:
-                if k not in grouped_items:
-                    grouped_items[k] = dict()
-                grouped_items[k][k] = v
-        for k, v in grouped_items.items():
-            if k not in ['epoch', 'time']:
-                self.writer.add_scalars(k, v, epoch)
+                is_val = True
+        return is_val, {k: v for k, v in logs.items() if k not in ['epoch', 'time', 'lr', 'size', 'batch']}
+
+    def _on_batch_end_write(self, batch, logs):
+        is_val, scalars = self.get_scalars(logs)
+        if is_val:
+            t = self.test_step
+            self.test_step += 1
+        else:
+            t = self.train_step
+            self.train_step += 1
+
+        for k, v in scalars.items():
+            self.writer.add_scalar(f'batch/{k}', v, t)
+
+    def _on_epoch_end_write(self, epoch, logs):
+        is_val, scalars = self.get_scalars(logs)
+        for k, v in scalars.items():
+            self.writer.add_scalar(f'epoch/{k}', v, epoch)
 
 
 class Trainer(Model):
 
     def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None,
-                 **loss_params):
+                 metrics_names=None, use_negative_sampled_loss=False, **loss_params):
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
@@ -64,7 +75,8 @@ class Trainer(Model):
         self.loss_params = loss_params
         metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
         metrics = [all_metrics_dict[name] for name in metrics_names]
-        Model.__init__(self, model=network, optimizer=optimizer, loss_function='bce', metrics=metrics)
+        Model.__init__(self, model=network, optimizer=optimizer,
+                       loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
         self.metrics_names = metrics_names
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
@@ -74,7 +86,7 @@ class Trainer(Model):
             self.model.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
-        self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
+        # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
 
         callbacks = []
         if with_early_stopping:
