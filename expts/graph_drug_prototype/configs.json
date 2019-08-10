@@ -12,10 +12,10 @@
           "arch": "conv1d",
           "b_norm": false,
           "cnn_sizes": [
-            128,
-            128,
-            128,
-            128
+            6,
+            6,
+            6,
+            6
           ],
           "dilatation_rate": 1,
           "embedding_size": 20,
@@ -25,19 +25,19 @@
           "pooling_len": 2,
           "vocab_size": 152
         },
-        "edges_embedding_dim": 64,
+        "edges_embedding_dim": 6,
         "fc_layers_dim": [
-          128,
-          128,
-          128,
-          128
+          8,
+          8,
+          8,
+          8
         ],
         "graph_network_params": {
           "activation": "relu",
           "b_norm": false,
           "kernel_sizes": [
-            64,
-            64
+            8,
+            8
           ]
         },
         "mode": "concat",
@@ -58,10 +58,10 @@
           "arch": "conv1d",
           "b_norm": false,
           "cnn_sizes": [
-            128,
-            128,
-            128,
-            128
+            6,
+            6,
+            6,
+            6
           ],
           "dilatation_rate": 1,
           "embedding_size": 20,
@@ -71,19 +71,19 @@
           "pooling_len": 2,
           "vocab_size": 152
         },
-        "edges_embedding_dim": 64,
+        "edges_embedding_dim": 6,
         "fc_layers_dim": [
-          128,
-          128,
-          128,
-          128
+          8,
+          8,
+          8,
+          8
         ],
         "graph_network_params": {
           "activation": "relu",
           "b_norm": false,
           "kernel_sizes": [
-            64,
-            64
+            8,
+            8
           ]
         },
         "mode": "concat",
