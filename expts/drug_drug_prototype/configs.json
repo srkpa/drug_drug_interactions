@@ -12,10 +12,10 @@
           "arch": "conv1d",
           "b_norm": false,
           "cnn_sizes": [
-            128,
-            128,
-            128,
-            128
+            256,
+            256,
+            256,
+            256
           ],
           "dilatation_rate": 1,
           "embedding_size": 20,
@@ -26,21 +26,2224 @@
           "vocab_size": 152
         },
         "fc_layers_dim": [
-          64,
-          64,
-          64,
-          64
+          128,
+          128
         ],
         "mode": "concat",
         "network_name": "bmnddi"
       },
       "optimizer": "adam",
       "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    },
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "att_hidden_dim": 32,
+        "b_norm": false,
+        "dropout": 0.25,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            10
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": true
     }
   ],
   "dataset_params": [
     {
-      "dataset_name": "drugbank",
+      "dataset_name": "twosides",
       "decagon": false,
       "seed": 42,
       "split_mode": "leave_drugs_out",
@@ -50,7 +2253,7 @@
       "valid_size": 0.1
     },
     {
-      "dataset_name": "drugbank",
+      "dataset_name": "twosides",
       "decagon": false,
       "seed": 42,
       "split_mode": "random",
@@ -58,6 +2261,16 @@
       "transformer": "seq",
       "use_graph": false,
       "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.25,
+      "transformer": "seq",
+      "use_graph": false,
+      "valid_size": 0.2
     }
   ],
   "fit_params": [

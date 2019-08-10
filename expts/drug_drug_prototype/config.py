@@ -10,7 +10,7 @@ dataset_params = list(ParameterGrid(
              split_mode=["leave_drugs_out", "random"],
              test_size=[0.15],
              valid_size=[0.10],
-             seed=[42, 44, 33, 55],
+             seed=[42],
              use_graph=[False],
              decagon=[False]),
         dict(dataset_name=["twosides"],
@@ -18,7 +18,7 @@ dataset_params = list(ParameterGrid(
              split_mode=["random"],
              test_size=[0.25],
              valid_size=[0.20],
-             seed=[42, 44, 33, 55, 22],
+             seed=[42],
              use_graph=[False],
              decagon=[False]),
     ]
@@ -33,12 +33,12 @@ drug_features_extractor_params = list(ParameterGrid(
          vocab_size=[len(SMILES_ALPHABET) + 2],
          embedding_size=[20],
          cnn_sizes=[
-             [128]*4, [256]*4, [512]*4
+             [256]*4, [512]*4
          ],
          kernel_size=[[5], [10]],
          dilatation_rate=[1],
          pooling_len=[2],
-         b_norm=[False, True])
+         b_norm=[False])
 ))
 
 
@@ -58,7 +58,7 @@ network_params = list(ParameterGrid(dict(
     fc_layers_dim=[[128]*2],
     mode=["concat"],
     att_hidden_dim=[None, 32],
-    dropout=[0, 0.25],
+    dropout=[0.25],
     b_norm=[False],
 )))
 
