@@ -1,12 +1,9 @@
 import torch
-import networkx as nx
-import csv
 import inspect
 import pandas as pd
-import scipy.sparse as sp
 from functools import partial
 from collections import defaultdict
-from itertools import product, combinations
+from itertools import product
 from torch.utils.data import Dataset
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split
@@ -50,10 +47,20 @@ def load_ddis_combinations(fname, header=True, dataset_name="twosides"):
     return combo2se
 
 
-def _filter_samples(samples, transformed_smiles_dict=None):
+def _filter_pairs_both_exists(samples, filtering_set=None):
     to_remove = [
-        (id_1, id_2) for (id_1, id_2), y in samples.items()
-        if (id_1 not in transformed_smiles_dict) or (id_2 not in transformed_smiles_dict)
+        (id_1, id_2) for (id_1, id_2) in samples
+        if (id_1 not in filtering_set) or (id_2 not in filtering_set)
+    ]
+    for key in to_remove:
+        samples.pop(key)
+    return samples
+
+
+def _filter_pairs_one_exists(samples, filtering_set=None):
+    to_remove = [
+        (id_1, id_2) for (id_1, id_2) in samples
+        if (id_1 not in filtering_set) and (id_2 not in filtering_set)
     ]
     for key in to_remove:
         samples.pop(key)
@@ -65,6 +72,10 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
     if mode == 'random':
         train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
         train, valid = train_test_split(train, test_size=valid_size)
+
+        train_data = {k: data[k] for k in train}
+        valid_data = {k: data[k] for k in valid}
+        test_data = {k: data[k] for k in test}
     else:
         drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
         drugs = sorted(drugs)
@@ -79,38 +90,16 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train = set(data.keys()).intersection(train)
         valid = set(data.keys()).intersection(valid)
         test = set(data.keys()).intersection(test)
+        train_drugs = list(set([x1 for (x1, _) in train] + [x2 for (_, x2) in train]))
 
-    train_data = {k: data[k] for k in train}
-    valid_data = {k: data[k] for k in valid}
-    test_data = {k: data[k] for k in test}
+        train_data = {k: data[k] for k in train}
+        valid_data = {k: data[k] for k in valid}
+        test_data = {k: data[k] for k in test}
 
-    train_idx = list(set([x1 for (x1, _) in train_data] + [x2 for (_, x2) in train_data]))
-    print(train_idx)
-    a = csv.writer(open("valid-mapping.csv", "w"))
-    a.writerow(["drug1", "drug2", "intersection"])
-    for d1, d2 in valid:
-        assert d1 in train_idx or d2 in train_idx
-        if d1 in train_idx:
-            drug_in_train = d1
-        elif d2 in train_idx:
-            drug_in_train = d2
-        else:
-            raise Exception(f'{d1}-{d2} not found')
-        a.writerow([d1, d2, drug_in_train])
+        # filter out some pairs due to the intersection
+        valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
+        test_data = _filter_pairs_one_exists(test_data, train_drugs)
 
-    b = csv.writer(open("test-mapping.csv", "w"))
-    b.writerow(["drug1", "drug2", "intersection"])
-    for d1, d2 in test:
-        assert d1 in train_idx or d2 in train_idx
-        if d1 in train_idx:
-            drug_in_train = d1
-        elif d2 in train_idx:
-            drug_in_train = d2
-        else:
-            raise Exception(f'{d1}-{d2} not found')
-        b.writerow([d1, d2, drug_in_train])
-
-    print("I am done")
     return train_data, valid_data, test_data
 
 
@@ -139,7 +128,6 @@ class DDIdataset(Dataset):
             if drug1 not in self.graph_drugs_mapping:
                 drug1, drug2 = drug2, drug1
             if drug1 not in self.graph_drugs_mapping:
-                print("drug2", drug2 in self.graph_drugs_mapping)
                 with open('toto.txt', 'w') as fd:
                     fd.writelines([f'{d}\n' for d in self.graph_drugs_mapping])
             assert drug1 in self.graph_drugs_mapping, f"None of those drugs ({drug1}-{drug2}) is in the train, check your train test split"
@@ -173,7 +161,7 @@ class DDIdataset(Dataset):
 
 
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
-                        seed=None, test_size=0.25, valid_size=0.25, model_name=False):
+                        seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False):
     # My paths
     all_combo_path = f"{input_path}/{dataset_name}.csv"
     data = load_ddis_combinations(all_combo_path, header=True)
@@ -194,110 +182,26 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     else:
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
 
-    data = _filter_samples(data, transformed_smiles_dict=drugs2smiles)
+    data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                test_size=test_size, valid_size=valid_size)
-
-    # a =  list(set([x1 for (x1, _) in train_data] + [x2 for (_, x2) in train_data]))
-    # for (d1, d2) in test_data:
-    #     print(d1, d2)
-    #     assert d1 in a or d2 in a
-    exit()
     print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
+
 
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
-    if model_name.lower() == 'bmnddi' and split_mode == 'leave_drugs_out':
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-    elif model_name.lower() == 'decagon':
+    if decagon:
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
         valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
     else:
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
+        if use_graph:
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+        else:
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
 
     return train_dataset, valid_dataset, test_dataset
-
-
-def load_decagon():
-    val_test_size = 0.05
-    n_genes = 500
-    n_drugs = 400
-    n_drugdrug_rel_types = 3
-    gene_net = nx.planted_partition_graph(50, 10, 0.2, 0.05,
-                                          seed=42)  # gene gene
-
-    print("gene net node", len(gene_net.nodes))
-    print("gene net edges", len(gene_net.edges))
-    gene_adj = nx.adjacency_matrix(gene_net)
-    print("gene adj", gene_adj.todense().shape)
-    gene_degrees = np.array(gene_adj.sum(axis=0)).squeeze()
-    gene_drug_adj = sp.csr_matrix((10 * np.random.randn(n_genes, n_drugs) > 15).astype(int))  # gene drug
-    drug_gene_adj = gene_drug_adj.transpose(copy=True)
-
-    drug_drug_adj_list = []
-    tmp = np.dot(drug_gene_adj, gene_drug_adj)
-    for i in range(n_drugdrug_rel_types):
-        mat = np.zeros((n_drugs, n_drugs))
-        for d1, d2 in combinations(list(range(n_drugs)), 2):
-            if tmp[d1, d2] == i + 4:  # why?
-                mat[d1, d2] = mat[d2, d1] = 1.
-        drug_drug_adj_list.append(sp.csr_matrix(mat))
-    drug_degrees_list = [np.array(drug_adj.sum(axis=0)).squeeze() for drug_adj in drug_drug_adj_list]
-
-    # data representation - yep, i understand
-    adj_mats_orig = {
-        (0, 0): [gene_adj, gene_adj.transpose(copy=True)],
-        (0, 1): [gene_drug_adj],
-        (1, 0): [drug_gene_adj],
-        (1, 1): drug_drug_adj_list + [x.transpose(copy=True) for x in drug_drug_adj_list],
-    }
-    degrees = {
-        0: [gene_degrees, gene_degrees],
-        1: drug_degrees_list + drug_degrees_list,
-    }
-
-    # featureless (genes)
-    gene_feat = sp.identity(n_genes)
-    print("gene feat", gene_feat.shape)
-    gene_nonzero_feat, gene_num_feat = gene_feat.shape
-    gene_feat = preprocessing.sparse_to_tuple(gene_feat.tocoo())  # i am here
-    # features (drugs)
-    drug_feat = sp.identity(n_drugs)
-    print("drug feature", drug_feat.shape)
-    drug_nonzero_feat, drug_num_feat = drug_feat.shape
-    drug_feat = preprocessing.sparse_to_tuple(drug_feat.tocoo())
-
-    # data representation
-    num_feat = {
-        0: gene_num_feat,
-        1: drug_num_feat,
-    }
-    nonzero_feat = {
-        0: gene_nonzero_feat,
-        1: drug_nonzero_feat,
-    }
-    feat = {
-        0: gene_feat,
-        1: drug_feat,
-    }
-
-    edge_type2dim = {k: [adj.shape for adj in adjs] for k, adjs in adj_mats_orig.items()}
-    print(edge_type2dim)  # ok
-    edge_type2decoder = {
-        (0, 0): 'bilinear',
-        (0, 1): 'bilinear',
-        (1, 0): 'bilinear',
-        (1, 1): 'dedicom',
-    }
-    edge_types = {k: len(v) for k, v in adj_mats_orig.items()}  # need to be adapted -yes
-    print("edge type", edge_types)
-    num_edge_types = sum(edge_types.values())
-    print("Edge types:", "%d" % num_edge_types)
-    print(adj_mats_orig[(0, 0)][1].shape)
-    print([i for i, _ in edge_types])
-    exit()

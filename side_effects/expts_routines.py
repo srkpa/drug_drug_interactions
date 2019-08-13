@@ -38,9 +38,9 @@ def get_all_output_filenames(output_path, all_params):
         checkpoint_filename="{}/{}_{}_{}_ckp.ckp".format(output_path, data_name, model_name, out_prefix),
         log_filename="{}/{}_{}_{}_log.log".format(output_path, data_name, model_name, out_prefix),
         tensorboard_dir="{}/{}_{}_{}".format(output_path, data_name, model_name, out_prefix),
-        result_filename="{}/{}_{}_{}_res.csv".format(output_path, data_name, model_name, out_prefix),
-        targets_filename="{}/{}_{}_{}_targets.csv".format(output_path, data_name, model_name, out_prefix),
-        preds_filename="{}/{}_{}_{}_preds.csv".format(output_path, data_name, model_name, out_prefix),
+        result_filename="{}/{}_{}_{}_res.pkl".format(output_path, data_name, model_name, out_prefix),
+        targets_filename="{}/{}_{}_{}_targets.pkl".format(output_path, data_name, model_name, out_prefix),
+        preds_filename="{}/{}_{}_{}_preds.pkl".format(output_path, data_name, model_name, out_prefix),
     ), out_prefix
 
 
@@ -106,9 +106,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
 
-    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path,
-                                                            model_name=model_params['network_params']['network_name'])
-    # model_params['network_params']['graph_network_params']
+    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
     model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
     model = Trainer(**model_params)
 

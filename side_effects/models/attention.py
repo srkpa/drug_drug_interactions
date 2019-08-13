@@ -15,7 +15,7 @@ class AttentionLayer(nn.Module):
         self.key_network = nn.Linear(input_dim, key_dim)
         self.value_network = nn.Linear(input_dim, value_dim)
 
-        self.norm_layer = nn.LayerNorm(value_dim)
+        # self.norm_layer = nn.LayerNorm(value_dim)
         self.pooling_function = pooling_function
         self._output_dim = value_dim
 
@@ -34,7 +34,8 @@ class AttentionLayer(nn.Module):
         attention_matrix = torch.bmm(query, key.transpose(1, 2))
         attention_matrix = attention_matrix / np.sqrt(query.size(2))
         attention_matrix = self.softmax(attention_matrix)
-        res = self.norm_layer(torch.bmm(attention_matrix, value))
+        # res = self.norm_layer(torch.bmm(attention_matrix, value))
+        res = torch.bmm(attention_matrix, value)
 
         if self.pooling_function == 'max':
             res = torch.max(res, dim=1)[0]
