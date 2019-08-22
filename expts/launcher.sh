@@ -44,7 +44,7 @@ case ${server} in
     ;;
 
   mcg)
-   mcguffin launch --exp-name ${expt_name} --launch-config launch_settings.json  --exp-config ${expt_name}/configs.json
+   mcguffin launch --exp-name ${expt_name} --launch-config launch_settings.json  --exp-config ${expt_name}/configs.json --save-checkpoint
    ;;
 
   *)

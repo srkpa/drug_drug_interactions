@@ -18,10 +18,17 @@ PREFIX = '/opt/ml/'
 
 
 @click.command()
-@click.option('--config_file', '-p', default=os.path.join(PREFIX, 'input/config/hyperparameters.json'), help="Path to the config file (json) that contains the parameters for the experiment.")
-@click.option('--input_path', '-i', default="s3://datasets-ressources/DDI/twosides-for-seed",  help="Location of the input data files")
-@click.option('--output_path', '-o', default=os.path.join(PREFIX, 'model'), help="Location for saving the training results (model artifacts and output files).")
-def main(config_file, input_path, output_path):
+@click.option('--config_file', '-p', default=os.path.join(PREFIX, 'input/config/hyperparameters.json'),
+              help="Path to the config file (json) that contains the parameters for the experiment.")
+@click.option('--input_path', '-i', default="s3://datasets-ressources/DDI/twosides-for-seed",
+              help="Location of the input data files")
+@click.option('--output_path', '-o', default=os.path.join(PREFIX, 'model'),
+              help="Location for saving the training results (model artifacts and output files).")
+@click.option('--restore_path', '-r', default=os.path.join(PREFIX, 'model'),
+              help="Path for model restoration (resume training at last checkpoint).")
+@click.option('--checkpoint_path', '-c', default=os.path.join(PREFIX, 'model'),
+              help="S3 path where to save the checkpoint of the model.")
+def main(config_file, input_path, output_path, restore_path, checkpoint_path):
     print('Starting the training.')
     os.makedirs(output_path, exist_ok=True)
     try:
@@ -32,7 +39,7 @@ def main(config_file, input_path, output_path):
             train_params = json.load(tc)
         # the function below does all the data loading, run, validate and test_ddi the algo
         run_experiment(**train_params, output_path=output_path,
-                       input_path=input_path)
+                       input_path=input_path, restore_path=restore_path, checkpoint_path=checkpoint_path)
         print("Launching with {}".format(train_params))
 
     except Exception as e:
