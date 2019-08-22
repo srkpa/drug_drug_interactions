@@ -42,6 +42,11 @@ case ${server} in
     mkdir -p ${out}
     dispatcher run -o ${out} -p ${expt_name}/configs.json -E ../bin/train
     ;;
+
+  mcg)
+   mcguffin launch --exp-name ${expt_name} --launch-config launch_settings.json  --exp-config ${expt_name}/configs.json
+   ;;
+
   *)
     echo "Mode is invalid. Options are debug or prod."
     exit 1
