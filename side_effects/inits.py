@@ -28,6 +28,7 @@ def init_kaiming_uniform(layer):
         nn.init.kaiming_uniform_(layer.weight.data, a=1)
 
 
+
 def weight_variable_glorot(input_dim, output_dim):
     """Create a weight variable with Glorot & Bengio (AISTATS 2010)
     initialization.

@@ -105,13 +105,16 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
 
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
-                 build_graph=False, graph_drugs_mapping=None):
+                 build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=True):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.labels_vectorizer = label_vectorizer
         self.gpu = torch.cuda.is_available()
         self.has_graph = build_graph
-        self.graph_drugs_mapping = graph_drugs_mapping
+        self.graph_nodes_mapping = graph_drugs_mapping
+        self.gene_net = gene_net
+        self.drug_gene_net = drug_gene_net
+        self.decagon = decagon
         if self.has_graph:
             self.build_graph()
 
@@ -120,18 +123,18 @@ class DDIdataset(Dataset):
 
     def __getitem__(self, item):
         drug1, drug2, label = self.samples[item]
-        if self.graph_drugs_mapping is None:
+        if self.graph_nodes_mapping is None:
             drug1, drug2 = self.drug_to_smiles[drug1], self.drug_to_smiles[drug2]
-        elif self.has_graph:
-            drug1, drug2 = np.array([self.graph_drugs_mapping[drug1]]), np.array([self.graph_drugs_mapping[drug2]])
+        elif self.has_graph or self.decagon:
+            drug1, drug2 = np.array([self.graph_nodes_mapping[drug1]]), np.array([self.graph_nodes_mapping[drug2]])
         else:
-            if drug1 not in self.graph_drugs_mapping:
+            if drug1 not in self.graph_nodes_mapping:
                 drug1, drug2 = drug2, drug1
-            if drug1 not in self.graph_drugs_mapping:
+            if drug1 not in self.graph_nodes_mapping:
                 with open('toto.txt', 'w') as fd:
-                    fd.writelines([f'{d}\n' for d in self.graph_drugs_mapping])
-            assert drug1 in self.graph_drugs_mapping, f"None of those drugs ({drug1}-{drug2}) is in the train, check your train test split"
-            drug1 = np.array([self.graph_drugs_mapping[drug1]])
+                    fd.writelines([f'{d}\n' for d in self.graph_nodes_mapping])
+            assert drug1 in self.graph_nodes_mapping, f"None of those drugs ({drug1}-{drug2}) is in the train, check your train test split"
+            drug1 = np.array([self.graph_nodes_mapping[drug1]])
             drug2 = self.drug_to_smiles[drug2]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)), to_tensor(target, self.gpu))
@@ -147,17 +150,47 @@ class DDIdataset(Dataset):
 
     def build_graph(self):
         graph_drugs = list(set([d1 for (d1, _, _) in self.samples] + [d2 for (_, d2, _) in self.samples]))
-        self.graph_drugs_mapping = {node: i for i, node in enumerate(graph_drugs)}
+        self.graph_nodes_mapping = {node: i for i, node in enumerate(graph_drugs)}
         n_nodes = len(graph_drugs)
         n_edge_labels = len(self.labels_vectorizer.classes_)
         graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))
         for (drug1, drug2, label) in self.samples:
-            i, j = self.graph_drugs_mapping[drug1], self.graph_drugs_mapping[drug2]
+            i, j = self.graph_nodes_mapping[drug1], self.graph_nodes_mapping[drug2]
             graph_edges[i, j] = self.labels_vectorizer.transform([label])[0]
-
         graph_nodes = np.stack([self.drug_to_smiles[drug] for drug in graph_drugs], axis=0)
-        self.graph_nodes = to_tensor(graph_nodes, self.gpu)
-        self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
+
+        if all([v is not None for v in [self.gene_net, self.drug_gene_net]]) and self.decagon:
+            graph_gene = list(
+                set([g1 for (g1, _) in self.gene_net] + [g2 for (_, g2) in self.gene_net] + [g for (_, g) in
+                                                                                             self.drug_gene_net]))
+            n_drugs = n_nodes
+            n_genes = len(graph_gene)
+            for i, node in enumerate(graph_gene):
+                self.graph_nodes_mapping[node] = n_drugs + i
+            n_nodes = n_genes + n_drugs
+            adj_mats = np.zeros((n_nodes, n_nodes))
+            for (gene1, gene2) in self.gene_net:
+                id1, id2 = self.graph_nodes_mapping[gene1], self.graph_nodes_mapping[gene2]
+                adj_mats[id1, id2] = adj_mats[id2, id1] = 1
+
+            for (drug, gene) in self.drug_gene_net:
+                id1, id2 = self.graph_nodes_mapping[drug], self.graph_nodes_mapping[gene]
+                adj_mats[id1, id2] = adj_mats[id2, id1] = 1
+
+            assert not np.any(adj_mats[:n_drugs, :n_drugs])
+            drug_drug_adj = graph_edges.sum(2) > 0
+            adj_mats[:n_drugs, :n_drugs] = drug_drug_adj + np.transpose(drug_drug_adj)
+
+            # featureless nodes
+            drugs_nodes_feat = np.eye(n_drugs)
+            gene_nodes_feat = np.eye(n_genes)
+
+            self.graph_nodes = to_tensor(drugs_nodes_feat, self.gpu), to_tensor(gene_nodes_feat, self.gpu)
+            self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu), to_tensor(
+                adj_mats.astype(np.float32), self.gpu)
+        else:
+            self.graph_nodes = to_tensor(graph_nodes, self.gpu)
+            self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
@@ -186,19 +219,28 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                test_size=test_size, valid_size=valid_size)
     print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
-
-
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
     if decagon:
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+        ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"
+        gene_gene_ass = pd.read_csv(ppi_path)
+        drug_gene_ass = pd.read_csv(dgi_path)
+        gene_gene_ass_list = gene_gene_ass.values.tolist()
+        drug_gene_ass_list = drug_gene_ass.values.tolist()
+        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True, gene_net=gene_gene_ass_list,
+                                   drug_gene_net=drug_gene_ass_list, decagon=decagon)
+        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+        test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+
     else:
         if use_graph:
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
-            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
-            test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_drugs_mapping)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl,
+                                       graph_drugs_mapping=train_dataset.graph_nodes_mapping)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl,
+                                      graph_drugs_mapping=train_dataset.graph_nodes_mapping)
         else:
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
             valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)

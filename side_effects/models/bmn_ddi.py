@@ -45,7 +45,7 @@ class BMNDDI(nn.Module):
 
         if graph_network_params is not None:
             gcnn = GINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
-                                     **graph_network_params)
+                           **graph_network_params)
             self.graph_net = nn.Sequential(gcnn, nn.Linear(gcnn.output_dim, dfe_out_dim))
             if tied_weights:
                 self.node_feature_extractor = self.drug_feature_extractor
@@ -107,7 +107,7 @@ class BMNDDI(nn.Module):
         return out
 
     def set_graph(self, nodes, edges):
-        self.nb_nodes = len(nodes)
+        self.nb_drugs = len(nodes)
         self.nodes = nodes
         self.edges = edges
         self.adj_mat = (edges.sum(2) > 0).float()

@@ -103,25 +103,25 @@ class GINConv(nn.Module):
 class GraphConvolutionMulti(nn.Module):
     """Basic graph convolution layer for undirected graph without edge labels."""
 
-    def __init__(self, input_dim, output_dim, adj_mats, dropout=0., act=nn.ReLU, edge_type=(), num_types=-1):
+    def __init__(self, output_dim, dropout=0., act=nn.ReLU(), input_dim=10):
         super(GraphConvolutionMulti, self).__init__()
-        self.edge_type = edge_type
-        self.num_types = num_types
-        self.adj_mats = adj_mats
-        self.dropout = nn.Dropout(1 - dropout)
         self.act = act
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        for k in range(self.num_types):
-            self.vars['weights_%d' % k] = inits.weight_variable_glorot(
-                self.input_dim, self.output_dim)
+        self.net = nn.Sequential(
+            torch.nn.Dropout(dropout),
+            torch.nn.Linear(in_features=input_dim, out_features=output_dim, bias=False)
+        )
 
-    def forward(self, inputs):
-        outputs = 0
-        for k in range(self.num_types):
-            x = self.dropout(inputs)
-            x = torch.mm(x, self.vars['weights_%d' % k])
-            x = torch.mv(self.adj_mats[self.edge_type][k], x)
-            outputs += self.act(x)
-        outputs = torch.norm(outputs, p=None, dim=1)
-        return outputs
+    def init_weights(self):
+        pass
+
+    def forward(self, x):
+        nodes_features, adj_mats = x
+        self.net[-1].in_features = nodes_features.shape[-1]
+        nodes_features = self.net(nodes_features)
+        nodes_features = nodes_features.unsqueeze(0).expand(adj_mats.shape[0], *nodes_features.shape) # tout va dependre de la sortie
+        nodes_features = torch.bmm(adj_mats, nodes_features)
+        nodes_features = self.act(nodes_features)
+        nodes_features = nodes_features.sum(0)
+        new_nodes_features = torch.norm(nodes_features.unsqueeze(1), dim=1, p=None)
+
+        return new_nodes_features

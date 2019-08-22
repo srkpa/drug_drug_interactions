@@ -5,19 +5,10 @@
       "lr": 0.0001,
       "metrics_names": null,
       "network_params": {
-        "hidden_sizes": [
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048
-        ],
-        "input_dim": 100,
-        "network_name": "deepddi"
+        "dropout": 0.0,
+        "hidden_size": 50,
+        "network_name": "decagon",
+        "output_dim": 100
       },
       "optimizer": "adam"
     }
@@ -25,16 +16,9 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
+      "decagon": true,
       "seed": 42,
       "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "deepddi",
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "seed": 42,
-      "split_mode": "leave_drugs_out",
       "test_size": 0.15,
       "transformer": "deepddi",
       "valid_size": 0.1
