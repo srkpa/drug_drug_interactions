@@ -69,7 +69,7 @@ class TensorBoardLogger2(Logger):
 class Trainer(ivbt.Trainer):
 
     def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, use_negative_sampled_loss=False, **loss_params, ):
+                 metrics_names=None, use_negative_sampled_loss=False, **loss_params):
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
@@ -109,15 +109,13 @@ class Trainer(ivbt.Trainer):
             logger = CSVLogger(log_filename, batch_granularity=False, separator='\t')
             callbacks += [logger]
         if checkpoint_filename:
-            checkpointer = ModelCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
+            print("This is your checkpoint, ", checkpoint_filename)
+            checkpointer = TrainerCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
             callbacks += [checkpointer]
         if tensorboard_dir:
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
-        if checkpoint_path:
-            print("This is your checkpoint, ", checkpoint_path)
-            trainer_checkpointer = TrainerCheckpoint(checkpoint_path, monitor='val_loss', save_best_only=True)
-            callbacks += [trainer_checkpointer]
+
         if restore_path:
             snapshoter = SnapshotCallback(s3_path=restore_path)
             callbacks += [snapshoter]
