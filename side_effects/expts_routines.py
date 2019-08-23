@@ -57,8 +57,8 @@ def save(obj, filename, output_path):
         json.dump(obj, CNF)
 
 
-def run_experiment(model_params, dataset_params, fit_params, input_path, output_path="expts", restore_path=None,
-                   checkpoint_path=None):
+def run_experiment(model_params, dataset_params, fit_params, input_path, output_path, restore_path,
+                   checkpoint_path):
     """
     Placeholder function that should be implemented to run the models
 
@@ -95,6 +95,8 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     all_params = locals()
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
+    print(checkpoint_path, restore_path)
+    paths.update(dict(restore_path=restore_path, checkpoint_path=checkpoint_path))
 
     dc = DataCache()
     # cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/{}".format(

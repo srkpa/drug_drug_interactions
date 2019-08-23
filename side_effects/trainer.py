@@ -1,4 +1,5 @@
 import torch
+import os
 from ivbase.nn.commons import get_optimizer
 from torch.nn.functional import binary_cross_entropy
 from poutyne.framework import Model
@@ -10,6 +11,8 @@ from side_effects.metrics import *
 from side_effects.models import all_networks_dict
 from side_effects.loss import get_loss, BinaryCrossEntropyP
 from ivbase.nn.commons import get_optimizer
+import ivbase.utils.trainer as ivbt
+from ivbase.utils.snapshotcallback import SnapshotCallback
 
 all_metrics_dict = dict(
     micro_roc=wrapped_partial(roc_auc_score, average='micro'),
@@ -61,23 +64,27 @@ class TensorBoardLogger2(Logger):
             self.writer.add_scalar(f'epoch/{k}', v, epoch)
 
 
-class Trainer(Model):
+class Trainer(ivbt.Trainer):
 
     def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, use_negative_sampled_loss=False, **loss_params):
+                 metrics_names=None, use_negative_sampled_loss=False, **loss_params, ):
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
-        if torch.cuda.is_available():
+        gpu = torch.cuda.is_available()
+        if gpu:
             network = network.cuda()
         optimizer = get_optimizer(optimizer)(network.parameters(), lr=lr, weight_decay=weight_decay)
         self.loss_name = loss
         self.loss_params = loss_params
         metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
-        metrics = [all_metrics_dict[name] for name in metrics_names]
-        Model.__init__(self, model=network, optimizer=optimizer,
-                       loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
-        self.metrics_names = metrics_names
+        metrics = {name: all_metrics_dict[name] for name in metrics_names}
+        ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu, metrics=metrics,
+                              loss_fn=BinaryCrossEntropyP(use_negative_sampled_loss))
+
+        # Model.__init__(self, model=network, optimizer=optimizer,
+        #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
+        # self.metrics_names = metrics_names
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
@@ -89,6 +96,7 @@ class Trainer(Model):
         # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
 
         callbacks = []
+        restore_path, checkpoint_path = kwargs.pop("restore_path"), kwargs.pop("checkpoint_path")
         if with_early_stopping:
             early_stopping = EarlyStopping(monitor='val_loss', patience=patience, verbose=True)
             callbacks += [early_stopping]
@@ -104,12 +112,12 @@ class Trainer(Model):
         if tensorboard_dir:
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
+        if checkpoint_path:
+            snapshoter = SnapshotCallback(s3_path=restore_path)
+            callbacks += [snapshoter]
 
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
-                                          # steps_per_epoch=5,
-                                          # validation_steps=5,
-                                          # epochs=1,
                                           epochs=n_epochs,
                                           callbacks=callbacks)
 
