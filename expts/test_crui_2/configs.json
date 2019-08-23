@@ -1,0 +1,42 @@
+{
+  "model_params": [
+    {
+      "loss": "bce",
+      "lr": 0.0001,
+      "metrics_names": null,
+      "network_params": {
+        "hidden_sizes": [
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048
+        ],
+        "input_dim": 100,
+        "network_name": "deepddi"
+      },
+      "optimizer": "adam"
+    }
+  ],
+  "dataset_params": [
+    {
+      "dataset_name": "twosides",
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "deepddi",
+      "valid_size": 0.1
+    }
+  ],
+  "fit_params": [
+    {
+      "batch_size": 256,
+      "n_epochs": 500,
+      "with_early_stopping": false
+    }
+  ]
+}

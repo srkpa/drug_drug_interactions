@@ -109,17 +109,15 @@ class Trainer(ivbt.Trainer):
             logger = CSVLogger(log_filename, batch_granularity=False, separator='\t')
             callbacks += [logger]
         if checkpoint_filename:
-            print("This is your checkpoint, ", checkpoint_filename)
             checkpointer = TrainerCheckpoint(checkpoint_filename, monitor='val_loss', save_best_only=True)
             callbacks += [checkpointer]
         if tensorboard_dir:
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
-
         if restore_path:
+            print("This is your snapshot!")
             snapshoter = SnapshotCallback(s3_path=restore_path)
             callbacks += [snapshoter]
-
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
                                           epochs=n_epochs,

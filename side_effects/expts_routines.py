@@ -35,7 +35,7 @@ def get_all_output_filenames(output_path, all_params):
     data_name = all_params.get('dataset_params').get('dataset_name')
     return dict(
         config_filename="{}/{}_{}_{}_params.json".format(output_path, data_name, model_name, out_prefix),
-        checkpoint_filename="{}/{}_{}_{}_ckp.ckp".format(output_path, data_name, model_name, out_prefix),
+        checkpoint_filename="{}/{}_{}_{}.checkpoint.pth".format(output_path, data_name, model_name, out_prefix),
         log_filename="{}/{}_{}_{}_log.log".format(output_path, data_name, model_name, out_prefix),
         tensorboard_dir="{}/{}_{}_{}".format(output_path, data_name, model_name, out_prefix),
         result_filename="{}/{}_{}_{}_res.pkl".format(output_path, data_name, model_name, out_prefix),
@@ -96,7 +96,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
 
-    restore_path = None # os.path.basename(checkpoint_path)
+    restore_path = os.path.os.path.dirname(checkpoint_path)
     paths.update(dict(restore_path=restore_path, checkpoint_path=checkpoint_path))
 
     dc = DataCache()
