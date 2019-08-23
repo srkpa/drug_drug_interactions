@@ -14,7 +14,7 @@ dataset_params = list(ParameterGrid(
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[2], batch_size=[256], with_early_stopping=[True])))
 
 network_params = list(ParameterGrid(dict(
     network_name=['deepddi'],

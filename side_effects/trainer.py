@@ -13,6 +13,8 @@ from side_effects.loss import get_loss, BinaryCrossEntropyP
 from ivbase.nn.commons import get_optimizer
 import ivbase.utils.trainer as ivbt
 from ivbase.utils.snapshotcallback import SnapshotCallback
+from ivbase.utils.trainer import TrainerCheckpoint
+
 
 all_metrics_dict = dict(
     micro_roc=wrapped_partial(roc_auc_score, average='micro'),
@@ -113,6 +115,10 @@ class Trainer(ivbt.Trainer):
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
         if checkpoint_path:
+            print("This is your checkpoint, ", checkpoint_path)
+            trainer_checkpointer = TrainerCheckpoint(checkpoint_path, monitor='val_loss', save_best_only=True)
+            callbacks += [trainer_checkpointer]
+        if restore_path:
             snapshoter = SnapshotCallback(s3_path=restore_path)
             callbacks += [snapshoter]
 

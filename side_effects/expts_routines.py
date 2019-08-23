@@ -95,7 +95,8 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     all_params = locals()
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
-    print(checkpoint_path, restore_path)
+
+    restore_path = None # os.path.basename(checkpoint_path)
     paths.update(dict(restore_path=restore_path, checkpoint_path=checkpoint_path))
 
     dc = DataCache()
