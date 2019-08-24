@@ -2,9 +2,7 @@ import os
 import json
 import torch
 import pickle
-import shutil
 import hashlib
-from ivbase.utils.aws import aws_cli
 from collections import MutableMapping, OrderedDict
 from ivbase.utils.datasets.datacache import DataCache
 from side_effects.trainer import Trainer
@@ -105,7 +103,6 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
         dataset_params.get('dataset_name')))
     expt_params = model_params
-    # s3_path, task_id = os.path.dirname(checkpoint_path), os.path.basename(checkpoint_path).split(".")[0]
 
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
@@ -114,18 +111,6 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
 
-    # # We will double check if exists any repository
-    # print("Looking for the last zip_failed file, s3, task_id", s3_path, task_id)
-    # aws_cli(['s3', 'cp', f"{s3_path}/{task_id}.zip_failed", output_path, '--quiet'])
-    # print("Unzip the old zip failed")
-    # shutil.unpack_archive(filename="{}.zip_failed".format(os.path.dirname(output_path)), extract_dir=output_path)  # ok pas  de id,
-    # print("Output path content", os.listdir(output_path))
-    #
-    # for t in os.listdir(output_path):
-    #     if t.endswith(".pth"):
-    #         restore_path = os.path.join(output_path, t)
-    #         break
-    # print("our restore path", restore_path)
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
     model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
     model = Trainer(**model_params, snapshot_dir=restore_path)
