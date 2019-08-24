@@ -95,9 +95,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     all_params = locals()
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
-
-    restore_path = os.path.os.path.dirname(checkpoint_path)
-    paths.update(dict(restore_path=restore_path, checkpoint_path=checkpoint_path))
+    paths["checkpoint_path"] = checkpoint_path
 
     dc = DataCache()
     # cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
@@ -110,9 +108,12 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
 
+    print(f"Checkpoint path: {checkpoint_path}")
+    print(f"Restore path if any: {restore_path}")
+
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
     model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
-    model = Trainer(**model_params)
+    model = Trainer(**model_params, snapshot_dir=restore_path)
 
     # Train and save
     training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])

@@ -15,7 +15,6 @@ import ivbase.utils.trainer as ivbt
 from ivbase.utils.snapshotcallback import SnapshotCallback
 from ivbase.utils.trainer import TrainerCheckpoint
 
-
 all_metrics_dict = dict(
     micro_roc=wrapped_partial(roc_auc_score, average='micro'),
     macro_roc=wrapped_partial(roc_auc_score, average='macro'),
@@ -69,20 +68,20 @@ class TensorBoardLogger2(Logger):
 class Trainer(ivbt.Trainer):
 
     def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, use_negative_sampled_loss=False, **loss_params):
+                 metrics_names=None, use_negative_sampled_loss=False, snapshot_dir="", **loss_params):
+
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
         gpu = torch.cuda.is_available()
-        if gpu:
-            network = network.cuda()
         optimizer = get_optimizer(optimizer)(network.parameters(), lr=lr, weight_decay=weight_decay)
         self.loss_name = loss
         self.loss_params = loss_params
         metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
         metrics = {name: all_metrics_dict[name] for name in metrics_names}
+
         ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu, metrics=metrics,
-                              loss_fn=BinaryCrossEntropyP(use_negative_sampled_loss))
+                              loss_fn=BinaryCrossEntropyP(use_negative_sampled_loss), snapshot_path=snapshot_dir)
 
         # Model.__init__(self, model=network, optimizer=optimizer,
         #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
@@ -90,7 +89,7 @@ class Trainer(ivbt.Trainer):
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
-              patience=3, min_lr=1e-06, **kwargs):
+              patience=3, min_lr=1e-06, checkpoint_path=None, **kwargs):
         if hasattr(self.model, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
             self.model.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
@@ -98,7 +97,6 @@ class Trainer(ivbt.Trainer):
         # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
 
         callbacks = []
-        restore_path, checkpoint_path = kwargs.pop("restore_path"), kwargs.pop("checkpoint_path")
         if with_early_stopping:
             early_stopping = EarlyStopping(monitor='val_loss', patience=patience, verbose=True)
             callbacks += [early_stopping]
@@ -114,9 +112,8 @@ class Trainer(ivbt.Trainer):
         if tensorboard_dir:
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
-        if restore_path:
-            print("This is your snapshot!")
-            snapshoter = SnapshotCallback(s3_path=restore_path)
+        if checkpoint_path:
+            snapshoter = SnapshotCallback(s3_path=checkpoint_path)
             callbacks += [snapshoter]
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
