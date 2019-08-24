@@ -113,7 +113,7 @@ class Trainer(ivbt.Trainer):
             tboard = TensorBoardLogger2(SummaryWriter(tensorboard_dir))
             callbacks += [tboard]
         if checkpoint_path:
-            snapshoter = SnapshotCallback(s3_path=checkpoint_path)
+            snapshoter = SnapshotCallback(s3_path=checkpoint_path, save_every=1)
             callbacks += [snapshoter]
         self.history = self.fit_generator(train_generator=train_loader,
                                           valid_generator=valid_loader,
