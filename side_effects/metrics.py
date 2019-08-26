@@ -62,7 +62,7 @@ def accuracy_score(y_pred, y_true, average, threshold=0.5):
     y_pred = np.where(y_pred >= threshold, 1, 0)
     if average == "macro":
         return np.mean(
-            np.array([skm.accuracy_score(y_true[:, i], y_pred[:, i]) for i in range(y_true.shape[1])])),
+            np.array([skm.accuracy_score(y_true[:, i], y_pred[:, i]) for i in range(y_true.shape[1])]))
     return skm.accuracy_score(y_true, y_pred)
 
 

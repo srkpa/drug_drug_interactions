@@ -105,7 +105,7 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
 
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
-                 build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=True):
+                 build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=False):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.labels_vectorizer = label_vectorizer
@@ -230,9 +230,11 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True, gene_net=gene_gene_ass_list,
                                    drug_gene_net=drug_gene_ass_list, decagon=decagon)
         valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+                                   decagon=decagon)
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+                                  decagon=decagon)
 
     else:
         if use_graph:
