@@ -107,7 +107,7 @@ class BMNDDI(nn.Module):
         return out
 
     def set_graph(self, nodes, edges):
-        self.nb_drugs = len(nodes)
+        self.nb_nodes = len(nodes)
         self.nodes = nodes
         self.edges = edges
         self.adj_mat = (edges.sum(2) > 0).float()

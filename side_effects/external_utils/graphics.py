@@ -5,14 +5,6 @@ import click
 from side_effects.data.utils import *
 
 
-#
-# @click.command()
-# @click.option('-d', '--dataset', type=str, default='twosides', help='folder to scan')
-# @click.option('-a', '--algo', type=str, default='bmnddi')
-# @click.option('-o', '--outfile', type=str, default='configs.json'
-#
-#
-
 def save_results(filename, contents, engine='xlsxwriter'):
     writer = pd.ExcelWriter(filename, engine=engine)
     for sheet, data in contents:

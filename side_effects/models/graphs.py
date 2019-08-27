@@ -111,6 +111,7 @@ class GraphConvolutionMulti(nn.Module):
             torch.nn.Linear(in_features=input_dim, out_features=output_dim, bias=False)
         )
 
+
     def init_weights(self):
         pass
 
