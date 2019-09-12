@@ -66,7 +66,7 @@ def accuracy_score(y_pred, y_true, average, threshold=0.5):
     return skm.accuracy_score(y_true, y_pred)
 
 
-def apk(predicted, actual, k=10):
+def apk(predicted, actual, k=50):
     """
     Computes the average precision at k.
     This function computes the average precision at k between two lists of
@@ -101,7 +101,7 @@ def apk(predicted, actual, k=10):
     return score / min(len(actual), k)
 
 
-def mapk(predicted, actual, k=10):
+def mapk(predicted, actual, k=50):
     """
     Computes the mean average precision at k.
     This function computes the mean average precision at k between two lists
@@ -121,5 +121,6 @@ def mapk(predicted, actual, k=10):
     score : double
             The mean average precision at k over the input lists
     """
-
+    predicted = np.where(predicted >= 0.5, 1, 0)
+    actual, predicted = actual.numpy().T.tolist(), predicted.T.tolist()
     return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])

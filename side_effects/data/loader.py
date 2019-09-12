@@ -262,24 +262,34 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 def load_side_effect_mapping(input_path, use_as_filter=None):
     res = {}
     data = pd.read_csv(input_path, sep="\t")
-    if isinstance(use_as_filter, str):
-        data = data.loc[data['system_organ_class'] == use_as_filter]
-    for row in data.itertuples():
-        res[row.side_effect] = row.system_organ_class
+    is_soc = all([term in data['system_organ_class'].values.tolist() for term in
+                  use_as_filter]) if use_as_filter is not None else True
+    if is_soc:
+        if isinstance(use_as_filter, list):
+            data = data.loc[data['system_organ_class'].isin(use_as_filter)]
+        for row in data.itertuples():
+            res[row.side_effect] = row.system_organ_class
+    else:
+        res = use_as_filter
     print("dataset side effect mapping: ", len(res))
     return res
 
 
 def relabel(data, labels_mapping):
     final_data = {}
-    has_filter = True if len(set(labels_mapping.values())) == 1 else False
+    has_filter = True if isinstance(labels_mapping, dict) and len(set(labels_mapping.values())) < 26 else False
     for (d1, d2), labels in data.items():
         temp = set()
         for label in labels:
-            new_label = labels_mapping.get(label, None)
+            new_label = None
+            if isinstance(labels_mapping, list):
+                new_label = label if label in labels_mapping else 'others'
+            if isinstance(labels_mapping, dict):
+                new_label = labels_mapping.get(label, None)
             if (new_label is not None) and not new_label.startswith("Unspecified"):
                 if has_filter:
                     new_label = label
                 temp.add(new_label)
-        final_data[(d1, d2)] = list(temp)
+        if len(temp) > 0:
+            final_data[(d1, d2)] = list(temp)
     return final_data
