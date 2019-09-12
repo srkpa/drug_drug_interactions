@@ -1,15 +1,8 @@
 import urllib3
 import requests
 import operator
-import pandas as pd
-import numpy as np
 
-import csv
-from collections import defaultdict, Counter
-from pickle import dump, load
-from ..external_utils.graphics import plot_dataframe
-from itertools import compress
-
+from collections import defaultdict
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

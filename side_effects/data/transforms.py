@@ -10,6 +10,7 @@ from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
 from sklearn.decomposition import PCA
+from ivbase.transformers.features import AdjGraphTransformer
 
 
 def fingerprints_transformer(drugs, smiles):
@@ -60,4 +61,11 @@ def dgl_transformer(drugs, smiles):
     print("Dgl transformer ---> {len(drugs}")
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
+    return dict(zip(drugs, X))
+
+
+def adj_transformer(drugs, smiles):
+    trans = AdjGraphTransformer()
+    X, ids = trans(smiles, dtype=np.float32)
+    drugs = list(itemgetter(*ids)(drugs))
     return dict(zip(drugs, X))

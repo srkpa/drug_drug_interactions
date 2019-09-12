@@ -29,7 +29,7 @@ set -e
 server=${server:=local}
 instance_type=${instance_type:=c4.2xlarge}
 
-#python ${expt_name}/config.py -o ${expt_name}/configs.json
+python ${expt_name}/config.py -o ${expt_name}/configs.json
 case ${server} in
   aws)
     exp_launch --launch-config launch_settings.json --exp-config ${expt_name}/configs.json --exp-name ${expt_name} -t $instance_type --user-data-path user_data.txt

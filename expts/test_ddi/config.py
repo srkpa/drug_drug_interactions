@@ -27,6 +27,7 @@ network_params = list(ParameterGrid(dict(
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
+    use_negative_sampled_loss=[True],
     lr=[1e-4],
     loss=['bce'],
     metrics_names=[None]

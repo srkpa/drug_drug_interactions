@@ -7,20 +7,12 @@ dataset_params = list(ParameterGrid(
     [
         dict(dataset_name=["twosides"],
              transformer=["seq"],
-             split_mode=["leave_drugs_out", "random"],
+             split_mode=["random"],
              test_size=[0.15],
              valid_size=[0.10],
              seed=[42],
              use_graph=[False],
-             decagon=[False]),
-        dict(dataset_name=["twosides"],
-             transformer=["seq"],
-             split_mode=["random"],
-             test_size=[0.25],
-             valid_size=[0.20],
-             seed=[42],
-             use_graph=[False],
-             decagon=[False]),
+             decagon=[False])
     ]
 
 ))
@@ -33,14 +25,14 @@ fit_params = list(ParameterGrid(
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
          vocab_size=[len(SMILES_ALPHABET) + 2],
-         embedding_size=[20],
+         embedding_size=[20, 32, 128],
          cnn_sizes=[
-             [256]*4, [512]*4
+             [256]*4, [128]*4, [128, 256], [128, 256, 512], [128, 256, 512, 1024]
          ],
-         kernel_size=[[5], [10]],
+         kernel_size=[[17]],
          dilatation_rate=[1],
          pooling_len=[2],
-         b_norm=[False])
+         b_norm=[False, True])
 ))
 
 
@@ -59,19 +51,18 @@ network_params = list(ParameterGrid(dict(
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128]*2],
     mode=["concat"],
-    att_hidden_dim=[None, 32],
-    dropout=[0.25],
-    b_norm=[False],
+    att_hidden_dim=[None],
+    dropout=[0.15],
+    b_norm=[True],
 )))
-
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-3, 1e-4],
+    lr=[1e-3],
     loss=['bce'],
     metrics_names=[None],
-    use_negative_sampled_loss=[False, True]
+    use_negative_sampled_loss=[False]
 )))
 
 

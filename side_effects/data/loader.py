@@ -1,20 +1,28 @@
-import torch
 import inspect
-import pandas as pd
-from functools import partial
 from collections import defaultdict
 from itertools import product
-from torch.utils.data import Dataset
-from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.model_selection import train_test_split
+
+import pandas as pd
 from ivbase.utils.commons import to_tensor
-from .transforms import *
+from ivbase.utils.datasets.datacache import DataCache
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MultiLabelBinarizer
+from torch.utils.data import Dataset
+from collections import Counter
+
+from side_effects.data.transforms import *
+
+options = Options()
+options.headless = True
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
     fgp=fingerprints_transformer,
     deepddi=deepddi_transformer,
-    dgl=dgl_transformer
+    dgl=dgl_transformer,
+    adj=dgl_transformer
 )
 
 
@@ -152,11 +160,13 @@ class DDIdataset(Dataset):
         graph_drugs = list(set([d1 for (d1, _, _) in self.samples] + [d2 for (_, d2, _) in self.samples]))
         self.graph_nodes_mapping = {node: i for i, node in enumerate(graph_drugs)}
         n_nodes = len(graph_drugs)
+
         n_edge_labels = len(self.labels_vectorizer.classes_)
         graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))
         for (drug1, drug2, label) in self.samples:
             i, j = self.graph_nodes_mapping[drug1], self.graph_nodes_mapping[drug2]
             graph_edges[i, j] = self.labels_vectorizer.transform([label])[0]
+
         graph_nodes = np.stack([self.drug_to_smiles[drug] for drug in graph_drugs], axis=0)
 
         if all([v is not None for v in [self.gene_net, self.drug_gene_net]]) and self.decagon:
@@ -194,10 +204,16 @@ class DDIdataset(Dataset):
 
 
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
-                        seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False):
+                        seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
+                        use_side_effects_mapping=False, use_as_filter=None):
     # My paths
     all_combo_path = f"{input_path}/{dataset_name}.csv"
     data = load_ddis_combinations(all_combo_path, header=True)
+
+    if use_side_effects_mapping:
+        se_path = f"{input_path}/twosides_socc.csv"
+        side_effects_mapping = load_side_effect_mapping(se_path, use_as_filter)
+        data = relabel(data, side_effects_mapping)
 
     # Load smiles
     all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
@@ -227,14 +243,13 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         drug_gene_ass = pd.read_csv(dgi_path)
         gene_gene_ass_list = gene_gene_ass.values.tolist()
         drug_gene_ass_list = drug_gene_ass.values.tolist()
-        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True, gene_net=gene_gene_ass_list,
-                                   drug_gene_net=drug_gene_ass_list, decagon=decagon)
-        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+        train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=False, gene_net=gene_gene_ass_list,
+                                   drug_gene_net=drug_gene_ass_list,
                                    decagon=decagon)
+        valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
-                                  decagon=decagon)
+                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
 
     else:
         if use_graph:
@@ -247,5 +262,32 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
             valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
+            print(train_dataset.nb_labels)
 
     return train_dataset, valid_dataset, test_dataset
+
+
+def load_side_effect_mapping(input_path, use_as_filter=None):
+    res = {}
+    data = pd.read_csv(input_path, sep="\t")
+    if isinstance(use_as_filter, str):
+        data = data.loc[data['system_organ_class'] == use_as_filter]
+    for row in data.itertuples():
+        res[row.side_effect] = row.system_organ_class
+    print("dataset side effect mapping: ", len(res))
+    return res
+
+
+def relabel(data, labels_mapping):
+    final_data = {}
+    has_filter = True if len(set(labels_mapping.values())) == 1 else False
+    for (d1, d2), labels in data.items():
+        temp = set()
+        for label in labels:
+            new_label = labels_mapping.get(label, None)
+            if (new_label is not None) and not new_label.startswith("Unspecified"):
+                if has_filter:
+                    new_label = label
+                temp.add(new_label)
+        final_data[(d1, d2)] = list(temp)
+    return final_data
