@@ -4,18 +4,10 @@ from itertools import product
 
 import pandas as pd
 from ivbase.utils.commons import to_tensor
-from ivbase.utils.datasets.datacache import DataCache
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
-from collections import Counter
-
 from side_effects.data.transforms import *
-
-options = Options()
-options.headless = True
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
