@@ -1,0 +1,1353 @@
+{
+  "model_params": [
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": [
+        "macro_roc",
+        "macro_auprc",
+        "micro_roc",
+        "micro_auprc"
+      ],
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": true,
+        "dropout": 0.15,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            5
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    }
+  ],
+  "dataset_params": [
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "thrombocytopenia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "bilirubinaemia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "bacterial infection"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "haematochezia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "hepatic failure"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "icterus"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "body temperature increased"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "sepsis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "abnormal lfts"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "fungal disease"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "pancreatitis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "arterial pressure nos decreased"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "difficulty breathing"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "anaemia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "heart rate increased"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "road traffic accident"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "afib"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "sinus tachycardia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "anaphylactic reaction"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "dizziness"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "arteriosclerotic heart disease"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "heart attack"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "angina"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "femur fracture"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cough"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cervical vertebral fracture"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "aspiration pneumonia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "anxiety"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "tinnitus"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "edema"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "infection viral"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cardiac decompensation"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "lung infiltration"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cardiac enlargement"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "insomnia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "bleeding hemorrhoids"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "extrasystoles ventricular"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "drug hypersensitivity"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "pleural pain"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "embolism pulmonary"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "erosive gastritis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "neuropathy"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "dyspepsia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "extremity pain"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "colitis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "orthopnea"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "hypoventilation"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "dehydration"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "difficulty in walking"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "high blood pressure"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "spondylosis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "hyperlipaemia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cardiomyopathy"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "pleurisy"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "burning sensation"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "drowsiness"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "bundle branch block left"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "diarrhea"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "chest pain"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "fatigue"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "proctalgia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "nausea"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "neumonia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "head ache"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "elevated cholesterol"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "palpitation"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "haemorrhoids"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "nightmare"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "anorexia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "still birth"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "enlarged spleen"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "enlarged liver"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "pericarditis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "loss of weight"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "ventricular fibrillation"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "aphasia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "hyperhidrosis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "cholelithiasis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "hip fracture"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "gastrointestinal bleed"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "infection"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "muscle weakness"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "blepharospasm"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "blurred vision"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "infection urinary tract"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "intervertebral disc disorder"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "fractured pelvis nos"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "polymyositis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "psychoses"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "neuralgia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "feeling unwell"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "narcolepsy"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "agitated"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "joint swelling"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "drug toxicity nos"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "emesis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "neoplasia"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "polyp"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "pyelonephritis"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_as_filter": [
+        "erythema"
+      ],
+      "use_side_effects_mapping": true,
+      "valid_size": 0.1
+    }
+  ],
+  "fit_params": [
+    {
+      "batch_size": 256,
+      "n_epochs": 100,
+      "with_early_stopping": true
+    }
+  ]
+}

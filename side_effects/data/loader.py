@@ -229,6 +229,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
+
     if decagon:
         ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"
         gene_gene_ass = pd.read_csv(ppi_path)

@@ -1,0 +1,965 @@
+	side_effect	count	system_organ_class
+0	thrombocytopenia	17060	Blood and lymphatic system disorders
+1	bilirubinaemia	7441	Hepatobiliary disorders
+2	bacterial infection	8928	Infections and infestations
+3	haematochezia	8355	Gastrointestinal disorders
+4	hepatic failure	8479	Hepatobiliary disorders
+5	icterus	7944	Hepatobiliary disorders
+6	body temperature increased	21806	Investigations
+7	sepsis	16575	Infections and infestations
+8	abnormal lfts	10960	Investigations
+9	fungal disease	8455	Infections and infestations
+10	pancreatitis	10749	Gastrointestinal disorders
+11	arterial pressure nos decreased	28568	Vascular disorders
+12	difficulty breathing	26037	Cardiac disorders
+13	anaemia	27006	Blood and lymphatic system disorders
+14	heart rate increased	17567	Cardiac disorders
+15	road traffic accident	9240	Social circumstances
+16	afib	15575	Cardiac disorders
+17	sinus tachycardia	10348	Cardiac disorders
+18	anaphylactic reaction	5893	Immune system disorders
+19	dizziness	20204	Cardiac disorders
+20	arteriosclerotic heart disease	13482	Cardiac disorders
+21	heart attack	16371	Cardiac disorders
+22	angina	9889	Cardiac disorders
+23	femur fracture	2783	Musculoskeletal and connective tissue disorders
+24	cough	17648	Respiratory, thoracic and mediastinal disorders
+25	cervical vertebral fracture	557	Musculoskeletal and connective tissue disorders
+26	aspiration pneumonia	7411	Respiratory, thoracic and mediastinal disorders
+27	anxiety	18980	Psychiatric disorders
+28	tinnitus	6437	Ear and labyrinth disorders
+29	edema	18419	Metabolism and nutrition disorders
+30	infection viral	6589	Infections and infestations
+31	cardiac decompensation	16555	Psychiatric disorders
+32	lung infiltration	8465	Respiratory, thoracic and mediastinal disorders
+33	cardiac enlargement	10979	Cardiac disorders
+34	insomnia	15450	Psychiatric disorders
+35	bleeding hemorrhoids	2145	Gastrointestinal disorders
+36	extrasystoles ventricular	6627	Cardiac disorders
+37	drug hypersensitivity	9358	Immune system disorders
+38	pleural pain	21781	Nervous system disorders
+39	embolism pulmonary	12173	Vascular disorders
+40	erosive gastritis	3363	Gastrointestinal disorders
+41	neuropathy	17910	Nervous system disorders
+42	dyspepsia	13145	Gastrointestinal disorders
+43	extremity pain	17808	Musculoskeletal and connective tissue disorders
+44	colitis	6052	Gastrointestinal disorders
+45	orthopnea	3230	Nervous system disorders
+46	hypoventilation	21322	Respiratory, thoracic and mediastinal disorders
+47	dehydration	19100	Metabolism and nutrition disorders
+48	difficulty in walking	7040	Nervous system disorders
+49	high blood pressure	19376	Vascular disorders
+50	spondylosis	913	Musculoskeletal and connective tissue disorders
+51	hyperlipaemia	9173	Metabolism and nutrition disorders
+52	cardiomyopathy	7893	Cardiac disorders
+53	pleurisy	3382	Respiratory, thoracic and mediastinal disorders
+54	burning sensation	8154	General disorders and administration site conditions
+55	drowsiness	15545	Psychiatric disorders
+56	bundle branch block left	4414	Cardiac disorders
+57	diarrhea	23848	Gastrointestinal disorders
+58	chest pain	21013	General disorders and administration site conditions
+59	fatigue	24260	General disorders and administration site conditions
+60	proctalgia	2503	Gastrointestinal disorders
+61	nausea	25190	Gastrointestinal disorders
+62	neumonia	24430	Infections and infestations
+63	head ache	19803	Nervous system disorders
+64	elevated cholesterol	14071	Metabolism and nutrition disorders
+65	palpitation	11445	Cardiac disorders
+66	haemorrhoids	7690	Gastrointestinal disorders
+67	nightmare	4591	Psychiatric disorders
+68	anorexia	18177	Metabolism and nutrition disorders
+69	still birth	11952	General disorders and administration site conditions
+70	enlarged spleen	6246	Blood and lymphatic system disorders
+71	enlarged liver	7035	Hepatobiliary disorders
+72	pericarditis	2917	Cardiac disorders
+73	loss of weight	18785	Investigations
+74	ventricular fibrillation	5327	Cardiac disorders
+75	aphasia	5643	Psychiatric disorders
+76	hyperhidrosis	13438	General disorders and administration site conditions
+77	cholelithiasis	11027	Hepatobiliary disorders
+78	hip fracture	3928	Musculoskeletal and connective tissue disorders
+79	gastrointestinal bleed	11775	Gastrointestinal disorders
+80	infection	13172	Infections and infestations
+81	muscle weakness	11410	Musculoskeletal and connective tissue disorders
+82	blepharospasm	5855	Eye disorders
+83	blurred vision	13404	Eye disorders
+84	infection urinary tract	17658	Infections and infestations
+85	intervertebral disc disorder	5455	Musculoskeletal and connective tissue disorders
+86	fractured pelvis nos	2063	Musculoskeletal and connective tissue disorders
+87	polymyositis	1109	Immune system disorders
+88	psychoses	5732	Psychiatric disorders
+89	neuralgia	5374	Nervous system disorders
+90	feeling unwell	14593	General disorders and administration site conditions
+91	narcolepsy	14367	Nervous system disorders
+92	agitated	14192	Psychiatric disorders
+93	joint swelling	9187	Musculoskeletal and connective tissue disorders
+94	drug toxicity nos	10952	Psychiatric disorders
+95	emesis	23043	Gastrointestinal disorders
+96	neoplasia	2236	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+97	polyp	2540	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+98	pyelonephritis	4183	Infections and infestations
+99	erythema	13598	Skin and subcutaneous tissue disorders
+100	facial flushing	10025	General disorders and administration site conditions
+101	folate deficiency	602	Metabolism and nutrition disorders
+102	asystole	12501	Cardiac disorders
+103	dental caries	5268	Gastrointestinal disorders
+104	kidney failure	18892	Renal and urinary disorders
+105	tendinitis	4595	Musculoskeletal and connective tissue disorders
+106	acute kidney failure	17945	Renal and urinary disorders
+107	hepatitis	7251	Hepatobiliary disorders
+108	weight gain	17112	Investigations
+109	abdominal pain	21410	Gastrointestinal disorders
+110	food intolerance	1076	Metabolism and nutrition disorders
+111	rhabdomyolysis	8053	Musculoskeletal and connective tissue disorders
+112	cryptococcosis	1056	Infections and infestations
+113	gall bladder	6859	Hepatobiliary disorders
+114	bradycardia	12141	Cardiac disorders
+115	convulsion	13688	Nervous system disorders
+116	deglutition disorder	14387	Gastrointestinal disorders
+117	confusion	19365	Psychiatric disorders
+118	encephalopathy	7763	Nervous system disorders
+119	septic shock	9254	Vascular disorders
+120	cardiac valvulopathy	4812	Cardiac disorders
+121	arterial pressure nos increased	13302	Investigations
+122	aching muscles	12590	Musculoskeletal and connective tissue disorders
+123	failure to thrive	3342	Pregnancy, puerperium and perinatal conditions
+124	cachectic	2848	Metabolism and nutrition disorders
+125	convulsions grand mal	5447	Nervous system disorders
+126	abnormal eeg	2679	Investigations
+127	cardiac failure	9377	Cardiac disorders
+128	pulmonary arrest	6027	Respiratory, thoracic and mediastinal disorders
+129	hallucination	12518	Psychiatric disorders
+130	hyperglycaemia	18779	Metabolism and nutrition disorders
+131	abdominal hernia	2750	Gastrointestinal disorders
+132	sinus arrest	681	Cardiac disorders
+133	atrioventricular block	3257	Cardiac disorders
+134	apoplexy	15235	Vascular disorders
+135	pyoderma	6844	Skin and subcutaneous tissue disorders
+136	blood calcium increased	6050	Metabolism and nutrition disorders
+137	asthenia	23515	General disorders and administration site conditions
+138	aplasia pure red cell	2183	Immune system disorders
+139	pain	23894	General disorders and administration site conditions
+140	benign intracranial hypertension	634	Nervous system disorders
+141	amenorrhea	1756	Reproductive system and breast disorders
+142	sensory disturbance	4227	Nervous system disorders
+143	skin striae	733	Skin and subcutaneous tissue disorders
+144	muscle paresis	2946	Nervous system disorders
+145	muscle disorder	5484	Musculoskeletal and connective tissue disorders
+146	fainting	13728	Cardiac disorders
+147	bladder cancer	1612	Renal and urinary disorders
+148	bleeding vaginal	3355	Reproductive system and breast disorders
+149	uterine bleeding	935	Reproductive system and breast disorders
+150	drug withdrawal	7956	General disorders and administration site conditions
+151	muscle spasm	15332	Musculoskeletal and connective tissue disorders
+152	bladder retention	7710	Renal and urinary disorders
+153	neuropathy peripheral	11316	Nervous system disorders
+154	metabolic acidosis	8259	Metabolism and nutrition disorders
+155	pericardial effusion	8775	Cardiac disorders
+156	sinusitis	12955	Infections and infestations
+157	bone pain	8398	Musculoskeletal and connective tissue disorders
+158	haemorrhage rectum	9212	Gastrointestinal disorders
+159	angiopathy	5197	Vascular disorders
+160	breast disorder	1021	Reproductive system and breast disorders
+161	hernia hiatal	8257	Gastrointestinal disorders
+162	leucocytosis	7669	Blood and lymphatic system disorders
+163	haematoma	6526	Vascular disorders
+164	intestinal perforation	3405	Gastrointestinal disorders
+165	alopecia	8438	Skin and subcutaneous tissue disorders
+166	aptyalism	9525	Gastrointestinal disorders
+167	ischaemia	4408	Vascular disorders
+168	hypercapnia	1831	Metabolism and nutrition disorders
+169	epilepsy	2896	Nervous system disorders
+170	allergic dermatitis	12906	Immune system disorders
+171	neutropenia	15171	Blood and lymphatic system disorders
+172	paraesthesia	13144	Nervous system disorders
+173	edema extremities	21981	Metabolism and nutrition disorders
+174	loss of consciousness	14354	Nervous system disorders
+175	movement disorder	4521	Nervous system disorders
+176	decreased body temperature	5255	Investigations
+177	abdominal distension	12369	Gastrointestinal disorders
+178	fibromyalgia	7759	Musculoskeletal and connective tissue disorders
+179	disorder renal	9086	Renal and urinary disorders
+180	nocturia	4247	Renal and urinary disorders
+181	hypotension orthostatic	7553	Vascular disorders
+182	cataract	7425	Eye disorders
+183	aseptic necrosis bone	9279	Musculoskeletal and connective tissue disorders
+184	ild	6573	Respiratory, thoracic and mediastinal disorders
+185	nephrolithiasis	7249	Renal and urinary disorders
+186	blindness	6237	Eye disorders
+187	optic atrophy	796	Eye disorders
+188	bronchitis	13602	Infections and infestations
+189	arthritis	9600	Musculoskeletal and connective tissue disorders
+190	excess potassium	8902	Metabolism and nutrition disorders
+191	aseptic meningitis	1105	Infections and infestations
+192	ovarian cyst	3299	Reproductive system and breast disorders
+193	leucopenia	8313	Blood and lymphatic system disorders
+194	lung neoplasms	6472	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+195	pleural effusion	16899	Respiratory, thoracic and mediastinal disorders
+196	agranulocytoses	4279	Blood and lymphatic system disorders
+197	ebv infection	1216	Infections and infestations
+198	apnea	4030	Respiratory, thoracic and mediastinal disorders
+199	aspergillosis	2572	Infections and infestations
+200	bone marrow failure	12525	Blood and lymphatic system disorders
+201	aspartate aminotransferase increase	13117	Investigations
+202	epistaxis	8160	Vascular disorders
+203	decubitus ulcer	4875	Skin and subcutaneous tissue disorders
+204	conjunctivitis	8170	Eye disorders
+205	peliosis	3479	Vascular disorders
+206	coughing blood	7692	Cardiac disorders
+207	respiratory failure	15961	Metabolism and nutrition disorders
+208	mouth bleeding	2232	Gastrointestinal disorders
+209	pneumothorax	5342	Respiratory, thoracic and mediastinal disorders
+210	right heart failure	2935	Cardiac disorders
+211	ascites	8979	Hepatobiliary disorders
+212	hypoglycaemia	12443	Metabolism and nutrition disorders
+213	black stools	5842	Gastrointestinal disorders
+214	incontinence	10616	Gastrointestinal disorders
+215	hydrocephalus	2611	Nervous system disorders
+216	cmv infection	3303	Infections and infestations
+217	bacteraemia	6816	Infections and infestations
+218	itch	13364	Skin and subcutaneous tissue disorders
+219	disorder lung	8557	Respiratory, thoracic and mediastinal disorders
+220	abnormal gait	13801	General disorders and administration site conditions
+221	chill	13749	Musculoskeletal and connective tissue disorders
+222	nephrosclerosis	5265	Renal and urinary disorders
+223	eruption	15526	Skin and subcutaneous tissue disorders
+224	hypoxia	11805	Respiratory, thoracic and mediastinal disorders
+225	excoriation	4410	Skin and subcutaneous tissue disorders
+226	tremor	14419	Nervous system disorders
+227	lyell	4760	Immune system disorders
+228	left ventricular hypertrophy	2019	Cardiac disorders
+229	cognitive disorder	6771	Psychiatric disorders
+230	hemiplegia	3268	Nervous system disorders
+231	bleeding	14143	Vascular disorders
+232	cerebral infarct	8223	Vascular disorders
+233	acidosis	8621	Metabolism and nutrition disorders
+234	pneumocystis carinii pneumonia	827	Infections and infestations
+235	pulmonary hypertension	8677	Vascular disorders
+236	adenopathy	9159	Blood and lymphatic system disorders
+237	atelectasis	12062	Respiratory, thoracic and mediastinal disorders
+238	ureteral obstruction	2553	Renal and urinary disorders
+239	herpes zoster	7359	Skin and subcutaneous tissue disorders
+240	raynauds phenomenon	1942	Vascular disorders
+241	multifocal leukoencephalopathy	1089	Infections and infestations
+242	allergies	11218	Immune system disorders
+243	hematoma subdural	3156	Vascular disorders
+244	acute respiratory distress syndrome	7161	Respiratory, thoracic and mediastinal disorders
+245	angiitis	5599	Immune system disorders
+246	alcoholic intoxication	1487	Injury, poisoning and procedural complications
+247	ekbom syndrome	5974	Musculoskeletal and connective tissue disorders
+248	stridor	1552	Respiratory, thoracic and mediastinal disorders
+249	viral pharyngitis	898	Respiratory, thoracic and mediastinal disorders
+250	acute bronchitis	5343	Infections and infestations
+251	birth defect	2862	Congenital, familial and genetic disorders
+252	decreased hearing	4335	Ear and labyrinth disorders
+253	bronchiolitis	636	Infections and infestations
+254	bulging	10677	General disorders and administration site conditions
+255	caesarean section	1587	Surgical and medical procedures
+256	idiopathic thrombocytopenic purpura	1685	Immune system disorders
+257	dysphasia	3096	Psychiatric disorders
+258	chicken pox	516	Skin and subcutaneous tissue disorders
+259	deafness neurosensory	1371	Ear and labyrinth disorders
+260	cheilosis	1523	Skin and subcutaneous tissue disorders
+261	infection upper respiratory	9356	Infections and infestations
+262	anemia aplastic	1670	Blood and lymphatic system disorders
+263	mucositis oral	7554	Gastrointestinal disorders
+264	excessive thirst	5934	Metabolism and nutrition disorders
+265	enterocolitis	1663	Gastrointestinal disorders
+266	lung edema	12309	Cardiac disorders
+267	herpes simplex	4340	Skin and subcutaneous tissue disorders
+268	cardiac ischemia	9133	Cardiac disorders
+269	wheeze	8441	Respiratory, thoracic and mediastinal disorders
+270	gouty arthritis	970	Musculoskeletal and connective tissue disorders
+271	constipated	17639	Gastrointestinal disorders
+272	glossitis	1555	Gastrointestinal disorders
+273	light sensitivity	3768	Eye disorders
+274	increased white blood cell count	11687	Investigations
+275	bacterial vaginitis	526	Reproductive system and breast disorders
+276	deep vein thromboses	11940	Vascular disorders
+277	elevated erythrocyte sedimentation rate	3787	Investigations
+278	increased platelet count	7077	Blood and lymphatic system disorders
+279	detached retina	2110	Eye disorders
+280	polyuria	3366	Renal and urinary disorders
+281	bone marrow transplant	2125	Surgical and medical procedures
+282	bacterial pneumonia	3323	Infections and infestations
+283	cardiovascular collapse	8681	Vascular disorders
+284	gastric inflammation	11070	Gastrointestinal disorders
+285	nasopharyngitis	6226	Infections and infestations
+286	hypokalaemia	12715	Metabolism and nutrition disorders
+287	chronic kidney disease	9143	Renal and urinary disorders
+288	portal hypertension	1792	Vascular disorders
+289	disease of liver	7092	Hepatobiliary disorders
+290	haemolytic anaemia	2725	Blood and lymphatic system disorders
+291	hypogammaglobulinaemia	931	Immune system disorders
+292	cerebral ischaemia	4555	Vascular disorders
+293	coma	9215	Nervous system disorders
+294	blood calcium decreased	10633	Metabolism and nutrition disorders
+295	anisocoria	992	Eye disorders
+296	atrial ectopic beats	3586	Cardiac disorders
+297	cardiac murmur	6410	Investigations
+298	dysphonia	6101	Respiratory, thoracic and mediastinal disorders
+299	adenitis	1655	Blood and lymphatic system disorders
+300	mouth ulcer	5416	Gastrointestinal disorders
+301	abscess	6782	Infections and infestations
+302	candida infection	9808	Infections and infestations
+303	status epilepticus	1904	Nervous system disorders
+304	hepatic encephalopathy	2992	Nervous system disorders
+305	autonomic instability	1487	General disorders and administration site conditions
+306	glucose intolerance	2107	Metabolism and nutrition disorders
+307	blood in urine	9201	Investigations
+308	blood sodium decreased	14665	Metabolism and nutrition disorders
+309	acne	3495	Skin and subcutaneous tissue disorders
+310	migraine	9621	Vascular disorders
+311	hemiparesis	6609	Nervous system disorders
+312	dental pain	5059	Gastrointestinal disorders
+313	dental abscess	4450	Gastrointestinal disorders
+314	abdominal pain upper	13163	Gastrointestinal disorders
+315	nasal sinus congestion	3048	Respiratory, thoracic and mediastinal disorders
+316	aching joints	18061	Musculoskeletal and connective tissue disorders
+317	colitis pseudomembranous	1287	Gastrointestinal disorders
+318	arrhythmia	12409	Cardiac disorders
+319	face pain	3528	General disorders and administration site conditions
+320	osteoporosis	6854	Musculoskeletal and connective tissue disorders
+321	arthritis rheumatoid	5785	Musculoskeletal and connective tissue disorders
+322	hyperparathyroidism	1711	Metabolism and nutrition disorders
+323	osteoarthritis	10352	Musculoskeletal and connective tissue disorders
+324	angioedema	4849	Immune system disorders
+325	basal cell carcinoma	2889	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+326	myelodysplasia	3172	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+327	hydronephrosis	3881	Renal and urinary disorders
+328	nasal congestion	6809	Respiratory, thoracic and mediastinal disorders
+329	back ache	19930	Musculoskeletal and connective tissue disorders
+330	haematemesis	6795	Gastrointestinal disorders
+331	odynophagia	2993	Gastrointestinal disorders
+332	cerebral atrophy	4775	Nervous system disorders
+333	sinus bradycardia	5628	Cardiac disorders
+334	nodule skin	2254	Skin and subcutaneous tissue disorders
+335	phlebothrombosis	9464	Vascular disorders
+336	rhinitis	4757	Infections and infestations
+337	tachycardia ventricular	7098	Cardiac disorders
+338	cervicalgia	10213	Musculoskeletal and connective tissue disorders
+339	spinning sensation	6835	Ear and labyrinth disorders
+340	nystagmus	2319	Eye disorders
+341	peritonitis	4407	Gastrointestinal disorders
+342	glucosuria	2894	Renal and urinary disorders
+343	palsies	4002	Nervous system disorders
+344	cholecystitis	6573	Hepatobiliary disorders
+345	elevated triglycerides	3894	Metabolism and nutrition disorders
+346	malabsorption	1258	Metabolism and nutrition disorders
+347	mod	10531	General disorders and administration site conditions
+348	optic disc edema	1536	Eye disorders
+349	candidiasis of mouth	6998	Gastrointestinal disorders
+350	ear infection	3541	Infections and infestations
+351	abnormal movements	7126	Nervous system disorders
+352	erythema multiforme	2764	Immune system disorders
+353	diplopia	6848	Eye disorders
+354	fib	3292	Cardiac disorders
+355	soft tissue infection	991	Musculoskeletal and connective tissue disorders
+356	gastric ulcer	6345	Gastrointestinal disorders
+357	mouth pain	5654	Gastrointestinal disorders
+358	petit mal	3164	Nervous system disorders
+359	platelet disorder	968	Blood and lymphatic system disorders
+360	pneumonia klebsiella	1792	Infections and infestations
+361	abnormal laboratory findings	6238	Investigations
+362	lower gi bleeding	2982	Vascular disorders
+363	strabismus	1995	Eye disorders
+364	viral pneumonia	853	Respiratory, thoracic and mediastinal disorders
+365	bundle branch block right	5558	Cardiac disorders
+366	retinal bleeding	2197	Eye disorders
+367	cardiac disease	11412	Cardiac disorders
+368	embolism	2651	Vascular disorders
+369	transient ischaemic attack	9538	Vascular disorders
+370	hyperuricaemia	3413	Metabolism and nutrition disorders
+371	acid reflux	14122	Gastrointestinal disorders
+372	bladder inflammation	11028	Infections and infestations
+373	pain in throat	5708	Gastrointestinal disorders
+374	bundle branch block	1507	Cardiac disorders
+375	diverticulitis	6940	Gastrointestinal disorders
+376	intestinal ulcer	775	Gastrointestinal disorders
+377	enuresis	1024	Psychiatric disorders
+378	muscle inflammation	3461	Musculoskeletal and connective tissue disorders
+379	bronchial spasm	5743	Immune system disorders
+380	neonatal respiratory distress syndrome	507	Respiratory, thoracic and mediastinal disorders
+381	electrolyte disorder	5694	Metabolism and nutrition disorders
+382	hiccough	2166	Gastrointestinal disorders
+383	excessive salivation	2205	Gastrointestinal disorders
+384	hepatic necrosis	2662	Hepatobiliary disorders
+385	petechia	4028	Vascular disorders
+386	dysarthria	9869	Psychiatric disorders
+387	pharyngeal inflammation	5215	Gastrointestinal disorders
+388	cutaneous candidiasis	617	Infections and infestations
+389	esophagitis	9148	Gastrointestinal disorders
+390	fatty liver	8827	Hepatobiliary disorders
+391	arthropathy	7766	Musculoskeletal and connective tissue disorders
+392	cerebral haemorrhage	5143	Vascular disorders
+393	head injury	6660	Injury, poisoning and procedural complications
+394	adenocarcinoma	7474	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+395	hypernatraemia	4485	Metabolism and nutrition disorders
+396	portal vein thrombosis	1016	Vascular disorders
+397	syncope vasovagal	3147	Vascular disorders
+398	diabetes	12718	Metabolism and nutrition disorders
+399	eosinophil count increased	4227	Investigations
+400	acute brain syndrome	7111	Psychiatric disorders
+401	duodenal ulcer	3117	Gastrointestinal disorders
+402	malnourished	7308	Metabolism and nutrition disorders
+403	lymphocytes decreased	2327	Blood and lymphatic system disorders
+404	dry eye	2782	Eye disorders
+405	goiter	3265	Metabolism and nutrition disorders
+406	proteinuria	4720	Renal and urinary disorders
+407	hypophosphataemia	2824	Metabolism and nutrition disorders
+408	small intestinal obstruction	4839	Gastrointestinal disorders
+409	anosmia	2461	Respiratory, thoracic and mediastinal disorders
+410	cellulitis	14377	Skin and subcutaneous tissue disorders
+411	candidiasis of vagina	1553	Reproductive system and breast disorders
+412	vaginal discharge	1553	Reproductive system and breast disorders
+413	antinuclear antibody positive	3111	Investigations
+414	psoriasis	3856	Immune system disorders
+415	blood pressure abnormal	2510	Investigations
+416	spinal fracture	3131	Musculoskeletal and connective tissue disorders
+417	gastroenteritis	7307	Gastrointestinal disorders
+418	ecchymoses	5936	Vascular disorders
+419	lobar pneumonia	9583	Infections and infestations
+420	hive	7720	Immune system disorders
+421	anal fistula	912	Gastrointestinal disorders
+422	cholecystectomies	3887	Surgical and medical procedures
+423	cyst	5076	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+424	multiple sclerosis	5272	Immune system disorders
+425	adynamic ileus	8164	Gastrointestinal disorders
+426	phlebitis	2941	Vascular disorders
+427	eating disorder	6163	Metabolism and nutrition disorders
+428	ear ache	5489	Ear and labyrinth disorders
+429	adrenal insufficiency	3080	Metabolism and nutrition disorders
+430	renal cyst	5447	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+431	hypomagnesaemia	5408	Metabolism and nutrition disorders
+432	dyspnea exertional	9666	Cardiac disorders
+433	malignant melanoma	2171	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+434	carcinoma of the colon	1939	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+435	polyarthritis	2005	Musculoskeletal and connective tissue disorders
+436	fistula	3893	Musculoskeletal and connective tissue disorders
+437	supraventricular tachycardia	5905	Cardiac disorders
+438	cramp	3858	Musculoskeletal and connective tissue disorders
+439	lymphoma	3418	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+440	breast cancer	4736	Reproductive system and breast disorders
+441	thyroid neoplasia	1947	Endocrine disorders
+442	colon spastic	4738	Gastrointestinal disorders
+443	colonic polyp	4698	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+444	tracheitis	853	Respiratory, thoracic and mediastinal disorders
+445	obstructive uropathy	1375	Renal and urinary disorders
+446	gastroenteritis viral	3816	Gastrointestinal disorders
+447	hyperthyroidism	3463	Metabolism and nutrition disorders
+448	thyroid disease	3850	Endocrine disorders
+449	arteriosclerosis	7225	Vascular disorders
+450	flu	6598	Infections and infestations
+451	hypochloraemia	6428	Metabolism and nutrition disorders
+452	enteritis	1966	Gastrointestinal disorders
+453	bruise	10902	Skin and subcutaneous tissue disorders
+454	glossodynia	4102	Gastrointestinal disorders
+455	sneezing	3043	Respiratory, thoracic and mediastinal disorders
+456	aortic regurgitation	5599	Cardiac disorders
+457	aortic stenosis	3833	Vascular disorders
+458	choking	2645	Respiratory, thoracic and mediastinal disorders
+459	eye pain	4673	Eye disorders
+460	rotator cuff syndrome	5649	Musculoskeletal and connective tissue disorders
+461	vitamin b 12 deficiency	1618	Metabolism and nutrition disorders
+462	amnesia	14099	Psychiatric disorders
+463	dyspnoea paroxysmal nocturnal	1528	Cardiac disorders
+464	haemorrhage intracranial	2730	Vascular disorders
+465	brain abscess	821	Nervous system disorders
+466	dermatitis medicamentosa	3737	Immune system disorders
+467	subarachnoid haemorrhage	2960	Vascular disorders
+468	bleb	7119	Skin and subcutaneous tissue disorders
+469	lung fibrosis	4802	Respiratory, thoracic and mediastinal disorders
+470	clotting	6520	Blood and lymphatic system disorders
+471	multiple myeloma	4427	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+472	cardiac tamponade	1697	Cardiac disorders
+473	encephalitis	1956	Nervous system disorders
+474	vitamin d deficiency	879	Metabolism and nutrition disorders
+475	abnormal vision	1411	Eye disorders
+476	ataxia	3675	General disorders and administration site conditions
+477	micturition urgency	3524	Renal and urinary disorders
+478	obesity	6715	Metabolism and nutrition disorders
+479	acute pancreatitis	6128	Gastrointestinal disorders
+480	dermatitis exfoliative	2546	Immune system disorders
+481	cerebral vascular disorder	2375	Vascular disorders
+482	osteomalacia	3448	Musculoskeletal and connective tissue disorders
+483	eye swelling	3792	Eye disorders
+484	cutaneous ulcer	6735	Vascular disorders
+485	pulmonary mass	2256	Respiratory, thoracic and mediastinal disorders
+486	lipoma	9754	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+487	macula lutea degeneration	1905	Eye disorders
+488	ulcer	5661	General disorders and administration site conditions
+489	upper gastrointestinal bleeding	4502	Gastrointestinal disorders
+490	gangrene	2715	Vascular disorders
+491	contact dermatitis	2062	Immune system disorders
+492	streptococcal infection	3881	Infections and infestations
+493	eosinophilic pneumonia	519	Respiratory, thoracic and mediastinal disorders
+494	musculoskeletal pain	6766	Musculoskeletal and connective tissue disorders
+495	gastric cancer	1224	Gastrointestinal disorders
+496	carcinoma of the cervix	656	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+497	cancer	3321	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+498	motor retardation	960	Nervous system disorders
+499	acute myeloblastic leukemia	2576	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+500	hypothyroid	7954	Metabolism and nutrition disorders
+501	rib fracture	5296	Musculoskeletal and connective tissue disorders
+502	nail disorder	1955	Skin and subcutaneous tissue disorders
+503	myocarditis	1901	Cardiac disorders
+504	balance disorder	9907	Nervous system disorders
+505	atrial flutter	4269	Cardiac disorders
+506	pharyngitis streptococcal	1872	Infections and infestations
+507	laryngitis	3168	Infections and infestations
+508	joint effusion	2485	Musculoskeletal and connective tissue disorders
+509	disseminated lupus erythematosus	3974	Musculoskeletal and connective tissue disorders
+510	belching	3470	Gastrointestinal disorders
+511	liver abscess	1025	Hepatobiliary disorders
+512	hordeolum	667	Eye disorders
+513	dry skin	6124	Skin and subcutaneous tissue disorders
+514	diabetic acidosis	3523	Metabolism and nutrition disorders
+515	sleep disorder	9102	Psychiatric disorders
+516	acute sinusitis	2984	Respiratory, thoracic and mediastinal disorders
+517	parkinson	1668	Nervous system disorders
+518	myoglobinuria	4257	Renal and urinary disorders
+519	esophageal stenosis	1503	Gastrointestinal disorders
+520	endocarditis	2798	Cardiac disorders
+521	reflux esophagitis	3343	Gastrointestinal disorders
+522	esophageal ulcer	2466	Gastrointestinal disorders
+523	metabolic encephalopathy	2742	Nervous system disorders
+524	duodenal ulcer perforation	1001	Gastrointestinal disorders
+525	amentia	4155	Psychiatric disorders
+526	flank pain	4663	Musculoskeletal and connective tissue disorders
+527	granuloma	3787	Skin and subcutaneous tissue disorders
+528	hyperpigmentation	1525	Skin and subcutaneous tissue disorders
+529	neuritis	2578	Nervous system disorders
+530	gingivitis	5660	Gastrointestinal disorders
+531	floaters	1964	Eye disorders
+532	lung neoplasm malignant	4121	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+533	periodontal disease	2478	Gastrointestinal disorders
+534	gingival pain	2835	Gastrointestinal disorders
+535	ischias	4259	Musculoskeletal and connective tissue disorders
+536	abnormal ecg	5523	Investigations
+537	bruxism	10666	Gastrointestinal disorders
+538	cholecystitis acute	2076	Hepatobiliary disorders
+539	spinal compression fracture	3677	Metabolism and nutrition disorders
+540	perirectal abscess	1119	Gastrointestinal disorders
+541	gastric polyps	1691	Gastrointestinal disorders
+542	esophageal cancer	1123	Gastrointestinal disorders
+543	rhinorrhea	6629	Respiratory, thoracic and mediastinal disorders
+544	anaemia hypochromic	510	Blood and lymphatic system disorders
+545	gastroduodenal ulcer	4048	Gastrointestinal disorders
+546	nodule	3349	General disorders and administration site conditions
+547	superficial thrombophlebitis	1974	Vascular disorders
+548	fecal occult blood	2142	Investigations
+549	tympanic membrane perforation	746	Ear and labyrinth disorders
+550	lung abscess	712	Infections and infestations
+551	near syncope	2828	Nervous system disorders
+552	external ear infection	1840	Ear and labyrinth disorders
+553	pneumonia primary atypical	1343	Infections and infestations
+554	respiratory alkalosis	1093	Metabolism and nutrition disorders
+555	panic attack	6670	Psychiatric disorders
+556	paraparesis	729	Nervous system disorders
+557	sleep apnea	9190	Respiratory, thoracic and mediastinal disorders
+558	panic disorder	3243	Psychiatric disorders
+559	costochondritis	1703	Musculoskeletal and connective tissue disorders
+560	agoraphobia	1153	Psychiatric disorders
+561	altered bowel function	1681	Gastrointestinal disorders
+562	hoarseness	1646	Psychiatric disorders
+563	flatulence	7915	Gastrointestinal disorders
+564	decreased libido	3664	Reproductive system and breast disorders
+565	skin lesion	6764	Skin and subcutaneous tissue disorders
+566	urosepsis	3932	Infections and infestations
+567	bone fracture spontaneous	2385	Musculoskeletal and connective tissue disorders
+568	allergic vasculitis	2052	Vascular disorders
+569	actinic keratosis	1792	Skin and subcutaneous tissue disorders
+570	dysuria	8807	Renal and urinary disorders
+571	thrombotic microangiopathy	2716	Blood and lymphatic system disorders
+572	allergic alveolitis	1147	Immune system disorders
+573	lung adenocarcinoma	739	Respiratory, thoracic and mediastinal disorders
+574	glaucoma	5736	Eye disorders
+575	colitis ischemic	3528	Gastrointestinal disorders
+576	chronic obstructive airway disease	11605	Respiratory, thoracic and mediastinal disorders
+577	arachnoiditis	816	Injury, poisoning and procedural complications
+578	quadriplegia	696	Nervous system disorders
+579	polyneuropathy	3450	Nervous system disorders
+580	folliculitis	1186	Skin and subcutaneous tissue disorders
+581	cholangitis	1828	Hepatobiliary disorders
+582	ankle fracture	3331	Musculoskeletal and connective tissue disorders
+583	hepatitis toxic	2201	Hepatobiliary disorders
+584	biliary tract disorder	2054	Hepatobiliary disorders
+585	haemangioma	1536	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+586	atherosclerosis	3370	Vascular disorders
+587	psoriatic arthritis	1119	Immune system disorders
+588	asthma	11142	Immune system disorders
+589	atrioventricular block second degree	1726	Cardiac disorders
+590	calculus ureteric	1172	Renal and urinary disorders
+591	hernia	3619	General disorders and administration site conditions
+592	hydroureter	760	Renal and urinary disorders
+593	meningioma	1477	Nervous system disorders
+594	nervous tension	8260	Psychiatric disorders
+595	nephrotic syndrome	2075	Renal and urinary disorders
+596	faecal incontinence	5050	Gastrointestinal disorders
+597	carcinoma of prostate	3403	Reproductive system and breast disorders
+598	insulin dependent diabetes mellitus	3335	Metabolism and nutrition disorders
+599	superior vena cava syndrome	634	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+600	gout	4699	Musculoskeletal and connective tissue disorders
+601	fibrosing alveolitis	646	Immune system disorders
+602	proctitis	966	Gastrointestinal disorders
+603	retrocollis	755	Musculoskeletal and connective tissue disorders
+604	eyelid diseases	1226	Eye disorders
+605	atrioventricular block complete	3087	Cardiac disorders
+606	atrioventricular block first degree	4288	Cardiac disorders
+607	hot flash	6664	Reproductive system and breast disorders
+608	chest infection	4067	Infections and infestations
+609	blepharoptosis	2062	Eye disorders
+610	wound dehiscence	2993	Injury, poisoning and procedural complications
+611	hernia inguinal	1330	Gastrointestinal disorders
+612	nephrocalcinosis	2652	Renal and urinary disorders
+613	paronychia	972	Infections and infestations
+614	pigmentation disorder	991	Skin and subcutaneous tissue disorders
+615	meningitis viral	870	Nervous system disorders
+616	bursitis	6091	Musculoskeletal and connective tissue disorders
+617	hepatitis b	1191	Infections and infestations
+618	bone spur	4031	Musculoskeletal and connective tissue disorders
+619	tooth disease	5573	Gastrointestinal disorders
+620	parotitis	848	Infections and infestations
+621	choreoathetosis	810	Nervous system disorders
+622	diverticulosis	2763	Gastrointestinal disorders
+623	mediastinal disorder	832	Respiratory, thoracic and mediastinal disorders
+624	seroma	1602	Injury, poisoning and procedural complications
+625	swollen scrotum	568	Reproductive system and breast disorders
+626	dysaesthesia	1556	Nervous system disorders
+627	hypovitaminosis	556	Metabolism and nutrition disorders
+628	impetigo	507	Skin and subcutaneous tissue disorders
+629	defaecation urgency	729	Gastrointestinal disorders
+630	bleeding gums	3764	Gastrointestinal disorders
+631	pyoderma gangrenosum	901	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+632	pleural fibrosis	1696	Respiratory, thoracic and mediastinal disorders
+633	parotid gland enlargement	799	Gastrointestinal disorders
+634	personality disorder	2464	Psychiatric disorders
+635	acne rosacea	1940	Skin and subcutaneous tissue disorders
+636	blood disorder	3265	Blood and lymphatic system disorders
+637	pancreatic pseudocyst	961	Gastrointestinal disorders
+638	atrophy of skin	725	Skin and subcutaneous tissue disorders
+639	ketoacidosis	1362	Metabolism and nutrition disorders
+640	splenic infarction	1300	Vascular disorders
+641	myopia	548	Eye disorders
+642	malignant hypertension	1355	Vascular disorders
+643	epidural abscess	840	Nervous system disorders
+644	panniculitis	589	Immune system disorders
+645	duodenitis	2964	Gastrointestinal disorders
+646	aortic aneurysm	3101	Vascular disorders
+647	iron deficiency anaemia	5053	Metabolism and nutrition disorders
+648	ear discharge	747	Ear and labyrinth disorders
+649	renal colic	572	Renal and urinary disorders
+650	azotaemia	3924	Renal and urinary disorders
+651	aphthous stomatitis	2598	Gastrointestinal disorders
+652	cirrhosis	5337	Hepatobiliary disorders
+653	breakthrough bleeding	2686	Reproductive system and breast disorders
+654	facial palsy	4409	Nervous system disorders
+655	cerebral artery embolism	1236	Nervous system disorders
+656	adh inappropriate	3018	Metabolism and nutrition disorders
+657	myasthenia gravis	1172	Musculoskeletal and connective tissue disorders
+658	keratitis sicca	1097	Eye disorders
+659	duodenal ulcer haemorrhage	1244	Gastrointestinal disorders
+660	vitreous haemorrhage	1251	Eye disorders
+661	hepatic neoplasia	1217	Hepatobiliary disorders
+662	apraxia	912	Psychiatric disorders
+663	appendicitis	1805	Gastrointestinal disorders
+664	cold extremities	3163	General disorders and administration site conditions
+665	cutaneous mycosis	937	Skin and subcutaneous tissue disorders
+666	ovarian cancer	1217	Reproductive system and breast disorders
+667	colonic obstruction	736	Gastrointestinal disorders
+668	colpitis	2415	Reproductive system and breast disorders
+669	hyperaesthesia	1965	Nervous system disorders
+670	eustachian tube disorder	803	Ear and labyrinth disorders
+671	postmenopausal bleeding	1130	Reproductive system and breast disorders
+672	chronic sinusitis	2692	Respiratory, thoracic and mediastinal disorders
+673	anal fissure	2013	Gastrointestinal disorders
+674	testes pain	930	Reproductive system and breast disorders
+675	shoulder pain	4026	Musculoskeletal and connective tissue disorders
+676	humerus fracture	1986	Musculoskeletal and connective tissue disorders
+677	arthritis infective	1751	Musculoskeletal and connective tissue disorders
+678	vitreous detachment	685	Eye disorders
+679	eye injury	1147	Eye disorders
+680	dislocation	2730	Musculoskeletal and connective tissue disorders
+681	back injury	3662	Injury, poisoning and procedural complications
+682	inflammatory bowel disease	1475	Gastrointestinal disorders
+683	gun shot wound	1690	Injury, poisoning and procedural complications
+684	incisional hernia	1034	Gastrointestinal disorders
+685	sinus headache	1791	Respiratory, thoracic and mediastinal disorders
+686	varicose vein	1905	Vascular disorders
+687	wrist fracture	2310	Musculoskeletal and connective tissue disorders
+688	dermatitides	4215	Skin and subcutaneous tissue disorders
+689	emphysema	4883	Respiratory, thoracic and mediastinal disorders
+690	abnormal mammogram	715	Investigations
+691	endocrine disorder	3225	Endocrine disorders
+692	mycobacterium tuberculosis infection	2038	Infections and infestations
+693	kidney pain	2523	Renal and urinary disorders
+694	abortion spontaneous	1482	Pregnancy, puerperium and perinatal conditions
+695	furuncle	1877	Skin and subcutaneous tissue disorders
+696	osteomyelitis	8054	Musculoskeletal and connective tissue disorders
+697	premature menopause	1695	Endocrine disorders
+698	pain pelvic	3399	Gastrointestinal disorders
+699	vocal cord paralysis	963	Nervous system disorders
+700	chronic ulcerative colitis	1984	Gastrointestinal disorders
+701	renal tubular acidosis	921	Renal and urinary disorders
+702	chronic hepatitis	1145	Hepatobiliary disorders
+703	labyrinthitis	1593	Infections and infestations
+704	epidural hematoma	530	Nervous system disorders
+705	ventricular septal defect	842	Cardiac disorders
+706	allergic rhinitis	4695	Immune system disorders
+707	irregular menstrual cycle	1023	Reproductive system and breast disorders
+708	bradyarrhythmia	1066	Cardiac disorders
+709	adenoma	2018	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+710	scar	6673	Injury, poisoning and procedural complications
+711	fibroids	3209	Musculoskeletal and connective tissue disorders
+712	joint stiffness	3544	Musculoskeletal and connective tissue disorders
+713	cor pulmonale	1521	Respiratory, thoracic and mediastinal disorders
+714	night sweat	7246	General disorders and administration site conditions
+715	eczema	3592	Skin and subcutaneous tissue disorders
+716	connective tissue disease	978	Musculoskeletal and connective tissue disorders
+717	breast lump	2977	Reproductive system and breast disorders
+718	splenectomy	530	Surgical and medical procedures
+719	patent ductus arteriosis	790	Vascular disorders
+720	attempted suicide	5879	Psychiatric disorders
+721	scleroderma	1564	Musculoskeletal and connective tissue disorders
+722	amyotrophy	3557	Musculoskeletal and connective tissue disorders
+723	flashing lights	1581	Eye disorders
+724	collagen disease	504	Musculoskeletal and connective tissue disorders
+725	heavy menstrual period	2246	Reproductive system and breast disorders
+726	exophthalmos	551	Eye disorders
+727	colon neoplasm	555	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+728	corneal disorder	634	Eye disorders
+729	leukaemia	4266	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+730	hepatitis c	3208	Infections and infestations
+731	dermatomyositis	788	Skin and subcutaneous tissue disorders
+732	fascitis plantar	2134	Musculoskeletal and connective tissue disorders
+733	als	792	Nervous system disorders
+734	carotid artery stenosis	5424	Vascular disorders
+735	bronchiectasis	1979	Respiratory, thoracic and mediastinal disorders
+736	mitral valve prolapse	2677	Cardiac disorders
+737	post traumatic stress disorder	2307	Psychiatric disorders
+738	disorder peripheral vascular	5165	Vascular disorders
+739	cluster headache	603	Nervous system disorders
+740	postherpetic neuralgia	1084	Nervous system disorders
+741	glioblastoma multiforme	633	Nervous system disorders
+742	esophageal spasm	1967	Gastrointestinal disorders
+743	paranoia	5135	Psychiatric disorders
+744	conversion disorder	1181	Psychiatric disorders
+745	excessive sleepiness	5351	Psychiatric disorders
+746	distended bladder	653	Renal and urinary disorders
+747	diabetes insipidus	1236	Metabolism and nutrition disorders
+748	hypoglycaemia neonatal	1206	Pregnancy, puerperium and perinatal conditions
+749	arthritis bacterial	1465	Musculoskeletal and connective tissue disorders
+750	hesitancy	2262	Renal and urinary disorders
+751	hepatorenal syndrome	1507	Renal and urinary disorders
+752	alcohol consumption	2868	Social circumstances
+753	phlebitis superficial	583	Vascular disorders
+754	aneurysm	2439	Vascular disorders
+755	pneumonia staphylococcal	2609	Respiratory, thoracic and mediastinal disorders
+756	scotoma	2983	Eye disorders
+757	coronary artery bypass graft	1327	Surgical and medical procedures
+758	vestibular disorder	1489	Ear and labyrinth disorders
+759	elevated prostate specific antigen	1939	Investigations
+760	disorder retinal	2063	Eye disorders
+761	phimosis	620	Reproductive system and breast disorders
+762	neurogenic bladder	1837	Renal and urinary disorders
+763	diabetic nephropathy	1264	Renal and urinary disorders
+764	irritation skin	1220	Skin and subcutaneous tissue disorders
+765	atrial septal defect	1387	Cardiac disorders
+766	dyspareunia	598	Reproductive system and breast disorders
+767	interstitial nephritis	3319	Renal and urinary disorders
+768	trigeminal neuralgia	3308	Nervous system disorders
+769	muscle strain	3009	Musculoskeletal and connective tissue disorders
+770	kidney transplant	1364	Surgical and medical procedures
+771	benign prostatic hyperplasia	4727	Reproductive system and breast disorders
+772	chest wall pain	2508	Respiratory, thoracic and mediastinal disorders
+773	intervertebral disc herniation	7154	Musculoskeletal and connective tissue disorders
+774	transfusion reaction	1176	Immune system disorders
+775	hyperkeratosis	2862	Skin and subcutaneous tissue disorders
+776	contracture	1669	Musculoskeletal and connective tissue disorders
+777	xerosis	857	General disorders and administration site conditions
+778	hyperphosphatemia	1280	Metabolism and nutrition disorders
+779	gynaecomastia	2227	Reproductive system and breast disorders
+780	thrombophlebitis	1865	Vascular disorders
+781	breast pain	2804	Reproductive system and breast disorders
+782	adverse drug effect	4758	Unspecified
+783	rhagades	1446	Skin and subcutaneous tissue disorders
+784	diabetic neuropathy	5168	Metabolism and nutrition disorders
+785	intestinal functional disorder	1549	Gastrointestinal disorders
+786	laceration	3983	Skin and subcutaneous tissue disorders
+787	cerebral thrombosis	593	Vascular disorders
+788	venous insufficiency	1962	Vascular disorders
+789	sunburn	3420	Injury, poisoning and procedural complications
+790	synovitis	1838	Musculoskeletal and connective tissue disorders
+791	amyloidosis	833	Immune system disorders
+792	monoclonal gammopathy	1182	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+793	deafness	5165	Ear and labyrinth disorders
+794	tardive dyskinesia	1997	Nervous system disorders
+795	sick sinus syndrome	2694	Cardiac disorders
+796	erysipelas	1072	Skin and subcutaneous tissue disorders
+797	pancreatitis relapsing	4180	Gastrointestinal disorders
+798	lymphedema	2278	Vascular disorders
+799	bone fracture	2970	Musculoskeletal and connective tissue disorders
+800	diabetic retinopathy	2982	Vascular disorders
+801	tracheobronchitis	882	Respiratory, thoracic and mediastinal disorders
+802	serum sickness	1110	Immune system disorders
+803	metabolic alkalosis	3331	Metabolism and nutrition disorders
+804	onychomycosis	2080	Infections and infestations
+805	lymphocytosis	685	Blood and lymphatic system disorders
+806	ingrowing nail	1012	Skin and subcutaneous tissue disorders
+807	lichen planus	941	Skin and subcutaneous tissue disorders
+808	carpal tunnel	6215	Nervous system disorders
+809	easy bruisability	2455	Vascular disorders
+810	otitis media	3016	Infections and infestations
+811	keratitis	931	Eye disorders
+812	aphonia	1613	Psychiatric disorders
+813	tracheostomy	1020	Surgical and medical procedures
+814	corneal ulcer	814	Eye disorders
+815	corneal abrasion	687	Eye disorders
+816	soft tissue injuries	649	Musculoskeletal and connective tissue disorders
+817	glomerulonephritis	1310	Immune system disorders
+818	dermatitis seborrheic	1145	Skin and subcutaneous tissue disorders
+819	major depression	4636	Psychiatric disorders
+820	appendectomy	1190	Surgical and medical procedures
+821	psychosexual disorder	2760	Psychiatric disorders
+822	post nasal drip	1907	Respiratory, thoracic and mediastinal disorders
+823	dysphemia	997	Psychiatric disorders
+824	uterine polyp	788	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+825	polymyalgia rheumatica	1220	Musculoskeletal and connective tissue disorders
+826	breast cyst	1013	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+827	tenosynovitis	1331	Musculoskeletal and connective tissue disorders
+828	hirsuitism	565	Endocrine disorders
+829	brain neoplasm	1468	Nervous system disorders
+830	breast tenderness	1178	Reproductive system and breast disorders
+831	bipolar disorder	5199	Psychiatric disorders
+832	sleep walking	3348	Psychiatric disorders
+833	nephrogenic diabetes insipidus	1219	Renal and urinary disorders
+834	scoliosis	2293	Respiratory, thoracic and mediastinal disorders
+835	tendon injury	2491	Musculoskeletal and connective tissue disorders
+836	dyshidrosis	553	Skin and subcutaneous tissue disorders
+837	abnormal cervical smear	663	Investigations
+838	adjustment disorder	972	Psychiatric disorders
+839	tension headache	1252	Nervous system disorders
+840	seborrhoeic keratosis	1282	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+841	stress incontinence	2619	Renal and urinary disorders
+842	temporal arteritis	654	Nervous system disorders
+843	abuse	2310	Social circumstances
+844	drug addiction	7781	Psychiatric disorders
+845	diaphragmatic hernia	858	Gastrointestinal disorders
+846	radiculopathy	3348	Nervous system disorders
+847	hyperalimentation	4816	Metabolism and nutrition disorders
+848	mumps	600	Infections and infestations
+849	dysmenorrhea	670	Reproductive system and breast disorders
+850	umbilical hernia	1842	Gastrointestinal disorders
+851	myelopathy	1715	Nervous system disorders
+852	trigger finger	1085	Musculoskeletal and connective tissue disorders
+853	salivary gland inflammation	1154	Gastrointestinal disorders
+854	blepharitis	1176	Eye disorders
+855	carotid bruit	1670	Investigations
+856	breast discharge	574	Reproductive system and breast disorders
+857	animal bite	826	Injury, poisoning and procedural complications
+858	hyperprolactinaemia	665	Endocrine disorders
+859	cervicitis	918	Reproductive system and breast disorders
+860	pelvic inflammatory disease	932	Reproductive system and breast disorders
+861	breast dysplasia	1454	Reproductive system and breast disorders
+862	injury of neck	2577	Musculoskeletal and connective tissue disorders
+863	rectal prolapse	624	Gastrointestinal disorders
+864	menstrual disorder	989	Reproductive system and breast disorders
+865	optic neuritis	1719	Eye disorders
+866	cerumen impaction	923	Ear and labyrinth disorders
+867	meningitides	2281	Infections and infestations
+868	coated tongue	1006	Gastrointestinal disorders
+869	empyema	1215	Infections and infestations
+870	rectal polyp	1313	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+871	burns second degree	766	Injury, poisoning and procedural complications
+872	schizophrenia	1358	Psychiatric disorders
+873	tonsillitis	783	Infections and infestations
+874	essential hypertension	2196	Vascular disorders
+875	sacroiliitis	826	Musculoskeletal and connective tissue disorders
+876	mitral valve disease nos	2174	Cardiac disorders
+877	brain concussion	1607	Nervous system disorders
+878	night cramps	744	Musculoskeletal and connective tissue disorders
+879	bone inflammation	1461	Musculoskeletal and connective tissue disorders
+880	megacolon	675	Gastrointestinal disorders
+881	hypermetropia	546	Eye disorders
+882	encephalitis viral	756	Nervous system disorders
+883	hepatitis a	612	Infections and infestations
+884	epicondylitis	1056	Musculoskeletal and connective tissue disorders
+885	eye infection	2539	Eye disorders
+886	periodontitis	1552	Gastrointestinal disorders
+887	cholecystitis chronic	2311	Hepatobiliary disorders
+888	femoral neck fracture	1359	Musculoskeletal and connective tissue disorders
+889	pneumoconiosis	527	Respiratory, thoracic and mediastinal disorders
+890	melanocytic naevus	2209	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+891	tinea pedis	769	Infections and infestations
+892	acute psychosis	890	Psychiatric disorders
+893	sarcoidosis	1579	Immune system disorders
+894	prostatitis	1861	Reproductive system and breast disorders
+895	night blindness	584	Eye disorders
+896	ganglion	694	Musculoskeletal and connective tissue disorders
+897	volvulus	657	Gastrointestinal disorders
+898	cystitis interstitial	1085	Renal and urinary disorders
+899	lyme disease	651	Nervous system disorders
+900	oophorectomy	533	Surgical and medical procedures
+901	food poisoning	650	Gastrointestinal disorders
+902	substance abuse	644	Social circumstances
+903	paraplegia	1596	Nervous system disorders
+904	pyuria	1139	Renal and urinary disorders
+905	bunion	1030	Musculoskeletal and connective tissue disorders
+906	hypogonadism	722	Endocrine disorders
+907	cervical dysplasia	821	Reproductive system and breast disorders
+908	ejaculation premature	700	Reproductive system and breast disorders
+909	retinal artery occlusion	735	Eye disorders
+910	endometriosis	689	Reproductive system and breast disorders
+911	squamous cell carcinoma of skin	1042	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+912	breast enlargement	987	Reproductive system and breast disorders
+913	pancreatic cancer	1328	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+914	hyperacusia	865	Ear and labyrinth disorders
+915	renal mass	1384	Renal and urinary disorders
+916	breast swelling	646	Reproductive system and breast disorders
+917	testicular swelling	714	Reproductive system and breast disorders
+918	colostomy	776	Surgical and medical procedures
+919	normal pressure hydrocephalus	515	Nervous system disorders
+920	neurodermatitis	720	Skin and subcutaneous tissue disorders
+921	bad breath	1476	Gastrointestinal disorders
+922	breast inflammation	862	Reproductive system and breast disorders
+923	carcinoid syndrome	2511	Endocrine disorders
+924	macrocytosis	917	Blood and lymphatic system disorders
+925	balanitis	516	Reproductive system and breast disorders
+926	schizoaffective disorder	1060	Psychiatric disorders
+927	neck mass	981	Musculoskeletal and connective tissue disorders
+928	causalgia	925	Nervous system disorders
+929	hay fever	1473	Immune system disorders
+930	coeliac disease	1353	Metabolism and nutrition disorders
+931	nasal polyp	563	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+932	synovial cyst	1929	Musculoskeletal and connective tissue disorders
+933	borderline personality disorder	540	Psychiatric disorders
+934	sarcoma	502	Musculoskeletal and connective tissue disorders
+935	epididymitis	791	Reproductive system and breast disorders
+936	hiv disease	593	Immune system disorders
+937	intraocular inflammation	858	Eye disorders
+938	infectious mononucleosis	745	Infections and infestations
+939	congenital heart disease	912	Cardiac disorders
+940	fracture nonunion	600	Musculoskeletal and connective tissue disorders
+941	galactorrhea	801	Reproductive system and breast disorders
+942	mpd	514	Metabolism and nutrition disorders
+943	sclc	709	Neoplasms benign, malignant and unspecified (incl cysts and polyps)
+944	hair disease	810	Skin and subcutaneous tissue disorders
+945	sjogrens syndrome	1147	Musculoskeletal and connective tissue disorders
+946	mycosis fungoides	608	Skin and subcutaneous tissue disorders
+947	fasciitis	526	Musculoskeletal and connective tissue disorders
+948	tooth impacted	676	Gastrointestinal disorders
+949	toxic shock	751	Infections and infestations
+950	asthenopia	661	Eye disorders
+951	gastric ulcer perforated	715	Gastrointestinal disorders
+952	carbuncle	509	Skin and subcutaneous tissue disorders
+953	myelitis	847	Nervous system disorders
+954	histoplasmosis	989	Infections and infestations
+955	primary biliary cirrhosis	659	Hepatobiliary disorders
+956	autonomic neuropathy	750	Nervous system disorders
+957	coccydynia	508	Musculoskeletal and connective tissue disorders
+958	coronary angioplasty	653	Surgical and medical procedures
+959	telangiectases	583	Vascular disorders
+960	spondylitis	765	Musculoskeletal and connective tissue disorders
+961	methaemoglobinaemia	516	Blood and lymphatic system disorders
+962	haemarthrosis	722	Vascular disorders
+963	atypical mycobacterial infection	510	Infections and infestations

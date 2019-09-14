@@ -2,7 +2,7 @@
   "model_params": [
     {
       "loss": "bce",
-      "lr": 0.001,
+      "lr": 0.0001,
       "metrics_names": [
         "macro_roc",
         "macro_auprc",
@@ -10,32 +10,19 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
-        "b_norm": true,
-        "dropout": 0.15,
-        "drug_feature_extractor_params": {
-          "arch": "conv1d",
-          "b_norm": false,
-          "cnn_sizes": [
-            256,
-            256,
-            256,
-            256
-          ],
-          "dilatation_rate": 1,
-          "embedding_size": 20,
-          "kernel_size": [
-            5
-          ],
-          "pooling_len": 2,
-          "vocab_size": 152
-        },
-        "fc_layers_dim": [
-          128,
-          128
+        "hidden_sizes": [
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048,
+          2048
         ],
-        "mode": "concat",
-        "network_name": "bmnddi"
+        "input_dim": 100,
+        "network_name": "deepddi"
       },
       "optimizer": "adam",
       "use_negative_sampled_loss": false
@@ -48,7 +35,7 @@
       "seed": 42,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -59,7 +46,7 @@
       "seed": 42,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -70,7 +57,7 @@
       "seed": 55,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -81,7 +68,7 @@
       "seed": 55,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -92,7 +79,7 @@
       "seed": 505,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -103,7 +90,7 @@
       "seed": 505,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -114,7 +101,7 @@
       "seed": 33,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -125,7 +112,7 @@
       "seed": 33,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -136,7 +123,7 @@
       "seed": 64,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -147,7 +134,7 @@
       "seed": 64,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -158,7 +145,7 @@
       "seed": 101,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -169,7 +156,7 @@
       "seed": 101,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -180,7 +167,7 @@
       "seed": 21,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -191,7 +178,7 @@
       "seed": 21,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -202,7 +189,7 @@
       "seed": 0,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -213,7 +200,7 @@
       "seed": 0,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -224,7 +211,7 @@
       "seed": 10,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -235,7 +222,7 @@
       "seed": 10,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -246,7 +233,7 @@
       "seed": 350,
       "split_mode": "random",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
@@ -257,7 +244,7 @@
       "seed": 350,
       "split_mode": "leave_drugs_out",
       "test_size": 0.15,
-      "transformer": "seq",
+      "transformer": "deepddi",
       "use_graph": false,
       "use_side_effects_mapping": true,
       "valid_size": 0.1
