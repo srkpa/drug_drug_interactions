@@ -43,11 +43,6 @@ class BMNDDI(nn.Module):
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
         dfe_out_dim = self.drug_feature_extractor.output_dim
 
-        # Just for test
-        self.head = nn.ModuleList(
-            [self.drug_feature_extractor for i in range(964)])
-        #
-
         if graph_network_params is not None:
             gcnn = GINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
                            **graph_network_params)
@@ -62,8 +57,6 @@ class BMNDDI(nn.Module):
             self.graph_net = None
 
         in_size = 2 * self.drug_feature_extractor.output_dim
-        #  Just for a test
-        in_size = in_size * 964
 
         if self.mode in ['sum', 'max', "elementwise"]:
             in_size = self.drug_feature_extractor.output_dim
@@ -81,15 +74,9 @@ class BMNDDI(nn.Module):
 
     def forward(self, batch):
         drugs_a, drugs_b = batch
-        features = []
+
         if self.graph_net is None:
-
-            for i, l in enumerate(self.head):
-                features_drug1, features_drug2 = self.head[i](drugs_a), self.head[i](drugs_b)
-                x = torch.cat((features_drug1, features_drug2), 1)
-                features.append(x)
-
-            #features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
+            features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
             if self.training:
                 drugs_b = drugs_b.view(-1)
@@ -108,18 +95,18 @@ class BMNDDI(nn.Module):
             nodes_features = self.node_feature_extractor(self.nodes)
             nodes_features = self.graph_net((adj_mat, nodes_features, edges_features))
             features_drug1 = torch.index_select(nodes_features, dim=0, index=drugs_a.view(-1))
-        #
-        # if self.mode == "elementwise":
-        #     ddi = torch.mul(features_drug1, features_drug2)
-        # elif self.mode == "sum":
-        #     ddi = torch.add(features_drug1, features_drug2)
-        # elif self.mode == "max":
-        #     ddi = torch.max(features_drug1, features_drug2)
-        # else:
-        #     ddi = torch.cat((features_drug1, features_drug2), 1)
-        ddi = torch.cat(features, 1)
+
+        if self.mode == "elementwise":
+            ddi = torch.mul(features_drug1, features_drug2)
+        elif self.mode == "sum":
+            ddi = torch.add(features_drug1, features_drug2)
+        elif self.mode == "max":
+            ddi = torch.max(features_drug1, features_drug2)
+        else:
+            ddi = torch.cat((features_drug1, features_drug2), 1)
+
         out = self.classifier(ddi)
-        # print(out.shape)
+      
         return out
 
     def set_graph(self, nodes, edges):

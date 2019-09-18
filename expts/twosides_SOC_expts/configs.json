@@ -17,8 +17,10 @@
           "arch": "conv1d",
           "b_norm": false,
           "cnn_sizes": [
-            32,
-            32
+            256,
+            256,
+            256,
+            256
           ],
           "dilatation_rate": 1,
           "embedding_size": 20,
@@ -33,7 +35,7 @@
           128
         ],
         "mode": "concat",
-        "network_name": "bmnddi"
+        "network_name": "test"
       },
       "optimizer": "adam",
       "use_negative_sampled_loss": false
@@ -47,13 +49,21 @@
       "split_mode": "random",
       "test_size": 0.15,
       "transformer": "seq",
-      "use_side_effects_mapping": false,
+      "use_as_filter": [
+        "thrombocytopenia",
+        "bilirubinaemia",
+        "bacterial infection",
+        "haematochezia",
+        "hepatic failure",
+        "body temperature increased"
+      ],
+      "use_side_effects_mapping": true,
       "valid_size": 0.1
     }
   ],
   "fit_params": [
     {
-      "batch_size": 6,
+      "batch_size": 32,
       "n_epochs": 100,
       "with_early_stopping": true
     }
