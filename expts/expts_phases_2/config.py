@@ -11,7 +11,8 @@ dataset_params = list(ParameterGrid(
          valid_size=[0.10],
          seed=[42, 55, 505, 33, 64, 101, 21, 0, 10, 350],
          decagon=[False],
-         use_side_effects_mapping=[True]
+         use_side_effects_mapping=[True],
+         use_as_filter=['SOC', 'HLGT', 'HLT', 'PT']
          )
 ))
 
@@ -21,9 +22,9 @@ fit_params = list(ParameterGrid(
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
          vocab_size=[len(SMILES_ALPHABET) + 2],
-         embedding_size=[512],
+         embedding_size=[20],
          cnn_sizes=[
-             [1024]
+             [128] * 4
          ],
          kernel_size=[[17]],
          dilatation_rate=[1],
@@ -42,9 +43,9 @@ drug_features_extractor_params = list(ParameterGrid(
 
 
 network_params = list(ParameterGrid(dict(
-    network_name=['test'],
+    network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    fc_layers_dim=[[1024]],
+    fc_layers_dim=[[128] * 2],
     mode=["concat"],
     att_hidden_dim=[None],
     dropout=[0.15],

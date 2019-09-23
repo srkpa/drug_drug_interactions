@@ -203,7 +203,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     data = load_ddis_combinations(all_combo_path, header=True)
 
     if use_side_effects_mapping:
-        se_path = f"{input_path}/twosides_socc.csv"
+        print(use_as_filter)
+        se_path = f"{input_path}/classification - twosides_socc.tsv"
         side_effects_mapping = load_side_effect_mapping(se_path, use_as_filter)
         data = relabel(data, side_effects_mapping)
 
@@ -263,33 +264,30 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 def load_side_effect_mapping(input_path, use_as_filter=None):
     res = {}
     data = pd.read_csv(input_path, sep="\t")
-    is_soc = all([term in data['system_organ_class'].values.tolist() for term in
-                  use_as_filter]) if use_as_filter is not None else True
-    if is_soc:
-        if isinstance(use_as_filter, list):
-            data = data.loc[data['system_organ_class'].isin(use_as_filter)]
-        for row in data.itertuples():
+    data.fillna("Unspecified", inplace=True)
+    for row in data.itertuples():
+        if use_as_filter == 'SOC':
             res[row.side_effect] = row.system_organ_class
-    else:
-        res = use_as_filter
+        elif use_as_filter == "HLGT":
+            res[row.side_effect] = row.HLGT
+        elif use_as_filter == "HLT":
+            res[row.side_effect] = row.HLT
+        elif use_as_filter == "PT":
+            res[row.side_effect] = row.PT
+        else:
+            res[row.side_effect] = row.side_effect
+
     print("dataset side effect mapping: ", len(res))
     return res
 
 
 def relabel(data, labels_mapping):
     final_data = {}
-    has_filter = True if isinstance(labels_mapping, dict) and len(set(labels_mapping.values())) < 26 else False
     for (d1, d2), labels in data.items():
         temp = set()
         for label in labels:
-            new_label = None
-            if isinstance(labels_mapping, list):
-                new_label = label if label in labels_mapping else 'others'
-            if isinstance(labels_mapping, dict):
-                new_label = labels_mapping.get(label, None)
+            new_label = labels_mapping.get(label, None)
             if (new_label is not None) and not new_label.startswith("Unspecified"):
-                if has_filter:
-                    new_label = label
                 temp.add(new_label)
         if len(temp) > 0:
             final_data[(d1, d2)] = list(temp)
