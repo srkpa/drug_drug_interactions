@@ -31,14 +31,14 @@ def load_smiles(fname, download=False, dataset_name="twosides"):
     return smiles
 
 
-def load_ddis_combinations(fname, header=True, dataset_name="twosides"):
+def load_ddis_combinations(fname, header, dataset_name):
     fn = open(fname)
     if header:
         fn.readline()
     combo2se = defaultdict(list)
     for line in fn:
         content = line.split(",")
-        if dataset_name not in ["twosides", "split"]:
+        if dataset_name != "twosides":
             content = content[1:]
         drug1 = content[0]
         drug2 = content[1]
@@ -200,7 +200,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         use_side_effects_mapping=False, use_as_filter=None):
     # My paths
     all_combo_path = f"{input_path}/{dataset_name}.csv"
-    data = load_ddis_combinations(all_combo_path, header=True)
+    data = load_ddis_combinations(all_combo_path, header=True, dataset_name=dataset_name)
 
     if use_side_effects_mapping:
         print(use_as_filter)

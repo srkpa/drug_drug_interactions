@@ -4,15 +4,15 @@ from sklearn.model_selection import ParameterGrid
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["twosides"],
+    dict(dataset_name=["drugbank", "twosides"],
          transformer=["seq"],
          split_mode=["random", "leave_drugs_out"],
          test_size=[0.15],
          valid_size=[0.10],
-         seed=[42, 55, 505, 33, 64, 101, 21, 0, 10, 350],
+         seed=[42],
          decagon=[False],
-         use_side_effects_mapping=[True],
-         use_as_filter=['SOC', 'HLGT', 'HLT', 'PT']
+         use_side_effects_mapping=[False]
+         #use_as_filter=['SOC', 'HLGT', 'HLT', 'PT']
          )
 ))
 
@@ -46,7 +46,7 @@ network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128] * 2],
-    mode=["concat"],
+    mode=['sum', 'max', "elementwise"],
     att_hidden_dim=[None],
     dropout=[0.15],
     b_norm=[True]
