@@ -1,7 +1,8 @@
 import inspect
-from collections import defaultdict
+import gzip
+import networkx as nx
 from itertools import product
-
+import matplotlib.pyplot as plt
 import pandas as pd
 from ivbase.utils.commons import to_tensor
 from sklearn.model_selection import train_test_split
@@ -25,7 +26,8 @@ def load_smiles(fname, download=False, dataset_name="twosides"):
         fin.readline()
         for line in fin:
             content = line.split(",")
-            drug_id = content[0] if dataset_name == "twosides" else content[1]
+            drug_id = content[0] if (dataset_name.startswith("twosides") or dataset_name.endswith("food")) else \
+                content[1]
             smile = content[-1].strip("\n")
             smiles[drug_id] = smile
     return smiles
@@ -38,7 +40,7 @@ def load_ddis_combinations(fname, header, dataset_name):
     combo2se = defaultdict(list)
     for line in fn:
         content = line.split(",")
-        if dataset_name != "twosides":
+        if not dataset_name.startswith("twosides"):
             content = content[1:]
         drug1 = content[0]
         drug2 = content[1]
@@ -105,10 +107,12 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
 
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
-                 build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=False):
+                 build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=False,
+                 adme_vectorizer=None):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.labels_vectorizer = label_vectorizer
+        self.adme_vectorizer = adme_vectorizer
         self.gpu = torch.cuda.is_available()
         self.has_graph = build_graph
         self.graph_nodes_mapping = graph_drugs_mapping
@@ -122,7 +126,11 @@ class DDIdataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, item):
+        # Not sure it is the good place
         drug1, drug2, label = self.samples[item]
+        adme = []
+        if self.nb_adme > 0:
+            adme, label = label[0], label[-1]
         if self.graph_nodes_mapping is None:
             drug1, drug2 = self.drug_to_smiles[drug1], self.drug_to_smiles[drug2]
         elif self.has_graph or self.decagon:
@@ -137,8 +145,15 @@ class DDIdataset(Dataset):
             drug1 = np.array([self.graph_nodes_mapping[drug1]])
             drug2 = self.drug_to_smiles[drug2]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
-        res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)), to_tensor(target, self.gpu))
+        res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)),
+               to_tensor(target, self.gpu)) if self.adme_vectorizer is None else (
+            (to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu),
+             to_tensor(self.adme_vectorizer.transform([adme]).astype(np.float32)[0])), to_tensor(target, self.gpu))
         return res
+
+    @property
+    def nb_adme(self):
+        return len(self.adme_vectorizer.classes_) if self.adme_vectorizer is not None else 0
 
     @property
     def nb_labels(self):
@@ -146,6 +161,8 @@ class DDIdataset(Dataset):
 
     def get_targets(self):
         y = list(zip(*self.samples))[2]
+        if self.nb_adme > 0:
+            y = [l[-1] for l in y]
         return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)
 
     def build_graph(self):
@@ -198,21 +215,13 @@ class DDIdataset(Dataset):
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_side_effects_mapping=False, use_as_filter=None):
-    # My paths
-    all_combo_path = f"{input_path}/{dataset_name}.csv"
-    data = load_ddis_combinations(all_combo_path, header=True, dataset_name=dataset_name)
-
+    data, drugs2smiles = load_data(input_path, dataset_name)
     if use_side_effects_mapping:
-        print(use_as_filter)
         se_path = f"{input_path}/classification - twosides_socc.tsv"
         side_effects_mapping = load_side_effect_mapping(se_path, use_as_filter)
         data = relabel(data, side_effects_mapping)
 
-    # Load smiles
-    all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
-    drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
-
     # Transformer
     transformer = all_transformers_dict.get(transformer)
     args = inspect.signature(transformer)
@@ -229,8 +238,11 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                test_size=test_size, valid_size=valid_size)
     print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
+    adme = []
+    if dataset_name == "mixed":
+        adme, labels = [l1 for (l1, _) in labels], [l2 for (_, l2) in labels]
     mbl = MultiLabelBinarizer().fit(labels)
-
+    use_adme = MultiLabelBinarizer().fit(adme) if len(adme) > 0 else None
     if decagon:
         ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"
         gene_gene_ass = pd.read_csv(ppi_path)
@@ -239,23 +251,27 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         drug_gene_ass_list = drug_gene_ass.values.tolist()
         train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=False, gene_net=gene_gene_ass_list,
                                    drug_gene_net=drug_gene_ass_list,
-                                   decagon=decagon)
+                                   decagon=decagon, adme_vectorizer=use_adme)
         valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+                                   adme_vectorizer=train_dataset.adme_vectorizer)
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net)
+                                  gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+                                  adme_vectorizer=train_dataset.adme_vectorizer)
 
     else:
         if use_graph:
-            train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True)
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl, build_graph=True, adme_vectorizer=use_adme)
             valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl,
-                                       graph_drugs_mapping=train_dataset.graph_nodes_mapping)
+                                       graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                       adme_vectorizer=train_dataset.adme_vectorizer)
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl,
-                                      graph_drugs_mapping=train_dataset.graph_nodes_mapping)
+                                      graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                      adme_vectorizer=train_dataset.adme_vectorizer)
         else:
-            train_dataset = DDIdataset(train_data, drugs2smiles, mbl)
-            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl)
-            test_dataset = DDIdataset(test_data, drugs2smiles, mbl)
+            train_dataset = DDIdataset(train_data, drugs2smiles, mbl, adme_vectorizer=use_adme)
+            valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, adme_vectorizer=train_dataset.adme_vectorizer)
+            test_dataset = DDIdataset(test_data, drugs2smiles, mbl, adme_vectorizer=train_dataset.adme_vectorizer)
             print(train_dataset.nb_labels)
 
     return train_dataset, valid_dataset, test_dataset
@@ -292,3 +308,71 @@ def relabel(data, labels_mapping):
         if len(temp) > 0:
             final_data[(d1, d2)] = list(temp)
     return final_data
+
+
+def reformat(dataset_name):
+    dc = DataCache()
+    data = pd.read_csv(dc.get_file(f"s3://datasets-ressources/DDI/{dataset_name}/{dataset_name}.csv", force=True))
+    drug_mapping = pd.read_csv(
+        dc.get_file(f"s3://datasets-ressources/DDI/{dataset_name}/{dataset_name}-drugs-all.csv", force=True),
+        index_col="drug_id")
+    data.replace({entry: drug_mapping.loc[entry, "drug_name"].lower() for entry in drug_mapping.index}, inplace=True)
+    drug_name_smiles = {
+        drug_mapping.loc[entry, "drug_name"].lower(): drug_mapping.loc[entry, str(list(drug_mapping)[-1])] for
+        entry in
+        drug_mapping.index}
+    return data, drug_name_smiles
+
+
+def merge_datasets():
+    res = []
+    filtered_drugs = {}
+    drugb, drug_name_smiles_mapping = reformat(dataset_name="drugbank")
+    drugb.set_index(["Drug 1", "Drug 2"], inplace=True)
+    two_sides, _ = reformat(dataset_name="twosides")
+    for l in two_sides.itertuples(index=False):
+        drug_1, drug_2, se = l[0], l[1], l[2]
+        if (drug_1, drug_2) in drugb.index:
+            pair = (drug_1, drug_2)
+        elif (drug_2, drug_1) in drugb.index:
+            pair = (drug_2, drug_1)
+        else:
+            pair = None
+        if pair is not None:
+            res.append((pair[0], pair[1], drugb.loc[pair, "ddi type"], se))
+            if drug_1 not in filtered_drugs:
+                filtered_drugs[drug_1] = drug_name_smiles_mapping[drug_1]
+            if drug_2 not in filtered_drugs:
+                filtered_drugs[drug_2] = drug_name_smiles_mapping[drug_2]
+    print(len(res))
+    data = {(drug_1, drug_2): [adme.split(";"), se.split(";")] for drug_1, drug_2, adme, se in res}
+    # a = pd.DataFrame.from_records(res, columns=["drug_1", "drug_2", "adme", "side_effect"])
+    print("Merge datasets contains:{} drug_drug  and {} drugs".format(len(data), len(filtered_drugs)))
+    return data, filtered_drugs
+
+
+def load_data(input_path, dataset_name):
+    # My paths
+    if dataset_name == "mixed":
+        data, drugs2smiles = merge_datasets()
+    else:
+        all_combo_path = f"{input_path}/{dataset_name}.csv"
+        data = load_ddis_combinations(all_combo_path, header=True, dataset_name=dataset_name)
+
+        # Load smiles
+        all_drugs_path = f"{input_path}/{dataset_name}-drugs-all.csv"
+        drugs2smiles = load_smiles(fname=all_drugs_path, dataset_name=dataset_name)
+
+    return data, drugs2smiles
+
+
+if __name__ == '__main__':
+    from collections import Counter
+
+    a, c = reformat("twosides")
+    b = [tuple(i) for i in a[["Drug 1", "Drug 2"]].values.tolist()]
+    print(len(b))
+    print(len(set(b)))
+    for i, j in dict(Counter(c.values())).items():
+        if j == 2:
+            print(i)

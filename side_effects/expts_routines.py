@@ -4,9 +4,9 @@ import torch
 import pickle
 import hashlib
 from collections import MutableMapping, OrderedDict
-from ivbase.utils.datasets.datacache import DataCache
+
 from side_effects.trainer import Trainer
-from side_effects.data.loader import get_data_partitions
+from side_effects.data.loader import get_data_partitions, DataCache
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
 
@@ -112,7 +112,7 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Restore path if any: {restore_path}")
 
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
+    model_params['network_params'].update(dict(output_dim=train_data.nb_labels, adme_dim=train_data.nb_adme))
     model = Trainer(**model_params, snapshot_dir=restore_path)
 
     # Train and save

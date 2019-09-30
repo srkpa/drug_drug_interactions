@@ -1,0 +1,253 @@
+{
+  "model_params": [
+    {
+      "loss": "bce",
+      "lr": 0.001,
+      "metrics_names": [
+        "macro_roc",
+        "macro_auprc",
+        "micro_roc",
+        "micro_auprc"
+      ],
+      "network_params": {
+        "att_hidden_dim": null,
+        "b_norm": true,
+        "dropout": 0.15,
+        "drug_feature_extractor_params": {
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "dilatation_rate": 1,
+          "embedding_size": 20,
+          "kernel_size": [
+            17
+          ],
+          "pooling_len": 2,
+          "vocab_size": 152
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "mode": "concat",
+        "network_name": "bmnddi"
+      },
+      "optimizer": "adam",
+      "use_negative_sampled_loss": false
+    }
+  ],
+  "dataset_params": [
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 0,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 0,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 10,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 10,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 21,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 21,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 33,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 33,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 55,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 55,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 64,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 64,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 101,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 101,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 350,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 350,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 505,
+      "split_mode": "random",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    },
+    {
+      "dataset_name": "twosides",
+      "decagon": false,
+      "seed": 505,
+      "split_mode": "leave_drugs_out",
+      "test_size": 0.15,
+      "transformer": "seq",
+      "use_side_effects_mapping": false,
+      "valid_size": 0.1
+    }
+  ],
+  "fit_params": [
+    {
+      "batch_size": 256,
+      "n_epochs": 100,
+      "with_early_stopping": true
+    }
+  ]
+}

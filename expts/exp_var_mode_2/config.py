@@ -4,9 +4,9 @@ from sklearn.model_selection import ParameterGrid
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["drugbank", "twosides"],
+    dict(dataset_name=["drugbank"],
          transformer=["seq"],
-         split_mode=["random", "leave_drugs_out"],
+         split_mode=["random"],
          test_size=[0.15],
          valid_size=[0.10],
          seed=[42],
@@ -46,7 +46,7 @@ network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128] * 2],
-    mode=['sum', 'max', "elementwise"],
+    mode=['sum', "elementwise"],
     att_hidden_dim=[None],
     dropout=[0.15],
     b_norm=[True]
