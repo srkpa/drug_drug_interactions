@@ -11,6 +11,12 @@
       ],
       "network_params": {
         "att_hidden_dim": null,
+        "auxnet_params": {
+          "fc_layers_dim": [
+            128
+          ],
+          "output_dim": 32
+        },
         "b_norm": true,
         "dropout": 0.15,
         "drug_feature_extractor_params": {
@@ -49,197 +55,11 @@
       "split_mode": "random",
       "test_size": 0.15,
       "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 0,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 10,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 10,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 21,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 21,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 33,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 33,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 42,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 42,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 55,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 55,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 64,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 64,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 101,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 101,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 350,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 350,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 505,
-      "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "twosides",
-      "decagon": false,
-      "seed": 505,
-      "split_mode": "leave_drugs_out",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": true,
+      "use_targets": false,
       "valid_size": 0.1
     }
   ],

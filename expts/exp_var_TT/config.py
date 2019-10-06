@@ -6,12 +6,16 @@ from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["random", "leave_drugs_out"],
+         split_mode=["random"],  # "leave_drugs_out"
          test_size=[0.15],
          valid_size=[0.10],
-         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[0],  # 10, 21, 33, 42, 55, 64, 101, 350, 505
          decagon=[False],
-         use_side_effects_mapping=[False]
+         use_clusters=[False],
+         use_as_filter=[None],
+         use_targets=[False],
+         use_side_effect=[True],
+         use_pharm=[False]
          )
 ))
 
@@ -31,19 +35,20 @@ drug_features_extractor_params = list(ParameterGrid(
          b_norm=[False])
 ))
 
-# network_params = list(ParameterGrid(dict(
-#     network_name=['bmnddi'],
-#     drug_feature_extractor_params=drug_features_extractor_params,
-#     fc_layers_dim=[[128]*4],
-#     mode= ["concat"],
-#     dropout=[0],
-#     b_norm=[True],
-# )))
-
+AUxNet_params = list(ParameterGrid(dict(
+    # network_name=['bmnddi'],
+    # drug_feature_extractor_params=drug_features_extractor_params,
+    fc_layers_dim=[[128]],
+    output_dim=[32]
+    # mode= ["concat"],
+    # dropout=[0],
+    # b_norm=[True],
+)))
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
+    auxnet_params=AUxNet_params,
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],

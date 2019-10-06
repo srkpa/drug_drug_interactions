@@ -27,7 +27,7 @@ done
 set -e
 
 server=${server:=local}
-instance_type=${instance_type:=c4.2xlarge}
+instance_type=${instance_type:=t3.large}
 
 python ${expt_name}/config.py -o ${expt_name}/configs.json
 case ${server} in

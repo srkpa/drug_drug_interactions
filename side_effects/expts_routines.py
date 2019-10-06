@@ -112,8 +112,12 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     print(f"Restore path if any: {restore_path}")
 
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    model_params['network_params'].update(dict(output_dim=train_data.nb_labels, adme_dim=train_data.nb_adme))
+    model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
+    if model_params['network_params'].get('auxnet_params', None):
+        model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
+        print("aux", train_data.get_aux_input_dim())
     model = Trainer(**model_params, snapshot_dir=restore_path)
+    #print(model.model)
 
     # Train and save
     training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])

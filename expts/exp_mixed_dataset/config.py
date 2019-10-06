@@ -4,19 +4,20 @@ from sklearn.model_selection import ParameterGrid
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["mixed"],  # "twosides_icd11" drugfood
+    dict(dataset_name=["twosides"],  # "twosides_icd11" drugfood
          transformer=["seq"],
-         split_mode=["random", "leave_drugs_out"],
+         split_mode=["random"], #"leave_drugs_out"
          test_size=[0.15],
          valid_size=[0.10],
          seed=[42], #0, 10, 21, 33, 42, 55, 64, 101, 350, 505
          decagon=[False],
          use_side_effects_mapping=[False]
+         #use_as_filter=["PT"]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[1], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -27,8 +28,11 @@ drug_features_extractor_params = list(ParameterGrid(
          ],
          kernel_size=[[17]],
          dilatation_rate=[1],
+         #pooling=["max"],
          pooling_len=[2],
-         b_norm=[False])
+         b_norm=[False],
+         normalize_features=[True],
+         use_self_attention=[False])
 ))
 
 # network_params = list(ParameterGrid(dict(
@@ -46,7 +50,7 @@ network_params = list(ParameterGrid(dict(
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
-    att_hidden_dim=[None],
+    att_hidden_dim=[32],
     dropout=[0.15],
     b_norm=[True]
 )))

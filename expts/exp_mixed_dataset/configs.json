@@ -10,7 +10,7 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
         "b_norm": true,
         "dropout": 0.15,
         "drug_feature_extractor_params": {
@@ -27,7 +27,9 @@
           "kernel_size": [
             17
           ],
+          "normalize_features": true,
           "pooling_len": 2,
+          "use_self_attention": false,
           "vocab_size": 152
         },
         "fc_layers_dim": [
@@ -43,20 +45,10 @@
   ],
   "dataset_params": [
     {
-      "dataset_name": "mixed",
+      "dataset_name": "twosides",
       "decagon": false,
       "seed": 42,
       "split_mode": "random",
-      "test_size": 0.15,
-      "transformer": "seq",
-      "use_side_effects_mapping": false,
-      "valid_size": 0.1
-    },
-    {
-      "dataset_name": "mixed",
-      "decagon": false,
-      "seed": 42,
-      "split_mode": "leave_drugs_out",
       "test_size": 0.15,
       "transformer": "seq",
       "use_side_effects_mapping": false,
@@ -66,8 +58,8 @@
   "fit_params": [
     {
       "batch_size": 256,
-      "n_epochs": 1,
-      "with_early_stopping": true
+      "n_epochs": 100,
+      "with_early_stopping": false
     }
   ]
 }

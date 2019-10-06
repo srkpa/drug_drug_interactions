@@ -35,14 +35,18 @@ class SelfAttentionLayer(AttentionLayer):
 
 
 class BMNDDI(nn.Module):
-    def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim, adme_dim=0, mode='concat',
-                 att_hidden_dim=None,
-                 graph_network_params=None, edges_embedding_dim=None, tied_weights=True, **kwargs):
+    def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim, mode='concat',
+                 att_hidden_dim=None, graph_network_params=None, edges_embedding_dim=None, tied_weights=True,
+                 auxnet_params=None, **kwargs):
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
         self.mode = mode
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
         dfe_out_dim = self.drug_feature_extractor.output_dim
+        in_size = 2 * self.drug_feature_extractor.output_dim
+        if self.mode in ['sum', 'max', "elementwise"]:
+            in_size = self.drug_feature_extractor.output_dim
+
         if graph_network_params is not None:
             gcnn = GINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
                            **graph_network_params)
@@ -56,10 +60,16 @@ class BMNDDI(nn.Module):
         else:
             self.graph_net = None
 
-        in_size = 2 * self.drug_feature_extractor.output_dim
-        if self.mode in ['sum', 'max', "elementwise"]:
-            in_size = self.drug_feature_extractor.output_dim
-        in_size += adme_dim
+        if auxnet_params:
+            params = auxnet_params
+            print(params)
+            self.auxnet_feature_extractor = fe_factory(arch='fcnet', input_size=params.get("input_dim"),
+                                                       fc_layer_dims=params.get("fc_layers_dim"),
+                                                       output_dim=params.get("output_dim"),
+                                                       last_layer_activation=None,
+                                                       **kwargs)
+
+            in_size += params.get("output_dim")
 
         if att_hidden_dim is None:
             self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
@@ -73,10 +83,9 @@ class BMNDDI(nn.Module):
             )
 
     def forward(self, batch):
-        drugs_a, drugs_b = batch[0], batch[1]
-        adme = []
-        if len(batch) > 2:
-            adme = batch[-1]
+        drugs_a, drugs_b, = batch[:2]
+        a_ux_net_input_features = batch[2:]
+
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
@@ -107,8 +116,10 @@ class BMNDDI(nn.Module):
         else:
             ddi = torch.cat((features_drug1, features_drug2), 1)
 
-        if len(adme) > 0:
-            ddi = torch.cat((ddi, adme), 1)
+        if a_ux_net_input_features:
+            a_ux_net_feat = self.auxnet_feature_extractor(torch.cat(a_ux_net_input_features, 1))
+            ddi = torch.cat((ddi, a_ux_net_feat), 1)
+
         out = self.classifier(ddi)
 
         return out

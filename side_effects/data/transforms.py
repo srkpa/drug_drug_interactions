@@ -16,6 +16,15 @@ from ivbase.utils.datasets.external_databases import ExternalDatabaseLoader
 from ivbase.utils.datasets.datacache import DataCache
 from collections import defaultdict
 from itertools import combinations, product
+from ivbase.transformers.features.targets import GeneEntityTransformer
+
+
+def gene_entity_transformer(drugs, targets):
+    transformer = GeneEntityTransformer(include_pathways_features=True)
+    transformed_out = transformer.fit_transform(targets)
+    res = torch.from_numpy(transformed_out).type("torch.FloatTensor")
+    print("gene entity out", res.shape)
+    return dict(zip(drugs, res))
 
 
 def load_go_idmapping():
@@ -71,12 +80,11 @@ def sequence_transformer(drugs, smiles, one_hot=False):
     return dict(zip(drugs, out))
 
 
-def get_targets(drug_ids):
-    G = ExternalDatabaseLoader.load_drugbank()
-    G.set_index("drug_name", inplace=True)
-    G.index = G.index.str.lower()
-    res = [G.loc[[entry], 'gene-name'].dropna().str.lower().values.tolist() if entry in G.index else [] for entry in
-           drug_ids]
+def load_targets(drugids, targetid="gene-name"):
+    g = ExternalDatabaseLoader.load_drugbank()
+    g.set_index("drug_name", inplace=True)
+    g.index = g.index.str.lower()
+    res = {entry: g.loc[[entry], targetid].dropna().str.lower().values.tolist() for entry in drugids}
     return res
 
 
@@ -113,7 +121,7 @@ def tsp_score(G, pairs_of_nodes):
 
 def target_similarity_profile_transformer(drugs_ids):
     G = load_biogrid_network()
-    targets = list(map(_filter_gene_exists, [G] * len(drugs_ids), get_targets(drugs_ids)))
+    targets = list(map(_filter_gene_exists, [G] * len(drugs_ids), load_targets(drugs_ids)))
     for index, entry in enumerate(drugs_ids):
         target = targets[index]
         if target:
@@ -151,4 +159,5 @@ def adj_transformer(drugs, smiles):
 
 
 if __name__ == '__main__':
-    get_targets()
+    b = load_targets()
+    print(b)
