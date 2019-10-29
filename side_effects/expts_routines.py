@@ -117,7 +117,6 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
         model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
         print("aux", train_data.get_aux_input_dim())
     model = Trainer(**model_params, snapshot_dir=restore_path)
-    #print(model.model)
 
     # Train and save
     training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])

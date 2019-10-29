@@ -14,13 +14,13 @@ dataset_params = list(ParameterGrid(
          use_clusters=[False],
          use_as_filter=[None],
          use_targets=[False],
-         use_side_effect=[True],
+         use_side_effect=[False],
          use_pharm=[False]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[15], batch_size=[256], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -48,7 +48,7 @@ AUxNet_params = list(ParameterGrid(dict(
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    auxnet_params=AUxNet_params,
+    auxnet_params=[None],#AUxNet_params,
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
@@ -62,7 +62,7 @@ model_params = list(ParameterGrid(dict(
     lr=[1e-3],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
-    use_negative_sampled_loss=[False]
+    use_negative_sampled_loss=[True]
 )))
 
 

@@ -10,7 +10,7 @@ from sklearn.utils import compute_class_weight
 
 from side_effects.inits import *
 from side_effects.loss import WeightedBinaryCrossEntropy1, weighted_binary_cross_entropy3, \
-    WeightedBinaryCrossEntropy5
+    WeightedBinaryCrossEntropy2
 from side_effects.models.bmn_ddi import PCNN, FCNet, BMNDDI, DeepDDI, DGLGraph
 from side_effects.data.utils import TDGLDataset, MyDataset
 from side_effects.data.transforms import *
@@ -63,9 +63,85 @@ all_dataset_fn = dict(
 )
 
 
+def weighted_binary_cross_entropy1(output, target, weights_per_targets=None,
+                                   reduction='elementwise_mean'):
+    r"""Function that measures the Binary Cross Entropy
+    between the target and the output for a multi-target binary classification.
+
+    Args:
+        output: FloatTensor of shape N * D
+        target: IntTensor of the same shape as input
+        weights_per_targets: FloatTensor of shape 2 * D
+            The first row of this tensor represent the weights of 0 for all targets,
+            The second row of this tensor represent the weights of 1 for all targets
+        reduction (string, optional): Specifies the reduction to apply to the output:
+            'none' | 'elementwise_mean' | 'sum'. 'none': no reduction will be applied,
+            'elementwise_mean': the sum of the output will be divided by the number of
+            elements in the output, 'sum': the output will be summed. Note: :attr:`size_average`
+            and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+            specifying either of those two args will override :attr:`reduction`. Default: 'elementwise_mean'
+    """
+    assert output.shape == target.shape
+    assert output.shape[1] == weights_per_targets.shape[1]
+    if weights_per_targets is not None:
+        assert len(weights_per_targets) == 2
+        weights = torch.zeros_like(output)
+        zero_w = weights_per_targets[0].unsqueeze(0).expand(*output.shape)
+        weights = torch.where(target == 0, zero_w, weights)
+        one_w = weights_per_targets[1].unsqueeze(0).expand(*output.shape)
+        weights = torch.where(target == 1, one_w, weights)
+    else:
+        weights = None
+
+    return binary_cross_entropy(output, target, weight=weights, reduction=reduction)
+
+
+def weighted_binary_cross_entropy2(output, target, weights_per_targets=None,
+                                   reduction='elementwise_mean'):
+    r"""Function that measures the Binary Cross Entropy
+    between the target and the output for a multi-target binary classification.
+
+    Args:
+        output: FloatTensor of shape N * D
+        target: IntTensor of the same shape as input
+        weights_per_targets: FloatTensor of shape 2 * D
+            The first row of this tensor represent the weights of 0 for all targets,
+            The second row of this tensor represent the weights of 1 for all targets
+        reduction (string, optional): Specifies the reduction to apply to the output:
+            'none' | 'elementwise_mean' | 'sum'. 'none': no reduction will be applied,
+            'elementwise_mean': the sum of the output will be divided by the number of
+            elements in the output, 'sum': the output will be summed. Note: :attr:`size_average`
+            and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+            specifying either of those two args will override :attr:`reduction`. Default: 'elementwise_mean'
+    """
+    if weights_per_targets is not None:
+        loss = weights_per_targets[1] * (target * torch.log(output)) + \
+               weights_per_targets[0] * ((1 - target) * torch.log(1 - output))
+    else:
+        loss = target * torch.log(output) + (1 - target) * torch.log(1 - output)
+
+    return torch.neg(torch.mean(loss))
+
+
 def unbalanced_classes_weights(y):
     weights = non_zeros_distribution(y)
     return torch.from_numpy(weights / y.shape[0])
+
+
+class WeightedBinaryCrossEntropy2(Module):
+
+    def __init__(self, weights_per_label=None, weights_per_batch_element=None):
+        super(WeightedBinaryCrossEntropy2, self).__init__()
+        self.weights_per_label = weights_per_label
+        self.criterion = WeightedBinaryCrossEntropy1(weight=weights_per_batch_element,
+                                                     reduction='none')
+
+    def forward(self, input, target):
+        batch_losses = self.criterion(input, target)
+        assert batch_losses.shape == target.shape
+        mean_per_targets = torch.mean(batch_losses, dim=0)
+        assert mean_per_targets.nelement() == target.shape[1]
+        return torch.sum(self.weights_per_label * mean_per_targets)
 
 
 def compute_labels_density(y):
@@ -140,13 +216,51 @@ def get_loss(loss, **kwargs):
                 weights_per_batch_element = weights_per_batch_element.cuda()
 
         if loss == "weighted-1":
-            return WeightedBinaryCrossEntropy1(weights_per_batch_element=weights_per_batch_element)
+            return WeightedBinaryCrossEntropy1(weight=weights_per_batch_element)
         elif loss == "weighted-3":
             return weighted_binary_cross_entropy3
         elif loss == "weighted-5":
-            return WeightedBinaryCrossEntropy5(weights_per_label=weights_per_label,
+            return WeightedBinaryCrossEntropy2(weights_per_label=weights_per_label,
                                                weights_per_batch_element=weights_per_batch_element)
     return get_loss_or_metric(loss)
+
+
+def weighted_binary_cross_entropy3(inputs, target):
+    assert inputs.shape == target.shape
+    y = target.cpu().numpy()
+    weights_per_targets = compute_classes_weight(y)
+    if torch.cuda.is_available():
+        weights_per_targets = weights_per_targets.cuda()
+    weights = torch.zeros_like(inputs)
+    zero_w = weights_per_targets[0].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(target == 0, zero_w, weights)
+    one_w = weights_per_targets[1].unsqueeze(0).expand(*inputs.shape)
+    weights = torch.where(target == 1, one_w, weights)
+    assert weights.shape == target.shape
+
+    return binary_cross_entropy(inputs, target, weight=weights, reduction='mean')
+
+
+class WeightedBinaryCrossEntropy4(Module):
+
+    def __init__(self, weights_per_targets=None):
+        super(WeightedBinaryCrossEntropy4, self).__init__()
+        self.weights = weights_per_targets
+
+    def forward(self, input, target):
+        assert input.shape == target.shape
+        assert input.shape[1] == self.weights.shape[1]
+        # if self.weights is not None:
+        assert len(self.weights) == 2
+        weights = torch.zeros_like(input)
+        zero_w = self.weights[0].unsqueeze(0).expand(*input.shape)
+        weights = torch.where(target == 0, zero_w, weights)
+        one_w = self.weights[1].unsqueeze(0).expand(*input.shape)
+        weights = torch.where(target == 1, one_w, weights)
+
+        losses = binary_cross_entropy(input, target, reduction='none')
+
+        return torch.sum(weights * losses).mean()
 
 
 def get_init_fn(init_fn):
@@ -184,4 +298,4 @@ def corr(y, output_path):
     ax.set_xticklabels(data.columns)
     ax.set_yticklabels(data.columns)
     plt.savefig("{}/{}".format(output_path, "correlation.png"))
-    #plt.show()
+    # plt.show()
