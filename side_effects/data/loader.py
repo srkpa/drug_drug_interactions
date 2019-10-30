@@ -9,6 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
 from side_effects.data.transforms import *
+from sklearn.utils import compute_class_weight
 from collections import Counter
 
 all_transformers_dict = dict(
@@ -18,6 +19,27 @@ all_transformers_dict = dict(
     dgl=dgl_transformer,
     adj=dgl_transformer
 )
+
+
+def compute_labels_density(y):
+    if isinstance(y, torch.Tensor):
+        y = y.numpy()
+    one_w = np.sum(y, axis=0)
+    zero_w = y.shape[0] - one_w
+    w = np.maximum(one_w, zero_w) / np.minimum(one_w, zero_w)
+    return torch.from_numpy(w)
+
+
+def compute_classes_weight(y, use_exp=False, exp=1):
+    if isinstance(y, torch.Tensor):
+        y = y.numpy()
+    weights = np.array([compute_class_weight(class_weight='balanced', classes=np.array([0, 1]), y=target)
+                        if len(np.unique(target)) > 1 else np.array([1.0, 1.0]) for target in y.T], dtype=np.float32)
+    weights = torch.from_numpy(weights).t()
+    if use_exp:
+        weights = exp * weights
+        return torch.exp(weights)
+    return weights
 
 
 def load_smiles(fname, download=False, dataset_name="twosides"):
@@ -129,11 +151,7 @@ class DDIdataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, item):
-        # Not sure it is the good place
         drug1_id, drug2_id, label = self.samples[item]
-        # adme = []
-        # if self.nb_adme > 0:
-        #     adme, label = label[0], label[-1]
         if self.graph_nodes_mapping is None:
             drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
         elif self.has_graph or self.decagon:

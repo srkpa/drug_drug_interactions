@@ -18,6 +18,11 @@ do
 	    shift # past argument
 	    shift # past value
 	    ;;
+	     -p|--project_path)
+	    project_path="$2"
+	    shift # past argument
+	    shift # past value
+	    ;;
 	    *)
 		shift
 		echo "Invalid option -$1" >&2
@@ -28,6 +33,7 @@ set -e
 
 server=${server:=local}
 instance_type=${instance_type:=t3.large}
+project_path=${project_path:=$HOME/drug_drug_interactions}
 
 python ${expt_name}/config.py -o ${expt_name}/configs.json
 case ${server} in
@@ -45,6 +51,10 @@ case ${server} in
 
   mcg)
    mcguffin launch --exp-name ${expt_name} --launch-config launch_settings.json  --exp-config ${expt_name}/configs.json --save-checkpoint
+   ;;
+
+  gra)
+   graham --project_path ${project_path} --exp_name ${expt_name}
    ;;
 
   *)

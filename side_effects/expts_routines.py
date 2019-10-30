@@ -6,7 +6,7 @@ import hashlib
 from collections import MutableMapping, OrderedDict
 
 from side_effects.trainer import Trainer
-from side_effects.data.loader import get_data_partitions, DataCache
+from side_effects.data.loader import get_data_partitions, DataCache, compute_classes_weight, compute_labels_density
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
 
@@ -98,8 +98,6 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     paths["checkpoint_path"] = checkpoint_path
 
     dc = DataCache()
-    # cach_path = dc.get_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
-    #     dataset_params.get('dataset_name')), force=True)
     cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
         dataset_params.get('dataset_name')))
     expt_params = model_params
@@ -113,12 +111,23 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
 
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
     model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
+
+    # Set up of loss function params
+    loss_params = model_params["loss_params"]
+    model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
+        loss_params["use_fixed_binary_cost"] else None
+
+    model_params["loss_params"]["density"] = compute_labels_density(train_data.get_targets()) if \
+        loss_params["use_fixed_label_cost"] else None
+    del (model_params["loss_params"]["use_fixed_binary_cost"])
+    del (model_params["loss_params"]["use_fixed_label_cost"])
+
+    # Configure the auxiliary network who process side features
     if model_params['network_params'].get('auxnet_params', None):
         model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
-        print("aux", train_data.get_aux_input_dim())
-    model = Trainer(**model_params, snapshot_dir=restore_path)
 
     # Train and save
+    model = Trainer(**model_params, snapshot_dir=restore_path)
     training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
     print(f"Training details: \n{training}")
     save_config(all_params, paths.pop('config_filename'))

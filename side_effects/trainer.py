@@ -9,7 +9,7 @@ from tensorboardX.writer import SummaryWriter
 from torch.utils.data import DataLoader
 from side_effects.metrics import *
 from side_effects.models import all_networks_dict
-from side_effects.loss import get_loss, BinaryCrossEntropyP
+from side_effects.loss import BinaryCrossEntropyP
 from ivbase.nn.commons import get_optimizer
 import ivbase.utils.trainer as ivbt
 from ivbase.utils.snapshotcallback import SnapshotCallback
@@ -67,8 +67,8 @@ class TensorBoardLogger2(Logger):
 
 class Trainer(ivbt.Trainer):
 
-    def __init__(self, network_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, use_negative_sampled_loss=False, snapshot_dir="", **loss_params):
+    def __init__(self, network_params, loss_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
+                 metrics_names=None, snapshot_dir=""):  # use_negative_sampled_loss=False,
 
         self.history = None
         network_name = network_params.pop('network_name')
@@ -81,7 +81,7 @@ class Trainer(ivbt.Trainer):
         metrics = {name: all_metrics_dict[name] for name in metrics_names}
 
         ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu, metrics=metrics,
-                              loss_fn=BinaryCrossEntropyP(use_negative_sampled_loss), snapshot_path=snapshot_dir)
+                              loss_fn=BinaryCrossEntropyP(**loss_params), snapshot_path=snapshot_dir)
 
         # Model.__init__(self, model=network, optimizer=optimizer,
         #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)

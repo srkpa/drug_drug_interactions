@@ -32,7 +32,10 @@ drug_features_extractor_params = list(ParameterGrid(
          kernel_size=[[17]],
          dilatation_rate=[1],
          pooling_len=[2],
-         b_norm=[False])
+         b_norm=[False],
+         pooling=['max'],
+         dropout=[0.2]
+         )
 ))
 
 AUxNet_params = list(ParameterGrid(dict(
@@ -48,12 +51,20 @@ AUxNet_params = list(ParameterGrid(dict(
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    auxnet_params=[None],#AUxNet_params,
+    auxnet_params=[None],  # AUxNet_params,
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
-    dropout=[0.15],
+    dropout=[0.0],
     b_norm=[True]
+)))
+
+loss_params = list(ParameterGrid(dict(
+    use_negative_sampling=[False],
+    use_fixed_binary_cost=[False],
+    use_fixed_label_cost=[False],
+    use_binary_cost_per_batch=[False],
+    use_label_cost_per_batch=[False]
 )))
 
 model_params = list(ParameterGrid(dict(
@@ -62,7 +73,7 @@ model_params = list(ParameterGrid(dict(
     lr=[1e-3],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
-    use_negative_sampled_loss=[True]
+    loss_params=loss_params
 )))
 
 
