@@ -441,17 +441,17 @@ def load_meddra(level=None):
             meddra_mapping.index}
 
 
-def load_twosides():
-    data_set = pd.read_csv("/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
-    drug_mapping = pd.read_csv(
-        "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides-drugs-all.csv", index_col="drug_name")
-
-    print(list(drug_mapping))
-    exit()
-    drug2smiles = {entry: drug_mapping.loc[entry, "smiles"] for entry in drug_mapping.index}
-    combo2se = {name: list(set(group["event_umls_id"].values.tolist())) for name, group in
-                data_set.groupby(['drug1', 'drug2'])}
-    return combo2se, drug2smiles
+# def load_twosides():
+#     data_set = pd.read_csv("/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
+#     drug_mapping = pd.read_csv(
+#         "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides-drugs-all.csv", index_col="drug_name")
+#
+#     print(list(drug_mapping))
+#     exit()
+#     drug2smiles = {entry: drug_mapping.loc[entry, "smiles"] for entry in drug_mapping.index}
+#     combo2se = {name: list(set(group["event_umls_id"].values.tolist())) for name, group in
+#                 data_set.groupby(['drug1', 'drug2'])}
+#     return combo2se, drug2smiles
 
 
 def load_mono_se(fname='bio-decagon-mono.csv'):
@@ -465,18 +465,3 @@ def load_mono_se(fname='bio-decagon-mono.csv'):
         stitch_id, se = contents[0], contents[-1].lower()
         stitch2se[stitch_id].add(se)
     return stitch2se
-
-
-if __name__ == '__main__':
-    # load_mono_se()
-    load_twosides()
-    exit()
-    import csv
-
-    a, _ = load_twosides()
-    print(len(a))
-    exit()
-    writer = csv.writer(open("twosides.csv", "w"))
-    writer.writerow(["Drug 1", "Drug 2", "ddi type"])
-    for i, j in a.items():
-        writer.writerow([i[0], i[1], ";".join(j)])

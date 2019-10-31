@@ -6,31 +6,28 @@ import click
 
 
 @click.command()
-@click.option('--input_path', '-i', default="",
-              help="Location of the input data files")
 @click.option('--project_path', '-p',
               help="Path to project.")
 @click.option('--exp_name', '-e', help="Path for model restoration (resume training at last checkpoint).")
-def launch(project_path, input_path=None, exp_name=None,
-           checkpoint_path=None, restore_path=None):
+def launch(project_path, exp_name=None, checkpoint_path=None, restore_path=None):
+    input_path = "{}/datasets-ressources/DDI/".format(os.environ["INVIVO_CACHE_ROOT"])
     output_path = os.environ["INVIVO_RESULTS_ROOT"]
     exec_file = f"{project_path}/bin/train"
     config_script = os.path.join(project_path, "expts", exp_name, "config.py")
     config_file = os.path.join(project_path, "expts", exp_name, "configs.json")
     subprocess.run(["python", config_script, "-o", config_file])
     config_file = os.path.join(project_path, "expts", exp_name, "configs.json")
-    os.makedirs(os.path.join(output_path, exp_name), exist_ok=True)
-    nb_sub_tasks = len(os.listdir(os.path.join(output_path, exp_name)))
+    output_path = os.path.join(output_path, exp_name)
+    os.makedirs(output_path, exist_ok=True)
+    nb_sub_tasks = len(os.listdir(output_path))
     print(f"sub-tasks completed: {nb_sub_tasks}")
     with open(config_file, 'r') as fd:
         config = json.load(fd)
     hp_grid = list(ParameterGrid(config))
     print(f"Number of tasks: {len(hp_grid)}")
     process = []
-    outfiles = []
     for i, hp in enumerate(hp_grid):
-        output_folder = os.path.join(output_path, exp_name, f"{exp_name}_hp_{i + nb_sub_tasks}")
-        outfiles.append(output_folder)
+        output_folder = os.path.join(output_path, f"{exp_name}_hp_{i + nb_sub_tasks}")
         local_config_file = os.path.join(output_folder, "config.json")
         os.makedirs(output_folder, exist_ok=True)
         with open(local_config_file, 'w') as fp:
@@ -43,11 +40,11 @@ def launch(project_path, input_path=None, exp_name=None,
         proc.wait()
 
     print("Let's compress...")
-    os.chdir(os.path.join(output_path, exp_name))
-    for exp_out_folder in outfiles:
-        exp_out_folder = os.path.basename(exp_out_folder)
-        subprocess.run(["zip", "-r", exp_out_folder + ".zip", exp_out_folder])
-        subprocess.run(["rm", "-r", exp_out_folder])
+    os.chdir(output_path)
+    for i, _ in enumerate(hp_grid):
+        hp_output_path = f"{exp_name}_hp_{i + nb_sub_tasks}"
+        subprocess.run(["zip", "-r", hp_output_path + ".zip", hp_output_path])
+        subprocess.run(["rm", "-r", hp_output_path])
 
 
 if __name__ == '__main__':
