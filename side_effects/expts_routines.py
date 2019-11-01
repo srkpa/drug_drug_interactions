@@ -4,8 +4,8 @@ import torch
 import pickle
 import hashlib
 from collections import MutableMapping, OrderedDict
-
 from side_effects.trainer import Trainer
+from side_effects.models.deep_rf import DeepRF
 from side_effects.data.loader import get_data_partitions, DataCache, compute_classes_weight, compute_labels_density
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
@@ -57,8 +57,8 @@ def save(obj, filename, output_path):
         json.dump(obj, CNF)
 
 
-def run_experiment(model_params, dataset_params, fit_params, input_path, output_path, restore_path,
-                   checkpoint_path):
+def run_experiment(model_params, dataset_params, input_path, output_path, restore_path,
+                   checkpoint_path, fit_params=None):
     """
     Placeholder function that should be implemented to run the models
 
@@ -97,45 +97,47 @@ def run_experiment(model_params, dataset_params, fit_params, input_path, output_
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
     paths["checkpoint_path"] = checkpoint_path
 
-    cach_path = f"{input_path}/{dataset_params.get('dataset_name')}"
-    # dc = DataCache()
-    # cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
-    #     dataset_params.get('dataset_name')))
+    # cach_path = f"{input_path}/{dataset_params.get('dataset_name')}"
+    dc = DataCache()
+    cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
+        dataset_params.get('dataset_name')))
     expt_params = model_params
 
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
-
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
-
-    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
-
-    # Set up of loss function params
-    loss_params = model_params["loss_params"]
-    model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
-        loss_params["use_fixed_binary_cost"] else None
-
-    model_params["loss_params"]["density"] = compute_labels_density(train_data.get_targets()) if \
-        loss_params["use_fixed_label_cost"] else None
-    del (model_params["loss_params"]["use_fixed_binary_cost"])
-    del (model_params["loss_params"]["use_fixed_label_cost"])
-
-    # Configure the auxiliary network who process side features
-    if model_params['network_params'].get('auxnet_params', None):
-        model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
-
-    # Train and save
-    model = Trainer(**model_params, snapshot_dir=restore_path)
-    training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
-    print(f"Training details: \n{training}")
     save_config(all_params, paths.pop('config_filename'))
-    model.train(train_data, valid_data, **fit_params, **paths)
+    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
+    algorithm = model_params['network_params'].get('network_name')
+    y_true, y_probs, output = {}, {}, {}
+    if algorithm == "deeprf":
+        y_true, y_probs, output = DeepRF(**model_params)(train_data, test_data)
+    else:
+        model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
+        # Set up of loss function params
+        loss_params = model_params["loss_params"]
+        model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
+            loss_params["use_fixed_binary_cost"] else None
+        model_params["loss_params"]["density"] = compute_labels_density(train_data.get_targets()) if \
+            loss_params["use_fixed_label_cost"] else None
+        del (model_params["loss_params"]["use_fixed_binary_cost"])
+        del (model_params["loss_params"]["use_fixed_label_cost"])
 
-    # Test and save
-    y_true, y_probs, output = model.test(test_data)
+        # Configure the auxiliary network who process side features
+        if model_params['network_params'].get('auxnet_params', None):
+            model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
+
+        # Train and save
+        model = Trainer(**model_params, snapshot_dir=restore_path)
+        training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
+        print(f"Training details: \n{training}")
+        model.train(train_data, valid_data, **fit_params, **paths)
+        # Test and save
+        y_true, y_probs, output = model.test(test_data)
+
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
+

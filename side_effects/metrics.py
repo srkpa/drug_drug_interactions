@@ -124,3 +124,7 @@ def mapk(predicted, actual, k=50):
     predicted = np.where(predicted >= 0.5, 1, 0)
     actual, predicted = actual.numpy().T.tolist(), predicted.T.tolist()
     return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])
+
+
+def compute_metrics(y_pred, y_true, metrics):
+    return {metric_name: metric_fn(y_pred, y_true) for metric_name, metric_fn in metrics.items()}

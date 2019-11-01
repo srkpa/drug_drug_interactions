@@ -198,6 +198,10 @@ class DDIdataset(Dataset):
     def nb_labels(self):
         return len(self.labels_vectorizer.classes_)
 
+    def get_samples(self):
+        samples = [(self.drug_to_smiles[d1], self.drug_to_smiles[d2]) for d1, d2, _ in self.samples]
+        return samples
+
     def get_targets(self):
         y = list(zip(*self.samples))[2]
         return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)

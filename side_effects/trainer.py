@@ -15,22 +15,25 @@ import ivbase.utils.trainer as ivbt
 from ivbase.utils.snapshotcallback import SnapshotCallback
 from ivbase.utils.trainer import TrainerCheckpoint
 
-all_metrics_dict = dict(
-    micro_roc=wrapped_partial(roc_auc_score, average='micro'),
-    macro_roc=wrapped_partial(roc_auc_score, average='macro'),
-    micro_auprc=wrapped_partial(auprc_score, average='micro'),
-    macro_auprc=wrapped_partial(auprc_score, average='macro'),
-    micro_f1=wrapped_partial(ivbm.f1_score, average='micro'),
-    macro_f1=wrapped_partial(ivbm.f1_score, average='macro'),
-    micro_acc=wrapped_partial(accuracy_score, average='micro'),
-    macro_acc=wrapped_partial(accuracy_score, average='macro'),
-    micro_prec=wrapped_partial(precision_score, average='micro'),
-    macro_prec=wrapped_partial(precision_score, average='macro'),
-    micro_rec=wrapped_partial(recall_score, average='micro'),
-    macro_rec=wrapped_partial(recall_score, average='macro'),
-    apk=apk,
-    mapk=mapk
-)
+
+def get_metrics():
+    all_metrics_dict = dict(
+        micro_roc=wrapped_partial(roc_auc_score, average='micro'),
+        macro_roc=wrapped_partial(roc_auc_score, average='macro'),
+        micro_auprc=wrapped_partial(auprc_score, average='micro'),
+        macro_auprc=wrapped_partial(auprc_score, average='macro'),
+        micro_f1=wrapped_partial(ivbm.f1_score, average='micro'),
+        macro_f1=wrapped_partial(ivbm.f1_score, average='macro'),
+        micro_acc=wrapped_partial(accuracy_score, average='micro'),
+        macro_acc=wrapped_partial(accuracy_score, average='macro'),
+        micro_prec=wrapped_partial(precision_score, average='micro'),
+        macro_prec=wrapped_partial(precision_score, average='macro'),
+        micro_rec=wrapped_partial(recall_score, average='micro'),
+        macro_rec=wrapped_partial(recall_score, average='macro'),
+        apk=apk,
+        mapk=mapk
+    )
+    return all_metrics_dict
 
 
 class TensorBoardLogger2(Logger):
@@ -78,7 +81,7 @@ class Trainer(ivbt.Trainer):
         self.loss_name = loss
         self.loss_params = loss_params
         metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
-        metrics = {name: all_metrics_dict[name] for name in metrics_names}
+        metrics = {name: get_metrics()[name] for name in metrics_names}
 
         ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu, metrics=metrics,
                               loss_fn=BinaryCrossEntropyP(**loss_params), snapshot_path=snapshot_dir)

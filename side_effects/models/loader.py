@@ -1,6 +1,7 @@
 import json
-from side_effects.trainer import Trainer
+from side_effects.trainer import *
 import torch
+import torch.nn as nn
 from collections import OrderedDict
 
 
@@ -15,13 +16,22 @@ def rename_state_dict_keys(source):
     torch.save(new_state_dict, source)
 
 
-def load_pretrained_model(dir):
-    params = json.load(open(f"{dir}/configs.json"))
+def load_pretrained_model(directory, delete_layers=None):
+    params = json.load(open(f"{directory}/configs.json"))
     model_params = params["model_params"][-1]
     model_params["network_params"].update(dict(output_dim=model_params["network_params"].get("output_dim", 86)))
     model = Trainer(**model_params)
-    rename_state_dict_keys(f"{dir}/weights.json")
-    model.load(f"{dir}/weights.json")
+    if delete_layers == 'last':
+        model.model.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-1])
+    rename_state_dict_keys(f"{directory}/weights.json")
+    model.load(f"{directory}/weights.json")
     model.model.eval()
     return model
 
+
+if __name__ == '__main__':
+    m = load_pretrained_model(
+        "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/pretrained_models/leave_drugs_out/drugbank")
+    print(m.model.classifier.net)
+
+    print(m.model)
