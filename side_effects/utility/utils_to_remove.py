@@ -382,6 +382,41 @@ def test():
     loss3 = binary_cross_entropy(outputs, targets)
     print(loss1, loss2, loss3)
 
+def pie(file_path="/home/rogia/Téléchargements/twosides-icd11.csv"):
+    data = pd.read_csv(file_path, sep=",")
+    icd2se = data.groupby(["icd"])
+    fig, axs = plt.subplots(5, 5)
+    g = plt.colormaps()
+    i = 0
+    for name, group in icd2se:
+        labels = list(icd2se.groups[name])
+        print(len(labels), len(set(labels)))
+        sizes = [1] * len(labels)
+        if 0 <= i < 5:
+            ax1 = axs[0, i]
+        elif 5 <= i < 10:
+            ax1 = axs[1, i - 5]
+        elif 10 <= i < 15:
+            ax1 = axs[2, i - 10]
+        elif 15 <= i < 20:
+            ax1 = axs[3, i - 15]
+        else:
+            ax1 = axs[4, i - 20]
+        cm = plt.get_cmap(g[i])
+        cout = cm(np.arange(len(labels)))
+        ax1.pie(sizes, labels=None, startangle=90, colors=cout)
+        centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+        ax1.add_artist(centre_circle)
+        ax1.axis('equal')
+        ax1.set_title(name)
+        plt.tight_layout()
+
+        i += 1
+    plt.show()
+
+
+if __name__ == '__main__':
+    pie()
 
 if __name__ == '__main__':
     # test_ddi()

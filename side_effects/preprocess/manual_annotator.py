@@ -1,5 +1,5 @@
 from collections import Counter
-from side_effects.graphics import *
+from side_effects.expts_results import *
 import matplotlib.pyplot as plt
 import numpy as np
 import csv

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+for f in $1/*
+do
+  filename=$(basename -- "$f")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  echo $f
+  #mkdir $2/$filename
+  if [ $extension == "zip" ]
+  then
+      unzip $f -d $2/
+  elif [ $extension == "gz" ]
+  then
+      tar -zxvf $f/output/model.tar.gz -C $2/
+  else
+    echo "Not OK"
+    rm -r $2/$filename
+fi
+done

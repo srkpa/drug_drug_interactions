@@ -1,12 +1,13 @@
-"""
-Utility functions for link prediction
-Most code is adapted from authors' implementation of RGCN link prediction:
-https://github.com/MichSchli/RelationPrediction
-"""
-
+import json
+import os
+import pickle
+import shutil
+import tempfile
+import pandas as pd
+import dgl
 import numpy as np
 import torch
-import dgl
+from ivbase.utils.aws import aws_cli
 
 
 #######################################################################
@@ -238,3 +239,70 @@ def node_norm_to_edge_norm(g, node_norm):
     g.ndata['norm'] = node_norm
     g.apply_edges(lambda edges: {'norm': edges.dst['norm']})
     return g.edata['norm']
+
+
+#######################################################################
+#
+# Utility function for expt results exploration
+#
+#######################################################################
+
+def download_results(s3_paths, output_path):
+    INVIVO_RESULTS = os.environ["INVIVO_RESULTS_ROOT"]
+    tmp_dir = tempfile.mkdtemp()
+    for i, s3_path in enumerate(s3_paths):
+        aws_cli(['s3', 'sync', s3_path, tmp_dir, '--quiet'])
+    for out_file in os.listdir(tmp_dir):
+        path = os.path.join(tmp_dir, out_file)
+        if out_file.endswith(".zip"):
+            print(out_file)
+            shutil.unpack_archive(path, extract_dir=os.path.join(INVIVO_RESULTS, output_path, out_file))
+
+    return output_path
+
+
+def save_results(filename, contents, engine='xlsxwriter'):
+    writer = pd.ExcelWriter(filename, engine=engine)
+    for sheet, data in contents:
+        data.to_excel(writer, sheet_name=sheet)
+    writer.save()
+
+
+def get_expt_results(output_folder):
+    out = []
+    for task_id in os.listdir(output_folder):
+        folder = os.path.join(output_folder, task_id)
+        if os.path.isdir(folder):
+            params, res, _, _ = _unpack_results(folder)
+            if res:
+                out.append({**params, **res, "task_id": task_id})
+
+    return pd.DataFrame(out)
+
+
+def _format_dict_keys(expt_config):
+    new_expt_config = {}
+    for param, val in expt_config.items():
+        new_key = param.split(".")[-1]
+        new_expt_config[new_key] = val
+    return new_expt_config
+
+
+def _unpack_results(folder):
+    expt_config, expt_results, y_true, y_preds = None, None, None, None
+    for f in os.listdir(folder):
+        filepath = os.path.join(folder, f)
+        if os.path.isfile(filepath):
+            file_ext = os.path.splitext(filepath)[-1]
+            if file_ext == ".pkl":
+                out = pickle.load(open(filepath, "rb"))
+                if f.endswith("_preds.pkl"):
+                    y_preds = out
+                elif f.endswith("_res.pkl"):
+                    expt_results = out
+                elif f.endswith("_targets.pkl"):
+                    y_true = out
+            elif f.endswith("_params.json"):
+                expt_config = json.load(open(filepath, "rb"))
+
+    return expt_config, expt_results, y_true, y_preds

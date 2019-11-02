@@ -16,10 +16,10 @@ def rename_state_dict_keys(source):
     torch.save(new_state_dict, source)
 
 
-def load_pretrained_model(directory, delete_layers=None):
+def load_pretrained_model(directory, delete_layers=None, output_dim=86):
     params = json.load(open(f"{directory}/configs.json"))
     model_params = params["model_params"][-1]
-    model_params["network_params"].update(dict(output_dim=model_params["network_params"].get("output_dim", 86)))
+    model_params["network_params"].update(dict(output_dim=output_dim))
     model = Trainer(**model_params)
     if delete_layers == 'last':
         model.model.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-1])
@@ -31,7 +31,8 @@ def load_pretrained_model(directory, delete_layers=None):
 
 if __name__ == '__main__':
     m = load_pretrained_model(
-        "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/pretrained_models/leave_drugs_out/drugbank")
+        "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/pretrained_models/random/drugbank",
+        delete_layers='last')
     print(m.model.classifier.net)
 
     print(m.model)

@@ -17,10 +17,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
-        "auxnet_params": null,
         "b_norm": true,
-        "dropout": 0.15,
+        "dropout": 0.25,
         "drug_feature_extractor_params": {
           "arch": "conv1d",
           "b_norm": false,
@@ -36,7 +34,6 @@
           "kernel_size": [
             17
           ],
-          "pooling": "max",
           "pooling_len": 2,
           "vocab_size": 152
         },
@@ -45,7 +42,7 @@
           128
         ],
         "mode": "concat",
-        "network_name": "bmnddi"
+        "network_name": "mltddi"
       },
       "optimizer": "adam"
     }

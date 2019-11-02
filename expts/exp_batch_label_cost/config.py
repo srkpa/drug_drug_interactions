@@ -1,7 +1,7 @@
 import click
 import json
 from sklearn.model_selection import ParameterGrid
-import os
+from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
@@ -19,27 +19,50 @@ dataset_params = list(ParameterGrid(
          )
 ))
 
-pretrained_drug_features_extractor_params = list(ParameterGrid(
-    dict(directory=[
-        "{}/datasets-ressources/DDI/twosides/pretrained_models/random/drugbank".format(
-            os.environ["INVIVO_CACHE_ROOT"])],
-         delete_layers=["last"],
-         output_dim=[86]
-    )
+fit_params = list(ParameterGrid(
+    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+
+drug_features_extractor_params = list(ParameterGrid(
+    dict(arch=['conv1d'],
+         vocab_size=[len(SMILES_ALPHABET) + 2],
+         embedding_size=[20],
+         cnn_sizes=[
+             [128] * 4
+         ],
+         kernel_size=[[17]],
+         dilatation_rate=[1],
+         pooling_len=[2],
+         b_norm=[False],
+         dropout=[0.0]
+         )
 ))
 
 network_params = list(ParameterGrid(dict(
-    network_name=['deeprf'],
-    n_estimators=[400],
-    random_state=[42],
-    n_jobs=[-1],
-    nb_chains=[10],
-    pretrained_drug_features_extractor_params=pretrained_drug_features_extractor_params,
+    network_name=['bmnddi'],
+    drug_feature_extractor_params=drug_features_extractor_params,
+    auxnet_params=[None],
+    fc_layers_dim=[[128] * 2],
+    mode=['concat'],
+    att_hidden_dim=[None],
+    dropout=[0.15],
+    b_norm=[True]
+)))
+
+loss_params = list(ParameterGrid(dict(
+    use_negative_sampling=[False],
+    use_fixed_binary_cost=[False],
+    use_fixed_label_cost=[False],
+    use_binary_cost_per_batch=[True],
+    use_label_cost_per_batch=[True]
 )))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
+    optimizer=['adam'],
+    lr=[1e-3],
+    loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    loss_params=loss_params
 )))
 
 
@@ -53,6 +76,7 @@ def generate_config_file(dataset, algo, outfile):
     expt_config = dict(
         model_params=model_params,
         dataset_params=dataset_params,
+        fit_params=fit_params
     )
 
     with open(outfile, 'w') as f:
