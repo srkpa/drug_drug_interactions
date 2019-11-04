@@ -14,10 +14,10 @@ class DeepRF:
         del (network_params["network_name"])
         drug_features_extractor_params = network_params.pop("pretrained_drug_features_extractor_params")
         self.drug_features_extractor = load_pretrained_model(**drug_features_extractor_params)
+        nb_chains = network_params.pop("nb_chains", None)
         self.base_lr = RandomForestClassifier(**network_params)
         self.mode = option
-        if self.mode is "chain":
-            nb_chains = network_params.pop("nb_chains")
+        if nb_chains:
             self.chains = [ClassifierChain(self.base_lr, order='random', random_state=i) for i in range(nb_chains)]
         self.metrics = {name: get_metrics()[name] for name in metrics_names}
 
@@ -55,7 +55,7 @@ class DeepRF:
         if isinstance(y_train, torch.Tensor):
             y_train = y_train.numpy()
         if isinstance(y_valid, torch.Tensor):
-            y_valid = y_train.numpy()
+            y_valid = y_valid.numpy()
         y_train = np.concatenate((y_train, y_valid), axis=0)
 
         return x_train, y_train, x_test, y_test
