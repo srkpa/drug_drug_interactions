@@ -34,7 +34,7 @@ network_params = list(ParameterGrid(dict(
     random_state=[42],
     n_jobs=[-1],
     class_weight=[None],  # "balanced", "balanced_subsample"],
-    nb_chains=[2],
+    #nb_chains=[2],
     pretrained_drug_features_extractor_params=pretrained_drug_features_extractor_params,
 )))
 

@@ -5,13 +5,14 @@ import torch.nn as nn
 from collections import OrderedDict
 
 
-def rename_state_dict_keys(source):
+def rename_state_dict_keys(source, keys_to_remove=None):
     state_dict = torch.load(source, map_location="cpu")
     new_state_dict = OrderedDict()
 
     for key, value in state_dict.items():
-        new_key = key.split("__")[-1]
-        new_state_dict[new_key] = value
+        if key not in keys_to_remove:
+            new_key = key.split("__")[-1]
+            new_state_dict[new_key] = value
 
     torch.save(new_state_dict, source)
 
@@ -21,9 +22,11 @@ def load_pretrained_model(directory, delete_layers=None, output_dim=86):
     model_params = params["model_params"][-1]
     model_params["network_params"].update(dict(output_dim=output_dim))
     model = Trainer(**model_params)
+    keys_to_remove = []
     if delete_layers == 'last':
         model.model.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-2])
-    rename_state_dict_keys(f"{directory}/weights.json")
+        keys_to_remove.extend(["classifier.net.1.weight", "classifier.net.1.bias"])
+    rename_state_dict_keys(f"{directory}/weights.json", keys_to_remove)
     model.load(f"{directory}/weights.json")
     model.model.eval()
     return model
