@@ -32,15 +32,15 @@ class DeepRF:
         else:
             self.base_lr.fit(x_train, y_train)
             y_pred = self.base_lr.predict(x_test)
-        ens_metrics = compute_metrics(y_pred, y_test, self.metrics)
-        print(f"Output metrics, {ens_metrics}")
+        metrics = compute_metrics(y_pred, y_test, self.metrics)
+        print(f"Output metrics, {metrics}")
         # chain_metrics = [compute_metrics(Y_pred_chain, y_test, self.metrics) for Y_pred_chain in y_pred]
-        return y_test, y_pred, ens_metrics  # chain_metrics
+        return y_test, y_pred, metrics  # chain_metrics
 
     def get_partitions(self, train_dataset, valid_dataset, test_dataset, batch_size=256, **kwargs):
         train_loader = DataLoader(train_dataset, batch_size=batch_size)
         test_loader = DataLoader(test_dataset, batch_size=batch_size)
-        valid_loader = DataLoader(test_dataset, batch_size=batch_size)
+        valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
         x_train = self.drug_features_extractor.test_generator(train_loader)
         x_test = self.drug_features_extractor.test_generator(test_loader)
         x_valid = self.drug_features_extractor.test_generator(valid_loader)
