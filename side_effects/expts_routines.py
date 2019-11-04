@@ -113,7 +113,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     algorithm = model_params['network_params'].get('network_name')
     y_true, y_probs, output = {}, {}, {}
     if algorithm == "deeprf":
-        y_true, y_probs, output = DeepRF(**model_params)(train_data, test_data)
+        y_true, y_probs, output = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
         model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
         # Set up of loss function params

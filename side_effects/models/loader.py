@@ -22,7 +22,7 @@ def load_pretrained_model(directory, delete_layers=None, output_dim=86):
     model_params["network_params"].update(dict(output_dim=output_dim))
     model = Trainer(**model_params)
     if delete_layers == 'last':
-        model.model.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-1])
+        model.model.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-2])
     rename_state_dict_keys(f"{directory}/weights.json")
     model.load(f"{directory}/weights.json")
     model.model.eval()

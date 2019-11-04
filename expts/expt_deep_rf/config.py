@@ -9,7 +9,7 @@ dataset_params = list(ParameterGrid(
          split_mode=["random"],  # "leave_drugs_out"
          test_size=[0.10],
          valid_size=[0.15],
-         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[0],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
          use_as_filter=[None],
@@ -23,23 +23,25 @@ pretrained_drug_features_extractor_params = list(ParameterGrid(
     dict(directory=[
         "{}/datasets-ressources/DDI/twosides/pretrained_models/random/drugbank".format(
             os.environ["INVIVO_CACHE_ROOT"])],
-         delete_layers=["last"],
-         output_dim=[86]
+        delete_layers=["last"],
+        output_dim=[86]
     )
 ))
 
 network_params = list(ParameterGrid(dict(
     network_name=['deeprf'],
-    n_estimators=[400],
+    n_estimators=[100],
     random_state=[42],
     n_jobs=[-1],
-    nb_chains=[10],
+    class_weight=[None],  # "balanced", "balanced_subsample"],
+    nb_chains=[2],
     pretrained_drug_features_extractor_params=pretrained_drug_features_extractor_params,
 )))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    option=["default"]
 )))
 
 
