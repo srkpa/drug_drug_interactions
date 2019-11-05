@@ -31,7 +31,8 @@ class DeepRF:
             y_pred = np.array([chain.predict(x_test) for chain in self.chains]).mean(axis=0)
         else:
             self.base_lr.fit(x_train, y_train)
-            y_pred = self.base_lr.predict(x_test)
+            # y_pred = self.base_lr.predict(x_test)
+            y_pred = self.base_lr.predict_proba(x_test)
         metrics = compute_metrics(y_pred, y_test, self.metrics)
         print(f"Output metrics, {metrics}")
         # chain_metrics = [compute_metrics(Y_pred_chain, y_test, self.metrics) for Y_pred_chain in y_pred]
