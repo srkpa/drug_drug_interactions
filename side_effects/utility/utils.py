@@ -306,3 +306,80 @@ def _unpack_results(folder):
                 expt_config = json.load(open(filepath, "rb"))
 
     return expt_config, expt_results, y_true, y_preds
+
+
+# ----------------------------------graphics----------------
+
+import matplotlib.pyplot as plt
+from collections import Counter
+from pickle import load
+from side_effects.metrics import auprc_score, roc_auc_score
+
+
+# def display(filepath):
+#     df = pd.read_table(filepath, sep="\t")
+#     print(df)
+#     exit()
+#     plt.figure()
+#     df.plot(x="epoch", y=["loss", "val_loss"])
+#     plt.show()
+
+
+def display(dataset_name, exp_folder=None, upper_bound=None):
+    data_set = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/{dataset_name}/{dataset_name}.csv",
+                           sep=",")
+    l = [e for l in data_set["ddi type"].values.tolist() for e in l.split(";")]
+    ab = dict(Counter(l))
+    print(ab)
+    g = list(set(l))
+    print(g)
+    g.sort()
+    files = os.listdir(exp_folder)
+    y_preds = load(open(os.path.join(exp_folder, "predicted_labels.pkl"),"rb"))  # load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_preds.pkl")][-1]), "rb"))  #
+    y_true = load(open(os.path.join(exp_folder, "true_labels.pkl"), "rb"))  #load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_targets.pkl")][-1]),"rb"))  #
+
+    ap_scores = auprc_score(y_pred=y_preds, y_true=y_true, average=None)
+    rc_scores = roc_auc_score(y_pred=y_preds, y_true=y_true, average=None)
+    # first position
+    pos = list(ap_scores).index(max(ap_scores))
+    print(ap_scores[pos])
+    print(rc_scores[pos])
+    print(g[pos])
+    print("sampe", ab[g[pos]])
+
+    pos = list(ap_scores).index(min(ap_scores))
+    print(ap_scores[pos])
+    print(rc_scores[pos])
+    print(g[pos])
+    print(ab[g[pos]])
+
+    # zoom
+    x = [ab[g[i]] for i in range(len(ap_scores))]
+    if upper_bound:
+        x, y = [j for i, j in enumerate(x) if j <= 2000], [i for i, j in enumerate(x) if j <= 2000]
+        ap_scores = [ap_scores[i] for i in y]
+        rc_scores = [rc_scores[i] for i in y]
+
+    # Plots
+    # plt.figure(figsize=(12, 5))
+    # plt.subplot(131)
+    # plt.plot(x, ap_scores, "ro")
+    # plt.legend()
+    # plt.subplot(132)
+    # plt.plot(x, rc_scores, "bo", )
+    # plt.legend()
+    # plt.subplot(133)
+    plt.figure(figsize=(8, 6))
+    plt.plot(x, ap_scores, "r.", label="AUC-PR")
+    plt.plot(x, rc_scores, "b.", label="AUC-ROC")
+    plt.xlabel('Number of samples', fontsize=10)
+    plt.ylabel('Scores', fontsize=10)
+    plt.legend()
+    plt.savefig("scores_distribution_drugbank.png")
+    plt.show()
+
+
+if __name__ == '__main__':
+    # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
+    display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/poly.o.dgb")
+    #display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")

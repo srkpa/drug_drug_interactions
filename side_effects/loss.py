@@ -5,6 +5,7 @@ from torch.nn import Module
 from torch.nn import Parameter
 from torch.nn.functional import binary_cross_entropy
 from side_effects.data.loader import compute_labels_density, compute_classes_weight
+from torch.nn.functional import hinge_embedding_loss
 
 
 class WeightedBinaryCrossEntropy1(Module):
@@ -79,7 +80,8 @@ class BinaryCrossEntropyP(Module):
         elif self.use_weighted_loss and self.training:
             loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(input, target)
         else:
-            loss = binary_cross_entropy(input, target)
+            #target[target == 0] = -1
+            loss =binary_cross_entropy(input, target) # hinge_embedding_loss(input, target) #
         return loss
 
 

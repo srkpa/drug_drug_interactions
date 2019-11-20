@@ -27,7 +27,7 @@ drug_features_extractor_params = list(ParameterGrid(
          vocab_size=[len(SMILES_ALPHABET) + 2],
          embedding_size=[20],
          cnn_sizes=[
-             [128] * 4
+             [128] * 2
          ],
          kernel_size=[[17]],
          dilatation_rate=[1],
@@ -39,15 +39,19 @@ drug_features_extractor_params = list(ParameterGrid(
 ))
 
 AUxNet_params = list(ParameterGrid(dict(
-    fc_layers_dim=[[128]],
-    output_dim=[32]
+    arch=['lstm'],
+    vocab_size=[len(SMILES_ALPHABET) + 2],
+    embedding_size=[20],
+    lstm_hidden_size=[128],
+    nb_lstm_layers=[2],
+    dropout=[0.0]
 )))
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    auxnet_params=[None],  # AUxNet_params,
-    fc_layers_dim=[[128] * 2],
+    auxnet_params=[None],
+    fc_layers_dim=[[128]*2],
     mode=['concat'],
     att_hidden_dim=[None],
     dropout=[0.15],

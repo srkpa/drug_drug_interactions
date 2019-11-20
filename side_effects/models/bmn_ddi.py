@@ -62,7 +62,6 @@ class BMNDDI(nn.Module):
 
         if auxnet_params:
             params = auxnet_params
-            print(params)
             self.auxnet_feature_extractor = fe_factory(arch='fcnet', input_size=params.get("input_dim"),
                                                        fc_layer_dims=params.get("fc_layers_dim"),
                                                        output_dim=params.get("output_dim"),
@@ -85,17 +84,19 @@ class BMNDDI(nn.Module):
     def forward(self, batch):
         drugs_a, drugs_b, = batch[:2]
         a_ux_net_input_features = batch[2:]
-
+        # print("batch", drugs_a, drugs_b)
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
             if self.training:
                 drugs_b = drugs_b.view(-1)
+                # print(drugs_b.dtype, self.nodes.dtype)
+                drugs_b = torch.index_select(self.nodes, dim=0, index=drugs_b)
+                # print(drugs_b.dtype)
                 mask = torch.ones(self.nb_nodes)
                 mask[drugs_b] = 0
-                # print(self.adj_mat.dtype, mask.dtype)
                 adj_mat = self.adj_mat * mask[None, :] * mask[:, None]
-                features_drug2 = self.drug_feature_extractor(torch.index_select(self.nodes, dim=0, index=drugs_b))
+                features_drug2 = self.drug_feature_extractor(drugs_b)
             else:
                 # print(drugs_a.shape, drugs_b.shape)
                 drugs_b = drugs_b

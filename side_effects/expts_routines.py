@@ -1,6 +1,7 @@
 import os
 import json
 import torch
+import cProfile
 import pickle
 import hashlib
 from collections import MutableMapping, OrderedDict
@@ -39,8 +40,11 @@ def get_all_output_filenames(output_path, all_params):
         log_filename="{}/{}_{}_{}_log.log".format(output_path, data_name, model_name, out_prefix),
         tensorboard_dir="{}/{}_{}_{}".format(output_path, data_name, model_name, out_prefix),
         result_filename="{}/{}_{}_{}_res.pkl".format(output_path, data_name, model_name, out_prefix),
+        result_2_filename="{}/{}_{}_{}-res.pkl".format(output_path, data_name, model_name, out_prefix),
         targets_filename="{}/{}_{}_{}_targets.pkl".format(output_path, data_name, model_name, out_prefix),
         preds_filename="{}/{}_{}_{}_preds.pkl".format(output_path, data_name, model_name, out_prefix),
+        targets_2_filename="{}/{}_{}_{}-targets.pkl".format(output_path, data_name, model_name, out_prefix),
+        preds_2_filename="{}/{}_{}_{}-preds.pkl".format(output_path, data_name, model_name, out_prefix)
     ), out_prefix
 
 
@@ -92,6 +96,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     -------
         # This function return is not used by the train script. But you could do anything with that.
     """
+    pr = cProfile.Profile()
+    pr.enable()
     all_params = locals()
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
@@ -109,9 +115,10 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
-    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)
+    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)
     algorithm = model_params['network_params'].get('network_name')
     y_true, y_probs, output = {}, {}, {}
+    uy_true, uy_probs, u_output = {}, {}, {}
     if algorithm == "deeprf":
         y_true, y_probs, output = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
@@ -136,8 +143,15 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
         y_true, y_probs, output = model.test(test_data)
+        uy_true, uy_probs, u_output = model.test(unseen_test_data)
 
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
+    pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
+    pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
+    pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
 
+    pr.disable()
+    pr.print_stats()
+    pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))

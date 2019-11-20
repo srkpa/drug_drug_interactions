@@ -17,6 +17,16 @@ from ivbase.utils.datasets.datacache import DataCache
 from collections import defaultdict
 from itertools import combinations, product
 from ivbase.transformers.features.targets import GeneEntityTransformer
+from gensim.models import KeyedVectors
+from gensim.test.utils import datapath
+
+
+# def bioword_to_vec(filepath, terms):
+#     embedding = KeyedVectors.load_word2vec_format(
+#         datapath(filepath),
+#         binary=True)
+#     out = torch.Tensor([embedding(t) for t in terms])
+#     return dict(zip)
 
 
 def gene_entity_transformer(drugs, targets):

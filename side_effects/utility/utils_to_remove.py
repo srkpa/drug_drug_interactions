@@ -415,6 +415,53 @@ def pie(file_path="/home/rogia/Téléchargements/twosides-icd11.csv"):
     plt.show()
 
 
+# def plot_scatter(x, colors):
+#     # choose a color palette with seaborn.
+#     num_classes = len(colors)
+#     col = np.arange(0, num_classes)
+#     palette = np.array(sns.color_palette("hls", num_classes))
+#
+#     # create a scatter plot.
+#     f = plt.figure(figsize=(8, 8))
+#     ax = plt.subplot(aspect='equal')
+#     sc = ax.scatter(x[:, 0], x[:, 1], lw=0, s=40, c=palette[col.astype(np.int)])
+#     plt.xlim(-25, 25)
+#     plt.ylim(-25, 25)
+#     ax.axis('off')
+#     ax.axis('tight')
+#
+#     # add the labels for each digit corresponding to the label
+#     txts = []
+#
+#     for i in range(num_classes):
+#         print(colors[i])
+#         # Position of each label at median of data points.
+#         xtext, ytext = np.median(x[col == i, :], axis=0)
+#         txt = ax.text(xtext, ytext, str(colors[i]), fontsize=6)
+#         txt.set_path_effects([
+#             PathEffects.Stroke(linewidth=5, foreground="w"),
+#             PathEffects.Normal()])
+#         txts.append(txt)
+#     plt.show()
+#     return f, ax, sc, txts
+#
+#
+# if __name__ == '__main__':
+#     import pandas as pd
+#     m = load_pretrained_model(
+#         "/home/rogia/Téléchargements/twosides", output_dim=964)
+#     a = list(m.model.classifier.net.children())[-2].weight.data.cpu()
+#     data_set = pd.read_csv("/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides.csv", sep=",")
+#     l = [e for l in data_set["ddi type"].values.tolist() for e in l.split(";")]
+#     g = list(set(l))
+#     g.sort()
+#     from collections import Counter
+#     ab = dict(Counter(l))
+#     from sklearn.manifold import TSNE
+#     m = [ab[e] for e in g]
+#     s = TSNE(random_state=42, n_components=2).fit_transform(a.numpy())
+#     plot_scatter(s, m)
+
 if __name__ == '__main__':
     pie()
 

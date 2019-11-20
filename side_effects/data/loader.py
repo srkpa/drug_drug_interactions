@@ -101,6 +101,7 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
+        unseen_data = test_data
     else:
         drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
         drugs = sorted(drugs)
@@ -111,21 +112,26 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train = set(product(train_idx, repeat=2))
         valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
         test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
+        unseen = set(product(test_idx, repeat=2))
+
+        # add some gray zone
 
         train = set(data.keys()).intersection(train)
         valid = set(data.keys()).intersection(valid)
         test = set(data.keys()).intersection(test)
+        unseen = set(data.keys()).intersection(unseen)
         train_drugs = list(set([x1 for (x1, _) in train] + [x2 for (_, x2) in train]))
 
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
+        unseen_data = {k: data[k] for k in unseen}
 
         # filter out some pairs due to the intersection
         valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
         test_data = _filter_pairs_one_exists(test_data, train_drugs)
 
-    return train_data, valid_data, test_data
+    return train_data, valid_data, test_data, unseen_data
 
 
 class DDIdataset(Dataset):
@@ -184,8 +190,10 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         else:
-            res = ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu)),
+            # print("gpu", self.gpu)
+            res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
+            # print(res[0][0].dtype, res[0][1].dtype,res[1].dtype, )
         return res
 
     def get_aux_input_dim(self):
@@ -199,7 +207,8 @@ class DDIdataset(Dataset):
         return len(self.labels_vectorizer.classes_)
 
     def get_samples(self):
-        samples = [(self.drug_to_smiles[d1], self.drug_to_smiles[d2]) for d1, d2, _ in self.samples]
+        samples = [(np.expand_dims(self.drug_to_smiles[d2], axis=0), np.expand_dims(self.drug_to_smiles[d2], axis=0))
+                   for d1, d2, _ in self.samples]
         return samples
 
     def get_targets(self):
@@ -253,6 +262,19 @@ class DDIdataset(Dataset):
             self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 
+def _rank(data, v=100):
+    from collections import Counter
+    from operator import itemgetter
+    freq = [e for l in data.values() for e in l]
+    freqs = dict(Counter(freq))
+    # newA = dict(sorted(freqs.items(), key=itemgetter(1), reverse=True)[:v])
+    newA = {x: y for x, y in freqs.items() if y >= v}
+    data = {pair: set(labels).intersection(list(newA.keys())) for pair, labels in
+            data.items()}
+
+    return data
+
+
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_clusters=False, use_as_filter=None, use_targets=False, use_side_effect=False,
@@ -294,10 +316,12 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     else:
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
 
+    #  data = _rank(data, v=2491)
     data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
-    train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
-                                                               test_size=test_size, valid_size=valid_size)
-    print(f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
+    train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
+                                                                            test_size=test_size, valid_size=valid_size)
+    print(
+        f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}\nlen unseen {len(unseen_data)}")
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
 
@@ -316,6 +340,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
                                   drugspharm=drugs2pharm)
+        unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
+                                    graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                    gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+                                    drugspharm=drugs2pharm)
 
     else:
         if use_graph:
@@ -327,6 +355,9 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl,
                                       graph_drugs_mapping=train_dataset.graph_nodes_mapping,
                                       drugspharm=train_dataset.drugspharm)
+            unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
+                                        graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+                                        drugspharm=train_dataset.drugspharm)
         else:
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                        drugse=drug_offsides)
@@ -335,8 +366,11 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                       drugse=drug_offsides)
             print(train_dataset.nb_labels)
+            unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
+                                        drugstargets=drug2targets,
+                                        drugse=drug_offsides)
 
-    return train_dataset, valid_dataset, test_dataset
+    return train_dataset, valid_dataset, test_dataset, unseen_dataset
 
 
 def load_side_effect_mapping(input_path, use_as_filter=None):
@@ -443,19 +477,6 @@ def load_meddra(level=None):
     meddra_mapping.dropna(inplace=True)
     return {umls_id: meddra_mapping.loc[[umls_id], "side_effect"].values.tolist()[-1] for umls_id in
             meddra_mapping.index}
-
-
-# def load_twosides():
-#     data_set = pd.read_csv("/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
-#     drug_mapping = pd.read_csv(
-#         "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides-drugs-all.csv", index_col="drug_name")
-#
-#     print(list(drug_mapping))
-#     exit()
-#     drug2smiles = {entry: drug_mapping.loc[entry, "smiles"] for entry in drug_mapping.index}
-#     combo2se = {name: list(set(group["event_umls_id"].values.tolist())) for name, group in
-#                 data_set.groupby(['drug1', 'drug2'])}
-#     return combo2se, drug2smiles
 
 
 def load_mono_se(fname='bio-decagon-mono.csv'):
