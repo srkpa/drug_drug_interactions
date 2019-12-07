@@ -316,13 +316,16 @@ from pickle import load
 from side_effects.metrics import auprc_score, roc_auc_score
 
 
-# def display(filepath):
-#     df = pd.read_table(filepath, sep="\t")
-#     print(df)
-#     exit()
-#     plt.figure()
-#     df.plot(x="epoch", y=["loss", "val_loss"])
-#     plt.show()
+
+
+def display_H(filepath):
+    df = pd.read_table(filepath, sep="\t")
+    plt.figure()
+    df.plot(x="epoch", y=["loss", "val_loss"])
+    plt.show()
+
+
+from sklearn.metrics import multilabel_confusion_matrix, classification_report
 
 
 def display(dataset_name, exp_folder=None, upper_bound=None):
@@ -335,8 +338,10 @@ def display(dataset_name, exp_folder=None, upper_bound=None):
     print(g)
     g.sort()
     files = os.listdir(exp_folder)
-    y_preds = load(open(os.path.join(exp_folder, "predicted_labels.pkl"),"rb"))  # load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_preds.pkl")][-1]), "rb"))  #
-    y_true = load(open(os.path.join(exp_folder, "true_labels.pkl"), "rb"))  #load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_targets.pkl")][-1]),"rb"))  #
+    y_preds = load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_preds.pkl")][-1]),
+                        "rb"))  # load(open(os.path.join(exp_folder, "predicted_labels.pkl"),"rb"))
+    y_true = load(open(os.path.join(exp_folder, [f for f in files if f.endswith("_targets.pkl")][-1]),
+                       "rb"))  # load(open(os.path.join(exp_folder, "true_labels.pkl"), "rb"))  #  #
 
     ap_scores = auprc_score(y_pred=y_preds, y_true=y_true, average=None)
     rc_scores = roc_auc_score(y_pred=y_preds, y_true=y_true, average=None)
@@ -345,7 +350,7 @@ def display(dataset_name, exp_folder=None, upper_bound=None):
     print(ap_scores[pos])
     print(rc_scores[pos])
     print(g[pos])
-    print("sampe", ab[g[pos]])
+    print(ab[g[pos]])
 
     pos = list(ap_scores).index(min(ap_scores))
     print(ap_scores[pos])
@@ -375,11 +380,12 @@ def display(dataset_name, exp_folder=None, upper_bound=None):
     plt.xlabel('Number of samples', fontsize=10)
     plt.ylabel('Scores', fontsize=10)
     plt.legend()
-    plt.savefig("scores_distribution_drugbank.png")
+    #  plt.savefig("scores_distribution_drugbank.png")
     plt.show()
 
 
 if __name__ == '__main__':
     # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
-    display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/poly.o.dgb")
-    #display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
+    # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
+    # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
+    display_H("/home/rogia/Documents/exp_lstm/_hp_1/drugbank_bmnddi_e81ca197_log.log")

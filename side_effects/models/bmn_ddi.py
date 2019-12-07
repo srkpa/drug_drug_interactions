@@ -57,6 +57,7 @@ class BMNDDI(nn.Module):
                 self.node_feature_extractor = fe_factory(**drug_feature_extractor_params)
 
             self.edge_embedding_layer = nn.Linear(output_dim, edges_embedding_dim, bias=False)
+
         else:
             self.graph_net = None
 
@@ -83,30 +84,34 @@ class BMNDDI(nn.Module):
 
     def forward(self, batch):
         drugs_a, drugs_b, = batch[:2]
-        a_ux_net_input_features = batch[2:]
-        # print("batch", drugs_a, drugs_b)
+        aux_net_inputs = batch[2:]
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
+
             if self.training:
                 drugs_b = drugs_b.view(-1)
-                # print(drugs_b.dtype, self.nodes.dtype)
                 drugs_b = torch.index_select(self.nodes, dim=0, index=drugs_b)
-                # print(drugs_b.dtype)
                 mask = torch.ones(self.nb_nodes)
+                if torch.cuda.is_available():
+                    mask = mask.cuda()
                 mask[drugs_b] = 0
                 adj_mat = self.adj_mat * mask[None, :] * mask[:, None]
-                features_drug2 = self.drug_feature_extractor(drugs_b)
             else:
-                # print(drugs_a.shape, drugs_b.shape)
                 drugs_b = drugs_b
                 adj_mat = self.adj_mat
-                features_drug2 = self.drug_feature_extractor(drugs_b)
 
+            features_drug2 = self.drug_feature_extractor(drugs_b)
             edges_features = self.edge_embedding_layer(self.edges)
             nodes_features = self.node_feature_extractor(self.nodes)
+            if torch.cuda.device_count() > 1:
+                adj_mat = adj_mat.cuda(1)
+                nodes_features = nodes_features.cuda(1)
+                edges_features = edges_features.cuda(1)
+                self.graph_net = self.graph_net.cuda(1)
+
             nodes_features = self.graph_net((adj_mat, nodes_features, edges_features))
-            features_drug1 = torch.index_select(nodes_features, dim=0, index=drugs_a.view(-1))
+            features_drug1 = torch.index_select(nodes_features.cuda(), dim=0, index=drugs_a.view(-1))
 
         if self.mode == "elementwise":
             ddi = torch.mul(features_drug1, features_drug2)
@@ -117,8 +122,8 @@ class BMNDDI(nn.Module):
         else:
             ddi = torch.cat((features_drug1, features_drug2), 1)
 
-        if a_ux_net_input_features:
-            a_ux_net_feat = self.auxnet_feature_extractor(torch.cat(a_ux_net_input_features, 1))
+        if aux_net_inputs:
+            a_ux_net_feat = self.auxnet_feature_extractor(torch.cat(aux_net_inputs, 1))
             ddi = torch.cat((ddi, a_ux_net_feat), 1)
 
         out = self.classifier(ddi)

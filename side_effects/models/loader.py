@@ -40,6 +40,9 @@ def load_pretrained_model(directory, delete_layers=None, output_dim=86):
     return model
 
 
+def evaluate(on_gray="on"):
+    pass
+
 if __name__ == '__main__':
     from gensim.test.utils import datapath
     from gensim.models import KeyedVectors

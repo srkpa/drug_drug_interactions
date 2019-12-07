@@ -8,6 +8,8 @@ import click
 @click.command()
 @click.option('--project_path', '-p',
               help="Path to project.")
+@click.option('--restore_path', '-r',
+              help="Restore path.")
 @click.option('--exp_name', '-e', help="Path for model restoration (resume training at last checkpoint).")
 def launch(project_path, exp_name=None, checkpoint_path=None, restore_path=None):
     input_path = "{}/datasets-ressources/DDI/".format(os.environ["INVIVO_CACHE_ROOT"])

@@ -5,7 +5,7 @@ from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["drugbank"],
-         transformer=["seq"],
+         transformer=["dgl"],
          split_mode=["random"], #leave_drugs_out
          test_size=[0.20],
          valid_size=[0.25],
@@ -20,13 +20,10 @@ fit_params = list(ParameterGrid(
 
 
 drug_features_extractor_params = list(ParameterGrid(
-    dict(arch=['lstm'],
-         vocab_size=[len(SMILES_ALPHABET) + 2],
-         embedding_size=[20],
-         lstm_hidden_size=[128],
-         nb_lstm_layers=[2],
-         dropout=[0.0]
-         )
+    dict(arch=['dglgraph'],
+         input_dim=[79],
+         conv_layer_dims=[[64]],
+         dropout=[0.])
 ))
 
 

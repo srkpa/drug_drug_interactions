@@ -61,7 +61,8 @@ class DGLGraph(nn.Module):
     def forward(self, x):
         h = 0
         G = x
-
+        if torch.cuda.is_available():
+            G.ndata['hv'] = G.ndata['hv'].cuda()
         for cv_layer in self.conv_layers:
             G, h = cv_layer(G)
 

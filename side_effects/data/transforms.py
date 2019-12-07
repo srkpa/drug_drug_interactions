@@ -144,18 +144,14 @@ def target_similarity_profile_transformer(drugs_ids):
 
 def dgl_transformer(drugs, smiles):
     assert len(drugs) == len(smiles)
-    trans = DGLGraphTransformer()  # Initialize the transformer
+    trans = DGLGraphTransformer()
     X, ids = trans(smiles)  # Call the transformer on the smiles using the __call__ method.
-    # Keep only the ids where the transformation succeeded
-    # (the failed transformations are not present in ids)
-
-    for index, g in enumerate(X):
-        if len(g.edata["he"]) == 0:
-            del X[index]
-            del ids[index]
+    # for index, g in enumerate(X):
+    #     if len(g.edata["he"]) == 0:
+    #         del X[index]
+    #         del ids[index]
 
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
-    print("Dgl transformer ---> {len(drugs}")
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
     return dict(zip(drugs, X))

@@ -138,6 +138,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
 
         # Train and save
         model = Trainer(**model_params, snapshot_dir=restore_path)
+        # cuda
+        model.cuda()
         training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
         print(f"Training details: \n{training}")
         model.train(train_data, valid_data, **fit_params, **paths)

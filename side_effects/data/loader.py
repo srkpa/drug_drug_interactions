@@ -11,6 +11,8 @@ from torch.utils.data import Dataset
 from side_effects.data.transforms import *
 from sklearn.utils import compute_class_weight
 from collections import Counter
+from torch import is_tensor
+from ivbase.utils.datasets.dataset import DGLDataset
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
@@ -140,6 +142,7 @@ class DDIdataset(Dataset):
                  drugse=None, drugstargets=None, drugspharm=None):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
+        self.data_type = all([isinstance(v, (torch.Tensor, np.ndarray)) for v in list(drug_to_smiles.values())])
         self.drugs_targets = drugstargets
         self.drugse = drugse
         self.drugspharm = drugspharm
@@ -189,11 +192,14 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug1_id], self.gpu),
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
+        elif not self.data_type:
+            res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
+
         else:
-            # print("gpu", self.gpu)
+
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
-            # print(res[0][0].dtype, res[0][1].dtype,res[1].dtype, )
+
         return res
 
     def get_aux_input_dim(self):
@@ -221,7 +227,7 @@ class DDIdataset(Dataset):
         n_nodes = len(graph_drugs)
 
         n_edge_labels = len(self.labels_vectorizer.classes_)
-        graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))
+        graph_edges = np.zeros((n_nodes, n_nodes, n_edge_labels))  #
         for (drug1, drug2, label) in self.samples:
             i, j = self.graph_nodes_mapping[drug1], self.graph_nodes_mapping[drug2]
             graph_edges[i, j] = self.labels_vectorizer.transform([label])[0]
@@ -258,7 +264,8 @@ class DDIdataset(Dataset):
             self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu), to_tensor(
                 adj_mats.astype(np.float32), self.gpu)
         else:
-            self.graph_nodes = to_tensor(graph_nodes, self.gpu)
+            # create batched data + send to gpu
+            self.graph_nodes = graph_nodes  # to_tensor(graph_nodes, self.gpu)
             self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 

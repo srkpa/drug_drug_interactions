@@ -83,6 +83,7 @@ class GINConv(nn.Module):
         adj, nodes_features, edges_features = x
         new_nodes_features = nodes_features
         for i, _ in enumerate(self.kernel_sizes):
+            torch.cuda.empty_cache()
             temp = new_nodes_features.unsqueeze(0).expand(*adj.shape, new_nodes_features.shape[-1])
             # print(new_nodes_features.shape, temp.shape, edges_features.shape)
             nodes_edges = torch.cat((temp, edges_features), dim=2)

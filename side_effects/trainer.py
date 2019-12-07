@@ -1,5 +1,6 @@
 import torch
 import os
+import dgl
 from ivbase.nn.commons import get_optimizer
 from torch.nn.functional import binary_cross_entropy
 from poutyne.framework import Model
@@ -14,6 +15,8 @@ from ivbase.nn.commons import get_optimizer
 import ivbase.utils.trainer as ivbt
 from ivbase.utils.snapshotcallback import SnapshotCallback
 from ivbase.utils.trainer import TrainerCheckpoint
+from torch.nn import DataParallel
+from math import ceil
 
 
 def get_metrics():
@@ -71,15 +74,20 @@ class TensorBoardLogger2(Logger):
 class Trainer(ivbt.Trainer):
 
     def __init__(self, network_params, loss_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, snapshot_dir=""):  # use_negative_sampled_loss=False,
+                 metrics_names=None, snapshot_dir="", dataloader=True):  # use_negative_sampled_loss=False,
 
         self.history = None
         network_name = network_params.pop('network_name')
         network = all_networks_dict[network_name.lower()](**network_params)
+        self.n_gpu = torch.cuda.device_count()
+        # if self.n_gpu > 1:
+        #     print("Let's use", torch.cuda.device_count(), "GPUs!")
+        #     network = DataParallel(network, device_ids=[0, 1, 2, 3])
         gpu = torch.cuda.is_available()
         optimizer = get_optimizer(optimizer)(network.parameters(), lr=lr, weight_decay=weight_decay)
         self.loss_name = loss
         self.loss_params = loss_params
+        self.dataloader_from_dataset = dataloader
         metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
         metrics = {name: get_metrics()[name] for name in metrics_names}
 
@@ -92,13 +100,17 @@ class Trainer(ivbt.Trainer):
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
-              patience=3, min_lr=1e-06, checkpoint_path=None, **kwargs):
+              patience=3, min_lr=1e-06, checkpoint_path=None, dataoader=True, **kwargs):
+        # Data parallel
+        # if self.n_gpu > 1:
+        #     if hasattr(self.model.module, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
+        #         print("we are here")
+        #         self.model.module.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
+
         if hasattr(self.model, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
             self.model.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
-        train_loader = DataLoader(train_dataset, batch_size=batch_size)
-        valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
-        # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
 
+        # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
         callbacks = []
         if with_early_stopping:
             early_stopping = EarlyStopping(monitor='val_loss', patience=patience, verbose=True)
@@ -118,17 +130,31 @@ class Trainer(ivbt.Trainer):
         if checkpoint_path:
             snapshoter = SnapshotCallback(s3_path=checkpoint_path, save_every=1)
             callbacks += [snapshoter]
-        self.history = self.fit_generator(train_generator=train_loader,
-                                          valid_generator=valid_loader,
-                                          epochs=n_epochs,
-                                          callbacks=callbacks)
 
+        if self.dataloader_from_dataset:
+            train_loader = DataLoader(train_dataset, batch_size=batch_size)
+            valid_loader = DataLoader(valid_dataset, batch_size=batch_size)
+            self.history = self.fit_generator(train_generator=train_loader,
+                                              valid_generator=valid_loader,
+                                              epochs=n_epochs,
+                                              callbacks=callbacks)
+        else:
+            step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
+            self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
+                                    validation_steps=step_valid, generator_fn=batch_generator,
+                                    batch_size=batch_size, shuffle=True)
         return self
 
     def test(self, dataset, batch_size=256):
-        loader = DataLoader(dataset, batch_size=batch_size)
         y = dataset.get_targets()
-        _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
+        if self.dataloader_from_dataset:
+            loader = DataLoader(dataset, batch_size=batch_size)
+            _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
+        else:
+            loader = batch_generator(dataset, batch_size, infinite=False, shuffle=False)
+            nsteps = ceil(len(dataset) / (batch_size * 1.0))
+            _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
+
         y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
@@ -142,3 +168,26 @@ class Trainer(ivbt.Trainer):
 
     def save(self, save_filename):
         self.save_weights(save_filename)
+
+
+def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
+    loop = 0
+    idx = np.arange(len(dataset))
+    if shuffle:
+        np.random.shuffle(idx)
+
+    while loop < 1 or infinite:
+        for i in range(0, len(dataset), batch_size):
+            start = i
+            end = min(i + batch_size, len(dataset))
+            a = [dataset[idx[ii]] for ii in range(start, end)]
+            x, y = zip(*a)
+            y = torch.cat(y)
+            yield collate(x), y
+        loop += 1
+
+
+def collate(samples):
+    samples = list(zip(*samples))
+    g1, g2 = dgl.batch(samples[0]), dgl.batch(samples[1])
+    return [g1, g2]
