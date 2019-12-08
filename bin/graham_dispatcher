@@ -1,0 +1,220 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import hashlib
+import json
+import os
+import subprocess
+from pathlib import Path
+
+import click
+from sklearn.model_selection import ParameterGrid
+
+from copy import deepcopy
+
+EXP_FOLDER = 'expts'
+
+
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
+@click.option('-p', '--hpid', type=int, default=0,
+              help="""Position of the config file to run""")
+@click.option('-e', '--exec_file', type=str, default='train',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+def run(exp_name, hpid, exec_file):
+    exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
+    all_filenames_location = os.path.join(exp_dir, 'configs', 'configs.txt')
+    with open(all_filenames_location, 'r') as fd:
+        config_file = fd.readlines()[hpid].rstrip()
+
+    print(f"{exec_file} -p {config_file} -o {exp_dir}")
+    process = subprocess.Popen(f"{exec_file} -p {config_file} -o {exp_dir}", shell=True)
+    process.communicate()
+    if process.returncode != 0:
+        exit()
+
+    os.rename(config_file, config_file.replace('.json', '.done'))
+
+
+@cli.command()
+@click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
+@click.option('-p', '--hpid', type=int, default=0,
+              help="""Position of the config file to run""")
+@click.option('-e', '--exec_file', type=str, default='train',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+def active(exp_name, hpid, exec_file):
+    exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
+
+    with open(os.path.join(exp_dir, 'names.json')) as f:
+        names = json.load(f)['names']
+
+    name = names[hpid]
+
+    print(f"{exec_file} -n {name} -o {exp_dir}")
+    process = subprocess.Popen(f"{exec_file} -n {name} -o {exp_dir}", shell=True)
+    process.communicate()
+    if process.returncode != 0:
+        exit()
+
+
+def get_hash(task):
+    task = deepcopy(task)
+    # task['fit_params'].pop('test_only', False)
+    # task['fit_params'].pop('train_only', False)
+    return hashlib.sha1(json.dumps(task, sort_keys=True).encode()).hexdigest()
+
+
+@cli.command()
+@click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
+@click.option('-p', '--config_file', type=str, default='config.json',
+              help="""The name/path of the config file (in json format) that contains all the parameters for 
+                    the experiment. This config file should be at the same location as the train file""")
+@click.option('-e', '--exec_file', type=str, default='train',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+@click.option('-t', '--sbatch_template', type=str, default='submit_template',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+@click.option('-d', '--duration', type=str, default='12:00:00',
+              help="""Duration""")
+@click.option('-c', '--cpus', type=str, default='16',
+              help="""Number of cpus""")
+def dispatch(exp_name, config_file, exec_file, sbatch_template, duration, cpus):
+    exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
+
+    config_dir = os.path.join(exp_dir, 'configs')
+    os.makedirs(config_dir, exist_ok=True)
+
+    with open(config_file, 'r') as fd:
+        task_config = json.load(fd)
+
+    task_grid = list(ParameterGrid(task_config))
+
+    task_grid = {get_hash(task): task for task in task_grid}
+    print(f"- Experiment has {len(task_grid)} different tasks:")
+
+    existing_exp_files = [os.path.splitext(f) for f in os.listdir(os.path.join(exp_dir, 'configs'))]
+
+    done_task_ids = [
+        task_id for task_id, ext in existing_exp_files
+        if (task_id in task_grid.keys() and ext == '.done')
+    ]
+    planned_task_ids = [
+        task_id for task_id, ext in existing_exp_files if
+        (task_id in task_grid.keys() and ext == '.json')
+    ]
+    new_task_ids = [
+        task_id for task_id in task_grid
+        if task_id not in done_task_ids + planned_task_ids
+    ]
+
+    if new_task_ids:
+        print(f'\nNew:', *new_task_ids, sep='\n')
+    if planned_task_ids:
+        print('\nPlanned:', *planned_task_ids, sep='\n')
+    if done_task_ids:
+        print('\nCompleted:', *done_task_ids, sep='\n')
+
+    print(f"\n\t*New: {len(new_task_ids)}\n"
+          f"\t*Planned: {len(planned_task_ids)}\n"
+          f"\t*Completed: {len(done_task_ids)}\n")
+
+    planned_as_well = len(planned_task_ids) == 0 \
+                      or input('>> Relaunch already planned tasks ? [N/y]').lower() in {'y', 'yes'}
+
+    tasks = new_task_ids + planned_task_ids if planned_as_well else new_task_ids
+
+    # Uploading on the exp folder
+    all_filenames = []
+    for task_id in tasks:
+        fname = os.path.join(config_dir, f"{task_id}.json")
+        with open(fname, 'w') as f:
+            json.dump(task_grid[task_id], f)
+        all_filenames.append(fname)
+    all_filenames_location = os.path.join(config_dir, 'configs.txt')
+    if os.path.exists(all_filenames_location):
+        with open(all_filenames_location, 'r') as fd:
+            start_idx = len(fd.readlines())
+    else:
+        start_idx = 0
+    with open(all_filenames_location, 'a') as fd:
+        fd.writelines([el + '\n' for el in all_filenames])
+    end_idx = start_idx + len(all_filenames)
+
+    with open(sbatch_template, 'r') as fd:
+        template = fd.read()
+
+    template_args = dict(start_idx=start_idx, end_idx=end_idx - 1,
+                         exp_name=exp_name, exec_file=exec_file,
+                         duration=duration, cpus=cpus)
+    sbatch_script = template.format(**template_args)
+
+    sbatch_script_location = os.path.join(exp_dir, 'submit.sh')
+    with open(sbatch_script_location, 'w') as fd:
+        fd.write(sbatch_script)
+
+    print(sbatch_script)
+    os.chdir(exp_dir)
+    process = subprocess.Popen(f"sbatch {sbatch_script_location} -D {exp_dir}", shell=True)
+    stdout, stderr = process.communicate()
+    if process.returncode != 0:
+        print(stdout)
+        print(stderr)
+
+
+@cli.command()
+@click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
+@click.option('-p', '--config_file', type=str, default='config.json',
+              help="""The name/path of the config file (in json format) that contains all the parameters for 
+                    the experiment. This config file should be at the same location as the train file""")
+@click.option('-e', '--exec_file', type=str, default='active',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+@click.option('-t', '--sbatch_template', type=str, default='submit_template',
+              help=""" path to script that will be run. It is only used if instance_type is 'local'
+                        and imagename is None. """)
+@click.option('-d', '--duration', type=str, default='3:00:00',
+              help="""Duration""")
+def dispatch_active(exp_name, config_file, exec_file, sbatch_template, duration):
+
+    exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
+
+    with open(config_file, 'r') as fd:
+        names = json.load(fd)
+
+    os.makedirs(exp_dir, exist_ok=True)
+
+    with open(os.path.join(exp_dir, 'names.json'), 'w') as f:
+        json.dump(names, f)
+
+    start_idx, end_idx = 0, len(names['names'])
+
+    with open(sbatch_template, 'r') as fd:
+        template = fd.read()
+
+    template_args = dict(start_idx=start_idx, end_idx=end_idx - 1,
+                         exp_name=exp_name, exec_file=exec_file, duration=duration)
+    sbatch_script = template.format(**template_args)
+
+    sbatch_script_location = os.path.join(exp_dir, 'submit.sh')
+    with open(sbatch_script_location, 'w') as fd:
+        fd.write(sbatch_script)
+
+    print(sbatch_script)
+    os.chdir(exp_dir)
+    process = subprocess.Popen(f"sbatch {sbatch_script_location} -D {exp_dir}", shell=True)
+    stdout, stderr = process.communicate()
+    if process.returncode != 0:
+        print(stdout)
+        print(stderr)
+
+
+if __name__ == '__main__':
+    cli()

@@ -41,18 +41,18 @@
   ],
   "dataset_params": [
     {
-      "dataset_name": "twosides",
+      "dataset_name": "drugbank",
       "decagon": false,
       "seed": 42,
       "split_mode": "random",
-      "test_size": 0.1,
+      "test_size": 0.2,
       "transformer": "dgl",
       "use_as_filter": null,
       "use_clusters": false,
       "use_pharm": false,
       "use_side_effect": false,
       "use_targets": false,
-      "valid_size": 0.15
+      "valid_size": 0.25
     }
   ],
   "fit_params": [

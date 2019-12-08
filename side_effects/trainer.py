@@ -142,7 +142,7 @@ class Trainer(ivbt.Trainer):
             step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
             self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
                                     validation_steps=step_valid, generator_fn=batch_generator,
-                                    batch_size=batch_size, shuffle=True)
+                                    batch_size=batch_size, shuffle=True, callbacks=callbacks)
         return self
 
     def test(self, dataset, batch_size=256):
