@@ -63,7 +63,7 @@ class DGLGraph(nn.Module):
         G = x
         if torch.cuda.is_available():
             G.ndata['hv'] = G.ndata['hv'].cuda()
-            print("cuda found!")
+
         for cv_layer in self.conv_layers:
             G, h = cv_layer(G)
 

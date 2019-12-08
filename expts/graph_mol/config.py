@@ -4,11 +4,11 @@ from sklearn.model_selection import ParameterGrid
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["twosides"],
+    dict(dataset_name=["drugbank"],
          transformer=["dgl"],
          split_mode=["random"],  # "leave_drugs_out"
-         test_size=[0.10],
-         valid_size=[0.15],
+         test_size=[0.20],
+         valid_size=[0.25],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],

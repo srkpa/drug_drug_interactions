@@ -35,6 +35,7 @@ server=${server:=local}
 instance_type=${instance_type:=t3.large}
 project_path=${project_path:=$HOME/drug_drug_interactions}
 
+
 python ${expt_name}/config.py -o ${expt_name}/configs.json
 case ${server} in
   aws)
@@ -42,7 +43,8 @@ case ${server} in
     ;;
 
   local)
-    out=../results/${expt_name}
+    #out=../results/${expt_name}
+    out=${INVIVO_RESULTS_ROOT}/${expt_name}
     echo "Storing experiment results in ${out}"
 
     mkdir -p ${out}
