@@ -10,7 +10,7 @@
         "use_label_cost_per_batch": false,
         "use_negative_sampling": false
       },
-      "lr": 0.001,
+      "lr": 0.0001,
       "metrics_names": [
         "macro_roc",
         "macro_auprc",
@@ -24,6 +24,7 @@
         "drug_feature_extractor_params": {
           "activation": "LeakyReLU",
           "arch": "dglgraph",
+          "b_norm": false,
           "conv_layer_dims": [
             [
               64

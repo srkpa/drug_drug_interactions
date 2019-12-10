@@ -193,7 +193,9 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         elif not self.data_type:
-            #if list(self.drug_to_smiles.values())[0]
+            if len(list(self.drug_to_smiles.values())[0]) > 0 and is_tensor(list(self.drug_to_smiles.values())[0][0]):
+                drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
+                drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
             res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
 
         else:

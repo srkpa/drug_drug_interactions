@@ -70,7 +70,7 @@ class PCNN(nn.Module):
 
 
 class GraphNet(nn.Module):
-    def __init__(self, input_dim, conv_layer_dims, activation, gather, dropout=0., gather_dim=100, pool_arch=None,
+    def __init__(self, input_dim, conv_layer_dims, activation, b_norm, gather, dropout=0., gather_dim=100, pool_arch=None,
                  graph_module="gin",  **kwargs):
         super(GraphNet, self).__init__()
         conv_layers_1 = []
@@ -83,7 +83,7 @@ class GraphNet(nn.Module):
             #             pooling=pooling, bias=bias, init_fn=init_fn)
 
             conv_layers_1.append(
-                graph_layer(input_dim, kernel_size=dim, b_norm=False, dropout=dropout, activation=activation, **kwargs)
+                graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation, **kwargs)
             )
             input_dim = dim
         self.__before_pooling_layers = nn.ModuleList(conv_layers_1)
@@ -96,7 +96,7 @@ class GraphNet(nn.Module):
 
         for dim in conv_layer_dims[-1]:
             conv_layers_2.append(
-                graph_layer(input_dim, kernel_size=dim, b_norm=False, dropout=dropout, activation=activation))
+                graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation, **kwargs))
             input_dim = dim
 
         self.__after_pooling_layers = nn.ModuleList(conv_layers_2)
