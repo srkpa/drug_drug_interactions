@@ -39,7 +39,11 @@
           "init_fn": null,
           "input_dim": 79,
           "pool_arch": {
-            "arch": "laplacian"
+            "arch": "laplacian",
+            "attn": 1,
+            "hop": null,
+            "lap_hop": 1,
+            "reg_mode": 2
           }
         },
         "fc_layers_dim": [

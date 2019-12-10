@@ -24,7 +24,11 @@ fit_params = list(ParameterGrid(
 
 pool_arch = list(ParameterGrid(
     dict(arch=["laplacian"],
-    )
+         hop=[None],
+         reg_mode=[2],
+         lap_hop=[1],
+         attn=[1],
+         )
 ))
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['dglgraph'],

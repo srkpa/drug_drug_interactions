@@ -174,7 +174,10 @@ class LaplacianPool(DiffPool):
             # Select the leaders as the nodes with a Laplacian greater or equal then all its neighbours
             max_val, _ = torch.max(laplacian_norm.squeeze() * adj, dim=-1)
             # TODO: find a way to find indexes of laplacian_norm - 0.999*max_val
-            leader_idx = torch.masked_select(torch.arange(0, adj_size), laplacian_norm > (1 - 1e-4) * max_val)
+            temp = torch.arange(0, adj_size)
+            if torch.cuda.is_available():
+                temp = temp.cuda()
+            leader_idx = torch.masked_select(temp, laplacian_norm > (1 - 1e-4) * max_val)
 
             # check if all neighbors are also leaders
         true_leader_idx = 1 - \
