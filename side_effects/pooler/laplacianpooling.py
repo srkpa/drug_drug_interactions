@@ -189,7 +189,7 @@ class LaplacianPool(DiffPool):
             leader_idx = torch.Tensor([0]).long()
             true_leader_idx = torch.Tensor([1]).long()
 
-        self.leader_idx = torch.masked_select(leader_idx.to(adj.device), true_leader_idx.byte())
+        self.leader_idx = torch.masked_select(leader_idx.to(adj.device), true_leader_idx.byte().to(adj.device))
 
     def compute_graph_energy(self, ori_input, new_input):
         ori_signal = get_signal(*ori_input)
