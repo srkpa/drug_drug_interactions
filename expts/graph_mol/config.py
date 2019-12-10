@@ -22,11 +22,23 @@ dataset_params = list(ParameterGrid(
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
+pool_arch = list(ParameterGrid(
+    dict(arch=["laplacian"],
+    )
+))
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['dglgraph'],
          input_dim=[79],
-         conv_layer_dims=[[64]],
-         dropout=[0.]
+         conv_layer_dims=[[[64], [64]]],
+         dropout=[0.],
+         gather=["agg"],
+         gather_dim=[100],
+         pool_arch=pool_arch,
+         activation=["LeakyReLU"],
+         init_fn=[None],
+         # normalize=[True]
+         # , pooling=['sum'],
+         # bias=[False],
          )
 ))
 
@@ -36,7 +48,7 @@ network_params = list(ParameterGrid(dict(
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
-    dropout=[0.15],
+    dropout=[0.],
     b_norm=[True]
 )))
 

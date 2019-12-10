@@ -31,7 +31,7 @@ all_transformers_dict = dict(
     seq=sequence_transformer,
     fgp=fingerprints_transformer,
     deepddi=deepddi_transformer,
-    dgl=dgl_transformer
+    dgl=graph_transformer
 )
 
 all_init_fn_dict = dict(

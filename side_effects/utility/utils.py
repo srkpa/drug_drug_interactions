@@ -276,7 +276,7 @@ def get_expt_results(output_folder):
             params, res, _, _ = _unpack_results(folder)
             if res:
                 out.append({**params, **res, "task_id": task_id})
-
+    print(len(out))
     return pd.DataFrame(out)
 
 
@@ -297,6 +297,7 @@ def _unpack_results(folder):
             if file_ext == ".pkl":
                 out = pickle.load(open(filepath, "rb"))
                 if f.endswith("_preds.pkl"):
+                    print("je sus la")
                     y_preds = out
                 elif f.endswith("_res.pkl"):
                     expt_results = out
@@ -314,7 +315,6 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from pickle import load
 from side_effects.metrics import auprc_score, roc_auc_score
-
 
 
 
@@ -388,4 +388,8 @@ if __name__ == '__main__':
     # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
     # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
-    display_H("/home/rogia/Documents/exp_lstm/_hp_1/drugbank_bmnddi_e81ca197_log.log")
+    #display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
+    c = get_expt_results("/home/rogia/Documents/")
+    c.to_excel("graph_mol_as_extract.xlsx")
+
+

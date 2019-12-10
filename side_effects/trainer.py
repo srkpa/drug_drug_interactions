@@ -100,7 +100,7 @@ class Trainer(ivbt.Trainer):
 
     def train(self, train_dataset, valid_dataset, n_epochs=10, batch_size=256,
               log_filename=None, checkpoint_filename=None, tensorboard_dir=None, with_early_stopping=False,
-              patience=3, min_lr=1e-06, checkpoint_path=None, dataoader=True, **kwargs):
+              patience=3, min_lr=1e-06, checkpoint_path=None, **kwargs):
         # Data parallel
         # if self.n_gpu > 1:
         #     if hasattr(self.model.module, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
@@ -183,11 +183,5 @@ def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
             a = [dataset[idx[ii]] for ii in range(start, end)]
             x, y = zip(*a)
             y = torch.cat(y)
-            yield collate(x), y
+            yield list(zip(*x)), y
         loop += 1
-
-
-def collate(samples):
-    samples = list(zip(*samples))
-    g1, g2 = dgl.batch(samples[0]), dgl.batch(samples[1])
-    return [g1, g2]

@@ -29,7 +29,7 @@ class SelfAttentionLayer(AttentionLayer):
         attention: torch.Tensor
             The attention block.
         """
-        # print('here in attention')
+
         x = x.reshape(*x.shape, 1)
         return super().forward(x, x, x).squeeze(-1)
 

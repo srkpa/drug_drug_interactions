@@ -20,14 +20,26 @@
       "network_params": {
         "att_hidden_dim": null,
         "b_norm": true,
-        "dropout": 0.15,
+        "dropout": 0.0,
         "drug_feature_extractor_params": {
+          "activation": "LeakyReLU",
           "arch": "dglgraph",
           "conv_layer_dims": [
-            64
+            [
+              64
+            ],
+            [
+              64
+            ]
           ],
           "dropout": 0.0,
-          "input_dim": 79
+          "gather": "agg",
+          "gather_dim": 100,
+          "init_fn": null,
+          "input_dim": 79,
+          "pool_arch": {
+            "arch": "laplacian"
+          }
         },
         "fc_layers_dim": [
           128,

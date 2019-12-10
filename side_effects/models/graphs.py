@@ -2,6 +2,10 @@ import torch
 from side_effects import inits
 from torch import nn
 from ivbase.nn.base import FCLayer
+from ivbase.nn.commons import get_activation
+from ivbase.nn.graphs.conv import TorchGINConv, TorchGCNLayer, GCNLayer
+
+GLayer = TorchGCNLayer
 
 
 class GINConv(nn.Module):
@@ -101,29 +105,34 @@ class GINConv(nn.Module):
         return self._output_dim
 
 
-class GraphConvolutionMulti(nn.Module):
-    """Basic graph convolution layer for undirected graph without edge labels."""
+class AggLayer(nn.Module):
+    def __init__(self, input_dim, output_dim, dropout=0., activation="tanh"):
+        super(AggLayer, self).__init__()
+        self.output_dim = output_dim
+        self.input_dim = input_dim
+        self.sigmoid_linear = nn.Sequential(nn.Linear(self.input_dim, self.output_dim),
+                                            nn.Sigmoid())
+        self.tanh_linear = nn.Sequential(nn.Linear(self.input_dim, self.output_dim),
+                                         nn.Tanh())
+        self.dropout = nn.Dropout(dropout)
+        if activation is not None:
+            self.activation = get_activation(activation)
+        else:
+            self.activation = None
 
-    def __init__(self, output_dim, dropout=0., act=nn.ReLU(), input_dim=10):
-        super(GraphConvolutionMulti, self).__init__()
-        self.act = act
-        self.net = nn.Sequential(
-            torch.nn.Dropout(dropout),
-            torch.nn.Linear(in_features=input_dim, out_features=output_dim, bias=False)
-        )
+    def forward(self, input):
+        i = self.sigmoid_linear(input)
+        j = self.tanh_linear(input)
+        output = torch.sum(torch.mul(i, j), -2)  # on the node dimension
+        if self.activation is not None:
+            output = self.activation(output)
+        output = self.dropout(output)
+        return output
 
 
-    def init_weights(self):
-        pass
-
-    def forward(self, x):
-        nodes_features, adj_mats = x
-        self.net[-1].in_features = nodes_features.shape[-1]
-        nodes_features = self.net(nodes_features)
-        nodes_features = nodes_features.unsqueeze(0).expand(adj_mats.shape[0], *nodes_features.shape) # tout va dependre de la sortie
-        nodes_features = torch.bmm(adj_mats, nodes_features)
-        nodes_features = self.act(nodes_features)
-        nodes_features = nodes_features.sum(0)
-        new_nodes_features = torch.norm(nodes_features.unsqueeze(1), dim=1, p=None)
-
-        return new_nodes_features
+def get_graph_layer(module_name):
+    if module_name == "gin":
+        GLayer = TorchGINConv
+    else:
+        GLayer = GCNLayer
+    return GLayer

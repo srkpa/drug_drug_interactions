@@ -18,8 +18,8 @@ all_transformers_dict = dict(
     seq=sequence_transformer,
     fgp=fingerprints_transformer,
     deepddi=deepddi_transformer,
-    dgl=dgl_transformer,
-    adj=dgl_transformer
+    dgl=graph_transformer,
+    adj=graph_transformer
 )
 
 
@@ -193,6 +193,7 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         elif not self.data_type:
+            #if list(self.drug_to_smiles.values())[0]
             res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
 
         else:
@@ -312,7 +313,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         data = relabel(data, side_effects_mapping)
 
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
-    # Transformer
+    # Transformer = Need to be update for graph transformer choice
     transformer = all_transformers_dict.get(transformer)
     args = inspect.signature(transformer)
     if 'approved_drug' in args.parameters:

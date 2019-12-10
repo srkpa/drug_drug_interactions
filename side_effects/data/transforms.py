@@ -107,9 +107,6 @@ def deepddi_transformer(drugs, smiles, approved_drug):
                ids, drg in enumerate(drugs_involved_in_fps)]
     pca = PCA(n_components=50)
     out = pca.fit_transform(np.array(all_ssp)).astype(np.float32)
-    # out = torch.from_numpy(reduced_ssp)
-    # if torch.cuda.is_available():
-    #     out = out.cuda()
     return dict(zip(drugs, out))
 
 
@@ -129,6 +126,7 @@ def tsp_score(G, pairs_of_nodes):
     return res
 
 
+# Need to be finished
 def target_similarity_profile_transformer(drugs_ids):
     G = load_biogrid_network()
     targets = list(map(_filter_gene_exists, [G] * len(drugs_ids), load_targets(drugs_ids)))
@@ -142,28 +140,10 @@ def target_similarity_profile_transformer(drugs_ids):
             print(entry, max_dist)
 
 
-def dgl_transformer(drugs, smiles):
+def graph_transformer(drugs, smiles, module=AdjGraphTransformer):
     assert len(drugs) == len(smiles)
-    trans = DGLGraphTransformer()
-    X, ids = trans(smiles)  # Call the transformer on the smiles using the __call__ method.
-    # for index, g in enumerate(X):
-    #     if len(g.edata["he"]) == 0:
-    #         del X[index]
-    #         del ids[index]
-
+    X, ids = module()(smiles)
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
     return dict(zip(drugs, X))
-
-
-def adj_transformer(drugs, smiles):
-    trans = AdjGraphTransformer()
-    X, ids = trans(smiles, dtype=np.float32)
-    drugs = list(itemgetter(*ids)(drugs))
-    return dict(zip(drugs, X))
-
-
-if __name__ == '__main__':
-    b = load_targets()
-    print(b)
