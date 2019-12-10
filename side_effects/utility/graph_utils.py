@@ -23,6 +23,8 @@ def to_cuda(x):
 
 def power_iteration(mat, n_iter=100):
     res = torch.ones(mat.shape[1], 1)
+    if torch.cuda.is_available():
+        res = res.cuda()
     for i in range(n_iter):
         res = mat.mm(res) / res.norm()
     return res
