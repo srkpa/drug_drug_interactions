@@ -33,7 +33,7 @@ def generate_config():
             shutil.copy(temp_file.name, f"{out_path}/{task_id}.json")
             assert os.path.exists(f"{out_path}/{task_id}.json")
             temp_file.close()
-        cf.write(f"{out_path}/{task_id}.json\n")
+            cf.write(f"{out_path}/{task_id}.json\n")
 
 
 if __name__ == '__main__':
