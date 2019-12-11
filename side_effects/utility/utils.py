@@ -389,7 +389,11 @@ if __name__ == '__main__':
     # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
     # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
     #display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-    c = get_expt_results("/home/rogia/Documents/")
+    #display_H("/home/rogia/.invivo/result/gin_lapool/drugbank_bmnddi_12c974de_log.log")
+   # exit()
+    c = get_expt_results("/home/rogia/.invivo/result/")
+    print(c)
+    exit()
     c.to_excel("graph_mol_as_extract.xlsx")
 
 

@@ -5,7 +5,7 @@ from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["drugbank"],
-         transformer=["dgl"],
+         transformer=["adj"],
          split_mode=["random"],  # "leave_drugs_out"
          test_size=[0.20],
          valid_size=[0.25],
@@ -24,10 +24,11 @@ fit_params = list(ParameterGrid(
 
 pool_arch = list(ParameterGrid(
     dict(arch=["laplacian"],
-         hop=[None],
-         reg_mode=[2],
+         hop=[3],
+         reg_mode=[1],
          lap_hop=[1],
          attn=[1],
+         concat=[True]
          )
 ))
 drug_features_extractor_params = list(ParameterGrid(
@@ -35,14 +36,11 @@ drug_features_extractor_params = list(ParameterGrid(
          input_dim=[79],
          conv_layer_dims=[[[64], [64]]],
          dropout=[0.],
-         gather=["agg"],
-         gather_dim=[100],
+         gather=["agg", "attn", "max", "avg", "sum", "mean"],
+         gather_dim=[64],
          pool_arch=pool_arch,
-         activation=['LeakyReLU'],
-         init_fn=[None],
-         b_norm=[False]
-         # , pooling=['sum'],
-         # bias=[False],
+         activation=['ReLU'],
+         glayer=["th-gin"]
          )
 ))
 
@@ -52,7 +50,7 @@ network_params = list(ParameterGrid(dict(
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
-    dropout=[0.],
+    dropout=[0.10],
     b_norm=[True]
 )))
 
@@ -67,7 +65,7 @@ loss_params = list(ParameterGrid(dict(
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-4],
+    lr=[1e-3],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
     loss_params=loss_params,

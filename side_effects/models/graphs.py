@@ -3,12 +3,12 @@ from side_effects import inits
 from torch import nn
 from ivbase.nn.base import FCLayer
 from ivbase.nn.commons import get_activation
-from ivbase.nn.graphs.conv import TorchGINConv, TorchGCNLayer, GCNLayer
+from ivbase.nn.graphs.conv import TorchGINConv, TorchGCNLayer, GCNLayer,GINConv
 
 GLayer = TorchGCNLayer
 
 
-class GINConv(nn.Module):
+class DGINConv(nn.Module):
     r"""
     This layer implements the graph isomorphism operator from the `"How Powerful are
     Graph Neural Networks?" <https://arxiv.org/abs/1810.00826>`_ paper
@@ -39,7 +39,7 @@ class GINConv(nn.Module):
 
     def __init__(self, node_size, edge_size, kernel_sizes, eps=None, init_fn=None, **kwargs):
 
-        super(GINConv, self).__init__()
+        super(DGINConv, self).__init__()
         self.node_size = node_size
         self.edge_size = edge_size
         self.kernel_sizes = kernel_sizes
@@ -130,9 +130,11 @@ class AggLayer(nn.Module):
         return output
 
 
-def get_graph_layer(module_name):
-    if module_name == "gin":
+def get_graph_layer(name):
+    if name == "th-gin":
         GLayer = TorchGINConv
+    elif name == "dgl-gin":
+        GLayer = GINConv
     else:
         GLayer = GCNLayer
     return GLayer

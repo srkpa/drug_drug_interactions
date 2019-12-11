@@ -1,5 +1,6 @@
 import torch
 import dgl
+import inspect
 import torch.nn as nn
 from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
 from ivbase.nn.graphs.conv.gcn import GCNLayer, TorchGCNLayer, TorchKGCNLayer
@@ -30,9 +31,7 @@ def get_graph_pooler(**params):
     elif arch == "cluster":
         pool = partial(ClusterPool, algo="hierachical", gweight=0.5, **params)
     elif arch == "laplacian":
-        init_params = dict(attn=1, concat=False)
-        init_params.update(params)
-        pool = partial(LaplacianPool, **init_params)
+        pool = partial(LaplacianPool, **params)
     return pool
 
 
@@ -70,24 +69,24 @@ class PCNN(nn.Module):
 
 
 class GraphNet(nn.Module):
-    def __init__(self, input_dim, conv_layer_dims, activation, b_norm, gather, dropout=0., gather_dim=100, pool_arch=None,
-                 graph_module="gin",  **kwargs):
+    def __init__(self, input_dim, conv_layer_dims, activation, gather=None, b_norm=False, dropout=0., gather_dim=100,
+                 pool_arch=None, glayer="gin", **kwargs):
         super(GraphNet, self).__init__()
         conv_layers_1 = []
         conv_layers_2 = []
-        graph_layer = get_graph_layer(graph_module)
+        graph_layer = get_graph_layer(glayer)
         activation = get_activation(activation)
         for dim in conv_layer_dims[0]:
-            # graph_layer(in_size=input_dim, out_size=dim, dropout=dropout, activation=activation,
-            #             b_norm=b_norm,
-            #             pooling=pooling, bias=bias, init_fn=init_fn)
-
-            conv_layers_1.append(
-                graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation, **kwargs)
-            )
+            if glayer.startswith("dgl"):
+                layer = graph_layer(in_size=input_dim, out_size=dim, dropout=dropout, activation=activation,
+                                    b_norm=b_norm, **kwargs)
+            else:
+                layer = graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation,
+                                    **kwargs)
+            conv_layers_1.append(layer)
             input_dim = dim
         self.__before_pooling_layers = nn.ModuleList(conv_layers_1)
-        self.pool_arch = pool_arch.get("arch", "")
+        self.pool_arch = pool_arch.get("arch", None)
         self.pool_layer = get_graph_pooler(**pool_arch)
         if self.pool_layer:
             self.pool_layer = self.pool_layer(input_dim)
@@ -95,8 +94,13 @@ class GraphNet(nn.Module):
             input_dim = self.pool_layer.cluster_dim
 
         for dim in conv_layer_dims[-1]:
-            conv_layers_2.append(
-                graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation, **kwargs))
+            if glayer.startswith("dgl"):
+                layer = graph_layer(in_size=input_dim, out_size=dim, dropout=dropout, activation=activation,
+                                    b_norm=b_norm, **kwargs)
+            else:
+                layer = graph_layer(input_dim, kernel_size=dim, b_norm=b_norm, dropout=dropout, activation=activation,
+                                    **kwargs)
+            conv_layers_2.append(layer)
             input_dim = dim
 
         self.__after_pooling_layers = nn.ModuleList(conv_layers_2)
@@ -104,30 +108,42 @@ class GraphNet(nn.Module):
             self.agg_layer = AggLayer(input_dim, gather_dim, dropout)
         elif gather in ["attn", "gated"]:
             self.agg_layer = get_pooling("attn", input_dim=input_dim, output_dim=gather_dim, dropout=dropout)
+        elif gather is None:
+            self.agg_layer = None
         else:
             gather_dim = input_dim
             self.agg_layer = get_pooling(gather)
-        input_dim = gather_dim
+        input_dim = gather_dim if gather else input_dim
         self.output_dim = input_dim
 
     def forward(self, x):
-        if isinstance(x[0], dgl.DGLGraph):
-            h = 0
+        out = []
+        h = 0
+        if isinstance(x[0], dgl.DGLGraph) and not self.pool_arch:
             G = dgl.batch(x)
             if torch.cuda.is_available():
                 G.ndata['hv'] = G.ndata['hv'].cuda()
-        else:
-            out = []
-            for G, h in x:
-                for cv_layer in self.__before_pooling_layers:
+            x = [(G, 0)]
+
+        for G, h in x:
+            args = []
+            for cv_layer in self.__before_pooling_layers:
+                args = inspect.getfullargspec(cv_layer.forward)[0]
+                if 'x' in args:
                     G, h = cv_layer(G, h)
-                if self.pool_layer:
-                    G, h = self.pool_layer(G, h)
-                for cv_layer in self.__after_pooling_layers:
+                else:
+                    G, h = cv_layer(G)
+            if self.pool_layer:
+                G, h = self.pool_layer(G, h)
+            for cv_layer in self.__after_pooling_layers:
+                if 'x' in args:
                     G, h = cv_layer(G, h)
+                else:
+                    G, h = cv_layer(G)
+            if self.agg_layer:
                 h = self.agg_layer(h)
                 out.append(h)
-            h = torch.cat(out, dim=0)
+        h = torch.cat(out, dim=0) if out else h
 
         return h
 

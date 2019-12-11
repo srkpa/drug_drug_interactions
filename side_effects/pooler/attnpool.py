@@ -44,7 +44,7 @@ class MPNAttention(nn.Module):
         Arguments
         ----------
             init_fn (callable, optional): Function to initialize the linear weights. If it is not provided
-                an attempt to use the object `ivbase.nn.graphs.gcn.GCNLayer.init_fn` attributes would be first made, before doing nothing.
+                an attempt to use the object `ivbase.nn.graphs.gcn-mol.GCNLayer.init_fn` attributes would be first made, before doing nothing.
                 (Default value = None)
 
         See Also

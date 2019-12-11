@@ -140,7 +140,16 @@ def target_similarity_profile_transformer(drugs_ids):
             print(entry, max_dist)
 
 
-def graph_transformer(drugs, smiles, module=AdjGraphTransformer):
+def adj_graph_transformer(drugs, smiles, module=AdjGraphTransformer):
+    assert len(drugs) == len(smiles)
+    X, ids = module()(smiles)
+    drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
+    assert len(X) == len(ids)
+    assert len(X) == len(drugs)
+    return dict(zip(drugs, X))
+
+
+def dgl_graph_transformer(drugs, smiles, module=DGLGraphTransformer):
     assert len(drugs) == len(smiles)
     X, ids = module()(smiles)
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs

@@ -13,6 +13,7 @@ from sklearn.model_selection import ParameterGrid
 from copy import deepcopy
 
 EXP_FOLDER = 'expts'
+PROJECT_FOLDER = ""
 
 
 @click.group()
@@ -24,21 +25,20 @@ def cli():
 @click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
 @click.option('-p', '--hpid', type=int, default=0,
               help="""Position of the config file to run""")
-@click.option('-e', '--exec_file', type=str, default='train',
-              help=""" path to script that will be run. It is only used if instance_type is 'local'
-                        and imagename is None. """)
-def run(exp_name, hpid, exec_file):
-    exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
+@click.option('--restore_path', '-r',
+              help="Restore path.")
+def run(exp_name, hpid, restore_path=None, checkpoint_path=None):
+    exp_dir = os.path.join(os.path.expanduser('~'), EXP_FOLDER, exp_name)
     all_filenames_location = os.path.join(exp_dir, 'configs', 'configs.txt')
     with open(all_filenames_location, 'r') as fd:
         config_file = fd.readlines()[hpid].rstrip()
-
-    print(f"{exec_file} -p {config_file} -o {exp_dir}")
-    process = subprocess.Popen(f"{exec_file} -p {config_file} -o {exp_dir}", shell=True)
+    exec_file = os.path.join(os.path.expanduser('~'), "/miniconda3/bin/train")
+    print(f"{exec_file} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}")
+    process = subprocess.Popen(f"{exec_file} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}",
+                               shell=True)
     process.communicate()
     if process.returncode != 0:
         exit()
-
     os.rename(config_file, config_file.replace('.json', '.done'))
 
 
@@ -156,7 +156,7 @@ def dispatch(exp_name, config_file, exec_file, sbatch_template, duration, cpus):
                          duration=duration, cpus=cpus)
     sbatch_script = template.format(**template_args)
 
-    sbatch_script_location = os.path.join(exp_dir, 'submit.sh')
+    sbatch_script_location = os.path.join(exp_dir, 'submit_v1.sh')
     with open(sbatch_script_location, 'w') as fd:
         fd.write(sbatch_script)
 
@@ -183,7 +183,6 @@ def dispatch(exp_name, config_file, exec_file, sbatch_template, duration, cpus):
 @click.option('-d', '--duration', type=str, default='3:00:00',
               help="""Duration""")
 def dispatch_active(exp_name, config_file, exec_file, sbatch_template, duration):
-
     exp_dir = os.path.join(Path.home(), EXP_FOLDER, exp_name)
 
     with open(config_file, 'r') as fd:
@@ -203,7 +202,7 @@ def dispatch_active(exp_name, config_file, exec_file, sbatch_template, duration)
                          exp_name=exp_name, exec_file=exec_file, duration=duration)
     sbatch_script = template.format(**template_args)
 
-    sbatch_script_location = os.path.join(exp_dir, 'submit.sh')
+    sbatch_script_location = os.path.join(exp_dir, 'submit_v1.sh')
     with open(sbatch_script_location, 'w') as fd:
         fd.write(sbatch_script)
 

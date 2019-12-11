@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from .features_extraction import FeaturesExtractorFactory
 from .attention import AttentionLayer
-from .graphs import GINConv
+from .graphs import DGINConv
 
 
 class SelfAttentionLayer(AttentionLayer):
@@ -48,8 +48,8 @@ class BMNDDI(nn.Module):
             in_size = self.drug_feature_extractor.output_dim
 
         if graph_network_params is not None:
-            gcnn = GINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
-                           **graph_network_params)
+            gcnn = DGINConv(node_size=dfe_out_dim, edge_size=edges_embedding_dim,
+                            **graph_network_params)
             self.graph_net = nn.Sequential(gcnn, nn.Linear(gcnn.output_dim, dfe_out_dim))
             if tied_weights:
                 self.node_feature_extractor = self.drug_feature_extractor
