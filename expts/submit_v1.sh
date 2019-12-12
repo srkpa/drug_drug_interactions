@@ -12,7 +12,7 @@
 date
 SECONDS=0
 
-graham_dispatcher run --exp_name multitask --hpid $SLURM_ARRAY_TASK_ID
+graham_dispatcher run --exp_name $1 --hpid $SLURM_ARRAY_TASK_ID
 diff=$SECONDS
 echo "$(($diff / 60)) minutes and $(($diff % 60)) seconds elapsed."
 date

@@ -13,7 +13,7 @@ from sklearn.model_selection import ParameterGrid
 from copy import deepcopy
 
 EXP_FOLDER = 'expts'
-PROJECT_FOLDER = ""
+EXCEC_FILE = os.path.join(os.path.expanduser('~'), "drug_drug_interactions/bin/train")
 
 
 @click.group()
@@ -32,9 +32,8 @@ def run(exp_name, hpid, restore_path=None, checkpoint_path=None):
     all_filenames_location = os.path.join(exp_dir, 'configs', 'configs.txt')
     with open(all_filenames_location, 'r') as fd:
         config_file = fd.readlines()[hpid].rstrip()
-    exec_file = os.path.join(os.path.expanduser('~'), "/miniconda3/bin/train")
-    print(f"{exec_file} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}")
-    process = subprocess.Popen(f"{exec_file} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}",
+    print(f"{EXCEC_FILE} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}")
+    process = subprocess.Popen(f"{EXCEC_FILE} -p {config_file} -o {exp_dir} -r {restore_path} -c {checkpoint_path}",
                                shell=True)
     process.communicate()
     if process.returncode != 0:
