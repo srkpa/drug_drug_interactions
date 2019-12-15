@@ -1,9 +1,22 @@
 {
   "model_params": [
     {
+      "dataloader": true,
       "loss": "bce",
+      "loss_params": {
+        "use_binary_cost_per_batch": false,
+        "use_fixed_binary_cost": false,
+        "use_fixed_label_cost": false,
+        "use_label_cost_per_batch": false,
+        "use_negative_sampling": false
+      },
       "lr": 1e-05,
-      "metrics_names": null,
+      "metrics_names": [
+        "macro_roc",
+        "macro_auprc",
+        "micro_roc",
+        "micro_auprc"
+      ],
       "network_params": {
         "b_norm": true,
         "dropout": 0,

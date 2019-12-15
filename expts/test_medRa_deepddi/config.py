@@ -1,7 +1,7 @@
-import click
 import json
+
+import click
 from sklearn.model_selection import ParameterGrid
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     [
@@ -19,17 +19,14 @@ dataset_params = list(ParameterGrid(
 
 ))
 
-
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
-
 
 network_params = list(ParameterGrid(dict(
     network_name=['deepddi'],
     input_dim=[100],
     hidden_sizes=[[2048] * 9]
 )))
-
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,

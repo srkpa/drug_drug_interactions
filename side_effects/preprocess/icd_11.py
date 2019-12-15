@@ -1,8 +1,8 @@
-import urllib3
-import requests
 import operator
-
 from collections import defaultdict
+
+import requests
+import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -72,4 +72,3 @@ def search(query=None):
 
     print(query, "=", typ)
     return typ
-

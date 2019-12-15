@@ -1,7 +1,8 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
@@ -9,7 +10,7 @@ dataset_params = list(ParameterGrid(
          split_mode=["leave_drugs_out"],  # "leave_drugs_out"
          test_size=[0.20],
          valid_size=[0.25],
-         seed=[0], #, 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[0],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
          use_as_filter=[None],
@@ -40,8 +41,7 @@ AUxNet_params = list(ParameterGrid(dict(
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    auxnet_params=[None],  # AUxNet_params,
-    fc_layers_dim=[[128]*2],
+    fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
     dropout=[0.10],
@@ -56,13 +56,15 @@ loss_params = list(ParameterGrid(dict(
     use_label_cost_per_batch=[False]
 )))
 
+
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
     lr=[1e-3],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
-    loss_params=loss_params
+    loss_params=loss_params,
+    dataloader=[True]
 )))
 
 

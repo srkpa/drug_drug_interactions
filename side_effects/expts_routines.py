@@ -1,14 +1,14 @@
-import os
-import json
-import warnings
-import torch
 import cProfile
-import pickle
 import hashlib
-from collections import MutableMapping, OrderedDict
-from side_effects.trainer import Trainer
-from side_effects.models.deep_rf import DeepRF
+import json
+import os
+import pickle
+import warnings
+from collections import MutableMapping
+
 from side_effects.data.loader import get_data_partitions, DataCache, compute_classes_weight, compute_labels_density
+from side_effects.models.deep_rf import DeepRF
+from side_effects.trainer import Trainer
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
 

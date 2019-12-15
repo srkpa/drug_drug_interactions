@@ -1,21 +1,18 @@
-import inspect
+import ast
+import csv
 import math
 import re
 from collections import defaultdict
 from functools import partial
 from itertools import product
+
 import numpy as np
 import pandas as pd
-import csv
 import torch as th
 from ivbase.utils.commons import to_tensor
 from ivbase.utils.datasets.dataset import DGLDataset
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MultiLabelBinarizer
 from torch.utils.data import Dataset
-import ast
-
-from side_effects.data.transforms import sequence_transformer
 
 
 def save_results(filename, contents, engine='xlsxwriter'):
@@ -391,7 +388,8 @@ def jy_train_test_split(input_path):
     print("test_ddi", len(testing_set), " interactions")
     print("validation", len(validation_set), " interactions")
 
-    save_results("jy_split.xlsx", contents=[("train", training_set), ("test_ddi", testing_set), ("valid", validation_set)])
+    save_results("jy_split.xlsx",
+                 contents=[("train", training_set), ("test_ddi", testing_set), ("valid", validation_set)])
 
     training_set_ref = training_set.groupby('paire')
     testing_set_ref = testing_set.groupby('paire')
@@ -501,7 +499,6 @@ def analyze_jy_split(input_path):
     return train, test, valid, train_and_test, train_and_valid, test_and_valid
 
 
-
 def mytest(input_path):
     dir = load_ddis_combinations(fname=f"{input_path}/directed-drugbank-combo.csv",
                                  header=True, dataset_name="split")
@@ -532,4 +529,3 @@ if __name__ == '__main__':
     all_seeds = [0, 64, 55, 101, 350, 21, 33, 10, 505, 42]
     for seed in all_seeds:
         train_test_valid_split_3(input_path=drugb_path, dataset_name="twosides", seed=seed)
-

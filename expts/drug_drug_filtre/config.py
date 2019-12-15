@@ -1,7 +1,8 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     [
@@ -25,24 +26,21 @@ dataset_params = list(ParameterGrid(
 
 ))
 
-
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
-
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
          vocab_size=[len(SMILES_ALPHABET) + 2, len(SMILES_ALPHABET) + 1],
          embedding_size=[20],
          cnn_sizes=[
-             [256]*4
+             [256] * 4
          ],
          kernel_size=[[5], [3], [17], [7], [11], [15], [13], [9], [17], [21]],
          dilatation_rate=[1],
          pooling_len=[2],
          b_norm=[False])
 ))
-
 
 # network_params = list(ParameterGrid(dict(
 #     network_name=['bmnddi'],
@@ -57,13 +55,12 @@ drug_features_extractor_params = list(ParameterGrid(
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    fc_layers_dim=[[128]*2],
+    fc_layers_dim=[[128] * 2],
     mode=["concat"],
     att_hidden_dim=[None],
     dropout=[0.15, 0.25],
     b_norm=[False, True],
 )))
-
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,

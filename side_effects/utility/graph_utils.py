@@ -1,15 +1,16 @@
-import torch
+import io
+import networkx as nx
 import numpy as np
+import torch
 import torch.nn.functional as F
-from side_effects.utility import const
+from PIL import Image
 from rdkit import Chem
 from rdkit.Chem import rdDepictor
 from rdkit.Chem.Draw import rdMolDraw2D
-from torchvision.utils import make_grid
 from torchvision import transforms
-from ivbase.utils.commons import mol2img
-from PIL import Image
-import io
+from torchvision.utils import make_grid
+
+from side_effects.utility import const
 
 TRANSFORMER = transforms.ToTensor()
 EDGE_DECODER = const.BOND_TYPES
@@ -166,7 +167,8 @@ def data2mol(data, atom_list):
     mols = []
     n_mols = adj.shape[0]
     for i in range(n_mols):
-        mols.append(adj2mol(adj[i].cpu().detach().long().numpy(), x[i].cpu().detach().long().numpy(), atom_decoder=atom_decoder))
+        mols.append(adj2mol(adj[i].cpu().detach().long().numpy(), x[i].cpu().detach().long().numpy(),
+                            atom_decoder=atom_decoder))
     return mols
 
 

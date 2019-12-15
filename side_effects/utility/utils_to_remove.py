@@ -1,20 +1,20 @@
 import json
 import os
-import pandas as pd
+
 import ivbase.nn.extractors as feat
 import matplotlib.pyplot as plt
+import pandas as pd
 import torch.optim as optim
+from ivbase.nn.base import FCLayer
 from ivbase.utils.datasets.dataset import GenericDataset, DGLDataset
 from pytoune.framework.metrics import get_loss_or_metric
-from sklearn.utils import compute_class_weight
 
+from side_effects.data.transforms import *
+from side_effects.data.utils import TDGLDataset, MyDataset
 from side_effects.inits import *
 from side_effects.loss import WeightedBinaryCrossEntropy1, weighted_binary_cross_entropy3, \
     WeightedBinaryCrossEntropy2
 from side_effects.models.bmn_ddi import PCNN, FCNet, BMNDDI, DeepDDI, DGLGraph
-from side_effects.data.utils import TDGLDataset, MyDataset
-from side_effects.data.transforms import *
-from ivbase.nn.base import FCLayer
 
 all_networks_dict = dict(
     pcnn=PCNN,
@@ -381,6 +381,7 @@ def test():
     loss2 = weighted_binary_cross_entropy2(outputs, targets, w)
     loss3 = binary_cross_entropy(outputs, targets)
     print(loss1, loss2, loss3)
+
 
 def pie(file_path="/home/rogia/Téléchargements/twosides-icd11.csv"):
     data = pd.read_csv(file_path, sep=",")

@@ -10,8 +10,9 @@ class DeepDDI(nn.Module):
         in_ = input_dim
         for out_ in hidden_sizes:
             layers.append(nn.Linear(in_, out_))
-            layers.append(nn.ReLU())
+            #  layers.append(nn.ReLU())
             layers.append(nn.BatchNorm1d(out_))
+            layers.append(nn.ReLU())
             in_ = out_
         self.net = nn.Sequential(*layers, nn.Linear(in_, output_dim), nn.Sigmoid())
 

@@ -1,20 +1,18 @@
-import torch
-import dgl
 import inspect
-import torch.nn as nn
-from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
-from ivbase.nn.graphs.conv.gcn import GCNLayer, TorchGCNLayer, TorchKGCNLayer
-from torch.nn import Conv1d, Embedding
-import ivbase.nn.extractors as feat
-from ivbase.nn.base import FCLayer
-from ivbase.nn.commons import get_activation, get_pooling
-from ivbase.nn.graphs.conv import TorchGINConv
-from side_effects.pooler.laplacianpooling import LaplacianPool
-from side_effects.pooler.oraclepooling import OraclePool
-from side_effects.pooler.attnpool import AttnCentroidPool
-from side_effects.pooler.diffpool import DiffPool
-from ivbase.nn.graphs.pool import TopKPool, ClusterPool, AttnPool
 from functools import partial
+
+import dgl
+import ivbase.nn.extractors as feat
+import torch
+import torch.nn as nn
+from ivbase.nn.base import FCLayer
+from ivbase.nn.commons import (GlobalMaxPool1d, Transpose)
+from ivbase.nn.commons import get_activation, get_pooling
+from ivbase.nn.graphs.pool import TopKPool, ClusterPool, AttnPool
+from torch.nn import Conv1d, Embedding
+
+from side_effects.pooler.diffpool import DiffPool
+from side_effects.pooler.laplacianpooling import LaplacianPool
 from .graphs import AggLayer, get_graph_layer
 
 

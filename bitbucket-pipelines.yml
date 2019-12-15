@@ -7,13 +7,13 @@ pipelines:
         caches:
           - pip
     - step:
-        name: Test 
-        script: 
-            - pip install -e .
-            - git config --global user.name $GIT_ROBOT_USERNAME
-            - pytest -v tests/
-            - pip install pytest pylint sphinx sphinx_rtd_theme
-            - bash scripts/update_doc.sh -n $BITBUCKET_REPO_SLUG -u -c 
+        name: Test
+        script:
+          - pip install -e .
+          - git config --global user.name $GIT_ROBOT_USERNAME
+          - pytest -v tests/
+          - pip install pytest pylint sphinx sphinx_rtd_theme
+          - bash scripts/update_doc.sh -n $BITBUCKET_REPO_SLUG -u -c
     - step:
         name: Notify
         script:
@@ -23,8 +23,8 @@ pipelines:
               MESSAGE: "Project $BITBUCKET_REPO_SLUG latest build is a success"
 
   pull-requests:
-     dev: #this will run for pull request on master
-       - step:
+    dev: #this will run for pull request on master
+      - step:
           script:
             - echo 'Merging on master' # will think of test_ddi to do later
             - make tag

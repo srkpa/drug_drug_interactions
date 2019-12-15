@@ -1,12 +1,13 @@
 import numpy as np
 import torch
 from torch import nn
-
+from torch.nn import functional as F
 
 class AttentionLayer(nn.Module):
     """
     Attention layer that performs dot product att
     """
+
     def __init__(self, input_dim, value_dim, key_dim, pooling_function=None):
 
         super(AttentionLayer, self).__init__()
@@ -126,7 +127,6 @@ class SelfMultiHeadAttentionLayer(nn.Module):
     """
 
     def __init__(self, input_dim=64, hidden_dims=(128, 64), heads=1, residual=False, dropout=0.):
-
         super().__init__()
 
         self.attention = MultiHeadAttentionLayer(
@@ -168,3 +168,48 @@ class SelfMultiHeadAttentionLayer(nn.Module):
         x = self.hidden(x)
 
         return x
+
+
+class CoAttention(nn.Module):
+    """
+        https://arxiv.org/pdf/1707.04968.pdf
+    """
+
+    def __init__(self, hidden_dim):
+        super().__init__()
+        self.hidden_dim = hidden_dim
+        self.q_proj = nn.Linear(hidden_dim, hidden_dim)
+        # self.tanh_net = nn.Sequential(nn.Linear(input_dim, output_dim),
+        #                               nn.Tanh())
+        # self.soft_net = nn.Sequential(nn.Linear(output_dim, output_dim),
+        #                               nn.Softmax())
+
+    def forward(self, x):
+        # v, q = torch.split(x, x.shape[-1]//2, 1)
+        # m_o = torch.mul(v, q)
+        # h_n, h_t = torch.mul(self.tanh_net(v), self.tanh_net(m_o)), torch.mul(self.tanh_net(q), self.tanh_net(m_o))
+        # alpha_n, alpha_t = self.soft_net(h_n), self.soft_net(h_t)
+        # v_t, q_t = nn.Tanh()(torch.mul(alpha_n, h_n)), torch.mul(alpha_t, h_t)
+        # return torch.mul(v_t, q_t)
+        Q , D = torch.split(x, x.shape[-1]//2, 1)  # b x n + 1 x l
+        # D = self.encoder(d_seq, d_mask)  # B x m + 1 x l
+        print(Q.shape, D.shape, Q.view(-1, 32))
+        # project q
+        Q = F.tanh(self.q_proj(Q.view(-1, self.hidden_dim))).view(Q.size())  # B x n + 1 x l
+
+        # co attention
+        D_t = torch.transpose(D, 1, 2)  # B x l x m + 1
+        L = torch.bmm(Q, D_t)  # L = B x n + 1 x m + 1
+
+        A_Q_ = F.softmax(L, dim=1)  # B x n + 1 x m + 1
+        A_Q = torch.transpose(A_Q_, 1, 2)  # B x m + 1 x n + 1
+        C_Q = torch.bmm(D_t, A_Q)  # (B x l x m + 1) x (B x m x n + 1) => B x l x n + 1
+
+        Q_t = torch.transpose(Q, 1, 2)  # B x l x n + 1
+        A_D = F.softmax(L, dim=2)  # B x n + 1 x m + 1
+        C_D = torch.bmm(torch.cat((Q_t, C_Q), 1),
+                        A_D)  # (B x l x n+1 ; B x l x n+1) x (B x n +1x m+1) => B x 2l x m + 1
+
+        C_D_t = torch.transpose(C_D, 1, 2)  # B x m + 1 x 2l
+
+        return torch.cat((C_D_t, D), 2)

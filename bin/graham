@@ -1,8 +1,9 @@
 import json
 import os
-from sklearn.model_selection import ParameterGrid
 import subprocess
+
 import click
+from sklearn.model_selection import ParameterGrid
 
 
 @click.command()

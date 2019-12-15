@@ -1,9 +1,8 @@
 import torch
-from side_effects import inits
-from torch import nn
 from ivbase.nn.base import FCLayer
 from ivbase.nn.commons import get_activation
-from ivbase.nn.graphs.conv import TorchGINConv, TorchGCNLayer, GCNLayer,GINConv
+from ivbase.nn.graphs.conv import TorchGINConv, TorchGCNLayer, GCNLayer, GINConv
+from torch import nn
 
 GLayer = TorchGCNLayer
 

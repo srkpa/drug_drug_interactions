@@ -1,7 +1,8 @@
+from io import StringIO
+
 from paramiko import SSHClient, AutoAddPolicy, RSAKey
 from paramiko.auth_handler import AuthenticationException
 from scp import SCPClient, SCPException
-from io import StringIO
 
 
 class Client:

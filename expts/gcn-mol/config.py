@@ -1,7 +1,7 @@
-import click
 import json
+
+import click
 from sklearn.model_selection import ParameterGrid
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["drugbank"],
@@ -63,7 +63,6 @@ drug_features_extractor_params = list(ParameterGrid([
          pool_arch=pool_arch
          )]
 ))
-
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],

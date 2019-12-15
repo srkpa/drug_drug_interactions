@@ -18,7 +18,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -73,7 +74,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -128,7 +130,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -183,7 +186,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -238,7 +242,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -293,7 +298,8 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
+        "att_hidden_dim": 32,
+        "att_mode": "co-att",
         "b_norm": true,
         "dropout": 0.1,
         "drug_feature_extractor_params": {
@@ -350,7 +356,7 @@
   "fit_params": [
     {
       "batch_size": 256,
-      "n_epochs": 1,
+      "n_epochs": 100,
       "with_early_stopping": true
     }
   ]

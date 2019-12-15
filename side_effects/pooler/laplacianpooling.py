@@ -1,21 +1,20 @@
+from functools import partial
+
 import numpy as np
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from ivbase.nn.graphs.pool.diffpool import DiffPool
-from ivbase.nn.graphs.conv.base import GraphConvLayer
-from ivbase.nn.graphs.conv import TorchGINConv
 from ivbase.nn.base import FCLayer
-
-from side_effects.utility.tensor_utils import *
-from side_effects.utility.sparsegen import Sparsegen, Sparsemax
-from side_effects.utility.graph_utils import find_largest_eigval
-from ivbase.utils.graphs import compute_deg_matrix
-from functools import partial
-from scipy import sparse, cluster, spatial
-from ivbase.utils.commons import to_tensor
+from ivbase.nn.graphs.conv import TorchGINConv
+from ivbase.nn.graphs.conv.base import GraphConvLayer
 from ivbase.nn.graphs.conv.gcn import GCNLayer
+from ivbase.nn.graphs.pool.diffpool import DiffPool
+from ivbase.utils.commons import to_tensor
+from ivbase.utils.graphs import compute_deg_matrix
+from scipy import sparse
+
+from side_effects.utility.graph_utils import find_largest_eigval
+from side_effects.utility.sparsegen import Sparsegen
+from side_effects.utility.tensor_utils import *
 
 EPS = 1e-8
 LARGE_VAL = 1e4

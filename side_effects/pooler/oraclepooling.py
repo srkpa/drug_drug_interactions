@@ -1,5 +1,6 @@
-import torch 
+import torch
 from ivbase.nn.graphs.pool.base import GraphPool, _cluster_to_matrix, _get_clustering_pool
+
 
 class OraclePool(GraphPool):
     """
@@ -11,6 +12,7 @@ class OraclePool(GraphPool):
     Please note that this implementation is not optimal and can be efficiently done using a tree by 
     taking advantage of the "K-level ancestor of a node" algorithm
     """
+
     def __init__(self, input_dim, pooling=None, clip=False):
         super().__init__(self, input_dim, None, None)
         self.pooling = _get_clustering_pool(pooling)
@@ -23,15 +25,17 @@ class OraclePool(GraphPool):
         init_atom = atom
         pooling_path = [init_atom]
         while cur_level < level:
-            ind = -1 
-            l_cluster = mol_path[cur_level+1]
+            ind = -1
+            l_cluster = mol_path[cur_level + 1]
             for i, clist in enumerate(l_cluster):
                 if atom in clist:
                     ind = i
                     break
-            cur_level += 1  
+            cur_level += 1
             if ind == -1:
-                raise ValueError("Atom {} of mol {} is not included in any pooling path at level {}".format(init_atom, mol, cur_level))
+                raise ValueError(
+                    "Atom {} of mol {} is not included in any pooling path at level {}".format(init_atom, mol,
+                                                                                               cur_level))
             atom = ind
             pooling_path.append(atom)
         if log_all:
@@ -66,11 +70,10 @@ class OraclePool(GraphPool):
 
         g_size = adj.size(-2)
         max_level = max(pooling_path.keys())
-        if level < 1 or level > max_level: # do nothing here
-            return torch.eye(g_size).float() # projection into itself
+        if level < 1 or level > max_level:  # do nothing here
+            return torch.eye(g_size).float()  # projection into itself
 
         return _cluster_to_matrix(pooling_path[level], device=x.device)
-
 
     def _loss(self, *args):
         return 0
@@ -80,7 +83,7 @@ class OraclePool(GraphPool):
             return self.pooling(mapper, x)
         return torch.matmul(mapper.transpose(-2, -1), x)
 
-    def forward(self, adj, x, pooling_path,  level=1, **kwargs):
+    def forward(self, adj, x, pooling_path, level=1, **kwargs):
         r"""
         Applies the Pooling layer on input tensor x and adjacency matrix 
 
@@ -106,8 +109,8 @@ class OraclePool(GraphPool):
 
         :rtype: (:class:`torch.Tensor`, :class:`torch.Tensor`)
         """
-        x = x.unsqueeze(0) if x.dim() == 2 else x 
-        adj = adj.unsqueeze(0) if adj.dim() == 2 else adj 
+        x = x.unsqueeze(0) if x.dim() == 2 else x
+        adj = adj.unsqueeze(0) if adj.dim() == 2 else adj
         new_adj_list = []
         new_feat_list = []
         for k in range(x.shape[0]):

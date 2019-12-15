@@ -1,7 +1,8 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["drugbank"],
@@ -12,7 +13,7 @@ dataset_params = list(ParameterGrid(
          seed=[42],
          decagon=[False],
          use_side_effects_mapping=[False]
-         #use_as_filter=['SOC', 'HLGT', 'HLT', 'PT']
+         # use_as_filter=['SOC', 'HLGT', 'HLT', 'PT']
          )
 ))
 

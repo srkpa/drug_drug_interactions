@@ -14,7 +14,7 @@ See: "From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Cla
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
+
 
 class Sparsegen(nn.Module):
     """Sparsegen function."""
@@ -47,7 +47,7 @@ class Sparsegen(nn.Module):
         original_size = input.size()
         input = self.net(input)
         input = input.view(-1, input.size(self.dim))
-        
+
         dim = 1
         number_of_logits = input.size(dim)
 
@@ -58,7 +58,7 @@ class Sparsegen(nn.Module):
         # (NOTE: Can be replaced with linear time selection method described here:
         # http://stanford.edu/~jduchi/projects/DuchiShSiCh08.html)
         zs = torch.sort(input=input, dim=dim, descending=True)[0]
-        trange = torch.arange(start=1, end=number_of_logits+1, device=input.device).float().view(1, -1)
+        trange = torch.arange(start=1, end=number_of_logits + 1, device=input.device).float().view(1, -1)
         trange = trange.expand_as(zs)
 
         # Determine sparsity of projection
@@ -75,7 +75,7 @@ class Sparsegen(nn.Module):
         taus = taus.expand_as(input)
 
         # Sparsemax
-        self.output = torch.max(torch.zeros_like(input), (input - taus)/(1-self.sigma))
+        self.output = torch.max(torch.zeros_like(input), (input - taus) / (1 - self.sigma))
         output = self.output.view(original_size)
 
         return output

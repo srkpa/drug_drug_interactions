@@ -1,15 +1,8 @@
 import torch
-import math
-import torch.nn.functional as F
-from torch import nn
-from ivbase.nn.graphs.conv import TorchGCNLayer
 from ivbase.nn.graphs.conv.gin import TorchGINConv
-from ivbase.nn.base import FCLayer
-from ivbase.nn.graphs.pool.diffpool import DiffPool 
-from functools import partial
-import networkx as nx
-import numpy as np
-from side_effects.utility.sparsegen import Sparsegen, Sparsemax
+from torch import nn
+
+from side_effects.utility.sparsegen import Sparsemax
 from .base import *
 
 
@@ -18,6 +11,7 @@ class MPNAttention(nn.Module):
     Base class for computing node-to-cluster attention pooling
     
     """
+
     def __init__(self, input_size, output_size, ncluster, learned=False, concat=False, **kwargs):
 
         super(MPNAttention, self).__init__()
@@ -26,13 +20,16 @@ class MPNAttention(nn.Module):
         self.ncluster = ncluster
         self.learned = learned
         self.concat = concat
-        self.attention_net = nn.Linear(self.output_size + self.input_size, 1, bias=False) # Network for attention (NxM)
-        self.feat_net = TorchGINConv(self.input_size, self.output_size) # Network for new feats NxF, where F is features
-        self.output_net = nn.Linear(self.output_size, self.output_size) # Network for new output feature (MxF)
+        self.attention_net = nn.Linear(self.output_size + self.input_size, 1, bias=False)  # Network for attention (NxM)
+        self.feat_net = TorchGINConv(self.input_size,
+                                     self.output_size)  # Network for new feats NxF, where F is features
+        self.output_net = nn.Linear(self.output_size, self.output_size)  # Network for new output feature (MxF)
         if self.learned:
-            self.mapper_net = nn.Parameter(torch.Tensor(size=(self.ncluster, self.output_size)))  # alternative mapper func MxF parameter
+            self.mapper_net = nn.Parameter(
+                torch.Tensor(size=(self.ncluster, self.output_size)))  # alternative mapper func MxF parameter
         else:
-            self.mapper_net = kwargs.get("net", TorchGINConv)(self.input_size, self.ncluster, bias=False) # Mapper function: NxM
+            self.mapper_net = kwargs.get("net", TorchGINConv)(self.input_size, self.ncluster,
+                                                              bias=False)  # Mapper function: NxM
         self.init_fn = kwargs.get('init_fn') or partial(nn.init.xavier_normal_, gain=1.414)
         self.reset_parameters()
         self.softmax = Sparsemax()
@@ -60,29 +57,30 @@ class MPNAttention(nn.Module):
             init_fn(self.attention_net.weight)
 
     def get_value(self, adj, x):
-        _, feats = self.feat_net(adj, x) # temporary output N,D --> N,F
+        _, feats = self.feat_net(adj, x)  # temporary output N,D --> N,F
         if self.learned:
-            mapper = self.mapper_net # is M, F by itself
+            mapper = self.mapper_net  # is M, F by itself
         else:
-            _, f = self.mapper_net(adj, x) # N, D --> N, M
-            mapper = self.output_net(torch.bmm(f.transpose(-2, -1), x)) # M, F # precluster
+            _, f = self.mapper_net(adj, x)  # N, D --> N, M
+            mapper = self.output_net(torch.bmm(f.transpose(-2, -1), x))  # M, F # precluster
         return mapper, feats
-        
+
     def forward(self, adj, x):
         b_size = x.size(0) if x.dim() == 3 else 1
         assert x.size(-1) == self.input_size
-        query = x # N, D
-        mapper, val = self.get_value(adj, x)# M, F for mapper, and values is N, F
+        query = x  # N, D
+        mapper, val = self.get_value(adj, x)  # M, F for mapper, and values is N, F
         if self.concat:
-            h1 = upsample_to(query, mapper.shape[-2]) # NM, D # could potentially replace query by val ?
-            h2 = upsample_to(mapper, query.shape[-2]) # NM, F
-            h = torch.cat([h1, h2], dim=-1) # NM, F+D
-            attention_matrix = self.attention_net(h) # should be N*M, 1 now
+            h1 = upsample_to(query, mapper.shape[-2])  # NM, D # could potentially replace query by val ?
+            h2 = upsample_to(mapper, query.shape[-2])  # NM, F
+            h = torch.cat([h1, h2], dim=-1)  # NM, F+D
+            attention_matrix = self.attention_net(h)  # should be N*M, 1 now
         else:
-            attention_matrix = torch.matmul(val, mapper.transpose(-1, -2)) # should be N, M now
+            attention_matrix = torch.matmul(val, mapper.transpose(-1, -2))  # should be N, M now
         # reshaping to B, N, M now
-        attention_matrix = attention_matrix.view(b_size, -1, self.ncluster) if x.dim() == 3 else attention_matrix.view(-1, self.ncluster)
-        attention_matrix = self.softmax(attention_matrix, dim=-1) # B, N, M
+        attention_matrix = attention_matrix.view(b_size, -1, self.ncluster) if x.dim() == 3 else attention_matrix.view(
+            -1, self.ncluster)
+        attention_matrix = self.softmax(attention_matrix, dim=-1)  # B, N, M
         return attention_matrix, mapper
 
 
@@ -92,6 +90,7 @@ class AttnCentroidPool(DiffPool):
     and the cluster feature to compute the 
 
     """
+
     def __init__(self, input_dim, hidden_dim, feat_dim, **kwargs):
         super(AttnCentroidPool, self).__init__(input_dim, hidden_dim, None)
         self.nclusters = self.hidden_dim
@@ -111,7 +110,6 @@ class AttnCentroidPool(DiffPool):
                 Node assignment matrix of size (B, N, M)
         """
         return (adj - torch.matmul(mapper, mapper.transpose(1, 2))).norm()
-
 
     def forward(self, adj, x, return_loss=False):
         r"""

@@ -1,11 +1,6 @@
 import json
-import seaborn as sns
 from collections import OrderedDict
 
-import matplotlib.patheffects as PathEffects
-import matplotlib.pyplot as plt
-import numpy as np
-import torch
 import torch.nn as nn
 
 from side_effects.trainer import *
@@ -42,6 +37,7 @@ def load_pretrained_model(directory, delete_layers=None, output_dim=86):
 
 def evaluate(on_gray="on"):
     pass
+
 
 if __name__ == '__main__':
     from gensim.test.utils import datapath

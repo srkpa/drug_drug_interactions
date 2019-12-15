@@ -1,9 +1,9 @@
-from .laplacianpooling import LaplacianPool
-from .oraclepooling import OraclePool
-from .attnpool import AttnCentroidPool
-from .diffpool import DiffPool
-from ivbase.nn.graphs.pool import TopKPool, ClusterPool, AttnPool
 from functools import partial
+
+from ivbase.nn.graphs.pool import TopKPool, ClusterPool, AttnPool
+
+from .diffpool import DiffPool
+from .laplacianpooling import LaplacianPool
 
 
 def get_graph_coarsener(**params):

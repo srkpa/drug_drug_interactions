@@ -1,7 +1,8 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
@@ -51,7 +52,7 @@ network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     auxnet_params=[None],
-    fc_layers_dim=[[128]*2],
+    fc_layers_dim=[[128] * 2],
     mode=['concat'],
     att_hidden_dim=[None],
     dropout=[0.15],

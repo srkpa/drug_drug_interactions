@@ -1,22 +1,18 @@
-import torch
-import os
-import dgl
-from ivbase.nn.commons import get_optimizer
-from torch.nn.functional import binary_cross_entropy
-from poutyne.framework import Model
-from poutyne.framework.callbacks import BestModelRestore
-from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, Logger
-from tensorboardX.writer import SummaryWriter
-from torch.utils.data import DataLoader
-from side_effects.metrics import *
-from side_effects.models import all_networks_dict
-from side_effects.loss import BinaryCrossEntropyP
-from ivbase.nn.commons import get_optimizer
+from math import ceil
+
 import ivbase.utils.trainer as ivbt
+import torch
+from ivbase.nn.commons import get_optimizer
 from ivbase.utils.snapshotcallback import SnapshotCallback
 from ivbase.utils.trainer import TrainerCheckpoint
-from torch.nn import DataParallel
-from math import ceil
+from poutyne.framework.callbacks import BestModelRestore
+from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ReduceLROnPlateau, Logger
+from tensorboardX.writer import SummaryWriter
+from torch.utils.data import DataLoader
+
+from side_effects.loss import BinaryCrossEntropyP
+from side_effects.metrics import *
+from side_effects.models import all_networks_dict
 
 
 def get_metrics():

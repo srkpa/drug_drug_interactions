@@ -1,27 +1,29 @@
 {
-    "GitRepository": "bitbucket.org/invivoai/drug_drug_interactions.git",
-    "GitBranch": "master",
-    "GitInnerPath": "",
-    "InstanceCount": 100,
-    "MaxRuntime": 360,
-    "SpotPrice": "On-Demand",
-    "LaunchSpecification":  {
+  "GitRepository": "bitbucket.org/invivoai/drug_drug_interactions.git",
+  "GitBranch": "master",
+  "GitInnerPath": "",
+  "InstanceCount": 100,
+  "MaxRuntime": 360,
+  "SpotPrice": "On-Demand",
+  "LaunchSpecification": {
     "ImageId": "ami-075cf07e422882061",
     "KeyName": "rogia",
-    "SecurityGroupIds": ["sg-c576d9af"],
+    "SecurityGroupIds": [
+      "sg-c576d9af"
+    ],
     "InstanceType": "t3.large",
     "Placement": {
-    "AvailabilityZone": "us-east-2a"
+      "AvailabilityZone": "us-east-2a"
     },
     "BlockDeviceMappings": [
-        {
-            "DeviceName": "/dev/sdb",
-            "Ebs": {
-                "DeleteOnTermination": true,
-                "VolumeSize": 10
-            }
+      {
+        "DeviceName": "/dev/sdb",
+        "Ebs": {
+          "DeleteOnTermination": true,
+          "VolumeSize": 10
         }
+      }
     ]
-}
+  }
 }
 

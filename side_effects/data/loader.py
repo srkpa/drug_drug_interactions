@@ -1,19 +1,14 @@
 import inspect
-import gzip
-import networkx as nx
-from itertools import product
-import matplotlib.pyplot as plt
+
+import dgl
 import pandas as pd
 from ivbase.utils.commons import to_tensor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
-from torch.utils.data import Dataset
-from side_effects.data.transforms import *
 from sklearn.utils import compute_class_weight
-from collections import Counter
-from torch import is_tensor
-from ivbase.utils.datasets.dataset import DGLDataset
-import dgl
+from torch.utils.data import Dataset
+from itertools import product
+from side_effects.data.transforms import *
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
@@ -194,13 +189,12 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         elif not self.data_type:
-            if not(isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
+            if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
                 drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
                 drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
             res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
 
         else:
-
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
 
@@ -268,14 +262,12 @@ class DDIdataset(Dataset):
             self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu), to_tensor(
                 adj_mats.astype(np.float32), self.gpu)
         else:
-            # create batched data + send to gpu
-            self.graph_nodes = graph_nodes  # to_tensor(graph_nodes, self.gpu)
+            self.graph_nodes = to_tensor(graph_nodes, self.gpu)
             self.graph_edges = to_tensor(graph_edges.astype(np.float32), self.gpu)
 
 
 def _rank(data, v=100):
     from collections import Counter
-    from operator import itemgetter
     freq = [e for l in data.values() for e in l]
     freqs = dict(Counter(freq))
     # newA = dict(sorted(freqs.items(), key=itemgetter(1), reverse=True)[:v])
@@ -302,7 +294,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             zip(drug2se.keys(), MultiLabelBinarizer().fit_transform(drug2se.values()).astype(np.float32)))
 
     if use_targets:
-        targets = load_targets(drugids=list(drugs2smiles.keys()), targetid="UniProtKB")
+        targets = _downoad_drug_targets(drugids=list(drugs2smiles.keys()), targetid="UniProtKB")
         drug2targets = gene_entity_transformer(targets.keys(), targets.values())
         print(list(drug2targets.values())[0].shape)
 

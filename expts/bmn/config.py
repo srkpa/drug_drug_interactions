@@ -1,7 +1,7 @@
-import click
 import json
+
+import click
 from sklearn.model_selection import ParameterGrid
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
@@ -37,14 +37,23 @@ network_params = list(ParameterGrid(dict(
     b_norm=[True],
 )))
 
+loss_params = list(ParameterGrid(dict(
+    use_negative_sampling=[False],
+    use_fixed_binary_cost=[False],
+    use_fixed_label_cost=[False],
+    use_binary_cost_per_batch=[False],
+    use_label_cost_per_batch=[False]
+)))
+
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
     lr=[1e-5],
     loss=['bce'],
-    metrics_names=[None]
+    metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    loss_params=loss_params,
+    dataloader=[True]
 )))
-
 
 @click.command()
 @click.option('-d', '--dataset', type=str, default='twosides', help='folder to scan')

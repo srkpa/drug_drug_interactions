@@ -1,7 +1,8 @@
+from functools import partial, update_wrapper
+
+import ivbase.utils.metrics as ivbm
 import numpy as np
 import sklearn.metrics as skm
-import ivbase.utils.metrics as ivbm
-from functools import partial, update_wrapper
 
 
 def wrapped_partial(func, **kwargs):

@@ -1,10 +1,9 @@
-import numpy as np
-import torch
-from sklearn.multioutput import ClassifierChain, MultiOutputClassifier
-from .loader import *
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.multioutput import ClassifierChain, MultiOutputClassifier
 from torch.utils.data import DataLoader
+
 from side_effects.metrics import compute_metrics
+from .loader import *
 
 
 class DeepRF:

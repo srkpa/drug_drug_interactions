@@ -5,12 +5,11 @@ import hashlib
 import json
 import os
 import subprocess
+from copy import deepcopy
 from pathlib import Path
 
 import click
 from sklearn.model_selection import ParameterGrid
-
-from copy import deepcopy
 
 EXP_FOLDER = 'expts'
 EXCEC_FILE = os.path.join(os.path.expanduser('~'), "drug_drug_interactions/bin/train")

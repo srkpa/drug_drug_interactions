@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
-import os
 import json
+import os
 import sys
 import traceback
+
 import click
 import numpy as np
+
 from side_effects.expts_routines import run_experiment
 
 TORCH = True
@@ -22,7 +24,8 @@ PREFIX = '/opt/ml/'
               help="Path to the config file (json) that contains the parameters for the experiment.")
 @click.option('--input_path', '-i', default="s3://datasets-ressources/DDI/twosides-for-seed",
               help="Location of the input data files")
-@click.option('--output_path', '-o', help="Location for saving the training results (model artifacts and output files).")
+@click.option('--output_path', '-o',
+              help="Location for saving the training results (model artifacts and output files).")
 @click.option('--restore_path', '-r', help="Path for model restoration (resume training at last checkpoint).")
 @click.option('--checkpoint_path', '-c', help="S3 path where to save the checkpoint of the model.")
 def main(config_file, input_path, output_path, restore_path, checkpoint_path):

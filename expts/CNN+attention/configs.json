@@ -10,7 +10,7 @@
         "use_label_cost_per_batch": false,
         "use_negative_sampling": false
       },
-      "lr": 0.001,
+      "lr": 1e-05,
       "metrics_names": [
         "macro_roc",
         "macro_auprc",
@@ -18,20 +18,25 @@
         "micro_auprc"
       ],
       "network_params": {
-        "att_hidden_dim": null,
         "b_norm": true,
-        "dropout": 0.1,
+        "dropout": 0,
         "drug_feature_extractor_params": {
-          "arch": "lstm",
-          "dropout": 0.0,
-          "embedding_size": 20,
-          "lstm_hidden_size": 128,
-          "nb_lstm_layers": 2,
-          "vocab_size": 152
+          "arch": "conv1d",
+          "b_norm": false,
+          "cnn_sizes": [
+            128
+          ],
+          "embedding_size": 512,
+          "kernel_size": [
+            17
+          ],
+          "pooling": "max",
+          "pooling_len": 2,
+          "use_self_attention": false,
+          "vocab_size": 151
         },
         "fc_layers_dim": [
-          128,
-          128
+          50
         ],
         "mode": "concat",
         "network_name": "bmnddi"
@@ -41,7 +46,7 @@
   ],
   "dataset_params": [
     {
-      "dataset_name": "twosides",
+      "dataset_name": "drugbank",
       "decagon": false,
       "seed": 0,
       "split_mode": "leave_drugs_out",
@@ -58,7 +63,7 @@
   "fit_params": [
     {
       "batch_size": 256,
-      "n_epochs": 1,
+      "n_epochs": 100,
       "with_early_stopping": true
     }
   ]

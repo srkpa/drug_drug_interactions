@@ -1,9 +1,9 @@
+import csv
 import json as js
 import os
-import csv
-import pandas as pd
 from collections import defaultdict
-from side_effects.preprocess.data import load_smiles
+
+import pandas as pd
 
 
 def load_raw_data(raw_data_file, mapping_file):
@@ -60,6 +60,7 @@ def reformat_ddis_file(raw_data_file):
 
 if __name__ == '__main__':
     import pickle
+
     out_1 = read_drug_food_interactions(filename="/home/rogia/Téléchargements/pnas.1803294115.sd05.xlsx")
     # # out = load_raw_data(mapping_file="/home/rogia/Bureau/twosides-2-icd11.csv",
     # #                     raw_data_file="/home/rogia/Documents/raw_data/3003377s-twosides.tsv")

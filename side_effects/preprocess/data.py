@@ -1,8 +1,9 @@
-import pubchempy as pcp
 import csv
 from collections import defaultdict, Counter
-from rdkit.Chem import MolFromSmiles, Draw
+
+import pubchempy as pcp
 from ivbase.transformers.features.pathways import *
+from rdkit.Chem import MolFromSmiles, Draw
 
 
 def load_smiles(molecules):

@@ -1,7 +1,8 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
@@ -14,17 +15,15 @@ dataset_params = list(ParameterGrid(
          )
 ))
 
-
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
-
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
          vocab_size=[len(SMILES_ALPHABET) + 2],
          embedding_size=[20],
          cnn_sizes=[
-             [256]*4, [512]*4
+             [256] * 4, [512] * 4
          ],
          kernel_size=[[5], [10]],
          dilatation_rate=[1],
@@ -32,9 +31,8 @@ drug_features_extractor_params = list(ParameterGrid(
          b_norm=[False])
 ))
 
-
 graph_network_params = list(ParameterGrid(
-    dict(kernel_sizes=[[64]*2, [64]*4],
+    dict(kernel_sizes=[[64] * 2, [64] * 4],
          activation=['relu'],
          b_norm=[False])
 ))
@@ -45,23 +43,30 @@ network_params = list(ParameterGrid(dict(
     graph_network_params=graph_network_params,
     edges_embedding_dim=[64],
     tied_weights=[True],
-    fc_layers_dim=[[128]*2],
+    fc_layers_dim=[[128] * 2],
     mode=["concat"],
-    att_hidden_dim=[None, 32],
+    att_hidden_dim=[None],
     dropout=[0.25],
     b_norm=[False],
 )))
 
+loss_params = list(ParameterGrid(dict(
+    use_negative_sampling=[False],
+    use_fixed_binary_cost=[False],
+    use_fixed_label_cost=[False],
+    use_binary_cost_per_batch=[False],
+    use_label_cost_per_batch=[False]
+)))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-3, 1e-4],
+    lr=[1e-4],
     loss=['bce'],
-    metrics_names=[None],
-    use_negative_sampled_loss=[False, True]
+    metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    loss_params=loss_params,
+    dataloader=[True]
 )))
-
 
 
 @click.command()

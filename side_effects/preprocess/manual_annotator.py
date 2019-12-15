@@ -1,8 +1,9 @@
+import csv
 from collections import Counter
-from side_effects.expts_results import *
+
 import matplotlib.pyplot as plt
 import numpy as np
-import csv
+from side_effects.expts_results import *
 
 
 def twosides_events_cluster():
@@ -289,4 +290,3 @@ def assign_twosides_drugs_pair_efficacity_type(offside='../dataset/files/3003377
     for key, val in final_data.items():
         w.writerow([key[0], key[1], val])
     return final_data
-

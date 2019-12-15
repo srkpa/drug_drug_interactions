@@ -1,10 +1,8 @@
 import torch
-from torch import nn
 import torch.nn.functional as F
-from ivbase.nn.graphs.conv import TorchGCNLayer
 from ivbase.nn.graphs.conv.gin import TorchGINConv
 from ivbase.nn.graphs.pool.base import GraphPool
-import networkx as nx
+from torch import nn
 
 EPS = 1e-7
 
@@ -90,11 +88,11 @@ class DiffPool(GraphPool):
         LLP = (adj - torch.matmul(S, S.transpose(1, 2))).norm()
         LE = self.entropy(S, dim=-1)
         # dist_loss = self.compute_distance_loss(adj, S)
-        return (LLP + LE) # + dist_loss)
+        return (LLP + LE)  # + dist_loss)
 
     # def compute_distance_loss(self, A, mapper):
     #     S = mapper
-        
+
     #     dist_loss = 0
     #     max_dist = 10
     #     batch_size = A.shape[0]
@@ -135,7 +133,6 @@ class DiffPool(GraphPool):
         adj = (1 - torch.eye(adj.shape[-1]).unsqueeze(0)) * adj
 
         return adj
-
 
     def compute_feats(self, *, mapper, x, **kwargs):
         r"""
@@ -189,7 +186,7 @@ class DiffPool(GraphPool):
         if x is None:
             x = z
         else:
-            x= x.unsqueeze(0) if x.dim() == 2 else x
+            x = x.unsqueeze(0) if x.dim() == 2 else x
         adj = adj.unsqueeze(0) if adj.dim() == 2 else adj  # batch, oh yeaahhh
         S = self.compute_clusters(adj=adj, x=x)
         new_feat = self.compute_feats(mapper=S, x=z)

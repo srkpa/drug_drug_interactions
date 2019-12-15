@@ -1,7 +1,7 @@
-import click
 import json
+
+import click
 from sklearn.model_selection import ParameterGrid
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],

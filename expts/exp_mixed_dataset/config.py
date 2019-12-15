@@ -1,18 +1,19 @@
-import click
 import json
-from sklearn.model_selection import ParameterGrid
+
+import click
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
+from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],  # "twosides_icd11" drugfood
          transformer=["seq"],
-         split_mode=["random"], #"leave_drugs_out"
+         split_mode=["random"],  # "leave_drugs_out"
          test_size=[0.15],
          valid_size=[0.10],
-         seed=[42], #0, 10, 21, 33, 42, 55, 64, 101, 350, 505
+         seed=[42],  # 0, 10, 21, 33, 42, 55, 64, 101, 350, 505
          decagon=[False],
          use_side_effects_mapping=[False]
-         #use_as_filter=["PT"]
+         # use_as_filter=["PT"]
          )
 ))
 
@@ -28,7 +29,7 @@ drug_features_extractor_params = list(ParameterGrid(
          ],
          kernel_size=[[17]],
          dilatation_rate=[1],
-         #pooling=["max"],
+         # pooling=["max"],
          pooling_len=[2],
          b_norm=[False],
          normalize_features=[True],

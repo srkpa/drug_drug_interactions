@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
-from .features_extraction import FeaturesExtractorFactory
+
 from .attention import AttentionLayer
+from .coattn import CoAttLayer
+from .features_extraction import FeaturesExtractorFactory
 from .graphs import DGINConv
 
 
@@ -36,11 +38,13 @@ class SelfAttentionLayer(AttentionLayer):
 
 class BMNDDI(nn.Module):
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim, mode='concat',
-                 att_hidden_dim=None, graph_network_params=None, edges_embedding_dim=None, tied_weights=True,
-                 auxnet_params=None, **kwargs):
+                 att_mode=None, att_hidden_dim=None, graph_network_params=None, edges_embedding_dim=None,
+                 tied_weights=True,
+                 additional_feat_net_params=None, **kwargs):
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
         self.mode = mode
+        self.att_mode = att_mode
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
         dfe_out_dim = self.drug_feature_extractor.output_dim
         in_size = 2 * self.drug_feature_extractor.output_dim
@@ -61,8 +65,8 @@ class BMNDDI(nn.Module):
         else:
             self.graph_net = None
 
-        if auxnet_params:
-            params = auxnet_params
+        if additional_feat_net_params:
+            params = additional_feat_net_params
             self.auxnet_feature_extractor = fe_factory(arch='fcnet', input_size=params.get("input_dim"),
                                                        fc_layer_dims=params.get("fc_layers_dim"),
                                                        output_dim=params.get("output_dim"),
@@ -74,13 +78,22 @@ class BMNDDI(nn.Module):
         if att_hidden_dim is None:
             self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                          output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
+
         else:
-            self.classifier = nn.Sequential(
-                fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                           output_dim=output_dim, last_layer_activation='relu', **kwargs),
-                SelfAttentionLayer(att_hidden_dim),
-                nn.Sigmoid()
-            )
+            if self.att_mode == "co-att":
+                #self.proj_norm = LayerNorm(__C.FLAT_OUT_SIZE)
+                #self.proj = nn.Linear(__C.FLAT_OUT_SIZE, answer_size)
+
+                self.coatt = CoAttLayer(dim1=dfe_out_dim, dim2=dfe_out_dim)
+                self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
+                                             output_dim=output_dim, last_layer_activation=None, **kwargs)
+            else:
+                self.classifier = nn.Sequential(
+                    fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
+                               output_dim=output_dim, last_layer_activation='relu', **kwargs),
+                    SelfAttentionLayer(att_hidden_dim),
+                    nn.Sigmoid()
+                )
 
     def forward(self, batch):
         drugs_a, drugs_b, = batch[:2]
@@ -119,6 +132,8 @@ class BMNDDI(nn.Module):
             ddi = torch.add(features_drug1, features_drug2)
         elif self.mode == "max":
             ddi = torch.max(features_drug1, features_drug2)
+        elif self.att_mode == "co-att":
+            ddi = self.coatt(features_drug1, features_drug2)
         else:
             ddi = torch.cat((features_drug1, features_drug2), 1)
 
