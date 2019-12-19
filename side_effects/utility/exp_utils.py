@@ -197,7 +197,6 @@ def __loop_through_exp(path, compute_metric=True):
             dataset_name = config["dataset_params.dataset_name"]
             mode = config["dataset_params.split_mode"]
             seed = config["dataset_params.seed"]
-            res = 0
             if task_id.endswith("_res"):
                 print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
                 out = pickle.load(open(fp, "rb"))
@@ -311,19 +310,20 @@ def get_exp_stats(fp):
 
 
 if __name__ == '__main__':
-    exp_folder = f"{os.path.expanduser('~')}/expts"
+    exp_folder = "/media/rogia/CLé USB/expts" #f"{os.path.expanduser('~')}/expts"
+    d = __loop_through_exp(exp_folder + "/BiLSTM")
     a = __loop_through_exp(exp_folder + "/DeepDDI")
     b = __loop_through_exp(exp_folder + "/Lapool")
     c = __loop_through_exp(exp_folder + "/MolGraph")
-    d = __loop_through_exp(exp_folder + "/BiLSTM")
-    e = a +b +c +d
+
+    e = a + b + c + d
     out = pd.DataFrame(e)
     out.to_csv("sum-exp.xlsx")
     # get_exp_stats("/home/rogia/Bureau/result/leave_drugs_out_1.xlsx")
     # exit()
     # visualize_loss_progress("/home/rogia/Bureau/drugbank_bmnddi_27e75f3c_log.log")
     # exit()
-    #summarize()
+    # summarize()
     # # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")

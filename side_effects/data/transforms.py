@@ -196,8 +196,8 @@ def build_fi_graph():
 
 def __compute_drugs_similarity_score(G, p, a, b):
     a, b = list(a), list(b)
-    a = [G.index(x) for x in a]
-    b = [G.index(x) for x in b]
+    a = [G.index(x) for x in a if x in G]
+    b = [G.index(x) for x in b if x in G]
     print(a, b)
     # exit()
     # ta = max([p[x][y] if (x in p and y in p) else 0.0 for (x, y) in list(combinations(a, 2))] + [0])
