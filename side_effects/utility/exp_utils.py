@@ -174,7 +174,7 @@ def __compute_metrics(y_pred, y_true):
     )
 
 
-def __loop_through_models(path, compute_metric=True):
+def __loop_through_exp(path, compute_metric=True):
     outs = []
     for fp in glob.glob(f"{path}/*.pkl"):
         task_id, _ = os.path.splitext(
@@ -199,7 +199,7 @@ def __loop_through_models(path, compute_metric=True):
             seed = config["dataset_params.seed"]
             res = 0
             if task_id.endswith("_res"):
-                # print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
+                print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
                 out = pickle.load(open(fp, "rb"))
                 if compute_metric:
                     y_pred = load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb"))
@@ -210,8 +210,8 @@ def __loop_through_models(path, compute_metric=True):
                          path=params_file,
                          **out),)
             if mode == "leave_drugs_out" and os.path.exists(os.path.join(path, task_id[:-4] + "-preds.pkl")):
-                # print("Config file:", params_file, "result file:", os.path.join(path, task_id[:-4] + "-preds.pkl"),
-                #       "exp:", exp_name)
+                print("Config file:", params_file, "result file:", os.path.join(path, task_id[:-4] + "-preds.pkl"),
+                      "exp:", exp_name)
                 out = pickle.load(open(os.path.join(path, task_id[:-4] + "-res.pkl"), "rb"))
                 if compute_metric:
                     y_pred = load(open(os.path.join(path, task_id[:-4] + "-preds.pkl"), "rb"))
@@ -229,7 +229,7 @@ def get_best_model_params(outs, criteria="micro"):
     max_mm = 0
     inst = {}
     for elem in outs:
-        elem = elem[0]
+        # elem = elem[0]
         mm_val = elem[f"{criteria}_auprc"]
         if mm_val > max_mm:
             max_mm = mm_val
@@ -247,24 +247,27 @@ def summarize(return_best_config=False, mm="micro", save=True):
     rand = []
     hidsk = []
     allhd = []
-    for root in os.listdir(exp_folder):
+    for i, root in enumerate(os.listdir(exp_folder)):
         path = os.path.join(exp_folder, root)
         if os.path.isdir(path):
             print("__Path__: ", path)
-            res = __loop_through_models(path, compute_metric=True)
-            res_2 = [x for x in res if len(x) > 1]
+            res = __loop_through_exp(path, compute_metric=True)
+            res_2 = [x[0] for x in res if len(x) > 1]
             res_1 = [x for x in res if len(x) <= 1]
             print("Length check:", len(res_1), len(res_2))
-            if return_best_config:
-                best_hp = get_best_model_params(res_1, criteria=mm)
-                rand.append(best_hp)
-            else:
-                res_1 = [x[0] for x in res_1]
-                rand.extend(res_1)
-                if len(res_2) > 0:
-                    l1, l2 = list(zip(*res_2))
-                    hidsk.extend(l1)
-                    allhd.extend(l2)
+            if len(res_2) > 0:
+                l1, l2 = list(zip(*res_2))
+                hidsk.extend(l1)
+                allhd.extend(l2)
+            rand.extend(res_1)
+
+
+    # if return_best_config:
+    #             best_hp = get_best_model_params(res_1, criteria=mm)
+    #             rand.append(best_hp)
+    #         else:
+    #
+    #
     # Format and save results   # output stats after??
     if rand:
         out = pd.DataFrame(rand)

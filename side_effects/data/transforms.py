@@ -89,7 +89,7 @@ def dgl_graph_transformer(drugs, smiles, module=DGLGraphTransformer):
 
 
 # create a go graph from raw data: nodes = GO term and edges = GO relations
-def __download_gene_ontology(filepath="/home/rogia/Documents/projects/go.obo"):
+def __download_gene_ontology(filepath="/home/maoss2/Documents/projects/go.obo"):
     fp = open(filepath, "r")
     nodes_desc = fp.read().split('\n\n')[1:]
     all_nodes = []
@@ -217,8 +217,8 @@ def lee_et_al_transformer(drugs, smiles):
     drug_names = [j for j in drug_names if j in drugs_gene_targets and j in drugs_go_terms]
 
     # Get shortest path
-    fshp = nx.shortest_path(fi_graph)  # .subgraph([i for j, i in enumerate(fi_graph.nodes) if j <= 5]
-    gshp = nx.shortest_path(go_graph)  # .subgraph([i for j, i in enumerate(go_graph.nodes) if j <= 5])
+    fshp = nx.floyd_warshall(fi_graph) #nx.shortest_path(fi_graph)  # .subgraph([i for j, i in enumerate(fi_graph.nodes) if j <= 5]
+    gshp = nx.floyd_warshall(go_graph)#nx.shortest_path(go_graph)  # .subgraph([i for j, i in enumerate(go_graph.nodes) if j <= 5])
     print("__Get all shortest paths__ok")
     # TSP  + GSP
     TSP = {x: [
