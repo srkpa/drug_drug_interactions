@@ -18,6 +18,8 @@ from ivbase.utils.datasets.external_databases import ExternalDatabaseLoader
 from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import shortest_path
 from sklearn.decomposition import PCA
 
 
@@ -89,7 +91,7 @@ def dgl_graph_transformer(drugs, smiles, module=DGLGraphTransformer):
 
 
 # create a go graph from raw data: nodes = GO term and edges = GO relations
-def __download_gene_ontology(filepath="/home/maoss2/Documents/projects/go.obo"):
+def __download_gene_ontology(filepath="/home/rogia/Documents/projects/go.obo"):
     fp = open(filepath, "r")
     nodes_desc = fp.read().split('\n\n')[1:]
     all_nodes = []
@@ -194,11 +196,19 @@ def build_fi_graph():
 
 def __compute_drugs_similarity_score(G, p, a, b):
     a, b = list(a), list(b)
-    ta = max([len(p[x][y]) if (x in p and y in p) else 0.0 for (x, y) in list(combinations(a, 2))] + [0])
-    denom = [(x, y) for x in a for y in b if (x in G and y in G)]
-    num = [(x, y) for (x, y) in denom if x in p and y in p]
-    Sab = len([len(p[x][y]) if len(p[x][y]) <= ta else 0.0 for (x, y) in num]) / len(denom) if len(denom) > 0 else len(
-        [len(p[x][y]) if p[x][y] <= ta else 0.0 for (x, y) in num]) / 1
+    a = [G.index(x) for x in a]
+    b = [G.index(x) for x in b]
+    print(a, b)
+    # exit()
+    # ta = max([p[x][y] if (x in p and y in p) else 0.0 for (x, y) in list(combinations(a, 2))] + [0])
+    # denom = [(x, y) for x in a for y in b if (x in G and y in G)]
+    # num = [(x, y) for (x, y) in denom if x in p and y in p]
+    # Sab = len([len(p[x][y]) if len(p[x][y]) <= ta else 0.0 for (x, y) in num]) / len(denom) if len(denom) > 0 else len(
+    #     [len(p[x][y]) if p[x][y] <= ta else 0.0 for (x, y) in num]) / 1
+    ta = max([p[x][y] for (x, y) in list(combinations(a, 2))] + [0])
+    pairs = [(x, y) for x in a for y in b]
+    Sab = len([p[x][y] for (x, y) in pairs if p[x][y] <= ta]) / len(pairs) if len(pairs) > 0 else len(
+        [p[x][y] for (x, y) in pairs if p[x][y] <= ta]) / 1
     return Sab
 
 
@@ -216,18 +226,32 @@ def lee_et_al_transformer(drugs, smiles):
     smiles = [smiles[i] for i, j in enumerate(drug_names) if j in drugs_gene_targets and j in drugs_go_terms]
     drug_names = [j for j in drug_names if j in drugs_gene_targets and j in drugs_go_terms]
 
+    # Get adjacency mat
+    fi_mat = nx.adjacency_matrix(fi_graph)
+    print("F Mat shape", fi_mat.shape)
+    go_mat = nx.adjacency_matrix(go_graph)
+    print("G Mat shape", go_mat.shape)
+
     # Get shortest path
-    fshp = nx.floyd_warshall(fi_graph) #nx.shortest_path(fi_graph)  # .subgraph([i for j, i in enumerate(fi_graph.nodes) if j <= 5]
-    gshp = nx.floyd_warshall(go_graph)#nx.shortest_path(go_graph)  # .subgraph([i for j, i in enumerate(go_graph.nodes) if j <= 5])
+    f_nodes = [x for x in fi_graph.nodes]
+    g_nodes = [x for x in go_graph.nodes]
+    fi_graph = csr_matrix(fi_mat)
+    go_graph = csr_matrix(go_mat)
+    fshp = shortest_path(csgraph=fi_graph, directed=False, indices=None,
+                         return_predecessors=False)  # nx.floyd_warshall(fi_graph) #nx.shortest_path(fi_graph)  # .subgraph([i for j, i in enumerate(fi_graph.nodes) if j <= 5]
+    gshp = shortest_path(csgraph=go_graph, directed=True, indices=None,
+                         return_predecessors=False)  # nx.floyd_warshall(go_graph)#nx.shortest_path(go_graph)  # .subgraph([i for j, i in enumerate(go_graph.nodes) if j <= 5])
+    print(fshp.shape, gshp.shape, len(f_nodes), len(g_nodes))
     print("__Get all shortest paths__ok")
+
     # TSP  + GSP
     TSP = {x: [
-        __compute_drugs_similarity_score(fi_graph, fshp, drugs_gene_targets[ya], drugs_gene_targets[yb]) for
+        __compute_drugs_similarity_score(f_nodes, fshp, drugs_gene_targets[ya], drugs_gene_targets[yb]) for
         (ya, yb) in list(zip([x] * len(drug_names), drug_names))] for x in drug_names if
         x in drugs_gene_targets and x in drugs_go_terms}
     GSP = {
         x: [
-            __compute_drugs_similarity_score(go_graph, gshp, drugs_go_terms[ya], drugs_go_terms[yb]) for
+            __compute_drugs_similarity_score(g_nodes, gshp, drugs_go_terms[ya], drugs_go_terms[yb]) for
             (ya, yb) in
             list(zip([x] * len(drug_names), drug_names)) if (ya in drugs_go_terms and yb in drugs_go_terms)] for x in
         drug_names if

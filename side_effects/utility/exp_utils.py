@@ -205,23 +205,27 @@ def __loop_through_exp(path, compute_metric=True):
                     y_pred = load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb"))
                     y_true = load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb"))
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
-                res = (
-                    dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
-                         path=params_file,
-                         **out),)
+                    if mode == "leave_drugs_out":
+                        mode += "-test_set-1"
+                res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
+                           path=params_file,
+                           **out)
+                outs.append(res)
             if mode == "leave_drugs_out" and os.path.exists(os.path.join(path, task_id[:-4] + "-preds.pkl")):
                 print("Config file:", params_file, "result file:", os.path.join(path, task_id[:-4] + "-preds.pkl"),
                       "exp:", exp_name)
+                mode += "-test_set_2"
                 out = pickle.load(open(os.path.join(path, task_id[:-4] + "-res.pkl"), "rb"))
                 if compute_metric:
                     y_pred = load(open(os.path.join(path, task_id[:-4] + "-preds.pkl"), "rb"))
                     y_true = load(open(os.path.join(path, task_id[:-4] + "-targets.pkl"), "rb"))
+
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
-                res += (
-                    dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
-                         path=params_file,
-                         **out),)
-            outs.append(res)
+                res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
+                           path=params_file,
+                           **out)
+                outs.append(res)
+            # outs.append(res)
     return outs
 
 
@@ -252,15 +256,17 @@ def summarize(return_best_config=False, mm="micro", save=True):
         if os.path.isdir(path):
             print("__Path__: ", path)
             res = __loop_through_exp(path, compute_metric=True)
-            res_2 = [x[0] for x in res if len(x) > 1]
-            res_1 = [x for x in res if len(x) <= 1]
-            print("Length check:", len(res_1), len(res_2))
-            if len(res_2) > 0:
-                l1, l2 = list(zip(*res_2))
-                hidsk.extend(l1)
-                allhd.extend(l2)
-            rand.extend(res_1)
-
+            if len(res) > 0:
+                rand.extend(res)
+            # res_2 = [x[0] for x in res if len(x) > 1]
+            # res_1 = [x for x in res if len(x) <= 1]
+            # print("Length check:", len(res_1), len(res_2))
+            # print(res_2)
+            # if len(res_2) > 0:
+            #     l1, l2 = list(zip(*res_2))
+            #     hidsk.extend(l1)
+            #     allhd.extend(l2)
+            # rand.extend(res_1)
 
     # if return_best_config:
     #             best_hp = get_best_model_params(res_1, criteria=mm)
@@ -271,12 +277,12 @@ def summarize(return_best_config=False, mm="micro", save=True):
     # Format and save results   # output stats after??
     if rand:
         out = pd.DataFrame(rand)
-        out.to_csv("random.xlsx")
-    if hidsk and allhd:
-        out1 = pd.DataFrame(hidsk)
-        out2 = pd.DataFrame(allhd)
-        out1.to_csv("leave_drugs_out_1.xlsx")
-        out2.to_csv("leave_drugs_out_2.xlsx")
+        out.to_csv("sum-exp.xlsx")
+    # if hidsk and allhd:
+    #     out1 = pd.DataFrame(hidsk)
+    #     out2 = pd.DataFrame(allhd)
+    #     out1.to_csv("leave_drugs_out_1.xlsx")
+    #     out2.to_csv("leave_drugs_out_2.xlsx")
 
 
 def get_exp_stats(fp):
@@ -305,11 +311,19 @@ def get_exp_stats(fp):
 
 
 if __name__ == '__main__':
+    exp_folder = f"{os.path.expanduser('~')}/expts"
+    a = __loop_through_exp(exp_folder + "/DeepDDI")
+    b = __loop_through_exp(exp_folder + "/Lapool")
+    c = __loop_through_exp(exp_folder + "/MolGraph")
+    d = __loop_through_exp(exp_folder + "/BiLSTM")
+    e = a +b +c +d
+    out = pd.DataFrame(e)
+    out.to_csv("sum-exp.xlsx")
     # get_exp_stats("/home/rogia/Bureau/result/leave_drugs_out_1.xlsx")
     # exit()
-    #visualize_loss_progress("/home/rogia/Bureau/drugbank_bmnddi_27e75f3c_log.log")
+    # visualize_loss_progress("/home/rogia/Bureau/drugbank_bmnddi_27e75f3c_log.log")
     # exit()
-    summarize()
+    #summarize()
     # # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
