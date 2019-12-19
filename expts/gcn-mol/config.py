@@ -4,12 +4,12 @@ import click
 from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["drugbank"],
+    dict(dataset_name=["twosides"],
          transformer=["dgl"],
          split_mode=["random"],  # "leave_drugs_out"
          test_size=[0.20],
          valid_size=[0.25],
-         seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[0,10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
          use_as_filter=[None],

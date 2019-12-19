@@ -78,8 +78,11 @@ def adj_graph_transformer(drugs, smiles, module=AdjGraphTransformer):
 
 def dgl_graph_transformer(drugs, smiles, module=DGLGraphTransformer):
     assert len(drugs) == len(smiles)
-    X, ids = module()(smiles)
+    trans = module()
+    X, ids = trans(smiles)
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
+    print(trans.n_atom_feat)
+    exit()
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
     return dict(zip(drugs, X))
@@ -143,21 +146,21 @@ def __download_gene_go_terms():
     return res
 
 
-def __download_drug_gene_targets():
+def download_drug_gene_targets():
     g = ExternalDatabaseLoader.load_drugbank()
     g = g[pd.notnull(g['gene-name'])]
     drug_2_gene = defaultdict(set)
-    drug_2_name = defaultdict(set)
-    name_2_drug = defaultdict(set)
+    drug_2_name = {}
+    name_2_drug = {}
     for index, row in g.iterrows():
         drug_2_gene[row["drug_id"]].add(row["gene-name"].lower())
-        drug_2_name[row["drug_id"]].add(row["drug_name"].lower())
-        name_2_drug[row["drug_name"].lower()].add(row["drug_id"])
+        drug_2_name[row["drug_id"]] = row["drug_name"].lower()
+        name_2_drug[row["drug_name"].lower()] = row["drug_id"]
     return drug_2_gene, drug_2_name, name_2_drug
 
 
 def __get_drug_info():
-    a, b, c = __download_drug_gene_targets()
+    a, b, c = download_drug_gene_targets()
     d = __download_gene_go_terms()
     f = {}
     for drug_id, drug_gene_targets in a.items():
@@ -204,40 +207,48 @@ def lee_et_al_transformer(drugs, smiles):
     go_graph = build_gene_ontology_graph()
     drug_2_iupac, iupac_2_drug, drugs_gene_targets, drugs_go_terms = __get_drug_info()
 
-    # I need to check if all drugs info is available - change key = drug id --> drug neme
-    # drugs_gene_targets_v2 = {list(drug_2_iupac[i])[-1]: v for i, v in drugs_gene_targets.items()}
-    # drugs_go_terms_v2 = {list(drug_2_iupac[i])[-1]: v for i, v in drugs_go_terms.items()}
+    # I prefer to use drug name as id for more consistency
+    num_drugs = len(drugs)
+    drug_names = drugs
+
+    # Remove drugs with no target and no go terms
+    assert len(drug_names) == len(smiles)
+    smiles = [smiles[i] for i, j in enumerate(drug_names) if j in drugs_gene_targets and j in drugs_go_terms]
+    drug_names = [j for j in drug_names if j in drugs_gene_targets and j in drugs_go_terms]
 
     # Get shortest path
-    fshp = nx.shortest_path(fi_graph)
-    gshp = nx.shortest_path(go_graph)
+    fshp = nx.shortest_path(fi_graph)  # .subgraph([i for j, i in enumerate(fi_graph.nodes) if j <= 5]
+    gshp = nx.shortest_path(go_graph)  # .subgraph([i for j, i in enumerate(go_graph.nodes) if j <= 5])
     print("__Get all shortest paths__ok")
-    #  Remove drugs with no targets
-    # TSP  + GSP Profile
-    # print(drug_2_iupac)
-    # exit()
-    # drugs = [list(drug_2_iupac[u])[-1] for u in drugs]
-
+    # TSP  + GSP
     TSP = {x: [
         __compute_drugs_similarity_score(fi_graph, fshp, drugs_gene_targets[ya], drugs_gene_targets[yb]) for
-        (ya, yb) in list(zip([x] * len(drugs), drugs))] for x in drugs if
+        (ya, yb) in list(zip([x] * len(drug_names), drug_names))] for x in drug_names if
         x in drugs_gene_targets and x in drugs_go_terms}
     GSP = {
         x: [
             __compute_drugs_similarity_score(go_graph, gshp, drugs_go_terms[ya], drugs_go_terms[yb]) for
             (ya, yb) in
-            list(zip([x] * len(drugs), drugs)) if (ya in drugs_go_terms and yb in drugs_go_terms)] for x in drugs if
+            list(zip([x] * len(drug_names), drug_names)) if (ya in drugs_go_terms and yb in drugs_go_terms)] for x in
+        drug_names if
         x in drugs_gene_targets and x in drugs_go_terms}
     # SSP Profile
-    mols = [Chem.MolFromSmiles(X) for X in smiles]
+    mols = [Chem.MolFromSmiles(j) for j in smiles]
     fgps = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in mols]
-    SSP = {x: [DataStructs.FingerprintSimilarity(fgps[drugs.index(x)], fgps[i]) for i in range(len(fgps))] for
-           j, x in enumerate(drugs)}
+    SSP = {x: [DataStructs.FingerprintSimilarity(fgps[drug_names.index(x)], fgps[i]) for i in range(len(fgps))] for
+           j, x in enumerate(drug_names)}
 
-    print("__Lee_transformer__\nNb-drugs(inputs): ", len(drugs), "\nSSP length: ", len(SSP), "\nTSP length: ", len(TSP),
+    print("__Lee_transformer__\nNb-drugs(inputs): ", num_drugs, "\nSSP length: ", len(SSP), "\nTSP length: ",
+          len(TSP),
           "\nGSP length: ", len(TSP))
-
-    return SSP, TSP, GSP
+    print(len(list(SSP.values())[0]))
+    print(len(list(TSP.values())[0]))
+    print(len(list(GSP.values())[0]))
+    output = {x: (
+        np.array(SSP[x]).astype(np.float32), np.array(TSP[x]).astype(np.float32), np.array(GSP[x]).astype(np.float32))
+        for x
+        in drug_names}
+    return output
 
 
 if __name__ == '__main__':
@@ -246,4 +257,4 @@ if __name__ == '__main__':
     d = p["drug_id"].values.tolist()
     smi = p["PubChem Canonical Smiles"].values.tolist()
     assert len(d) == len(smi)
-    lee_et_al_transformer(d, smi)
+    o = lee_et_al_transformer(d, smi)

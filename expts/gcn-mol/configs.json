@@ -179,7 +179,7 @@
             ]
           ],
           "dropout": 0.0,
-          "glayer": "dgl-gcn",
+          "glayer": "dgl-gcn-mol",
           "input_dim": 79,
           "pool_arch": {
             "arch": null
@@ -227,7 +227,7 @@
             ]
           ],
           "dropout": 0.0,
-          "glayer": "dgl-gcn",
+          "glayer": "dgl-gcn-mol",
           "input_dim": 79,
           "pool_arch": {
             "arch": null
@@ -276,7 +276,7 @@
             ]
           ],
           "dropout": 0.0,
-          "glayer": "dgl-gcn",
+          "glayer": "dgl-gcn-mol",
           "input_dim": 79,
           "pool_arch": {
             "arch": null
@@ -295,7 +295,7 @@
   ],
   "dataset_params": [
     {
-      "dataset_name": "drugbank",
+      "dataset_name": "twosides",
       "decagon": false,
       "seed": 42,
       "split_mode": "random",
@@ -312,7 +312,7 @@
   "fit_params": [
     {
       "batch_size": 256,
-      "n_epochs": 1,
+      "n_epochs": 100,
       "with_early_stopping": true
     }
   ]

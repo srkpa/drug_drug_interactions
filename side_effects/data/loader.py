@@ -1,13 +1,14 @@
 import inspect
+import string
+from itertools import product
 
 import dgl
-import pandas as pd
 from ivbase.utils.commons import to_tensor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.utils import compute_class_weight
 from torch.utils.data import Dataset
-from itertools import product
+
 from side_effects.data.transforms import *
 
 all_transformers_dict = dict(
@@ -15,7 +16,8 @@ all_transformers_dict = dict(
     fgp=fingerprints_transformer,
     deepddi=deepddi_transformer,
     dgl=dgl_graph_transformer,
-    adj=adj_graph_transformer
+    adj=adj_graph_transformer,
+    lee=lee_et_al_transformer
 )
 
 
@@ -135,7 +137,7 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
                  build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=False,
-                 drugse=None, drugstargets=None, drugspharm=None):
+                 drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward"):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.data_type = all([isinstance(v, (torch.Tensor, np.ndarray)) for v in list(drug_to_smiles.values())])
@@ -149,6 +151,7 @@ class DDIdataset(Dataset):
         self.gene_net = gene_net
         self.drug_gene_net = drug_gene_net
         self.decagon = decagon
+        self.has_purpose = purpose
         if self.has_graph:
             self.build_graph()
 
@@ -189,15 +192,22 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         elif not self.data_type:
+            y = to_tensor(target, self.gpu)
             if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
-                drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
-                drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
-            res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
+                if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all([isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
+                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
+                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
+                else:
+                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
+                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
+                    y = to_tensor(np.expand_dims(target, axis=0), self.gpu)
+            res = ((drug1, drug2), y)
 
         else:
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
-
+        if self.has_purpose == "autoencoder":
+            res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
         return res
 
     def get_aux_input_dim(self):
@@ -294,7 +304,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             zip(drug2se.keys(), MultiLabelBinarizer().fit_transform(drug2se.values()).astype(np.float32)))
 
     if use_targets:
-        targets = _downoad_drug_targets(drugids=list(drugs2smiles.keys()), targetid="UniProtKB")
+        targets = download_drug_gene_targets()  # drugids=list(drugs2smiles.keys()), targetid="UniProtKB")
         drug2targets = gene_entity_transformer(targets.keys(), targets.values())
         print(list(drug2targets.values())[0].shape)
 
@@ -319,7 +329,6 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     else:
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
 
-    #  data = _rank(data, v=2491)
     data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                             test_size=test_size, valid_size=valid_size)
@@ -372,6 +381,20 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
                                         drugstargets=drug2targets,
                                         drugse=drug_offsides)
+
+            if all([len(x) == 3 for x in list(drugs2smiles.values())]):
+                drugs2smiles_dict_1 = {i: j[0] for i, j in drugs2smiles.items()}
+                drugs2smiles_dict_2 = {i: j[1] for i, j in drugs2smiles.items()}
+                drugs2smiles_dict_3 = {i: j[2] for i, j in drugs2smiles.items()}
+                feats = dict(a=drugs2smiles_dict_1, b=drugs2smiles_dict_2, c=drugs2smiles_dict_3)
+                x = [DDIdataset(train_data, feats.get(list(string.ascii_lowercase)[i]), mbl, drugspharm=drugs2pharm,
+                                drugstargets=drug2targets,
+                                drugse=drug_offsides, purpose="autoencoder") for i in range(3)]
+                y = [DDIdataset(valid_data, feats.get(list(string.ascii_lowercase)[i]), mbl, drugspharm=drugs2pharm,
+                                drugstargets=drug2targets,
+                                drugse=drug_offsides, purpose="autoencoder") for i in range(3)]
+                train_dataset = x + [train_dataset]
+                valid_dataset = y + [valid_dataset]
 
     return train_dataset, valid_dataset, test_dataset, unseen_dataset
 

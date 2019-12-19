@@ -119,13 +119,13 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    algorithm = model_params['network_params'].get('network_name')
+    model_name = model_params['network_params'].get('network_name')
     y_true, y_probs, output = {}, {}, {}
     uy_true, uy_probs, u_output = {}, {}, {}
-    if algorithm == "deeprf":
+    if model_name == "deeprf":
         y_true, y_probs, output = DeepRF(**model_params)(train_data, valid_data, test_data)
+
     else:
-        model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
         # Set up of loss function params
         loss_params = model_params["loss_params"]
         model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
@@ -135,14 +135,17 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         del (model_params["loss_params"]["use_fixed_binary_cost"])
         del (model_params["loss_params"]["use_fixed_label_cost"])
 
-        # Configure the auxiliary network who process side features
+        # Configure the auxiliary network who process additional features
         if model_params['network_params'].get('auxnet_params', None):
             model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
 
+        if model_name == "adnn":
+            train_data, valid_data, model_params = fit_encoders(model_params=model_params, train_data=train_data,
+                                                                valid_data=valid_data, fit_params=fit_params)
         # Train and save
+        model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
         model = Trainer(**model_params, snapshot_dir=restore_path)
         print(model.model)
-        # cuda
         model.cuda()
         training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
         print(f"Training details: \n{training}")
@@ -150,7 +153,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         # Test and save
         y_true, y_probs, output = model.test(test_data)
         uy_true, uy_probs, u_output = model.test(unseen_test_data)
-
+    # Test
     pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
     pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
     pickle.dump(output, open(paths.get('result_filename'), "wb"))
@@ -161,3 +164,34 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     pr.disable()
     pr.print_stats()
     pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))
+
+
+def fit_encoders(model_params, fit_params, train_data, valid_data):
+    assert len(train_data) == 4
+    assert len(valid_data) == 4
+    mm_hidden_layer_dims = model_params["network_params"].pop("mn_hidden_layer_dims")
+    network_name = model_params["network_params"].get("network_name")
+    model_params["network_params"]["input_dim"] = train_data[0].get_samples()[0][0].shape[-1]
+    encoders = []
+    for i in range(3):
+        encoder = Trainer(**model_params)
+        encoder.cuda()
+        encoder.train(train_data[i], valid_data[i], **fit_params)
+        model_params["network_params"]["network_name"] = network_name
+        encoders.append(encoder)
+    encoders = dict(zip(["drug_encoder", "gen_encoder", "func_encoder"], encoders))
+    del model_params["network_params"]
+    model_params.update({"network_params": dict(network_name='dnn', gen_encoder=encoders["gen_encoder"],
+                                                drug_encoder=encoders["drug_encoder"],
+                                                func_encoder=encoders["func_encoder"],
+                                                hidden_layer_dims=mm_hidden_layer_dims),
+                         "metrics_names": [
+                             "macro_roc",
+                             "macro_auprc",
+                             "micro_roc",
+                             "micro_auprc"
+                         ]
+                         })
+    model_params.update(dict(optimizer='adam', lr=1e-4, loss='bce'))
+    train_data, valid_data = train_data[-1], valid_data[-1]
+    return train_data, valid_data, model_params

@@ -1,0 +1,59 @@
+{
+  "model_params": [
+    {
+      "dataloader": true,
+      "loss": "bce",
+      "loss_params": {
+        "use_binary_cost_per_batch": false,
+        "use_fixed_binary_cost": false,
+        "use_fixed_label_cost": false,
+        "use_label_cost_per_batch": false,
+        "use_negative_sampling": false
+      },
+      "lr": 0.001,
+      "metrics_names": [],
+      "network_params": {
+        "activation": "relu",
+        "b_norm": false,
+        "dropout": 0,
+        "hidden_layer_dims": [
+          1000
+        ],
+        "mn_hidden_layer_dims": [
+          2000,
+          2000,
+          2000,
+          2000,
+          2000,
+          2000
+        ],
+        "network_name": "adnn",
+        "output_dim": 200
+      },
+      "optimizer": "rmsprop"
+    }
+  ],
+  "dataset_params": [
+    {
+      "dataset_name": "drugbank",
+      "decagon": false,
+      "seed": 42,
+      "split_mode": "random",
+      "test_size": 0.2,
+      "transformer": "lee",
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": false,
+      "use_targets": false,
+      "valid_size": 0.25
+    }
+  ],
+  "fit_params": [
+    {
+      "batch_size": 256,
+      "n_epochs": 1,
+      "with_early_stopping": true
+    }
+  ]
+}

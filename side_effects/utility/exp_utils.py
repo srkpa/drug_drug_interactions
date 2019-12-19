@@ -14,7 +14,7 @@ from ivbase.utils.aws import aws_cli
 
 from side_effects.metrics import auprc_score, roc_auc_score
 
-INVIVO_RESULTS = os.environ["INVIVO_RESULTS_ROOT"]
+INVIVO_RESULTS = ""  # os.environ["INVIVO_RESULTS_ROOT"]
 
 
 @click.group()
@@ -138,83 +138,174 @@ def scorer(dataset_name, exp_folder=None, upper_bound=None):
     plt.show()
 
 
+def update_model_name(exp_name, pool_arch, graph_net_params, attention_params):
+    has = False
+    if exp_name == "lstm":
+        exp_name = "BiLSTM"
+    elif exp_name == "dglgraph":
+        if not pool_arch:
+            exp_name = "MolGraph"
+        else:
+            exp_name = "MolGraph + LaPool"
+            if attention_params == "attn":
+                has = True
+    elif exp_name == "conv1d":
+        exp_name = "CNN"
+        if graph_net_params:
+            exp_name = "CNN + IntGraph"
+        if int(attention_params) > 0:
+            has = True
+    elif exp_name == "deepddi":
+        exp_name = "DeepDDI"
+    else:
+        exp_name = ""
+    if has:
+        exp_name += "+ attention"
+    return exp_name
+
+
+def __compute_metrics(y_pred, y_true):
+    macro_roc = roc_auc_score(y_pred=y_pred, y_true=y_true, average="macro")
+    macro_auprc = auprc_score(y_pred=y_pred, y_true=y_true, average="macro")
+    micro_roc = roc_auc_score(y_pred=y_pred, y_true=y_true, average="micro")
+    micro_auprc = auprc_score(y_pred=y_pred, y_true=y_true, average="micro")
+    return dict(
+        macro_roc=macro_roc, macro_auprc=macro_auprc, micro_roc=micro_roc, micro_auprc=micro_auprc
+    )
+
+
+def __loop_through_models(path, compute_metric=True):
+    outs = []
+    for fp in glob.glob(f"{path}/*.pkl"):
+        task_id, _ = os.path.splitext(
+            os.path.split(fp)[-1])
+        params_file = os.path.join(path, task_id[:-3] + "params.json")
+        if os.path.exists(params_file):
+            config = json.load(open(params_file, "rb"))
+            exp = config.get("model_params.network_params.drug_feature_extractor_params.arch", None)
+            exp = exp if exp else config.get("model_params.network_params.network_name", None)
+            pool_arch = config.get("model_params.network_params.drug_feature_extractor_params.pool_arch.arch", None)
+            graph_net = config.get("model_params.network_params.graph_network_params.kernel_sizes", None)
+            att_params = config.get("model_params.network_params.drug_feature_extractor_params.use_self_attention",
+                                    None)
+            att_params = config.get("model_params.network_params.drug_feature_extractor_params.gather",
+                                    None) if att_params is None else att_params
+            att_params = config.get(
+                "model_params.network_params.att_hidden_dim", 0) if att_params is None else att_params
+            att_params = 0 if att_params is None else att_params
+            exp_name = update_model_name(exp, pool_arch, graph_net, att_params)
+            dataset_name = config["dataset_params.dataset_name"]
+            mode = config["dataset_params.split_mode"]
+            seed = config["dataset_params.seed"]
+            res = 0
+            if task_id.endswith("_res"):
+                # print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
+                out = pickle.load(open(fp, "rb"))
+                if compute_metric:
+                    y_pred = load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb"))
+                    y_true = load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb"))
+                    out = __compute_metrics(y_true=y_true, y_pred=y_pred)
+                res = (
+                    dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
+                         path=params_file,
+                         **out),)
+            if mode == "leave_drugs_out" and os.path.exists(os.path.join(path, task_id[:-4] + "-preds.pkl")):
+                # print("Config file:", params_file, "result file:", os.path.join(path, task_id[:-4] + "-preds.pkl"),
+                #       "exp:", exp_name)
+                out = pickle.load(open(os.path.join(path, task_id[:-4] + "-res.pkl"), "rb"))
+                if compute_metric:
+                    y_pred = load(open(os.path.join(path, task_id[:-4] + "-preds.pkl"), "rb"))
+                    y_true = load(open(os.path.join(path, task_id[:-4] + "-targets.pkl"), "rb"))
+                    out = __compute_metrics(y_true=y_true, y_pred=y_pred)
+                res += (
+                    dict(model_name=exp_name, dataset_name=dataset_name, split_mode=mode, seed=seed, task_id=task_id,
+                         path=params_file,
+                         **out),)
+            outs.append(res)
+    return outs
+
+
+def get_best_model_params(outs, criteria="micro"):
+    max_mm = 0
+    inst = {}
+    for elem in outs:
+        elem = elem[0]
+        mm_val = elem[f"{criteria}_auprc"]
+        if mm_val > max_mm:
+            max_mm = mm_val
+            inst = elem
+    return inst
+
+
 @cli.command()
-@click.option('-n', '--exp_name', type=str, default='test', help="Unique name for the experiment.")
 @click.option('-p', '--mm', type=str, default='micro',
               help="""Position of the config file to run""")
-@click.option('--keep_only', '-k', type=str, default='best',
+@click.option('--return_best_config/--no-return_best_config', default=True,
               help="Save only task with the best mm for a given exp")
-def summarize(exp_name=None, keep_only="best", mm="micro", save=True):  # Need to be fiktered by expt name
+def summarize(return_best_config=False, mm="micro", save=True):
     exp_folder = f"{os.path.expanduser('~')}/expts"
-    o = []
+    rand = []
+    hidsk = []
+    allhd = []
     for root in os.listdir(exp_folder):
         path = os.path.join(exp_folder, root)
         if os.path.isdir(path):
-            print("Path:", path)
-            config = json.load(open(glob.glob(path + "/configs/*.done")[-1], "rb")) if os.path.exists(
-                path + "/configs") else json.load(open(path + "/config.json", "rb"))
-            model_params = config["model_params"]["network_params"].get("drug_feature_extractor_params", None)
-            exp = model_params.get("arch") if model_params else config["model_params"]["network_params"]["network_name"]
-            print("Arch", exp)
-            if exp == "lstm":
-                exp = "BiLSTM"
-            elif exp == "dglgraph":
-                if not model_params["pool_arch"].get("arch"):
-                    exp = "MolGraph"
-                else:
-                    exp = "MolGraph + LaPool"
-            elif exp == "conv1d":
-                exp = "CNN"
-                gp = config["model_params"]["network_params"].get("graph_network_params", None)
-                if gp:
-                    exp = "CNN + IntGraph"
-            elif exp == "deepddi":
-                exp = "DeepDDI"
+            print("__Path__: ", path)
+            res = __loop_through_models(path, compute_metric=True)
+            res_2 = [x for x in res if len(x) > 1]
+            res_1 = [x for x in res if len(x) <= 1]
+            print("Length check:", len(res_1), len(res_2))
+            if return_best_config:
+                best_hp = get_best_model_params(res_1, criteria=mm)
+                rand.append(best_hp)
             else:
-                exp = ""
+                res_1 = [x[0] for x in res_1]
+                rand.extend(res_1)
+                if len(res_2) > 0:
+                    l1, l2 = list(zip(*res_2))
+                    hidsk.extend(l1)
+                    allhd.extend(l2)
+    # Format and save results   # output stats after??
+    if rand:
+        out = pd.DataFrame(rand)
+        out.to_csv("random.xlsx")
+    if hidsk and allhd:
+        out1 = pd.DataFrame(hidsk)
+        out2 = pd.DataFrame(allhd)
+        out1.to_csv("leave_drugs_out_1.xlsx")
+        out2.to_csv("leave_drugs_out_2.xlsx")
 
-            print("Model name", exp)
-            max_mm = 0
-            inst = {}
-            for fp in glob.glob(f"{path}/*.pkl"):
-                task_id, _ = os.path.splitext(
-                    os.path.split(fp)[-1])  # need to save a pd object to handle many dataset, seed and split mode
-                if task_id.endswith(
-                        "_res"):  # -res case??  #dataset = config["dataset_params"].get("dataset_name") mode = config["dataset_params"].get("split_mode") seed = config["dataset_params"].get("seed")
-                    params = os.path.join(path, task_id[:-3] + "params.json")
-                    if os.path.exists(params):
-                        res = pickle.load(open(fp, "rb"))
-                        mm_val = res[f"{mm}_auprc"]
-                        if mm_val > max_mm:
-                            print("Config file:", params, "result file:", fp)
-                            if True: #"macro_roc" not in res:
-                                res["macro_roc"] = roc_auc_score(
-                                    y_pred=load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb")),
-                                    y_true=load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb")),
-                                    average="macro")
-                                res["macro_auprc"] = auprc_score(
-                                    y_pred=load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb")),
-                                    y_true=load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb")),
-                                    average="macro")
-                                res["micro_roc"] = roc_auc_score(
-                                    y_pred=load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb")),
-                                    y_true=load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb")),
-                                    average="micro")
-                                res["micro_auprc"] = auprc_score(
-                                    y_pred=load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb")),
-                                    y_true=load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb")),
-                                    average="micro")
-                            max_mm = mm_val
-                            inst = res
-            o.append({**inst, "model": exp})
-    out = pd.DataFrame(o)
-    print(out)
-    if save:
-        out.to_csv("test.xlsx")
-    return out
+
+def get_exp_stats(fp):
+    # o = []
+    # for l in open(fp, "r"):
+    #     a = l.split(',"{')[-1]
+    #     c = {}
+    #     for i in a.split(","):
+    #         k = i.split(":")[0].strip("\n").strip().strip("'")
+    #         v = i.split(":")[-1].strip("\n").strip('}"').strip().strip("'")
+    #         if k.startswith("micro") or k.startswith("macro"):
+    #             v = float(v)
+    #         print(k, v)
+    #         c[k] = v
+    #
+    #     o.append(c)
+    # o = o[1:]
+    #
+    # df = pd.DataFrame(o)
+    # print(df)
+    # exit()
+    df = pd.read_csv(fp)
+    t = df.groupby(['dataset_name', 'model_name'], as_index=True)[
+        ["macro_roc", "macro_auprc", "micro_roc", "micro_auprc"]].mean()
+    print(t)
 
 
 if __name__ == '__main__':
+    # get_exp_stats("/home/rogia/Bureau/result/leave_drugs_out_1.xlsx")
+    # exit()
+    #visualize_loss_progress("/home/rogia/Bureau/drugbank_bmnddi_27e75f3c_log.log")
+    # exit()
     summarize()
     # # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
