@@ -7,8 +7,8 @@ dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["deepddi"],
          split_mode=["random"],  # "leave_drugs_out"
-         test_size=[0.20],
-         valid_size=[0.25],
+         test_size=[0.10],
+         valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
@@ -20,12 +20,16 @@ dataset_params = list(ParameterGrid(
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(evaluate_every=[5], n_epochs=[10], eval_batch_size=[5], with_early_stopping=[True])))
 
 network_params = list(ParameterGrid(dict(
-    network_name=['deepddi'],
-    input_dim=[100],
-    hidden_sizes=[[2048] * 9]
+    network_name=['RGCN'],
+    h_dim=[500],
+    num_bases=[100],
+    num_hidden_layers=[2],
+    dropout=[0.2],
+    reg_param=[0.01],
+    n_bases=[100]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -39,13 +43,13 @@ loss_params = list(ParameterGrid(dict(
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-4],
+    lr=[1e-2],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
-    loss_params=loss_params,
-    dataloader=[True]
+    graph_batch_size=[30000],
+    graph_split_size=[0.5],
+    edge_sampler=["uniform"]
 )))
-
 
 
 @click.command()

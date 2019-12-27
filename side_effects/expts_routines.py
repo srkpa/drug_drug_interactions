@@ -1,4 +1,3 @@
-import cProfile
 import hashlib
 import json
 import os
@@ -6,8 +5,14 @@ import pickle
 import warnings
 from collections import MutableMapping
 
+import side_effects.models.mhcaddi.data_download as dd
+import side_effects.models.mhcaddi.data_preprocess as dp
+import side_effects.models.mhcaddi.split_cv_data as cv
+import side_effects.models.mhcaddi.test as test
+import side_effects.models.mhcaddi.train as train
 from side_effects.data.loader import get_data_partitions, DataCache, compute_classes_weight, compute_labels_density
 from side_effects.models.deep_rf import DeepRF
+from side_effects.models.rgcn.link_predict import main
 from side_effects.trainer import Trainer
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
@@ -99,8 +104,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     -------
         # This function return is not used by the train script. But you could do anything with that.
     """
-    pr = cProfile.Profile()
-    pr.enable()
+    # pr = cProfile.Profile()
+    # pr.enable()
     all_params = locals()
     del all_params['output_path'], all_params['input_path']
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
@@ -111,20 +116,58 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
         dataset_params.get('dataset_name')))
     expt_params = model_params
-
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
     print(f"Config params: {expt_params}\n")
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
+    debug = dataset_params.pop("debug", False)
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)
-    model_name = model_params['network_params'].get('network_name')
-    y_true, y_probs, output = {}, {}, {}
-    uy_true, uy_probs, u_output = {}, {}, {}
-    if model_name == "deeprf":
-        y_true, y_probs, output = DeepRF(**model_params)(train_data, valid_data, test_data)
 
+    model_name = model_params['network_params'].get('network_name')
+    # Variable declaration
+    targets, preds, test_perf = {}, {}, {}
+    uy_true, uy_probs, u_output = {}, {}, {}
+    # Params processing
+    if model_name == "mhcaddi":
+        dataset_name = dataset_params.get('dataset_name', 'twosides')
+        networks_params = model_params.pop("network_params")
+        networks_params.pop("network_name")
+        if not os.path.exists(cach_path + "/drug_raw_feat.idx.jsonl"):
+            dd.main(path=cach_path, dataset_name=dataset_name)
+        if not (os.path.exists(cach_path + "/drug.bond_idx.wo_h.self_loop.json") and os.path.exists(
+                cach_path + "/drug.feat.wo_h.self_loop.idx.jsonl")):
+            dp.main(path=cach_path, dataset_name=dataset_name)
+        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = cv.main(path=cach_path,
+                                                                                            dataset_name=dataset_name,
+                                                                                            ddi_data='bio-decagon-combo.csv',
+                                                                                            n_fold=3,
+                                                                                            debug=debug)
+        exit()
+        test_data = train.main(n_side_effect=n_side_effect, exp_prefix="", dataset_name=dataset_name,
+                               n_atom_type=n_atom_type,
+                               n_bond_type=n_bond_type, graph_dict=graph_dict,
+                               side_effect_idx_dict=side_effect_idx_dict,
+                               result_csv_file=paths.get("log_filename"),
+                               input_data_path=cach_path, model_dir=output_path, result_dir=output_path,
+                               setting_dir=output_path, best_model_pkl=paths.get("checkpoint_filename", None),
+                               **fit_params, **networks_params, **model_params)
+        # need to recreate the model
+        networks_params = {k: v for k, v in networks_params.items() if k in test.main.__code__.co_varnames}
+        # Test
+        test_perf = test.main(positive_data=test_data['pos'], negative_data=test_data['neg'], dataset_name=dataset_name,
+                              graph_dict=graph_dict, side_effect_idx_dict=side_effect_idx_dict, n_atom_type=n_atom_type,
+                              n_bond_type=n_bond_type,
+                              n_side_effect=n_side_effect, best_model_pkl=paths.get("checkpoint_filename", None),
+                              **networks_params)
+        target = test_perf.pop('y_true')
+        preds = test_perf.pop('y_preds')
+
+    elif model_name == 'RGCN':
+        main(train_data, test_data, valid_data, model_params, fit_params)
+    elif model_name == "deeprf":
+        targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
         # Set up of loss function params
         loss_params = model_params["loss_params"]
@@ -151,19 +194,20 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         print(f"Training details: \n{training}")
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
-        y_true, y_probs, output = model.test(test_data)
+        targets, preds, test_perf = model.test(test_data)
         uy_true, uy_probs, u_output = model.test(unseen_test_data)
-    # Test
-    pickle.dump(y_true, open(paths.get('targets_filename'), "wb"))
-    pickle.dump(y_probs, open(paths.get('preds_filename'), "wb"))
-    pickle.dump(output, open(paths.get('result_filename'), "wb"))
+
+    # Save model  test results
+    pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
+    pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
+    pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
     pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
     pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
     pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
 
-    pr.disable()
-    pr.print_stats()
-    pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))
+    # pr.disable()
+    # pr.print_stats()
+    # pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))
 
 
 def fit_encoders(model_params, fit_params, train_data, valid_data):
@@ -184,7 +228,11 @@ def fit_encoders(model_params, fit_params, train_data, valid_data):
     model_params.update({"network_params": dict(network_name='dnn', gen_encoder=encoders["gen_encoder"],
                                                 drug_encoder=encoders["drug_encoder"],
                                                 func_encoder=encoders["func_encoder"],
-                                                hidden_layer_dims=mm_hidden_layer_dims),
+                                                hidden_layer_dims=[2000] * 6,
+                                                activation='relu',
+                                                dropout=0.3,
+                                                b_norm=True,
+                                                ),
                          "metrics_names": [
                              "macro_roc",
                              "macro_auprc",

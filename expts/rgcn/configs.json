@@ -1,16 +1,11 @@
 {
   "model_params": [
     {
-      "dataloader": true,
+      "edge_sampler": "uniform",
+      "graph_batch_size": 30000,
+      "graph_split_size": 0.5,
       "loss": "bce",
-      "loss_params": {
-        "use_binary_cost_per_batch": false,
-        "use_fixed_binary_cost": false,
-        "use_fixed_label_cost": false,
-        "use_label_cost_per_batch": false,
-        "use_negative_sampling": false
-      },
-      "lr": 0.0001,
+      "lr": 0.01,
       "metrics_names": [
         "macro_roc",
         "macro_auprc",
@@ -18,19 +13,13 @@
         "micro_auprc"
       ],
       "network_params": {
-        "hidden_sizes": [
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048,
-          2048
-        ],
-        "input_dim": 100,
-        "network_name": "deepddi"
+        "dropout": 0.2,
+        "h_dim": 500,
+        "n_bases": 100,
+        "network_name": "RGCN",
+        "num_bases": 100,
+        "num_hidden_layers": 2,
+        "reg_param": 0.01
       },
       "optimizer": "adam"
     }
@@ -41,20 +30,21 @@
       "decagon": false,
       "seed": 42,
       "split_mode": "random",
-      "test_size": 0.2,
+      "test_size": 0.1,
       "transformer": "deepddi",
       "use_as_filter": null,
       "use_clusters": false,
       "use_pharm": false,
       "use_side_effect": false,
       "use_targets": false,
-      "valid_size": 0.25
+      "valid_size": 0.15
     }
   ],
   "fit_params": [
     {
-      "batch_size": 256,
-      "n_epochs": 100,
+      "eval_batch_size": 5,
+      "evaluate_every": 5,
+      "n_epochs": 10,
       "with_early_stopping": true
     }
   ]

@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 
 from .attention import AttentionLayer
-#from .coattn import CoAttLayer
 from .features_extraction import FeaturesExtractorFactory
 from .graphs import DGINConv
 

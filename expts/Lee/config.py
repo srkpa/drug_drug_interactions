@@ -27,9 +27,8 @@ network_params = list(ParameterGrid(dict(
     hidden_layer_dims=[[1000]],
     output_dim=[200],
     activation=['relu'],
-    dropout=[0],
-    b_norm=[False],
-    mn_hidden_layer_dims=[[2000] * 6]
+    dropout=[0.3],
+    b_norm=[True]
 )))
 
 loss_params = list(ParameterGrid(dict(

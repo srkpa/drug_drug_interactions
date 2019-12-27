@@ -6,7 +6,7 @@ InVivo AI
 """
 import glob
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import versioneer
 
@@ -45,5 +45,5 @@ setup(
 
     # Manual control if final package is compressible or not, set False to prevent the .egg from being made
     # zip_safe=False,
-
+   # packages=find_packages()
 )
