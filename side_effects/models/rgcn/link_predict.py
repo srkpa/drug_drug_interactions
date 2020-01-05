@@ -25,12 +25,15 @@ def load_data(train, valid, test):
         [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in valid.samples for rel
          in rels])
     test = np.array(
-        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in test.samples for rel in rels])
+        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in test.samples for rel
+         in rels])
     num_nodes = len(graph_drugs)
     print("# entities: {}".format(num_nodes))
     num_rels = len(labels_mapping)
     print("# relations: {}".format(num_rels))
     print("# edges: {}".format(len(train)))
+    print("# test edges: {}".format(len(test)))
+
     return num_nodes, num_rels, train, valid, test
 
 
@@ -96,18 +99,15 @@ def node_norm_to_edge_norm(g, node_norm):
     return g.edata['norm']
 
 
-def main(train, test, valid, model_params, fit_params):
-    # load graph data
-    num_nodes, num_rels, train_data, valid_data, test_data = load_data(train=train, test=test, valid=valid)
-
+def main(train, test, valid, model_state_file, model_params, fit_params):
     # set parameters
     network_params = model_params["network_params"]
-
+    # load graph data
+    num_nodes, num_rels, train_data, valid_data, test_data = load_data(train=train, test=test, valid=valid)
     # check cuda
     use_cuda = torch.cuda.is_available()
     if use_cuda:
         torch.cuda.set_device(1)
-
     # create model
     model = LinkPredict(in_dim=num_nodes,
                         h_dim=network_params.get("h_dim", 500),
@@ -121,7 +121,6 @@ def main(train, test, valid, model_params, fit_params):
     # validation and testing triplets
     valid_data = torch.LongTensor(valid_data)
     test_data = torch.LongTensor(test_data)
-
     # build test graph
     test_graph, test_rel, test_norm = utils.build_test_graph(
         num_nodes, num_rels, train_data)
@@ -130,29 +129,22 @@ def main(train, test, valid, model_params, fit_params):
     test_node_id = torch.arange(0, num_nodes, dtype=torch.long).view(-1, 1)
     test_rel = torch.from_numpy(test_rel)
     test_norm = node_norm_to_edge_norm(test_graph, torch.from_numpy(test_norm).view(-1, 1))
-
     if use_cuda:
         model.cuda()
-
     # build adj list and calculate degrees for sampling
     adj_list, degrees = utils.get_adj_and_degrees(num_nodes, train_data)
-
     # optimizer
     optimizer = torch.optim.Adam(model.parameters(), lr=model_params.get("lr", 0.01))
-
-    model_state_file = 'model_state.pth'
+    #  model_state_file = 'model_state.pth'
     forward_time = []
     backward_time = []
-
     # training loop
     print("start training...")
-
     epoch = 0
     best_mrr = 0
     while True:
         model.train()
         epoch += 1
-
         # perform edge neighborhood sampling to generate training graph and data
         g, node_id, edge_type, node_norm, data, labels = \
             utils.generate_sampled_graph_and_labels(
@@ -160,7 +152,6 @@ def main(train, test, valid, model_params, fit_params):
                 num_rels, adj_list, degrees, model_params.get("negative_sample", 10),
                 model_params.get("edge_sampler", "uniform"))
         print("Done edge sampling")
-
         # set node/edge feature
         node_id = torch.from_numpy(node_id).view(-1, 1).long()
         edge_type = torch.from_numpy(edge_type)
@@ -171,7 +162,6 @@ def main(train, test, valid, model_params, fit_params):
             node_id, deg = node_id.cuda(), deg.cuda()
             edge_type, edge_norm = edge_type.cuda(), edge_norm.cuda()
             data, labels = data.cuda(), labels.cuda()
-
         t0 = time.time()
         embed = model(g, node_id, edge_type, edge_norm)
         loss = model.get_loss(g, embed, data, labels)
@@ -180,14 +170,11 @@ def main(train, test, valid, model_params, fit_params):
         torch.nn.utils.clip_grad_norm_(model.parameters(), model_params.get("grad_norm", 1.0))  # clip gradients
         optimizer.step()
         t2 = time.time()
-
         forward_time.append(t1 - t0)
         backward_time.append(t2 - t1)
         print("Epoch {:04d} | Loss {:.4f} | Best MRR {:.4f} | Forward {:.4f}s | Backward {:.4f}s".
               format(epoch, loss.item(), best_mrr, forward_time[-1], backward_time[-1]))
-
         optimizer.zero_grad()
-
         # validation
         if epoch % fit_params.get("evaluate_every", 500) == 0:
             # perform validation on CPU because full graph is too large
@@ -200,7 +187,7 @@ def main(train, test, valid, model_params, fit_params):
                                  hits=[1, 3, 10], eval_bz=fit_params.get("eval_batch_size", 500))
             # save best model
             if mrr < best_mrr:
-                if epoch >= fit_params.get("n_epochs", 6000):
+                if epoch >= fit_params.get("n_epochs", 100):
                     break
             else:
                 best_mrr = mrr
@@ -212,7 +199,6 @@ def main(train, test, valid, model_params, fit_params):
     print("training done")
     print("Mean forward time: {:4f}s".format(np.mean(forward_time)))
     print("Mean Backward time: {:4f}s".format(np.mean(backward_time)))
-
     print("\nstart testing:")
     # use best model checkpoint
     checkpoint = torch.load(model_state_file)
@@ -222,8 +208,9 @@ def main(train, test, valid, model_params, fit_params):
     model.load_state_dict(checkpoint['state_dict'])
     print("Using best epoch: {}".format(checkpoint['epoch']))
     embed = model(test_graph, test_node_id, test_rel, test_norm)
-    utils.calc_mrr(embed, model.w_relation, test_data,
-                   hits=[1, 3, 10], eval_bz=fit_params.get("eval_batch_size", 500))
+    # utils.calc_mrr(embed, model.w_relation, test_data,
+    #                hits=[1, 3, 10], eval_bz=fit_params.get("eval_batch_size", 500))
+    return test_data, embed
 
 #
 # if __name__ == '__main__':

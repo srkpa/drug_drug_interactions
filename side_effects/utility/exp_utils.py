@@ -9,7 +9,6 @@ from collections import Counter
 from pickle import load
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from ivbase.utils.aws import aws_cli
 
@@ -96,8 +95,27 @@ def visualize_loss_progress(filepath):
     plt.show()
 
 
+def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN"):
+    bt = pd.read_csv(fp)
+    c = bt[bt["model_name"] == model_name][['dataset_name', 'task_id', 'split_mode', 'path']].values
+    n = len(c) // 2
+    print(len(c), n)
+    fig, ax = plt.subplots(nrows=n - 1, ncols=n, figsize=(15, 9))
+    i = 0
+    for row in ax:
+        for col in row:
+            dataset, task_id, split, path = c[i]
+            print(split)
+            scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
+            i += 1
+    plt.savefig(f"../../results/scores.png")
+
+
+# plt.show()
+
+
 # /media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json -- best result
-def scorer(dataset_name, task_path=None, upper_bound=None, save=None):
+def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split="random", ax=None, annotate=False):
     cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
     data_set = pd.read_csv(f"{cach_path}/datasets-ressources/DDI/{dataset_name}/{dataset_name}.csv",
                            sep=",")
@@ -105,10 +123,13 @@ def scorer(dataset_name, task_path=None, upper_bound=None, save=None):
     n_samples = dict(Counter(ddi_types))
     g = list(set(ddi_types))
     g.sort()
-    y_preds = load(open(task_path + "_preds.pkl", "rb"))
-    y_true = load(open(task_path + "_targets.pkl", "rb"))
+    y_preds = load(open(task_path + "_preds.pkl", "rb")) if split != "leave_drugs_out (test_set 2)" else load(
+        open(task_path + "-preds.pkl", "rb"))
+    y_true = load(open(task_path + "_targets.pkl", "rb")) if split != "leave_drugs_out (test_set 2)" else load(
+        open(task_path + "-targets.pkl", "rb"))
     ap_scores = auprc_score(y_pred=y_preds, y_true=y_true, average=None)
     rc_scores = roc_auc_score(y_pred=y_preds, y_true=y_true, average=None)
+
     # Label ranking
     ap_scores_ranked = sorted(zip(g, ap_scores), key=operator.itemgetter(1))
     rc_scores_dict = dict(zip(g, list(rc_scores)))
@@ -120,32 +141,54 @@ def scorer(dataset_name, task_path=None, upper_bound=None, save=None):
     df = pd.DataFrame(top_5_ap_rc_scores, columns=["Best performing DDI types", "AUPRC", "AUROC"])
     df1 = pd.DataFrame(btm_5_ap_rc_scores, columns=["Worst performing DDI types", "AUPRC", "AUROC"])
     prefix = os.path.basename(task_path)
-    df.to_csv(f"../../results/{prefix}_{save}_top.csv")
-    df1.to_csv(f"../../results/{prefix}_{save}_bottom.csv")
+    df.to_csv(f"../../results/{prefix}_{split}_top.csv")
+    df1.to_csv(f"../../results/{prefix}_{split}_bottom.csv")
     print(df)
     print(df1)
+    #
+    if split == "random":
+        title = split
+    elif split == "leave_drugs_out (test_set 2)":
+        title = "hard early"
+    else:
+        title = "soft early"
     # zoom
     x = [n_samples[g[i]] for i in range(len(ap_scores))]
     if upper_bound:
         x, y = [j for i, j in enumerate(x) if j <= 2000], [i for i, j in enumerate(x) if j <= 2000]
         ap_scores = [ap_scores[i] for i in y]
         rc_scores = [rc_scores[i] for i in y]
-    plt.figure(figsize=(8, 6))
-    s = np.array([ap_scores, rc_scores])
-    s = np.mean(s, axis=0).tolist()
-    print(s)
-    plt.scatter(x, ap_scores, 40, marker="o", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="AUPRC")
-    plt.scatter(x, rc_scores, 40, marker="o", color='xkcd:lightish red', alpha=0.7, zorder=1, label="AUROC")
-    plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
-    plt.text(max(x), 0.5, "roc=aup=0.5", horizontalalignment="right", size=12, family='sherif', color="r")
-    plt.xlabel('Number of positives samples', fontsize=10)
-    plt.ylabel('Scores', fontsize=10)
-    # plt.gca().spines['top'].set_visible(False)
-    # plt.gca().spines['right'].set_visible(False)
-    plt.title(save)
-    plt.legend()
-    plt.savefig(f"../../results/{prefix}_{save}_scores.png")
-    # plt.show()
+
+    # f1 score instead
+    if f1_score:
+        f1_scores = list(map(lambda prec, rec: (2 * prec * rec) / (prec + rec), ap_scores, rc_scores))
+        print(f1_scores)
+        if ax is None:
+            plt.figure(figsize=(8, 6))
+            plt.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
+            plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+        else:
+            ax.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
+            ax.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+            ax.set_xlabel('Number of positives samples', fontsize=10)
+            ax.set_ylabel('F1 Scores', fontsize=10)
+
+    else:
+        plt.scatter(x, ap_scores, 40, marker="o", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="AUPRC")
+        plt.scatter(x, rc_scores, 40, marker="o", color='xkcd:lightish red', alpha=0.7, zorder=1, label="AUROC")
+        plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+        plt.text(max(x), 0.5, "mean = 0.5", horizontalalignment="right", size=12, family='sherif', color="r")
+
+    # ax.set_title(tile, fontsize=10)
+
+    # # plt.gca().spines['top'].set_visible(False)
+    # # plt.gca().spines['right'].set_visible(False)
+    # plt.title(f"{split}-{dataset_name}")
+    # plt.legend()
+    # plt.savefig(f"../../results/{prefix}_{save}_scores.png")
+
+
+# plt.show()
 
 
 def update_model_name(exp_name, pool_arch, graph_net_params, attention_params):
@@ -249,11 +292,11 @@ def __loop_through_exp(path, compute_metric=True):
     return outs
 
 
-def summarize(exp_folder=None):
-    exp_folder = f"{os.path.expanduser('~')}/expts" if exp_folder is None else exp_folder
+def summarize_experiments(main_dir=None):
+    main_dir = f"{os.path.expanduser('~')}/expts" if main_dir is None else main_dir
     rand = []
-    for i, root in enumerate(os.listdir(exp_folder)):
-        path = os.path.join(exp_folder, root)
+    for i, root in enumerate(os.listdir(main_dir)):
+        path = os.path.join(main_dir, root)
         if os.path.isdir(path):
             print("__Path__: ", path)
             res = __loop_through_exp(path, compute_metric=True)
@@ -263,15 +306,22 @@ def summarize(exp_folder=None):
     print(rand)
     if rand:
         out = pd.DataFrame(rand)
-        out.to_csv("../../results/raw-exp-res.csv")
+        best_hp = out.groupby(["dataset_name", "model_name", "split_mode"], as_index=True).max()
+        print("best hp", best_hp)
+        best_hp.to_csv("../../results/best_hp.csv")
+        out.to_csv("../../results/all_raw-exp-res.csv")
         modes = out["split_mode"].unique()
         out["split_mode"].fillna(inplace=True, value="null")
+        out["fmode"].fillna(inplace=True, value="null")
+        print("modes", modes)
         for mod in modes:
             df = out[out["split_mode"] == mod]
             t = df.groupby(['dataset_name', 'model_name', 'split_mode', "fmode"], as_index=True)
+            print("t", t)
             t_mean = t[["micro_roc", "micro_auprc"]].mean()
+            print("mean", t_mean)
             t_std = t[["micro_roc", "micro_auprc"]].std()
-            print(t_std)
+            print("std", t_std)
             t_mean['micro_roc'] = t_mean[["micro_roc"]].round(3).astype(str) + " ± " + t_std[["micro_roc"]].round(
                 3).astype(
                 str)
@@ -280,14 +330,30 @@ def summarize(exp_folder=None):
             t_mean.to_csv(f"../../results/{mod}.csv")
 
 
-def analyse_model_predictions(task_id, threshold=0.1, label=1):
+def analyze_models_predictions(fp="../../results/temp.csv", split_mode="random", dataset_name="twosides"):
+    bt = pd.read_csv(fp)
+    items = bt[(bt["dataset_name"] == dataset_name) & (bt["split_mode"] == split_mode)][
+        ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
+    print(len(items))
+    i = 1
+    for dataset, mn, task_id, split, path in [items[::-1][1]]:
+        print("no ", i, "task_path ", task_id, mn)
+        __analyse_model_predictions__(task_id=path[:-12], threshold=0.1, label=1)
+        print("False Positives: done !!!")
+        __analyse_model_predictions__(task_id=path[:-12], threshold=0.7, label=0)
+        print("False negatives: done !!!")
+        i += 1
+    assert i == len(items)
+
+
+def __analyse_model_predictions__(task_id, threshold=0.1, label=1):
     cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
     pref = os.path.basename(task_id)
     y_pred = load(open(task_id + "-preds.pkl", "rb"))
     y_true = load(open(task_id + "-targets.pkl", "rb"))
     config = json.load(open(task_id + "_params.json", "rb"))
-    print(config)
     dataset_params = {param.split(".")[-1]: val for param, val in config.items() if param.startswith("dataset_params")}
+    print(config["model_params.network_params.network_name"])
     dataset_params = {key: val for key, val in dataset_params.items() if
                       key in get_data_partitions.__code__.co_varnames}
     dataset_name = dataset_params["dataset_name"]
@@ -331,7 +397,7 @@ def analyse_model_predictions(task_id, threshold=0.1, label=1):
         is_ok = len(pos_pairs - common) == 0
     else:
         print(f"check if all pairs exist (Negative pairs)=> {len(pairs)}!")
-        neg_bk = set(neg_bk)  # all the drugs pairs that really exists
+        neg_bk = set(neg_bk)  # all the drugs pai"/rs that really exists
         neg_pairs = set([p[:3] for p in pairs])  # my negative pairs
         neg_drugs_comb = set([p[:2] for p in pairs])
         common = set(pos_bk).intersection(neg_pairs)
@@ -346,17 +412,172 @@ def analyse_model_predictions(task_id, threshold=0.1, label=1):
     res.to_csv(f"../../results/{pref}_{label}_sis.csv")
 
 
+def __check_if_overlaps(data, subset):
+    i, j, k = 0, 0, 0
+    for (drug1, drug2) in subset:
+        if drug1 in data and drug2 in data:
+            i += 1
+        elif drug1 in data or drug2 in data:
+            j += 1
+        else:
+            k += 1
+    return i, j, k
+
+
+def __get_dataset_stats__(task_id):
+    test_stats = []
+    cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
+    config = json.load(open(task_id, "rb"))
+    print(config)
+    dataset_params = {param.split(".")[-1]: val for param, val in config.items() if param.startswith("dataset_params")}
+    dataset_params = {key: val for key, val in dataset_params.items() if
+                      key in get_data_partitions.__code__.co_varnames}
+    dataset_name = dataset_params["dataset_name"]
+    split_mode = dataset_params["split_mode"]
+    seed = dataset_params["seed"]
+    input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
+    dataset_params["input_path"] = input_path
+    train, _, test1, test2 = get_data_partitions(**dataset_params)
+
+    train_samples, test1_samples, test2_samples = train.samples, test1.samples, test2.samples
+    test = [(d1, d2) for (d1, d2, _) in test1_samples]
+    print("Number of drugs pairs - test 1 ", len(test))
+    train_drugs = set([d1 for (d1, _, _) in train_samples] + [d2 for (_, d2, _) in train_samples])
+    test1_drugs = set([d1 for (d1, _, _) in test1_samples] + [d2 for (_, d2, _) in test1_samples])
+    print("Number of train drugs", len(set(train_drugs)))
+    print("Number of test set 1 drugs ", len(set(test1_drugs)))
+    i, j, k = __check_if_overlaps(train_drugs, test)
+
+    if split_mode == "leave_drugs_out":
+        test_stats.append((dataset_name, seed, "early split-test set 1", len(set(test)), i, j, k))
+        test = [(d1, d2) for (d1, d2, _) in test2_samples]
+        test2_drugs = set([d1 for (d1, _, _) in test2_samples] + [d2 for (_, d2, _) in test2_samples])
+        print("Number of drugs pairs - test 2 ", len(test))
+        print("Number of test set 2 drugs", len(set(test2_drugs)))
+        assert len(set(train_drugs).intersection(test2_drugs)) == 0
+        i, j, k = __check_if_overlaps(train_drugs, test)
+        test_stats.append((dataset_name, seed, "early split-test set 2", len(set(test)), i, j, k))
+    else:
+        test_stats.append((dataset_name, seed, "Random ", len(set(test)), i, j, k))
+
+    df = pd.DataFrame(test_stats,
+                      columns=["dataset_name", "seed", "splitting scheme", "drugs pairs in test set",
+                               "Both of the drugs are seen",
+                               "One of the drug is seen",
+                               "None of the drugs were seen "])
+    return df
+
+
+def get_dataset_stats(task_ids=None, exp_path=None, split=True):
+    if not task_ids:
+        assert exp_path is not None
+        task_ids = [fp for fp in glob.glob(f"{exp_path}/*.json")]
+    print(task_ids)
+    df = pd.concat(list(map(__get_dataset_stats__, task_ids)), ignore_index=True)
+    df.to_csv("../../results/dataset_params_stats.csv")
+    print(df)
+    overall_summary = df.groupby(["dataset_name", "splitting scheme"]).mean().round()
+    overall_summary.to_csv(f"../../results/all-modes_dataset_params_stats.csv")
+    if split:
+        modes = df["splitting scheme"].unique()
+        df["splitting scheme"].fillna(inplace=True, value="null")
+        for mod in modes:
+            res = df[df["splitting scheme"] == mod]
+            res.to_csv(f"../../results/{mod}_dataset_params_stats.csv")
+
+
+def get_misclassified_labels(path, label=0, items=10):
+    i = 1
+    out = []
+    h = []
+    c = ['road traffic accident', 'drug withdrawal', 'adverse drug effect', 'herpes simplex', 'hepatitis c',
+         'hepatitis a', 'diabetes', 'flu', 'hiv disease']
+    for fp in glob.glob(f"{path}/*_{label}_sis.csv"):
+        # Ranked misclassified side effects
+        print(fp)
+        data = pd.read_csv(fp, index_col=0)
+        # data = data.nsmallest(10, 'probability')
+        e = data["side effect"].value_counts(normalize=True) * 100
+        print(e)
+        f = data["side effect"].values
+        # print(f)
+        # e = e.round(2).nlargest(items)
+        # Most commons pairs misclassified
+        l = set([tuple(i[:3]) for i in data.values])
+        # print(l)
+        h.append(l)
+        i += 1
+        out.extend(f)
+    g = dict(Counter(out))
+    g = sorted(g.items(), key=operator.itemgetter(1))
+    d = sum([i[-1] for i in g])
+    print("d", d)
+    print("g", len(g))
+    # k = {e: (dict(Counter(out))[e]/d) * 100 for e in c}
+    print(g)
+    # print(sum([j for i, j in k.items()]))
+    print(h[1].intersection(*h[2:]))
+
+
+# many files path - one per model
+# stats about recurrences
+# False positive vs False negatives
+
+def get_best_hp():
+    dt = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
+    d = dt.groupby(["dataset_name", "model_name", "split_mode"], as_index=False)["micro_auprc"].max()
+    print(list(d))
+    c = []
+    for index, row in d.iterrows():
+        c.append(dt.loc[(dt["dataset_name"] == row["dataset_name"]) & (dt["model_name"] == row["model_name"]) & (
+                dt["split_mode"] == row["split_mode"]) & (dt["micro_auprc"] == row["micro_auprc"])])
+    f = pd.concat(c)
+    print(f)
+    f.to_csv("../../results/temp.csv")
+
+
 if __name__ == '__main__':
+    # summarize_experiments("/media/rogia/CLé USB/expts/")
+    # visualize_test_perf()
+    # analyze_models_predictions()
+    get_misclassified_labels(path="../../results/", label=0)
+    exit()
+    # bt = pd.read_csv("../../results/best_hp.csv")
+    # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
+    # # print(c)
+    # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
+    #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
+    analyze_models_predictions([c[::-1][1]])
+
+    # analysis_test_perf(c)
+    exit()
+    get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    exit()
+    # get_misclassified_labels(
+    #     "/home/rogia/Documents/projects/drug_drug_interactions/results/twosides_bmnddi_6936e1f9_1_sis.csv", items=10)
+    # exit()
+    # combine(exp_path="/media/rogia/CLé USB/expts/DeepDDI", split=False)
+    exit()
     # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=1, threshold=0.1)
     # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=0, threshold=0.7)
     # choose o.1 as threshold for false positive
-    # exit()
+    # combine(["/home/rogia/Documents/projects/twosides_bmnddi_390811c9",
+    #          "/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9"])
+
+    exit()
     exp_folder = "/home/rogia/Documents/exps_results/IMB"  # /media/rogia/CLé USB/expts"  # f"{os.path.expanduser('~')}/expts"
     # summarize(exp_folder)
-    # scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="cnn")
+    # Scorer twosides random split
+    scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="random")
+    # Scorer twosides early split stage
+    scorer("twosides", task_path="/home/rogia/Documents/projects/twosides_bmnddi_390811c9", save="early+stage")
+    exit()
     scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_48d052b6", save="cnn+NS")
     scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_5cbedb4a", save="cnn+CS")
-    # scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
+
+    # Scorer drugbank random split
+    scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
+    # Scorer drugbank early split
     exit()
 
     f = __loop_through_exp(exp_folder + "/CNN")

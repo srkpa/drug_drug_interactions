@@ -28,8 +28,10 @@
     {
       "dataset_name": "twosides",
       "decagon": false,
+      "n_folds": 100,
       "seed": 42,
-      "split_mode": "random",
+      "split_mode": "leave_drugs_out",
+      "test_fold": 1,
       "test_size": 0.1,
       "transformer": "deepddi",
       "use_as_filter": null,
@@ -43,8 +45,8 @@
   "fit_params": [
     {
       "eval_batch_size": 5,
-      "evaluate_every": 5,
-      "n_epochs": 10,
+      "evaluate_every": 1,
+      "n_epochs": 1,
       "with_early_stopping": true
     }
   ]

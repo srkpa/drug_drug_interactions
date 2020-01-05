@@ -1,6 +1,6 @@
 import inspect
 import string
-from itertools import product
+from itertools import product, chain
 
 import dgl
 from ivbase.utils.commons import to_tensor
@@ -92,7 +92,35 @@ def _filter_pairs_one_exists(samples, filtering_set=None):
     return samples
 
 
-def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42):
+def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
+    def chunks(lst, n):
+        """Yield successive n-sized chunks from lst."""
+        for i in range(0, len(lst), n):
+            yield lst[i:i + n]
+
+    drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
+    drugs = sorted(drugs)
+    n_folds = len(drugs) // n_folds
+    drugs_idx = list(chunks(drugs, n_folds))
+    folds = []
+    for i, fold in enumerate(drugs_idx):
+        idx = [drug_id for f in drugs_idx[:i] for drug_id in f]
+        partition = set(product(fold, idx)).union(set(product(idx, fold))).union(set(product(fold, repeat=2)))
+        partition = set(data.keys()).intersection(partition)
+        print(i, len(partition))
+        folds.append(partition)
+    np_pairs = sum([len(f) for f in folds])
+    assert len(data) == np_pairs, "We have a problem"
+    train_data, test_data = list(chain.from_iterable(folds[:test_fold] + folds[(test_fold + 1):])), folds[test_fold]
+    train_data, valid_data = train_test_split(train_data, test_size=0.15, random_state=seed)
+    train_data = {k: data[k] for k in train_data}
+    test_data = {k: data[k] for k in test_data}
+    valid_data = {k: data[k] for k in valid_data}
+    print(len(train_data), len(test_data), len(valid_data))
+    return train_data, valid_data, test_data
+
+
+def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42, n_folds=1, test_fold=1):
     assert mode.lower() in ['random', 'leave_drugs_out']
     if mode == 'random':
         train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
@@ -101,8 +129,10 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
-        unseen_data = test_data
+        # unseen_data = test_data
     else:
+        if n_folds > 1:
+            return split_all_cross_validation(data=data, n_folds=n_folds, test_fold=test_fold, seed=42)
         drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
         drugs = sorted(drugs)
 
@@ -125,13 +155,13 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
-        unseen_data = {k: data[k] for k in unseen}
+        # unseen_data = {k: data[k] for k in unseen}
 
         # filter out some pairs due to the intersection
         valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
         test_data = _filter_pairs_one_exists(test_data, train_drugs)
 
-    return train_data, valid_data, test_data, unseen_data
+    return train_data, valid_data, test_data
 
 
 class DDIdataset(Dataset):
@@ -194,9 +224,12 @@ class DDIdataset(Dataset):
         elif not self.data_type:
             y = to_tensor(target, self.gpu)
             if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
-                if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all([isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
-                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
-                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
+                if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
+                        [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
+                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu),
+                             to_tensor(drug1[-1], gpu=self.gpu))
+                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu),
+                             to_tensor(drug2[-1], gpu=self.gpu))
                 else:
                     drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
                     drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
@@ -291,7 +324,7 @@ def _rank(data, v=100):
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_clusters=False, use_as_filter=None, use_targets=False, use_side_effect=False,
-                        use_pharm=False):
+                        use_pharm=False, n_folds=1, test_fold=1):
     data, drugs2smiles = load_data(input_path, dataset_name)
     load_data(input_path, dataset_name)
     drug_offsides, drug2targets, drugs2pharm = {}, {}, {}
@@ -330,10 +363,11 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         drugs2smiles = transformer(drugs=drugs, smiles=smiles)
 
     data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
-    train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
-                                                                            test_size=test_size, valid_size=valid_size)
+    train_data, valid_data, test_data = train_test_valid_split(data, split_mode, seed=seed,
+                                                               test_size=test_size, valid_size=valid_size,
+                                                               n_folds=n_folds, test_fold=test_fold)
     print(
-        f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}\nlen unseen {len(unseen_data)}")
+        f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")  # \nlen unseen {len(unseen_data)}
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
 
@@ -352,10 +386,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         test_dataset = DDIdataset(test_data, drugs2smiles, mbl, graph_drugs_mapping=train_dataset.graph_nodes_mapping,
                                   gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
                                   drugspharm=drugs2pharm)
-        unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
-                                    graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                    gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
-                                    drugspharm=drugs2pharm)
+        # unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
+        #                             graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+        #                             gene_net=train_dataset.gene_net, drug_gene_net=train_dataset.drug_gene_net,
+        #                             drugspharm=drugs2pharm)
 
     else:
         if use_graph:
@@ -367,9 +401,9 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl,
                                       graph_drugs_mapping=train_dataset.graph_nodes_mapping,
                                       drugspharm=train_dataset.drugspharm)
-            unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
-                                        graph_drugs_mapping=train_dataset.graph_nodes_mapping,
-                                        drugspharm=train_dataset.drugspharm)
+            # unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl,
+            #                             graph_drugs_mapping=train_dataset.graph_nodes_mapping,
+            #                             drugspharm=train_dataset.drugspharm)
         else:
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                        drugse=drug_offsides)
@@ -378,9 +412,9 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                       drugse=drug_offsides)
             print(train_dataset.nb_labels)
-            unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
-                                        drugstargets=drug2targets,
-                                        drugse=drug_offsides)
+            # unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
+            #                             drugstargets=drug2targets,
+            #                             drugse=drug_offsides)
 
             if all([len(x) == 3 for x in list(drugs2smiles.values())]):
                 drugs2smiles_dict_1 = {i: j[0] for i, j in drugs2smiles.items()}
@@ -396,7 +430,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                 train_dataset = x + [train_dataset]
                 valid_dataset = y + [valid_dataset]
 
-    return train_dataset, valid_dataset, test_dataset, unseen_dataset
+    return train_dataset, valid_dataset, test_dataset  # , unseen_dataset
 
 
 def load_side_effect_mapping(input_path, use_as_filter=None):

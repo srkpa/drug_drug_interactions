@@ -15,7 +15,9 @@ dataset_params = list(ParameterGrid(
          use_as_filter=[None],
          use_targets=[False],
          use_side_effect=[False],
-         use_pharm=[False]
+         use_pharm=[False],
+         n_folds=[9],
+         test_fold=[1]
          )
 ))
 

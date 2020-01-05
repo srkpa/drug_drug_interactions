@@ -81,10 +81,6 @@ def prepare_dataset(se_dps_dict, drug_structure_dict):
 
 # To use our splitting scheme, I will have to modify this.  # May be add a args=dict(f{f1:}
 def split_decagon_cv(path, pos_datasets, neg_datasets, n_fold):
-    for se, k in pos_datasets.items():
-        print(se, k[0])
-    exit()
-
     def split_all_cross_validation_datasets(datasets, n_fold):
         cv_dataset = {x: {} for x in range(1, n_fold + 1)}
         for se in datasets:
@@ -117,6 +113,8 @@ def prepare_decagon_cv(path, decagon_graph_data, ddi_data, debug, n_atom_type=10
     side_effects, side_effect_idx_dict = read_ddi_instances(
         path + "/" + ddi_data, use_small_dataset=debug)
     pos_datasets, neg_datasets = prepare_dataset(side_effects, graph_dict)
+    print(len(pos_datasets), len(neg_datasets))
+    exit()
     n_side_effect = len(side_effects)
     split_decagon_cv(path=path, pos_datasets=pos_datasets, neg_datasets=neg_datasets, n_fold=n_fold)
     return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict

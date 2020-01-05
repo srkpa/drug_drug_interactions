@@ -123,12 +123,12 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
-    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)
+    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)  # unseen_test_data
 
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
-    uy_true, uy_probs, u_output = {}, {}, {}
+    # uy_true, uy_probs, u_output = {}, {}, {}
     # Params processing
     if model_name == "mhcaddi":
         dataset_name = dataset_params.get('dataset_name', 'twosides')
@@ -144,7 +144,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
                                                                                             ddi_data='bio-decagon-combo.csv',
                                                                                             n_fold=3,
                                                                                             debug=debug)
-        exit()
+
         test_data = train.main(n_side_effect=n_side_effect, exp_prefix="", dataset_name=dataset_name,
                                n_atom_type=n_atom_type,
                                n_bond_type=n_bond_type, graph_dict=graph_dict,
@@ -165,7 +165,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         preds = test_perf.pop('y_preds')
 
     elif model_name == 'RGCN':
-        main(train_data, test_data, valid_data, model_params, fit_params)
+        target, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params, fit_params)
     elif model_name == "deeprf":
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
@@ -195,16 +195,15 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
         targets, preds, test_perf = model.test(test_data)
-        uy_true, uy_probs, u_output = model.test(unseen_test_data)
+        # uy_true, uy_probs, u_output = model.test(unseen_test_data)
 
     # Save model  test results
     pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
     pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
     pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
-    pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
-    pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
-    pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
-
+    # pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
+    # pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
+    # pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
     # pr.disable()
     # pr.print_stats()
     # pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))

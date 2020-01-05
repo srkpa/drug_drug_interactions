@@ -14,24 +14,28 @@ def wrapped_partial(func, **kwargs):
 def roc_auc_score(y_pred, y_true, average):
     assert y_true.shape == y_pred.shape
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
-    if average == 'macro':
+    if average == 'macro' or average is None:
         out = []
         for i in range(y_true.shape[1]):
             roc_score = skm.roc_auc_score(y_true[:, i], y_pred[:, i], average='micro') if len(
                 np.unique(y_true[:, i])) > 1 else 0.5
             out.append(roc_score)
+        if average is None:
+            return out
         return np.mean(out)
     return ivbm.roc_auc_score(y_pred, y_true, average=average)
 
 
 def auprc_score(y_pred, y_true, average):
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
-    if average == 'macro':
+    if average == 'macro' or average is None:
         out = []
         for i in range(y_true.shape[1]):
             roc_score = skm.average_precision_score(y_true[:, i], y_pred[:, i], average='micro') if len(
                 np.unique(y_true[:, i])) > 1 else 0.5
             out.append(roc_score)
+        if average is None:
+            return out
         return np.mean(out)
     return skm.average_precision_score(y_true, y_pred, average=average)
 
