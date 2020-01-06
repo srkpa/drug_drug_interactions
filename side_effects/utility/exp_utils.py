@@ -437,9 +437,10 @@ def __get_dataset_stats__(task_id):
     seed = dataset_params["seed"]
     input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
     dataset_params["input_path"] = input_path
-    train, _, test1, test2 = get_data_partitions(**dataset_params)
+    train, _, test1 = get_data_partitions(**dataset_params) #test2
 
-    train_samples, test1_samples, test2_samples = train.samples, test1.samples, test2.samples
+    train_samples, test1_samples = train.samples, test1.samples#, test2.samples
+    test2_samples = []
     test = [(d1, d2) for (d1, d2, _) in test1_samples]
     print("Number of drugs pairs - test 1 ", len(test))
     train_drugs = set([d1 for (d1, _, _) in train_samples] + [d2 for (_, d2, _) in train_samples])
@@ -537,6 +538,9 @@ def get_best_hp():
 
 
 if __name__ == '__main__':
+    df = __get_dataset_stats__("/home/rogia/.invivo/result/deepddi/twosides_deepddi_4ebbb144_params.json")
+    print(df)
+    exit()
     # summarize_experiments("/media/rogia/CLé USB/expts/")
     # visualize_test_perf()
     # analyze_models_predictions()

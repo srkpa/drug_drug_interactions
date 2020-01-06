@@ -139,14 +139,18 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         if not (os.path.exists(cach_path + "/drug.bond_idx.wo_h.self_loop.json") and os.path.exists(
                 cach_path + "/drug.feat.wo_h.self_loop.idx.jsonl")):
             dp.main(path=cach_path, dataset_name=dataset_name)
-        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = cv.main(path=cach_path,
-                                                                                            dataset_name=dataset_name,
-                                                                                            ddi_data='bio-decagon-combo.csv',
-                                                                                            n_fold=3,
-                                                                                            debug=debug)
+        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, test_dataset, valid_dataset = cv.main(
+            path=cach_path,
+            dataset_name=dataset_name,
+            ddi_data='bio-decagon-combo.csv',
+            n_fold=3,
+            debug=debug, train_dataset=train_data, test_dataset=test_data, valid_dataset=valid_data)
 
         test_data = train.main(n_side_effect=n_side_effect, exp_prefix="", dataset_name=dataset_name,
                                n_atom_type=n_atom_type,
+                               train_dataset=train_dataset,
+                               test_dataset=test_dataset,
+                               valid_dataset=valid_dataset,
                                n_bond_type=n_bond_type, graph_dict=graph_dict,
                                side_effect_idx_dict=side_effect_idx_dict,
                                result_csv_file=paths.get("log_filename"),
@@ -165,7 +169,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         preds = test_perf.pop('y_preds')
 
     elif model_name == 'RGCN':
-        target, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params, fit_params)
+        target, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
+                             fit_params)
     elif model_name == "deeprf":
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:

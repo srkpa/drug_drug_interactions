@@ -1,9 +1,9 @@
 """
 	Split data for cross-validation and write to file.
 """
-import csv
 import pickle
 import random
+from collections import defaultdict
 
 import numpy as np
 import ujson as json
@@ -18,21 +18,13 @@ def read_graph_structure(drug_feat_idx_jsonl):
     return drugs
 
 
-def read_ddi_instances(ddi_csv, threshold=498, use_small_dataset=True):
+def read_ddi_instances(samples, use_small_dataset=True):
     # Building side-effect dictionary and
     # keeping only those which appear more than threshold (498) times.
-    side_effects = {}
-    with open(ddi_csv) as csvfile:
-        drug_reader = csv.reader(csvfile)
-        for i, row in enumerate(drug_reader):
-            if i > 0:
-                did1, did2, sid, *_ = row
-                assert did1 != did2
-                if sid not in side_effects:
-                    side_effects[sid] = []
-                side_effects[sid] += [(did1, did2)]
-
-    side_effects = {se: ddis for se, ddis in side_effects.items() if len(ddis) >= threshold}
+    side_effects = defaultdict(list)
+    for did1, did2, sids in samples:
+        for sid in sids:
+            side_effects[sid].append((did1, did2))
     if use_small_dataset:  # just for debugging
         side_effects = {se: ddis for se, ddis in
                         sorted(side_effects.items(), key=lambda x: len(x[1]), reverse=True)[:20]}
@@ -79,51 +71,45 @@ def prepare_dataset(se_dps_dict, drug_structure_dict):
     return pos_datasets, neg_datasets
 
 
-# To use our splitting scheme, I will have to modify this.  # May be add a args=dict(f{f1:}
-def split_decagon_cv(path, pos_datasets, neg_datasets, n_fold):
-    def split_all_cross_validation_datasets(datasets, n_fold):
-        cv_dataset = {x: {} for x in range(1, n_fold + 1)}
-        for se in datasets:
-            fold_len = len(datasets[se]) // n_fold
-            for fold_i in range(1, n_fold + 1):
-                fold_start = (fold_i - 1) * fold_len
+# To use our splitting scheme, I will have to modify this.
+def split_decagon_cv(train_dataset, valid_dataset, test_dataset, neg_datasets):
+    def split_all_cross_validation_datasets(dataset, neg_datasets):
+        cv_dataset = {'pos': defaultdict(list), 'neg': defaultdict(list)}
+        for did1, did2, sids in dataset.samples:
+            for sid in sids:
+                cv_dataset['pos'][sid].append((did1, did2))
+        for se, pos_did in cv_dataset['pos'].items():
+            neg = random.sample(neg_datasets[se], len(pos_did))
+            cv_dataset['neg'][se] = neg
+            neg_datasets[se] = list(set(neg_datasets[se]) - set(neg))
+        return neg_datasets, cv_dataset
 
-                if fold_i < n_fold:
-                    fold_end = fold_i * fold_len
-                else:
-                    fold_end = len(datasets[se])
-                cv_dataset[fold_i][se] = datasets[se][fold_start:fold_end]
-        return cv_dataset
-
-    # to define another function ==
-    pos_cv_dataset = split_all_cross_validation_datasets(pos_datasets, n_fold)
-    neg_cv_dataset = split_all_cross_validation_datasets(neg_datasets, n_fold)
-
-    for i in range(1, n_fold + 1):
-        with open(path + "/" + str(i) + "fold.npy", 'wb') as file:
-            fold_dataset = {'pos': pos_cv_dataset[i], 'neg': neg_cv_dataset[i]}
-            pickle.dump(fold_dataset, file)
+    negs, train_dataset = split_all_cross_validation_datasets(train_dataset, neg_datasets)
+    negs, test_dataset = split_all_cross_validation_datasets(test_dataset, negs)
+    negs, valid_dataset = split_all_cross_validation_datasets(valid_dataset, negs)
+    return train_dataset, valid_dataset, test_dataset
 
 
-def prepare_decagon_cv(path, decagon_graph_data, ddi_data, debug, n_atom_type=100, n_bond_type=12,
-                       n_fold=3):
+def prepare_decagon_cv(path, train_dataset, test_dataset, valid_dataset, decagon_graph_data, debug,
+                       n_atom_type=100, n_bond_type=12):
+    # samples
+    samples = train_dataset.samples + test_dataset.samples + valid_dataset.samples
     # graph_dict is ex drug_dict.
     graph_dict = read_graph_structure(path + "/" + decagon_graph_data)
     print(len(graph_dict))
     side_effects, side_effect_idx_dict = read_ddi_instances(
-        path + "/" + ddi_data, use_small_dataset=debug)
+        samples=samples, use_small_dataset=debug)
+    print("side effect", len(side_effects))
     pos_datasets, neg_datasets = prepare_dataset(side_effects, graph_dict)
-    print(len(pos_datasets), len(neg_datasets))
-    exit()
     n_side_effect = len(side_effects)
-    split_decagon_cv(path=path, pos_datasets=pos_datasets, neg_datasets=neg_datasets, n_fold=n_fold)
-    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict
+    train_dataset, valid_dataset, test_dataset = split_decagon_cv(train_dataset, valid_dataset, test_dataset,
+                                                                  neg_datasets=neg_datasets)
+    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, valid_dataset, test_dataset
 
 
 def split_qm9_cv(graph_dict, labels_dict, opt):
     data_size = len(graph_dict)  # ids are in [1,133,885]
     print("data_size", data_size)
-
     test_graph_dict = {}
     test_labels_dict = {}
     while len(test_graph_dict) < 10000 and len(test_graph_dict) < data_size:
@@ -182,16 +168,16 @@ def prepare_qm9_cv(opt):
     return opt
 
 
-def main(path, dataset_name, ddi_data='bio-decagon-combo.csv', decagon_graph_data="drug.feat.wo_h.self_loop.idx.jsonl",
+def main(path, dataset_name, train_dataset, test_dataset, valid_dataset, ddi_data='bio-decagon-combo.csv',
+         decagon_graph_data="drug.feat.wo_h.self_loop.idx.jsonl",
          n_fold=3, debug=True, qm9_labels='viz_drug.labels.jsonl', qm9_graph_data="viz_drug.feat.self_loop.idx.jsonl"):
     n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = 0, 0, 0, 0, 0
     if dataset_name == "twosides":
-        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = prepare_decagon_cv(path=path,
-                                                                                                       decagon_graph_data=decagon_graph_data,
-                                                                                                       debug=debug,
-                                                                                                       n_fold=n_fold,
-                                                                                                       ddi_data=ddi_data)
+        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, valid_dataset, test_dataset = prepare_decagon_cv(
+            path=path,
+            decagon_graph_data=decagon_graph_data,
+            debug=debug, train_dataset=train_dataset, test_dataset=test_dataset, valid_dataset=valid_dataset)
 
     # print('Dump to file:', path + "/input_data.npy")
     # np.save(path + "/input_data.npy", opt)
-    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict
+    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, test_dataset, valid_dataset

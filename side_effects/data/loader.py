@@ -1,4 +1,5 @@
 import inspect
+import random
 import string
 from itertools import product, chain
 
@@ -98,6 +99,8 @@ def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
 
+    valid_fold = random.choice([i for i in range(n_folds + 1) if i != test_fold])
+    print("Validation fold = ", valid_fold)
     drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
     drugs = sorted(drugs)
     n_folds = len(drugs) // n_folds
@@ -111,8 +114,10 @@ def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
         folds.append(partition)
     np_pairs = sum([len(f) for f in folds])
     assert len(data) == np_pairs, "We have a problem"
-    train_data, test_data = list(chain.from_iterable(folds[:test_fold] + folds[(test_fold + 1):])), folds[test_fold]
-    train_data, valid_data = train_test_split(train_data, test_size=0.15, random_state=seed)
+    test_data = folds.pop(test_fold)
+    valid_data = folds.pop(valid_fold - 1) if valid_fold > test_fold else folds.pop(valid_fold)
+    train_data = list(chain.from_iterable(folds))
+    # train_data, valid_data = train_test_split(train_data, test_size=0.15, random_state=seed)
     train_data = {k: data[k] for k in train_data}
     test_data = {k: data[k] for k in test_data}
     valid_data = {k: data[k] for k in valid_data}

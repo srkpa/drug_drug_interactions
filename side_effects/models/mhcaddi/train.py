@@ -4,7 +4,6 @@
 import csv
 import logging
 import os
-import pickle
 import random
 
 import numpy as np
@@ -17,7 +16,6 @@ from .ddi_dataset import ddi_collate_paired_batch, \
 from .qm9_dataset import QM9Dataset, qm9_collate_batch
 from .utils.ddi_utils import ddi_train_epoch, ddi_valid_epoch
 from .utils.file_utils import setup_running_directories
-from .utils.functional_utils import combine
 from .utils.qm9_utils import qm9_train_epoch, qm9_valid_epoch
 
 
@@ -189,7 +187,8 @@ def train(model, datasets, device, dataset_name, l2_lambda, learning_rate, resul
 
 def main(input_data_path, n_side_effect, side_effect_idx_dict, n_atom_type, n_bond_type, graph_dict, exp_prefix,
          dataset_name, result_csv_file,
-         model_dir, result_dir, setting_dir, fold_i=3, batch_size=128, d_hid=32, d_atom_feat=3, n_prop_step=3,
+         model_dir, result_dir, setting_dir, train_dataset, valid_dataset, test_dataset, fold_i=3, batch_size=128,
+         d_hid=32, d_atom_feat=3, n_prop_step=3,
          score_fn='trans',
          n_attention_head=1, n_epochs=10000, d_readout=32, learning_rate=1e-3, l2_lambda=0, dropout=0.1,
          patience=8, train_neg_pos_ratio=1, transR=False, transH=False, trained_setting_pkl=None, best_model_pkl=None,
@@ -214,18 +213,7 @@ def main(input_data_path, n_side_effect, side_effect_idx_dict, n_atom_type, n_bo
     print(len(graph_dict))
     if dataset_name == "twosides":
         # 'pos'/'neg' will point to a dictionary where
-        # each se points to a list of drug-drug pairs.
-        train_dataset = {'pos': {}, 'neg': {}}
-        test_dataset = pickle.load(open(input_data_path + "/" + str(fold_i) + "fold.npy", "rb"))
-        valid_fold = fold_i - 1
-        valid_dataset = pickle.load(open(input_data_path + "/" + str(valid_fold) + "fold.npy", "rb"))
-
-        for i in range(1, valid_fold + 1):
-            if i != fold_i:
-                dataset = pickle.load(open(input_data_path + "/" + str(i) + "fold.npy", "rb"))
-                train_dataset['pos'] = combine(train_dataset['pos'], dataset['pos'])
-                train_dataset['neg'] = combine(train_dataset['neg'], dataset['neg'])
-
+        # each se points to a list of drug-drug pairs
         # assert data_opt.n_side_effect == len(opt.side_effects)
         dataloaders = prepare_ddi_dataloaders(graph_dict=graph_dict, side_effect_idx_dict=side_effect_idx_dict,
                                               train_dataset=train_dataset, train_neg_pos_ratio=train_neg_pos_ratio,
