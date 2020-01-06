@@ -111,10 +111,10 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
     paths["checkpoint_path"] = checkpoint_path
 
-    # cach_path = f"{input_path}/{dataset_params.get('dataset_name')}"
-    dc = DataCache()
-    cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
-        dataset_params.get('dataset_name')))
+    cach_path =  str(os.environ["INVIVO_CACHE_ROOT"]) + "/datasets-ressources/DDI/" + str(dataset_params.get('dataset_name'))
+    # dc = DataCache()
+    # cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
+    #     dataset_params.get('dataset_name')))
     expt_params = model_params
     print(f"Input folder: {cach_path}")
     print(f"Files in {cach_path}, {os.listdir(cach_path)}")
