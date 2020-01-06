@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
-##SBATCH --gres=gpu:p100:1
+#SBATCH --gres=gpu:v100:1
 #SBATCH --mem=32G
 #SBATCH --time=24:00:00
 #SBATCH --account=rrg-corbeilj-ac
-#SBATCH --array=0-5
+#SBATCH --array=0
 #SBATCH --mail-user=sewagnouin-rogia.kpanou.1@ulaval.ca
 #SBATCH --mail-type=ALL
 
