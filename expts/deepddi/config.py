@@ -6,7 +6,7 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["deepddi"],
-         split_mode=["random"],  # "leave_drugs_out"
+         split_mode=["leave_drugs_out"],  #
          test_size=[0.20],
          valid_size=[0.25],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
@@ -47,7 +47,6 @@ model_params = list(ParameterGrid(dict(
     loss_params=loss_params,
     dataloader=[True]
 )))
-
 
 
 @click.command()
