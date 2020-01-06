@@ -6,11 +6,13 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["random"],
+         split_mode=["leave_drugs_out"],
          test_size=[0.15],
          valid_size=[0.10],
          seed=[42],
-         debug=[False]
+         debug=[False],
+         n_folds=[9],
+         test_fold=[1]
          )
 ))
 
