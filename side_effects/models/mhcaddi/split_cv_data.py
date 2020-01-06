@@ -7,14 +7,16 @@ from collections import defaultdict
 
 import numpy as np
 import ujson as json
-from tqdm import tqdm
+
+
+# from tqdm import tqdm
 
 
 def read_graph_structure(drug_feat_idx_jsonl):
     with open(drug_feat_idx_jsonl) as f:
         drugs = [l.split('\t') for l in f]
         print("drugs ", drugs)
-        drugs = {idx: json.loads(graph) for idx, graph in tqdm(drugs)}
+        drugs = {idx: json.loads(graph) for idx, graph in drugs}
     return drugs
 
 
@@ -59,7 +61,7 @@ def prepare_dataset(se_dps_dict, drug_structure_dict):
     pos_datasets = {}
     neg_datasets = {}
 
-    for i, se in enumerate(tqdm(se_dps_dict)):
+    for i, se in enumerate(se_dps_dict):
         pos_se_ddp = list(se_dps_dict[se])  # copy
         neg_se_ddp = create_negative_instances(
             drug_idx_list, set(pos_se_ddp), size=len(pos_se_ddp))
@@ -154,7 +156,7 @@ def prepare_qm9_cv(opt):
     def read_qm9_labels(drug_labels_jsonl):
         with open(drug_labels_jsonl) as f:
             labels_dict = [l.split('\t') for l in f]
-            labels_dict = {idx: json.loads(labels) for idx, labels in tqdm(labels_dict)}
+            labels_dict = {idx: json.loads(labels) for idx, labels in labels_dict}
         return labels_dict
 
     # this is missing the "datasets" (graph pairs), because

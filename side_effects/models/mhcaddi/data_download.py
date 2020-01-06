@@ -56,11 +56,11 @@ def download_decagon_data(dir_path='./data/'):
     print('Unique drug count =', len(drug_idx))
 
     # # Step 2: Search on PubChem
-    from tqdm import tqdm_notebook
+    # from tqdm import tqdm_notebook
     import pubchempy as pcp
     # Use int type cid to search with PubChemPy
     drugs = {cid: pcp.Compound.from_cid(int(cid.strip('CID')))
-             for cid in tqdm_notebook(drug_idx)}
+             for cid in drug_idx}
 
     # # Step 3: Write to file
     import json

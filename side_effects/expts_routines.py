@@ -10,7 +10,7 @@ import side_effects.models.mhcaddi.data_preprocess as dp
 import side_effects.models.mhcaddi.split_cv_data as cv
 import side_effects.models.mhcaddi.test as test
 import side_effects.models.mhcaddi.train as train
-from side_effects.data.loader import get_data_partitions, DataCache, compute_classes_weight, compute_labels_density
+from side_effects.data.loader import get_data_partitions, compute_classes_weight, compute_labels_density
 from side_effects.models.deep_rf import DeepRF
 from side_effects.models.rgcn.link_predict import main
 from side_effects.trainer import Trainer
@@ -111,7 +111,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
     paths["checkpoint_path"] = checkpoint_path
 
-    cach_path =  str(os.environ["INVIVO_CACHE_ROOT"]) + "/datasets-ressources/DDI/" + str(dataset_params.get('dataset_name'))
+    cach_path = str(os.environ["INVIVO_CACHE_ROOT"]) + "/datasets-ressources/DDI/" + str(
+        dataset_params.get('dataset_name'))
     # dc = DataCache()
     # cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
     #     dataset_params.get('dataset_name')))
