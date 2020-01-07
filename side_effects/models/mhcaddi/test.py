@@ -93,6 +93,7 @@ def main(positive_data, negative_data, dataset_name, graph_dict, side_effect_idx
         # create data loader
         test_data = prepare_ddi_testset_dataloader(
             positive_data, negative_data, batch_size, graph_dict, side_effect_idx_dict)
+        print("Test Instance", test_data.__getitem__(0))
         print("batch_size", batch_size)
         # build model
         model, threshold = load_trained_model(transR, transH, device, n_side_effect, d_hid, d_readout, n_attention_head,

@@ -16,22 +16,21 @@ dataset_params = list(ParameterGrid(
          use_targets=[False],
          use_side_effect=[False],
          use_pharm=[False],
-         n_folds=[9],
-         test_fold=[1]
+         n_folds=[10],
+         test_fold=[9]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(evaluate_every=[1], n_epochs=[100], eval_batch_size=[500], with_early_stopping=[True])))
+    dict(evaluate_every=[1], n_epochs=[1], eval_batch_size=[500], with_early_stopping=[True])))
 
 network_params = list(ParameterGrid(dict(
     network_name=['RGCN'],
-    h_dim=[500],
-    num_bases=[100],
-    num_hidden_layers=[2],
+    h_dim=[16],
+    num_bases=[-1],
+    num_hidden_layers=[0],
     dropout=[0.2],
-    reg_param=[0.01],
-    n_bases=[100]
+    reg_param=[0.01]
 )))
 
 loss_params = list(ParameterGrid(dict(

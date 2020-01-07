@@ -125,7 +125,6 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
     train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)  # unseen_test_data
-
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
@@ -140,6 +139,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         if not (os.path.exists(cach_path + "/drug.bond_idx.wo_h.self_loop.json") and os.path.exists(
                 cach_path + "/drug.feat.wo_h.self_loop.idx.jsonl")):
             dp.main(path=cach_path, dataset_name=dataset_name)
+
         n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, test_dataset, valid_dataset = cv.main(
             path=cach_path,
             dataset_name=dataset_name,
@@ -166,12 +166,12 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
                               n_bond_type=n_bond_type,
                               n_side_effect=n_side_effect, best_model_pkl=paths.get("checkpoint_filename", None),
                               **networks_params)
-        target = test_perf.pop('y_true')
+        targets = test_perf.pop('y_true')
         preds = test_perf.pop('y_preds')
 
     elif model_name == 'RGCN':
-        target, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
-                             fit_params)
+        targets, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
+                              fit_params)
     elif model_name == "deeprf":
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:

@@ -11,13 +11,13 @@ dataset_params = list(ParameterGrid(
          valid_size=[0.10],
          seed=[42],
          debug=[False],
-         n_folds=[9],
-         test_fold=[1]
+         n_folds=[10],
+         test_fold=[9]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[1], batch_size=[256], patience=[8], l2_lambda=[0])))
+    dict(n_epochs=[1], batch_size=[256], patience=[3], l2_lambda=[0])))
 
 network_params = list(ParameterGrid(dict(
     network_name=['mhcaddi'],

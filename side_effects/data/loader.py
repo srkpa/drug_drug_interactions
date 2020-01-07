@@ -5,6 +5,7 @@ from itertools import product, chain
 
 import dgl
 from ivbase.utils.commons import to_tensor
+from sklearn.model_selection import KFold
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.utils import compute_class_weight
@@ -93,12 +94,13 @@ def _filter_pairs_one_exists(samples, filtering_set=None):
     return samples
 
 
-def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
-    def chunks(lst, n):
-        """Yield successive n-sized chunks from lst."""
-        for i in range(0, len(lst), n):
-            yield lst[i:i + n]
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
 
+
+def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
     valid_fold = random.choice([i for i in range(n_folds + 1) if i != test_fold])
     print("Validation fold = ", valid_fold)
     drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
@@ -125,46 +127,74 @@ def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
     return train_data, valid_data, test_data
 
 
+def get_cv_partitions(samples, n_folds, seed, shuffle=False):
+    k_folds = KFold(n_splits=n_folds, random_state=seed, shuffle=shuffle)
+    folds = defaultdict(tuple)
+    total = []
+    print("SAMPLES: ", len(samples))
+    i = 0
+    for train_index, test_index in k_folds.split(samples):
+        train_index, valid_index = train_test_split(train_index, test_size=(1 / n_folds) + .05, random_state=seed,
+                                                    shuffle=shuffle)
+        print("FOLD: ", i, "TRAIN:", len(train_index), "TEST:", len(test_index), "VALID:", len(valid_index))
+        train, valid, test = itemgetter(*train_index)(samples), itemgetter(*valid_index)(samples), itemgetter(
+            *test_index)(samples)
+        folds[i] = train, valid, test
+        total.extend(test_index)
+        i += 1
+    assert len(set(total)) == len(samples), "Problem 1: All the dataset will not be tested"
+    return folds
+
+
 def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25, seed=42, n_folds=1, test_fold=1):
     assert mode.lower() in ['random', 'leave_drugs_out']
     if mode == 'random':
-        train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
-        train, valid = train_test_split(train, test_size=valid_size)
+        if n_folds > 1:
+            samples = sorted(list(data.keys()))
+            cv_partitions = get_cv_partitions(samples, n_folds, seed, False)
+            train, valid, test = cv_partitions[test_fold]
+        else:
+            train, test = train_test_split(list(data.keys()), test_size=test_size, random_state=seed)
+            train, valid = train_test_split(train, test_size=valid_size)
 
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
         # unseen_data = test_data
     else:
-        if n_folds > 1:
-            return split_all_cross_validation(data=data, n_folds=n_folds, test_fold=test_fold, seed=42)
+        cv = False
         drugs = list(set([x1 for (x1, _) in data] + [x2 for (_, x2) in data]))
         drugs = sorted(drugs)
-
-        train_idx, test_idx = train_test_split(drugs, test_size=test_size, random_state=seed)
-        train_idx, valid_idx = train_test_split(train_idx, test_size=valid_size, random_state=seed)
+        if n_folds > 1:
+            cv = True
+            cv_partitions = get_cv_partitions(drugs, n_folds, seed, False)
+            train_idx, valid_idx, test_idx = cv_partitions[test_fold]
+            valid = set(product(valid_idx, repeat=2)).union(set(product(train_idx, valid_idx))).union(
+                set(product(valid_idx, train_idx)))
+            test = set(product(test_idx, repeat=2)).union(set(product(train_idx, test_idx))).union(
+                set(product(test_idx, train_idx)))
+            # return split_all_cross_validation(data=data, n_folds=n_folds, test_fold=test_fold, seed=42)
+        else:
+            train_idx, test_idx = train_test_split(drugs, test_size=test_size, random_state=seed)
+            train_idx, valid_idx = train_test_split(train_idx, test_size=valid_size, random_state=seed)
+            valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
+            test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
 
         train = set(product(train_idx, repeat=2))
-        valid = set(product(train_idx, valid_idx)).union(set(product(valid_idx, train_idx)))
-        test = set(product(train_idx, test_idx)).union(set(product(test_idx, train_idx)))
-        unseen = set(product(test_idx, repeat=2))
-
-        # add some gray zone
-
+        # unseen = set(product(test_idx, repeat=2))
         train = set(data.keys()).intersection(train)
         valid = set(data.keys()).intersection(valid)
         test = set(data.keys()).intersection(test)
-        unseen = set(data.keys()).intersection(unseen)
+        # unseen = set(data.keys()).intersection(unseen)
         train_drugs = list(set([x1 for (x1, _) in train] + [x2 for (_, x2) in train]))
-
         train_data = {k: data[k] for k in train}
         valid_data = {k: data[k] for k in valid}
         test_data = {k: data[k] for k in test}
         # unseen_data = {k: data[k] for k in unseen}
-
-        # filter out some pairs due to the intersection
-        valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
-        test_data = _filter_pairs_one_exists(test_data, train_drugs)
+        if not cv:
+            # filter out some pairs due to the intersection
+            valid_data = _filter_pairs_one_exists(valid_data, train_drugs)
+            test_data = _filter_pairs_one_exists(test_data, train_drugs)
 
     return train_data, valid_data, test_data
 

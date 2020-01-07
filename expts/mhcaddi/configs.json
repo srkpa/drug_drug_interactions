@@ -22,10 +22,10 @@
     {
       "dataset_name": "twosides",
       "debug": false,
-      "n_folds": 9,
+      "n_folds": 10,
       "seed": 42,
       "split_mode": "leave_drugs_out",
-      "test_fold": 1,
+      "test_fold": 9,
       "test_size": 0.15,
       "transformer": "seq",
       "valid_size": 0.1

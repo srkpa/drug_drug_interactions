@@ -4,14 +4,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from dgl.contrib.data import load_data
 from dgl.nn.pytorch import RelGraphConv
 
 from side_effects.models.rgcn import utils
 from side_effects.models.rgcn.model import BaseRGCN
 
 
-def load_data(train, valid, test):
+def reformat_data(train, valid, test):
     samples = train.samples + test.samples + valid.samples
     labels = list(set([l for (_, _, labels) in samples for l in labels]))
     labels.sort()
@@ -25,8 +24,7 @@ def load_data(train, valid, test):
         [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in valid.samples for rel
          in rels])
     test = np.array(
-        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in test.samples for rel
-         in rels])
+        [[graph_nodes_mapping[a], i, graph_nodes_mapping[b]] for (a, b, _) in test.samples for i in range(len(labels))])
     num_nodes = len(graph_drugs)
     print("# entities: {}".format(num_nodes))
     num_rels = len(labels_mapping)
@@ -103,11 +101,11 @@ def main(train, test, valid, model_state_file, model_params, fit_params):
     # set parameters
     network_params = model_params["network_params"]
     # load graph data
-    num_nodes, num_rels, train_data, valid_data, test_data = load_data(train=train, test=test, valid=valid)
+    num_nodes, num_rels, train_data, valid_data, test_data = reformat_data(train=train, test=test, valid=valid)
     # check cuda
     use_cuda = torch.cuda.is_available()
     if use_cuda:
-        torch.cuda.set_device(1)
+        torch.cuda.set_device(torch.cuda.current_device())
     # create model
     model = LinkPredict(in_dim=num_nodes,
                         h_dim=network_params.get("h_dim", 500),
@@ -208,46 +206,6 @@ def main(train, test, valid, model_state_file, model_params, fit_params):
     model.load_state_dict(checkpoint['state_dict'])
     print("Using best epoch: {}".format(checkpoint['epoch']))
     embed = model(test_graph, test_node_id, test_rel, test_norm)
-    # utils.calc_mrr(embed, model.w_relation, test_data,
-    #                hits=[1, 3, 10], eval_bz=fit_params.get("eval_batch_size", 500))
-    return test_data, embed
-
-#
-# if __name__ == '__main__':
-#     parser = argparse.ArgumentParser(description='RGCN')
-#     parser.add_argument("--dropout", type=float, default=0.2,
-#                         help="dropout probability")
-#     parser.add_argument("--n-hidden", type=int, default=500,
-#                         help="number of hidden units")
-#     parser.add_argument("--gpu", type=int, default=-1,
-#                         help="gpu")
-#     parser.add_argument("--lr", type=float, default=1e-2,
-#                         help="learning rate")
-#     parser.add_argument("--n-bases", type=int, default=100,
-#                         help="number of weight blocks for each relation")
-#     parser.add_argument("--n-layers", type=int, default=2,
-#                         help="number of propagation rounds")
-#     parser.add_argument("--n-epochs", type=int, default=6000,
-#                         help="number of minimum training epochs")
-#     parser.add_argument("-d", "--dataset", type=str, required=True,
-#                         help="dataset to use")
-#     parser.add_argument("--eval-batch-size", type=int, default=500,
-#                         help="batch size when evaluating")
-#     parser.add_argument("--regularization", type=float, default=0.01,
-#                         help="regularization weight")
-#     parser.add_argument("--grad-norm", type=float, default=1.0,
-#                         help="norm to clip gradient to")
-#     parser.add_argument("--graph-batch-size", type=int, default=30000,
-#                         help="number of edges to sample in each iteration")
-#     parser.add_argument("--graph-split-size", type=float, default=0.5,
-#                         help="portion of edges used as positive sample")
-#     parser.add_argument("--negative-sample", type=int, default=10,
-#                         help="number of negative samples per positive sample")
-#     parser.add_argument("--evaluate-every", type=int, default=500,
-#                         help="perform evaluation every n epochs")
-#     parser.add_argument("--edge-sampler", type=str, default="uniform",
-#                         help="type of edge sampler: 'uniform' or 'neighbor'")
-#
-#     args = parser.parse_args()
-#     print(args)
-#    main(args)
+    scores = model.calc_score(embed, test_data)
+    scores = F.sigmoid(scores)
+    return test_data, scores

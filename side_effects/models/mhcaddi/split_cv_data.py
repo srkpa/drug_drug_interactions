@@ -74,7 +74,7 @@ def prepare_dataset(se_dps_dict, drug_structure_dict):
 
 
 # To use our splitting scheme, I will have to modify this.
-def split_decagon_cv(train_dataset, valid_dataset, test_dataset, neg_datasets):
+def split_decagon_cv(train_dataset, valid_dataset, test_dataset, neg_datasets, side_effects):
     def split_all_cross_validation_datasets(dataset, neg_datasets):
         cv_dataset = {'pos': defaultdict(list), 'neg': defaultdict(list)}
         for did1, did2, sids in dataset.samples:
@@ -85,10 +85,20 @@ def split_decagon_cv(train_dataset, valid_dataset, test_dataset, neg_datasets):
             cv_dataset['neg'][se] = neg
             neg_datasets[se] = list(set(neg_datasets[se]) - set(neg))
         return neg_datasets, cv_dataset
+        # You have to build your own test dataset and remove all negative test samples from your neg sampled sets
+
+    test = {'pos': defaultdict(list), 'neg': defaultdict(list)}
+    for did1, did2, pos_labels in test_dataset.samples:
+        neg_labels = set(side_effects) - set(pos_labels)
+        for sid in pos_labels:
+            test['pos'][sid].append((did1, did2))
+        for n_sid in neg_labels:
+            test['neg'][n_sid].append((did1, did2))
+            neg_datasets[n_sid] = list(set(neg_datasets[n_sid]) - {(did1, did2)})
+        test_dataset = test
 
     negs, train_dataset = split_all_cross_validation_datasets(train_dataset, neg_datasets)
-    negs, test_dataset = split_all_cross_validation_datasets(test_dataset, negs)
-    negs, valid_dataset = split_all_cross_validation_datasets(valid_dataset, negs)
+    _, valid_dataset = split_all_cross_validation_datasets(valid_dataset, negs)
     return train_dataset, valid_dataset, test_dataset
 
 
@@ -101,11 +111,12 @@ def prepare_decagon_cv(path, train_dataset, test_dataset, valid_dataset, decagon
     print(len(graph_dict))
     side_effects, side_effect_idx_dict = read_ddi_instances(
         samples=samples, use_small_dataset=debug)
-    print("side effect", len(side_effects))
+    print("side effect", len(side_effects), list(side_effects.keys())[:2])
     pos_datasets, neg_datasets = prepare_dataset(side_effects, graph_dict)
     n_side_effect = len(side_effects)
     train_dataset, valid_dataset, test_dataset = split_decagon_cv(train_dataset, valid_dataset, test_dataset,
-                                                                  neg_datasets=neg_datasets)
+                                                                  neg_datasets=neg_datasets,
+                                                                  side_effects=list(side_effects.keys()))
     return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, valid_dataset, test_dataset
 
 

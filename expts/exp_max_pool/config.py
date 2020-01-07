@@ -7,16 +7,18 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["random"],  # "leave_drugs_out"
+         split_mode=["leave_drugs_out"],  #
          test_size=[0.10],
          valid_size=[0.15],
-         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[42],
          decagon=[False],
          use_clusters=[False],
          use_as_filter=[None],
          use_targets=[False],
          use_side_effect=[False],
-         use_pharm=[False]
+         use_pharm=[False],
+         n_folds=[9],
+         test_fold=[1]
          )
 ))
 
