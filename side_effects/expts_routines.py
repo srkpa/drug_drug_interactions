@@ -124,11 +124,11 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
-    train_data, valid_data, test_data = get_data_partitions(**dataset_params, input_path=cach_path)  # unseen_test_data
+    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)  # unseen_test_data
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
-    # uy_true, uy_probs, u_output = {}, {}, {}
+    uy_true, uy_probs, u_output = {}, {}, {}
     # Params processing
     if model_name == "mhcaddi":
         dataset_name = dataset_params.get('dataset_name', 'twosides')
@@ -201,15 +201,15 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
         targets, preds, test_perf = model.test(test_data)
-        # uy_true, uy_probs, u_output = model.test(unseen_test_data)
+        uy_true, uy_probs, u_output = model.test(unseen_test_data)
 
     # Save model  test results
     pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
     pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
     pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
-    # pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
-    # pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
-    # pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
+    pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
+    pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
+    pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
     # pr.disable()
     # pr.print_stats()
     # pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))

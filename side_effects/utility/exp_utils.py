@@ -14,6 +14,7 @@ from ivbase.utils.aws import aws_cli
 
 from side_effects.data.loader import get_data_partitions
 from side_effects.metrics import auprc_score, roc_auc_score
+from side_effects.trainer import wrapped_partial
 
 INVIVO_RESULTS = ""  # os.environ["INVIVO_RESULTS_ROOT"]
 
@@ -424,7 +425,7 @@ def __check_if_overlaps(data, subset):
     return i, j, k
 
 
-def __get_dataset_stats__(task_id):
+def __get_dataset_stats__(task_id, level='pair'):
     test_stats = []
     cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
     config = json.load(open(task_id, "rb"))
@@ -434,57 +435,81 @@ def __get_dataset_stats__(task_id):
                       key in get_data_partitions.__code__.co_varnames}
     dataset_name = dataset_params["dataset_name"]
     split_mode = dataset_params["split_mode"]
+    detailed_split_scheme = split_mode if split_mode == "random" else "soft early"
+    columns = ["dataset_name", "seed", "splitting scheme", "drugs pairs in test set",
+               "Both of the drugs are seen",
+               "One of the drug is seen",
+               "None of the drugs were seen "] if level == "pair" else ["dataset_name", "seed", "splitting scheme",
+                                                                        "no.drugs (train)",
+                                                                        "no. drugs (valid)", "no. drugs (test drugs)",
+                                                                        "train ∩ valid", "train ∩ test", "valid ∩ test"]
     seed = dataset_params["seed"]
     input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
     dataset_params["input_path"] = input_path
-    train, _, test1 = get_data_partitions(**dataset_params) #test2
+    train, valid, test1, test2 = get_data_partitions(**dataset_params)  # test2
 
-    train_samples, test1_samples = train.samples, test1.samples#, test2.samples
-    test2_samples = []
+    train_samples, test1_samples, test2_samples = train.samples, test1.samples, test2.samples
     test = [(d1, d2) for (d1, d2, _) in test1_samples]
-    print("Number of drugs pairs - test 1 ", len(test))
     train_drugs = set([d1 for (d1, _, _) in train_samples] + [d2 for (_, d2, _) in train_samples])
     test1_drugs = set([d1 for (d1, _, _) in test1_samples] + [d2 for (_, d2, _) in test1_samples])
+    valid_drugs = set([d1 for (d1, _, _) in valid.samples] + [d2 for (_, d2, _) in valid.samples])
+
+    if level == "drugs":
+        b = train_drugs.intersection(valid_drugs)
+        l = train_drugs.intersection(test1_drugs)
+        g = valid_drugs.intersection(test1_drugs)
+        prec = dataset_name, seed, detailed_split_scheme, len(train_drugs), len(valid_drugs), len(test1_drugs), len(
+            b), len(
+            l), len(g)
+    else:
+        i, j, k = __check_if_overlaps(train_drugs, test)
+        prec = dataset_name, seed, detailed_split_scheme, len(set(test)), i, j, k
+    test_stats += [prec]
+
+    print("Number of drugs pairs - test 1 ", len(test))
     print("Number of train drugs", len(set(train_drugs)))
     print("Number of test set 1 drugs ", len(set(test1_drugs)))
-    i, j, k = __check_if_overlaps(train_drugs, test)
 
     if split_mode == "leave_drugs_out":
-        test_stats.append((dataset_name, seed, "early split-test set 1", len(set(test)), i, j, k))
         test = [(d1, d2) for (d1, d2, _) in test2_samples]
         test2_drugs = set([d1 for (d1, _, _) in test2_samples] + [d2 for (_, d2, _) in test2_samples])
         print("Number of drugs pairs - test 2 ", len(test))
         print("Number of test set 2 drugs", len(set(test2_drugs)))
         assert len(set(train_drugs).intersection(test2_drugs)) == 0
-        i, j, k = __check_if_overlaps(train_drugs, test)
-        test_stats.append((dataset_name, seed, "early split-test set 2", len(set(test)), i, j, k))
-    else:
-        test_stats.append((dataset_name, seed, "Random ", len(set(test)), i, j, k))
+        if level == "drugs":
+            b = train_drugs.intersection(valid_drugs)
+            l = train_drugs.intersection(test2_drugs)
+            g = valid_drugs.intersection(test2_drugs)
+            prec = dataset_name, seed, "hard early", len(train_drugs), len(valid_drugs), len(
+                test2_drugs), len(b), len(
+                l), len(g)
+        else:
+            i, j, k = __check_if_overlaps(train_drugs, test)
+            prec = dataset_name, seed, "hard early", len(set(test)), i, j, k
+        test_stats += [prec]
 
-    df = pd.DataFrame(test_stats,
-                      columns=["dataset_name", "seed", "splitting scheme", "drugs pairs in test set",
-                               "Both of the drugs are seen",
-                               "One of the drug is seen",
-                               "None of the drugs were seen "])
+    df = pd.DataFrame(test_stats, columns=columns)
     return df
 
 
-def get_dataset_stats(task_ids=None, exp_path=None, split=True):
+def get_dataset_stats(task_ids=None, exp_path=None, split=True, level='pair'):
     if not task_ids:
         assert exp_path is not None
         task_ids = [fp for fp in glob.glob(f"{exp_path}/*.json")]
     print(task_ids)
-    df = pd.concat(list(map(__get_dataset_stats__, task_ids)), ignore_index=True)
-    df.to_csv("../../results/dataset_params_stats.csv")
+    df = pd.concat(list(map(wrapped_partial(__get_dataset_stats__, level=level), task_ids)), ignore_index=True)
+    df.to_csv(f"../../results/{level}_dataset_params_stats.csv")
     print(df)
-    overall_summary = df.groupby(["dataset_name", "splitting scheme"]).mean().round()
-    overall_summary.to_csv(f"../../results/all-modes_dataset_params_stats.csv")
+    mean_sp = df.groupby(["dataset_name", "splitting scheme"]).mean().round()
+    mean_std = df.groupby(["dataset_name", "splitting scheme"]).std().round(3)
+    overall_summary = mean_sp.astype(str) + " ± " + mean_std.astype(str)
+    overall_summary.to_csv(f"../../results/{level}_all-modes_dataset_params_stats.csv")
     if split:
         modes = df["splitting scheme"].unique()
         df["splitting scheme"].fillna(inplace=True, value="null")
         for mod in modes:
             res = df[df["splitting scheme"] == mod]
-            res.to_csv(f"../../results/{mod}_dataset_params_stats.csv")
+            res.to_csv(f"../../results/{level}_{mod}_dataset_params_stats.csv")
 
 
 def get_misclassified_labels(path, label=0, items=10):
@@ -525,19 +550,23 @@ def get_misclassified_labels(path, label=0, items=10):
 # False positive vs False negatives
 
 def get_best_hp():
-    dt = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
-    d = dt.groupby(["dataset_name", "model_name", "split_mode"], as_index=False)["micro_auprc"].max()
-    print(list(d))
-    c = []
-    for index, row in d.iterrows():
-        c.append(dt.loc[(dt["dataset_name"] == row["dataset_name"]) & (dt["model_name"] == row["model_name"]) & (
-                dt["split_mode"] == row["split_mode"]) & (dt["micro_auprc"] == row["micro_auprc"])])
-    f = pd.concat(c)
-    print(f)
-    f.to_csv("../../results/temp.csv")
+    res = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
+    config_hp = res.groupby(["dataset_name", "model_name", "split_mode"], as_index=False)["micro_auprc"].max()
+    print(list(config_hp))
+    best_exp_hps = []
+    for index, row in config_hp.iterrows():
+        best_exp_hps.append(
+            res.loc[(res["dataset_name"] == row["dataset_name"]) & (res["model_name"] == row["model_name"]) & (
+                    res["split_mode"] == row["split_mode"]) & (res["micro_auprc"] == row["micro_auprc"])])
+    out = pd.concat(best_exp_hps)
+    print(out)
+    out.to_csv("../../results/temp.csv")
 
 
 if __name__ == '__main__':
+    get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
+    get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
+    exit()
     df = __get_dataset_stats__("/home/rogia/.invivo/result/deepddi/twosides_deepddi_4ebbb144_params.json")
     print(df)
     exit()
