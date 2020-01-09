@@ -146,7 +146,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         if debug:
             a = b = c = 20
         else:
-            a, b, c = len(train_data.samples), len(valid_data.samples), len(test_data.sample)
+            a, b, c = len(train_data.samples), len(valid_data.samples), len(test_data.samples)
         ddis_data = sorted(train_data.samples)[:a] + sorted(valid_data.samples)[:b] + sorted(test_data.samples)[:c]
         train_dataset, valid_dataset, test_dataset = list(
             map(cv.prepare_twosides_dataset,
