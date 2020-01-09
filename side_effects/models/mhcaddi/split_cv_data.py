@@ -4,7 +4,7 @@
 import pickle
 import random
 from collections import defaultdict
-
+from itertools import chain
 import numpy as np
 import ujson as json
 
@@ -15,7 +15,7 @@ import ujson as json
 def read_graph_structure(drug_feat_idx_jsonl):
     with open(drug_feat_idx_jsonl) as f:
         drugs = [l.split('\t') for l in f]
-        print("drugs ", drugs)
+        # print("drugs ", drugs)
         drugs = {idx: json.loads(graph) for idx, graph in drugs}
     return drugs
 
@@ -74,50 +74,39 @@ def prepare_dataset(se_dps_dict, drug_structure_dict):
 
 
 # To use our splitting scheme, I will have to modify this.
-def split_decagon_cv(train_dataset, valid_dataset, test_dataset, neg_datasets, side_effects):
-    def split_all_cross_validation_datasets(dataset, neg_datasets):
-        cv_dataset = {'pos': defaultdict(list), 'neg': defaultdict(list)}
-        for did1, did2, sids in dataset.samples:
-            for sid in sids:
-                cv_dataset['pos'][sid].append((did1, did2))
-        for se, pos_did in cv_dataset['pos'].items():
-            neg = random.sample(neg_datasets[se], len(pos_did))
-            cv_dataset['neg'][se] = neg
-            neg_datasets[se] = list(set(neg_datasets[se]) - set(neg))
-        return neg_datasets, cv_dataset
-        # You have to build your own test dataset and remove all negative test samples from your neg sampled sets
-
-    test = {'pos': defaultdict(list), 'neg': defaultdict(list)}
-    for did1, did2, pos_labels in test_dataset.samples:
-        neg_labels = set(side_effects) - set(pos_labels)
-        for sid in pos_labels:
-            test['pos'][sid].append((did1, did2))
-        for n_sid in neg_labels:
-            test['neg'][n_sid].append((did1, did2))
-            neg_datasets[n_sid] = list(set(neg_datasets[n_sid]) - {(did1, did2)})
-        test_dataset = test
-
-    negs, train_dataset = split_all_cross_validation_datasets(train_dataset, neg_datasets)
-    _, valid_dataset = split_all_cross_validation_datasets(valid_dataset, negs)
-    return train_dataset, valid_dataset, test_dataset
+def prepare_twosides_dataset(instances):
+    cpt = 0
+    cv_dataset = {'pos': defaultdict(list), 'neg': defaultdict(list)}
+    for did1, did2, sids in instances:
+        for sid in sids:
+            cv_dataset['pos'][sid].append((did1, did2))
+    k = sorted(cv_dataset.get("pos").items())
+    print("k", len(k))
+    for i, l in enumerate(k):
+        se, pos = l
+        neg = set(list(chain.from_iterable([dd for _, dd in k[(i + 1):]] + [dd for _, dd in k[:i]]))) - set(pos)
+        cv_dataset['neg'][se] = list(neg)
+        cpt += (len(pos) + len(neg))
+        assert len(pos) + len(neg) == len(instances)
+    assert len(cv_dataset['neg']) == len(cv_dataset['neg']), "Not the correct number of side effect"
+    print("TOTAL INTERAC. ", cpt)
+    return cv_dataset
 
 
-def prepare_decagon_cv(path, train_dataset, test_dataset, valid_dataset, decagon_graph_data, debug,
+def prepare_decagon_cv(path, ddis, decagon_graph_data, debug,
                        n_atom_type=100, n_bond_type=12):
-    # samples
-    samples = train_dataset.samples + test_dataset.samples + valid_dataset.samples
     # graph_dict is ex drug_dict.
     graph_dict = read_graph_structure(path + "/" + decagon_graph_data)
     print(len(graph_dict))
     side_effects, side_effect_idx_dict = read_ddi_instances(
-        samples=samples, use_small_dataset=debug)
+        samples=ddis, use_small_dataset=debug)
     print("side effect", len(side_effects), list(side_effects.keys())[:2])
-    pos_datasets, neg_datasets = prepare_dataset(side_effects, graph_dict)
+    # pos_datasets, neg_datasets = prepare_dataset(side_effects, graph_dict)
     n_side_effect = len(side_effects)
-    train_dataset, valid_dataset, test_dataset = split_decagon_cv(train_dataset, valid_dataset, test_dataset,
-                                                                  neg_datasets=neg_datasets,
-                                                                  side_effects=list(side_effects.keys()))
-    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, valid_dataset, test_dataset
+    # train_dataset, valid_dataset, test_dataset = split_decagon_cv(train_dataset, valid_dataset, test_dataset,
+    #                                                               neg_datasets=neg_datasets,
+    #                                                               side_effects=list(side_effects.keys()))
+    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict
 
 
 def split_qm9_cv(graph_dict, labels_dict, opt):
@@ -181,16 +170,16 @@ def prepare_qm9_cv(opt):
     return opt
 
 
-def main(path, dataset_name, train_dataset, test_dataset, valid_dataset, ddi_data='bio-decagon-combo.csv',
+def main(path, dataset_name, ddi_data,
          decagon_graph_data="drug.feat.wo_h.self_loop.idx.jsonl",
          n_fold=3, debug=True, qm9_labels='viz_drug.labels.jsonl', qm9_graph_data="viz_drug.feat.self_loop.idx.jsonl"):
     n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = 0, 0, 0, 0, 0
     if dataset_name == "twosides":
-        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, valid_dataset, test_dataset = prepare_decagon_cv(
+        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = prepare_decagon_cv(
             path=path,
             decagon_graph_data=decagon_graph_data,
-            debug=debug, train_dataset=train_dataset, test_dataset=test_dataset, valid_dataset=valid_dataset)
+            debug=debug, ddis=ddi_data)
 
     # print('Dump to file:', path + "/input_data.npy")
     # np.save(path + "/input_data.npy", opt)
-    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, test_dataset, valid_dataset
+    return n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict

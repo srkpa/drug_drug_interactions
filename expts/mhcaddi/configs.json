@@ -21,7 +21,7 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
-      "debug": false,
+      "debug": true,
       "n_folds": 10,
       "seed": 42,
       "split_mode": "leave_drugs_out",
@@ -36,7 +36,7 @@
       "batch_size": 256,
       "l2_lambda": 0,
       "n_epochs": 1,
-      "patience": 8
+      "patience": 3
     }
   ]
 }

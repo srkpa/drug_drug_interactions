@@ -80,11 +80,15 @@ def ddi_train_epoch(model, data_train, optimizer, averaged_model, device, transH
 
 def ddi_valid_epoch(model, data_valid, device, threshold=None):
     model.eval()
-
-    score, label, seidx = [], [], []
+    ddis, score, label, seidx = [], [], [], []
+    # hey
+    track = data_valid.dataset.tracker_on
     start = time.time()
     with torch.no_grad():
         for batch in tqdm(data_valid, mininterval=3, leave=False, desc='  - (Validation)  '):
+            if track:
+                ddis += [list(zip(*batch[0]))]
+                batch = batch[1:]
             *batch, batch_label = batch
             batch = [v.to(device) for v in batch]  # move to GPU if needed
             # forward
@@ -113,19 +117,15 @@ def ddi_valid_epoch(model, data_valid, device, threshold=None):
         score = sigmoid(score)  # to prob
         instance_threshold = np.ones_like(score) * 0.5
 
-    pred = score > instance_threshold
+    score = score > instance_threshold
     # calculate the performance
     performance = {
         'auroc': metrics.roc_auc_score(label, score),
         'avg_p': metrics.average_precision_score(label, score),
-        'f1': metrics.f1_score(label, pred, average='binary'),
-        'p': metrics.precision_score(label, pred, average='binary'),
-        'r': metrics.recall_score(label, pred, average='binary'),
-        'threshold': threshold,
-        'y_preds': pred,
-        'y_true': label
-
+        'f1': metrics.f1_score(label, score, average='binary'),
+        'p': metrics.precision_score(label, score, average='binary'),
+        'r': metrics.recall_score(label, score, average='binary'),
+        'threshold': threshold
     }
-
     used_time = (time.time() - start) / 60
-    return performance, used_time
+    return ddis, seidx, score, label, performance, used_time

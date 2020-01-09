@@ -21,10 +21,10 @@ def preprocess_decagon(dir_path='./data/'):
 
     atom_attr_keys = {a_key for d in raw_drugs.values()
                       for a in d['atoms'] for a_key in a.keys()}
-    print('Possible atom attribute names:', atom_attr_keys)
+   # print('Possible atom attribute names:', atom_attr_keys)
     bond_attr_keys = {b_key for d in raw_drugs.values()
                       for b in d['bonds'] for b_key in b.keys()}
-    print('Possible bond attribute names:', bond_attr_keys)
+    # print('Possible bond attribute names:', bond_attr_keys)
 
     # # Pre-process steps:
     # ## 1. Calculate the number of Hydrogen for every atom.

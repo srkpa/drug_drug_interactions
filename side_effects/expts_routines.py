@@ -4,6 +4,7 @@ import os
 import pickle
 import warnings
 from collections import MutableMapping
+from itertools import chain
 
 import side_effects.models.mhcaddi.data_download as dd
 import side_effects.models.mhcaddi.data_preprocess as dp
@@ -124,7 +125,9 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
-    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params, input_path=cach_path)  # unseen_test_data
+    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params,
+                                                                              input_path=cach_path)  # unseen_test_data
+
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
@@ -140,34 +143,51 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
                 cach_path + "/drug.feat.wo_h.self_loop.idx.jsonl")):
             dp.main(path=cach_path, dataset_name=dataset_name)
 
-        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict, train_dataset, test_dataset, valid_dataset = cv.main(
-            path=cach_path,
-            dataset_name=dataset_name,
-            ddi_data='bio-decagon-combo.csv',
-            n_fold=3,
-            debug=debug, train_dataset=train_data, test_dataset=test_data, valid_dataset=valid_data)
+        if debug:
+            a = b = c = 20
+        else:
+            a, b, c = len(train_data.samples), len(valid_data.samples), len(test_data.sample)
+        ddis_data = sorted(train_data.samples)[:a] + sorted(valid_data.samples)[:b] + sorted(test_data.samples)[:c]
+        train_dataset, valid_dataset, test_dataset = list(
+            map(cv.prepare_twosides_dataset,
+                [sorted(train_data.samples)[:a], sorted(valid_data.samples)[:b], sorted(test_data.samples)[:c]]))
 
-        test_data = train.main(n_side_effect=n_side_effect, exp_prefix="", dataset_name=dataset_name,
-                               n_atom_type=n_atom_type,
-                               train_dataset=train_dataset,
-                               test_dataset=test_dataset,
-                               valid_dataset=valid_dataset,
-                               n_bond_type=n_bond_type, graph_dict=graph_dict,
-                               side_effect_idx_dict=side_effect_idx_dict,
-                               result_csv_file=paths.get("log_filename"),
-                               input_data_path=cach_path, model_dir=output_path, result_dir=output_path,
-                               setting_dir=output_path, best_model_pkl=paths.get("checkpoint_filename", None),
-                               **fit_params, **networks_params, **model_params)
+        n_atom_type, n_bond_type, graph_dict, n_side_effect, side_effect_idx_dict = cv.main(
+            path=cach_path,
+            ddi_data=ddis_data,
+            dataset_name=dataset_name,
+            n_fold=3,
+            debug=False)
+
+        train.main(n_side_effect=n_side_effect, exp_prefix="", dataset_name=dataset_name,
+                   n_atom_type=n_atom_type,
+                   train_dataset=train_dataset,
+                   test_dataset=test_dataset,
+                   valid_dataset=valid_dataset,
+                   n_bond_type=n_bond_type, graph_dict=graph_dict,
+                   side_effect_idx_dict=side_effect_idx_dict,
+                   result_csv_file=paths.get("log_filename"),
+                   input_data_path=cach_path, model_dir=output_path, result_dir=output_path,
+                   setting_dir=output_path, best_model_pkl=paths.get("checkpoint_filename", None),
+                   **fit_params, **networks_params, **model_params)
         # need to recreate the model
         networks_params = {k: v for k, v in networks_params.items() if k in test.main.__code__.co_varnames}
         # Test
-        test_perf = test.main(positive_data=test_data['pos'], negative_data=test_data['neg'], dataset_name=dataset_name,
-                              graph_dict=graph_dict, side_effect_idx_dict=side_effect_idx_dict, n_atom_type=n_atom_type,
-                              n_bond_type=n_bond_type,
-                              n_side_effect=n_side_effect, best_model_pkl=paths.get("checkpoint_filename", None),
-                              **networks_params)
-        targets = test_perf.pop('y_true')
-        preds = test_perf.pop('y_preds')
+        ddis, seidx, score, label = test.main(positive_data=test_dataset['pos'], negative_data=test_dataset['neg'],
+                                              dataset_name=dataset_name,
+                                              graph_dict=graph_dict, side_effect_idx_dict=side_effect_idx_dict,
+                                              n_atom_type=n_atom_type,
+                                              n_bond_type=n_bond_type,
+                                              n_side_effect=n_side_effect,
+                                              best_model_pkl=paths.get("checkpoint_filename", None),
+                                              **networks_params)
+        #  Reformat final res
+        side_effect_idx_dict = {idx: sid for sid, idx in side_effect_idx_dict.items()}
+        ddis = list(chain.from_iterable(ddis))
+        seidx = [side_effect_idx_dict[idx] for idx in seidx]
+        output = list(zip(ddis, seidx, score, label))
+        print("TOTAL SCORES. ", len(output), len(output[0]))
+        pickle.dump(output, open(paths.get('result_filename'), "wb"))
 
     elif model_name == 'RGCN':
         targets, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
@@ -203,13 +223,13 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         targets, preds, test_perf = model.test(test_data)
         uy_true, uy_probs, u_output = model.test(unseen_test_data)
 
-    # Save model  test results
-    pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
-    pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
-    pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
-    pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
-    pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
-    pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
+        # Save model  test results
+        pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
+        pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
+        pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
+        pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
+        pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
+        pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
     # pr.disable()
     # pr.print_stats()
     # pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))

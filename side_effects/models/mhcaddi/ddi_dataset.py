@@ -25,8 +25,12 @@ def ddi_collate_paired_batch(paired_batch):
 
 
 def ddi_collate_batch(batch, return_label):
-    drug1, drug2, se_idx_lists, label = list(zip(*batch))
-
+    y = len(batch[0]) > 4
+    a, b = None, None
+    if y:
+        a, b, drug1, drug2, se_idx_lists, label = list(zip(*batch))
+    else:
+        drug1, drug2, se_idx_lists, label = list(zip(*batch))
     ddi_idxs1, ddi_idxs2 = collate_drug_pairs(drug1, drug2)
     drug1 = (*collate_drugs(drug1), *ddi_idxs1)
     drug2 = (*collate_drugs(drug2), *ddi_idxs2)
@@ -36,8 +40,12 @@ def ddi_collate_batch(batch, return_label):
     if return_label:
         label = np.hstack([
             [label_i] * len(ses_i) for ses_i, label_i in zip(se_idx_lists, label)])
+        if a and b:
+            return ((a, b), *drug1, *drug2, se_idx, se_seg, label)
         return (*drug1, *drug2, se_idx, se_seg, label)
     else:
+        if a and b:
+            return ((a, b), *drug1, *drug2, se_idx, se_seg, label)
         return (*drug1, *drug2, se_idx, se_seg)
 
 
@@ -94,16 +102,16 @@ class PolypharmacyDataset(torch.utils.data.Dataset):
             negative_sampling=False,
             negative_sample_ratio=1,
             n_max_batch_se=1,
-            paired_input=False):
+            paired_input=False,
+            tracking=False):
 
         assert se_pos_dps
         assert se_neg_dps or negative_sampling
         assert not (se_neg_dps and negative_sampling)
         assert type(negative_sample_ratio) is int and negative_sample_ratio >= 1
-
+        self.tracker_on = tracking
         self.negative_sampling = negative_sampling
         self.paired_input = paired_input
-
         self.se_idx_dict = se_idx_dict
         """
         print("Se idx dict ")
@@ -221,4 +229,6 @@ class PolypharmacyDataset(torch.utils.data.Dataset):
         drug_idx1, drug_idx2, se_idx_lists, label = instance
         drug1 = self.drug_structure_dict[drug_idx1]
         drug2 = self.drug_structure_dict[drug_idx2]
-        return drug1, drug2, se_idx_lists, label
+        if not self.tracker_on:
+            return drug1, drug2, se_idx_lists, label
+        return drug_idx1, drug_idx2, drug1, drug2, se_idx_lists, label

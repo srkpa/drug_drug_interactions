@@ -10,7 +10,7 @@ dataset_params = list(ParameterGrid(
          test_size=[0.15],
          valid_size=[0.10],
          seed=[42],
-         debug=[False],
+         debug=[True],
          n_folds=[10],
          test_fold=[9]
          )

@@ -2,7 +2,7 @@ import logging
 
 import torch
 import torch.utils.data
-
+from sklearn import metrics
 from .ddi_dataset import PolypharmacyDataset, ddi_collate_batch
 from .qm9_dataset import QM9Dataset, qm9_collate_batch
 # from drug_data_util import copy_dataset_from_pkl
@@ -50,8 +50,8 @@ def prepare_ddi_testset_dataloader(positive_set, negative_set, batch_size, drug_
             se_idx_dict=side_effect_idx_dict,
             se_pos_dps=positive_set,
             se_neg_dps=negative_set,
-            n_max_batch_se=1),
-        num_workers=2,
+            n_max_batch_se=1, tracking=True),
+        num_workers=0,
         batch_size=batch_size,
         collate_fn=lambda x: ddi_collate_batch(x, return_label=True))
     return test_loader
@@ -87,23 +87,15 @@ def main(positive_data, negative_data, dataset_name, graph_dict, side_effect_idx
          d_hid, d_readout, n_attention_head, d_atom_feat, n_prop_step, n_atom_type, n_bond_type, best_model_pkl=None,
          batch_size=200):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print("positive data", positive_data)
-    print("negative data", negative_data)
     if dataset_name == "twosides":
         # create data loader
         test_data = prepare_ddi_testset_dataloader(
             positive_data, negative_data, batch_size, graph_dict, side_effect_idx_dict)
-        print("Test Instance", test_data.__getitem__(0))
-        print("batch_size", batch_size)
         # build model
         model, threshold = load_trained_model(transR, transH, device, n_side_effect, d_hid, d_readout, n_attention_head,
                                               n_prop_step,
                                               best_model_pkl, n_atom_type, n_bond_type, d_atom_feat)
         # print("Threshold", threshold)
         # start testing
-        test_perf, _ = run_evaluation(model, test_data, device, dataset_name)
-        for k, v in test_perf.items():
-            if k != 'threshold':
-                print(k, v)
-            # print_performance_table({k: v for k, v in test_perf.items() if k != 'threshold'})
-        return test_perf
+        ddis, seidx, score, label, _, _ = run_evaluation(model, test_data, device, dataset_name)
+        return ddis, seidx, score, label

@@ -73,7 +73,7 @@ def prepare_ddi_dataloaders(graph_dict, side_effect_idx_dict, train_dataset, tra
             negative_sample_ratio=train_neg_pos_ratio,
             paired_input=True,
             n_max_batch_se=10),
-        num_workers=2,
+        num_workers=0,
         batch_size=batch_size,
         collate_fn=ddi_collate_paired_batch,
         shuffle=True)
@@ -85,7 +85,7 @@ def prepare_ddi_dataloaders(graph_dict, side_effect_idx_dict, train_dataset, tra
             se_pos_dps=valid_dataset['pos'],
             se_neg_dps=valid_dataset['neg'],
             n_max_batch_se=1),
-        num_workers=2,
+        num_workers=0,
         batch_size=batch_size,
         collate_fn=lambda x: ddi_collate_batch(x, return_label=True))
     return train_loader, valid_loader
@@ -140,12 +140,15 @@ def train(model, datasets, device, dataset_name, l2_lambda, learning_rate, resul
         updated_model = model.state_dict()  # validation start
         model.load_state_dict(averaged_model)
 
-        valid_perf, elapse = valid_epoch(model, data_valid, device, dataset_name)
+        _, _, _, _, valid_perf, elapse = valid_epoch(model, data_valid, device, dataset_name)
         # AUROC is in fact MAE for QM9
         valid_auroc = valid_perf['auroc']
         if dataset_name == "qm9":
             individual_maes = valid_perf['individual_maes']
         logging.info('  Validation: %5f, used time: %f min', valid_auroc, elapse)
+        with open(result_csv_file, 'w+') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow([train_loss, valid_auroc])
         # print_performance_table({k: v for k, v in valid_perf.items() if k != 'threshold'})
 
         # Load back the trained weight

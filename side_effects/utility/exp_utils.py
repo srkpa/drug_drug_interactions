@@ -571,7 +571,7 @@ if __name__ == '__main__':
     print(df)
     exit()
     # summarize_experiments("/media/rogia/CLé USB/expts/")
-    # visualize_test_perf()
+    visualize_test_perf()
     # analyze_models_predictions()
     get_misclassified_labels(path="../../results/", label=0)
     exit()
