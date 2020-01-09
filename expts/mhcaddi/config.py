@@ -6,18 +6,18 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["leave_drugs_out"],
+         split_mode=["leave_drugs_out", "random"],
          test_size=[0.15],
          valid_size=[0.10],
          seed=[42],
-         debug=[True],
+         debug=[False],
          n_folds=[10],
          test_fold=[9]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[1], batch_size=[256], patience=[3], l2_lambda=[0])))
+    dict(n_epochs=[100], batch_size=[256], patience=[3], l2_lambda=[0])))
 
 network_params = list(ParameterGrid(dict(
     network_name=['mhcaddi'],
