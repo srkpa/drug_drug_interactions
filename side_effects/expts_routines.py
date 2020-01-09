@@ -190,8 +190,9 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         pickle.dump(output, open(paths.get('result_filename'), "wb"))
 
     elif model_name == 'RGCN':
-        targets, preds = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
-                              fit_params)
+        output = main(train_data, test_data, valid_data, paths.get("checkpoint_filename", None), model_params,
+                      fit_params, debug=False)
+        pickle.dump(output, open(paths.get('result_filename'), "wb"))
     elif model_name == "deeprf":
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:

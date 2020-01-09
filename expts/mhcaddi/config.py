@@ -7,12 +7,12 @@ dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
          split_mode=["leave_drugs_out", "random"],
-         test_size=[0.15],
-         valid_size=[0.10],
+         test_size=[0.10],
+         valid_size=[0.15],
          seed=[42],
          debug=[False],
          n_folds=[10],
-         test_fold=[9]
+         test_fold=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
          )
 ))
 

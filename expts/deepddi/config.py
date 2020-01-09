@@ -6,9 +6,9 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["deepddi"],
-         split_mode=["leave_drugs_out"],  #
-         test_size=[0.20],
-         valid_size=[0.25],
+         split_mode=["leave_drugs_out", "random"],  #
+         test_size=[0.10],
+         valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
@@ -17,7 +17,7 @@ dataset_params = list(ParameterGrid(
          use_side_effect=[False],
          use_pharm=[False],
          n_folds=[10],
-         test_fold=[1]
+         test_fold=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
          )
 ))
 
@@ -27,7 +27,7 @@ fit_params = list(ParameterGrid(
 network_params = list(ParameterGrid(dict(
     network_name=['deepddi'],
     input_dim=[100],
-    hidden_sizes=[[2048] * 9]
+    hidden_sizes=[[2048] * 8]
 )))
 
 loss_params = list(ParameterGrid(dict(

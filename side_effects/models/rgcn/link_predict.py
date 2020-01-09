@@ -10,29 +10,46 @@ from side_effects.models.rgcn import utils
 from side_effects.models.rgcn.model import BaseRGCN
 
 
-def reformat_data(train, valid, test):
-    samples = train.samples + test.samples + valid.samples
+def read_ddi_as_triplets(train, valid, test, debug):
+    if debug:
+        a = b = c = 20
+    else:
+        a, b, c = len(train.samples), len(valid.samples), len(test.samples)
+    samples = sorted(train.samples)[:a] + sorted(valid.samples)[:b] + sorted(test.samples)[:c]
     labels = list(set([l for (_, _, labels) in samples for l in labels]))
     labels.sort()
     labels_mapping = {label: i for i, label in enumerate(labels)}
+    print("# side effects ", len(labels_mapping))
     graph_drugs = list(set([d1 for (d1, _, _) in samples] + [d2 for (_, d2, _) in samples]))
     graph_nodes_mapping = {node: i for i, node in enumerate(graph_drugs)}
-    train = np.array(
-        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in train.samples for rel
-         in rels])
-    valid = np.array(
-        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in valid.samples for rel
-         in rels])
-    test = np.array(
-        [[graph_nodes_mapping[a], i, graph_nodes_mapping[b]] for (a, b, _) in test.samples for i in range(len(labels))])
     num_nodes = len(graph_drugs)
     print("# entities: {}".format(num_nodes))
+    train = np.array(
+        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in
+         sorted(train.samples)[:a] for
+         rel
+         in rels])
+    valid = np.array(
+        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b]] for (a, b, rels) in
+         sorted(valid.samples)[:b] for
+         rel
+         in rels])
+    neg = [(a, b, set(labels_mapping.keys()) - set(rels)) for (a, b, rels) in sorted(test.samples)[:c]]
+    test = np.array(
+        [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b], True] for (a, b, rels) in
+         sorted(test.samples)[:c]
+         for rel
+         in rels] + [[graph_nodes_mapping[a], labels_mapping[rel], graph_nodes_mapping[b], False] for (a, b, rels) in
+                     neg for rel
+                     in rels])
+
     num_rels = len(labels_mapping)
     print("# relations: {}".format(num_rels))
     print("# edges: {}".format(len(train)))
     print("# test edges: {}".format(len(test)))
 
-    return num_nodes, num_rels, train, valid, test
+    return {idx: sid for sid, idx in labels_mapping.items()}, {idx: sid for sid, idx in
+                                                               graph_nodes_mapping.items()}, num_nodes, num_rels, train, valid, test
 
 
 class EmbeddingLayer(nn.Module):
@@ -97,11 +114,16 @@ def node_norm_to_edge_norm(g, node_norm):
     return g.edata['norm']
 
 
-def main(train, test, valid, model_state_file, model_params, fit_params):
+def main(train, test, valid, model_state_file, model_params, fit_params, debug):
     # set parameters
     network_params = model_params["network_params"]
     # load graph data
-    num_nodes, num_rels, train_data, valid_data, test_data = reformat_data(train=train, test=test, valid=valid)
+    seidx, drugidx, num_nodes, num_rels, train_data, valid_data, test_data = read_ddi_as_triplets(train=train,
+                                                                                                  test=test,
+                                                                                                  valid=valid,
+                                                                                                  debug=debug)
+    output = [((drugidx[did1], drugidx[did2]), seidx[se], None, typ) for did1, se, did2, typ in test_data]
+    test_data = test_data[:, :3]
     # check cuda
     use_cuda = torch.cuda.is_available()
     if use_cuda:
@@ -208,4 +230,8 @@ def main(train, test, valid, model_state_file, model_params, fit_params):
     embed = model(test_graph, test_node_id, test_rel, test_norm)
     scores = model.calc_score(embed, test_data)
     scores = F.sigmoid(scores)
-    return test_data, scores
+    for i, (dps, se, sco, typs) in enumerate(output):
+        assert sco is None
+        output[i] = (dps, se, scores[i].data.item(), typs)
+    print("TOTAL PREC.", len(output))
+    return output

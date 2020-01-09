@@ -2,7 +2,7 @@
   "model_params": [
     {
       "edge_sampler": "uniform",
-      "graph_batch_size": 30000,
+      "graph_batch_size": 300,
       "graph_split_size": 0.5,
       "loss": "bce",
       "lr": 0.01,
@@ -30,7 +30,7 @@
       "n_folds": 10,
       "seed": 42,
       "split_mode": "leave_drugs_out",
-      "test_fold": 1,
+      "test_fold": 9,
       "test_size": 0.1,
       "transformer": "deepddi",
       "use_as_filter": null,

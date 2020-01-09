@@ -192,7 +192,7 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
 # plt.show()
 
 
-def update_model_name(exp_name, pool_arch, graph_net_params, attention_params):
+def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
     has = False
     if exp_name == "lstm":
         exp_name = "BiLSTM"
@@ -247,7 +247,7 @@ def __loop_through_exp(path, compute_metric=True):
             att_params = config.get(
                 "model_params.network_params.att_hidden_dim", 0) if att_params is None else att_params
             att_params = 0 if att_params is None else att_params
-            exp_name = update_model_name(exp, pool_arch, graph_net, att_params)
+            exp_name = set_model_name(exp, pool_arch, graph_net, att_params)
             dataset_name = config["dataset_params.dataset_name"]
             mode = config["dataset_params.split_mode"]
             seed = config["dataset_params.seed"]
