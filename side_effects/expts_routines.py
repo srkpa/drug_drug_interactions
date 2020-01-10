@@ -222,15 +222,17 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
         targets, preds, test_perf = model.test(test_data)
-        uy_true, uy_probs, u_output = model.test(unseen_test_data)
-
         # Save model  test results
         pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
         pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
         pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
-        pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
-        pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
-        pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
+
+        if len(unseen_test_data.samples):
+            uy_true, uy_probs, u_output = model.test(unseen_test_data)
+            pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
+            pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
+            pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))
+
     # pr.disable()
     # pr.print_stats()
     # pr.dump_stats(os.path.join(output_path, "profiling_result.txt"))

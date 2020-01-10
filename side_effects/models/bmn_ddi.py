@@ -79,24 +79,16 @@ class BMNDDI(nn.Module):
                                          output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
 
         else:
-            if self.att_mode == "co-att":
-                #self.proj_norm = LayerNorm(__C.FLAT_OUT_SIZE)
-                #self.proj = nn.Linear(__C.FLAT_OUT_SIZE, answer_size)
-
-                self.coatt = CoAttLayer(dim1=dfe_out_dim, dim2=dfe_out_dim)
-                self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                                             output_dim=output_dim, last_layer_activation=None, **kwargs)
-            else:
-                self.classifier = nn.Sequential(
-                    fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                               output_dim=output_dim, last_layer_activation='relu', **kwargs),
-                    SelfAttentionLayer(att_hidden_dim),
-                    nn.Sigmoid()
-                )
+            self.classifier = nn.Sequential(
+                fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
+                           output_dim=output_dim, last_layer_activation='relu', **kwargs),
+                SelfAttentionLayer(att_hidden_dim),
+                nn.Sigmoid()
+            )
 
     def forward(self, batch):
         drugs_a, drugs_b, = batch[:2]
-        aux_net_inputs = batch[2:]
+        add_feats = batch[2:]
         if self.graph_net is None:
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
         else:
@@ -136,8 +128,8 @@ class BMNDDI(nn.Module):
         else:
             ddi = torch.cat((features_drug1, features_drug2), 1)
 
-        if aux_net_inputs:
-            a_ux_net_feat = self.auxnet_feature_extractor(torch.cat(aux_net_inputs, 1))
+        if add_feats:
+            a_ux_net_feat = self.auxnet_feature_extractor(torch.cat(add_feats, 1))
             ddi = torch.cat((ddi, a_ux_net_feat), 1)
 
         out = self.classifier(ddi)

@@ -16,7 +16,7 @@ class BaseRGCN(nn.Module):
         self.use_self_loop = use_self_loop
         self.use_cuda = use_cuda
 
-        # create rgcn layers
+        # create kf_rgcn layers
         self.build_model()
 
     def build_model(self):

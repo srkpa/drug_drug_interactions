@@ -12,6 +12,7 @@ from sklearn.utils import compute_class_weight
 from torch.utils.data import Dataset
 
 from side_effects.data.transforms import *
+from side_effects.metrics import wrapped_partial
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
@@ -200,7 +201,7 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
                  build_graph=False, graph_drugs_mapping=None, gene_net=None, drug_gene_net=None, decagon=False,
-                 drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward"):
+                 drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward", switch='binary'):
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.data_type = all([isinstance(v, (torch.Tensor, np.ndarray)) for v in list(drug_to_smiles.values())])
@@ -215,6 +216,7 @@ class DDIdataset(Dataset):
         self.drug_gene_net = drug_gene_net
         self.decagon = decagon
         self.has_purpose = purpose
+        self.framework = switch
         if self.has_graph:
             self.build_graph()
 
@@ -255,17 +257,13 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
 
         elif not self.data_type:
-            y = to_tensor(target, self.gpu)
+            # y = to_tensor(target, self.gpu)
+            # I don't remember why i did this
             if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
                 if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
                         [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
-                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu),
-                             to_tensor(drug1[-1], gpu=self.gpu))
-                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug1[1], gpu=self.gpu),
-                             to_tensor(drug2[-1], gpu=self.gpu))
-                else:
-                    drug1 = (to_tensor(drug1[0], gpu=self.gpu), to_tensor(drug1[-1], gpu=self.gpu))
-                    drug2 = (to_tensor(drug2[0], gpu=self.gpu), to_tensor(drug2[-1], gpu=self.gpu))
+                    drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
+                    drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
                     y = to_tensor(np.expand_dims(target, axis=0), self.gpu)
             res = ((drug1, drug2), y)
 

@@ -209,7 +209,7 @@ def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
             exp_name = "CNN + GIN"
         if int(attention_params) > 0:
             has = True
-    elif exp_name == "deepddi":
+    elif exp_name == "kf_deepddi":
         exp_name = "DeepDDI"
     else:
         exp_name = ""
@@ -567,7 +567,7 @@ if __name__ == '__main__':
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
     exit()
-    df = __get_dataset_stats__("/home/rogia/.invivo/result/deepddi/twosides_deepddi_4ebbb144_params.json")
+    df = __get_dataset_stats__("/home/rogia/.invivo/result/kf_deepddi/twosides_deepddi_4ebbb144_params.json")
     print(df)
     exit()
     # summarize_experiments("/media/rogia/CLé USB/expts/")
@@ -636,7 +636,7 @@ if __name__ == '__main__':
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-    # # display_H("/home/rogia/.invivo/result/gin_lapool/drugbank_bmnddi_12c974de_log.log")
+    # # display_H("/home/rogia/.invivo/result/kf_lapool/drugbank_bmnddi_12c974de_log.log")
     # # exit()
     # c = get_expt_results("/home/rogia/.invivo/result/")
     # print(c)
