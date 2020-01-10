@@ -126,7 +126,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params,
-                                                                              input_path=cach_path)  # unseen_test_data
+                                                                              input_path=cach_path, debug=debug)
 
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
