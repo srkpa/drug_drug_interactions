@@ -128,14 +128,13 @@ def split_all_cross_validation(data, n_folds=5, test_fold=1, seed=42):
 
 
 def get_cv_partitions(samples, n_folds, seed, shuffle=False):
-    k_folds = KFold(n_splits=n_folds, random_state=seed, shuffle=shuffle)
+    k_folds = KFold(n_splits=n_folds, random_state=seed)
     folds = defaultdict(tuple)
     total = []
     print("SAMPLES: ", len(samples))
     i = 0
     for train_index, test_index in k_folds.split(samples):
-        train_index, valid_index = train_test_split(train_index, test_size=(1 / n_folds) + .05, random_state=seed,
-                                                    shuffle=shuffle)
+        train_index, valid_index = train_test_split(train_index, test_size=(1 / n_folds) + .05, random_state=seed)
         print("FOLD: ", i, "TRAIN:", len(train_index), "TEST:", len(test_index), "VALID:", len(valid_index))
         train, valid, test = itemgetter(*train_index)(samples), itemgetter(*valid_index)(samples), itemgetter(
             *test_index)(samples)
