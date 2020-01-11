@@ -17,6 +17,9 @@ from side_effects.models import all_networks_dict
 
 def get_metrics():
     all_metrics_dict = dict(
+        bin_auprc=wrapped_partial(auprc_score, average='micro', mode="binary"),
+        bin_roc=wrapped_partial(roc_auc_score, average='micro', mode="binary"),
+        bin_acc=wrapped_partial(accuracy_score, average='micro', mode='binary'),
         micro_roc=wrapped_partial(roc_auc_score, average='micro'),
         macro_roc=wrapped_partial(roc_auc_score, average='macro'),
         micro_auprc=wrapped_partial(auprc_score, average='micro'),
@@ -84,11 +87,11 @@ class Trainer(ivbt.Trainer):
         self.loss_name = loss
         self.loss_params = loss_params
         self.dataloader_from_dataset = dataloader
-        metrics_names = ['micro_roc', 'micro_auprc'] if metrics_names is None else metrics_names
+        metrics_names = [] if metrics_names is None else metrics_names
         metrics = {name: get_metrics()[name] for name in metrics_names}
 
         ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu, metrics=metrics,
-                              loss_fn=BinaryCrossEntropyP(**loss_params), snapshot_path=snapshot_dir)
+                              loss_fn=BinaryCrossEntropyP(loss=loss, **loss_params), snapshot_path=snapshot_dir)
 
         # Model.__init__(self, model=network, optimizer=optimizer,
         #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
@@ -143,13 +146,20 @@ class Trainer(ivbt.Trainer):
 
     def test(self, dataset, batch_size=256):
         y = dataset.get_targets()
+        metrics_val = []
         if self.dataloader_from_dataset:
             loader = DataLoader(dataset, batch_size=batch_size)
-            _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
+            if self.metrics:
+                _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
+            else:
+                _, y_pred = self.evaluate_generator(loader, return_pred=True)
         else:
             loader = batch_generator(dataset, batch_size, infinite=False, shuffle=False)
             nsteps = ceil(len(dataset) / (batch_size * 1.0))
-            _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
+            if self.metrics:
+                _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
+            else:
+                _, y_pred = self.evaluate_generator(loader, return_pred=True)
 
         y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():

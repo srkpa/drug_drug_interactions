@@ -19,7 +19,7 @@ dataset_params = list(ParameterGrid(
          n_folds=[10],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['binary'],
-         debug=[True]
+         debug=[False]
          )
 ))
 
@@ -29,11 +29,11 @@ fit_params = list(ParameterGrid(
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
          vocab_size=[151],
-         embedding_size=[512],
+         embedding_size=[32],
          cnn_sizes=[
-             [1024]
+             [64]
          ],
-         kernel_size=[[17]],
+         kernel_size=[[3]],
          pooling_len=[2],
          b_norm=[False],
          pooling=["max"]
@@ -42,9 +42,11 @@ drug_features_extractor_params = list(ParameterGrid(
 ))
 
 network_params = list(ParameterGrid(dict(
-    network_name=['bmnddi'],
+    network_name=['bibmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    fc_layers_dim=[[1024]],
+    vocab_size=[964],
+    embedding_size=[32],
+    fc_layers_dim=[[200]],
     mode=["concat"],
     dropout=[0],
     b_norm=[True],
@@ -62,8 +64,8 @@ model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
     lr=[1e-4],
-    loss=['bce'],
-    metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    loss=['crossentropy'],
+    metrics_names=[['bin_roc', 'bin_auprc', 'bin_acc']],
     loss_params=loss_params,
     dataloader=[True]
 )))

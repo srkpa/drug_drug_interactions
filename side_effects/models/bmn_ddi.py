@@ -35,6 +35,8 @@ class SelfAttentionLayer(AttentionLayer):
         return super().forward(x, x, x).squeeze(-1)
 
 
+#
+
 class BMNDDI(nn.Module):
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, output_dim, mode='concat',
                  att_mode=None, att_hidden_dim=None, graph_network_params=None, edges_embedding_dim=None,
@@ -141,3 +143,4 @@ class BMNDDI(nn.Module):
         self.nodes = nodes
         self.edges = edges
         self.adj_mat = (edges.sum(2) > 0).float()
+

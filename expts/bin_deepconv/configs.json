@@ -2,7 +2,7 @@
   "model_params": [
     {
       "dataloader": true,
-      "loss": "bce",
+      "loss": "crossentropy",
       "loss_params": {
         "use_binary_cost_per_batch": false,
         "use_fixed_binary_cost": false,
@@ -12,10 +12,9 @@
       },
       "lr": 0.0001,
       "metrics_names": [
-        "macro_roc",
-        "macro_auprc",
-        "micro_roc",
-        "micro_auprc"
+        "bin_roc",
+        "bin_auprc",
+        "bin_acc"
       ],
       "network_params": {
         "b_norm": true,
@@ -24,21 +23,23 @@
           "arch": "conv1d",
           "b_norm": false,
           "cnn_sizes": [
-            1024
+            64
           ],
-          "embedding_size": 512,
+          "embedding_size": 32,
           "kernel_size": [
-            17
+            3
           ],
           "pooling": "max",
           "pooling_len": 2,
           "vocab_size": 151
         },
+        "embedding_size": 32,
         "fc_layers_dim": [
-          1024
+          200
         ],
         "mode": "concat",
-        "network_name": "bmnddi"
+        "network_name": "bibmnddi",
+        "vocab_size": 964
       },
       "optimizer": "adam"
     }
@@ -46,7 +47,7 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
-      "debug": true,
+      "debug": false,
       "decagon": false,
       "label": "binary",
       "n_folds": 10,
@@ -64,7 +65,7 @@
     },
     {
       "dataset_name": "twosides",
-      "debug": true,
+      "debug": false,
       "decagon": false,
       "label": "binary",
       "n_folds": 10,

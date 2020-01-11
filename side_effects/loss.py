@@ -1,4 +1,5 @@
 import torch
+from poutyne.framework.metrics.metrics import get_loss_or_metric
 from torch.distributions.categorical import Categorical
 from torch.nn import Module
 from torch.nn import Parameter
@@ -54,8 +55,9 @@ class WeightedBinaryCrossEntropy1(Module):
 class BinaryCrossEntropyP(Module):
 
     def __init__(self, use_negative_sampling, weight, density,
-                 use_binary_cost_per_batch, use_label_cost_per_batch):
+                 use_binary_cost_per_batch, use_label_cost_per_batch, loss='bce'):
         super(BinaryCrossEntropyP, self).__init__()
+        self.loss_fn = get_loss_or_metric(loss)
         self.use_negative_sampling = use_negative_sampling
         self.weighted_loss_params = dict(batch_weight=use_binary_cost_per_batch,
                                          batch_density=use_label_cost_per_batch,
@@ -66,7 +68,6 @@ class BinaryCrossEntropyP(Module):
             [isinstance(val, torch.Tensor) or val is True for val in list(self.weighted_loss_params.values())])
 
     def forward(self, input, target):
-        assert input.shape == target.shape
         if self.use_negative_sampling and self.training:
             mask = (target == 1).float()
             for i, col in enumerate(target.t()):
@@ -79,7 +80,7 @@ class BinaryCrossEntropyP(Module):
         elif self.use_weighted_loss and self.training:
             loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(input, target)
         else:
-            loss = binary_cross_entropy(input, target)  # hinge_embedding_loss(input, target) #
+            loss = self.loss_fn(input, target)  # hinge_embedding_loss(input, target) #
         return loss
 
 

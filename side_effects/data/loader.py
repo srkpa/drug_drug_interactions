@@ -204,6 +204,8 @@ class DDIdataset(Dataset):
                  drug_gene_net=None, decagon=False,
                  drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward", switch='ml',
                  negative_sampling=False):
+
+        # raise an exception if side effect is None
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
         self.data_type = all([isinstance(v, (torch.Tensor, np.ndarray)) for v in list(drug_to_smiles.values())])
@@ -221,8 +223,9 @@ class DDIdataset(Dataset):
         self.neg_sampling = negative_sampling
         self.use_binary_labels = switch == "binary" and side_effects_idx_dict is not None
         if self.use_binary_labels:
+            self.drug_pairs, self.se_pos_dps, self.se_neg_dps = [], [], []
             self.side_effects_idx_dict = side_effects_idx_dict
-            self.prepare_feeding_insts(negative_sampling=negative_sampling)
+            self.prepare_feeding_insts()
         if self.has_graph:
             self.build_graph()
 
@@ -230,14 +233,18 @@ class DDIdataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, item):
-        # instance fetching...
         if self.use_binary_labels:
-            drug1_id, drug2_id, side_effect, label = self.samples[item]
-            side_effect = self.side_effects_idx_dict[side_effect]
-            target = label
+            drug1_id, drug2_id = self.drug_pairs[item]
+            prob = np.random.uniform()
+            if prob >= .5:
+                return (
+                           to_tensor(self.drug_to_smiles[drug1_id], self.gpu),
+                           to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
+                           np.random.choice(self.se_pos_dps[item], 1)), 1
             return (
-                to_tensor(self.drug_to_smiles[drug1_id], self.gpu), to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
-                side_effect, target)
+                       to_tensor(self.drug_to_smiles[drug1_id], self.gpu),
+                       to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
+                       np.random.choice(self.se_neg_dps[item], 1)), 0
 
         drug1_id, drug2_id, label = self.samples[item]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
@@ -283,29 +290,15 @@ class DDIdataset(Dataset):
             res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
         return res
 
-    def prepare_feeding_insts(self, negative_sampling):
-        instances = self.samples
-        feeding_insts = []
-        pos_dps, neg_dps = defaultdict(list), defaultdict(list)
-        for did1, did2, sids in instances:
-            for sid in sids:
-                pos_dps[sid].append((did1, did2))
-        k = sorted(pos_dps.items())
-        print("k", len(k))
-        for i, l in enumerate(k):
-            se, pos = l
-            neg = set(list(chain.from_iterable([dd for _, dd in k[(i + 1):]] + [dd for _, dd in k[:i]]))) - set(pos)
-            neg_dps[se] = list(neg)
-            assert len(pos) + len(neg) == len(instances)
-        assert len(neg_dps) == len(pos_dps), "Not the same side effects in each set"
-        for se, dps in pos_dps.items():
-            neg_samples = neg_dps[se]
-            if negative_sampling:
-                neg_samples = random.choices(neg_samples, k=len(dps))
-            inst = [(*dp, se, 1) for dp in dps] + [(*dp, se, 0) for dp in neg_samples]
-            feeding_insts += inst
-        self.samples = feeding_insts
-        print("TOTAL INTERAC. ", len(self.samples))
+    def prepare_feeding_insts(self):
+        did1, did2, pos_dps = list(zip(*self.samples))
+        drug_pairs = list(zip(did1, did2))
+        neg_dps = list(map(lambda x: set(self.side_effects_idx_dict.keys()) - set(x), pos_dps))
+        neg_dps = list(map(lambda x: [self.side_effects_idx_dict.get(seidx, None) for seidx in x], neg_dps))
+        pos_dps = list(map(lambda x: [self.side_effects_idx_dict.get(seidx, None) for seidx in x], pos_dps))
+        self.drug_pairs = drug_pairs
+        self.se_pos_dps = pos_dps
+        self.se_neg_dps = neg_dps
 
     def get_aux_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
@@ -315,8 +308,6 @@ class DDIdataset(Dataset):
 
     @property
     def nb_labels(self):
-        if self.use_binary_labels:
-            return len(set([l for (_, _, _, l) in self.samples]))
         return len(self.labels_vectorizer.classes_)
 
     def get_samples(self):

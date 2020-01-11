@@ -5,7 +5,7 @@ import pickle
 import warnings
 from collections import MutableMapping
 from itertools import chain
-
+from torch.nn.functional import cross_entropy
 import side_effects.models.mhcaddi.data_download as dd
 import side_effects.models.mhcaddi.data_preprocess as dp
 import side_effects.models.mhcaddi.split_cv_data as cv
