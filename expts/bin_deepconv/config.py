@@ -19,12 +19,12 @@ dataset_params = list(ParameterGrid(
          n_folds=[10],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['binary'],
-         debug=[False]
+         debug=[True]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[10], batch_size=[256], with_early_stopping=[True])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],

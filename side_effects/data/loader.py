@@ -203,7 +203,7 @@ class DDIdataset(Dataset):
                  build_graph=False, side_effects_idx_dict=None, graph_drugs_mapping=None, gene_net=None,
                  drug_gene_net=None, decagon=False,
                  drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward", switch='ml',
-                 negative_sampling=False):
+                 negative_sampling=False, read_as_triplets=False):
 
         # raise an exception if side effect is None
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
@@ -221,11 +221,15 @@ class DDIdataset(Dataset):
         self.decagon = decagon
         self.has_purpose = purpose
         self.neg_sampling = negative_sampling
+        self.side_effects_idx_dict = side_effects_idx_dict
         self.use_binary_labels = switch == "binary" and side_effects_idx_dict is not None
+        self.testing = switch == "binary" and read_as_triplets
         if self.use_binary_labels:
             self.drug_pairs, self.se_pos_dps, self.se_neg_dps = [], [], []
-            self.side_effects_idx_dict = side_effects_idx_dict
             self.prepare_feeding_insts()
+        if self.testing:
+            self.feeding_insts = []
+            self.prepare_test_feeding_insts()  # for test - Need to be approved?
         if self.has_graph:
             self.build_graph()
 
@@ -234,17 +238,20 @@ class DDIdataset(Dataset):
 
     def __getitem__(self, item):
         if self.use_binary_labels:
+            # Need also to be approved ??
+            # if self.testing:
+            #     drug1_id, drug2_id, seidx, target = self.feeding_insts[item]
+            #     return (
+            #                to_tensor(self.drug_to_smiles[drug1_id], self.gpu),
+            #                to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
+            #                seidx), target
             drug1_id, drug2_id = self.drug_pairs[item]
             prob = np.random.uniform()
-            if prob >= .5:
-                return (
-                           to_tensor(self.drug_to_smiles[drug1_id], self.gpu),
-                           to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
-                           np.random.choice(self.se_pos_dps[item], 1)), 1
+            chosen_sid, y = (self.se_pos_dps[item], 1) if prob >= .5 else (self.se_neg_dps[item], 0)
             return (
                        to_tensor(self.drug_to_smiles[drug1_id], self.gpu),
                        to_tensor(self.drug_to_smiles[drug2_id], self.gpu),
-                       np.random.choice(self.se_neg_dps[item], 1)), 0
+                       np.random.choice(chosen_sid, 1)), y
 
         drug1_id, drug2_id, label = self.samples[item]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
@@ -299,6 +306,13 @@ class DDIdataset(Dataset):
         self.drug_pairs = drug_pairs
         self.se_pos_dps = pos_dps
         self.se_neg_dps = neg_dps
+
+    def prepare_test_feeding_insts(self):
+        mbl = self.get_targets()
+        feeding_insts = [(*self.samples[item][:2], seidx, 1) for (item, seidx) in (mbl == 1).nonzero()] + [
+            (*self.samples[item][:2], seidx, 0) for (item, seidx) in (mbl == 0).nonzero()]
+        random.shuffle(feeding_insts)
+        self.feeding_insts = feeding_insts
 
     def get_aux_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
@@ -421,10 +435,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                             n_folds=n_folds, test_fold=test_fold)
 
     if debug:
-        train_data = dict(sorted(train_data.items())[:5])
-        valid_data = dict(sorted(valid_data.items())[:5])
-        test_data = dict(sorted(test_data.items())[:5])
-        unseen_data = dict(sorted(unseen_data.items())[:5])
+        train_data = dict(sorted(train_data.items())[:20])
+        valid_data = dict(sorted(valid_data.items())[:20])
+        test_data = dict(sorted(test_data.items())[:20])
+        unseen_data = dict(sorted(unseen_data.items())[:20])
 
     print(
         f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
@@ -471,11 +485,14 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         else:
             # add binary label transformer
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
-                                       drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label)
+                                       drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
+                                       read_as_triplets=False)
             valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
-                                       drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label)
+                                       drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
+                                       read_as_triplets=False)
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
-                                      drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label)
+                                      drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
+                                      read_as_triplets=True)
             print(train_dataset.nb_labels)
             unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
                                         drugstargets=drug2targets,
