@@ -17,9 +17,6 @@ from side_effects.models import all_networks_dict
 
 def get_metrics():
     all_metrics_dict = dict(
-        bin_auprc=wrapped_partial(auprc_score, average='micro', mode="binary"),
-        bin_roc=wrapped_partial(roc_auc_score, average='micro', mode="binary"),
-        bin_acc=wrapped_partial(accuracy_score, average='micro', mode='binary'),
         micro_roc=wrapped_partial(roc_auc_score, average='micro'),
         macro_roc=wrapped_partial(roc_auc_score, average='macro'),
         micro_auprc=wrapped_partial(auprc_score, average='micro'),
@@ -73,7 +70,7 @@ class TensorBoardLogger2(Logger):
 class Trainer(ivbt.Trainer):
 
     def __init__(self, network_params, loss_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
-                 metrics_names=None, snapshot_dir="", dataloader=True):  # use_negative_sampled_loss=False,
+                 metrics_names=None, snapshot_dir="", dataloader=True):
 
         self.history = None
         network_name = network_params.pop('network_name')
@@ -145,6 +142,7 @@ class Trainer(ivbt.Trainer):
         return self
 
     def test(self, dataset, batch_size=256):
+        self.model.testing = True
         y = dataset.get_targets()
         metrics_val = []
         if self.dataloader_from_dataset:

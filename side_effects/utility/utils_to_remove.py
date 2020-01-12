@@ -14,7 +14,7 @@ from side_effects.data.utils import TDGLDataset, MyDataset
 from side_effects.inits import *
 from side_effects.loss import WeightedBinaryCrossEntropy1, weighted_binary_cross_entropy3, \
     WeightedBinaryCrossEntropy2
-from side_effects.models.bmn_ddi import PCNN, FCNet, BMNDDI, DeepDDI, DGLGraph
+from side_effects.models.bmn_ddi_v0 import PCNN, FCNet, BMNDDI, DeepDDI, DGLGraph
 
 all_networks_dict = dict(
     pcnn=PCNN,

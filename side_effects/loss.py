@@ -4,7 +4,7 @@ from torch.distributions.categorical import Categorical
 from torch.nn import Module
 from torch.nn import Parameter
 from torch.nn.functional import binary_cross_entropy
-
+from ivbase.utils.commons import to_tensor
 from side_effects.data.loader import compute_labels_density, compute_classes_weight
 
 
@@ -68,6 +68,7 @@ class BinaryCrossEntropyP(Module):
             [isinstance(val, torch.Tensor) or val is True for val in list(self.weighted_loss_params.values())])
 
     def forward(self, input, target):
+        assert input.shape == target.shape
         if self.use_negative_sampling and self.training:
             mask = (target == 1).float()
             for i, col in enumerate(target.t()):

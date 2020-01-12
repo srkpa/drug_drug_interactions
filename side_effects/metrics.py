@@ -11,10 +11,7 @@ def wrapped_partial(func, **kwargs):
     return partial_func
 
 
-def roc_auc_score(y_pred, y_true, average, mode="binary"):
-    if mode == "binary":
-        y_pred = y_pred.max(dim=1)[1]
-        return skm.roc_auc_score(y_true, y_pred, average='micro')
+def roc_auc_score(y_pred, y_true, average):
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:
         out = []
@@ -28,10 +25,7 @@ def roc_auc_score(y_pred, y_true, average, mode="binary"):
     return ivbm.roc_auc_score(y_pred, y_true, average=average)
 
 
-def auprc_score(y_pred, y_true, average, mode="binary"):
-    if mode == "binary":
-        y_pred = y_pred.max(dim=1)[1]
-        return skm.average_precision_score(y_true, y_pred, average='micro')
+def auprc_score(y_pred, y_true, average):
     assert y_true.shape == y_pred.shape
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:
@@ -67,10 +61,7 @@ def recall_score(y_pred, y_true, average, threshold=0.5):
     skm.recall_score(y_true, y_pred, average=average)
 
 
-def accuracy_score(y_pred, y_true, average, threshold=0.5, mode="binary"):
-    if mode == "binary":
-        y_pred = y_pred.max(dim=1)[1]
-        return skm.accuracy_score(y_true, y_pred)
+def accuracy_score(y_pred, y_true, average, threshold=0.5):
     assert y_true.shape == y_pred.shape
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     y_pred = np.where(y_pred >= threshold, 1, 0)

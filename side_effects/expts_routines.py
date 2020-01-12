@@ -5,7 +5,7 @@ import pickle
 import warnings
 from collections import MutableMapping
 from itertools import chain
-from torch.nn.functional import cross_entropy
+
 import side_effects.models.mhcaddi.data_download as dd
 import side_effects.models.mhcaddi.data_preprocess as dp
 import side_effects.models.mhcaddi.split_cv_data as cv
@@ -53,7 +53,8 @@ def get_all_output_filenames(output_path, all_params):
         targets_filename="{}/{}_{}_{}_targets.pkl".format(output_path, data_name, model_name, out_prefix),
         preds_filename="{}/{}_{}_{}_preds.pkl".format(output_path, data_name, model_name, out_prefix),
         targets_2_filename="{}/{}_{}_{}-targets.pkl".format(output_path, data_name, model_name, out_prefix),
-        preds_2_filename="{}/{}_{}_{}-preds.pkl".format(output_path, data_name, model_name, out_prefix)
+        preds_2_filename="{}/{}_{}_{}-preds.pkl".format(output_path, data_name, model_name, out_prefix),
+        raw_preds_filename="{}/{}_{}_{}_scores.csv".format(output_path, data_name, model_name, out_prefix)
     ), out_prefix
 
 
@@ -213,7 +214,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
             train_data, valid_data, model_params = fit_encoders(model_params=model_params, train_data=train_data,
                                                                 valid_data=valid_data, fit_params=fit_params)
         # Train and save
-        model_params['network_params'].update(dict(output_dim=train_data.nb_labels))
+        model_params['network_params'].update(
+            dict(nb_side_effects=train_data.nb_labels, exp_prefix=paths["raw_preds_filename"]))
         model = Trainer(**model_params, snapshot_dir=restore_path)
         print(model.model)
         model.cuda()
