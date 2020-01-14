@@ -109,7 +109,8 @@ def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN"):
             print(split)
             scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
             i += 1
-    plt.savefig(f"../../results/scores.png")
+    plt.show()
+    #plt.savefig(f"../../results/scores.png")
 
 
 # plt.show()
@@ -252,7 +253,8 @@ def __loop_through_exp(path, compute_metric=True):
             mode = config["dataset_params.split_mode"]
             seed = config["dataset_params.seed"]
             fmode = config.get("model_params.network_params.mode", None)
-            if task_id.endswith("_res"):
+            test_fold = config.get("dataset_params.test_fold", None)
+            if task_id.endswith("_res") and os.path.exists(os.path.join(path, task_id[:-3] + "preds.pkl")):
                 i_mode = ""
                 print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
                 out = pickle.load(open(fp, "rb"))
@@ -267,7 +269,7 @@ def __loop_through_exp(path, compute_metric=True):
                         i_mode = mode
                 res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
                            task_id=task_id,
-                           path=params_file, fmode=fmode,
+                           path=params_file, fmode=fmode, test_fold=test_fold,
                            **out)
                 print(i_mode)
                 outs.append(res)
@@ -284,7 +286,7 @@ def __loop_through_exp(path, compute_metric=True):
 
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
                 res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
-                           task_id=task_id,
+                           task_id=task_id, test_fold=test_fold,
                            path=params_file, fmode=fmode,
                            **out)
                 outs.append(res)
@@ -512,6 +514,7 @@ def get_dataset_stats(task_ids=None, exp_path=None, split=True, level='pair'):
             res.to_csv(f"../../results/{level}_{mod}_dataset_params_stats.csv")
 
 
+# This function is not really finished. Have to work on
 def get_misclassified_labels(path, label=0, items=10):
     i = 1
     out = []
@@ -564,6 +567,15 @@ def get_best_hp():
 
 
 if __name__ == '__main__':
+    import pickle as pk
+    j = pk.load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_res.pkl", "rb"))
+
+    for i,l,m,n in j:
+        print(i,l,m,n)
+        if n == 0:
+                print(i,l,m, n)
+
+    exit()
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
     exit()

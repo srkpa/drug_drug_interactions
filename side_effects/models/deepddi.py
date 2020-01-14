@@ -4,7 +4,7 @@ from torch import nn
 
 class DeepDDI(nn.Module):
 
-    def __init__(self, input_dim, hidden_sizes, output_dim):
+    def __init__(self, input_dim, hidden_sizes, nb_side_effects):
         super(DeepDDI, self).__init__()
         layers = []
         in_ = input_dim
@@ -14,7 +14,7 @@ class DeepDDI(nn.Module):
             layers.append(nn.BatchNorm1d(out_))
             layers.append(nn.ReLU())
             in_ = out_
-        self.net = nn.Sequential(*layers, nn.Linear(in_, output_dim), nn.Sigmoid())
+        self.net = nn.Sequential(*layers, nn.Linear(in_, nb_side_effects), nn.Sigmoid())
 
     def forward(self, batch):
         inputs = torch.cat(batch, 1)
