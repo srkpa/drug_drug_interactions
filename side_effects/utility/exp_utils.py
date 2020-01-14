@@ -110,7 +110,7 @@ def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN"):
             scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
             i += 1
     plt.show()
-    #plt.savefig(f"../../results/scores.png")
+    # plt.savefig(f"../../results/scores.png")
 
 
 # plt.show()
@@ -210,7 +210,7 @@ def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
             exp_name = "CNN + GIN"
         if int(attention_params) > 0:
             has = True
-    elif exp_name == "kf_deepddi":
+    elif exp_name == "deepddi":
         exp_name = "DeepDDI"
     else:
         exp_name = ""
@@ -309,9 +309,9 @@ def summarize_experiments(main_dir=None):
     print(rand)
     if rand:
         out = pd.DataFrame(rand)
-        best_hp = out.groupby(["dataset_name", "model_name", "split_mode"], as_index=True).max()
-        print("best hp", best_hp)
-        best_hp.to_csv("../../results/best_hp.csv")
+        # best_hp = out.groupby(["dataset_name", "model_name", "split_mode"], as_index=True).max()
+        # print("best hp", best_hp)
+        # best_hp.to_csv("../../results/best_hp.csv")
         out.to_csv("../../results/all_raw-exp-res.csv")
         modes = out["split_mode"].unique()
         out["split_mode"].fillna(inplace=True, value="null")
@@ -566,13 +566,60 @@ def get_best_hp():
     out.to_csv("../../results/temp.csv")
 
 
+import numpy as np
+
+import multiprocessing
+# from multiprocessing import Pool
+from tqdm import tqdm
+
+num_cores = multiprocessing.cpu_count()
+
+
+def __collect_link_pred_res__(lst=None):
+    cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
+    lst = load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_res.pkl", "rb"))
+    config = json.load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_params.json", "rb"))
+    dataset_params = {param.split(".")[-1]: val for param, val in config.items() if param.startswith("dataset_params")}
+    print(config["model_params.network_params.network_name"])
+    dataset_params = {key: val for key, val in dataset_params.items() if
+                      key in get_data_partitions.__code__.co_varnames}
+    dataset_name = dataset_params["dataset_name"]
+    input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
+    dataset_params["input_path"] = input_path
+    train, valid, test1, test2 = get_data_partitions(**dataset_params)
+    labels = test1.labels_vectorizer.classes_.tolist()
+    samples = [(did1, did2) for did1, did2, _ in test1.samples]
+    y_pred = np.zeros((len(test1.samples), len(labels)))
+    y_true = test1.get_targets()
+
+    for k, v, pb, _ in tqdm(lst):
+        row, col = samples.index(k), labels.index(v)
+        y_pred[row, col] = pb
+    out = __compute_metrics(y_true=y_true, y_pred=y_pred)
+    print(out)
+    # Parallel(n_jobs=-1)(delayed(__transform_)(k, pb, v)
+    #                            for k, v, pb, _ in tqdm(lst))
+
+    # x, y, z = [ k for k, v, pb, _ in tqdm(lst)], [pb for k, v, pb, _ in tqdm(lst)], [v for k, v, pb, _ in tqdm(lst)]
+    # pool = Pool(processes=2)
+    # pool.map(__transform_,  [(k,v,pb) for k, v, pb, _ in tqdm(lst)])
+    # pool.close()
+    #z = map(__transform_, [(k, v, pb) ])
+    print("end")
+    #print(list(z))
+    exit()
+
+
 if __name__ == '__main__':
-    visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_ea6d94a4_log.log")
+    __collect_link_pred_res__()
+    #
+    # exit()
+    # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
+    #
+    # exit()
+    visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
 
     exit()
-    import pickle as pk
-    j = pk.load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_res.pkl", "rb"))
-
 
     exit()
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
@@ -591,7 +638,7 @@ if __name__ == '__main__':
     # # print(c)
     # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
     #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
-    analyze_models_predictions([c[::-1][1]])
+    # analyze_models_predictions([c[::-1][1]])
 
     # analysis_test_perf(c)
     exit()

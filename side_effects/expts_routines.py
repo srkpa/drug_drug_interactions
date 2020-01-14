@@ -54,7 +54,8 @@ def get_all_output_filenames(output_path, all_params):
         preds_filename="{}/{}_{}_{}_preds.pkl".format(output_path, data_name, model_name, out_prefix),
         targets_2_filename="{}/{}_{}_{}-targets.pkl".format(output_path, data_name, model_name, out_prefix),
         preds_2_filename="{}/{}_{}_{}-preds.pkl".format(output_path, data_name, model_name, out_prefix),
-        raw_preds_filename="{}/{}_{}_{}_scores.csv".format(output_path, data_name, model_name, out_prefix)
+        raw_preds_filename="{}/{}_{}_{}_scores.csv".format(output_path, data_name, model_name, out_prefix),
+        raw_preds_2_filename="{}/{}_{}_{}-scores.csv".format(output_path, data_name, model_name, out_prefix)
     ), out_prefix
 
 
@@ -230,6 +231,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
 
         if len(unseen_test_data.samples):
+            model.model.exp_prefix = paths.get("raw_preds_2_filename")
             uy_true, uy_probs, u_output = model.test(unseen_test_data)
             pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
             pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
