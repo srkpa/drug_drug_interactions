@@ -84,7 +84,6 @@ def dgl_graph_transformer(drugs, smiles, module=DGLGraphTransformer):
     X, ids = trans(smiles)
     drugs = list(itemgetter(*ids)(drugs)) if len(ids) < len(drugs) else drugs
     print(trans.n_atom_feat)
-    exit()
     assert len(X) == len(ids)
     assert len(X) == len(drugs)
     return dict(zip(drugs, X))
