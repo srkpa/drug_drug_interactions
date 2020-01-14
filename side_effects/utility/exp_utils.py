@@ -570,10 +570,6 @@ if __name__ == '__main__':
     import pickle as pk
     j = pk.load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_res.pkl", "rb"))
 
-    for i,l,m,n in j:
-        print(i,l,m,n)
-        if n == 0:
-                print(i,l,m, n)
 
     exit()
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')

@@ -4,7 +4,7 @@ from torch import nn
 
 class DeepDDI(nn.Module):
 
-    def __init__(self, input_dim, hidden_sizes, nb_side_effects):
+    def __init__(self, input_dim, hidden_sizes, nb_side_effects, exp_prefix=None):
         super(DeepDDI, self).__init__()
         layers = []
         in_ = input_dim
