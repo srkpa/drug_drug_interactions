@@ -73,9 +73,13 @@ class BMNDDI(nn.Module):
             if self.testing:
                 did1, did2, sid, drugs_a, drugs_b, side_eff = batch[:6]
                 add_feats = batch[6:]
+                if isinstance(side_eff, tuple):
+                    side_eff = torch.cat([s.reshape(1) for s in side_eff])
             else:
                 drugs_a, drugs_b, side_eff = batch[:3]
                 add_feats = batch[3:]
+                if isinstance(side_eff, tuple):
+                    side_eff = torch.cat(side_eff)
             side_eff_features = self.embedding(side_eff).squeeze()
 
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)

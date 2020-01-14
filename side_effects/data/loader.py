@@ -270,6 +270,7 @@ class DDIdataset(Dataset):
             chosen_sid, y = (self.se_pos_dps[item],
                              np.array([1]).astype(np.float32)) if prob >= self.criteria else (
                 self.se_neg_dps[item], np.array([0]).astype(np.float32))
+
             return (
                        drug1, drug2,
                        np.random.choice(chosen_sid, 1)), to_tensor(y, gpu=self.gpu)
@@ -462,10 +463,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                             n_folds=n_folds, test_fold=test_fold)
 
     if debug:
-        train_data = dict(sorted(train_data.items())[:20])
-        valid_data = dict(sorted(valid_data.items())[:20])
-        test_data = dict(sorted(test_data.items())[:20])
-        unseen_data = dict(sorted(unseen_data.items())[:20])
+        train_data = dict(sorted(train_data.items())[:100])
+        valid_data = dict(sorted(valid_data.items())[:100])
+        test_data = dict(sorted(test_data.items())[:100])
+        unseen_data = dict(sorted(unseen_data.items())[:100])
 
     print(
         f"len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")

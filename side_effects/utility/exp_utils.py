@@ -604,9 +604,9 @@ def __collect_link_pred_res__(lst=None):
     # pool = Pool(processes=2)
     # pool.map(__transform_,  [(k,v,pb) for k, v, pb, _ in tqdm(lst)])
     # pool.close()
-    #z = map(__transform_, [(k, v, pb) ])
+    # z = map(__transform_, [(k, v, pb) ])
     print("end")
-    #print(list(z))
+    # print(list(z))
     exit()
 
 
