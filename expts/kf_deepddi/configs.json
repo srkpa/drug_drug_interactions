@@ -10,7 +10,7 @@
         "use_label_cost_per_batch": false,
         "use_negative_sampling": false
       },
-      "lr": 0.0001,
+      "lr": 1e-05,
       "metrics_names": [
         "macro_roc",
         "macro_auprc",
@@ -19,9 +19,6 @@
       ],
       "network_params": {
         "hidden_sizes": [
-          2048,
-          2048,
-          2048,
           2048,
           2048,
           2048,
@@ -37,6 +34,7 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -53,6 +51,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -69,6 +68,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -85,6 +85,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -101,6 +102,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -117,6 +119,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -133,6 +136,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -149,6 +153,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -165,6 +170,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -181,6 +187,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -197,6 +204,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -213,6 +221,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -229,6 +238,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -245,6 +255,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -261,6 +272,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -277,6 +289,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -293,6 +306,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -309,6 +323,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -325,6 +340,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -341,6 +357,7 @@
     },
     {
       "dataset_name": "twosides",
+      "debug": true,
       "decagon": false,
       "n_folds": 10,
       "seed": 42,
@@ -359,7 +376,7 @@
   "fit_params": [
     {
       "batch_size": 256,
-      "n_epochs": 100,
+      "n_epochs": 1,
       "with_early_stopping": true
     }
   ]

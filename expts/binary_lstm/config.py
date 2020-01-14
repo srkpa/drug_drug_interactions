@@ -1,77 +1,56 @@
 import json
 
 import click
+from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
-         transformer=["dgl"],
-         split_mode=["random"],  # "leave_drugs_out"
-         test_size=[0.20],
-         valid_size=[0.25],
-         seed=[0,10, 21, 33, 42, 55, 64, 101, 350, 505],
+         transformer=["seq"],
+         split_mode=["leave_drugs_out", "random"],  # "leave_drugs_out"
+         test_size=[0.10],
+         valid_size=[0.15],
+         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
          use_clusters=[False],
          use_as_filter=[None],
          use_targets=[False],
          use_side_effect=[False],
-         use_pharm=[False]
+         use_pharm=[False],
+         label=['binary'],
+         debug=[False],
+         n_folds=[0],
+         test_fold=[0]
          )
 ))
 
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
-pool_arch = list(ParameterGrid(
-    dict(arch=[None]
+drug_features_extractor_params = list(ParameterGrid(
+    dict(arch=['lstm'],
+         vocab_size=[len(SMILES_ALPHABET) + 2],
+         embedding_size=[20],
+         lstm_hidden_size=[128],
+         nb_lstm_layers=[2],
+         dropout=[0.0]
          )
 ))
 
-drug_features_extractor_params = list(ParameterGrid([
-    dict(arch=['dglgraph'],
-         input_dim=[79],
-         conv_layer_dims=[[[64], [64]]],
-         dropout=[0.],
-         activation=['ReLU'],
-         glayer=["dgl-gin"],
-         pooling=["avg", "sum"],
-         pool_arch=pool_arch,
-         ),
-    dict(arch=['dglgraph'],
-         input_dim=[79],
-         conv_layer_dims=[[[64], [64]]],
-         dropout=[0.],
-         activation=['ReLU'],
-         glayer=["dgl-gin"],
-         pool_arch=pool_arch,
-         ),
-    dict(arch=['dglgraph'],
-         input_dim=[79],
-         conv_layer_dims=[[[64], [64]]],
-         dropout=[0.],
-         activation=['ReLU'],
-         glayer=["dgl-gcn-mol"],
-         pool_arch=pool_arch
-         ),
-    dict(arch=['dglgraph'],
-         input_dim=[79],
-         conv_layer_dims=[[[64], [64]]],
-         dropout=[0.],
-         activation=['ReLU'],
-         glayer=["dgl-gcn-mol"],
-         pooling=["avg", "sum"],
-         pool_arch=pool_arch
-         )]
-))
+AUxNet_params = list(ParameterGrid(dict(
+    fc_layers_dim=[[128]],
+    output_dim=[32]
+)))
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     fc_layers_dim=[[128] * 2],
     mode=['concat'],
-    att_hidden_dim=[None],
     dropout=[0.10],
-    b_norm=[True]
+    b_norm=[True],
+    is_binary_output=[True],
+    ss_embedding_dim=[32]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -82,6 +61,7 @@ loss_params = list(ParameterGrid(dict(
     use_label_cost_per_batch=[False]
 )))
 
+
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
@@ -89,7 +69,8 @@ model_params = list(ParameterGrid(dict(
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
     loss_params=loss_params,
-    dataloader=[False]
+    dataloader=[True],
+
 )))
 
 

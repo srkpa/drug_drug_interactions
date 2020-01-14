@@ -567,6 +567,9 @@ def get_best_hp():
 
 
 if __name__ == '__main__':
+    visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_ea6d94a4_log.log")
+
+    exit()
     import pickle as pk
     j = pk.load(open("/home/rogia/Documents/exps_results/kfrgcn/twosides_RGCN_c1ce1cae_res.pkl", "rb"))
 
@@ -640,11 +643,11 @@ if __name__ == '__main__':
     # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
     # exit()
     # summarize()
-    # # display("/home/rogia/Documents/exp_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
+    # # display("/home/rogia/Documents/binary_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
-    # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/exp_lstm/_hp_0/")
+    # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/binary_lstm/_hp_0/")
     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-    # # display_H("/home/rogia/.invivo/result/kf_lapool/drugbank_bmnddi_12c974de_log.log")
+    # # display_H("/home/rogia/.invivo/result/binary_lapool/drugbank_bmnddi_12c974de_log.log")
     # # exit()
     # c = get_expt_results("/home/rogia/.invivo/result/")
     # print(c)

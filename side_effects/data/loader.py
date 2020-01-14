@@ -504,8 +504,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                       read_as_triplets=True)
             print(train_dataset.nb_labels)
             unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
-                                        drugstargets=drug2targets,
-                                        drugse=drug_offsides)
+                                        drugstargets=drug2targets, side_effects_idx_dict=labels_mapping, switch=label,
+                                        drugse=drug_offsides, read_as_triplets=True)
 
             if all([len(x) == 3 for x in list(drugs2smiles.values())]):
                 drugs2smiles_dict_1 = {i: j[0] for i, j in drugs2smiles.items()}
