@@ -329,6 +329,8 @@ class DDIdataset(Dataset):
         self.se_pos_dps = pos_dps
         self.se_neg_dps = neg_dps
 
+        import numpy as np
+
     def prepare_test_feeding_insts(self):
         mbl = self.get_targets()
         pos_insts = [(*self.samples[item][:2], seidx, np.array([1]).astype(np.float32)) for (item, seidx) in
@@ -336,12 +338,9 @@ class DDIdataset(Dataset):
         neg_insts = [
             (*self.samples[item][:2], seidx, np.array([0]).astype(np.float32)) for (item, seidx) in
             (mbl == 0).nonzero()]
-        if len(pos_insts) > len(neg_insts):
-            self.feeding_insts = list(chain.from_iterable(zip(pos_insts, cycle(neg_insts))))
-        elif len(pos_insts) < len(neg_insts):
-            self.feeding_insts = list(chain.from_iterable(zip(cycle(pos_insts), neg_insts)))
-        else:
-            self.feeding_insts = list(chain.from_iterable(zip(pos_insts, neg_insts)))
+        print("expect feeding inst len", len(neg_insts) + len(pos_insts))
+        self.feeding_insts = pos_insts + neg_insts
+        print("test feeding ex len", len(self.feeding_insts))
 
     def get_aux_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
@@ -462,7 +461,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
 
-    if debug:
+    if True:
         train_data = dict(sorted(train_data.items())[:100])
         valid_data = dict(sorted(valid_data.items())[:100])
         test_data = dict(sorted(test_data.items())[:100])

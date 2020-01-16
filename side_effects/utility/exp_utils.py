@@ -5,11 +5,12 @@ import os
 import pickle
 import shutil
 import tempfile
-from collections import Counter
+from collections import Counter, defaultdict
 from pickle import load
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import sklearn.metrics as skm
 from ivbase.utils.aws import aws_cli
 
 from side_effects.data.loader import get_data_partitions
@@ -202,8 +203,8 @@ def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
             exp_name = "MolGraph"
         else:
             exp_name = "MolGraph + LaPool"
-            if attention_params == "attn":
-                has = True
+            # if attention_params == "attn":
+            #     has = True
     elif exp_name == "conv1d":
         exp_name = "CNN"
         if graph_net_params:
@@ -251,6 +252,7 @@ def __loop_through_exp(path, compute_metric=True):
             exp_name = set_model_name(exp, pool_arch, graph_net, att_params)
             dataset_name = config["dataset_params.dataset_name"]
             mode = config["dataset_params.split_mode"]
+            # print(mode)
             seed = config["dataset_params.seed"]
             fmode = config.get("model_params.network_params.mode", None)
             test_fold = config.get("dataset_params.test_fold", None)
@@ -258,15 +260,15 @@ def __loop_through_exp(path, compute_metric=True):
                 i_mode = ""
                 print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
                 out = pickle.load(open(fp, "rb"))
+                if mode == "leave_drugs_out":
+                    i_mode = mode + " (test_set 1)"
+                else:
+                    i_mode = mode
                 if compute_metric:
                     y_pred = load(open(os.path.join(path, task_id[:-3] + "preds.pkl"), "rb"))
                     y_true = load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb"))
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
 
-                    if mode == "leave_drugs_out":
-                        i_mode = mode + " (test_set 1)"
-                    else:
-                        i_mode = mode
                 res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
                            task_id=task_id,
                            path=params_file, fmode=fmode, test_fold=test_fold,
@@ -295,23 +297,20 @@ def __loop_through_exp(path, compute_metric=True):
     return outs
 
 
-def summarize_experiments(main_dir=None):
+def summarize_experiments(main_dir=None, cm=True):
     main_dir = f"{os.path.expanduser('~')}/expts" if main_dir is None else main_dir
     rand = []
     for i, root in enumerate(os.listdir(main_dir)):
         path = os.path.join(main_dir, root)
         if os.path.isdir(path):
             print("__Path__: ", path)
-            res = __loop_through_exp(path, compute_metric=True)
+            res = __loop_through_exp(path, compute_metric=cm)
             print(res)
             if len(res) > 0:
                 rand.extend(res)
     print(rand)
     if rand:
         out = pd.DataFrame(rand)
-        # best_hp = out.groupby(["dataset_name", "model_name", "split_mode"], as_index=True).max()
-        # print("best hp", best_hp)
-        # best_hp.to_csv("../../results/best_hp.csv")
         out.to_csv("../../results/all_raw-exp-res.csv")
         modes = out["split_mode"].unique()
         out["split_mode"].fillna(inplace=True, value="null")
@@ -331,6 +330,106 @@ def summarize_experiments(main_dir=None):
             t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
                 3).astype(str)
             t_mean.to_csv(f"../../results/{mod}.csv")
+
+
+def __collect_data__(config_file):
+    cach_path = os.getenv("INVIVO_CACHE_ROOT", "/home/rogia/.invivo/cache")
+    config = json.load(open(config_file, "rb"))
+    dataset_params = {param.split(".")[-1]: val for param, val in config.items() if param.startswith("dataset_params")}
+    print(config["model_params.network_params.network_name"])
+    dataset_params = {key: val for key, val in dataset_params.items() if
+                      key in get_data_partitions.__code__.co_varnames}
+    dataset_name = dataset_params["dataset_name"]
+    input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
+    dataset_params["input_path"] = input_path
+    train, valid, test1, test2 = get_data_partitions(**dataset_params)
+
+    return train, valid, test1, test2
+
+
+def brou(fp="/home/rogia/Documents/exps_results/binary/binary_cnn/twosides_bmnddi_0ab446be_params.json"):
+    k = load(open("/home/rogia/Documents/exps_results/binary/binary_cnn/twosides_bmnddi_0ab446be_preds.pkl", "rb"))
+    print(len(k))
+    y_true = []
+    y_pred = []
+    raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
+                           sep="\t")
+    main_backup = raw_data[['stitch_id1', 'stitch_id2', 'event_name', 'confidence']]
+    data_dict = {(did1, did2, name.lower()): conf for did1, did2, name, conf in
+                 tqdm(main_backup.values.tolist())}
+
+    train, valid, test1, test2 = __collect_data__(fp)
+    print(test1.feeding_insts)
+    exit()
+    e = []
+    req = pd.read_csv(fp, sep=",", header=None)
+    for index, row in tqdm(req.iterrows()):
+        k = row[0], row[1], row[2]
+        r = row[3]
+        e.append(k)
+        p = data_dict.get(k, None)
+        y_pred += [r]
+        if p is None:
+            y_true.append(0)
+        else:
+            y_true.append(1)
+    print(Counter(y_true))
+    for k, j in dict(Counter(e)).items():
+        if j > 1:
+            print(k, j)
+    print(skm.average_precision_score(np.array(y_true), np.array(y_pred), average='micro'))
+    print(Counter(y_true))
+
+    # exit()
+    # train, valid, test1, test2 = __collect_data__(path)
+    # y_pred = load(open(path[:-12] + "_preds.pkl", "rb"))
+    # y_true = test1.get_targets()
+    # samples = test1.samples
+    # labels = test1.labels_vectorizer.classes_
+    # output = [(*samples[r][:2], labels[c], y_pred[r, c]) for (r, c) in (y_true == 1).nonzero()]
+    # print("done")
+    # conf = [data_dict[(drug1, drug2, lab.lower())] for drug1, drug2, lab, _ in tqdm(output)]
+    # probs = [probability for did1, did2, lab, probability in tqdm(output)]
+    #
+    # b = defaultdict(list)
+    # for i, j in enumerate(conf):
+    #     b[j].append(probs[i])
+    # for k, v in b.items():
+    #     print(k, sum(v) / len(v))
+
+
+def analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.):
+    res = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
+    res = res[res["split_mode"] == mod]
+    t = res.groupby(["test_fold"], as_index=True)
+    pred_files = {name: group["path"].values.tolist() for name, group in t}
+    task_config_files = dict(res[res["model_name"] == config][["test_fold", "path"]].values.tolist())
+    dp = pd.read_csv("/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides-drugs-all.csv")
+    drugs_dict = dict(zip(dp["drug_id"], dp["drug_name"]))
+    preds = {}
+    targets = defaultdict(tuple)
+    # collect the ground truth per test fold
+    for fold, path in tqdm(task_config_files.items()):
+        train, valid, test1, test2 = __collect_data__(path)
+        y_true, raw_samples, raw_labels = test1.get_targets(), test1.samples, test1.labels_vectorizer.classes_
+        targets[fold] = y_true, raw_samples, raw_labels
+
+    # get the mean performances
+    for fold, pfs in tqdm(pred_files.items()):
+        y_preds = list(map(lambda task_id: load(open(task_id[:-12] + "_preds.pkl", "rb")), pfs))
+        y_pred = np.mean(np.stack(y_preds, axis=0), axis=0)
+        preds[fold] = y_pred
+        y_true = targets[fold][0]
+        raw_samples = targets[fold][1]
+        raw_labels = targets[fold][2]
+        chosen_pairs = [(*operator.itemgetter(*raw_samples[r][:2])(drugs_dict), raw_labels[c], y_pred[r, c]) for (r, c)
+                        in (y_true == label).nonzero() if
+                        inf < y_pred[r, c] < sup]
+        if chosen_pairs:
+            res = pd.DataFrame(chosen_pairs, columns=["drug_1", "drug_2", "side effect", "probability"])
+            res.to_csv(f"../../results/{mod}_{fold}_{label}_sis.csv")
+
+    assert len(preds) == len(targets), "Not the same length!"
 
 
 def analyze_models_predictions(fp="../../results/temp.csv", split_mode="random", dataset_name="twosides"):
@@ -514,44 +613,6 @@ def get_dataset_stats(task_ids=None, exp_path=None, split=True, level='pair'):
             res.to_csv(f"../../results/{level}_{mod}_dataset_params_stats.csv")
 
 
-# This function is not really finished. Have to work on
-def get_misclassified_labels(path, label=0, items=10):
-    i = 1
-    out = []
-    h = []
-    c = ['road traffic accident', 'drug withdrawal', 'adverse drug effect', 'herpes simplex', 'hepatitis c',
-         'hepatitis a', 'diabetes', 'flu', 'hiv disease']
-    for fp in glob.glob(f"{path}/*_{label}_sis.csv"):
-        # Ranked misclassified side effects
-        print(fp)
-        data = pd.read_csv(fp, index_col=0)
-        # data = data.nsmallest(10, 'probability')
-        e = data["side effect"].value_counts(normalize=True) * 100
-        print(e)
-        f = data["side effect"].values
-        # print(f)
-        # e = e.round(2).nlargest(items)
-        # Most commons pairs misclassified
-        l = set([tuple(i[:3]) for i in data.values])
-        # print(l)
-        h.append(l)
-        i += 1
-        out.extend(f)
-    g = dict(Counter(out))
-    g = sorted(g.items(), key=operator.itemgetter(1))
-    d = sum([i[-1] for i in g])
-    print("d", d)
-    print("g", len(g))
-    # k = {e: (dict(Counter(out))[e]/d) * 100 for e in c}
-    print(g)
-    # print(sum([j for i, j in k.items()]))
-    print(h[1].intersection(*h[2:]))
-
-
-# many files path - one per model
-# stats about recurrences
-# False positive vs False negatives
-
 def get_best_hp():
     res = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
     config_hp = res.groupby(["dataset_name", "model_name", "split_mode"], as_index=False)["micro_auprc"].max()
@@ -611,10 +672,38 @@ def __collect_link_pred_res__(lst=None):
 
 
 if __name__ == '__main__':
-    __collect_link_pred_res__()
+    # summarize_experiments("/home/rogia/Documents/exps_results/binary", cm=False)
+    brou()
+    exit()
+    brou("../../results/test_rand_1_sis.csv")
+    exit()
+    # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    # exit()
+    # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
+    # print(list(raw_data))
+    # print(raw_data[(raw_data["drug1"].str.lower() == "aprepitant")  & (raw_data["drug2"].str.lower() == "cisplatin")  & (raw_data["event_name"].str.lower() =="hepatitis c" )][["drug2", "event_name"]])  #
     #
     # exit()
-    # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
+    summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
+    analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.)
+    analyse_kfold_predictions(mod="random", config="CNN", label=0, sup=1., inf=0.7)
+    analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=1, sup=0.1, inf=0.)
+    analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0.7)
+
+    res = pd.read_csv("../../results/all_raw-exp-res.csv", index_col=0)
+    y1 = res[res["split_mode"] == "random"]
+    y1 = y1.groupby(["test_fold", "model_name"], as_index=True)[["micro_roc", "micro_auprc"]].max()
+    y1.to_csv("../../results/random_exp_grouped_by_test_fold.csv")
+    y2 = res[res["split_mode"] == "leave_drugs_out (test_set 1)"]
+    y2 = y2.groupby(["test_fold", "model_name"], as_index=True)[
+        ["micro_roc", "micro_auprc"]].max()
+    y2.to_csv("../../results/early_exp_grouped_by_test_fold.csv")
+    exit()
+    visualize_loss_progress("../../../twosides_bmnddi_6b85a591_log.log")
+    exit()
+    #
+    # exit()
+    #
     #
     # exit()
     visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
@@ -630,8 +719,7 @@ if __name__ == '__main__':
     exit()
     # summarize_experiments("/media/rogia/CLé USB/expts/")
     visualize_test_perf()
-    # analyze_models_predictions()
-    get_misclassified_labels(path="../../results/", label=0)
+
     exit()
     # bt = pd.read_csv("../../results/best_hp.csv")
     # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
