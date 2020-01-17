@@ -13,5 +13,6 @@
 #SBATCH --mail-type=ALL
 
 conda activate base
-bash launcher.sh -e $1 -s gra
+#bash launcher.sh -e $1 -s gra
+python $HOME/drug_drug_interactions/drug_drug_interactions/side_effects/utility/exp_utils
 #deactivate

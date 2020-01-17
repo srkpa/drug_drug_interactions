@@ -1,7 +1,7 @@
 import inspect
 import random
 import string
-from itertools import product, chain, cycle
+from itertools import product, chain
 
 import dgl
 from ivbase.utils.commons import to_tensor
@@ -236,7 +236,8 @@ class DDIdataset(Dataset):
             self.build_graph()
 
     def __len__(self):
-        return len(self.samples)
+        return len(self.samples) if not self.testing else len(self.samples) * len(
+            self.labels_vectorizer.classes_)
 
     def __getitem__(self, item):
         # a bit messy, but i wil clean it it later .. Need to have all my res
@@ -329,8 +330,6 @@ class DDIdataset(Dataset):
         self.se_pos_dps = pos_dps
         self.se_neg_dps = neg_dps
 
-        import numpy as np
-
     def prepare_test_feeding_insts(self):
         mbl = self.get_targets()
         pos_insts = [(*self.samples[item][:2], seidx, np.array([1]).astype(np.float32)) for (item, seidx) in
@@ -338,7 +337,6 @@ class DDIdataset(Dataset):
         neg_insts = [
             (*self.samples[item][:2], seidx, np.array([0]).astype(np.float32)) for (item, seidx) in
             (mbl == 0).nonzero()]
-        print("expect feeding inst len", len(neg_insts) + len(pos_insts))
         self.feeding_insts = pos_insts + neg_insts
         print("test feeding ex len", len(self.feeding_insts))
 
@@ -461,7 +459,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
 
-    if True:
+    if debug:
         train_data = dict(sorted(train_data.items())[:100])
         valid_data = dict(sorted(valid_data.items())[:100])
         test_data = dict(sorted(test_data.items())[:100])

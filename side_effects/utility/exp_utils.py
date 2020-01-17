@@ -10,10 +10,10 @@ from pickle import load
 
 import matplotlib.pyplot as plt
 import pandas as pd
-import sklearn.metrics as skm
 from ivbase.utils.aws import aws_cli
 
 from side_effects.data.loader import get_data_partitions
+from side_effects.expts_routines import run_experiment
 from side_effects.metrics import auprc_score, roc_auc_score
 from side_effects.trainer import wrapped_partial
 
@@ -347,38 +347,60 @@ def __collect_data__(config_file):
     return train, valid, test1, test2
 
 
-def brou(fp="/home/rogia/Documents/exps_results/binary/binary_cnn/twosides_bmnddi_0ab446be_params.json"):
-    k = load(open("/home/rogia/Documents/exps_results/binary/binary_cnn/twosides_bmnddi_0ab446be_preds.pkl", "rb"))
-    print(len(k))
-    y_true = []
-    y_pred = []
+def reload(path):
+    for fp in tqdm(glob.glob(f"{path}/*.pth")):
+        train_params = defaultdict(dict)
+        config = json.load(open(fp[:-15] + "_params.json", "rb"))
+        for param, val in config.items():
+            keys = param.split(".")
+            if 1 < len(keys) <= 2:
+                mk, sk = keys
+                train_params[mk][sk] = val
+            elif len(keys) == 3:
+                mk, sk, skk = keys
+                if sk not in train_params[mk]:
+                    train_params[mk][sk] = {}
+                train_params[mk][sk][skk] = val
+            elif len(keys) >= 4:
+                mk, sk, skk, skkk = keys
+                if sk in train_params[mk]:
+                    if skk not in train_params[mk][sk]:
+                        train_params[mk][sk][skk] = {}
+                train_params[mk][sk][skk][skkk] = val
+            else:
+                print(f"None of my selected keys, {param}")
+        print(list(train_params.keys()))
+        run_experiment(**train_params, restore_path=fp, checkpoint_path=fp, input_path=None,
+                       output_path="/home/rogia/Documents/exps_results/nw_bin")
+
+    exit()
     raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
                            sep="\t")
     main_backup = raw_data[['stitch_id1', 'stitch_id2', 'event_name', 'confidence']]
     data_dict = {(did1, did2, name.lower()): conf for did1, did2, name, conf in
                  tqdm(main_backup.values.tolist())}
 
-    train, valid, test1, test2 = __collect_data__(fp)
-    print(test1.feeding_insts)
-    exit()
-    e = []
-    req = pd.read_csv(fp, sep=",", header=None)
-    for index, row in tqdm(req.iterrows()):
-        k = row[0], row[1], row[2]
-        r = row[3]
-        e.append(k)
-        p = data_dict.get(k, None)
-        y_pred += [r]
-        if p is None:
-            y_true.append(0)
-        else:
-            y_true.append(1)
-    print(Counter(y_true))
-    for k, j in dict(Counter(e)).items():
-        if j > 1:
-            print(k, j)
-    print(skm.average_precision_score(np.array(y_true), np.array(y_pred), average='micro'))
-    print(Counter(y_true))
+    # train, valid, test1, test2 = __collect_data__(fp)
+    # print(test1.feeding_insts)
+    # exit()
+    # e = []
+    # req = pd.read_csv(fp, sep=",", header=None)
+    # for index, row in tqdm(req.iterrows()):
+    #     k = row[0], row[1], row[2]
+    #     r = row[3]
+    #     e.append(k)
+    #     p = data_dict.get(k, None)
+    #     y_pred += [r]
+    #     if p is None:
+    #         y_true.append(0)
+    #     else:
+    #         y_true.append(1)
+    # print(Counter(y_true))
+    # for k, j in dict(Counter(e)).items():
+    #     if j > 1:
+    #         print(k, j)
+    # print(skm.average_precision_score(np.array(y_true), np.array(y_pred), average='micro'))
+    # print(Counter(y_true))
 
     # exit()
     # train, valid, test1, test2 = __collect_data__(path)
@@ -673,10 +695,9 @@ def __collect_link_pred_res__(lst=None):
 
 if __name__ == '__main__':
     # summarize_experiments("/home/rogia/Documents/exps_results/binary", cm=False)
-    brou()
+    reload(path="/home/srkpa/expts/binary_deepddi")
     exit()
-    brou("../../results/test_rand_1_sis.csv")
-    exit()
+
     # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
     # exit()
     # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
