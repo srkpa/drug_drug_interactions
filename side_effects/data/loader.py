@@ -224,6 +224,7 @@ class DDIdataset(Dataset):
         self.side_effects_idx_dict = side_effects_idx_dict
         self.use_binary_labels = (switch == "binary") and (side_effects_idx_dict is not None) and len(self.samples) > 0
         self.testing = switch == "binary" and (len(self.samples) > 0) and read_as_triplets
+        self.targets = []
         if self.use_binary_labels:
             self.criteria = criteria
             self.drug_pairs, self.se_pos_dps, self.se_neg_dps = [], [], []
@@ -331,14 +332,16 @@ class DDIdataset(Dataset):
         self.se_neg_dps = neg_dps
 
     def prepare_test_feeding_insts(self):
-        mbl = self.get_targets()
+        mbl = to_tensor(self.labels_vectorizer.transform(list(zip(*self.samples))[2]).astype(np.float32),
+                        self.gpu)
         pos_insts = [(*self.samples[item][:2], seidx, np.array([1]).astype(np.float32)) for (item, seidx) in
                      (mbl == 1).nonzero()]
-        neg_insts = [
-            (*self.samples[item][:2], seidx, np.array([0]).astype(np.float32)) for (item, seidx) in
-            (mbl == 0).nonzero()]
+        neg_insts = [(*self.samples[item][:2], seidx, np.array([0]).astype(np.float32)) for (item, seidx) in
+                     (mbl == 0).nonzero()]
         self.feeding_insts = pos_insts + neg_insts
         print("test feeding ex len", len(self.feeding_insts))
+        self.targets = np.array([1] * len(pos_insts) + [0] * len(neg_insts))
+        print("target shape", self.targets.shape)
 
     def get_aux_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
@@ -356,8 +359,8 @@ class DDIdataset(Dataset):
         return samples
 
     def get_targets(self):
-        y = list(zip(*self.samples))[2]
-        return to_tensor(self.labels_vectorizer.transform(y).astype(np.float32), self.gpu)
+        return to_tensor(self.labels_vectorizer.transform(list(zip(*self.samples))[2]).astype(np.float32),
+                         self.gpu) if not self.use_binary_labels else to_tensor(self.targets, self.gpu)
 
     def build_graph(self):
         graph_drugs = list(set([d1 for (d1, _, _) in self.samples] + [d2 for (_, d2, _) in self.samples]))

@@ -8,6 +8,7 @@ import tempfile
 from collections import Counter, defaultdict
 from pickle import load
 
+import click
 import matplotlib.pyplot as plt
 import pandas as pd
 from ivbase.utils.aws import aws_cli
@@ -320,14 +321,14 @@ def summarize_experiments(main_dir=None, cm=True):
             df = out[out["split_mode"] == mod]
             t = df.groupby(['dataset_name', 'model_name', 'split_mode', "fmode"], as_index=True)
             print("t", t)
-            t_mean = t[["micro_roc", "micro_auprc"]].mean()
+            t_mean = t[["roc", "auprc"]].mean()
             print("mean", t_mean)
-            t_std = t[["micro_roc", "micro_auprc"]].std()
+            t_std = t[["roc", "auprc"]].std()
             print("std", t_std)
-            t_mean['micro_roc'] = t_mean[["micro_roc"]].round(3).astype(str) + " ± " + t_std[["micro_roc"]].round(
+            t_mean['roc'] = t_mean[["roc"]].round(3).astype(str) + " ± " + t_std[["roc"]].round(
                 3).astype(
                 str)
-            t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
+            t_mean['auprc'] = t_mean[["auprc"]].round(3).astype(str) + " ± " + t_std[["auprc"]].round(
                 3).astype(str)
             t_mean.to_csv(f"../../results/{mod}.csv")
 
@@ -347,6 +348,14 @@ def __collect_data__(config_file):
     return train, valid, test1, test2
 
 
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.option('--path', '-r',
+              help="Model path.")
 def reload(path):
     for fp in tqdm(glob.glob(f"{path}/*.pth")):
         train_params = defaultdict(dict)
@@ -361,17 +370,25 @@ def reload(path):
                 if sk not in train_params[mk]:
                     train_params[mk][sk] = {}
                 train_params[mk][sk][skk] = val
-            elif len(keys) >= 4:
+            elif len(keys) == 4:
                 mk, sk, skk, skkk = keys
                 if sk in train_params[mk]:
                     if skk not in train_params[mk][sk]:
                         train_params[mk][sk][skk] = {}
                 train_params[mk][sk][skk][skkk] = val
+
+            elif len(keys) >= 5:
+                mk, sk, skk, skkk, sk5 = keys
+                if sk in train_params[mk]:
+                    if skk in train_params[mk][sk]:
+                        if skkk not in train_params[mk][sk][skk]:
+                            train_params[mk][sk][skk][skkk] = {}
+                train_params[mk][sk][skk][skkk][sk5] = val
             else:
                 print(f"None of my selected keys, {param}")
         print(list(train_params.keys()))
         run_experiment(**train_params, restore_path=fp, checkpoint_path=fp, input_path=None,
-                       output_path="/home/rogia/Documents/exps_results/nw_bin")
+                       output_path="/home/srkpa/drug_drug_interactions/results")
 
     exit()
     raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
@@ -694,8 +711,9 @@ def __collect_link_pred_res__(lst=None):
 
 
 if __name__ == '__main__':
-    # summarize_experiments("/home/rogia/Documents/exps_results/binary", cm=False)
-    reload(path="/home/srkpa/expts/binary_deepddi")
+    cli()
+
+    # reload(path="/home/rogia/Documents/exps_results/binary/binary_molgraph")
     exit()
 
     # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")

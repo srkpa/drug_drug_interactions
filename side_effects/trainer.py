@@ -144,6 +144,10 @@ class Trainer(ivbt.Trainer):
     def test(self, dataset, batch_size=256):
         self.model.testing = True
         y = dataset.get_targets()
+        print("My test target", y.shape)
+        # I will compute all the metrics manually
+        self.metrics_names = []
+        self.metrics = {}
         metrics_val = []
         if self.dataloader_from_dataset:
             loader = DataLoader(dataset, batch_size=batch_size)
@@ -158,14 +162,22 @@ class Trainer(ivbt.Trainer):
                 _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
             else:
                 _, y_pred = self.evaluate_generator(loader, return_pred=True)
-
         y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
         else:
-            y_true = y.numpy()
+            y_true = y.numpy() if not isinstance(y, np.ndarray) else y
 
-        return y_true, y_pred, dict(zip(self.metrics_names, metrics_val))
+        y_pred = y_pred.squeeze()
+        print("shape", y_true.shape, y_pred.shape)
+        if self.metrics:
+            res = dict(zip(self.metrics_names, metrics_val))
+        else:
+            res = dict(auprc=auprc_score(y_pred=y_pred, y_true=y_true, average="micro"),
+                       roc=roc_auc_score(y_pred=y_pred, y_true=y_true, average="micro"))
+        print(res)
+
+        return y_true, y_pred, res
 
     def load(self, checkpoint_filename):
         self.load_weights(checkpoint_filename)
