@@ -1,46 +1,47 @@
 import json
 
 import click
-from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
-         transformer=["seq"],
-         split_mode=["leave_drugs_out", "random"],  # "leave_drugs_out"
+         transformer=["dgl"],
+         split_mode=["random", "leave_drugs_out"],  #
          test_size=[0.10],
          valid_size=[0.15],
          seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
-         use_clusters=[False],
-         use_as_filter=[None],
+         use_clusters=[True],
+         use_as_filter=['SOC'],
          use_targets=[False],
          use_side_effect=[False],
          use_pharm=[False],
-         label=['binary'],
-         debug=[False],
          n_folds=[0],
-         test_fold=[0]
+         test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
+         label=['ml'],
+         debug=[False]
          )
 ))
 
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
-drug_features_extractor_params = list(ParameterGrid(
-    dict(arch=['lstm'],
-         vocab_size=[len(SMILES_ALPHABET) + 2],
-         embedding_size=[20],
-         lstm_hidden_size=[128],
-         nb_lstm_layers=[2],
-         dropout=[0.0]
+pool_arch = list(ParameterGrid(
+    dict(arch=[None]
          )
 ))
 
-AUxNet_params = list(ParameterGrid(dict(
-    fc_layers_dim=[[128]],
-    output_dim=[32]
-)))
+drug_features_extractor_params = list(ParameterGrid([
+    dict(arch=['dglgraph'],
+         input_dim=[79],
+         conv_layer_dims=[[[64], [64]]],
+         dropout=[0.],
+         activation=['ReLU'],
+         glayer=["dgl-gin"],
+         pooling=["avg"],
+         pool_arch=pool_arch,
+         )]
+))
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
@@ -61,16 +62,14 @@ loss_params = list(ParameterGrid(dict(
     use_label_cost_per_batch=[False]
 )))
 
-
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-3],
+    lr=[1e-4],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
     loss_params=loss_params,
-    dataloader=[True],
-
+    dataloader=[False]
 )))
 
 

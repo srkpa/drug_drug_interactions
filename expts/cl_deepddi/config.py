@@ -5,47 +5,30 @@ from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
-         transformer=["seq"],
-         split_mode=["leave_drugs_out", "random"],  # "leave_drugs_out"
+         transformer=["deepddi"],
+         split_mode=["leave_drugs_out", "random"],  #
          test_size=[0.10],
          valid_size=[0.15],
-         seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
-         use_clusters=[False],
-         use_as_filter=[None],
+         use_clusters=[True],
+         use_as_filter=['SOC'],
          use_targets=[False],
          use_side_effect=[False],
          use_pharm=[False],
-         n_folds=[10],
-         test_fold=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+         n_folds=[0],
+         test_fold=[0],
+         debug=[False]
          )
 ))
 
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
-drug_features_extractor_params = list(ParameterGrid(
-    dict(arch=['conv1d'],
-         vocab_size=[151],
-         embedding_size=[512],
-         cnn_sizes=[
-             [1024]
-         ],
-         kernel_size=[[17]],
-         pooling_len=[2],
-         b_norm=[False],
-         pooling=["max"]
-         #  use_self_attention=[True]
-         )
-))
-
 network_params = list(ParameterGrid(dict(
-    network_name=['bmnddi'],
-    drug_feature_extractor_params=drug_features_extractor_params,
-    fc_layers_dim=[[1024]],
-    mode=["concat"],
-    dropout=[0],
-    b_norm=[True],
+    network_name=['deepddi'],
+    input_dim=[100],
+    hidden_sizes=[[2048] * 5]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -59,7 +42,7 @@ loss_params = list(ParameterGrid(dict(
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
-    lr=[1e-4],
+    lr=[1e-5],
     loss=['bce'],
     metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
     loss_params=loss_params,

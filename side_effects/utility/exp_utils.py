@@ -99,19 +99,26 @@ def visualize_loss_progress(filepath):
 
 
 def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN"):
+    output = defaultdict(dict)
     bt = pd.read_csv(fp)
     c = bt[bt["model_name"] == model_name][['dataset_name', 'task_id', 'split_mode', 'path']].values
     n = len(c) // 2
     print(len(c), n)
-    fig, ax = plt.subplots(nrows=n - 1, ncols=n, figsize=(15, 9))
-    i = 0
-    for row in ax:
-        for col in row:
-            dataset, task_id, split, path = c[i]
-            print(split)
-            scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
-            i += 1
-    plt.show()
+    # fig, ax = plt.subplots(nrows=n - 1, ncols=n, figsize=(15, 9))
+    # i = 0
+
+    for dataset, task_id, split, path in c:
+        x, ap, roc, f1 = scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True)
+        output[dataset][split] = {}
+        output[dataset][split].update(dict(x=x, roc=roc, ap=ap, f1=f1))
+    return output
+    # for row in ax:
+    #     for col in row:
+    #         dataset, task_id, split, path = c[i]
+    #         print(split)
+    #         scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
+    #         i += 1
+    # plt.show()
     # plt.savefig(f"../../results/scores.png")
 
 
@@ -135,20 +142,20 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
     rc_scores = roc_auc_score(y_pred=y_preds, y_true=y_true, average=None)
 
     # Label ranking
-    ap_scores_ranked = sorted(zip(g, ap_scores), key=operator.itemgetter(1))
-    rc_scores_dict = dict(zip(g, list(rc_scores)))
-    btm_5_ap_scores = ap_scores_ranked[:10]
-    btm_5_ap_rc_scores = [(l, v, rc_scores_dict[l]) for l, v in btm_5_ap_scores]
-    top_5_ap_scores = ap_scores_ranked[::-1][:10]
-    top_5_ap_rc_scores = [(l, v, rc_scores_dict[l]) for l, v in top_5_ap_scores]
-
-    df = pd.DataFrame(top_5_ap_rc_scores, columns=["Best performing DDI types", "AUPRC", "AUROC"])
-    df1 = pd.DataFrame(btm_5_ap_rc_scores, columns=["Worst performing DDI types", "AUPRC", "AUROC"])
-    prefix = os.path.basename(task_path)
-    df.to_csv(f"../../results/{prefix}_{split}_top.csv")
-    df1.to_csv(f"../../results/{prefix}_{split}_bottom.csv")
-    print(df)
-    print(df1)
+    # ap_scores_ranked = sorted(zip(g, ap_scores), key=operator.itemgetter(1))
+    # rc_scores_dict = dict(zip(g, list(rc_scores)))
+    # btm_5_ap_scores = ap_scores_ranked[:10]
+    # btm_5_ap_rc_scores = [(l, v, rc_scores_dict[l]) for l, v in btm_5_ap_scores]
+    # top_5_ap_scores = ap_scores_ranked[::-1][:10]
+    # top_5_ap_rc_scores = [(l, v, rc_scores_dict[l]) for l, v in top_5_ap_scores]
+    #
+    # df = pd.DataFrame(top_5_ap_rc_scores, columns=["Best performing DDI types", "AUPRC", "AUROC"])
+    # df1 = pd.DataFrame(btm_5_ap_rc_scores, columns=["Worst performing DDI types", "AUPRC", "AUROC"])
+    # prefix = os.path.basename(task_path)
+    # df.to_csv(f"../../results/{prefix}_{split}_top.csv")
+    # df1.to_csv(f"../../results/{prefix}_{split}_bottom.csv")
+    # print(df)
+    # print(df1)
     #
     if split == "random":
         title = split
@@ -167,21 +174,23 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
     if f1_score:
         f1_scores = list(map(lambda prec, rec: (2 * prec * rec) / (prec + rec), ap_scores, rc_scores))
         print(f1_scores)
-        if ax is None:
-            plt.figure(figsize=(8, 6))
-            plt.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
-            plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
-        else:
-            ax.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
-            ax.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
-            ax.set_xlabel('Number of positives samples', fontsize=10)
-            ax.set_ylabel('F1 Scores', fontsize=10)
 
-    else:
-        plt.scatter(x, ap_scores, 40, marker="o", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="AUPRC")
-        plt.scatter(x, rc_scores, 40, marker="o", color='xkcd:lightish red', alpha=0.7, zorder=1, label="AUROC")
-        plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
-        plt.text(max(x), 0.5, "mean = 0.5", horizontalalignment="right", size=12, family='sherif', color="r")
+    return x, ap_scores, rc_scores, f1_scores
+    #     if ax is None:
+    #         plt.figure(figsize=(8, 6))
+    #         plt.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
+    #         plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+    #     else:
+    #         ax.scatter(x, f1_scores, 40, marker="+", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="F1 score")
+    #         ax.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+    #         ax.set_xlabel('Number of positives samples', fontsize=10)
+    #         ax.set_ylabel('F1 Scores', fontsize=10)
+    #
+    # else:
+    #     plt.scatter(x, ap_scores, 40, marker="o", color='xkcd:lightish blue', alpha=0.7, zorder=1, label="AUPRC")
+    #     plt.scatter(x, rc_scores, 40, marker="o", color='xkcd:lightish red', alpha=0.7, zorder=1, label="AUROC")
+    #     plt.axhline(y=0.5, color="gray", linestyle="--", zorder=2, alpha=0.6)
+    #     plt.text(max(x), 0.5, "mean = 0.5", horizontalalignment="right", size=12, family='sherif', color="r")
 
     # ax.set_title(tile, fontsize=10)
 
@@ -198,12 +207,12 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
 def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
     has = False
     if exp_name == "lstm":
-        exp_name = "BiLSTM"
+        exp_name = "BLSTM"
     elif exp_name == "dglgraph":
         if not pool_arch:
-            exp_name = "MolGraph"
+            exp_name = "GIN"
         else:
-            exp_name = "MolGraph + LaPool"
+            exp_name = "GIN + LaPool"
             # if attention_params == "attn":
             #     has = True
     elif exp_name == "conv1d":
@@ -217,7 +226,7 @@ def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
     else:
         exp_name = ""
     if has:
-        exp_name += "+ attention"
+        exp_name += ""
     return exp_name
 
 
@@ -353,9 +362,10 @@ def cli():
     pass
 
 
-@cli.command()
-@click.option('--path', '-r',
-              help="Model path.")
+#
+# @cli.command()
+# @click.option('--path', '-r',
+#               help="Model path.")
 def reload(path):
     for fp in tqdm(glob.glob(f"{path}/*.pth")):
         train_params = defaultdict(dict)
@@ -388,7 +398,7 @@ def reload(path):
                 print(f"None of my selected keys, {param}")
         print(list(train_params.keys()))
         run_experiment(**train_params, restore_path=fp, checkpoint_path=fp, input_path=None,
-                       output_path="/home/srkpa/drug_drug_interactions/results")
+                       output_path="/home/rogia/Documents/exps_results/nw_bin")
 
     exit()
     raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
@@ -711,11 +721,13 @@ def __collect_link_pred_res__(lst=None):
 
 
 if __name__ == '__main__':
-    cli()
+    # # cli()
+    #
+    #  reload(path="/home/rogia/Documents/exps_results/binary/cl_gin")
+    #  exit()
 
-    # reload(path="/home/rogia/Documents/exps_results/binary/binary_molgraph")
+    summarize_experiments("/media/rogia/CLé USB/expts", cm=True)
     exit()
-
     # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
     # exit()
     # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
@@ -753,7 +765,7 @@ if __name__ == '__main__':
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
     get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
     exit()
-    df = __get_dataset_stats__("/home/rogia/.invivo/result/kf_deepddi/twosides_deepddi_4ebbb144_params.json")
+    df = __get_dataset_stats__("/home/rogia/.invivo/result/cl_deepddi/twosides_deepddi_4ebbb144_params.json")
     print(df)
     exit()
     # summarize_experiments("/media/rogia/CLé USB/expts/")
@@ -817,11 +829,11 @@ if __name__ == '__main__':
     # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
     # exit()
     # summarize()
-    # # display("/home/rogia/Documents/binary_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
+    # # display("/home/rogia/Documents/cl_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
-    # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/binary_lstm/_hp_0/")
+    # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/cl_lstm/_hp_0/")
     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-    # # display_H("/home/rogia/.invivo/result/binary_lapool/drugbank_bmnddi_12c974de_log.log")
+    # # display_H("/home/rogia/.invivo/result/cl_lapool/drugbank_bmnddi_12c974de_log.log")
     # # exit()
     # c = get_expt_results("/home/rogia/.invivo/result/")
     # print(c)

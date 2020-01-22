@@ -241,42 +241,8 @@ class DDIdataset(Dataset):
             self.labels_vectorizer.classes_)
 
     def __getitem__(self, item):
-        # a bit messy, but i wil clean it it later .. Need to have all my res
         if self.use_binary_labels:
-            if self.testing:
-                drug1_id, drug2_id, seidx, target = self.feeding_insts[item]
-                sid = self.idx_side_effects_dict[seidx.item()]
-                drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
-                if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
-                    if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
-                            [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
-                        drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
-                        drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
-
-                    else:
-                        drug1 = to_tensor(drug1, self.gpu)
-                        drug2 = to_tensor(drug2, self.gpu)
-                return (
-                           drug1_id, drug2_id, sid, drug1, drug2, seidx), to_tensor(target, self.gpu)
-            drug1_id, drug2_id = self.drug_pairs[item]
-            drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
-            if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
-                if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
-                        [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
-                    drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
-                    drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
-                else:
-                    drug1 = to_tensor(drug1, self.gpu)
-                    drug2 = to_tensor(drug2, self.gpu)
-            prob = np.random.uniform()
-            chosen_sid, y = (self.se_pos_dps[item],
-                             np.array([1]).astype(np.float32)) if prob >= self.criteria else (
-                self.se_neg_dps[item], np.array([0]).astype(np.float32))
-
-            return (
-                       drug1, drug2,
-                       np.random.choice(chosen_sid, 1)), to_tensor(y, gpu=self.gpu)
-
+            self.__get_binary_inst(item)
         drug1_id, drug2_id, label = self.samples[item]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         if self.graph_nodes_mapping is None:
@@ -321,6 +287,41 @@ class DDIdataset(Dataset):
             res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
         return res
 
+    def __get_binary_inst(self, item):
+        if self.testing:
+            drug1_id, drug2_id, seidx, target = self.feeding_insts[item]
+            sid = self.idx_side_effects_dict[seidx.item()]
+            drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
+            if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
+                if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
+                        [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
+                    drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
+                    drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
+
+                else:
+                    drug1 = to_tensor(drug1, self.gpu)
+                    drug2 = to_tensor(drug2, self.gpu)
+            return (
+                       drug1_id, drug2_id, sid, drug1, drug2, seidx), to_tensor(target, self.gpu)
+        drug1_id, drug2_id = self.drug_pairs[item]
+        drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
+        if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
+            if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
+                    [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
+                drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
+                drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
+            else:
+                drug1 = to_tensor(drug1, self.gpu)
+                drug2 = to_tensor(drug2, self.gpu)
+        prob = np.random.uniform()
+        chosen_sid, y = (self.se_pos_dps[item],
+                         np.array([1]).astype(np.float32)) if prob >= self.criteria else (
+            self.se_neg_dps[item], np.array([0]).astype(np.float32))
+
+        return (
+                   drug1, drug2,
+                   np.random.choice(chosen_sid, 1)), to_tensor(y, gpu=self.gpu)
+
     def prepare_feeding_insts(self):
         did1, did2, pos_dps = list(zip(*self.samples))
         drug_pairs = list(zip(did1, did2))
@@ -339,7 +340,7 @@ class DDIdataset(Dataset):
         neg_insts = [(*self.samples[item][:2], seidx, np.array([0]).astype(np.float32)) for (item, seidx) in
                      (mbl == 0).nonzero()]
         self.feeding_insts = pos_insts + neg_insts
-        print("test feeding ex len", len(self.feeding_insts))
+        print("test feeding ex len", len(pos_insts), len(neg_insts), len(self.feeding_insts))
         self.targets = np.array([1] * len(pos_insts) + [0] * len(neg_insts))
         print("target shape", self.targets.shape)
 

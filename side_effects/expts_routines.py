@@ -129,10 +129,6 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     debug = dataset_params.pop("debug", False)
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params,
                                                                               input_path=cach_path, debug=debug)
-    print(len(test_data))
-
-    exit()
-
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
