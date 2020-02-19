@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05457</drugbank-id>
+  <name>OSI-7904L</name>
+  <description>OSI-7904L is a liposome encapsulated thymidylate synthase inhibitor, which is indicated for use in advanced gastric and/or gastroesophageal adenocarcinoma (A-G/GEJA). Current treatments also inhibit thymidylate synthase but the innovative lipid coating of OSI-7904L allows for more enduring results with administration of the TS inhibitor.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3540</ref-id>
+        <pubmed-id>14982966</pubmed-id>
+        <citation>Desjardins J, Emerson DL, Colagiovanni DB, Abbott E, Brown EN, Drolet DW: Pharmacokinetics, safety, and efficacy of a liposome encapsulated thymidylate synthase inhibitor, OSI-7904L [(S)-2-[5-[(1,2-dihydro-3-methyl-1-oxobenzo[f]quinazolin-9-yl)methyl]amino-1-oxo- 2-isoindolynl]-glutaric acid] in mice. J Pharmacol Exp Ther. 2004 Jun;309(3):894-902. Epub 2004 Feb 24.</citation>
+      </article>
+      <article>
+        <ref-id>A3541</ref-id>
+        <pubmed-id>12583828</pubmed-id>
+        <citation>Purcell WT, Ettinger DS: Novel antifolate drugs. Curr Oncol Rep. 2003 Mar;5(2):114-25.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in gastric cancer.</indication>
+  <pharmacodynamics>OSI-7904L is a liposome encapsulated thymidylate synthase inhibitor, which is indicated for use in advanced gastric and/or gastroesophageal adenocarcinoma (A-G/GEJA). Current treatments also inhibit thymidylate synthase but the innovative lipid coating of OSI-7904L allows for more enduring results with administration of the TS inhibitor.</pharmacodynamics>
+  <mechanism-of-action>Inhibits thymidylate synthase.</mechanism-of-action>
+  <toxicity>Acceptable clinical safety profile</toxicity>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids, Acyclic</category>
+      <mesh-id>D000144</mesh-id>
+    </category>
+    <category>
+      <category>Dicarboxylic Acids</category>
+      <mesh-id>D003998</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910150</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>OSI-7904L</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000324</id>
+      <name>Thymidylate synthase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04818" source="Swiss-Prot">
+        <name>Thymidylate synthase</name>
+        <general-function>Thymidylate synthase activity</general-function>
+        <specific-function>Contributes to the de novo mitochondrial thymidylate biosynthesis pathway.</specific-function>
+        <gene-name>TYMS</gene-name>
+        <locus>18p11.32</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.0</theoretical-pi>
+        <molecular-weight>35715.65</molecular-weight>
+        <chromosome-location>18</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:12441</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TYMS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X02308</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>37479</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2642</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04818</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TYSY_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.1.1.45</synonym>
+          <synonym>TS</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0036991|Thymidylate synthase
+MPVAGSELPRRPLPPAAQERDAEPRPPHGELQYLGQIQHILRCGVRKDDRTGTGTLSVFG
+MQARYSLRDEFPLLTTKRVFWKGVLEELLWFIKGSTNAKELSSKGVKIWDANGSRDFLDS
+LGFSTREEGDLGPVYGFQWRHFGAEYRDMESDYSGQGVDQLQRVIDTIKTNPDDRRIIMC
+AWNPRDLPLMALPPCHALCQFYVVNSELSCQLYQRSGDMGLGVPFNIASYALLTYMIAHI
+TGLKPGDFIHTLGDAHIYLNHIEPLKIQLQREPRPFPKLRILRKVEKIDDFKAEDFQIEG
+YNPHPTIKMEMAV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010247|Thymidylate synthase (TYMS)
+ATGCCTGTGGCCGGCTCGGAGCTGCCGCGCCGGCCCTTGCCCCCCGCCGCACAGGAGCGG
+GACGCCGAGCCGCGTCCGCCGCACGGGGAGCTGCAGTACCTGGGGCAGATCCAACACATC
+CTCCGCTGCGGCGTCAGGAAGGACGACCGCACGGGCACCGGCACCCTGTCGGTATTCGGC
+ATGCAGGCGCGCTACAGCCTGAGAGATGAATTCCCTCTGCTGACAACCAAACGTGTGTTC
+TGGAAGGGTGTTTTGGAGGAGTTGCTGTGGTTTATCAAGGGATCCACAAATGCTAAAGAG
+CTGTCTTCCAAGGGAGTGAAAATCTGGGATGCCAATGGATCCCGAGACTTTTTGGACAGC
+CTGGGATTCTCCACCAGAGAAGAAGGGGACTTGGGCCCAGTTTATGGCTTCCAGTGGAGG
+CATTTTGGGGCAGAATACAGAGATATGGAATCAGATTATTCAGGACAGGGAGTTGACCAA
+CTGCAAAGAGTGATTGACACCATCAAAACCAACCCTGACGACAGAAGAATCATCATGTGC
+GCTTGGAATCCAAGAGATCTTCCTCTGATGGCGCTGCCTCCATGCCATGCCCTCTGCCAG
+TTCTATGTGGTGAACAGTGAGCTGTCCTGCCAGCTGTACCAGAGATCGGGAGACATGGGC
+CTCGGTGTGCCTTTCAACATCGCCAGCTACGCCCTGCTCACGTACATGATTGCGCACATC
+ACGGGCCTGAAGCCAGGTGACTTTATACACACTTTGGGAGATGCACATATTTACCTGAAT
+CACATCGAGCCACTGAAAATTCAGCTTCAGCGAGAACCCAGACCTTTCCCAAAGCTCAGG
+ATTCTTCGAAAAGTTGAGAAAATTGATGACTTCAAAGCTGAAGACTTTCAGATTGAAGGG
+TACAATCCGCATCCAACTATTAAAATGGAAATGGCTGTTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00303</identifier>
+            <name>Thymidylat_synt</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cofactor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>folic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>thymidylate synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cartilage development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>deoxyribonucleoside monophosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>developmental growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dTMP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dTTP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dUMP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G1/S transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immortalization of host cell by virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intestinal epithelial cell maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organ regeneration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleoside biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription involved in G1/S transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cytokine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to folic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to glucocorticoid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to organophosphorus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to progesterone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to vitamin A</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tetrahydrofolate interconversion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>uracil metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

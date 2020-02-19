@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05945</drugbank-id>
+  <name>MDX-1303</name>
+  <description>MDX-1303 is a fully human antibody against the inhalation anthrax, the most lethal form of illness in humans caused by the Bacillus anthracis bacterium, and targets a protein component of these lethal toxins known as the anthrax protective antigen.</description>
+  <cas-number>915947-57-8</cas-number>
+  <unii>7D0R3114J3</unii>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3925</ref-id>
+        <pubmed-id>16988263</pubmed-id>
+        <citation>Vitale L, Blanset D, Lowy I, O'Neill T, Goldstein J, Little SF, Andrews GP, Dorough G, Taylor RK, Keler T: Prophylaxis and therapy of inhalational anthrax by a novel monoclonal antibody to protective antigen that mimics vaccine-induced immunity. Infect Immun. 2006 Oct;74(10):5840-7.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in anthrax exposure and bacterial infection.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>MDX-1303 targets a protein component of lethal toxins produced by the bacterium known as the anthrax protective antigen. The anthrax protective antigen initiates the onset of the illness by attaching to cells in the infected person, and then facilitates the entry of additional destructive toxins into the cells. MDX-1303 is designed to target anthrax protective antigen and protect the cells from damage by the anthrax toxins.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>Valortim</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003223</id>
+      <name>Anthrax toxin receptor 2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P58335" source="Swiss-Prot">
+        <name>Anthrax toxin receptor 2</name>
+        <general-function>Receptor activity</general-function>
+        <specific-function>Necessary for cellular interactions with laminin and the extracellular matrix.</specific-function>
+        <gene-name>ANTXR2</gene-name>
+        <locus>4q21.21</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>319-341</transmembrane-regions>
+        <signal-regions>1-33</signal-regions>
+        <theoretical-pi>7.53</theoretical-pi>
+        <molecular-weight>53665.67</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:21732</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ANTXR2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AY233452</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P58335</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ANTR2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Capillary morphogenesis gene 2 protein</synonym>
+          <synonym>CMG-2</synonym>
+          <synonym>CMG2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037224|Anthrax toxin receptor 2
+MVAERSPARSPGSWLFPGLWLLVLSGPGGLLRAQEQPSCRRAFDLYFVLDKSGSVANNWI
+EIYNFVQQLAERFVSPEMRLSFIVFSSQATIILPLTGDRGKISKGLEDLKRVSPVGETYI
+HEGLKLANEQIQKAGGLKTSSIIIALTDGKLDGLVPSYAEKEAKISRSLGASVYCVGVLD
+FEQAQLERIADSKEQVFPVKGGFQALKGIINSILAQSCTEILELQPSSVCVGEEFQIVLS
+GRGFMLGSRNGSVLCTYTVNETYTTSVKPVSVQLNSMLCPAPILNKAGETLDVSVSFNGG
+KSVISGSLIVTATECSNGIAAIIVILVLLLLLGIGLMWWFWPLCCKVVIKDPPPPPAPAP
+KEEEEEPLPTKKWPTVDASYYGGRGVGGIKRMEVRWGDKGSTEEGARLEKAKNAVVKIPE
+ETEEPIRPRPPRPKPTHQPPQTKWYTPIKGRLDALWALLRRQYDRVSLMRPQEGDEVCIW
+ECIEKELTA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012247|Anthrax toxin receptor 2 (ANTXR2)
+ATGGTGGCGGAGCGGTCCCCGGCCCGCAGCCCCGGGAGCTGGCTGTTCCCCGGGCTGTGG
+CTGTTGGTGCTCAGCGGTCCCGGGGGGCTGCTGCGCGCCCAGGAGCAGCCCTCCTGCAGA
+AGAGCCTTTGATCTCTACTTCGTCCTGGACAAGTCTGGGAGTGTGGCAAATAACTGGATT
+GAAATTTATAATTTCGTACAGCAACTTGCGGAGAGATTTGTGAGCCCTGAAATGAGATTA
+TCTTTCATTGTGTTTTCTTCTCAAGCAACTATTATTTTGCCATTAACTGGAGACAGAGGC
+AAAATCAGTAAAGGCTTGGAGGATTTAAAACGTGTTAGTCCAGTAGGAGAGACATATATC
+CATGAAGGACTAAAGCTAGCGAATGAACAAATTCAGAAAGCAGGAGGCTTGAAAACCTCC
+AGTATCATAATTGCTCTGACAGATGGCAAGTTGGACGGTCTGGTGCCATCATATGCAGAG
+AAAGAGGCAAAGATATCCAGGTCACTTGGGGCTAGTGTTTATTGTGTTGGTGTCCTTGAT
+TTTGAACAAGCACAGCTTGAAAGAATTGCTGATTCCAAGGAGCAAGTTTTCCCTGTCAAA
+GGTGGATTTCAGGCTCTTAAAGGAATAATTAATTCTATACTAGCTCAGTCATGTACTGAA
+ATCCTAGAATTGCAGCCCTCAAGTGTCTGTGTGGGGGAGGAATTTCAGATTGTCTTAAGT
+GGAAGAGGATTCATGCTGGGCAGTCGGAATGGCAGTGTTCTCTGCACTTACACTGTAAAT
+GAAACATATACAACGAGTGTAAAACCAGTAAGTGTACAGCTTAATTCTATGCTTTGTCCT
+GCACCTATCCTGAATAAAGCTGGAGAAACTCTTGATGTTTCAGTGAGCTTTAATGGAGGA
+AAATCTGTCATTTCAGGATCATTAATTGTCACAGCCACAGAATGTTCTAACGGGATCGCA
+GCCATCATTGTTATTTTGGTGTTACTGCTACTCCTGGGGATCGGTTTGATGTGGTGGTTT
+TGGCCCCTTTGCTGCAAAGTGGTTATTAAGGATCCTCCACCACCACCCGCCCCTGCACCA
+AAAGAGGAGGAAGAAGAACCTTTGCCTACTAAAAAGTGGCCAACTGTGGATGCTTCCTAT
+TATGGTGGTCGAGGGGTTGGAGGAATTAAAAGAATGGAGGTTCGTTGGGGTGATAAAGGA
+TCTACTGAGGAAGGTGCAAGGCTAGAGAAAGCCAAAAATGCTGTGGTGAAGATTCCTGAA
+GAAACAGAGGAACCCATCAGGCCTAGACCACCTCGACCCAAACCCACACACCAGCCTCCT
+CAGACAAAATGGTACACCCCAATTAAGGGTCGTCTTGATGCTCTCTGGGCTTTGTTGAGG
+CGGCAGTATGACCGGGTTTCTTTGATGCGACCTCAGGAAGGAGATGAGGTTTGTATATGG
+GAATGTATTGAGAAAGAGCTAACTGCTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00092</identifier>
+            <name>VWA</name>
+          </pfam>
+          <pfam>
+            <identifier>PF05586</identifier>
+            <name>Ant_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF05587</identifier>
+            <name>Anth_Ig</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>reproductive process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toxin transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003447</id>
+      <name>Anthrax toxin receptor 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9H6X2" source="Swiss-Prot">
+        <name>Anthrax toxin receptor 1</name>
+        <general-function>Transmembrane signaling receptor activity</general-function>
+        <specific-function>Plays a role in cell attachment and migration. Interacts with extracellular matrix proteins and with the actin cytoskeleton. Mediates adhesion of cells to type 1 collagen and gelatin, reorganization of the actin cytoskeleton and promotes cell spreading. Plays a role in the angiogenic response of cultured umbilical vein endothelial cells.</specific-function>
+        <gene-name>ANTXR1</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>322-342</transmembrane-regions>
+        <signal-regions>1-32</signal-regions>
+        <theoretical-pi>7.66</theoretical-pi>
+        <molecular-weight>62788.355</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:21014</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ANTXR1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BC012074</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9H6X2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ANTR1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ATR</synonym>
+          <synonym>TEM8</synonym>
+          <synonym>Tumor endothelial marker 8</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006718|Anthrax toxin receptor 1
+MATAERRALGIGFQWLSLATLVLICAGQGGRREDGGPACYGGFDLYFILDKSGSVLHHWN
+EIYYFVEQLAHKFISPQLRMSFIVFSTRGTTLMKLTEDREQIRQGLEELQKVLPGGDTYM
+HEGFERASEQIYYENRQGYRTASVIIALTDGELHEDLFFYSEREANRSRDLGAIVYCVGV
+KDFNETQLARIADSKDHVFPVNDGFQALQGIIHSILKKSCIEILAAEPSTICAGESFQVV
+VRGNGFRHARNVDRVLCSFKINDSVTLNEKPFSVEDTYLLCPAPILKEVGMKAALQVSMN
+DGLSFISSSVIITTTHCSDGSILAIALLILFLLLALALLWWFWPLCCTVIIKEVPPPPAE
+ESEEEDDDGLPKKKWPTVDASYYGGRGVGGIKRMEVRWGEKGSTEEGAKLEKAKNARVKM
+PEQEYEFPEPRNLNNNMRRPSSPRKWYSPIKGKLDALWVLLRKGYDRVSVMRPQPGDTGR
+CINFTRVKNNQPAKYPLNNAYHTSSPPPAPIYTPPPPAPHCPPPPPSAPTPPIPSPPSTL
+PPPPQAPPPNRAPPPSRPPPRPSV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012409|Anthrax toxin receptor 1 (ANTXR1)
+ATGGCCACGGCGGAGCGGAGAGCCCTCGGCATCGGCTTCCAGTGGCTCTCTTTGGCCACT
+CTGGTGCTCATCTGCGCCGGGCAAGGGGGACGCAGGGAGGATGGGGGTCCAGCCTGCTAC
+GGCGGATTTGACCTGTACTTCATTTTGGACAAATCAGGAAGTGTGCTGCACCACTGGAAT
+GAAATCTATTACTTTGTGGAACAGTTGGCTCACAAATTCATCAGCCCACAGTTGAGAATG
+TCCTTTATTGTTTTCTCCACCCGAGGAACAACCTTAATGAAACTGACAGAAGACAGAGAA
+CAAATCCGTCAAGGCCTAGAAGAACTCCAGAAAGTTCTGCCAGGAGGAGACACTTACATG
+CATGAAGGATTTGAAAGGGCCAGTGAGCAGATTTATTATGAAAACAGACAAGGGTACAGG
+ACAGCCAGCGTCATCATTGCTTTGACTGATGGAGAACTCCATGAAGATCTCTTTTTCTAT
+TCAGAGAGGGAGGCTAATAGGTCTCGAGATCTTGGTGCAATTGTTTACTGTGTTGGTGTG
+AAAGATTTCAATGAGACACAGCTGGCCCGGATTGCGGACAGTAAGGATCATGTGTTTCCC
+GTGAATGACGGCTTTCAGGCTCTGCAAGGCATCATCCACTCAATTTTGAAGAAGTCCTGC
+ATCGAAATTCTAGCAGCTGAACCATCCACCATATGTGCAGGAGAGTCATTTCAAGTTGTC
+GTGAGAGGAAACGGCTTCCGACATGCCCGCAACGTGGACAGGGTCCTCTGCAGCTTCAAG
+ATCAATGACTCGGTCACACTCAATGAGAAGCCCTTTTCTGTGGAAGATACTTATTTACTG
+TGTCCAGCGCCTATCTTAAAAGAAGTTGGCATGAAAGCTGCACTCCAGGTCAGCATGAAC
+GATGGCCTCTCTTTTATCTCCAGTTCTGTCATCATCACCACCACACACTGTAGCCTCCAC
+AAAATTGCATCAGGCCCCACAACAGCTGCTTGCATGGAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00092</identifier>
+            <name>VWA</name>
+          </pfam>
+          <pfam>
+            <identifier>PF05586</identifier>
+            <name>Ant_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF05587</identifier>
+            <name>Anth_Ig</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>filopodium membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lamellipodium membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>actin filament binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>collagen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane signaling receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>actin cytoskeleton reorganization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>reproductive process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substrate adhesion-dependent cell spreading</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

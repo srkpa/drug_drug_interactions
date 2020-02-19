@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2018-02-28" updated="2019-12-02">
+  <drugbank-id primary="true">DB13997</drugbank-id>
+  <name>Baloxavir marboxil</name>
+  <description>Baloxavir marboxil is an antiviral drug developed by Shionogi Co., a Japanese pharmaceutical company and Roche for the treatment of influenza A and influenza B infections. The drug was initially approved for use in Japan in February 2018 and approved by the FDA on October 24, 2018 [L4779], [A39895] for the treatment of acute uncomplicated influenza in patients 12 years of age and older who have been symptomatic for no more than 48 hours [FDA label]. Baloxavir marboxil, a cap-endonuclease inhibitor,  has a unique mechanism of action when compared to the currently existing neuraminidase inhibitor drug class used to treat influenza infections [A39894].</description>
+  <cas-number>1985606-14-1</cas-number>
+  <unii>505CXM6OHG</unii>
+  <average-mass>571.55</average-mass>
+  <monoisotopic-mass>571.122477593</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A39894</ref-id>
+        <pubmed-id>30184455</pubmed-id>
+        <citation>Hayden FG, Sugaya N, Hirotsu N, Lee N, de Jong MD, Hurt AC, Ishida T, Sekino H, Yamada K, Portsmouth S, Kawaguchi K, Shishido T, Arai M, Tsuchiya K, Uehara T, Watanabe A: Baloxavir Marboxil for Uncomplicated Influenza in Adults and Adolescents. N Engl J Med. 2018 Sep 6;379(10):913-923. doi: 10.1056/NEJMoa1716197.</citation>
+      </article>
+      <article>
+        <ref-id>A39895</ref-id>
+        <pubmed-id>29623652</pubmed-id>
+        <citation>Heo YA: Baloxavir: First Global Approval. Drugs. 2018 Apr;78(6):693-697. doi: 10.1007/s40265-018-0899-1.</citation>
+      </article>
+      <article>
+        <ref-id>A39907</ref-id>
+        <pubmed-id>28631174</pubmed-id>
+        <citation>Dong LH, Cao XR: Studies of the Interaction of Influenza Virus RNA Polymerase PAN with Endonuclease Inhibitors. Interdiscip Sci. 2018 Jun;10(2):430-437. doi: 10.1007/s12539-017-0239-2. Epub 2017 Jun 19.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L1473</ref-id>
+        <title>NME submissions and their additional indications Projects currently in phase II and III  </title>
+        <url>https://www.roche.com/dam/jcr:77aa35dc-feef-427b-b9e3-befd9e735d2e/en/irp180201-annex.pdf</url>
+      </link>
+      <link>
+        <ref-id>L1475</ref-id>
+        <title>Cap-dependent Endonuclease Inhibitor S-033188 for the Treatment of Influenza: Results from a Phase 3, Randomized, Double-Blind, Placebo- and Active-Controlled Study in Otherwise Healthy Adolescents and Adults with Seasonal Influenza</title>
+        <url>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5631501/</url>
+      </link>
+      <link>
+        <ref-id>L1477</ref-id>
+        <title>Identification and characterization of influenza variants resistant to a viral endonuclease inhibitor</title>
+        <url>http://www.pnas.org/content/113/13/3669</url>
+      </link>
+      <link>
+        <ref-id>L1478</ref-id>
+        <title>A novel small-molecule inhibitor of influenza A virus acts by suppressing PA endonuclease activity of the viral polymerase</title>
+        <url>https://www.nature.com/articles/srep22880</url>
+      </link>
+      <link>
+        <ref-id>L1479</ref-id>
+        <title>Pharmacokinetics/pharmacodynamics of S-033188</title>
+        <url>https://www.escmid.org/escmid_publications/escmid_elibrary/material/?mid=52614</url>
+      </link>
+      <link>
+        <ref-id>L1480</ref-id>
+        <title>Synergistic Antiviral Activity of S-033188/S-033447, a Novel Inhibitor of Influenza Virus Cap-Dependent Endonuclease, in Combination with Neuraminidase Inhibitors In Vitro</title>
+        <url>https://academic.oup.com/ofid/article/4/suppl_1/S371/4294857</url>
+      </link>
+      <link>
+        <ref-id>L4779</ref-id>
+        <title>FDA Approves New Drug to Treat Influenza</title>
+        <url>https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm624226.htm</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of influenza A and B virus infection [L1473, L1475], [FDA label] in patients 12 and older who have been symptomatic for no more than 48 hours. &#13;
+Clinical trials of this drug did not include subjects 65 years of age and older to determine whether they respond in a different way than younger subjects [FDA label].</indication>
+  <pharmacodynamics>Baloxavir marboxil is a selective inhibitor of influenza cap-dependent endonuclease which prevents polymerase function and therefore influenza virus mRNA replication [L1475], [A39907]. It has shown therapeutic activity against influenza A and B virus infections, including strains resistant to current antiviral agents [A39894]. This drug inhibits an enzyme required for viral replication, thus rapidly treating flu virus infection [L1475], [FDA label] and alleviating the symptoms associated with infection. A single dose of this agent was shown to be superior to placebo in relieving influenza symptoms and superior to both oseltamivir and placebo drug in virologic outcomes (marked by decreased viral load) [A39894]. The safety profile of Baloxavir marboxil compared favorably with that of oseltamivir, making it an effective treatment option for treatment of the flu virus, in one single dose [L1475], [A39894].</pharmacodynamics>
+  <mechanism-of-action>This drug is a CAP endonuclease inhibitor [L1473]. The influenza endonuclease is an essential subdomain of the viral RNA polymerase enzyme.   CAP endonuclease processes host pre-mRNAs to serve as primers for viral mRNA and therefore has been a common target for studies of anti-influenza drugs.  Inhibiting the activity of endonuclease can block the transcription of mRNA and inactivate the influenza virus [A39907].&#13;
+&#13;
+Viral gene transcription is primed by short-capped oligonucleotides that are cleaved from host cell pre mRNA by endonuclease activity. Translation of viral mRNAs by the host ribosome requires that they are capped at the 5' end, and this is achieved in cells infected with influenza virus by a “cap-snatching” mechanism, whereby the endonuclease cleaves 5′ caps from host mRNA which then act as primers for transcription. The N-terminal domain of PA subunit (PAN) has been confirmed to accommodate the endonuclease activity residues, which is highly preserved among subtypes of influenza A virus and is able to fold functionally [L1478]. Translation of viral mRNAs by the host ribosome requires that they are capped at the 5' end, and this is achieved in cells infected with influenza virus by a “cap-snatching” mechanism, whereby the endonuclease cleaves 5′ caps from host mRNA which then act as primers for transcription. The endonuclease domain binds the N-terminal half of PA (PAN) and contains a two-metal (Mn2+) active site that selectively cleaves the pre-mRNA substrate at the 3′ end of a guanine [L1477].    &#13;
+&#13;
+The administration of a cap-endonuclease inhibitor, such as Baloxavir marboxil, prevents the above process from occurring, exhibiting its action at the beginning of the pathway before CAP endonuclease may exert its action [L1475].</mechanism-of-action>
+  <toxicity>Ld50 (oral, rats): &gt;2000 mg/kg [MSDS]&#13;
+&#13;
+**Pregnancy Risk**&#13;
+&#13;
+There are no available data on the use of this drug in pregnant women to predict or inform a drug-associated risk of adverse developmental outcomes. However, there are known risks to the mother and fetus associated with influenza virus infection during pregnancy. In animal reproduction studies, no adverse developmental effects were observed in rats or rabbits with oral administration of Baloxavir marboxil at exposures approximately 5 (rats) and 7 (rabbits) times the systemic Baloxavir exposure at the maximum recommended human dose [FDA label]. The estimated background risk of major birth defects and miscarriage for the indicated population is not known at this time [FDA label].&#13;
+&#13;
+**Breastfeeding**&#13;
+&#13;
+There are no data on the presence of this drug in human breastmilk, the effects on the breastfed infant, or the effects on milk production. Baloxavir and its related metabolites were present in the milk of lactating rats [FDA label].&#13;
+&#13;
+**Carcinogenicity**&#13;
+&#13;
+Carcinogenicity studies have not been completed with baloxavir marboxil [FDA label].&#13;
+&#13;
+**Mutagenesis**&#13;
+&#13;
+Baloxavir marboxil and the active metabolite, baloxavir, were not shown to be mutagenic in in-vitro and in in-vivo genotoxicity assays, which included bacterial mutation assays in S. typhimurium and E. coli, micronucleus tests with cultured mammalian cells, and in the rodent micronucleus assay [FDA label].&#13;
+&#13;
+**Impairment of Fertility**&#13;
+&#13;
+In a fertility and early embryonic development study in rats, doses of baloxavir marboxil at 20, 200, or 1,000 mg/kg/day were given to female animals for 2 weeks before mating, during mating and until day 7 of pregnancy. Male animals were dosed for 4 weeks before mating and throughout mating. There were no measured effects on fertility, mating performance, or early embryonic development at any dose level, resulting in systemic drug exposure (AUC) approximately 5 times the MRHD (maximum recommended human dose) [FDA label].</toxicity>
+  <metabolism>Baloxavir marboxil is a prodrug that is converted by hydrolysis to baloxavir, the active form that exerts anti-influenza virus activity [FDA label].&#13;
+&#13;
+</metabolism>
+  <absorption>Tmax: 4h [FDA label]</absorption>
+  <half-life>Terminal elimination half-life: 79.1 h [FDA label].</half-life>
+  <protein-binding>92.9 - 93.9 % [FDA label]</protein-binding>
+  <route-of-elimination>14.7 % of a single dose is excreted in the urine, and 80.1% excreted in the feces [FDA label]</route-of-elimination>
+  <volume-of-distribution>1180 (V/F, L) [FDA label].</volume-of-distribution>
+  <clearance>10.3 L/h [FDA label]</clearance>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="inn/usan">Baloxavir marboxil</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Xofluza</name>
+      <labeller>Genentech, Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>50242-828</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>20 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA210854</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Xofluza</name>
+      <labeller>Genentech, Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>50242-860</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>40 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA210854</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Xofluza</name>
+      <labeller>A-S Medication Solutions</labeller>
+      <ndc-id/>
+      <ndc-product-code>50090-4104</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>40 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA210854</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Xofluza</name>
+      <labeller>A-S Medication Solutions</labeller>
+      <ndc-id/>
+      <ndc-product-code>50090-4102</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>20 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA210854</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Xofluza</name>
+      <ingredients>Baloxavir marboxil</ingredients>
+    </mixture>
+    <mixture>
+      <name>Xofluza</name>
+      <ingredients>Baloxavir marboxil</ingredients>
+    </mixture>
+    <mixture>
+      <name>Xofluza</name>
+      <ingredients>Baloxavir marboxil</ingredients>
+    </mixture>
+    <mixture>
+      <name>Xofluza</name>
+      <ingredients>Baloxavir marboxil</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Antiviral Agents</category>
+      <mesh-id>D000998</mesh-id>
+    </category>
+    <category>
+      <category>Antivirals for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A4 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Direct Acting Antivirals</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Enzyme Inhibitors</category>
+      <mesh-id>D004791</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+    <category>
+      <category>UGT1A3 substrates</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Tablet, film coated</form>
+      <route>Oral</route>
+      <strength>20 mg/1</strength>
+    </dosage>
+    <dosage>
+      <form>Tablet, film coated</form>
+      <route>Oral</route>
+      <strength>40 mg/1</strength>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB13997.pdf?1543254855</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB13997.pdf?1543264909</msds>
+  <patents>
+    <patent>
+      <number>8927710</number>
+      <country>United States</country>
+      <approved>2015-01-06</approved>
+      <expires>2031-05-05</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9815835</number>
+      <country>United States</country>
+      <approved>2017-11-14</approved>
+      <expires>2030-06-14</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8987441</number>
+      <country>United States</country>
+      <approved>2015-03-24</approved>
+      <expires>2031-09-21</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB01241</drugbank-id>
+      <name>Gemfibrozil</name>
+      <description>The metabolism of Baloxavir marboxil can be decreased when combined with Gemfibrozil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01544</drugbank-id>
+      <name>Flunitrazepam</name>
+      <description>The metabolism of Baloxavir marboxil can be decreased when combined with Flunitrazepam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01609</drugbank-id>
+      <name>Deferasirox</name>
+      <description>The metabolism of Baloxavir marboxil can be decreased when combined with Deferasirox.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05928</drugbank-id>
+      <name>Dovitinib</name>
+      <description>The metabolism of Baloxavir marboxil can be decreased when combined with Dovitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06210</drugbank-id>
+      <name>Eltrombopag</name>
+      <description>The metabolism of Baloxavir marboxil can be decreased when combined with Eltrombopag.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10317</drugbank-id>
+      <name>Rubella virus vaccine</name>
+      <description>The therapeutic efficacy of Rubella virus vaccine can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10343</drugbank-id>
+      <name>Bacillus calmette-guerin substrain tice live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain tice live antigen can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10804</drugbank-id>
+      <name>Bacillus calmette-guerin substrain connaught live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain connaught live antigen can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10805</drugbank-id>
+      <name>Yellow Fever Vaccine</name>
+      <description>The therapeutic efficacy of Yellow Fever Vaccine can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11003</drugbank-id>
+      <name>Anthrax vaccine</name>
+      <description>The therapeutic efficacy of Anthrax vaccine can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11050</drugbank-id>
+      <name>Typhoid Vaccine Live</name>
+      <description>The therapeutic efficacy of Typhoid Vaccine Live can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12386</drugbank-id>
+      <name>Bacillus calmette-guerin substrain danish 1331 live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain danish 1331 live antigen can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14409</drugbank-id>
+      <name>Human adenovirus e serotype 4 strain cl-68578 antigen</name>
+      <description>The therapeutic efficacy of Human adenovirus e serotype 4 strain cl-68578 antigen can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14443</drugbank-id>
+      <name>Vibrio cholerae CVD 103-HgR strain live antigen</name>
+      <description>The therapeutic efficacy of Vibrio cholerae CVD 103-HgR strain live antigen can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14685</drugbank-id>
+      <name>Adenovirus type 7 vaccine live</name>
+      <description>The therapeutic efficacy of Adenovirus type 7 vaccine live can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10318</drugbank-id>
+      <name>Varicella Zoster Vaccine (Live/attenuated)</name>
+      <description>The therapeutic efficacy of Varicella Zoster Vaccine (Live/attenuated) can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.12</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.12e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.38</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>{[(3R)-2-[(2S)-12,13-difluoro-9-thiatricyclo[9.4.0.0^{3,8}]pentadeca-1(15),3,5,7,11,13-hexaen-2-yl]-9,12-dioxo-5-oxa-1,2,8-triazatricyclo[8.4.0.0^{3,8}]tetradeca-10,13-dien-11-yl]oxy}methyl methyl carbonate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>{[(3R)-2-[(2S)-12,13-difluoro-9-thiatricyclo[9.4.0.0^{3,8}]pentadeca-1(15),3,5,7,11,13-hexaen-2-yl]-9,12-dioxo-5-oxa-1,2,8-triazatricyclo[8.4.0.0^{3,8}]tetradeca-10,13-dien-11-yl]oxy}methyl methyl carbonate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>571.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>571.122477593</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]12COCCN1C(=O)C1=C(OCOC(=O)OC)C(=O)C=CN1N2[C@H]1C2=CC=C(F)C(F)=C2CSC2=CC=CC=C12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C27H23F2N3O7S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C27H23F2N3O7S/c1-36-27(35)39-14-38-25-19(33)8-9-31-24(25)26(34)30-10-11-37-12-21(30)32(31)23-15-6-7-18(28)22(29)17(15)13-40-20-5-3-2-4-16(20)23/h2-9,21,23H,10-14H2,1H3/t21-,23+/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>RZVPBGBYGMDSBG-GGAORHGYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>97.85</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>140.76</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>53.87</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-0.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>Soluble in water </value>
+      <source>MSDS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.24</value>
+      <source>MSDS</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D11021</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>59718643</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Baloxavir_marboxil</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="4">
+      <id>BE0009736</id>
+      <name>Polymerase acidic protein</name>
+      <organism>Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P03433" source="Swiss-Prot">
+        <name>Polymerase acidic protein</name>
+        <general-function>Plays an essential role in viral RNA transcription and replication by forming the heterotrimeric polymerase complex together with PB1 and PB2 subunits. The complex transcribes viral mRNAs by using a unique mechanism called cap-snatching. It consists in the hijacking and cleavage of host capped pre-mRNAs. These short capped RNAs are then used as primers for viral mRNAs. The PB2 subunit is responsible for the binding of the 5' cap of cellular pre-mRNAs which are subsequently cleaved after 10-13 nucleotides by the PA subunit that carries the endonuclease activity.</general-function>
+        <specific-function>Endonuclease activity</specific-function>
+        <gene-name>PA</gene-name>
+        <locus/>
+        <cellular-location>Host cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>82587.575</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="211044">Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P03433</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PA_I34A1</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.-.-</synonym>
+          <synonym>RNA-directed RNA polymerase subunit P2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0052098|Polymerase acidic protein
+MEDFVRQCFNPMIVELAEKTMKEYGEDLKIETNKFAAICTHLEVCFMYSDFHFINEQGES
+IIVELGDPNALLKHRFEIIEGRDRTMAWTVVNSICNTTGAEKPKFLPDLYDYKENRFIEI
+GVTRREVHIYYLEKANKIKSEKTHIHIFSFTGEEMATKADYTLDEESRARIKTRLFTIRQ
+EMASRGLWDSFRQSERGEETIEERFEITGTMRKLADQSLPPNFSSLENFRAYVDGFEPNG
+YIEGKLSQMSKEVNARIEPFLKTTPRPLRLPNGPPCSQRSKFLLMDALKLSIEDPSHEGE
+GIPLYDAIKCMRTFFGWKEPNVVKPHEKGINPNYLLSWKQVLAELQDIENEEKIPKTKNM
+KKTSQLKWALGENMAPEKVDFDDCKDVGDLKQYDSDEPELRSLASWIQNEFNKACELTDS
+SWIELDEIGEDVAPIEHIASMRRNYFTSEVSHCRATEYIMKGVYINTALLNASCAAMDDF
+QLIPMISKCRTKEGRRKTNLYGFIIKGRSHLRNDTDVVNFVSMEFSLTDPRLEPHKWEKY
+CVLEIGDMLIRSAIGQVSRPMFLYVRTNGTSKIKMKWGMEMRRCLLQSLQQIESMIEAES
+SVKEKDMTKEFFENKSETWPIGESPKGVEESSIGKVCRTLLAKSVFNSLYASPQLEGFSA
+ESRKLLLIVQALRDNLEPGTFDLGGLYEAIEECLINDPWVLLNASWFNSFLTHALS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0052099|Polymerase acidic protein (PA)
+ATGGAAGATTTTGTGCGACAATGCTTCAATCCGATGATTGTCGAGCTTGCGGAAAAAACA
+ATGAAAGAGTATGGGGAGGACCTGAAAATCGAAACAAACAAATTTGCAGCAATATGCACT
+CACTTGGAAGTATGCTTCATGTATTCAGATTTCCACTTCATCAATGAGCAAGGCGAGTCA
+ATAATCGTAGAACTTGGTGATCCTAATGCACTTTTGAAGCACAGATTTGAAATAATCGAG
+GGAAGAGATCGCACAATGGCCTGGACAGTAGTAAACAGTATTTGCAACACTACAGGGGCT
+GAGAAACCAAAGTTTCTACCAGATTTGTATGATTACAAGGAAAATAGATTCATCGAAATT
+GGAGTAACAAGGAGAGAAGTTCACATATACTATCTGGAAAAGGCCAATAAAATTAAATCT
+GAGAAAACACACATCCACATTTTCTCGTTCACTGGGGAAGAAATGGCCACAAAGGCCGAC
+TACACTCTCGATGAAGAAAGCAGGGCTAGGATCAAAACCAGGCTATTCACCATAAGACAA
+GAAATGGCCAGCAGAGGCCTCTGGGATTCCTTTCGTCAGTCCGAGAGAGGAGAAGAGACA
+ATTGAAGAAAGGTTTGAAATCACAGGAACAATGCGCAAGCTTGCCGACCAAAGTCTCCCG
+CCGAACTTCTCCAGCCTTGAAAATTTTAGAGCCTATGTGGATGGATTCGAACCGAACGGC
+TACATTGAGGGCAAGCTGTCTCAAATGTCCAAAGAAGTAAATGCTAGAATTGAACCTTTT
+TTGAAAACAACACCACGACCACTTAGACTTCCGAATGGGCCTCCCTGTTCTCAGCGGTCC
+AAATTCCTGCTGATGGATGCCTTAAAATTAAGCATTGAGGACCCAAGTCATGAAGGAGAG
+GGAATACCGCTATATGATGCAATCAAATGCATGAGAACATTCTTTGGATGGAAGGAACCC
+AATGTTGTTAAACCACACGAAAAGGGAATAAATCCAAATTATCTTCTGTCATGGAAGCAA
+GTACTGGCAGAACTGCAGGACATTGAGAATGAGGAGAAAATTCCAAAGACTAAAAATATG
+AAAAAAACAAGTCAGCTAAAGTGGGCACTTGGTGAGAACATGGCACCAGAAAAGGTAGAC
+TTTGACGACTGTAAAGATGTAGGTGATTTGAAGCAATATGATAGTGATGAACCAGAATTG
+AGGTCGCTTGCAAGTTGGATTCAGAATGAGTTCAACAAGGCATGCGAACTGACAGATTCA
+AGCTGGATAGAGCTTGATGAGATTGGAGAAGATGTGGCTCCAATTGAACACATTGCAAGC
+ATGAGAAGGAATTATTTCACATCAGAGGTGTCTCACTGCAGAGCCACAGAATACATAATG
+AAGGGGGTGTACATCAATACTGCCTTACTTAATGCATCTTGTGCAGCAATGGATGATTTC
+CAATTAATTCCAATGATAAGCAAGTGTAGAACTAAGGAGGGAAGGCGAAAGACCAACTTG
+TATGGTTTCATCATAAAAGGAAGATCCCACTTAAGGAATGACACCGACGTGGTAAACTTT
+GTGAGCATGGAGTTTTCTCTCACTGACCCAAGACTTGAACCACACAAATGGGAGAAGTAC
+TGTGTTCTTGAGATAGGAGATATGCTTCTAAGAAGTGCCATAGGCCAGGTTTCAAGGCCC
+ATGTTCTTGTATGTGAGGACAAATGGAACCTCAAAAATTAAAATGAAATGGGGAATGGAG
+ATGAGGCGTTGTCTCCTCCAGTCACTTCAACAAATTGAGAGTATGATTGAAGCTGAGTCC
+TCTGTCAAAGAGAAAGACATGACCAAAGAGTTCTTTGAGAACAAATCAGAAACATGGCCC
+ATTGGAGAGTCTCCCAAAGGAGTGGAGGAAAGTTCCATTGGGAAGGTCTGCAGGACTTTA
+TTAGCAAAGTCGGTATTTAACAGCTTGTATGCATCTCCACAACTAGAAGGATTTTCAGCT
+GAATCAAGAAAACTGCTTCTTATCGTTCAGGCTCTTAGGGACAATCTGGAACCTGGGACC
+TTTGATCTTGGGGGGCTATATGAAGCAATTGAGGAGTGCCTAATTAATGATCCCTGGGTT
+TTGCTTAATGCTTCTTGGTTCAACTCCTTCCTTACACATGCATTGAGTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00603</identifier>
+            <name>Flu_PA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>host cell cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>host cell nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endonuclease activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cap snatching</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fusion of virus membrane with host plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular transport of virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor-mediated endocytosis of virus by host cell</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>suppression by virus of host RNA polymerase II activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>uncoating of virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral budding from plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral genome maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral genome packaging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral RNA genome replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral transcription</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>virion attachment to host cell</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme position="2">
+      <id>BE0003677</id>
+      <name>UDP-glucuronosyltransferase 1-3</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments>
+          <attachment>
+            <ref-id>F2079</ref-id>
+            <title>Baloxavir Marboxil FDA label</title>
+            <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/079/original/Baloxavir_Marboxil_FDA_label.pdf?1543256133</url>
+          </attachment>
+        </attachments>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35503" source="Swiss-Prot">
+        <name>UDP-glucuronosyltransferase 1-3</name>
+        <general-function>Retinoic acid binding</general-function>
+        <specific-function>UDPGT is of major importance in the conjugation and subsequent elimination of potentially toxic xenobiotics and endogenous compounds. Isoform 2 lacks transferase activity but acts as a negative regulator of isoform 1.</specific-function>
+        <gene-name>UGT1A3</gene-name>
+        <locus>2q37</locus>
+        <cellular-location>Microsome</cellular-location>
+        <transmembrane-regions>492-508</transmembrane-regions>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>8.28</theoretical-pi>
+        <molecular-weight>60337.835</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:12535</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M84127</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>340135</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35503</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>UD13_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.17</synonym>
+          <synonym>GNT1</synonym>
+          <synonym>UDP-glucuronosyltransferase 1-C</synonym>
+          <synonym>UDP-glucuronosyltransferase 1A3</synonym>
+          <synonym>UDPGT 1-3</synonym>
+          <synonym>UGT-1C</synonym>
+          <synonym>UGT1</synonym>
+          <synonym>UGT1C</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007065|UDP-glucuronosyltransferase 1-3
+MATGLQVPLPWLATGLLLLLSVQPWAESGKVLVVPIDGSHWLSMREVLRELHARGHQAVV
+LTPEVNMHIKEENFFTLTTYAISWTQDEFDRHVLGHTQLYFETEHFLKKFFRSMAMLNNM
+SLVYHRSCVELLHNEALIRHLNATSFDVVLTDPVNLCAAVLAKYLSIPTVFFLRNIPCDL
+DFKGTQCPNPSSYIPRLLTTNSDHMTFMQRVKNMLYPLALSYICHAFSAPYASLASELFQ
+REVSVVDILSHASVWLFRGDFVMDYPRPIMPNMVFIGGINCANRKPLSQEFEAYINASGE
+HGIVVFSLGSMVSEIPEKKAMAIADALGKIPQTVLWRYTGTRPSNLANNTILVKWLPQND
+LLGHPMTRAFITHAGSHGVYESICNGVPMVMMPLFGDQMDNAKRMETKGAGVTLNVLEMT
+SEDLENALKAVINDKSYKENIMRLSSLHKDRPVEPLDLAVFWVEFVMRHKGAPHLRPAAH
+DLTWYQYHSLDVIGFLLAVVLTVAFITFKCCAYGYRKCLGKKGRVKKAHKSKTH</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017182|UDP-glucuronosyltransferase 1-3 (UGT1A3)
+ATGGCCACAGGACTCCAGGTTCCCCTGCCGTGGCTGGCCACAGGACTGCTGCTTCTCCTC
+AGTGTCCAGCCCTGGGCTGAGAGTGGAAAGGTGTTGGTGGTGCCCATTGATGGCAGCCAC
+TGGCTCAGCATGCGGGAGGTCTTGCGGGAGCTCCATGCCAGAGGCCACCAGGCAGTGGTC
+CTCACCCCAGAGGTGAATATGCACATCAAAGAAGAGAACTTTTTCACCCTGACAACCTAT
+GCCATTTCGTGGACCCAGGATGAATTTGATCGCCATGTGCTGGGCCACACTCAACTGTAC
+TTTGAAACAGAACATTTTCTGAAGAAATTTTTCAGAAGTATGGCAATGTTGAACAATATG
+TCTTTGGTCTATCATAGGTCTTGTGTGGAGCTACTACATAATGAGGCCCTGATCAGGCAC
+CTGAATGCTACTTCCTTTGATGTGGTTTTAACAGACCCCGTTAACCTCTGCGCGGCAGTG
+CTGGCTAAGTACCTGTCGATTCCTACTGTGTTTTTTTTGAGGAACATTCCATGTGATTTA
+GACTTTAAGGGCACACAGTGTCCAAACCCTTCCTCCTATATTCCTAGATTACTAACAACC
+AATTCAGACCACATGACATTCATGCAAAGGGTCAAGAACATGCTCTACCCTCTGGCCCTG
+TCCTACATTTGCCATGCTTTTTCTGCTCCTTATGCAAGCCTTGCCTCTGAGCTTTTTCAG
+AGAGAGGTGTCAGTGGTGGATATTCTCAGTCATGCATCTGTGTGGCTGTTCCGAGGGGAC
+TTTGTGATGGACTACCCCAGGCCAATCATGCCCAACATGGTCTTCATTGGGGGCATCAAC
+TGTGCCAACAGGAAGCCACTATCTCAGGAATTTGAAGCCTACATTAATGCTTCTGGAGAA
+CATGGAATTGTGGTTTTCTCTTTGGGATCAATGGTCTCAGAAATTCCAGAGAAGAAAGCT
+ATGGCAATTGCTGATGCTTTGGGCAAAATCCCTCAGACAGTCCTGTGGCGGTACACTGGA
+ACCCGACCATCGAATCTTGCGAACAACACGATACTTGTTAAGTGGCTACCCCAAAACGAT
+CTGCTTGGTCACCCGATGACCCGTGCCTTTATCACCCATGCTGGTTCCCATGGTGTTTAT
+GAAAGCATATGCAATGGCGTTCCCATGGTGATGATGCCCTTGTTTGGTGATCAGATGGAC
+AATGCAAAGCGCATGGAGACTAAGGGAGCTGGAGTGACCCTGAATGTTCTGGAAATGACT
+TCTGAAGATTTAGAAAATGCTCTAAAAGCAGTCATCAATGACAAAAGTTACAAGGAGAAC
+ATCATGCGCCTCTCCAGCCTTCACAAGGACCGCCCGGTGGAGCCGCTGGACCTGGCCGTG
+TTCTGGGTGGAGTTTGTGATGAGGCACAAGGGCGCGCCACACCTGCGCCCCGCAGCCCAC
+GACCTCACCTGGTACCAGTACCATTCCTTGGACGTGATTGGTTTCCTCTTGGCCGTCGTG
+CTGACAGTGGCCTTCATCACCTTTAAATGTTGTGCTTATGGCTACCGGAAATGCTTGGGG
+AAAAAAGGGCGAGTTAAGAAAGCCCACAAATCCAAGACCCATTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00201</identifier>
+            <name>UDPGT</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glucuronosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>retinoic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular glucuronidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hormone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>flavonoid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>flavonoid glucuronidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cellular glucuronidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of fatty acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glucuronosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retinoic acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic glucuronidation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+    <enzyme position="3">
+      <id>BE0002638</id>
+      <name>Cytochrome P450 3A4</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments>
+          <attachment>
+            <ref-id>F2079</ref-id>
+            <title>Baloxavir Marboxil FDA label</title>
+            <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/079/original/Baloxavir_Marboxil_FDA_label.pdf?1543256133</url>
+          </attachment>
+        </attachments>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08684" source="Swiss-Prot">
+        <name>Cytochrome P450 3A4</name>
+        <general-function>Vitamin d3 25-hydroxylase activity</general-function>
+        <specific-function>Cytochromes P450 are a group of heme-thiolate monooxygenases. In liver microsomes, this enzyme is involved in an NADPH-dependent electron transport pathway. It performs a variety of oxidation reactions (e.g. caffeine 8-oxidation, omeprazole sulphoxidation, midazolam 1'-hydroxylation and midazolam 4-hydroxylation) of structurally unrelated compounds, including steroids, fatty acids, and xenobiotics. Acts as a 1,8-cineole 2-exo-monooxygenase. The enzyme also hydroxylates etoposide (PubMed:11159812). Catalyzes 4-beta-hydroxylation of cholesterol. May catalyze 25-hydroxylation of cholesterol in vitro (PubMed:21576599).</specific-function>
+        <gene-name>CYP3A4</gene-name>
+        <locus>7q21.1</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions>2-22</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.25</theoretical-pi>
+        <molecular-weight>57342.67</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CYP3A4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18907</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1337</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08684</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CP3A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,8-cineole 2-exo-monooxygenase</synonym>
+          <synonym>1.14.13.-</synonym>
+          <synonym>Albendazole monooxygenase</synonym>
+          <synonym>Albendazole sulfoxidase</synonym>
+          <synonym>Cholesterol 25-hydroxylase</synonym>
+          <synonym>CYP3A3</synonym>
+          <synonym>CYPIIIA3</synonym>
+          <synonym>CYPIIIA4</synonym>
+          <synonym>Cytochrome P450 3A3</synonym>
+          <synonym>Cytochrome P450 HLp</synonym>
+          <synonym>Cytochrome P450 NF-25</synonym>
+          <synonym>Cytochrome P450-PCN1</synonym>
+          <synonym>Nifedipine oxidase</synonym>
+          <synonym>Quinine 3-monooxygenase</synonym>
+          <synonym>Taurochenodeoxycholate 6-alpha-hydroxylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021936|Cytochrome P450 3A4
+MALIPDLAMETWLLLAVSLVLLYLYGTHSHGLFKKLGIPGPTPLPFLGNILSYHKGFCMF
+DMECHKKYGKVWGFYDGQQPVLAITDPDMIKTVLVKECYSVFTNRRPFGPVGFMKSAISI
+AEDEEWKRLRSLLSPTFTSGKLKEMVPIIAQYGDVLVRNLRREAETGKPVTLKDVFGAYS
+MDVITSTSFGVNIDSLNNPQDPFVENTKKLLRFDFLDPFFLSITVFPFLIPILEVLNICV
+FPREVTNFLRKSVKRMKESRLEDTQKHRVDFLQLMIDSQNSKETESHKALSDLELVAQSI
+IFIFAGYETTSSVLSFIMYELATHPDVQQKLQEEIDAVLPNKAPPTYDTVLQMEYLDMVV
+NETLRLFPIAMRLERVCKKDVEINGMFIPKGVVVMIPSYALHRDPKYWTEPEKFLPERFS
+KKNKDNIDPYIYTPFGSGPRNCIGMRFALMNMKLALIRVLQNFSFKPCKETQIPLKLSLG
+GLLQPEKPVVLKVESRDGTVSGA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021937|Cytochrome P450 3A4 (CYP3A4)
+ATGGCTCTCATCCCAGACTTGGCCATGGAAACCTGGCTTCTCCTGGCTGTCAGCCTGGTG
+CTCCTCTATCTATATGGAACCCATTCACATGGACTTTTTAAGAAGCTTGGAATTCCAGGG
+CCCACACCTCTGCCTTTTTTGGGAAATATTTTGTCCTACCATAAGGGCTTTTGTATGTTT
+GACATGGAATGTCATAAAAAGTATGGAAAAGTGTGGGGCTTTTATGATGGTCAACAGCCT
+GTGCTGGCTATCACAGATCCTGACATGATCAAAACAGTGCTAGTGAAAGAATGTTATTCT
+GTCTTCACAAACCGGAGGCCTTTTGGTCCAGTGGGATTTATGAAAAGTGCCATCTCTATA
+GCTGAGGATGAAGAATGGAAGAGATTACGATCATTGCTGTCTCCAACCTTCACCAGTGGA
+AAACTCAAGGAGATGGTCCCTATCATTGCCCAGTATGGAGATGTGTTGGTGAGAAATCTG
+AGGCGGGAAGCAGAGACAGGCAAGCCTGTCACCTTGAAAGACGTCTTTGGGGCCTACAGC
+ATGGATGTGATCACTAGCACATCATTTGGAGTGAACATCGACTCTCTCAACAATCCACAA
+GACCCCTTTGTGGAAAACACCAAGAAGCTTTTAAGATTTGATTTTTTGGATCCATTCTTT
+CTCTCAATAATCTTTCCATTCCTCATCCCAATTCTTGAAGTATTAAATATCTGTGTGTTT
+CCAAGAGAAGTTACAAATTTTTTAAGAAAATCTGTAAAAAGGATGAAAGAAAGTCGCCTC
+GAAGATACACAAAAGCACCGAGTGGATTTCCTTCAGCTGATGATTGACTCTCAGAATTCA
+AAAGAAACTGAGTCCCACAAAGCTCTGTCCGATCTGGAGCTCGTGGCCCAATCAATTATC
+TTTATTTTTGCTGGCTATGAAACCACGAGCAGTGTTCTCTCCTTCATTATGTATGAACTG
+GCCACTCACCCTGATGTCCAGCAGAAACTGCAGGAGGAAATTGATGCAGTTTTACCCAAT
+AAGGCACCACCCACCTATGATACTGTGCTACAGATGGAGTATCTTGACATGGTGGTGAAT
+GAAACGCTCAGATTATTCCCAATTGCTATGAGACTTGAGAGGGTCTGCAAAAAAGATGTT
+GAGATCAATGGGATGTTCATTCCCAAAGGGGTGGTGGTGATGATTCCAAGCTATGCTCTT
+CACCGTGACCCAAAGTACTGGACAGAGCCTGAGAAGTTCCTCCCTGAAAGATTCAGCAAG
+AAGAACAAGGACAACATAGATCCTTACATATACACACCCTTTGGAAGTGGACCCAGAAAC
+TGCATTGGCATGAGGTTTGCTCTCATGAACATGAAACTTGCTCTAATCAGAGTCCTTCAG
+AACTTCTCCTTCAAACCTTGTAAAGAAACACAGATCCCCCTGAAATTAAGCTTAGGAGGA
+CTTCTTCAACCAGAAAAACCCGTTGTTCTAAAGGTTGAGTCAAGGGATGGCACCGTAAGT
+GGAGCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00067</identifier>
+            <name>p450</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>albendazole monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aromatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>caffeine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>quinine 3-monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>taurochenodeoxycholate 6alpha-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>testosterone 6-beta-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D 24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D3 25-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alkaloid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>androgen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcitriol biosynthetic process from calciol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>exogenous drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heterocycle metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monoterpenoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidative demethylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters>
+    <transporter position="1">
+      <id>BE0002369</id>
+      <name>ATP-binding cassette sub-family B member 5</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments>
+          <attachment>
+            <ref-id>F2078</ref-id>
+            <title>Baloxavir Marboxil FDA label</title>
+            <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/078/original/Baloxavir_Marboxil_FDA_label.pdf?1543255968</url>
+          </attachment>
+        </attachments>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q2M3G0" source="Swiss-Prot">
+        <name>ATP-binding cassette sub-family B member 5</name>
+        <general-function>Efflux transmembrane transporter activity</general-function>
+        <specific-function>Drug efflux transporter present in a number of stem cells that acts as a regulator of cellular differentiation. Able to mediate efflux from cells of the rhodamine dye and of the therapeutic drug doxorubicin. Specifically present in limbal stem cells, where it plays a key role in corneal development and repair.</specific-function>
+        <gene-name>ABCB5</gene-name>
+        <locus>7p15.3</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>49-69
+110-130
+181-201
+203-223
+294-314
+322-342
+693-713
+737-757
+827-847
+917-937
+954-974</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.41</theoretical-pi>
+        <molecular-weight>138639.48</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:46</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ABCB5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AY090613</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q2M3G0</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ABCB5_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ABCB5 P-gp</synonym>
+          <synonym>P-glycoprotein ABCB5</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037199|ATP-binding cassette sub-family B member 5
+MENSERAEEMQENYQRNGTAEEQPKLRKEAVGSIEIFRFADGLDITLMILGILASLVNGA
+CLPLMPLVLGEMSDNLISGCLVQTNTTNYQNCTQSQEKLNEDMTLLTLYYVGIGVAALIF
+GYIQISLWIITAARQTKRIRKQFFHSVLAQDIGWFDSCDIGELNTRMTDDIDKISDGIGD
+KIALLFQNMSTFSIGLAVGLVKGWKLTLVTLSTSPLIMASAAACSRMVISLTSKELSAYS
+KAGAVAEEVLSSIRTVIAFRAQEKELQRYTQNLKDAKDFGIKRTIASKVSLGAVYFFMNG
+TYGLAFWYGTSLILNGEPGYTIGTVLAVFFSVIHSSYCIGAAVPHFETFAIARGAAFHIF
+QVIDKKPSIDNFSTAGYKPESIEGTVEFKNVSFNYPSRPSIKILKGLNLRIKSGETVALV
+GLNGSGKSTVVQLLQRLYDPDDGFIMVDENDIRALNVRHYRDHIGVVSQEPVLFGTTISN
+NIKYGRDDVTDEEMERAAREANAYDFIMEFPNKFNTLVGEKGAQMSGGQKQRIAIARALV
+RNPKILILDEATSALDSESKSAVQAALEKASKGRTTIVVAHRLSTIRSADLIVTLKDGML
+AEKGAHAELMAKRGLYYSLVMSQDIKKADEQMESMTYSTERKTNSLPLHSVKSIKSDFID
+KAEESTQSKEISLPEVSLLKILKLNKPEWPFVVLGTLASVLNGTVHPVFSIIFAKIITMF
+GNNDKTTLKHDAEIYSMIFVILGVICFVSYFMQGLFYGRAGEILTMRLRHLAFKAMLYQD
+IAWFDEKENSTGGLTTILAIDIAQIQGATGSRIGVLTQNATNMGLSVIISFIYGWEMTFL
+ILSIAPVLAVTGMIETAAMTGFANKDKQELKHAGKIATEALENIRTIVSLTREKAFEQMY
+EEMLQTQHRNTSKKAQIIGSCYAFSHAFIYFAYAAGFRFGAYLIQAGRMTPEGMFIVFTA
+IAYGAMAIGETLVLAPEYSKAKSGAAHLFALLEKKPNIDSRSQEGKKPDTCEGNLEFREV
+SFFYPCRPDVFILRGLSLSIERGKTVAFVGSSGCGKSTSVQLLQRLYDPVQGQVLFDGVD
+AKELNVQWLRSQIAIVPQEPVLFNCSIAENIAYGDNSRVVPLDEIKEAANAANIHSFIEG
+LPEKYNTQVGLKGAQLSGGQKQRLAIARALLQKPKILLLDEATSALDNDSEKVVQHALDK
+ARTGRTCLVVTHRLSAIQNADLIVVLHNGKIKEQGTHQELLRNRDIYFKLVNAQSVQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011699|ATP-binding cassette sub-family B member 5 (ABCB5)
+ATGGAAAATTCAGAAAGAGCTGAAGAAATGCAAGAAAATTATCAGAGAAATGGAACTGCA
+GAAGAACAGCCAAAACTGAGAAAGGAAGCAGTTGGATCTATTGAGATATTCCGCTTTGCT
+GATGGACTGGACATCACACTCATGATCCTGGGTATACTGGCATCACTGGTCAATGGAGCC
+TGCCTTCCTTTAATGCCACTGGTTTTAGGAGAAATGAGTGATAACCTTATTAGTGGATGT
+CTAGTCCAAACTAACACAACAAATTATCAGAACTGTACTCAGTCTCAAGAGAAGCTGAAT
+GAAGATATGACTCTGTTGACCCTGTATTATGTTGGAATAGGTGTTGCTGCCTTGATTTTT
+GGTTACATACAGATTTCCTTGTGGATTATAACTGCAGCACGACAGACCAAGAGGATTCGA
+AAACAGTTTTTTCATTCAGTTTTGGCACAGGACATCGGCTGGTTTGATAGCTGTGACATC
+GGTGAACTTAACACTCGCATGACAGATGACATTGACAAAATCAGTGATGGTATTGGAGAT
+AAGATTGCTCTGTTGTTTCAAAACATGTCTACTTTTTCGATTGGCCTGGCAGTTGGTTTG
+GTGAAGGGCTGGAAACTCACCCTAGTGACTCTATCCACGTCTCCTCTTATAATGGCTTCA
+GCGGCAGCATGTTCTAGGATGGTCATCTCATTGACCAGTAAGGAATTAAGTGCCTATTCC
+AAAGCTGGGGCTGTGGCAGAAGAAGTCTTGTCATCAATCCGAACAGTCATAGCCTTTAGG
+GCCCAGGAGAAAGAACTTCAAAGGTATACACAGAATCTCAAAGATGCAAAGGATTTTGGC
+ATAAAAAGGACTATAGCTTCAAAAGTGTCTCTTGGTGCTGTGTACTTCTTTATGAATGGA
+ACCTATGGACTTGCTTTTTGGTATGGAACCTCCTTGATTCTTAATGGAGAACCTGGATAT
+ACCATCGGGACTGTTCTTGCTGTTTTCTTTAGTGTAATCCATAGCAGTTATTGCATTGGA
+GCAGCAGTCCCTCACTTTGAAACCTTCGCAATAGCCCGAGGAGCTGCCTTTCATATTTTC
+CAGGTTATTGATAAGAAACCCAGTATAGATAACTTTTCCACAGCTGGATATAAACCTGAA
+TCCATAGAAGGAACTGTGGAATTTAAAAATGTTTCTTTCAATTATCCATCAAGACCATCT
+ATCAAGATTCTGAAAGGTCTGAATCTCAGAATTAAGTCTGGAGAGACAGTCGCCTTGGTC
+GGTCTCAATGGCAGTGGGAAGAGTACGGTAGTCCAGCTTCTGCAGAGGTTATATGATCCG
+GATGATGGCTTTATCATGGTGGATGAGAATGACATCAGAGCTTTAAATGTGCGGCATTAT
+CGAGACCATATTGGAGTGGTTAGTCAAGAGCCTGTTTTGTTCGGGACCACCATCAGTAAC
+AATATCAAGTATGGACGAGATGATGTGACTGATGAAGAGATGGAGAGAGCAGCAAGGGAA
+GCAAATGCGTATGATTTTATCATGGAGTTTCCTAATAAATTTAATACATTGGTAGGGGAA
+AAAGGAGCTCAAATGAGTGGAGGGCAGAAACAGAGGATCGCAATTGCTCGTGCCTTAGTT
+CGAAACCCCAAGATTCTGATTTTAGATGAGGCTACGTCTGCCCTGGATTCAGAAAGCAAG
+TCAGCTGTTCAAGCTGCACTGGAGAAGGCGAGCAAAGGTCGGACTACAATCGTGGTAGCA
+CACCGACTTTCTACTATTCGAAGTGCAGATTTGATTGTGACCCTAAAGGATGGAATGCTG
+GCGGAGAAAGGAGCACATGCTGAACTAATGGCAAAACGAGGTCTATATTATTCACTTGTG
+ATGTCACAGGATATTAAAAAAGCTGATGAACAGATGGAGTCAATGACATATTCTACTGAA
+AGAAAGACCAACTCACTTCCTCTGCACTCTGTGAAGAGCATCAAGTCAGACTTCATTGAC
+AAGGCTGAGGAATCCACCCAATCTAAAGAGATAAGTCTTCCTGAAGTCTCTCTATTAAAA
+ATTTTAAAGTTAAACAAGCCTGAATGGCCTTTTGTGGTTCTGGGGACATTGGCTTCTGTT
+CTAAATGGAACTGTTCATCCAGTATTTTCCATCATCTTTGCAAAAATTATAACCATGTTT
+GGAAATAATGATAAAACCACATTAAAGCATGATGCAGAAATTTATTCCATGATATTCGTC
+ATTTTGGGTGTTATTTGCTTTGTCAGTTATTTCATGCAGGGATTATTTTACGGCAGAGCA
+GGGGAAATTTTAACGATGAGATTAAGACACTTGGCCTTCAAAGCCATGTTATATCAGGAT
+ATTGCCTGGTTTGATGAAAAGGAAAACAGCACAGGAGGCTTGACAACAATATTAGCCATA
+GATATAGCACAAATTCAAGGAGCAACAGGTTCCAGGATTGGCGTCTTAACACAAAATGCA
+ACTAACATGGGACTTTCAGTTATCATTTCCTTTATATATGGATGGGAGATGACATTCCTG
+ATTCTGAGTATTGCTCCAGTACTTGCCGTGACAGGAATGATTGAAACCGCAGCAATGACT
+GGATTTGCCAACAAAGATAAGCAAGAACTTAAGCATGCTGGAAAGATAGCAACTGAAGCT
+TTGGAGAATATACGTACTATAGTGTCATTAACAAGGGAAAAAGCCTTCGAGCAAATGTAT
+GAAGAGATGCTTCAGACTCAACACAGAAATACCTCGAAGAAAGCACAGATTATTGGAAGC
+TGTTATGCATTCAGCCATGCCTTTATATATTTTGCCTATGCGGCAGGGTTTCGATTTGGA
+GCCTATTTAATTCAAGCTGGACGAATGACCCCAGAGGGCATGTTCATAGTTTTTACTGCA
+ATTGCATATGGAGCTATGGCCATCGGAGAAACGCTCGTTTTGGCTCCTGAATATTCCAAA
+GCCAAATCGGGGGCTGCGCATCTGTTTGCCTTGTTGGAAAAGAAACCAAATATAGACAGC
+CGCAGTCAAGAAGGGAAAAAGCCAGACACATGTGAAGGGAATTTAGAGTTTCGAGAAGTC
+TCTTTCTTCTATCCATGTCGCCCAGATGTTTTCATCCTCCGTGGCTTATCCCTCAGTATT
+GAGCGAGGAAAGACAGTAGCATTTGTGGGGAGCAGCGGCTGTGGGAAAAGCACTTCTGTT
+CAACTTCTGCAGAGACTTTATGACCCCGTGCAAGGACAAGTGCTGTTTGATGGTGTGGAT
+GCAAAAGAATTGAATGTACAGTGGCTCCGTTCCCAAATAGCAATCGTTCCTCAAGAGCCT
+GTGCTCTTCAACTGCAGCATTGCTGAGAACATCGCCTATGGTGACAACAGCCGTGTGGTG
+CCATTAGATGAGATCAAAGAAGCCGCAAATGCAGCAAATATCCATTCTTTTATTGAAGGT
+CTCCCTGAGAAATACAACACACAAGTTGGACTGAAAGGAGCACAGCTTTCTGGCGGCCAG
+AAACAAAGACTAGCTATTGCAAGGGCTCTTCTCCAAAAACCCAAAATTTTATTGTTGGAT
+GAGGCCACTTCAGCCCTCGATAATGACAGTGAGAAGGTGGTTCAGCATGCCCTTGATAAA
+GCCAGGACGGGAAGGACATGCCTAGTGGTCACTCACAGGCTCTCTGCAATTCAGAACGCA
+GATTTGATAGTGGTTCTGCACAATGGAAAGATAAAGGAACAAGGAACTCATCAAGAGCTC
+CTGAGAAATCGAGACATATATTTTAAGTTAGTGAATGCACAGTCAGTGCAGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00005</identifier>
+            <name>ABC_tran</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00664</identifier>
+            <name>ABC_membrane</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled to transmembrane movement of substances</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>efflux transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-dependent</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antigen processing and presentation of endogenous peptide antigen via MHC class Ib via ER pathway, TAP-dependent</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antigen processing and presentation of exogenous protein antigen via MHC class Ib, TAP-dependent</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>compound eye corneal lens development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of antigen processing and presentation of peptide antigen via MHC class I</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

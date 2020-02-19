@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2017-10-23" updated="2019-12-03">
+  <drugbank-id primary="true">DB13920</drugbank-id>
+  <name>Valopicitabine</name>
+  <description>The 3-O-valine ester prodrug of the nucleoside analog 2'-C-methylcytidine with anti-hepatitis C virus (HCV) activity. Upon administration, valopicitabine is converted into 2'-C-methylcytidine; upon phosphorylation into its 5-triphosphate form, this metabolite inhibits viral RNA chain elongation and viral RNA-dependent RNA polymerase activity. This blocks viral production of HCV RNA and thus viral replication. [from NCI]</description>
+  <cas-number>640281-90-9</cas-number>
+  <unii>I2T0B5G94M</unii>
+  <average-mass>356.379</average-mass>
+  <monoisotopic-mass>356.169584509</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A31174</ref-id>
+        <pubmed-id>28215138</pubmed-id>
+        <citation>Krecmerova M: Amino Acid Ester Prodrugs of Nucleoside and Nucleotide Antivirals. Mini Rev Med Chem. 2017;17(10):818-833. doi: 10.2174/1389557517666170216151601.</citation>
+      </article>
+      <article>
+        <ref-id>A31175</ref-id>
+        <pubmed-id>17328231</pubmed-id>
+        <citation>Toniutto P, Fabris C, Bitetto D, Fornasiere E, Rapetti R, Pirisi M: Valopicitabine dihydrochloride:a specific polymerase inhibitor of hepatitis C virus. Curr Opin Investig Drugs. 2007 Feb;8(2):150-8.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002578</drugbank-id>
+      <name>Valopicitabine dihydrochloride</name>
+      <unii>7KNU786IT4</unii>
+      <cas-number>640725-71-9</cas-number>
+      <inchikey>XENHXZMAOSTXGD-DSMKLBDQSA-N</inchikey>
+      <average-mass>429.3</average-mass>
+      <monoisotopic-mass>428.12294</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">2'-C-methylcytidine 3'-O-L-valinyl ester</synonym>
+    <synonym language="spanish" coder="inn">Valopicitabina</synonym>
+    <synonym language="english/french" coder="inn">Valopicitabine</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+    <category>
+      <category>Nucleosides</category>
+      <mesh-id>D009705</mesh-id>
+    </category>
+    <category>
+      <category>Pyrimidines</category>
+      <mesh-id>D011743</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>7.77e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2R,3R,4R,5R)-5-(4-amino-2-oxo-1,2-dihydropyrimidin-1-yl)-4-hydroxy-2-(hydroxymethyl)-4-methyloxolan-3-yl (2S)-2-amino-3-methylbutanoate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S)-N-methyl-2-[(3S)-3-(2-methylpropyl)-2,5-dioxo-4-(quinolin-3-ylmethyl)-1,4-diazepan-1-yl]-3-(naphthalen-2-yl)propanamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>356.379</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>356.169584509</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC(C)[C@H](N)C(=O)O[C@@H]1[C@@H](CO)O[C@@H](N2C=CC(N)=NC2=O)[C@]1(C)O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C15H24N4O6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C15H24N4O6/c1-7(2)10(17)12(21)25-11-8(6-20)24-13(15(11,3)23)19-5-4-9(16)18-14(19)22/h4-5,7-8,10-11,13,20,23H,6,17H2,1-3H3,(H2,16,18,22)/t8-,10+,11-,13-,15-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>TVRCRTJYMVTEFS-ICGCPXGVSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>160.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>85.18</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>35.02</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>12.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>7.48</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>6918726</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347829335</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>5293918</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL393820</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

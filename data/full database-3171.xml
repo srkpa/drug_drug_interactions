@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03363</drugbank-id>
+  <drugbank-id>EXPT00368</drugbank-id>
+  <drugbank-id>EXPT02282</drugbank-id>
+  <drugbank-id>DB03969</drugbank-id>
+  <name>3-Acetylpyridine Adenine Dinucleotide</name>
+  <description>A coenzyme composed of ribosylnicotinamide 5&amp;#39;-diphosphate coupled to adenosine 5&amp;#39;-phosphate by pyrophosphate linkage. It is found widely in nature and is involved in numerous enzymatic reactions in which it serves as an electron carrier by being alternately oxidized (NAD+) and reduced (NADH). (Dorland, 27th ed)</description>
+  <cas-number/>
+  <unii/>
+  <average-mass>662.437</average-mass>
+  <monoisotopic-mass>662.113872658</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Adenine Nucleotides</category>
+      <mesh-id>D000227</mesh-id>
+    </category>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Coenzymes</category>
+      <mesh-id>D003067</mesh-id>
+    </category>
+    <category>
+      <category>Enzymes and Coenzymes</category>
+      <mesh-id>D045762</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+    <category>
+      <category>Nucleotides</category>
+      <mesh-id>D009711</mesh-id>
+    </category>
+    <category>
+      <category>Purine Nucleotides</category>
+      <mesh-id>D011685</mesh-id>
+    </category>
+    <category>
+      <category>Purines</category>
+      <mesh-id>D011687</mesh-id>
+    </category>
+    <category>
+      <category>Ribonucleotides</category>
+      <mesh-id>D012265</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1drv</pdb-entry>
+    <pdb-entry>1pzf</pdb-entry>
+    <pdb-entry>1pzg</pdb-entry>
+    <pdb-entry>4nd2</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.89</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.12e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-9.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>3-acetyl-1-[(2R,3R,4S,5R)-5-({[({[(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl phosphonato}oxy)(hydroxy)phosphoryl]oxy}methyl)-3,4-dihydroxyoxolan-2-yl]-1λ⁵-pyridin-1-ylium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>3-acetyl-1-[(2R,3R,4S,5R)-5-{[({[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl phosphonato}oxy(hydroxy)phosphoryl)oxy]methyl}-3,4-dihydroxyoxolan-2-yl]-1λ⁵-pyridin-1-ylium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>662.437</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>662.113872658</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(COP([O-])(=O)OP(O)(=O)OC[C@@]2([H])O[C@@]([H])([N+]3=CC=CC(=C3)C(C)=O)[C@]([H])(O)[C@]2([H])O)O[C@@]([H])(N2C=NC3=C(N)N=CN=C23)[C@]([H])(O)[C@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C22H28N6O14P2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C22H28N6O14P2/c1-10(29)11-3-2-4-27(5-11)21-17(32)15(30)12(40-21)6-38-43(34,35)42-44(36,37)39-7-13-16(31)18(33)22(41-13)28-9-26-14-19(23)24-8-25-20(14)28/h2-5,8-9,12-13,15-18,21-22,30-33H,6-7H2,1H3,(H3-,23,24,25,34,35,36,37)/t12-,13-,15-,16-,17-,18-,21-,22-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>KPVQNXLUPNWQHM-RBEMOOQDSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>295.07</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>142.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>58.98</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.86</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>131704240</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506585</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>110455</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>A3D</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001986</id>
+      <name>4-hydroxy-tetrahydrodipicolinate reductase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04036" source="Swiss-Prot">
+        <name>4-hydroxy-tetrahydrodipicolinate reductase</name>
+        <general-function>Oxidoreductase activity, acting on ch or ch2 groups, nad or nadp as acceptor</general-function>
+        <specific-function>Catalyzes the conversion of 4-hydroxy-tetrahydrodipicolinate (HTPA) to tetrahydrodipicolinate. Can use both NADH and NADPH as a reductant, with NADH being twice as effective as NADPH.</specific-function>
+        <gene-name>dapB</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.55</theoretical-pi>
+        <molecular-weight>28756.34</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M10611</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>145710</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04036</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DAPB_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.17.1.8</synonym>
+          <synonym>HTPA reductase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011432|4-hydroxy-tetrahydrodipicolinate reductase
+MHDANIRVAIAGAGGRMGRQLIQAALALEGVQLGAALEREGSSLLGSDAGELAGAGKTGV
+TVQSSLDAVKDDFDVFIDFTRPEGTLNHLAFCRQHGKGMVIGTTGFDEAGKQAIRDAAAD
+IAIVFAANFSVGVNVMLKLLEKAAKVMGDYTDIEIIEAHHRHKVDAPSGTALAMGEAIAH
+ALDKDLKDCAVYSREGHTGERVPGTIGFATVRAGDIVGEHTAMFADIGERLEITHKASSR
+MTFANGAVRSALWLSGKESGLFDMRDVLDLNNL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011433|4-hydroxy-tetrahydrodipicolinate reductase (dapB)
+ATGCATGATGCAAACATCCGCGTTGCCATCGCGGGAGCCGGGGGGCGTATGGGCCGCCAG
+TTGATTCAGGCGGCGCTGGCATTAGAGGGCGTGCAGTTGGGCGCTGCGCTGGAGCGTGAA
+GGATCTTCTTTACTGGGCAGCGACGCCGGTGAGCTGGCCGGAGCCGGGAAAACAGGCGTT
+ACCGTGCAAAGCAGCCTCGATGCGGTAAAAGATGATTTTGATGTGTTTATCGATTTTACC
+CGTCCGGAAGGTACGCTGAACCATCTCGCTTTTTGTCGCCAGCATGGCAAAGGGATGGTG
+ATCGGCACTACGGGGTTTGACGAAGCCGGTAAACAAGCAATTCGTGACGCCGCTGCCGAT
+ATTGCGATTGTCTTTGCTGCCAATTTTAGCGTTGGCGTTAACGTCATGCTTAAGCTGCTG
+GAGAAAGCAGCCAAAGTGATGGGTGACTACACCGATATCGAAATTATTGAAGCACATCAT
+AGACATAAAGTTGATGCGCCGTCAGGCACCGCACTGGCAATGGGAGAGGCGATCGCCCAC
+GCCCTTGATAAAGATCTGAAAGATTGCGCGGTCTACAGTCGTGAAGGCCACACCGGTGAA
+CGTGTGCCTGGCACCATTGGTTTTGCCACCGTGCGTGCAGGTGACATCGTTGGTGAACAT
+ACCGCGATGTTTGCCGATATTGGCGAGCGTCTGGAGATCACCCATAAGGCGTCCAGCCGT
+ATGACATTTGCTAACGGCGCGGTAAGATCGGCTTTGTGGTTGAGTGGTAAGGAAAGCGGT
+CTTTTTGATATGCGAGATGTACTTGATCTCAATAATTTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05173</identifier>
+            <name>DapB_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01113</identifier>
+            <name>DapB_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>4-hydroxy-tetrahydrodipicolinate reductase</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on CH or CH2 groups, NAD or NADP as acceptor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular amino acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>diaminopimelate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lysine biosynthetic process via diaminopimelate</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

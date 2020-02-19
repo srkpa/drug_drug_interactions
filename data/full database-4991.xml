@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05369</drugbank-id>
+  <name>HZT-501</name>
+  <description>HZT-501 is under investigation by Horizon Therapeutics, Inc., a privately held biopharmaceutical company. It has entered Phase 3 clinical trials in March 2007 for reduction of the risk of development of ibuprofen-associated upper gastrointestinal (i.e., gastric and/or duodenal) ulcers. HZT-501 is a combination product including ibuprofen and the acid reducing agent famotidine.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in pain (acute or chronic).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>HZT-501 is a proprietary formulation of ibuprofen, the most prescribed NSAID in the United States, combined with famotidine, the most potent H2 receptor antagonist, in a single pill. HZT-501 is specifically designed to provide pain relief while reducing stomach acidity during the peak time of risk for gastric ulceration.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910105</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000112</id>
+      <name>Histamine H2 receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P25021" source="Swiss-Prot">
+        <name>Histamine H2 receptor</name>
+        <general-function>Histamine receptor activity</general-function>
+        <specific-function>The H2 subclass of histamine receptors mediates gastric acid secretion. Also appears to regulate gastrointestinal motility and intestinal secretion. Possible role in regulating cell growth and differentiation. The activity of this receptor is mediated by G proteins which activate adenylyl cyclase and, through a separate G protein-dependent mechanism, the phosphoinositide/protein kinase (PKC) signaling pathway (By similarity).</specific-function>
+        <gene-name>HRH2</gene-name>
+        <locus>5q35.2</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>23-44
+58-81
+93-114
+135-159
+181-204
+235-258
+268-289</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.39</theoretical-pi>
+        <molecular-weight>40097.65</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5183</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HRH2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M64799</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>184088</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>263</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>263</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P25021</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HRH2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Gastric receptor I</synonym>
+          <synonym>H2R</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000224|Histamine H2 receptor
+MAPNGTASSFCLDSTACKITITVVLAVLILITVAGNVVVCLAVGLNRRLRNLTNCFIVSL
+AITDLLLGLLVLPFSAIYQLSCKWSFGKVFCNIYTSLDVMLCTASILNLFMISLDRYCAV
+MDPLRYPVLVTPVRVAISLVLIWVISITLSFLSIHLGWNSRNETSKGNHTTSKCKVQVNE
+VYGLVDGLVTFYLPLLIMCITYYRIFKVARDQAKRINHISSWKAATIREHKATVTLAAVM
+GAFIICWFPYFTAFVYRGLRGDDAINEVLEAIVLWLGYANSALNPILYAALNRDFRTGYQ
+QLFCCRLANRNSHKTSLRSNASQLSRTQSREPRQQEEKPLKLQVWSGTEVTAPQGATDR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0018919|Histamine H2 receptor (HRH2)
+ATGGCACCCAATGGCACAGCCTCTTCCTTTTGCCTGGACTCTACCGCATGCAAGATCACC
+ATCACCGTGGTCCTTGCGGTCCTCATCCTCATCACCGTTGCTGGCAATGTGGTCGTCTGT
+CTGGCCGTGGGCTTGAACCGCCGGCTCCGCAACCTGACCAATTGTTTCATCGTGTCCTTG
+GCTATCACTGACCTGCTCCTCGGCCTCCTGGTGCTGCCCTTCTCTGCCATCTACCAGCTG
+TCCTGCAAGTGGAGCTTTGGCAAGGTCTTCTGCAATATCTACACCAGCCTGGATGTGATG
+CTCTGCACAGCCTCCATTCTTAACCTCTTCATGATCAGCCTCGACCGGTACTGCGCTGTC
+ATGGACCCACTGCGGTACCCTGTGCTGGTCACCCCAGTTCGGGTCGCCATCTCTCTGGTC
+TTAATTTGGGTCATCTCCATTACCCTGTCCTTTCTGTCTATCCACCTGGGGTGGAACAGC
+AGGAACGAGACCAGCAAGGGCAATCATACCACCTCTAAGTGCAAAGTCCAGGTCAATGAA
+GTGTACGGGCTGGTGGATGGGCTGGTCACCTTCTACCTCCCGCTACTGATCATGTGCATC
+ACCTACTACCGCATCTTCAAGGTCGCCCGGGATCAGGCCAAGAGGATCAATCACATTAGC
+TCCTGGAAGGCAGCCACCATCAGGGAGCACAAAGCCACAGTGACACTGGCCGCCGTCATG
+GGGGCCTTCATCATCTGCTGGTTTCCCTACTTCACCGCGTTTGTGTACCGTGGGCTGAGA
+GGGGATGATGCCATCAATGAGGTGTTAGAAGCCATCGTTCTGTGGCTGGGCTATGCCAAC
+TCAGCCCTGAACCCCATCCTGTATGCTGCGCTGAACAGAGACTTCCGCACCGGGTACCAA
+CAGCTCTTCTGCTGCAGGCTGGCCAACCGCAACTCCCACAAAACTTCTCTGAGGTCCAAC
+GCCTCTCAGCTGTCCAGGACCCAAAGCCGAGAACCCAGGCAACAGGAAGAGAAACCCCTG
+AAGCTCCAGGTGTGGAGTGGGACAGAAGTCACGGCCCCCCAGGGAGCCACAGACAGACCA
+TGGCTTTGCCTTCCAGAATGCTGGTCTGTGGAACTGACCCATTCATTCATTCATTTGTTC
+ATTCATTCATTTGCAAACATTCATCCAATTCCCACCACATGCCAGGAATTATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histamine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-activating dopamine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestive tract development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epithelial cell morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gastrin-induced gastric acid secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gland development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histamine-induced gastric acid secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>learning</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating dopamine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of adenylate cyclase activity involved in G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic plasticity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, dopaminergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toxin transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

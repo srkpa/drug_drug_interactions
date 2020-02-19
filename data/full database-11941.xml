@@ -1,0 +1,3134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2018-05-14" updated="2019-12-02">
+  <drugbank-id primary="true">DB14022</drugbank-id>
+  <name>Typhoid vaccine</name>
+  <description/>
+  <cas-number/>
+  <unii>760T5R8B3O</unii>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products>
+    <product>
+      <name>Typhoid Vaccine</name>
+      <labeller>Aventis Pasteur Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00281506</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1973-11-30</started-marketing-on>
+      <ended-marketing-on>2000-11-14</ended-marketing-on>
+      <dosage-form>Suspension</dosage-form>
+      <strength/>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Vivotif-B</name>
+      <labeller>Rebel Distributors Corp</labeller>
+      <ndc-id/>
+      <ndc-product-code>21695-526</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1989-12-15</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Capsule</dosage-form>
+      <strength>2 [CFU]/1</strength>
+      <route>Oral</route>
+      <fda-application-number>BLA103123</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Vivotif-B</name>
+      <ingredients>Typhoid vaccine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Typhoid Vaccine</name>
+      <ingredients>Typhoid vaccine</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Vaccines</category>
+      <mesh-id>D014612</mesh-id>
+    </category>
+    <category>
+      <category>Vaccines, Typhoid</category>
+      <mesh-id>D014436</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Suspension</form>
+      <route>Subcutaneous</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Capsule</form>
+      <route>Oral</route>
+      <strength>2 [CFU]/1</strength>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00005</drugbank-id>
+      <name>Etanercept</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Etanercept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00008</drugbank-id>
+      <name>Peginterferon alfa-2a</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Peginterferon alfa-2a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00011</drugbank-id>
+      <name>Interferon alfa-n1</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfa-n1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00018</drugbank-id>
+      <name>Interferon alfa-n3</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfa-n3.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00022</drugbank-id>
+      <name>Peginterferon alfa-2b</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Peginterferon alfa-2b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00026</drugbank-id>
+      <name>Anakinra</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Anakinra.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00033</drugbank-id>
+      <name>Interferon gamma-1b</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon gamma-1b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00034</drugbank-id>
+      <name>Interferon alfa-2a, Recombinant</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfa-2a, Recombinant.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00041</drugbank-id>
+      <name>Aldesleukin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aldesleukin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00051</drugbank-id>
+      <name>Adalimumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Adalimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00056</drugbank-id>
+      <name>Gemtuzumab ozogamicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gemtuzumab ozogamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00059</drugbank-id>
+      <name>Pegaspargase</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pegaspargase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00065</drugbank-id>
+      <name>Infliximab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Infliximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00068</drugbank-id>
+      <name>Interferon beta-1b</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon beta-1b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00069</drugbank-id>
+      <name>Interferon alfacon-1</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfacon-1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00072</drugbank-id>
+      <name>Trastuzumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trastuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00073</drugbank-id>
+      <name>Rituximab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rituximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00074</drugbank-id>
+      <name>Basiliximab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Basiliximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00075</drugbank-id>
+      <name>Muromonab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Muromonab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00078</drugbank-id>
+      <name>Ibritumomab tiuxetan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ibritumomab tiuxetan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00081</drugbank-id>
+      <name>Tositumomab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tositumomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00087</drugbank-id>
+      <name>Alemtuzumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Alemtuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cyclosporine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00092</drugbank-id>
+      <name>Alefacept</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Alefacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00095</drugbank-id>
+      <name>Efalizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Efalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00098</drugbank-id>
+      <name>Antithymocyte immunoglobulin (rabbit)</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Antithymocyte immunoglobulin (rabbit).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00105</drugbank-id>
+      <name>Interferon alfa-2b</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfa-2b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00108</drugbank-id>
+      <name>Natalizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Natalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00111</drugbank-id>
+      <name>Daclizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Daclizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00112</drugbank-id>
+      <name>Bevacizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bevacizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00120</drugbank-id>
+      <name>Phenylalanine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Phenylalanine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00188</drugbank-id>
+      <name>Bortezomib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bortezomib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00242</drugbank-id>
+      <name>Cladribine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cladribine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00262</drugbank-id>
+      <name>Carmustine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carmustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00276</drugbank-id>
+      <name>Amsacrine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amsacrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00290</drugbank-id>
+      <name>Bleomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bleomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00291</drugbank-id>
+      <name>Chlorambucil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Chlorambucil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00293</drugbank-id>
+      <name>Raltitrexed</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Raltitrexed.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00305</drugbank-id>
+      <name>Mitomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mitomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00307</drugbank-id>
+      <name>Bexarotene</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bexarotene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00309</drugbank-id>
+      <name>Vindesine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vindesine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00322</drugbank-id>
+      <name>Floxuridine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Floxuridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Indomethacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00352</drugbank-id>
+      <name>Tioguanine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tioguanine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00361</drugbank-id>
+      <name>Vinorelbine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vinorelbine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00380</drugbank-id>
+      <name>Dexrazoxane</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dexrazoxane.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00398</drugbank-id>
+      <name>Sorafenib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sorafenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00428</drugbank-id>
+      <name>Streptozocin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Streptozocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00432</drugbank-id>
+      <name>Trifluridine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00441</drugbank-id>
+      <name>Gemcitabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gemcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00444</drugbank-id>
+      <name>Teniposide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Teniposide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00445</drugbank-id>
+      <name>Epirubicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Epirubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00446</drugbank-id>
+      <name>Chloramphenicol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Chloramphenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00480</drugbank-id>
+      <name>Lenalidomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lenalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00488</drugbank-id>
+      <name>Altretamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Altretamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00495</drugbank-id>
+      <name>Zidovudine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Zidovudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00515</drugbank-id>
+      <name>Cisplatin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cisplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00526</drugbank-id>
+      <name>Oxaliplatin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oxaliplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00531</drugbank-id>
+      <name>Cyclophosphamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cyclophosphamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vincristine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00544</drugbank-id>
+      <name>Fluorouracil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluorouracil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00550</drugbank-id>
+      <name>Propylthiouracil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Propylthiouracil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00552</drugbank-id>
+      <name>Pentostatin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pentostatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methotrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00564</drugbank-id>
+      <name>Carbamazepine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carbamazepine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vinblastine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00601</drugbank-id>
+      <name>Linezolid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Linezolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00619</drugbank-id>
+      <name>Imatinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Imatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00631</drugbank-id>
+      <name>Clofarabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clofarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00642</drugbank-id>
+      <name>Pemetrexed</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pemetrexed.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00688</drugbank-id>
+      <name>Mycophenolate mofetil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mycophenolate mofetil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00694</drugbank-id>
+      <name>Daunorubicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Daunorubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00755</drugbank-id>
+      <name>Tretinoin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tretinoin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00762</drugbank-id>
+      <name>Irinotecan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Irinotecan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00763</drugbank-id>
+      <name>Methimazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methimazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00773</drugbank-id>
+      <name>Etoposide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Etoposide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00795</drugbank-id>
+      <name>Sulfasalazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfasalazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00851</drugbank-id>
+      <name>Dacarbazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dacarbazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00853</drugbank-id>
+      <name>Temozolomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Temozolomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00859</drugbank-id>
+      <name>Penicillamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Penicillamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tacrolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00888</drugbank-id>
+      <name>Mechlorethamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mechlorethamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00928</drugbank-id>
+      <name>Azacitidine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azacitidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00958</drugbank-id>
+      <name>Carboplatin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carboplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00970</drugbank-id>
+      <name>Dactinomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dactinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00993</drugbank-id>
+      <name>Azathioprine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azathioprine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00997</drugbank-id>
+      <name>Doxorubicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Doxorubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01005</drugbank-id>
+      <name>Hydroxyurea</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydroxyurea.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01008</drugbank-id>
+      <name>Busulfan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Busulfan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01024</drugbank-id>
+      <name>Mycophenolic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mycophenolic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01030</drugbank-id>
+      <name>Topotecan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Topotecan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01033</drugbank-id>
+      <name>Mercaptopurine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mercaptopurine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01041</drugbank-id>
+      <name>Thalidomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Thalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01042</drugbank-id>
+      <name>Melphalan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Melphalan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01073</drugbank-id>
+      <name>Fludarabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fludarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01097</drugbank-id>
+      <name>Leflunomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Leflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01099</drugbank-id>
+      <name>Flucytosine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flucytosine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01101</drugbank-id>
+      <name>Capecitabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Capecitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01168</drugbank-id>
+      <name>Procarbazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Procarbazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01169</drugbank-id>
+      <name>Arsenic trioxide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Arsenic trioxide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01177</drugbank-id>
+      <name>Idarubicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Idarubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01181</drugbank-id>
+      <name>Ifosfamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ifosfamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01196</drugbank-id>
+      <name>Estramustine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Estramustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01204</drugbank-id>
+      <name>Mitoxantrone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mitoxantrone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01206</drugbank-id>
+      <name>Lomustine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lomustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01229</drugbank-id>
+      <name>Paclitaxel</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Paclitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01248</drugbank-id>
+      <name>Docetaxel</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Docetaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01254</drugbank-id>
+      <name>Dasatinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dasatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01257</drugbank-id>
+      <name>Eculizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Eculizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01262</drugbank-id>
+      <name>Decitabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Decitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01268</drugbank-id>
+      <name>Sunitinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sunitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01280</drugbank-id>
+      <name>Nelarabine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nelarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01281</drugbank-id>
+      <name>Abatacept</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Abatacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01394</drugbank-id>
+      <name>Colchicine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Colchicine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01423</drugbank-id>
+      <name>Stepronin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Stepronin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Everolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01611</drugbank-id>
+      <name>Hydroxychloroquine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydroxychloroquine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01816</drugbank-id>
+      <name>Castanospermine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Castanospermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02546</drugbank-id>
+      <name>Vorinostat</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vorinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02806</drugbank-id>
+      <name>2-Methoxyethanol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with 2-Methoxyethanol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03523</drugbank-id>
+      <name>Brequinar</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Brequinar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04572</drugbank-id>
+      <name>Thiotepa</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Thiotepa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04845</drugbank-id>
+      <name>Ixabepilone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ixabepilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04868</drugbank-id>
+      <name>Nilotinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nilotinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04951</drugbank-id>
+      <name>Pirfenidone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pirfenidone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04956</drugbank-id>
+      <name>Afelimomab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Afelimomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05015</drugbank-id>
+      <name>Belinostat</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Belinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05109</drugbank-id>
+      <name>Trabectedin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trabectedin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05258</drugbank-id>
+      <name>Interferon alfa</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Interferon alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05259</drugbank-id>
+      <name>Glatiramer</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05260</drugbank-id>
+      <name>Gallium nitrate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gallium nitrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05459</drugbank-id>
+      <name>Briakinumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Briakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05472</drugbank-id>
+      <name>omega interferon</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with omega interferon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05676</drugbank-id>
+      <name>Apremilast</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Apremilast.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05773</drugbank-id>
+      <name>Trastuzumab emtansine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trastuzumab emtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06168</drugbank-id>
+      <name>Canakinumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Canakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06273</drugbank-id>
+      <name>Tocilizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tocilizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06287</drugbank-id>
+      <name>Temsirolimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Temsirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06372</drugbank-id>
+      <name>Rilonacept</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rilonacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06589</drugbank-id>
+      <name>Pazopanib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pazopanib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06603</drugbank-id>
+      <name>Panobinostat</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Panobinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06612</drugbank-id>
+      <name>Mepolizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mepolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06616</drugbank-id>
+      <name>Bosutinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bosutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06643</drugbank-id>
+      <name>Denosumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Denosumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06662</drugbank-id>
+      <name>Abetimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Abetimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06674</drugbank-id>
+      <name>Golimumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Golimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06681</drugbank-id>
+      <name>Belatacept</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Belatacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06769</drugbank-id>
+      <name>Bendamustine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bendamustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06772</drugbank-id>
+      <name>Cabazitaxel</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cabazitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06813</drugbank-id>
+      <name>Pralatrexate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pralatrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08059</drugbank-id>
+      <name>Wortmannin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Wortmannin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08868</drugbank-id>
+      <name>Fingolimod</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fingolimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08870</drugbank-id>
+      <name>Brentuximab vedotin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Brentuximab vedotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08871</drugbank-id>
+      <name>Eribulin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Eribulin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08877</drugbank-id>
+      <name>Ruxolitinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ruxolitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08879</drugbank-id>
+      <name>Belimumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Belimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08880</drugbank-id>
+      <name>Teriflunomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Teriflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08889</drugbank-id>
+      <name>Carfilzomib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carfilzomib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08895</drugbank-id>
+      <name>Tofacitinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tofacitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08901</drugbank-id>
+      <name>Ponatinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ponatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08904</drugbank-id>
+      <name>Certolizumab pegol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Certolizumab pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08908</drugbank-id>
+      <name>Dimethyl fumarate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dimethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08910</drugbank-id>
+      <name>Pomalidomide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pomalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08935</drugbank-id>
+      <name>Obinutuzumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Obinutuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09029</drugbank-id>
+      <name>Secukinumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Secukinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09033</drugbank-id>
+      <name>Vedolizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vedolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09036</drugbank-id>
+      <name>Siltuximab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Siltuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09042</drugbank-id>
+      <name>Tedizolid phosphate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tedizolid phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09052</drugbank-id>
+      <name>Blinatumomab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Blinatumomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09053</drugbank-id>
+      <name>Ibrutinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ibrutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Idelalisib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09073</drugbank-id>
+      <name>Palbociclib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Palbociclib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09074</drugbank-id>
+      <name>Olaparib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Olaparib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09077</drugbank-id>
+      <name>Dinutuximab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dinutuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09082</drugbank-id>
+      <name>Vilanterol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vilanterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09122</drugbank-id>
+      <name>Peginterferon beta-1a</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Peginterferon beta-1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09312</drugbank-id>
+      <name>Antilymphocyte immunoglobulin (horse)</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Antilymphocyte immunoglobulin (horse).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11466</drugbank-id>
+      <name>Tepoxalin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tepoxalin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11569</drugbank-id>
+      <name>Ixekizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ixekizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11580</drugbank-id>
+      <name>Ravulizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ravulizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11616</drugbank-id>
+      <name>Pirarubicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pirarubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11693</drugbank-id>
+      <name>Voclosporin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Voclosporin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11708</drugbank-id>
+      <name>Peficitinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Peficitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11767</drugbank-id>
+      <name>Sarilumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sarilumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11776</drugbank-id>
+      <name>Brodalumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Brodalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11803</drugbank-id>
+      <name>Sirukumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sirukumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Baricitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11834</drugbank-id>
+      <name>Guselkumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Guselkumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11988</drugbank-id>
+      <name>Ocrelizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ocrelizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12025</drugbank-id>
+      <name>Triptolide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Triptolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12371</drugbank-id>
+      <name>Siponimod</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Siponimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12612</drugbank-id>
+      <name>Ozanimod</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ozanimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12617</drugbank-id>
+      <name>Mizoribine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mizoribine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12692</drugbank-id>
+      <name>Gusperimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gusperimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12814</drugbank-id>
+      <name>Cepeginterferon alfa-2B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cepeginterferon alfa-2B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12902</drugbank-id>
+      <name>Trofosfamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trofosfamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12947</drugbank-id>
+      <name>Doxifluridine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Doxifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12991</drugbank-id>
+      <name>Deoxyspergualin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Deoxyspergualin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12996</drugbank-id>
+      <name>Acteoside</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Acteoside.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13014</drugbank-id>
+      <name>Hypericin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hypericin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13068</drugbank-id>
+      <name>9-(N-methyl-L-isoleucine)-cyclosporin A</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with 9-(N-methyl-L-isoleucine)-cyclosporin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13241</drugbank-id>
+      <name>Begelomab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Begelomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14066</drugbank-id>
+      <name>Tetrandrine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tetrandrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14219</drugbank-id>
+      <name>Monomethyl fumarate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Monomethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14724</drugbank-id>
+      <name>Emapalumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Emapalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14762</drugbank-id>
+      <name>Risankizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Risankizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14919</drugbank-id>
+      <name>Rozanolixizumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rozanolixizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15253</drugbank-id>
+      <name>Bleselumab</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bleselumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00080</drugbank-id>
+      <name>Daptomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Daptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00199</drugbank-id>
+      <name>Erythromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Erythromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00207</drugbank-id>
+      <name>Azithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00218</drugbank-id>
+      <name>Moxifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Moxifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00229</drugbank-id>
+      <name>Cefotiam</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefotiam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00233</drugbank-id>
+      <name>Aminosalicylic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aminosalicylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00250</drugbank-id>
+      <name>Dapsone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dapsone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00254</drugbank-id>
+      <name>Doxycycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Doxycycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00256</drugbank-id>
+      <name>Lymecycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lymecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00260</drugbank-id>
+      <name>Cycloserine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cycloserine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00263</drugbank-id>
+      <name>Sulfisoxazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfisoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00267</drugbank-id>
+      <name>Cefmenoxime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefmenoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00274</drugbank-id>
+      <name>Cefmetazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefmetazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00301</drugbank-id>
+      <name>Flucloxacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flucloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00303</drugbank-id>
+      <name>Ertapenem</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ertapenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00314</drugbank-id>
+      <name>Capreomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Capreomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00319</drugbank-id>
+      <name>Piperacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Piperacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00330</drugbank-id>
+      <name>Ethambutol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ethambutol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00339</drugbank-id>
+      <name>Pyrazinamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pyrazinamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00355</drugbank-id>
+      <name>Aztreonam</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aztreonam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00359</drugbank-id>
+      <name>Sulfadiazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfadiazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00365</drugbank-id>
+      <name>Grepafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Grepafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00415</drugbank-id>
+      <name>Ampicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00417</drugbank-id>
+      <name>Phenoxymethylpenicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Phenoxymethylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00430</drugbank-id>
+      <name>Cefpiramide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefpiramide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00438</drugbank-id>
+      <name>Ceftazidime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftazidime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00447</drugbank-id>
+      <name>Loracarbef</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Loracarbef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00453</drugbank-id>
+      <name>Clomocycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clomocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00456</drugbank-id>
+      <name>Cefalotin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefalotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00467</drugbank-id>
+      <name>Enoxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Enoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00479</drugbank-id>
+      <name>Amikacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amikacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00485</drugbank-id>
+      <name>Dicloxacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dicloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00487</drugbank-id>
+      <name>Pefloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pefloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00493</drugbank-id>
+      <name>Cefotaxime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefotaxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00512</drugbank-id>
+      <name>Vancomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Vancomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00535</drugbank-id>
+      <name>Cefdinir</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefdinir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00537</drugbank-id>
+      <name>Ciprofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ciprofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00560</drugbank-id>
+      <name>Tigecycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tigecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00567</drugbank-id>
+      <name>Cephalexin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cephalexin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00578</drugbank-id>
+      <name>Carbenicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carbenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00595</drugbank-id>
+      <name>Oxytetracycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oxytetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00602</drugbank-id>
+      <name>Ivermectin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ivermectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00607</drugbank-id>
+      <name>Nafcillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nafcillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00609</drugbank-id>
+      <name>Ethionamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ethionamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00615</drugbank-id>
+      <name>Rifabutin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifabutin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00618</drugbank-id>
+      <name>Demeclocycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Demeclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00626</drugbank-id>
+      <name>Bacitracin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bacitracin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00671</drugbank-id>
+      <name>Cefixime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefixime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00681</drugbank-id>
+      <name>Amphotericin B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amphotericin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00684</drugbank-id>
+      <name>Tobramycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tobramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00685</drugbank-id>
+      <name>Trovafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trovafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00689</drugbank-id>
+      <name>Cephaloglycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cephaloglycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00698</drugbank-id>
+      <name>Nitrofurantoin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nitrofurantoin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00713</drugbank-id>
+      <name>Oxacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00739</drugbank-id>
+      <name>Hetacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hetacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00759</drugbank-id>
+      <name>Tetracycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00760</drugbank-id>
+      <name>Meropenem</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Meropenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00766</drugbank-id>
+      <name>Clavulanic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clavulanic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00778</drugbank-id>
+      <name>Roxithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Roxithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00779</drugbank-id>
+      <name>Nalidixic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nalidixic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00798</drugbank-id>
+      <name>Gentamicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gentamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00817</drugbank-id>
+      <name>Rosoxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rosoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00827</drugbank-id>
+      <name>Cinoxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cinoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00828</drugbank-id>
+      <name>Fosfomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fosfomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00833</drugbank-id>
+      <name>Cefaclor</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefaclor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00845</drugbank-id>
+      <name>Clofazimine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clofazimine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00895</drugbank-id>
+      <name>Benzylpenicilloyl polylysine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Benzylpenicilloyl polylysine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00911</drugbank-id>
+      <name>Tinidazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tinidazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00916</drugbank-id>
+      <name>Metronidazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Metronidazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00919</drugbank-id>
+      <name>Spectinomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Spectinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00923</drugbank-id>
+      <name>Ceforanide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceforanide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00931</drugbank-id>
+      <name>Metacycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Metacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00948</drugbank-id>
+      <name>Mezlocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mezlocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00951</drugbank-id>
+      <name>Isoniazid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Isoniazid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00954</drugbank-id>
+      <name>Dirithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dirithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00955</drugbank-id>
+      <name>Netilmicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Netilmicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00976</drugbank-id>
+      <name>Telithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Telithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00978</drugbank-id>
+      <name>Lomefloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lomefloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00994</drugbank-id>
+      <name>Neomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Neomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01000</drugbank-id>
+      <name>Cyclacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cyclacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01015</drugbank-id>
+      <name>Sulfamethoxazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfamethoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01017</drugbank-id>
+      <name>Minocycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Minocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01044</drugbank-id>
+      <name>Gatifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gatifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01045</drugbank-id>
+      <name>Rifampicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifampicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01051</drugbank-id>
+      <name>Novobiocin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Novobiocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01053</drugbank-id>
+      <name>Benzylpenicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Benzylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01059</drugbank-id>
+      <name>Norfloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Norfloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01060</drugbank-id>
+      <name>Amoxicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amoxicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01061</drugbank-id>
+      <name>Azlocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azlocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01066</drugbank-id>
+      <name>Cefditoren</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefditoren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01082</drugbank-id>
+      <name>Streptomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Streptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01112</drugbank-id>
+      <name>Cefuroxime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefuroxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01137</drugbank-id>
+      <name>Levofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Levofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01139</drugbank-id>
+      <name>Cefapirin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefapirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01140</drugbank-id>
+      <name>Cefadroxil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefadroxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01147</drugbank-id>
+      <name>Cloxacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01150</drugbank-id>
+      <name>Cefprozil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefprozil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01152</drugbank-id>
+      <name>Candicidin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Candicidin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01155</drugbank-id>
+      <name>Gemifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gemifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01163</drugbank-id>
+      <name>Amdinocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amdinocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01165</drugbank-id>
+      <name>Ofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01172</drugbank-id>
+      <name>Kanamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Kanamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01190</drugbank-id>
+      <name>Clindamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clindamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01201</drugbank-id>
+      <name>Rifapentine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifapentine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01208</drugbank-id>
+      <name>Sparfloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sparfloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01211</drugbank-id>
+      <name>Clarithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clarithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01212</drugbank-id>
+      <name>Ceftriaxone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftriaxone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01220</drugbank-id>
+      <name>Rifaximin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifaximin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01301</drugbank-id>
+      <name>Rolitetracycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rolitetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01321</drugbank-id>
+      <name>Josamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Josamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01326</drugbank-id>
+      <name>Cefamandole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefamandole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01327</drugbank-id>
+      <name>Cefazolin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefazolin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01328</drugbank-id>
+      <name>Cefonicid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefonicid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01329</drugbank-id>
+      <name>Cefoperazone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefoperazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01330</drugbank-id>
+      <name>Cefotetan</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefotetan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01331</drugbank-id>
+      <name>Cefoxitin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefoxitin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01332</drugbank-id>
+      <name>Ceftizoxime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftizoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01333</drugbank-id>
+      <name>Cefradine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefradine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01369</drugbank-id>
+      <name>Quinupristin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Quinupristin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01405</drugbank-id>
+      <name>Temafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Temafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01413</drugbank-id>
+      <name>Cefepime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefepime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01414</drugbank-id>
+      <name>Cefacetrile</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefacetrile.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01415</drugbank-id>
+      <name>Ceftibuten</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftibuten.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01416</drugbank-id>
+      <name>Cefpodoxime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefpodoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01421</drugbank-id>
+      <name>Paromomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Paromomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01581</drugbank-id>
+      <name>Sulfamerazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfamerazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01598</drugbank-id>
+      <name>Imipenem</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Imipenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01602</drugbank-id>
+      <name>Bacampicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bacampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01603</drugbank-id>
+      <name>Meticillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Meticillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01604</drugbank-id>
+      <name>Pivampicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pivampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01605</drugbank-id>
+      <name>Pivmecillinam</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pivmecillinam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01607</drugbank-id>
+      <name>Ticarcillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ticarcillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01627</drugbank-id>
+      <name>Lincomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lincomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01669</drugbank-id>
+      <name>Virginiamycin M1</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Virginiamycin M1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01764</drugbank-id>
+      <name>Dalfopristin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dalfopristin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01873</drugbank-id>
+      <name>Epothilone D</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Epothilone D.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02237</drugbank-id>
+      <name>Maltotetraose</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Maltotetraose.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02703</drugbank-id>
+      <name>Fusidic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fusidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02948</drugbank-id>
+      <name>Fosmidomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fosmidomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02975</drugbank-id>
+      <name>GE-2270A</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with GE-2270A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03010</drugbank-id>
+      <name>Patupilone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Patupilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03424</drugbank-id>
+      <name>Ubenimex</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ubenimex.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03615</drugbank-id>
+      <name>Ribostamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ribostamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04070</drugbank-id>
+      <name>6-Deoxyerythronolide B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with 6-Deoxyerythronolide B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04124</drugbank-id>
+      <name>Aurodox</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aurodox.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04263</drugbank-id>
+      <name>Geneticin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Geneticin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04570</drugbank-id>
+      <name>Latamoxef</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Latamoxef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04576</drugbank-id>
+      <name>Fleroxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fleroxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04626</drugbank-id>
+      <name>Apramycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Apramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04729</drugbank-id>
+      <name>Gentamicin C1a</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gentamicin C1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04785</drugbank-id>
+      <name>Streptolydigin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Streptolydigin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04808</drugbank-id>
+      <name>Neamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Neamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04911</drugbank-id>
+      <name>Oritavancin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oritavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04918</drugbank-id>
+      <name>Ceftobiprole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftobiprole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04934</drugbank-id>
+      <name>Rifalazil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifalazil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04952</drugbank-id>
+      <name>Ramoplanin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ramoplanin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05488</drugbank-id>
+      <name>Technetium Tc-99m ciprofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Technetium Tc-99m ciprofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05814</drugbank-id>
+      <name>GPI-1485</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with GPI-1485.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05903</drugbank-id>
+      <name>KOS-1584</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with KOS-1584.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06145</drugbank-id>
+      <name>Spiramycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Spiramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06149</drugbank-id>
+      <name>Teicoplanin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Teicoplanin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06160</drugbank-id>
+      <name>Garenoxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Garenoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06211</drugbank-id>
+      <name>Doripenem</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Doripenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06219</drugbank-id>
+      <name>Dalbavancin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dalbavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06233</drugbank-id>
+      <name>Ridaforolimus</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ridaforolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06318</drugbank-id>
+      <name>AVE9633</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with AVE9633.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06342</drugbank-id>
+      <name>Coltuximab ravtansine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Coltuximab ravtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06402</drugbank-id>
+      <name>Telavancin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Telavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06419</drugbank-id>
+      <name>Cethromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cethromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06461</drugbank-id>
+      <name>Squalamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Squalamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06587</drugbank-id>
+      <name>Mitemcinal</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mitemcinal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06590</drugbank-id>
+      <name>Ceftaroline fosamil</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftaroline fosamil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06600</drugbank-id>
+      <name>Nemonoxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nemonoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06696</drugbank-id>
+      <name>Arbekacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Arbekacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06799</drugbank-id>
+      <name>Methenamine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methenamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06821</drugbank-id>
+      <name>Sulfameter</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfameter.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06827</drugbank-id>
+      <name>Viomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Viomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07348</drugbank-id>
+      <name>Brefeldin A</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Brefeldin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07374</drugbank-id>
+      <name>Anisomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Anisomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07565</drugbank-id>
+      <name>Chloramphenicol succinate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Chloramphenicol succinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08437</drugbank-id>
+      <name>Puromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Puromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08621</drugbank-id>
+      <name>Thiamphenicol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Thiamphenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08795</drugbank-id>
+      <name>Azidocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azidocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08874</drugbank-id>
+      <name>Fidaxomicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fidaxomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08903</drugbank-id>
+      <name>Bedaquiline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bedaquiline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08965</drugbank-id>
+      <name>Fusafungine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fusafungine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08972</drugbank-id>
+      <name>Flumequine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flumequine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08993</drugbank-id>
+      <name>Enviomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Enviomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09008</drugbank-id>
+      <name>Cefaloridine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefaloridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09050</drugbank-id>
+      <name>Ceftolozane</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftolozane.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09062</drugbank-id>
+      <name>Cefminox</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefminox.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09308</drugbank-id>
+      <name>Solithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Solithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09309</drugbank-id>
+      <name>Kitasamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Kitasamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09319</drugbank-id>
+      <name>Carindacillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carindacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09320</drugbank-id>
+      <name>Procaine benzylpenicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Procaine benzylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11367</drugbank-id>
+      <name>Cefroxadine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefroxadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11375</drugbank-id>
+      <name>Avilamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Avilamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11377</drugbank-id>
+      <name>Bambermycins</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bambermycins.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11383</drugbank-id>
+      <name>Carbomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carbomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11400</drugbank-id>
+      <name>Doramectin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Doramectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11401</drugbank-id>
+      <name>Efrotomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Efrotomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11404</drugbank-id>
+      <name>Enrofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Enrofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11405</drugbank-id>
+      <name>Eprinomectin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Eprinomectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11413</drugbank-id>
+      <name>Florfenicol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Florfenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11416</drugbank-id>
+      <name>Gamithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Gamithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11423</drugbank-id>
+      <name>Lasalocid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lasalocid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11426</drugbank-id>
+      <name>Marbofloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Marbofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11432</drugbank-id>
+      <name>Narasin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Narasin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11442</drugbank-id>
+      <name>Oleandomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oleandomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11443</drugbank-id>
+      <name>Orbifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Orbifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11458</drugbank-id>
+      <name>Roxarsone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Roxarsone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11459</drugbank-id>
+      <name>Selamectin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Selamectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11467</drugbank-id>
+      <name>Thiostrepton</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Thiostrepton.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11468</drugbank-id>
+      <name>Tiamulin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tiamulin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11470</drugbank-id>
+      <name>Tildipirosin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tildipirosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11471</drugbank-id>
+      <name>Tilmicosin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tilmicosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11474</drugbank-id>
+      <name>Tulathromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tulathromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11475</drugbank-id>
+      <name>Tylosin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tylosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11485</drugbank-id>
+      <name>Ceftiofur</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftiofur.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11491</drugbank-id>
+      <name>Sarafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sarafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11511</drugbank-id>
+      <name>Difloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Difloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11512</drugbank-id>
+      <name>Dihydrostreptomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dihydrostreptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11520</drugbank-id>
+      <name>Hygromycin B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hygromycin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11525</drugbank-id>
+      <name>Maduramicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Maduramicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11537</drugbank-id>
+      <name>Pirlimycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pirlimycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11544</drugbank-id>
+      <name>Salinomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Salinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11554</drugbank-id>
+      <name>Tylvalosin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tylvalosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11593</drugbank-id>
+      <name>Isatoic anhydride</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Isatoic anhydride.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11744</drugbank-id>
+      <name>Epetraborole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Epetraborole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11752</drugbank-id>
+      <name>Bryostatin 1</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bryostatin 1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11753</drugbank-id>
+      <name>Rifamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rifamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11774</drugbank-id>
+      <name>Pazufloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pazufloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11892</drugbank-id>
+      <name>Prulifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prulifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11912</drugbank-id>
+      <name>Lanopepden</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lanopepden.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11935</drugbank-id>
+      <name>Flomoxef</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flomoxef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11943</drugbank-id>
+      <name>Delafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Delafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12035</drugbank-id>
+      <name>Sarecycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sarecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12089</drugbank-id>
+      <name>Lorvotuzumab mertansine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Lorvotuzumab mertansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12127</drugbank-id>
+      <name>Sultamicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sultamicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12266</drugbank-id>
+      <name>Epofolate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Epofolate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12329</drugbank-id>
+      <name>Eravacycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Eravacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12339</drugbank-id>
+      <name>Radezolid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Radezolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12343</drugbank-id>
+      <name>Temocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Temocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12391</drugbank-id>
+      <name>Sagopilone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sagopilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12447</drugbank-id>
+      <name>Nadifloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nadifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12455</drugbank-id>
+      <name>Omadacycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Omadacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12489</drugbank-id>
+      <name>Mirvetuximab Soravtansine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mirvetuximab Soravtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12604</drugbank-id>
+      <name>Sisomicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sisomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12615</drugbank-id>
+      <name>Plazomicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Plazomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12667</drugbank-id>
+      <name>Protionamide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Protionamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12829</drugbank-id>
+      <name>Amithiozone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amithiozone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13028</drugbank-id>
+      <name>Biapenem</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Biapenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13077</drugbank-id>
+      <name>LCB01-0371</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with LCB01-0371.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13092</drugbank-id>
+      <name>Meclocycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13172</drugbank-id>
+      <name>Tunicamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tunicamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13179</drugbank-id>
+      <name>Troleandomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Troleandomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13261</drugbank-id>
+      <name>Sitafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sitafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13264</drugbank-id>
+      <name>Penimepicycline</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Penimepicycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13266</drugbank-id>
+      <name>Cefatrizine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefatrizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13270</drugbank-id>
+      <name>Dibekacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dibekacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13274</drugbank-id>
+      <name>Micronomicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Micronomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13287</drugbank-id>
+      <name>Miocamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13294</drugbank-id>
+      <name>Azidamfenicol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Azidamfenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13300</drugbank-id>
+      <name>Epicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Epicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13337</drugbank-id>
+      <name>Pheneticillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pheneticillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13338</drugbank-id>
+      <name>Flurithromycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flurithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13409</drugbank-id>
+      <name>Rokitamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rokitamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13456</drugbank-id>
+      <name>Midecamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Midecamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13461</drugbank-id>
+      <name>Cefcapene</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefcapene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13470</drugbank-id>
+      <name>Cefodizime</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefodizime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13499</drugbank-id>
+      <name>Cefsulodin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefsulodin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13503</drugbank-id>
+      <name>Tyrothricin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tyrothricin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13504</drugbank-id>
+      <name>Cefetamet</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefetamet.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13506</drugbank-id>
+      <name>Carfecillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Carfecillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13540</drugbank-id>
+      <name>Isepamicin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Isepamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13627</drugbank-id>
+      <name>Oxolinic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Oxolinic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13633</drugbank-id>
+      <name>Mepartricin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mepartricin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13638</drugbank-id>
+      <name>Cefbuperazone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefbuperazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13660</drugbank-id>
+      <name>Propicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Propicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13667</drugbank-id>
+      <name>Cefozopran</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefozopran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13673</drugbank-id>
+      <name>Bekanamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Bekanamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13682</drugbank-id>
+      <name>Cefpirome</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefpirome.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13686</drugbank-id>
+      <name>Clometocillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clometocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13693</drugbank-id>
+      <name>Sulbenicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulbenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13704</drugbank-id>
+      <name>Pristinamycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pristinamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13705</drugbank-id>
+      <name>Decamethoxine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Decamethoxine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13739</drugbank-id>
+      <name>Penamecillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Penamecillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13744</drugbank-id>
+      <name>Piromidic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Piromidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13772</drugbank-id>
+      <name>Rufloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rufloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13773</drugbank-id>
+      <name>Sulfamethoxypyridazine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Sulfamethoxypyridazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13778</drugbank-id>
+      <name>Cefazedone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefazedone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13814</drugbank-id>
+      <name>Talampicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Talampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13816</drugbank-id>
+      <name>Aspoxicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aspoxicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13821</drugbank-id>
+      <name>Ceftezole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13823</drugbank-id>
+      <name>Pipemidic acid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Pipemidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13836</drugbank-id>
+      <name>Metampicillin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Metampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14025</drugbank-id>
+      <name>Clinafloxacin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clinafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14033</drugbank-id>
+      <name>Acetyl sulfisoxazole</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Acetyl sulfisoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14051</drugbank-id>
+      <name>Malacidin A</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14052</drugbank-id>
+      <name>Malacidin B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Malacidin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14056</drugbank-id>
+      <name>Nigericin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Nigericin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14057</drugbank-id>
+      <name>Valinomycin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Valinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14521</drugbank-id>
+      <name>Silver cation</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Silver cation.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14569</drugbank-id>
+      <name>Tedizolid</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tedizolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14725</drugbank-id>
+      <name>Cefamandole nafate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14733</drugbank-id>
+      <name>Ceftobiprole medocaril</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ceftobiprole medocaril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00781</drugbank-id>
+      <name>Polymyxin B</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Polymyxin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14777</drugbank-id>
+      <name>Murepavadin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Murepavadin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15213</drugbank-id>
+      <name>25-desacetylrifapentine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with 25-desacetylrifapentine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14039</drugbank-id>
+      <name>Erenumab</name>
+      <description>The risk or severity of adverse effects can be increased when Erenumab is combined with Typhoid vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00277</drugbank-id>
+      <name>Theophylline</name>
+      <description>The serum concentration of Theophylline can be increased when it is combined with Typhoid vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00394</drugbank-id>
+      <name>Beclomethasone dipropionate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Beclomethasone dipropionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00588</drugbank-id>
+      <name>Fluticasone propionate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluticasone propionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00591</drugbank-id>
+      <name>Fluocinolone acetonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluocinolone acetonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00764</drugbank-id>
+      <name>Mometasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mometasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01410</drugbank-id>
+      <name>Ciclesonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ciclesonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08906</drugbank-id>
+      <name>Fluticasone furoate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluticasone furoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08970</drugbank-id>
+      <name>Fluprednidene</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluprednidene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08971</drugbank-id>
+      <name>Fluocortolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09091</drugbank-id>
+      <name>Tixocortol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Tixocortol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11487</drugbank-id>
+      <name>Dexamethasone isonicotinate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dexamethasone isonicotinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11750</drugbank-id>
+      <name>Clobetasol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clobetasol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13223</drugbank-id>
+      <name>Fluocortin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluocortin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13491</drugbank-id>
+      <name>Fluperolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluperolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13664</drugbank-id>
+      <name>Formocortal</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Formocortal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13728</drugbank-id>
+      <name>Halometasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Halometasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13856</drugbank-id>
+      <name>Fluclorolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluclorolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13867</drugbank-id>
+      <name>Fluticasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluticasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14512</drugbank-id>
+      <name>Mometasone furoate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Mometasone furoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14538</drugbank-id>
+      <name>Hydrocortisone aceponate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone aceponate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14539</drugbank-id>
+      <name>Hydrocortisone acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14545</drugbank-id>
+      <name>Hydrocortisone succinate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone succinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00180</drugbank-id>
+      <name>Flunisolide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flunisolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00443</drugbank-id>
+      <name>Betamethasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Betamethasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00620</drugbank-id>
+      <name>Triamcinolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Triamcinolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00635</drugbank-id>
+      <name>Prednisone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00687</drugbank-id>
+      <name>Fludrocortisone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fludrocortisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00741</drugbank-id>
+      <name>Hydrocortisone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00860</drugbank-id>
+      <name>Prednisolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00959</drugbank-id>
+      <name>Methylprednisolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methylprednisolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01108</drugbank-id>
+      <name>Trilostane</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Trilostane.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01222</drugbank-id>
+      <name>Budesonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Budesonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01234</drugbank-id>
+      <name>Dexamethasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dexamethasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01285</drugbank-id>
+      <name>Corticotropin</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Corticotropin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01380</drugbank-id>
+      <name>Cortisone acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cortisone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01384</drugbank-id>
+      <name>Paramethasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Paramethasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04630</drugbank-id>
+      <name>Aldosterone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Aldosterone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09378</drugbank-id>
+      <name>Fluprednisolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluprednisolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09383</drugbank-id>
+      <name>Meprednisone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Meprednisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11529</drugbank-id>
+      <name>Melengestrol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Melengestrol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11921</drugbank-id>
+      <name>Deflazacort</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Deflazacort.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13003</drugbank-id>
+      <name>Cortivazol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cortivazol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13208</drugbank-id>
+      <name>Prednylidene</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednylidene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13843</drugbank-id>
+      <name>Cloprednol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cloprednol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14681</drugbank-id>
+      <name>Cortisone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cortisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00223</drugbank-id>
+      <name>Diflorasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Diflorasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00240</drugbank-id>
+      <name>Alclometasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Alclometasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00253</drugbank-id>
+      <name>Medrysone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Medrysone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00288</drugbank-id>
+      <name>Amcinonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Amcinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00324</drugbank-id>
+      <name>Fluorometholone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluorometholone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00547</drugbank-id>
+      <name>Desoximetasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Desoximetasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00596</drugbank-id>
+      <name>Ulobetasol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Ulobetasol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00663</drugbank-id>
+      <name>Flumethasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flumethasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00838</drugbank-id>
+      <name>Clocortolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00846</drugbank-id>
+      <name>Flurandrenolide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Flurandrenolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14596</drugbank-id>
+      <name>Loteprednol etabonate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Loteprednol etabonate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00896</drugbank-id>
+      <name>Rimexolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Rimexolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01013</drugbank-id>
+      <name>Clobetasol propionate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clobetasol propionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01047</drugbank-id>
+      <name>Fluocinonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluocinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01130</drugbank-id>
+      <name>Prednicarbate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednicarbate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01260</drugbank-id>
+      <name>Desonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Desonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06781</drugbank-id>
+      <name>Difluprednate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Difluprednate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06786</drugbank-id>
+      <name>Halcinonide</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Halcinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09095</drugbank-id>
+      <name>Difluocortolone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Difluocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13158</drugbank-id>
+      <name>Clobetasone</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clobetasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14540</drugbank-id>
+      <name>Hydrocortisone butyrate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone butyrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14541</drugbank-id>
+      <name>Hydrocortisone cypionate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone cypionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14543</drugbank-id>
+      <name>Hydrocortisone probutate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone probutate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14544</drugbank-id>
+      <name>Hydrocortisone valerate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Hydrocortisone valerate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00873</drugbank-id>
+      <name>Loteprednol</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Loteprednol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14631</drugbank-id>
+      <name>Prednisolone phosphate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisolone phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14633</drugbank-id>
+      <name>Prednisolone hemisuccinate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisolone hemisuccinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14634</drugbank-id>
+      <name>Fluprednidene acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Fluprednidene acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14643</drugbank-id>
+      <name>Methylprednisolone aceponate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methylprednisolone aceponate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14644</drugbank-id>
+      <name>Methylprednisolone hemisuccinate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Methylprednisolone hemisuccinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14646</drugbank-id>
+      <name>Prednisone acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14652</drugbank-id>
+      <name>Clocortolone acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Clocortolone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14659</drugbank-id>
+      <name>Melengestrol acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Melengestrol acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14669</drugbank-id>
+      <name>Betamethasone phosphate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Betamethasone phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15566</drugbank-id>
+      <name>Prednisolone acetate</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Prednisolone acetate.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>7832</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Typhoid_vaccine</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

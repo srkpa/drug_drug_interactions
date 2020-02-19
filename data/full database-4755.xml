@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05069</drugbank-id>
+  <name>ATG003</name>
+  <description>ATG003, a novel anti-angiogenic drug candidate and a formulation of mecamylamine, is currently in clinical development for neovascular age-related macular degeneration.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in macular degeneration.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>ATG003 acts by inhibiting the angiogenic pathway mediated by the nicotinic acetylcholine receptors found on endothelial cells (EC-NAChR). Inhibiting this pathway also inhibits the synthesis and cellular responses mediated by growth factors such as VEGF and bFGF.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909926</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000411</id>
+      <name>Neuronal acetylcholine receptor subunit alpha-10</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9GZZ6" source="Swiss-Prot">
+        <name>Neuronal acetylcholine receptor subunit alpha-10</name>
+        <general-function>Receptor binding</general-function>
+        <specific-function>Ionotropic receptor with a probable role in the modulation of auditory stimuli. Agonist binding may induce an extensive change in conformation that affects all subunits and leads to opening of an ion-conducting channel across the plasma membrane. The channel is permeable to a range of divalent cations including calcium, the influx of which may activate a potassium current which hyperpolarizes the cell membrane. In the ear, this may lead to a reduction in basilar membrane motion, altering the activity of auditory nerve fibers and reducing the range of dynamic hearing. This may protect against acoustic trauma.</specific-function>
+        <gene-name>CHRNA10</gene-name>
+        <locus>11p15.5</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>238-258
+268-288
+302-322
+429-449</transmembrane-regions>
+        <signal-regions>1-24</signal-regions>
+        <theoretical-pi>7.97</theoretical-pi>
+        <molecular-weight>49704.295</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:13800</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRNA10</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AJ278118</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>12053839</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>470</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>470</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9GZZ6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACH10_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>NACHR alpha-10</synonym>
+          <synonym>NACHRA10</synonym>
+          <synonym>Nicotinic acetylcholine receptor subunit alpha-10</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010285|Neuronal acetylcholine receptor subunit alpha-10
+MGLRSHHLSLGLLLLFLLPAECLGAEGRLALKLFRDLFANYTSALRPVADTDQTLNVTLE
+VTLSQIIDMDERNQVLTLYLWIRQEWTDAYLRWDPNAYGGLDAIRIPSSLVWRPDIVLYN
+KADAQPPGSASTNVVLRHDGAVRWDAPAITRSSCRVDVAAFPFDAQHCGLTFGSWTHGGH
+QLDVRPRGAAASLADFVENVEWRVLGMPARRRVLTYGCCSEPYPDVTFTLLLRRRAAAYV
+CNLLLPCVLISLLAPLAFHLPADSGEKVSLGVTVLLALTVFQLLLAESMPPAESVPLIGK
+YYMATMTMVTFSTALTILIMNLHYCGPSVRPVPAWARALLLGHLARGLCVRERGEPCGQS
+RPPELSPSPQSPEGGAGPPAGPCHEPRCLCRQEALLHHVATIANTFRSHRAAQRCHEDWK
+RLARVMDRFFLAIFFSMALVMSLLVLVQAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010286|Neuronal acetylcholine receptor subunit alpha-10 (CHRNA10)
+ATGCCGGCGCGGCGGCGCGTGCTCACCTACGGCTGCTGCTCCGAGCCCTACCCCGACGTC
+ACCTTCACGCTGCTGCTGCGCCGCCGCGCCGCCGCCTACGTGTGCAACCTGCTGCTGCCC
+TGCGTGCTCATCTCGCTGCTTGCGCCGCTCGCCTTCCACCTGCCTGCCGACTCAGGCGAG
+AAGGTGTCGCTGGGCGTCACCGTGCTGCTGGCGCTCACCGTCTTCCAGTTGCTGCTGGCC
+GAGAGCATGCCACCGGCCGAGAGCGTGCCGCTCATCGGGAAGTACTACATGGCCACTATG
+ACCATGGTCACATTCTCAACAGCACTCACCATCCTTATCATGAACCTGCATTACTGTGGT
+CCCAGTGTCCGCCCAGTGCCAGCCTGGGCTAGGGCCCTCCTGCTGGGACACCTGGCACGG
+GGCCTGTGCGTGCGGGAAAGAGGGGAGCCCTGTGGGCAGTCCAGGCCACCTGAGTTATCT
+CCTAGCCCCCAGTCGCCTGAAGGAGGGGCTGGCCCCCCAGCGGGCCCTTGCCACGAGCCA
+CGATGTCTGTGCCGCCAGGAAGCCCTACTGCACCACGTAGCCACCATTGCCAATACCTTC
+CGCAGCCACCGAGCTGCCCAGCGCTGCCATGAGGACTGGAAGCGCCTGGCCCGTGTGATG
+GACCGCTTCTTCCTGGCCATCTTCTTCTCCATGGCCCTGGTCATGAGCCTCCTGGTGCTG
+GTGCAGGCCCTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>acetylcholine-gated channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perikaryon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine-activated cation-selective channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cation transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of mechanical stimulus involved in sensory perception of sound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inner ear morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nicotine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002343</id>
+      <name>Neuronal acetylcholine receptor subunit alpha-9</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9UGM1" source="Swiss-Prot">
+        <name>Neuronal acetylcholine receptor subunit alpha-9</name>
+        <general-function>Calcium channel activity</general-function>
+        <specific-function>Ionotropic receptor with a probable role in the modulation of auditory stimuli. Agonist binding induces a conformation change that leads to the opening of an ion-conducting channel across the plasma membrane (PubMed:11752216, PubMed:25282151). The channel is permeable to a range of divalent cations including calcium, the influx of which may activate a potassium current which hyperpolarizes the cell membrane (PubMed:11752216, PubMed:25282151). In the ear, this may lead to a reduction in basilar membrane motion, altering the activity of auditory nerve fibers and reducing the range of dynamic hearing. This may protect against acoustic trauma. May also regulate keratinocyte adhesion (PubMed:11021840).</specific-function>
+        <gene-name>CHRNA9</gene-name>
+        <locus>4p14</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>238-262
+269-287
+302-323
+458-476</transmembrane-regions>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>6.42</theoretical-pi>
+        <molecular-weight>54806.63</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:14079</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRNA9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AJ243342</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>6688136</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>469</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>469</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9UGM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACHA9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>NACHR alpha-9</synonym>
+          <synonym>NACHRA9</synonym>
+          <synonym>Nicotinic acetylcholine receptor subunit alpha-9</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011683|Neuronal acetylcholine receptor subunit alpha-9
+MNWSHSCISFCWIYFAASRLRAAETADGKYAQKLFNDLFEDYSNALRPVEDTDKVLNVTL
+QITLSQIKDMDERNQILTAYLWIRQIWHDAYLTWDRDQYDGLDSIRIPSDLVWRPDIVLY
+NKADDESSEPVNTNVVLRYDGLITWDAPAITKSSCVVDVTYFPFDNQQCNLTFGSWTYNG
+NQVDIFNALDSGDLSDFIEDVEWEVHGMPAVKNVISYGCCSEPYPDVTFTLLLKRRSSFY
+IVNLLIPCVLISFLAPLSFYLPAASGEKVSLGVTILLAMTVFQLMVAEIMPASENVPLIG
+KYYIATMALITASTALTIMVMNIHFCGAEARPVPHWARVVILKYMSRVLFVYDVGESCLS
+PHHSRERDHLTKVYSKLPESNLKAARNKDLSRKKDMNKRLKNDLGCQGKNPQEAESYCAQ
+YKVLTRNIEYIAKCLKDHKATNSKGSEWKKVAKVIDRFFMWIFFIMVFVMTILIIARAD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011684|Neuronal acetylcholine receptor subunit alpha-9 (CHRNA9)
+ATGAACTGGTCCCATTCCTGCATCTCCTTTTGCTGGATCTACTTTGCTGCTTCCAGACTG
+AGAGCTGCAGAGACGGCAGATGGAAAATATGCTCAGAAGTTGTTTAATGACCTTTTTGAA
+GATTATTCTAATGCTCTTCGTCCAGTGGAAGATACAGATAAAGTCCTGAATGTGACCCTG
+CAGATTACGCTCTCTCAGATTAAGGATATGGATGAAAGAAACCAAATTCTGACTGCTTAT
+TTGTGGATCCGCCAAATCTGGCACGATGCCTATCTCACGTGGGACCGAGATCAGTACGAT
+GGCCTAGACTCCATCAGGATCCCCAGTGACCTCGTGTGGAGGCCAGACATCGTCTTATAT
+AACAAGGCTGATGATGAATCTTCAGAGCCTGTGAACACCAATGTGGTCCTGCGGTATGAT
+GGGCTGATCACCTGGGATGCACCGGCCATCACCAAAAGCTCCTGTGTGGTGGATGTCACC
+TACTTCCCTTTTGACAACCAGCAGTGCAACCTGACTTTTGGTTCCTGGACCTACAATGGC
+AATCAGGTGGACATATTCAACGCCTTGGACAGCGGAGATCTCTCTGACTTCATTGAAGAT
+GTGGAATGGGAGGTCCATGGCATGCCCGCTGTGAAGAATGTGATCTCCTATGGCTGCTGC
+TCTGAGCCTTACCCGGATGTCACATTCACCCTCCTTCTGAAGAGGAGGTCCTCGTTCTAT
+ATCGTCAACCTCCTCATCCCATGCGTCCTCATATCTTTTCTGGCTCCTCTGAGTTTTTAT
+CTCCCAGCAGCCTCCGGAGAAAAGGTCTCCCTGGGAGTGACCATCCTGTTGGCCATGACT
+GTATTTCAGCTAATGGTGGCAGAAATCATGCCGGCCTCAGAAAATGTGCCCCTGATAGGT
+AAATACTACATAGCCACGATGGCCCTGATCACAGCCTCCACTGCGTTGACCATCATGGTG
+ATGAATATCCACTTCTGTGGGGCCGAGGCCCGGCCGGTGCCACACTGGGCCAGGGTGGTC
+ATCCTGAAATACATGTCCAGGGTCTTGTTTGTCTATGATGTGGGTGAAAGCTGCCTCAGC
+CCGCACCACAGTAGAGAGCGGGACCACCTCACGAAAGTTTATAGCAAACTCCCAGAGTCT
+AACCTGAAAGCAGCCAGGAACAAAGACCTTTCCAGAAAGAAGGACATGAACAAACGCTTA
+AAGAACGACCTGGGCTGCCAGGGTAAGAACCCTCAGGAGGCCGAGAGTTACTGTGCACAG
+TACAAAGTGCTGACGAGGAATATTGAGTACATCGCCAAGTGCCTCAAAGACCACAAGGCC
+ACCAATTCCAAGGGGAGTGAATGGAAGAAGGTGGCGAAAGTCATAGACCGATTCTTCATG
+TGGATTTTTTTCATTATGGTGTTTGTGATGACTATTTTGATCATAGCAAGAGCGGATTAG
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>acetylcholine-gated channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine-activated cation-selective channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine-gated cation channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cation transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of mechanical stimulus involved in sensory perception of sound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inner ear morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nicotine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

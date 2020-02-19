@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05060</drugbank-id>
+  <name>R1626</name>
+  <description>R1626 is one of a new class of hepatitis C therapies called polymerase inhibitors. It achieves significant reductions in viral load in chronic hepatitis C patients infected with the difficult to treat genotype 1 virus. R1626 is very effective in inhibiting viral replication</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in hepatitis (viral, C).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909921</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002403</id>
+      <name>RNA-dependent RNA-polymerase</name>
+      <organism>Hepatitis C Virus</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O39930" source="TrEMBL">
+        <name>RNA-dependent RNA-polymerase</name>
+        <general-function>Rna-directed rna polymerase activity</general-function>
+        <specific-function/>
+        <gene-name>NS5b</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions>571-588</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.02</theoretical-pi>
+        <molecular-weight>65753.05</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="11103">Hepatitis C Virus</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Z97730</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O39930</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>O39930_9HEPC</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011720|RNA-dependent RNA-polymerase
+SMSYTWTGALITPCAAEESKLPINALSNSLLRHHNMVYATTSRSASLRQKKVTFDRLQVL
+DDHYRDVLKEMKAKASTVKAKLLSVEEACKLTPPHSAKSKFGYGAKDVRNLSSKAVNHIR
+SVWKDLLEDTETPIDTTIMAKNEVFCVQPEKGGRKPARLIVFPDLGVRVCEKMALYDVVS
+TLPQAVMGSSYGFQYSPGQRVEFLVNTWKSKKCPMGFSYDTRCFDSTVTENDIRVEESIY
+QCCDLAPEARQAIRSLTERLYIGGPLTNSKGQNCGYRRCRASGVLTTSCGNTLTCYLKAS
+AACRAAKLQDCTMLVCGDDLVVICESAGTQEDAASLRAFTEAMTRYSAPPGDPPQPEYDL
+ELITSCSSNVSVAHDASGKRVYYLTRDPTTPLARAAWETARHTPVNSWLGNIIMYAPTLW
+ARMILMTHFFSILLAQEQLEKALDCQIYGACYSIEPLDLPQIIQRLHGLSAFSLHSYSPG
+EINRVASCLRKLGVPPLRVWRHRARSVRARLLSQGGRAATCGKYLFNWAVRTKLKLTPIP
+AASQLDLSSWFVAGYSGGDIYHSLSRARPRWFMWCLLLLSVGVGIYLLPNR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004719|1776 bp
+TCGATGTCCTACACATGGACAGGCGCCCTGATCACGCCATGCGCTGCGGAGGAATCCAAG
+CTGCCCATCAATGCACTGAGCAACTCTTTGCTCCGTCACCACAACATGGTCTATGCTACA
+ACATCTCGCAGCGCAAGCCTGCGGCAGAAGAAGGTCACCTTTGACAGACTGCAGGTCCTG
+GACGACCACTACCGGGACGTGCTCAAGGAGATGAAGGCGAAGGCGTCCACAGTTAAGGCT
+AAACTTCTATCCGTGGAGGAAGCCTGTAAGCTGACGCCCCCACATTCGGCCAAATCTAAA
+TTTGGCTATGGGGCAAAGGACGTCCGGAACCTATCCAGCAAGGCCGTTAACCACATCCGC
+TCCGTGTGGAAGGACTTGCTGGAAGACACTGAGACACCAATTGACACCACCATCATGGCA
+AAAAATGAGGTTTTCTGCGTCCAACCAGAGAAGGGGGGCCGCAAGCCAGCTCGCCTTATC
+GTATTCCCAGATTTGGGGGTTCGTGTGTGCGAGAAAATGGCCCTTTACGATGTGGTCTCC
+ACCCTCCCTCAGGCCGTGATGGGCTCTTCATACGGATTCCAGTACTCTCCTGGACAGCGG
+GTCGAGTTCCTGGTGAATACCTGGAAATCGAAAAAATGCCCTATGGGCTTCTCATATGAC
+ACCCGCTGCTTTGACTCAACGGTCACTGAGAATGACATCCGTGTTGAGGAGTCAATCTAC
+CAATGTTGTGACTTGGCCCCCGAAGCCAGACAGGCCATAAGGTCGCTCACAGAGCGGCTT
+TACATCGGGGGCCCCCTGACTAATTCAAAGGGGCAGAACTGCGGCTATCGCCGGTGCCGC
+GCGAGCGGTGTACTGACGACCAGCTGCGGTAATACCCTCACATGTTACTTGAAGGCCTCT
+GCGGCCTGTCGAGCTGCGAAGCTCCAGGACTGCACGATGCTCGTGTGCGGAGACGACCTT
+GTCGTTATCTGTGAAAGCGCGGGGACCCAAGAGGACGCGGCGAGCCTACGAGCCTTCACG
+GAGGCTATGACTAGATACTCTGCCCCCCCTGGGGACCCGCCCCAACCAGAATACGACTTG
+GAGTTGATAACATCATGCTCCTCCAATGTGTCTGTCGCGCACGATGCATCTGGCAAAAGG
+GTGTACTATCTCACCCGTGACCCCACCACCCCCCTTGCGCGGGCTGCGTGGGAGACAGCT
+AGACACACTCCAGTCAATTCCTGGCTAGGCAACATCATCATGTATGCGCCCACCTTGTGG
+GCAAGGATGATCCTGATGACTCATTTCTTCTCCATCCTTCTAGCTCAGGAACAACTTGAA
+AAAGCCCTAGATTGTCAGATCTACGGGGCCTGTTACTCCATTGAGCCACTTGACCTACCT
+CAGATCATTCAACGACTCCATGGCCTTAGCGCATTTTCACTCCATAGTTACTCTCCAGGT
+GAGATCAATAGGGTGGCTTCATGCCTCAGGAAACTTGGGGTACCGCCCTTGCGAGTCTGG
+AGACATCGGGCCAGAAGTGTCCGCGCTAGGCTACTGTCCCAGGGGGGGAGGGCTGCCACT
+TGTGGCAAGTACCTCTTCAACTGGGCAGTAAGGACCAAGCTCAAACTCACTCCAATCCCG
+GCTGCGTCCCAGTTGGATTTATCCAGCTGGTTCGTTGCTGGTTACAGCGGGGGAGACATA
+TATCACAGCCTGTCTCGTGCCCGACCCCGCTGGTTCATGTGGTGCCTACTCCTACTTTCT
+GTAGGGGTAGGCATCTACCTGCTCCCCAACCGGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00998</identifier>
+            <name>RdRP_3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA-directed RNA polymerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral RNA genome replication</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

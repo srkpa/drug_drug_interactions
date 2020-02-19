@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB00746</drugbank-id>
+  <drugbank-id>APRD00904</drugbank-id>
+  <name>Deferoxamine</name>
+  <description>Natural product isolated from Streptomyces pilosus. It forms iron complexes and is used as a chelating agent, particularly in the mesylate form.</description>
+  <cas-number>70-51-9</cas-number>
+  <unii>J06Y7MXW4D</unii>
+  <average-mass>560.684</average-mass>
+  <monoisotopic-mass>560.353362542</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L64</ref-id>
+        <title>Link</title>
+        <url>http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/203185.html</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Zoltan Konyari, Vilmos Keri, Antal Kovacs, Sandor Horkay, Laszlo Eszenyi, Janos Erdelyi, Ilona Himesi, Gyorgy Toth, Janos Balint, SzilaJudit, Ferenc Vinczi, Csaba Szabo, Nelli Sas, "Process for the preparation of high-purity deferoxamine salts." U.S. Patent US5374771, issued July, 1965.</synthesis-reference>
+  <indication>Used to treat acute iron or aluminum toxicity (an excess of aluminum in the body) in certain patients. Also used in certain patients with anemia who must receive many blood transfusions.</indication>
+  <pharmacodynamics>Deferoxamine, otherwise known as desferrioxamine or desferal, is a chelating agent used to remove excess iron or aluminum from the body. It acts by binding free iron or aluminum in the bloodstream and enhancing its elimination in the urine. By removing excess iron or aluminum, the agent reduces the damage done to various organs and tissues, such as the liver.</pharmacodynamics>
+  <mechanism-of-action>Deferoxamine works in treating iron toxicity by binding trivalent (ferric) iron (for which it has a strong affinity), forming ferrioxamine, a stable complex which is eliminated via the kidneys. 100 mg of deferoxamine is capable of binding approximately 8.5 mg of trivalent (ferric) iron. Deferoxamine works in treating aluminum toxicity by binding to tissue-bound aluminum to form aluminoxamine, a stable, water-soluble complex. The formation of aluminoxamine increases blood concentrations of aluminum, resulting in an increased concentration gradient between the blood and dialysate, boosting the removal of aluminum during dialysis. 100 mg of deferoxamine is capable of binding approximately 4.1 mg of aluminum.</mechanism-of-action>
+  <toxicity>Intravenous LD&lt;sub&gt;50&lt;/sub&gt; in mouse, rat, and rabbit is 340 mg/kg, 520 mg/kg, and 600 mg/kg, respectively. Subcutaneous LD&lt;sub&gt;50&lt;/sub&gt; in mouse and rat is 1600 mg/kg and &gt;1000 mg/kg, respectively. Oral LD&lt;sub&gt;50&lt;/sub&gt; in mouse and rat is &gt;3000 mg/kg and &gt;1000 mg/kg, respectively. Nephrotoxicity, ototoxicity and retinal toxicity have been reported following long-term administration for chronic iron overload.</toxicity>
+  <metabolism>Deferoxamine is mainly metabolised in the plasma and hepatic metabolism is minimal. A number of metabolites have been isolated but not characterised. Some metabolites of deferoxamine, most notably the product of oxidative deamination, also chelate iron, and thus the antidotal effect of the drug appears unaffected by hepatic metabolism.</metabolism>
+  <absorption>Deferoxamine is rapidly absorbed after intramuscular or subcutaneous administration, but only poorly absorbed from the gastrointestinal tract in the presence of intact mucosa.</absorption>
+  <half-life>Biphasic elimination pattern in healthy volunteers with a first rapid phase half life of 1 hour and a second slow phase half-life of 6 hours.</half-life>
+  <protein-binding>Less than 10% bound to serum proteins &lt;i&gt;in vitro&lt;/i&gt;.</protein-binding>
+  <route-of-elimination>Deferoxamine mesylate is metabolized principally by plasma enzymes, but the pathways have not yet been defined. Some is also excreted in the feces via the bile.</route-of-elimination>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as acetohydroxamic acids. These are organic compounds that contain a hydroxamic acid group carrying a methyl group attached to its carbon center.</description>
+    <direct-parent>Acetohydroxamic acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Carboxylic acid derivatives</subclass>
+    <alternative-parent>Acetamides</alternative-parent>
+    <alternative-parent>Amino acids and derivatives</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboximidic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Propargyl-type 1,3-dipolar organic compounds</alternative-parent>
+    <substituent>Acetamide</substituent>
+    <substituent>Acetohydroxamic acid</substituent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboximidic acid</substituent>
+    <substituent>Carboximidic acid derivative</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic 1,3-dipolar compound</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Propargyl-type 1,3-dipolar organic compound</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT000965</drugbank-id>
+      <name>Deferoxamine hydrochloride</name>
+      <unii>G9VYJ96FOJ</unii>
+      <cas-number>1950-39-6</cas-number>
+      <inchikey>KCRQZLMAZHZDCL-UHFFFAOYSA-N</inchikey>
+      <average-mass>597.15</average-mass>
+      <monoisotopic-mass>596.3300403</monoisotopic-mass>
+    </salt>
+    <salt>
+      <drugbank-id primary="true">DBSALT000964</drugbank-id>
+      <name>Deferoxamine mesylate</name>
+      <unii>V9TKO7EO6K</unii>
+      <cas-number>138-14-7</cas-number>
+      <inchikey>IDDIJAWJANBQLJ-UHFFFAOYSA-N</inchikey>
+      <average-mass>656.79</average-mass>
+      <monoisotopic-mass>656.341477692</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="german" coder="inn">Deferoxamin</synonym>
+    <synonym language="spanish" coder="inn">Deferoxamina</synonym>
+    <synonym language="french" coder="inn">Déferoxamine</synonym>
+    <synonym language="english" coder="inn/usan">Deferoxamine</synonym>
+    <synonym language="latin" coder="inn">Deferoxaminum</synonym>
+    <synonym language="english" coder="">Deferrioxamine</synonym>
+    <synonym language="english" coder="">Deferrioxamine B</synonym>
+    <synonym language="english" coder="ban">Desferrioxamine</synonym>
+    <synonym language="english" coder="">DFO</synonym>
+    <synonym language="english" coder="">DFOA</synonym>
+    <synonym language="english" coder="">DFOM</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Deferoxamine</name>
+      <labeller>Fresenius Kabi</labeller>
+      <ndc-id/>
+      <ndc-product-code>63323-599</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-12-15</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>95 mg/1mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA078718</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine</name>
+      <labeller>Fresenius Kabi</labeller>
+      <ndc-id/>
+      <ndc-product-code>63323-597</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-12-15</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>95 mg/1mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA078718</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate</name>
+      <labeller>Barr Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code>0555-1132</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2004-05-04</started-marketing-on>
+      <ended-marketing-on>2014-03-31</ended-marketing-on>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/5mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA076019</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate</name>
+      <labeller>Barr Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code>0555-1131</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2004-05-04</started-marketing-on>
+      <ended-marketing-on>2014-03-31</ended-marketing-on>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/20mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA076019</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Bedford Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>55390-263</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-06-18</started-marketing-on>
+      <ended-marketing-on>2012-07-31</ended-marketing-on>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/5.3mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA078086</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Bedford Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>55390-265</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-06-18</started-marketing-on>
+      <ended-marketing-on>2012-07-31</ended-marketing-on>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/21.1mL</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA078086</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Gland Pharma Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code>68083-172</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-10-09</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Gland Pharma Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code>68083-173</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-10-09</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/1</strength>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Apopharma Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>52609-4505</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-03-23</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Apopharma Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>52609-4504</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-03-23</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/1</strength>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate</name>
+      <labeller>Hospira, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0409-2336</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2005-04-30</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA076019</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate</name>
+      <labeller>Hospira, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0409-2337</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2005-03-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA076019</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Alvogen Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>47781-623</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine mesylate</name>
+      <labeller>Alvogen Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>47781-624</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>ANDA207384</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <labeller>Sandoz Canada Incorporated</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02261820</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <labeller>Pfizer Canada Ulc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02241600</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2000-04-12</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <labeller>Pfizer Canada Ulc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02247022</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2004-01-12</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Desferal</name>
+      <labeller>Novartis Pharmaceuticals Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code>0078-0347</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2006-07-19</started-marketing-on>
+      <ended-marketing-on>2006-07-19</ended-marketing-on>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>2 g/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Desferal</name>
+      <labeller>Novartis Pharmaceuticals Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code>0078-0467</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1968-04-02</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, lyophilized, for solution</dosage-form>
+      <strength>500 mg/1</strength>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <fda-application-number>NDA016267</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Desferal 2g</name>
+      <labeller>Novartis</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01981250</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2016-10-31</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Desferal 500mg</name>
+      <labeller>Novartis</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01981242</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>PMS-deferoxamine</name>
+      <labeller>Pharmascience Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02242055</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2000-05-24</started-marketing-on>
+      <ended-marketing-on>2017-09-30</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>PMS-deferoxamine</name>
+      <labeller>Pharmascience Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02243450</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2001-08-21</started-marketing-on>
+      <ended-marketing-on>2017-09-30</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand>
+      <name>Desferin</name>
+      <company>Novartis</company>
+    </international-brand>
+  </international-brands>
+  <mixtures>
+    <mixture>
+      <name>Deferoxamine Mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Desferal</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Desferal</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine mesylate</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Desferal 500mg</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Desferal 2g</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Deferoxamine Mesylate for Injection</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>PMS-deferoxamine</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+    <mixture>
+      <name>PMS-deferoxamine</name>
+      <ingredients>Deferoxamine</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers>
+    <packager>
+      <name>APP Pharmaceuticals</name>
+      <url>http://www.apppharma.com</url>
+    </packager>
+    <packager>
+      <name>Barr Pharmaceuticals</name>
+      <url/>
+    </packager>
+    <packager>
+      <name>Bedford Labs</name>
+      <url>http://www.bedfordlabs.com</url>
+    </packager>
+    <packager>
+      <name>Ben Venue Laboratories Inc.</name>
+      <url>http://www.benvenue.com</url>
+    </packager>
+    <packager>
+      <name>Hospira Inc.</name>
+      <url>http://www.hospira.com</url>
+    </packager>
+    <packager>
+      <name>Novartis AG</name>
+      <url>http://www.novartis.com</url>
+    </packager>
+    <packager>
+      <name>Teva Pharmaceutical Industries Ltd.</name>
+      <url>http://www.tevapharm.com</url>
+    </packager>
+    <packager>
+      <name>Watson Pharmaceuticals</name>
+      <url>http://www.watson.com</url>
+    </packager>
+  </packagers>
+  <manufacturers>
+    <manufacturer generic="true" url="">App pharmaceuticals llc</manufacturer>
+    <manufacturer generic="true" url="">Bedford laboratories div ben venue laboratories inc</manufacturer>
+    <manufacturer generic="true" url="">Hospira inc</manufacturer>
+    <manufacturer generic="true" url="">Watson laboratories inc</manufacturer>
+    <manufacturer generic="false" url="">Novartis pharmaceuticals corp</manufacturer>
+  </manufacturers>
+  <prices>
+    <price>
+      <description>Desferrioxamine Mesilate 500 mg/vial</description>
+      <cost currency="USD">8.44</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Pms-Deferoxamine 500 mg/vial</description>
+      <cost currency="USD">8.44</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Desferal 500 mg/vial</description>
+      <cost currency="USD">15.07</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Desferal 500 mg Solution Vial</description>
+      <cost currency="USD">23.92</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Desferrioxamine Mesilate 2 g/vial</description>
+      <cost currency="USD">33.89</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Pms-Deferoxamine 2 g/vial</description>
+      <cost currency="USD">33.89</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Deferoxamine 2 gram vial</description>
+      <cost currency="USD">46.25</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Desferal 2 g/vial</description>
+      <cost currency="USD">60.52</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Desferal 2 gram vial</description>
+      <cost currency="USD">113.94</cost>
+      <unit>vial</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Chelating Agents</category>
+      <mesh-id>D002614</mesh-id>
+    </category>
+    <category>
+      <category>Compounds used in a research, industrial, or household setting</category>
+      <mesh-id>D020313</mesh-id>
+    </category>
+    <category>
+      <category>Heavy Metal Antagonists</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Hydroxamic Acids</category>
+      <mesh-id>D006877</mesh-id>
+    </category>
+    <category>
+      <category>Hydroxy Acids</category>
+      <mesh-id>D006880</mesh-id>
+    </category>
+    <category>
+      <category>Hydroxylamines</category>
+      <mesh-id>D006898</mesh-id>
+    </category>
+    <category>
+      <category>Iron Chelating Activity</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Iron Chelating Agents</category>
+      <mesh-id>D007502</mesh-id>
+    </category>
+    <category>
+      <category>Sequestering Agents</category>
+      <mesh-id>D064449</mesh-id>
+    </category>
+    <category>
+      <category>Siderophores</category>
+      <mesh-id>D017262</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>95 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous</route>
+      <strength>2 g/1</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>2 g/21.1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>2 g/20mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>500 mg/5.3mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>500 mg/5mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>500 mg/1</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, lyophilized, for solution</form>
+      <route>Intramuscular; Intravenous; Subcutaneous</route>
+      <strength>2 g/1</strength>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intramuscular; Intraperitoneal; Intravenous; Subcutaneous</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="V03AC01">
+      <level code="V03AC">Iron chelating agents</level>
+      <level code="V03A">ALL OTHER THERAPEUTIC PRODUCTS</level>
+      <level code="V03">ALL OTHER THERAPEUTIC PRODUCTS</level>
+      <level code="V">VARIOUS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>64:00.00</ahfs-code>
+  </ahfs-codes>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB00746.pdf?1265922742</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00126</drugbank-id>
+      <name>Ascorbic acid</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Ascorbic acid is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08830</drugbank-id>
+      <name>Dehydroascorbic acid</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Dehydroascorbic acid is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14482</drugbank-id>
+      <name>Sodium ascorbate</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Sodium ascorbate is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14483</drugbank-id>
+      <name>Calcium ascorbate</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Calcium ascorbate is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14485</drugbank-id>
+      <name>Zinc ascorbate</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Zinc ascorbate is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14486</drugbank-id>
+      <name>Niacinamide ascorbate</name>
+      <description>The risk or severity of Cardiovascular Impairment can be increased when Niacinamide ascorbate is combined with Deferoxamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00433</drugbank-id>
+      <name>Prochlorperazine</name>
+      <description>The risk or severity of adverse effects can be increased when Deferoxamine is combined with Prochlorperazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09139</drugbank-id>
+      <name>Technetium Tc-99m oxidronate</name>
+      <description>Deferoxamine may decrease effectiveness of Technetium Tc-99m oxidronate as a diagnostic agent.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.93</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>9.90e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>N-(5-aminopentyl)-N-hydroxy-N'-[5-(N-hydroxy-3-{[5-(N-hydroxyacetamido)pentyl]carbamoyl}propanamido)pentyl]butanediamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>deferoxamine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>560.684</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>560.353362542</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCN</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C25H48N6O8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C25H48N6O8/c1-21(32)29(37)18-9-3-6-16-27-22(33)12-14-25(36)31(39)20-10-4-7-17-28-23(34)11-13-24(35)30(38)19-8-2-5-15-26/h37-39H,2-20,26H2,1H3,(H,27,33)(H,28,34)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>UBQYURCVBFRUQT-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>205.84</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>144.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>62.42</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>7.92</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>10.23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.2E+004 mg/L (at 20 °C)</value>
+      <source>MERCK INDEX (1996)</source>
+    </property>
+    <property>
+      <kind>Melting Point</kind>
+      <value>140 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2.2</value>
+      <source/>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>2446</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>4356</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>2973</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506395</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C06940</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D03670</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>2867</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>47715</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA164746490</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Deferoxamine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL556</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/cdi/deferoxamine.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0004807</id>
+      <name>Iron</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>chelator</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16965</ref-id>
+            <pubmed-id>9549639</pubmed-id>
+            <citation>Elihu N, Anandasbapathy S, Frishman WH: Chelation therapy in cardiovascular disease: ethylenediaminetetraacetic acid, deferoxamine, and dexrazoxane. J Clin Pharmacol. 1998 Feb;38(2):101-5.</citation>
+          </article>
+          <article>
+            <ref-id>A16966</ref-id>
+            <pubmed-id>16339658</pubmed-id>
+            <citation>Hershko C, Link G, Konijn AM, Cabantchik ZI: Objectives and mechanism of iron chelation therapy. Ann N Y Acad Sci. 2005;1054:124-35.</citation>
+          </article>
+          <article>
+            <ref-id>A16967</ref-id>
+            <pubmed-id>20001633</pubmed-id>
+            <citation>Cappellini MD, Musallam KM, Taher AT: Overview of iron chelation therapy with desferrioxamine and deferiprone. Hemoglobin. 2009;33 Suppl 1:S58-69. doi: 10.3109/03630260903346924.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+    </target>
+    <target position="2">
+      <id>BE0004818</id>
+      <name>Aluminum</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>chelator</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16968</ref-id>
+            <pubmed-id>7482575</pubmed-id>
+            <citation>Kontoghiorghes GJ: Comparative efficacy and toxicity of desferrioxamine, deferiprone and other iron and aluminium chelating drugs. Toxicol Lett. 1995 Oct;80(1-3):1-18.</citation>
+          </article>
+          <article>
+            <ref-id>A16969</ref-id>
+            <pubmed-id>8301696</pubmed-id>
+            <citation>Yokel RA: Aluminum chelation: chemistry, clinical, and experimental studies and the search for alternatives to desferrioxamine. J Toxicol Environ Health. 1994 Feb;41(2):131-74.</citation>
+          </article>
+          <article>
+            <ref-id>A16970</ref-id>
+            <pubmed-id>8122301</pubmed-id>
+            <citation>Day JP, Ackrill P: The chemistry of desferrioxamine chelation for aluminum overload in renal dialysis patients. Ther Drug Monit. 1993 Dec;15(6):598-601.</citation>
+          </article>
+          <article>
+            <ref-id>A16971</ref-id>
+            <pubmed-id>2697761</pubmed-id>
+            <citation>Domingo JL: The use of chelating agents in the treatment of aluminum overload. J Toxicol Clin Toxicol. 1989;27(6):355-67.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+    </target>
+    <target position="3">
+      <id>BE0003392</id>
+      <name>Amyloid beta A4 protein</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19938</ref-id>
+            <pubmed-id>15681799</pubmed-id>
+            <citation>Venti A, Giordano T, Eder P, Bush AI, Lahiri DK, Greig NH, Rogers JT: The integrated role of desferrioxamine and phenserine targeted to an iron-responsive element in the APP-mRNA 5'-untranslated region. Ann N Y Acad Sci. 2004 Dec;1035:34-48.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P05067" source="Swiss-Prot">
+        <name>Amyloid beta A4 protein</name>
+        <general-function>Transition metal ion binding</general-function>
+        <specific-function>Functions as a cell surface receptor and performs physiological functions on the surface of neurons relevant to neurite growth, neuronal adhesion and axonogenesis. Involved in cell mobility and transcription regulation through protein-protein interactions. Can promote transcription activation through binding to APBB1-KAT5 and inhibits Notch signaling through interaction with Numb. Couples to apoptosis-inducing pathways such as those mediated by G(O) and JIP. Inhibits G(o) alpha ATPase activity (By similarity). Acts as a kinesin I membrane receptor, mediating the axonal transport of beta-secretase and presenilin 1. Involved in copper homeostasis/oxidative stress through copper ion reduction. In vitro, copper-metallated APP induces neuronal death directly or is potentiated through Cu(2+)-mediated low-density lipoprotein oxidation. Can regulate neurite outgrowth through binding to components of the extracellular matrix such as heparin and collagen I and IV. The splice isoforms that contain the BPTI domain possess protease inhibitor activity. Induces a AGER-dependent pathway that involves activation of p38 MAPK, resulting in internalization of amyloid-beta peptide and leading to mitochondrial dysfunction in cultured cortical neurons. Provides Cu(2+) ions for GPC1 which are required for release of nitric oxide (NO) and subsequent degradation of the heparan sulfate chains on GPC1.Beta-amyloid peptides are lipophilic metal chelators with metal-reducing activity. Bind transient metals such as copper, zinc and iron. In vitro, can reduce Cu(2+) and Fe(3+) to Cu(+) and Fe(2+), respectively. Beta-amyloid 42 is a more effective reductant than beta-amyloid 40. Beta-amyloid peptides bind to lipoproteins and apolipoproteins E and J in the CSF and to HDL particles in plasma, inhibiting metal-catalyzed oxidation of lipoproteins. Beta-APP42 may activate mononuclear phagocytes in the brain and elicit inflammatory responses. Promotes both tau aggregation and TPK II-mediated phosphorylation. Interaction with overexpressed HADH2 leads to oxidative stress and neurotoxicity. Also binds GPC1 in lipid rafts.Appicans elicit adhesion of neural cells to the extracellular matrix and may regulate neurite outgrowth in the brain.The gamma-CTF peptides as well as the caspase-cleaved peptides, including C31, are potent enhancers of neuronal apoptosis.N-APP binds TNFRSF21 triggering caspase activation and degeneration of both neuronal cell bodies (via caspase-3) and axons (via caspase-6).</specific-function>
+        <gene-name>APP</gene-name>
+        <locus/>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>700-723</transmembrane-regions>
+        <signal-regions>1-17</signal-regions>
+        <theoretical-pi>4.45</theoretical-pi>
+        <molecular-weight>86942.715</molecular-weight>
+        <chromosome-location>21</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:620</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>APP</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X06989</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P05067</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>A4</synonym>
+          <synonym>ABPP</synonym>
+          <synonym>AD1</synonym>
+          <synonym>Alzheimer disease amyloid protein</synonym>
+          <synonym>APP</synonym>
+          <synonym>APPI</synonym>
+          <synonym>Cerebral vascular amyloid peptide</synonym>
+          <synonym>CVAP</synonym>
+          <synonym>PN-II</synonym>
+          <synonym>PreA4</synonym>
+          <synonym>Protease nexin-II</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006619|Amyloid beta A4 protein
+MLPGLALLLLAAWTARALEVPTDGNAGLLAEPQIAMFCGRLNMHMNVQNGKWDSDPSGTK
+TCIDTKEGILQYCQEVYPELQITNVVEANQPVTIQNWCKRGRKQCKTHPHFVIPYRCLVG
+EFVSDALLVPDKCKFLHQERMDVCETHLHWHTVAKETCSEKSTNLHDYGMLLPCGIDKFR
+GVEFVCCPLAEESDNVDSADAEEDDSDVWWGGADTDYADGSEDKVVEVAEEEEVAEVEEE
+EADDDEDDEDGDEVEEEAEEPYEEATERTTSIATTTTTTTESVEEVVREVCSEQAETGPC
+RAMISRWYFDVTEGKCAPFFYGGCGGNRNNFDTEEYCMAVCGSAMSQSLLKTTQEPLARD
+PVKLPTTAASTPDAVDKYLETPGDENEHAHFQKAKERLEAKHRERMSQVMREWEEAERQA
+KNLPKADKKAVIQHFQEKVESLEQEAANERQQLVETHMARVEAMLNDRRRLALENYITAL
+QAVPPRPRHVFNMLKKYVRAEQKDRQHTLKHFEHVRMVDPKKAAQIRSQVMTHLRVIYER
+MNQSLSLLYNVPAVAEEIQDEVDELLQKEQNYSDDVLANMISEPRISYGNDALMPSLTET
+KTTVELLPVNGEFSLDDLQPWHSFGADSVPANTENEVEPVDARPAADRGLTTRPGSGLTN
+IKTEEISEVKMDAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIATVIVITL
+VMLKKKQYTSIHHGVVEVDAAVTPEERHLSKMQQNGYENPTYKFFEQMQN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019416|Amyloid beta A4 protein (APP)
+ATGCTGCCCGGTTTGGCACTGCTCCTGCTGGCCGCCTGGACGGCTCGGGCGCTGGAGGTA
+CCCACTGATGGTAATGCTGGCCTGCTGGCTGAACCCCAGATTGCCATGTTCTGTGGCAGA
+CTGAACATGCACATGAATGTCCAGAATGGGAAGTGGGATTCAGATCCATCAGGGACCAAA
+ACCTGCATTGATACCAAGGAAGGCATCCTGCAGTATTGCCAAGAAGTCTACCCTGAACTG
+CAGATCACCAATGTGGTAGAAGCCAACCAACCAGTGACCATCCAGAACTGGTGCAAGCGG
+GGCCGCAAGCAGTGCAAGACCCATCCCCACTTTGTGATTCCCTACCGCTGCTTAGTTGGT
+GAGTTTGTAAGTGATGCCCTTCTCGTTCCTGACAAGTGCAAATTCTTACACCAGGAGAGG
+ATGGATGTTTGCGAAACTCATCTTCACTGGCACACCGTCGCCAAAGAGACATGCAGTGAG
+AAGAGTACCAACTTGCATGACTACGGCATGTTGCTGCCCTGCGGAATTGACAAGTTCCGA
+GGGGTAGAGTTTGTGTGTTGCCCACTGGCTGAAGAAAGTGACAATGTGGATTCTGCTGAT
+GCGGAGGAGGATGACTCGGATGTCTGGTGGGGCGGAGCAGACACAGACTATGCAGATGGG
+AGTGAAGACAAAGTAGTAGAAGTAGCAGAGGAGGAAGAAGTGGCTGAGGTGGAAGAAGAA
+GAAGCCGATGATGACGAGGACGATGAGGATGGTGATGAGGTAGAGGAAGAGGCTGAGGAA
+CCCTACGAAGAAGCCACAGAGAGAACCACCAGCATTGCCACCACCACCACCACCACCACA
+GAGTCTGTGGAAGAGGTGGTTCGAGAGGTGTGCTCTGAACAAGCCGAGACGGGGCCGTGC
+CGAGCAATGATCTCCCGCTGGTACTTTGATGTGACTGAAGGGAAGTGTGCCCCATTCTTT
+TACGGCGGATGTGGCGGCAACCGGAACAACTTTGACACAGAAGAGTACTGCATGGCCGTG
+TGTGGCAGCGCCATGTCCCAAAGTTTACTCAAGACTACCCAGGAACCTCTTGCCCGAGAT
+CCTGTTAAACTTCCTACAACAGCAGCCAGTACCCCTGATGCCGTTGACAAGTATCTCGAG
+ACACCTGGGGATGAGAATGAACATGCCCATTTCCAGAAAGCCAAAGAGAGGCTTGAGGCC
+AAGCACCGAGAGAGAATGTCCCAGGTCATGAGAGAATGGGAAGAGGCAGAACGTCAAGCA
+AAGAACTTGCCTAAAGCTGATAAGAAGGCAGTTATCCAGCATTTCCAGGAGAAAGTGGAA
+TCTTTGGAACAGGAAGCAGCCAACGAGAGACAGCAGCTGGTGGAGACACACATGGCCAGA
+GTGGAAGCCATGCTCAATGACCGCCGCCGCCTGGCCCTGGAGAACTACATCACCGCTCTG
+CAGGCTGTTCCTCCTCGGCCTCGTCACGTGTTCAATATGCTAAAGAAGTATGTCCGCGCA
+GAACAGAAGGACAGACAGCACACCCTAAAGCATTTCGAGCATGTGCGCATGGTGGATCCC
+AAGAAAGCCGCTCAGATCCGGTCCCAGGTTATGACACACCTCCGTGTGATTTATGAGCGC
+ATGAATCAGTCTCTCTCCCTGCTCTACAACGTGCCTGCAGTGGCCGAGGAGATTCAGGAT
+GAAGTTGATGAGCTGCTTCAGAAAGAGCAAAACTATTCAGATGACGTCTTGGCCAACATG
+ATTAGTGAACCAAGGATCAGTTACGGAAACGATGCTCTCATGCCATCTTTGACCGAAACG
+AAAACCACCGTGGAGCTCCTTCCCGTGAATGGAGAGTTCAGCCTGGACGATCTCCAGCCG
+TGGCATTCTTTTGGGGCTGACTCTGTGCCAGCCAACACAGAAAACGAAGTTGAGCCTGTT
+GATGCCCGCCCTGCTGCCGACCGAGGACTGACCACTCGACCAGGTTCTGGGTTGACAAAT
+ATCAAGACGGAGGAGATCTCTGAAGTGAAGATGGATGCAGAATTCCGACATGACTCAGGA
+TATGAAGTTCATCATCAAAAATTGGTGTTCTTTGCAGAAGATGTGGGTTCAAACAAAGGT
+GCAATCATTGGACTCATGGTGGGCGGTGTTGTCATAGCGACAGTGATCGTCATCACCTTG
+GTGATGCTGAAGAAGAAACAGTACACATCCATTCATCATGGTGTGGTGGAGGTTGACGCC
+GCTGTCACCCCAGAGGAGCGCCACCTGTCCAAGATGCAGCAGAACGGCTACGAAAATCCA
+ACCTACAAGTTCTTTGAGCAGATGCAGAACTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00014</identifier>
+            <name>Kunitz_BPTI</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02177</identifier>
+            <name>APP_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03494</identifier>
+            <name>Beta-APP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10515</identifier>
+            <name>APP_amyloid</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12924</identifier>
+            <name>APP_Cu_bd</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12925</identifier>
+            <name>APP_E2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>coated pit</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic shaft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear envelope lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet alpha granule lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>terminal bouton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>trans-Golgi network membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heparin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidase activator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>PTB domain binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase inhibitor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transition metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antibacterial humoral response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antifungal humoral response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon cargo transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon midline choice point recognition</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axonogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular copper ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>collateral sprouting in absence of injury</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-positive bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dendrite development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ionotropic glutamate receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mating behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mRNA polyadenylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron projection development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Notch signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-Golgi vesicle-mediated transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of epidermal growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of multicellular organism growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synapse structure or activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to yeast</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme>
+      <id>BE0002204</id>
+      <name>Xanthine dehydrogenase/oxidase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A15039</ref-id>
+            <pubmed-id>2252579</pubmed-id>
+            <citation>Rinaldo JE, Gorry M: Protection by deferoxamine from endothelial injury: a possible link with inhibition of intracellular xanthine oxidase. Am J Respir Cell Mol Biol. 1990 Dec;3(6):525-33.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P47989" source="Swiss-Prot">
+        <name>Xanthine dehydrogenase/oxidase</name>
+        <general-function>Xanthine oxidase activity</general-function>
+        <specific-function>Key enzyme in purine degradation. Catalyzes the oxidation of hypoxanthine to xanthine. Catalyzes the oxidation of xanthine to uric acid. Contributes to the generation of reactive oxygen species. Has also low oxidase activity towards aldehydes (in vitro).</specific-function>
+        <gene-name>XDH</gene-name>
+        <locus>2p23.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.7</theoretical-pi>
+        <molecular-weight>146422.99</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:12805</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>XDH</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D11456</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>10336525</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2646</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P47989</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>XDH_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>XDHA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011593|Xanthine dehydrogenase/oxidase
+MTADKLVFFVNGRKVVEKNADPETTLLAYLRRKLGLSGTKLGCGEGGCGACTVMLSKYDR
+LQNKIVHFSANACLAPICSLHHVAVTTVEGIGSTKTRLHPVQERIAKSHGSQCGFCTPGI
+VMSMYTLLRNQPEPTMEEIENAFQGNLCRCTGYRPILQGFRTFARDGGCCGGDGNNPNCC
+MNQKKDHSVSLSPSLFKPEEFTPLDPTQEPIFPPELLRLKDTPRKQLRFEGERVTWIQAS
+TLKELLDLKAQHPDAKLVVGNTEIGIEMKFKNMLFPMIVCPAWIPELNSVEHGPDGISFG
+AACPLSIVEKTLVDAVAKLPAQKTEVFRGVLEQLRWFAGKQVKSVASVGGNIITASPISD
+LNPVFMASGAKLTLVSRGTRRTVQMDHTFFPGYRKTLLSPEEILLSIEIPYSREGEYFSA
+FKQASRREDDIAKVTSGMRVLFKPGTTEVQELALCYGGMANRTISALKTTQRQLSKLWKE
+ELLQDVCAGLAEELHLPPDAPGGMVDFRCTLTLSFFFKFYLTVLQKLGQENLEDKCGKLD
+PTFASATLLFQKDPPADVQLFQEVPKGQSEEDMVGRPLPHLAADMQASGEAVYCDDIPRY
+ENELSLRLVTSTRAHAKIKSIDTSEAKKVPGFVCFISADDVPGSNITGICNDETVFAKDK
+VTCVGHIIGAVVADTPEHTQRAAQGVKITYEELPAIITIEDAIKNNSFYGPELKIEKGDL
+KKGFSEADNVVSGEIYIGGQEHFYLETHCTIAVPKGEAGEMELFVSTQNTMKTQSFVAKM
+LGVPANRIVVRVKRMGGGFGGKETRSTVVSTAVALAAYKTGRPVRCMLDRDEDMLITGGR
+HPFLARYKVGFMKTGTVVALEVDHFSNVGNTQDLSQSIMERALFHMDNCYKIPNIRGTGR
+LCKTNLPSNTAFRGFGGPQGMLIAECWMSEVAVTCGMPAEEVRRKNLYKEGDLTHFNQKL
+EGFTLPRCWEECLASSQYHARKSEVDKFNKENCWKKRGLCIIPTKFGISFTVPFLNQAGA
+LLHVYTDGSVLLTHGGTEMGQGLHTKMVQVASRALKIPTSKIYISETSTNTVPNTSPTAA
+SVSADLNGQAVYAACQTILKRLEPYKKKNPSGSWEDWVTAAYMDTVSLSATGFYRTPNLG
+YSFETNSGNPFHYFSYGVACSEVEIDCLTGDHKNLRTDIVMDVGSSLNPAIDIGQVEGAF
+VQGLGLFTLEELHYSPEGSLHTRGPSTYKIPAFGSIPIEFRVSLLRDCPNKKAIYASKAV
+GEPPLFLAASIFFAIKDAIRAARAQHTGNNVKELFRLDSPATPEKIRNACVDKFTTLCVT
+GVPENCKPWSVRV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011594|Xanthine dehydrogenase/oxidase (XDH)
+ATGACAGCAGACAAATTGGTTTTCTTTGTGAATGGCAGAAAGGTGGTGGAGAAAAATGCA
+GATCCAGAGACAACCCTTTTGGCCTACCTGAGAAGAAAGTTGGGGCTGAGTGGAACCAAG
+CTCGGCTGTGGAGAGGGGGGCTGCGGGGCTTGCACAGTGATGCTCTCCAAGTATGATCGT
+CTGCAGAACAAGATCGTCCACTTTTCTGCCAATGCCTGCCTGGCCCCCATCTGCTCCTTG
+CACCATGTTGCAGTGACAACTGTGGAAGGAATAGGAAGCACCAAGACGAGGCTGCATCCT
+GTGCAGGAGAGAATTGCCAAAAGCCACGGCTCCCAGTGCGGGTTCTGCACCCCTGGCATC
+GTCATGAGTATGTACACACTGCTCCGGAATCAGCCCGAGCCCACCATGGAGGAGATTGAG
+AATGCCTTCCAAGGAAATCTGTGCCGCTGCACAGGCTACAGACCCATCCTCCAGGGCTTC
+CGGACCTTTGCCAGGGATGGTGGATGCTGTGGAGGAGATGGGAATAATCCAAATTGCTGC
+ATGAACCAGAAGAAAGACCACTCAGTCAGCCTCTCGCCATCTTTATTCAAACCAGAGGAG
+TTCACGCCCCTGGATCCAACCCAGGAGCCCATTTTTCCCCCAGAGTTGCTGAGGCTGAAA
+GACACTCCTCGGAAGCAGCTGCGATTTGAAGGGGAGCGTGTGACGTGGATACAGGCCTCA
+ACCCTCAAGGAGCTGCTGGACCTCAAGGCTCAGCACCCTGACGCCAAGCTGGTCGTGGGG
+AACACGGAGATTGGCATTGAGATGAAGTTCAAGAATATGCTGTTTCCTATGATTGTCTGC
+CCAGCCTGGATCCCTGAGCTGAATTCGGTAGAACATGGACCCGACGGTATCTCCTTTGGA
+GCTGCTTGCCCCCTGAGCATTGTGGAAAAAACCCTGGTGGATGCTGTTGCTAAGCTTCCT
+GCCCAAAAGACAGAGGTGTTCAGAGGGGTCCTGGAGCAGCTGCGCTGGTTTGCTGGGAAG
+CAAGTCAAGTCTGTGGCGTCCGTTGGAGGGAACATCATCACTGCCAGCCCCATCTCCGAC
+CTCAACCCCGTGTTCATGGCCAGTGGGGCCAAGCTGACACTTGTGTCCAGAGGCACCAGG
+AGAACTGTCCAGATGGACCACACCTTCTTCCCTGGCTACAGAAAGACCCTGCTGAGCCCG
+GAGGAGATACTGCTCTCCATAGAGATCCCCTACAGCAGGGAGGGGGAGTATTTCTCAGCA
+TTCAAGCAGGCCTCCCGGAGAGAAGATGACATTGCCAAGGTAACCAGTGGCATGAGAGTT
+TTATTCAAGCCAGGAACCACAGAGGTACAGGAGCTGGCCCTTTGCTATGGTGGAATGGCC
+AACAGAACCATCTCAGCCCTCAAGACCACTCAGAGGCAGCTTTCCAAGCTCTGGAAGGAG
+GAGCTGCTGCAGGACGTGTGTGCAGGACTGGCAGAGGAGCTGCATCTGCCTCCCGATGCC
+CCTGGTGGCATGGTGGACTTCCGGTGCACCCTCACCCTCAGCTTCTTCTTCAAGTTCTAC
+CTGACAGTCCTTCAGAAGCTGGGCCAAGAGAACCTGGAAGACAAGTGTGGTAAACTGGAC
+CCCACTTTCGCCAGTGCAACTTTACTGTTTCAGAAAGACCCCCCAGCCGATGTCCAGCTC
+TTCCAAGAGGTGCCCAAGGGTCAGTCTGAGGAGGACATGGTGGGCCGGCCCCTGCCCCAC
+CTGGCAGCGGACATGCAGGCCTCTGGTGAGGCCGTGTACTGTGACGACATTCCTCGCTAC
+GAGAATGAGCTGTCTCTCCGGCTGGTCACCAGCACCCGGGCCCACGCCAAGATCAAGTCC
+ATAGATACATCAGAAGCTAAGAAGGTTCCAGGGTTTGTTTGTTTCATTTCCGCTGATGAT
+GTTCCTGGGAGTAACATAACTGGAATTTGTAATGATGAGACAGTCTTTGCGAAGGATAAG
+GTTACTTGTGTTGGGCATATCATTGGTGCTGTGGTTGCTGACACCCCGGAACACACACAG
+AGAGCTGCCCAAGGGGTGAAAATCACCTATGAAGAACTACCAGCCATTATCACAATTGAG
+GATGCTATAAAGAACAACTCCTTTTATGGACCTGAGCTGAAGATCGAGAAAGGGGACCTA
+AAGAAGGGGTTTTCCGAAGCAGATAATGTTGTGTCAGGGGAGATATACATCGGTGGCCAA
+GAGCACTTCTACCTGGAGACTCACTGCACCATTGCTGTTCCAAAAGGCGAGGCAGGGGAG
+ATGGAGCTCTTTGTGTCTACACAGAACACCATGAAGACCCAGAGCTTTGTTGCAAAAATG
+TTGGGGGTTCCAGCAAACCGGATTGTGGTTCGAGTGAAGAGAATGGGAGGAGGCTTTGGA
+GGCAAGGAGACCCGGAGCACTGTGGTGTCCACGGCAGTGGCCCTGGCTGCATATAAGACC
+GGCCGCCCTGTGCGATGCATGCTGGACCGTGATGAGGACATGCTGATAACTGGTGGCAGA
+CATCCCTTCCTGGCCAGATACAAGGTTGGCTTCATGAAGACTGGGACAGTTGTGGCTCTT
+GAGGTGGACCACTTCAGCAATGTGGGGAACACCCAGGATCTCTCTCAGAGTATTATGGAA
+CGAGCTTTATTCCACATGGACAACTGCTATAAAATCCCCAACATCCGGGGCACTGGGCGG
+CTGTGCAAAACCAACCTTCCCTCCAACACGGCCTTCCGGGGCTTTGGGGGGCCCCAGGGG
+ATGCTCATTGCCGAGTGCTGGATGAGTGAAGTTGCAGTGACCTGTGGGATGCCTGCAGAG
+GAGGTGCGGAGAAAAAACCTGTACAAAGAAGGGGACCTGACACACTTCAACCAGAAGCTT
+GAGGGTTTCACCTTGCCCAGATGCTGGGAAGAATGCCTAGCAAGCTCTCAGTATCATGCT
+CGGAAGAGTGAGGTTGACAAGTTCAACAAGGAGAATTGTTGGAAAAAGAGAGGATTGTGC
+ATAATTCCCACCAAGTTTGGAATAAGCTTTACAGTTCCTTTTCTGAATCAGGCAGGAGCC
+CTACTTCATGTGTACACAGATGGCTCTGTGCTGCTGACCCACGGGGGGACTGAGATGGGC
+CAAGGCCTTCATACCAAAATGGTCCAGGTGGCCAGTAGAGCTCTGAAAATCCCCACCTCT
+AAGATTTATATCAGCGAGACAAGCACTAACACTGTGCCCAACACCTCTCCCACGGCTGCC
+TCTGTCAGCGCTGACCTCAATGGACAGGCCGTCTATGCGGCTTGTCAGACCATCTTGAAA
+AGGCTGGAACCCTACAAGAAGAAGAATCCCAGTGGCTCCTGGGAAGACTGGGTCACAGCT
+GCCTACATGGACACAGTGAGCTTGTCTGCCACTGGGTTTTATAGAACACCCAATCTGGGC
+TACAGCTTTGAGACTAACTCAGGGAACCCCTTCCACTACTTCAGCTATGGGGTGGCTTGC
+TCTGAAGTAGAAATCGACTGCCTAACAGGAGATCATAAGAACCTCCGCACAGATATTGTC
+ATGGATGTTGGCTCCAGTCTAAACCCTGCCATTGATATTGGACAGGTGGAAGGGGCATTT
+GTCCAGGGCCTTGGCCTCTTCACCCTAGAGGAGCTACACTATTCCCCCGAGGGGAGCCTG
+CACACCCGTGGCCCTAGCACCTACAAGATCCCGGCATTTGGCAGCATCCCCATTGAGTTC
+AGGGTGTCCCTGCTCCGCGACTGCCCCAACAAGAAGGCCATCTATGCATCGAAGGCTGTT
+GGAGAGCCGCCCCTCTTCCTGGCTGCTTCTATCTTCTTTGCCATCAAAGATGCCATCCGT
+GCAGCTCGAGCTCAGCACACAGGTAATAACGTGAAGGAACTCTTCCGGCTAGACAGCCCT
+GCCACCCCGGAGAAGATCCGCAATGCCTGCGTGGACAAGTTCACCACCCTGTGTGTCACT
+GGTGTCCCAGAAAACTGCAAACCCTGGTCTGTGAGGGTCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00111</identifier>
+            <name>Fer2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01315</identifier>
+            <name>Ald_Xan_dh_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02738</identifier>
+            <name>Ald_Xan_dh_C2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01799</identifier>
+            <name>Fer2_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03450</identifier>
+            <name>CO_deh_flav_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00941</identifier>
+            <name>FAD_binding_5</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>peroxisome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sarcoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>2 iron, 2 sulfur cluster binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>molybdopterin cofactor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on CH-OH group of donors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on the aldehyde or oxo group of donors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>xanthine dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>xanthine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endothelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endothelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein kinase B signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of vascular endothelial growth factor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of vasculogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of p38MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of reactive oxygen species metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleotide catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xanthine catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength>unknown</inhibition-strength>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

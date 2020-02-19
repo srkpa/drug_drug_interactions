@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB04893</drugbank-id>
+  <name>AZD3409</name>
+  <description>AZD3409 is a farnesyl-transferase inhibitor (FAR) indicated for the treatment of solid tumors. Phase I trials were initiated January 2003, and were ongoing as of February 2004. As of February 2007 the development of AZD3409 had been discontinued.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A2844</ref-id>
+        <pubmed-id>16969121</pubmed-id>
+        <citation>Cengel KA, Deutsch E, Stephens TC, Voong KR, Kao GD, Bernhard EJ: Radiosensitizing effects of the prenyltransferase inhibitor AZD3409 against RAS mutated cell lines. Cancer Biol Ther. 2006 Sep;5(9):1206-10. Epub 2006 Sep 11.</citation>
+      </article>
+      <article>
+        <ref-id>A2845</ref-id>
+        <pubmed-id>17004112</pubmed-id>
+        <citation>Maiello MR, D'Alessio A, De Luca A, Carotenuto A, Rachiglio AM, Napolitano M, Cito L, Guzzo A, Normanno N: AZD3409 inhibits the growth of breast cancer cells with intrinsic resistance to the EGFR tyrosine kinase inhibitor gefitinib. Breast Cancer Res Treat. 2007 May;102(3):275-82. Epub 2006 Sep 27.</citation>
+      </article>
+      <article>
+        <ref-id>A2846</ref-id>
+        <pubmed-id>17201131</pubmed-id>
+        <citation>Streeper R, Campos D, Carrizales G, Stephens TC, Izbicka E: Regulation of tumor signaling pathways by AZD3409 in vitro. Anticancer Res. 2006 Nov-Dec;26(6B):4185-9.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of solid tumors.</indication>
+  <pharmacodynamics>AZD3409 is a novel, oral, antitumor agent that acts as a prenyl transferase inhibitor. It has potentially broad antitumor activity both as monotherapy and in combination with other anticancer treatments. AZD3409 is a double pro-drug; its metabolism involves conversion to a thiol-ester intermediate, then, intracellularly, to a thiol-acid active species. Phase I trials were initiated January 2003, and were ongoing as of February 2004. Recent studies have shown that AZD3409 is a potent inhibitor of both prostate epithelial cell proliferation and cellular invasion, without an associated bone marrow cellular toxicity.</pharmacodynamics>
+  <mechanism-of-action>In preclinical studies, AZD3409 achieves up to 90% inhibition of FTase in tumors at well tolerated doses. In enzyme studies AZD3409 is also known to inhibit GGTase-1.</mechanism-of-action>
+  <toxicity/>
+  <metabolism>AZD3409 is converted to a thiol-ester intermediate, then, intracellularly, to a thiol-acid active species.</metabolism>
+  <absorption/>
+  <half-life>15–20 hours for the thiol-ester intermediate and 15–30 hours for the active thiol-acid metabolite.&#13;
+</half-life>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909841</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002372</id>
+      <name>Protein farnesyltransferase subunit beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A14049</ref-id>
+            <pubmed-id>16113095</pubmed-id>
+            <citation>Wakeling AE: Inhibitors of growth factor signalling. Endocr Relat Cancer. 2005 Jul;12 Suppl 1:S183-7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P49356" source="Swiss-Prot">
+        <name>Protein farnesyltransferase subunit beta</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Essential subunit of the farnesyltransferase complex. Catalyzes the transfer of a farnesyl moiety from farnesyl diphosphate to a cysteine at the fourth position from the C-terminus of several proteins having the C-terminal sequence Cys-aliphatic-aliphatic-X.</specific-function>
+        <gene-name>FNTB</gene-name>
+        <locus>14q23-q24</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.67</theoretical-pi>
+        <molecular-weight>48773.2</molecular-weight>
+        <chromosome-location>14</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3785</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>FNTB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L00635</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2826</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P49356</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FNTB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.5.1.58</synonym>
+          <synonym>CAAX farnesyltransferase subunit beta</synonym>
+          <synonym>FTase-beta</synonym>
+          <synonym>Ras proteins prenyltransferase subunit beta</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004659|Protein farnesyltransferase subunit beta
+MASPSSFTYYCPPSSSPVWSEPLYSLRPEHARERLQDDSVETVTSIEQAKVEEKIQEVFS
+SYKFNHLVPRLVLQREKHFHYLKRGLRQLTDAYECLDASRPWLCYWILHSLELLDEPIPQ
+IVATDVCQFLELCQSPEGGFGGGPGQYPHLAPTYAAVNALCIIGTEEAYDIINREKLLQY
+LYSLKQPDGSFLMHVGGEVDVRSAYCAASVASLTNIITPDLFEGTAEWIARCQNWEGGIG
+GVPGMEAHGGYTFCGLAALVILKRERSLNLKSLLQWVTSRQMRFEGGFQGRCNKLVDGCY
+SFWQAGLLPLLHRALHAQGDPALSMSHWMFHQQALQEYILMCCQCPAGGLLDKPGKSRDF
+YHTCYCLSGLSIAQHFGSGAMLHDVVLGVPENALQPTHPVYNIGPDKVIQATTYFLQKPV
+PGFEELKDETSAEPATD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016768|Protein farnesyltransferase subunit beta (FNTB)
+ATGATCGCAAAAGTAGAAGAAAAGATCCAAGAGGTCTTCAGTTCTTACAAGTTCAACCAC
+CTTGTACCAAGGCTTGTTTTGCAGAGGGAGAAGCACTTCCATTATCTGAAAAGAGGCCTT
+CGACAACTGACAGATGCCTATGAGTGTCTGGATGCCAGCCGCCCATGGCTCTGCTATTGG
+ATCCTGCACAGCTTGGAACTGCTAGATGAACCCATCCCCCAGATAGTGGCTACAGATGTG
+TGTCAGTTCCTGGAGCTGTGTCAGAGCCCAGAAGGTGGCTTTGGAGGAGGACCCGGTCAG
+TATCCACACCTTGCACCCACATATGCAGCAGTCAATGCATTGTGCATCATTGGCACCGAG
+GAGGCCTATGACATCATTAACAGAGAGAAGCTTCTTCAGTATTTGTACTCCCTGAAGCAA
+CCTGACGGCTCCTTTCTCATGCATGTCGGAGGTGAGGTGGATGTGAGAAGCGCATACTGT
+GCTGCCTCCGTAGCCTCGCTGACCAACATCATCACTCCAGACCTCTTTGAGGGCACTGCT
+GAATGGATAGCAAGGTGTCAGAACTGGGAAGGTGGCATTGGCGGGGTACCAGGGATGGAA
+GCCCATGGTGGCTATACCTTCTGTGGCCTGGCCGCGCTGGTAATCCTCAAGAGGGAACGT
+TCCTTGAACTTGAAGAGCTTATTACAATGGGTGACAAGCCGGCAGATGCGATTTGAAGGA
+GGATTTCAGGGCCGCTGCAACAAGCTGGTGGATGGCTGCTACTCCTTCTGGCAGGCGGGG
+CTCCTGCCCCTGCTCCACCGCGCACTGCACGCCCAAGGTGACCCTGCCCTTAGCATGAGC
+CACTGGATGTTCCATCAGCAGGCCCTGCAGGAGTACATCCTGATGTGCTGCCAGTGCCCT
+GCGGGGGGGCTTCTGGATAAACCTGGCAAGTCGCGTGATTTCTACCACACCTGCTACTGC
+CTGAGCGGCCTGTCCATAGCCCAGCACTTCGGCAGCGGAGCCATGTTGCATGATGTGGTC
+CTGGGTGTGCCCGAAAACGCTCTGCAGCCCACTCACCCAGTGTACAACATTGGACCAGAC
+AAGGTGATCCAGGCCACTACATACTTTCTACAGAAGCCAGTCCCAGGTTTTGAGGAGCTT
+AAGGATGAGACATCGGCAGAGCCTGCAACCGACTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00432</identifier>
+            <name>Prenyltrans</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>microtubule associated complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein farnesyltransferase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>farnesyltranstransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>isoprenoid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein farnesyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phototransduction, visible light</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fibroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein farnesylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of rhodopsin mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cytokine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to inorganic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhodopsin mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>wound healing</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002373</id>
+      <name>Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A14049</ref-id>
+            <pubmed-id>16113095</pubmed-id>
+            <citation>Wakeling AE: Inhibitors of growth factor signalling. Endocr Relat Cancer. 2005 Jul;12 Suppl 1:S183-7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P49354" source="Swiss-Prot">
+        <name>Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha</name>
+        <general-function>Rab geranylgeranyltransferase activity</general-function>
+        <specific-function>Essential subunit of both the farnesyltransferase and the geranylgeranyltransferase complex. Contributes to the transfer of a farnesyl or geranylgeranyl moiety from farnesyl or geranylgeranyl diphosphate to a cysteine at the fourth position from the C-terminus of several proteins having the C-terminal sequence Cys-aliphatic-aliphatic-X. May positively regulate neuromuscular junction development downstream of MUSK via its function in RAC1 prenylation and activation.</specific-function>
+        <gene-name>FNTA</gene-name>
+        <locus>8p11</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.72</theoretical-pi>
+        <molecular-weight>44408.32</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3782</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>FNTA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L10413</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P49354</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FNTA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.5.1.58</synonym>
+          <synonym>CAAX farnesyltransferase subunit alpha</synonym>
+          <synonym>FTase-alpha</synonym>
+          <synonym>GGTase-I-alpha</synonym>
+          <synonym>Ras proteins prenyltransferase subunit alpha</synonym>
+          <synonym>Type I protein geranyl-geranyltransferase subunit alpha</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004661|Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha
+MAATEGVGEAAQGGEPGQPAQPPPQPHPPPPQQQHKEEMAAEAGEAVASPMDDGFVSLDS
+PSYVLYRDRAEWADIDPVPQNDGPNPVVQIIYSDKFRDVYDYFRAVLQRDERSERAFKLT
+RDAIELNAANYTVWHFRRVLLKSLQKDLHEEMNYITAIIEEQPKNYQVWHHRRVLVEWLR
+DPSQELEFIADILNQDAKNYHAWQHRQWVIQEFKLWDNELQYVDQLLKEDVRNNSVWNQR
+YFVISNTTGYNDRAVLEREVQYTLEMIKLVPHNESAWNYLKGILQDRGLSKYPNLLNQLL
+DLQPSHSSPYLIAFLVDIYEDMLENQCDNKEDILNKALELCEILAKEKDTIRKEYWRYIG
+RSLQSKHSTENDSPTNVQQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011702|Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha (FNTA)
+ATGGCGGCCACCGAGGGGGTCGGGGAGGCTGCGCAAGGGGGCGAGCCCGGGCAGCCGGCG
+CAACCCCCGCCCCAGCCGCACCCACCGCCGCCCCAGCAGCAGCACAAGGAAGAGATGGCG
+GCCGAGGCTGGGGAAGCCGTGGCGTCCCCCATGGACGACGGGTTTGTGAGCCTGGACTCG
+CCCTCCTATGTCCTGTACAGGGACAGAGCAGAATGGGCTGATATAGATCCGGTGCCGCAG
+AATGATGGCCCCAATCCCGTGGTCCAGATCATTTATAGTGACAAATTTAGAGATGTTTAT
+GATTACTTCCGAGCTGTCCTGCAGCGTGATGAAAGAAGTGAACGAGCTTTTAAGCTAACC
+CGGGATGCTATTGAGTTAAATGCAGCCAATTATACAGTGTGGCATTTCCGGAGAGTTCTT
+TTGAAGTCACTTCAGAAGGATCTACATGAGGAAATGAACTACATCACTGCAATAATTGAG
+GAGCAGCCCAAAAACTATCAAGTTTGGCATCATAGGCGAGTATTAGTGGAATGGCTAAGA
+GATCCATCTCAGGAGCTTGAATTTATTGCTGATATTCTTAATCAGGATGCAAAGAATTAT
+CATGCCTGGCAGCATCGACAATGGGTTATTCAGGAATTTAAACTTTGGGATAATGAGCTG
+CAGTATGTGGACCAACTTCTGAAAGAGGATGTGAGAAATAACTCTGTCTGGAACCAAAGA
+TACTTCGTTATTTCTAACACCACTGGCTACAATGATCGTGCTGTATTGGAGAGAGAAGTC
+CAATACACTCTGGAAATGATTAAACTAGTACCACATAATGAAAGTGCATGGAACTATTTG
+AAAGGGATTTTGCAGGATCGTGGTCTTTCCAAATATCCTAATCTGTTAAATCAATTACTT
+GATTTACAACCAAGTCATAGTTCCCCCTACCTAATTGCCTTTCTTGTGGATATCTATGAA
+GACATGCTAGAAAATCAGTGTGACAATAAGGAAGACATTCTTAATAAAGCATTAGAGTTA
+TGTGAAATCCTAGCTAAAGAAAAGGACACTATAAGAAAGGAATATTGGAGATACATTGGA
+AGATCCCTTCAAAGCAAACACAGCACAGAAAATGACTCACCAACAAATGTACAGCAATAA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01239</identifier>
+            <name>PPTA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>CAAX-protein geranylgeranyltransferase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>microtubule associated complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein farnesyltransferase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine receptor regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-tubulin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>CAAX-protein geranylgeranyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>microtubule binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein farnesyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein geranylgeranyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>Rab geranylgeranyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular component disassembly involved in execution phase of apoptosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotransmitter receptor metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phototransduction, visible light</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of deacetylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tubulin deacetylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein farnesylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein geranylgeranylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of rhodopsin mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhodopsin mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

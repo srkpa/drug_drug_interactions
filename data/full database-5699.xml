@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2008-03-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB06525</drugbank-id>
+  <name>Ganstigmine</name>
+  <description>Ganstigmine is an orally active, geneserine derived, carbamate-based acetylcholinesterase inhibitor developed for the treatment of Alzheimer's disease.</description>
+  <cas-number>457075-21-7</cas-number>
+  <unii>QRR9SV89XI</unii>
+  <average-mass>381.476</average-mass>
+  <monoisotopic-mass>381.205241741</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in alzheimer's disease.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as phenylcarbamic acid esters. These are ester derivatives of phenylcarbamic acids.</description>
+    <direct-parent>Phenylcarbamic acid esters</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Benzene and substituted derivatives</class>
+    <subclass>Phenylcarbamic acid esters</subclass>
+    <alternative-parent>1,2-oxazinanes</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Carbamate esters</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Dialkylarylamines</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Indoles and derivatives</alternative-parent>
+    <alternative-parent>N-organohydroxylamines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <substituent>1,2-oxazinane</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Carbamic acid ester</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Dialkylarylamine</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Indole or derivatives</substituent>
+    <substituent>N-organohydroxylamine</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Oxazinane</substituent>
+    <substituent>Phenylcarbamic acid ester</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002858</drugbank-id>
+      <name>Ganstigmine hydrochloride</name>
+      <unii>19OP2S99RQ</unii>
+      <cas-number>412044-92-9</cas-number>
+      <inchikey>CVDHRWXJJRBPFA-FKXUWVMKSA-N</inchikey>
+      <average-mass>403.91</average-mass>
+      <monoisotopic-mass>403.1662694</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="inn">Ganstigmine</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids, Acyclic</category>
+      <mesh-id>D000144</mesh-id>
+    </category>
+    <category>
+      <category>Carbamates</category>
+      <mesh-id>D002219</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.03</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.40e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>4.82</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(4aS,9aS)-2,4a,9-trimethyl-2H,3H,4H,4aH,9H,9aH-[1,2]oxazino[6,5-b]indol-6-yl N-(2-ethylphenyl)carbamate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>[(1R,2R,6R,10S,11R,15R,17R)-13-benzyl-6-hydroxy-4,17-dimethyl-5-oxo-15-(prop-1-en-2-yl)-12,14,18-trioxapentacyclo[11.4.1.0^{1,10}.0^{2,6}.0^{11,15}]octadeca-3,8-dien-8-yl]methyl 2-(4-hydroxy-3-methoxyphenyl)acetate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>381.476</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>381.205241741</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCC1=C(NC(=O)OC2=CC3=C(C=C2)N(C)[C@H]2ON(C)CC[C@@]32C)C=CC=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C22H27N3O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C22H27N3O3/c1-5-15-8-6-7-9-18(15)23-21(26)27-16-10-11-19-17(14-16)22(2)12-13-24(3)28-20(22)25(19)4/h6-11,14,20H,5,12-13H2,1-4H3,(H,23,26)/t20-,22-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ZOBDWFRKFSPCRB-UNMCSNQZSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>54.04</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>110.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>42.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>12.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>2.06</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>7999041</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>10970</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL121810</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000426</id>
+      <name>Acetylcholinesterase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A14651</ref-id>
+            <pubmed-id>16913695</pubmed-id>
+            <citation>Bartolucci C, Siotto M, Ghidini E, Amari G, Bolzoni PT, Racchi M, Villetti G, Delcanale M, Lamba D: Structural determinants of Torpedo californica acetylcholinesterase inhibition by the novel and orally active carbamate based anti-alzheimer drug ganstigmine (CHF-2819). J Med Chem. 2006 Aug 24;49(17):5051-8.</citation>
+          </article>
+          <article>
+            <ref-id>A14652</ref-id>
+            <pubmed-id>12898348</pubmed-id>
+            <citation>Mazzucchelli M, Porrello E, Villetti G, Pietra C, Govoni S, Racchi M: Characterization of the effect of ganstigmine (CHF2819) on amyloid precursor protein metabolism in SH-SY5Y neuroblastoma cells. J Neural Transm (Vienna). 2003 Aug;110(8):935-47.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P22303" source="Swiss-Prot">
+        <name>Acetylcholinesterase</name>
+        <general-function>Serine hydrolase activity</general-function>
+        <specific-function>Terminates signal transduction at the neuromuscular junction by rapid hydrolysis of the acetylcholine released into the synaptic cleft. Role in neuronal apoptosis.</specific-function>
+        <gene-name>ACHE</gene-name>
+        <locus>7q22</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-31</signal-regions>
+        <theoretical-pi>6.24</theoretical-pi>
+        <molecular-weight>67795.525</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:108</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ACHE</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M55040</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>177975</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2465</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P22303</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACES_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.1.7</synonym>
+          <synonym>AChE</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000849|Acetylcholinesterase
+MRPPQCLLHTPSLASPLLLLLLWLLGGGVGAEGREDAELLVTVRGGRLRGIRLKTPGGPV
+SAFLGIPFAEPPMGPRRFLPPEPKQPWSGVVDATTFQSVCYQYVDTLYPGFEGTEMWNPN
+RELSEDCLYLNVWTPYPRPTSPTPVLVWIYGGGFYSGASSLDVYDGRFLVQAERTVLVSM
+NYRVGAFGFLALPGSREAPGNVGLLDQRLALQWVQENVAAFGGDPTSVTLFGESAGAASV
+GMHLLSPPSRGLFHRAVLQSGAPNGPWATVGMGEARRRATQLAHLVGCPPGGTGGNDTEL
+VACLRTRPAQVLVNHEWHVLPQESVFRFSFVPVVDGDFLSDTPEALINAGDFHGLQVLVG
+VVKDEGSYFLVYGAPGFSKDNESLISRAEFLAGVRVGVPQVSDLAAEAVVLHYTDWLHPE
+DPARLREALSDVVGDHNVVCPVAQLAGRLAAQGARVYAYVFEHRASTLSWPLWMGVPHGY
+EIEFIFGIPLDPSRNYTAEEKIFAQRLMRYWANFARTGDPNEPRDPKAPQWPPYTAGAQQ
+YVSLDLRPLEVRRGLRAQACAFWNRFLPKLLSATDTLDEAERQWKAEFHRWSSYMVHWKN
+QFDHYSKQDRCSDL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010296|Acetylcholinesterase (ACHE)
+ATGAGGCCCCCGCAGTGTCTGCTGCACACGCCTTCCCTGGCTTCCCCACTCCTTCTCCTC
+CTCCTCTGGCTCCTGGGTGGAGGAGTGGGGGCTGAGGGCCGGGAGGATGCAGAGCTGCTG
+GTGACGGTGCGTGGGGGCCGGCTGCGGGGCATTCGCCTGAAGACCCCCGGGGGCCCTGTC
+TCTGCTTTCCTGGGCATCCCCTTTGCGGAGCCACCCATGGGACCCCGTCGCTTTCTGCCA
+CCGGAGCCCAAGCAGCCTTGGTCAGGGGTGGTAGACGCTACAACCTTCCAGAGTGTCTGC
+TACCAATATGTGGACACCCTATACCCAGGTTTTGAGGGCACCGAGATGTGGAACCCCAAC
+CGTGAGCTGAGCGAGGACTGCCTGTACCTCAACGTGTGGACACCATACCCCCGGCCTACA
+TCCCCCACCCCTGTCCTCGTCTGGATCTATGGGGGTGGCTTCTACAGTGGGGCCTCCTCC
+TTGGACGTGTACGATGGCCGCTTCTTGGTACAGGCCGAGAGGACTGTGCTGGTGTCCATG
+AACTACCGGGTGGGAGCCTTTGGCTTCCTGGCCCTGCCGGGGAGCCGAGAGGCCCCGGGC
+AATGTGGGTCTCCTGGATCAGAGGCTGGCCCTGCAGTGGGTGCAGGAGAACGTGGCAGCC
+TTCGGGGGTGACCCGACATCAGTGACGCTGTTTGGGGAGAGCGCGGGAGCCGCCTCGGTG
+GGCATGCACCTGCTGTCCCCGCCCAGCCGGGGCCTGTTCCACAGGGCCGTGCTGCAGAGC
+GGTGCCCCCAATGGACCCTGGGCCACGGTGGGCATGGGAGAGGCCCGTCGCAGGGCCACG
+CAGCTGGCCCACCTTGTGGGCTGTCCTCCAGGCGGCACTGGTGGGAATGACACAGAGCTG
+GTAGCCTGCCTTCGGACACGACCAGCGCAGGTCCTGGTGAACCACGAATGGCACGTGCTG
+CCTCAAGAAAGCGTCTTCCGGTTCTCCTTCGTGCCTGTGGTAGATGGAGACTTCCTCAGT
+GACACCCCAGAGGCCCTCATCAACGCGGGAGACTTCCACGGCCTGCAGGTGCTGGTGGGT
+GTGGTGAAGGATGAGGGCTCGTATTTTCTGGTTTACGGGGCCCCAGGCTTCAGCAAAGAC
+AACGAGTCTCTCATCAGCCGGGCCGAGTTCCTGGCCGGGGTGCGGGTCGGGGTTCCCCAG
+GTAAGTGACCTGGCAGCCGAGGCTGTGGTCCTGCATTACACAGACTGGCTGCATCCCGAG
+GACCCGGCACGCCTGAGGGAGGCCCTGAGCGATGTGGTGGGCGACCACAATGTCGTGTGC
+CCCGTGGCCCAGCTGGCTGGGCGACTGGCTGCCCAGGGTGCCCGGGTCTACGCCTACGTC
+TTTGAACACCGTGCTTCCACGCTCTCCTGGCCCCTGTGGATGGGGGTGCCCCACGGCTAC
+GAGATCGAGTTCATCTTTGGGATCCCCCTGGACCCCTCTCGAAACTACACGGCAGAGGAG
+AAAATCTTCGCCCAGCGACTGATGCGATACTGGGCCAACTTTGCCCGCACAGGGGATCCC
+AATGAGCCCCGAGACCCCAAGGCCCCACAATGGCCCCCGTACACGGCGGGGGCTCAGCAG
+TACGTTAGTCTGGACCTGCGGCCGCTGGAGGTGCGGCGGGGGCTGCGCGCCCAGGCCTGC
+GCCTTCTGGAACCGCTTCCTCCCCAAATTGCTCAGCGCCACCGACACGCTCGACGAGGCG
+GAGCGCCAGTGGAAGGCCGAGTTCCACCGCTGGAGCTCCTACATGGTGCACTGGAAGAAC
+CAGTTCGACCACTACAGCAAGCAGGATCGCTGCTCAGACCTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00135</identifier>
+            <name>COesterase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08674</identifier>
+            <name>AChE_tetra</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>anchored component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>basal lamina</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuromuscular junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synaptic cleft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholinesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>beta-amyloid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cholinesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>collagen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>laminin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acetylcholine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acetylcholine catabolic process in synaptic cleft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>amyloid precursor protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycerophospholipid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>muscle organ development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of synaptic transmission, cholinergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotransmitter biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotransmitter receptor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>osteoblast development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylcholine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein tetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor internalization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of receptor recycling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to wounding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina development in camera-type eye</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synapse assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

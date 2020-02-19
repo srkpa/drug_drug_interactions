@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04297</drugbank-id>
+  <drugbank-id>EXPT03123</drugbank-id>
+  <name>7-[4-(Dimethylamino)Phenyl]-N-Hydroxy-4,6-Dimethyl-7-Oxo-2,4-Heptadienamide</name>
+  <description/>
+  <cas-number/>
+  <unii>3X2S926L3Z</unii>
+  <average-mass>302.3682</average-mass>
+  <monoisotopic-mass>302.16304258</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as alkyl-phenylketones. These are aromatic compounds containing a ketone substituted by one alkyl group, and a phenyl group.</description>
+    <direct-parent>Alkyl-phenylketones</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbonyl compounds</subclass>
+    <alternative-parent>Aniline and substituted anilines</alternative-parent>
+    <alternative-parent>Aryl alkyl ketones</alternative-parent>
+    <alternative-parent>Benzoyl derivatives</alternative-parent>
+    <alternative-parent>Dialkylarylamines</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Phenylpropanes</alternative-parent>
+    <substituent>Alkyl-phenylketone</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aniline or substituted anilines</substituent>
+    <substituent>Aromatic homomonocyclic compound</substituent>
+    <substituent>Aryl alkyl ketone</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Benzoyl</substituent>
+    <substituent>Dialkylarylamine</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenylpropane</substituent>
+    <substituent>Tertiary aliphatic/aromatic amine</substituent>
+    <substituent>Tertiary amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1c3r</pdb-entry>
+    <pdb-entry>1t64</pdb-entry>
+    <pdb-entry>3c10</pdb-entry>
+    <pdb-entry>3f0r</pdb-entry>
+    <pdb-entry>4qa3</pdb-entry>
+    <pdb-entry>5d1b</pdb-entry>
+    <pdb-entry>5edu</pdb-entry>
+    <pdb-entry>5eef</pdb-entry>
+    <pdb-entry>5eek</pdb-entry>
+    <pdb-entry>5g0g</pdb-entry>
+    <pdb-entry>5wgi</pdb-entry>
+    <pdb-entry>6hoy</pdb-entry>
+    <pdb-entry>6uo2</pdb-entry>
+    <pdb-entry>6uo4</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.36</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.25e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.41</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2E,4E,6R)-7-[4-(dimethylamino)phenyl]-N-hydroxy-4,6-dimethyl-7-oxohepta-2,4-dienamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>trichostatin a</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>302.3682</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>302.16304258</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>ONC(=O)\C=C\C(\C)=C\[C@](C)([H])C(=O)C1=CC=C(N(C)C)C=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C17H22N2O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C17H22N2O3/c1-12(5-10-16(20)18-22)11-13(2)17(21)14-6-8-15(9-7-14)19(3)4/h5-11,13,22H,1-4H3,(H,18,20)/b10-5+,12-11+/t13-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>RTKIYFITIVXBLE-QEQCGCAPSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>69.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>90.24</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>33.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.57</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>3.36</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>46024</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>444732</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506659</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>392575</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50005711</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>TSN</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL99</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001608</id>
+      <name>Histone deacetylase 8</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9BY41" source="Swiss-Prot">
+        <name>Histone deacetylase 8</name>
+        <general-function>Transcription factor binding</general-function>
+        <specific-function>Responsible for the deacetylation of lysine residues on the N-terminal part of the core histones (H2A, H2B, H3 and H4). Histone deacetylation gives a tag for epigenetic repression and plays an important role in transcriptional regulation, cell cycle progression and developmental events. Histone deacetylases act via the formation of large multiprotein complexes. Also involved in the deacetylation of cohesin complex protein SMC3 regulating release of cohesin complexes from chromatin. May play a role in smooth muscle cell contractility.</specific-function>
+        <gene-name>HDAC8</gene-name>
+        <locus>Xq13</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.37</theoretical-pi>
+        <molecular-weight>41757.29</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:13315</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HDAC8</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF230097</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>8118721</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2619</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9BY41</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HDAC8_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.5.1.98</synonym>
+          <synonym>HD8</synonym>
+          <synonym>HDACL1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003191|Histone deacetylase 8
+MEEPEEPADSGQSLVPVYIYSPEYVSMCDSLAKIPKRASMVHSLIEAYALHKQMRIVKPK
+VASMEEMATFHTDAYLQHLQKVSQEGDDDHPDSIEYGLGYDCPATEGIFDYAAAIGGATI
+TAAQCLIDGMCKVAINWSGGWHHAKKDEASGFCYLNDAVLGILRLRRKFERILYVDLDLH
+HGDGVEDAFSFTSKVMTVSLHKFSPGFFPGTGDVSDVGLGKGRYYSVNVPIQDGIQDEKY
+YQICESVLKEVYQAFNPKAVVLQLGADTIAGDPMCSFNMTPVGIGKCLKYILQWQLATLI
+LGGGGYNLANTARCWTYLTGVILGKTLSSEIPDHEFFTAYGPDYVLEITPSCRPDRNEPH
+RIQQILNYIKGNLKHVV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016492|Histone deacetylase 8 (HDAC8)
+ATGGAGGAGCCGGAGGAACCGGCGGACAGTGGGCAGTCGCTGGTCCCGGTTTATATCTAT
+AGTCCCGAGTATGTCAGTATGTGTGACTCCCTGGCCAAGATCCCCAAACGGGCCAGTATG
+GTGCATTCTTTGATTGAAGCATATGCACTGCATAAGCAGATGAGAGATGAAGCATCTGGT
+TTTTGTTATCTCAATGATGCTGTCCTGGGAATATTACGATTGCGACGGAAATTTGAGCGT
+ATTCTCTACGTGGATTTGGATCTGCACCATGGAGATGGTGTAGAAGACGCATTCAGTTTC
+ACCTCCAAAGTCATGACCGTGTCCCTGCACAAATTCTCCCCAGGATTTTTCCCAGGAACA
+GGTGACGTGTCTGATGTTGGCCTAGGGAAGGGACGGTACTACAGTGTAAATGTGCCCATT
+CAGGATGGCATACAAGATGAAAAATATTACCAGATCTGTGAAAGTGTACTAAAGGAAGTA
+TACCAAGCCTTTAATCCCAAAGCAGTGGTCTTACAGCTGGGAGCTGACACAATAGCTGGG
+GATCCCATGTGCTCCTTTAACATGACTCCAGTGGGAATTGGCAAGTGTCTTAAGTACATC
+CTTCAATGGCAGTTGGCAACACTCATTTTGGGAGGAGGAGGCTATAACCTTGCCAACACG
+GCTCGATGCTGGACATACTTGACCGGGGTCATCCTAGGGAAAACACTATCCTCTGAGATC
+CCAGATCATGAGTTTTTCACAGCATATGGTCCTGATTATGTGCTGGAAATCACGCCAAGC
+TGCCGGCCAGACCGCAATGAGCCCCACCGAATCCAACAAATCCTCAACTACATCAAAGGG
+AATCTGAAGCATGTGGTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00850</identifier>
+            <name>Hist_deacetyl</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>histone deacetylase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear chromosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone deacetylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD-dependent histone deacetylase activity (H3-K14 specific)</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromatin assembly or disassembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromatin modification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromatin organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cohesin localization to chromatin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sister chromatid cohesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription, DNA-templated</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002796</id>
+      <name>Acetoin utilization protein</name>
+      <organism>Aquifex aeolicus (strain VF5)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O67135" source="TrEMBL">
+        <name>Acetoin utilization protein</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function/>
+        <gene-name>acuC1</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.53</theoretical-pi>
+        <molecular-weight>42662.46</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224324">Aquifex aeolicus (strain VF5)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE000657</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O67135</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>O67135_AQUAE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022033|Acetoin utilization protein
+MKKVKLIGTLDYGKYRYPKNHPLKIPRVSLLLRFLDAMNLIDEKELIKSRPATKEELLLF
+HTEDYINTLMEAERCQCVPKGAREKYNIGGYENPVSYAMFTGSSLATGSTVQAIEEFLKG
+NVAFNPAGGMHHAFKSRANGFCYINDPAVGIEYLRKKGFKRILYIDLDAHHCDGVQEAFY
+DTDQVFVLSLHQSPEYAFPFEKGFLEEIGEGKGKGYNLNIPLPKGLNDNEFLFALEKSLE
+IVKEVFEPEVYLLQLGTDPLLEDYLSKFNLSNVAFLKAFNIVREVFGEGVYLGGGGYHPY
+ALARAWTLIWCELSGREVPEKLNNKAKELLKSIDFEEFDDEVDRSYMLETLKDPWRGGEV
+RKEVKDTLEKAKASS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0022034|Acetoin utilization protein (acuC1)
+ATGAAGAAGGTTAAACTTATCGGAACTTTAGACTACGGAAAGTACAGATATCCCAAAAAC
+CATCCTCTTAAAATACCAAGAGTTTCCCTACTCCTTAGGTTTTTAGATGCCATGAACCTT
+ATAGATGAGAAGGAATTAATCAAGAGCAGACCCGCAACTAAAGAAGAACTCCTTTTATTC
+CACACGGAAGACTACATAAACACTTTAATGGAAGCGGAAAGGTGTCAGTGCGTTCCGAAG
+GGAGCTAGGGAAAAGTACAACATAGGCGGATACGAAAACCCCGTATCTTACGCGATGTTT
+ACAGGCTCTTCTCTCGCAACGGGTTCAACAGTGCAGGCGATAGAGGAATTTTTAAAGGGA
+AATGTAGCTTTCAATCCCGCGGGAGGTATGCACCACGCTTTTAAAAGCAGGGCAAACGGC
+TTTTGCTACATAAACGACCCCGCTGTGGGAATTGAGTACTTGAGAAAAAAAGGCTTTAAG
+AGAATACTCTACATAGACCTTGATGCCCACCACTGCGACGGTGTTCAGGAAGCCTTTTAC
+GATACAGACCAGGTGTTCGTCCTGTCCCTTCACCAGTCGCCCGAGTACGCCTTTCCCTTT
+GAGAAGGGCTTCCTGGAGGAGATAGGAGAAGGAAAAGGAAAGGGCTACAACCTGAACATT
+CCCCTGCCAAAGGGCTTGAACGACAACGAGTTCCTCTTTGCCCTAGAAAAATCTCTGGAA
+ATAGTCAAAGAAGTATTTGAGCCCGAGGTTTACCTTCTTCAACTCGGAACTGACCCACTC
+CTTGAAGATTACCTTTCCAAGTTCAACCTCTCAAACGTTGCCTTTTTAAAAGCTTTCAAC
+ATCGTTCGTGAGGTTTTCGGGGAGGGAGTATACCTCGGAGGAGGCGGATACCATCCTTAC
+GCCCTCGCAAGGGCATGGACCCTAATCTGGTGCGAGCTTTCGGGAAGGGAAGTGCCGGAA
+AAGCTAAACAATAAAGCAAAAGAGCTTTTAAAGAGTATAGACTTTGAAGAGTTTGACGAC
+GAGGTGGACCGCTCGTACATGCTCGAAACCCTAAAGGACCCCTGGAGAGGAGGAGAGGTA
+AGGAAAGAAGTAAAGGATACGCTTGAAAAGGCGAAAGCCTCATCTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00850</identifier>
+            <name>Hist_deacetyl</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="1">
+      <id>BE0003525</id>
+      <name>Histone deacetylase 7</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8WUI4" source="Swiss-Prot">
+        <name>Histone deacetylase 7</name>
+        <general-function>Transcription corepressor activity</general-function>
+        <specific-function>Responsible for the deacetylation of lysine residues on the N-terminal part of the core histones (H2A, H2B, H3 and H4). Histone deacetylation gives a tag for epigenetic repression and plays an important role in transcriptional regulation, cell cycle progression and developmental events. Histone deacetylases act via the formation of large multiprotein complexes. Involved in muscle maturation by repressing transcription of myocyte enhancer factors such as MEF2A, MEF2B and MEF2C. During muscle differentiation, it shuttles into the cytoplasm, allowing the expression of myocyte enhancer factors (By similarity). May be involved in Epstein-Barr virus (EBV) latency, possibly by repressing the viral BZLF1 gene. Positively regulates the transcriptional repressor activity of FOXP3 (PubMed:17360565).</specific-function>
+        <gene-name>HDAC7</gene-name>
+        <locus/>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.6</theoretical-pi>
+        <molecular-weight>102926.225</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:14067</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HDAC7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BC020505</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2661</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8WUI4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HDAC7_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.5.1.98</synonym>
+          <synonym>HD7</synonym>
+          <synonym>HD7a</synonym>
+          <synonym>HDAC7A</synonym>
+          <synonym>Histone deacetylase 7A</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006797|Histone deacetylase 7
+MDLRVGQRPPVEPPPEPTLLALQRPQRLHHHLFLAGLQQQRSVEPMRLSMDTPMPELQVG
+PQEQELRQLLHKDKSKRSAVASSVVKQKLAEVILKKQQAALERTVHPNSPGIPYRTLEPL
+ETEGATRSMLSSFLPPVPSLPSDPPEHFPLRKTVSEPNLKLRYKPKKSLERRKNPLLRKE
+SAPPSLRRRPAETLGDSSPSSSSTPASGCSSPNDSEHGPNPILGSEALLGQRLRLQETSV
+APFALPTVSLLPAITLGLPAPARADSDRRTHPTLGPRGPILGSPHTPLFLPHGLEPEAGG
+TLPSRLQPILLLDPSGSHAPLLTVPGLGPLPFHFAQSLMTTERLSGSGLHWPLSRTRSEP
+LPPSATAPPPPGPMQPRLEQLKTHVQVIKRSAKPSEKPRLRQIPSAEDLETDGGGPGQVV
+DDGLEHRELGHGQPEARGPAPLQQHPQVLLWEQQRLAGRLPRGSTGDTVLLPLAQGGHRP
+LSRAQSSPAAPASLSAPEPASQARVLSSSETPARTLPFTTGLIYDSVMLKHQCSCGDNSR
+HPEHAGRIQSIWSRLQERGLRSQCECLRGRKASLEELQSVHSERHVLLYGTNPLSRLKLD
+NGKLAGLLAQRMFVMLPCGGVGVDTDTIWNELHSSNAARWAAGSVTDLAFKVASRELKNG
+FAVVRPPGHHADHSTAMGFCFFNSVAIACRQLQQQSKASKILIVDWDVHHGNGTQQTFYQ
+DPSVLYISLHRHDDGNFFPGSGAVDEVGAGSGEGFNVNVAWAGGLDPPMGDPEYLAAFRI
+VVMPIAREFSPDLVLVSAGFDAAEGHPAPLGGYHVSAKCFGYMTQQLMNLAGGAVVLALE
+GGHDLTAICDASEACVAALLGNRVDPLSEEGWKQKPNLNAIRSLEAVIRVHSKYWGCMQR
+LASCPDSWVPRVPGADKEEVEAVTALASLSVGILAEDRPSEQLVEEEEPMNL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012455|Histone deacetylase 7 (HDAC7)
+ATGCACAGCCCCGGCGCTGATGGGACCCAGGTGAGCCCGGGTGCCCACTACTGCAGCCCC
+ACTGGCGCAGGCTGCCCCAGGCCCTGTGCAGACACACCAGGCCCTCAGCCGCAGCCCATG
+GACCTGCGGGTGGGCCAGCGGCCCCCAGTGGAGCCCCCACCAGAGCCCACATTGCTGGCC
+CTGCAGCGTCCCCAGCGCCTGCACCACCACCTCTTCCTAGCAGGCCTGCAGCAGCAGCGC
+TCGGTGGAGCCCATGAGGCTCTCCATGGACACGCCGATGCCCGAGTTGCAGGTGGGACCC
+CAGGAACAAGAGCTGCGGCAGCTTCTCCACAAGGACAAGAGCAAGCGAAGTGCTGTAGCC
+AGCAGCGTGGTCAAGCAGAAGCTAGCGGAGGTGATTCTGAAAAAACAGCAGGCGGCCCTA
+GAAAGAACAGTCCATCCCAACAGCCCCGGCATTCCCTACAGAACCCTGGAGCCCCTGGAG
+ACGGAAGGAGCCACCCGCTCCATGCTCAGCAGCTTTTTGCCTCCTGTTCCCAGCCTGCCC
+AGTGACCCCCCAGAGCACTTCCCTCTGCGCAAGACAGTCTCTGAGCCCAACCTGAAGCTG
+CGCTATAAGCCCAAGAAGTCCCTGGAGCGGAGGAAGAATCCACTGCTCCGAAAGGAGAGT
+GCGCCCCCCAGCCTCCGGCGGCGGCCCGCAGAGACCCTCGGAGACTCCTCCCCAAGTAGT
+AGCAGCACGCCCGCATCAGGGTGCAGCTCCCCCAATGACAGCGAGCACGGCCCCAATCCC
+ATCCTGGGCTCGGAGGCTGACAGTGACCGCAGGACCCATCCGACTCTGGGCCCTCGGGGG
+CCAATCCTGGGGAGCCCCCACACTCCCCTCTTCCTGCCCCATGGCTTGGAGCCCGAGGCT
+GGGGGCACCTTGCCCTCTCGCCTGCAGCCCATTCTCCTCCTGGACCCCTCAGGCTCTCAT
+GCCCCGCTGCTGACTGTGCCCGGGCTTGGGCCCTTGCCCTTCCACTTTGCCCAGTCCTTA
+ATGACCACCGAGCGGCTCTCTGGGTCAGGCCTCCACTGGCCACTGAGCCGGACTCGCTCA
+GAGCCCCTGCCCCCCAGTGCCACCGCTCCCCCACCGCCGGGCCCCATGCAGCCCCGCCTG
+GAGCAGCTCAAAACTCACGTCCAGGTGATCAAGAGGTCAGCCAAGCCGAGTGAGAAGCCC
+CGGCTGCGGCAGATACCCTCGGCTGAAGACCTGGAGACAGATGGCGGGGGACCGGGCCAG
+GTGGTGGACGATGGCCTGGAGCACAGGGAGCTGGGCCATGGGCAGCCTGAGGCCAGAGGC
+CCCGCTCCTCTCCAGCAGCACCCTCAGGTGTTGCTCTGGGAACAGCAGCGACTGGCTGGG
+CGGCTCCCCCGGGGCAGCACCGGGGACACTGTGCTGCTTCCTCTGGCCCAGGGTGGGCAC
+CGGCCTCTGTCCCGGGCTCAGTCTTCCCCAGCCGCACCTGCCTCACTGTCAGCCCCAGAG
+CCTGCCAGCCAGGCCCGAGTCCTCTCCAGCTCAGAGACCCCTGCCAGGACCCTGCCCTTC
+ACCACAGGGCTGATCTATGACTCGGTCATGCTGAAGCACCAGTGCTCCTGCGGTGACAAC
+AGCAGGCACCCGGAGCACGCCGGCCGCATCCAGAGCATCTGGTCCCGGCTGCAGGAGCGG
+GGGCTCCGGAGCCAGTGTGAGTGTCTCCGAGGCCGGAAGGCCTCCCTGGAAGAGCTGCAG
+TCGGTCCACTCTGAGCGGCACGTGCTCCTCTACGGCACCAACCCGCTCAGCCGCCTCAAA
+CTGGACAACGGGAAGCTGGCAGGGCTCCTGGCACAGCGGATGTTTGTGATGCTGCCCTGT
+GGTGGGGTTGGGGTGGACACTGACACCATCTGGAATGAGCTTCATTCCTCCAATGCAGCC
+CGCTGGGCCGCTGGCAGTGTCACTGACCTCGCCTTCAAAGTGGCTTCTCGTGAGCTAAAG
+AATGGTTTCGCTGTGGTGCGGCCCCCAGGACACCATGCAGATCATTCAACAGCCATGGGC
+TTCTGCTTCTTCAACTCAGTGGCCATCGCCTGCCGGCAGCTGCAACAGCAGAGCAAGGCC
+AGCAAGATCCTCATTGTAGACTGGGACGTGCACCATGGCAACGGCACCCAGCAAACCTTC
+TACCAAGACCCCAGTGTGCTCTACATCTCCCTGCATCGCCATGACGACGGCAACTTCTTC
+CCGGGGAGTGGGGCTGTGGATGAGGTAGGGGCTGGCAGCGGTGAGGGCTTCAATGTCAAT
+GTGGCCTGGGCTGGAGGTCTGGACCCCCCCATGGGGGATCCTGAGTACCTGGCTGCTTTC
+AGGATAGTCGTGATGCCCATCGCCCGAGAGTTCTCTCCAGACCTAGTCCTGGTGTCTGCT
+GGATTTGATGCTGCTGAGGGTCACCCGGCCCCACTGGGTGGCTACCATGTTTCTGCCAAA
+TGTTTTGGATACATGACGCAGCAACTGATGAACCTGGCAGGAGGCGCAGTGGTGCTGGCC
+TTGGAGGGTGGCCATGACCTCACAGCCATCTGTGACGCCTCTGAGGCCTGTGTGGCTGCT
+CTTCTGGGTAACAGGGTGGATCCCCTTTCAGAAGAAGGCTGGAAACAGAAACCCAACCTC
+AATGCCATCCGCTCTCTGGAGGCCGTGATCCGGGTGCACAGTAAATACTGGGGCTGCATG
+CAGCGCCTGGCCTCCTGTCCAGACTCCTGGGTGCCTAGAGTGCCAGGGGCTGACAAAGAA
+GAAGTGGAGGCAGTGACCGCACTGGCGTCCCTCTCTGTGGGCATCCTGGCTGAAGATAGG
+CCCTCGGAGCAGCTGGTGGAGGAGGAAGAACCTATGAATCTCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00850</identifier>
+            <name>Hist_deacetyl</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>histone deacetylase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>14-3-3 protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>activating transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD-dependent histone deacetylase activity (H3-K14 specific)</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase C binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>repressing transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription corepressor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell junction assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-2 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of NIK/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of osteoblast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Notch signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration involved in sprouting angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-translational protein modification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein sumoylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasculogenesis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

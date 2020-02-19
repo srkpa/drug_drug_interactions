@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05282</drugbank-id>
+  <name>MCC</name>
+  <description>Mycobacterial Cell Wall-DNA Complex (MCC) is formulated from Mycobacterium phlei, a non-pathogenic strain of mycobacteria. MCC has been shown to have immune stimulatory and apoptosis (programmed cell death) activity against cancer cells. The product is a sterile biological composition in a sub-micron suspension. It is produced at the Bioniche manufacturing facility in Pointe-Claire, Quebec.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Bladder cancer</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>MCC has a therapeutic potential in high grade transitional cell carcinomas of the bladder, including refractory CIS. The combination of MCC with hyaluronic acid (HA) enhances both the apoptosis-inducing activity of MCC against prostate cancer cell lines, and the immune stimulatory activity of MCC (stimulation of anticancer cytokine synthesis by human immune effector cells). &#13;
+&#13;
+</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>Regressin</name>
+      <company/>
+    </international-brand>
+    <international-brand>
+      <name>Urocidin</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910057</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>MCC</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000965</id>
+      <name>Apoptosis-inducing factor 1, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O95831" source="Swiss-Prot">
+        <name>Apoptosis-inducing factor 1, mitochondrial</name>
+        <general-function>Oxidoreductase activity, acting on nad(p)h</general-function>
+        <specific-function>Functions both as NADH oxidoreductase and as regulator of apoptosis. In response to apoptotic stimuli, it is released from the mitochondrion intermembrane space into the cytosol and to the nucleus, where it functions as a proapoptotic factor in a caspase-independent pathway. In contrast, functions as an antiapoptotic factor in normal mitochondria via its NADH oxidoreductase activity. The soluble form (AIFsol) found in the nucleus induces 'parthanatos' i.e. caspase-independent fragmentation of chromosomal DNA. Interacts with EIF3G,and thereby inhibits the EIF3 machinery and protein synthesis, and activates casapse-7 to amplify apoptosis. Plays a critical role in caspase-independent, pyknotic cell death in hydrogen peroxide-exposed cells. Binds to DNA in a sequence-independent manner.</specific-function>
+        <gene-name>AIFM1</gene-name>
+        <locus>Xq25-q26</locus>
+        <cellular-location>Mitochondrion intermembrane space</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.39</theoretical-pi>
+        <molecular-weight>66900.09</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AIFM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF100928</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>4323587</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O95831</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AIFM1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.-</synonym>
+          <synonym>AIF</synonym>
+          <synonym>PDCD8</synonym>
+          <synonym>Programmed cell death protein 8</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001921|Apoptosis-inducing factor 1, mitochondrial
+MFRCGGLAAGALKQKLVPLVRTVCVRSPRQRNRLPGNLFQRWHVPLELQMTRQMASSGAS
+GGKIDNSVLVLIVGLSTVGAGAYAYKTMKEDEKRYNERISGLGLTPEQKQKKAALSASEG
+EEVPQDKAPSHVPFLLIGGGTAAFAAARSIRARDPGARVLIVSEDPELPYMRPPLSKELW
+FSDDPNVTKTLRFKQWNGKERSIYFQPPSFYVSAQDLPHIENGGVAVLTGKKVVQLDVRD
+NMVKLNDGSQITYEKCLIATGGTPRSLSAIDRAGAEVKSRTTLFRKIGDFRSLEKISREV
+KSITIIGGGFLGSELACALGRKARALGTEVIQLFPEKGNMGKILPEYLSNWTMEKVRREG
+VKVMPNAIVQSVGVSSGKLLIKLKDGRKVETDHIVAAVGLEPNVELAKTGGLEIDSDFGG
+FRVNAELQARSNIWVAGDAACFYDIKLGRRRVEHHDHAVVSGRLAGENMTGAAKPYWHQS
+MFWSDLGPDVGYEAIGLVDSSLPTVGVFAKATAQDNPKSATEQSGTGIRSESETESEASE
+ITIPPSTPAVPQAPVQGEDYGKGVIFYLRDKVVVGIVLWNIFNRMPIARKIIKDGEQHED
+LNEVAKLFNIHED</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019044|Apoptosis-inducing factor 1, mitochondrial (AIFM1)
+ATGGAAAAAGTCAGACGAGAGGGGGTTAAGGTGATGCCCAATGCTATTGTGCAATCCGTT
+GGAGTCAGCAGTGGCAAGTTACTTATCAAGCTGAAAGACGGCAGGAAGGTAGAAACTGAC
+CACATAGTGGCAGCTGTGGGCCTGGAGCCCAATGTTGAGTTGGCCAAGACTGGTGGCCTG
+GAAATAGACTCAGATTTTGGTGGCTTCCGGGTAAATGCAGAGCTACAAGCACGCTCTAAC
+ATCTGGGTGGCAGGAGATGCTGCATGCTTCTACGATATAAAGTTGGGAAGGAGGCGGGTA
+GAGCACCATGATCACGCTGTTGTGAGTGGAAGATTGGCTGGAGAAAATATGACTGGAGCT
+GCTAAGCCGTACTGGCATCAGTCAATGTTCTGGAGTGATTTGGGCCCCGATGTTGGCTAT
+GAAGCTATTGGTCTTGTGGACAGTAGTTTGCCCACAGTTGGTGTTTTTGCAAAAGCAACT
+GCACAAGACAACCCCAAATCTGCCACAGAGCAGTCAGGAACTGGTATCCGATCAGAGAGT
+GAGACAGAGTCCGAGGCCTCAGAAATTACTATTCCTCCCAGCACCCCGGCAGTTCCACAG
+GCTCCCGTCCAGGGGGAGGACTACGGCAAAGGTGTCATCTTCTACCTCAGGGACAAAGTG
+GTCGTGGGGATTGTGCTATGGAACATCTTTAACCGAATGCCAATAGCAAGGAAGATCATT
+AAGGACGGTGAGCAGCATGAAGATCTCAATGAAGTAGCCAAACTATTCAACATTCATGAA
+GACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07992</identifier>
+            <name>Pyr_redox_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF14721</identifier>
+            <name>AIF_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial intermembrane space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>FAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD(P)H oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on NAD(P)H</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell redox homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromosome condensation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrial respiratory chain complex I assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of apoptotic DNA fragmentation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

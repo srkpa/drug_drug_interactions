@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05706</drugbank-id>
+  <name>13-deoxydoxorubicin</name>
+  <description>GPX-100 is an anthracycline anticancer drug that belongs to the family of drugs called antitumor antibiotics.</description>
+  <cas-number>628290-43-7</cas-number>
+  <unii>1S9VO1DQG5</unii>
+  <average-mass>529.542</average-mass>
+  <monoisotopic-mass>529.194796202</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in breast cancer and cancer/tumors (unspecified).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>As an anthracycline, GPX-100 has antimitotic and cytotoxic activity through a number of proposed mechanisms of action: GPX-100 forms complexes with DNA by intercalation between base pairs, and it inhibits topoisomerase II activity by stabilizing the DNA-topoisomerase II complex, preventing the religation portion of the ligation-religation reaction that topoisomerase II catalyzes.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.07</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.56e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.66</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(8R,10S)-10-{[(2R,4S,5S,6S)-4-amino-5-hydroxy-6-methyloxan-2-yl]oxy}-6,8,11-trihydroxy-8-(2-hydroxyethyl)-1-methoxy-5,7,8,9,10,12-hexahydrotetracene-5,12-dione</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(8R,10S)-10-{[(2R,4S,5S,6S)-4-amino-5-hydroxy-6-methyloxan-2-yl]oxy}-6,8,11-trihydroxy-8-(2-hydroxyethyl)-1-methoxy-9,10-dihydro-7H-tetracene-5,12-dione</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>529.542</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>529.194796202</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>COC1=C2C(=O)C3=C(O)C4=C(C[C@@](O)(CCO)C[C@@H]4O[C@H]4C[C@H](N)[C@H](O)[C@H](C)O4)C(O)=C3C(=O)C2=CC=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C27H31NO10</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C27H31NO10/c1-11-22(30)14(28)8-17(37-11)38-16-10-27(35,6-7-29)9-13-19(16)26(34)21-20(24(13)32)23(31)12-4-3-5-15(36-2)18(12)25(21)33/h3-5,11,14,16-17,22,29-30,32,34-35H,6-10,28H2,1-2H3/t11-,14-,16-,17-,22+,27-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>RGVRUQHYQSORBY-JIGXQNLBSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>189</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>134.26</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>54.61</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>8.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.39</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>8005155</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL3249110</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000742</id>
+      <name>DNA topoisomerase 2-alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11388" source="Swiss-Prot">
+        <name>DNA topoisomerase 2-alpha</name>
+        <general-function>Ubiquitin binding</general-function>
+        <specific-function>Control of topological states of DNA by transient breakage and subsequent rejoining of DNA strands. Topoisomerase II makes double-strand breaks. Essential during mitosis and meiosis for proper segregation of daughter chromosomes. May play a role in regulating the period length of ARNTL/BMAL1 transcriptional oscillation (By similarity).</specific-function>
+        <gene-name>TOP2A</gene-name>
+        <locus>17q21-q22</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.17</theoretical-pi>
+        <molecular-weight>174383.88</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11989</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TOP2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J04088</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>292830</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11388</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TOP2A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.99.1.3</synonym>
+          <synonym>DNA topoisomerase II, alpha isozyme</synonym>
+          <synonym>TOP2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001480|DNA topoisomerase 2-alpha
+MEVSPLQPVNENMQVNKIKKNEDAKKRLSVERIYQKKTQLEHILLRPDTYIGSVELVTQQ
+MWVYDEDVGINYREVTFVPGLYKIFDEILVNAADNKQRDPKMSCIRVTIDPENNLISIWN
+NGKGIPVVEHKVEKMYVPALIFGQLLTSSNYDDDEKKVTGGRNGYGAKLCNIFSTKFTVE
+TASREYKKMFKQTWMDNMGRAGEMELKPFNGEDYTCITFQPDLSKFKMQSLDKDIVALMV
+RRAYDIAGSTKDVKVFLNGNKLPVKGFRSYVDMYLKDKLDETGNSLKVIHEQVNHRWEVC
+LTMSEKGFQQISFVNSIATSKGGRHVDYVADQIVTKLVDVVKKKNKGGVAVKAHQVKNHM
+WIFVNALIENPTFDSQTKENMTLQPKSFGSTCQLSEKFIKAAIGCGIVESILNWVKFKAQ
+VQLNKKCSAVKHNRIKGIPKLDDANDAGGRNSTECTLILTEGDSAKTLAVSGLGVVGRDK
+YGVFPLRGKILNVREASHKQIMENAEINNIIKIVGLQYKKNYEDEDSLKTLRYGKIMIMT
+DQDQDGSHIKGLLINFIHHNWPSLLRHRFLEEFITPIVKVSKNKQEMAFYSLPEFEEWKS
+STPNHKKWKVKYYKGLGTSTSKEAKEYFADMKRHRIQFKYSGPEDDAAISLAFSKKQIDD
+RKEWLTNFMEDRRQRKLLGLPEDYLYGQTTTYLTYNDFINKELILFSNSDNERSIPSMVD
+GLKPGQRKVLFTCFKRNDKREVKVAQLAGSVAEMSSYHHGEMSLMMTIINLAQNFVGSNN
+LNLLQPIGQFGTRLHGGKDSASPRYIFTMLSSLARLLFPPKDDHTLKFLYDDNQRVEPEW
+YIPIIPMVLINGAEGIGTGWSCKIPNFDVREIVNNIRRLMDGEEPLPMLPSYKNFKGTIE
+ELAPNQYVISGEVAILNSTTIEISELPVRTWTQTYKEQVLEPMLNGTEKTPPLITDYREY
+HTDTTVKFVVKMTEEKLAEAERVGLHKVFKLQTSLTCNSMVLFDHVGCLKKYDTVLDILR
+DFFELRLKYYGLRKEWLLGMLGAESAKLNNQARFILEKIDGKIIIENKPKKELIKVLIQR
+GYDSDPVKAWKEAQQKVPDEEENEESDNEKETEKSDSVTDSGPTFNYLLDMPLWYLTKEK
+KDELCRLRNEKEQELDTLKRKSPSDLWKEDLATFIEELEAVEAKEKQDEQVGLPGKGGKA
+KGKKTQMAEVLPSPRGQRVIPRITIEMKAEAEKKNKKKIKNENTEGSPQEDGVELEGLKQ
+RLEKKQKREPGTKTKKQTTLAFKPIKKGKKRNPWSDSESDRSSDESNFDVPPRETEPRRA
+ATKTKFTMDLDSDEDFSDFDEKTDDEDFVPSDASPPKTKTSPKLSNKELKPQKSVVSDLE
+ADDVKGSVPLSSSPPATHFPDETEITNPVPKKNVTVKKTAAKSQSSTSTTGAKKRAAPKG
+TKRDPALNSGVSQKPDPAKTKNRRKRKPSTSDDSDSNFEKIVSKAVTSKKSKGESDDFHM
+DFDSAVAPRAKSVRAKKPIKYLEESDEDDLF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019005|DNA topoisomerase 2-alpha (TOP2A)
+ATGGAAGTGTCACCATTGCAGCCTGTAAATGAAAATATGCAAGTCAACAAAATAAAGAAA
+AATGAAGATGCTAAGAAAAGACTGTCTGTTGAAAGAATCTATCAAAAGAAAACACAATTG
+GAACATATTTTGCTCCGCCCAGACACCTACATTGGTTCTGTGGAATTAGTGACCCAGCAA
+ATGTGGGTTTACGATGAAGATGTTGGCATTAACTATAGGGAAGTCACTTTTGTTCCTGGT
+TTGTACAAAATCTTTGATGAGATTCTAGTTAATGCTGCGGACAACAAACAAAGGGACCCA
+AAAATGTCTTGTATTAGAGTCACAATTGATCCGGAAAACAATTTAATTAGTATATGGAAT
+AATGGAAAAGGTATTCCTGTTGTTGAACACAAAGTTGAAAAGATGTATGTCCCAGCTCTC
+ATATTTGGACAGCTCCTAACTTCTAGTAACTATGATGATGATGAAAAGAAAGTGACAGGT
+GGTCGAAATGGCTATGGAGCCAAATTGTGTAACATATTCAGTACCAAATTTACTGTGGAA
+ACAGCCAGTAGAGAATACAAGAAAATGTTCAAACAGACATGGATGGATAATATGGGAAGA
+GCTGGTGAGATGGAACTCAAGCCCTTCAATGGAGAAGATTATACATGTATCACCTTTCAG
+CCTGATTTGTCTAAGTTTAAAATGCAAAGCCTGGACAAAGATATTGTTGCACTAATGGTC
+AGAAGAGCATATGATATTGCTGGATCCACCAAAGATGTCAAAGTCTTTCTTAATGGAAAT
+AAACTGCCAGTAAAAGGATTTCGTAGTTATGTGGACATGTATTTGAAGGACAAGTTGGAT
+GAAACTGGTAACTCCTTGAAAGTAATACATGAACAAGTAAACCACAGGTGGGAAGTGTGT
+TTAACTATGAGTGAAAAAGGCTTTCAGCAAATTAGCTTTGTCAACAGCATTGCTACATCC
+AAGGGTGGCAGACATGTTGATTATGTAGCTGATCAGATTGTGACTAAACTTGTTGATGTT
+GTGAAGAAGAAGAACAAGGGTGGTGTTGCAGTAAAAGCACATCAGGTGAAAAATCACATG
+TGGATTTTTGTAAATGCCTTAATTGAAAACCCAACCTTTGACTCTCAGACAAAAGAAAAC
+ATGACTTTACAACCCAAGAGCTTTGGATCAACATGCCAATTGAGTGAAAAATTTATCAAA
+GCTGCCATTGGCTGTGGTATTGTAGAAAGCATACTAAACTGGGTGAAGTTTAAGGCCCAA
+GTCCAGTTAAACAAGAAGTGTTCAGCTGTAAAACATAATAGAATCAAGGGAATTCCCAAA
+CTCGATGATGCCAATGATGCAGGGGGCCGAAACTCCACTGAGTGTACGCTTATCCTGACT
+GAGGGAGATTCAGCCAAAACTTTGGCTGTTTCAGGCCTTGGTGTGGTTGGGAGAGACAAA
+TATGGGGTTTTCCCTCTTAGAGGAAAAATACTCAATGTTCGAGAAGCTTCTCATAAGCAG
+ATCATGGAAAATGCTGAGATTAACAATATCATCAAGATTGTGGGTCTTCAGTACAAGAAA
+AACTATGAAGATGAAGATTCATTGAAGACGCTTCGTTATGGGAAGATAATGATTATGACA
+GATCAGGACCAAGATGGTTCCCACATCAAAGGCTTGCTGATTAATTTTATCCATCACAAC
+TGGCCCTCTCTTCTGCGACATCGTTTTCTGGAGGAATTTATCACTCCCATTGTAAAGGTA
+TCTAAAAACAAGCAAGAAATGGCATTTTACAGCCTTCCTGAATTTGAAGAGTGGAAGAGT
+TCTACTCCAAATCATAAAAAATGGAAAGTCAAATATTACAAAGGTTTGGGCACCAGCACA
+TCAAAGGAAGCTAAAGAATACTTTGCAGATATGAAAAGACATCGTATCCAGTTCAAATAT
+TCTGGTCCTGAAGATGATGCTGCTATCAGCCTGGCCTTTAGCAAAAAACAGATAGATGAT
+CGAAAGGAATGGTTAACTAATTTCATGGAGGATAGAAGACAACGAAAGTTACTTGGGCTT
+CCTGAGGATTACTTGTATGGACAAACTACCACATATCTGACATATAATGACTTCATCAAC
+AAGGAACTTATCTTGTTCTCAAATTCTGATAACGAGAGATCTATCCCTTCTATGGTGGAT
+GGTTTGAAACCAGGTCAGAGAAAGGTTTTGTTTACTTGCTTCAAACGGAATGACAAGCGA
+GAAGTAAAGGTTGCCCAATTAGCTGGATCAGTGGCTGAAATGTCTTCTTATCATCATGGT
+GAGATGTCACTAATGATGACCATTATCAATTTGGCTCAGAATTTTGTGGGTAGCAATAAT
+CTAAACCTCTTGCAGCCCATTGGTCAGTTTGGTACCAGGCTACATGGTGGCAAGGATTCT
+GCTAGTCCACGATACATCTTTACAATGCTCAGCTCTTTGGCTCGATTGTTATTTCCACCA
+AAAGATGATCACACGTTGAAGTTTTTATATGATGACAACCAGCGTGTTGAGCCTGAATGG
+TACATTCCTATTATTCCCATGGTGCTGATAAATGGTGCTGAAGGAATCGGTACTGGGTGG
+TCCTGCAAAATCCCCAACTTTGATGTGCGTGAAATTGTAAATAACATCAGGCGTTTGATG
+GATGGAGAAGAACCTTTGCCAATGCTTCCAAGTTACAAGAACTTCAAGGGTACTATTGAA
+GAACTGGCTCCAAATCAATATGTGATTAGTGGTGAAGTAGCTATTCTTAATTCTACAACC
+ATTGAAATCTCAGAGCTTCCCGTCAGAACATGGACCCAGACATACAAAGAACAAGTTCTA
+GAACCCATGTTGAATGGCACCGAGAAGACACCTCCTCTCATAACAGACTATAGGGAATAC
+CATACAGATACCACTGTGAAATTTGTTGTGAAGATGACTGAAGAAAAACTGGCAGAGGCA
+GAGAGAGTTGGACTACACAAAGTCTTCAAACTCCAAACTAGTCTCACATGCAACTCTATG
+GTGCTTTTTGACCACGTAGGCTGTTTAAAGAAATATGACACGGTGTTGGATATTCTAAGA
+GACTTTTTTGAACTCAGACTTAAATATTATGGATTAAGAAAAGAATGGCTCCTAGGAATG
+CTTGGTGCTGAATCTGCTAAACTGAATAATCAGGCTCGCTTTATCTTAGAGAAAATAGAT
+GGCAAAATAATCATTGAAAATAAGCCTAAGAAAGAATTAATTAAAGTTCTGATTCAGAGG
+GGATATGATTCGGATCCTGTGAAGGCCTGGAAAGAAGCCCAGCAAAAGGTTCCAGATGAA
+GAAGAAAATGAAGAGAGTGACAACGAAAAGGAAACTGAAAAGAGTGACTCCGTAACAGAT
+TCTGGACCAACCTTCAACTATCTTCTTGATATGCCCCTTTGGTATTTAACCAAGGAAAAG
+AAAGATGAACTCTGCAGGCTAAGAAATGAAAAAGAACAAGAGCTGGACACATTAAAAAGA
+AAGAGTCCATCAGATTTGTGGAAAGAAGACTTGGCTACATTTATTGAAGAATTGGAGGCT
+GTTGAAGCCAAGGAAAAACAAGATGAACAAGTCGGACTTCCTGGGAAAGGGGGGAAGGCC
+AAGGGGAAAAAAACACAAATGGCTGAAGTTTTGCCTTCTCCGCGTGGTCAAAGAGTCATT
+CCACGAATAACCATAGAAATGAAAGCAGAGGCAGAAAAGAAAAATAAAAAGAAAATTAAG
+AATGAAAATACTGAAGGAAGCCCTCAAGAAGATGGTGTGGAACTAGAAGGCCTAAAACAA
+AGATTAGAAAAGAAACAGAAAAGAGAACCAGGTACAAAGACAAAGAAACAAACTACATTG
+GCATTTAAGCCAATCAAAAAAGGAAAGAAGAGAAATCCCTGGTCTGATTCAGAATCAGAT
+AGGAGCAGTGACGAAAGTAATTTTGATGTCCCTCCACGAGAAACAGAGCCACGGAGAGCA
+GCAACAAAAACAAAATTCACAATGGATTTGGATTCAGATGAAGATTTCTCAGATTTTGAT
+GAAAAAACTGATGATGAAGATTTTGTCCCATCAGATGCTAGTCCACCTAAGACCAAAACT
+TCCCCAAAACTTAGTAACAAAGAACTGAAACCACAGAAAAGTGTCGTGTCAGACCTTGAA
+GCTGATGATGTTAAGGGCAGTGTACCACTGTCTTCAAGCCCTCCTGCTACACATTTCCCA
+GATGAAACTGAAATTACAAACCCAGTTCCTAAAAAGAATGTGACAGTGAAGAAGACAGCA
+GCAAAAAGTCAGTCTTCCACCTCCACTACCGGTGCCAAAAAAAGGGCTGCCCCAAAAGGA
+ACTAAAAGGGATCCAGCTTTGAATTCTGGTGTCTCTCAAAAGCCTGATCCTGCCAAAACC
+AAGAATCGCCGCAAAAGGAAGCCATCCACTTCTGATGATTCTGACTCTAATTTTGAGAAA
+ATTGTTTCGAAAGCAGTCACAAGCAAGAAATCCAAGGGGGAGAGTGATGACTTCCATATG
+GACTTTGACTCAGCTGTGGCTCCTCGGGCAAAATCTGTACGGGCAAAGAAACCTATAAAG
+TACCTGGAAGAGTCAGATGAAGATGATCTGTTTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00521</identifier>
+            <name>DNA_topoisoIV</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02518</identifier>
+            <name>HATPase_c</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00204</identifier>
+            <name>DNA_gyraseB</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08070</identifier>
+            <name>DTHCT</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01751</identifier>
+            <name>Toprim</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16898</identifier>
+            <name>TOPRIM_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed chromosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>DNA topoisomerase complex (ATP-hydrolyzing)</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding, bending</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA topoisomerase type II (ATP-hydrolyzing) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA-dependent ATPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone deacetylase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein C-terminus binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase C binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic chromosome condensation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to DNA damage stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromosome segregation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA ligation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA topological change</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA unwinding involved in DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic cleavage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hematopoietic progenitor cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic DNA integrity checkpoint</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of single stranded viral RNA replication via double stranded DNA intermediate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of viral genome replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>resolution of meiotic recombination intermediates</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhythmic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sister chromatid segregation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004796</id>
+      <name>DNA</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

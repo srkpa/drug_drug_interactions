@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2008-03-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB06560</drugbank-id>
+  <name>Pascolizumab</name>
+  <description>Pascolizumab (SB 240683) is a humanized anti-interleukin-4 antibody with therapeutic potential in asthma.</description>
+  <cas-number>331243-22-2</cas-number>
+  <unii>N1IOA09R6A</unii>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A6874</ref-id>
+        <pubmed-id>12296858</pubmed-id>
+        <citation>Hart TK, Blackburn MN, Brigham-Burke M, Dede K, Al-Mahdi N, Zia-Amirhosseini P, Cook RM: Preclinical efficacy and safety of pascolizumab (SB 240683): a humanized anti-interleukin-4 antibody with therapeutic potential in asthma. Clin Exp Immunol. 2002 Oct;130(1):93-100.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in asthma.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>Pascolizumab is a humanized anti-IL-4 monoclonal antibody that can inhibit upstream and downstream events associated with asthma, including (T(H)2) cell activation and immunoglobulin E production.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Pascolizumab</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003520</id>
+      <name>Interleukin-4</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A6874</ref-id>
+            <pubmed-id>12296858</pubmed-id>
+            <citation>Hart TK, Blackburn MN, Brigham-Burke M, Dede K, Al-Mahdi N, Zia-Amirhosseini P, Cook RM: Preclinical efficacy and safety of pascolizumab (SB 240683): a humanized anti-interleukin-4 antibody with therapeutic potential in asthma. Clin Exp Immunol. 2002 Oct;130(1):93-100.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P05112" source="Swiss-Prot">
+        <name>Interleukin-4</name>
+        <general-function>Interleukin-4 receptor binding</general-function>
+        <specific-function>Participates in at least several B-cell activation processes as well as of other cell types. It is a costimulator of DNA-synthesis. It induces the expression of class II MHC molecules on resting B-cells. It enhances both secretion and cell surface expression of IgE and IgG1. It also regulates the expression of the low affinity Fc receptor for IgE (CD23) on both lymphocytes and monocytes.</specific-function>
+        <gene-name>IL4</gene-name>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-24</signal-regions>
+        <theoretical-pi>9.16</theoretical-pi>
+        <molecular-weight>17492.09</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6014</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>IL4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X06750</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P05112</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IL4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>B-cell stimulatory factor 1</synonym>
+          <synonym>Binetrakin</synonym>
+          <synonym>BSF-1</synonym>
+          <synonym>IL-4</synonym>
+          <synonym>Lymphocyte stimulatory factor 1</synonym>
+          <synonym>Pitrakinra</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006792|Interleukin-4
+MGLTSQLLPPLFFLLACAGNFVHGHKCDITLQEIIKTLNSLTEQKTLCTELTVTDIFAAS
+KNTTEKETFCRAATVLRQFYSHHEKDTRCLGATAQQFHRHKQLIRFLKRLDRNLWGLAGL
+NSCPVKEANQSTLENFLERLKTIMREKYSKCSS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019434|Interleukin-4 (IL4)
+ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
+TTTGTCCACGGACACAAGTGCGATATCACCTTACAGGAGATCATCAAAACTTTGAACAGC
+CTCACAGAGCAGAAGACTCTGTGCACCGAGTTGACCGTAACAGACATCTTTGCTGCCTCC
+AAGAACACAACTGAGAAGGAAACCTTCTGCAGGGCTGCGACTGTGCTCCGGCAGTTCTAC
+AGCCACCATGAGAAGGACACTCGCTGCCTGGGTGCGACTGCACAGCAGTTCCACAGGCAC
+AAGCAGCTGATCCGATTCCTGAAACGGCTCGACAGGAACCTCTGGGGCCTGGCGGGCTTG
+AATTCCTGTCCTGTGAAGGAAGCCAACCAGAGTACGTTGGAAAACTTCTTGGAAAGGCTA
+AAGACGATCATGAGAGAGAAATATTCAAAGTGTTCGAGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00727</identifier>
+            <name>IL4</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>growth factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-4 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell costimulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to mercury ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cholesterol metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>connective tissue growth factor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to protozoan</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dendritic cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway in absence of ligand</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>female pregnancy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response in mucosa</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>microglial cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>myeloid dendritic cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of acute inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of chronic inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of complement-dependent cytotoxicity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endothelial cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of epithelial cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of macrophage activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of osteoclast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of T-helper 17 cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of white fat cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of activated T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of B cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of chemokine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of defense response to virus by host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of eosinophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-10 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-13 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of isotype switching to IgE isotypes</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of isotype switching to IgG isotypes</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mast cell degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MHC class II biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mononuclear cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of myoblast fusion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat5 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of isotype switching</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of proton transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cytokine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina development in camera-type eye</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper 1 cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper 2 cell cytokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper 2 cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>type 2 immune response</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

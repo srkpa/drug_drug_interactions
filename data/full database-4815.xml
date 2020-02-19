@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05133</drugbank-id>
+  <name>VP025</name>
+  <description>VP025, a novel drug formulation based on phospholipid microparticles incorporating phosphatidylglycerol, can inhibit neuroinflammation. VP025 may inhibit immune system activation and protect motoneurons from injury. It also shows the ability to reduce inflammation across the blood-brain barrier and improve correlates of memory and learning function. It is being developed to target the chronic inflammation within the central nervous system that is associated with a number of neurological diseases, including Alzheimer’s disease, Parkinson’s disease, and amyotrophic lateral sclerosis (Lou Gehrig’s disease). It is considered to be a systemic anti-inflammatory and neuroprotective agent.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in alzheimer's disease and inflammatory disorders (unspecified).</indication>
+  <pharmacodynamics>VP025 may invoke the body's response ti cell surface phospholipid components, the result of which is an up-regulation of regulatory T cells promoting a suppression of inflammation.  VP025 cross the blood-brain barrier, demonstrating potent anti-inflammatory activity and preserving the function of neural pathways necessary for memory and learning.</pharmacodynamics>
+  <mechanism-of-action>VP025 is being developed to exert its anti-inflammatory effects using an cell clearance mechanism. VP025, a preparation of phospholipid microparticles containing&#13;
+phosphatidylglycerol, has been shown to exert anti-inflammatory effects in the brain, abrogating age-induced up-regulation of IL-1 beta and IL-1 beta -induced signalling, and reducing the activation of c-Jun N-terminal kinase (JNK), a kinase involved in the inflammatory process.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909968</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001051</id>
+      <name>Interleukin-1 beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P01584" source="Swiss-Prot">
+        <name>Interleukin-1 beta</name>
+        <general-function>Protein domain specific binding</general-function>
+        <specific-function>Potent proinflammatory cytokine. Initially discovered as the major endogenous pyrogen, induces prostaglandin synthesis, neutrophil influx and activation, T-cell activation and cytokine production, B-cell activation and antibody production, and fibroblast proliferation and collagen production. Promotes Th17 differentiation of T-cells.</specific-function>
+        <gene-name>IL1B</gene-name>
+        <locus>2q14</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.45</theoretical-pi>
+        <molecular-weight>30747.7</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5992</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>IL1B</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>K02770</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>307043</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2623</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P01584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IL1B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Catabolin</synonym>
+          <synonym>IL-1 beta</synonym>
+          <synonym>IL1F2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010736|Interleukin-1 beta
+MAEVPELASEMMAYYSGNEDDLFFEADGPKQMKCSFQDLDLCPLDGGIQLRISDHHYSKG
+FRQAASVVVAMDKLRKMLVPCPQTFQENDLSTFFPFIFEEEPIFFDTWDNEAYVHDAPVR
+SLNCTLRDSQQKSLVMSGPYELKALHLQGQDMEQQVVFSMSFVQGEESNDKIPVALGLKE
+KNLYLSCVLKDDKPTLQLESVDPKNYPKKKMEKRFVFNKIEINNKLEFESAQFPNWYIST
+SQAENMPVFLGGTKGGQDITDFTMQFVSS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010737|Interleukin-1 beta (IL1B)
+ATGGCAGAAGTACCTGAGCTCGCCAGTGAAATGATGGCTTATTACAGTGGCAATGAGGAT
+GACTTGTTCTTTGAAGCTGATGGCCCTAAACAGATGAAGTGCTCCTTCCAGGACCTGGAC
+CTCTGCCCTCTGGATGGCGGCATCCAGCTACGAATCTCCGACCACCACTACAGCAAGGGC
+TTCAGGCAGGCCGCGTCAGTTGTTGTGGCCATGGACAAGCTGAGGAAGATGCTGGTTCCC
+TGCCCACAGACCTTCCAGGAGAATGACCTGAGCACCTTCTTTCCCTTCATCTTTGAAGAA
+GAACCTATCTTCTTCGACACATGGGATAACGAGGCTTATGTGCACGATGCACCTGTACGA
+TCACTGAACTGCACGCTCCGGGACTCACAGCAAAAAAGCTTGGTGATGTCTGGTCCATAT
+GAACTGAAAGCTCTCCACCTCCAGGGACAGGATATGGAGCAACAAGTGGTGTTCTCCATG
+TCCTTTGTACAAGGAGAAGAAAGTAATGACAAAATACCTGTGGCCTTGGGCCTCAAGGAA
+AAGAATCTGTACCTGTCCTGCGTGTTGAAAGATGATAAGCCCACTCTACAGCTGGAGAGT
+GTAGATCCCAAAAATTACCCAAAGAAGAAGATGGAAAAGCGATTTGTCTTCAACAAGATA
+GAAATCAATAACAAGCTGGAATTTGAGTCTGCCCAGTTCCCCAACTGGTACATCAGCACC
+TCTCAAGCAGAAAACATGCCCGTCTTCCTGGGAGGGACCAAAGGCGGCCAGGATATAACT
+GACTTCACCATGCAATTTGTGTCTTCCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00340</identifier>
+            <name>IL1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02394</identifier>
+            <name>IL1_propep</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>autophagosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>secretory granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-1 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein domain specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to antibiotic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to fatty acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to glucose stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to mechanical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to methotrexate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to organic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chronic inflammatory response to antigenic stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ectopic germ cell programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryo implantation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>estrogen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway in absence of ligand</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fever generation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hyaluronan biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interleukin-1 beta production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipopolysaccharide-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocyte aggregation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of adiponectin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of branching morphogenesis of a nerve</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway in absence of ligand</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glucose transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glutamate secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of lipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of MAP kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neural precursor cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ovulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pentacyclic triterpenoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polyketide metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of astrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of calcidiol 1-monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell adhesion molecule production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of chemokine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fever generation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of granulocyte macrophage colony-stimulating factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of heterotypic cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of histone acetylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of histone phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of immature T cell proliferation in thymus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-gamma production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-2 biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-6 biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-6 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-8 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JNK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JUN kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of lipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of membrane protein ectodomain proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic nuclear division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of monocyte chemotactic protein-1 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of myosin light chain kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NF-kappaB import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NF-kappaB transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phagocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of prostaglandin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein export from nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell mediated immunity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vascular endothelial growth factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein kinase B signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of establishment of endothelial barrier</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ATP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to dexamethasone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to diuretic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estradiol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to gamma radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to L-ascorbic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to morphine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ozone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to peptide hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to statin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to stilbenoid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to vitamin D</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sequestering of triglyceride</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle adaptation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>social behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stimulatory C-type lectin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>wound healing</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

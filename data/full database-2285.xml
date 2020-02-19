@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02415</drugbank-id>
+  <drugbank-id>EXPT02420</drugbank-id>
+  <name>N-Octyl-2-Hydroxyethyl Sulfoxide</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>206.345</average-mass>
+  <monoisotopic-mass>206.134050638</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as sulfoxides. These are compounds containing a sulfoxide functional group, with the structure RS(=O)R' (R,R' not H).</description>
+    <direct-parent>Sulfoxides</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organosulfur compounds</superclass>
+    <class>Sulfoxides</class>
+    <subclass/>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Primary alcohols</alternative-parent>
+    <alternative-parent>Sulfinyl compounds</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Primary alcohol</substituent>
+    <substituent>Sulfinyl compound</substituent>
+    <substituent>Sulfoxide</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1by3</pdb-entry>
+    <pdb-entry>1by5</pdb-entry>
+    <pdb-entry>2hdf</pdb-entry>
+    <pdb-entry>2xe2</pdb-entry>
+    <pdb-entry>2xe5</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.25</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.30e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.31</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>2-[(R)-octane-1-sulfinyl]ethan-1-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>2-[(R)-octylsulfinyl]ethanol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>206.345</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>206.134050638</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCCCCCCC[S@@](=O)CCO</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C10H22O2S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C10H22O2S/c1-2-3-4-5-6-7-9-13(12)10-8-11/h11H,2-10H2,1H3/t13-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>IRJUEMKMQDEOTQ-CYBMUJFWSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>37.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>59.35</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>25.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>15.18</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-2.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>9543425</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508952</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>7822392</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>OES</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001326</id>
+      <name>Ferrichrome-iron receptor</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06971" source="Swiss-Prot">
+        <name>Ferrichrome-iron receptor</name>
+        <general-function>Virion binding</general-function>
+        <specific-function>This receptor binds the ferrichrome-iron ligand. It interacts with the TonB protein, which is responsible for energy coupling of the ferrichrome-promoted iron transport system. Acts as a receptor for bacteriophage T5 as well as T1, phi80 and colicin M. Binding of T5 triggers the opening of a high conductance ion channel. Can also transport the antibiotic albomycin.</specific-function>
+        <gene-name>fhuA</gene-name>
+        <locus/>
+        <cellular-location>Cell outer membrane</cellular-location>
+        <transmembrane-regions>193-201
+207-215
+223-231
+246-255
+260-268
+313-321
+327-335
+388-396
+405-413
+465-473
+478-486
+509-517
+523-531
+552-560
+566-574
+602-610
+614-622
+646-654
+662-670
+690-698
+706-714
+738-746</transmembrane-regions>
+        <signal-regions>1-33</signal-regions>
+        <theoretical-pi>5.35</theoretical-pi>
+        <molecular-weight>82181.75</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M12486</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2226438</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06971</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FHUA_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Ferric hydroxamate receptor</synonym>
+          <synonym>Ferric hydroxamate uptake</synonym>
+          <synonym>tonA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010924|Ferrichrome-iron receptor
+MARSKTAQPKHSLRKIAVVVATAVSGMSVYAQAAVEPKEDTITVTAAPAPQESAWGPAAT
+IAARQSATGTKTDTPIQKVPQSISVVTAEEMALHQPKSVKEALSYTPGVSVGTRGASNTY
+DHLIIRGFAAEGQSQNNYLNGLKLQGNFYNDAVIDPYMLERAEIMRGPVSVLYGKSSPGG
+LLNMVSKRPTTEPLKEVQFKAGTDSLFQTGFDFSDSLDDDGVYSYRLTGLARSANAQQKG
+SEEQRYAIAPAFTWRPDDKTNFTFLSYFQNEPETGYYGWLPKEGTVEPLPNGKRLPTDFN
+EGAKNNTYSRNEKMVGYSFDHEFNDTFTVRQNLRFAENKTSQNSVYGYGVCSDPANAYSK
+QCAALAPADKGHYLARKYVVDDEKLQNFSVDTQLQSKFATGDIDHTLLTGVDFMRMRNDI
+NAWFGYDDSVPLLNLYNPVNTDFDFNAKDPANSGPYRILNKQKQTGVYVQDQAQWDKVLV
+TLGGRYDWADQESLNRVAGTTDKRDDKQFTWRGGVNYLFDNGVTPYFSYSESFEPSSQVG
+KDGNIFAPSKGKQYEVGVKYVPEDRPIVVTGAVYNLTKTNNLMADPEGSFFSVEGGEIRA
+RGVEIEAKAALSASVNVVGSYTYTDAEYTTDTTYKGNTPAQVPKHMASLWADYTFFDGPL
+SGLTLGTGGRYTGSSYGDPANSFKVGSYTVVDALVRYDLARVGMAGSNVALHVNNLFDRE
+YVASCFNTYGCFWGAERQVVATATFRF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010925|Ferrichrome-iron receptor (fhuA)
+ATGGCGCGTTCCAAAACTGCTCAGCCAAAACACTCACTGCGTAAAATCGCAGTTGTAGTA
+GCCACAGCGGTTAGCGGCATGTCTGTTTATGCACAGGCAGCGGTTGAACCGAAAGAAGAC
+ACTATCACCGTTACCGCTGCACCTGCGCCGCAAGAAAGCGCATGGGGGCCTGCTGCAACT
+ATTGCGGCGCGACAGTCTGCTACCGGCACTAAAACCGATACGCCGATTCAAAAAGTGCCA
+CAGTCTATTTCTGTTGTGACCGCCGAAGAGATGGCGCTGCATCAGCCGAAGTCGGTAAAA
+GAAGCGCTTAGCTACACGCCGGGTGTCTCTGTTGGTACGCGTGGCGCATCCAACACCTAT
+GACCACCTGATCATTCGCGGCTTTGCGGCAGAAGGCCAAAGCCAGAATAACTATCTGAAT
+GGCCTGAAGTTGCAGGGCAACTTCTATAACGATGCGGTCATTGACCCGTATATGCTGGAA
+CGCGCTGAAATTATGCGTGGCCCGGTTTCCGTGCTTTACGGTAAAAGCAGTCCTGGCGGC
+CTGTTGAATATGGTCAGCAAGCGTCCGACCACCGAACCGCTGAAAGAAGTTCAGTTTAAA
+GCCGGTACTGACAGCCTGTTCCAGACTGGTTTTGACTTTAGCGATTCGTTGGATGATGAC
+GGTGTTTACTCTTATCGCCTGACCGGTCTTGCGCGTTCTGCCAATGCCCAGCAGAAAGGG
+TCAGAAGAGCAGCGTTATGCTATTGCACCGGCGTTCACCTGGCGTCCGGATGATAAAACC
+AATTTTACCTTCCTTTCTTACTTCCAGAACGAGCCGGAAACCGGTTATTACGGCTGGTTG
+CCGAAAGAGGGAACCGTTGAGCCGCTGCCGAACGGTAAGCGTCTGCCGACAGACTTTAAT
+GAAGGGGCGAAGAACAACACCTATTCTCGTAATGAGAAGATGGTCGGCTACAGCTTCGAT
+CACGAATTTAACGACACCTTTACTGTGCGTCAGAACCTGCGCTTTGCTGAAAACAAAACC
+TCGCAAAACAGCGTTTATGGTTACGGCGTCTGCTCCGATCCGGCGAATGCTTACAGCAAA
+CAGTGTGCGGCATTAGCGCCAGCGGATAAAGGCCATTATCTGGCACGTAAATACGTCGTT
+GATGATGAGAAGCTGCAAAACTTCTCCGTTGATACCCAGTTGCAGAGCAAGTTTGCCACT
+GGCGATATCGACCACACCCTGCTGACCGGTGTCGACTTTATGCGTATGCGTAATGACATC
+AACGCCTGGTTTGGTTACGACGACTCTGTGCCACTGCTCAATCTGTACAATCCGGTGAAT
+ACCGATTTCGACTTCAATGCCAAAGATCCGGCAAACTCCGGCCCTTACCGCATTCTGAAT
+AAACAGAAACAAACGGGCGTTTATGTTCAGGATCAGGCGCAGTGGGATAAAGTGCTGGTC
+ACCCTAGGCGGTCGTTATGACTGGGCAGATCAAGAATCTCTTAACCGCGTTGCCGGGACG
+ACCGATAAACGTGATGACAAACAGTTTACCTGGCGTGGTGGTGTTAACTACCTGTTTGAT
+AATGGTGTAACACCTTACTTCAGCTATAGCGAATCGTTTGAACCTTCTTCGCAAGTTGGG
+AAGGATGGTAATATTTTCGCACCGTCTAAAGGTAAGCAGTATGAAGTCGGCGTGAAATAT
+GTACCGGAAGATCGTCCGATTGTAGTTACTGGTGCCGTGTATAATCTCACTAAAACCAAC
+AACCTGATGGCGGACCCTGAGGGTTCCTTCTTCTCGGTTGAAGGTGGCGAGATCCGCGCA
+CGTGGCGTAGAAATCGAAGCGAAAGCGGCGCTGTCGGCGAGTGTTAACGTAGTCGGTTCT
+TATACTTACACCGATGCGGAATACACCACCGATACTACCTATAAAGGCAATACGCCTGCA
+CAGGTGCCAAAACACATGGCTTCGTTGTGGGCTGACTACACCTTCTTTGACGGTCCGCTT
+TCAGGTCTGACGCTGGGCACCGGTGGTCGTTATACTGGCTCCAGTTATGGTGATCCGGCT
+AACTCCTTTAAAGTGGGAAGTTATACGGTCGTGGATGCGTTAGTACGTTATGATCTGGCG
+CGAGTCGGCATGGCTGGCTCCAACGTGGCGCTGCATGTTAACAACCTGTTCGATCGTGAA
+TACGTCGCCAGCTGCTTTAACACTTATGGCTGCTTCTGGGGCGCAGAACGTCAGGTCGTT
+GCAACCGCAACCTTCCGTTTCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07715</identifier>
+            <name>Plug</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00593</identifier>
+            <name>TonB_dep_Rec</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cofactor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>toxic substance binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>virion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>iron ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>siderophore transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="1">
+      <id>BE0004172</id>
+      <name>Colicin I receptor</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P17315" source="Swiss-Prot">
+        <name>Colicin I receptor</name>
+        <general-function>Siderophore transmembrane transporter activity</general-function>
+        <specific-function>Not yet known. Postulated to participate in iron transport. Outer membrane receptor for colicins IA and IB.</specific-function>
+        <gene-name>cirA</gene-name>
+        <locus/>
+        <cellular-location>Cell outer membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>4.89</theoretical-pi>
+        <molecular-weight>73895.2</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J04229</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>145544</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P17315</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CIRA_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>cir</synonym>
+          <synonym>feuA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012904|Colicin I receptor
+MFRLNPFVRVGLCLSAISCAWPVLAVDDDGETMVVTASSVEQNLKDAPASISVITQEDLQ
+RKPVQNLKDVLKEVPGVQLTNEGDNRKGVSIRGLDSSYTLILVDGKRVNSRNAVFRHNDF
+DLNWIPVDSIERIEVVRGPMSSLYGSDALGGVVNIITKKIGQKWSGTVTVDTTIQEHRDR
+GDTYNGQFFTSGPLIDGVLGMKAYGSLAKREKDDPQNSTTTDTGETPRIEGFSSRDGNVE
+FAWTPNQNHDFTAGYGFDRQDRDSDSLDKNRLERQNYSVSHNGRWDYGTSELKYYGEKVE
+NKNPGNSSPITSESNTVDGKYTLPLTAINQFLTVGGEWRHDKLSDAVNLTGGTSSKTSAS
+QYALFVEDEWRIFEPLALTTGVRMDDHETYGEHWSPRAYLVYNATDTVTVKGGWATAFKA
+PSLLQLSPDWTSNSCRGACKIVGSPDLKPETSESWELGLYYMGEEGWLEGVESSVTVFRN
+DVKDRISISRTSDVNAAPGYQNFVGFETGANGRRIPVFSYYNVNKARIQGVETELKIPFN
+DEWKLSINYTYNDGRDVSNGENKPLSDLPFHTANGTLDWKPLALEDWSFYVSGHYTGQKR
+ADSATAKTPGGYTIWNTGAAWQVTKDVKLRAGVLNLGDKDLSRDDYSYNEDGRRYFMAVD
+YRF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012905|Colicin I receptor (cirA)
+ATGTTTAGGTTGAACCCTTTCGTACGGGTCGGGCTGTGTTTGTCCGCTATTTCTTGTGCA
+TGGCCTGTGTTAGCGGTCGATGATGATGGCGAAACGATGGTTGTCACTGCATCTTCCGTG
+GAACAAAATCTTAAAGATGCACCTGCCAGTATCAGCGTCATTACCCAGGAAGACCTGCAG
+CGAAAACCGGTACAGAATCTGAAGGATGTCCTCAAAGAAGTGCCTGGCGTACAACTGACG
+AACGAAGGGGATAACCGTAAGGGCGTTAGTATTCGTGGTCTGGACAGCAGCTATACCCTG
+ATTCTCGTCGACGGTAAACGCGTGAACTCCCGCAATGCCGTCTTCCGCCACAATGATTTC
+GATCTGAACTGGATCCCGGTCGATTCCATCGAACGTATTGAAGTGGTCCGTGGCCCGATG
+TCGTCGCTGTACGGTTCCGATGCGCTCGGCGGTGTAGTGAATATCATCACCAAAAAAATC
+GGTCAGAAATGGTCGGGTACCGTTACCGTCGATACCACCATTCAGGAACATCGCGATCGC
+GGTGACACCTATAACGGTCAGTTCTTTACCAGTGGACCATTAATTGATGGTGTGCTGGGA
+ATGAAAGCTTACGGCAGCCTGGCAAAACGTGAAAAGGATGACCCGCAAAACTCAACGACC
+ACCGATACCGGAGAAACGCCGCGTATTGAAGGATTCTCCAGCCGCGACGGCAATGTCGAA
+TTTGCCTGGACACCGAATCAAAATCACGATTTTACTGCCGGATACGGTTTCGACCGTCAG
+GATCGTGATTCCGACTCGCTGGACAAAAACCGCCTGGAACGCCAGAACTACTCCGTCAGC
+CATAATGGGCGTTGGGATTACGGCACCAGCGAACTGAAATACTACGGTGAGAAAGTCGAG
+AACAAAAACCCTGGCAACAGCAGCCCGATAACTTCCGAAAGCAATACGGTCGACGGCAAA
+TACACGTTGCCGCTGACGGCGATTAATCAGTTTCTCACGGTTGGCGGTGAATGGCGTCAC
+GACAAACTTAGCGATGCGGTGAACCTGACCGGGGGAACCAGCTCCAAAACGTCTGCCAGC
+CAGTACGCGCTGTTTGTGGAAGATGAATGGCGGATCTTCGAGCCGCTGGCGCTGACGACC
+GGCGTGCGTATGGACGATCACGAAACCTACGGTGAACACTGGAGTCCGCGTGCCTACCTG
+GTTTATAACGCCACCGACACCGTAACGGTGAAAGGGGGCTGGGCGACGGCATTTAAAGCA
+CCTTCTCTGTTGCAACTTAGCCCTGACTGGACGAGCAATTCCTGCCGTGGCGCATGTAAG
+ATTGTGGGTAGCCCGGATCTGAAACCAGAAACCAGCGAAAGTTGGGAGCTGGGGCTTTAC
+TACATGGGTGAAGAAGGCTGGCTGGAAGGGGTTGAATCCAGCGTTACCGTTTTCCGTAAC
+GATGTGAAAGATCGTATCAGCATCAGCCGTACGTCTGACGTCAACGCTGCACCGGGCTAC
+CAAAACTTTGTTGGTTTTGAGACGGGCGCTAACGGACGGCGCATACCGGTATTTAGCTAC
+TACAACGTTAACAAAGCTCGTATTCAGGGCGTGGAAACCGAACTGAAAATTCCGTTCAAC
+GATGAATGGAAACTGTCGATCAACTACACCTACAACGATGGTCGTGATGTCAGCAACGGC
+GAAAACAAACCGCTATCCGATCTGCCGTTCCATACTGCTAACGGTACGCTGGACTGGAAA
+CCGCTGGCGCTGGAAGACTGGTCATTCTATGTTTCTGGGCACTATACCGGGCAGAAACGC
+GCCGACAGCGCGACGGCTAAAACACCGGGCGGTTATACCATCTGGAATACCGGCGCGGCC
+TGGCAGGTGACTAAAGACGTCAAACTGCGCGCAGGCGTGCTGAACCTTGGCGACAAGGAT
+CTCAGTCGTGACGACTACAGCTATAACGAAGACGGACGTCGTTACTTTATGGCAGTGGAT
+TATCGCTTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07715</identifier>
+            <name>Plug</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00593</identifier>
+            <name>TonB_dep_Rec</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>colicin transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>siderophore transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bacteriocin transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>iron assimilation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>siderophore transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0003941</id>
+      <name>Outer membrane porin C</name>
+      <organism>Escherichia coli</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9K597" source="TrEMBL">
+        <name>Membrane protein</name>
+        <general-function>Porin activity</general-function>
+        <specific-function/>
+        <gene-name>ompC</gene-name>
+        <locus/>
+        <cellular-location>Cell outer membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-21</signal-regions>
+        <theoretical-pi>4.3</theoretical-pi>
+        <molecular-weight>40311.865</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="562">Escherichia coli</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>EU372012</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>166079762</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9K597</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q9K597_ECOLX</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Outer membrane porin C</synonym>
+          <synonym>Outer membrane protein C</synonym>
+          <synonym>Uncharacterized protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017274|Membrane protein
+MKVKVLSLLVPALLVAGAANAAEIYNKDGNKLDLYGKVDGLHYFSDNDSKDGDKTYMRLG
+FKGETQVTDQLTGYGQWEYQIQGNEPESDNSSWTRVAFAGLKFQDVGSFDYGRNYGVVYD
+VTSWTDVLPEFGGDTYDSDNFMQQRGNGFATYRNTDFFGLVDGLDFAVQYQGKNGSAHGE
+GMTTNGRDDVFEQNGDGVGGSITYNYEGFGIGAAVSSSKRTWDQNNTGLIGTGDRAETYT
+GGLKYDANNIYLAAQYTQTYNATRVGSLGWANKAQNFEAVAQYQFDFGLRPSLAYLQSKG
+KNLGRGYDDEDILKYVDVGATYYFNKNMSTYVDYKINLLDDNRFTRDAGINTDDIVALGL
+VYQF</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF00267</identifier>
+            <name>Porin_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>pore complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>porin activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

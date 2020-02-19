@@ -1,0 +1,2113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05210</drugbank-id>
+  <name>SF1126</name>
+  <description>SF1126 is an integrin-targeted PI3 kinase inhibitor.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of various forms of cancer.</indication>
+  <pharmacodynamics>SF1126 is a covalent conjugate of LY294002 that contains a peptide-based targeting group to help increase the localization of the drug in the neovascular component supporting tumor growth. SF1126 is a highly water soluble solid which aids its administration via i.v. or s.c. injections. In vivo it converts spontaneously at physiological pH to LY294002 in a way that is well tolerated in mice, rats, and dogs. SF1126 has been evaluated in numerous animal tumor models showing good tumor inhibition or tumor regression.</pharmacodynamics>
+  <mechanism-of-action>SF1126 is a small molecule conjugate containing a pan-PI3K inhibitor that selectively inhibits all PI3K class IA isoforms and other key members of the PI3K superfamily, including DNA-PK and mTOR. A major factor in tumor resistance to approved chemotherapy agents is thought to be the activation of the PI3K/PTEN pathway. As a result, it is thought that inhibiting this pathway, via SF1126, could cause the resetting of sensitivity to approved agents and exhibit synergistic anticancer effects.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Benzopyrans</category>
+      <mesh-id>D001578</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+    <category>
+      <category>Pyrans</category>
+      <mesh-id>D011714</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910028</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000955</id>
+      <name>Phosphatidylinositol 3-kinase regulatory subunit alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P27986" source="Swiss-Prot">
+        <name>Phosphatidylinositol 3-kinase regulatory subunit alpha</name>
+        <general-function>Transmembrane receptor protein tyrosine kinase adaptor activity</general-function>
+        <specific-function>Binds to activated (phosphorylated) protein-Tyr kinases, through its SH2 domain, and acts as an adapter, mediating the association of the p110 catalytic unit to the plasma membrane. Necessary for the insulin-stimulated increase in glucose uptake and glycogen synthesis in insulin-sensitive tissues. Plays an important role in signaling in response to FGFR1, FGFR2, FGFR3, FGFR4, KITLG/SCF, KIT, PDGFRA and PDGFRB. Likewise, plays a role in ITGB2 signaling (PubMed:17626883, PubMed:19805105, PubMed:7518429). Modulates the cellular response to ER stress by promoting nuclear translocation of XBP1 isoform 2 in a ER stress-and/or insulin-dependent manner during metabolic overloading in the liver and hence plays a role in glucose tolerance improvement (PubMed:20348923).</specific-function>
+        <gene-name>PIK3R1</gene-name>
+        <locus>5q13.1</locus>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.06</theoretical-pi>
+        <molecular-weight>83597.675</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8979</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PIK3R1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M61906</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P27986</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>P85A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GRB1</synonym>
+          <synonym>Phosphatidylinositol 3-kinase 85 kDa regulatory subunit alpha</synonym>
+          <synonym>PI3-kinase regulatory subunit alpha</synonym>
+          <synonym>PI3-kinase subunit p85-alpha</synonym>
+          <synonym>PtdIns-3-kinase regulatory subunit p85-alpha</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001901|Phosphatidylinositol 3-kinase regulatory subunit alpha
+MSAEGYQYRALYDYKKEREEDIDLHLGDILTVNKGSLVALGFSDGQEARPEEIGWLNGYN
+ETTGERGDFPGTYVEYIGRKKISPPTPKPRPPRPLPVAPGSSKTEADVEQQALTLPDLAE
+QFAPPDIAPPLLIKLVEAIEKKGLECSTLYRTQSSSNLAELRQLLDCDTPSVDLEMIDVH
+VLADAFKRYLLDLPNPVIPAAVYSEMISLAPEVQSSEEYIQLLKKLIRSPSIPHQYWLTL
+QYLLKHFFKLSQTSSKNLLNARVLSEIFSPMLFRFSAASSDNTENLIKVIEILISTEWNE
+RQPAPALPPKPPKPTTVANNGMNNNMSLQDAEWYWGDISREEVNEKLRDTADGTFLVRDA
+STKMHGDYTLTLRKGGNNKLIKIFHRDGKYGFSDPLTFSSVVELINHYRNESLAQYNPKL
+DVKLLYPVSKYQQDQVVKEDNIEAVGKKLHEYNTQFQEKSREYDRLYEEYTRTSQEIQMK
+RTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNEKEIQRIMHNYDKLKSRISEIID
+SRRRLEEDLKKQAAEYREIDKRMNSIKPDLIQLRKTRDQYLMWLTQKGVRQKKLNEWLGN
+ENTEDQYSLVEDDEDLPHHDEKTWNVGSSNRNKAENLLRGKRDGTFLVRESSKQGCYACS
+VVVDGEVKHCVINKTATGYGFAEPYNLYSSLKELVLHYQHTSLVQHNDSLNVTLAYPVYA
+QQRR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021657|Phosphatidylinositol 3-kinase regulatory subunit alpha (PIK3R1)
+ATGCATGGTGATTATACTCTTACACTAAGGAAAGGGGGAAATAACAAATTAATCAAAATA
+TTTCATCGAGATGGGAAATATGGCTTCTCTGACCCATTAACCTTCAGTTCTGTGGTTGAA
+TTAATAAACCACTACCGGAATGAATCTCTAGCTCAGTATAATCCCAAATTGGATGTGAAA
+TTACTTTATCCAGTATCCAAATACCAACAGGATCAAGTTGTCAAAGAAGATAATATTGAA
+GCTGTAGGGAAAAAATTACATGAATATAACACTCAGTTTCAAGAAAAAAGTCGAGAATAT
+GATAGATTATATGAAGAATATACCCGCACATCCCAGGAAATCCAAATGAAAAGGACAGCT
+ATTGAAGCATTTAATGAAACCATAAAAATATTTGAAGAACAGTGCCAGACCCAAGAGCGG
+TACAGCAAAGAATACATAGAAAAGTTTAAACGTGAAGGCAATGAGAAAGAAATACAAAGG
+ATTATGCATAATTATGATAAGTTGAAGTCTCGAATCAGTGAAATTATTGACAGTAGAAGA
+AGATTGGAAGAAGACTTGAAGAAGCAGGCAGCTGAGTATCGAGAAATTGACAAACGTATG
+AACAGCATTAAACCAGACCTTATCCAGCTGAGAAAGACGAGAGACCAATACTTGATGTGG
+TTGACTCAAAAAGGTGTTCGGCAAAAGAAGTTGAACGAGTGGTTGGGCAATGAAAACACT
+GAAGACCAATATTCACTGGTGGAAGATGATGAAGATTTGCCCCATCATGATGAGAAGACA
+TGGAATGTTGGAAGCAGCAACCGAAACAAAGCTGAAAACCTGTTGCGAGGGAAGCGAGAT
+GGCACTTTTCTTGTCCGGGAGAGCAGTAAACAGGGCTGCTATGCCTGCTCTGTAGTGGTG
+GACGGCGAAGTAAAGCATTGTGTCATAAACAAAACAGCAACTGGCTATGGCTTTGCCGAG
+CCCTATAACTTGTACAGCTCTCTGAAAGAACTGGTGCTACATTACCAACACACCTCCCTT
+GTGCAGCACAACGACTCCCTCAATGTCACACTAGCCTACCCAGTATATGCACAGCAGAGG
+CGATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00017</identifier>
+            <name>SH2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00620</identifier>
+            <name>RhoGAP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16454</identifier>
+            <name>PI3K_P85_iSH2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell-cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cis-Golgi network</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phosphatidylinositol 3-kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phosphatidylinositol 3-kinase complex, class IA</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-phosphatidylinositol-3-kinase regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ErbB-3 class receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>insulin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>insulin receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>insulin receptor substrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>insulin-like growth factor receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>neurotrophin TRKA receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol 3-kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol 3-kinase regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein phosphatase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane receptor protein tyrosine kinase adaptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to UV</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway via death domain receptors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-gamma receptor signaling pathway involved in phagocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>growth hormone receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin-like growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to DNA damage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell-matrix adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of osteoclast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>NFAT protein import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of endoplasmic reticulum unfolded protein response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of establishment of protein localization to plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glucose import</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glucose import in response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of RNA splicing</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription factor import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tumor necrosis factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein stabilization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of stress fiber assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell costimulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002383</id>
+      <name>Phosphatidylinositol 3-kinase regulatory subunit beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O00459" source="Swiss-Prot">
+        <name>Phosphatidylinositol 3-kinase regulatory subunit beta</name>
+        <general-function>Receptor tyrosine kinase binding</general-function>
+        <specific-function>Regulatory subunit of phosphoinositide-3-kinase (PI3K), a kinase that phosphorylates PtdIns(4,5)P2 (Phosphatidylinositol 4,5-bisphosphate) to generate phosphatidylinositol 3,4,5-trisphosphate (PIP3). PIP3 plays a key role by recruiting PH domain-containing proteins to the membrane, including AKT1 and PDPK1, activating signaling cascades involved in cell growth, survival, proliferation, motility and morphology. Binds to activated (phosphorylated) protein-tyrosine kinases, through its SH2 domain, and acts as an adapter, mediating the association of the p110 catalytic unit to the plasma membrane. Indirectly regulates autophagy (PubMed:23604317). Promotes nuclear translocation of XBP1 isoform 2 in a ER stress- and/or insulin-dependent manner during metabolic overloading in the liver and hence plays a role in glucose tolerance improvement (By similarity).</specific-function>
+        <gene-name>PIK3R2</gene-name>
+        <locus>19q13.2-q13.4</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.48</theoretical-pi>
+        <molecular-weight>81544.505</molecular-weight>
+        <chromosome-location>19</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8980</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PIK3R2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X80907</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O00459</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>P85B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Phosphatidylinositol 3-kinase 85 kDa regulatory subunit beta</synonym>
+          <synonym>PI3-kinase regulatory subunit beta</synonym>
+          <synonym>PI3-kinase subunit p85-beta</synonym>
+          <synonym>PtdIns-3-kinase regulatory subunit p85-beta</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019276|Phosphatidylinositol 3-kinase regulatory subunit beta
+MAGPEGFQYRALYPFRRERPEDLELLPGDVLVVSRAALQALGVAEGGERCPQSVGWMPGL
+NERTRQRGDFPGTYVEFLGPVALARPGPRPRGPRPLPARPRDGAPEPGLTLPDLPEQFSP
+PDVAPPLLVKLVEAIERTGLDSESHYRPELPAPRTDWSLSDVDQWDTAALADGIKSFLLA
+LPAPLVTPEASAEARRALREAAGPVGPALEPPTLPLHRALTLRFLLQHLGRVASRAPALG
+PAVRALGATFGPLLLRAPPPPSSPPPGGAPDGSEPSPDFPALLVEKLLQEHLEEQEVAPP
+ALPPKPPKAKPASTVLANGGSPPSLQDAEWYWGDISREEVNEKLRDTPDGTFLVRDASSK
+IQGEYTLTLRKGGNNKLIKVFHRDGHYGFSEPLTFCSVVDLINHYRHESLAQYNAKLDTR
+LLYPVSKYQQDQIVKEDSVEAVGAQLKVYHQQYQDKSREYDQLYEEYTRTSQELQMKRTA
+IEAFNETIKIFEEQGQTQEKCSKEYLERFRREGNEKEMQRILLNSERLKSRIAEIHESRT
+KLEQQLRAQASDNREIDKRMNSLKPDLMQLRKIRDQYLVWLTQKGARQKKINEWLGIKNE
+TEDQYALMEDEDDLPHHEERTWYVGKINRTQAEEMLSGKRDGTFLIRESSQRGCYACSVV
+VDGDTKHCVIYRTATGFGFAEPYNLYGSLKELVLHYQHASLVQHNDALTVTLAHPVRAPG
+PGPPPAAR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019277|Phosphatidylinositol 3-kinase regulatory subunit beta (PIK3R2)
+ATGGCGGGCCCTGAGGGCTTCCAGTACCGCGCTCTGTACCCGTTCCGCCGGGAGCGGCCG
+GAGGACCTGGAGCTGCTGCCCGGCGACGTGCTGGTAGTGAGCCGGGCGGCCTTGCAGGCG
+CTGGGCGTGGCCGAGGGTGGCGAGCGCTGCCCACAGAGCGTGGGCTGGATGCCCGGCCTC
+AACGAGCGCACACGGCAGCGAGGTGACTTCCCTGGCACCTATGTGGAGTTCCTGGGGCCC
+GTGGCCCTGGCCCGGCCCGGCCCTCGCCCACGGGGCCCCCGCCCACTGCCCGCCAGGCCC
+CGTGATGGGGCCCCTGAGCCAGGCCTCACACTCCCCGACTTGCCCGAGCAGTTCTCCCCA
+CCTGATGTGGCTCCCCCTCTTCTGGTGAAGCTTGTGGAGGCCATTGAAAGGACAGGGCTG
+GACAGCGAATCTCACTACCGCCCGGAGCTGCCCGCACCGCGTACAGACTGGTCCCTGAGC
+GACGTGGATCAGTGGGACACGGCAGCCCTGGCTGACGGCATTAAGAGCTTCCTGCTGGCA
+CTGCCCGCGCCGCTCGTGACCCCCGAGGCCTCGGCCGAGGCGCGCCGGGCCCTGCGGGAG
+GCCGCGGGGCCCGTGGGGCCGGCGCTGGAGCCACCGACGCTGCCGCTGCACCGCGCGCTC
+ACGCTGCGCTTCCTGCTCCAGCACCTGGGCCGCGTGGCCCGCCGCGCCCCGGCCCTGGGT
+CCCGCGGTCCGGGCCCTGGGCGCCACCTTTGGGCCGCTGCTGCTGCGCGCGCCGCCGCCG
+CCGTCCTCGCCGCCGCCAGGGGGCGCTCCCGACGGGAGTGAGCCCAGCCCTGACTTCCCG
+GCGCTGCTGGTGGAGAAGCTGCTTCAGGAACACTTGGAAGAGCAGGAGGTTGCGCCCCCA
+GCGCTGCCGCCTAAACCCCCCAAGGCAAAGCCGGCCCCCACAGTCCTGGCCAATGGAGGG
+AGCCCACCCTCCCTGCAGGATGCTGAGTGGTACTGGGGGGACATTTCAAGGGAGGAGGTG
+AACGAGAAACTCCGGGACACTCCCGATGGCACCTTCCTAGTCCGAGATGCTTCTAGCAAG
+ATCCAGGGCGAGTACACGCTGACCCTCAGGAAAGGCGGGAACAATAAGCTGATCAAGGTC
+TTCCACCGAGATGGGCACTATGGCTTCTCAGAGCCACTCACCTTCTGCTCCGTTGTGGAC
+CTCATCAATCACTACCGCCACGAGTCTCTGGCCCAGTACAATGCCAAGCTGGACACACGG
+CTCCTCTACCCTGTGTCCAAATACCAGCAGGACCAGATTGTCAAGGAGGACAGCGTGGAG
+GCAGTGGGCGCCCAGCTTAAGGTCTATCACCAGCAGTACCAGGACAAGAGCCGCGAGTAT
+GACCAGCTTTATGAAGAGTACACACGGACCTCCCAGGAGCTGCAGATGAAGCGTACTGCA
+ATTGAGGCCTTCAATGAGACTATCAAGATCTTTGAAGAGCAGGGCCAGACTCAAGAGAAA
+TGCAGCAAGGAATACCTGGAGCGCTTCCGGCGTGAGGGCAACGAGAAAGAGATGCAAAGG
+ATCCTGCTGAACTCCGAGCGGCTCAAGTCCCGCATTGCCGAGATCCATGAGAGCCGCACG
+AAGCTGGAGCAGCAGCTGCGGGCCCAGGCCTCGGACAACAGAGAGATCGACAAGCGCATG
+AACAGCCTCAAGCCGGACCTCATGCAGCTGCGCAAGATCCGAGACCAGTACCTCGTGTGG
+CTCACCCAGAAAGGCGCCCGGCAGAAGAAAATCAACGAGTGGCTGGGGATTAAAAATGAG
+ACTGAGGACCAGTACGCACTCATGGAGGACGAGGACGATCTCCCGCACCACGAGGAACGC
+ACTTGGTACGTGGGCAAGATCAACCGCACGCAGGCAGAGGAGATGCTGAGTGGCAAGCGG
+GATGGCACCTTCCTCATCCGCGAGAGCAGCCAGCGGGGCTGCTACGCCTGCTCCGTGGTA
+GTGGACGGCGACACCAAGCACTGCGTCATCTACCGCACGGCCACCGGCTTCGGCTTCGCG
+GAGCCCTACAACCTGTACGGGTCGCTGAAGGAGCTGGTGCTGCACTACCAGCACGCCTCG
+CTGGTGCAGCACAACGACGCGCTCACCGTCACCCTGGCGCACCCAGTGCGCGCCCCGGGC
+CCCGGCCCGCCGCCTGCCGCCCGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00017</identifier>
+            <name>SH2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00620</identifier>
+            <name>RhoGAP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16454</identifier>
+            <name>PI3K_P85_iSH2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phosphatidylinositol 3-kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-phosphatidylinositol-3-kinase regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein phosphatase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor tyrosine kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-gamma receptor signaling pathway involved in phagocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-3-phosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glucose import in response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription factor import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of autophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002384</id>
+      <name>Phosphatidylinositol 3-kinase regulatory subunit gamma</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q92569" source="Swiss-Prot">
+        <name>Phosphatidylinositol 3-kinase regulatory subunit gamma</name>
+        <general-function>1-phosphatidylinositol-3-kinase regulator activity</general-function>
+        <specific-function>Binds to activated (phosphorylated) protein-tyrosine kinases through its SH2 domain and regulates their kinase activity. During insulin stimulation, it also binds to IRS-1.</specific-function>
+        <gene-name>PIK3R3</gene-name>
+        <locus>1p34.1</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.02</theoretical-pi>
+        <molecular-weight>54448.0</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8981</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PIK3R3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D88532</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q92569</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>P55G_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>p55PIK</synonym>
+          <synonym>Phosphatidylinositol 3-kinase 55 kDa regulatory subunit gamma</synonym>
+          <synonym>PI3-kinase regulatory subunit gamma</synonym>
+          <synonym>PI3-kinase subunit p55-gamma</synonym>
+          <synonym>PtdIns-3-kinase regulatory subunit p55-gamma</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037200|Phosphatidylinositol 3-kinase regulatory subunit gamma
+MYNTVWSMDRDDADWREVMMPYSTELIFYIEMDPPALPPKPPKPMTSAVPNGMKDSSVSL
+QDAEWYWGDISREEVNDKLRDMPDGTFLVRDASTKMQGDYTLTLRKGGNNKLIKIYHRDG
+KYGFSDPLTFNSVVELINHYHHESLAQYNPKLDVKLMYPVSRYQQDQLVKEDNIDAVGKK
+LQEYHSQYQEKSKEYDRLYEEYTRTSQEIQMKRTAIEAFNETIKIFEEQCHTQEQHSKEY
+IERFRREGNEKEIERIMMNYDKLKSRLGEIHDSKMRLEQDLKNQALDNREIDKKMNSIKP
+DLIQLRKIRDQHLVWLNHKGVRQKRLNVWLGIKNEDADENYFINEEDENLPHYDEKTWFV
+EDINRVQAEDLLYGKPDGAFLIRESSKKGCYACSVVADGEVKHCVIYSTARGYGFAEPYN
+LYSSLKELVLHYQQTSLVQHNDSLNVRLAYPVHAQMPSLCR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011710|Phosphatidylinositol 3-kinase regulatory subunit gamma (PIK3R3)
+ATGTACAATACGGTGTGGAGTATGGACCGCGATGACGCAGACTGGAGGGAGGTGATGATG
+CCCTATTCGACAGAACTGATATTTTATATTGAAATGGATCCTCCAGCTCTTCCACCAAAG
+CCACCTAAGCCAATGACTTCAGCAGTTCCAAATGGAATGAAGGACAGTTCTGTTTCTCTT
+CAGGATGCAGAATGGTACTGGGGGGATATTTCAAGGGAGGAGGTAAATGACAAATTGCGG
+GATATGCCAGATGGGACCTTCTTGGTCCGAGATGCCTCAACAAAAATGCAGGGAGATTAT
+ACTTTGACTTTGCGGAAGGGAGGCAATAATAAGTTAATAAAGATCTATCACCGGGATGGT
+AAATATGGCTTTTCTGATCCTCTGACATTTAATTCCGTGGTGGAGCTCATTAACCACTAT
+CACCATGAATCTCTTGCTCAGTACAATCCCAAACTTGATGTGAAGCTGATGTACCCAGTG
+TCCAGATACCAACAGGATCAGTTGGTAAAAGAAGATAATATTGATGCAGTAGGTAAAAAA
+CTGCAAGAATACCACTCTCAGTATCAGGAGAAGAGTAAAGAGTATGATAGGCTGTATGAA
+GAATATACTAGAACATCCCAGGAAATACAGATGAAGAGGACTGCAATAGAAGCTTTTAAT
+GAAACAATTAAAATATTTGAAGAGCAGTGTCACACACAAGAACAACATAGCAAAGAATAT
+ATTGAGCGATTTCGCAGAGAGGGGAATGAAAAGGAGATTGAACGAATTATGATGAATTAT
+GATAAATTGAAATCACGTCTGGGTGAGATTCATGATAGCAAAATGCGTCTAGAGCAGGAT
+TTGAAGAATCAAGCTTTGGACAACCGAGAAATAGATAAAAAAATGAATAGCATCAAACCT
+GACCTGATCCAGCTGCGAAAGATCCGAGATCAACACCTTGTATGGCTCAATCACAAAGGA
+GTGAGACAGAAACGCCTGAATGTCTGGCTGGGAATTAAGAATGAGGATGCTGATGAGAAC
+TATTTTATCAATGAGGAAGATGAAAACCTGCCCCATTATGATGAGAAAACCTGGTTTGTT
+GAGGATATCAATCGAGTACAAGCAGAGGACTTGCTTTATGGGAAACCTGATGGTGCATTC
+TTAATTCGTGAGAGTAGCAAGAAAGGATGCTATGCTTGCTCTGTGGTGGCCGATGGGGAA
+GTGAAGCACTGTGTGATCTACAGCACTGCTCGGGGCTATGGCTTTGCAGAGCCCTACAAC
+CTGTACAGCTCTCTGAAGGAGCTAGTGCTCCATTACCAGCAGACATCCTTGGTTCAGCAC
+AACGACTCCCTCAACGTCAGGCTTGCCTACCCTGTTCATGCACAGATGCCCTCGCTTTGC
+AGATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00017</identifier>
+            <name>SH2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16454</identifier>
+            <name>PI3K_P85_iSH2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phosphatidylinositol 3-kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-phosphatidylinositol-3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-phosphatidylinositol-3-kinase regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-3-phosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glucose import in response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002385</id>
+      <name>DNA-dependent protein kinase catalytic subunit</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P78527" source="Swiss-Prot">
+        <name>DNA-dependent protein kinase catalytic subunit</name>
+        <general-function>Transcription factor binding</general-function>
+        <specific-function>Serine/threonine-protein kinase that acts as a molecular sensor for DNA damage. Involved in DNA non-homologous end joining (NHEJ) required for double-strand break (DSB) repair and V(D)J recombination. Must be bound to DNA to express its catalytic properties. Promotes processing of hairpin DNA structures in V(D)J recombination by activation of the hairpin endonuclease artemis (DCLRE1C). The assembly of the DNA-PK complex at DNA ends is also required for the NHEJ ligation step. Required to protect and align broken ends of DNA. May also act as a scaffold protein to aid the localization of DNA repair proteins to the site of damage. Found at the ends of chromosomes, suggesting a further role in the maintenance of telomeric stability and the prevention of chromosomal end fusion. Also involved in modulation of transcription. Recognizes the substrate consensus sequence [ST]-Q. Phosphorylates 'Ser-139' of histone variant H2AX/H2AFX, thereby regulating DNA damage response mechanism. Phosphorylates DCLRE1C, c-Abl/ABL1, histone H1, HSPCA, c-jun/JUN, p53/TP53, PARP1, POU2F1, DHX9, SRF, XRCC1, XRCC1, XRCC4, XRCC5, XRCC6, WRN, MYC and RFA2. Can phosphorylate C1D not only in the presence of linear DNA but also in the presence of supercoiled DNA. Ability to phosphorylate p53/TP53 in the presence of supercoiled DNA is dependent on C1D. Contributes to the determination of the circadian period length by antagonizing phosphorylation of CRY1 'Ser-588' and increasing CRY1 protein stability, most likely through an indirect machanism. Interacts with CRY1 and CRY2; negatively regulates CRY1 phosphorylation.</specific-function>
+        <gene-name>PRKDC</gene-name>
+        <locus>8q11</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.12</theoretical-pi>
+        <molecular-weight>469084.155</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9413</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PRKDC</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U47077</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2800</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P78527</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PRKDC_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.1</synonym>
+          <synonym>DNA-PK catalytic subunit</synonym>
+          <synonym>DNPK1</synonym>
+          <synonym>HYRC</synonym>
+          <synonym>HYRC1</synonym>
+          <synonym>p460</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004685|DNA-dependent protein kinase catalytic subunit
+MAGSGAGVRCSLLRLQETLSAADRCGAALAGHQLIRGLGQECVLSSSPAVLALQTSLVFS
+RDFGLLVFVRKSLNSIEFRECREEILKFLCIFLEKMGQKIAPYSVEIKNTCTSVYTKDRA
+AKCKIPALDLLIKLLQTFRSSRLMDEFKIGELFSKFYGELALKKKIPDTVLEKVYELLGL
+LGEVHPSEMINNAENLFRAFLGELKTQMTSAVREPKLPVLAGCLKGLSSLLCNFTKSMEE
+DPQTSREIFNFVLKAIRPQIDLKRYAVPSAGLRLFALHASQFSTCLLDNYVSLFEVLLKW
+CAHTNVELKKAALSALESFLKQVSNMVAKNAEMHKNKLQYFMEQFYGIIRNVDSNNKELS
+IAIRGYGLFAGPCKVINAKDVDFMYVELIQRCKQMFLTQTDTGDDRVYQMPSFLQSVASV
+LLYLDTVPEVYTPVLEHLVVMQIDSFPQYSPKMQLVCCRAIVKVFLALAAKGPVLRNCIS
+TVVHQGLIRICSKPVVLPKGPESESEDHRASGEVRTGKWKVPTYKDYVDLFRHLLSSDQM
+MDSILADEAFFSVNSSSESLNHLLYDEFVKSVLKIVEKLDLTLEIQTVGEQENGDEAPGV
+WMIPTSDPAANLHPAKPKDFSAFINLVEFCREILPEKQAEFFEPWVYSFSYELILQSTRL
+PLISGFYKLLSITVRNAKKIKYFEGVSPKSLKHSPEDPEKYSCFALFVKFGKEVAVKMKQ
+YKDELLASCLTFLLSLPHNIIELDVRAYVPALQMAFKLGLSYTPLAEVGLNALEEWSIYI
+DRHVMQPYYKDILPCLDGYLKTSALSDETKNNWEVSALSRAAQKGFNKVVLKHLKKTKNL
+SSNEAISLEEIRIRVVQMLGSLGGQINKNLLTVTSSDEMMKSYVAWDREKRLSFAVPFRE
+MKPVIFLDVFLPRVTELALTASDRQTKVAACELLHSMVMFMLGKATQMPEGGQGAPPMYQ
+LYKRTFPVLLRLACDVDQVTRQLYEPLVMQLIHWFTNNKKFESQDTVALLEAILDGIVDP
+VDSTLRDFCGRCIREFLKWSIKQITPQQQEKSPVNTKSLFKRLYSLALHPNAFKRLGASL
+AFNNIYREFREEESLVEQFVFEALVIYMESLALAHADEKSLGTIQQCCDAIDHLCRIIEK
+KHVSLNKAKKRRLPRGFPPSASLCLLDLVKWLLAHCGRPQTECRHKSIELFYKFVPLLPG
+NRSPNLWLKDVLKEEGVSFLINTFEGGGCGQPSGILAQPTLLYLRGPFSLQATLCWLDLL
+LAALECYNTFIGERTVGALQVLGTEAQSSLLKAVAFFLESIAMHDIIAAEKCFGTGAAGN
+RTSPQEGERYNYSKCTVVVRIMEFTTTLLNTSPEGWKLLKKDLCNTHLMRVLVQTLCEPA
+SIGFNIGDVQVMAHLPDVCVNLMKALKMSPYKDILETHLREKITAQSIEELCAVNLYGPD
+AQVDRSRLAAVVSACKQLHRAGLLHNILPSQSTDLHHSVGTELLSLVYKGIAPGDERQCL
+PSLDLSCKQLASGLLELAFAFGGLCERLVSLLLNPAVLSTASLGSSQGSVIHFSHGEYFY
+SLFSETINTELLKNLDLAVLELMQSSVDNTKMVSAVLNGMLDQSFRERANQKHQGLKLAT
+TILQHWKKCDSWWAKDSPLETKMAVLALLAKILQIDSSVSFNTSHGSFPEVFTTYISLLA
+DTKLDLHLKGQAVTLLPFFTSLTGGSLEELRRVLEQLIVAHFPMQSREFPPGTPRFNNYV
+DCMKKFLDALELSQSPMLLELMTEVLCREQQHVMEELFQSSFRRIARRGSCVTQVGLLES
+VYEMFRKDDPRLSFTRQSFVDRSLLTLLWHCSLDALREFFSTIVVDAIDVLKSRFTKLNE
+STFDTQITKKMGYYKILDVMYSRLPKDDVHAKESKINQVFHGSCITEGNELTKTLIKLCY
+DAFTENMAGENQLLERRRLYHCAAYNCAISVICCVFNELKFYQGFLFSEKPEKNLLIFEN
+LIDLKRRYNFPVEVEVPMERKKKYIEIRKEAREAANGDSDGPSYMSSLSYLADSTLSEEM
+SQFDFSTGVQSYSYSSQDPRPATGRFRRREQRDPTVHDDVLELEMDELNRHECMAPLTAL
+VKHMHRSLGPPQGEEDSVPRDLPSWMKFLHGKLGNPIVPLNIRLFLAKLVINTEEVFRPY
+AKHWLSPLLQLAASENNGGEGIHYMVVEIVATILSWTGLATPTGVPKDEVLANRLLNFLM
+KHVFHPKRAVFRHNLEIIKTLVECWKDCLSIPYRLIFEKFSGKDPNSKDNSVGIQLLGIV
+MANDLPPYDPQCGIQSSEYFQALVNNMSFVRYKEVYAAAAEVLGLILRYVMERKNILEES
+LCELVAKQLKQHQNTMEDKFIVCLNKVTKSFPPLADRFMNAVFFLLPKFHGVLKTLCLEV
+VLCRVEGMTELYFQLKSKDFVQVMRHRDDERQKVCLDIIYKMMPKLKPVELRELLNPVVE
+FVSHPSTTCREQMYNILMWIHDNYRDPESETDNDSQEIFKLAKDVLIQGLIDENPGLQLI
+IRNFWSHETRLPSNTLDRLLALNSLYSPKIEVHFLSLATNFLLEMTSMSPDYPNPMFEHP
+LSECEFQEYTIDSDWRFRSTVLTPMFVETQASQGTLQTRTQEGSLSARWPVAGQIRATQQ
+QHDFTLTQTADGRSSFDWLTGSSTDPLVDHTSPSSDSLLFAHKRSERLQRAPLKSVGPDF
+GKKRLGLPGDEVDNKVKGAAGRTDLLRLRRRFMRDQEKLSLMYARKGVAEQKREKEIKSE
+LKMKQDAQVVLYRSYRHGDLPDIQIKHSSLITPLQAVAQRDPIIAKQLFSSLFSGILKEM
+DKFKTLSEKNNITQKLLQDFNRFLNTTFSFFPPFVSCIQDISCQHAALLSLDPAAVSAGC
+LASLQQPVGIRLLEEALLRLLPAELPAKRVRGKARLPPDVLRWVELAKLYRSIGEYDVLR
+GIFTSEIGTKQITQSALLAEARSDYSEAAKQYDEALNKQDWVDGEPTEAEKDFWELASLD
+CYNHLAEWKSLEYCSTASIDSENPPDLNKIWSEPFYQETYLPYMIRSKLKLLLQGEADQS
+LLTFIDKAMHGELQKAILELHYSQELSLLYLLQDDVDRAKYYIQNGIQSFMQNYSSIDVL
+LHQSRLTKLQSVQALTEIQEFISFISKQGNLSSQVPLKRLLNTWTNRYPDAKMDPMNIWD
+DIITNRCFFLSKIEEKLTPLPEDNSMNVDQDGDPSDRMEVQEQEEDISSLIRSCKFSMKM
+KMIDSARKQNNFSLAMKLLKELHKESKTRDDWLVSWVQSYCRLSHCRSRSQGCSEQVLTV
+LKTVSLLDENNVSSYLSKNILAFRDQNILLGTTYRIIANALSSEPACLAEIEEDKARRIL
+ELSGSSSEDSEKVIAGLYQRAFQHLSEAVQAAEEEAQPPSWSCGPAAGVIDAYMTLADFC
+DQQLRKEEENASVIDSAELQAYPALVVEKMLKALKLNSNEARLKFPRLLQIIERYPEETL
+SLMTKEISSVPCWQFISWISHMVALLDKDQAVAVQHSVEEITDNYPQAIVYPFIISSESY
+SFKDTSTGHKNKEFVARIKSKLDQGGVIQDFINALDQLSNPELLFKDWSNDVRAELAKTP
+VNKKNIEKMYERMYAALGDPKAPGLGAFRRKFIQTFGKEFDKHFGKGGSKLLRMKLSDFN
+DITNMLLLKMNKDSKPPGNLKECSPWMSDFKVEFLRNELEIPGQYDGRGKPLPEYHVRIA
+GFDERVTVMASLRRPKRIIIRGHDEREHPFLVKGGEDLRQDQRVEQLFQVMNGILAQDSA
+CSQRALQLRTYSVVPMTSRLGLIEWLENTVTLKDLLLNTMSQEEKAAYLSDPRAPPCEYK
+DWLTKMSGKHDVGAYMLMYKGANRTETVTSFRKRESKVPADLLKRAFVRMSTSPEAFLAL
+RSHFASSHALICISHWILGIGDRHLNNFMVAMETGGVIGIDFGHAFGSATQFLPVPELMP
+FRLTRQFINLMLPMKETGLMYSIMVHALRAFRSDPGLLTNTMDVFVKEPSFDWKNFEQKM
+LKKGGSWIQEINVAEKNWYPRQKICYAKRKLAGANPAVITCDELLLGHEKAPAFRDYVAV
+ARGSKDHNIRAQEPESGLSEETQVKCLMDQATDPNILGRTWEGWEPWM</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016774|DNA-dependent protein kinase catalytic subunit (PRKDC)
+ATGGCGGGCTCCGGAGCCGGTGTGCGTTGCTCCCTGCTGCGGCTGCAGGAGACCTTGTCC
+GCTGCGGACCGCTGCGGTGCTGCCCTGGCCGGTCATCAACTGATCCGCGGCCTGGGGCAG
+GAATGCGTCCTGAGCAGCAGCCCCGCGGTGCTGGCATTACAGACATCTTTAGTTTTTTCC
+AGAGATTTCGGTTTGCTTGTATTTGTCCGGAAGTCACTCAACAGTATTGAATTTCGTGAA
+TGTAGAGAAGAAATCCTAAAGTTTTTATGTATTTTCTTAGAAAAAATGGGCCAGAAGATC
+GCACCTTACTCTGTTGAAATTAAGAACACTTGTACCAGTGTTTATACAAAAGATAGAGCT
+GCTAAATGTAAAATTCCAGCCCTGGACCTTCTTATTAAGTTACTTCAGACTTTTAGAAGT
+TCTAGACTCATGGATGAATTTAAAATTGGAGAATTATTTAGTAAATTCTATGGAGAACTT
+GCATTGAAAAAAAAAATACCAGATACAGTTTTAGAAAAAGTATATGAGCTCCTAGGATTA
+TTGGGTGAAGTTCATCCTAGTGAGATGATAAATAATGCAGAAAACCTGTTCCGCGCTTTT
+CTGGGTGAACTTAAGACCCAGATGACATCAGCAGTAAGAGAGCCCAAACTACCTGTTCTG
+GCAGGATGTCTGAAGGGGTTGTCCTCACTTCTGTGCAACTTCACTAAGTCCATGGAAGAA
+GATCCCCAGACTTCAAGGGAGATTTTTAATTTTGTACTAAAGGCAATTCGTCCTCAGATT
+GATCTGAAGAGATATGCTGTGCCCTCAGCTGGCTTGCGCCTATTTGCCCTGCATGCATCT
+CAGTTTAGCACCTGCCTTCTGGACAACTACGTGTCTCTATTTGAAGTCTTGTTAAAGTGG
+TGTGCCCACACAAATGTAGAATTGAAAAAAGCTGCACTTTCAGCCCTGGAATCCTTTCTG
+AAACAGGTTTCTAATATGGTGGCGAAAAATGCAGAAATGCATAAAAATAAACTGCAGTAC
+TTTATGGAGCAGTTTTATGGAATCATCAGAAATGTGGATTCGAACAACAAGGAGTTATCT
+ATTGCTATCCGTGGATATGGACTTTTTGCAGGACCGTGCAAGGTTATAAACGCAAAAGAT
+GTTGACTTCATGTACGTTGAGCTCATTCAGCGCTGCAAGCAGATGTTCCTCACCCAGACA
+GACACTGGTGACGACCGTGTTTATCAGATGCCAAGCTTCCTCCAGTCTGTTGCAAGCGTC
+TTGCTGTACCTTGACACAGTTCCTGAGGTGTATACTCCAGTTCTGGAGCACCTCGTGGTG
+ATGCAGATAGACAGTTTCCCACAGTACAGTCCAAAAATGCAGCTGGTGTGTTGCAGAGCC
+ATAGTGAAGGTGTTCCTAGCTTTGGCAGCAAAAGGGCCAGTTCTCAGGAATTGCATTAGT
+ACTGTGGTGCATCAGGGTTTAATCAGAATATGTTCTAAACCAGTGGTCCTTCCAAAGGGC
+CCTGAGTCTGAATCTGAAGACCACCGTGCTTCAGGGGAAGTCAGAACTGGCAAATGGAAG
+GTGCCCACATACAAAGACTACGTGGATCTCTTCAGACATCTCCTGAGCTCTGACCAGATG
+ATGGATTCTATTTTAGCAGATGAAGCATTTTTCTCTGTGAATTCCTCCAGTGAAAGTCTG
+AATCATTTACTTTATGATGAATTTGTAAAATCCGTTTTGAAGATTGTTGAGAAATTGGAT
+CTTACACTTGAAATACAGACTGTTGGGGAACAAGAGAATGGAGATGAGGCGCCTGGTGTT
+TGGATGATCCCAACTTCAGATCCAGCGGCTAACTTGCATCCAGCTAAACCTAAAGATTTT
+TCGGCTTTCATTAACCTGGTGGAATTTTGCAGAGAGATTCTCCCTGAGAAACAAGCAGAA
+TTTTTTGAACCATGGGTGTACTCATTTTCATATGAATTAATTTTGCAATCTACAAGGTTG
+CCCCTCATCAGTGGTTTCTACAAATTGCTTTCTATTACAGTAAGAAATGCCAAGAAAATA
+AAATATTTCGAGGGAGTTAGTCCAAAGAGTCTGAAACACTCTCCTGAAGACCCAGAAAAG
+TATTCTTGCTTTGCTTTATTTGTGAAATTTGGCAAAGAGGTGGCAGTTAAAATGAAGCAG
+TACAAAGATGAACTTTTGGCCTCTTGTTTGACCTTTCTTCTGTCCTTGCCACACAACATC
+ATTGAACTCGATGTTAGAGCCTACGTTCCTGCACTGCAGATGGCTTTCAAACTGGGCCTG
+AGCTATACCCCCTTGGCAGAAGTAGGCCTGAATGCTCTAGAAGAATGGTCAATTTATATT
+GACAGACATGTAATGCAGCCTTATTACAAAGACATTCTCCCCTGCCTGGATGGATACCTG
+AAGACTTCAGCCTTGTCAGATGAGACCAAGAATAACTGGGAAGTGTCAGCTCTTTCTCGG
+GCTGCCCAGAAAGGATTTAATAAAGTGGTGTTAAAGCATCTGAAGAAGACAAAGAACCTT
+TCATCAAACGAAGCAATATCCTTAGAAGAAATAAGAATTAGAGTAGTACAAATGCTTGGA
+TCTCTAGGAGGACAAATAAACAAAAATCTTCTGACAGTCACGTCCTCAGATGAGATGATG
+AAGAGCTATGTGGCCTGGGACAGAGAGAAGCGGCTGAGCTTTGCAGTGCCCTTTAGAGAG
+ATGAAACCTGTCATTTTCCTGGATGTGTTCCTGCCTCGAGTCACAGAATTAGCGCTCACA
+GCCAGTGACAGACAAACTAAAGTTGCAGCCTGTGAACTTTTACATAGCATGGTTATGTTT
+ATGTTGGGCAAAGCCACGCAGATGCCAGAAGGGGGACAGGGAGCCCCACCCATGTACCAG
+CTCTATAAGCGGACGTTTCCTGTGCTGCTTCGACTTGCGTGTGATGTTGATCAGGTGACA
+AGGCAACTGTATGAGCCACTAGTTATGCAGCTGATTCACTGGTTCACTAACAACAAGAAA
+TTTGAAAGTCAGGATACTGTTGCCTTACTAGAAGCTATATTGGATGGAATTGTGGACCCT
+GTTGACAGTACTTTAAGAGATTTTTGTGGTCGGTGTATTCGAGAATTCCTTAAATGGTCC
+ATTAAGCAAATAACACCACAGCAGCAGGAGAAGAGTCCAGTAAACACCAAATCGCTTTTC
+AAGCGACTTTATAGCCTTGCGCTTCACCCCAATGCTTTCAAGAGGCTGGGAGCATCACTT
+GCCTTTAATAATATCTACAGGGAATTCAGGGAAGAAGAGTCTCTGGTGGAACAGTTTGTG
+TTTGAAGCCTTGGTGATATACATGGAGAGTCTGGCCTTAGCACATGCAGATGAGAAGTCC
+TTAGGTACAATTCAACAGTGTTGTGATGCCATTGATCACCTATGCCGCATCATTGAAAAG
+AAGCATGTTTCTTTAAATAAAGCAAAGAAACGACGTTTGCCGCGAGGATTTCCACCTTCC
+GCATCATTGTGTTTATTGGATCTGGTCAAGTGGCTTTTAGCTCATTGTGGGAGGCCCCAG
+ACAGAATGTCGACACAAATCCATTGAACTCTTTTATAAATTCGTTCCTTTATTGCCAGGC
+AACAGATCCCCTAATTTGTGGCTGAAAGATGTTCTCAAGGAAGAAGGTGTCTCTTTTCTC
+ATCAACACCTTTGAGGGGGGTGGCTGTGGCCAGCCCTCGGGCATCCTGGCCCAGCCCACC
+CTCTTGTACCTTCGGGGGCCATTCAGCCTGCAGGCCACGCTATGCTGGCTGGACCTGCTC
+CTGGCCGCGTTGGAGTGCTACAACACGTTCATTGGCGAGAGAACTGTAGGAGCGCTCCAG
+GTCCTAGGTACTGAAGCCCAGTCTTCACTTTTGAAAGCAGTGGCTTTCTTCTTAGAAAGC
+ATTGCCATGCATGACATTATAGCAGCAGAAAAGTGCTTTGGCACTGGGGCAGCAGGTAAC
+AGAACAAGCCCACAAGAGGGAGAAAGGTACAACTACAGCAAATGCACCGTTGTGGTCCGG
+ATTATGGAGTTTACCACGACTCTGCTAAACACCTCCCCGGAAGGATGGAAGCTCCTGAAG
+AAGGACTTGTGTAATACACACCTGATGAGAGTCCTGGTGCAGACGCTGTGTGAGCCCGCA
+AGCATAGGTTTCAACATCGGAGACGTCCAGGTTATGGCTCATCTTCCTGATGTTTGTGTG
+AATCTGATGAAAGCTCTAAAGATGTCCCCATACAAAGATATCCTAGAGACCCATCTGAGA
+GAGAAAATAACAGCACAGAGCATTGAGGAGCTTTGTGCCGTCAACTTGTATGGCCCTGAC
+GCGCAAGTGGACAGGAGCAGGCTGGCTGCTGTTGTGTCTGCCTGTAAACAGCTTCACAGA
+GCTGGGCTTCTGCATAATATATTACCGTCTCAGTCCACAGATTTGCATCATTCTGTTGGC
+ACAGAACTTCTTTCCCTGGTTTATAAAGGCATTGCCCCTGGAGATGAGAGACAGTGTCTG
+CCTTCTCTAGACCTCAGTTGTAAGCAGCTGGCCAGCGGACTTCTGGAGTTAGCCTTTGCT
+TTTGGAGGACTGTGTGAGCGCCTTGTGAGTCTTCTCCTGAACCCAGCGGTGCTGTCCACG
+GCGTCCTTGGGCAGCTCACAGGGCAGCGTCATCCACTTCTCCCATGGGGAGTATTTCTAT
+AGCTTGTTCTCAGAAACGATCAACACGGAATTATTGAAAAATCTGGATCTTGCTGTATTG
+GAGCTCATGCAGTCTTCAGTGGATAATACCAAAATGGTGAGTGCCGTTTTGAACGGCATG
+TTAGACCAGAGCTTCAGGGAGCGAGCAAACCAGAAACACCAAGGACTGAAACTTGCGACT
+ACAATTCTGCAACACTGGAAGAAGTGTGATTCATGGTGGGCCAAAGATTCCCCTCTCGAA
+ACTAAAATGGCAGTGCTGGCCTTACTGGCAAAAATTTTACAGATTGATTCATCTGTATCT
+TTTAATACAAGTCATGGTTCATTCCCTGAAGTCTTTACAACATATATTAGTCTACTTGCT
+GACACAAAGCTGGATCTACATTTAAAGGGCCAAGCTGTCACTCTTCTTCCATTCTTCACC
+AGCCTCACTGGAGGCAGTCTGGAGGAACTTAGACGTGTTCTGGAGCAGCTCATCGTTGCT
+CACTTCCCCATGCAGTCCAGGGAATTTCCTCCAGGAACTCCGCGGTTCAATAATTATGTG
+GACTGCATGAAAAAGTTTCTAGATGCATTGGAATTATCTCAAAGCCCTATGTTGTTGGAA
+TTGATGACAGAAGTTCTTTGTCGGGAACAGCAGCATGTCATGGAAGAATTATTTCAATCC
+AGTTTCAGGAGGATTGCCAGAAGGGGTTCATGTGTCACACAAGTAGGCCTTCTGGAAAGC
+GTGTATGAAATGTTCAGGAAGGATGACCCCCGCCTAAGTTTCACACGCCAGTCCTTTGTG
+GACCGCTCCCTCCTCACTCTGCTGTGGCACTGTAGCCTGGATGCTTTGAGAGAATTCTTC
+AGCACAATTGTGGTGGATGCCATTGATGTGTTGAAGTCCAGGTTTACAAAGCTAAATGAA
+TCTACCTTTGATACTCAAATCACCAAGAAGATGGGCTACTATAAGATTCTAGACGTGATG
+TATTCTCGCCTTCCCAAAGATGATGTTCATGCTAAGGAATCAAAAATTAATCAAGTTTTC
+CATGGCTCGTGTATTACAGAAGGAAATGAACTTACAAAGACATTGATTAAATTGTGCTAC
+GATGCATTTACAGAGAACATGGCAGGAGAGAATCAGCTGCTGGAGAGGAGAAGACTTTAC
+CATTGTGCAGCATACAACTGCGCCATATCTGTCATCTGCTGTGTCTTCAATGAGTTAAAA
+TTTTACCAAGGTTTTCTGTTTAGTGAAAAACCAGAAAAGAACTTGCTTATTTTTGAAAAT
+CTGATCGACCTGAAGCGCCGCTATAATTTTCCTGTAGAAGTTGAGGTTCCTATGGAAAGA
+AAGAAAAAGTACATTGAAATTAGGAAAGAAGCCAGAGAAGCAGCAAATGGGGATTCAGAT
+GGTCCTTCCTATATGTCTTCCCTGTCATATTTGGCAGACAGTACCCTGAGTGAGGAAATG
+AGTCAATTTGATTTCTCAACCGGAGTTCAGAGCTATTCATACAGCTCCCAAGACCCTAGA
+CCTGCCACTGGTCGTTTTCGGAGACGGGAGCAGCGGGACCCCACGGTGCATGATGATGTG
+CTGGAGCTGGAGATGGACGAGCTCAATCGGCATGAGTGCATGGCGCCCCTGACGGCCCTG
+GTCAAGCACATGCACAGAAGCCTGGGCCCGCCTCAAGGAGAAGAGGATTCAGTGCCAAGA
+GATCTTCCTTCTTGGATGAAATTCCTCCATGGCAAACTGGGAAATCCAATAGTACCATTA
+AATATCCGTCTCTTCTTAGCCAAGCTTGTTATTAATACAGAAGAGGTCTTTCGCCCTTAC
+GCGAAGCACTGGCTTAGCCCCTTGCTGCAGCTGGCTGCTTCTGAAAACAATGGAGGAGAA
+GGAATTCACTACATGGTGGTTGAGATAGTGGCCACTATTCTTTCATGGACAGGCTTGGCC
+ACTCCAACAGGGGTCCCTAAAGATGAAGTGTTAGCAAATCGATTGCTTAATTTCCTAATG
+AAACATGTCTTTCATCCAAAAAGAGCTGTGTTTAGACACAACCTTGAAATTATAAAGACC
+CTTGTCGAGTGCTGGAAGGATTGTTTATCCATCCCTTATAGGTTAATATTTGAAAAGTTT
+TCCGGTAAAGATCCTAATTCTAAAGACAACTCAGTAGGGATTCAATTGCTAGGCATCGTG
+ATGGCCAATGACCTGCCTCCCTATGACCCACAGTGTGGCATCCAGAGTAGCGAATACTTC
+CAGGCTTTGGTGAATAATATGTCCTTTGTAAGATATAAAGAAGTGTATGCCGCTGCAGCA
+GAAGTTCTAGGACTTATACTTCGATATGTTATGGAGAGAAAAAACATACTGGAGGAGTCT
+CTGTGTGAACTGGTTGCGAAACAATTGAAGCAACATCAGAATACTATGGAGGACAAGTTT
+ATTGTGTGCTTGAACAAAGTGACCAAGAGCTTCCCTCCTCTTGCAGACAGGTTCATGAAT
+GCTGTGTTCTTTCTGCTGCCAAAATTTCATGGAGTGTTGAAAACACTCTGTCTGGAGGTG
+GTACTTTGTCGTGTGGAGGGAATGACAGAGCTGTACTTCCAGTTAAAGAGCAAGGACTTC
+GTTCAAGTCATGAGACATAGAGATGATGAAAGACAAAAAGTATGTTTGGACATAATTTAT
+AAGATGATGCCAAAGTTAAAACCAGTAGAACTCCGAGAACTTCTGAACCCCGTTGTGGAA
+TTCGTTTCCCATCCTTCTACAACATGTAGGGAACAAATGTATAATATTCTCATGTGGATT
+CATGATAATTACAGAGATCCAGAAAGTGAGACAGATAATGACTCCCAGGAAATATTTAAG
+TTGGCAAAAGATGTGCTGATTCAAGGATTGATCGATGAGAACCCTGGACTTCAATTAATT
+ATTCGAAATTTCTGGAGCCATGAAACTAGGTTACCTTCAAATACCTTGGACCGGTTGCTG
+GCACTAAATTCCTTATATTCTCCTAAGATAGAAGTGCACTTTTTAAGTTTAGCAACAAAT
+TTTCTGCTCGAAATGACCAGCATGAGCCCAGATTATCCAAACCCCATGTTCGAGCATCCT
+CTGTCAGAATGCGAATTTCAGGAATATACCATTGATTCTGATTGGCGTTTCCGAAGTACT
+GTTCTCACTCCGATGTTTGTGGAGACCCAGGCCTCCCAGGGCACTCTCCAGACCCGTACC
+CAGGAAGGGTCCCTCTCAGCTCGCTGGCCAGTGGCAGGGCAGATAAGGGCCACCCAGCAG
+CAGCATGACTTCACACTGACACAGACTGCAGATGGAAGAAGCTCATTTGATTGGCTGACC
+GGGAGCAGCACTGACCCGCTGGTCGACCACACCAGTCCCTCATCTGACTCCTTGCTGTTT
+GCCCACAAGAGGAGTGAAAGGTTACAGAGAGCACCCTTGAAGTCAGTGGGGCCTGATTTT
+GGGAAAAAAAGGCTGGGCCTTCCAGGGGACGAGGTGGATAACAAAGTGAAAGGTGCGGCC
+GGCCGGACGGACCTACTACGACTGCGCAGACGGTTTATGAGGGACCAGGAGAAGCTCAGT
+TTGATGTATGCCAGAAAAGGCGTTGCTGAGCAAAAACGAGAGAAGGAAATCAAGAGTGAG
+TTAAAAATGAAGCAGGATGCCCAGGTCGTTCTGTACAGAAGCTACCGGCACGGAGACCTT
+CCTGACATTCAGATCAAGCACAGCAGCCTCATCACCCCGTTACAGGCCGTGGCCCAGAGG
+GACCCAATAATTGCAAAACAGCTCTTTAGCAGCTTGTTTTCTGGAATTTTGAAAGAGATG
+GATAAATTTAAGACACTGTCTGAAAAAAACAACATCACTCAAAAGTTGCTTCAAGACTTC
+AATCGTTTTCTTAATACCACCTTCTCTTTCTTTCCACCCTTTGTCTCTTGTATTCAGGAC
+ATTAGCTGTCAGCACGCAGCCCTGCTGAGCCTCGACCCAGCGGCTGTTAGCGCTGGTTGC
+CTGGCCAGCCTACAGCAGCCCGTGGGCATCCGCCTGCTAGAGGAGGCTCTGCTCCGCCTG
+CTGCCTGCTGAGCTGCCTGCCAAGCGAGTCCGTGGGAAGGCCCGCCTCCCTCCTGATGTC
+CTCAGATGGGTGGAGCTTGCTAAGCTGTATAGATCAATTGGAGAATACGACGTCCTCCGT
+GGGATTTTTACCAGTGAGATAGGAACAAAGCAAATCACTCAGAGTGCATTATTAGCAGAA
+GCCAGAAGTGATTATTCTGAAGCTGCTAAGCAGTATGATGAGGCTCTCAATAAACAAGAC
+TGGGTAGATGGTGAGCCCACAGAAGCCGAGAAGGATTTTTGGGAACTTGCATCCCTTGAC
+TGTTACAACCACCTTGCTGAGTGGAAATCACTTGAATACTGTTCTACAGCCAGTATAGAC
+AGTGAGAACCCCCCAGACCTAAATAAAATCTGGAGTGAACCATTTTATCAGGAAACATAT
+CTACCTTACATGATCCGCAGCAAGCTGAAGCTGCTGCTCCAGGGAGAGGCTGACCAGTCC
+CTGCTGACATTTATTGACAAAGCTATGCACGGGGAGCTCCAGAAGGCGATTCTAGAGCTT
+CATTACAGTCAAGAGCTGAGTCTGCTTTACCTCCTGCAAGATGATGTTGACAGAGCCAAA
+TATTACATTCAAAATGGCATTCAGAGTTTTATGCAGAATTATTCTAGTATTGATGTCCTC
+TTACACCAAAGTAGACTCACCAAATTGCAGTCTGTACAGGCTTTAACAGAAATTCAGGAG
+TTCATCAGCTTTATAAGCAAACAAGGCAATTTATCATCTCAAGTTCCCCTTAAGAGACTT
+CTGAACACCTGGACAAACAGATATCCAGATGCTAAAATGGACCCAATGAACATCTGGGAT
+GACATCATCACAAATCGATGTTTCTTTCTCAGCAAAATAGAGGAGAAGCTTACCCCTCTT
+CCAGAAGATAATAGTATGAATGTGGATCAAGATGGAGACCCCAGTGACAGGATGGAAGTG
+CAAGAGCAGGAAGAAGATATCAGCTCCCTGATCAGGAGTTGCAAGTTTTCCATGAAAATG
+AAGATGATAGACAGTGCCCGGAAGCAGAACAATTTCTCACTTGCTATGAAACTACTGAAG
+GAGCTGCATAAAGAGTCAAAAACCAGAGACGATTGGCTGGTGAGCTGGGTGCAGAGCTAC
+TGCCGCCTGAGCCACTGCCGGAGCCGGTCCCAGGGCTGCTCTGAGCAGGTGCTCACTGTG
+CTGAAAACAGTCTCTTTGTTGGATGAGAACAACGTGTCAAGCTACTTAAGCAAAAATATT
+CTGGCTTTCCGTGACCAGAACATTCTCTTGGGTACAACTTACAGGATCATAGCGAATGCT
+CTCAGCAGTGAGCCAGCCTGCCTTGCTGAAATCGAGGAGGACAAGGCTAGAAGAATCTTA
+GAGCTTTCTGGATCCAGTTCAGAGGATTCAGAGAAGGTGATCGCGGGTCTGTACCAGAGA
+GCATTCCAGCACCTCTCTGAGGCTGTGCAGGCGGCTGAGGAGGAGGCCCAGCCTCCCTCC
+TGGAGCTGTGGGCCTGCAGCTGGGGTGATTGATGCTTACATGACGCTGGCAGATTTCTGT
+GACCAACAGCTGCGCAAGGAGGAAGAGAATGCATCAGTTATTGATTCTGCAGAACTGCAG
+GCGTATCCAGCACTTGTGGTGGAGAAAATGTTGAAAGCTTTAAAATTAAATTCCAATGAA
+GCCAGATTGAAGTTTCCTAGATTACTTCAGATTATAGAACGGTATCCAGAGGAGACTTTG
+AGCCTCATGACAAAAGAGATCTCTTCCGTTCCCTGCTGGCAGTTCATCAGCTGGATCAGC
+CACATGGTGGCCTTACTGGACAAAGACCAAGCCGTTGCTGTTCAGCACTCTGTGGAAGAA
+ATCACTGATAACTACCCGCAGGCTATTGTTTATCCCTTCATCATAAGCAGCGAAAGCTAT
+TCCTTCAAGGATACTTCTACTGGTCATAAGAATAAGGAGTTTGTGGCAAGGATTAAAAGT
+AAGTTGGATCAAGGAGGAGTGATTCAAGATTTTATTAATGCCTTAGATCAGCTCTCTAAT
+CCTGAACTGCTCTTTAAGGATTGGAGCAATGATGTAAGAGCTGAACTAGCAAAAACCCCT
+GTAAATAAAAAAAACATTGAAAAAATGTATGAAAGAATGTATGCAGCCTTGGGTGACCCA
+AAGGCTCCAGGCCTGGGGGCCTTTAGAAGGAAGTTTATTCAGACTTTTGGAAAAGAATTT
+GATAAACATTTTGGGAAAGGAGGTTCTAAACTACTGAGAATGAAGCTCAGTGACTTCAAC
+GACATTACCAACATGCTACTTTTAAAAATGAACAAAGACTCAAAGCCCCCTGGGAATCTG
+AAAGAATGTTCACCCTGGATGAGCGACTTCAAAGTGGAGTTCCTGAGAAATGAGCTGGAG
+ATTCCCGGTCAGTATGACGGTAGGGGAAAGCCATTGCCAGAGTACCACGTGCGAATCGCC
+GGGTTTGATGAGCGGGTGACAGTCATGGCGTCTCTGCGAAGGCCCAAGCGCATCATCATC
+CGTGGCCATGACGAGAGGGAACACCCTTTCCTGGTGAAGGGTGGCGAGGACCTGCGGCAG
+GACCAGCGCGTGGAGCAGCTCTTCCAGGTCATGAATGGGATCCTGGCCCAAGACTCCGCC
+TGCAGCCAGAGGGCCCTGCAGCTGAGGACCTATAGCGTTGTGCCCATGACCTCCAGTGAT
+CCCAGGGCACCGCCGTGTGAATATAAAGATTGGCTGACAAAAATGTCAGGAAAACATGAT
+GTTGGAGCTTACATGCTAATGTATAAGGGCGCTAATCGTACTGAAACAGTCACGTCTTTT
+AGAAAACGAGAAAGTAAAGTGCCTGCTGATCTCTTAAAGCGGGCCTTCGTGAGGATGAGT
+ACAAGCCCTGAGGCTTTCCTGGCGCTCCGCTCCCACTTCGCCAGCTCTCACGCTCTGATA
+TGCATCAGCCACTGGATCCTCGGGATTGGAGACAGACATCTGAACAACTTTATGGTGGCC
+ATGGAGACTGGCGGCGTGATCGGGATCGACTTTGGGCATGCGTTTGGATCCGCTACACAG
+TTTCTGCCAGTCCCTGAGTTGATGCCTTTTCGGCTAACTCGCCAGTTTATCAATCTGATG
+TTACCAATGAAAGAAACGGGCCTTATGTACAGCATCATGGTACACGCACTCCGGGCCTTC
+CGCTCAGACCCTGGCCTGCTCACCAACACCATGGATGTGTTTGTCAAGGAGCCCTCCTTT
+GATTGGAAAAATTTTGAACAGAAAATGCTGAAAAAAGGAGGGTCATGGATTCAAGAAATA
+AATGTTGCTGAAAAAAATTGGTACCCCCGACAGAAAATATGTTACGCTAAGAGAAAGTTA
+GCAGGTGCCAATCCAGCAGTCATTACTTGTGATGAGCTACTCCTGGGTCATGAGAAGGCC
+CCTGCCTTCAGAGACTATGTGGCTGTGGCACGAGGAAGCAAAGATCACAACATTCGTGCC
+CAAGAACCAGAGAGTGGGCTTTCAGAAGAGACTCAAGTGAAGTGCCTGATGGACCAGGCA
+ACAGACCCCAACATCCTTGGCAGAACCTGGGAAGGATGGGAGCCCTGGATGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00454</identifier>
+            <name>PI3_PI4_kinase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02259</identifier>
+            <name>FAT</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02260</identifier>
+            <name>FATC</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08163</identifier>
+            <name>NUC194</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>DNA-dependent protein kinase-DNA ligase 4 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nonhomologous end joining complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear chromosome, telomeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>transcription factor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA-dependent protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>double-stranded DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brain development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein modification process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair via homologous recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair via nonhomologous end joining</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ectopic germ cell programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immunoglobulin V(D)J recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to DNA damage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cellular senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of immunoglobulin production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of response to gamma radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-serine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of developmental growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fibroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of immune system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of type I interferon production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pro-B cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein destabilization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to gamma radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhythmic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction involved in mitotic G1 DNA damage checkpoint</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>somitogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spleen development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell differentiation in thymus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell receptor V(D)J recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>telomere maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>thymus development</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002386</id>
+      <name>Serine/threonine-protein kinase mTOR</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P42345" source="Swiss-Prot">
+        <name>Serine/threonine-protein kinase mTOR</name>
+        <general-function>Tfiiic-class transcription factor binding</general-function>
+        <specific-function>Serine/threonine protein kinase which is a central regulator of cellular metabolism, growth and survival in response to hormones, growth factors, nutrients, energy and stress signals. MTOR directly or indirectly regulates the phosphorylation of at least 800 proteins. Functions as part of 2 structurally and functionally distinct signaling complexes mTORC1 and mTORC2 (mTOR complex 1 and 2). Activated mTORC1 up-regulates protein synthesis by phosphorylating key regulators of mRNA translation and ribosome synthesis. This includes phosphorylation of EIF4EBP1 and release of its inhibition toward the elongation initiation factor 4E (eiF4E). Moreover, phosphorylates and activates RPS6KB1 and RPS6KB2 that promote protein synthesis by modulating the activity of their downstream targets including ribosomal protein S6, eukaryotic translation initiation factor EIF4B, and the inhibitor of translation initiation PDCD4. Stimulates the pyrimidine biosynthesis pathway, both by acute regulation through RPS6KB1-mediated phosphorylation of the biosynthetic enzyme CAD, and delayed regulation, through transcriptional enhancement of the pentose phosphate pathway which produces 5-phosphoribosyl-1-pyrophosphate (PRPP), an allosteric activator of CAD at a later step in synthesis, this function is dependent on the mTORC1 complex. Regulates ribosome synthesis by activating RNA polymerase III-dependent transcription through phosphorylation and inhibition of MAF1 an RNA polymerase III-repressor. In parallel to protein synthesis, also regulates lipid synthesis through SREBF1/SREBP1 and LPIN1. To maintain energy homeostasis mTORC1 may also regulate mitochondrial biogenesis through regulation of PPARGC1A. mTORC1 also negatively regulates autophagy through phosphorylation of ULK1. Under nutrient sufficiency, phosphorylates ULK1 at 'Ser-758', disrupting the interaction with AMPK and preventing activation of ULK1. Also prevents autophagy through phosphorylation of the autophagy inhibitor DAP. mTORC1 exerts a feedback control on upstream growth factor signaling that includes phosphorylation and activation of GRB10 a INSR-dependent signaling suppressor. Among other potential targets mTORC1 may phosphorylate CLIP1 and regulate microtubules. As part of the mTORC2 complex MTOR may regulate other cellular processes including survival and organization of the cytoskeleton. Plays a critical role in the phosphorylation at 'Ser-473' of AKT1, a pro-survival effector of phosphoinositide 3-kinase, facilitating its activation by PDK1. mTORC2 may regulate the actin cytoskeleton, through phosphorylation of PRKCA, PXN and activation of the Rho-type guanine nucleotide exchange factors RHOA and RAC1A or RAC1B. mTORC2 also regulates the phosphorylation of SGK1 at 'Ser-422'. Regulates osteoclastogensis by adjusting the expression of CEBPB isoforms (By similarity).</specific-function>
+        <gene-name>MTOR</gene-name>
+        <locus>1p36.2</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.17</theoretical-pi>
+        <molecular-weight>288889.05</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3942</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>FRAP1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L34075</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2109</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P42345</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MTOR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.1</synonym>
+          <synonym>FK506-binding protein 12-rapamycin complex-associated protein 1</synonym>
+          <synonym>FKBP12-rapamycin complex-associated protein</synonym>
+          <synonym>FRAP</synonym>
+          <synonym>FRAP1</synonym>
+          <synonym>FRAP2</synonym>
+          <synonym>Mammalian target of rapamycin</synonym>
+          <synonym>Mechanistic target of rapamycin</synonym>
+          <synonym>mTOR</synonym>
+          <synonym>RAFT1</synonym>
+          <synonym>Rapamycin and FKBP12 target 1</synonym>
+          <synonym>Rapamycin target protein 1</synonym>
+          <synonym>RAPT1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004687|Serine/threonine-protein kinase mTOR
+MLGTGPAAATTAATTSSNVSVLQQFASGLKSRNEETRAKAAKELQHYVTMELREMSQEES
+TRFYDQLNHHIFELVSSSDANERKGGILAIASLIGVEGGNATRIGRFANYLRNLLPSNDP
+VVMEMASKAIGRLAMAGDTFTAEYVEFEVKRALEWLGADRNEGRRHAAVLVLRELAISVP
+TFFFQQVQPFFDNIFVAVWDPKQAIREGAVAALRACLILTTQREPKEMQKPQWYRHTFEE
+AEKGFDETLAKEKGMNRDDRIHGALLILNELVRISSMEGERLREEMEEITQQQLVHDKYC
+KDLMGFGTKPRHITPFTSFQAVQPQQSNALVGLLGYSSHQGLMGFGTSPSPAKSTLVESR
+CCRDLMEEKFDQVCQWVLKCRNSKNSLIQMTILNLLPRLAAFRPSAFTDTQYLQDTMNHV
+LSCVKKEKERTAAFQALGLLSVAVRSEFKVYLPRVLDIIRAALPPKDFAHKRQKAMQVDA
+TVFTCISMLARAMGPGIQQDIKELLEPMLAVGLSPALTAVLYDLSRQIPQLKKDIQDGLL
+KMLSLVLMHKPLRHPGMPKGLAHQLASPGLTTLPEASDVGSITLALRTLGSFEFEGHSLT
+QFVRHCADHFLNSEHKEIRMEAARTCSRLLTPSIHLISGHAHVVSQTAVQVVADVLSKLL
+VVGITDPDPDIRYCVLASLDERFDAHLAQAENLQALFVALNDQVFEIRELAICTVGRLSS
+MNPAFVMPFLRKMLIQILTELEHSGIGRIKEQSARMLGHLVSNAPRLIRPYMEPILKALI
+LKLKDPDPDPNPGVINNVLATIGELAQVSGLEMRKWVDELFIIIMDMLQDSSLLAKRQVA
+LWTLGQLVASTGYVVEPYRKYPTLLEVLLNFLKTEQNQGTRREAIRVLGLLGALDPYKHK
+VNIGMIDQSRDASAVSLSESKSSQDSSDYSTSEMLVNMGNLPLDEFYPAVSMVALMRIFR
+DQSLSHHHTMVVQAITFIFKSLGLKCVQFLPQVMPTFLNVIRVCDGAIREFLFQQLGMLV
+SFVKSHIRPYMDEIVTLMREFWVMNTSIQSTIILLIEQIVVALGGEFKLYLPQLIPHMLR
+VFMHDNSPGRIVSIKLLAAIQLFGANLDDYLHLLLPPIVKLFDAPEAPLPSRKAALETVD
+RLTESLDFTDYASRIIHPIVRTLDQSPELRSTAMDTLSSLVFQLGKKYQIFIPMVNKVLV
+RHRINHQRYDVLICRIVKGYTLADEEEDPLIYQHRMLRSGQGDALASGPVETGPMKKLHV
+STINLQKAWGAARRVSKDDWLEWLRRLSLELLKDSSSPSLRSCWALAQAYNPMARDLFNA
+AFVSCWSELNEDQQDELIRSIELALTSQDIAEVTQTLLNLAEFMEHSDKGPLPLRDDNGI
+VLLGERAAKCRAYAKALHYKELEFQKGPTPAILESLISINNKLQQPEAAAGVLEYAMKHF
+GELEIQATWYEKLHEWEDALVAYDKKMDTNKDDPELMLGRMRCLEALGEWGQLHQQCCEK
+WTLVNDETQAKMARMAAAAAWGLGQWDSMEEYTCMIPRDTHDGAFYRAVLALHQDLFSLA
+QQCIDKARDLLDAELTAMAGESYSRAYGAMVSCHMLSELEEVIQYKLVPERREIIRQIWW
+ERLQGCQRIVEDWQKILMVRSLVVSPHEDMRTWLKYASLCGKSGRLALAHKTLVLLLGVD
+PSRQLDHPLPTVHPQVTYAYMKNMWKSARKIDAFQHMQHFVQTMQQQAQHAIATEDQQHK
+QELHKLMARCFLKLGEWQLNLQGINESTIPKVLQYYSAATEHDRSWYKAWHAWAVMNFEA
+VLHYKHQNQARDEKKKLRHASGANITNATTAATTAATATTTASTEGSNSESEAESTENSP
+TPSPLQKKVTEDLSKTLLMYTVPAVQGFFRSISLSRGNNLQDTLRVLTLWFDYGHWPDVN
+EALVEGVKAIQIDTWLQVIPQLIARIDTPRPLVGRLIHQLLTDIGRYHPQALIYPLTVAS
+KSTTTARHNAANKILKNMCEHSNTLVQQAMMVSEELIRVAILWHEMWHEGLEEASRLYFG
+ERNVKGMFEVLEPLHAMMERGPQTLKETSFNQAYGRDLMEAQEWCRKYMKSGNVKDLTQA
+WDLYYHVFRRISKQLPQLTSLELQYVSPKLLMCRDLELAVPGTYDPNQPIIRIQSIAPSL
+QVITSKQRPRKLTLMGSNGHEFVFLLKGHEDLRQDERVMQLFGLVNTLLANDPTSLRKNL
+SIQRYAVIPLSTNSGLIGWVPHCDTLHALIRDYREKKKILLNIEHRIMLRMAPDYDHLTL
+MQKVEVFEHAVNNTAGDDLAKLLWLKSPSSEVWFDRRTNYTRSLAVMSMVGYILGLGDRH
+PSNLMLDRLSGKILHIDFGDCFEVAMTREKFPEKIPFRLTRMLTNAMEVTGLDGNYRITC
+HTVMEVLREHKDSVMAVLEAFVYDPLLNWRLMDTNTKGNKRSRTRTDSYSAGQSVEILDG
+VELGEPAHKKTGTTVPESIHSFIGDGLVKPEALNKKAIQIINRVRDKLTGRDFSHDDTLD
+VPTQVELLIKQATSHENLCQCYIGWCPFW</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011711|Serine/threonine-protein kinase mTOR (MTOR)
+ATGCTTGGAACCGGACCTGCCGCCGCCACCACCGCTGCCACCACATCTAGCAATGTGAGC
+GTCCTGCAGCAGTTTGCCAGTGGCCTAAAGAGCCGGAATGAGGAAACCAGGGCCAAAGCC
+GCCAAGGAGCTCCAGCACTATGTCACCATGGAACTCCGAGAGATGAGTCAAGAGGAGTCT
+ACTCGCTTCTATGACCAACTGAACCATCACATTTTTGAATTGGTTTCCAGCTCAGATGCC
+AATGAGAGGAAAGGTGGCATCTTGGCCATAGCTAGCCTCATAGGAGTGGAAGGTGGGAAT
+GCCACCCGAATTGGCAGATTTGCCAACTATCTTCGGAACCTCCTCCCCTCCAATGACCCA
+GTTGTCATGGAAATGGCATCCAAGGCCATTGGCCGTCTTGCCATGGCAGGGGACACTTTT
+ACCGCTGAGTACGTGGAATTTGAGGTGAAGCGAGCCCTGGAATGGCTGGGTGCTGACCGC
+AATGAGGGCCGGAGACATGCAGCTGTCCTGGTTCTCCGTGAGCTGGCCATCAGCGTCCCT
+ACCTTCTTCTTCCAGCAAGTGCAACCCTTCTTTGACAACATTTTTGTGGCCGTGTGGGAC
+CCCAAACAGGCCATCCGTGAGGGAGCTGTAGCCGCCCTTCGTGCCTGTCTGATTCTCACA
+ACCCAGCGTGAGCCGAAGGAGATGCAGAAGCCTCAGTGGTACAGGCACACATTTGAAGAA
+GCAGAGAAGGGATTTGATGAGACCTTGGCCAAAGAGAAGGGCATGAATCGGGATGATCGG
+ATCCATGGAGCCTTGTTGATCCTTAACGAGCTGGTCCGAATCAGCAGCATGGAGGGAGAG
+CGTCTGAGAGAAGAAATGGAAGAAATCACACAGCAGCAGCTGGTACACGACAAGTACTGC
+AAAGATCTCATGGGCTTCGGAACAAAACCTCGTCACATTACCCCCTTCACCAGTTTCCAG
+GCTGTACAGCCCCAGCAGTCAAATGCCTTGGTGGGGCTGCTGGGGTACAGCTCTCACCAA
+GGCCTCATGGGATTTGGGACCTCCCCCAGTCCAGCTAAGTCCACCCTGGTGGAGAGCCGG
+TGTTGCAGAGACTTGATGGAGGAGAAATTTGATCAGGTGTGCCAGTGGGTGCTGAAATGC
+AGGAATAGCAAGAACTCGCTGATCCAAATGACAATCCTTAATTTGTTGCCCCGCTTGGCT
+GCATTCCGACCTTCTGCCTTCACAGATACCCAGTATCTCCAAGATACCATGAACCATGTC
+CTAAGCTGTGTCAAGAAGGAGAAGGAACGTACAGCGGCCTTCCAAGCCCTGGGGCTACTT
+TCTGTGGCTGTGAGGTCTGAGTTTAAGGTCTATTTGCCTCGCGTGCTGGACATCATCCGA
+GCGGCCCTGCCCCCAAAGGACTTCGCCCATAAGAGGCAGAAGGCAATGCAGGTGGATGCC
+ACAGTCTTCACTTGCATCAGCATGCTGGCTCGAGCAATGGGGCCAGGCATCCAGCAGGAT
+ATCAAGGAGCTGCTGGAGCCCATGCTGGCAGTGGGACTAAGCCCTGCCCTCACTGCAGTG
+CTCTACGACCTGAGCCGTCAGATTCCACAGCTAAAGAAGGACATTCAAGATGGGCTACTG
+AAAATGCTGTCCCTGGTCCTTATGCACAAACCCCTTCGCCACCCAGGCATGCCCAAGGGC
+CTGGCCCATCAGCTGGCCTCTCCTGGCCTCACGACCCTCCCTGAGGCCAGCGATGTGGGC
+AGCATCACTCTTGCCCTCCGAACGCTTGGCAGCTTTGAATTTGAAGGCCACTCTCTGACC
+CAATTTGTTCGCCACTGTGCGGATCATTTCCTGAACAGTGAGCACAAGGAGATCCGCATG
+GAGGCTGCCCGCACCTGCTCCCGCCTGCTCACACCCTCCATCCACCTCATCAGTGGCCAT
+GCTCATGTGGTTAGCCAGACCGCAGTGCAAGTGGTGGCAGATGTGCTTAGCAAACTGCTC
+GTAGTTGGGATAACAGATCCTGACCCTGACATTCGCTACTGTGTCTTGGCGTCCCTGGAC
+GAGCGCTTTGATGCACACCTGGCCCAGGCGGAGAACTTGCAGGCCTTGTTTGTGGCTCTG
+AATGACCAGGTGTTTGAGATCCGGGAGCTGGCCATCTGCACTGTGGGCCGACTCAGTAGC
+ATGAACCCTGCCTTTGTCATGCCTTTCCTGCGCAAGATGCTCATCCAGATTTTGACAGAG
+TTGGAGCACAGTGGGATTGGAAGAATCAAAGAGCAGAGTGCCCGCATGCTGGGGCACCTG
+GTCTCCAATGCCCCCCGACTCATCCGCCCCTACATGGAGCCTATTCTGAAGGCATTAATT
+TTGAAACTGAAAGATCCAGACCCTGATCCAAACCCAGGTGTGATCAATAATGTCCTGGCA
+ACAATAGGAGAATTGGCACAGGTTAGTGGCCTGGAAATGAGGAAATGGGTTGATGAACTT
+TTTATTATCATCATGGACATGCTCCAGGATTCCTCTTTGTTGGCCAAAAGGCAGGTGGCT
+CTGTGGACCCTGGGACAGTTGGTGGCCAGCACTGGCTATGTAGTAGAGCCCTACAGGAAG
+TACCCTACTTTGCTTGAGGTGCTACTGAATTTTCTGAAGACTGAGCAGAACCAGGGTACA
+CGCAGAGAGGCCATCCGTGTGTTAGGGCTTTTAGGGGCTTTGGATCCTTACAAGCACAAA
+GTGAACATTGGCATGATAGACCAGTCCCGGGATGCCTCTGCTGTCAGCCTGTCAGAATCC
+AAGTCAAGTCAGGATTCCTCTGACTATAGCACTAGTGAAATGCTGGTCAACATGGGAAAC
+TTGCCTCTGGATGAGTTCTACCCAGCTGTGTCCATGGTGGCCCTGATGCGGATCTTCCGA
+GACCAGTCACTCTCTCATCATCACACCATGGTTGTCCAGGCCATCACCTTCATCTTCAAG
+TCCCTGGGACTCAAATGTGTGCAGTTCCTGCCCCAGGTCATGCCCACGTTCCTTAACGTC
+ATTCGAGTCTGTGATGGGGCCATCCGGGAATTTTTGTTCCAGCAGCTGGGAATGTTGGTG
+TCCTTTGTGAAGAGCCACATCAGACCTTATATGGATGAAATAGTCACCCTCATGAGAGAA
+TTCTGGGTCATGAACACCTCAATTCAGAGCACGATCATTCTTCTCATTGAGCAAATTGTG
+GTAGCTCTTGGGGGTGAATTTAAGCTCTACCTGCCCCAGCTGATCCCACACATGCTGCGT
+GTCTTCATGCATGACAACAGCCCAGGCCGCATTGTCTCTATCAAGTTACTGGCTGCAATC
+CAGCTGTTTGGCGCCAACCTGGATGACTACCTGCATTTACTGCTGCCTCCTATTGTTAAG
+TTGTTTGATGCCCCTGAAGCTCCACTGCCATCTCGAAAGGCAGCGCTAGAGACTGTGGAC
+CGCCTGACGGAGTCCCTGGATTTCACTGACTATGCCTCCCGGATCATTCACCCTATTGTT
+CGAACACTGGACCAGAGCCCAGAACTGCGCTCCACAGCCATGGACACGCTGTCTTCACTT
+GTTTTTCAGCTGGGGAAGAAGTACCAAATTTTCATTCCAATGGTGAATAAAGTTCTGGTG
+CGACACCGAATCAATCATCAGCGCTATGATGTGCTCATCTGCAGAATTGTCAAGGGATAC
+ACACTTGCTGATGAAGAGGAGGATCCTTTGATTTACCAGCATCGGATGCTTAGGAGTGGC
+CAAGGGGATGCATTGGCTAGTGGACCAGTGGAAACAGGACCCATGAAGAAACTGCACGTC
+AGCACCATCAACCTCCAAAAGGCCTGGGGCGCTGCCAGGAGGGTCTCCAAAGATGACTGG
+CTGGAATGGCTGAGACGGCTGAGCCTGGAGCTGCTGAAGGACTCATCATCGCCCTCCCTG
+CGCTCCTGCTGGGCCCTGGCACAGGCCTACAACCCGATGGCCAGGGATCTCTTCAATGCT
+GCATTTGTGTCCTGCTGGTCTGAACTGAATGAAGATCAACAGGATGAGCTCATCAGAAGC
+ATCGAGTTGGCCCTCACCTCACAAGACATCGCTGAAGTCACACAGACCCTCTTAAACTTG
+GCTGAATTCATGGAACACAGTGACAAGGGCCCCCTGCCACTGAGAGATGACAATGGCATT
+GTTCTGCTGGGTGAGAGAGCTGCCAAGTGCCGAGCATATGCCAAAGCACTACACTACAAA
+GAACTGGAGTTCCAGAAAGGCCCCACCCCTGCCATTCTAGAATCTCTCATCAGCATTAAT
+AATAAGCTACAGCAGCCGGAGGCAGCGGCCGGAGTGTTAGAATATGCCATGAAACACTTT
+GGAGAGCTGGAGATCCAGGCTACCTGGTATGAGAAACTGCACGAGTGGGAGGATGCCCTT
+GTGGCCTATGACAAGAAAATGGACACCAACAAGGACGACCCAGAGCTGATGCTGGGCCGC
+ATGCGCTGCCTCGAGGCCTTGGGGGAATGGGGTCAACTCCACCAGCAGTGCTGTGAAAAG
+TGGACCCTGGTTAATGATGAGACCCAAGCCAAGATGGCCCGGATGGCTGCTGCAGCTGCA
+TGGGGTTTAGGTCAGTGGGACAGCATGGAAGAATACACCTGTATGATCCCTCGGGACACC
+CATGATGGGGCATTTTATAGAGCTGTGCTGGCACTGCATCAGGACCTCTTCTCCTTGGCA
+CAACAGTGCATTGACAAGGCCAGGGACCTGCTGGATGCTGAATTAACTGCGATGGCAGGA
+GAGAGTTACAGTCGGGCATATGGGGCCATGGTTTCTTGCCACATGCTGTCCGAGCTGGAG
+GAGGTTATCCAGTACAAACTTGTCCCCGAGCGACGAGAGATCATCCGCCAGATCTGGTGG
+GAGAGACTGCAGGGCTGCCAGCGTATCGTAGAGGACTGGCAGAAAATCCTTATGGTGCGG
+TCCCTTGTGGTCAGCCCTCATGAAGACATGAGAACCTGGCTCAAGTATGCAAGCCTGTGC
+GGCAAGAGTGGCAGGCTGGCTCTTGCTCATAAAACTTTAGTGTTGCTCCTGGGAGTTGAT
+CCGTCTCGGCAACTTGACCATCCTCTGCCAACAGTTCACCCTCAGGTGACCTATGCCTAC
+ATGAAAAACATGTGGAAGAGTGCCCGCAAGATCGATGCCTTCCAGCACATGCAGCATTTT
+GTCCAGACCATGCAGCAACAGGCCCAGCATGCCATCGCTACTGAGGACCAGCAGCATAAG
+CAGGAACTGCACAAGCTCATGGCCCGATGCTTCCTGAAACTTGGAGAGTGGCAGCTGAAT
+CTACAGGGCATCAATGAGAGCACAATCCCCAAAGTGCTGCAGTACTACAGCGCCGCCACA
+GAGCACGACCGCAGCTGGTACAAGGCCTGGCATGCGTGGGCAGTGATGAACTTCGAAGCT
+GTGCTACACTACAAACATCAGAACCAAGCCCGCGATGAGAAGAAGAAACTGCGTCATGCC
+AGCGGGGCCAACATCACCAACGCCACCACTGCCGCCACCACGGCCGCCACTGCCACCACC
+ACTGCCAGCACCGAGGGCAGCAACAGTGAGAGCGAGGCCGAGAGCACCGAGAACAGCCCC
+ACCCCATCGCCGCTGCAGAAGAAGGTCACTGAGGATCTGTCCAAAACCCTCCTGATGTAC
+ACGGTGCCTGCCGTCCAGGGCTTCTTCCGTTCCATCTCCTTGTCACGAGGCAACAACCTC
+CAGGATACACTCAGAGTTCTCACCTTATGGTTTGATTATGGTCACTGGCCAGATGTCAAT
+GAGGCCTTAGTGGAGGGGGTGAAAGCCATCCAGATTGATACCTGGCTACAGGTTATACCT
+CAGCTCATTGCAAGAATTGATACGCCCAGACCCTTGGTGGGACGTCTCATTCACCAGCTT
+CTCACAGACATTGGTCGGTACCACCCCCAGGCCCTCATCTACCCACTGACAGTGGCTTCT
+AAGTCTACCACGACAGCCCGGCACAATGCAGCCAACAAGATTCTGAAGAACATGTGTGAG
+CACAGCAACACCCTGGTCCAGCAGGCCATGATGGTGAGCGAGGAGCTGATCCGAGTGGCC
+ATCCTCTGGCATGAGATGTGGCATGAAGGCCTGGAAGAGGCATCTCGTTTGTACTTTGGG
+GAAAGGAACGTGAAAGGCATGTTTGAGGTGCTGGAGCCCTTGCATGCTATGATGGAACGG
+GGCCCCCAGACTCTGAAGGAAACATCCTTTAATCAGGCCTATGGTCGAGATTTAATGGAG
+GCCCAAGAGTGGTGCAGGAAGTACATGAAATCAGGGAATGTCAAGGACCTCACCCAAGCC
+TGGGACCTCTATTATCATGTGTTCCGACGAATCTCAAAGCAGCTGCCTCAGCTCACATCC
+TTAGAGCTGCAATATGTTTCCCCAAAACTTCTGATGTGCCGGGACCTTGAATTGGCTGTG
+CCAGGAACATATGACCCCAACCAGCCAATCATTCGCATTCAGTCCATAGCACCGTCTTTG
+CAAGTCATCACATCCAAGCAGAGGCCCCGGAAATTGACACTTATGGGCAGCAACGGACAT
+GAGTTTGTTTTCCTTCTAAAAGGCCATGAAGATCTGCGCCAGGATGAGCGTGTGATGCAG
+CTCTTCGGCCTGGTTAACACCCTTCTGGCCAATGACCCAACATCTCTTCGGAAAAACCTC
+AGCATCCAGAGATACGCTGTCATCCCTTTATCGACCAACTCGGGCCTCATTGGCTGGGTT
+CCCCACTGTGACACACTGCACGCCCTCATCCGGGACTACAGGGAGAAGAAGAAGATCCTT
+CTCAACATCGAGCATCGCATCATGTTGCGGATGGCTCCGGACTATGACCACTTGACTCTG
+ATGCAGAAGGTGGAGGTGTTTGAGCATGCCGTCAATAATACAGCTGGGGACGACCTGGCC
+AAGCTGCTGTGGCTGAAAAGCCCCAGCTCCGAGGTGTGGTTTGACCGAAGAACCAATTAT
+ACCCGTTCTTTAGCGGTCATGTCAATGGTTGGGTATATTTTAGGCCTGGGAGATAGACAC
+CCATCCAACCTGATGCTGGACCGTCTGAGTGGGAAGATCCTGCACATTGACTTTGGGGAC
+TGCTTTGAGGTTGCTATGACCCGAGAGAAGTTTCCAGAGAAGATTCCATTTAGACTAACA
+AGAATGTTGACCAATGCTATGGAGGTTACAGGCCTGGATGGCAACTACAGAATCACATGC
+CACACAGTGATGGAGGTGCTGCGAGAGCACAAGGACAGTGTCATGGCCGTGCTGGAAGCC
+TTTGTCTATGACCCCTTGCTGAACTGGAGGCTGATGGACACAAATACCAAAGGCAACAAG
+CGATCCCGAACGAGGACGGATTCCTACTCTGCTGGCCAGTCAGTCGAAATTTTGGACGGT
+GTGGAACTTGGAGAGCCAGCCCATAAGAAAACGGGGACCACAGTGCCAGAATCTATTCAT
+TCTTTCATTGGAGACGGTTTGGTGAAACCAGAGGCCCTAAATAAGAAAGCTATCCAGATT
+ATTAACAGGGTTCGAGATAAGCTCACTGGTCGGGACTTCTCTCATGATGACACTTTGGAT
+GTTCCAACGCAAGTTGAGCTGCTCATCAAACAAGCGACATCCCATGAAAACCTCTGCCAG
+TGCTATATTGGCTGGTGCCCTTTCTGGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00454</identifier>
+            <name>PI3_PI4_kinase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02259</identifier>
+            <name>FAT</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02260</identifier>
+            <name>FATC</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08771</identifier>
+            <name>Rapamycin_bind</name>
+          </pfam>
+          <pfam>
+            <identifier>PF11865</identifier>
+            <name>DUF3385</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endomembrane system</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phosphatidylinositol 3-kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>PML body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>TORC1 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>TORC2 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphoprotein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein dimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ribosome binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase III type 1 promoter DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase III type 2 promoter DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase III type 3 promoter DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>TFIIIC-class transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>'de novo' pyrimidine nucleobase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiac muscle cell development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to nutrient levels</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair via homologous recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>energy reserve metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>germ cell development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart valve morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>macroautophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organism growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of autophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell size</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of mitophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of NFAT protein import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-serine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-threonine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of actin filament polymerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of endothelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of lamellipodium assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of lipid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of myotube differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of oligodendrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein kinase B signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of stress fiber assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase III promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription of nuclear large rRNA transcript from RNA polymerase I promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of actin cytoskeleton organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of carbohydrate utilization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of fatty acid beta-oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of glycogen biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of GTPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane permeability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of myelination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of osteoclast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of response to food</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to amino acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ruffle organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell costimulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>TOR signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>voluntary musculoskeletal movement</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

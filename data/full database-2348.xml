@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02483</drugbank-id>
+  <drugbank-id>EXPT01343</drugbank-id>
+  <name>Etheno-NAD</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>687.4465</average-mass>
+  <monoisotopic-mass>687.109121631</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>2x0j</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.92</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.17e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-10</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>3-carbamoyl-1-[(2R,3R,4S,5R)-5-{[({[(2R,3S,4R,5R)-3,4-dihydroxy-5-{3H-imidazo[2,1-f]purin-3-yl}oxolan-2-yl]methoxy}(hydroxy)phosphoryl phosphonato)oxy]methyl}-3,4-dihydroxyoxolan-2-yl]-1lambda5-pyridin-1-ylium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>3-carbamoyl-1-[(2R,3R,4S,5R)-5-[({[(2R,3S,4R,5R)-3,4-dihydroxy-5-{imidazo[2,1-f]purin-3-yl}oxolan-2-yl]methoxy(hydroxy)phosphoryl phosphonato}oxy)methyl]-3,4-dihydroxyoxolan-2-yl]-1lambda5-pyridin-1-ylium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>687.4465</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>687.109121631</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H]N([H])C(=O)C1=C[N+](=CC=C1)[C@@H]1O[C@H](COP([O-])(=O)OP(O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)N2C=NC3=C2N=CN2C=CN=C32)[C@@H](O)[C@H]1O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C23H27N7O14P2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C23H27N7O14P2/c24-19(35)11-2-1-4-28(6-11)22-17(33)15(31)12(42-22)7-40-45(36,37)44-46(38,39)41-8-13-16(32)18(34)23(43-13)30-10-26-14-20-25-3-5-29(20)9-27-21(14)30/h1-6,9-10,12-13,15-18,22-23,31-34H,7-8H2,(H3-,24,35,36,37,38,39)/t12-,13-,15-,16-,17-,18-,22-,23-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>JCDBQDNBEQHDHK-BSLNIGMPSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>299.48</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>147.27</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>59.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>14</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.86</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>4.68</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>131675359</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505630</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>148756</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>ENA</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000425</id>
+      <name>L-lactate dehydrogenase A chain</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00338" source="Swiss-Prot">
+        <name>L-lactate dehydrogenase A chain</name>
+        <general-function>Nad binding</general-function>
+        <specific-function/>
+        <gene-name>LDHA</gene-name>
+        <locus>11p15.4</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.45</theoretical-pi>
+        <molecular-weight>36688.465</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6535</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>LDHA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X02152</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>34313</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00338</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>LDHA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.27</synonym>
+          <synonym>Cell proliferation-inducing gene 19 protein</synonym>
+          <synonym>LDH muscle subunit</synonym>
+          <synonym>LDH-A</synonym>
+          <synonym>LDH-M</synonym>
+          <synonym>Renal carcinoma antigen NY-REN-59</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037014|L-lactate dehydrogenase A chain
+MATLKDQLIYNLLKEEQTPQNKITVVGVGAVGMACAISILMKDLADELALVDVIEDKLKG
+EMMDLQHGSLFLRTPKIVSGKDYNVTANSKLVIITAGARQQEGESRLNLVQRNVNIFKFI
+IPNVVKYSPNCKLLIVSNPVDILTYVAWKISGFPKNRVIGSGCNLDSARFRYLMGERLGV
+HPLSCHGWVLGEHGDSSVPVWSGMNVAGVSLKTLHPDLGTDKDKEQWKEVHKQVVESAYE
+VIKLKGYTSWAIGLSVADLAESIMKNLRRVHPVSTMIKGLYGIKDDVFLSVPCILGQNGI
+SDLVKVTLTSEEEARLKKSADTLWGIQKELQF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016089|L-lactate dehydrogenase A chain (LDHA)
+ATGGCAACTCTAAAGGATCAGCTGATTTATAATCTTCTAAAGGAAGAACAGACCCCCCAG
+AATAAGATTACAGTTGTTGGGGTTGGTGCTGTTGGCATGGCCTGTGCCATCAGTATCTTA
+ATGAAGGACTTGGCAGATGAACTTGCTCTTGTTGATGTCATCGAAGACAAATTGAAGGGA
+GAGATGATGGATCTCCAACATGGCAGCCTTTTCCTTAGAACACCAAAGATTGTCTCTGGC
+AAAGTGGATATCTTGACCTACGTGGCTTGGAAGATAAGTGGTTTTCCCAAAAACCGTGTT
+ATTGGAAGCGGTTGCAATCTGGATTCAGCCCGATTCCGTTACCTAATGGGGGAAAGGCTG
+GGAGTTCACCCATTAAGCTGTCATGGGTGGGTCCTTGGGGAACATGGAGATTCCAGTGTG
+CCTGTATGGAGTGGAATGAATGTTGCTGGTGTCTCTCTGAAGACTCTGCACCCAGATTTA
+GGGACTGATAAAGATAAGGAACAGTGGAAAGAGGTTCACAAGCAGGTGGTTGAGAGTGCT
+TATGAGGTGATCAAACTCAAAGGCTACACATCCTGGGCTATTGGACTCTCTGTAGCAGAT
+TTGGCAGAGAGTATAATGAAGAATCTTAGGCGGGTGCACCCAGTTTCCACCATGATTAAG
+GGTCTTTACGGAATAAAGGATGATGTCTTCCTTAGTGTTCCTTGCATTTTGGGACAGAAT
+GGAATCTCAGACCTTGTGAAGGTGACTCTGACTTCTGAGGAAGAGGCCCGTTTGAAGAAG
+AGTGCAGATACACTTTGGGGGATCCAAAAGGAGCTGCAATTTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02866</identifier>
+            <name>Ldh_1_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00056</identifier>
+            <name>Ldh_1_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sperm fibrous sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>L-lactate dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to extracellular stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycolytic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>NAD metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-embryonic organ development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cAMP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estrogen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to glucose</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substantia nigra development</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001241</id>
+      <name>ADP-ribosyl cyclase 2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q10588" source="Swiss-Prot">
+        <name>ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2</name>
+        <general-function>Transferase activity</general-function>
+        <specific-function>Synthesizes the second messagers cyclic ADP-ribose and nicotinate-adenine dinucleotide phosphate, the former a second messenger that elicits calcium release from intracellular stores. May be involved in pre-B-cell growth.</specific-function>
+        <gene-name>BST1</gene-name>
+        <locus>4p15</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>7.86</theoretical-pi>
+        <molecular-weight>35723.545</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1118</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>BST1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D21878</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>999429</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q10588</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>BST1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.2.2.6</synonym>
+          <synonym>ADP-ribosyl cyclase 2</synonym>
+          <synonym>Bone marrow stromal antigen 1</synonym>
+          <synonym>BST-1</synonym>
+          <synonym>cADPr hydrolase 2</synonym>
+          <synonym>Cyclic ADP-ribose hydrolase 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002471|ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2
+MAAQGCAASRLLQLLLQLLLLLLLLAAGGARARWRGEGTSAHLRDIFLGRCAEYRALLSP
+EQRNKNCTAIWEAFKVALDKDPCSVLPSDYDLFINLSRHSIPRDKSLFWENSHLLVNSFA
+DNTRRFMPLSDVLYGRVADFLSWCRQKNDSGLDYQSCPTSEDCENNPVDSFWKRASIQYS
+KDSSGVIHVMLNGSEPTGAYPIKGFFADYEIPNLQKEKITRIEIWVMHEIGGPNVESCGE
+GSMKVLEKRLKDMGFQYSCINDYRPVKLLQCVDHSTHPDCALKSAAAATQRKAPSLYTEQ
+RAGLIIPLFLVLASRTQL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010864|ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (BST1)
+ATGGCGGCCCAGGGGTGCGCGGCATCGCGGCTGCTCCAGCTGCTGCTGCAGCTTCTGCTT
+CTACTGTTGCTGCTGGCGGCGGGCGGGGCGCGCGCGCGGTGGCGCGGGGAGGGCACCAGC
+GCACACTTGCGGGACATCTTCCTGGGCCGCTGCGCCGAGTACCGCGCACTGCTGAGTCCC
+GAGCAGCGGAACAAGAACTGCACAGCCATCTGGGAAGCCTTTAAAGTGGCGCTGGACAAG
+GATCCCTGCTCCGTGCTGCCCTCAGACTATGACCTTTTTATTAACTTGTCCAGGCACTCT
+ATTCCCAGAGATAAGTCCCTGTTCTGGGAAAATAGCCACCTCCTTGTTAACAGCTTTGCA
+GACAACACCCGTCGTTTTATGCCCCTGAGCGATGTTCTGTATGGCAGGGTTGCAGATTTC
+TTGAGCTGGTGTCGACAGAAAAATGACTCTGGACTCGATTACCAATCCTGCCCTACATCA
+GAAGACTGTGAAAATAATCCTGTGGATTCCTTTTGGAAAAGGGCATCCATCCAGTATTCC
+AAGGATAGTTCTGGGGTGATCCACGTCATGCTGAATGGTTCAGAGCCAACAGGAGCCTAT
+CCCATCAAAGGTTTTTTTGCAGATTATGAAATTCCAAACCTCCAGAAGGAAAAAATTACA
+CGAATCGAGATCTGGGTTATGCATGAAATTGGGGGACCCAATGTGGAATCCTGCGGGGAA
+GGCAGCATGAAAGTCCTGGAAAAGAGGCTGAAGGACATGGGGTTCCAGTACAGCTGTATT
+AATGATTACCGACCAGTGAAGCTCTTACAGTGCGTGGACCACAGCACCCATCCTGACTGT
+GCCTTAAAGTCGGCAGCAGCCGCTACTCAAAGAAAAGCCCCAAGTCTTTATACAGAACAA
+AGGGCGGGTCTTATCATTCCCCTCTTTCTGGTGCTGGCTTCCAGGACTCAACTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02267</identifier>
+            <name>Rib_hydrolayse</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>anchored component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extrinsic component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD(P)+ nucleosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD+ nucleosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphorus-oxygen lyase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>humoral immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of B cell proliferation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,5380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB01632</drugbank-id>
+  <drugbank-id>EXPT02663</drugbank-id>
+  <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+  <description>The key substance in the biosynthesis of histidine, tryptophan, and purine and pyrimidine nucleotides.</description>
+  <cas-number>13270-65-0</cas-number>
+  <unii/>
+  <average-mass>390.0696</average-mass>
+  <monoisotopic-mass>389.95181466</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>experimental</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as pentose phosphates. These are carbohydrate derivatives containing a pentose substituted by one or more phosphate groups.</description>
+    <direct-parent>Pentose phosphates</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbohydrates and carbohydrate conjugates</subclass>
+    <alternative-parent>1,2-diols</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkyl phosphates</alternative-parent>
+    <alternative-parent>Monosaccharide phosphates</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organic pyrophosphates</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Tetrahydrofurans</alternative-parent>
+    <substituent>1,2-diol</substituent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic heteromonocyclic compound</substituent>
+    <substituent>Alkyl phosphate</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monoalkyl phosphate</substituent>
+    <substituent>Monosaccharide phosphate</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic phosphoric acid derivative</substituent>
+    <substituent>Organic pyrophosphate</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Pentose phosphate</substituent>
+    <substituent>Pentose-5-phosphate</substituent>
+    <substituent>Phosphoric acid ester</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Tetrahydrofuran</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">5-O-phosphono-α-D-ribofuranosyl diphosphate</synonym>
+    <synonym language="english" coder="">5-Phospho-alpha-D-ribose 1-diphosphate</synonym>
+    <synonym language="english" coder="">5-Phosphoribosyl 1-pyrophosphate</synonym>
+    <synonym language="english" coder="">5-Phosphoribosyl diphosphate</synonym>
+    <synonym language="english" coder="">Phosphoribosyl pyrophosphate</synonym>
+    <synonym language="english" coder="">Phosphoribosylpyrophosphate</synonym>
+    <synonym language="english" coder="">PRib-PP</synonym>
+    <synonym language="english" coder="">PRPP</synonym>
+    <synonym language="english" coder="">α-D-ribofuranose 5-(dihydrogen phosphate) 1-(trihydrogen diphosphate)</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Pentosephosphates</category>
+      <mesh-id>D010428</mesh-id>
+    </category>
+    <category>
+      <category>Sugar Phosphates</category>
+      <mesh-id>D013403</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1d6n</pdb-entry>
+    <pdb-entry>1fsg</pdb-entry>
+    <pdb-entry>1i0i</pdb-entry>
+    <pdb-entry>1i0l</pdb-entry>
+    <pdb-entry>1i13</pdb-entry>
+    <pdb-entry>1i14</pdb-entry>
+    <pdb-entry>1jls</pdb-entry>
+    <pdb-entry>1kgz</pdb-entry>
+    <pdb-entry>1l1r</pdb-entry>
+    <pdb-entry>1lh0</pdb-entry>
+    <pdb-entry>1opr</pdb-entry>
+    <pdb-entry>1p18</pdb-entry>
+    <pdb-entry>1tc2</pdb-entry>
+    <pdb-entry>1vst</pdb-entry>
+    <pdb-entry>1z7n</pdb-entry>
+    <pdb-entry>1zn7</pdb-entry>
+    <pdb-entry>1zvw</pdb-entry>
+    <pdb-entry>1zxy</pdb-entry>
+    <pdb-entry>1zyk</pdb-entry>
+    <pdb-entry>2e5c</pdb-entry>
+    <pdb-entry>2ps1</pdb-entry>
+    <pdb-entry>3c2f</pdb-entry>
+    <pdb-entry>3c2v</pdb-entry>
+    <pdb-entry>3dkj</pdb-entry>
+    <pdb-entry>3dkl</pdb-entry>
+    <pdb-entry>3g6w</pdb-entry>
+    <pdb-entry>3gbr</pdb-entry>
+    <pdb-entry>3qqs</pdb-entry>
+    <pdb-entry>3qs8</pdb-entry>
+    <pdb-entry>3qsa</pdb-entry>
+    <pdb-entry>3r6c</pdb-entry>
+    <pdb-entry>3r88</pdb-entry>
+    <pdb-entry>3twp</pdb-entry>
+    <pdb-entry>3uu1</pdb-entry>
+    <pdb-entry>4giu</pdb-entry>
+    <pdb-entry>4gkm</pdb-entry>
+    <pdb-entry>4n5v</pdb-entry>
+    <pdb-entry>4n93</pdb-entry>
+    <pdb-entry>4owm</pdb-entry>
+    <pdb-entry>4own</pdb-entry>
+    <pdb-entry>4owo</pdb-entry>
+    <pdb-entry>4owq</pdb-entry>
+    <pdb-entry>4owu</pdb-entry>
+    <pdb-entry>4rv4</pdb-entry>
+    <pdb-entry>4x58</pdb-entry>
+    <pdb-entry>4x59</pdb-entry>
+    <pdb-entry>4x5b</pdb-entry>
+    <pdb-entry>4x5c</pdb-entry>
+    <pdb-entry>4z1o</pdb-entry>
+    <pdb-entry>4zof</pdb-entry>
+    <pdb-entry>4zoj</pdb-entry>
+    <pdb-entry>4zok</pdb-entry>
+    <pdb-entry>5byt</pdb-entry>
+    <pdb-entry>5c7s</pdb-entry>
+    <pdb-entry>5hkf</pdb-entry>
+    <pdb-entry>5ubi</pdb-entry>
+    <pdb-entry>5y07</pdb-entry>
+    <pdb-entry>6ck5</pdb-entry>
+    <pdb-entry>6d9r</pdb-entry>
+    <pdb-entry>6dlq</pdb-entry>
+    <pdb-entry>6dlr</pdb-entry>
+    <pdb-entry>6dls</pdb-entry>
+    <pdb-entry>6dlt</pdb-entry>
+    <pdb-entry>6fca</pdb-entry>
+    <pdb-entry>6fch</pdb-entry>
+    <pdb-entry>6fci</pdb-entry>
+    <pdb-entry>6fct</pdb-entry>
+    <pdb-entry>6fcy</pdb-entry>
+    <pdb-entry>6fd4</pdb-entry>
+    <pdb-entry>6fd5</pdb-entry>
+    <pdb-entry>6ftt</pdb-entry>
+    <pdb-entry>6fu2</pdb-entry>
+    <pdb-entry>6fua</pdb-entry>
+    <pdb-entry>6hgq</pdb-entry>
+    <pdb-entry>6r02</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.74</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.16e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>[({[(2R,3R,4S,5R)-3,4-dihydroxy-5-[(phosphonooxy)methyl]oxolan-2-yl]oxy}(hydroxy)phosphoryl)oxy]phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>phosphoribosylpyrophosphate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>390.0696</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>389.95181466</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>O[C@H]1[C@@H](O)[C@@H](OP(O)(=O)OP(O)(O)=O)O[C@@H]1COP(O)(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C5H13O14P3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C5H13O14P3/c6-3-2(1-16-20(8,9)10)17-5(4(3)7)18-22(14,15)19-21(11,12)13/h2-7H,1H2,(H,14,15)(H2,8,9,10)(H2,11,12,13)/t2-,3-,4-,5-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>PQGCEDQWHSBAJP-TXICZTDVSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>229.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>62.58</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>27.46</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.09</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>17111</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>7339</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506467</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00119</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>7062</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>25315</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>PRP</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000167</smpdb-id>
+      <name>Adenylosuccinate Lyase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000220</smpdb-id>
+      <name>Xanthine Dehydrogenase Deficiency (Xanthinuria)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000385</smpdb-id>
+      <name>Homocarnosinosis</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00139</drugbank-id>
+          <name>Succinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02530</drugbank-id>
+          <name>gamma-Aminobutyric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03408</drugbank-id>
+          <name>gamma-Glutamylcysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>A8YXX4</uniprot-id>
+        <uniprot-id>Q9UI32</uniprot-id>
+        <uniprot-id>Q06210</uniprot-id>
+        <uniprot-id>Q96EK6</uniprot-id>
+        <uniprot-id>Q9UJ70</uniprot-id>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>P31327</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>P30038</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P00367</uniprot-id>
+        <uniprot-id>P00505</uniprot-id>
+        <uniprot-id>Q5JPH6</uniprot-id>
+        <uniprot-id>P48506</uniprot-id>
+        <uniprot-id>P48507</uniprot-id>
+        <uniprot-id>P48637</uniprot-id>
+        <uniprot-id>P00390</uniprot-id>
+        <uniprot-id>Q99259</uniprot-id>
+        <uniprot-id>P80404</uniprot-id>
+        <uniprot-id>P51649</uniprot-id>
+        <uniprot-id>P47897</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000512</smpdb-id>
+      <name>Xanthinuria Type I</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000518</smpdb-id>
+      <name>Glucose-6-phosphate Dehydrogenase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02263</drugbank-id>
+          <name>Glyceraldehyde-3-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04034</drugbank-id>
+          <name>Ribulose-5-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04326</drugbank-id>
+          <name>Dihydroxyacetone phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04564</drugbank-id>
+          <name>Gluconolactone</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11413</uniprot-id>
+        <uniprot-id>O95336</uniprot-id>
+        <uniprot-id>A9Z1X1</uniprot-id>
+        <uniprot-id>P49247</uniprot-id>
+        <uniprot-id>Q9H477</uniprot-id>
+        <uniprot-id>P36871</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q96AT9</uniprot-id>
+        <uniprot-id>P29401</uniprot-id>
+        <uniprot-id>P37837</uniprot-id>
+        <uniprot-id>P04075</uniprot-id>
+        <uniprot-id>P09467</uniprot-id>
+        <uniprot-id>P17858</uniprot-id>
+        <uniprot-id>Q9Y315</uniprot-id>
+        <uniprot-id>P06744</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000536</smpdb-id>
+      <name>Mitochondrial DNA Depletion Syndrome</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000537</smpdb-id>
+      <name>Myoadenylate Deaminase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000031</smpdb-id>
+      <name>Pentose Phosphate Pathway</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02263</drugbank-id>
+          <name>Glyceraldehyde-3-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04034</drugbank-id>
+          <name>Ribulose-5-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04326</drugbank-id>
+          <name>Dihydroxyacetone phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04564</drugbank-id>
+          <name>Gluconolactone</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11413</uniprot-id>
+        <uniprot-id>O95336</uniprot-id>
+        <uniprot-id>A9Z1X1</uniprot-id>
+        <uniprot-id>P49247</uniprot-id>
+        <uniprot-id>Q9H477</uniprot-id>
+        <uniprot-id>P36871</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q96AT9</uniprot-id>
+        <uniprot-id>P29401</uniprot-id>
+        <uniprot-id>P37837</uniprot-id>
+        <uniprot-id>P04075</uniprot-id>
+        <uniprot-id>P09467</uniprot-id>
+        <uniprot-id>P17858</uniprot-id>
+        <uniprot-id>Q9Y315</uniprot-id>
+        <uniprot-id>P06744</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000046</smpdb-id>
+      <name>Pyrimidine Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01643</drugbank-id>
+          <name>Thymidine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01849</drugbank-id>
+          <name>3,4-Dihydrouracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02129</drugbank-id>
+          <name>Dihydroorotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02262</drugbank-id>
+          <name>Orotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02431</drugbank-id>
+          <name>Cytidine-5'-Triphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02745</drugbank-id>
+          <name>Uridine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03107</drugbank-id>
+          <name>Beta-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03419</drugbank-id>
+          <name>Uracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03435</drugbank-id>
+          <name>Uridine-5'-Diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03462</drugbank-id>
+          <name>Thymine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03685</drugbank-id>
+          <name>Uridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03800</drugbank-id>
+          <name>Deoxyuridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04252</drugbank-id>
+          <name>N-Carbamoyl-L-Aspartate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04485</drugbank-id>
+          <name>Thymidine</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>Q02127</uniprot-id>
+        <uniprot-id>A8K5J1 </uniprot-id>
+        <uniprot-id>Q8WVQ1</uniprot-id>
+        <uniprot-id>Q5EBM0</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>Q9UIJ7</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P17812</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>O95045</uniprot-id>
+        <uniprot-id>Q12882</uniprot-id>
+        <uniprot-id>Q14117</uniprot-id>
+        <uniprot-id>Q9UBR1</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+        <uniprot-id>Q7LG56</uniprot-id>
+        <uniprot-id>Q9NWZ5</uniprot-id>
+        <uniprot-id>P32320</uniprot-id>
+        <uniprot-id>P19971</uniprot-id>
+        <uniprot-id>P32321</uniprot-id>
+        <uniprot-id>P04183</uniprot-id>
+        <uniprot-id>P04818</uniprot-id>
+        <uniprot-id>P33316</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000050</smpdb-id>
+      <name>Purine Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000072</smpdb-id>
+      <name>Glutamate Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00139</drugbank-id>
+          <name>Succinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02530</drugbank-id>
+          <name>gamma-Aminobutyric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03408</drugbank-id>
+          <name>gamma-Glutamylcysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>A8YXX4</uniprot-id>
+        <uniprot-id>Q9UI32</uniprot-id>
+        <uniprot-id>Q06210</uniprot-id>
+        <uniprot-id>Q96EK6</uniprot-id>
+        <uniprot-id>Q9UJ70</uniprot-id>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>P31327</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>P30038</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P00367</uniprot-id>
+        <uniprot-id>P00505</uniprot-id>
+        <uniprot-id>Q5JPH6</uniprot-id>
+        <uniprot-id>P48506</uniprot-id>
+        <uniprot-id>P48507</uniprot-id>
+        <uniprot-id>P48637</uniprot-id>
+        <uniprot-id>P00390</uniprot-id>
+        <uniprot-id>Q99259</uniprot-id>
+        <uniprot-id>P80404</uniprot-id>
+        <uniprot-id>P51649</uniprot-id>
+        <uniprot-id>P47897</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000202</smpdb-id>
+      <name>MNGIE (Mitochondrial Neurogastrointestinal Encephalopathy)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01643</drugbank-id>
+          <name>Thymidine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01849</drugbank-id>
+          <name>3,4-Dihydrouracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02129</drugbank-id>
+          <name>Dihydroorotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02262</drugbank-id>
+          <name>Orotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02431</drugbank-id>
+          <name>Cytidine-5'-Triphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02745</drugbank-id>
+          <name>Uridine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03107</drugbank-id>
+          <name>Beta-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03419</drugbank-id>
+          <name>Uracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03435</drugbank-id>
+          <name>Uridine-5'-Diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03462</drugbank-id>
+          <name>Thymine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03685</drugbank-id>
+          <name>Uridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03800</drugbank-id>
+          <name>Deoxyuridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04252</drugbank-id>
+          <name>N-Carbamoyl-L-Aspartate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04485</drugbank-id>
+          <name>Thymidine</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>Q02127</uniprot-id>
+        <uniprot-id>A8K5J1 </uniprot-id>
+        <uniprot-id>Q8WVQ1</uniprot-id>
+        <uniprot-id>Q5EBM0</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>Q9UIJ7</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P17812</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>O95045</uniprot-id>
+        <uniprot-id>Q12882</uniprot-id>
+        <uniprot-id>Q14117</uniprot-id>
+        <uniprot-id>Q9UBR1</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+        <uniprot-id>Q7LG56</uniprot-id>
+        <uniprot-id>Q9NWZ5</uniprot-id>
+        <uniprot-id>P32320</uniprot-id>
+        <uniprot-id>P19971</uniprot-id>
+        <uniprot-id>P32321</uniprot-id>
+        <uniprot-id>P04183</uniprot-id>
+        <uniprot-id>P04818</uniprot-id>
+        <uniprot-id>P33316</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000210</smpdb-id>
+      <name>Purine Nucleoside Phosphorylase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000339</smpdb-id>
+      <name>Hyperinsulinism-Hyperammonemia Syndrome</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00139</drugbank-id>
+          <name>Succinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02530</drugbank-id>
+          <name>gamma-Aminobutyric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03408</drugbank-id>
+          <name>gamma-Glutamylcysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>A8YXX4</uniprot-id>
+        <uniprot-id>Q9UI32</uniprot-id>
+        <uniprot-id>Q06210</uniprot-id>
+        <uniprot-id>Q96EK6</uniprot-id>
+        <uniprot-id>Q9UJ70</uniprot-id>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>P31327</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>P30038</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P00367</uniprot-id>
+        <uniprot-id>P00505</uniprot-id>
+        <uniprot-id>Q5JPH6</uniprot-id>
+        <uniprot-id>P48506</uniprot-id>
+        <uniprot-id>P48507</uniprot-id>
+        <uniprot-id>P48637</uniprot-id>
+        <uniprot-id>P00390</uniprot-id>
+        <uniprot-id>Q99259</uniprot-id>
+        <uniprot-id>P80404</uniprot-id>
+        <uniprot-id>P51649</uniprot-id>
+        <uniprot-id>P47897</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000364</smpdb-id>
+      <name>Lesch-Nyhan Syndrome (LNS)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000365</smpdb-id>
+      <name>Gout or Kelley-Seegmiller Syndrome</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000428</smpdb-id>
+      <name>Mercaptopurine Action Pathway</name>
+      <category>drug_action</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01033</drugbank-id>
+          <name>Mercaptopurine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P51580</uniprot-id>
+        <uniprot-id>P63000</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>Q14542</uniprot-id>
+        <uniprot-id>Q9HAS3</uniprot-id>
+        <uniprot-id>Q99808</uniprot-id>
+        <uniprot-id>O43868</uniprot-id>
+        <uniprot-id>O15440</uniprot-id>
+        <uniprot-id>O15439</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P55263</uniprot-id>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000519</smpdb-id>
+      <name>Ribose-5-phosphate Isomerase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02263</drugbank-id>
+          <name>Glyceraldehyde-3-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04034</drugbank-id>
+          <name>Ribulose-5-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04326</drugbank-id>
+          <name>Dihydroxyacetone phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04564</drugbank-id>
+          <name>Gluconolactone</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11413</uniprot-id>
+        <uniprot-id>O95336</uniprot-id>
+        <uniprot-id>A9Z1X1</uniprot-id>
+        <uniprot-id>P49247</uniprot-id>
+        <uniprot-id>Q9H477</uniprot-id>
+        <uniprot-id>P36871</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q96AT9</uniprot-id>
+        <uniprot-id>P29401</uniprot-id>
+        <uniprot-id>P37837</uniprot-id>
+        <uniprot-id>P04075</uniprot-id>
+        <uniprot-id>P09467</uniprot-id>
+        <uniprot-id>P17858</uniprot-id>
+        <uniprot-id>Q9Y315</uniprot-id>
+        <uniprot-id>P06744</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000535</smpdb-id>
+      <name>Adenine Phosphoribosyltransferase Deficiency (APRT)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000048</smpdb-id>
+      <name>Nicotinate and Nicotinamide Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00627</drugbank-id>
+          <name>Niacin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01796</drugbank-id>
+          <name>Quinolinic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02701</drugbank-id>
+          <name>Nicotinamide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P40261</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>P43490</uniprot-id>
+        <uniprot-id>Q10588</uniprot-id>
+        <uniprot-id>Q9BQG2</uniprot-id>
+        <uniprot-id>P22413</uniprot-id>
+        <uniprot-id>Q9BZQ4</uniprot-id>
+        <uniprot-id>Q13423</uniprot-id>
+        <uniprot-id>O95544</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>Q9NWW6</uniprot-id>
+        <uniprot-id>Q15274</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000136</smpdb-id>
+      <name>2-Hydroxyglutric Aciduria (D and L Form)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00139</drugbank-id>
+          <name>Succinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02530</drugbank-id>
+          <name>gamma-Aminobutyric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03408</drugbank-id>
+          <name>gamma-Glutamylcysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>A8YXX4</uniprot-id>
+        <uniprot-id>Q9UI32</uniprot-id>
+        <uniprot-id>Q06210</uniprot-id>
+        <uniprot-id>Q96EK6</uniprot-id>
+        <uniprot-id>Q9UJ70</uniprot-id>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>P31327</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>P30038</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P00367</uniprot-id>
+        <uniprot-id>P00505</uniprot-id>
+        <uniprot-id>Q5JPH6</uniprot-id>
+        <uniprot-id>P48506</uniprot-id>
+        <uniprot-id>P48507</uniprot-id>
+        <uniprot-id>P48637</uniprot-id>
+        <uniprot-id>P00390</uniprot-id>
+        <uniprot-id>Q99259</uniprot-id>
+        <uniprot-id>P80404</uniprot-id>
+        <uniprot-id>P51649</uniprot-id>
+        <uniprot-id>P47897</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000144</smpdb-id>
+      <name>Adenosine Deaminase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000168</smpdb-id>
+      <name>AICA-Ribosiduria</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000172</smpdb-id>
+      <name>beta-Ureidopropionase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01643</drugbank-id>
+          <name>Thymidine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01849</drugbank-id>
+          <name>3,4-Dihydrouracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02129</drugbank-id>
+          <name>Dihydroorotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02262</drugbank-id>
+          <name>Orotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02431</drugbank-id>
+          <name>Cytidine-5'-Triphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02745</drugbank-id>
+          <name>Uridine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03107</drugbank-id>
+          <name>Beta-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03419</drugbank-id>
+          <name>Uracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03435</drugbank-id>
+          <name>Uridine-5'-Diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03462</drugbank-id>
+          <name>Thymine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03685</drugbank-id>
+          <name>Uridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03800</drugbank-id>
+          <name>Deoxyuridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04252</drugbank-id>
+          <name>N-Carbamoyl-L-Aspartate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04485</drugbank-id>
+          <name>Thymidine</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>Q02127</uniprot-id>
+        <uniprot-id>A8K5J1 </uniprot-id>
+        <uniprot-id>Q8WVQ1</uniprot-id>
+        <uniprot-id>Q5EBM0</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>Q9UIJ7</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P17812</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>O95045</uniprot-id>
+        <uniprot-id>Q12882</uniprot-id>
+        <uniprot-id>Q14117</uniprot-id>
+        <uniprot-id>Q9UBR1</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+        <uniprot-id>Q7LG56</uniprot-id>
+        <uniprot-id>Q9NWZ5</uniprot-id>
+        <uniprot-id>P32320</uniprot-id>
+        <uniprot-id>P19971</uniprot-id>
+        <uniprot-id>P32321</uniprot-id>
+        <uniprot-id>P04183</uniprot-id>
+        <uniprot-id>P04818</uniprot-id>
+        <uniprot-id>P33316</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000178</smpdb-id>
+      <name>Dihydropyrimidinase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01643</drugbank-id>
+          <name>Thymidine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01849</drugbank-id>
+          <name>3,4-Dihydrouracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02129</drugbank-id>
+          <name>Dihydroorotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02262</drugbank-id>
+          <name>Orotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02431</drugbank-id>
+          <name>Cytidine-5'-Triphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02745</drugbank-id>
+          <name>Uridine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03107</drugbank-id>
+          <name>Beta-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03419</drugbank-id>
+          <name>Uracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03435</drugbank-id>
+          <name>Uridine-5'-Diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03462</drugbank-id>
+          <name>Thymine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03685</drugbank-id>
+          <name>Uridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03800</drugbank-id>
+          <name>Deoxyuridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04252</drugbank-id>
+          <name>N-Carbamoyl-L-Aspartate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04485</drugbank-id>
+          <name>Thymidine</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>Q02127</uniprot-id>
+        <uniprot-id>A8K5J1 </uniprot-id>
+        <uniprot-id>Q8WVQ1</uniprot-id>
+        <uniprot-id>Q5EBM0</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>Q9UIJ7</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P17812</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>O95045</uniprot-id>
+        <uniprot-id>Q12882</uniprot-id>
+        <uniprot-id>Q14117</uniprot-id>
+        <uniprot-id>Q9UBR1</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+        <uniprot-id>Q7LG56</uniprot-id>
+        <uniprot-id>Q9NWZ5</uniprot-id>
+        <uniprot-id>P32320</uniprot-id>
+        <uniprot-id>P19971</uniprot-id>
+        <uniprot-id>P32321</uniprot-id>
+        <uniprot-id>P04183</uniprot-id>
+        <uniprot-id>P04818</uniprot-id>
+        <uniprot-id>P33316</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000203</smpdb-id>
+      <name>Molybdenum Cofactor Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000219</smpdb-id>
+      <name>UMP Synthase Deficiency (Orotic Aciduria)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01643</drugbank-id>
+          <name>Thymidine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01849</drugbank-id>
+          <name>3,4-Dihydrouracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02129</drugbank-id>
+          <name>Dihydroorotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02262</drugbank-id>
+          <name>Orotic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02431</drugbank-id>
+          <name>Cytidine-5'-Triphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02745</drugbank-id>
+          <name>Uridine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03107</drugbank-id>
+          <name>Beta-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03419</drugbank-id>
+          <name>Uracil</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03435</drugbank-id>
+          <name>Uridine-5'-Diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03462</drugbank-id>
+          <name>Thymine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03685</drugbank-id>
+          <name>Uridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03800</drugbank-id>
+          <name>Deoxyuridine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04252</drugbank-id>
+          <name>N-Carbamoyl-L-Aspartate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04485</drugbank-id>
+          <name>Thymidine</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>Q02127</uniprot-id>
+        <uniprot-id>A8K5J1 </uniprot-id>
+        <uniprot-id>Q8WVQ1</uniprot-id>
+        <uniprot-id>Q5EBM0</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>Q9UIJ7</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P17812</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>O95045</uniprot-id>
+        <uniprot-id>Q12882</uniprot-id>
+        <uniprot-id>Q14117</uniprot-id>
+        <uniprot-id>Q9UBR1</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+        <uniprot-id>Q7LG56</uniprot-id>
+        <uniprot-id>Q9NWZ5</uniprot-id>
+        <uniprot-id>P32320</uniprot-id>
+        <uniprot-id>P19971</uniprot-id>
+        <uniprot-id>P32321</uniprot-id>
+        <uniprot-id>P04183</uniprot-id>
+        <uniprot-id>P04818</uniprot-id>
+        <uniprot-id>P33316</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000243</smpdb-id>
+      <name>4-Hydroxybutyric Aciduria/Succinic Semialdehyde Dehydrogenase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00139</drugbank-id>
+          <name>Succinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02530</drugbank-id>
+          <name>gamma-Aminobutyric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03408</drugbank-id>
+          <name>gamma-Glutamylcysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>A8YXX4</uniprot-id>
+        <uniprot-id>Q9UI32</uniprot-id>
+        <uniprot-id>Q06210</uniprot-id>
+        <uniprot-id>Q96EK6</uniprot-id>
+        <uniprot-id>Q9UJ70</uniprot-id>
+        <uniprot-id>P27708</uniprot-id>
+        <uniprot-id>P31327</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>Q6IA69</uniprot-id>
+        <uniprot-id>P30038</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P00367</uniprot-id>
+        <uniprot-id>P00505</uniprot-id>
+        <uniprot-id>Q5JPH6</uniprot-id>
+        <uniprot-id>P48506</uniprot-id>
+        <uniprot-id>P48507</uniprot-id>
+        <uniprot-id>P48637</uniprot-id>
+        <uniprot-id>P00390</uniprot-id>
+        <uniprot-id>Q99259</uniprot-id>
+        <uniprot-id>P80404</uniprot-id>
+        <uniprot-id>P51649</uniprot-id>
+        <uniprot-id>P47897</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000427</smpdb-id>
+      <name>Azathioprine Action Pathway</name>
+      <category>drug_action</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00993</drugbank-id>
+          <name>Azathioprine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01033</drugbank-id>
+          <name>Mercaptopurine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P51580</uniprot-id>
+        <uniprot-id>P63000</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>Q14542</uniprot-id>
+        <uniprot-id>Q9HAS3</uniprot-id>
+        <uniprot-id>Q99808</uniprot-id>
+        <uniprot-id>O43868</uniprot-id>
+        <uniprot-id>O15440</uniprot-id>
+        <uniprot-id>O15439</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P55263</uniprot-id>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000430</smpdb-id>
+      <name>Thioguanine Action Pathway</name>
+      <category>drug_action</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00130</drugbank-id>
+          <name>L-Glutamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00173</drugbank-id>
+          <name>Adenine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00352</drugbank-id>
+          <name>Tioguanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00640</drugbank-id>
+          <name>Adenosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01033</drugbank-id>
+          <name>Mercaptopurine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01632</drugbank-id>
+          <name>5-O-phosphono-alpha-D-ribofuranosyl diphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01700</drugbank-id>
+          <name>AICA ribonucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01972</drugbank-id>
+          <name>Guanosine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02134</drugbank-id>
+          <name>Xanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02377</drugbank-id>
+          <name>Guanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02527</drugbank-id>
+          <name>Cyclic adenosine monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02857</drugbank-id>
+          <name>Guanosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03101</drugbank-id>
+          <name>Ribose-1-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04076</drugbank-id>
+          <name>Hypoxanthine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04335</drugbank-id>
+          <name>Inosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04457</drugbank-id>
+          <name>2'-Deoxyguanosine-5'-Monophosphate</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P00492</uniprot-id>
+        <uniprot-id>P20839</uniprot-id>
+        <uniprot-id>P49915</uniprot-id>
+        <uniprot-id>P51580</uniprot-id>
+        <uniprot-id>P63000</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>Q06203</uniprot-id>
+        <uniprot-id>Q14542</uniprot-id>
+        <uniprot-id>Q9HAS3</uniprot-id>
+        <uniprot-id>Q99808</uniprot-id>
+        <uniprot-id>O43868</uniprot-id>
+        <uniprot-id>O15440</uniprot-id>
+        <uniprot-id>O15439</uniprot-id>
+        <uniprot-id>P47989</uniprot-id>
+        <uniprot-id>P55263</uniprot-id>
+        <uniprot-id>P50583</uniprot-id>
+        <uniprot-id>O75414</uniprot-id>
+        <uniprot-id>O75356</uniprot-id>
+        <uniprot-id>Q5MY95</uniprot-id>
+        <uniprot-id>Q16774</uniprot-id>
+        <uniprot-id>P49902</uniprot-id>
+        <uniprot-id>Q16854</uniprot-id>
+        <uniprot-id>P07741</uniprot-id>
+        <uniprot-id>P00491</uniprot-id>
+        <uniprot-id>Q9Y2T3</uniprot-id>
+        <uniprot-id>Q9UKK9</uniprot-id>
+        <uniprot-id>P21108</uniprot-id>
+        <uniprot-id>P22102</uniprot-id>
+        <uniprot-id>O15067</uniprot-id>
+        <uniprot-id>P22234</uniprot-id>
+        <uniprot-id>P30566</uniprot-id>
+        <uniprot-id>P31939</uniprot-id>
+        <uniprot-id>Q9BY32</uniprot-id>
+        <uniprot-id>P36959</uniprot-id>
+        <uniprot-id>P30520</uniprot-id>
+        <uniprot-id>P23109</uniprot-id>
+        <uniprot-id>P00813</uniprot-id>
+        <uniprot-id>P00568</uniprot-id>
+        <uniprot-id>Q8NBU5</uniprot-id>
+        <uniprot-id>Q08499</uniprot-id>
+        <uniprot-id>Q96PN6</uniprot-id>
+        <uniprot-id>P33402</uniprot-id>
+        <uniprot-id>Q02153</uniprot-id>
+        <uniprot-id>Q9Y233</uniprot-id>
+        <uniprot-id>P10599</uniprot-id>
+        <uniprot-id>P23921</uniprot-id>
+        <uniprot-id>P31350</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002488</id>
+      <name>Hypoxanthine-guanine phosphoribosyltransferase</name>
+      <organism>Trypanosoma cruzi</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q27796" source="TrEMBL">
+        <name>Hypoxanthine-guanine phosphoribosyltransferase</name>
+        <general-function>Hypoxanthine phosphoribosyltransferase activity</general-function>
+        <specific-function/>
+        <gene-name>HGPRTase</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm (By similarity)</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.61</theoretical-pi>
+        <molecular-weight>25529.02</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="5693">Trypanosoma cruzi</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L07486</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q27796</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q27796_TRYCR</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>EC 2.4.2.8</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022284|Hypoxanthine-guanine phosphoribosyltransferase
+MPREYEFAEKILFTEEEIRTRIMEVAKRIADDYKGKGLRPYVNPLVLISVLKGSFMFTAD
+LCRALSDFNVPVRMEFICVSSYGEGVTSSGQVRMLLDTRHSIEGHHVLIVEDIVDTALTL
+NYLYHMYFTRRPASLKTVVLLDKREGRRVPFSADYVVANIPNAFVIGYGLDYDDTYRELR
+DIVVLRPEVYAEREAARQKKQRAIGSADTDRDAKREFHSKY</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004885|666 bp
+ATGCCACGGGAGTACGAGTTTGCAGAGAAGATTCTTTTCACAGAAGAGGAGATCCGCACC
+CGCATTATGGAGGTTGCCAAGCGCATTGCGGATGACTACAAGGGAAAGGGTCTGCGCCCT
+TATGTCAACCCTCTTGTGCTCATATCTGTGCTGAAGGGAAGCTTTATGTTTACTGCTGAC
+TTGTGCCGTGCACTGAGTGATTTCAACGTGCCGGTGCGAATGGAGTTCATTTGCGTCTCA
+TCATATGGCGAAGGAGTCACGAGCTCCGGTCAGGTGCGCATGTTGCTTGACACGCGTCAC
+AGCATTGAGGGGCACCATGTGTTGATTGTGGAGGACATTGTTGACACCGCCCTTACGCTG
+AATTACTTGTACCACATGTATTTTACACGCAGGCCAGCGAGCTTAAAAACAGTTGTGTTG
+CTTGACAAGCGTGAGGGGCGACGCGTGCCCTTTTCTGCGGACTACGTTGTGGCGAATATA
+CCCAACGCCTTTGTGATTGGCTACGGTCTTGATTACGACGACACCTACCGTGAGTTACGC
+GATATTGTTGTTCTTCGTCCGGAGGTGTATGCGGAGAGGGAGGCGGCGCGGCAGAAGAAG
+CAGCGGGCCATTGGTAGCGCTGACACCGACAGAGACGCCAAGAGGGAGTTTCATAGCAAG
+TACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00156</identifier>
+            <name>Pribosyltran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>guanine phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hypoxanthine phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine ribonucleoside salvage</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000115</id>
+      <name>Adenine phosphoribosyltransferase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P07741" source="Swiss-Prot">
+        <name>Adenine phosphoribosyltransferase</name>
+        <general-function>Amp binding</general-function>
+        <specific-function>Catalyzes a salvage reaction resulting in the formation of AMP, that is energically less costly than de novo synthesis.</specific-function>
+        <gene-name>APRT</gene-name>
+        <locus>16q24</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.82</theoretical-pi>
+        <molecular-weight>19607.535</molecular-weight>
+        <chromosome-location>16</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:626</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>APRT</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Y00486</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28819</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P07741</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>APT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.7</synonym>
+          <synonym>APRT</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0036953|Adenine phosphoribosyltransferase
+MADSELQLVEQRIRSFPDFPTPGVVFRDISPVLKDPASFRAAIGLLARHLKATHGGRIDY
+IAGLDSRGFLFGPSLAQELGLGCVLIRKRGKLPGPTLWASYSLEYGKAELEIQKDALEPG
+QRVVVVDDLLATGGTMNAACELLGRLQAEVLECVSLVELTSLKGREKLAPVPFFSLLQYE
+</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009945|Adenine phosphoribosyltransferase (APRT)
+ATGGCCGACTCCGAGCTGCAGCTGGTTGAGCAGCGGATCCGCAGCTTCCCCGACTTCCCC
+ACCCCAGGCGTGGTATTCAGGGACATCTCGCCCGTCCTGAAGGACCCCGCCTCCTTCCGC
+GCCGCCATCGGCCTCCTGGCGCGACACCTGAAGGCGACCCACGGGGGCCGCATCGACTAC
+ATCGCAGGCCTAGACTCCCGAGGCTTCCTCTTTGGCCCCTCCCTGGCCCAGGAGCTTGGA
+CTGGGCTGCGTGCTCATCCGAAAGCGGGGGAAGCTGCCAGGCCCCACTCTGTGGGCCTCC
+TATTCCCTGGAGTACGGGAAGGCTGAGCTGGAGATTCAGAAAGACGCCCTGGAGCCAGGA
+CAGAGGGTGGTCGTCGTGGATGATCTGCTGGCCACTGGTGGAACCATGAACGCTGCCTGT
+GAGCTGCTGGGCCGCCTGCAGGCTGAGGTCCTGGAGTGCGTGAGCCTGGTGGAGCTGACC
+TCGCTTAAGGGCAGGGAGAAGCTGGCACCTGTACCCTTCTTCTCTCTCCTGCAGTATGAG
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00156</identifier>
+            <name>Pribosyltran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>adenine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>adenine phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>AMP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenine salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>AMP salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>grooming behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine-containing compound salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002489</id>
+      <name>Anthranilate phosphoribosyltransferase</name>
+      <organism>Erwinia carotovora</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8VP84" source="TrEMBL">
+        <name>Anthranilate phosphoribosyltransferase</name>
+        <general-function>Magnesium ion binding</general-function>
+        <specific-function>Catalyzes the transfer of the phosphoribosyl group of 5-phosphorylribose-1-pyrophosphate (PRPP) to anthranilate to yield N-(5'-phosphoribosyl)-anthranilate (PRA).</specific-function>
+        <gene-name>trpD</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.6</theoretical-pi>
+        <molecular-weight>37017.84</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="554">Pectobacterium carotovorum</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AY064465</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8VP84</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q8VP84_PECCA</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.18</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021992|Anthranilate phosphoribosyltransferase
+MQATLIKPTIFTHQPILEKLFKSQSMTQEESHQLFAAIVRGELEDSQLAAALISMKMRGE
+RPEEIAGAASALLADAQPFPRPDYDFADIVGTGGDGTNSINISTASAFVAASCGAKVAKH
+GNRSVCQPLAGSCDLLQAFGIRLDMSAEDSRQALDDLNVCFLFAPQYHTGFRHAMPVRQQ
+LKTRTIFNVLGPLINPARPPKALIGVYSPELVLPIAQALKVLGYKNAAVVHGGGMDEVAI
+HTPTQVAELNNGEIESYQLSPQDFGLQSYSLNALQGGTPEENRDILARLLQGKGDAAHAR
+QVAANVALLLKLFGQDNLRHNAQLALETIRSGTAFERVTALAARG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004887|1038 bp
+ATGCAAGCCACATTGATCAAACCAACTATTTTTACGCATCAGCCTATTTTAGAAAAACTG
+TTCAAATCGCAGTCGATGACGCAAGAAGAAAGCCACCAGCTATTTGCCGCTATCGTGCGC
+GGTGAGTTAGAAGACAGCCAACTGGCAGCGGCGCTGATTAGCATGAAAATGCGCGGTGAA
+CGTCCTGAAGAAATTGCGGGGGCTGCCAGCGCCCTATTGGCTGATGCTCAACCGTTCCCG
+CGCCCAGACTATGACTTTGCGGATATCGTAGGCACCGGCGGCGACGGTACGAACAGCATC
+AACATCTCTACCGCGAGCGCTTTTGTCGCGGCCAGCTGCGGCGCTAAAGTGGCTAAACAT
+GGCAACCGCAGCGTTTGCCAGCCGTTGGCAGGATCGTGTGATTTATTACAGGCCTTTGGC
+ATTCGCTTAGACATGAGCGCCGAAGATTCACGCCAAGCGCTGGATGATTTAAATGTCTGT
+TTCCTGTTTGCGCCGCAGTATCACACCGGTTTTCGCCACGCGATGCCGGTTCGCCAACAG
+CTGAAAACCCGCACCATTTTTAACGTGCTCGGCCCACTGATTAACCCTGCGCGTCCACCT
+AAGGCCCTGATCGGCGTTTACAGCCCTGAATTGGTGTTGCCGATTGCTCAGGCGCTAAAA
+GTGTTGGGCTATAAGAATGCCGCGGTGGTTCACGGGGGTGGAATGGACGAAGTGGCTATT
+CACACCCCGACGCAGGTGGCTGAGTTAAACAACGGTGAAATCGAAAGCTATCAGCTTTCT
+CCGCAAGATTTTGGCTTACAGAGTTATTCGCTAAATGCGTTACAAGGCGGAACCCCAGAA
+GAAAATCGTGACATTCTGGCGCGCTTATTACAAGGTAAAGGTGATGCAGCGCACGCTCGG
+CAGGTCGCCGCTAACGTAGCTTTGCTGTTGAAATTGTTCGGTCAGGATAATCTGCGCCAC
+AACGCGCAACTGGCACTGGAAACCATCAGAAGCGGGACAGCATTTGAGCGAGTGACCGCA
+TTGGCAGCACGAGGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02885</identifier>
+            <name>Glycos_trans_3N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00591</identifier>
+            <name>Glycos_transf_3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>anthranilate phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tryptophan biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000077</id>
+      <name>Hypoxanthine-guanine phosphoribosyltransferase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00492" source="Swiss-Prot">
+        <name>Hypoxanthine-guanine phosphoribosyltransferase</name>
+        <general-function>Protein homodimerization activity</general-function>
+        <specific-function>Converts guanine to guanosine monophosphate, and hypoxanthine to inosine monophosphate. Transfers the 5-phosphoribosyl group from 5-phosphoribosylpyrophosphate onto the purine. Plays a central role in the generation of purine nucleotides through the purine salvage pathway.</specific-function>
+        <gene-name>HPRT1</gene-name>
+        <locus>Xq26.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.67</theoretical-pi>
+        <molecular-weight>24579.155</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5157</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HPRT1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M31642</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>306885</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00492</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HPRT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.8</synonym>
+          <synonym>HGPRT</synonym>
+          <synonym>HPRT</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009920|Hypoxanthine-guanine phosphoribosyltransferase
+MATRSPGVVISDDEPGYDLDLFCIPNHYAEDLERVFIPHGLIMDRTERLARDVMKEMGGH
+HIVALCVLKGGYKFFADLLDYIKALNRNSDRSIPMTVDFIRLKSYCNDQSTGDIKVIGGD
+DLSTLTGKNVLIVEDIIDTGKTMQTLLSLVRQYNPKMVKVASLLVKRTPRSVGYKPDFVG
+FEIPDKFVVGYALDYNEYFRDLNHVCVISETGKAKYKA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009921|Hypoxanthine-guanine phosphoribosyltransferase (HPRT1)
+ATGGCGACCCGCAGCCCTGGCGTCGTGATTAGTGATGATGAACCAGGTTATGACCTTGAT
+TTATTTTGCATACCTAATCATTATGCTGAGGATTTGGAAAGGGTGTTTATTCCTCATGGA
+CTAATTATGGACAGGACTGAACGTCTTGCTCGAGATGTGATGAAGGAGATGGGAGGCCAT
+CACATTGTAGCCCTCTGTGTGCTCAAGGGGGGCTATAAATTCTTTGCTGACCTGCTGGAT
+TACATCAAAGCACTGAATAGAAATAGTGATAGATCCATTCCTATGACTGTAGATTTTATC
+AGACTGAAGAGCTATTGTAATGACCAGTCAACAGGGGACATAAAAGTAATTGGTGGAGAT
+GATCTCTCAACTTTAACTGGAAAGAATGTCTTGATTGTGGAAGATATAATTGACACTGGC
+AAAACAATGCAGACTTTGCTTTCCTTGGTCAGGCAGTATAATCCAAAGATGGTCAAGGTC
+GCAAGCTTGCTGGTGAAAAGGACCCCACGAAGTGTTGGATATAAGCCAGACTTTGTTGGA
+TTTGAAATTCCAGACAAGTTTGTTGTAGGATATGCCCTTGACTATAATGAATACTTCAGG
+GATTTGAATCATGTTTGTGTCATTAGTGAAACTGGAAAAGCAAAATACAAAGCCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00156</identifier>
+            <name>Pribosyltran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>guanine phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hypoxanthine phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenine salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>central nervous system neuron development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cerebral cortex neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dendrite morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dopamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>GMP catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>GMP salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>grooming behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>guanine salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hypoxanthine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hypoxanthine salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>IMP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>IMP salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lymphocyte proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of dopamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homotetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleotide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine ribonucleoside salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine-containing compound salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to amphetamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>striatum development</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001533</id>
+      <name>Orotate phosphoribosyltransferase</name>
+      <organism>Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08870" source="Swiss-Prot">
+        <name>Orotate phosphoribosyltransferase</name>
+        <general-function>Orotate phosphoribosyltransferase activity</general-function>
+        <specific-function>Catalyzes the transfer of a ribosyl phosphate group from 5-phosphoribose 1-diphosphate to orotate, leading to the formation of orotidine monophosphate (OMP).</specific-function>
+        <gene-name>pyrE</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.68</theoretical-pi>
+        <molecular-weight>23561.74</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="99287">Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Z19547</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>47812</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08870</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PYRE_SALTY</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.10</synonym>
+          <synonym>OPRT</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011085|Orotate phosphoribosyltransferase
+MKPYQRQFIEFALNKQVLKFGEFTLKSGRKSPYFFNAGLFNTGRDLALLGRFYAEALVDS
+GIEFDLLFGPAYKGIPIATTTAVALAEHHDKDLPYCFNRKEAKDHGEGGSLVGSALQGRV
+MLVDDVITAGTAIRESMEIIQAHGATLAGVLISLDRQERGRGEISAIQEVERDYGCKVIS
+IITLKDLIAYLEEKPDMAEHLAAVRAYREEFGV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011086|Orotate phosphoribosyltransferase (pyrE)
+ATGAAACCGTATCAGCGCCAGTTTATTGAGTTTGCGCTTAACAAGCAGGTACTAAAGTTT
+GGCGAGTTTACGCTGAAATCCGGGCGCAAAAGCCCCTATTTCTTCAACGCCGGGCTGTTT
+AATACCGGGCGCGACCTGGCGTTGTTAGGCCGTTTTTATGCCGAAGCGCTGGTGGATTCC
+GGTATTGAATTTGATCTGCTGTTTGGCCCCGCGTACAAAGGTATTCCGATCGCGACGACG
+ACGGCGGTTGCGCTGGCGGAACATCACGATAAAGACCTGCCGTACTGCTTTAACCGCAAA
+GAGGCAAAAGATCATGGTGAAGGCGGGAGCCTGGTGGGCAGCGCGCTACAGGGCCGCGTG
+ATGCTGGTGGATGACGTGATTACCGCAGGTACGGCGATTCGCGAGTCAATGGAGATTATT
+CAGGCGCACGGGGCTACGCTGGCTGGCGTACTGATTTCGCTGGATCGTCAGGAACGTGGC
+CGCGGCGAGATTTCCGCGATTCAGGAAGTGGAGCGCGACTATGGTTGTAAGGTTATCTCC
+ATCATTACGCTGAAAGACCTGATTGCCTATCTGGAAGAAAAACCTGATATGGCTGAGCAT
+CTGGCGGCTGTGCGAGCATACCGGGAAGAATTTGGCGTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00156</identifier>
+            <name>Pribosyltran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>orotate phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>'de novo' UMP biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004582</id>
+      <name>Uridine-cytidine kinase-like 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9NWZ5" source="Swiss-Prot">
+        <name>Uridine-cytidine kinase-like 1</name>
+        <general-function>Uridine kinase activity</general-function>
+        <specific-function>May contribute to UTP accumulation needed for blast transformation and proliferation.</specific-function>
+        <gene-name>UCKL1</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>61140.395</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:15938</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9NWZ5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>UCKL1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.1.48</synonym>
+          <synonym>URKL1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009503|Uridine-cytidine kinase-like 1
+MAAPPARADADPSPTSPPTARDTPGRQAEKSETACEDRSNAESLDRLLPPVGTGRSPRKR
+TTSQCKSEPPLLRTSKRTIYTAGRPPWYNEHGTQSKEAFAIGLGGGSASGKTTVARMIIE
+ALDVPWVVLLSMDSFYKVLTEQQQEQAAHNNFNFDHPDAFDFDLIISTLKKLKQGKSVKV
+PIYDFTTHSRKKDWKTLYGANVIIFEGIMAFADKTLLELLDMKIFVDTDSDIRLVRRLRR
+DISERGRDIEGVIKQYNKFVKPSFDQYIQPTMRLADIVVPRGSGNTVAIDLIVQHVHSQL
+EERELSVRAALASAHQCHPLPRTLSVLKSTPQVRGMHTIIRDKETSRDEFIFYSKRLMRL
+LIEHALSFLPFQDCVVQTPQGQDYAGKCYAGKQITGVSILRAGETMEPALRAVCKDVRIG
+TILIQTNQLTGEPELHYLRLPKDISDDHVILMDCTVSTGAAAMMAVRVLLDHDVPEDKIF
+LLSLLMAEMGVHSVAYAFPRVRIITTAVDKRVNDLFRIIPGIGNFGDRYFGTDAVPDGSD
+EEEVAYTG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013201|Uridine-cytidine kinase-like 1 (UCKL1)
+ATGAGCAGCCCCCCAGCTTACCCTGGCATCAGGATCTCAGGGTGCCGGGCCCTTGGAGCA
+GAAGGCAGCAGCAATGCAGAGTCCCTGGACAGGCTCCTGCCACCTGTGGGCACTGGGCGC
+TCTCCCCGGAAGCGGACCACCAGCCAGTGCAAGTCAGAGCCTCCCCTGCTGCGTACAAGC
+AAGCGTACCATCTACACCGCCGGGCGGCCGCCCTGGTACAATGAACACGGCACGCAATCC
+AAAGAGGCCTTCGCCATCGGCTTGGGAGGCGGCAGTGCCTCTGGGAAGACCACTGTGGCC
+AGAATGATCATCGAGGCCCTGGATGTGCCCTGGGTGGTCTTGCTGTCCATGGACTCCTTC
+TACAAGGTGCTGACTGAGCAGCAGCAGGAACAGGCCGCACACAACAACTTCAACTTCGAC
+CACCCAGATGCCTTTGACTTCGACCTCATCATTTCCACCCTCAAGAAGCTGAAGCAGGGG
+AAGAGTGTCAAGGTGCCCATTTATGACTTCACCACGCACAGCCGGAAGAAGGACTGGAAA
+ACACTGTATGGTGCAAACGTCATCATCTTTGAGGGCATCATGGCCTTTGCTGACAAGACA
+CTGTTGGAGCTCCTGGACATGAAGATCTTTGTGGACACAGACTCCGACATCCGCCTGGTA
+CGGCGGCTGCGCCGGGACATCAGTGAGCGCGGCCGGGACATCGAGGGTGTCATCAAGCAG
+TACAACAAGTTTGTCAAGCCCTCCTTCGACCAGTACATCCAGCCCACCATGCGCCTGGCA
+GACATCGTGGTCCCCAGAGGGAGCGGCAACACGGTGGCCATCGACCTGATTGTGCAGCAC
+GTGCACAGCCAGCTGGAGGAGCGTGAACTCAGCGTCAGGGCTGCGCTGGCCTCGGCACAC
+CAGTGCCACCCGCTGCCCCGGACGCTGAGCGTCCTGAAGAGCACGCCGCAGGTACGGGGC
+ATGCACACCATCATCAGGGACAAGGAGACCAGTCGCGACGAGTTCATCTTCTACTCCAAG
+AGACTGATGCGGCTGCTCATCGAGCACGCGCTCTCCTTCCTGCCCTTTCAGGACTGCGTC
+GTACAGACCCCGCAGGGGCAGGACTATGCGGGCAAGTGCTATGCGGGGAAGCAGATCACC
+GGTGTGTCCATTCTGCGCGCCGGTGAAACCATGGAGCCCGCGCTGCGCGCTGTGTGCAAA
+GACGTGCGCATCGGCACCATCCTCATCCAGACCAACCAGCTTACCGGGGAGCCCGAGCTC
+CACTACCTGAGGCTGCCCAAGGACATCAGCGATGACCACGTGATCCTCATGGACTGCACC
+GTGTCCACGGGCGCGGCGGCCATGATGGCAGTGCGCGTGCTCCTGGACCACGACGTGCCT
+GAGGACAAGATCTTTTTGCTGTCGCTGCTCATGGCAGAGATGGGCGTGCACTCAGTGGCC
+TATGCATTTCCGCGAGTGAGAATCATCACCACGGCGGTGGACAAGCGGGTCAATGACCTT
+TTCCGCATCATCCCAGGCATTGGGAACTTTGGCGACCGCTACTTTGGGACAGACGCGGTC
+CCCGATGGCAGTGACGAGGAGGAAGTGGCCTACACGGGTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00485</identifier>
+            <name>PRK</name>
+          </pfam>
+          <pfam>
+            <identifier>PF14681</identifier>
+            <name>UPRTase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>uridine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>CTP salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleoside salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>UMP salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2013-05-22" updated="2020-01-02">
+  <drugbank-id primary="true">DB08884</drugbank-id>
+  <name>Gadoxetic acid</name>
+  <description>Gadoxetic acid (gadoxetate) is a paramagnetic gadolinium-containing contrast agent in which its salt form, gadoxetate disodium, is used for intravenous injection. Ethoxybenzyl diethylenetriaminepentaacetic acid is the moiety that chelates with a gadolinium ion and forms a stable complex with it to make up the drug. It is marketed by Bayer HealthCare Pharmaceuticals and FDA approved on July 3, 2008.</description>
+  <cas-number>135326-11-3</cas-number>
+  <unii>3QJA87N40S</unii>
+  <average-mass>681.75</average-mass>
+  <monoisotopic-mass>682.11214</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A7461</ref-id>
+        <pubmed-id>22504332</pubmed-id>
+        <citation>Van Beers BE, Pastor CM, Hussain HK: Primovist, Eovist: what to expect? J Hepatol. 2012 Aug;57(2):421-9. doi: 10.1016/j.jhep.2012.01.031. Epub 2012 Apr 12.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Gadoxetate is used as a contrast medium for magnetic resonance imaging (MRI) to detect and characterize lesions in the liver. </indication>
+  <pharmacodynamics>Gadoxetate disodium is an amphipathic compound in which gadoxetate is hydrophillic and its moiety, the ethoxybenyzl group, is lipophillic. Consequently, gadoxetate disodium has a biphasic mode of action in which it first distributes into the extracellular space after bolus injection and then hepatocytes selectively takes up the drug. </pharmacodynamics>
+  <mechanism-of-action>When gadoxetate disodium is placed in an external magnetic field, a large magnetic moment is produced. As a result, a magnetic field is induced around the tissue. The water protons in the vicinity are disrupted such that the change the proton density and spin characteristics are detected and visualized by a device. </mechanism-of-action>
+  <toxicity>LD50, oral, rat = 18100 mg/kg; &#13;
+LD50, oral, mouse = 14500 mg/kg;&#13;
+LD50, IV, rat = 3600 - 7300 mg/kg;&#13;
+LD50, IV, mouse = 5400 - 10900 mg/kg;&#13;
+LD50, IV, dog = &gt;2200 mg/kg  </toxicity>
+  <metabolism>Gadoxetate disodium is not metabolized. </metabolism>
+  <absorption/>
+  <half-life>Terminal elimination half-life, healthy subjects, adults = 0.91 - 0.95 hours </half-life>
+  <protein-binding>&lt;10% protein bound. Because it is more protein bound than other gadolinium-based contrast agents, gadoxetate disodium has increased T1 relaxivity. This results in an enhancement of the signal. </protein-binding>
+  <route-of-elimination>Gadoxetate disodium is eliminated equally via urine and feces. Multidrug resistance protein 2 actively transports/excretes gadoxetate disodium into the bile.  </route-of-elimination>
+  <volume-of-distribution>Total volume of distribution at steady state is 0.21 L/kg. Gadoxetate disodium cannot diffuse through the blood brain barrier. The two transporters that gadoxetate disodium can enter the hepatocyte through are OATP1B1 and OATP1B3. Gadoxetate disodium may also exit the heptaocyte and go back into sinusoidal space via active transport through multidrug resistance protein 3 and 4. </volume-of-distribution>
+  <clearance>Clearance may be lower in older patients. &#13;
+Total serum clearance (CLtot) = 250 mL/min;&#13;
+Renal clearance (CLr) = 120 mL/min </clearance>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT000091</drugbank-id>
+      <name>Gadoxetate disodium</name>
+      <unii>HOY74VZE0M</unii>
+      <cas-number>135326-22-6</cas-number>
+      <inchikey>SLYTULCOCGSBBJ-UHFFFAOYSA-I</inchikey>
+      <average-mass>725.71</average-mass>
+      <monoisotopic-mass>726.076023636</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">Gadoxetate</synonym>
+    <synonym language="english" coder="inn">Gadoxetic acid</synonym>
+    <synonym language="english" coder="">Gd-EOB-DTPA</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Eovist</name>
+      <labeller>Bayer HealthCare Pharmaceuticals Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50419-320</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-07-03</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>181.43 mg/1mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA022090</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Primovist</name>
+      <labeller>Bayer</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02340666</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-02-04</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Eovist</name>
+      <ingredients>Gadoxetic acid</ingredients>
+    </mixture>
+    <mixture>
+      <name>Primovist</name>
+      <ingredients>Gadoxetic acid</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acetates</category>
+      <mesh-id>D000085</mesh-id>
+    </category>
+    <category>
+      <category>Acids, Acyclic</category>
+      <mesh-id>D000144</mesh-id>
+    </category>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Compounds used in a research, industrial, or household setting</category>
+      <mesh-id>D020313</mesh-id>
+    </category>
+    <category>
+      <category>Contrast Media</category>
+      <mesh-id>D003287</mesh-id>
+    </category>
+    <category>
+      <category>Diagnostic Uses of Chemicals</category>
+      <mesh-id>D064907</mesh-id>
+    </category>
+    <category>
+      <category>Fatty Acids</category>
+      <mesh-id>D005227</mesh-id>
+    </category>
+    <category>
+      <category>Fatty Acids, Volatile</category>
+      <mesh-id>D005232</mesh-id>
+    </category>
+    <category>
+      <category>Gadolinium-based Contrast Agent</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Lipids</category>
+      <mesh-id>D008055</mesh-id>
+    </category>
+    <category>
+      <category>Magnetic Resonance Contrast Activity</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Magnetic Resonance Imaging Contrast Media</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>OATP1B1/SLCO1B1 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>OATP1B3 substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Organometallic Compounds</category>
+      <mesh-id>D009942</mesh-id>
+    </category>
+    <category>
+      <category>Other Diagnostics</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Paramagnetic Contrast Agent</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Paramagnetic Contrast Media</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Polyamines</category>
+      <mesh-id>D011073</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Intravenous</route>
+      <strength>181.43 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Intravenous</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="V08CA10">
+      <level code="V08CA">Paramagnetic contrast media</level>
+      <level code="V08C">MAGNETIC RESONANCE IMAGING CONTRAST MEDIA</level>
+      <level code="V08">CONTRAST MEDIA</level>
+      <level code="V">VARIOUS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>36:89.00*</ahfs-code>
+  </ahfs-codes>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB08884.pdf?1369285026</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB08884.pdf?1369285026</msds>
+  <patents>
+    <patent>
+      <number>6039931</number>
+      <country>United States</country>
+      <approved>2000-03-21</approved>
+      <expires>2021-11-13</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>5798092</number>
+      <country>United States</country>
+      <approved>1998-08-25</approved>
+      <expires>2015-08-25</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cyclosporine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00177</drugbank-id>
+      <name>Valsartan</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Valsartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00197</drugbank-id>
+      <name>Troglitazone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Troglitazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00199</drugbank-id>
+      <name>Erythromycin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Erythromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00203</drugbank-id>
+      <name>Sildenafil</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Sildenafil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00206</drugbank-id>
+      <name>Reserpine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Reserpine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00213</drugbank-id>
+      <name>Pantoprazole</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pantoprazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00220</drugbank-id>
+      <name>Nelfinavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nelfinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00224</drugbank-id>
+      <name>Indinavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Indinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00227</drugbank-id>
+      <name>Lovastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Lovastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00255</drugbank-id>
+      <name>Diethylstilbestrol</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Diethylstilbestrol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00286</drugbank-id>
+      <name>Conjugated estrogens</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Conjugated estrogens.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Indomethacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00345</drugbank-id>
+      <name>Aminohippuric acid</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Aminohippuric acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00390</drugbank-id>
+      <name>Digoxin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Digoxin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00394</drugbank-id>
+      <name>Beclomethasone dipropionate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Beclomethasone dipropionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00396</drugbank-id>
+      <name>Progesterone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Progesterone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00398</drugbank-id>
+      <name>Sorafenib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Sorafenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00412</drugbank-id>
+      <name>Rosiglitazone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rosiglitazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00439</drugbank-id>
+      <name>Cerivastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cerivastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00451</drugbank-id>
+      <name>Levothyroxine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Levothyroxine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00468</drugbank-id>
+      <name>Quinine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Quinine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00503</drugbank-id>
+      <name>Ritonavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ritonavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00520</drugbank-id>
+      <name>Caspofungin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Caspofungin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Vincristine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Vinblastine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00583</drugbank-id>
+      <name>Levocarnitine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Levocarnitine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00586</drugbank-id>
+      <name>Diclofenac</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Diclofenac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00588</drugbank-id>
+      <name>Fluticasone propionate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fluticasone propionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00602</drugbank-id>
+      <name>Ivermectin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ivermectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00622</drugbank-id>
+      <name>Nicardipine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nicardipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00641</drugbank-id>
+      <name>Simvastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Simvastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00646</drugbank-id>
+      <name>Nystatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nystatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00661</drugbank-id>
+      <name>Verapamil</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Verapamil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00701</drugbank-id>
+      <name>Amprenavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Amprenavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00762</drugbank-id>
+      <name>Irinotecan</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Irinotecan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00778</drugbank-id>
+      <name>Roxithromycin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Roxithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00783</drugbank-id>
+      <name>Estradiol</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00795</drugbank-id>
+      <name>Sulfasalazine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Sulfasalazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00834</drugbank-id>
+      <name>Mifepristone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Mifepristone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Tacrolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Sirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00908</drugbank-id>
+      <name>Quinidine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Quinidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00932</drugbank-id>
+      <name>Tipranavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Tipranavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00975</drugbank-id>
+      <name>Dipyridamole</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Dipyridamole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00976</drugbank-id>
+      <name>Telithromycin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Telithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01026</drugbank-id>
+      <name>Ketoconazole</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ketoconazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01045</drugbank-id>
+      <name>Rifampicin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rifampicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01051</drugbank-id>
+      <name>Novobiocin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Novobiocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01072</drugbank-id>
+      <name>Atazanavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Atazanavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01076</drugbank-id>
+      <name>Atorvastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Atorvastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01092</drugbank-id>
+      <name>Ouabain</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ouabain.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01095</drugbank-id>
+      <name>Fluvastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fluvastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01098</drugbank-id>
+      <name>Rosuvastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rosuvastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01115</drugbank-id>
+      <name>Nifedipine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nifedipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01132</drugbank-id>
+      <name>Pioglitazone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pioglitazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01232</drugbank-id>
+      <name>Saquinavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Saquinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01241</drugbank-id>
+      <name>Gemfibrozil</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Gemfibrozil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01264</drugbank-id>
+      <name>Darunavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Darunavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01393</drugbank-id>
+      <name>Bezafibrate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Bezafibrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Everolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01601</drugbank-id>
+      <name>Lopinavir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Lopinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01645</drugbank-id>
+      <name>Genistein</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Genistein.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01892</drugbank-id>
+      <name>Hyperforin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Hyperforin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02659</drugbank-id>
+      <name>Cholic Acid</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cholic Acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02703</drugbank-id>
+      <name>Fusidic acid</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fusidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04216</drugbank-id>
+      <name>Quercetin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Quercetin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04348</drugbank-id>
+      <name>Taurocholic acid</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Taurocholic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04850</drugbank-id>
+      <name>Posizolid</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Posizolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04868</drugbank-id>
+      <name>Nilotinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nilotinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04881</drugbank-id>
+      <name>Elacridar</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Elacridar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05521</drugbank-id>
+      <name>Telaprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Telaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05928</drugbank-id>
+      <name>Dovitinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Dovitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06151</drugbank-id>
+      <name>Acetylcysteine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Acetylcysteine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06191</drugbank-id>
+      <name>Zosuquidar</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Zosuquidar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06210</drugbank-id>
+      <name>Eltrombopag</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Eltrombopag.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06290</drugbank-id>
+      <name>Simeprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Simeprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06589</drugbank-id>
+      <name>Pazopanib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pazopanib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06626</drugbank-id>
+      <name>Axitinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Axitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06772</drugbank-id>
+      <name>Cabazitaxel</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cabazitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08860</drugbank-id>
+      <name>Pitavastatin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pitavastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08862</drugbank-id>
+      <name>Cholecystokinin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cholecystokinin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08864</drugbank-id>
+      <name>Rilpivirine</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rilpivirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08880</drugbank-id>
+      <name>Teriflunomide</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Teriflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08906</drugbank-id>
+      <name>Fluticasone furoate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fluticasone furoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08912</drugbank-id>
+      <name>Dabrafenib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Dabrafenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Idelalisib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09065</drugbank-id>
+      <name>Cobicistat</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cobicistat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09078</drugbank-id>
+      <name>Lenvatinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Lenvatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09102</drugbank-id>
+      <name>Daclatasvir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Daclatasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09198</drugbank-id>
+      <name>Lobeglitazone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Lobeglitazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09272</drugbank-id>
+      <name>Eluxadoline</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Eluxadoline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09292</drugbank-id>
+      <name>Sacubitril</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Sacubitril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09297</drugbank-id>
+      <name>Paritaprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Paritaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09298</drugbank-id>
+      <name>Silibinin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Silibinin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11581</drugbank-id>
+      <name>Venetoclax</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Venetoclax.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11586</drugbank-id>
+      <name>Asunaprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Asunaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11613</drugbank-id>
+      <name>Velpatasvir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Velpatasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11753</drugbank-id>
+      <name>Rifamycin</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rifamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11869</drugbank-id>
+      <name>Valspodar</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Valspodar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12026</drugbank-id>
+      <name>Voxilaprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Voxilaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12319</drugbank-id>
+      <name>Benzbromarone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Benzbromarone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13867</drugbank-id>
+      <name>Fluticasone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fluticasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13874</drugbank-id>
+      <name>Enasidenib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Enasidenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13878</drugbank-id>
+      <name>Pibrentasvir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pibrentasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13879</drugbank-id>
+      <name>Glecaprevir</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Glecaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13919</drugbank-id>
+      <name>Candesartan</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Candesartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13952</drugbank-id>
+      <name>Estradiol acetate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13953</drugbank-id>
+      <name>Estradiol benzoate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol benzoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13954</drugbank-id>
+      <name>Estradiol cypionate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol cypionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13955</drugbank-id>
+      <name>Estradiol dienanthate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol dienanthate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13956</drugbank-id>
+      <name>Estradiol valerate</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Estradiol valerate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12978</drugbank-id>
+      <name>Pexidartinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Pexidartinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12500</drugbank-id>
+      <name>Fedratinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Fedratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11757</drugbank-id>
+      <name>Istradefylline</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Istradefylline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04855</drugbank-id>
+      <name>Dronedarone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Dronedarone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15444</drugbank-id>
+      <name>Elexacaftor</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Elexacaftor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01149</drugbank-id>
+      <name>Nefazodone</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Nefazodone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05016</drugbank-id>
+      <name>Ataluren</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ataluren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05239</drugbank-id>
+      <name>Cobimetinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Cobimetinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06749</drugbank-id>
+      <name>Ginsenoside Rb1</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Ginsenoside Rb1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Baricitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11942</drugbank-id>
+      <name>Selinexor</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Selinexor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12332</drugbank-id>
+      <name>Rucaparib</name>
+      <description>The excretion of Gadoxetic acid can be decreased when combined with Rucaparib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11901</drugbank-id>
+      <name>Apalutamide</name>
+      <description>The excretion of Gadoxetic acid can be increased when combined with Apalutamide.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.24</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.97e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-4.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>gadolinium(3+) ion 2-[(2-{[(2S)-2-[bis(carboxymethyl)amino]-3-(4-ethoxyphenyl)propyl](carboxylatomethyl)amino}ethyl)(carboxylatomethyl)amino]acetate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>gadolinium(3+) ion 2-[(2-{[(2S)-2-[bis(carboxymethyl)amino]-3-(4-ethoxyphenyl)propyl](carboxylatomethyl)amino}ethyl)(carboxylatomethyl)amino]acetate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>681.75</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>682.11214</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[Gd+3].[H][C@@](CN(CCN(CC([O-])=O)CC([O-])=O)CC([O-])=O)(CC1=CC=C(OCC)C=C1)N(CC(O)=O)CC(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C23H30GdN3O11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C23H33N3O11.Gd/c1-2-37-18-5-3-16(4-6-18)9-17(26(14-22(33)34)15-23(35)36)10-24(11-19(27)28)7-8-25(12-20(29)30)13-21(31)32;/h3-6,17H,2,7-15H2,1H3,(H,27,28)(H,29,30)(H,31,32)(H,33,34)(H,35,36);/q;+3/p-3/t17-;/m0./s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>PCZHWPSNPWAQNF-LMOVPXPDSA-K</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>213.94</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>159.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>50.67</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>20</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>14</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.98</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.99</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>pKa</kind>
+      <value>6.8-8</value>
+      <source>MSDS</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>20566</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>131704314</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>175427133</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D04288</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>189907</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA165985534</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Gadoxetic_acid</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201768</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/eovist-drug.htm</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/mtm/gadoxetate.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters>
+    <transporter position="1">
+      <id>BE0001004</id>
+      <name>Solute carrier organic anion transporter family member 1B1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17943</ref-id>
+            <pubmed-id>22771883</pubmed-id>
+            <citation>Nassif A, Jia J, Keiser M, Oswald S, Modess C, Nagel S, Weitschies W, Hosten N, Siegmund W, Kuhn JP: Visualization of hepatic uptake transporter function in healthy subjects by using gadoxetic acid-enhanced MR imaging. Radiology. 2012 Sep;264(3):741-50. doi: 10.1148/radiol.12112061. Epub 2012 Jul 6.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9Y6L6" source="Swiss-Prot">
+        <name>Solute carrier organic anion transporter family member 1B1</name>
+        <general-function>Sodium-independent organic anion transmembrane transporter activity</general-function>
+        <specific-function>Mediates the Na(+)-independent uptake of organic anions such as pravastatin, taurocholate, methotrexate, dehydroepiandrosterone sulfate, 17-beta-glucuronosyl estradiol, estrone sulfate, prostaglandin E2, thromboxane B2, leukotriene C3, leukotriene E4, thyroxine and triiodothyronine. Involved in the clearance of bile acids and organic anions from the liver.</specific-function>
+        <gene-name>SLCO1B1</gene-name>
+        <locus>12p</locus>
+        <cellular-location>Basolateral cell membrane</cellular-location>
+        <transmembrane-regions>29-48
+68-88
+95-119
+169-197
+217-237
+256-280
+332-353
+374-397
+402-425
+538-560
+570-595
+630-647</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.68</theoretical-pi>
+        <molecular-weight>76447.99</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10959</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLCO1B1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF060500</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>5051630</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1220</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9Y6L6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SO1B1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Liver-specific organic anion transporter 1</synonym>
+          <synonym>LST-1</synonym>
+          <synonym>LST1</synonym>
+          <synonym>OATP-2</synonym>
+          <synonym>OATP-C</synonym>
+          <synonym>OATP1B1</synonym>
+          <synonym>OATP2</synonym>
+          <synonym>OATPC</synonym>
+          <synonym>SLC21A6</synonym>
+          <synonym>Sodium-independent organic anion-transporting polypeptide 2</synonym>
+          <synonym>Solute carrier family 21 member 6</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010701|Solute carrier organic anion transporter family member 1B1
+MDQNQHLNKTAEAQPSENKKTRYCNGLKMFLAALSLSFIAKTLGAIIMKSSIIHIERRFE
+ISSSLVGFIDGSFEIGNLLVIVFVSYFGSKLHRPKLIGIGCFIMGIGGVLTALPHFFMGY
+YRYSKETNINSSENSTSTLSTCLINQILSLNRASPEIVGKGCLKESGSYMWIYVFMGNML
+RGIGETPIVPLGLSYIDDFAKEGHSSLYLGILNAIAMIGPIIGFTLGSLFSKMYVDIGYV
+DLSTIRITPTDSRWVGAWWLNFLVSGLFSIISSIPFFFLPQTPNKPQKERKASLSLHVLE
+TNDEKDQTANLTNQGKNITKNVTGFFQSFKSILTNPLYVMFVLLTLLQVSSYIGAFTYVF
+KYVEQQYGQPSSKANILLGVITIPIFASGMFLGGYIIKKFKLNTVGIAKFSCFTAVMSLS
+FYLLYFFILCENKSVAGLTMTYDGNNPVTSHRDVPLSYCNSDCNCDESQWEPVCGNNGIT
+YISPCLAGCKSSSGNKKPIVFYNCSCLEVTGLQNRNYSAHLGECPRDDACTRKFYFFVAI
+QVLNLFFSALGGTSHVMLIVKIVQPELKSLALGFHSMVIRALGGILAPIYFGALIDTTCI
+KWSTNNCGTRGSCRTYNSTSFSRVYLGLSSMLRVSSLVLYIILIYAMKKKYQEKDINASE
+NGSVMDEANLESLNKNKHFVPSAGADSETHC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010702|Solute carrier organic anion transporter family member 1B1 (SLCO1B1)
+ATGGACCAAAATCAACATTTGAATAAAACAGCAGAGGCACAACCTTCAGAGAATAAGAAA
+ACAAGATACTGCAATGGATTGAAGATGTTCTTGGCAGCTCTGTCACTCAGCTTTATTGCT
+AAGACACTAGGTGCAATTATTATGAAAAGTTCCATCATTCATATAGAACGGAGATTTGAG
+ATATCCTCTTCTCTTGTTGGTTTTATTGACGGAAGCTTTGAAATTGGAAATTTGCTTGTG
+ATTGTATTTGTGAGTTACTTTGGATCCAAACTACATAGACCAAAGTTAATTGGAATCGGT
+TGTTTCATTATGGGAATTGGAGGTGTTTTGACTGCTTTGCCACATTTCTTCATGGGATAT
+TACAGGTATTCTAAAGAAACTAATATCAATTCATCAGAAAATTCAACATCGACCTTATCC
+ACTTGTTTAATTAATCAAATTTTATCACTCAATAGAGCATCACCTGAGATAGTGGGAAAA
+GGTTGTTTAAAGGAATCTGGGTCATACATGTGGATATATGTGTTCATGGGTAATATGCTT
+CGTGGAATAGGGGAGACTCCCATAGTACCATTGGGGCTTTCTTACATTGATGATTTCGCT
+AAAGAAGGACATTCTTCTTTGTATTTAGGTATATTGAATGCAATAGCAATGATTGGTCCA
+ATCATTGGCTTTACCCTGGGATCTCTGTTTTCTAAAATGTACGTGGATATTGGATATGTA
+GATCTAAGCACTATCAGGATAACTCCTACTGATTCTCGATGGGTTGGAGCTTGGTGGCTT
+AATTTCCTTGTGTCTGGACTATTCTCCATTATTTCTTCCATACCATTCTTTTTCTTGCCC
+CAAACTCCAAATAAACCACAAAAAGAAAGAAAAGCTTCACTGTCTTTGCATGTGCTGGAA
+ACAAATGATGAAAAGGATCAAACAGCTAATTTGACCAATCAAGGAAAAAATATTACCAAA
+AATGTGACTGGTTTTTTCCAGTCTTTTAAAAGCATCCTTACTAATCCCCTGTATGTTATG
+TTTGTGCTTTTGACGTTGTTACAAGTAAGCAGCTATATTGGTGCTTTTACTTATGTCTTC
+AAATACGTAGAGCAACAGTATGGTCAGCCTTCATCTAAGGCTAACATCTTATTGGGAGTC
+ATAACCATACCTATTTTTGCAAGTGGAATGTTTTTAGGAGGATATATCATTAAAAAATTC
+AAACTGAACACCGTTGGAATTGCCAAATTCTCATGTTTTACTGCTGTGATGTCATTGTCC
+TTTTACCTATTATATTTTTTCATACTCTGTGAAAACAAATCAGTTGCCGGACTAACCATG
+ACCTATGATGGAAATAATCCAGTGACATCTCATAGAGATGTACCACTTTCTTATTGCAAC
+TCAGACTGCAATTGTGATGAAAGTCAATGGGAACCAGTCTGTGGAAACAATGGAATAACT
+TACATCTCACCCTGTCTAGCAGGTTGCAAATCTTCAAGTGGCAATAAAAAGCCTATAGTG
+TTTTACAACTGCAGTTGTTTGGAAGTAACTGGTCTCCAGAACAGAAATTACTCAGCCCAT
+TTGGGTGAATGCCCAAGAGATGATGCTTGTACAAGGAAATTTTACTTTTTTGTTGCAATA
+CAAGTCTTGAATTTATTTTTCTCTGCACTTGGAGGCACCTCACATGTCATGCTGATTGTT
+AAAATTGTTCAACCTGAATTGAAATCACTTGCACTGGGTTTCCACTCAATGGTTATACGA
+GCACTAGGAGGAATTCTAGCTCCAATATATTTTGGGGCTCTGATTGATACAACGTGTATA
+AAGTGGTCCACCAACAACTGTGGCACACGTGGGTCATGTAGGACATATAATTCCACATCA
+TTTTCAAGGGTCTACTTGGGCTTGTCTTCAATGTTAAGAGTCTCATCACTTGTTTTATAT
+ATTATATTAATTTATGCCATGAAGAAAAAATATCAAGAGAAAGATATCAATGCATCAGAA
+AATGGAAGTGTCATGGATGAAGCAAACTTAGAATCCTTAAATAAAAATAAACATTTTGTC
+CCTTCTGCTGGGGCAGATAGTGAAACACATTGTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07648</identifier>
+            <name>Kazal_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03137</identifier>
+            <name>OATP</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>bile acid transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sodium-independent organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="2">
+      <id>BE0003659</id>
+      <name>Solute carrier organic anion transporter family member 1B3</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17943</ref-id>
+            <pubmed-id>22771883</pubmed-id>
+            <citation>Nassif A, Jia J, Keiser M, Oswald S, Modess C, Nagel S, Weitschies W, Hosten N, Siegmund W, Kuhn JP: Visualization of hepatic uptake transporter function in healthy subjects by using gadoxetic acid-enhanced MR imaging. Radiology. 2012 Sep;264(3):741-50. doi: 10.1148/radiol.12112061. Epub 2012 Jul 6.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9NPD5" source="Swiss-Prot">
+        <name>Solute carrier organic anion transporter family member 1B3</name>
+        <general-function>Sodium-independent organic anion transmembrane transporter activity</general-function>
+        <specific-function>Mediates the Na(+)-independent uptake of organic anions such as 17-beta-glucuronosyl estradiol, taurocholate, triiodothyronine (T3), leukotriene C4, dehydroepiandrosterone sulfate (DHEAS), methotrexate and sulfobromophthalein (BSP). Involved in the clearance of bile acids and organic anions from the liver.</specific-function>
+        <gene-name>SLCO1B3</gene-name>
+        <locus>12p12</locus>
+        <cellular-location>Basolateral cell membrane</cellular-location>
+        <transmembrane-regions>29-48
+68-88
+95-119
+169-197
+217-237
+256-280
+332-353
+374-397
+402-425
+538-560
+570-595
+630-647</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.95</theoretical-pi>
+        <molecular-weight>77402.175</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10961</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AJ251506</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>9187497</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1221</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9NPD5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SO1B3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Liver-specific organic anion transporter 2</synonym>
+          <synonym>LST-2</synonym>
+          <synonym>LST2</synonym>
+          <synonym>OATP-8</synonym>
+          <synonym>OATP1B3</synonym>
+          <synonym>OATP8</synonym>
+          <synonym>Organic anion transporter 8</synonym>
+          <synonym>Organic anion-transporting polypeptide 8</synonym>
+          <synonym>SLC21A8</synonym>
+          <synonym>Solute carrier family 21 member 8</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007032|Solute carrier organic anion transporter family member 1B3
+MDQHQHLNKTAESASSEKKKTRRCNGFKMFLAALSFSYIAKALGGIIMKISITQIERRFD
+ISSSLAGLIDGSFEIGNLLVIVFVSYFGSKLHRPKLIGIGCLLMGTGSILTSLPHFFMGY
+YRYSKETHINPSENSTSSLSTCLINQTLSFNGTSPEIVEKDCVKESGSHMWIYVFMGNML
+RGIGETPIVPLGISYIDDFAKEGHSSLYLGSLNAIGMIGPVIGFALGSLFAKMYVDIGYV
+DLSTIRITPKDSRWVGAWWLGFLVSGLFSIISSIPFFFLPKNPNKPQKERKISLSLHVLK
+TNDDRNQTANLTNQGKNVTKNVTGFFQSLKSILTNPLYVIFLLLTLLQVSSFIGSFTYVF
+KYMEQQYGQSASHANFLLGIITIPTVATGMFLGGFIIKKFKLSLVGIAKFSFLTSMISFL
+FQLLYFPLICESKSVAGLTLTYDGNNSVASHVDVPLSYCNSECNCDESQWEPVCGNNGIT
+YLSPCLAGCKSSSGIKKHTVFYNCSCVEVTGLQNRNYSAHLGECPRDNTCTRKFFIYVAI
+QVINSLFSATGGTTFILLTVKIVQPELKALAMGFQSMVIRTLGGILAPIYFGALIDKTCM
+KWSTNSCGAQGACRIYNSVFFGRVYLGLSIALRFPALVLYIVFIFAMKKKFQGKDTKASD
+NERKVMDEANLEFLNNGEHFVPSAGTDSKTCNLDMQDNAAAN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012544|Solute carrier organic anion transporter family member 1B3 (SLCO1B3)
+ATGGACCAACATCAACATTTGAATAAAACAGCAGAGTCAGCATCTTCAGAGAAAAAGAAA
+ACAAGACGCTGCAATGGATTCAAGATGTTCTTGGCAGCCCTGTCATTCAGCTATATTGCT
+AAAGCACTAGGTGGAATCATTATGAAAATTTCCATCACTCAAATAGAAAGGAGATTTGAC
+ATATCCTCTTCTCTTGCTGGTTTAATTGATGGAAGCTTTGAAATTGGAAATTTGCTTGTG
+ATTGTATTTGTAAGTTACTTTGGATCTAAACTACACAGACCGAAGTTAATTGGAATTGGT
+TGTCTCCTTATGGGAACTGGAAGTATTTTGACATCTTTACCACATTTCTTCATGGGATAT
+TATAGGTATTCTAAAGAAACCCATATTAATCCATCAGAAAATTCAACATCAAGTTTATCA
+ACCTGTTTAATTAATCAAACCTTATCATTCAATGGAACATCACCTGAGATAGTAGAAAAA
+GATTGTGTAAAGGAATCTGGGTCACACATGTGGATCTATGTCTTCATGGGGAATATGCTT
+CGTGGCATAGGGGAAACCCCCATAGTACCATTGGGGATTTCATACATTGATGATTTTGCA
+AAAGAAGGACATTCTTCCTTGTATTTAGGTAGTTTGAATGCAATAGGAATGATTGGTCCA
+GTCATTGGCTTTGCACTGGGATCTCTGTTTGCTAAAATGTACGTGGATATTGGATATGTA
+GATCTGAGCACTATCAGAATAACTCCTAAGGACTCTCGTTGGGTTGGAGCTTGGTGGCTT
+GGTTTCCTTGTGTCTGGACTATTTTCCATTATTTCTTCCATACCATTTTTTTTCTTGCCG
+AAAAATCCAAATAAACCACAAAAAGAAAGAAAAATTTCACTATCATTGCATGTGCTGAAA
+ACAAATGATGATAGAAATCAAACAGCTAATTTGACCAACCAAGGAAAAAATGTTACCAAA
+AATGTGACTGGTTTTTTCCAGTCTTTGAAAAGCATCCTTACCAATCCCCTGTATGTTATA
+TTTCTGCTTTTGACATTGTTACAAGTAAGCAGCTTTATTGGTTCTTTTACTTACGTCTTT
+AAATATATGGAGCAACAGTACGGTCAGTCTGCATCTCATGCTAACTTTTTGTTGGGAATC
+ATAACCATTCCTACGGTTGCAACTGGAATGTTTTTAGGAGGATTTATCATTAAAAAATTC
+AAATTGTCTTTAGTTGGAATTGCCAAATTTTCATTTCTTACTTCGATGATATCCTTCTTG
+TTTCAACTTCTATATTTCCCTCTAATCTGCGAAAGCAAATCAGTTGCCGGCCTAACCTTG
+ACCTATGATGGAAATAATTCAGTGGCATCTCATGTAGATGTACCACTTTCTTATTGCAAC
+TCAGAGTGCAATTGTGATGAAAGTCAGTGGGAACCAGTCTGTGGGAACAATGGAATAACT
+TACCTGTCACCTTGTCTAGCAGGATGCAAATCCTCAAGTGGTATTAAAAAGCATACAGTG
+TTTTATAACTGTAGTTGTGTGGAAGTAACTGGTCTCCAGAACAGAAATTACTCAGCACAC
+TTGGGTGAATGCCCAAGAGATAATACTTGTACAAGGAAATTTTTCATCTATGTTGCAATT
+CAAGTCATAAACTCTTTGTTCTCTGCAACAGGAGGTACCACATTTATCTTGTTGACTGTG
+AAGATTGTTCAACCTGAATTGAAAGCACTTGCAATGGGTTTCCAGTCAATGGTTATAAGA
+ACACTAGGAGGAATTCTAGCTCCAATATATTTTGGGGCTCTGATTGATAAAACATGTATG
+AAGTGGTCCACCAACAGCTGTGGAGCACAAGGAGCTTGTAGGATATATAATTCCGTATTT
+TTTGGAAGGGTCTACTTGGGCTTATCTATAGCTTTAAGATTCCCAGCACTTGTTTTATAT
+ATTGTTTTCATTTTTGCTATGAAGAAAAAATTTCAAGGAAAAGATACCAAGGCATCGGAC
+AATGAAAGAAAAGTAATGGATGAAGCAAACTTAGAATTCTTAAATAATGGTGAACATTTT
+GTACCTTCTGCTGGAACAGATAGTAAAACATGTAATTTGGACATGCAAGACAATGCTGCT
+GCCAACTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07648</identifier>
+            <name>Kazal_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03137</identifier>
+            <name>OATP</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>bile acid transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sodium-independent organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="3">
+      <id>BE0001061</id>
+      <name>Canalicular multispecific organic anion transporter 2</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A7461</ref-id>
+            <pubmed-id>22504332</pubmed-id>
+            <citation>Van Beers BE, Pastor CM, Hussain HK: Primovist, Eovist: what to expect? J Hepatol. 2012 Aug;57(2):421-9. doi: 10.1016/j.jhep.2012.01.031. Epub 2012 Apr 12.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O15438" source="Swiss-Prot">
+        <name>Canalicular multispecific organic anion transporter 2</name>
+        <general-function>Organic anion transmembrane transporter activity</general-function>
+        <specific-function>May act as an inducible transporter in the biliary and intestinal excretion of organic anions. Acts as an alternative route for the export of bile acids and glucuronides from cholestatic hepatocytes (By similarity).</specific-function>
+        <gene-name>ABCC3</gene-name>
+        <locus>17q22</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>33-53
+74-94
+100-120
+133-153
+172-192
+303-323
+350-370
+427-447
+451-471
+534-554
+577-597
+964-984
+1022-1042
+1086-1106
+1108-1128
+1200-1220
+1223-1243</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.2</theoretical-pi>
+        <molecular-weight>169341.14</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:54</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ABCC3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB010887</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3132270</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O15438</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MRP3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ATP-binding cassette sub-family C member 3</synonym>
+          <synonym>CMOAT2</synonym>
+          <synonym>MLP2</synonym>
+          <synonym>MOAT-D</synonym>
+          <synonym>MRP3</synonym>
+          <synonym>Multi-specific organic anion transporter D</synonym>
+          <synonym>Multidrug resistance-associated protein 3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002113|Canalicular multispecific organic anion transporter 2
+MDALCGSGELGSKFWDSNLSVHTENPDLTPCFQNSLLAWVPCIYLWVALPCYLLYLRHHC
+RGYIILSHLSKLKMVLGVLLWCVSWADLFYSFHGLVHGRAPAPVFFVTPLVVGVTMLLAT
+LLIQYERLQGVQSSGVLIIFWFLCVVCAIVPFRSKILLAKAEGEISDPFRFTTFYIHFAL
+VLSALILACFREKPPFFSAKNVDPNPYPETSAGFLSRLFFWWFTKMAIYGYRHPLEEKDL
+WSLKEEDRSQMVVQQLLEAWRKQEKQTARHKASAAPGKNASGEDEVLLGARPRPRKPSFL
+KALLATFGSSFLISACFKLIQDLLSFINPQLLSILIRFISNPMAPSWWGFLVAGLMFLCS
+MMQSLILQHYYHYIFVTGVKFRTGIMGVIYRKALVITNSVKRASTVGEIVNLMSVDAQRF
+MDLAPFLNLLWSAPLQIILAIYFLWQNLGPSVLAGVAFMVLLIPLNGAVAVKMRAFQVKQ
+MKLKDSRIKLMSEILNGIKVLKLYAWEPSFLKQVEGIRQGELQLLRTAAYLHTTTTFTWM
+CSPFLVTLITLWVYVYVDPNNVLDAEKAFVSVSLFNILRLPLNMLPQLISNLTQASVSLK
+RIQQFLSQEELDPQSVERKTISPGYAITIHSGTFTWAQDLPPTLHSLDIQVPKGALVAVV
+GPVGCGKSSLVSALLGEMEKLEGKVHMKGSVAYVPQQAWIQNCTLQENVLFGKALNPKRY
+QQTLEACALLADLEMLPGGDQTEIGEKGINLSGGQRQRVSLARAVYSDADIFLLDDPLSA
+VDSHVAKHIFDHVIGPEGVLAGKTRVLVTHGISFLPQTDFIIVLADGQVSEMGPYPALLQ
+RNGSFANFLCNYAPDEDQGHLEDSWTALEGAEDKEALLIEDTLSNHTDLTDNDPVTYVVQ
+KQFMRQLSALSSDGEGQGRPVPRRHLGPSEKVQVTEAKADGALTQEEKAAIGTVELSVFW
+DYAKAVGLCTTLAICLLYVGQSAAAIGANVWLSAWTNDAMADSRQNNTSLRLGVYAALGI
+LQGFLVMLAAMAMAAGGIQAARVLHQALLHNKIRSPQSFFDTTPSGRILNCFSKDIYVVD
+EVLAPVILMLLNSFFNAISTLVVIMASTPLFTVVILPLAVLYTLVQRFYAATSRQLKRLE
+SVSRSPIYSHFSETVTGASVIRAYNRSRDFEIISDTKVDANQRSCYPYIISNRWLSIGVE
+FVGNCVVLFAALFAVIGRSSLNPGLVGLSVSYSLQVTFALNWMIRMMSDLESNIVAVERV
+KEYSKTETEAPWVVEGSRPPEGWPPRGEVEFRNYSVRYRPGLDLVLRDLSLHVHGGEKVG
+IVGRTGAGKSSMTLCLFRILEAAKGEIRIDGLNVADIGLHDLRSQLTIIPQDPILFSGTL
+RMNLDPFGSYSEEDIWWALELSHLHTFVSSQPAGLDFQCSEGGENLSVGQRQLVCLARAL
+LRKSRILVLDEATAAIDLETDNLIQATIRTQFDTCTVLTIAHRLNTIMDYTRVLVLDKGV
+VAEFDSPANLIAARGIFYGMARDAGLA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010744|Canalicular multispecific organic anion transporter 2 (ABCC3)
+ATGGACGCCCTGTGCGGTTCCGGGGAGCTCGGCTCCAAGTTCTGGGACTCCAACCTGTCT
+GTGCACACAGAAAACCCGGACCTCACTCCCTGCTTCCAGAACTCCCTGCTGGCCTGGGTG
+CCCTGCATCTACCTGTGGGTCGCCCTGCCCTGCTACTTGCTCTACCTGCGGCACCATTGT
+CGTGGCTACATCATCCTCTCCCACCTGTCCAAGCTCAAGATGGTCCTGGGTGTCCTGCTG
+TGGTGCGTCTCCTGGGCGGACCTTTTTTACTCCTTCCATGGCCTGGTCCATGGCCGGGCC
+CCTGCCCCTGTTTTCTTTGTCACCCCCTTGGTGGTGGGGGTCACCATGCTGCTGGCCACC
+CTGCTGATACAGTATGAGCGGCTGCAGGGCGTACAGTCTTCGGGGGTCCTCATTATCTTC
+TGGTTCCTGTGTGTGGTCTGCGCCATCGTCCCATTCCGCTCCAAGATCCTTTTAGCCAAG
+GCAGAGGGTGAGATCTCAGACCCCTTCCGCTTCACCACCTTCTACATCCACTTTGCCCTG
+GTACTCTCTGCCCTCATCTTGGCCTGCTTCAGGGAGAAACCTCCATTTTTCTCCGCAAAG
+AATGTCGACCCTAACCCCTACCCTGAGACCAGCGCTGGCTTTCTCTCCCGCCTGTTTTTC
+TGGTGGTTCACAAAGATGGCCATCTATGGCTACCGGCATCCCCTGGAGGAGAAGGACCTC
+TGGTCCCTAAAGGAAGAGGACAGATCCCAGATGGTGGTGCAGCAGCTGCTGGAGGCATGG
+AGGAAGCAGGAAAAGCAGACGGCACGACACAAGGCTTCAGCAGCACCTGGGAAAAATGCC
+TCCGGCGAGGACGAGGTGCTGCTGGGTGCCCGGCCCAGGCCCCGGAAGCCCTCCTTCCTG
+AAGGCCCTGCTGGCCACCTTCGGCTCCAGCTTCCTCATCAGTGCCTGCTTCAAGCTTATC
+CAGGACCTGCTCTCCTTCATCAATCCACAGCTGCTCAGCATCCTGATCAGGTTTATCTCC
+AACCCCATGGCCCCCTCCTGGTGGGGCTTCCTGGTGGCTGGGCTGATGTTCCTGTGCTCC
+ATGATGCAGTCGCTGATCTTACAACACTATTACCACTACATCTTTGTGACTGGGGTGAAG
+TTTCGTACTGGGATCATGGGTGTCATCTACAGGAAGGCTCTGGTTATCACCAACTCAGTC
+AAACGTGCGTCCACTGTGGGGGAAATTGTCAACCTCATGTCAGTGGATGCCCAGCGCTTC
+ATGGACCTTGCCCCCTTCCTCAATCTGCTGTGGTCAGCACCCCTGCAGATCATCCTGGCG
+ATCTACTTCCTCTGGCAGAACCTAGGTCCCTCTGTCCTGGCTGGAGTCGCTTTCATGGTC
+TTGCTGATTCCACTCAACGGAGCTGTGGCCGTGAAGATGCGCGCCTTCCAGGTAAAGCAA
+ATGAAATTGAAGGACTCGCGCATCAAGCTGATGAGTGAGATCCTGAACGGCATCAAGGTG
+CTGAAGCTGTACGCCTGGGAGCCCAGCTTCCTGAAGCAGGTGGAGGGCATCAGGCAGGGT
+GAGCTCCAGCTGCTGCGCACGGCGGCCTACCTCCACACCACAACCACCTTCACCTGGATG
+TGCAGCCCCTTCCTGGTGAGGCTTGGCACAGGGCTGGGTCCCTGCCTCCAGGGCTCTGGG
+TGCCCAGGCATGGCCAGGGCTCATTGGACTCTACCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00005</identifier>
+            <name>ABC_tran</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00664</identifier>
+            <name>ABC_membrane</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled to transmembrane movement of substances</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="4">
+      <id>BE0001069</id>
+      <name>Canalicular multispecific organic anion transporter 1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A7461</ref-id>
+            <pubmed-id>22504332</pubmed-id>
+            <citation>Van Beers BE, Pastor CM, Hussain HK: Primovist, Eovist: what to expect? J Hepatol. 2012 Aug;57(2):421-9. doi: 10.1016/j.jhep.2012.01.031. Epub 2012 Apr 12.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q92887" source="Swiss-Prot">
+        <name>Canalicular multispecific organic anion transporter 1</name>
+        <general-function>Organic anion transmembrane transporter activity</general-function>
+        <specific-function>Mediates hepatobiliary excretion of numerous organic anions. May function as a cellular cisplatin transporter.</specific-function>
+        <gene-name>ABCC2</gene-name>
+        <locus>10q24</locus>
+        <cellular-location>Apical cell membrane</cellular-location>
+        <transmembrane-regions>28-48
+69-89
+94-114
+127-147
+166-186
+314-334
+361-381
+438-458
+462-482
+545-565
+588-608
+972-992
+1034-1054
+1098-1118
+1120-1140
+1212-1232
+1235-1255</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.46</theoretical-pi>
+        <molecular-weight>174205.64</molecular-weight>
+        <chromosome-location>10</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:53</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ABCC2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U63970</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1764162</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>780</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q92887</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MRP2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ATP-binding cassette sub-family C member 2</synonym>
+          <synonym>Canalicular multidrug resistance protein</synonym>
+          <synonym>CMOAT</synonym>
+          <synonym>CMOAT1</synonym>
+          <synonym>CMRP</synonym>
+          <synonym>MRP2</synonym>
+          <synonym>Multidrug resistance-associated protein 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010748|Canalicular multispecific organic anion transporter 1
+MLEKFCNSTFWNSSFLDSPEADLPLCFEQTVLVWIPLGYLWLLAPWQLLHVYKSRTKRSS
+TTKLYLAKQVFVGFLLILAAIELALVLTEDSGQATVPAVRYTNPSLYLGTWLLVLLIQYS
+RQWCVQKNSWFLSLFWILSILCGTFQFQTLIRTLLQGDNSNLAYSCLFFISYGFQILILI
+FSAFSENNESSNNPSSIASFLSSITYSWYDSIILKGYKRPLTLEDVWEVDEEMKTKTLVS
+KFETHMKRELQKARRALQRRQEKSSQQNSGARLPGLNKNQSQSQDALVLEDVEKKKKKSG
+TKKDVPKSWLMKALFKTFYMVLLKSFLLKLVNDIFTFVSPQLLKLLISFASDRDTYLWIG
+YLCAILLFTAALIQSFCLQCYFQLCFKLGVKVRTAIMASVYKKALTLSNLARKEYTVGET
+VNLMSVDAQKLMDVTNFMHMLWSSVLQIVLSIFFLWRELGPSVLAGVGVMVLVIPINAIL
+STKSKTIQVKNMKNKDKRLKIMNEILSGIKILKYFAWEPSFRDQVQNLRKKELKNLLAFS
+QLQCVVIFVFQLTPVLVSVVTFSVYVLVDSNNILDAQKAFTSITLFNILRFPLSMLPMMI
+SSMLQASVSTERLEKYLGGDDLDTSAIRHDCNFDKAMQFSEASFTWEHDSEATVRDVNLD
+IMAGQLVAVIGPVGSGKSSLISAMLGEMENVHGHITIKGTTAYVPQQSWIQNGTIKDNIL
+FGTEFNEKRYQQVLEACALLPDLEMLPGGDLAEIGEKGINLSGGQKQRISLARATYQNLD
+IYLLDDPLSAVDAHVGKHIFNKVLGPNGLLKGKTRLLVTHSMHFLPQVDEIVVLGNGTIV
+EKGSYSALLAKKGEFAKNLKTFLRHTGPEEEATVHDGSEEEDDDYGLISSVEEIPEDAAS
+ITMRRENSFRRTLSRSSRSNGRHLKSLRNSLKTRNVNSLKEDEELVKGQKLIKKEFIETG
+KVKFSIYLEYLQAIGLFSIFFIILAFVMNSVAFIGSNLWLSAWTSDSKIFNSTDYPASQR
+DMRVGVYGALGLAQGIFVFIAHFWSAFGFVHASNILHKQLLNNILRAPMRFFDTTPTGRI
+VNRFAGDISTVDDTLPQSLRSWITCFLGIISTLVMICMATPVFTIIVIPLGIIYVSVQMF
+YVSTSRQLRRLDSVTRSPIYSHFSETVSGLPVIRAFEHQQRFLKHNEVRIDTNQKCVFSW
+ITSNRWLAIRLELVGNLTVFFSALMMVIYRDTLSGDTVGFVLSNALNITQTLNWLVRMTS
+EIETNIVAVERITEYTKVENEAPWVTDKRPPPDWPSKGKIQFNNYQVRYRPELDLVLRGI
+TCDIGSMEKIGVVGRTGAGKSSLTNCLFRILEAAGGQIIIDGVDIASIGLHDLREKLTII
+PQDPILFSGSLRMNLDPFNNYSDEEIWKALELAHLKSFVASLQLGLSHEVTEAGGNLSIG
+QRQLLCLGRALLRKSKILVLDEATAAVDLETDNLIQTTIQNEFAHCTVITIAHRLHTIMD
+SDKVMVLDNGKIIECGSPEELLQIPGPFYFMAKEAGIENVNSTKF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010749|Canalicular multispecific organic anion transporter 1 (ABCC2)
+ATGCTGGAGAAGTTCTGCAACTCTACTTTTTGGAATTCCTCATTCCTGGACAGTCCGGAG
+GCAGACCTGCCACTTTGTTTTGAGCAAACTGTTCTGGTGTGGATTCCCTTGGGCTTCCTA
+TGGCTCCTGGCCCCCTGGCAGCTTCTCCACGTGTATAAATCCAGGACCAAGAGATCCTCT
+ACCACCAAACTCTATCTTGCTAAGCAGGTATTCGTTGGTTTTCTTCTTATTCTAGCAGCC
+ATAGAGCTGGCCCTTGTACTCACAGAAGACTCTGGACAAGCCACAGTCCCTGCTGTTCGA
+TATACCAATCCAAGCCTCTACCTAGGCACATGGCTCCTGGTTTTGCTGATCCAATACAGC
+AGACAATGGTGTGTACAGAAAAACTCCTGGTTCCTGTCCCTATTCTGGATTCTCTCGATA
+CTCTGTGGCACTTTCCAATTTCAGACTCTGATCCGGACACTCTTACAGGGTGACAATTCT
+AATCTAGCCTACTCCTGCCTGTTCTTCATCTCCTACGGATTCCAGATCCTGATCCTGATC
+TTTTCAGCATTTTCAGAAAATAATGAGTCATCAAATAATCCATCATCCATAGCTTCATTC
+CTGAGTAGCATTACCTACAGCTGGTATGACAGCATCATTCTGAAAGGCTACAAGCGTCCT
+CTGACACTCGAGGATGTCTGGGAAGTTGATGAAGAGATGAAAACCAAGACATTAGTGAGC
+AAGTTTGAAACGCACATGAAGAGAGAGCTGCAGAAAGCCAGGCGGGCACTCCAGAGACGG
+CAGGAGAAGAGCTCCCAGCAGAACTCTGGAGCCAGGCTGCCTGGCTTGAACAAGAATCAG
+AGTCAAAGCCAAGATGCCCTTGTCCTGGAAGATGTTGAAAAGAAAAAAAAGAAGTCTGGG
+ACCAAAAAAGATGTTCCAAAATCCTGGTTGATGAAGGCTCTGTTCAAAACTTTCTACATG
+GTGCTCCTGAAATCATTCCTACTGAAGCTAGTGAATGACATCTTCACGTTTGTGAGTCCT
+CAGCTGCTGAAATTGCTGATCTCCTTTGCAAGTGACCGTGACACATATTTGTGGATTGGA
+TATCTCTGTGCAATCCTCTTATTCACTGCGGCTCTCATTCAGTCTTTCTGCCTTCAGTGT
+TATTTCCAACTGTGCTTCAAGCTGGGTGTAAAAGTACGGACAGCTATCATGGCTTCTGTA
+TATAAGAAGGCATTGACCCTATCCAACTTGGCCAGGAAGGAGTACACCGTTGGAGAAACA
+GTGAACCTGATGTCTGTGGATGCCCAGAAGCTCATGGATGTGACCAACTTCATGCACATG
+CTGTGGTCAAGTGTTCTACAGATTGTCTTATCTATCTTCTTCCTATGGAGAGAGTTGGGA
+CCCTCAGTCTTAGCAGGTGTTGGGGTGATGGTGCTTGTAATCCCAATTAATGCGATACTG
+TCCACCAAGAGTAAGACCATTCAGGTCAAAAATATGAAGAATAAAGACAAACGTTTAAAG
+ATCATGAATGAGATTCTTAGTGGAATCAAGATCCTGAAATATTTTGCCTGGGAACCTTCA
+TTCAGAGACCAAGTACAAAACCTCCGGAAGAAAGAGCTCAAGAACCTGCTGGCCTTTAGT
+CAACTACAGTGTGTAGTAATATTCGTCTTCCAGTTAACTCCAGTCCTGGTATCTGTGGTC
+ACATTTTCTGTTTATGTCCTGGTGGATAGCAACAATATTTTGGATGCACAAAAGGCCTTC
+ACCTCCATTACCCTCTTCAATATCCTGCGCTTTCCCCTGAGCATGCTTCCCATGATGATC
+TCCTCCATGCTCCAGGCCAGTGTTTCCACAGAGCGGCTAGAGAAGTACTTGGGAGGGGAT
+GACTTGGACACATCTGCCATTCGACATGACTGCAATTTTGACAAAGCCATGCAGTTTTCT
+GAGGCCTCCTTTACCTGGGAACATGATTCGGAAGCCACAGTCCGAGATGTGAACCTGGAC
+ATTATGGCAGGCCAACTTGTGGCTGTGATAGGCCCTGTCGGCTCTGGGAAATCCTCCTTG
+ATATCAGCCATGCTGGGAGAAATGGAAAATGTCCACGGGCACATCACCATCAAGGGCACC
+ACTGCCTATGTCCCACAGCAGTCCTGGATTCAGAATGGCACCATAAAGGACAACATCCTT
+TTTGGAACAGAGTTTAATGAAAAGAGGTACCAGCAAGTACTGGAGGCCTGTGCTCTCCTC
+CCAGACTTGGAAATGCTGCCTGGAGGAGATTTGGCTGAGATTGGAGAGAAGGGTATAAAT
+CTTAGTGGGGGTCAGAAGCAGCGGATCAGCCTGGCCAGAGCTACCTACCAAAATTTAGAC
+ATCTATCTTCTAGATGACCCCCTGTCTGCAGTGGATGCTCATGTAGGAAAACATATTTTT
+AATAAGGTCTTGGGCCCCAATGGCCTGTTGAAAGGCAAGACTCGACTCTTGGTTACACAT
+AGCATGCACTTTCTTCCTCAAGTGGATGAGATTGTAGTTCTGGGGAATGGAACAATTGTA
+GAGAAAGGATCCTACAGTGCTCTCCTGGCCAAAAAAGGAGAGTTTGCTAAGAATCTGAAG
+ACATTTCTAAGACATACAGGCCCTGAAGAGGAAGCCACAGTCCATGATGGCAGTGAAGAA
+GAAGACGATGACTATGGGCTGATATCCAGTGTGGAAGAGATCCCCGAAGATGCAGCCTCC
+ATAACCATGAGAAGAGAGAACAGCTTTCGTCGAACACTTAGCCGCAGTTCTAGGTCCAAT
+GGCAGGCATCTGAAGTCCCTGAGAAACTCCTTGAAAACTCGGAATGTGAATAGCCTGAAG
+GAAGACGAAGAACTAGTGAAAGGACAAAAACTAATTAAGAAGGAATTCATAGAAACTGGA
+AAGGTGAAGTTCTCCATCTACCTGGAGTACCTACAAGCAATAGGATTGTTTTCGATATTC
+TTCATCATCCTTGCGTTTGTGATGAATTCTGTGGCTTTTATTGGATCCAACCTCTGGCTC
+AGTGCTTGGACCAGTGACTCTAAAATCTTCAATAGCACCGACTATCCAGCATCTCAGAGG
+GACATGAGAGTTGGAGTCTACGGAGCTCTGGGATTAGCCCAAGGTATATTTGTGTTCATA
+GCACATTTCTGGAGTGCCTTTGGTTTCGTCCATGCATCAAATATCTTGCACAAGCAACTG
+CTGAACAATATCCTTCGAGCACCTATGAGATTTTTTGACACAACACCCACAGGCCGGATT
+GTGAACAGGTTTGCCGGCGATATTTCCACAGTGGATGACACCCTGCCTCAGTCCTTGCGC
+AGCTGGATTACATGCTTCCTGGGGATAATCAGCACCCTTGTCATGATCTGCATGGCCACT
+CCTGTCTTCACCATCATCGTCATTCCTCTTGGCATTATTTATGTATCTGTTCAGATGTTT
+TATGTGTCTACCTCCCGCCAGCTGAGGCGTCTGGACTCTGTCACCAGGTCCCCAATCTAC
+TCTCACTTCAGCGAGACCGTATCAGGTTTGCCAGTTATCCGTGCCTTTGAGCACCAGCAG
+CGATTTCTGAAACACAATGAGGTGAGGATTGACACCAACCAGAAATGTGTCTTTTCCTGG
+ATCACCTCCAACAGGTGGCTTGCAATTCGCCTGGAGCTGGTTGGGAACCTGACTGTCTTC
+TTTTCAGCCTTGATGATGGTTATTTATAGAGATACCCTAAGTGGGGACACTGTTGGCTTT
+GTTCTGTCCAATGCACTCAATATCACACAAACCCTGAACTGGCTGGTGAGGATGACATCA
+GAAATAGAGACCAACATTGTGGCTGTTGAGCGAATAACTGAGTACACAAAAGTGGAAAAT
+GAGGCACCCTGGGTGACTGATAAGAGGCCTCCGCCAGATTGGCCCAGCAAAGGCAAGATC
+CAGTTTAACAACTACCAAGTGCGGTACCGACCTGAGCTGGATCTGGTCCTCAGAGGGATC
+ACTTGTGACATCGGTAGCATGGAGAAGATTGGTGTGGTGGGCAGGACAGGAGCTGGAAAG
+TCATCCCTCACAAACTGCCTCTTCAGAATCTTAGAGGCTGCCGGTGGTCAGATTATCATT
+GATGGAGTAGATATTGCTTCCATTGGGCTCCACGACCTCCGAGAGAAGCTGACCATCATC
+CCCCAGGACCCCATCCTGTTCTCTGGAAGCCTGAGGATGAATCTCGACCCTTTCAACAAC
+TACTCAGATGAGGAGATTTGGAAGGCCTTGGAGCTGGCTCACCTCAAGTCTTTTGTGGCC
+AGCCTGCAACTTGGGTTATCCCACGAAGTGACAGAGGCTGGTGGCAACCTGAGCATAGGC
+CAGAGGCAGCTGCTGTGCCTGGGCAGGGCTCTGCTTCGGAAATCCAAGATCCTGGTCCTG
+GATGAGGCCACTGCTGCGGTGGATCTAGAGACAGACAACCTCATTCAGACGACCATCCAA
+AACGAGTTCGCCCACTGCACAGTGATCACCATCGCCCACAGGCTGCACACCATCATGGAC
+AGTGACAAGGTAATGGTCCTAGACAACGGGAAGATTATAGAGTGCGGCAGCCCTGAAGAA
+CTGCTACAAATCCCTGGACCCTTTTACTTTATGGCTAAGGAAGCTGGCATTGAGAATGTG
+AACAGCACAAAATTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00005</identifier>
+            <name>ABC_tran</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00664</identifier>
+            <name>ABC_membrane</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled to transmembrane movement of substances</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular chloride ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>prostaglandin transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to arsenic-containing substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estrogen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to methotrexate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>thyroid hormone transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="5">
+      <id>BE0001188</id>
+      <name>Multidrug resistance-associated protein 4</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A7461</ref-id>
+            <pubmed-id>22504332</pubmed-id>
+            <citation>Van Beers BE, Pastor CM, Hussain HK: Primovist, Eovist: what to expect? J Hepatol. 2012 Aug;57(2):421-9. doi: 10.1016/j.jhep.2012.01.031. Epub 2012 Apr 12.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O15439" source="Swiss-Prot">
+        <name>Multidrug resistance-associated protein 4</name>
+        <general-function>Atpase activity, coupled to transmembrane movement of substances</general-function>
+        <specific-function>May be an organic anion pump relevant to cellular detoxification.</specific-function>
+        <gene-name>ABCC4</gene-name>
+        <locus>13q32</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>93-113
+136-156
+207-227
+228-248
+328-348
+351-371
+440-460
+710-730
+771-791
+836-856
+858-878
+954-974
+977-997
+1038-1058</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.39</theoretical-pi>
+        <molecular-weight>149525.33</molecular-weight>
+        <chromosome-location>13</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:55</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ABCC4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF071202</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3335173</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>782</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O15439</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MRP4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ATP-binding cassette sub-family C member 4</synonym>
+          <synonym>MOAT-B</synonym>
+          <synonym>MRP/cMOAT-related ABC transporter</synonym>
+          <synonym>MRP4</synonym>
+          <synonym>Multi-specific organic anion transporter B</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037136|Multidrug resistance-associated protein 4
+MLPVYQEVKPNPLQDANLCSRVFFWWLNPLFKIGHKRRLEEDDMYSVLPEDRSQHLGEEL
+QGFWDKEVLRAENDAQKPSLTRAIIKCYWKSYLVLGIFTLIEESAKVIQPIFLGKIINYF
+ENYDPMDSVALNTAYAYATVLTFCTLILAILHHLYFYHVQCAGMRLRVAMCHMIYRKALR
+LSNMAMGKTTTGQIVNLLSNDVNKFDQVTVFLHFLWAGPLQAIAVTALLWMEIGISCLAG
+MAVLIILLPLQSCFGKLFSSLRSKTATFTDARIRTMNEVITGIRIIKMYAWEKSFSNLIT
+NLRKKEISKILRSSCLRGMNLASFFSASKIIVFVTFTTYVLLGSVITASRVFVAVTLYGA
+VRLTVTLFFPSAIERVSEAIVSIRRIQTFLLLDEISQRNRQLPSDGKKMVHVQDFTAFWD
+KASETPTLQGLSFTVRPGELLAVVGPVGAGKSSLLSAVLGELAPSHGLVSVHGRIAYVSQ
+QPWVFSGTLRSNILFGKKYEKERYEKVIKACALKKDLQLLEDGDLTVIGDRGTTLSGGQK
+ARVNLARAVYQDADIYLLDDPLSAVDAEVSRHLFELCICQILHEKITILVTHQLQYLKAA
+SQILILKDGKMVQKGTYTEFLKSGIDFGSLLKKDNEESEQPPVPGTPTLRNRTFSESSVW
+SQQSSRPSLKDGALESQDTENVPVTLSEENRSEGKVGFQAYKNYFRAGAHWIVFIFLILL
+NTAAQVAYVLQDWWLSYWANKQSMLNVTVNGGGNVTEKLDLNWYLGIYSGLTVATVLFGI
+ARSLLVFYVLVNSSQTLHNKMFESILKAPVLFFDRNPIGRILNRFSKDIGHLDDLLPLTF
+LDFIQTLLQVVGVVSVAVAVIPWIAIPLVPLGIIFIFLRRYFLETSRDVKRLESTTRSPV
+FSHLSSSLQGLWTIRAYKAEERCQELFDAHQDLHSEAWFLFLTTSRWFAVRLDAICAMFV
+IIVAFGSLILAKTLDAGQVGLALSYALTLMGMFQWCVRQSAEVENMMISVERVIEYTDLE
+KEAPWEYQKRPPPAWPHEGVIIFDNVNFMYSPGGPLVLKHLTALIKSQEKVGIVGRTGAG
+KSSLISALFRLSEPEGKIWIDKILTTEIGLHDLRKKMSIIPQEPVLFTGTMRKNLDPFNE
+HTDEELWNALQEVQLKETIEDLPGKMDTELAESGSNFSVGQRQLVCLARAILRKNQILII
+DEATANVDPRTDELIQKKIREKFAHCTVLTIAHRLNTIIDSDKIMVLDSGRLKEYDEPYV
+LLQNKESLFYKMVQQLGKAEAAALTETAKQVYFKRNYPHIGHTDHMVTNTSNGQPSTLTI
+FETAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010828|Multidrug resistance-associated protein 4 (ABCC4)
+ATGCTGCCCGTGTACCAGGAGGTGAAGCCCAACCCGCTGCAGGACGCGAACCTCTGCTCA
+CGCGTGTTCTTCTGGTGGCTCAATCCCTTGTTTAAAATTGGCCATAAACGGAGATTAGAG
+GAAGATGATATGTATTCAGTGCTGCCAGAAGACCGCTCACAGCACCTTGGAGAGGAGTTG
+CAAGGGTTCTGGGATAAAGAAGTTTTAAGAGCTGAGAATGACGCACAGAAGCCTTCTTTA
+ACAAGAGCAATCATAAAGTGTTACTGGAAATCTTATTTAGTTTTGGGAATTTTTACGTTA
+ATTGAGGAAAGTGCCAAAGTAATCCAGCCCATATTTTTGGGAAAAATTATTAATTATTTT
+GAAAATTATGATCCCATGGATTCTGTGGCTTTGAACACAGCGTACGCCTATGCCACGGTG
+CTGACTTTTTGCACGCTCATTTTGGCTATACTGCATCACTTATATTTTTATCACGTTCAG
+TGTGCTGGGATGAGGTTACGAGTAGCCATGTGCCATATGATTTATCGGAAGGCACTTCGT
+CTTAGTAACATGGCCATGGGGAAGACAACCACAGGCCAGATAGTCAATCTGCTGTCCAAT
+GATGTGAACAAGTTTGATCAGGTGACAGTGTTCTTACACTTCCTGTGGGCAGGACCACTG
+CAGGCGATTGCAGTGACTGCCCTACTCTGGATGGAGATAGGAATATCGTGCCTTGCTGGG
+ATGGCAGTTCTAATCATTCTCCTGCCCTTGCAAAGCTGTTTTGGGAAGTTGTTCTCATCA
+CTGAGGAGTAAAACTGCAACTTTCACGGATGCCAGGATCAGGACCATGAATGAAGTTATA
+ACTGGTATAAGGATAATAAAAATGTACGCCTGGGAAAAGTCATTTTCAAATCTTATTACC
+AATTTGAGAAAGAAGGAGATTTCCAAGATTCTGAGAAGTTCCTGCCTCAGAGGGATGAAT
+TTGGCTTCATTTTTCAGTGCAAGCAAAATCATCGTGTTTGTGACCTTCACCACCTACGTG
+CTCCTCGGCAGTGTGATCACAGCCAGCCGCGTGTTCGTGGCAGTGACGCTGTATGGGGCT
+GTGCGGCTGACGGTTACCCTCTTCTTCCCCTCAGCCATTGAGAGGGTGTCAGAGGCAATC
+GTCAGCATCCGAAGAATCCAGACCTTTTTGCTACTTGATGAGATATCACAGCGCAACCGT
+CAGCTGCCGTCAGATGGTAAAAAGATGGTGCATGTGCAGGATTTTACTGCTTTTTGGGAT
+AAGGCATCAGAGACCCCAACTCTACAAGGCCTTTCCTTTACTGTCAGACCTGGCGAATTG
+TTAGCTGTGGTCGGCCCCGTGGGAGCAGGGAAGTCATCACTGTTAAGTGCCGTGCTCGGG
+GAATTGGCCCCAAGTCACGGGCTGGTCAGCGTGCATGGAAGAATTGCCTATGTGTCTCAG
+CAGCCCTGGGTGTTCTCGGGAACTCTGAGGAGTAATATTTTATTTGGGAAGAAATACGAA
+AAGGAACGATATGAAAAAGTCATAAAGGCTTGTGCTCTGAAAAAGGATTTACAGCTGTTG
+GAGGATGGTGATCTGACTGTGATAGGAGATCGGGGAACCACGCTGAGTGGAGGGCAGAAA
+GCACGGGTAAACCTTGCAAGAGCAGTGTATCAAGATGCTGACATCTATCTCCTGGACGAT
+CCTCTCAGTGCAGTAGATGCGGAAGTTAGCAGACACTTGTTCGAACTGTGTATTTGTCAA
+ATTTTGCATGAGAAGATCACAATTTTAGTGACTCATCAGTTGCAGTACCTCAAAGCTGCA
+AGTCAGATTCTGATATTGAAAGATGGTAAAATGGTGCAGAAGGGGACTTACACTGAGTTC
+CTAAAATCTGGTATAGATTTTGGCTCCCTTTTAAAGAAGGATAATGAGGAAAGTGAACAA
+CCTCCAGTTCCAGGAACTCCCACACTAAGGAATCGTACCTTCTCAGAGTCTTCGGTTTGG
+TCTCAACAATCTTCTAGACCCTCCTTGAAAGATGGTGCTCTGGAGAGCCAAGATACAGAG
+AATGTCCCAGTTACACTATCAGAGGAGAACCGTTCTGAAGGAAAAGTTGGTTTTCAGGCC
+TATAAGAATTACTTCAGAGCTGGTGCTCACTGGATTGTCTTCATTTTCCTTATTCTCCTA
+AACACTGCAGCTCAGGTTGCCTATGTGCTTCAAGATTGGTGGCTTTCATACTGGGCAAAC
+AAACAAAGTATGCTAAATGTCACTGTAAATGGAGGAGGAAATGTAACCGAGAAGCTAGAT
+CTTAACTGGTACTTAGGAATTTATTCAGGTTTAACTGTAGCTACCGTTCTTTTTGGCATA
+GCAAGATCTCTATTGGTATTCTACGTCCTTGTTAACTCTTCACAAACTTTGCACAACAAA
+ATGTTTGAGTCAATTCTGAAAGCTCCGGTATTATTCTTTGATAGAAATCCAATAGGAAGA
+ATTTTAAATCGTTTCTCCAAAGACATTGGACACTTGGATGATTTGCTGCCGCTGACGTTT
+TTAGATTTCATCCAGAGATGGGATCTCGCTGTGTTGTCCTGGCTGGTCTCAAACTCCTAG
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00005</identifier>
+            <name>ABC_tran</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00664</identifier>
+            <name>ABC_membrane</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet dense granule membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>15-hydroxyprostaglandin dehydrogenase (NAD+) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled to transmembrane movement of substances</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

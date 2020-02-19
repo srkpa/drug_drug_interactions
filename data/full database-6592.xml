@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2010-09-15" updated="2019-12-02">
+  <drugbank-id primary="true">DB07497</drugbank-id>
+  <name>5-(HEXAHYDRO-2-OXO-1H-THIENO[3,4-D]IMIDAZOL-6-YL)PENTANAL</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>228.311</average-mass>
+  <monoisotopic-mass>228.093248456</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as biotin and derivatives. These are organic compounds containing a ureido (tetrahydroimidizalone) ring fused with a tetrahydrothiophene ring.</description>
+    <direct-parent>Biotin and derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Biotin and derivatives</class>
+    <subclass/>
+    <alternative-parent>Alpha-hydrogen aldehydes</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Dialkylthioethers</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Imidazolidinones</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Thienoimidazolidines</alternative-parent>
+    <alternative-parent>Thiolanes</alternative-parent>
+    <alternative-parent>Thiophenes</alternative-parent>
+    <alternative-parent>Ureas</alternative-parent>
+    <substituent>Aldehyde</substituent>
+    <substituent>Aliphatic heteropolycyclic compound</substituent>
+    <substituent>Alpha-hydrogen aldehyde</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Biotin_derivative</substituent>
+    <substituent>Carbonic acid derivative</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Dialkylthioether</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imidazolidine</substituent>
+    <substituent>Imidazolidinone</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Thienoimidazolidine</substituent>
+    <substituent>Thioether</substituent>
+    <substituent>Thiolane</substituent>
+    <substituent>Thiophene</substituent>
+    <substituent>Urea</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1z6h</pdb-entry>
+    <pdb-entry>3bg3</pdb-entry>
+    <pdb-entry>3bg5</pdb-entry>
+    <pdb-entry>3hb9</pdb-entry>
+    <pdb-entry>3hbl</pdb-entry>
+    <pdb-entry>3ho8</pdb-entry>
+    <pdb-entry>3n6r</pdb-entry>
+    <pdb-entry>3tw6</pdb-entry>
+    <pdb-entry>3u9s</pdb-entry>
+    <pdb-entry>3va7</pdb-entry>
+    <pdb-entry>4hnt</pdb-entry>
+    <pdb-entry>4hnu</pdb-entry>
+    <pdb-entry>4hnv</pdb-entry>
+    <pdb-entry>5csl</pdb-entry>
+    <pdb-entry>5ks8</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.36</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.97e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.16</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>5-[(3aS,4S,6aR)-2-oxo-hexahydro-1H-thieno[3,4-d]imidazolidin-4-yl]pentanal</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>5-[(3aS,4S,6aR)-2-oxo-hexahydrothieno[3,4-d]imidazolidin-4-yl]pentanal</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>228.311</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>228.093248456</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]1(CCCCC=O)SC[C@]2([H])NC(=O)N[C@]12[H]</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C10H16N2O2S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C10H16N2O2S/c13-5-3-1-2-4-8-9-7(6-15-8)11-10(14)12-9/h5,7-9H,1-4,6H2,(H2,11,12,14)/t7-,8-,9-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ARDNWGMSCXSPBF-CIUDSAMLSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>58.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>59.13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>23.93</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>13.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-1.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>11840927</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>99443968</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>10015432</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>BTI</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0003965</id>
+      <name>Biotin/lipoyl attachment protein</name>
+      <organism>Bacillus subtilis (strain 168)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="C0H419" source="Swiss-Prot">
+        <name>Biotin/lipoyl attachment protein</name>
+        <general-function/>
+        <specific-function/>
+        <gene-name>yngHB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.75</theoretical-pi>
+        <molecular-weight>8041.28</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224308">Bacillus subtilis (strain 168)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AL009126</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2632268</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>C0H419</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>BLAP_BACSU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>BLAP</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012758|Biotin/lipoyl attachment protein
+MTVSIQMAGNLWKVHVKAGDQIEKGQEVAILESMKMEIPIVADRSGIVKEVKKKEGDFVN
+EGDVLLELSNSTQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012759|Biotin/lipoyl attachment protein (yngHB)
+ATGACGGTTAGCATACAAATGGCAGGAAACCTGTGGAAAGTCCACGTCAAAGCCGGCGAC
+CAAATCGAAAAGGGCCAGGAGGTAGCCATTTTGGAATCGATGAAAATGGAAATCCCGATC
+GTTGCAGATAGAAGCGGAATCGTAAAAGAAGTCAAAAAAAAGGAAGGCGACTTTGTAAAT
+GAAGGAGACGTACTGCTCGAACTGAGCAATTCCACTCAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00364</identifier>
+            <name>Biotin_lipoyl</name>
+          </pfam>
+        </pfams>
+        <go-classifiers/>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0000698</id>
+      <name>Pyruvate carboxylase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11498" source="Swiss-Prot">
+        <name>Pyruvate carboxylase, mitochondrial</name>
+        <general-function>Pyruvate carboxylase activity</general-function>
+        <specific-function>Pyruvate carboxylase catalyzes a 2-step reaction, involving the ATP-dependent carboxylation of the covalently attached biotin in the first step and the transfer of the carboxyl group to pyruvate in the second. Catalyzes in a tissue specific manner, the initial reactions of glucose (liver, kidney) and lipid (adipose tissue, liver, brain) synthesis from pyruvate.</specific-function>
+        <gene-name>PC</gene-name>
+        <locus>11q13.4-q13.5</locus>
+        <cellular-location>Mitochondrion matrix</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.83</theoretical-pi>
+        <molecular-weight>129632.565</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8636</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PC</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U04641</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>458236</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11498</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PYC_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>6.4.1.1</synonym>
+          <synonym>PCB</synonym>
+          <synonym>Pyruvic carboxylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001392|Pyruvate carboxylase, mitochondrial
+MLKFRTVHGGLRLLGIRRTSTAPAASPNVRRLEYKPIKKVMVANRGEIAIRVFRACTELG
+IRTVAIYSEQDTGQMHRQKADEAYLIGRGLAPVQAYLHIPDIIKVAKENNVDAVHPGYGF
+LSERADFAQACQDAGVRFIGPSPEVVRKMGDKVEARAIAIAAGVPVVPGTDAPITSLHEA
+HEFSNTYGFPIIFKAAYGGGGRGMRVVHSYEELEENYTRAYSEALAAFGNGALFVEKFIE
+KPRHIEVQILGDQYGNILHLYERDCSIQRRHQKVVEIAPAAHLDPQLRTRLTSDSVKLAK
+QVGYENAGTVEFLVDRHGKHYFIEVNSRLQVEHTVTEEITDVDLVHAQIHVAEGRSLPDL
+GLRQENIRINGCAIQCRVTTEDPARSFQPDTGRIEVFRSGEGMGIRLDNASAFQGAVISP
+HYDSLLVKVIAHGKDHPTAATKMSRALAEFRVRGVKTNIAFLQNVLNNQQFLAGTVDTQF
+IDENPELFQLRPAQNRAQKLLHYLGHVMVNGPTTPIPVKASPSPTDPVVPAVPIGPPPAG
+FRDILLREGPEGFARAVRNHPGLLLMDTTFRDAHQSLLATRVRTHDLKKIAPYVAHNFSK
+LFSMENWGGATFDVAMRFLYECPWRRLQELRELIPNIPFQMLLRGANAVGYTNYPDNVVF
+KFCEVAKENGMDVFRVFDSLNYLPNMLLGMEAAGSAGGVVEAAISYTGDVADPSRTKYSL
+QYYMGLAEELVRAGTHILCIKDMAGLLKPTACTMLVSSLRDRFPDLPLHIHTHDTSGAGV
+AAMLACAQAGADVVDVAADSMSGMTSQPSMGALVACTRGTPLDTEVPMERVFDYSEYWEG
+ARGLYAAFDCTATMKSGNSDVYENEIPGGQYTNLHFQAHSMGLGSKFKEVKKAYVEANQM
+LGDLIKVTPSSKIVGDLAQFMVQNGLSRAEAEAQAEELSFPRSVVEFLQGYIGVPHGGFP
+EPFRSKVLKDLPRVEGRPGASLPPLDLQALEKELVDRHGEEVTPEDVLSAAMYPDVFAHF
+KDFTATFGPLDSLNTRLFLQGPKIAEEFEVELERGKTLHIKALAVSDLNRAGQRQVFFEL
+NGQLRSILVKDTQAMKEMHFHPKALKDVKGQIGAPMPGKVIDIKVVAGAKVAKGQPLCVL
+SAMKMETVVTSPMEGTVRKVHVTKDMTLEGDDLILEIE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0018996|Pyruvate carboxylase, mitochondrial (PC)
+ATGCTGAAGTTCCGAACAGTCCATGGGGGCCTGAGGCTCCTGGGAATCCGCCGAACCTCC
+ACCGCCCCCGCTGCCTCCCCAAATGTCCGGCGCCTGGAGTATAAGCCCATCAAGAAAGTC
+ATGGTGGCCAACAGAGGTGAGATTGCCATCCGTGTGTTCCGGGCCTGCACGGAGCTGGGC
+ATCCGCACCGTAGCCATCTACTCTGAGCAGGACACGGGCCAGATGCACCGGCAGAAAGCA
+GATGAAGCCTATCTCATCGGCCGCGGCCTGGCCCCCGTGCAGGCCTACCTGCACATCCCA
+GACATCATCAAGGTGGCCAAGGAGAACAACGTAGATGCAGTGCACCCTGGCTACGGGTTC
+CTCTCTGAGCGAGCGGACTTCGCCCAGGCCTGCCAGGATGCAGGGGTCCGGTTTATTGGG
+CCAAGCCCAGAAGTGGTCCGCAAGATGGGAGACAAGGTGGAGGCCCGGGCCATCGCCATT
+GCTGCGGGTGTTCCCGTTGTCCCTGGCACAGATGCCCCCATCACGTCCCTGCATGAGGCC
+CACGAGTTCTCCAACACCTACGGCTTCCCCATCATCTTCAAGGCGGCCTATGGGGGTGGA
+GGGCGTGGCATGAGGGTGGTGCACAGCTACGAGGAGCTGGAGGAGAATTACACCCGGGCC
+TACTCAGAGGCTCTGGCCGCCTTTGGGAATGGGGCGCTGTTTGTGGAGAAGTTCATCGAG
+AAGCCACGGCACATCGAGGTGCAGATCTTGGGGGACCAGTATGGGAACATCCTGCACCTG
+TACGAGCGAGACTGCTCCATCCAGCGGCGGCACCAGAAGGTGGTCGAGATTGCCCCCGCC
+GCCCACCTGGACCCGCAGCTTCGGACTCGGCTCACCAGCGACTCTGTGAAACTCGCTAAA
+CAGGTGGGCTACGAGAACGCAGGCACCGTGGAGTTCCTGGTGGACAGGCACGGCAAGCAC
+TACTTCATCGAGGTCAACTCCCGCCTGCAGGTGGAGCACACGGTCACAGAGGAGATCACC
+GACGTAGACCTGGTCCATGCTCAGATCCACGTGGCTGAGGGCAGGAGCCTACCCGACCTG
+GGCCTGCGGCAGGAGAACATCCGCATCAACGGGTGTGCCATCCAGTGCCGGGTCACCACC
+GAGGACCCCGCGCGCAGCTTCCAGCCGGACACCGGCCGCATTGAGGTGTTCCGGAGCGGA
+GAGGGCATGGGCATCCGCCTGGATAATGCTTCCGCCTTCCAAGGAGCCGTCATCTCGCCC
+CACTACGACTCCCTGCTGGTCAAAGTCATTGCCCACGGCAAAGACCACCCCACGGCCGCC
+ACCAAGATGAGCAGGGCCCTTGCGGAGTTCCGCGTCCGAGGTGTGAAGACCAACATCGCC
+TTCCTGCAGAATGTGCTCAACAACCAGCAGTTCCTGGCAGGCACTGTGGACACCCAGTTC
+ATCGACGAGAACCCAGAGCTGTTCCAGCTGCGGCCTGCACAGAACCGGGCCCAAAAGCTG
+TTGCACTACCTCGGCCATGTCATGGTAAACGGTCCAACCACCCCGATTCCCGTCAAGGCC
+AGCCCCAGCCCCACGGACCCCGTTGTCCCTGCAGTGCCCATAGGCCCGCCCCCGGCTGGT
+TTCAGAGACATCCTGCTGCGAGAGGGGCCTGAGGGCTTTGCTCGAGCTGTGCGGAACCAC
+CCGGGGCTGCTGCTGATGGACACGACCTTCAGGGACGCCCACCAGTCACTGCTGGCCACT
+CGTGTGCGCACCCACGATCTCAAAAAGATCGCCCCCTATGTTGCCCACAACTTCAGCAAG
+CTCTTCAGCATGGAGAACTGGGGAGGAGCCACGTTTGACGTCGCCATGCGCTTCCTGTAT
+GAGTGCCCCTGGCGGCGGCTGCAGGAGCTCCGGGAGCTCATCCCCAACATCCCTTTCCAG
+ATGCTGCTGCGGGGGGCCAATGCTGTGGGCTACACCAACTACCCAGACAACGTGGTCTTC
+AAGTTCTGTGAAGTGGCCAAAGAGAATGGCATGGATGTCTTCCGTGTGTTTGACTCCCTC
+AACTACTTGCCCAACATGCTGCTGGGCATGGAGGCGGCAGGAAGTGCCGGAGGCGTGGTG
+GAGGCTGCCATCTCATACACGGGCGACGTGGCCGACCCCAGCCGCACCAAGTACTCACTG
+CAGTACTACATGGGCTTGGCCGAAGAGCTGGTGCGAGCTGGCACCCACATCCTGTGCATC
+AAGGACATGGCCGGGCTGCTGAAGCCCACGGCCTGCACCATGCTGGTCAGCTCCCTCCGG
+GACCGCTTCCCCGACCTCCCACTGCACATCCACACCCACGACACGTCAGGGGCAGGCGTG
+GCAGCCATGCTGGCCTGTGCCCAGGCTGGAGCTGATGTGGTGGATGTGGCAGCTGATTCC
+ATGTCTGGGATGACTTCACAGCCCAGCATGGGGGCCCTGGTGGCCTGTACCAGAGGGACT
+CCCCTGGACACAGAGGTGCCCATGGAGCGCGTGTTTGACTACAGTGAGTACTGGGAGGGG
+GCTCGGGGACTGTACGCGGCCTTCGACTGCACGGCCACCATGAAGTCTGGCAACTCGGAC
+GTGTATGAAAATGAGATCCCAGGGGGCCAGTACACCAACCTGCACTTCCAGGCCCACAGC
+ATGGGGCTTGGCTCCAAGTTCAAGGAGGTCAAGAAGGCCTATGTGGAGGCCAACCAGATG
+CTGGGCGATCTCATCAAGGTGACGCCCTCCTCCAAGATCGTGGGGGACCTGGCCCAGTTT
+ATGGTGCAGAATGGATTGAGCCGGGCAGAGGCCGAAGCTCAGGCGGAAGAGCTGTCCTTT
+CCCCGCTCCGTGGTGGAGTTCCTGCAGGGCTACATCGGTGTCCCCCATGGGGGGTTCCCC
+GAACCCTTTCGCTCTAAGGTACTGAAGGACCTGCCAAGGGTGGAGGGGCGGCCTGGAGCC
+TCCCTCCCTCCCCTGGATCTGCAGGCACTGGAGAAGGAGCTGGTAGACCGGCATGGGGAG
+GAGGTGACGCCGGAAGATGTGCTCTCAGCAGCTATGTACCCCGATGTGTTTGCCCACTTC
+AAGGACTTCACTGCCACCTTTGGCCCCCTGGATAGCCTGAATACTCGCCTCTTCCTGCAG
+GGACCCAAGATCGCAGAGGAGTTTGAGGTGGAGCTGGAGCGGGGCAAGACGCTGCACATC
+AAAGCCCTGGCCGTGAGCGACCTGAACCGGGCCGGCCAGAGGCAGGTCTTCTTTGAGCTC
+AATGGGCAGCTGCGGTCCATCTTGGTCAAGGACACCCAGGCCATGAAGGAGATGCACTTC
+CACCCCAAGGCCCTAAAGGACGTGAAGGGCCAGATCGGGGCGCCCATGCCTGGGAAGGTG
+ATAGACATCAAAGTGGTGGCAGGGGCCAAGGTGGCCAAGGGCCAGCCCCTGTGTGTGCTC
+AGTGCCATGAAGATGGAGACTGTGGTGACCTCACCCATGGAGGGTACTGTCCGCAAGGTT
+CATGTGACCAAGGACATGACACTGGAAGGTGACGACCTCATCCTGGAGATCGAGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00364</identifier>
+            <name>Biotin_lipoyl</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02785</identifier>
+            <name>Biotin_carb_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00289</identifier>
+            <name>Biotin_carb_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02786</identifier>
+            <name>CPSase_L_D2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00682</identifier>
+            <name>HMGL-like</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02436</identifier>
+            <name>PYC_OADA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>biotin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>biotin carboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyruvate carboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>biotin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gluconeogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation by host of viral process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation by host of viral release from host cell</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral RNA genome packaging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>water-soluble vitamin metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0003966</id>
+      <name>Pyruvate carboxylase</name>
+      <organism>Staphylococcus aureus (strain Mu50 / ATCC 700699)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="A0A0H3JRU9" source="TrEMBL">
+        <name>Pyruvate carboxylase</name>
+        <general-function>Catalyzes a 2-step reaction, involving the ATP-dependent carboxylation of the covalently attached biotin in the first step and the transfer of the carboxyl group to pyruvate in the second.</general-function>
+        <specific-function>Atp binding</specific-function>
+        <gene-name>pycA</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.93</theoretical-pi>
+        <molecular-weight>128556.785</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="158878">Staphylococcus aureus (strain Mu50 / ATCC 700699)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BA000017</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>14245768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>A0A0H3JRU9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A0A0H3JRU9_STAAM</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>6.4.1.1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007588|Pyruvate carboxylase
+MKQIKKLLVANRGEIAIRIFRAAAELDISTVAIYSNEDKSSLHRYKADESYLVGSDLGPA
+ESYLNIERIIDVAKQANVDAIHPGYGFLSENEQFARRCAEEGIKFIGPHLEHLDMFGDKV
+KARTTAIKADLPVIPGTDGPIKSYELAKEFAEEAGFPLMIKATSGGGGKGMRIVREESEL
+EDAFHRAKSEAEKSFGNSEVYIERYIDNPKHIEVQVIGDEHGNIVHLFERDCSVQRRHQK
+VVEVAPSVGLSPTLRQRICDAAIQLMENIKYVNAGTVEFLVSGDEFFFIEVNPRVQVEHT
+ITEMVTGIDIVKTQILVAAGADLFGEEINMPQQKDITTLGYAIQCRITTEDPLNDFMPDT
+GTIIAYRSSGGFGVRLDAGDGFQGAEISPYYDSLLVKLSTHAISFKQAEEKMVRSLREMR
+IRGVKTNIPFLINVMKNKKFTSGDYTTKFIEETPELFDIQPSLDRGTKTLEYIGNVTING
+FPNVEKRPKPDYELASIPTVSSSKIASFSGTKQLLDEVGPKGVAEWVKKQDDVLLTDTTF
+RDAHQSLLATRVRTKDMINIASKTADVFKDGFSLEMWGGATFDVAYNFLKENPWERLERL
+RKAIPNVLFQMLLRASNAVGYKNYPDNVIHKFVQESAKAGIDVFRIFDSLNWVDQMKVAN
+EAVQEAGKISEGTICYTGDILNPERSNIYTLEYYVKLAKELEREGFHILAIKDMAGLLKP
+KAAYELIGELKSAVDLPIHLHTHDTSGNGLLTYKQAIDAGVDIIDTAVASMSGLTSQPSA
+NSLYYALNGFPRHLRTDIEGMESLSHYWSTVRTYYSDFESDIKSPNTEIYQHEMPGGQYS
+NLSQQAKSLGLGERFDEVKDMYRRVNFLFGDIVKVTPSSKVVGDMALYMVQNDLDEQSVI
+TDGYKLDFPESVVSFFKGEIGQPVNGFNKDLQAVILKGQEALTARPGEYLEPVDFEKVRE
+LLEEEQQGPVTEQDIISYVLYPKVYEQYIQTRNQYGNLSLLDTPTFFFGMRNGETVEIEI
+DKGKRLIIKLETISEPDENGNRTIYYAMNGQARRIYIKDENVHTNANVKPKADKSNPSHI
+GAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGD
+LLIEIEKATD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0049967|Pyruvate carboxylase (pycA)
+TTGAAACAAATAAAAAAGTTACTTGTTGCTAACCGTGGAGAAATTGCAATTCGTATATTC
+AGAGCGGCGGCAGAATTAGACATCAGCACAGTTGCAATTTATTCGAATGAAGACAAAAGT
+TCATTACATAGATATAAAGCAGATGAATCCTATTTAGTTGGAAGTGATTTAGGTCCTGCT
+GAAAGTTATTTAAATATTGAGCGTATCATTGATGTAGCAAAACAAGCGAATGTGGATGCG
+ATTCATCCTGGCTATGGATTTTTAAGTGAAAATGAACAATTTGCGCGTCGTTGTGCAGAA
+GAAGGAATTAAATTTATTGGTCCTCATTTAGAACATTTAGATATGTTTGGAGATAAAGTT
+AAAGCTCGTACAACGGCTATCAAGGCAGATTTACCAGTTATTCCTGGTACAGACGGTCCA
+ATTAAATCATATGAATTAGCAAAAGAATTTGCAGAAGAAGCTGGTTTCCCGCTAATGATT
+AAAGCCACAAGTGGTGGCGGCGGTAAAGGTATGAGAATCGTTCGTGAAGAAAGTGAATTA
+GAAGATGCTTTCCATAGAGCAAAATCAGAAGCTGAAAAATCATTTGGTAATAGTGAAGTT
+TACATAGAAAGATACATTGATAATCCAAAGCATATTGAAGTACAAGTCATAGGTGACGAA
+CATGGAAATATCGTACACTTATTTGAACGTGATTGTTCAGTACAACGTCGTCATCAAAAA
+GTTGTAGAAGTTGCACCATCAGTTGGATTATCACCAACATTACGTCAACGTATTTGTGAT
+GCTGCAATTCAATTGATGGAAAATATTAAATATGTCAATGCAGGTACTGTTGAATTTCTA
+GTATCTGGTGACGAATTCTTCTTTATAGAAGTTAACCCTCGTGTACAAGTAGAGCATACA
+ATTACAGAGATGGTAACAGGAATTGATATTGTTAAGACACAAATTTTAGTTGCAGCAGGT
+GCCGATTTATTTGGTGAAGAGATTAATATGCCGCAACAAAAAGATATTACAACATTAGGC
+TATGCCATCCAATGTCGTATTACAACAGAAGATCCGTTAAATGATTTCATGCCGGATACT
+GGAACAATCATTGCTTATCGTTCAAGCGGTGGCTTTGGTGTACGTCTTGATGCTGGAGAT
+GGTTTCCAAGGTGCTGAGATATCACCTTATTATGATTCATTACTCGTAAAATTATCTACA
+CATGCGATATCATTTAAACAAGCAGAAGAAAAAATGGTACGTTCATTACGAGAAATGCGT
+ATTCGTGGTGTTAAAACTAATATTCCATTCTTAATTAATGTAATGAAGAATAAAAAGTTC
+ACAAGTGGTGATTACACAACTAAATTTATTGAAGAAACACCAGAACTTTTCGACATTCAG
+CCGTCTCTAGATAGAGGTACTAAAACATTAGAATATATAGGTAATGTAACAATTAATGGT
+TTCCCAAATGTTGAGAAACGTCCGAAACCAGACTATGAATTAGCATCAATTCCAACTGTA
+TCTTCAAGTAAAATCGCTTCATTTAGTGGTACGAAACAATTGCTTGATGAAGTAGGTCCA
+AAAGGTGTAGCTGAATGGGTTAAAAAGCAGGATGATGTCTTACTAACAGATACAACCTTT
+AGAGATGCACACCAATCATTATTAGCTACACGAGTTAGAACTAAGGATATGATTAATATC
+GCATCCAAAACAGCGGACGTATTTAAAGATGGTTTCTCACTAGAAATGTGGGGCGGTGCT
+ACATTTGATGTGGCATATAATTTCTTGAAGGAAAACCCATGGGAACGACTTGAACGTCTA
+CGTAAAGCTATCCCAAATGTATTATTCCAAATGTTGTTACGTGCTTCAAACGCAGTTGGT
+TATAAAAACTATCCTGATAATGTTATTCATAAATTCGTACAAGAAAGTGCTAAAGCAGGC
+ATAGATGTCTTTAGAATTTTCGATTCATTAAACTGGGTAGATCAAATGAAAGTTGCCAAT
+GAAGCAGTACAAGAAGCGGGCAAAATCTCTGAAGGTACTATTTGTTATACAGGTGACATT
+TTAAATCCTGAGCGATCAAACATTTATACTTTAGAGTATTATGTCAAACTAGCTAAAGAG
+TTAGAACGTGAAGGTTTCCATATTTTAGCGATTAAAGATATGGCAGGCTTATTAAAACCT
+AAAGCCGCTTACGAATTGATTGGTGAGTTAAAATCAGCTGTAGATTTACCAATTCATCTT
+CACACTCATGATACAAGTGGTAATGGTTTATTAACATACAAACAAGCAATAGATGCTGGG
+GTCGATATCATTGATACTGCTGTTGCTTCAATGAGTGGTTTAACAAGTCAGCCAAGCGCC
+AATTCGTTATATTATGCATTAAATGGCTTCCCACGCCACCTTAGAACTGATATTGAAGGT
+ATGGAGTCACTTAGTCATTATTGGTCAACTGTACGTACTTATTATTCAGACTTTGAAAGT
+GATATCAAATCACCGAATACTGAAATTTATCAACATGAAATGCCTGGTGGACAGTATTCG
+AATTTAAGTCAACAAGCTAAAAGTTTAGGTTTAGGCGAAAGATTTGATGAAGTCAAAGAT
+ATGTATCGCAGAGTGAATTTCTTATTTGGTGATATCGTAAAAGTAACTCCATCGTCTAAA
+GTAGTTGGTGATATGGCACTTTATATGGTACAAAATGATCTTGATGAACAATCCGTGATT
+ACAGATGGCTATAAATTAGATTTCCCAGAATCAGTAGTGTCGTTCTTCAAAGGCGAAATA
+GGACAACCTGTAAATGGTTTTAATAAAGATTTACAAGCGGTTATTTTAAAAGGCCAAGAA
+GCACTAACAGCTCGTCCAGGTGAATATCTAGAGCCAGTTGATTTTGAAAAAGTCCGTGAG
+TTGCTTGAAGAAGAGCAACAAGGTCCTGTTACGGAGCAAGATATTATTAGTTATGTATTA
+TATCCAAAAGTATATGAACAATATATTCAAACTAGAAATCAATACGGAAACTTATCGTTA
+CTTGATACGCCTACATTCTTCTTTGGAATGCGTAATGGTGAAACAGTAGAAATCGAAATC
+GATAAGGGTAAACGATTAATTATTAAACTAGAAACGATTAGTGAACCAGATGAAAATGGT
+AATAGAACGATTTACTATGCGATGAATGGTCAAGCGAGACGTATTTACATTAAAGATGAA
+AATGTGCATACAAATGCGAACGTTAAGCCAAAAGCAGATAAGAGTAATCCAAGTCATATC
+GGTGCTCAAATGCCAGGTTCAGTAACTGAAGTCAAGGTTAGTGTTGGTGAAACTGTGAAA
+GCTAATCAGCCGTTGCTAATTACTGAAGCTATGAAAATGGAAACAACAATTCAAGCACCA
+TTTGACGGTGTGATTAAACAAGTAACTGTAAATAATGGTGACACAATAGCGACAGGCGAT
+TTATTAATCGAAATTGAAAAAGCAACTGACTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00364</identifier>
+            <name>Biotin_lipoyl</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02785</identifier>
+            <name>Biotin_carb_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00289</identifier>
+            <name>Biotin_carb_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02786</identifier>
+            <name>CPSase_L_D2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00682</identifier>
+            <name>HMGL-like</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02436</identifier>
+            <name>PYC_OADA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>biotin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>biotin carboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyruvate carboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gluconeogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

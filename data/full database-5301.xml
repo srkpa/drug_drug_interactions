@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05854</drugbank-id>
+  <name>CLX-0921</name>
+  <description>CLX-0921 is investigated for use/treatment in diabetes mellitus type 2. CLX-0921 is a solid. CLX-0921 has a spectrum of activity that differs from commercially available thiazolidinediones. This substance targets the protein peroxisome proliferator-activated receptor gamma. It is a pharmacologically active antihyperglycemic agent that acts by increasing peripheral tissue sensitivity to insulin.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3850</ref-id>
+        <pubmed-id>11569941</pubmed-id>
+        <citation>Barlocco D: CLX-0901 (Calyx Therapeutics). Curr Opin Investig Drugs. 2001 May;2(5):650-3.</citation>
+      </article>
+      <article>
+        <ref-id>A3851</ref-id>
+        <pubmed-id>12898466</pubmed-id>
+        <citation>Dey D, Medicherla S, Neogi P, Gowri M, Cheng J, Gross C, Sharma SD, Reaven GM, Nag B: A novel peroxisome proliferator-activated gamma (PPAR gamma) agonist, CLX-0921, has potent antihyperglycemic activity with low adipogenic potential. Metabolism. 2003 Aug;52(8):1012-8.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in diabetes mellitus type 2.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>CLX-0921 has a spectrum of activity that differs from commercially available TZDs. It also increases glycogen synthesis, an activity not typically associated with rosiglitazone or pioglitazone. Thus it appears to have a distinct spectrum of activity relative to other TZDs.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910271</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Thiazolidinedione</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000215</id>
+      <name>Peroxisome proliferator-activated receptor gamma</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P37231" source="Swiss-Prot">
+        <name>Peroxisome proliferator-activated receptor gamma</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Nuclear receptor that binds peroxisome proliferators such as hypolipidemic drugs and fatty acids. Once activated by a ligand, the nuclear receptor binds to DNA specific PPAR response elements (PPRE) and modulates the transcription of its target genes, such as acyl-CoA oxidase. It therefore controls the peroxisomal beta-oxidation pathway of fatty acids. Key regulator of adipocyte differentiation and glucose homeostasis. ARF6 acts as a key regulator of the tissue-specific adipocyte P2 (aP2) enhancer. Acts as a critical regulator of gut homeostasis by suppressing NF-kappa-B-mediated proinflammatory responses. Plays a role in the regulation of cardiovascular circadian rhythms by regulating the transcription of ARNTL/BMAL1 in the blood vessels (By similarity).</specific-function>
+        <gene-name>PPARG</gene-name>
+        <locus>3p25</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.77</theoretical-pi>
+        <molecular-weight>57619.58</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9236</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PPARG</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U79012</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1711117</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>595</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>595</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P37231</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PPARG_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>NR1C3</synonym>
+          <synonym>Nuclear receptor subfamily 1 group C member 3</synonym>
+          <synonym>PPAR-gamma</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000429|Peroxisome proliferator-activated receptor gamma
+MGETLGDSPIDPESDSFTDTLSANISQEMTMVDTEMPFWPTNFGISSVDLSVMEDHSHSF
+DIKPFTTVDFSSISTPHYEDIPFTRTDPVVADYKYDLKLQEYQSAIKVEPASPPYYSEKT
+QLYNKPHEEPSNSLMAIECRVCGDKASGFHYGVHACEGCKGFFRRTIRLKLIYDRCDLNC
+RIHKKSRNKCQYCRFQKCLAVGMSHNAIRFGRMPQAEKEKLLAEISSDIDQLNPESADLR
+ALAKHLYDSYIKSFPLTKAKARAILTGKTTDKSPFVIYDMNSLMMGEDKIKFKHITPLQE
+QSKEVAIRIFQGCQFRSVEAVQEITEYAKSIPGFVNLDLNDQVTLLKYGVHEIIYTMLAS
+LMNKDGVLISEGQGFMTREFLKSLRKPFGDFMEPKFEFAVKFNALELDDSDLAIFIAVII
+LSGDRPGLLNVKPIEDIQDNLLQALELQLKLNHPESSQLFAKLLQKMTDLRQIVTEHVQL
+LQVIKKTETDMSLHPLLQEIYKDLY</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021642|Peroxisome proliferator-activated receptor gamma (PPARG)
+ATGACCATGGTTGACACAGAGATGCCATTCTGGCCCACCAACTTTGGGATCAGCTCCGTG
+GATCTCTCCGTAATGGAAGACCACTCCCACTCCTTTGATATCAAGCCCTTCACTACTGTT
+GACTTCTCCAGCATTTCTACTCCACATTACGAAGACATTCCATTCACAAGAACAGATCCA
+GTGGTTGCAGATTACAAGTATGACCTGAAACTTCAAGAGTACCAAAGTGCAATCAAAGTG
+GAGCCTGCATCTCCACCTTATTATTCTGAGAAGACTCAGCTCTACAATAAGCCTCATGAA
+GAGCCTTCCAACTCCCTCATGGCAATTGAATGTCGTGTCTGTGGAGATAAAGCTTCTGGA
+TTTCACTATGGAGTTCATGCTTGTGAAGGATGCAAGGGTTTCTTCCGGAGAACAATCAGA
+TTGAAGCTTATCTATGACAGATGTGATCTTAACTGTCGGATCCACAAAAAAAGTAGAAAT
+AAATGTCAGTACTGTCGGTTTCAGAAATGCCTTGCAGTGGGGATGTCTCATAATGCCATC
+AGGTTTGGGCGGATGCCACAGGCCGAGAAGGAGAAGCTGTTGGCGGAGATCTCCAGTGAT
+ATCGACCAGCTGAATCCAGAGTCCGCTGACCTCCGGGCCCTGGCAAAACATTTGTATGAC
+TCATACATAAAGTCCTTCCCGCTGACCAAAGCAAAGGCGAGGGCGATCTTGACAGGAAAG
+ACAACAGACAAATCACCATTCGTTATCTATGACATGAATTCCTTAATGATGGGAGAAGAT
+AAAATCAAGTTCAAACACATCACCCCCCTGCAGGAGCAGAGCAAAGAGGTGGCCATCCGC
+ATCTTTCAGGGCTGCCAGTTTCGCTCCGTGGAGGCTGTGCAGGAGATCACAGAGTATGCC
+AAAAGCATTCCTGGTTTTGTAAATCTTGACTTGAACGACCAAGTAACTCTCCTCAAATAT
+GGAGTCCACGAGATCATTTACACAATGCTGGCCTCCTTGATGAATAAAGATGGGGTTCTC
+ATATCCGAGGGCCAAGGCTTCATGACAAGGGAGTTTCTAAAGAGCCTGCGAAAGCCTTTT
+GGTGACTTTATGGAGCCCAAGTTTGAGTTTGCTGTGAAGTTCAATGCACTGGAATTAGAT
+GACAGCGACTTGGCAATATTTATTGCTGTCATTATTCTCAGTGGAGACCGCCCAGGTTTG
+CTGAATGTGAAGCCCATTGAAGACATTCAAGACAACCTGCTACAAGCCCTGGAGCTCCAG
+CTGAAGCTGAACCACCCTGAGTCCTCACAGCTGTTTGCCAAGCTGCTCCAGAAAATGACA
+GACCTCAGACAGATTGTCACGGAACACGTGCAGCTACTGCAGGTGATCAAGAAGACGGAG
+ACAGACATGAGTCTTCACCCGCTCCTGCAGGAGATCTACAAGGACTTGTACTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00104</identifier>
+            <name>Hormone_recep</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00105</identifier>
+            <name>zf-C4</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12577</identifier>
+            <name>PPARgamma_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>RNA polymerase II transcription factor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>activating transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-actinin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>arachidonic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>core promoter sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ligand-dependent nuclear receptor transcription coactivator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>prostaglandin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>retinoid X receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II regulatory region DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor activity, ligand-activated sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hormone receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription regulatory region DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcriptional activator activity, RNA polymerase II transcription regulatory region sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brown fat cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell fate commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hyperoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to insulin stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lithium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to prostaglandin E stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to retinoic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to vitamin E</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>diet induced thermogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epithelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fatty acid oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoprotein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>long-chain fatty acid transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>low-density lipoprotein particle receptor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of acute inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cholesterol storage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of collagen biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interferon-gamma-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of macrophage derived foam cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of pancreatic stellate cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of receptor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of sequestering of triglyceride</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of telomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organ regeneration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peroxisome proliferator activated receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>placenta development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fat cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fatty acid oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of oligodendrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phagocytosis, engulfment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cholesterol transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription involved in cell fate commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to caffeine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cold</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to diuretic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estrogen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to immobilization stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to low-density lipoprotein particle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to mechanical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to metformin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to retinoic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to starvation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to vitamin A</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhythmic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>white fat cell differentiation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

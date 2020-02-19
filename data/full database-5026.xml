@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05415</drugbank-id>
+  <name>OSI-461</name>
+  <description>OSI-461 is a second-generation molecule belonging to a new class of drugs termed selective apoptotic anti-neoplastic drugs (SAANDs).</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3453</ref-id>
+        <pubmed-id>15475462</pubmed-id>
+        <citation>Shimizu M, Suzui M, Deguchi A, Lim JT, Xiao D, Hayes JH, Papadopoulos KP, Weinstein IB: Synergistic effects of acyclic retinoid and OSI-461 on growth inhibition and gene expression in human hepatoma cells. Clin Cancer Res. 2004 Oct 1;10(19):6710-21.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in crohn's disease, inflammatory bowel disease, kidney cancer, leukemia (lymphoid), and prostate cancer.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>OSI-461 is cGMP phosphodiesterase (cGMP-PDEs) inhibitors which is designed to lead to sustained activation of the intracellular signaling protein, Protein Kinase G (PKG), and subsequent stimulation of apoptosis through the c-Jun kinase pathway. Broad spectrum inhibition of cGMP-PDEs have been shown to lead to elevation in cGMP levels and the sustained activation of PKG. This in turn directly phosphorylates MEKK1 leading to activation of the N-terminal c-Jun kinase (JNK-1) pathway, a known pro-apoptotic signaling pathway.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Indenes</category>
+      <mesh-id>D007192</mesh-id>
+    </category>
+    <category>
+      <category>Phosphodiesterase Inhibitors</category>
+      <mesh-id>D010726</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910126</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000182</id>
+      <name>cGMP-specific 3',5'-cyclic phosphodiesterase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O76074" source="Swiss-Prot">
+        <name>cGMP-specific 3',5'-cyclic phosphodiesterase</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Plays a role in signal transduction by regulating the intracellular concentration of cyclic nucleotides. This phosphodiesterase catalyzes the specific hydrolysis of cGMP to 5'-GMP (PubMed:9714779, PubMed:15489334). Specifically regulates nitric-oxide-generated cGMP (PubMed:15489334).</specific-function>
+        <gene-name>PDE5A</gene-name>
+        <locus>4q25-q27</locus>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.0</theoretical-pi>
+        <molecular-weight>99984.14</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8784</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PDE5A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF043731</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3420185</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1304</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O76074</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PDE5A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.4.35</synonym>
+          <synonym>CGB-PDE</synonym>
+          <synonym>cGMP-binding cGMP-specific phosphodiesterase</synonym>
+          <synonym>PDE5</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0036966|cGMP-specific 3',5'-cyclic phosphodiesterase
+MERAGPSFGQQRQQQQPQQQKQQQRDQDSVEAWLDDHWDFTFSYFVRKATREMVNAWFAE
+RVHTIPVCKEGIRGHTESCSCPLQQSPRADNSAPGTPTRKISASEFDRPLRPIVVKDSEG
+TVSFLSDSEKKEQMPLTPPRFDHDEGDQCSRLLELVKDISSHLDVTALCHKIFLHIHGLI
+SADRYSLFLVCEDSSNDKFLISRLFDVAEGSTLEEVSNNCIRLEWNKGIVGHVAALGEPL
+NIKDAYEDPRFNAEVDQITGYKTQSILCMPIKNHREEVVGVAQAINKKSGNGGTFTEKDE
+KDFAAYLAFCGIVLHNAQLYETSLLENKRNQVLLDLASLIFEEQQSLEVILKKIAATIIS
+FMQVQKCTIFIVDEDCSDSFSSVFHMECEELEKSSDTLTREHDANKINYMYAQYVKNTME
+PLNIPDVSKDKRFPWTTENTGNVNQQCIRSLLCTPIKNGKKNKVIGVCQLVNKMEENTGK
+VKPFNRNDEQFLEAFVIFCGLGIQNTQMYEAVERAMAKQMVTLEVLSYHASAAEEETREL
+QSLAAAVVPSAQTLKITDFSFSDFELSDLETALCTIRMFTDLNLVQNFQMKHEVLCRWIL
+SVKKNYRKNVAYHNWRHAFNTAQCMFAALKAGKIQNKLTDLEILALLIAALSHDLDHRGV
+NNSYIQRSEHPLAQLYCHSIMEHHHFDQCLMILNSPGNQILSGLSIEEYKTTLKIIKQAI
+LATDLALYIKRRGEFFELIRKNQFNLEDPHQKELFLAMLMTACDLSAITKPWPIQQRIAE
+LVATEFFDQGDRERKELNIEPTDLMNREKKNKIPSMQVGFIDAICLQLYEALTHVSEDCF
+PLLDGCRKNRQKWQALAEQQEKMLINGESGQAKRN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009989|cGMP-specific 3',5'-cyclic phosphodiesterase (PDE5A)
+ATGGAGCGGGCCGGCCCCAGCTTCGGGCAGCAGCGACAGCAGCAGCAGCCCCAGCAGCAG
+AAGCAGCAGCAGAGGGATCAGGACTCGGTCGAAGCATGGCTGGACGATCACTGGGACTTT
+ACCTTCTCATACTTTGTTAGAAAAGCCACCAGAGAAATGGTCAATGCATGGTTTGCTGAG
+AGAGTTCACACCATCCCTGTGTGCAAGGAAGGTATCAGAGGCCACACCGAATCTTGCTCT
+TGTCCCTTGCAGCAGAGTCCTCGTGCAGATAACAGTGCCCCTGGAACACCAACCAGGAAA
+ATCTCTGCCTCTGAATTTGACCGGCCTCTTAGACCCATTGTTGTCAAGGATTCTGAGGGA
+ACTGTGAGCTTCCTCTCTGACTCAGAAAAGAAGGAACAGATGCCTCTAACCCCTCCAAGG
+TTTGATCATGATGAAGGGGACCAGTGCTCAAGACTCTTGGAATTAGTGAAGGATATTTCT
+AGTCATTTGGATGTCACAGCCTTATGTCACAAAATTTTCTTGCATATCCATGGACTGATA
+TCTGCTGACCGCTATTCCCTGTTCCTTGTCTGTGAAGACAGCTCCAATGACAAGTTTCTT
+ATCAGCCGCCTCTTTGATGTTGCTGAAGGTTCAACACTGGAAGAAGTTTCAAATAACTGT
+ATCCGCTTAGAATGGAACAAAGGCATTGTGGGACATGTGGCAGCGCTTGGTGAGCCCTTG
+AACATCAAAGATGCATATGAGGATCCTCGGTTCAATGCAGAAGTTGACCAAATTACAGGC
+TACAAGACACAAAGCATTCTTTGTATGCCAATTAAGAATCATAGGGAAGAGGTTGTTGGT
+GTAGCCCAGGCCATCAACAAGAAATCAGGAAACGGTGGGACATTTACTGAAAAAGATGAA
+AAGGACTTTGCTGCTTATTTGGCATTTTGTGGTATTGTTCTTCATAATGCTCAGCTCTAT
+GAGACTTCACTGCTGGAGAACAAGAGAAATCAGGTGCTGCTTGACCTTGCTAGTTTAATT
+TTTGAAGAACAACAATCATTAGAAGTAATTTTGAAGAAAATAGCTGCCACTATTATCTCT
+TTCATGCAAGTGCAGAAATGCACCATTTTCATAGTGGATGAAGATTGCTCCGATTCTTTT
+TCTAGTGTGTTTCACATGGAGTGTGAGGAATTAGAAAAATCATCTGATACATTAACAAGG
+GAACATGATGCAAACAAAATCAATTACATGTATGCTCAGTATGTCAAAAATACTATGGAA
+CCACTTAATATCCCAGATGTCAGTAAGGATAAAAGATTTCCCTGGACAACTGAAAATACA
+GGAAATGTAAACCAGCAGTGCATTAGAAGTTTGCTTTGTACACCTATAAAAAATGGAAAG
+AAGAATAAAGTTATAGGGGTTTGCCAACTTGTTAATAAGATGGAGGAGAATACTGGCAAG
+GTTAAGCCTTTCAACCGAAATGACGAACAGTTTCTGGAAGCTTTTGTCATCTTTTGTGGC
+TTGGGGATCCAGAACACGCAGATGTATGAAGCAGTGGAGAGAGCCATGGCCAAGCAAATG
+GTCACATTGGAGGTTCTGTCGTATCATGCTTCAGCAGCAGAGGAAGAAACAAGAGAGCTA
+CAGTCGTTAGCGGCTGCTGTGGTGCCATCTGCCCAGACCCTTAAAATTACTGACTTTAGC
+TTCAGTGACTTTGAGCTGTCTGATCTGGAAACAGCACTGTGTACAATTCGGATGTTTACT
+GACCTCAACCTTGTGCAGAACTTCCAGATGAAACATGAGGTTCTTTGCAGATGGATTTTA
+AGTGTTAAGAAGAATTATCGGAAGAATGTTGCCTATCATAATTGGAGACATGCCTTTAAT
+ACAGCTCAGTGCATGTTTGCTGCTCTAAAAGCAGGCAAAATTCAGAACAAGCTGACTGAC
+CTGGAGATACTTGCATTGCTGATTGCTGCACTAAGCCACGATTTGGATCACCGTGGTGTG
+AATAACTCTTACATACAGCGAAGTGAACATCCACTTGCCCAGCTTTACTGCCATTCAATC
+ATGGAACACCATCATTTTGACCAGTGCCTGATGATTCTTAATAGTCCAGGCAATCAGATT
+CTCAGTGGCCTCTCCATTGAAGAATATAAGACCACGTTGAAAATAATCAAGCAAGCTATT
+TTAGCTACAGACCTAGCACTGTACATTAAGAGGCGAGGAGAATTTTTTGAACTTATAAGA
+AAAAATCAATTCAATTTGGAAGATCCTCATCAAAAGGAGTTGTTTTTGGCAATGCTGATG
+ACAGCTTGTGATCTTTCTGCAATTACAAAACCCTGGCCTATTCAACAACGGATAGCAGAA
+CTTGTAGCAACTGAATTTTTTGATCAAGGAGACAGAGAGAGAAAAGAACTCAACATAGAA
+CCCACTGATCTAATGAACAGGGAGAAGAAAAACAAAATCCCAAGTATGCAAGTTGGGTTC
+ATAGATGCCATCTGCTTGCAACTGTATGAGGCCCTGACCCACGTGTCAGAGGACTGTTTC
+CCTTTGCTAGATGGCTGCAGAAAGAACAGGCAGAAATGGCAGGCCCTTGCAGAACAGCAG
+GAGAAGATGCTGATTAATGGGGAAAGCGGCCAGGCCAAGCGGAACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01590</identifier>
+            <name>GAF</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00233</identifier>
+            <name>PDEase_I</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>3',5'-cyclic-GMP phosphodiesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>3',5'-cyclic-nucleotide phosphodiesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cGMP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cGMP catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cardiac muscle hypertrophy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAP kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of oocyte development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cGMP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>relaxation of cardiac muscle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

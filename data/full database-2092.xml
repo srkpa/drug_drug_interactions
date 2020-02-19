@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02209</drugbank-id>
+  <drugbank-id>EXPT02710</drugbank-id>
+  <name>Pyridoxine phosphate</name>
+  <description/>
+  <cas-number>447-05-2</cas-number>
+  <unii>RG20W8WYLS</unii>
+  <average-mass>249.1577</average-mass>
+  <monoisotopic-mass>249.040223633</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as pyridoxine-5'-phosphates. These are pyridoxines that carry a phosphate group at the 5-position.</description>
+    <direct-parent>Pyridoxine-5'-phosphates</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Pyridines and derivatives</class>
+    <subclass>Pyridoxines</subclass>
+    <alternative-parent>Aromatic alcohols</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Hydroxypyridines</alternative-parent>
+    <alternative-parent>Methylpyridines</alternative-parent>
+    <alternative-parent>Monoalkyl phosphates</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Primary alcohols</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Alkyl phosphate</substituent>
+    <substituent>Aromatic alcohol</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Hydroxypyridine</substituent>
+    <substituent>Methylpyridine</substituent>
+    <substituent>Monoalkyl phosphate</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organic phosphoric acid derivative</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phosphoric acid ester</substituent>
+    <substituent>Primary alcohol</substituent>
+    <substituent>Pyridoxine-5'-phosphate</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">Pyridoxine 5-phosphate</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Coenzymes</category>
+      <mesh-id>D003067</mesh-id>
+    </category>
+    <category>
+      <category>Enzymes and Coenzymes</category>
+      <mesh-id>D045762</mesh-id>
+    </category>
+    <category>
+      <category>Picolines</category>
+      <mesh-id>D010847</mesh-id>
+    </category>
+    <category>
+      <category>Pyridines</category>
+      <mesh-id>D011725</mesh-id>
+    </category>
+    <category>
+      <category>Vitamin B Complex</category>
+      <mesh-id>D014803</mesh-id>
+    </category>
+    <category>
+      <category>Vitamins</category>
+      <mesh-id>D014815</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1ho4</pdb-entry>
+    <pdb-entry>1szr</pdb-entry>
+    <pdb-entry>3f4n</pdb-entry>
+    <pdb-entry>3o6d</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>9.41e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>{[5-hydroxy-4-(hydroxymethyl)-6-methylpyridin-3-yl]methoxy}phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>pyridoxine-5'-phosphate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>249.1577</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>249.040223633</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC1=NC=C(COP(O)(O)=O)C(CO)=C1O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C8H12NO6P</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C8H12NO6P/c1-5-8(11)7(3-10)6(2-9-5)4-15-16(12,13)14/h2,10-11H,3-4H2,1H3,(H2,12,13,14)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>WHOMFKWHIQZTHY-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>120.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>54.98</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>21.72</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>5.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>28803</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>1055</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505900</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00627</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>1026</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>PXP</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000017</smpdb-id>
+      <name>Vitamin B6 Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00147</drugbank-id>
+          <name>Pyridoxal</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00165</drugbank-id>
+          <name>Pyridoxine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02142</drugbank-id>
+          <name>Pyridoxamine-5'-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02209</drugbank-id>
+          <name>Pyridoxine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P05186</uniprot-id>
+        <uniprot-id>Q9NVS9</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>O00764</uniprot-id>
+        <uniprot-id>Q96GD0</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000503</smpdb-id>
+      <name>Hypophosphatasia</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00147</drugbank-id>
+          <name>Pyridoxal</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00165</drugbank-id>
+          <name>Pyridoxine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02142</drugbank-id>
+          <name>Pyridoxamine-5'-Phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02209</drugbank-id>
+          <name>Pyridoxine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03247</drugbank-id>
+          <name>Flavin mononucleotide</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P05186</uniprot-id>
+        <uniprot-id>Q9NVS9</uniprot-id>
+        <uniprot-id>Q06278</uniprot-id>
+        <uniprot-id>O00764</uniprot-id>
+        <uniprot-id>Q96GD0</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001540</id>
+      <name>Pyridoxine 5'-phosphate synthase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0A794" source="Swiss-Prot">
+        <name>Pyridoxine 5'-phosphate synthase</name>
+        <general-function>Pyridoxine 5'-phosphate synthase activity</general-function>
+        <specific-function>Catalyzes the complicated ring closure reaction between the two acyclic compounds 1-deoxy-D-xylulose-5-phosphate (DXP) and 3-amino-2-oxopropyl phosphate (1-amino-acetone-3-phosphate or AAP) to form pyridoxine 5'-phosphate (PNP) and inorganic phosphate.</specific-function>
+        <gene-name>pdxJ</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.82</theoretical-pi>
+        <molecular-weight>26384.01</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M76470</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>147555</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0A794</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PDXJ_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.6.99.2</synonym>
+          <synonym>PNP synthase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003058|Pyridoxine 5'-phosphate synthase
+MAELLLGVNIDHIATLRNARGTAYPDPVQAAFIAEQAGADGITVHLREDRRHITDRDVRI
+LRQTLDTRMNLEMAVTEEMLAIAVETKPHFCCLVPEKRQEVTTEGGLDVAGQRDKMRDAC
+KRLADAGIQVSLFIDADEEQIKAAAEVGAPFIEIHTGCYADAKTDAEQAQELARIAKAAT
+FAASLGLKVNAGHGLTYHNVKAIAAIPEMHELNIGHAIIGRAVMTGLKDAVAEMKRLMLE
+ARG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011091|Pyridoxine 5'-phosphate synthase (pdxJ)
+ATGGCTGAATTACTGTTAGGCGTCAACATTGACCATATCGCTACGCTGCGCAACGCGCGC
+GGTACCGCTTACCCGGATCCGGTGCAGGCCGCGTTTATTGCCGAGCAGGCGGGAGCGGAC
+GGCATTACCGTGCATTTACGTGAAGATCGCCGTCACATTACTGACCGCGACGTGCGCATC
+CTGCGTCAGACGCTGGATACCCGCATGAATCTGGAGATGGCGGTGACCGAAGAGATGCTG
+GCGATCGCCGTTGAGACGAAGCCACATTTTTGCTGCCTGGTACCGGAAAAGCGTCAGGAA
+GTAACAACCGAAGGCGGCCTGGATGTCGCAGGGCAGCGTGACAAAATGCGCGATGCCTGC
+AAACGTCTGGCAGATGCCGGGATTCAGGTTTCTCTGTTTATTGACGCCGATGAAGAGCAG
+ATCAAAGCTGCGGCAGAGGTTGGCGCACCGTTTATCGAGATCCACACCGGTTGCTATGCT
+GATGCCAAAACTGACGCCGAACAGGCGCAAGAGCTGGCGCGTATCGCCAAAGCCGCGACC
+TTTGCCGCAAGCCTCGGTCTGAAAGTTAACGCCGGACACGGTCTGACCTATCACAACGTG
+AAAGCCATTGCCGCCATCCCTGAGATGCATGAACTGAATATCGGTCATGCCATTATTGGT
+CGTGCAGTGATGACCGGACTGAAAGATGCGGTGGCAGAAATGAAGCGTCTGATGCTGGAA
+GCGCGTGGCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03740</identifier>
+            <name>PdxJ</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxine 5'-phosphate synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyridoxine biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000404</id>
+      <name>Ornithine decarboxylase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11926" source="Swiss-Prot">
+        <name>Ornithine decarboxylase</name>
+        <general-function>Protein homodimerization activity</general-function>
+        <specific-function>Key enzyme of polyamine biosynthesis that converts ornithine into putrescine, which is the precursor for the polyamines, spermidine and spermine.</specific-function>
+        <gene-name>ODC1</gene-name>
+        <locus>2p25</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.88</theoretical-pi>
+        <molecular-weight>51147.73</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8109</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ODC1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M16650</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>29893806</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1276</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11926</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DCOR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>4.1.1.17</synonym>
+          <synonym>ODC</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016082|Ornithine decarboxylase
+MNNFGNEEFDCHFLDEGFTAKDILDQKINEVSSSDDKDAFYVADLGDILKKHLRWLKALP
+RVTPFYAVKCNDSKAIVKTLAATGTGFDCASKTEIQLVQSLGVPPERIIYANPCKQVSQI
+KYAANNGVQMMTFDSEVELMKVARAHPKAKLVLRIATDDSKAVCRLSVKFGATLRTSRLL
+LERAKELNIDVVGVSFHVGSGCTDPETFVQAISDARCVFDMGAEVGFSMYLLDIGGGFPG
+SEDVKLKFEEITGVINPALDKYFPSDSGVRIIAEPGRYYVASAFTLAVNIIAKKIVLKEQ
+TGSDDEDESSEQTFMYYVNDGVYGSFNCILYDHAHVKPLLQKRPKPDEKYYSSSIWGPTC
+DGLDRIVERCDLPEMHVGDWMLFENMGAYTVAAASTFNGFQRPTIYYVMSGPAWQLMQQF
+QNPDFPPEVEEQDASTLPVSCAWESGMKRHRAACASASINV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0000804|1386 bp
+ATGAACAACTTTGGTAATGAAGAGTTTGACTGCCACTTCCTCGATGAAGGTTTTACTGCC
+AAGGACATTCTGGACCAGAAAATTAATGAAGTTTCTTCTTCTGATGATAAGGATGCCTTC
+TATGTGGCAGACCTGGGAGACATTCTAAAGAAACATCTGAGGTGGTTAAAAGCTCTCCCT
+CGTGTCACCCCCTTTTATGCAGTCAAATGTAATGATAGCAAAGCCATCGTGAAGACCCTT
+GCTGCTACCGGGACAGGATTTGACTGTGCTAGCAAGACTGAAATACAGTTGGTGCAGAGT
+CTGGGGGTGCCTCCAGAGAGGATTATCTATGCAAATCCTTGTAAACAAGTATCTCAAATT
+AAGTATGCTGCTAATAATGGAGTCCAGATGATGACTTTTGATAGTGAAGTTGAGTTGATG
+AAAGTTGCCAGAGCACATCCCAAAGCAAAGTTGGTTTTGCGGATTGCCACTGATGATTCC
+AAAGCAGTCTGTCGTCTCAGTGTGAAATTCGGTGCCACGCTCAGAACCAGCAGGCTCCTT
+TTGGAACGGGCGAAAGAGCTAAATATCGATGTTGTTGGTGTCAGCTTCCATGTAGGAAGC
+GGCTGTACCGATCCTGAGACCTTCGTGCAGGCAATCTCTGATGCCCGCTGTGTTTTTGAC
+ATGGGGGCTGAGGTTGGTTTCAGCATGTATCTGCTTGATATTGGCGGTGGCTTTCCTGGA
+TCTGAGGATGTGAAACTTAAATTTGAAGAGATCACCGGCGTAATCAACCCAGCGTTGGAC
+AAATACTTTCCGTCAGACTCTGGAGTGAGAATCATAGCTGAGCCCGGCAGATACTATGTT
+GCATCAGCTTTCACGCTTGCAGTTAATATCATTGCCAAGAAAATTGTATTAAAGGAACAG
+ACGGGCTCTGATGACGAAGATGAGTCGAGTGAGCAGACCTTTATGTATTATGTGAATGAT
+GGCGTCTATGGATCATTTAATTGCATACTCTATGACCACGCACATGTAAAGCCCCTTCTG
+CAAAAGAGACCTAAACCAGATGAGAAGTATTATTCATCCAGCATATGGGGACCAACATGT
+GATGGCCTCGATCGGATTGTTGAGCGCTGTGACCTGCCTGAAATGCATGTGGGTGATTGG
+ATGCTCTTTGAAAACATGGGCGCTTACACTGTTGCTGCTGCCTCTACGTTCAATGGCTTC
+CAGAGGCCGACGATCTACTATGTGATGTCAGGGCCTGCGTGGCAACTCATGCAGCAATTC
+CAGAACCCCGACTTCCCACCCGAAGTAGAGGAACAGGATGCCAGCACCCTGCCTGTGTCT
+TGTGCCTGGGAGAGTGGGATGAAACGCCACAGAGCAGCCTGTGCTTCGGCTAGTATTAAT
+GTGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02784</identifier>
+            <name>Orn_Arg_deC_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00278</identifier>
+            <name>Orn_DAP_Arg_deC</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ornithine decarboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>kidney development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polyamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>putrescine biosynthetic process from ornithine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular amino acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0000181</id>
+      <name>Pyridoxine-5'-phosphate oxidase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A185363</ref-id>
+            <pubmed-id>29238081</pubmed-id>
+            <citation>Zhang L, Zhou D, Guan W, Ren W, Sun W, Shi J, Lin Q, Zhang J, Qiao T, Ye Y, Wu Y, Zhang Y, Zuo X, Connor KL, Xu G: Pyridoxine 5'-phosphate oxidase is a novel therapeutic target and regulated by the TGF-beta signalling pathway in epithelial ovarian cancer. Cell Death Dis. 2017 Dec 13;8(12):3214. doi: 10.1038/s41419-017-0050-3.</citation>
+          </article>
+          <article>
+            <ref-id>A185366</ref-id>
+            <pubmed-id>28818555</pubmed-id>
+            <citation>di Salvo ML, Mastrangelo M, Nogues I, Tolve M, Paiardini A, Carducci C, Mei D, Montomoli M, Tramonti A, Guerrini R, Contestabile R, Leuzzi V: Pyridoxine-5'-phosphate oxidase (Pnpo) deficiency: Clinical and biochemical alterations associated with the C.347g&gt;A (P..Arg116gln) mutation. Mol Genet Metab. 2017 Sep;122(1-2):135-142. doi: 10.1016/j.ymgme.2017.08.003. Epub 2017 Aug 12.</citation>
+          </article>
+          <article>
+            <ref-id>A47428</ref-id>
+            <pubmed-id>12824491</pubmed-id>
+            <citation>Musayev FN, Di Salvo ML, Ko TP, Schirch V, Safo MK: Structure and properties of recombinant human pyridoxine 5'-phosphate oxidase. Protein Sci. 2003 Jul;12(7):1455-63. doi: 10.1110/ps.0356203.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9NVS9" source="Swiss-Prot">
+        <name>Pyridoxine-5'-phosphate oxidase</name>
+        <general-function>Pyridoxamine-phosphate oxidase activity</general-function>
+        <specific-function>Catalyzes the oxidation of either pyridoxine 5'-phosphate (PNP) or pyridoxamine 5'-phosphate (PMP) into pyridoxal 5'-phosphate (PLP).</specific-function>
+        <gene-name>PNPO</gene-name>
+        <locus>17q21.32</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.09</theoretical-pi>
+        <molecular-weight>29987.79</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:30260</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PNPO</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF468030</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>21728336</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9NVS9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PNPO_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.3.5</synonym>
+          <synonym>Pyridoxamine-phosphate oxidase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000361|Pyridoxine-5'-phosphate oxidase
+MTCWLRGVTATFGRPAEWPGYLSHLCGRSAAMDLGPMRKSYRGDREAFEETHLTSLDPVK
+QFAAWFEEAVQCPDIGEANAMCLATCTRDGKPSARMLLLKGFGKDGFRFFTNFESRKGKE
+LDSNPFASLVFYWEPLNRQVRVEGPVKKLPEEEAECYFHSRPKSSQIGAVVSHQSSVIPD
+REYLRKKNEELEQLYQDQEVPKPKSWGGYVLYPQVMEFWQGQTNRLHDRIVFRRGLPTGD
+SPLGPMTHRGEEDWLYERLAP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010192|Pyridoxine-5'-phosphate oxidase (PNPO)
+ATGACGTGCTGGCTGCGGGGCGTCACGGCGACGTTCGGGCGACCTGCCGAGTGGCCAGGC
+TACCTCAGTCACCTGTGTGGTCGCAGTGCTGCCATGGACCTGGGACCCATGCGCAAGAGT
+TACCGCGGGGACCGAGAGGCATTTGAGGAGACTCATCTGACCTCCCTTGACCCAGTGAAA
+CAGTTTGCTGCCTGGTTTGAGGAGGCTGTTCAGTGTCCTGACATAGGGGAAGCCAATGCC
+ATGTGTCTGGCTACCTGCACCAGAGATGGAAAACCCTCTGCTCGCATGTTGCTGCTGAAG
+GGCTTCGGGAAAGATGGCTTCCGCTTCTTCACTAACTTCGAGAGTCGAAAAGGAAAAGAG
+CTGGACTCTAATCCCTTTGCTTCCCTTGTCTTCTACTGGGAGCCACTTAACCGTCAGGTG
+CGTGTGGAAGGCCCTGTGAAGAAACTGCCTGAGGAGGAGGCTGAGTGCTACTTCCACTCC
+CGCCCCAAGAGCAGCCAGATTGGGGCTGTGGTCAGCCACCAGAGTTCTGTGATCCCTGAT
+CGGGAGTATCTGAGAAAGAAAAATGAGGAACTGGAACAGCTCTACCAGGATCAAGAGGTG
+CCCAAGCCAAAATCCTGGGGTGGCTATGTCCTGTACCCTCAGGTGATGGAGTTCTGGCAA
+GGTCAAACCAACCGCCTGCATGACCGGATAGTCTTTCGGCGGGGCCTACCCACAGGAGAT
+TCCCCTTTGGGGCCCATGACCCACCGCGGGGAGGAAGACTGGCTCTATGAGAGACTTGCA
+CCTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01243</identifier>
+            <name>Pyridox_oxidase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10590</identifier>
+            <name>PNPOx_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>FMN binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxamine-phosphate oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitophagy in response to mitochondrial depolarization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of defense response to virus by host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyridoxal phosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyridoxine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin B6 metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>water-soluble vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenophagy</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+    <enzyme position="2">
+      <id>BE0004713</id>
+      <name>Pyridoxine 5'-phosphate phosphatase</name>
+      <organism>Ensifer meliloti</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A10228</ref-id>
+            <pubmed-id>18256491</pubmed-id>
+            <citation>Nagahashi Y, Tazoe M, Hoshino T: Cloning of the pyridoxine 5'-phosphate phosphatase gene (pdxP) and vitamin B6 production in pdxP recombinant Sinorhizobium meliloti. Biosci Biotechnol Biochem. 2008 Feb;72(2):421-7. Epub 2008 Feb 7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="A7BK78" source="TrEMBL">
+        <name>Pyridoxine 5'-phosphate phosphatase</name>
+        <general-function>Hydrolase activity</general-function>
+        <specific-function/>
+        <gene-name>pdxP</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>26426.82</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266834">Ensifer meliloti</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>A7BK78</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A7BK78_RHIML</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022115|Pyridoxine 5'-phosphate phosphatase
+MKKLDRMPTHAEFAHVTDWVFDLDNTLYPHHVNLFSQIDRNMTAYVAELLSLEPAEAKKL
+QKEYYRDHGTTLQGLMLHHGIDPNDFLERAHAIDYSVVPADPALGEAIKALPGRKFIFTN
+GSVAHAEMTARALGILEHFNDIFDIVAAGFIPKPAGDTYDKFMGLHRIDTANAVMFEDLP
+RNLVVPKALGMKTVLLVPRNLEYEFAEAWETSSDADDQIDYVTEDLAGFLRSVIV</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF13419</identifier>
+            <name>HAD_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

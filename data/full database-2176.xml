@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02300</drugbank-id>
+  <drugbank-id>EXPT02131</drugbank-id>
+  <name>Calcipotriol</name>
+  <description>Calcipotriol (INN) or calcipotriene (USAN) is a sythetic derivative of calcitriol or Vitamin D.</description>
+  <cas-number>112965-21-6</cas-number>
+  <unii>143NQ3779B</unii>
+  <average-mass>412.6047</average-mass>
+  <monoisotopic-mass>412.297745146</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Andrzej Kutner, Michal Chodynski, Teresa Ryznar, Hanna Fitak, Jerzy Winiarski, Bartlomiej Gorecki, Agnieszka Burzynska, Wieslaw Szelejewski, "Process for Preparation of Pharmaceutically Pure Anhydrous Calcipotriol." U.S. Patent US20080214876, issued September 04, 2008.</synthesis-reference>
+  <indication>For the treatment of moderate plaque psoriasis in adults.</indication>
+  <pharmacodynamics>Calcipotriene is a synthetic analog of vitamin D. In humans, the natural supply of vitamin D depends mainly on exposure to the ultraviolet rays of the sun for conversion of 7-dehydrocholesterol to vitamin D3 (cholecalciferol) in the skin. </pharmacodynamics>
+  <mechanism-of-action>The precise mechanism of calcipotriol in remitting psoriasis is not well-understood, however, it has been shown to have comparable affinity with calcitriol for the Vitamin D receptor while being less than 1% the activity in regulating calcium metabolism. The Vitamin D receptor (VDR) belongs to the steroid/thyroid receptor superfamily, and is found on the cells of many different tissues including the thyroid, bone, kindney, and T cells of the immune system. T cells are known to play a role in psoriasis and are believed to undergo modulation of gene expression with binding of calcipotriol to the VDR. This modulation is thought to affect gene products related to cell differentiation and proliferation.</mechanism-of-action>
+  <toxicity>Topically applied calcipotriene can be absorbed in sufficient amounts to produce systemic effects. Elevated serum calcium has been observed with excessive use of calcipotriene.</toxicity>
+  <metabolism>Hepatic. Calcipotriene metabolism following systemic uptake is rapid, and occurs via a similar pathway to the natural hormone. The primary metabolites are much less potent than the parent compound.</metabolism>
+  <absorption>Clinical studies with radiolabeled ointment indicate that approximately 6% (+3%, SD) of the applied dose of calcipotriene is absorbed systemically when the ointment is applied topically to psoriasis plaques or 5% (+2.6%, SO) when applied to normal skin.</absorption>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination>The active form of the vitamin, 1,25-dihydroxy vitamin D3 (calcitriol), is known to be recycled via the liver and excreted in the bile. There is evidence that maternal 1,25-dihydroxy vitamin D3 (calcitriol) may enter the fetal circulation, but it is not known whether it is excreted in human milk.</route-of-elimination>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as vitamin d and derivatives. These are compounds containing a secosteroid backbone, usually secoergostane or secocholestane.</description>
+    <direct-parent>Vitamin D and derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Lipids and lipid-like molecules</superclass>
+    <class>Steroids and steroid derivatives</class>
+    <subclass>Vitamin D and derivatives</subclass>
+    <alternative-parent>Cyclic alcohols and derivatives</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Triterpenoids</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic homopolycyclic compound</substituent>
+    <substituent>Cyclic alcohol</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Triterpenoid</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT001386</drugbank-id>
+      <name>Calcipotriol hydrate</name>
+      <unii>S7499TYY6G</unii>
+      <cas-number>147657-22-5</cas-number>
+      <inchikey>XBKHACNRWFKJNC-MANNPBRJSA-N</inchikey>
+      <average-mass>430.629</average-mass>
+      <monoisotopic-mass>430.308309832</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="usan">Calcipotriene</synonym>
+    <synonym language="english" coder="inn">Calcipotriol</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Glenmark Pharmaceuticals Inc.,Usa</labeller>
+      <ndc-id/>
+      <ndc-product-code>68462-501</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-06-10</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA205772</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Fougera Pharmaceuticals Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0168-0400</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-05-06</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA078305</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Taro Pharmaceuticals U.S.A., Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>51672-4154</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength>0.05 mg/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA090633</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Sandoz</labeller>
+      <ndc-id/>
+      <ndc-product-code>0781-7092</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-11-20</started-marketing-on>
+      <ended-marketing-on>2013-10-31</ended-marketing-on>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA077029</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Amneal Pharmaceuticals of New York Llc</labeller>
+      <ndc-id/>
+      <ndc-product-code>0115-1475</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-11-20</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA077029</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Novel Laboratories, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>40032-043</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-12-26</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA207163</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Sandoz Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0781-7117</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2012-07-27</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>0.05 mg/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA200935</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>North Star Rx Llc</labeller>
+      <ndc-id/>
+      <ndc-product-code>16714-763</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-06-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA205772</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Prasco Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code>66993-878</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2013-07-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020273</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Glenmark Pharmaceuticals Inc., USA</labeller>
+      <ndc-id/>
+      <ndc-product-code>68462-310</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA090633</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Cosette Pharmaceuticals, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0713-0318</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2011-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA078468</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Prasco Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code>66993-877</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-10-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene</name>
+      <labeller>Hi-Tech Pharmacal Co., Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50383-732</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2014-10-06</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA077579</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene 0.005% / Clobetasol Propionate 0.05%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-4029</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-20</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene 0.005% / Diclofenac Sodium 3% / Hyaluronic Acid Sodium Salt 2% / Niacinamide 2%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-2030</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-07</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene 0.005% / Niacinamide 4%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-2033</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-14</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene 0.005% / Triamcinolone Acetonide 0.1%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-5034</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-11</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene and Betamethasone Dipropionate</name>
+      <labeller>Sandoz Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0781-7165</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2014-03-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>ANDA201615</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcipotriene and Betamethasone Dipropionate</name>
+      <labeller>Perrigo New York Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>45802-989</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA021852</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Calcitrene</name>
+      <labeller>Taro Pharmaceuticals U.S.A., Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>51672-5278</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength>0.05 mg/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA090633</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovobet Gel</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02319012</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-01-28</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Gel</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Dovobet Ointment</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02244126</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2001-11-29</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-403</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1997-06-01</started-marketing-on>
+      <ended-marketing-on>2013-04-01</ended-marketing-on>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020611</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>LEO Pharma Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-260</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-10-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Allergan</labeller>
+      <ndc-id/>
+      <ndc-product-code>0430-3020</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2006-01-01</started-marketing-on>
+      <ended-marketing-on>2012-03-31</ended-marketing-on>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Bristol Myers Squibb Pharma Company</labeller>
+      <ndc-id/>
+      <ndc-product-code>0072-2540</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-06-01</started-marketing-on>
+      <ended-marketing-on>2012-10-15</ended-marketing-on>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020273</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Allergan</labeller>
+      <ndc-id/>
+      <ndc-product-code>0430-3030</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2006-01-01</started-marketing-on>
+      <ended-marketing-on>2012-03-31</ended-marketing-on>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020611</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-4725</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2006-09-15</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Cream</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Warner Chilcott</labeller>
+      <ndc-id/>
+      <ndc-product-code>0430-3010</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2006-01-01</started-marketing-on>
+      <ended-marketing-on>2007-04-01</ended-marketing-on>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020273</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-3240</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2004-06-30</started-marketing-on>
+      <ended-marketing-on>2010-12-29</ended-marketing-on>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020273</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-6057</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-08-12</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>0.05 mg/1mL</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA020611</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Dovonex - Crm 50mcg/gm</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02150956</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1995-12-31</started-marketing-on>
+      <ended-marketing-on>2016-03-11</ended-marketing-on>
+      <dosage-form>Cream</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Dovonex Ont 50mcg/gm</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01976133</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Dovonex Solution - Top 50mcg/ml</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02194341</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-12-31</started-marketing-on>
+      <ended-marketing-on>2016-03-16</ended-marketing-on>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Enstilar</name>
+      <labeller>Leo Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02457393</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2016-11-11</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Aerosol, foam</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Enstilar</name>
+      <labeller>LEO Pharma Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-302</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-10-16</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Aerosol, foam</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA207589</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Kalosar</name>
+      <labeller>Glenmark Pharmaceuticals Inc., USA</labeller>
+      <ndc-id/>
+      <ndc-product-code>68462-831</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>ANDA090633</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>NuDermRxPAK 120</name>
+      <labeller>Nucare Pharmaceuticals,inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>70859-049</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-10-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>NuDermRxPAK 60</name>
+      <labeller>Nucare Pharmaceuticals,inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>70859-048</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-10-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA020554</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Sorilux</name>
+      <labeller>Mayne Pharma</labeller>
+      <ndc-id/>
+      <ndc-product-code>51862-376</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-04-11</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Aerosol, foam</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA022563</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Sorilux</name>
+      <labeller>Stiefel Laboratories, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0145-2130</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-10-26</started-marketing-on>
+      <ended-marketing-on>2018-10-31</ended-marketing-on>
+      <dosage-form>Aerosol, foam</dosage-form>
+      <strength>50 ug/1g</strength>
+      <route>Topical</route>
+      <fda-application-number>NDA022563</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex</name>
+      <labeller>Allergan</labeller>
+      <ndc-id/>
+      <ndc-product-code>0430-3230</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on>2012-02-29</ended-marketing-on>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA021852</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex</name>
+      <labeller>LEO Pharma Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-501</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Suspension</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA022185</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex</name>
+      <labeller>LEO Pharma Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-499</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on>2015-11-06</ended-marketing-on>
+      <dosage-form>Suspension</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA022185</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex</name>
+      <labeller>LEO Pharma Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>50222-227</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA021852</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-5680</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-10-20</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Ointment</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA021852</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex Scalp</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-6091</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2009-12-10</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Suspension</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA022185</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Taclonex Scalp</name>
+      <labeller>Allergan</labeller>
+      <ndc-id/>
+      <ndc-product-code>0430-3240</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-06-01</started-marketing-on>
+      <ended-marketing-on>2012-02-29</ended-marketing-on>
+      <dosage-form>Spray, metered</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number>NDA022185</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand>
+      <name>Daivonex</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures>
+    <mixture>
+      <name>Taclonex Scalp</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Sorilux</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex Scalp</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcitrene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene and Betamethasone Dipropionate</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene 0.005% / Diclofenac Sodium 3% / Hyaluronic Acid Sodium Salt 2% / Niacinamide 2%</name>
+      <ingredients>Calcipotriol + Diclofenac + Hyaluronic acid + Nicotinamide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene 0.005% / Triamcinolone Acetonide 0.1%</name>
+      <ingredients>Calcipotriol + Triamcinolone</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene 0.005% / Niacinamide 4%</name>
+      <ingredients>Calcipotriol + Nicotinamide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene 0.005% / Clobetasol Propionate 0.05%</name>
+      <ingredients>Calcipotriol + Clobetasol propionate</ingredients>
+    </mixture>
+    <mixture>
+      <name>NuDermRxPAK 60</name>
+      <ingredients>Calcipotriol + Dimethicone</ingredients>
+    </mixture>
+    <mixture>
+      <name>NuDermRxPAK 120</name>
+      <ingredients>Calcipotriol + Dimethicone</ingredients>
+    </mixture>
+    <mixture>
+      <name>Kalosar</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Enstilar</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taclonex</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene and Betamethasone Dipropionate</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Sorilux</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Calcipotriene</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex Ont 50mcg/gm</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovobet Ointment</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovobet Gel</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex Solution - Top 50mcg/ml</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Enstilar</name>
+      <ingredients>Betamethasone + Calcipotriol</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dovonex - Crm 50mcg/gm</name>
+      <ingredients>Calcipotriol</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers>
+    <packager>
+      <name>Contract Pharm</name>
+      <url>http://www.contractpharma.com</url>
+    </packager>
+    <packager>
+      <name>Dispensing Solutions</name>
+      <url>http://www.drxdispensing.com</url>
+    </packager>
+    <packager>
+      <name>E. Fougera and Co.</name>
+      <url>http://www.fougera.com</url>
+    </packager>
+    <packager>
+      <name>Glenmark Generics Ltd.</name>
+      <url>http://www.glenmark-generics.com</url>
+    </packager>
+    <packager>
+      <name>Hi Tech Pharmacal Co. Inc.</name>
+      <url>http://www.hitechpharm.com</url>
+    </packager>
+    <packager>
+      <name>LEO Pharma Inc.</name>
+      <url>http://www.leo-pharma.com</url>
+    </packager>
+    <packager>
+      <name>Nycomed Inc.</name>
+      <url>http://www.nycomed.com</url>
+    </packager>
+    <packager>
+      <name>Physicians Total Care Inc.</name>
+      <url>http://www.physicianstotalcare.com</url>
+    </packager>
+    <packager>
+      <name>Sandoz</name>
+      <url>http://www.sandoz.ca</url>
+    </packager>
+    <packager>
+      <name>Warner Chilcott Co. Inc.</name>
+      <url>http://ir.wcrx.com</url>
+    </packager>
+    <packager>
+      <name>WC Pharmaceuticals</name>
+      <url/>
+    </packager>
+  </packagers>
+  <manufacturers/>
+  <prices>
+    <price>
+      <description>Dovonex 0.005% cream</description>
+      <cost currency="USD">4.23</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Dovonex 0.005% Cream 60 gm Tube</description>
+      <cost currency="USD">303.51</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Dovonex 0.005% Solution 60ml Bottle</description>
+      <cost currency="USD">323.98</cost>
+      <unit>bottle</unit>
+    </price>
+    <price>
+      <description>Dovonex 0.005% Cream 120 gm Tube</description>
+      <cost currency="USD">607.03</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Dovonex 50 mcg/g Ointment</description>
+      <cost currency="USD">0.81</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Dovonex 50 mcg/g Cream</description>
+      <cost currency="USD">0.83</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Dovonex 50 mcg/ml Solution</description>
+      <cost currency="USD">0.84</cost>
+      <unit>ml</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Antipsoriatics</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antipsoriatics for Topical Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cholestanes</category>
+      <mesh-id>D002776</mesh-id>
+    </category>
+    <category>
+      <category>Cholestenes</category>
+      <mesh-id>D002782</mesh-id>
+    </category>
+    <category>
+      <category>Dermatologicals</category>
+      <mesh-id>D003879</mesh-id>
+    </category>
+    <category>
+      <category>Fused-Ring Compounds</category>
+      <mesh-id>D000072473</mesh-id>
+    </category>
+    <category>
+      <category>Lipids</category>
+      <mesh-id>D008055</mesh-id>
+    </category>
+    <category>
+      <category>Membrane Lipids</category>
+      <mesh-id>D008563</mesh-id>
+    </category>
+    <category>
+      <category>Misc. Skin and Mucous Membrane Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Secosteroids</category>
+      <mesh-id>D012632</mesh-id>
+    </category>
+    <category>
+      <category>Steroids</category>
+      <mesh-id>D013256</mesh-id>
+    </category>
+    <category>
+      <category>Sterols</category>
+      <mesh-id>D013261</mesh-id>
+    </category>
+    <category>
+      <category>Vitamin D and Analogues</category>
+      <mesh-id>D004100</mesh-id>
+    </category>
+    <category>
+      <category>Vitamins</category>
+      <mesh-id>D014815</mesh-id>
+    </category>
+    <category>
+      <category>Vitamins (Fat Soluble)</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Cream</form>
+      <route>Topical</route>
+      <strength>0.05 mg/1g</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Topical</route>
+      <strength>.05 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Cream</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Ointment</form>
+      <route>Topical</route>
+      <strength>0.05 mg/1g</strength>
+    </dosage>
+    <dosage>
+      <form>Gel</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Cream</form>
+      <route>Topical</route>
+      <strength>50 ug/1g</strength>
+    </dosage>
+    <dosage>
+      <form>Ointment</form>
+      <route>Topical</route>
+      <strength>50 ug/1g</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Topical</route>
+      <strength>0.05 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Cream</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Ointment</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Aerosol, foam</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Kit</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Aerosol, foam</form>
+      <route>Topical</route>
+      <strength>50 ug/1g</strength>
+    </dosage>
+    <dosage>
+      <form>Ointment</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Spray, metered</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Suspension</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="D05AX52">
+      <level code="D05AX">Other antipsoriatics for topical use</level>
+      <level code="D05A">ANTIPSORIATICS FOR TOPICAL USE</level>
+      <level code="D05">ANTIPSORIATICS</level>
+      <level code="D">DERMATOLOGICALS</level>
+    </atc-code>
+    <atc-code code="D05AX02">
+      <level code="D05AX">Other antipsoriatics for topical use</level>
+      <level code="D05A">ANTIPSORIATICS FOR TOPICAL USE</level>
+      <level code="D05">ANTIPSORIATICS</level>
+      <level code="D">DERMATOLOGICALS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>84:92.00</ahfs-code>
+  </ahfs-codes>
+  <pdb-entries>
+    <pdb-entry>1s19</pdb-entry>
+  </pdb-entries>
+  <patents>
+    <patent>
+      <number>5763426</number>
+      <country>United States</country>
+      <approved>1998-06-09</approved>
+      <expires>2015-06-09</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>6753013</number>
+      <country>United States</country>
+      <approved>2004-06-22</approved>
+      <expires>2020-01-27</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>6787529</number>
+      <country>United States</country>
+      <approved>2004-09-07</approved>
+      <expires>2020-01-27</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8263580</number>
+      <country>United States</country>
+      <approved>2012-09-11</approved>
+      <expires>2028-09-27</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8629128</number>
+      <country>United States</country>
+      <approved>2014-01-14</approved>
+      <expires>2026-05-26</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9119781</number>
+      <country>United States</country>
+      <approved>2015-09-01</approved>
+      <expires>2031-12-10</expires>
+      <pediatric-extension>true</pediatric-extension>
+    </patent>
+    <patent>
+      <number>10130640</number>
+      <country>United States</country>
+      <approved>2018-11-20</approved>
+      <expires>2031-12-10</expires>
+      <pediatric-extension>true</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00258</drugbank-id>
+      <name>Calcium acetate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium acetate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00326</drugbank-id>
+      <name>Calcium glucoheptonate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium glucoheptonate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01164</drugbank-id>
+      <name>Calcium chloride</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium Chloride is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01373</drugbank-id>
+      <name>Calcium</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06724</drugbank-id>
+      <name>Calcium carbonate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium carbonate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11093</drugbank-id>
+      <name>Calcium Citrate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium Citrate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11126</drugbank-id>
+      <name>Calcium gluconate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium gluconate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11348</drugbank-id>
+      <name>Calcium Phosphate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium Phosphate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13142</drugbank-id>
+      <name>Calcium glubionate anhydrous</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium glubionate anhydrous is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13231</drugbank-id>
+      <name>Calcium lactate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium lactate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13365</drugbank-id>
+      <name>Calcium lactate gluconate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium lactate gluconate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13590</drugbank-id>
+      <name>Calcium pangamate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium pangamate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13800</drugbank-id>
+      <name>Calcium levulinate</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium levulinate is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14577</drugbank-id>
+      <name>Calcium cation</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium cation is combined with Calcipotriol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14684</drugbank-id>
+      <name>Calcium polycarbophil</name>
+      <description>The risk or severity of adverse effects can be increased when Calcium polycarbophil is combined with Calcipotriol.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.63</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.35e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.84</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(1R,3S,5Z)-5-{2-[(1R,3aS,4E,7aR)-1-[(2R,3E,5S)-5-cyclopropyl-5-hydroxypent-3-en-2-yl]-7a-methyl-octahydro-1H-inden-4-ylidene]ethylidene}-4-methylidenecyclohexane-1,3-diol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>calcipotriol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>412.6047</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>412.297745146</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>O[C@H](\C=C\[C@@H](C)[C@@]1([H])CC[C@@]2([H])\C(CCC[C@]12C)=C\C=C1\C[C@@H](O)C[C@H](O)C1=C)C1CC1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C27H40O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C27H40O3/c1-17(6-13-25(29)20-8-9-20)23-11-12-24-19(5-4-14-27(23,24)3)7-10-21-15-22(28)16-26(30)18(21)2/h6-7,10,13,17,20,22-26,28-30H,2,4-5,8-9,11-12,14-16H2,1,3H3/b13-6+,19-7+,21-10-/t17-,22-,23-,24+,25-,26+,27-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>LWQQLNNNIPYSNX-UROSTWAQSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>60.69</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>125.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>49.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>14.39</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-1.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>894</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>50749</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5288783</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507122</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D01125</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4450880</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50369964</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA448714</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>MC9</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Therapeutic Targets Database</resource>
+      <identifier>DAP000292</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>IUPHAR</resource>
+      <identifier>2778</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Guide to Pharmacology</resource>
+      <identifier>2778</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Calcipotriol</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1200666</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/cgi/generic/calcipo.htm</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000779</id>
+      <name>Vitamin D3 receptor</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>antagonist</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A9</ref-id>
+            <pubmed-id>11752352</pubmed-id>
+            <citation>Chen X, Ji ZL, Chen YZ: TTD: Therapeutic Target Database. Nucleic Acids Res. 2002 Jan 1;30(1):412-5.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11473" source="Swiss-Prot">
+        <name>Vitamin D3 receptor</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Nuclear hormone receptor. Transcription factor that mediates the action of vitamin D3 by controlling the expression of hormone sensitive genes. Recruited to promoters via its interaction with BAZ1B/WSTF which mediates the interaction with acetylated histones, an essential step for VDR-promoter association. Plays a central role in calcium homeostasis.</specific-function>
+        <gene-name>VDR</gene-name>
+        <locus>12q13.11</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.5</theoretical-pi>
+        <molecular-weight>48288.64</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:12679</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>VDR</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J03258</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>340203</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>605</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>605</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11473</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>VDR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,25-dihydroxyvitamin D3 receptor</synonym>
+          <synonym>NR1I1</synonym>
+          <synonym>Nuclear receptor subfamily 1 group I member 1</synonym>
+          <synonym>VDR</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001554|Vitamin D3 receptor
+MEAMAASTSLPDPGDFDRNVPRICGVCGDRATGFHFNAMTCEGCKGFFRRSMKRKALFTC
+PFNGDCRITKDNRRHCQACRLKRCVDIGMMKEFILTDEEVQRKREMILKRKEEEALKDSL
+RPKLSEEQQRIIAILLDAHHKTYDPTYSDFCQFRPPVRVNDGGGSHPSRPNSRHTPSFSG
+DSSSSCSDHCITSSDMMDSSSFSNLDLSEEDSDDPSVTLELSQLSMLPHLADLVSYSIQK
+VIGFAKMIPGFRDLTSEDQIVLLKSSAIEVIMLRSNESFTMDDMSWTCGNQDYKYRVSDV
+TKAGHSLELIEPLIKFQVGLKKLNLHEEEHVLLMAICIVSPDRPGVQDAALIEAIQDRLS
+NTLQTYIRCRHPPPGSHLLYAKMIQKLADLRSLNEEHSKQYRCLSFQPECSMKLTPLVLE
+VFGNEIS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010550|Vitamin D3 receptor (VDR)
+ATGGAGGCAATGGCGGCCAGCACTTCCCTGCCTGACCCTGGAGACTTTGACCGGAACGTG
+CCCCGGATCTGTGGGGTGTGTGGAGACCGAGCCACTGGCTTTCACTTCAATGCTATGACC
+TGTGAAGGCTGCAAAGGCTTCTTCAGGCGAAGCATGAAGCGGAAGGCACTATTCACCTGC
+CCCTTCAACGGGGACTGCCGCATCACCAAGGACAACCGACGCCACTGCCAGGCCTGCCGG
+CTCAAACGCTGTGTGGACATCGGCATGATGAAGGAGTTCATTCTGACAGATGAGGAAGTG
+CAGAGGAAGCGGGAGATGATCCTGAAGCGGAAGGAGGAGGAGGCCTTGAAGGACAGTCTG
+CGGCCCAAGCTGTCTGAGGAGCAGCAGCGCATCATTGCCATACTGCTGGACGCCCACCAT
+AAGACCTACGACCCCACCTACTCCGACTTCTGCCAGTTCCGGCCTCCAGTTCGTGTGAAT
+GATGGTGGAGGGAGCCATCCTTCCAGGCCCAACTCCAGACACACTCCCAGCTTCTCTGGG
+GACTCCTCCTCCTCCTGCTCAGATCACTGTATCACCTCTTCAGACATGATGGACTCGTCC
+AGCTTCTCCAATCTGGATCTGAGTGAAGAAGATTCAGATGACCCTTCTGTGACCCTAGAG
+CTGTCCCAGCTCTCCATGCTGCCCCACCTGGCTGACCTGGTCAGTTACAGCATCCAAAAG
+GTCATTGGCTTTGCTAAGATGATACCAGGATTCAGAGACCTCACCTCTGAGGACCAGATC
+GTACTGCTGAAGTCAAGTGCCATTGAGGTCATCATGTTGCGCTCCAATGAGTCCTTCACC
+ATGGACGACATGTCCTGGACCTGTGGCAACCAAGACTACAAGTACCGCGTCAGTGACGTG
+ACCAAAGCCGGACACAGCCTGGAGCTGATTGAGCCCCTCATCAAGTTCCAGGTGGGACTG
+AAGAAGCTGAACTTGCATGAGGAGGAGCATGTCCTGCTCATGGCCATCTGCATCGTCTCC
+CCAGATCGTCCTGGGGTGCAGGACGCCGCGCTGATTGAGGCCATCCAGGACCGCCTGTCC
+AACACACTGCAGACGTACATCCGCTGCCGCCACCCGCCCCCGGGCAGCCACCTGCTCTAT
+GCCAAGATGATCCAGAAGCTAGCCGACCTGCGCAGCCTCAATGAGGAGCACTCCAAGCAG
+TACCGCTGCCTCTCCTTCCAGCCTGAGTGCAGCATGAAGCTAACGCCCCTTGTGCTCGAA
+GTGTTTGGCAATGAGATCTCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00104</identifier>
+            <name>Hormone_recep</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00105</identifier>
+            <name>zf-C4</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>RNA polymerase II transcription factor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcitriol binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcitriol receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lithocholic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lithocholic acid receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>retinoid X receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hormone receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>decidualization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intestinal absorption</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mammary gland branching involved in pregnancy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of keratinocyte proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process involved in mammary gland involution</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of keratinocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vitamin D 24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of calcidiol 1-monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>skeletal system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0001075</id>
+      <name>Myeloperoxidase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17622</ref-id>
+            <pubmed-id>12928540</pubmed-id>
+            <citation>Sato H, Ogino Y, Takagi H, Hata J, Asano S, Ohta T, Komoriya K: Pharmacological profiles of high-concentration (20 microg/g) tacalcitol ointment: effects on cutaneous inflammation, epidermal proliferation, and differentiation in mice. J Dermatol. 2003 Jul;30(7):510-24.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P05164" source="Swiss-Prot">
+        <name>Myeloperoxidase</name>
+        <general-function>Peroxidase activity</general-function>
+        <specific-function>Part of the host defense system of polymorphonuclear leukocytes. It is responsible for microbicidal activity against a wide range of organisms. In the stimulated PMN, MPO catalyzes the production of hypohalous acids, primarily hypochlorous acid in physiologic situations, and other toxic intermediates that greatly enhance PMN microbicidal activity.</specific-function>
+        <gene-name>MPO</gene-name>
+        <locus>17q23.1</locus>
+        <cellular-location>Lysosome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-48</signal-regions>
+        <theoretical-pi>9.14</theoretical-pi>
+        <molecular-weight>83867.71</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7218</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MPO</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J02694</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189040</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2789</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P05164</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PERM_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.11.2.2</synonym>
+          <synonym>MPO</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002139|Myeloperoxidase
+MGVPFFSSLRCMVDLGPCWAGGLTAEMKLLLALAGLLAILATPQPSEGAAPAVLGEVDTS
+LVLSSMEEAKQLVDKAYKERRESIKQRLRSGSASPMELLSYFKQPVAATRTAVRAADYLH
+VALDLLERKLRSLWRRPFNVTDVLTPAQLNVLSKSSGCAYQDVGVTCPEQDKYRTITGMC
+NNRRSPTLGASNRAFVRWLPAEYEDGFSLPYGWTPGVKRNGFPVALARAVSNEIVRFPTD
+QLTPDQERSLMFMQWGQLLDHDLDFTPEPAARASFVTGVNCETSCVQQPPCFPLKIPPND
+PRIKNQADCIPFFRSCPACPGSNITIRNQINALTSFVDASMVYGSEEPLARNLRNMSNQL
+GLLAVNQRFQDNGRALLPFDNLHDDPCLLTNRSARIPCFLAGDTRSSEMPELTSMHTLLL
+REHNRLATELKSLNPRWDGERLYQEARKIVGAMVQIITYRDYLPLVLGPTAMRKYLPTYR
+SYNDSVDPRIANVFTNAFRYGHTLIQPFMFRLDNRYQPMEPNPRVPLSRVFFASWRVVLE
+GGIDPILRGLMATPAKLNRQNQIAVDEIRERLFEQVMRIGLDLPALNMQRSRDHGLPGYN
+AWRRFCGLPQPETVGQLGTVLRNLKLARKLMEQYGTPNNIDIWMGGVSEPLKRKGRVGPL
+LACIIGTQFRKLRDGDRFWWENEGVFSMQQRQALAQISLPRIICDNTGITTVSKNNIFMS
+NSYPRDFVNCSTLPALNLASWREAS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016304|Myeloperoxidase (MPO)
+ATGGGGGTTCCCTTCTTCTCTTCTCTCAGATGCATGGTGGACTTAGGACCTTGCTGGGCT
+GGGGGTCTCACTGCAGAGATGAAGCTGCTTCTGGCCCTAGCAGGGCTCCTGGCCATTCTG
+GCCACGCCCCAGCCCTCTGAAGGTGCTGCTCCAGCTGTCCTGGGGGAGGTGGACACCTCG
+TTGGTGCTGAGCTCCATGGAGGAGGCCAAGCAGCTGGTGGACAAGGCCTACAAGGAGCGG
+CGGGAAAGCATCAAGCAGCGGCTTCGCAGCGGCTCAGCCAGCCCCATGGAACTCCTATCC
+TACTTCAAGCAGCCGGTGGCAGCCACCAGGACGGCGGTGAGGGCCGCTGACTACCTGCAC
+GTGGCTCTAGACCTGCTGGAGAGGAAGCTGCGGTCCCTGTGGCGAAGGCCATTCAATGTC
+ACTGATGTGCTGACGCCCGCCCAGCTGAATGTGTTGTCCAAGTCAAGCGGCTGCGCCTAC
+CAGGACGTGGGGGTGACTTGCCCGGAGCAGGACAAATACCGCACCATCACCGGGATGTGC
+AACAACAGACGCAGCCCCACGCTGGGGGCCTCCAACCGTGCCTTTGTGCGCTGGCTGCCG
+GCGGAGTATGAGGACGGCTTCTCTCTTCCCTACGGCTGGACGCCCGGGGTCAAGCGCAAC
+GGCTTCCCGGTGGCTCTGGCTCGCGCGGTCTCCAACGAGATCGTGCGCTTCCCCACTGAT
+CAGCTGACTCCGGACCAGGAGCGCTCACTCATGTTCATGCAATGGGGCCAGCTGTTGGAC
+CACGACCTCGACTTCACCCCTGAGCCGGCCGCCCGGGCCTCCTTCGTCACTGGCGTCAAC
+TGCGAGACCAGCTGCGTTCAGCAGCCGCCCTGCTTCCCGCTCAAGATCCCGCCCAATGAC
+CCCCGCATCAAGAACCAAGCCGACTGCATCCCGTTCTTCCGCTCCTGCCCGGCTTGCCCC
+GGGAGCAACATCACCATCCGCAACCAGATCAACGCGCTCACTTCCTTCGTGGACGCCAGC
+ATGGTGTACGGCAGCGAGGAGCCCCTGGCCAGGAACCTGCGCAACATGTCCAACCAGCTG
+GGGCTGCTGGCCGTCAACCAGCGCTTCCAAGACAACGGCCGGGCCCTGCTGCCCTTTGAC
+AACCTGCACGATGACCCCTGTCTCCTCACCAACCGCTCAGCGCGCATCCCCTGCTTCCTG
+GCAGGGGACACCCGTTCCAGTGAGATGCCCGAGCTCACCTCCATGCACACCCTCTTACTT
+CGGGAGCACAACCGGCTGGCCACAGAGCTCAAGAGCCTGAACCCTAGGTGGGATGGGGAG
+AGGCTCTACCAGGAAGCCCGGAAGATCGTGGGGGCCATGGTCCAGATCATCACTTACCGG
+GACTACCTGCCCCTGGTGCTGGGGCCAACGGCCATGAGGAAGTACCTGCCCACGTACCGT
+TCCTACAATGACTCAGTGGACCCACGCATCGCCAACGTCTTCACCAATGCCTTCCGCTAC
+GGCCACACCCTCATCCAACCCTTCATGTTCCGCCTGGACAATCGGTACCAGCCCATGGAA
+CCCAACCCCCGTGTCCCCCTCAGCAGGGTCTTTTTTGCCTCCTGGAGGGTCGTGCTGGAA
+GGTGGCATTGACCCCATCCTCCGGGGCCTCATGGCCACCCCTGCCAAGCTGAATCGTCAG
+AACCAAATTGCAGTGGATGAGATCCGGGAGCGATTGTTTGAGCAGGTCATGAGGATTGGG
+CTGGACCTGCCTGCTCTGAACATGCAGCGCAGCAGGGACCACGGCCTCCCAGGATACAAT
+GCCTGGAGGCGCTTCTGTGGGCTCCCGCAGCCTGAAACTGTGGGCCAGCTGGGCACGGTG
+CTGAGGAACCTGAAATTGGCGAGGAAACTGATGGAGCAGTATGGCACGCCCAACAACATC
+GACATCTGGATGGGCGGCGTGTCCGAGCCTCTGAAGCGCAAAGGCCGCGTGGGCCCACTC
+CTCGCCTGCATCATCGGTACCCAGTTCAGGAAGCTCCGGGATGGTGATCGGTTTTGGTGG
+GAGAACGAGGGTGTGTTCAGCATGCAGCAGCGACAGGCCCTGGCCCAGATCTCATTGCCC
+CGGATCATCTGCGACAACACAGGCATCACCACCGTGTCTAAGAACAACATCTTCATGTCC
+AACTCATATCCCCGGGACTTTGTCAACTGCAGTACACTTCCTGCATTGAACCTGGCTTCC
+TGGAGGGAAGCCTCCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03098</identifier>
+            <name>An_peroxidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>azurophil granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>secretory granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heparin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peroxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to fungus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hydrogen peroxide catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hypochlorous acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>low-density lipoprotein particle remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of growth of symbiont in host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>removal of superoxide radicals</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory burst involved in defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to yeast</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength>unknown</inhibition-strength>
+      <induction-strength/>
+    </enzyme>
+    <enzyme position="2">
+      <id>BE0002250</id>
+      <name>1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17623</ref-id>
+            <pubmed-id>16886668</pubmed-id>
+            <citation>Jones G, Byford V, West S, Masuda S, Ibrahim G, Kaufmann M, Knutson JC, Strugnell S, Mehta R: Hepatic activation and inactivation of clinically-relevant vitamin D analogs and prodrugs. Anticancer Res. 2006 Jul-Aug;26(4A):2589-95.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q07973" source="Swiss-Prot">
+        <name>1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial</name>
+        <general-function>Oxidoreductase activity</general-function>
+        <specific-function>Has a role in maintaining calcium homeostasis. Catalyzes the NADPH-dependent 24-hydroxylation of calcidiol (25-hydroxyvitamin D(3)) and calcitriol (1-alpha,25-dihydroxyvitamin D(3)). The enzyme can perform up to 6 rounds of hydroxylation of calcitriol leading to calcitroic acid. It also shows 23-hydroxylating activity leading to 1-alpha,25-dihydroxyvitamin D(3)-26,23-lactone as end product.</specific-function>
+        <gene-name>CYP24A1</gene-name>
+        <locus>20q13</locus>
+        <cellular-location>Mitochondrion</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.99</theoretical-pi>
+        <molecular-weight>58874.695</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2602</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CYP24A1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L13286</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>306704</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1365</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q07973</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CP24A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.13.126</synonym>
+          <synonym>24-OHase</synonym>
+          <synonym>CYP24</synonym>
+          <synonym>Cytochrome P450 24A1</synonym>
+          <synonym>Cytochrome P450-CC24</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004416|1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial
+MSSPISKSRSLAAFLQQLRSPRQPPRLVTSTAYTSPQPREVPVCPLTAGGETQNAAALPG
+PTSWPLLGSLLQILWKGGLKKQHDTLVEYHKKYGKIFRMKLGSFESVHLGSPCLLEALYR
+TESAYPQRLEIKPWKAYRDYRKEGYGLLILEGEDWQRVRSAFQKKLMKPGEVMKLDNKIN
+EVLADFMGRIDELCDERGHVEDLYSELNKWSFESICLVLYEKRFGLLQKNAGDEAVNFIM
+AIKTMMSTFGRMMVTPVELHKSLNTKVWQDHTLAWDTIFKSVKACIDNRLEKYSQQPSAD
+FLCDIYHQNRLSKKELYAAVTELQLAAVETTANSLMWILYNLSRNPQVQQKLLKEIQSVL
+PENQVPRAEDLRNMPYLKACLKESMRLTPSVPFTTRTLDKATVLGEYALPKGTVLMLNTQ
+VLGSSEDNFEDSSQFRPERWLQEKEKINPFAHLPFGVGKRMCIGRRLAELQLHLALCWIV
+RKYDIQATDNEPVEMLHSGTLVPSRELPIAFCQR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016728|1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (CYP24A1)
+ATGAGCTCCCCCATCAGCAAGAGCCGCTCGCTTGCCGCCTTCCTGCAGCAGCTGCGCAGT
+CCGAGGCAGCCCCCGAGACTGGTGACATCTACGGCGTACACGTCCCCTCAGCCGCGAGAG
+GTGCCAGTCTGCCCGCTGACAGCTGGTGGCGAGACTCAGAACGCGGCCGCCCTGCCGGGC
+CCCACCAGCTGGCCACTGCTGGGCAGCCTGCTGCAGATTCTCTGGAAAGGGGGTCTCAAG
+AAACAGCACGACACCCTGGTGGAGTACCACAAGAAGTATGGCAAGATTTTCCGCATGAAG
+TTGGGTTCCTTTGAGTCGGTGCACCTGGGCTCGCCATGCCTGCTGGAAGCGCTGTACCGC
+ACCGAGAGCGCGTACCCGCAGCGGCTGGAGATCAAACCGTGGAAGGCCTATCGCGACTAC
+CGCAAAGAAGGCTACGGGCTGCTGATCCTGGAAGGGGAAGACTGGCAGCGGGTCCGGAGT
+GCCTTTCAAAAGAAACTAATGAAACCAGGGGAAGTGATGAAGCTGGACAACAAAATCAAT
+GAGGTCTTGGCCGATTTTATGGGCAGAATAGATGAGCTCTGTGATGAAAGAGGCCACGTT
+GAAGACTTGTACAGCGAACTGAACAAATGGTCGTTTGAAAGTATCTGCCTCGTGTTGTAT
+GAGAAGAGATTTGGGCTTCTCCAGAAGAATGCAGGGGATGAAGCTGTGAACTTCATCATG
+GCCATCAAAACAATGATGAGCACGTTTGGGAGGATGATGGTCACTCCAGTCGAGCTGCAC
+AAGAGCCTCAACACCAAGGTCTGGCAGGACCACACTCTGGCCTGGGACACCATTTTCAAA
+TCAGTCAAAGCTTGTATCGACAACCGGTTAGAGAAGTATTCTCAGCAGCCTAGTGCAGAT
+TTCCTTTGTGACATTTATCACCAGAATCGGCTTTCAAAGAAAGAATTGTATGCTGCTGTC
+ACAGAGCTCCAGCTGGCTGCGGTGGAAACGACAGCAAACAGTCTAATGTGGATTCTCTAC
+AATTTATCCCGTAATCCCCAAGTGCAACAAAAGCTTCTTAAGGAAATTCAAAGTGTATTA
+CCTGAGAATCAGGTGCCACGGGCAGAAGATTTGAGGAATATGCCGTATTTAAAAGCCTGT
+CTGAAAGAATCTATGAGGCTTACGCCGAGTGTACCATTTACAACTCGGACTCTTGACAAG
+GCAACAGTTCTGGGTGAATATGCTTTACCCAAAGGAACAGTGCTCATGCTAAATACCCAG
+GTGTTGGGATCCAGTGAAGACAATTTTGAAGATTCAAGTCAGTTTAGACCTGAACGTTGG
+CTTCAGGAGAAGGAAAAAATTAATCCTTTTGCGCATCTTCCATTTGGCGTTGGAAAAAGA
+ATGTGCATTGGTCGCCGATTAGCAGAGCTTCAACTGCATTTGGCTCTTTGTTGGATTGTC
+CGCAAATACGACATCCAGGCCACAGACAATGAGCCTGTTGAGATGCTACACTCAGGCACC
+CTGGTGCCCAGCCGGGAACTCCCCATCGCGTTTTGCCAGCGATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00067</identifier>
+            <name>p450</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-alpha,25-dihydroxyvitamin D3 24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>25-hydroxycholecalciferol-24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>osteoblast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to vitamin D</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

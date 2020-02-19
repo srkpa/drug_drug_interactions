@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05243</drugbank-id>
+  <name>XL019</name>
+  <description>XL019 is a selective inhibitor of the cytoplasmic tyrosine kinase JAK2. An IND for XL019 was filed by Exelixis in May 2007.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of various forms of cancer.</indication>
+  <pharmacodynamics>XL019 is a potent and selective JAK2 inhibitor with favorable pharmacodynamic properties and safety profile.</pharmacodynamics>
+  <mechanism-of-action>XL019 is a selective inhibitor of the cytoplasmic tyrosine kinase JAK2. JAK2 is activated by cytokine and growth factor receptors and phosphorylates members of the STAT family of inducible transcription factors. Activation of the JAK/STAT pathway promotes cell growth and survival, and is a common feature of human tumors. JAK2 is activated by mutation in the majority of patients with polycythemia vera and essential thrombocytosis and appears to drive the inappropriate growth of blood cells in these conditions.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910046</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002408</id>
+      <name>Tyrosine-protein kinase JAK2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O60674" source="Swiss-Prot">
+        <name>Tyrosine-protein kinase JAK2</name>
+        <general-function>Sh2 domain binding</general-function>
+        <specific-function>Non-receptor tyrosine kinase involved in various processes such as cell growth, development, differentiation or histone modifications. Mediates essential signaling events in both innate and adaptive immunity. In the cytoplasm, plays a pivotal role in signal transduction via its association with type I receptors such as growth hormone (GHR), prolactin (PRLR), leptin (LEPR), erythropoietin (EPOR), thrombopoietin (THPO); or type II receptors including IFN-alpha, IFN-beta, IFN-gamma and multiple interleukins. Following ligand-binding to cell surface receptors, phosphorylates specific tyrosine residues on the cytoplasmic tails of the receptor, creating docking sites for STATs proteins. Subsequently, phosphorylates the STATs proteins once they are recruited to the receptor. Phosphorylated STATs then form homodimer or heterodimers and translocate to the nucleus to activate gene transcription. For example, cell stimulation with erythropoietin (EPO) during erythropoiesis leads to JAK2 autophosphorylation, activation, and its association with erythropoietin receptor (EPOR) that becomes phosphorylated in its cytoplasmic domain. Then, STAT5 (STAT5A or STAT5B) is recruited, phosphorylated and activated by JAK2. Once activated, dimerized STAT5 translocates into the nucleus and promotes the transcription of several essential genes involved in the modulation of erythropoiesis. In addition, JAK2 mediates angiotensin-2-induced ARHGEF1 phosphorylation. Plays a role in cell cycle by phosphorylating CDKN1B. Cooperates with TEC through reciprocal phosphorylation to mediate cytokine-driven activation of FOS transcription. In the nucleus, plays a key role in chromatin by specifically mediating phosphorylation of 'Tyr-41' of histone H3 (H3Y41ph), a specific tag that promotes exclusion of CBX5 (HP1 alpha) from chromatin.</specific-function>
+        <gene-name>JAK2</gene-name>
+        <locus>9p24</locus>
+        <cellular-location>Endomembrane system</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.21</theoretical-pi>
+        <molecular-weight>130672.475</molecular-weight>
+        <chromosome-location>9</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6192</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>JAK2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF058925</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2048</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O60674</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>JAK2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.2</synonym>
+          <synonym>JAK-2</synonym>
+          <synonym>Janus kinase 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021326|Tyrosine-protein kinase JAK2
+MGMACLTMTEMEGTSTSSIYQNGDISGNANSMKQIDPVLQVYLYHSLGKSEADYLTFPSG
+EYVAEEICIAASKACGITPVYHNMFALMSETERIWYPPNHVFHIDESTRHNVLYRIRFYF
+PRWYCSGSNRAYRHGISRGAEAPLLDDFVMSYLFAQWRHDFVHGWIKVPVTHETQEECLG
+MAVLDMMRIAKENDQTPLAIYNSISYKTFLPKCIRAKIQDYHILTRKRIRYRFRRFIQQF
+SQCKATARNLKLKYLINLETLQSAFYTEKFEVKEPGSGPSGEEIFATIIITGNGGIQWSR
+GKHKESETLTEQDLQLYCDFPNIIDVSIKQANQEGSNESRVVTIHKQDGKNLEIELSSLR
+EALSFVSLIDGYYRLTADAHHYLCKEVAPPAVLENIQSNCHGPISMDFAISKLKKAGNQT
+GLYVLRCSPKDFNKYFLTFAVERENVIEYKHCLITKNENEEYNLSGTKKNFSSLKDLLNC
+YQMETVRSDNIIFQFTKCCPPKPKDKSNLLVFRTNGVSDVPTSPTLQRPTHMNQMVFHKI
+RNEDLIFNESLGQGTFTKIFKGVRREVGDYGQLHETEVLLKVLDKAHRNYSESFFEAASM
+MSKLSHKHLVLNYGVCVCGDENILVQEFVKFGSLDTYLKKNKNCINILWKLEVAKQLAWA
+MHFLEENTLIHGNVCAKNILLIREEDRKTGNPPFIKLSDPGISITVLPKDILQERIPWVP
+PECIENPKNLNLATDKWSFGTTLWEICSGGDKPLSALDSQRKLQFYEDRHQLPAPKWAEL
+ANLINNCMDYEPDFRPSFRAIIRDLNSLFTPDYELLTENDMLPNMRIGALGFSGAFEDRD
+PTQFEERHLKFLQQLGKGNFGSVEMCRYDPLQDNTGEVVAVKKLQHSTEEHLRDFEREIE
+ILKSLQHDNIVKYKGVCYSAGRRNLKLIMEYLPYGSLRDYLQKHKERIDHIKLLQYTSQI
+CKGMEYLGTKRYIHRDLATRNILVENENRVKIGDFGLTKVLPQDKEYYKVKEPGESPIFW
+YAPESLTESKFSVASDVWSFGVVLYELFTYIEKSKSPPAEFMRMIGNDKQGQMIVFHLIE
+LLKNNGRLPRPDGCPDEIYMIMTECWNNNVNQRPSFRDLALRVDQIRDNMAG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021327|Tyrosine-protein kinase JAK2 (JAK2)
+ATGGGAATGGCCTGCCTTACGATGACAGAAATGGAGGGAACATCCACCTCTTCTATATAT
+CAGAATGGTGATATTTCTGGAAATGCCAATTCTATGAAGCAAATAGATCCAGTTCTTCAG
+GTGTATCTTTACCATTCCCTTGGGAAATCTGAGGCAGATTATCTGACCTTTCCATCTGGG
+GAGTATGTTGCAGAAGAAATCTGTATTGCTGCTTCTAAAGCTTGTGGTATCACACCTGTG
+TATCATAATATGTTTGCTTTAATGAGTGAAACAGAAAGGATCTGGTATCCACCCAACCAT
+GTCTTCCATATAGATGAGTCAACCAGGCATAATGTACTCTACAGAATAAGATTTTACTTT
+CCTCGTTGGTATTGCAGTGGCAGCAACAGAGCCTATCGGCATGGAATATCTCGAGGTGCT
+GAAGCTCCTCTTCTTGATGACTTTGTCATGTCTTACCTCTTTGCTCAGTGGCGGCATGAT
+TTTGTGCACGGATGGATAAAAGTACCTGTGACTCATGAAACACAGGAAGAATGTCTTGGG
+ATGGCAGTGTTAGATATGATGAGAATAGCCAAAGAAAACGATCAAACCCCACTGGCCATC
+TATAACTCTATCAGCTACAAGACATTCTTACCAAAATGTATTCGAGCAAAGATCCAAGAC
+TATCATATTTTGACAAGGAAGCGAATAAGGTACAGATTTCGCAGATTTATTCAGCAATTC
+AGCCAATGCAAAGCCACTGCCAGAAACTTGAAACTTAAGTATCTTATAAATCTGGAAACT
+CTGCAGTCTGCCTTCTACACAGAGAAATTTGAAGTAAAAGAACCTGGAAGTGGTCCTTCA
+GGTGAGGAGATTTTTGCAACCATTATAATAACTGGAAACGGTGGAATTCAGTGGTCAAGA
+GGGAAACATAAAGAAAGTGAGACACTGACAGAACAGGATTTACAGTTATATTGCGATTTT
+CCTAATATTATTGATGTCAGTATTAAGCAAGCAAACCAAGAGGGTTCAAATGAAAGCCGA
+GTTGTAACTATCCATAAGCAAGATGGTAAAAATCTGGAAATTGAACTTAGCTCATTAAGG
+GAAGCTTTGTCTTTCGTGTCATTAATTGATGGATATTATAGATTAACTGCAGATGCACAT
+CATTACCTCTGTAAAGAAGTAGCACCTCCAGCCGTGCTTGAAAATATACAAAGCAACTGT
+CATGGCCCAATTTCGATGGATTTTGCCATTAGTAAACTGAAGAAAGCAGGTAATCAGACT
+GGACTGTATGTACTTCGATGCAGTCCTAAGGACTTTAATAAATATTTTTTGACTTTTGCT
+GTCGAGCGAGAAAATGTCATTGAATATAAACACTGTTTGATTACAAAAAATGAGAATGAA
+GAGTACAACCTCAGTGGGACAAAGAAGAACTTCAGCAGTCTTAAAGATCTTTTGAATTGT
+TACCAGATGGAAACTGTTCGCTCAGACAATATAATTTTCCAGTTTACTAAATGCTGTCCC
+CCAAAGCCAAAAGATAAATCAAACCTTCTAGTCTTCAGAACGAATGGTGTTTCTGATGTA
+CCAACCTCACCAACATTACAGAGGCCTACTCATATGAACCAAATGGTGTTTCACAAAATC
+AGAAATGAAGATTTGATATTTAATGAAAGCCTTGGCCAAGGCACTTTTACAAAGATTTTT
+AAAGGCGTACGAAGAGAAGTAGGAGACTACGGTCAACTGCATGAAACAGAAGTTCTTTTA
+AAAGTTCTGGATAAAGCACACAGAAACTATTCAGAGTCTTTCTTTGAAGCAGCAAGTATG
+ATGAGCAAGCTTTCTCACAAGCATTTGGTTTTAAATTATGGAGTATGTGTCTGTGGAGAC
+GAGAATATTCTGGTTCAGGAGTTTGTAAAATTTGGATCACTAGATACATATCTGAAAAAG
+AATAAAAATTGTATAAATATATTATGGAAACTTGAAGTTGCTAAACAGTTGGCATGGGCC
+ATGCATTTTCTAGAAGAAAACACCCTTATTCATGGGAATGTATGTGCCAAAAATATTCTG
+CTTATCAGAGAAGAAGACAGGAAGACAGGAAATCCTCCTTTCATCAAACTTAGTGATCCT
+GGCATTAGTATTACAGTTTTGCCAAAGGACATTCTTCAGGAGAGAATACCATGGGTACCA
+CCTGAATGCATTGAAAATCCTAAAAATTTAAATTTGGCAACAGACAAATGGAGTTTTGGT
+ACCACTTTGTGGGAAATCTGCAGTGGAGGAGATAAACCTCTAAGTGCTCTGGATTCTCAA
+AGAAAGCTACAATTTTATGAAGATAGGCATCAGCTTCCTGCACCAAAGTGGGCAGAATTA
+GCAAACCTTATAAATAATTGTATGGATTATGAACCAGATTTCAGGCCTTCTTTCAGAGCC
+ATCATACGAGATCTTAACAGTTTGTTTACTCCAGATTATGAACTATTAACAGAAAATGAC
+ATGTTACCAAATATGAGGATAGGTGCCCTGGGGTTTTCTGGTGCCTTTGAAGACCGGGAT
+CCTACACAGTTTGAAGAGAGACATTTGAAATTTCTACAGCAACTTGGCAAGGGTAATTTT
+GGGAGTGTGGAGATGTGCCGGTATGACCCTCTACAGGACAACACTGGGGAGGTGGTCGCT
+GTAAAAAAGCTTCAGCATAGTACTGAAGAGCACCTAAGAGACTTTGAAAGGGAAATTGAA
+ATCCTGAAATCCCTACAGCATGACAACATTGTAAAGTACAAGGGAGTGTGCTACAGTGCT
+GGTCGGCGTAATCTAAAATTAATTATGGAATATTTACCATATGGAAGTTTACGAGACTAT
+CTTCAAAAACATAAAGAACGGATAGATCACATAAAACTTCTGCAGTACACATCTCAGATA
+TGCAAGGGTATGGAGTATCTTGGTACAAAAAGGTATATCCACAGGGATCTGGCAACGAGA
+AATATATTGGTGGAGAACGAGAACAGAGTTAAAATTGGAGATTTTGGGTTAACCAAAGTC
+TTGCCACAAGACAAAGAATACTATAAAGTAAAAGAACCTGGTGAAAGTCCCATATTCTGG
+TATGCTCCAGAATCACTGACAGAGAGCAAGTTTTCTGTGGCCTCAGATGTTTGGAGCTTT
+GGAGTGGTTCTGTATGAACTTTTCACATACATTGAGAAGAGTAAAAGTCCACCAGCGGAA
+TTTATGCGTATGATTGGCAATGACAAACAAGGACAGATGATCGTGTTCCATTTGATAGAA
+CTTTTGAAGAATAATGGAAGATTACCAAGACCAGATGGATGCCCAGATGAGATCTATATG
+ATCATGACAGAATGCTGGAACAATAATGTAAATCAACGCCCCTCCTTTAGGGATCTAGCT
+CTTCGAGTGGATCAAATAAGGGATAACATGGCTGGATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00017</identifier>
+            <name>SH2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extrinsic component of cytoplasmic side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>growth hormone receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone kinase activity (H3-Y41 specific)</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-12 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>non-membrane spanning protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>SH2 domain binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>actin filament polymerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of JAK2 kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adaptive immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon regeneration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to dexamethasone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromatin organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>enzyme linked receptor protein signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>erythrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>growth hormone receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histone H3-Y41 phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hormone-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>host programmed cell death induced by symbiont</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interferon-gamma-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interleukin-12-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>JAK-STAT cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>JAK-STAT cascade involved in growth hormone signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mammary gland epithelium development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mesoderm development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mineralocorticoid receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>movement of cell or subcellular component</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cardiac muscle cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of heart contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell-substrate adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of growth hormone receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-1 beta production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphoprotein phosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein import into nucleus, translocation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tumor necrosis factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat3 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat5 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of interferon-gamma-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydroperoxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to interleukin-12</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to tumor necrosis factor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>STAT protein import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tumor necrosis factor-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tyrosine phosphorylation of STAT protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tyrosine phosphorylation of Stat1 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tyrosine phosphorylation of Stat3 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tyrosine phosphorylation of Stat5 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05033</drugbank-id>
+  <name>INCB7839</name>
+  <description>INCB7839 is a novel, orally available ADAM metalloprotease inhibitor that is designed to block activation of the epidermal growth factor (EGFR) pathways. It represents a potentially important new class of targeted breast cancer therapy. It has shown promising clinical activity in heavily pretreated, refractory breast cancer patients.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in breast cancer.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>INCB7839 is a novel, orally available ADAM metalloprotease inhibitor that is designed to block activation of the epidermal growth factor (EGFR) pathways. Currently approved therapies that target the EGFR pathways have shown promising efficacy in metastatic disease, validating these pathways as targets; however, efficacy may be limited due to the fact that these drugs inhibit only one or two of the four HER receptor pathways. In contrast, the sheddase inhibitor, INCB7839, has the potential to inhibit activation through all four of the HER receptors, resulting in more complete inhibition of these pathways.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909903</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003412</id>
+      <name>Disintegrin and metalloproteinase domain-containing protein 9</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q13443" source="Swiss-Prot">
+        <name>Disintegrin and metalloproteinase domain-containing protein 9</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Probable zinc protease. May mediate cell-cell or cell-matrix interactions. Isoform 2 displays alpha-secretase activity for APP.</specific-function>
+        <gene-name>ADAM9</gene-name>
+        <locus>8p11.23</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>698-718</transmembrane-regions>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>7.55</theoretical-pi>
+        <molecular-weight>90555.29</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:216</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADAM9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U41766</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1657</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q13443</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADAM9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.24.-</synonym>
+          <synonym>ADAM 9</synonym>
+          <synonym>Cellular disintegrin-related protein</synonym>
+          <synonym>KIAA0021</synonym>
+          <synonym>MCMP</synonym>
+          <synonym>MDC9</synonym>
+          <synonym>Meltrin-gamma</synonym>
+          <synonym>Metalloprotease/disintegrin/cysteine-rich protein 9</synonym>
+          <synonym>MLTNG</synonym>
+          <synonym>Myeloma cell metalloproteinase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006659|Disintegrin and metalloproteinase domain-containing protein 9
+MGSGARFPSGTLRVRWLLLLGLVGPVLGAARPGFQQTSHLSSYEIITPWRLTRERREAPR
+PYSKQVSYVIQAEGKEHIIHLERNKDLLPEDFVVYTYNKEGTLITDHPNIQNHCHYRGYV
+EGVHNSSIALSDCFGLRGLLHLENASYGIEPLQNSSHFEHIIYRMDDVYKEPLKCGVSNK
+DIEKETAKDEEEEPPSMTQLLRRRRAVLPQTRYVELFIVVDKERYDMMGRNQTAVREEMI
+LLANYLDSMYIMLNIRIVLVGLEIWTNGNLINIVGGAGDVLGNFVQWREKFLITRRRHDS
+AQLVLKKGFGGTAGMAFVGTVCSRSHAGGINVFGQITVETFASIVAHELGHNLGMNHDDG
+RDCSCGAKSCIMNSGASGSRNFSSCSAEDFEKLTLNKGGNCLLNIPKPDEAYSAPSCGNK
+LVDAGEECDCGTPKECELDPCCEGSTCKLKSFAECAYGDCCKDCRFLPGGTLCRGKTSEC
+DVPEYCNGSSQFCQPDVFIQNGYPCQNNKAYCYNGMCQYYDAQCQVIFGSKAKAAPKDCF
+IEVNSKGDRFGNCGFSGNEYKKCATGNALCGKLQCENVQEIPVFGIVPAIIQTPSRGTKC
+WGVDFQLGSDVPDPGMVNEGTKCGAGKICRNFQCVDASVLNYDCDVQKKCHGHGVCNSNK
+NCHCENGWAPPNCETKGYGGSVDSGPTYNEMNTALRDGLLVFFFLIVPLIVCAIFIFIKR
+DQLWRSYFRKKRSQTYESDGKNQANPSRQPGSVPRHVSPVTPPREVPIYANRFAVPTYAA
+KQPQQFPSRPPPPQPKVSSQGNLIPARPAPAPPLYSSLT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017094|Disintegrin and metalloproteinase domain-containing protein 9 (ADAM9)
+ATGGGGTCTGGCGCGCGCTTTCCCTCGGGGACCCTTCGTGTCCGGTGGTTGCTGTTGCTT
+GGCCTGGTGGGCCCAGTCCTCGGTGCGGCGCGGCCAGGCTTTCAACAGACCTCACATCTT
+TCTTCTTATGAAATTATAACTCCTTGGAGATTAACTAGAGAAAGAAGAGAAGCCCCTAGG
+CCCTATTCAAAACAAGTATCTTATGTTATTCAGGCTGAAGGAAAAGAGCATATTATTCAC
+TTGGAAAGGAACAAAGACCTTTTGCCTGAAGATTTTGTGGTTTATACTTACAACAAGGAA
+GGGACTTTAATCACTGACCATCCCAATATACAGAATCATTGTCATTATCGGGGCTATGTG
+GAGGGAGTTCATAATTCATCCATTGCTCTTAGCGACTGTTTTGGACTCAGAGGATTGCTG
+CATTTAGAGAATGCGAGTTATGGGATTGAACCCCTGCAGAACAGCTCTCATTTTGAGCAC
+ATCATTTATCGAATGGATGATGTCTACAAAGAGCCTCTGAAATGTGGAGTTTCCAACAAG
+GATATAGAGAAAGAAACTGCAAAGGATGAAGAGGAAGAGCCTCCCAGCATGACTCAGCTA
+CTTCGAAGAAGAAGAGCTGTCTTGCCACAGACCCGGTATGTGGAGCTGTTCATTGTCGTA
+GACAAGGAAAGGTATGACATGATGGGAAGAAATCAGACTGCTGTGAGAGAAGAGATGATT
+CTCCTGGCAAACTACTTGGATAGTATGTATATTATGTTAAATATTCGAATTGTGCTAGTT
+GGACTGGAGATTTGGACCAATGGAAACCTGATCAACATAGTTGGGGGTGCTGGTGATGTG
+CTGGGGAACTTCGTGCAGTGGCGGGAAAAGTTTCTTATCACACGTCGGAGACATGACAGT
+GCACAGCTAGTTCTAAAGAAAGGTTTTGGTGGAACTGCAGGAATGGCATTTGTGGGAACA
+GTGTGTTCAAGGAGCCACGCAGGCGGGATTAATGTGTTTGGACAAATCACTGTGGAGACA
+TTTGCTTCCATTGTTGCTCATGAATTGGGTCATAATCTTGGAATGAATCACGATGATGGG
+AGAGATTGTTCCTGTGGAGCAAAGAGCTGCATCATGAATTCAGGAGCATCGGGTTCCAGA
+AACTTTAGCAGTTGCAGTGCAGAGGACTTTGAGAAGTTAACTTTAAATAAAGGAGGAAAC
+TGCCTTCTTAATATTCCAAAGCCTGATGAAGCCTATAGTGCTCCCTCCTGTGGTAATAAG
+TTGGTGGACGCTGGGGAAGAGTGTGACTGTGGTACTCCAAAGGAATGTGAATTGGACCCT
+TGCTGCGAAGGAAGTACCTGTAAGCTTAAATCATTTGCTGAGTGTGCATATGGTGACTGT
+TGTAAAGACTGTCGGTTCCTTCCAGGAGGTACTTTATGCCGAGGAAAAACCAGTGAGTGT
+GATGTTCCAGAGTACTGCAATGGTTCTTCTCAGTTCTGTCAGCCAGATGTTTTTATTCAG
+AATGGATATCCTTGCCAGAATAACAAAGCCTATTGCTACAACGGCATGTGCCAGTATTAT
+GATGCTCAATGTCAAGTCATCTTTGGCTCAAAAGCCAAGGCTGCCCCCAAAGATTGTTTC
+ATTGAAGTGAATTCTAAAGGTGACAGATTTGGCAATTGTGGTTTCTCTGGCAATGAATAC
+AAGAAGTGTGCCACTGGGAATGCTTTGTGTGGAAAGCTTCAGTGTGAGAATGTACAAGAG
+ATACCTGTATTTGGAATTGTGCCTGCTATTATTCAAACGCCTAGTCGAGGCACCAAATGT
+TGGGGTGTGGATTTCCAGCTAGGATCAGATGTTCCAGATCCTGGGATGGTTAACGAAGGC
+ACAAAATGTGGTGCTGGAAAGATCTGTAGAAACTTCCAGTGTGTAGATGCTTCTGTTCTG
+AATTATGACTGTGATGTTCAGAAAAAGTGTCATGGACATGGGGTATGTAATAGCAATAAG
+AATTGTCACTGTGAAAATGGCTGGGCTCCCCCAAATTGTGAGACTAAAGGATACGGAGGA
+AGTGTGGACAGTGGACCTACATACAATGAAATGAATACTGCATTGAGGGACGGACTTCTG
+GTCTTCTTCTTCCTAATTGTTCCCCTTATTGTCTGTGCTATTTTTATCTTCATCAAGAGG
+GATCAACTGTGGAGAAGCTACTTCAGAAAGAAGAGATCACAAACATATGAGTCAGATGGC
+AAAAATCAAGCAAACCCTTCTAGACAGCCGGGGAGTGTTCCTCGACATGTTTCTCCAGTG
+ACACCTCCCAGAGAAGTTCCTATATATGCAAACAGATTTGCAGTACCAACCTATGCAGCC
+AAGCAACCTCAGCAGTTCCCATCAAGGCCACCTCCACCACAACCGAAAGTATCATCTCAG
+GGAAACTTAATTCCTGCCCGTCCTGCTCCTGCACCTCCTTTATATAGTTCCCTCACTTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01562</identifier>
+            <name>Pep_M12B_propep</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01421</identifier>
+            <name>Reprolysin</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00200</identifier>
+            <name>Disintegrin</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08516</identifier>
+            <name>ADAM_CR</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>focal adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intrinsic component of external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>collagen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>integrin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>laminin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metalloendopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metallopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase C binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>SH3 domain binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion mediated by integrin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell adhesion mediated by integrin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-matrix adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>collagen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix disassembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>integrin-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>keratinocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane protein ectodomain proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocyte activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>PMA-inducible membrane protein ectodomain proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell adhesion mediated by integrin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of keratinocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of macrophage fusion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of membrane protein ectodomain proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to calcium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to glucocorticoid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to manganese ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to tumor necrosis factor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

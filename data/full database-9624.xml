@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-17" updated="2019-12-02">
+  <drugbank-id primary="true">DB11630</drugbank-id>
+  <name>Temoporfin</name>
+  <description>Temoporfin is a photosensitizing agent used in the treatment of squamous cell carcinoma of the head and neck [FDA Label]. It was first authorized for market by the European Medicines Agency in October 2001. It is currently available under the brand name Foscan.</description>
+  <cas-number>122341-38-2</cas-number>
+  <unii>FU21S769PF</unii>
+  <average-mass>680.764</average-mass>
+  <monoisotopic-mass>680.242355526</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A31545</ref-id>
+        <pubmed-id>10212581</pubmed-id>
+        <citation>Hopkinson HJ, Vernon DI, Brown SB: Identification and partial characterization of an unusual distribution of the photosensitizer meta-tetrahydroxyphenyl chlorin (temoporfin) in human plasma. Photochem Photobiol. 1999 Apr;69(4):482-8.</citation>
+      </article>
+      <article>
+        <ref-id>A31547</ref-id>
+        <pubmed-id>10529768</pubmed-id>
+        <citation>Sharman WM, Allen CM, van Lier JE: Photodynamic therapeutics: basic principles and clinical applications. Drug Discov Today. 1999 Nov;4(11):507-517.</citation>
+      </article>
+      <article>
+        <ref-id>A31548</ref-id>
+        <pubmed-id>10487610</pubmed-id>
+        <citation>Coutier S, Bezdetnaya L, Marchal S, Melnikova V, Belitchenko I, Merlin JL, Guillemin F: Foscan (mTHPC) photosensitized macrophage activation: enhancement of phagocytosis, nitric oxide release and tumour necrosis factor-alpha-mediated cytolytic activity. Br J Cancer. 1999 Sep;81(1):37-42. doi: 10.1038/sj.bjc.6690648.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L1128</ref-id>
+        <title>EMA: Temoporfin Scientific Discussion</title>
+        <url>http://www.ema.europa.eu/docs/en_GB/document_library/EPAR_-_Scientific_Discussion/human/000318/WC500024394.pdf</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For use in the treatment of patients with advanced squamous cell carcinoma of the head and neck failing standard therapies and who are unsuitable for radiotherapy, surgery, or systemic chemotherapy [FDA Label].</indication>
+  <pharmacodynamics>Temoporfin is a photosensitizing agent [FDA Label]. It enters cancer cells and is activated via light to produce reactive species which destroy the cell.</pharmacodynamics>
+  <mechanism-of-action>Temoporfin is excited from ground state to the first excited singlet state by the application of 652 nm light [L1128, A31547]. It is then thought to undergo intersystem crossing to an excited triplet state which is longer lived and able to interact with surrounding molecules [A31547]. It is then thought to produce cytotoxic species by either a Type I or Type II reaction typical of agents used in photodynamic therapy. Type I involves either hydrogen abstraction of electron transfer from the excited photosensitizer to a substrate molecule to produce free radicals or radical ions. Type II reactions involve a similar reaction with oxygen as the substrate to produce reactive oxygen species. These reactive products cause oxidative damage to the cancer cell resulting in cell death.&#13;
+&#13;
+There is evidence that photodynamic therapy with Temoporfin activates macrophages and increases phagocytosis [A31548]. These activated macrophages also produce more tumour necrosis factor-α (TNF-α) and nitric oxide (NO). It is thought that this increase in macrophage activity contributes to the efficacy of therapy through phagocytosis of cancer cells and increased cell death signalling though TNF-α. The increase in NO production likely contributes to oxidative damage through reactive nitrogen species.</mechanism-of-action>
+  <toxicity>Mice and rats experienced swelling and darkening of exposed tissue at single dosages of &gt;0.85 mg/kg under normal lighting [L1128]. Systemic toxicity presented as reduced red blood cell and platelet counts and increased white blood cell counts and liver and spleen weights. Skin inflammation, pycnotic spermatocytes and increased extramedullary haematopoiesis in spleen and the lymph nodes was also observed. Under low-light conditions mild phototoxicity was observed only at high doses.&#13;
+&#13;
+Severe phototoxicity has been seen in rats with repeated doses of up to 1 mg/kg/day under normal lighting [L1128]. This effect is less severe under low-light conditions. Two weeks of repeated doses of 0.5-0.6 mg/kg/day resulted in inflammation of the injection site and skin in rats. At 0.3 mg/kg/day under low-light in rats, the only effect seen was an increase in white blood cell counts.&#13;
+&#13;
+In beagle dogs recieving repeated doses of up to 3mg/kg/day under low-light conditions, reddening of the skin and injection site inflammation was seen [L1128]. Serious injection site damage was observed.</toxicity>
+  <metabolism>The exact metabolic reactions Temoporfin undergoes are unknown. The drug metabolites have been identified as conjugates but specific information is unavailable.</metabolism>
+  <absorption>Tmax is 2-4 h after intravenous administration [FDA Label]. Plasma concentration initially decreases rapidly then slowly rises to reach peak serum concentration [L1128]. </absorption>
+  <half-life>Terminal plasma half life is 65 h [FDA Label]. Elimination of Temoporfin is bi-exponential with the intial phase having a half-life of 30 h and a terminal half-life of 61-88 h [L1128].</half-life>
+  <protein-binding>Temoporfin is 85-88% bound to plasma proteins [FDA Label, L1128]. Temoporfin initially binds and aggregates to an unknown high density protein [A31545]. This makes up about 70% of the bound drug immediately after administration. The remainder is bound to plasma lipoproteins with 22% bound to high density lipoprotein (HDL), 4% bound to low density lipoprotein (LDL), and 4% bound to very low density lipoprotein (VLDL). Within 24 hours after administration, Temoporfin undergoes redistribution to lipoproteins with about 73% bound to HDL, 8% bound to LDL, and 3% bound to VLDL. Only 17% remains bound to the unknown high density protein after redistribution.</protein-binding>
+  <route-of-elimination>Data on elimination in humans is limited [FDA Label, L1128]. Animal data indicates Temoporfin is eliminated solely by the liver with two conjugated metabolites being excreted through bile. No enterohepatic recirculation has been observed with these metabolites.</route-of-elimination>
+  <volume-of-distribution>The volume of distribution is 0.34-0.46 L/kg [L1128]. Temoporfin is known to distribute into the tissues and preferentially collects in tumour tissue.</volume-of-distribution>
+  <clearance>Temoporfin is cleared at a rate of 3.9-4.1 mL/h/kg [L1128].</clearance>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">2,3-dihydro-5,10,15,20-tetra(m-hydroxyphenyl)porphyrin</synonym>
+    <synonym language="english" coder="">m-THPC</synonym>
+    <synonym language="english" coder="">meso-tetrahydroxyphenylchlorin</synonym>
+    <synonym language="english" coder="inn/usan">Temoporfin</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Foscan</name>
+      <labeller>Biolitec Pharma Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id/>
+      <ema-product-code>EMEA/H/C/000318</ema-product-code>
+      <ema-ma-number>EU/1/01/197/003</ema-ma-number>
+      <started-marketing-on>2001-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>1 mg/ml</strength>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>EU</country>
+      <source>EMA</source>
+    </product>
+    <product>
+      <name>Foscan</name>
+      <labeller>Biolitec Pharma Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id/>
+      <ema-product-code>EMEA/H/C/000318</ema-product-code>
+      <ema-ma-number>EU/1/01/197/004</ema-ma-number>
+      <started-marketing-on>2001-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>1 mg/ml</strength>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>EU</country>
+      <source>EMA</source>
+    </product>
+    <product>
+      <name>Foscan</name>
+      <labeller>Biolitec Pharma Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id/>
+      <ema-product-code>EMEA/H/C/000318</ema-product-code>
+      <ema-ma-number>EU/1/01/197/005</ema-ma-number>
+      <started-marketing-on>2001-10-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>1 mg/ml</strength>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>EU</country>
+      <source>EMA</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Foscan</name>
+      <ingredients>Temoporfin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Foscan</name>
+      <ingredients>Temoporfin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Foscan</name>
+      <ingredients>Temoporfin</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Antineoplastic Agents</category>
+      <mesh-id>D000970</mesh-id>
+    </category>
+    <category>
+      <category>Antineoplastic and Immunomodulating Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Biological Factors</category>
+      <mesh-id>D001685</mesh-id>
+    </category>
+    <category>
+      <category>Dermatologicals</category>
+      <mesh-id>D003879</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Photosensitizing Agents</category>
+      <mesh-id>D017319</mesh-id>
+    </category>
+    <category>
+      <category>Pigments, Biological</category>
+      <mesh-id>D010860</mesh-id>
+    </category>
+    <category>
+      <category>Porphyrins</category>
+      <mesh-id>D011166</mesh-id>
+    </category>
+    <category>
+      <category>Radiation-Sensitizing Agents</category>
+      <mesh-id>D011838</mesh-id>
+    </category>
+    <category>
+      <category>Sensitizers Used in Photodynamic/radiation Therapy</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Intravenous</route>
+      <strength>1 mg/ml</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="L01XD05">
+      <level code="L01XD">Sensitizers used in photodynamic/radiation therapy</level>
+      <level code="L01X">OTHER ANTINEOPLASTIC AGENTS</level>
+      <level code="L01">ANTINEOPLASTIC AGENTS</level>
+      <level code="L">ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB11630.pdf?1515009756</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB11630.pdf?1515010186</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00012</drugbank-id>
+      <name>Darbepoetin alfa</name>
+      <description>The risk or severity of Thrombosis can be increased when Darbepoetin alfa is combined with Temoporfin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00016</drugbank-id>
+      <name>Erythropoietin</name>
+      <description>The risk or severity of Thrombosis can be increased when Erythropoietin is combined with Temoporfin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08894</drugbank-id>
+      <name>Peginesatide</name>
+      <description>The risk or severity of Thrombosis can be increased when Peginesatide is combined with Temoporfin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09107</drugbank-id>
+      <name>Methoxy polyethylene glycol-epoetin beta</name>
+      <description>The risk or severity of Thrombosis can be increased when Methoxy polyethylene glycol-epoetin beta is combined with Temoporfin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00707</drugbank-id>
+      <name>Porfimer sodium</name>
+      <description>Temoporfin may increase the photosensitizing activities of Porfimer sodium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00460</drugbank-id>
+      <name>Verteporfin</name>
+      <description>Temoporfin may increase the photosensitizing activities of Verteporfin.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>9.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>3-[7,12,17-tris(3-hydroxyphenyl)-21,22,23,24-tetraazapentacyclo[16.2.1.1³,⁶.1⁸,¹¹.1¹³,¹⁶]tetracosa-1,3,5,7,11(23),12,14,16,18(21),19-decaen-2-yl]phenol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>3-[7,12,17-tris(3-hydroxyphenyl)-21,22,23,24-tetraazapentacyclo[16.2.1.1³,⁶.1⁸,¹¹.1¹³,¹⁶]tetracosa-1,3,5,7,11(23),12,14,16,18(21),19-decaen-2-yl]phenol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>680.764</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>680.242355526</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>OC1=CC=CC(=C1)C-1=C2\CCC(=N2)\C(=C2/N\C(\C=C2)=C(/C2=N/C(/C=C2)=C(\C2=CC=C\-1N2)C1=CC(O)=CC=C1)C1=CC(O)=CC=C1)\C1=CC(O)=CC=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C44H32N4O4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C44H32N4O4/c49-29-9-1-5-25(21-29)41-33-13-15-35(45-33)42(26-6-2-10-30(50)22-26)37-17-19-39(47-37)44(28-8-4-12-32(52)24-28)40-20-18-38(48-40)43(36-16-14-34(41)46-36)27-7-3-11-31(51)23-27/h1-17,19,21-24,46-47,49-52H,18,20H2/b41-33-,41-34-,42-35-,42-37-,43-36-,43-38-,44-39-,44-40-</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>LYPFDBRUNKHDGX-LWQDQPMZSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>138.28</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>201.34</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>76.61</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>5.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>9437</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C11730</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D06066</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>54754</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Temoporfin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL500576</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

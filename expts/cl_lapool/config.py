@@ -57,8 +57,8 @@ network_params = list(ParameterGrid(dict(
     att_mode=[None],
     dropout=[0.10],
     b_norm=[True],
-    is_binary_output=[True],
-    ss_embedding_dim=[32]
+    is_binary_output=[False],
+    ss_embedding_dim=[None]
 )))
 
 loss_params = list(ParameterGrid(dict(

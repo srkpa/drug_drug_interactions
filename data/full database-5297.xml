@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05848</drugbank-id>
+  <name>humanized SMART Anti-IL-12 Antibody</name>
+  <description>The humanized anti-IL-12 antibody is an important addition to PDL's already strong pipeline of humanized antibodies being developed for the treatment of autoimmune diseases. SMART Anti-IL-12 Antibody was humanized at PDL from a murine anti-IL-12 antibody that was licensed, together with certain intellectual property related to anti-IL-12 therapy, from Hoffmann-La Roche Inc. IL-12 is a cytokine that may have considerable potential as a target in the therapy of autoimmune diseases.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in autoimmune diseases and inflammatory disorders (unspecified).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910267</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000981</id>
+      <name>Interleukin-12 subunit beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P29460" source="Swiss-Prot">
+        <name>Interleukin-12 subunit beta</name>
+        <general-function>Protein heterodimerization activity</general-function>
+        <specific-function>Cytokine that can act as a growth factor for activated T and NK cells, enhance the lytic activity of NK/lymphokine-activated killer cells, and stimulate the production of IFN-gamma by resting PBMC.Associates with IL23A to form the IL-23 interleukin, a heterodimeric cytokine which functions in innate and adaptive immunity. IL-23 may constitute with IL-17 an acute response to infection in peripheral tissues. IL-23 binds to a heterodimeric receptor complex composed of IL12RB1 and IL23R, activates the Jak-Stat signaling cascade, stimulates memory rather than naive T-cells and promotes production of proinflammatory cytokines. IL-23 induces autoimmune inflammation and thus may be responsible for autoimmune inflammatory diseases and may be important for tumorigenesis.</specific-function>
+        <gene-name>IL12B</gene-name>
+        <locus>5q31.1-q33.1</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-22</signal-regions>
+        <theoretical-pi>5.47</theoretical-pi>
+        <molecular-weight>37168.645</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5970</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>IL12B</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M65272</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>180626</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P29460</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IL12B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CLMF p40</synonym>
+          <synonym>Cytotoxic lymphocyte maturation factor 40 kDa subunit</synonym>
+          <synonym>IL-12 subunit p40</synonym>
+          <synonym>IL-12B</synonym>
+          <synonym>NK cell stimulatory factor chain 2</synonym>
+          <synonym>NKSF2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016273|Interleukin-12 subunit beta
+MCHQQLVISWFSLVFLASPLVAIWELKKDVYVVELDWYPDAPGEMVVLTCDTPEEDGITW
+TLDQSSEVLGSGKTLTIQVKEFGDAGQYTCHKGGEVLSHSLLLLHKKEDGIWSTDILKDQ
+KEPKNKTFLRCEAKNYSGRFTCWWLTTISTDLTFSVKSSRGSSDPQGVTCGAATLSAERV
+RGDNKEYEYSVECQEDSACPAAEESLPIEVMVDAVHKLKYENYTSSFFIRDIIKPDPPKN
+LQLKPLKNSRQVEVSWEYPDTWSTPHSYFSLTFCVQVQGKSKREKKDRVFTDKTSATVIC
+RKNASISVRAQDRYYSSSWSEWASVPCS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016274|Interleukin-12 subunit beta (IL12B)
+ATGTGTCACCAGCAGTTGGTCATCTCTTGGTTTTCCCTGGTTTTTCTGGCATCTCCCCTC
+GTGGCCATATGGGAACTGAAGAAAGATGTTTATGTCGTAGAATTGGATTGGTATCCGGAT
+GCCCCTGGAGAAATGGTGGTCCTCACCTGTGACACCCCTGAAGAAGATGGTATCACCTGG
+ACCTTGGACCAGAGCAGTGAGGTCTTAGGCTCTGGCAAAACCCTGACCATCCAAGTCAAA
+GAGTTTGGAGATGCTGGCCAGTACACCTGTCACAAAGGAGGCGAGGTTCTAAGCCATTCG
+CTCCTGCTGCTTCACAAAAAGGAAGATGGAATTTGGTCCACTGATATTTTAAAGGACCAG
+AAAGAACCCAAAAATAAGACCTTTCTAAGATGCGAGGCCAAGAATTATTCTGGACGTTTC
+ACCTGCTGGTGGCTGACGACAATCAGTACTGATTTGACATTCAGTGTCAAAAGCAGCAGA
+GGCTCTTCTGACCCCCAAGGGGTGACGTGCGGAGCTGCTACACTCTCTGCAGAGAGAGTC
+AGAGGGGACAACAAGGAGTATGAGTACTCAGTGGAGTGCCAGGAGGACAGTGCCTGCCCA
+GCTGCTGAGGAGAGTCTGCCCATTGAGGTCATGGTGGATGCCGTTCACAAGCTCAAGTAT
+GAAAACTACACCAGCAGCTTCTTCATCAGGGACATCATCAAACCTGACCCACCCAAGAAC
+TTGCAGCTGAAGCCATTAAAGAATTCTCGGCAGGTGGAGGTCAGCTGGGAGTACCCTGAC
+ACCTGGAGTACTCCACATTCCTACTTCTCCCTGACATTCTGCGTTCAGGTCCAGGGCAAG
+AGCAAGAGAGAAAAGAAAGATAGAGTCTTCACGGACAAGACCTCAGCCACGGTCATCTGC
+CGCAAAAATGCCAGCATTAGCGTGCGGGCCCAGGACCGCTACTATAGCTCATCTTGGAGC
+GAATGGGCATCTGTGCCCTGCAGTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF10420</identifier>
+            <name>IL12p40_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>interleukin-12 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>interleukin-23 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-12 alpha subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-12 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interferon-gamma</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to protozoan</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interferon-gamma biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>natural killer cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>natural killer cell activation involved in immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of growth of symbiont in host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of inflammatory response to antigenic stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-10 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-17 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of activated T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of activation of JAK2 kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of defense response to virus by host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of granulocyte macrophage colony-stimulating factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-gamma biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-gamma production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-10 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-12 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-17 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of lymphocyte proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of memory T cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mononuclear cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of natural killer cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of natural killer cell mediated cytotoxicity directed against tumor cell target</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of natural killer cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NF-kappaB import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NK T cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NK T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of osteoclast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell mediated cytotoxicity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T-helper 1 type immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T-helper 17 cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T-helper 17 type immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tissue remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tumor necrosis factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat3 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat4 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat5 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cytokine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of tyrosine phosphorylation of Stat1 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to UV-B</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sexual reproduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper 1 type immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper cell differentiation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

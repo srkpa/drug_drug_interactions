@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2017-06-23" updated="2019-12-02">
+  <drugbank-id primary="true">DB13287</drugbank-id>
+  <name>Miocamycin</name>
+  <description>Miocamycin is a macrolide type antimicrobial [A176170]. This drug may be marketed in Japan for clinical use as it is listed in the Japanese pharmacopeia [L5737]. It has shown to be effective against several gram-positive and gram-negative microbes and may be useful in the treatment of upper and lower respiratory tract infections, and urogenital tract infections or as an alternative to erythromycin treatment [A176170].</description>
+  <cas-number>55881-07-7</cas-number>
+  <unii>3T48CPS7U2</unii>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A176170</ref-id>
+        <pubmed-id>7506653</pubmed-id>
+        <citation>Holliday SM, Faulds D: Miocamycin. A review of its antimicrobial activity, pharmacokinetic properties and therapeutic potential. Drugs. 1993 Oct;46(4):720-45. doi: 10.2165/00003495-199346040-00008.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L5737</ref-id>
+        <title>Kegg Japanese Pharmacopoeia</title>
+        <url>https://www.genome.jp/kegg-bin/get_htext?br08311+D01636</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">Midecamycin acetate</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Antibacterials for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antiinfectives for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A Inhibitors</category>
+      <mesh-id>D065692</mesh-id>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A4 Inhibitors</category>
+      <mesh-id>D065692</mesh-id>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A4 Inhibitors (strength unknown)</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 Enzyme Inhibitors</category>
+      <mesh-id>D065607</mesh-id>
+    </category>
+    <category>
+      <category>Lactones</category>
+      <mesh-id>D007783</mesh-id>
+    </category>
+    <category>
+      <category>Macrolides</category>
+      <mesh-id>D018942</mesh-id>
+    </category>
+    <category>
+      <category>Macrolides, Lincosamides and Streptogramins</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Polyketides</category>
+      <mesh-id>D061065</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes>
+    <atc-code code="J01FA11">
+      <level code="J01FA">Macrolides</level>
+      <level code="J01F">MACROLIDES, LINCOSAMIDES AND STREPTOGRAMINS</level>
+      <level code="J01">ANTIBACTERIALS FOR SYSTEMIC USE</level>
+      <level code="J">ANTIINFECTIVES FOR SYSTEMIC USE</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00802</drugbank-id>
+      <name>Alfentanil</name>
+      <description>The serum concentration of Alfentanil can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00404</drugbank-id>
+      <name>Alprazolam</name>
+      <description>The serum concentration of Alprazolam can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00490</drugbank-id>
+      <name>Buspirone</name>
+      <description>The metabolism of Buspirone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00564</drugbank-id>
+      <name>Carbamazepine</name>
+      <description>The metabolism of Carbamazepine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00604</drugbank-id>
+      <name>Cisapride</name>
+      <description>The serum concentration of Cisapride can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00280</drugbank-id>
+      <name>Disopyramide</name>
+      <description>Miocamycin may increase the QTc-prolonging activities of Disopyramide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01215</drugbank-id>
+      <name>Estazolam</name>
+      <description>The serum concentration of Estazolam can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00683</drugbank-id>
+      <name>Midazolam</name>
+      <description>The serum concentration of Midazolam can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00468</drugbank-id>
+      <name>Quinine</name>
+      <description>The serum concentration of Quinine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00908</drugbank-id>
+      <name>Quinidine</name>
+      <description>The serum concentration of Quinidine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00912</drugbank-id>
+      <name>Repaglinide</name>
+      <description>The serum concentration of Repaglinide can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The metabolism of Sirolimus can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06287</drugbank-id>
+      <name>Temsirolimus</name>
+      <description>The metabolism of Temsirolimus can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00342</drugbank-id>
+      <name>Terfenadine</name>
+      <description>The serum concentration of Terfenadine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00897</drugbank-id>
+      <name>Triazolam</name>
+      <description>The serum concentration of Triazolam can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09268</drugbank-id>
+      <name>Picosulfuric acid</name>
+      <description>The therapeutic efficacy of Picosulfuric acid can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00309</drugbank-id>
+      <name>Vindesine</name>
+      <description>The serum concentration of Vindesine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00361</drugbank-id>
+      <name>Vinorelbine</name>
+      <description>The serum concentration of Vinorelbine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The serum concentration of Vincristine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The serum concentration of Vinblastine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05168</drugbank-id>
+      <name>Vintafolide</name>
+      <description>The serum concentration of Vintafolide can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11641</drugbank-id>
+      <name>Vinflunine</name>
+      <description>The serum concentration of Vinflunine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13374</drugbank-id>
+      <name>Vincamine</name>
+      <description>The serum concentration of Vincamine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00511</drugbank-id>
+      <name>Acetyldigitoxin</name>
+      <description>The serum concentration of Acetyldigitoxin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01078</drugbank-id>
+      <name>Deslanoside</name>
+      <description>The serum concentration of Deslanoside can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01092</drugbank-id>
+      <name>Ouabain</name>
+      <description>The serum concentration of Ouabain can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12843</drugbank-id>
+      <name>Oleandrin</name>
+      <description>The serum concentration of Oleandrin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13240</drugbank-id>
+      <name>Cymarin</name>
+      <description>The serum concentration of Cymarin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13307</drugbank-id>
+      <name>Proscillaridin</name>
+      <description>The serum concentration of Proscillaridin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13401</drugbank-id>
+      <name>Metildigoxin</name>
+      <description>The serum concentration of Metildigoxin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13467</drugbank-id>
+      <name>Lanatoside C</name>
+      <description>The serum concentration of Lanatoside C can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13537</drugbank-id>
+      <name>Gitoformate</name>
+      <description>The serum concentration of Gitoformate can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13691</drugbank-id>
+      <name>Acetyldigoxin</name>
+      <description>The serum concentration of Acetyldigoxin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13756</drugbank-id>
+      <name>Peruvoside</name>
+      <description>The serum concentration of Peruvoside can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The metabolism of Cyclosporine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>The serum concentration of Tacrolimus can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The serum concentration of Dicoumarol can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The serum concentration of Phenindione can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The serum concentration of Coumarin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The serum concentration of Tioclomarol can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01303</drugbank-id>
+      <name>Oxtriphylline</name>
+      <description>The metabolism of Oxtriphylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09273</drugbank-id>
+      <name>Doxofylline</name>
+      <description>The metabolism of Doxofylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13203</drugbank-id>
+      <name>Bamifylline</name>
+      <description>The metabolism of Bamifylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13573</drugbank-id>
+      <name>Acefylline</name>
+      <description>The metabolism of Acefylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13812</drugbank-id>
+      <name>Bufylline</name>
+      <description>The metabolism of Bufylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01482</drugbank-id>
+      <name>Fenethylline</name>
+      <description>The metabolism of Fenethylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13449</drugbank-id>
+      <name>Proxyphylline</name>
+      <description>The metabolism of Proxyphylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14018</drugbank-id>
+      <name>Bromotheophylline</name>
+      <description>The metabolism of Bromotheophylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00806</drugbank-id>
+      <name>Pentoxifylline</name>
+      <description>The metabolism of Pentoxifylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01667</drugbank-id>
+      <name>8-azaguanine</name>
+      <description>The metabolism of 8-azaguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01978</drugbank-id>
+      <name>7,9-Dimethylguanine</name>
+      <description>The metabolism of 7,9-Dimethylguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02134</drugbank-id>
+      <name>Xanthine</name>
+      <description>The metabolism of Xanthine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02245</drugbank-id>
+      <name>7-Deazaguanine</name>
+      <description>The metabolism of 7-Deazaguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02377</drugbank-id>
+      <name>Guanine</name>
+      <description>The metabolism of Guanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02489</drugbank-id>
+      <name>9-Methylguanine</name>
+      <description>The metabolism of 9-Methylguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02568</drugbank-id>
+      <name>Peldesine</name>
+      <description>The metabolism of Peldesine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04076</drugbank-id>
+      <name>Hypoxanthine</name>
+      <description>The metabolism of Hypoxanthine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04356</drugbank-id>
+      <name>9-Deazaguanine</name>
+      <description>The metabolism of 9-Deazaguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06575</drugbank-id>
+      <name>Valomaciclovir</name>
+      <description>The metabolism of Valomaciclovir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07954</drugbank-id>
+      <name>3-isobutyl-1-methyl-7H-xanthine</name>
+      <description>The metabolism of 3-isobutyl-1-methyl-7H-xanthine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08844</drugbank-id>
+      <name>Uric acid</name>
+      <description>The metabolism of Uric acid can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11919</drugbank-id>
+      <name>6-O-benzylguanine</name>
+      <description>The metabolism of 6-O-benzylguanine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12406</drugbank-id>
+      <name>Lisofylline</name>
+      <description>The metabolism of Lisofylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12531</drugbank-id>
+      <name>Lobucavir</name>
+      <description>The metabolism of Lobucavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12926</drugbank-id>
+      <name>Cafedrine</name>
+      <description>The metabolism of Cafedrine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12927</drugbank-id>
+      <name>Theodrenaline</name>
+      <description>The metabolism of Theodrenaline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13592</drugbank-id>
+      <name>Etamiphylline</name>
+      <description>The metabolism of Etamiphylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13634</drugbank-id>
+      <name>Pentifylline</name>
+      <description>The metabolism of Pentifylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14029</drugbank-id>
+      <name>Furafylline</name>
+      <description>The metabolism of Furafylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01412</drugbank-id>
+      <name>Theobromine</name>
+      <description>The metabolism of Theobromine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06479</drugbank-id>
+      <name>Propentofylline</name>
+      <description>The metabolism of Propentofylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00201</drugbank-id>
+      <name>Caffeine</name>
+      <description>The metabolism of Caffeine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14132</drugbank-id>
+      <name>8-chlorotheophylline</name>
+      <description>The metabolism of 8-chlorotheophylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01033</drugbank-id>
+      <name>Mercaptopurine</name>
+      <description>The metabolism of Mercaptopurine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15122</drugbank-id>
+      <name>PCS-499</name>
+      <description>The metabolism of PCS-499 can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00248</drugbank-id>
+      <name>Cabergoline</name>
+      <description>The serum concentration of Cabergoline can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00353</drugbank-id>
+      <name>Methylergometrine</name>
+      <description>The serum concentration of Methylergometrine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00589</drugbank-id>
+      <name>Lisuride</name>
+      <description>The serum concentration of Lisuride can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00699</drugbank-id>
+      <name>Nicergoline</name>
+      <description>The serum concentration of Nicergoline can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01049</drugbank-id>
+      <name>Ergoloid mesylate</name>
+      <description>The serum concentration of Ergoloid mesylate can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01186</drugbank-id>
+      <name>Pergolide</name>
+      <description>The serum concentration of Pergolide can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01253</drugbank-id>
+      <name>Ergometrine</name>
+      <description>The serum concentration of Ergometrine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04829</drugbank-id>
+      <name>Lysergic acid diethylamide</name>
+      <description>The serum concentration of Lysergic acid diethylamide can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11273</drugbank-id>
+      <name>Dihydroergocornine</name>
+      <description>The serum concentration of Dihydroergocornine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13345</drugbank-id>
+      <name>Dihydroergocristine</name>
+      <description>The serum concentration of Dihydroergocristine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13385</drugbank-id>
+      <name>Dihydroergocryptine</name>
+      <description>The serum concentration of Dihydroergocryptine can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13399</drugbank-id>
+      <name>Terguride</name>
+      <description>The serum concentration of Terguride can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13520</drugbank-id>
+      <name>Metergoline</name>
+      <description>The serum concentration of Metergoline can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01076</drugbank-id>
+      <name>Atorvastatin</name>
+      <description>The risk or severity of adverse effects can be increased when Miocamycin is combined with Atorvastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Miocamycin is combined with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Miocamycin is combined with (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00186</drugbank-id>
+      <name>Lorazepam</name>
+      <description>The metabolism of Lorazepam can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00191</drugbank-id>
+      <name>Phentermine</name>
+      <description>The metabolism of Phentermine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00207</drugbank-id>
+      <name>Azithromycin</name>
+      <description>The metabolism of Azithromycin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00208</drugbank-id>
+      <name>Ticlopidine</name>
+      <description>The metabolism of Ticlopidine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00246</drugbank-id>
+      <name>Ziprasidone</name>
+      <description>The metabolism of Ziprasidone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00264</drugbank-id>
+      <name>Metoprolol</name>
+      <description>The metabolism of Metoprolol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00426</drugbank-id>
+      <name>Famciclovir</name>
+      <description>The metabolism of Famciclovir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00433</drugbank-id>
+      <name>Prochlorperazine</name>
+      <description>The metabolism of Prochlorperazine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00476</drugbank-id>
+      <name>Duloxetine</name>
+      <description>The metabolism of Duloxetine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00477</drugbank-id>
+      <name>Chlorpromazine</name>
+      <description>The metabolism of Chlorpromazine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00518</drugbank-id>
+      <name>Albendazole</name>
+      <description>The metabolism of Albendazole can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The metabolism of Methotrexate can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00567</drugbank-id>
+      <name>Cephalexin</name>
+      <description>The metabolism of Cephalexin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00590</drugbank-id>
+      <name>Doxazosin</name>
+      <description>The metabolism of Doxazosin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00717</drugbank-id>
+      <name>Norethisterone</name>
+      <description>The metabolism of Norethisterone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01039</drugbank-id>
+      <name>Fenofibrate</name>
+      <description>The metabolism of Fenofibrate can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01072</drugbank-id>
+      <name>Atazanavir</name>
+      <description>The metabolism of Atazanavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01098</drugbank-id>
+      <name>Rosuvastatin</name>
+      <description>The metabolism of Rosuvastatin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01151</drugbank-id>
+      <name>Desipramine</name>
+      <description>The metabolism of Desipramine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01323</drugbank-id>
+      <name>St. John's Wort</name>
+      <description>The metabolism of St. John's Wort can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01395</drugbank-id>
+      <name>Drospirenone</name>
+      <description>The metabolism of Drospirenone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01411</drugbank-id>
+      <name>Pranlukast</name>
+      <description>The metabolism of Pranlukast can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01431</drugbank-id>
+      <name>Allylestrenol</name>
+      <description>The metabolism of Allylestrenol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01624</drugbank-id>
+      <name>Zuclopenthixol</name>
+      <description>The metabolism of Zuclopenthixol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01656</drugbank-id>
+      <name>Roflumilast</name>
+      <description>The metabolism of Roflumilast can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05239</drugbank-id>
+      <name>Cobimetinib</name>
+      <description>The metabolism of Cobimetinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06201</drugbank-id>
+      <name>Rufinamide</name>
+      <description>The metabolism of Rufinamide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06218</drugbank-id>
+      <name>Lacosamide</name>
+      <description>The metabolism of Lacosamide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06480</drugbank-id>
+      <name>Prucalopride</name>
+      <description>The metabolism of Prucalopride can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08882</drugbank-id>
+      <name>Linagliptin</name>
+      <description>The metabolism of Linagliptin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09030</drugbank-id>
+      <name>Vorapaxar</name>
+      <description>The metabolism of Vorapaxar can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09034</drugbank-id>
+      <name>Suvorexant</name>
+      <description>The metabolism of Suvorexant can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09048</drugbank-id>
+      <name>Netupitant</name>
+      <description>The metabolism of Netupitant can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The metabolism of Idelalisib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09063</drugbank-id>
+      <name>Ceritinib</name>
+      <description>The metabolism of Ceritinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09071</drugbank-id>
+      <name>Tasimelteon</name>
+      <description>The metabolism of Tasimelteon can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09079</drugbank-id>
+      <name>Nintedanib</name>
+      <description>The metabolism of Nintedanib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09274</drugbank-id>
+      <name>Artesunate</name>
+      <description>The metabolism of Artesunate can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09299</drugbank-id>
+      <name>Tenofovir alafenamide</name>
+      <description>The metabolism of Tenofovir alafenamide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09330</drugbank-id>
+      <name>Osimertinib</name>
+      <description>The metabolism of Osimertinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11094</drugbank-id>
+      <name>Vitamin D</name>
+      <description>The metabolism of Vitamin D can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11730</drugbank-id>
+      <name>Ribociclib</name>
+      <description>The metabolism of Ribociclib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11952</drugbank-id>
+      <name>Duvelisib</name>
+      <description>The metabolism of Duvelisib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11963</drugbank-id>
+      <name>Dacomitinib</name>
+      <description>The metabolism of Dacomitinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12015</drugbank-id>
+      <name>Alpelisib</name>
+      <description>The metabolism of Alpelisib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12141</drugbank-id>
+      <name>Gilteritinib</name>
+      <description>The metabolism of Gilteritinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12515</drugbank-id>
+      <name>9-aminocamptothecin</name>
+      <description>The metabolism of 9-aminocamptothecin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12952</drugbank-id>
+      <name>Methylprednisone</name>
+      <description>The metabolism of Methylprednisone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14009</drugbank-id>
+      <name>Medical Cannabis</name>
+      <description>The metabolism of Medical Cannabis can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14126</drugbank-id>
+      <name>Tenofovir</name>
+      <description>The metabolism of Tenofovir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00549</drugbank-id>
+      <name>Zafirlukast</name>
+      <description>The metabolism of Zafirlukast can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15444</drugbank-id>
+      <name>Elexacaftor</name>
+      <description>The metabolism of Elexacaftor can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The metabolism of Warfarin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The metabolism of Acenocoumarol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00203</drugbank-id>
+      <name>Sildenafil</name>
+      <description>The metabolism of Sildenafil can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00204</drugbank-id>
+      <name>Dofetilide</name>
+      <description>The metabolism of Dofetilide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00216</drugbank-id>
+      <name>Eletriptan</name>
+      <description>The metabolism of Eletriptan can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00224</drugbank-id>
+      <name>Indinavir</name>
+      <description>The metabolism of Indinavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00227</drugbank-id>
+      <name>Lovastatin</name>
+      <description>The metabolism of Lovastatin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00247</drugbank-id>
+      <name>Methysergide</name>
+      <description>The metabolism of Methysergide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00277</drugbank-id>
+      <name>Theophylline</name>
+      <description>The metabolism of Theophylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00320</drugbank-id>
+      <name>Dihydroergotamine</name>
+      <description>The metabolism of Dihydroergotamine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00321</drugbank-id>
+      <name>Amitriptyline</name>
+      <description>The metabolism of Amitriptyline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00401</drugbank-id>
+      <name>Nisoldipine</name>
+      <description>The metabolism of Nisoldipine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00425</drugbank-id>
+      <name>Zolpidem</name>
+      <description>The metabolism of Zolpidem can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00454</drugbank-id>
+      <name>Meperidine</name>
+      <description>The metabolism of Meperidine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00458</drugbank-id>
+      <name>Imipramine</name>
+      <description>The metabolism of Imipramine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00496</drugbank-id>
+      <name>Darifenacin</name>
+      <description>The metabolism of Darifenacin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00540</drugbank-id>
+      <name>Nortriptyline</name>
+      <description>The metabolism of Nortriptyline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00575</drugbank-id>
+      <name>Clonidine</name>
+      <description>The metabolism of Clonidine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00593</drugbank-id>
+      <name>Ethosuximide</name>
+      <description>The metabolism of Ethosuximide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00637</drugbank-id>
+      <name>Astemizole</name>
+      <description>The metabolism of Astemizole can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00641</drugbank-id>
+      <name>Simvastatin</name>
+      <description>The metabolism of Simvastatin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00673</drugbank-id>
+      <name>Aprepitant</name>
+      <description>The metabolism of Aprepitant can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00696</drugbank-id>
+      <name>Ergotamine</name>
+      <description>The metabolism of Ergotamine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00700</drugbank-id>
+      <name>Eplerenone</name>
+      <description>The metabolism of Eplerenone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00813</drugbank-id>
+      <name>Fentanyl</name>
+      <description>The metabolism of Fentanyl can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00820</drugbank-id>
+      <name>Tadalafil</name>
+      <description>The metabolism of Tadalafil can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00862</drugbank-id>
+      <name>Vardenafil</name>
+      <description>The metabolism of Vardenafil can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00872</drugbank-id>
+      <name>Conivaptan</name>
+      <description>The metabolism of Conivaptan can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00924</drugbank-id>
+      <name>Cyclobenzaprine</name>
+      <description>The metabolism of Cyclobenzaprine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00932</drugbank-id>
+      <name>Tipranavir</name>
+      <description>The metabolism of Tipranavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The metabolism of Phenprocoumon can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01008</drugbank-id>
+      <name>Busulfan</name>
+      <description>The metabolism of Busulfan can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01023</drugbank-id>
+      <name>Felodipine</name>
+      <description>The metabolism of Felodipine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01100</drugbank-id>
+      <name>Pimozide</name>
+      <description>The metabolism of Pimozide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01118</drugbank-id>
+      <name>Amiodarone</name>
+      <description>The metabolism of Amiodarone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01142</drugbank-id>
+      <name>Doxepin</name>
+      <description>The metabolism of Doxepin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01190</drugbank-id>
+      <name>Clindamycin</name>
+      <description>The metabolism of Clindamycin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01200</drugbank-id>
+      <name>Bromocriptine</name>
+      <description>The metabolism of Bromocriptine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01222</drugbank-id>
+      <name>Budesonide</name>
+      <description>The metabolism of Budesonide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01223</drugbank-id>
+      <name>Aminophylline</name>
+      <description>The metabolism of Aminophylline can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01227</drugbank-id>
+      <name>Levacetylmethadol</name>
+      <description>The metabolism of Levacetylmethadol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01229</drugbank-id>
+      <name>Paclitaxel</name>
+      <description>The metabolism of Paclitaxel can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01232</drugbank-id>
+      <name>Saquinavir</name>
+      <description>The metabolism of Saquinavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01242</drugbank-id>
+      <name>Clomipramine</name>
+      <description>The metabolism of Clomipramine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01254</drugbank-id>
+      <name>Dasatinib</name>
+      <description>The metabolism of Dasatinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01264</drugbank-id>
+      <name>Darunavir</name>
+      <description>The metabolism of Darunavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01320</drugbank-id>
+      <name>Fosphenytoin</name>
+      <description>The metabolism of Fosphenytoin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01394</drugbank-id>
+      <name>Colchicine</name>
+      <description>The metabolism of Colchicine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01396</drugbank-id>
+      <name>Digitoxin</name>
+      <description>The metabolism of Digitoxin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The metabolism of Everolimus can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01601</drugbank-id>
+      <name>Lopinavir</name>
+      <description>The metabolism of Lopinavir can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The metabolism of 4-hydroxycoumarin can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04835</drugbank-id>
+      <name>Maraviroc</name>
+      <description>The metabolism of Maraviroc can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04855</drugbank-id>
+      <name>Dronedarone</name>
+      <description>The metabolism of Dronedarone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06212</drugbank-id>
+      <name>Tolvaptan</name>
+      <description>The metabolism of Tolvaptan can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06228</drugbank-id>
+      <name>Rivaroxaban</name>
+      <description>The metabolism of Rivaroxaban can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06237</drugbank-id>
+      <name>Avanafil</name>
+      <description>The metabolism of Avanafil can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06717</drugbank-id>
+      <name>Fosaprepitant</name>
+      <description>The metabolism of Fosaprepitant can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The metabolism of Ethyl biscoumacetate can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08815</drugbank-id>
+      <name>Lurasidone</name>
+      <description>The metabolism of Lurasidone can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08816</drugbank-id>
+      <name>Ticagrelor</name>
+      <description>The metabolism of Ticagrelor can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08827</drugbank-id>
+      <name>Lomitapide</name>
+      <description>The metabolism of Lomitapide can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08864</drugbank-id>
+      <name>Rilpivirine</name>
+      <description>The metabolism of Rilpivirine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09039</drugbank-id>
+      <name>Eliglustat</name>
+      <description>The metabolism of Eliglustat can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09049</drugbank-id>
+      <name>Naloxegol</name>
+      <description>The metabolism of Naloxegol can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09053</drugbank-id>
+      <name>Ibrutinib</name>
+      <description>The metabolism of Ibrutinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09289</drugbank-id>
+      <name>Tianeptine</name>
+      <description>The metabolism of Tianeptine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11633</drugbank-id>
+      <name>Isavuconazole</name>
+      <description>The metabolism of Isavuconazole can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11742</drugbank-id>
+      <name>Ebastine</name>
+      <description>The metabolism of Ebastine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11823</drugbank-id>
+      <name>Esketamine</name>
+      <description>The metabolism of Esketamine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12371</drugbank-id>
+      <name>Siponimod</name>
+      <description>The metabolism of Siponimod can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The metabolism of Fluindione can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The metabolism of Clorindione can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The metabolism of Diphenadione can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00451</drugbank-id>
+      <name>Levothyroxine</name>
+      <description>The metabolism of Levothyroxine can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00390</drugbank-id>
+      <name>Digoxin</name>
+      <description>The serum concentration of Digoxin can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00581</drugbank-id>
+      <name>Lactulose</name>
+      <description>The therapeutic efficacy of Lactulose can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11986</drugbank-id>
+      <name>Entrectinib</name>
+      <description>The metabolism of Entrectinib can be decreased when combined with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00620</drugbank-id>
+      <name>Triamcinolone</name>
+      <description>Miocamycin may decrease the excretion rate of Triamcinolone which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05521</drugbank-id>
+      <name>Telaprevir</name>
+      <description>The serum concentration of Telaprevir can be increased when it is combined with Miocamycin.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>16735908</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Miocamycin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1091024</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0002638</id>
+      <name>Cytochrome P450 3A4</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A34597</ref-id>
+            <pubmed-id>11020135</pubmed-id>
+            <citation>Kuper JI, D'Aprile M: Drug-Drug interactions of clinical significance in the treatment of patients with Mycobacterium avium complex disease. Clin Pharmacokinet. 2000 Sep;39(3):203-14. doi: 10.2165/00003088-200039030-00003.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>no</known-action>
+      <polypeptide id="P08684" source="Swiss-Prot">
+        <name>Cytochrome P450 3A4</name>
+        <general-function>Vitamin d3 25-hydroxylase activity</general-function>
+        <specific-function>Cytochromes P450 are a group of heme-thiolate monooxygenases. In liver microsomes, this enzyme is involved in an NADPH-dependent electron transport pathway. It performs a variety of oxidation reactions (e.g. caffeine 8-oxidation, omeprazole sulphoxidation, midazolam 1'-hydroxylation and midazolam 4-hydroxylation) of structurally unrelated compounds, including steroids, fatty acids, and xenobiotics. Acts as a 1,8-cineole 2-exo-monooxygenase. The enzyme also hydroxylates etoposide (PubMed:11159812). Catalyzes 4-beta-hydroxylation of cholesterol. May catalyze 25-hydroxylation of cholesterol in vitro (PubMed:21576599).</specific-function>
+        <gene-name>CYP3A4</gene-name>
+        <locus>7q21.1</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions>2-22</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.25</theoretical-pi>
+        <molecular-weight>57342.67</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CYP3A4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18907</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1337</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08684</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CP3A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,8-cineole 2-exo-monooxygenase</synonym>
+          <synonym>1.14.13.-</synonym>
+          <synonym>Albendazole monooxygenase</synonym>
+          <synonym>Albendazole sulfoxidase</synonym>
+          <synonym>Cholesterol 25-hydroxylase</synonym>
+          <synonym>CYP3A3</synonym>
+          <synonym>CYPIIIA3</synonym>
+          <synonym>CYPIIIA4</synonym>
+          <synonym>Cytochrome P450 3A3</synonym>
+          <synonym>Cytochrome P450 HLp</synonym>
+          <synonym>Cytochrome P450 NF-25</synonym>
+          <synonym>Cytochrome P450-PCN1</synonym>
+          <synonym>Nifedipine oxidase</synonym>
+          <synonym>Quinine 3-monooxygenase</synonym>
+          <synonym>Taurochenodeoxycholate 6-alpha-hydroxylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021936|Cytochrome P450 3A4
+MALIPDLAMETWLLLAVSLVLLYLYGTHSHGLFKKLGIPGPTPLPFLGNILSYHKGFCMF
+DMECHKKYGKVWGFYDGQQPVLAITDPDMIKTVLVKECYSVFTNRRPFGPVGFMKSAISI
+AEDEEWKRLRSLLSPTFTSGKLKEMVPIIAQYGDVLVRNLRREAETGKPVTLKDVFGAYS
+MDVITSTSFGVNIDSLNNPQDPFVENTKKLLRFDFLDPFFLSITVFPFLIPILEVLNICV
+FPREVTNFLRKSVKRMKESRLEDTQKHRVDFLQLMIDSQNSKETESHKALSDLELVAQSI
+IFIFAGYETTSSVLSFIMYELATHPDVQQKLQEEIDAVLPNKAPPTYDTVLQMEYLDMVV
+NETLRLFPIAMRLERVCKKDVEINGMFIPKGVVVMIPSYALHRDPKYWTEPEKFLPERFS
+KKNKDNIDPYIYTPFGSGPRNCIGMRFALMNMKLALIRVLQNFSFKPCKETQIPLKLSLG
+GLLQPEKPVVLKVESRDGTVSGA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021937|Cytochrome P450 3A4 (CYP3A4)
+ATGGCTCTCATCCCAGACTTGGCCATGGAAACCTGGCTTCTCCTGGCTGTCAGCCTGGTG
+CTCCTCTATCTATATGGAACCCATTCACATGGACTTTTTAAGAAGCTTGGAATTCCAGGG
+CCCACACCTCTGCCTTTTTTGGGAAATATTTTGTCCTACCATAAGGGCTTTTGTATGTTT
+GACATGGAATGTCATAAAAAGTATGGAAAAGTGTGGGGCTTTTATGATGGTCAACAGCCT
+GTGCTGGCTATCACAGATCCTGACATGATCAAAACAGTGCTAGTGAAAGAATGTTATTCT
+GTCTTCACAAACCGGAGGCCTTTTGGTCCAGTGGGATTTATGAAAAGTGCCATCTCTATA
+GCTGAGGATGAAGAATGGAAGAGATTACGATCATTGCTGTCTCCAACCTTCACCAGTGGA
+AAACTCAAGGAGATGGTCCCTATCATTGCCCAGTATGGAGATGTGTTGGTGAGAAATCTG
+AGGCGGGAAGCAGAGACAGGCAAGCCTGTCACCTTGAAAGACGTCTTTGGGGCCTACAGC
+ATGGATGTGATCACTAGCACATCATTTGGAGTGAACATCGACTCTCTCAACAATCCACAA
+GACCCCTTTGTGGAAAACACCAAGAAGCTTTTAAGATTTGATTTTTTGGATCCATTCTTT
+CTCTCAATAATCTTTCCATTCCTCATCCCAATTCTTGAAGTATTAAATATCTGTGTGTTT
+CCAAGAGAAGTTACAAATTTTTTAAGAAAATCTGTAAAAAGGATGAAAGAAAGTCGCCTC
+GAAGATACACAAAAGCACCGAGTGGATTTCCTTCAGCTGATGATTGACTCTCAGAATTCA
+AAAGAAACTGAGTCCCACAAAGCTCTGTCCGATCTGGAGCTCGTGGCCCAATCAATTATC
+TTTATTTTTGCTGGCTATGAAACCACGAGCAGTGTTCTCTCCTTCATTATGTATGAACTG
+GCCACTCACCCTGATGTCCAGCAGAAACTGCAGGAGGAAATTGATGCAGTTTTACCCAAT
+AAGGCACCACCCACCTATGATACTGTGCTACAGATGGAGTATCTTGACATGGTGGTGAAT
+GAAACGCTCAGATTATTCCCAATTGCTATGAGACTTGAGAGGGTCTGCAAAAAAGATGTT
+GAGATCAATGGGATGTTCATTCCCAAAGGGGTGGTGGTGATGATTCCAAGCTATGCTCTT
+CACCGTGACCCAAAGTACTGGACAGAGCCTGAGAAGTTCCTCCCTGAAAGATTCAGCAAG
+AAGAACAAGGACAACATAGATCCTTACATATACACACCCTTTGGAAGTGGACCCAGAAAC
+TGCATTGGCATGAGGTTTGCTCTCATGAACATGAAACTTGCTCTAATCAGAGTCCTTCAG
+AACTTCTCCTTCAAACCTTGTAAAGAAACACAGATCCCCCTGAAATTAAGCTTAGGAGGA
+CTTCTTCAACCAGAAAAACCCGTTGTTCTAAAGGTTGAGTCAAGGGATGGCACCGTAAGT
+GGAGCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00067</identifier>
+            <name>p450</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>albendazole monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aromatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>caffeine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>quinine 3-monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>taurochenodeoxycholate 6alpha-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>testosterone 6-beta-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D 24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D3 25-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alkaloid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>androgen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcitriol biosynthetic process from calciol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>exogenous drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heterocycle metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monoterpenoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidative demethylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength>unknown</inhibition-strength>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

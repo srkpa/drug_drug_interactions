@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03776</drugbank-id>
+  <drugbank-id>EXPT00138</drugbank-id>
+  <name>Lactaldehyde</name>
+  <description/>
+  <cas-number>598-35-6</cas-number>
+  <unii/>
+  <average-mass>74.0785</average-mass>
+  <monoisotopic-mass>74.036779436</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as alpha-hydroxyaldehydes. These are organic compounds containing an aldehyde substituted with a hydroxyl group on the adjacent carbon.</description>
+    <direct-parent>Alpha-hydroxyaldehydes</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbonyl compounds</subclass>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Short-chain aldehydes</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Alpha-hydroxyaldehyde</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Short-chain aldehyde</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">(2s)-2-Hydroxypropanal</synonym>
+    <synonym language="english" coder="">(S)-lactaldehyde</synonym>
+    <synonym language="english" coder="">L-2-Hydroxypropionaldehyde</synonym>
+    <synonym language="english" coder="">L-lactaldehyde</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.95</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.58e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-0.63</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-hydroxypropanal</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>L-lactaldehyde</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>74.0785</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>74.036779436</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H]C(=O)[C@H](C)O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C3H6O2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C3H6O2/c1-3(5)2-4/h2-3,5H,1H3/t3-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>BSABBBMNWQWLLU-VKHMYHEASA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>37.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>17.91</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>7.16</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>14.01</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>18041</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>439231</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506172</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00424</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>388368</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Lactaldehyde</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000559</smpdb-id>
+      <name>Pyruvate Kinase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000060</smpdb-id>
+      <name>Pyruvate Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000196</smpdb-id>
+      <name>Leigh Syndrome</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000212</smpdb-id>
+      <name>Pyruvate Dehydrogenase Complex Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000334</smpdb-id>
+      <name>Pyruvate Decarboxylase E1 Component Deficiency (PDHE1 Deficiency)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000558</smpdb-id>
+      <name>Primary Hyperoxaluria II, PH2</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00143</drugbank-id>
+          <name>Glutathione</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01345</drugbank-id>
+          <name>Potassium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01819</drugbank-id>
+          <name>Phosphoenolpyruvate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01839</drugbank-id>
+          <name>Propylene glycol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02897</drugbank-id>
+          <name>Acetylphosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03066</drugbank-id>
+          <name>D-Lactic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03776</drugbank-id>
+          <name>Lactaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04524</drugbank-id>
+          <name>Malonyl-CoA</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>Q6ZMR3</uniprot-id>
+        <uniprot-id>P30613</uniprot-id>
+        <uniprot-id>P35558</uniprot-id>
+        <uniprot-id>P40925</uniprot-id>
+        <uniprot-id>P23368</uniprot-id>
+        <uniprot-id>Q86WU2</uniprot-id>
+        <uniprot-id>Q16775</uniprot-id>
+        <uniprot-id>Q04760</uniprot-id>
+        <uniprot-id>Q9UBQ7</uniprot-id>
+        <uniprot-id>P15121</uniprot-id>
+        <uniprot-id>P48163</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P10515</uniprot-id>
+        <uniprot-id>Q13085</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>Q8WYK0</uniprot-id>
+        <uniprot-id>P07311</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>P08559</uniprot-id>
+        <uniprot-id>P11177</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-08-29" updated="2020-01-02">
+  <drugbank-id primary="true">DB01584</drugbank-id>
+  <name>Thyroglobulin</name>
+  <description>Thyroglobulin (also known as Tg) is an enzyme thyroid hormone used by the thyroid gland to produce the thyroid hormones thyroxine (T4) and triiodothyronine (T3). The active form of thyroxine, triiodothyronine, is produced both within the thyroid gland and periphery by 5'-deiodinase. Patients with Hashimoto's thyroiditis or Graves' disease, frequently develop antibodies against thyroglobulin. Thyroglobulin is used to treat hypothyroidism.</description>
+  <cas-number>9010-34-8</cas-number>
+  <unii>NN2P9VPL7M</unii>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>withdrawn</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A2516</ref-id>
+        <pubmed-id>10401666</pubmed-id>
+        <citation>Suzuki K, Mori A, Lavaroni S, Ulianich L, Miyagi E, Saito J, Nakazato M, Pietrarelli M, Shafran N, Grassadonia A, Kim WB, Consiglio E, Formisano S, Kohn LD: Thyroglobulin regulates follicular function and heterogeneity by suppressing thyroid-specific gene expression. Biochimie. 1999 Apr;81(4):329-40.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Louis Scarano, H. Glenn Corkins, "Process for the production of thyroglobulin." U.S. Patent US5099001, issued July, 1989.</synthesis-reference>
+  <indication>For the treatment of hypothyroidism (deficiency in the production of thyroid hormone).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="german" coder="inn">Thyroglobulin</synonym>
+    <synonym language="french" coder="inn">Thyroglobuline</synonym>
+    <synonym language="latin" coder="inn">Thyroglobulinum</synonym>
+    <synonym language="spanish" coder="inn">Tiroglobulina</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Globulins</category>
+      <mesh-id>D005916</mesh-id>
+    </category>
+    <category>
+      <category>Glycoconjugates</category>
+      <mesh-id>D006001</mesh-id>
+    </category>
+    <category>
+      <category>Glycoproteins</category>
+      <mesh-id>D006023</mesh-id>
+    </category>
+    <category>
+      <category>Iodoproteins</category>
+      <mesh-id>D007467</mesh-id>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB01584.pdf?1453411030</msds>
+  <patents>
+    <patent>
+      <number>3368940</number>
+      <country>United States</country>
+      <approved>1964-04-20</approved>
+      <expires>1984-04-20</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>5099001</number>
+      <country>United States</country>
+      <approved>1992-03-24</approved>
+      <expires>2009-12-28</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences>
+    <sequence format="FASTA">&gt;sp|P01266|THYG_HUMAN Thyroglobulin OS=Homo sapiens GN=TG PE=1 SV=5
+MALVLEIFTLLASICWVSANIFEYQVDAQPLRPCELQRETAFLKQADYVPQCAEDGSFQT
+VQCQNDGRSCWCVGANGSEVLGSRQPGRPVACLSFCQLQKQQILLSGYINSTDTSYLPQC
+QDSGDYAPVQCDVQQVQCWCVDAEGMEVYGTRQLGRPKRCPRSCEIRNRRLLHGVGDKSP
+PQCSAEGEFMPVQCKFVNTTDMMIFDLVHSYNRFPDAFVTFSSFQRRFPEVSGYCHCADS
+QGRELAETGLELLLDEIYDTIFAGLDLPSTFTETTLYRILQRRFLAVQSVISGRFRCPTK
+CEVERFTATSFGHPYVPSCRRNGDYQAVQCQTEGPCWCVDAQGKEMHGTRQQGEPPSCAE
+GQSCASERQQALSRLYFGTSGYFSQHDLFSSPEKRWASPRVARFATSCPPTIKELFVDSG
+LLRPMVEGQSQQFSVSENLLKEAIRAIFPSRGLARLALQFTTNPKRLQQNLFGGKFLVNV
+GQFNLSGALGTRGTFNFSQFFQQLGLASFLNGGRQEDLAKPLSVGLDSNSSTGTPEAAKK
+DGTMNKPTVGSFGFEINLQENQNALKFLASLLELPEFLLFLQHAISVPEDVARDLGDVME
+TVLSSQTCEQTPERLFVPSCTTEGSYEDVQCFSGECWCVNSWGKELPGSRVRGGQPRCPT
+DCEKQRARMQSLMGSQPAGSTLFVPACTSEGHFLPVQCFNSECYCVDAEGQAIPGTRSAI
+GKPKKCPTPCQLQSEQAFLRTVQALLSNSSMLPTLSDTYIPQCSTDGQWRQVQCNGPPEQ
+VFELYQRWEAQNKGQDLTPAKLLVKIMSYREAASGNFSLFIQSLYEAGQQDVFPVLSQYP
+SLQDVPLAALEGKRPQPRENILLEPYLFWQILNGQLSQYPGSYSDFSTPLAHFDLRNCWC
+VDEAGQELEGMRSEPSKLPTCPGSCEEAKLRVLQFIRETEEIVSASNSSRFPLGESFLVA
+KGIRLRNEDLGLPPLFPPREAFAEQFLRGSDYAIRLAAQSTLSFYQRRRFSPDDSAGASA
+LLRSGPYMPQCDAFGSWEPVQCHAGTGHCWCVDEKGGFIPGSLTARSLQIPQCPTTCEKS
+RTSGLLSSWKQARSQENPSPKDLFVPACLETGEYARLQASGAGTWCVDPASGEELRPGSS
+SSAQCPSLCNVLKSGVLSRRVSPGYVPACRAEDGGFSPVQCDQAQGSCWCVMDSGEEVPG
+TRVTGGQPACESPRCPLPFNASEVVGGTILCETISGPTGSAMQQCQLLCRQGSWSVFPPG
+PLICSLESGRWESQLPQPRACQRPQLWQTIQTQGHFQLQLPPGKMCSADYADLLQTFQVF
+ILDELTARGFCQIQVKTFGTLVSIPVCNNSSVQVGCLTRERLGVNVTWKSRLEDIPVASL
+PDLHDIERALVGKDLLGRFTDLIQSGSFQLHLDSKTFPAETIRFLQGDHFGTSPRTWFGC
+SEGFYQVLTSEASQDGLGCVKCPEGSYSQDEECIPCPVGFYQEQAGSLACVPCPVGRTTI
+SAGAFSQTHCVTDCQRNEAGLQCDQNGQYRASQKDRGSGKAFCVDGEGRRLPWWETEAPL
+EDSQCLMMQKFEKVPESKVIFDANAPVAVRSKVPDSEFPVMQCLTDCTEDEACSFFTVST
+TEPEISCDFYAWTSDNVACMTSDQKRDALGNSKATSFGSLRCQVKVRSHGQDSPAVYLKK
+GQGSTTTLQKRFEPTGFQNMLSGLYNPIVFSASGANLTDAHLFCLLACDRDLCCDGFVLT
+QVQGGAIICGLLSSPSVLLCNVKDWMDPSEAWANATCPGVTYDQESHQVILRLGDQEFIK
+SLTPLEGTQDTFTNFQQVYLWKDSDMGSRPESMGCRKDTVPRPASPTEAGLTTELFSPVD
+LNQVIVNGNQSLSSQKHWLFKHLFSAQQANLWCLSRCVQEHSFCQLAEITESASLYFTCT
+LYPEAQVCDDIMESNAQGCRLILPQMPKALFRKKVILEDKVKNFYTRLPFQKLMGISIRN
+KVPMSEKSISNGFFECERRCDADPCCTGFGFLNVSQLKGGEVTCLTLNSLGIQMCSEENG
+GAWRILDCGSPDIEVHTYPFGWYQKPIAQNNAPSFCPLVVLPSLTEKVSLDSWQSLALSS
+VVVDPSIRHFDVAHVSTAATSNFSAVRDLCLSECSQHEACLITTLQTQPGAVRCMFYADT
+QSCTHSLQGQNCRLLLREEATHIYRKPGISLLSYEASVPSVPISTHGRLLGRSQAIQVGT
+SWKQVDQFLGVPYAAPPLAERRFQAPEPLNWTGSWDASKPRASCWQPGTRTSTSPGVSED
+CLYLNVFIPQNVAPNASVLVFFHNTMDREESEGWPAIDGSFLAAVGNLIVVTASYRVGVF
+GFLSSGSGEVSGNWGLLDQVAALTWVQTHIRGFGGDPRRVSLAADRGGADVASIHLLTAR
+ATNSQLFRRAVLMGGSALSPAAVISHERAQQQAIALAKEVSCPMSSSQEVVSCLRQKPAN
+VLNDAQTKLLAVSGPFHYWGPVIDGHFLREPPARALKRSLWVEVDLLIGSSQDDGLINRA
+KAVKQFEESRGRTSSKTAFYQALQNSLGGEDSDARVEAAATWYYSLEHSTDDYASFSRAL
+ENATRDYFIICPIIDMASAWAKRARGNVFMYHAPENYGHGSLELLADVQFALGLPFYPAY
+EGQFSLEEKSLSLKIMQYFSHFIRSGNPNYPYEFSRKVPTFATPWPDFVPRAGGENYKEF
+SELLPNRQGLKKADCSFWSKYISSLKTSADGAKGGQSAESEEEELTAGSGLREDLLSLQE
+PGSKTYSK</sequence>
+  </sequences>
+  <experimental-properties>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>660.0</value>
+      <source/>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507834</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA164754910</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>UniProtKB</resource>
+      <identifier>P01266</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Thyroglobulin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201650</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/international/thyroglobulin.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

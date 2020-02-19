@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2017-06-23" updated="2019-12-04">
+  <drugbank-id primary="true">DB13635</drugbank-id>
+  <name>Tiracizine</name>
+  <description/>
+  <cas-number>83275-56-3</cas-number>
+  <unii>9UUO2T61K7</unii>
+  <average-mass>367.449</average-mass>
+  <monoisotopic-mass>367.189591677</monoisotopic-mass>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as dibenzazepines. These are compounds with two benzene rings connected by an azepine ring. Azepine is an unsaturated seven-member heterocycle with one nitrogen atom replacing a carbon atom.</description>
+    <direct-parent>Dibenzazepines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Benzazepines</class>
+    <subclass>Dibenzazepines</subclass>
+    <alternative-parent>Alpha amino acids and derivatives</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Azepines</alternative-parent>
+    <alternative-parent>Benzenoids</alternative-parent>
+    <alternative-parent>Carbamate esters</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic carbonic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Tertiary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Trialkylamines</alternative-parent>
+    <substituent>Alpha-amino acid or derivatives</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azepine</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carbamic acid ester</substituent>
+    <substituent>Carbonic acid derivative</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Dibenzazepine</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Tertiary aliphatic amine</substituent>
+    <substituent>Tertiary amine</substituent>
+    <substituent>Tertiary carboxylic acid amide</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="spanish" coder="inn">Tiracizina</synonym>
+    <synonym language="english" coder="inn">Tiracizine</synonym>
+    <synonym language="latin" coder="inn">Tiracizinum</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Antiarrhythmic agents</category>
+      <mesh-id>D000889</mesh-id>
+    </category>
+    <category>
+      <category>Cardiac Therapy</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cardiovascular Agents</category>
+      <mesh-id>D002317</mesh-id>
+    </category>
+    <category>
+      <category>Central Nervous System Agents</category>
+      <mesh-id>D002491</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes>
+    <atc-code code="C01EB11">
+      <level code="C01EB">Other cardiac preparations</level>
+      <level code="C01E">OTHER CARDIAC PREPARATIONS</level>
+      <level code="C01">CARDIAC THERAPY</level>
+      <level code="C">CARDIOVASCULAR SYSTEM</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00187</drugbank-id>
+      <name>Esmolol</name>
+      <description>Esmolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00195</drugbank-id>
+      <name>Betaxolol</name>
+      <description>Betaxolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00204</drugbank-id>
+      <name>Dofetilide</name>
+      <description>Dofetilide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00222</drugbank-id>
+      <name>Glimepiride</name>
+      <description>Glimepiride may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00230</drugbank-id>
+      <name>Pregabalin</name>
+      <description>Pregabalin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00264</drugbank-id>
+      <name>Metoprolol</name>
+      <description>Metoprolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00270</drugbank-id>
+      <name>Isradipine</name>
+      <description>Isradipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00280</drugbank-id>
+      <name>Disopyramide</name>
+      <description>Disopyramide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00281</drugbank-id>
+      <name>Lidocaine</name>
+      <description>Lidocaine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00308</drugbank-id>
+      <name>Ibutilide</name>
+      <description>Ibutilide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00335</drugbank-id>
+      <name>Atenolol</name>
+      <description>Atenolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00343</drugbank-id>
+      <name>Diltiazem</name>
+      <description>Diltiazem may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00347</drugbank-id>
+      <name>Trimethadione</name>
+      <description>Trimethadione may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00373</drugbank-id>
+      <name>Timolol</name>
+      <description>Timolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00379</drugbank-id>
+      <name>Mexiletine</name>
+      <description>Mexiletine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00381</drugbank-id>
+      <name>Amlodipine</name>
+      <description>Amlodipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00390</drugbank-id>
+      <name>Digoxin</name>
+      <description>Digoxin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00393</drugbank-id>
+      <name>Nimodipine</name>
+      <description>Nimodipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00401</drugbank-id>
+      <name>Nisoldipine</name>
+      <description>Nisoldipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00424</drugbank-id>
+      <name>Hyoscyamine</name>
+      <description>Hyoscyamine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00489</drugbank-id>
+      <name>Sotalol</name>
+      <description>Sotalol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00511</drugbank-id>
+      <name>Acetyldigitoxin</name>
+      <description>Acetyldigitoxin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00528</drugbank-id>
+      <name>Lercanidipine</name>
+      <description>Lercanidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00555</drugbank-id>
+      <name>Lamotrigine</name>
+      <description>Lamotrigine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00568</drugbank-id>
+      <name>Cinnarizine</name>
+      <description>Cinnarizine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00571</drugbank-id>
+      <name>Propranolol</name>
+      <description>Propranolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00572</drugbank-id>
+      <name>Atropine</name>
+      <description>Atropine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00593</drugbank-id>
+      <name>Ethosuximide</name>
+      <description>Ethosuximide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00622</drugbank-id>
+      <name>Nicardipine</name>
+      <description>Nicardipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00640</drugbank-id>
+      <name>Adenosine</name>
+      <description>Adenosine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00653</drugbank-id>
+      <name>Magnesium sulfate</name>
+      <description>Magnesium sulfate may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00661</drugbank-id>
+      <name>Verapamil</name>
+      <description>Verapamil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00678</drugbank-id>
+      <name>Losartan</name>
+      <description>Losartan may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00680</drugbank-id>
+      <name>Moricizine</name>
+      <description>Moricizine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00825</drugbank-id>
+      <name>Levomenthol</name>
+      <description>Levomenthol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00836</drugbank-id>
+      <name>Loperamide</name>
+      <description>Loperamide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00866</drugbank-id>
+      <name>Alprenolol</name>
+      <description>Alprenolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00908</drugbank-id>
+      <name>Quinidine</name>
+      <description>Quinidine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00909</drugbank-id>
+      <name>Zonisamide</name>
+      <description>Zonisamide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00922</drugbank-id>
+      <name>Levosimendan</name>
+      <description>Levosimendan may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01023</drugbank-id>
+      <name>Felodipine</name>
+      <description>Felodipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01035</drugbank-id>
+      <name>Procainamide</name>
+      <description>Procainamide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01054</drugbank-id>
+      <name>Nitrendipine</name>
+      <description>Nitrendipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01056</drugbank-id>
+      <name>Tocainide</name>
+      <description>Tocainide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01074</drugbank-id>
+      <name>Perhexiline</name>
+      <description>Perhexiline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01078</drugbank-id>
+      <name>Deslanoside</name>
+      <description>Deslanoside may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01115</drugbank-id>
+      <name>Nifedipine</name>
+      <description>Nifedipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01118</drugbank-id>
+      <name>Amiodarone</name>
+      <description>Amiodarone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01136</drugbank-id>
+      <name>Carvedilol</name>
+      <description>Carvedilol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01158</drugbank-id>
+      <name>Bretylium</name>
+      <description>Bretylium may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01182</drugbank-id>
+      <name>Propafenone</name>
+      <description>Propafenone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01193</drugbank-id>
+      <name>Acebutolol</name>
+      <description>Acebutolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01195</drugbank-id>
+      <name>Flecainide</name>
+      <description>Flecainide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01203</drugbank-id>
+      <name>Nadolol</name>
+      <description>Nadolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01228</drugbank-id>
+      <name>Encainide</name>
+      <description>Encainide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01244</drugbank-id>
+      <name>Bepridil</name>
+      <description>Bepridil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01297</drugbank-id>
+      <name>Practolol</name>
+      <description>Practolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01388</drugbank-id>
+      <name>Mibefradil</name>
+      <description>Mibefradil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01396</drugbank-id>
+      <name>Digitoxin</name>
+      <description>Digitoxin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01426</drugbank-id>
+      <name>Ajmaline</name>
+      <description>Ajmaline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01429</drugbank-id>
+      <name>Aprindine</name>
+      <description>Aprindine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01580</drugbank-id>
+      <name>Oxprenolol</name>
+      <description>Oxprenolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03322</drugbank-id>
+      <name>Dexpropranolol</name>
+      <description>Dexpropranolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04743</drugbank-id>
+      <name>Nimesulide</name>
+      <description>Nimesulide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04825</drugbank-id>
+      <name>Prenylamine</name>
+      <description>Prenylamine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04838</drugbank-id>
+      <name>Cyclandelate</name>
+      <description>Cyclandelate may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04841</drugbank-id>
+      <name>Flunarizine</name>
+      <description>Flunarizine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04842</drugbank-id>
+      <name>Fluspirilene</name>
+      <description>Fluspirilene may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04846</drugbank-id>
+      <name>Celiprolol</name>
+      <description>Celiprolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04855</drugbank-id>
+      <name>Dronedarone</name>
+      <description>Dronedarone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04861</drugbank-id>
+      <name>Nebivolol</name>
+      <description>Nebivolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04920</drugbank-id>
+      <name>Clevidipine</name>
+      <description>Clevidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04957</drugbank-id>
+      <name>Azimilide</name>
+      <description>Azimilide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05246</drugbank-id>
+      <name>Methsuximide</name>
+      <description>Methsuximide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05885</drugbank-id>
+      <name>Seletracetam</name>
+      <description>Seletracetam may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06152</drugbank-id>
+      <name>Nylidrin</name>
+      <description>Nylidrin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06200</drugbank-id>
+      <name>Tedisamil</name>
+      <description>Tedisamil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06217</drugbank-id>
+      <name>Vernakalant</name>
+      <description>Vernakalant may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06283</drugbank-id>
+      <name>Ziconotide</name>
+      <description>Ziconotide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06446</drugbank-id>
+      <name>Dotarizine</name>
+      <description>Dotarizine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06468</drugbank-id>
+      <name>Cariporide</name>
+      <description>Cariporide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06694</drugbank-id>
+      <name>Xylometazoline</name>
+      <description>Xylometazoline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06712</drugbank-id>
+      <name>Nilvadipine</name>
+      <description>Nilvadipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06727</drugbank-id>
+      <name>Sparteine</name>
+      <description>Sparteine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07615</drugbank-id>
+      <name>Tranilast</name>
+      <description>Tranilast may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08162</drugbank-id>
+      <name>Fasudil</name>
+      <description>Fasudil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08808</drugbank-id>
+      <name>Bupranolol</name>
+      <description>Bupranolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08838</drugbank-id>
+      <name>Agmatine</name>
+      <description>Agmatine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08952</drugbank-id>
+      <name>Indenolol</name>
+      <description>Indenolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08980</drugbank-id>
+      <name>Fendiline</name>
+      <description>Fendiline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08992</drugbank-id>
+      <name>Eperisone</name>
+      <description>Eperisone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09089</drugbank-id>
+      <name>Trimebutine</name>
+      <description>Trimebutine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09090</drugbank-id>
+      <name>Pinaverium</name>
+      <description>Pinaverium may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09216</drugbank-id>
+      <name>Tolfenamic acid</name>
+      <description>Tolfenamic acid may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09220</drugbank-id>
+      <name>Nicorandil</name>
+      <description>Nicorandil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09224</drugbank-id>
+      <name>Melperone</name>
+      <description>Melperone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09227</drugbank-id>
+      <name>Barnidipine</name>
+      <description>Barnidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09229</drugbank-id>
+      <name>Aranidipine</name>
+      <description>Aranidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09230</drugbank-id>
+      <name>Azelnidipine</name>
+      <description>Azelnidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09231</drugbank-id>
+      <name>Benidipine</name>
+      <description>Benidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09232</drugbank-id>
+      <name>Cilnidipine</name>
+      <description>Cilnidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09234</drugbank-id>
+      <name>Darodipine</name>
+      <description>Darodipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09235</drugbank-id>
+      <name>Efonidipine</name>
+      <description>Efonidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09236</drugbank-id>
+      <name>Lacidipine</name>
+      <description>Lacidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09238</drugbank-id>
+      <name>Manidipine</name>
+      <description>Manidipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09239</drugbank-id>
+      <name>Niguldipine</name>
+      <description>Niguldipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09240</drugbank-id>
+      <name>Niludipine</name>
+      <description>Niludipine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11699</drugbank-id>
+      <name>Tropisetron</name>
+      <description>Tropisetron may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11770</drugbank-id>
+      <name>Talinolol</name>
+      <description>Talinolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11785</drugbank-id>
+      <name>Anisodamine</name>
+      <description>Anisodamine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11960</drugbank-id>
+      <name>Carboxyamidotriazole</name>
+      <description>Carboxyamidotriazole may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12092</drugbank-id>
+      <name>Naftopidil</name>
+      <description>Naftopidil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12093</drugbank-id>
+      <name>Tetrahydropalmatine</name>
+      <description>Tetrahydropalmatine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12131</drugbank-id>
+      <name>Vinpocetine</name>
+      <description>Vinpocetine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12212</drugbank-id>
+      <name>Landiolol</name>
+      <description>Landiolol may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12286</drugbank-id>
+      <name>Simendan</name>
+      <description>Simendan may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12704</drugbank-id>
+      <name>Spiradoline</name>
+      <description>Spiradoline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12712</drugbank-id>
+      <name>Pilsicainide</name>
+      <description>Pilsicainide may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12766</drugbank-id>
+      <name>Cicletanine</name>
+      <description>Cicletanine may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12923</drugbank-id>
+      <name>Gallopamil</name>
+      <description>Gallopamil may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13240</drugbank-id>
+      <name>Cymarin</name>
+      <description>Cymarin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13358</drugbank-id>
+      <name>Cibenzoline</name>
+      <description>Cibenzoline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13401</drugbank-id>
+      <name>Metildigoxin</name>
+      <description>Metildigoxin may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13488</drugbank-id>
+      <name>Bencyclane</name>
+      <description>Bencyclane may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13500</drugbank-id>
+      <name>Otilonium</name>
+      <description>Otilonium may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13546</drugbank-id>
+      <name>Nizofenone</name>
+      <description>Nizofenone may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13555</drugbank-id>
+      <name>Prajmaline</name>
+      <description>Prajmaline may increase the arrhythmogenic activities of Tiracizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00521</drugbank-id>
+      <name>Carteolol</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Carteolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01214</drugbank-id>
+      <name>Metipranolol</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Metipranolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13645</drugbank-id>
+      <name>Ethacizine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Ethacizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13651</drugbank-id>
+      <name>Lorajmine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Lorajmine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13652</drugbank-id>
+      <name>Bunaftine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Bunaftine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13653</drugbank-id>
+      <name>Lorcainide</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Lorcainide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13691</drugbank-id>
+      <name>Acetyldigoxin</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Acetyldigoxin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13718</drugbank-id>
+      <name>Hydroquinine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Hydroquinine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13725</drugbank-id>
+      <name>Terodiline</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Terodiline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13746</drugbank-id>
+      <name>Bioallethrin</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Bioallethrin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13766</drugbank-id>
+      <name>Lidoflazine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Lidoflazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13775</drugbank-id>
+      <name>Tertatolol</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Tertatolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13791</drugbank-id>
+      <name>Penfluridol</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Penfluridol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13835</drugbank-id>
+      <name>Caroverine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Caroverine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13863</drugbank-id>
+      <name>Fosfructose</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Fosfructose.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13950</drugbank-id>
+      <name>WIN 55212-2</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of WIN 55212-2.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13961</drugbank-id>
+      <name>Fish oil</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Fish oil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14063</drugbank-id>
+      <name>Dexverapamil</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Dexverapamil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14064</drugbank-id>
+      <name>Emopamil</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Emopamil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14065</drugbank-id>
+      <name>Lomerizine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Lomerizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14066</drugbank-id>
+      <name>Tetrandrine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Tetrandrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14068</drugbank-id>
+      <name>Dexniguldipine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Dexniguldipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14207</drugbank-id>
+      <name>Fosinoprilat</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Fosinoprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15300</drugbank-id>
+      <name>Hydroquinidine</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of Hydroquinidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15366</drugbank-id>
+      <name>SOR-C13</name>
+      <description>Tiracizine may increase the arrhythmogenic activities of SOR-C13.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00612</drugbank-id>
+      <name>Bisoprolol</name>
+      <description>The therapeutic efficacy of Tiracizine can be increased when used in combination with Bisoprolol.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.76</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.01e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>ethyl N-{2-[2-(dimethylamino)acetyl]-2-azatricyclo[9.4.0.0^{3,8}]pentadeca-1(15),3(8),4,6,11,13-hexaen-5-yl}carbamate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S)-2-amino-4-[(2-ethanimidamidoethyl)sulfanyl]butanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>367.449</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>367.189591677</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCOC(=O)NC1=CC2=C(CCC3=CC=CC=C3N2C(=O)CN(C)C)C=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C21H25N3O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C21H25N3O3/c1-4-27-21(26)22-17-12-11-16-10-9-15-7-5-6-8-18(15)24(19(16)13-17)20(25)14-23(2)3/h5-8,11-13H,4,9-10,14H2,1-3H3,(H,22,26)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>KJAMZCVTJDTESW-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>61.88</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>106.76</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>40.26</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>13.05</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>7.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>135549</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>64392</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50146373</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Tiracizine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1625260</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

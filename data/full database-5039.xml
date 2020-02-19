@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05429</drugbank-id>
+  <name>CAT-213</name>
+  <description>CAT-213 is a fully human anti-eotaxin monoclonal antibody with potential in the treatment of allergic disorders, has moved into pre-clinical development. It is developed by MedImmune for the treatment of Allergic Rhinitis.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3473</ref-id>
+        <pubmed-id>16973884</pubmed-id>
+        <citation>Main S, Handy R, Wilton J, Smith S, Williams L, Fou LD, Andrews J, Conroy LA, May R, Anderson I, Vaughan TJ: A potent human anti-eotaxin1 antibody, CAT-213: isolation by phage display and in vitro and in vivo efficacy. J Pharmacol Exp Ther. 2006 Dec;319(3):1395-404. Epub 2006 Sep 14.</citation>
+      </article>
+      <article>
+        <ref-id>A3474</ref-id>
+        <pubmed-id>15001461</pubmed-id>
+        <citation>Dent G, Hadjicharalambous C, Yoshikawa T, Handy RL, Powell J, Anderson IK, Louis R, Davies DE, Djukanovic R: Contribution of eotaxin-1 to eosinophil chemotactic activity of moderate and severe asthmatic sputum. Am J Respir Crit Care Med. 2004 May 15;169(10):1110-7. Epub 2004 Mar 4.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in allergic rhinitis.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>CAT-213 targets eotaxin, a member of the chemokine family of proteins that acts as messenger molecules between the cells of the immune system. During an allergic response the levels of eotaxin1 are elevated. This attracts eosinophils, a type of white blood cell, into tissues where they can degranulate causing tissue damage that occurs in a variety of allergic disorders.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910132</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003389</id>
+      <name>Eotaxin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P51671" source="Swiss-Prot">
+        <name>Eotaxin</name>
+        <general-function>Chemokine activity</general-function>
+        <specific-function>In response to the presence of allergens, this protein directly promotes the accumulation of eosinophils, a prominent feature of allergic inflammatory reactions. Binds to CCR3.</specific-function>
+        <gene-name>CCL11</gene-name>
+        <locus>17q21.1-q21.2</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-23</signal-regions>
+        <theoretical-pi>10.65</theoretical-pi>
+        <molecular-weight>10731.7</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10610</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CCL11</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U46573</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P51671</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CCL11_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>C-C motif chemokine 11</synonym>
+          <synonym>Eosinophil chemotactic protein</synonym>
+          <synonym>SCYA11</synonym>
+          <synonym>Small-inducible cytokine A11</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012371|Eotaxin
+MKVSAALLWLLLIAAAFSPQGLAGPASVPTTCCFNLANRKIPLQRLESYRRITSGKCPQK
+AVIFKTKLAKDICADPKKKWVQDSMKYLDQKSPTPKP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012372|Eotaxin (CCL11)
+ATGAAGGTCTCCGCAGCACTTCTGTGGCTGCTGCTCATAGCAGCTGCCTTCAGCCCCCAG
+GGGCTCGCTGGGCCAGCTTCTGTCCCAACCACCTGCTGCTTTAACCTGGCCAATAGGAAG
+ATACCCCTTCAGCGACTAGAGAGCTACAGGAGAATCACCAGTGGCAAATGTCCCCAGAAA
+GCTGTGATCTTCAAGACCAAACTGGCCAAGGATATCTGTGCCGACCCCAAGAAGAAGTGG
+GTGCAGGATTCCATGAAGTATCTGGACCAAAAATCTCCAACTCCAAAGCCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00048</identifier>
+            <name>IL8</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>CCR chemokine receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chemokine activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>actin filament organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>branching involved in mammary gland duct morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interferon-gamma</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interleukin-1</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to tumor necrosis factor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chronic inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytoskeleton organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>eosinophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lymphocyte chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mammary duct terminal end bud growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocyte chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of actin filament polymerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of endothelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of GTPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to interleukin-13</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to interleukin-4</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

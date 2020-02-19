@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05484</drugbank-id>
+  <name>MDX-018</name>
+  <description>MDX-018, also known as HuMax-Inflam, is a fully human antibody that is directed to IL-8 (interleukin-8) and may have potential application in oncology and inflammation. Trials will initially focus on studies to treat glioblastoma, a cancer of the central nervous system. Other possible indications include chronic obstructive pulmonary disease (COPD) and pustular dermatoses. In pre-clinical studies, HuMax-Inflam has been shown to inhibit tumor growth in tumor models using primary human tumors in immunodeficient mice. HuMax-Inflam was also effective in reducing disease activity in palmoplantar pustulosis patients in a clinical study.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in autoimmune diseases and inflammatory disorders (unspecified).</indication>
+  <pharmacodynamics>MDX-018 is a fully human anti-inflammatory antibody for the treatment of Autoimmune Disease. The drug inhibits tumour growth by targetting interleukin-8 (IL-8), a major inflammation mediator. It reduces disease activity in palmoplantar pustulosis patients and is also effective in the treatment of glioblastoma, which has a very low survival rate.</pharmacodynamics>
+  <mechanism-of-action>he drug inhibits tumour growth by targetting interleukin-8 (IL-8), a major inflammation mediator.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>HuMax-Inflam</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910166</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000961</id>
+      <name>Interleukin-8</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P10145" source="Swiss-Prot">
+        <name>Interleukin-8</name>
+        <general-function>Interleukin-8 receptor binding</general-function>
+        <specific-function>IL-8 is a chemotactic factor that attracts neutrophils, basophils, and T-cells, but not monocytes. It is also involved in neutrophil activation. It is released from several cell types in response to an inflammatory stimulus. IL-8(6-77) has a 5-10-fold higher activity on neutrophil activation, IL-8(5-77) has increased activity on neutrophil activation and IL-8(7-77) has a higher affinity to receptors CXCR1 and CXCR2 as compared to IL-8(1-77), respectively.</specific-function>
+        <gene-name>CXCL8</gene-name>
+        <locus>4q13-q21</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-20</signal-regions>
+        <theoretical-pi>9.09</theoretical-pi>
+        <molecular-weight>11097.98</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6025</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>IL8</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Y00787</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>34519</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P10145</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IL8_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>C-X-C motif chemokine 8</synonym>
+          <synonym>Chemokine (C-X-C motif) ligand 8</synonym>
+          <synonym>Emoctakin</synonym>
+          <synonym>GCP-1</synonym>
+          <synonym>Granulocyte chemotactic protein 1</synonym>
+          <synonym>IL-8</synonym>
+          <synonym>IL8</synonym>
+          <synonym>MDNCF</synonym>
+          <synonym>MONAP</synonym>
+          <synonym>Monocyte-derived neutrophil chemotactic factor</synonym>
+          <synonym>Monocyte-derived neutrophil-activating peptide</synonym>
+          <synonym>NAP-1</synonym>
+          <synonym>Neutrophil-activating protein 1</synonym>
+          <synonym>Protein 3-10C</synonym>
+          <synonym>T-cell chemotactic factor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001913|Interleukin-8
+MTSKLAVALLAAFLISAALCEGAVLPRSAKELRCQCIKTYSKPFHPKFIKELRVIESGPH
+CANTEIIVKLSDGRELCLDPKENWVQRVVEKFLKRAENS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010675|Interleukin-8 (CXCL8)
+ATGACTTCCAAGCTGGCCGTGGCTCTCTTGGCAGCCTTCCTGATTTCTGCAGCTCTGTGT
+GAAGGTGCAGTTTTGCCAAGGAGTGCTAAAGAACTTAGATGTCAGTGCATAAAGACATAC
+TCCAAACCTTTCCACCCCAAATTTATCAAAGAACTGAGAGTGATTGAGAGTGGACCACAC
+TGCGCCAACACAGAAATTATTGTAAAGCTTTCTGATGGAAGAGAGCTCTGTCTGGACCCC
+AAGGAAAACTGGGTGCAGAGGGTTGTGGAGAAGTTTTTGAAGAGGGCTGAGAATTCATAA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00048</identifier>
+            <name>IL8</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chemokine activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-8 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to fibroblast growth factor stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interleukin-1</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to tumor necrosis factor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic digestive tract development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endoplasmic reticulum unfolded protein response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>induction of positive chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>movement of cell or subcellular component</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of G-protein coupled receptor protein signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neutrophil activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>PERK-mediated unfolded protein response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor internalization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of single stranded viral RNA replication via double stranded DNA intermediate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to molecule of bacterial origin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

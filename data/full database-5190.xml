@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05688</drugbank-id>
+  <name>CRx-119</name>
+  <description>CRx-119 is a novel synergistic combination drug candidate discovered using the CombinatoRx combination High Throughput Screening (cHTS(TM)) technology with potential therapeutic use in a broad range of immuno-inflammatory conditions. CRx-119 is a combination of a low dose of the steroid prednisolone, 3mg, and amoxapine.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in periodontal disease and rheumatoid arthritis.</indication>
+  <pharmacodynamics>CRx-119 is a novel orally available syncretic drug candidate in clinical development for immunoinflammatory diseases. A syncretic drug comprises two compounds that are designed to act together synergistically through multiple pathways to provide a novel therapeutic effect which neither component alone can achieve. CRx-119 contains a low dose of the steroid prednisolone and amoxapine. The target product profile for CRx-119 is to selectively amplify certain elements of prednisolone's anti-inflammatory and immunomodulatory effects, without replicating steroid toxicity.</pharmacodynamics>
+  <mechanism-of-action>Amoxapine acts by decreasing the reuptake of norepinephrine and serotonin (5-HT). Glucocorticoids such as prednisolone can inhibit leukocyte infiltration at the site of inflammation, interfere with mediators of inflammatory response, and suppress humoral immune responses. The antiinflammatory actions of glucocorticoids are thought to involve phospholipase A2 inhibitory proteins, lipocortins, which control the biosynthesis of potent mediators of inflammation such as prostaglandins and leukotrienes. Prednisolone reduces inflammatory reaction by limiting the capillary dilatation and permeability of the vascular structures. These compounds restrict the accumulation of polymorphonuclear leukocytes and macrophages and reduce the release of vasoactive kinins. Recent research suggests that corticosteroids may inhibit the release of arachidonic acid from phospholipids, thereby reducing the formation of prostaglandins. Prednisolone is a glucocorticoid receptor agonist. On binding, the corticoreceptor-ligand complex translocates itself into the cell nucleus, where it binds to many glucocorticoid response elements (GRE) in the promoter region of the target genes. The DNA bound receptor then interacts with basic transcription factors, causing an increase or decrease in expression of specific target genes, including suppression of IL2 (interleukin 2) expression.</mechanism-of-action>
+  <toxicity>CRx-119 was generally well tolerated and there were no drug-related serious adverse events reported. The most common adverse event observed with CRx-119 was drowsiness, a known side-effect of amoxapine.</toxicity>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910193</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000749</id>
+      <name>Sodium-dependent serotonin transporter</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P31645" source="Swiss-Prot">
+        <name>Sodium-dependent serotonin transporter</name>
+        <general-function>Serotonin:sodium symporter activity</general-function>
+        <specific-function>Serotonin transporter whose primary function in the central nervous system involves the regulation of serotonergic signaling via transport of serotonin molecules from the synaptic cleft back into the pre-synaptic terminal for re-utilization. Plays a key role in mediating regulation of the availability of serotonin to other receptors of serotonergic systems. Terminates the action of serotonin and recycles it in a sodium-dependent manner.</specific-function>
+        <gene-name>SLC6A4</gene-name>
+        <locus>17q11.1-q12</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>88-108
+116-135
+160-180
+253-271
+280-297
+333-350
+362-383
+417-436
+464-482
+498-518
+539-558
+577-595</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>6.17</theoretical-pi>
+        <molecular-weight>70324.165</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11050</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC6A4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X70697</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>36433</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>928</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P31645</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SC6A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5HT transporter</synonym>
+          <synonym>5HTT</synonym>
+          <synonym>HTT</synonym>
+          <synonym>SERT</synonym>
+          <synonym>Solute carrier family 6 member 4</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001494|Sodium-dependent serotonin transporter
+METTPLNSQKQLSACEDGEDCQENGVLQKVVPTPGDKVESGQISNGYSAVPSPGAGDDTR
+HSIPATTTTLVAELHQGERETWGKKVDFLLSVIGYAVDLGNVWRFPYICYQNGGGAFLLP
+YTIMAIFGGIPLFYMELALGQYHRNGCISIWRKICPIFKGIGYAICIIAFYIASYYNTIM
+AWALYYLISSFTDQLPWTSCKNSWNTGNCTNYFSEDNITWTLHSTSPAEEFYTRHVLQIH
+RSKGLQDLGGISWQLALCIMLIFTVIYFSIWKGVKTSGKVVWVTATFPYIILSVLLVRGA
+TLPGAWRGVLFYLKPNWQKLLETGVWIDAAAQIFFSLGPGFGVLLAFASYNKFNNNCYQD
+ALVTSVVNCMTSFVSGFVIFTVLGYMAEMRNEDVSEVAKDAGPSLLFITYAEAIANMPAS
+TFFAIIFFLMLITLGLDSTFAGLEGVITAVLDEFPHVWAKRRERFVLAVVITCFFGSLVT
+LTFGGAYVVKLLEEYATGPAVLTVALIEAVAVSWFYGITQFCRDVKEMLGFSPGWFWRIC
+WVAISPLFLLFIICSFLMSPPQLRLFQYNYPYWSIILGYCIGTSSFICIPTYIAYRLIIT
+PGTFKERIIKSITPETPTEIPCGDIRLNAV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021275|Sodium-dependent serotonin transporter (SLC6A4)
+ATGGAGACGACGCCCTTGAATTCTCAGAAGCAGCTATCAGCGTGTGAAGATGGAGAAGAT
+TGTCAGGAAAACGGAGTTCTACAGAAGGTTGTTCCCACCCCAGGGGACAAAGTGGAGTCC
+GGGCAAATATCCAATGGGTACTCAGCAGTTCCAAGTCCTGGTGCGGGAGATGACACACGG
+CACTCTATCCCAGCGACCACCACCACCCTAGTGGCTGAGCTTCATCAAGGGGAACGGGAG
+ACCTGGGGCAAGAAGGTGGATTTCCTTCTCTCAGTGATTGGCTATGCTGTGGACCTGGGC
+AATGTCTGGCGCTTCCCCTACATATGTTACCAGAATGGAGGGGGGGCATTCCTCCTCCCC
+TACACCATCATGGCCATTTTTGGGGGAATCCCGCTCTTTTACATGGAGCTCGCACTGGGA
+CAGTACCACCGAAATGGATGCATTTCAATATGGAGGAAAATCTGCCCGATTTTCAAAGGG
+ATTGGTTATGCCATCTGCATCATTGCCTTTTACATTGCTTCCTACTACAACACCATCATG
+GCCTGGGCGCTATACTACCTCATCTCCTCCTTCACGGACCAGCTGCCCTGGACCAGCTGC
+AAGAACTCCTGGAACACTGGCAACTGCACCAATTACTTCTCCGAGGACAACATCACCTGG
+ACCCTCCATTCCACGTCCCCTGCTGAAGAATTTTACACGCGCCACGTCCTGCAGATCCAC
+CGGTCTAAGGGGCTCCAGGACCTGGGGGGCATCAGCTGGCAGCTGGCCCTCTGCATCATG
+CTGATCTTCACTGTTATCTACTTCAGCATCTGGAAAGGCGTCAAGACCTCTGGCAAGGTG
+GTGTGGGTGACAGCCACCTTCCCTTATATCATCCTTTCTGTCCTGCTGGTGAGGGGTGCC
+ACCCTCCCTGGAGCCTGGAGGGGTGTTCTCTTCTACTTGAAACCCAATTGGCAGAAACTC
+CTGGAGACAGGGGTGTGGATAGATGCAGCCGCTCAGATCTTCTTCTCTCTTGGTCCGGGC
+TTTGGGGTCCTGCTGGCTTTTGCTAGCTACAACAAGTTCAACAACAACTGCTACCAAGAT
+GCCCTGGTGACCAGCGTGGTGAACTGCATGACGAGCTTCGTTTCGGGATTTGTCATCTTC
+ACAGTGCTCGGTTACATGGCTGAGATGAGGAATGAAGATGTGTCTGAGGTGGCCAAAGAC
+GCAGGTCCCAGCCTCCTCTTCATCACGTATGCAGAAGCGATAGCCAACATGCCAGCGTCC
+ACTTTCTTTGCCATCATCTTCTTTCTGATGTTAATCACGCTGGGCTTGGACAGCACGTTT
+GCAGGCTTGGAGGGGGTGATCACGGCTGTGCTGGATGAGTTCCCACACGTCTGGGCCAAG
+CGCCGGGAGCGGTTCGTGCTCGCCGTGGTCATCACCTGCTTCTTTGGATCCCTGGTCACC
+CTGACTTTTGGAGGGGCCTACGTGGTGAAGCTGCTGGAGGAGTATGCCACGGGGCCCGCA
+GTGCTCACTGTCGCGCTGATCGAAGCAGTCGCTGTGTCTTGGTTCTATGGCATCACTCAG
+TTCTGCAGGGACGTGAAGGAAATGCTCGGCTTCAGCCCGGGGTGGTTCTGGAGGATCTGC
+TGGGTGGCCATCAGCCCTCTGTTTCTCCTGTTCATCATTTGCAGTTTTCTGATGAGCCCG
+CCACAACTACGACTTTTCCAATATAATTATCCTTACTGGAGTATCATCTTGGGTTACTGC
+ATAGGAACCTCATCTTTCATTTGCATCCCCACATATATAGCTTATCGGTTGATCATCACT
+CCAGGGACATTTAAAGAGCGTATTATTAAAAGTATTACCCCAGAAACACCAACAGAAATT
+CCTTGTGGGGACATCCGCTTGAATGCTGTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00209</identifier>
+            <name>SNF</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03491</identifier>
+            <name>5HT_transport_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endomembrane system</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>actin filament binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cocaine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monoamine transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>Rab GTPase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brain morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to cGMP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to retinoic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monoamine transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cerebellar granule cell precursor proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of organ growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of synaptic transmission, dopaminergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homooligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein oligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estradiol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>serotonin transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>serotonin uptake</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>social behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sperm ejaculation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>thalamus development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasoconstriction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000486</id>
+      <name>Sodium-dependent noradrenaline transporter</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P23975" source="Swiss-Prot">
+        <name>Sodium-dependent noradrenaline transporter</name>
+        <general-function>Norepinephrine:sodium symporter activity</general-function>
+        <specific-function>Amine transporter. Terminates the action of noradrenaline by its high affinity sodium-dependent reuptake into presynaptic terminals.</specific-function>
+        <gene-name>SLC6A2</gene-name>
+        <locus>16q12.2</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>65-85
+93-112
+136-156
+235-253
+262-279
+315-332
+344-365
+398-417
+444-462
+478-498
+519-538
+557-575</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.53</theoretical-pi>
+        <molecular-weight>69331.42</molecular-weight>
+        <chromosome-location>16</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11048</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC6A2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M65105</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189258</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>926</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P23975</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SC6A2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>NAT1</synonym>
+          <synonym>NET</synonym>
+          <synonym>NET1</synonym>
+          <synonym>Norepinephrine transporter</synonym>
+          <synonym>SLC6A5</synonym>
+          <synonym>Solute carrier family 6 member 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000970|Sodium-dependent noradrenaline transporter
+MLLARMNPQVQPENNGADTGPEQPLRARKTAELLVVKERNGVQCLLAPRDGDAQPRETWG
+KKIDFLLSVVGFAVDLANVWRFPYLCYKNGGGAFLIPYTLFLIIAGMPLFYMELALGQYN
+REGAATVWKICPFFKGVGYAVILIALYVGFYYNVIIAWSLYYLFSSFTLNLPWTDCGHTW
+NSPNCTDPKLLNGSVLGNHTKYSKYKFTPAAEFYERGVLHLHESSGIHDIGLPQWQLLLC
+LMVVVIVLYFSLWKGVKTSGKVVWITATLPYFVLFVLLVHGVTLPGASNGINAYLHIDFY
+RLKEATVWIDAATQIFFSLGAGFGVLIAFASYNKFDNNCYRDALLTSSINCITSFVSGFA
+IFSILGYMAHEHKVNIEDVATEGAGLVFILYPEAISTLSGSTFWAVVFFVMLLALGLDSS
+MGGMEAVITGLADDFQVLKRHRKLFTFGVTFSTFLLALFCITKGGIYVLTLLDTFAAGTS
+ILFAVLMEAIGVSWFYGVDRFSNDIQQMMGFRPGLYWRLCWKFVSPAFLLFVVVVSIINF
+KPLTYDDYIFPPWANWVGWGIALSSMVLVPIYVIYKFLSTQGSLWERLAYGITPENEHHL
+VAQRDIRQFQLQHWLAI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010343|Sodium-dependent noradrenaline transporter (SLC6A2)
+ATGCTTCTGGCGCGGATGAACCCGCAGGTGCAGCCCGAGAACAACGGGGCGGACACGGGT
+CCAGAGCAGCCCCTTCGGGCGCGCAAAACTGCGGAGCTGCTGGTGGTGAAGGAGCGCAAC
+GGCGTCCAGTGCCTGCTGGCGCCCCGCGACGGCGACGCGCAGCCCCGGGAGACCTGGGGC
+AAGAAGATCGACTTCCTGCTGTCCGTAGTCGGCTTCGCAGTGGACCTGGCCAACGTGTGG
+CGCTTCCCCTACCTCTGCTACAAGAACGGCGGCGGTGCCTTCTTGATCCCGTACACACTG
+TTCCTTATCATCGCGGGGATGCCCCTGTTCTACATGGAGCTGGCTCTGGGACAGTACAAC
+CGGGAGGGGGCTGCCACCGTTTGGAAAATCTGCCCATTCTTCAAAGGCGTTGGCTATGCT
+GTCATCCTGATCGCCCTGTACGTTGGCTTCTACTACAACGTCATCATCGCCTGGTCACTC
+TACTACCTCTTCTCCTCCTTCACCCTCAACCTGCCCTGGACCGACTGTGGCCACACCTGG
+AACAGCCCCAACTGTACCGACCCCAAGCTCCTCAATGGCTCCGTGCTTGGCAACCACACC
+AAGTACTCCAAGTACAAGTTCACGCCGGCAGCCGAGTTTTATGAGCGTGGTGTCCTGCAC
+CTTCACGAGAGCAGCGGGATTCATGACATCGGCCTGCCCCAGTGGCAGCTCTTGCTCTGT
+CTGATGGTCGTCGTCATCGTCTTGTATTTTAGCCTCTGGAAAGGGGTGAAGACATCAGGA
+AAGGTGGTGTGGATCACAGCCACGCTGCCTTACTTCGTGCTGTTCGTGCTCCTGGTCCAT
+GGCGTCACGCTGCCCGGAGCCTCCAATGGCATCAATGCCTACCTGCACATCGACTTCTAC
+CGCTTGAAAGAGGCCACGGTATGGATTGATGCCGCAACTCAGATATTTTTTTCCTTGGGG
+GCTGGATTTGGAGTATTGATTGCATTTGCCAGTTACAACAAATTTGACAACAACTGTTAC
+AGGGATGCCCTGCTGACCAGCAGCATCAACTGTATCACCAGCTTCGTCTCTGGGTTCGCC
+ATCTTCTCCATCCTTGGTTACATGGCCCATGAACACAAGGTCAACATTGAGGATGTGGCC
+ACAGAAGGAGCTGGCCTAGTGTTCATCCTGTATCCAGAGGCCATTTCTACCCTGTCTGGA
+TCTACATTCTGGGCTGTTGTGTTTTTCGTCATGCTCCTGGCGCTGGGCCTTGACAGCTCA
+ATGGGAGGCATGGAGGCTGTCATCACGGGCCTGGCAGATGACTTCCAGGTCCTGAAGCGA
+CACCGGAAACTCTTCACATTTGGCGTCACCTTCAGCACTTTCCTTCTCGCCCTGTTCTGC
+ATAACCAAGGGTGGAATTTACGTCTTGACCCTCCTGGACACCTTTGCTGCGGGCACCTCC
+ATCCTTTTTGCTGTCCTCATGGAAGCCATCGGAGTTTCCTGGTTTTATGGAGTGGACAGG
+TTCAGCAACGACATCCAGCAGATGATGGGGTTCAGGCCGGGTCTATACTGGAGACTGTGC
+TGGAAGTTCGTCAGTCCTGCCTTCCTCCTGTTCGTGGTTGTGGTCAGCATCATCAACTTC
+AAGCCACTCACCTACGACGACTACATCTTCCCGCCCTGGGCCAACTGGGTGGGGTGGGGC
+ATCGCCCTGTCCTCCATGGTCCTGGTGCCCATCTACGTCATCTATAAGTTCCTCAGCACG
+CAGGGCTCTCTTTGGGAGAGACTGGCCTATGGCATCACGCCAGAGAACGAGCACCACCTG
+GTGGCTCAGAGGGACATCAGACAGTTCCAGTTGCAACACTGGCTGGCCATCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00209</identifier>
+            <name>SNF</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monoamine transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>norepinephrine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monoamine transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>norepinephrine transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers>
+    <carrier>
+      <id>BE0000209</id>
+      <name>Corticosteroid-binding globulin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08185" source="Swiss-Prot">
+        <name>Corticosteroid-binding globulin</name>
+        <general-function>Steroid binding</general-function>
+        <specific-function>Major transport protein for glucocorticoids and progestins in the blood of almost all vertebrate species.</specific-function>
+        <gene-name>SERPINA6</gene-name>
+        <locus>14q32.1</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-22</signal-regions>
+        <theoretical-pi>5.94</theoretical-pi>
+        <molecular-weight>45140.49</molecular-weight>
+        <chromosome-location>14</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1540</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SERPINA6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J02943</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>179971</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08185</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CBG_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CBG</synonym>
+          <synonym>Serpin A6</synonym>
+          <synonym>Transcortin</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016035|Corticosteroid-binding globulin
+MPLLLYTCLLWLPTSGLWTVQAMDPNAAYVNMSNHHRGLASANVDFAFSLYKHLVALSPK
+KNIFISPVSISMALAMLSLGTCGHTRAQLLQGLGFNLTERSETEIHQGFQHLHQLFAKSD
+TSLEMTMGNALFLDGSLELLESFSADIKHYYESEVLAMNFQDWATASRQINSYVKNKTQG
+KIVDLFSGLDSPAILVLVNYIFFKGTWTQPFDLASTREENFYVDETTVVKVPMMLQSSTI
+SYLHDSELPCQLVQMNYVGNGTVFFILPDKGKMNTVIAALSRDTINRWSAGLTSSQVDLY
+IPKVTISGVYDLGDVLEEMGIADLFTNQANFSRITQDAQLKSSKVVHKAVLQLNEEGVDT
+AGSTGVTLNLTSKPIILRFNQPFIIMIFDHFTWSSLFLARVMNPV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016036|Corticosteroid-binding globulin (SERPINA6)
+ATGCCACTCCTCCTGTACACCTGTCTTCTCTGGCTGCCCACCAGCGGCCTCTGGACCGTC
+CAGGCCATGGATCCTAACGCTGCTTATGTGAACATGAGTAACCATCACCGGGGCCTGGCT
+TCAGCCAACGTTGACTTTGCCTTCAGCCTGTATAAGCACCTAGTGGCCTTGAGTCCCAAA
+AAGAACATTTTCATCTCCCCTGTGAGCATCTCCATGGCCTTAGCTATGCTGTCCCTGGGC
+ACCTGTGGCCACACACGGGCCCAGCTTCTCCAGGGCCTGGGTTTCAACCTCACTGAGAGG
+TCTGAGACTGAGATCCACCAGGGTTTCCAGCACCTGCACCAACTCTTTGCAAAGTCAGAC
+ACCAGCTTAGAAATGACCATGGGCAATGCCTTGTTTCTTGATGGCAGCCTGGAGTTGCTG
+GAGTCATTCTCAGCAGACATCAAGCACTACTATGAGTCAGAGGTCTTGGCTATGAATTTC
+CAGGACTGGGCAACAGCCAGCAGACAGATCAACAGCTATGTCAAGAATAAGACACAGGGG
+AAAATTGTCGACTTGTTTTCAGGGCTGGATAGCCCAGCCATCCTCGTCCTGGTCAACTAT
+ATCTTCTTCAAAGGCACATGGACACAGCCCTTTGACCTGGCAAGCACCAGGGAGGAGAAC
+TTCTATGTGGACGAGACAACTGTGGTGAAGGTGCCCATGATGTTGCAGTCGAGCACCATC
+AGTTACCTTCATGACGCGGAGCTCCCCTGCCAGCTGGTGCAGATGAACTACGTGGGCAAT
+GGGACTGTCTTCTTCATCCTTCCGGACAAGGGGAAGATGAACACAGTCATCGCTGCACTG
+AGCCGGGACACGATTAACAGGTGGTCCGCAGGCCTGACCAGCAGCCAGGTGGACCTGTAC
+ATTCCAAAGGTCACCATCTCTGGAGTCTATGACCTCGGAGATGTGCTGGAGGAAATGGGC
+ATTGCAGACTTGTTCACCAACCAGGCAAATTTCTCACGCATCACCCAGGACGCCCAGCTG
+AAGTCATCAAAGGTGGTCCATAAAGCTGTGCTGCAACTCAATGAGGAGGGTGTGGACACA
+GCTGGCTCCACTGGGGTCACCCTAAACCTGACGTCCAAGCCTATCATCTTGCGTTTCAAC
+CAGCCCTTCATCATCATGATCTTCGACCACTTCACCTGGAGCAGCCTTTTCCTGGCGAGG
+GTTATGAACCCAGTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00079</identifier>
+            <name>Serpin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase inhibitor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucocorticoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters/>
+</drug>

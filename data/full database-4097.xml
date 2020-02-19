@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04351</drugbank-id>
+  <drugbank-id>EXPT03104</drugbank-id>
+  <name>Aconitate Ion</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>171.0844</average-mass>
+  <monoisotopic-mass>170.992962828</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as tricarboxylic acids and derivatives. These are carboxylic acids containing exactly three carboxyl groups.</description>
+    <direct-parent>Tricarboxylic acids and derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Tricarboxylic acids and derivatives</subclass>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic anions</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic anion</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Tricarboxylic acid or derivatives</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.11</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.11e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-0.52</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(1Z)-prop-1-ene-1,2,3-tricarboxylate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>cis-aconitate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>171.0844</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>170.992962828</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[O-]C(=O)C\C(=C\C([O-])=O)C([O-])=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C6H3O6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C6H6O6/c7-4(8)1-3(6(11)12)2-5(9)10/h1H,2H2,(H,7,8)(H,9,10)(H,11,12)/p-3/b3-1-</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>GTZCVFVGUGFEME-IWQZZHSRSA-K</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>120.39</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>67.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>12.91</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>16383</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5459816</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508929</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4573582</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>TRA</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0004504</id>
+      <name>Aconitate hydratase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q99798" source="Swiss-Prot">
+        <name>Aconitate hydratase, mitochondrial</name>
+        <general-function>Iron ion binding</general-function>
+        <specific-function>Catalyzes the isomerization of citrate to isocitrate via cis-aconitate.</specific-function>
+        <gene-name>ACO2</gene-name>
+        <locus/>
+        <cellular-location>Mitochondrion</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>85424.745</molecular-weight>
+        <chromosome-location>22</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:118</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q99798</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACON_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>4.2.1.3</synonym>
+          <synonym>Aconitase</synonym>
+          <synonym>Citrate hydro-lyase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013151|Aconitate hydratase, mitochondrial
+MAPYSLLVTRLQKALGVRQYHVASVLCQRAKVAMSHFEPNEYIHYDLLEKNINIVRKRLN
+RPLTLSEKIVYGHLDDPASQEIERGKSYLRLRPDRVAMQDATAQMAMLQFISSGLSKVAV
+PSTIHCDHLIEAQVGGEKDLRRAKDINQEVYNFLATAGAKYGVGFWKPGSGIIHQIILEN
+YAYPGVLLIGTDSHTPNGGGLGGICIGVGGADAVDVMAGIPWELKCPKVIGVKLTGSLSG
+WSSPKDVILKVAGILTVKGGTGAIVEYHGPGVDSISCTGMATICNMGAEIGATTSVFPYN
+HRMKKYLSKTGREDIANLADEFKDHLVPDPGCHYDQLIEINLSELKPHINGPFTPDLAHP
+VAEVGKVAEKEGWPLDIRVGLIGSCTNSSYEDMGRSAAVAKQALAHGLKCKSQFTITPGS
+EQIRATIERDGYAQILRDLGGIVLANACGPCIGQWDRKDIKKGEKNTIVTSYNRNFTGRN
+DANPETHAFVTSPEIVTALAIAGTLKFNPETDYLTGTDGKKFRLEAPDADELPKGEFDPG
+QDTYQHPPKDSSGQHVDVSPTSQRLQLLEPFDKWDGKDLEDLQILIKVKGKCTTDHISAA
+GPWLKFRGHLDNISNNLLIGAINIENGKANSVRNAVTQEFGPVPDTARYYKKHGIRWVVI
+GDENYGEGSSREHAALEPRHLGGRAIITKSFARIHETNLKKQGLLPLTFADPADYNKIHP
+VDKLTIQGLKDFTPGKPLKCIIKHPNGTQETILLNHTFNETQIEWFRAGSALNRMKELQQ
+</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013152|Aconitate hydratase, mitochondrial (ACO2)
+ATGGCGCCCTACAGCCTACTGGTGACTCGGCTGCAGAAAGCTCTGGGTGTGCGGCAGTAC
+CATGTGGCCTCAGTCCTGTGCCAACGGGCCAAGGTGGCGATGAGCCACTTTGAGCCCAAC
+GAGTACATCCATTATGACCTGCTAGAGAAGAACATTAACATTGTTCGCAAACGACTGAAC
+CGGCCGCTGACACTCTCGGAGAAGATTGTGTATGGACACCTGGATGACCCCGCCAGCCAG
+GAAATTGAGCGAGGCAAGTCGTACCTGCGGCTGCGGCCGGACCGTGTGGCCATGCAGGAT
+GCGACGGCCCAGATGGCCATGCTCCAGTTCATCAGCAGCGGGCTGTCCAAGGTGGCTGTG
+CCATCCACCATCCACTGTGACCATCTGATTGAAGCCCAGGTTGGGGGCGAGAAAGACCTG
+CGCCGGGCCAAGGACATCAACCAGGAAGTTTATAATTTCCTGGCAACTGCAGGTGCCAAA
+TATGGCGTGGGCTTCTGGAAGCCTGGATCTGGAATCATTCACCAGATTATTCTGGAAAAC
+TATGCGTACCCTGGTGTTCTTCTGATTGGCACTGACTCCCACACCCCCAATGGTGGCGGC
+CTTGGGGGCATCTGCATTGGAGTTGGGGGTGCCGATGCTGTGGATGTCATGGCTGGGATC
+CCCTGGGAGCTGAAGTGCCCCAAGGTGATTGGCGTGAAGCTGACGGGCTCTCTCTCCGGT
+TGGTCCTCACCCAAAGATGTGATCCTGAAGGTGGCAGGCATCCTCACGGTGAAAGGTGGC
+ACAGGTGCAATCGTGGAATACCACGGGCCTGGTGTAGACTCCATCTCCTGCACTGGCATG
+GCGACAATCTGCAACATGGGTGCAGAAATTGGGGCCACCACTTCCGTGTTCCCTTACAAC
+CACAGGATGAAGAAGTACCTGAGCAAGACCGGCCGGGAAGACATTGCCAATCTAGCTGAT
+GAATTCAAGGATCACTTGGTGCCTGACCCTGGCTGCCATTATGACCAACTAATTGAAATT
+AACCTCAGTGAGCTGAAGCCACACATCAATGGGCCCTTCACCCCTGACCTGGCTCACCCT
+GTGGCAGAAGTGGGCAAGGTGGCAGAGAAGGAAGGATGGCCTCTGGACATCCGAGTGGGT
+CTAATTGGTAGCTGCACCAATTCAAGCTATGAAGATATGGGGCGCTCAGCAGCTGTGGCC
+AAGCAGGCACTGGCCCATGGCCTCAAGTGCAAGTCCCAGTTCACCATCACTCCAGGTTCC
+GAGCAGATCCGCGCCACCATTGAGCGGGACGGCTATGCACAGATCTTGAGGGATCTGGGT
+GGCATTGTCCTGGCCAATGCTTGTGGCCCCTGCATTGGCCAGTGGGACAGGAAGGACATC
+AAGAAGGGGGAGAAGAACACAATCGTCACCTCCTACAACAGGAACTTCACGGGCCGCAAC
+GACGCAAACCCCGAGACCCATGCCTTTGTCACGTCCCCAGAGATTGTCACAGCCCTGGCC
+ATTGCGGGAACCCTCAAGTTCAACCCAGAGACCGACTACCTGACGGGCACGGATGGCAAG
+AAGTTCAGGCTGGAGGCTCCGGATGCAGATGAGCTTCCCAAAGGGGAGTTTGACCCAGGG
+CAGGACACCTACCAGCACCCACCCAAGGACAGCAGCGGGCAGCATGTGGACGTGAGCCCC
+ACCAGCCAGCGCCTGCAGCTCCTGGAGCCTTTTGACAAGTGGGATGGCAAGGACCTGGAG
+GACCTGCAGATCCTCATCAAGGTCAAAGGGAAGTGTACCACTGACCACATCTCAGCTGCT
+GGCCCCTGGCTCAAGTTCCGTGGGCACTTGGATAACATCTCCAACAACCTGCTCATTGGT
+GCCATCAACATTGAAAACGGCAAGGCCAACTCCGTGCGCAATGCCGTCACTCAGGAGTTT
+GGCCCCGTCCCTGACACTGCCCGCTACTACAAGAAACATGGCATCAGGTGGGTGGTGATC
+GGAGACGAGAACTACGGCGAGGGCTCGAGCCGGGAGCATGCAGCTCTGGAGCCTCGCCAC
+CTTGGGGGCCGGGCCATCATCACCAAGAGCTTTGCCAGGATCCACGAGACCAACCTGAAG
+AAACAGGGCCTGCTGCCTCTGACCTTCGCTGACCCGGCTGACTACAACAAGATTCACCCT
+GTGGACAAGCTGACCATTCAGGGCCTGAAGGACTTCACCCCTGGCAAGCCCCTGAAGTGC
+ATCATCAAGCACCCCAACGGGACCCAGGAGACCATCCTCCTGAACCACACCTTCAACGAG
+ACGCAGATTGAGTGGTTCCGCGCTGGCAGTGCCCTCAACAGAATGAAGGAACTGCAACAG
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00330</identifier>
+            <name>Aconitase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00694</identifier>
+            <name>Aconitase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myelin sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>3 iron, 4 sulfur cluster binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>4 iron, 4 sulfur cluster binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aconitate hydratase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>citrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>generation of precursor metabolites and energy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>isocitrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tricarboxylic acid cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001951</id>
+      <name>Aconitate hydratase 2</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P36683" source="Swiss-Prot">
+        <name>Aconitate hydratase B</name>
+        <general-function>Mrna binding</general-function>
+        <specific-function>Involved in the catabolism of short chain fatty acids (SCFA) via the tricarboxylic acid (TCA)(acetyl degradation route) and the 2-methylcitrate cycle I (propionate degradation route). Catalyzes the reversible isomerization of citrate to isocitrate via cis-aconitate. Also catalyzes the hydration of 2-methyl-cis-aconitate to yield (2R,3S)-2-methylisocitrate. The apo form of AcnB functions as a RNA-binding regulatory protein. During oxidative stress inactive AcnB apo-enzyme without iron sulfur clusters binds the acnB mRNA 3' UTRs (untranslated regions), stabilizes acnB mRNA and increases AcnB synthesis, thus mediating a post-transcriptional positive autoregulatory switch. AcnB also decreases the stability of the sodA transcript.</specific-function>
+        <gene-name>acnB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.05</theoretical-pi>
+        <molecular-weight>93497.2</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U00096</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2367097</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P36683</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACNB_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>(2R,3S)-2-methylisocitrate dehydratase</synonym>
+          <synonym>(2S,3R)-3-hydroxybutane-1,2,3-tricarboxylate dehydratase</synonym>
+          <synonym>2-methyl-cis-aconitate hydratase</synonym>
+          <synonym>4.2.1.3</synonym>
+          <synonym>ACN</synonym>
+          <synonym>Iron-responsive protein-like</synonym>
+          <synonym>IRP-like</synonym>
+          <synonym>RNA-binding protein</synonym>
+          <synonym>yacI</synonym>
+          <synonym>yacJ</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019215|Aconitate hydratase B
+MLEEYRKHVAERAAEGIAPKPLDANQMAALVELLKNPPAGEEEFLLDLLTNRVPPGVDEA
+AYVKAGFLAAIAKGEAKSPLLTPEKAIELLGTMQGGYNIHPLIDALDDAKLAPIAAKALS
+HTLLMFDNFYDVEEKAKAGNEYAKQVMQSWADAEWFLNRPALAEKLTVTVFKVTGETNTD
+DLSPAPDAWSRPDIPLHALAMLKNAREGIEPDQPGVVGPIKQIEALQQKGFPLAYVGDVV
+GTGSSRKSATNSVLWFMGDDIPHVPNKRGGGLCLGGKIAPIFFNTMEDAGALPIEVDVSN
+LNMGDVIDVYPYKGEVRNHETGELLATFELKTDVLIDEVRAGGRIPLIIGRGLTTKAREA
+LGLPHSDVFRQAKDVAESDRGFSLAQKMVGRACGVKGIRPGAYCEPKMTSVGSQDTTGPM
+TRDELKDLACLGFSADLVMQSFCHTAAYPKPVDVNTHHTLPDFIMNRGGVSLRPGDGVIH
+SWLNRMLLPDTVGTGGDSHTRFPIGISFPAGSGLVAFAAATGVMPLDMPESVLVRFKGKM
+QPGITLRDLVHAIPLYAIKQGLLTVEKKGKKNIFSGRILEIEGLPDLKVEQAFELTDASA
+ERSAAGCTIKLNKEPIIEYLNSNIVLLKWMIAEGYGDRRTLERRIQGMEKWLANPELLEA
+DADAEYAAVIDIDLADIKEPILCAPNDPDDARPLSAVQGEKIDEVFIGSCMTNIGHFRAA
+GKLLDAHKGQLPTRLWVAPPTRMDAAQLTEEGYYSVFGKSGARIEIPGCSLCMGNQARVA
+DGATVVSTSTRNFPNRLGTGANVFLASAELAAVAALIGKLPTPEEYQTYVAQVDKTAVDT
+YRYLNFNQLSQYTEKADGVIFQTAV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019216|Aconitate hydratase B (acnB)
+GTGCTAGAAGAATACCGTAAGCACGTAGCTGAGCGTGCCGCTGAGGGGATTGCGCCCAAA
+CCCCTGGATGCAAACCAAATGGCCGCACTTGTAGAGCTGCTGAAAAACCCGCCCGCGGGC
+GAAGAAGAATTCCTGTTAGATCTGTTAACCAACCGTGTTCCCCCAGGCGTCGATGAAGCC
+GCCTATGTCAAAGCAGGCTTCCTGGCTGCTATCGCGAAAGGCGAAGCCAAATCCCCTCTG
+CTGACTCCGGAAAAAGCCATCGAACTGCTGGGCACCATGCAGGGTGGTTACAACATTCAT
+CCGCTGATCGACGCGCTGGATGATGCCAAACTGGCACCTATTGCTGCCAAAGCACTTTCT
+CACACGCTGCTGATGTTCGATAACTTCTATGACGTAGAAGAGAAAGCGAAAGCAGGCAAC
+GAATATGCGAAGCAGGTTATGCAGTCCTGGGCGGATGCCGAATGGTTCCTGAATCGCCCG
+GCGCTGGCTGAAAAACTGACCGTTACTGTCTTCAAAGTCACTGGCGAAACTAACACCGAT
+GACCTTTCTCCGGCACCGGATGCGTGGTCACGCCCGGATATCCCACTGCACGCGCTGGCG
+ATGCTGAAAAACGCCCGTGAAGGTATTGAGCCAGACCAGCCTGGTGTTGTTGGTCCGATC
+AAGCAAATCGAAGCTCTGCAACAGAAAGGTTTCCCGCTGGCGTACGTCGGTGACGTTGTG
+GGTACGGGTTCTTCGCGTAAATCCGCCACTAACTCCGTTCTGTGGTTTATGGGCGATGAT
+ATTCCACATGTGCCGAACAAACGCGGCGGTGGTTTGTGCCTCGGCGGTAAAATTGCACCC
+ATCTTCTTTAACACGATGGAAGACGCGGGTGCACTGCCAATCGAAGTCGACGTCTCTAAC
+CTGAACATGGGCGACGTGATTGACGTTTACCCGTACAAAGGTGAAGTGCGTAACCACGAA
+ACCGGCGAACTGCTGGCGACCTTCGAACTGAAAACCGACGTGCTGATTGATGAAGTGCGT
+GCTGGTGGCCGTATTCCGCTGATTATCGGGCGTGGCCTGACCACCAAAGCGCGTGAAGCA
+CTTGGTCTGCCGCACAGTGATGTGTTCCGTCAGGCGAAAGATGTCGCTGAGAGCGATCGC
+GGCTTCTCGCTGGCGCAAAAAATGGTAGGCCGTGCCTGTGGCGTGAAAGGCATTCGTCCG
+GGCGCGTACTGTGAACCGAAAATGACTTCTGTAGGTTCCCAGGACACCACCGGCCCGATG
+ACCCGTGATGAACTGAAAGACCTGGCGTGCCTGGGCTTCTCGGCTGACCTGGTGATGCAG
+TCTTTCTGCCACACCGCGGCGTATCCGAAGCCAGTTGACGTGAACACGCACCACACGCTG
+CCGGACTTCATTATGAACCGTGGCGGTGTGTCGCTGCGTCCGGGTGACGGCGTCATTCAC
+TCCTGGCTGAACCGTATGCTGCTGCCGGATACCGTCGGTACCGGTGGTGACTCCCATACC
+CGTTTCCCGATCGGTATCTCTTTCCCGGCGGGTTCTGGTCTGGTGGCGTTTGCTGCCGCA
+ACTGGCGTAATGCCGCTTGATATGCCGGAATCCGTTCTGGTGCGCTTCAAAGGCAAAATG
+CAGCCGGGCATCACCCTGCGCGATCTGGTACACGCTATTCCGCTGTATGCGATCAAACAA
+GGTCTGCTGACCGTTGAGAAGAAAGGCAAGAAAAACATCTTCTCTGGCCGCATCCTGGAA
+ATTGAAGGTCTGCCGGATCTGAAAGTTGAGCAGGCCTTTGAGCTAACCGATGCGTCCGCC
+GAGCGTTCTGCCGCTGGTTGTACCATCAAGCTGAACAAAGAACCGATCATCGAATACCTG
+AACTCTAACATCGTCCTGCTGAAGTGGATGATCGCGGAAGGTTACGGCGATCGTCGTACC
+CTGGAACGTCGTATTCAGGGCATGGAAAAATGGCTGGCGAATCCTGAGCTGCTGGAAGCC
+GATGCAGATGCGGAATACGCGGCAGTGATCGACATCGATCTGGCGGATATTAAAGAGCCA
+ATCCTGTGTGCTCCGAACGACCCGGATGACGCGCGTCCGCTGTCTGCGGTACAGGGTGAG
+AAGATCGACGAAGTGTTTATCGGTTCCTGCATGACCAACATCGGTCACTTCCGTGCTGCG
+GGTAAACTGCTGGATGCGCATAAAGGTCAGTTGCCGACCCGCCTGTGGGTGGCACCGCCA
+ACCCGTATGGACGCCGCACAGTTGACCGAAGAAGGCTACTACAGCGTCTTCGGTAAGAGT
+GGTGCGCGTATCGAGATCCCTGGCTGTTCCCTGTGTATGGGTAACCAGGCGCGTGTGGCG
+GACGGTGCAACGGTGGTTTCCACCTCTACCCGTAACTTCCCGAACCGTCTGGGTACTGGC
+GCGAATGTCTTCCTGGCTTCTGCGGAACTGGCGGCTGTTGCGGCGCTGATTGGCAAACTG
+CCGACGCCGGAAGAGTACCAGACCTACGTGGCGCAGGTAGATAAAACAGCCGTTGATACT
+TACCGTTATCTGAACTTCAACCAGCTTTCTCAGTACACCGAGAAAGCCGATGGGGTGATT
+TTCCAGACTGCGGTTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00330</identifier>
+            <name>Aconitase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF06434</identifier>
+            <name>Aconitase_2_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF11791</identifier>
+            <name>Aconitase_B_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>2-methylisocitrate dehydratase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>4 iron, 4 sulfur cluster binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aconitate hydratase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mRNA 3'-UTR binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>propionate catabolic process, 2-methylcitrate cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tricarboxylic acid cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

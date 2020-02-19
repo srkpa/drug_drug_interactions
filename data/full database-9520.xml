@@ -1,0 +1,2999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-02-25" updated="2019-12-02">
+  <drugbank-id primary="true">DB11481</drugbank-id>
+  <name>Atipamezole</name>
+  <description>Atipamezole is a synthetic α2 adrenoceptor antagonistused to reverse the sedative and analgesic effects of dexmedetomidine and medetomidine in dogs. It has also been undergone research as a potential anti-Parkinsonian drug for humans.</description>
+  <cas-number>104054-27-5</cas-number>
+  <unii>03N9U5JAF6</unii>
+  <average-mass>212.296</average-mass>
+  <monoisotopic-mass>212.131348523</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+    <group>vet_approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the reversal of the sedative and analgesic effects of dexmedetomidine and medetomidine in dogs.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as indanes. These are compounds containing an indane moiety, which consists of a cyclopentane fused to a benzene ring.</description>
+    <direct-parent>Indanes</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Indanes</class>
+    <subclass/>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Imidazoles</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imidazole</substituent>
+    <substituent>Indane</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT001642</drugbank-id>
+      <name>Atipamezole hydrochloride</name>
+      <unii>2W4279571X</unii>
+      <cas-number>104075-48-1</cas-number>
+      <inchikey>PCCVCJAQMHDWJY-UHFFFAOYSA-N</inchikey>
+      <average-mass>248.75</average-mass>
+      <monoisotopic-mass>248.1080263</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Adrenergic Agents</category>
+      <mesh-id>D018663</mesh-id>
+    </category>
+    <category>
+      <category>Adrenergic alpha-2 Receptor Antagonists</category>
+      <mesh-id>D058669</mesh-id>
+    </category>
+    <category>
+      <category>Adrenergic alpha-Antagonists</category>
+      <mesh-id>D000317</mesh-id>
+    </category>
+    <category>
+      <category>Adrenergic Antagonists</category>
+      <mesh-id>D018674</mesh-id>
+    </category>
+    <category>
+      <category>Agents that produce hypertension</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Neurotransmitter Agents</category>
+      <mesh-id>D018377</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00177</drugbank-id>
+      <name>Valsartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Valsartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00178</drugbank-id>
+      <name>Ramipril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Ramipril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00187</drugbank-id>
+      <name>Esmolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Esmolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00195</drugbank-id>
+      <name>Betaxolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Betaxolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00206</drugbank-id>
+      <name>Reserpine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Reserpine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00212</drugbank-id>
+      <name>Remikiren</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Remikiren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00214</drugbank-id>
+      <name>Torasemide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Torasemide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00226</drugbank-id>
+      <name>Guanadrel</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanadrel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00264</drugbank-id>
+      <name>Metoprolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Metoprolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00270</drugbank-id>
+      <name>Isradipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Isradipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00275</drugbank-id>
+      <name>Olmesartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Olmesartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00310</drugbank-id>
+      <name>Chlorthalidone</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Chlorthalidone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00325</drugbank-id>
+      <name>Nitroprusside</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nitroprusside.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00335</drugbank-id>
+      <name>Atenolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Atenolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00343</drugbank-id>
+      <name>Diltiazem</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Diltiazem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00350</drugbank-id>
+      <name>Minoxidil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Minoxidil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00373</drugbank-id>
+      <name>Timolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Timolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00374</drugbank-id>
+      <name>Treprostinil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Treprostinil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00381</drugbank-id>
+      <name>Amlodipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Amlodipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00393</drugbank-id>
+      <name>Nimodipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nimodipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00401</drugbank-id>
+      <name>Nisoldipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nisoldipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00436</drugbank-id>
+      <name>Bendroflumethiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bendroflumethiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00457</drugbank-id>
+      <name>Prazosin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Prazosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00492</drugbank-id>
+      <name>Fosinopril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Fosinopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00519</drugbank-id>
+      <name>Trandolapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Trandolapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00524</drugbank-id>
+      <name>Metolazone</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Metolazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00528</drugbank-id>
+      <name>Lercanidipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Lercanidipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00542</drugbank-id>
+      <name>Benazepril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Benazepril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00559</drugbank-id>
+      <name>Bosentan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bosentan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00571</drugbank-id>
+      <name>Propranolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Propranolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00584</drugbank-id>
+      <name>Enalapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Enalapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00590</drugbank-id>
+      <name>Doxazosin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Doxazosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00598</drugbank-id>
+      <name>Labetalol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Labetalol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00606</drugbank-id>
+      <name>Cyclothiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cyclothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00612</drugbank-id>
+      <name>Bisoprolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bisoprolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00616</drugbank-id>
+      <name>Candoxatril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Candoxatril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00622</drugbank-id>
+      <name>Nicardipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nicardipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00657</drugbank-id>
+      <name>Mecamylamine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Mecamylamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00678</drugbank-id>
+      <name>Losartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Losartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00691</drugbank-id>
+      <name>Moexipril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Moexipril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00700</drugbank-id>
+      <name>Eplerenone</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Eplerenone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00722</drugbank-id>
+      <name>Lisinopril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Lisinopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00727</drugbank-id>
+      <name>Nitroglycerin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nitroglycerin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00765</drugbank-id>
+      <name>Metyrosine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Metyrosine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00774</drugbank-id>
+      <name>Hydroflumethiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Hydroflumethiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00785</drugbank-id>
+      <name>Cryptenamine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cryptenamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00790</drugbank-id>
+      <name>Perindopril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Perindopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00796</drugbank-id>
+      <name>Candesartan cilexetil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Candesartan cilexetil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00800</drugbank-id>
+      <name>Fenoldopam</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Fenoldopam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00808</drugbank-id>
+      <name>Indapamide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Indapamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00820</drugbank-id>
+      <name>Tadalafil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Tadalafil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00866</drugbank-id>
+      <name>Alprenolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Alprenolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00876</drugbank-id>
+      <name>Eprosartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Eprosartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00880</drugbank-id>
+      <name>Chlorothiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Chlorothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00881</drugbank-id>
+      <name>Quinapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Quinapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00960</drugbank-id>
+      <name>Pindolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Pindolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00966</drugbank-id>
+      <name>Telmisartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Telmisartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00968</drugbank-id>
+      <name>Methyldopa</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Methyldopa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00999</drugbank-id>
+      <name>Hydrochlorothiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Hydrochlorothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01021</drugbank-id>
+      <name>Trichlormethiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Trichlormethiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01023</drugbank-id>
+      <name>Felodipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Felodipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01029</drugbank-id>
+      <name>Irbesartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Irbesartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01054</drugbank-id>
+      <name>Nitrendipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nitrendipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01089</drugbank-id>
+      <name>Deserpidine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Deserpidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01090</drugbank-id>
+      <name>Pentolinium</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Pentolinium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01116</drugbank-id>
+      <name>Trimethaphan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Trimethaphan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01119</drugbank-id>
+      <name>Diazoxide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Diazoxide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01136</drugbank-id>
+      <name>Carvedilol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Carvedilol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01158</drugbank-id>
+      <name>Bretylium</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bretylium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01162</drugbank-id>
+      <name>Terazosin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Terazosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01170</drugbank-id>
+      <name>Guanethidine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanethidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01193</drugbank-id>
+      <name>Acebutolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Acebutolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01197</drugbank-id>
+      <name>Captopril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Captopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01203</drugbank-id>
+      <name>Nadolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nadolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01240</drugbank-id>
+      <name>Epoprostenol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Epoprostenol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01244</drugbank-id>
+      <name>Bepridil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bepridil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01275</drugbank-id>
+      <name>Hydralazine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Hydralazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01295</drugbank-id>
+      <name>Bevantolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bevantolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01297</drugbank-id>
+      <name>Practolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Practolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01324</drugbank-id>
+      <name>Polythiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Polythiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01340</drugbank-id>
+      <name>Cilazapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cilazapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01347</drugbank-id>
+      <name>Saprisartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Saprisartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01348</drugbank-id>
+      <name>Spirapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Spirapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01359</drugbank-id>
+      <name>Penbutolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Penbutolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01388</drugbank-id>
+      <name>Mibefradil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Mibefradil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01580</drugbank-id>
+      <name>Oxprenolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Oxprenolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03322</drugbank-id>
+      <name>Dexpropranolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Dexpropranolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04831</drugbank-id>
+      <name>Tienilic acid</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Tienilic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04840</drugbank-id>
+      <name>Debrisoquine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Debrisoquine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04846</drugbank-id>
+      <name>Celiprolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Celiprolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04861</drugbank-id>
+      <name>Nebivolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nebivolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06268</drugbank-id>
+      <name>Sitaxentan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Sitaxentan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06403</drugbank-id>
+      <name>Ambrisentan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Ambrisentan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06445</drugbank-id>
+      <name>Diethylnorspermine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Diethylnorspermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06712</drugbank-id>
+      <name>Nilvadipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nilvadipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06762</drugbank-id>
+      <name>Pinacidil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Pinacidil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07767</drugbank-id>
+      <name>Ferulic acid</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Ferulic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08808</drugbank-id>
+      <name>Bupranolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bupranolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08836</drugbank-id>
+      <name>Temocapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Temocapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08931</drugbank-id>
+      <name>Riociguat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Riociguat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08932</drugbank-id>
+      <name>Macitentan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Macitentan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08952</drugbank-id>
+      <name>Indenolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Indenolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08960</drugbank-id>
+      <name>Hexamethonium</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Hexamethonium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09026</drugbank-id>
+      <name>Aliskiren</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Aliskiren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09206</drugbank-id>
+      <name>Trimazosin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Trimazosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09220</drugbank-id>
+      <name>Nicorandil</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Nicorandil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09235</drugbank-id>
+      <name>Efonidipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Efonidipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09236</drugbank-id>
+      <name>Lacidipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Lacidipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09238</drugbank-id>
+      <name>Manidipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Manidipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09239</drugbank-id>
+      <name>Niguldipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Niguldipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09363</drugbank-id>
+      <name>Rauwolfia serpentina root</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Rauwolfia serpentina root.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09477</drugbank-id>
+      <name>Enalaprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Enalaprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11362</drugbank-id>
+      <name>Selexipag</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Selexipag.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11720</drugbank-id>
+      <name>Angiotensin 1-7</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Angiotensin 1-7.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11770</drugbank-id>
+      <name>Talinolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Talinolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11783</drugbank-id>
+      <name>Imidapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Imidapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12054</drugbank-id>
+      <name>BQ-123</name>
+      <description>Atipamezole may decrease the antihypertensive activities of BQ-123.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12093</drugbank-id>
+      <name>Tetrahydropalmatine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Tetrahydropalmatine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12212</drugbank-id>
+      <name>Landiolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Landiolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12465</drugbank-id>
+      <name>Ketanserin</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Ketanserin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12766</drugbank-id>
+      <name>Cicletanine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cicletanine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12945</drugbank-id>
+      <name>Dihydralazine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Dihydralazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13166</drugbank-id>
+      <name>Zofenopril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Zofenopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13211</drugbank-id>
+      <name>Guanoxan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanoxan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13312</drugbank-id>
+      <name>Delapril</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Delapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13374</drugbank-id>
+      <name>Vincamine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Vincamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13400</drugbank-id>
+      <name>Linsidomine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Linsidomine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13410</drugbank-id>
+      <name>Guanoxabenz</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanoxabenz.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13429</drugbank-id>
+      <name>Tolonidine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Tolonidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13435</drugbank-id>
+      <name>Endralazine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Endralazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13443</drugbank-id>
+      <name>Esatenolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Esatenolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13452</drugbank-id>
+      <name>Cadralazine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cadralazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13508</drugbank-id>
+      <name>Cloranolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cloranolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13532</drugbank-id>
+      <name>Cyclopenthiazide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Cyclopenthiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13575</drugbank-id>
+      <name>Bietaserpine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Bietaserpine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13604</drugbank-id>
+      <name>Guanazodine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanazodine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13631</drugbank-id>
+      <name>Methoserpidine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Methoserpidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13757</drugbank-id>
+      <name>Epanolol</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Epanolol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13779</drugbank-id>
+      <name>Guanoclor</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Guanoclor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13801</drugbank-id>
+      <name>Muzolimine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Muzolimine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13803</drugbank-id>
+      <name>Xipamide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Xipamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13919</drugbank-id>
+      <name>Candesartan</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Candesartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14068</drugbank-id>
+      <name>Dexniguldipine</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Dexniguldipine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14094</drugbank-id>
+      <name>Tocopherylquinone</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Tocopherylquinone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14125</drugbank-id>
+      <name>Benazeprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Benazeprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14207</drugbank-id>
+      <name>Fosinoprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Fosinoprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14208</drugbank-id>
+      <name>Ramiprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Ramiprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14213</drugbank-id>
+      <name>Perindoprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Perindoprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14217</drugbank-id>
+      <name>Quinaprilat</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Quinaprilat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00695</drugbank-id>
+      <name>Furosemide</name>
+      <description>Atipamezole may decrease the antihypertensive activities of Furosemide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00035</drugbank-id>
+      <name>Desmopressin</name>
+      <description>The risk or severity of hypertension can be increased when Desmopressin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The risk or severity of hypertension can be increased when Cyclosporine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00159</drugbank-id>
+      <name>Icosapent</name>
+      <description>The risk or severity of hypertension can be increased when Icosapent is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00211</drugbank-id>
+      <name>Midodrine</name>
+      <description>The risk or severity of hypertension can be increased when Midodrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00216</drugbank-id>
+      <name>Eletriptan</name>
+      <description>The risk or severity of hypertension can be increased when Eletriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00217</drugbank-id>
+      <name>Bethanidine</name>
+      <description>The risk or severity of hypertension can be increased when Bethanidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00221</drugbank-id>
+      <name>Isoetharine</name>
+      <description>The risk or severity of hypertension can be increased when Isoetharine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00228</drugbank-id>
+      <name>Enflurane</name>
+      <description>The risk or severity of hypertension can be increased when Enflurane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00244</drugbank-id>
+      <name>Mesalazine</name>
+      <description>The risk or severity of hypertension can be increased when Mesalazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00246</drugbank-id>
+      <name>Ziprasidone</name>
+      <description>The risk or severity of hypertension can be increased when Ziprasidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00247</drugbank-id>
+      <name>Methysergide</name>
+      <description>The risk or severity of hypertension can be increased when Methysergide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00248</drugbank-id>
+      <name>Cabergoline</name>
+      <description>The risk or severity of hypertension can be increased when Cabergoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00289</drugbank-id>
+      <name>Atomoxetine</name>
+      <description>The risk or severity of hypertension can be increased when Atomoxetine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00292</drugbank-id>
+      <name>Etomidate</name>
+      <description>The risk or severity of hypertension can be increased when Etomidate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00315</drugbank-id>
+      <name>Zolmitriptan</name>
+      <description>The risk or severity of hypertension can be increased when Zolmitriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00320</drugbank-id>
+      <name>Dihydroergotamine</name>
+      <description>The risk or severity of hypertension can be increased when Dihydroergotamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00321</drugbank-id>
+      <name>Amitriptyline</name>
+      <description>The risk or severity of hypertension can be increased when Amitriptyline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The risk or severity of hypertension can be increased when Indomethacin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00344</drugbank-id>
+      <name>Protriptyline</name>
+      <description>The risk or severity of hypertension can be increased when Protriptyline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00353</drugbank-id>
+      <name>Methylergometrine</name>
+      <description>The risk or severity of hypertension can be increased when Methylergometrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00363</drugbank-id>
+      <name>Clozapine</name>
+      <description>The risk or severity of hypertension can be increased when Clozapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00370</drugbank-id>
+      <name>Mirtazapine</name>
+      <description>The risk or severity of hypertension can be increased when Mirtazapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00388</drugbank-id>
+      <name>Phenylephrine</name>
+      <description>The risk or severity of hypertension can be increased when Phenylephrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00397</drugbank-id>
+      <name>Phenylpropanolamine</name>
+      <description>The risk or severity of hypertension can be increased when Phenylpropanolamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00420</drugbank-id>
+      <name>Promazine</name>
+      <description>The risk or severity of hypertension can be increased when Promazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00422</drugbank-id>
+      <name>Methylphenidate</name>
+      <description>The risk or severity of hypertension can be increased when Methylphenidate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00450</drugbank-id>
+      <name>Droperidol</name>
+      <description>The risk or severity of hypertension can be increased when Droperidol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00458</drugbank-id>
+      <name>Imipramine</name>
+      <description>The risk or severity of hypertension can be increased when Imipramine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00461</drugbank-id>
+      <name>Nabumetone</name>
+      <description>The risk or severity of hypertension can be increased when Nabumetone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00465</drugbank-id>
+      <name>Ketorolac</name>
+      <description>The risk or severity of hypertension can be increased when Ketorolac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00469</drugbank-id>
+      <name>Tenoxicam</name>
+      <description>The risk or severity of hypertension can be increased when Tenoxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00477</drugbank-id>
+      <name>Chlorpromazine</name>
+      <description>The risk or severity of hypertension can be increased when Chlorpromazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00482</drugbank-id>
+      <name>Celecoxib</name>
+      <description>The risk or severity of hypertension can be increased when Celecoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00490</drugbank-id>
+      <name>Buspirone</name>
+      <description>The risk or severity of hypertension can be increased when Buspirone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00500</drugbank-id>
+      <name>Tolmetin</name>
+      <description>The risk or severity of hypertension can be increased when Tolmetin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00533</drugbank-id>
+      <name>Rofecoxib</name>
+      <description>The risk or severity of hypertension can be increased when Rofecoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00540</drugbank-id>
+      <name>Nortriptyline</name>
+      <description>The risk or severity of hypertension can be increased when Nortriptyline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00543</drugbank-id>
+      <name>Amoxapine</name>
+      <description>The risk or severity of hypertension can be increased when Amoxapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00554</drugbank-id>
+      <name>Piroxicam</name>
+      <description>The risk or severity of hypertension can be increased when Piroxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00561</drugbank-id>
+      <name>Doxapram</name>
+      <description>The risk or severity of hypertension can be increased when Doxapram is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00572</drugbank-id>
+      <name>Atropine</name>
+      <description>The risk or severity of hypertension can be increased when Atropine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00573</drugbank-id>
+      <name>Fenoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Fenoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00575</drugbank-id>
+      <name>Clonidine</name>
+      <description>The risk or severity of hypertension can be increased when Clonidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00580</drugbank-id>
+      <name>Valdecoxib</name>
+      <description>The risk or severity of hypertension can be increased when Valdecoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00586</drugbank-id>
+      <name>Diclofenac</name>
+      <description>The risk or severity of hypertension can be increased when Diclofenac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00589</drugbank-id>
+      <name>Lisuride</name>
+      <description>The risk or severity of hypertension can be increased when Lisuride is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00601</drugbank-id>
+      <name>Linezolid</name>
+      <description>The risk or severity of hypertension can be increased when Linezolid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00605</drugbank-id>
+      <name>Sulindac</name>
+      <description>The risk or severity of hypertension can be increased when Sulindac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00610</drugbank-id>
+      <name>Metaraminol</name>
+      <description>The risk or severity of hypertension can be increased when Metaraminol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00614</drugbank-id>
+      <name>Furazolidone</name>
+      <description>The risk or severity of hypertension can be increased when Furazolidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00629</drugbank-id>
+      <name>Guanabenz</name>
+      <description>The risk or severity of hypertension can be increased when Guanabenz is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00633</drugbank-id>
+      <name>Dexmedetomidine</name>
+      <description>The risk or severity of hypertension can be increased when Dexmedetomidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00656</drugbank-id>
+      <name>Trazodone</name>
+      <description>The risk or severity of hypertension can be increased when Trazodone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00669</drugbank-id>
+      <name>Sumatriptan</name>
+      <description>The risk or severity of hypertension can be increased when Sumatriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00679</drugbank-id>
+      <name>Thioridazine</name>
+      <description>The risk or severity of hypertension can be increased when Thioridazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00692</drugbank-id>
+      <name>Phentolamine</name>
+      <description>The risk or severity of hypertension can be increased when Phentolamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00696</drugbank-id>
+      <name>Ergotamine</name>
+      <description>The risk or severity of hypertension can be increased when Ergotamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00699</drugbank-id>
+      <name>Nicergoline</name>
+      <description>The risk or severity of hypertension can be increased when Nicergoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00708</drugbank-id>
+      <name>Sufentanil</name>
+      <description>The risk or severity of hypertension can be increased when Sufentanil is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00712</drugbank-id>
+      <name>Flurbiprofen</name>
+      <description>The risk or severity of hypertension can be increased when Flurbiprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00723</drugbank-id>
+      <name>Methoxamine</name>
+      <description>The risk or severity of hypertension can be increased when Methoxamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00726</drugbank-id>
+      <name>Trimipramine</name>
+      <description>The risk or severity of hypertension can be increased when Trimipramine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00734</drugbank-id>
+      <name>Risperidone</name>
+      <description>The risk or severity of hypertension can be increased when Risperidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00749</drugbank-id>
+      <name>Etodolac</name>
+      <description>The risk or severity of hypertension can be increased when Etodolac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00752</drugbank-id>
+      <name>Tranylcypromine</name>
+      <description>The risk or severity of hypertension can be increased when Tranylcypromine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00753</drugbank-id>
+      <name>Isoflurane</name>
+      <description>The risk or severity of hypertension can be increased when Isoflurane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00777</drugbank-id>
+      <name>Propiomazine</name>
+      <description>The risk or severity of hypertension can be increased when Propiomazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00780</drugbank-id>
+      <name>Phenelzine</name>
+      <description>The risk or severity of hypertension can be increased when Phenelzine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00784</drugbank-id>
+      <name>Mefenamic acid</name>
+      <description>The risk or severity of hypertension can be increased when Mefenamic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00788</drugbank-id>
+      <name>Naproxen</name>
+      <description>The risk or severity of hypertension can be increased when Naproxen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00795</drugbank-id>
+      <name>Sulfasalazine</name>
+      <description>The risk or severity of hypertension can be increased when Sulfasalazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00797</drugbank-id>
+      <name>Tolazoline</name>
+      <description>The risk or severity of hypertension can be increased when Tolazoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00802</drugbank-id>
+      <name>Alfentanil</name>
+      <description>The risk or severity of hypertension can be increased when Alfentanil is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00805</drugbank-id>
+      <name>Minaprine</name>
+      <description>The risk or severity of hypertension can be increased when Minaprine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00812</drugbank-id>
+      <name>Phenylbutazone</name>
+      <description>The risk or severity of hypertension can be increased when Phenylbutazone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00813</drugbank-id>
+      <name>Fentanyl</name>
+      <description>The risk or severity of hypertension can be increased when Fentanyl is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00814</drugbank-id>
+      <name>Meloxicam</name>
+      <description>The risk or severity of hypertension can be increased when Meloxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00816</drugbank-id>
+      <name>Orciprenaline</name>
+      <description>The risk or severity of hypertension can be increased when Orciprenaline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00818</drugbank-id>
+      <name>Propofol</name>
+      <description>The risk or severity of hypertension can be increased when Propofol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00821</drugbank-id>
+      <name>Carprofen</name>
+      <description>The risk or severity of hypertension can be increased when Carprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00830</drugbank-id>
+      <name>Phenmetrazine</name>
+      <description>The risk or severity of hypertension can be increased when Phenmetrazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00831</drugbank-id>
+      <name>Trifluoperazine</name>
+      <description>The risk or severity of hypertension can be increased when Trifluoperazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00841</drugbank-id>
+      <name>Dobutamine</name>
+      <description>The risk or severity of hypertension can be increased when Dobutamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00861</drugbank-id>
+      <name>Diflunisal</name>
+      <description>The risk or severity of hypertension can be increased when Diflunisal is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00867</drugbank-id>
+      <name>Ritodrine</name>
+      <description>The risk or severity of hypertension can be increased when Ritodrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00871</drugbank-id>
+      <name>Terbutaline</name>
+      <description>The risk or severity of hypertension can be increased when Terbutaline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00875</drugbank-id>
+      <name>Flupentixol</name>
+      <description>The risk or severity of hypertension can be increased when Flupentixol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00886</drugbank-id>
+      <name>Omapatrilat</name>
+      <description>The risk or severity of hypertension can be increased when Omapatrilat is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00899</drugbank-id>
+      <name>Remifentanil</name>
+      <description>The risk or severity of hypertension can be increased when Remifentanil is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00901</drugbank-id>
+      <name>Bitolterol</name>
+      <description>The risk or severity of hypertension can be increased when Bitolterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00908</drugbank-id>
+      <name>Quinidine</name>
+      <description>The risk or severity of hypertension can be increased when Quinidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00918</drugbank-id>
+      <name>Almotriptan</name>
+      <description>The risk or severity of hypertension can be increased when Almotriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00925</drugbank-id>
+      <name>Phenoxybenzamine</name>
+      <description>The risk or severity of hypertension can be increased when Phenoxybenzamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00935</drugbank-id>
+      <name>Oxymetazoline</name>
+      <description>The risk or severity of hypertension can be increased when Oxymetazoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00936</drugbank-id>
+      <name>Salicylic acid</name>
+      <description>The risk or severity of hypertension can be increased when Salicylic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00938</drugbank-id>
+      <name>Salmeterol</name>
+      <description>The risk or severity of hypertension can be increased when Salmeterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00939</drugbank-id>
+      <name>Meclofenamic acid</name>
+      <description>The risk or severity of hypertension can be increased when Meclofenamic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00945</drugbank-id>
+      <name>Acetylsalicylic acid</name>
+      <description>The risk or severity of hypertension can be increased when Acetylsalicylic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00952</drugbank-id>
+      <name>Naratriptan</name>
+      <description>The risk or severity of hypertension can be increased when Naratriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00953</drugbank-id>
+      <name>Rizatriptan</name>
+      <description>The risk or severity of hypertension can be increased when Rizatriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00983</drugbank-id>
+      <name>Formoterol</name>
+      <description>The risk or severity of hypertension can be increased when Formoterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00988</drugbank-id>
+      <name>Dopamine</name>
+      <description>The risk or severity of hypertension can be increased when Dopamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00991</drugbank-id>
+      <name>Oxaprozin</name>
+      <description>The risk or severity of hypertension can be increased when Oxaprozin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00998</drugbank-id>
+      <name>Frovatriptan</name>
+      <description>The risk or severity of hypertension can be increased when Frovatriptan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01001</drugbank-id>
+      <name>Salbutamol</name>
+      <description>The risk or severity of hypertension can be increased when Salbutamol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01009</drugbank-id>
+      <name>Ketoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Ketoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01014</drugbank-id>
+      <name>Balsalazide</name>
+      <description>The risk or severity of hypertension can be increased when Balsalazide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01018</drugbank-id>
+      <name>Guanfacine</name>
+      <description>The risk or severity of hypertension can be increased when Guanfacine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01028</drugbank-id>
+      <name>Methoxyflurane</name>
+      <description>The risk or severity of hypertension can be increased when Methoxyflurane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01037</drugbank-id>
+      <name>Selegiline</name>
+      <description>The risk or severity of hypertension can be increased when Selegiline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01049</drugbank-id>
+      <name>Ergoloid mesylate</name>
+      <description>The risk or severity of hypertension can be increased when Ergoloid mesylate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01050</drugbank-id>
+      <name>Ibuprofen</name>
+      <description>The risk or severity of hypertension can be increased when Ibuprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01064</drugbank-id>
+      <name>Isoprenaline</name>
+      <description>The risk or severity of hypertension can be increased when Isoprenaline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01102</drugbank-id>
+      <name>Arbutamine</name>
+      <description>The risk or severity of hypertension can be increased when Arbutamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01126</drugbank-id>
+      <name>Dutasteride</name>
+      <description>The risk or severity of hypertension can be increased when Dutasteride is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01142</drugbank-id>
+      <name>Doxepin</name>
+      <description>The risk or severity of hypertension can be increased when Doxepin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01149</drugbank-id>
+      <name>Nefazodone</name>
+      <description>The risk or severity of hypertension can be increased when Nefazodone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01151</drugbank-id>
+      <name>Desipramine</name>
+      <description>The risk or severity of hypertension can be increased when Desipramine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01159</drugbank-id>
+      <name>Halothane</name>
+      <description>The risk or severity of hypertension can be increased when Halothane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01171</drugbank-id>
+      <name>Moclobemide</name>
+      <description>The risk or severity of hypertension can be increased when Moclobemide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01180</drugbank-id>
+      <name>Rescinnamine</name>
+      <description>The risk or severity of hypertension can be increased when Rescinnamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01182</drugbank-id>
+      <name>Propafenone</name>
+      <description>The risk or severity of hypertension can be increased when Propafenone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01186</drugbank-id>
+      <name>Pergolide</name>
+      <description>The risk or severity of hypertension can be increased when Pergolide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01189</drugbank-id>
+      <name>Desflurane</name>
+      <description>The risk or severity of hypertension can be increased when Desflurane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01200</drugbank-id>
+      <name>Bromocriptine</name>
+      <description>The risk or severity of hypertension can be increased when Bromocriptine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01216</drugbank-id>
+      <name>Finasteride</name>
+      <description>The risk or severity of hypertension can be increased when Finasteride is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01224</drugbank-id>
+      <name>Quetiapine</name>
+      <description>The risk or severity of hypertension can be increased when Quetiapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01236</drugbank-id>
+      <name>Sevoflurane</name>
+      <description>The risk or severity of hypertension can be increased when Sevoflurane is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01238</drugbank-id>
+      <name>Aripiprazole</name>
+      <description>The risk or severity of hypertension can be increased when Aripiprazole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01242</drugbank-id>
+      <name>Clomipramine</name>
+      <description>The risk or severity of hypertension can be increased when Clomipramine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01247</drugbank-id>
+      <name>Isocarboxazid</name>
+      <description>The risk or severity of hypertension can be increased when Isocarboxazid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01250</drugbank-id>
+      <name>Olsalazine</name>
+      <description>The risk or severity of hypertension can be increased when Olsalazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01253</drugbank-id>
+      <name>Ergometrine</name>
+      <description>The risk or severity of hypertension can be increased when Ergometrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01267</drugbank-id>
+      <name>Paliperidone</name>
+      <description>The risk or severity of hypertension can be increased when Paliperidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01274</drugbank-id>
+      <name>Arformoterol</name>
+      <description>The risk or severity of hypertension can be increased when Arformoterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01283</drugbank-id>
+      <name>Lumiracoxib</name>
+      <description>The risk or severity of hypertension can be increased when Lumiracoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01288</drugbank-id>
+      <name>Fenoterol</name>
+      <description>The risk or severity of hypertension can be increased when Fenoterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01291</drugbank-id>
+      <name>Pirbuterol</name>
+      <description>The risk or severity of hypertension can be increased when Pirbuterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01363</drugbank-id>
+      <name>Ephedra sinica root</name>
+      <description>The risk or severity of hypertension can be increased when Ephedra sinica root is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01364</drugbank-id>
+      <name>Ephedrine</name>
+      <description>The risk or severity of hypertension can be increased when Ephedrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01366</drugbank-id>
+      <name>Procaterol</name>
+      <description>The risk or severity of hypertension can be increased when Procaterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01367</drugbank-id>
+      <name>Rasagiline</name>
+      <description>The risk or severity of hypertension can be increased when Rasagiline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01392</drugbank-id>
+      <name>Yohimbine</name>
+      <description>The risk or severity of hypertension can be increased when Yohimbine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01397</drugbank-id>
+      <name>Magnesium salicylate</name>
+      <description>The risk or severity of hypertension can be increased when Magnesium salicylate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01399</drugbank-id>
+      <name>Salsalate</name>
+      <description>The risk or severity of hypertension can be increased when Salsalate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01401</drugbank-id>
+      <name>Choline magnesium trisalicylate</name>
+      <description>The risk or severity of hypertension can be increased when Choline magnesium trisalicylate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01403</drugbank-id>
+      <name>Methotrimeprazine</name>
+      <description>The risk or severity of hypertension can be increased when Methotrimeprazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01407</drugbank-id>
+      <name>Clenbuterol</name>
+      <description>The risk or severity of hypertension can be increased when Clenbuterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01408</drugbank-id>
+      <name>Bambuterol</name>
+      <description>The risk or severity of hypertension can be increased when Bambuterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01419</drugbank-id>
+      <name>Antrafenine</name>
+      <description>The risk or severity of hypertension can be increased when Antrafenine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01424</drugbank-id>
+      <name>Aminophenazone</name>
+      <description>The risk or severity of hypertension can be increased when Aminophenazone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01435</drugbank-id>
+      <name>Antipyrine</name>
+      <description>The risk or severity of hypertension can be increased when Antipyrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01472</drugbank-id>
+      <name>4-Methoxyamphetamine</name>
+      <description>The risk or severity of hypertension can be increased when 4-Methoxyamphetamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01579</drugbank-id>
+      <name>Phendimetrazine</name>
+      <description>The risk or severity of hypertension can be increased when Phendimetrazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01591</drugbank-id>
+      <name>Solifenacin</name>
+      <description>The risk or severity of hypertension can be increased when Solifenacin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01600</drugbank-id>
+      <name>Tiaprofenic acid</name>
+      <description>The risk or severity of hypertension can be increased when Tiaprofenic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01608</drugbank-id>
+      <name>Periciazine</name>
+      <description>The risk or severity of hypertension can be increased when Periciazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01614</drugbank-id>
+      <name>Acepromazine</name>
+      <description>The risk or severity of hypertension can be increased when Acepromazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01622</drugbank-id>
+      <name>Thioproperazine</name>
+      <description>The risk or severity of hypertension can be increased when Thioproperazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01624</drugbank-id>
+      <name>Zuclopenthixol</name>
+      <description>The risk or severity of hypertension can be increased when Zuclopenthixol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01626</drugbank-id>
+      <name>Pargyline</name>
+      <description>The risk or severity of hypertension can be increased when Pargyline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01628</drugbank-id>
+      <name>Etoricoxib</name>
+      <description>The risk or severity of hypertension can be increased when Etoricoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02032</drugbank-id>
+      <name>1-(3-Mercapto-2-Methyl-Propionyl)-Pyrrolidine-2-Carboxylic Acid</name>
+      <description>The risk or severity of hypertension can be increased when 1-(3-Mercapto-2-Methyl-Propionyl)-Pyrrolidine-2-Carboxylic Acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02224</drugbank-id>
+      <name>Taxifolin</name>
+      <description>The risk or severity of hypertension can be increased when Taxifolin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03585</drugbank-id>
+      <name>Oxyphenbutazone</name>
+      <description>The risk or severity of hypertension can be increased when Oxyphenbutazone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04017</drugbank-id>
+      <name>Clorgiline</name>
+      <description>The risk or severity of hypertension can be increased when Clorgiline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04552</drugbank-id>
+      <name>Niflumic acid</name>
+      <description>The risk or severity of hypertension can be increased when Niflumic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04581</drugbank-id>
+      <name>1-benzylimidazole</name>
+      <description>The risk or severity of hypertension can be increased when 1-benzylimidazole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04743</drugbank-id>
+      <name>Nimesulide</name>
+      <description>The risk or severity of hypertension can be increased when Nimesulide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04812</drugbank-id>
+      <name>Benoxaprofen</name>
+      <description>The risk or severity of hypertension can be increased when Benoxaprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04817</drugbank-id>
+      <name>Metamizole</name>
+      <description>The risk or severity of hypertension can be increased when Metamizole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04818</drugbank-id>
+      <name>Iproniazid</name>
+      <description>The risk or severity of hypertension can be increased when Iproniazid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04820</drugbank-id>
+      <name>Nialamide</name>
+      <description>The risk or severity of hypertension can be increased when Nialamide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04828</drugbank-id>
+      <name>Zomepirac</name>
+      <description>The risk or severity of hypertension can be increased when Zomepirac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04829</drugbank-id>
+      <name>Lysergic acid diethylamide</name>
+      <description>The risk or severity of hypertension can be increased when Lysergic acid diethylamide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04836</drugbank-id>
+      <name>Amineptine</name>
+      <description>The risk or severity of hypertension can be increased when Amineptine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04855</drugbank-id>
+      <name>Dronedarone</name>
+      <description>The risk or severity of hypertension can be increased when Dronedarone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04908</drugbank-id>
+      <name>Flibanserin</name>
+      <description>The risk or severity of hypertension can be increased when Flibanserin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04946</drugbank-id>
+      <name>Iloperidone</name>
+      <description>The risk or severity of hypertension can be increased when Iloperidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04948</drugbank-id>
+      <name>Lofexidine</name>
+      <description>The risk or severity of hypertension can be increased when Lofexidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05039</drugbank-id>
+      <name>Indacaterol</name>
+      <description>The risk or severity of hypertension can be increased when Indacaterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05095</drugbank-id>
+      <name>Cimicoxib</name>
+      <description>The risk or severity of hypertension can be increased when Cimicoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05271</drugbank-id>
+      <name>Rotigotine</name>
+      <description>The risk or severity of hypertension can be increased when Rotigotine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05395</drugbank-id>
+      <name>Amibegron</name>
+      <description>The risk or severity of hypertension can be increased when Amibegron is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05562</drugbank-id>
+      <name>Naluzotan</name>
+      <description>The risk or severity of hypertension can be increased when Naluzotan is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06016</drugbank-id>
+      <name>Cariprazine</name>
+      <description>The risk or severity of hypertension can be increased when Cariprazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06148</drugbank-id>
+      <name>Mianserin</name>
+      <description>The risk or severity of hypertension can be increased when Mianserin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06152</drugbank-id>
+      <name>Nylidrin</name>
+      <description>The risk or severity of hypertension can be increased when Nylidrin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06153</drugbank-id>
+      <name>Pizotifen</name>
+      <description>The risk or severity of hypertension can be increased when Pizotifen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06190</drugbank-id>
+      <name>Solabegron</name>
+      <description>The risk or severity of hypertension can be increased when Solabegron is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06216</drugbank-id>
+      <name>Asenapine</name>
+      <description>The risk or severity of hypertension can be increased when Asenapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06654</drugbank-id>
+      <name>Safinamide</name>
+      <description>The risk or severity of hypertension can be increased when Safinamide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06678</drugbank-id>
+      <name>Esmirtazapine</name>
+      <description>The risk or severity of hypertension can be increased when Esmirtazapine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06684</drugbank-id>
+      <name>Vilazodone</name>
+      <description>The risk or severity of hypertension can be increased when Vilazodone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06690</drugbank-id>
+      <name>Nitrous oxide</name>
+      <description>The risk or severity of hypertension can be increased when Nitrous oxide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06694</drugbank-id>
+      <name>Xylometazoline</name>
+      <description>The risk or severity of hypertension can be increased when Xylometazoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06701</drugbank-id>
+      <name>Dexmethylphenidate</name>
+      <description>The risk or severity of hypertension can be increased when Dexmethylphenidate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06706</drugbank-id>
+      <name>Isometheptene</name>
+      <description>The risk or severity of hypertension can be increased when Isometheptene is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06711</drugbank-id>
+      <name>Naphazoline</name>
+      <description>The risk or severity of hypertension can be increased when Naphazoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06725</drugbank-id>
+      <name>Lornoxicam</name>
+      <description>The risk or severity of hypertension can be increased when Lornoxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06736</drugbank-id>
+      <name>Aceclofenac</name>
+      <description>The risk or severity of hypertension can be increased when Aceclofenac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06737</drugbank-id>
+      <name>Zaltoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Zaltoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06763</drugbank-id>
+      <name>Saralasin</name>
+      <description>The risk or severity of hypertension can be increased when Saralasin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06764</drugbank-id>
+      <name>Tetryzoline</name>
+      <description>The risk or severity of hypertension can be increased when Tetryzoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07402</drugbank-id>
+      <name>Azapropazone</name>
+      <description>The risk or severity of hypertension can be increased when Azapropazone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07477</drugbank-id>
+      <name>Felbinac</name>
+      <description>The risk or severity of hypertension can be increased when Felbinac is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08439</drugbank-id>
+      <name>Parecoxib</name>
+      <description>The risk or severity of hypertension can be increased when Parecoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08797</drugbank-id>
+      <name>Salicylamide</name>
+      <description>The risk or severity of hypertension can be increased when Salicylamide is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08810</drugbank-id>
+      <name>Cinitapride</name>
+      <description>The risk or severity of hypertension can be increased when Cinitapride is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08815</drugbank-id>
+      <name>Lurasidone</name>
+      <description>The risk or severity of hypertension can be increased when Lurasidone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08841</drugbank-id>
+      <name>Tyramine</name>
+      <description>The risk or severity of hypertension can be increased when Tyramine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08893</drugbank-id>
+      <name>Mirabegron</name>
+      <description>The risk or severity of hypertension can be increased when Mirabegron is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08925</drugbank-id>
+      <name>Adrafinil</name>
+      <description>The risk or severity of hypertension can be increased when Adrafinil is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08940</drugbank-id>
+      <name>Kebuzone</name>
+      <description>The risk or severity of hypertension can be increased when Kebuzone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08941</drugbank-id>
+      <name>Isoxsuprine</name>
+      <description>The risk or severity of hypertension can be increased when Isoxsuprine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08942</drugbank-id>
+      <name>Isoxicam</name>
+      <description>The risk or severity of hypertension can be increased when Isoxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08950</drugbank-id>
+      <name>Indoramin</name>
+      <description>The risk or severity of hypertension can be increased when Indoramin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08951</drugbank-id>
+      <name>Indoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Indoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08954</drugbank-id>
+      <name>Ifenprodil</name>
+      <description>The risk or severity of hypertension can be increased when Ifenprodil is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08955</drugbank-id>
+      <name>Ibuproxam</name>
+      <description>The risk or severity of hypertension can be increased when Ibuproxam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08957</drugbank-id>
+      <name>Hexoprenaline</name>
+      <description>The risk or severity of hypertension can be increased when Hexoprenaline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08976</drugbank-id>
+      <name>Floctafenine</name>
+      <description>The risk or severity of hypertension can be increased when Floctafenine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08981</drugbank-id>
+      <name>Fenbufen</name>
+      <description>The risk or severity of hypertension can be increased when Fenbufen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08984</drugbank-id>
+      <name>Etofenamate</name>
+      <description>The risk or severity of hypertension can be increased when Etofenamate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08985</drugbank-id>
+      <name>Etilefrine</name>
+      <description>The risk or severity of hypertension can be increased when Etilefrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08991</drugbank-id>
+      <name>Epirizole</name>
+      <description>The risk or severity of hypertension can be increased when Epirizole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08996</drugbank-id>
+      <name>Dimetacrine</name>
+      <description>The risk or severity of hypertension can be increased when Dimetacrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09016</drugbank-id>
+      <name>Butriptyline</name>
+      <description>The risk or severity of hypertension can be increased when Butriptyline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09042</drugbank-id>
+      <name>Tedizolid phosphate</name>
+      <description>The risk or severity of hypertension can be increased when Tedizolid phosphate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09061</drugbank-id>
+      <name>Cannabidiol</name>
+      <description>The risk or severity of hypertension can be increased when Cannabidiol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09068</drugbank-id>
+      <name>Vortioxetine</name>
+      <description>The risk or severity of hypertension can be increased when Vortioxetine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09080</drugbank-id>
+      <name>Olodaterol</name>
+      <description>The risk or severity of hypertension can be increased when Olodaterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09082</drugbank-id>
+      <name>Vilanterol</name>
+      <description>The risk or severity of hypertension can be increased when Vilanterol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09084</drugbank-id>
+      <name>Benzydamine</name>
+      <description>The risk or severity of hypertension can be increased when Benzydamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09128</drugbank-id>
+      <name>Brexpiprazole</name>
+      <description>The risk or severity of hypertension can be increased when Brexpiprazole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09167</drugbank-id>
+      <name>Dosulepin</name>
+      <description>The risk or severity of hypertension can be increased when Dosulepin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09202</drugbank-id>
+      <name>Cirazoline</name>
+      <description>The risk or severity of hypertension can be increased when Cirazoline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09203</drugbank-id>
+      <name>Synephrine</name>
+      <description>The risk or severity of hypertension can be increased when Synephrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09205</drugbank-id>
+      <name>Moxisylyte</name>
+      <description>The risk or severity of hypertension can be increased when Moxisylyte is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09212</drugbank-id>
+      <name>Loxoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Loxoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09213</drugbank-id>
+      <name>Dexibuprofen</name>
+      <description>The risk or severity of hypertension can be increased when Dexibuprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09214</drugbank-id>
+      <name>Dexketoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Dexketoprofen is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09215</drugbank-id>
+      <name>Droxicam</name>
+      <description>The risk or severity of hypertension can be increased when Droxicam is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09216</drugbank-id>
+      <name>Tolfenamic acid</name>
+      <description>The risk or severity of hypertension can be increased when Tolfenamic acid is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09217</drugbank-id>
+      <name>Firocoxib</name>
+      <description>The risk or severity of hypertension can be increased when Firocoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09218</drugbank-id>
+      <name>Clonixin</name>
+      <description>The risk or severity of hypertension can be increased when Clonixin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09241</drugbank-id>
+      <name>Methylene blue</name>
+      <description>The risk or severity of hypertension can be increased when Methylene blue is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09242</drugbank-id>
+      <name>Moxonidine</name>
+      <description>The risk or severity of hypertension can be increased when Moxonidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09243</drugbank-id>
+      <name>Hydracarbazine</name>
+      <description>The risk or severity of hypertension can be increased when Hydracarbazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09244</drugbank-id>
+      <name>Pirlindole</name>
+      <description>The risk or severity of hypertension can be increased when Pirlindole is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09245</drugbank-id>
+      <name>Toloxatone</name>
+      <description>The risk or severity of hypertension can be increased when Toloxatone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09246</drugbank-id>
+      <name>Benmoxin</name>
+      <description>The risk or severity of hypertension can be increased when Benmoxin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09248</drugbank-id>
+      <name>Mebanazine</name>
+      <description>The risk or severity of hypertension can be increased when Mebanazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09249</drugbank-id>
+      <name>Octamoxin</name>
+      <description>The risk or severity of hypertension can be increased when Octamoxin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09250</drugbank-id>
+      <name>Pheniprazine</name>
+      <description>The risk or severity of hypertension can be increased when Pheniprazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09251</drugbank-id>
+      <name>Phenoxypropazine</name>
+      <description>The risk or severity of hypertension can be increased when Phenoxypropazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09252</drugbank-id>
+      <name>Pivhydrazine</name>
+      <description>The risk or severity of hypertension can be increased when Pivhydrazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09253</drugbank-id>
+      <name>Safrazine</name>
+      <description>The risk or severity of hypertension can be increased when Safrazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09254</drugbank-id>
+      <name>Caroxazone</name>
+      <description>The risk or severity of hypertension can be increased when Caroxazone is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09273</drugbank-id>
+      <name>Doxofylline</name>
+      <description>The risk or severity of hypertension can be increased when Doxofylline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09285</drugbank-id>
+      <name>Morniflumate</name>
+      <description>The risk or severity of hypertension can be increased when Morniflumate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09288</drugbank-id>
+      <name>Propacetamol</name>
+      <description>The risk or severity of hypertension can be increased when Propacetamol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09289</drugbank-id>
+      <name>Tianeptine</name>
+      <description>The risk or severity of hypertension can be increased when Tianeptine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09295</drugbank-id>
+      <name>Talniflumate</name>
+      <description>The risk or severity of hypertension can be increased when Talniflumate is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09307</drugbank-id>
+      <name>Oxaprotiline</name>
+      <description>The risk or severity of hypertension can be increased when Oxaprotiline is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11273</drugbank-id>
+      <name>Dihydroergocornine</name>
+      <description>The risk or severity of hypertension can be increased when Dihydroergocornine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11278</drugbank-id>
+      <name>DL-Methylephedrine</name>
+      <description>The risk or severity of hypertension can be increased when DL-Methylephedrine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11373</drugbank-id>
+      <name>Amitraz</name>
+      <description>The risk or severity of hypertension can be increased when Amitraz is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11428</drugbank-id>
+      <name>Medetomidine</name>
+      <description>The risk or severity of hypertension can be increased when Medetomidine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11455</drugbank-id>
+      <name>Robenacoxib</name>
+      <description>The risk or severity of hypertension can be increased when Robenacoxib is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11466</drugbank-id>
+      <name>Tepoxalin</name>
+      <description>The risk or severity of hypertension can be increased when Tepoxalin is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11477</drugbank-id>
+      <name>Xylazine</name>
+      <description>The risk or severity of hypertension can be increased when Xylazine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11518</drugbank-id>
+      <name>Flunixin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Flunixin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11541</drugbank-id>
+      <name>Ractopamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Ractopamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11543</drugbank-id>
+      <name>Romifidine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Romifidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11556</drugbank-id>
+      <name>Detomidine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Detomidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11587</drugbank-id>
+      <name>Etafedrine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Etafedrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11738</drugbank-id>
+      <name>Rilmenidine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Rilmenidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11755</drugbank-id>
+      <name>Tetrahydrocannabivarin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tetrahydrocannabivarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11785</drugbank-id>
+      <name>Anisodamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Anisodamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11871</drugbank-id>
+      <name>PF-00610355</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with PF-00610355.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12092</drugbank-id>
+      <name>Naftopidil</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Naftopidil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12100</drugbank-id>
+      <name>Abediterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Abediterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12248</drugbank-id>
+      <name>Tulobuterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tulobuterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12278</drugbank-id>
+      <name>Propiverine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Propiverine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12313</drugbank-id>
+      <name>Dopexamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Dopexamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12361</drugbank-id>
+      <name>Piclozotan</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Piclozotan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12371</drugbank-id>
+      <name>Siponimod</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Siponimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12445</drugbank-id>
+      <name>Nitroaspirin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Nitroaspirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12480</drugbank-id>
+      <name>Betulinic Acid</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Betulinic Acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12545</drugbank-id>
+      <name>Indobufen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Indobufen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12551</drugbank-id>
+      <name>Idazoxan</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Idazoxan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12610</drugbank-id>
+      <name>Ebselen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Ebselen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12661</drugbank-id>
+      <name>Urapidil</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Urapidil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12779</drugbank-id>
+      <name>Higenamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Higenamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12846</drugbank-id>
+      <name>Reproterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Reproterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12930</drugbank-id>
+      <name>Opipramol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Opipramol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13001</drugbank-id>
+      <name>Tinoridine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tinoridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13064</drugbank-id>
+      <name>Tramazoline</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tramazoline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13114</drugbank-id>
+      <name>Amitriptylinoxide</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Amitriptylinoxide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13139</drugbank-id>
+      <name>Levosalbutamol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Levosalbutamol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13167</drugbank-id>
+      <name>Alclofenac</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Alclofenac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13217</drugbank-id>
+      <name>Fentiazac</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Fentiazac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13225</drugbank-id>
+      <name>Dibenzepin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Dibenzepin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13232</drugbank-id>
+      <name>Suxibuzone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Suxibuzone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13246</drugbank-id>
+      <name>Quinupramine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Quinupramine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13251</drugbank-id>
+      <name>Octopamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Octopamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13286</drugbank-id>
+      <name>Bumadizone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Bumadizone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13314</drugbank-id>
+      <name>Alminoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Alminoprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13317</drugbank-id>
+      <name>Flunoxaprofen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Flunoxaprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13323</drugbank-id>
+      <name>Trichloroethylene</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Trichloroethylene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13341</drugbank-id>
+      <name>Fenozolone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Fenozolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13345</drugbank-id>
+      <name>Dihydroergocristine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Dihydroergocristine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13364</drugbank-id>
+      <name>Feprazone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Feprazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13371</drugbank-id>
+      <name>Difenpiramide</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Difenpiramide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13378</drugbank-id>
+      <name>Norfenefrine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Norfenefrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13384</drugbank-id>
+      <name>Melitracen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Melitracen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13385</drugbank-id>
+      <name>Dihydroergocryptine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Dihydroergocryptine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13398</drugbank-id>
+      <name>Oxyfedrine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Oxyfedrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13399</drugbank-id>
+      <name>Terguride</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Terguride.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13407</drugbank-id>
+      <name>Nifenazone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Nifenazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13411</drugbank-id>
+      <name>Lofepramine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Lofepramine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13432</drugbank-id>
+      <name>Lonazolac</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Lonazolac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13453</drugbank-id>
+      <name>Xenon</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Xenon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13481</drugbank-id>
+      <name>Tenidap</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tenidap.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13496</drugbank-id>
+      <name>Iprindole</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Iprindole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13501</drugbank-id>
+      <name>Bendazac</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Bendazac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13510</drugbank-id>
+      <name>Buflomedil</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Buflomedil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13514</drugbank-id>
+      <name>Pranoprofen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Pranoprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13520</drugbank-id>
+      <name>Metergoline</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Metergoline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13524</drugbank-id>
+      <name>Propyphenazone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Propyphenazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13527</drugbank-id>
+      <name>Proglumetacin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Proglumetacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13538</drugbank-id>
+      <name>Guacetisal</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Guacetisal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13544</drugbank-id>
+      <name>Ethenzamide</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Ethenzamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13559</drugbank-id>
+      <name>Rimiterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Rimiterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13598</drugbank-id>
+      <name>Diethyl ether</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Diethyl ether.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13612</drugbank-id>
+      <name>Carbaspirin calcium</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Carbaspirin calcium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13629</drugbank-id>
+      <name>Mofebutazone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Mofebutazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13649</drugbank-id>
+      <name>Proquazone</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Proquazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13657</drugbank-id>
+      <name>Benorilate</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Benorilate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13692</drugbank-id>
+      <name>Tretoquinol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Tretoquinol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13722</drugbank-id>
+      <name>Pirprofen</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Pirprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13777</drugbank-id>
+      <name>Prenalterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Prenalterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13781</drugbank-id>
+      <name>Xamoterol</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Xamoterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13782</drugbank-id>
+      <name>Imipramine oxide</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Imipramine oxide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13783</drugbank-id>
+      <name>Acemetacin</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Acemetacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13852</drugbank-id>
+      <name>Mefenorex</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Mefenorex.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13860</drugbank-id>
+      <name>Imidazole salicylate</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Imidazole salicylate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13875</drugbank-id>
+      <name>Harmaline</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Harmaline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14010</drugbank-id>
+      <name>5-methoxy-N,N-dimethyltryptamine</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with 5-methoxy-N,N-dimethyltryptamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14059</drugbank-id>
+      <name>SC-236</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with SC-236.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14060</drugbank-id>
+      <name>NS-398</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with NS-398.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14185</drugbank-id>
+      <name>Aripiprazole lauroxil</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Aripiprazole lauroxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14231</drugbank-id>
+      <name>Quinoline Yellow WS</name>
+      <description>The risk or severity of hypertension can be increased when Atipamezole is combined with Quinoline Yellow WS.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00368</drugbank-id>
+      <name>Norepinephrine</name>
+      <description>Atipamezole may decrease the hypertensive activities of Norepinephrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00668</drugbank-id>
+      <name>Epinephrine</name>
+      <description>Atipamezole may decrease the hypertensive activities of Epinephrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06262</drugbank-id>
+      <name>Droxidopa</name>
+      <description>Atipamezole may decrease the hypertensive activities of Droxidopa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06707</drugbank-id>
+      <name>Levonordefrin</name>
+      <description>Atipamezole may decrease the hypertensive activities of Levonordefrin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06814</drugbank-id>
+      <name>Protokylol</name>
+      <description>Atipamezole may decrease the hypertensive activities of Protokylol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11124</drugbank-id>
+      <name>Racepinephrine</name>
+      <description>Atipamezole may decrease the hypertensive activities of Racepinephrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12927</drugbank-id>
+      <name>Theodrenaline</name>
+      <description>Atipamezole may decrease the hypertensive activities of Theodrenaline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13316</drugbank-id>
+      <name>Ibopamine</name>
+      <description>Atipamezole may decrease the hypertensive activities of Ibopamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13917</drugbank-id>
+      <name>Deoxyepinephrine</name>
+      <description>Atipamezole may decrease the hypertensive activities of Deoxyepinephrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00697</drugbank-id>
+      <name>Tizanidine</name>
+      <description>The therapeutic efficacy of Tizanidine can be decreased when used in combination with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01537</drugbank-id>
+      <name>4-Bromo-2,5-dimethoxyphenethylamine</name>
+      <description>The therapeutic efficacy of 4-Bromo-2,5-dimethoxyphenethylamine can be decreased when used in combination with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09013</drugbank-id>
+      <name>Befunolol</name>
+      <description>The therapeutic efficacy of Befunolol can be decreased when used in combination with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12526</drugbank-id>
+      <name>Batefenterol</name>
+      <description>The therapeutic efficacy of Batefenterol can be decreased when used in combination with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14752</drugbank-id>
+      <name>Racephedrine</name>
+      <description>The therapeutic efficacy of Racephedrine can be decreased when used in combination with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00182</drugbank-id>
+      <name>Amphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Amphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00191</drugbank-id>
+      <name>Phentermine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Phentermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00852</drugbank-id>
+      <name>Pseudoephedrine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Pseudoephedrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00865</drugbank-id>
+      <name>Benzphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Benzphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00937</drugbank-id>
+      <name>Diethylpropion</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Diethylpropion.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01255</drugbank-id>
+      <name>Lisdexamfetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Lisdexamfetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01365</drugbank-id>
+      <name>Mephentermine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Mephentermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01442</drugbank-id>
+      <name>MMDA</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with MMDA.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01454</drugbank-id>
+      <name>Midomafetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Midomafetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01467</drugbank-id>
+      <name>2,5-Dimethoxy-4-ethylamphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with 2,5-Dimethoxy-4-ethylamphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01484</drugbank-id>
+      <name>4-Bromo-2,5-dimethoxyamphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with 4-Bromo-2,5-dimethoxyamphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01509</drugbank-id>
+      <name>Tenamfetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Tenamfetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01556</drugbank-id>
+      <name>Chlorphentermine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Chlorphentermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01566</drugbank-id>
+      <name>Methylenedioxyethamphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Methylenedioxyethamphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01576</drugbank-id>
+      <name>Dextroamphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Dextroamphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01577</drugbank-id>
+      <name>Metamfetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Metamfetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09480</drugbank-id>
+      <name>Iofetamine I-123</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Iofetamine I-123.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12080</drugbank-id>
+      <name>Ritobegron</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Ritobegron.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13108</drugbank-id>
+      <name>Mephedrone</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Mephedrone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13624</drugbank-id>
+      <name>Methoxyphenamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Methoxyphenamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13703</drugbank-id>
+      <name>Gepefrine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with Gepefrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13940</drugbank-id>
+      <name>2,5-Dimethoxy-4-ethylthioamphetamine</name>
+      <description>The therapeutic efficacy of Atipamezole can be decreased when used in combination with 2,5-Dimethoxy-4-ethylthioamphetamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00193</drugbank-id>
+      <name>Tramadol</name>
+      <description>The risk or severity of serotonin syndrome and seizure can be increased when Atipamezole is combined with Tramadol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11823</drugbank-id>
+      <name>Esketamine</name>
+      <description>The risk or severity of hypertension can be increased when Esketamine is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14754</drugbank-id>
+      <name>Solriamfetol</name>
+      <description>The risk or severity of hypertension can be increased when Solriamfetol is combined with Atipamezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13946</drugbank-id>
+      <name>Testosterone undecanoate</name>
+      <description>Testosterone undecanoate may increase the hypertensive activities of Atipamezole.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>3.32</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>7.06e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>5-(2-ethyl-2,3-dihydro-1H-inden-2-yl)-1H-imidazole</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>atipamezole</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>212.296</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>212.131348523</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCC1(CC2=CC=CC=C2C1)C1=CN=CN1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C14H16N2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C14H16N2/c1-2-14(13-9-15-10-16-13)7-11-5-3-4-6-12(11)8-14/h3-6,9-10H,2,7-8H2,1H3,(H,15,16)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HSWPZIDYAHLZDD-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>28.68</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>65.49</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>24.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>13.33</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>7.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>11767</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D03002</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>64427</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>81807</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Atipamezole</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL353972</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

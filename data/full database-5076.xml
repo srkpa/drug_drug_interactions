@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05469</drugbank-id>
+  <name>R450</name>
+  <description>R450 is an alpha 1 antagonist that acts to tighten the muscle tone in the bladder. It is being considered for treatment of stress-related urinary incontinence. Phase IIa data for the drug show it reduced the number of incontinent episodes compared to placebo with minimal cardiovascular effects.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in urinary incontinence.</indication>
+  <pharmacodynamics>R450 is an alpha 1 adrenoreceptor antagonist that acts to tighten the muscle tone in the bladder. </pharmacodynamics>
+  <mechanism-of-action>R450 is a selective alpha 1 adrenoreceptor antagonist. Research on the management of urinary incontinence suggests that it is most likely an antagonist at alpha-1B and alpha-1D, while it acts as an agonist on alpha-1a.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910157</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000501</id>
+      <name>Alpha-1A adrenergic receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35348" source="Swiss-Prot">
+        <name>Alpha-1A adrenergic receptor</name>
+        <general-function>Protein heterodimerization activity</general-function>
+        <specific-function>This alpha-adrenergic receptor mediates its action by association with G proteins that activate a phosphatidylinositol-calcium second messenger system. Its effect is mediated by G(q) and G(11) proteins. Nuclear ADRA1A-ADRA1B heterooligomers regulate phenylephrine(PE)-stimulated ERK signaling in cardiac myocytes.</specific-function>
+        <gene-name>ADRA1A</gene-name>
+        <locus>8p21-p11.2</locus>
+        <cellular-location>Nucleus membrane</cellular-location>
+        <transmembrane-regions>28-51
+65-88
+100-122
+144-167
+182-205
+274-297
+306-329</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.23</theoretical-pi>
+        <molecular-weight>51486.005</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:277</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADRA1A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D25235</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>433201</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>22</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>22</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35348</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADA1A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ADRA1C</synonym>
+          <synonym>Alpha-1A adrenoceptor</synonym>
+          <synonym>Alpha-1A adrenoreceptor</synonym>
+          <synonym>Alpha-1C adrenergic receptor</synonym>
+          <synonym>Alpha-adrenergic receptor 1c</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001000|Alpha-1A adrenergic receptor
+MVFLSGNASDSSNCTQPPAPVNISKAILLGVILGGLILFGVLGNILVILSVACHRHLHSV
+THYYIVNLAVADLLLTSTVLPFSAIFEVLGYWAFGRVFCNIWAAVDVLCCTASIMGLCII
+SIDRYIGVSYPLRYPTIVTQRRGLMALLCVWALSLVISIGPLFGWRQPAPEDETICQINE
+EPGYVLFSALGSFYLPLAIILVMYCRVYVVAKRESRGLKSGLKTDKSDSEQVTLRIHRKN
+APAGGSGMASAKTKTHFSVRLLKFSREKKAAKTLGIVVGCFVLCWLPFFLVMPIGSFFPD
+FKPSETVFKIVFWLGYLNSCINPIIYPCSSQEFKKAFQNVLRIQCLCRKQSSKHALGYTL
+HPPSQAVEGQHKDMVRIPVGSRETFYRISKTDGVCEWKFFSSMPRGSARITVSKDQSSCT
+TARVRSKSFLQVCCCVGPSTPSLDKNHQVPTIKVHTISLSENGEEV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010352|Alpha-1A adrenergic receptor (ADRA1A)
+ATGGTGTTTCTCTCGGGAAATGCTTCCGACAGCTCCAACTGCACCCAACCGCCGGCACCG
+GTGAACATTTCCAAGGCCATTCTGCTCGGGGTGATCTTGGGGGGCCTCATTCTTTTCGGG
+GTGCTGGGTAACATCCTAGTGATCCTCTCCGTAGCCTGTCACCGACACCTGCACTCAGTC
+ACGCACTACTACATCGTCAACCTGGCGGTGGCCGACCTCCTGCTCACCTCCACGGTGCTG
+CCCTTCTCCGCCATCTTCGAGGTCCTAGGCTACTGGGCCTTCGGCAGGGTCTTCTGCAAC
+ATCTGGGCGGCAGTGGATGTGCTGTGCTGCACCGCGTCCATCATGGGCCTCTGCATCATC
+TCCATCGACCGCTACATCGGCGTGAGCTACCCGCTGCGCTACCCAACCATCGTCACCCAG
+AGGAGGGGTCTCATGGCTCTGCTCTGCGTCTGGGCACTCTCCCTGGTCATATCCATTGGA
+CCCCTGTTCGGCTGGAGGCAGCCGGCCCCCGAGGACGAGACCATCTGCCAGATCAACGAG
+GAGCCGGGCTACGTGCTCTTCTCAGCGCTGGGCTCCTTCTACCTGCCTCTGGCCATCATC
+CTGGTCATGTACTGCCGCGTCTACGTGGTGGCCAAGAGGGAGAGCCGGGGCCTCAAGTCT
+GGCCTCAAGACCGACAAGTCGGACTCGGAGCAAGTGACGCTCCGCATCCATCGGAAAAAC
+GCCCCGGCAGGAGGCAGCGGGATGGCCAGCGCCAAGACCAAGACGCACTTCTCAGTGAGG
+CTCCTCAAGTTCTCCCGGGAGAAGAAAGCGGCCAAAACGCTGGGCATCGTGGTCGGCTGC
+TTCGTCCTCTGCTGGCTGCCTTTTTTCTTAGTCATGCCCATTGGGTCTTTCTTCCCTGAT
+TTCAAGCCCTCTGAAACAGTTTTTAAAATAGTATTTTGGCTCGGATATCTAAACAGCTGC
+ATCAACCCCATCATATACCCATGCTCCAGCCAAGAGTTCAAAAAGGCCTTTCAGAATGTC
+TTGAGAATCCAGTGTCTCTGCAGAAAGCAGTCTTCCAAACATGCCCTGGGCTACACCCTG
+CACCCGCCCAGCCAGGCCGTGGAAGGGCAACACAAGGACATGGTGCGCATCCCCGTGGGA
+TCAAGAGAGACCTTCTACAGGATCTCCAAGACGGATGGCGTTTGTGAATGGAAATTTTTC
+TCTTCCATGCCCCGTGGATCTGCCAGGATTACAGTGTCCAAAGACCAATCCTCCTGTACC
+ACAGCCCGGGTGAGAAGTAAAAGCTTTTTGCAGGTCTGCTGCTGTGTAGGGCCCTCAACC
+CCCAGCCTTGACAAGAACCATCAAGTTCCAACCATTAAGGTCCACACCATCTCCCTCAGT
+GAGAACGGGGAGGAAGTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha1-adrenergic receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-activating adrenergic receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion transport into cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of Rho protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>norepinephrine-epinephrine vasoconstriction involved in regulation of systemic arterial blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of action potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein kinase C signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of synaptic transmission, GABAergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle contraction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000575</id>
+      <name>Alpha-1B adrenergic receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35368" source="Swiss-Prot">
+        <name>Alpha-1B adrenergic receptor</name>
+        <general-function>Protein heterodimerization activity</general-function>
+        <specific-function>This alpha-adrenergic receptor mediates its action by association with G proteins that activate a phosphatidylinositol-calcium second messenger system. Its effect is mediated by G(q) and G(11) proteins. Nuclear ADRA1A-ADRA1B heterooligomers regulate phenylephrine (PE)-stimulated ERK signaling in cardiac myocytes.</specific-function>
+        <gene-name>ADRA1B</gene-name>
+        <locus>5q23-q32</locus>
+        <cellular-location>Nucleus membrane</cellular-location>
+        <transmembrane-regions>46-70
+84-105
+116-141
+162-184
+202-224
+296-319
+327-351</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.79</theoretical-pi>
+        <molecular-weight>56835.375</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:278</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADRA1B</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M99589</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>23</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>23</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35368</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADA1B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Alpha-1B adrenoceptor</synonym>
+          <synonym>Alpha-1B adrenoreceptor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010399|Alpha-1B adrenergic receptor
+MNPDLDTGHNTSAPAHWGELKNANFTGPNQTSSNSTLPQLDITRAISVGLVLGAFILFAI
+VGNILVILSVACNRHLRTPTNYFIVNLAMADLLLSFTVLPFSAALEVLGYWVLGRIFCDI
+WAAVDVLCCTASILSLCAISIDRYIGVRYSLQYPTLVTRRKAILALLSVWVLSTVISIGP
+LLGWKEPAPNDDKECGVTEEPFYALFSSLGSFYIPLAVILVMYCRVYIVAKRTTKNLEAG
+VMKEMSNSKELTLRIHSKNFHEDTLSSTKAKGHNPRSSIAVKLFKFSREKKAAKTLGIVV
+GMFILCWLPFFIALPLGSLFSTLKPPDAVFKVVFWLGYFNSCLNPIIYPCSSKEFKRAFV
+RILGCQCRGRGRRRRRRRRRLGGCAYTYRPWTRGGSLERSQSRKDSLDDSGSCLSGSQRT
+LPSASPSPGYLGRGAPPPVELCAFPEWKAPGALLSLPAPEPPGRRGRHDSGPLFTFKLLT
+EPESPGTDGGASNGGCEAAADVANGQPGFKSNMPLAPGQF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010400|Alpha-1B adrenergic receptor (ADRA1B)
+ATGAATCCCGACCTGGACACCGGCCACAACACATCAGCACCTGCCCACTGGGGAGAGTTG
+AAAAATGCCAACTTCACTGGCCCCAACCAGACCTCGAGCAACTCCACACTGCCCCAGCTG
+GACATCACCAGGGCCATCTCTGTGGGCCTGGTGCTGGGCGCCTTCATCCTCTTTGCCATC
+GTGGGCAACATCCTAGTCATCTTGTCTGTGGCCTGCAACCGGCACCTGCGGACGCCCACC
+AACTACTTCATTGTCAACCTGGCCATGGCCGACCTGCTGTTGAGCTTCACCGTCCTGCCC
+TTCTCAGCGGCCCTAGAGGTGCTCGGCTACTGGGTGCTGGGGCGGATCTTCTGTGACATC
+TGGGCAGCCGTGGATGTCCTGTGCTGCACAGCGTCCATTCTGAGCCTGTGCGCCATCTCC
+ATCGATCGCTACATCGGGGTGCGCTACTCTCTGCAGTATCCCACGCTGGTCACCCGGAGG
+AAGGCCATCTTGGCGCTGCTCAGTGTCTGGGTCTTGTCCACCGTCATCTCCATCGGGCCT
+CTCCTTGGGTGGAAGGAGCCGGCACCCAACGATGACAAGGAGTGCGGGGTCACCGAAGAA
+CCCTTCTATGCCCTCTTCTCCTCTCTGGGCTCCTTCTACATCCCTCTGGCGGTCATTCTA
+GTCATGTACTGCCGTGTCTATATAGTGGCCAAGAGAACCACCAAGAACCTAGAGGCAGGA
+GTCATGAAGGAGATGTCCAACTCCAAGGAGCTGACCCTGAGGATCCATTCCAAGAACTTT
+CACGAGGACACCCTTAGCAGTACCAAGGCCAAGGGCCACAACCCCAGGAGTTCCATAGCT
+GTCAAACTTTTTAAGTTCTCCAGGGAAAAGAAAGCAGCTAAGACGTTGGGCATTGTGGTC
+GGTATGTTCATCTTGTGCTGGCTACCCTTCTTCATCGCTCTACCGCTTGGCTCCTTGTTC
+TCCACCCTGAAGCCCCCCGACGCCGTGTTCAAGGTGGTGTTCTGGCTGGGCTACTTCAAC
+AGCTGCCTCAACCCCATCATCTACCCATGCTCCAGCAAGGAGTTCAAGCGCGCTTTCGTG
+CGCATCCTCGGGTGCCAGTGCCGCGGCCGCGGCCGCCGCCGACGCCGCCGCCGCCGTCGC
+CTGGGCGGCTGCGCCTACACCTACCGGCCGTGGACGCGCGGCGGCTCGCTGGAGCGCTCG
+CAGTCGCGCAAGGACTCGCTGGACGACAGCGGCAGCTGCCTGAGCGGCAGCCAGCGGACC
+CTGCCCTCGGCCTCGCCGAGCCCGGGCTACCTGGGCCGCGGCGCGCCACCGCCAGTCGAG
+CTGTGCGCCTTCCCCGAGTGGAAGGCGCCCGGCGCCCTCCTGAGCCTGCCCGCGCCTGAG
+CCCCCCGGCCGCCGCGGCCGCCACGACTCGGGCCCGCTCTTCACCTTCAAGCTCCTGACC
+GAGCCCGAGAGCCCCGGGACCGACGGCGGCGCCAGCAACGGAGGCTGCGAGGCCGCGGCC
+GACGTGGCCAACGGGCAGCCGGGCTTCAAAAGCAACATGCCCCTGGCGCCCGGGCAGTTT
+TAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha1-adrenergic receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-activating adrenergic receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-modulating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral response to cocaine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood vessel remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glycogen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>norepinephrine-epinephrine vasoconstriction involved in regulation of systemic arterial blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organ growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glycogen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of heart rate by epinephrine-norepinephrine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of the force of heart contraction by epinephrine-norepinephrine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to amphetamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to morphine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasoconstriction of artery involved in baroreceptor response to lowering of systemic arterial blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000715</id>
+      <name>Alpha-1D adrenergic receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P25100" source="Swiss-Prot">
+        <name>Alpha-1D adrenergic receptor</name>
+        <general-function>Alpha1-adrenergic receptor activity</general-function>
+        <specific-function>This alpha-adrenergic receptor mediates its effect through the influx of extracellular calcium.</specific-function>
+        <gene-name>ADRA1D</gene-name>
+        <locus>20p13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>96-121
+134-159
+170-192
+214-238
+252-275
+349-373
+381-405</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.44</theoretical-pi>
+        <molecular-weight>60462.205</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:280</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADRA1D</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M76446</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>177807</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>24</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>24</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P25100</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADA1D_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ADRA1A</synonym>
+          <synonym>Alpha-1A adrenergic receptor</synonym>
+          <synonym>Alpha-1D adrenoceptor</synonym>
+          <synonym>Alpha-1D adrenoreceptor</synonym>
+          <synonym>Alpha-adrenergic receptor 1a</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019001|Alpha-1D adrenergic receptor
+MTFRDLLSVSFEGPRPDSSAGGSSAGGGGGSAGGAAPSEGPAVGGVPGGAGGGGGVVGAG
+SGEDNRSSAGEPGSAGAGGDVNGTAAVGGLVVSAQGVGVGVFLAAFILMAVAGNLLVILS
+VACNRHLQTVTNYFIVNLAVADLLLSATVLPFSATMEVLGFWAFGRAFCDVWAAVDVLCC
+TASILSLCTISVDRYVGVRHSLKYPAIMTERKAAAILALLWVVALVVSVGPLLGWKEPVP
+PDERFCGITEEAGYAVFSSVCSFYLPMAVIVVMYCRVYVVARSTTRSLEAGVKRERGKAS
+EVVLRIHCRGAATGADGAHGMRSAKGHTFRSSLSVRLLKFSREKKAAKTLAIVVGVFVLC
+WFPFFFVLPLGSLFPQLKPSEGVFKVIFWLGYFNSCVNPLIYPCSSREFKRAFLRLLRCQ
+CRRRRRRRPLWRVYGHHWRASTSGLRQDCAPSSGDAPPGAPLALTALPDPDPEPPGTPEM
+QAPVASRRKPPSAFREWRLLGPFRRPTTQLRAKVSSLSHKIRAGGAQRAEAACAQRSEVE
+AVSLGVPHEVAEGATCQAYELADYSNLRETDI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019002|Alpha-1D adrenergic receptor (ADRA1D)
+ATGACTTTCCGCGATCTCCTGAGCGTCAGTTTCGAGGGACCCCGCCCGGACAGCAGCGCA
+GGGGGCTCCAGCGCGGGCGGCGGCGGGGGCAGCGCGGGCGGCGCGGCCCCCTCGGAGGGC
+CCGGCGGTGGGCGGCGTGCCGGGGGGCGCGGGCGGCGGCGGCGGCGTGGTGGGCGCAGGC
+AGCGGCGAGGACAACCGGAGCTCCGCGGGGGAGCCGGGGAGCGCGGGCGCGGGCGGCGAC
+GTGAATGGCACGGCGGCCGTCGGGGGACTGGTGGTGAGCGCGCAGGGCGTGGGCGTGGGC
+GTCTTCCTGGCAGCCTTCATCCTTATGGCCGTGGCAGGTAACCTGCTTGTCATCCTCTCA
+GTGGCCTGCAACCGCCACCTGCAGACCGTCACCAACTATTTCATCGTGAACCTGGCCGTG
+GCCGACCTGCTGCTGAGCGCCACCGTACTGCCCTTCTCGGCCACCATGGAGGTTCTGGGC
+TTCTGGGCCTTTGGCCGCGCCTTCTGCGACGTATGGGCCGCCGTGGACGTGCTGTGCTGC
+ACGGCCTCCATCCTCAGCCTCTGCACCATCTCCGTGGACCGGTACGTGGGCGTGCGCCAC
+TCACTCAAGTACCCAGCCATCATGACCGAGCGCAAGGCGGCCGCCATCCTGGCCCTGCTC
+TGGGTCGTAGCCCTGGTGGTGTCCGTAGGGCCCCTGCTGGGCTGGAAGGAGCCCGTGCCC
+CCTGACGAGCGCTTCTGCGGTATCACCGAGGAGGCGGGCTACGCTGTCTTCTCCTCCGTG
+TGCTCCTTCTACCTGCCCATGGCGGTCATCGTGGTCATGTACTGCCGCGTGTACGTGGTC
+GCGCGCAGCACCACGCGCAGCCTCGAGGCGGGCGTCAAGCGCGAGCGAGGCAAGGCCTCC
+GAGGTGGTGCTGCGCATCCACTGTCGCGGCGCGGCCACGGGCGCCGACGGGGCGCACGGC
+ATGCGCAGCGCCAAGGGCCACACCTTCCGCAGCTCGCTCTCCGTGCGCCTGCTCAAGTTC
+TCCCGTGAGAAGAAAGCGGCCAAGACTCTGGCCATCGTCGTGGGTGTCTTCGTGCTCTGC
+TGGTTCCCTTTCTTCTTTGTCCTGCCGCTCGGCTCCTTGTTCCCGCAGCTGAAGCCATCG
+GAGGGCGTCTTCAAGGTCATCTTCTGGCTCGGCTACTTCAACAGCTGCGTGAACCCGCTC
+ATCTACCCCTGTTCCAGCCGCGAGTTCAAGCGCGCCTTCCTCCGTCTCCTGCGCTGCCAG
+TGCCGTCGTCGCCGGCGCCGCCGCCCTCTCTGGCGTGTCTACGGCCACCACTGGCGGGCC
+TCCACCAGCGGCCTGCGCCAGGACTGCGCCCCGAGTTCGGGCGACGCGCCCCCCGGAGCG
+CCGCTGGCCCTCACCGCGCTCCCCGACCCCGACCCCGAACCCCCAGGCACGCCCGAGATG
+CAGGCTCCGGTCGCCAGCCGTCGAAAGCCACCCAGCGCCTTCCGCGAGTGGAGGCTGCTG
+GGGCCGTTCCGGAGACCCACGACCCAGCTGCGCGCCAAAGTCTCCAGCCTGTCGCACAAG
+ATCCGCGCCGGGGGCGCGCAGCGCGCAGAGGCAGCGTGCGCCCAGCGCTCAGAGGTGGAG
+GCTGTGTCCCTAGGCGTCCCACACGAGGTGGCCGAGGGCGCCACCTGCCAGGCCTACGAA
+TTGGCCGACTACAGCAACCTACGGGAGACCGATATTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha1-adrenergic receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-activating adrenergic receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-modulating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of the force of heart contraction involved in baroreceptor response to increased systemic arterial blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>norepinephrine-epinephrine vasoconstriction involved in regulation of systemic arterial blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03559</drugbank-id>
+  <drugbank-id>EXPT01065</drugbank-id>
+  <name>Cyclohexylformamide</name>
+  <description/>
+  <cas-number/>
+  <unii>X2CFE4SDT6</unii>
+  <average-mass>127.1842</average-mass>
+  <monoisotopic-mass>127.099714043</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as secondary carboxylic acid amides. These are compounds containing a secondary carboxylic acid amide functional group, with the general structure RC(=O)N(R')H (R,R'=alkyl, aryl).</description>
+    <direct-parent>Secondary carboxylic acid amides</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Carboxylic acid derivatives</subclass>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aliphatic homomonocyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Secondary carboxylic acid amide</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1e3i</pdb-entry>
+    <pdb-entry>1ldy</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.23</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.83</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.88e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.94</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>N-cyclohexylformamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>cyclohexylformamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>127.1842</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>127.099714043</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>O=CNC1CCCCC1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C7H13NO</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C7H13NO/c9-6-8-7-4-2-1-3-5-7/h6-7H,1-5H2,(H,8,9)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>SWGXDLRCJNEEGZ-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>29.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>35.89</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>14.44</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>16.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>0.093</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>17945</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>13017</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505617</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C11519</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>12476</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50064278</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>CXF</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL46778</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000465</id>
+      <name>Alcohol dehydrogenase 1C</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00326" source="Swiss-Prot">
+        <name>Alcohol dehydrogenase 1C</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function/>
+        <gene-name>ADH1C</gene-name>
+        <locus>4q21-q23</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.38</theoretical-pi>
+        <molecular-weight>39867.27</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:251</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADH1C</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X04299</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00326</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADH1G_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.1</synonym>
+          <synonym>ADH3</synonym>
+          <synonym>Alcohol dehydrogenase subunit gamma</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010326|Alcohol dehydrogenase 1C
+MSTAGKVIKCKAAVLWELKKPFSIEEVEVAPPKAHEVRIKMVAAGICRSDEHVVSGNLVT
+PLPVILGHEAAGIVESVGEGVTTVKPGDKVIPLFTPQCGKCRICKNPESNYCLKNDLGNP
+RGTLQDGTRRFTCSGKPIHHFVGVSTFSQYTVVDENAVAKIDAASPLEKVCLIGCGFSTG
+YGSAVKVAKVTPGSTCAVFGLGGVGLSVVMGCKAAGAARIIAVDINKDKFAKAKELGATE
+CINPQDYKKPIQEVLKEMTDGGVDFSFEVIGRLDTMMASLLCCHEACGTSVIVGVPPDSQ
+NLSINPMLLLTGRTWKGAIFGGFKSKESVPKLVADFMAKKFSLDALITNILPFEKINEGF
+DLLRSGKSIRTVLTF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010327|Alcohol dehydrogenase 1C (ADH1C)
+ATGAGCACAGCAGGAAAAGTAATCAAATGCAAAGCAGCTGTGCTATGGGAGTTAAAGAAA
+CCCTTTTCCATTGAGGAGGTAGAGGTTGCACCTCCTAAGGCTCATGAAGTTCGCATTAAG
+ATGGTGGCTGCAGGAATCTGTCGTTCAGATGAGCATGTGGTTAGTGGCAACCTGGTGACC
+CCCCTTCCTGTGATTTTAGGCCATGAGGCAGCCGGCATCGTGGAAAGTGTTGGAGAAGGG
+GTGACTACAGTCAAACCAGGTGATAAAGTCATCCCGCTCTTTACTCCTCAGTGTGGAAAA
+TGCAGAATTTGTAAAAACCCAGAAAGCAACTACTGCTTGAAAAATGATCTAGGCAATCCT
+CGGGGGACCCTGCAGGATGGCACCAGGAGGTTCACCTGCAGCGGGAAGCCCATCCACCAC
+TTCGTCGGCGTCAGCACCTTCTCCCAGTACACAGTGGTGGATGAGAATGCAGTGGCCAAA
+ATTGATGCAGCCTCGCCCCTGGAGAAAGTCTGCCTCATTGGCTGTGGATTTTCGACTGGT
+TATGGGTCTGCAGTCAAAGTTGCCAAGGTCACCCCAGGGTCTACCTGTGCTGTGTTTGGC
+CTGGGAGGGGTCGGCCTATCTGTTGTTATGGGCTGTAAAGCAGCTGGAGCAGCCAGAATC
+ATTGCTGTGGACATCAACAAGGACAAATTTGCAAAGGCTAAAGAGTTGGGTGCCACTGAA
+TGCATCAACCCTCAAGACTACAAGAAACCCATTCAGGAAGTGCTAAAGGAAATGACTGAT
+GGAGGTGTGGATTTTTCGTTTGAAGTCATCGGTCGGCTTGACACCATGATGGCTTCCCTG
+TTATGTTGTCATGAGGCATGTGGCACAAGTGTCATTGTAGGGGTACCTCCTGATTCCCAG
+AACCTCTCAATAAACCCTATGCTGCTACTGACTGGACGCACGTGGAAAGGAGCTATTTTT
+GGAGGCTTTAAGAGTAAAGAATCTGTCCCCAAACTTGTGGCTGACTTTATGGCTAAGAAG
+TTTTCACTGGATGCATTAATAACAAATATTTTACCTTTTGAAAAAATAAATGAAGGATTT
+GACCTGCTTCGCTCTGGAAAGAGTATCCGTACCGTCCTGACGTTTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF08240</identifier>
+            <name>ADH_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00107</identifier>
+            <name>ADH_zinc_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alcohol dehydrogenase (NAD) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ethanol oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000360</id>
+      <name>Alcohol dehydrogenase 4</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08319" source="Swiss-Prot">
+        <name>Alcohol dehydrogenase 4</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function/>
+        <gene-name>ADH4</gene-name>
+        <locus>4q21-q24|4q22</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.01</theoretical-pi>
+        <molecular-weight>40221.335</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:252</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ADH4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M15943</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>178121</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08319</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ADH4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.1</synonym>
+          <synonym>Alcohol dehydrogenase class II pi chain</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0036999|Alcohol dehydrogenase 4
+MGTKGKVIKCKAAIAWEAGKPLCIEEVEVAPPKAHEVRIQIIATSLCHTDATVIDSKFEG
+LAFPVIVGHEAAGIVESIGPGVTNVKPGDKVIPLYAPLCRKCKFCLSPLTNLCGKISNLK
+SPASDQQLMEDKTSRFTCKGKPVYHFFGTSTFSQYTVVSDINLAKIDDDANLERVCLLGC
+GFSTGYGAAINNAKVTPGSTCAVFGLGGVGLSAVMGCKAAGASRIIGIDINSEKFVKAKA
+LGATDCLNPRDLHKPIQEVIIELTKGGVDFALDCAGGSETMKAALDCTTAGWGSCTFIGV
+AAGSKGLTIFPEELIIGRTINGTFFGGWKSVDSIPKLVTDYKNKKFNLDALVTHTLPFDK
+ISEAFDLMNQGKSVRTILIF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010109|Alcohol dehydrogenase 4 (ADH4)
+ATGGGCACCAAGGGCAAAGTTATTAAATGCAAAGCAGCCATCGCCTGGGAAGCAGGCAAG
+CCCCTTTGCATTGAAGAGGTTGAAGTAGCTCCCCCCAAGGCTCATGAAGTTCGCATTCAG
+ATCATTGCTACCTCCCTGTGCCATACTGATGCCACTGTTATCGATTCTAAATTTGAGGGC
+CTAGCTTTCCCAGTGATCGTTGGCCATGAGGCTGCAGGTATTGTGGAAAGTATTGGGCCA
+GGAGTGACCAACGTCAAACCAGGTGACAAAGTAATTCCACTTTATGCACCTCTATGTAGA
+AAATGCAAGTTTTGTCTGAGTCCACTCACAAATTTGTGTGGGAAAATCAGTAATCTCAAA
+AGTCCTGCTAGTGATCAACAACTAATGGAAGACAAAACCAGCAGGTTTACCTGCAAAGGA
+AAACCAGTTTACCATTTCTTTGGAACCAGTACATTCTCTCAGTACACTGTGGTGTCAGAT
+ATCAATCTTGCCAAAATAGATGATGATGCAAATTTAGAGAGAGTTTGTCTGCTTGGATGT
+GGGTTTTCAACTGGCTATGGGGCTGCAATCAACAATGCCAAGGTCACCCCTGGTTCGACT
+TGTGCTGTCTTTGGCCTAGGAGGTGTGGGTCTTTCTGCTGTAATGGGTTGTAAAGCAGCA
+GGAGCTTCCAGAATCATAGGTATTGACATCAACAGTGAGAAGTTTGTGAAGGCTAAAGCC
+CTGGGAGCCACTGACTGCCTCAATCCTAGAGACTTACATAAACCGATCCAGGAAGTTATC
+ATTGAATTGACCAAGGGAGGTGTGGATTTTGCCCTTGACTGTGCAGGTGGATCTGAAACC
+ATGAAAGCAGCCCTGGACTGTACAACCGCAGGCTGGGGATCATGTACTTTCATTGGAGTA
+GCTGCTGGTAGCAAAGGATTGACTATTTTTCCAGAGGAGCTAATAATCGGCCGTACTATA
+AATGGAACATTCTTTGGTGGTTGGAAAAGTGTAGATTCTATCCCAAAGCTGGTCACTGAC
+TATAAGAATAAGAAATTCAATCTGGATGCACTGGTGACCCATACCCTGCCTTTTGACAAA
+ATCAGTGAGGCATTTGACCTAATGAACCAAGGAAAAAGCGTCCGAACAATCCTCATCTTT
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF08240</identifier>
+            <name>ADH_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00107</identifier>
+            <name>ADH_zinc_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alcohol dehydrogenase (NAD) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alcohol dehydrogenase activity, zinc-dependent</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alditol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>all-trans retinal binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>benzaldehyde dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ethanol binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADPH</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>retinol binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>retinol dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alcohol catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alcohol metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular aldehyde metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ethanol oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>quinone metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retinoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retinol metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

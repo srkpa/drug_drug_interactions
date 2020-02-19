@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2010-09-15" updated="2020-01-02">
+  <drugbank-id primary="true">DB07579</drugbank-id>
+  <name>Bis-1,2-{[(Z)-2-carboxy-2-methyl-1,3-dioxane]-5-yloxycarbamoyl}-ethane</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>436.37</average-mass>
+  <monoisotopic-mass>436.132924221</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>2a3w</pdb-entry>
+    <pdb-entry>2a3y</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>436.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>436.132924221</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC1(OCC(CO1)OC(=O)NCCNC(=O)OC1COC(C)(OC1)C(O)=O)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C16H24N2O12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C16H24N2O12/c1-15(11(19)20)25-5-9(6-26-15)29-13(23)17-3-4-18-14(24)30-10-7-27-16(2,12(21)22)28-8-10/h9-10H,3-8H2,1-2H3,(H,17,23)(H,18,24)(H,19,20)(H,21,22)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HAVIIPIIAVTNFO-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>4369593</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>99444050</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>3572112</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>CPJ</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0001213</id>
+      <name>Serum amyloid P-component</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P02743" source="Swiss-Prot">
+        <name>Serum amyloid P-component</name>
+        <general-function>Virion binding</general-function>
+        <specific-function>Can interact with DNA and histones and may scavenge nuclear material released from damaged circulating cells. May also function as a calcium-dependent lectin.</specific-function>
+        <gene-name>APCS</gene-name>
+        <locus>1q21-q23</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-19</signal-regions>
+        <theoretical-pi>6.52</theoretical-pi>
+        <molecular-weight>25386.92</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>APCS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D00097</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>220068</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2839</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02743</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SAMP_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>9.5S alpha-1-glycoprotein</synonym>
+          <synonym>PTX2</synonym>
+          <synonym>SAP</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016353|Serum amyloid P-component
+MNKPLLWISVLTSLLEAFAHTDLSGKVFVFPRESVTDHVNLITPLEKPLQNFTLCFRAYS
+DLSRAYSLFSYNTQGRDNELLVYKERVGEYSLYIGRHKVTSKVIEKFPAPVHICVSWESS
+SGIAEFWINGTPLVKKGLRQGYFVEAQPKIVLGQEQDSYGGKFDRSQSFVGEIGDLYMWD
+SVLPPENILSAYQGTPLPANILDWQALNYEIRGYVIIKPLVWV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016354|Serum amyloid P-component (APCS)
+ATGAACAAGCCGCTGCTTTGGATCTCTGTCCTCACCAGCCTCCTGGAAGCCTTTGCTCAC
+ACAGACCTCAGTGGGAAGGTGTTTGTATTTCCTAGAGAATCTGTTACTGATCATGTAAAC
+TTGATCACACCGCTGGAGAAGCCTCTACAGAACTTTACCTTGTGTTTTCGAGCCTATAGT
+GATCTCTCTCGTGCCTACAGCCTCTTCTCCTACAATACCCAAGGCAGGGATAATGAGCTA
+CTAGTTTATAAAGAAAGAGTTGGAGAGTATAGTCTATACATTGGAAGACACAAAGTTACA
+TCCAAAGTTATCGAAAAGTTCCCGGCTCCAGTGCACATCTGTGTGAGCTGGGAGTCCTCA
+TCAGGTATTGCTGAATTTTGGATCAATGGGACACCTTTGGTGAAAAAGGGTCTGCGACAG
+GGTTACTTTGTAGAAGCTCAGCCCAAGATTGTCCTGGGGCAGGAACAGGATTCCTATGGG
+GGCAAGTTTGATAGGAGCCAGTCCTTTGTGGGAGAGATTGGGGATTTGTACATGTGGGAC
+TCTGTGCTGCCCCCAGAAAATATCCTGTCTGCCTATCAGGGTACCCCTCTCCCTGCCAAT
+ATCCTGGACTGGCAGGCTCTGAACTATGAAATCAGAGGATATGTCATCATCAAACCCTTG
+GTGTGGGTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00354</identifier>
+            <name>Pentaxin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>complement component C1q binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>unfolded protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>virion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acute-phase response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chaperone-mediated protein complex assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation by host of viral exo-alpha-sialidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation by host of viral glycoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of acute inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of exo-alpha-sialidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glycoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of monocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of viral entry into host cell</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of viral process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of wound healing</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein folding</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

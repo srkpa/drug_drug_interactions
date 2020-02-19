@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05079</drugbank-id>
+  <name>HY10275</name>
+  <description>HY10275 is a novel compound specifically designed to modulate two key neurobiological mechanisms that interfere with the sleeping process. HY10275 is highly selective for histamine H1 and serotonin 5HT2a, two chemical receptors that are known to impact the ability to fall asleep and stay asleep. HY10275 was rationally designed to "let you sleep" rather than depress the entire brain to "make you sleep." This dual-acting receptor activity and the lack of affinity for undesired off- target receptors are thought to account for the compounds excellent efficacy and tolerability profile.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in insomnia.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>HY10275 is specifically designed to modulate two key neurobiological mechanisms that interfere with the sleeping process. The drug is highly selective for histamine H1 and serotonin 5HT2a, two chemical receptors that are known to impact the ability to fall asleep and stay asleep. This dual-acting receptor activity and the lack of affinity for undesired off-target receptors are thought to account for the compounds excellent efficacy and tolerability profile.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909933</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000442</id>
+      <name>Histamine H1 receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35367" source="Swiss-Prot">
+        <name>Histamine H1 receptor</name>
+        <general-function>Histamine receptor activity</general-function>
+        <specific-function>In peripheral tissues, the H1 subclass of histamine receptors mediates the contraction of smooth muscles, increase in capillary permeability due to contraction of terminal venules, and catecholamine release from adrenal medulla, as well as mediating neurotransmission in the central nervous system.</specific-function>
+        <gene-name>HRH1</gene-name>
+        <locus>3p25</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>30-52
+63-83
+102-123
+144-164
+190-210
+417-438
+451-470</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.58</theoretical-pi>
+        <molecular-weight>55783.61</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5182</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HRH1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Z34897</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>510296</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>262</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>262</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35367</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HRH1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>H1R</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016092|Histamine H1 receptor
+MSLPNSSCLLEDKMCEGNKTTMASPQLMPLVVVLSTICLVTVGLNLLVLYAVRSERKLHT
+VGNLYIVSLSVADLIVGAVVMPMNILYLLMSKWSLGRPLCLFWLSMDYVASTASIFSVFI
+LCIDRYRSVQQPLRYLKYRTKTRASATILGAWFLSFLWVIPILGWNHFMQQTSVRREDKC
+ETDFYDVTWFKVMTAIINFYLPTLLMLWFYAKIYKAVRQHCQHRELINRSLPSFSEIKLR
+PENPKGDAKKPGKESPWEVLKRKPKDAGGGSVLKSPSQTPKEMKSPVVFSQEDDREVDKL
+YCFPLDIVHMQAAAEGSSRDYVAVNRSHGQLKTDEQGLNTHGASEISEDQMLGDSQSFSR
+TDSDTTTETAPGKGKLRSGSNTGLDYIKFTWKRLRSHSRQYVSGLHMNRERKAAKQLGFI
+MAAFILCWIPYFIFFMVIAFCKNCCNEHLHMFTIWLGYINSTLNPLIYPLCNENFKKTFK
+RILHIRS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016093|Histamine H1 receptor (HRH1)
+ATGAGCCTCCCCAATTCCTCCTGCCTCTTAGAAGACAAGATGTGTGAGGGCAACAAGACC
+ACTATGGCCAGCCCCCAGCTGATGCCCCTGGTGGTGGTCCTGAGCACTATCTGCTTGGTC
+ACAGTAGGGCTCAACCTGCTGGTGCTGTATGCCGTACGGAGTGAGCGGAAGCTCCACACT
+GTGGGGAACCTGTACATCGTCAGCCTCTCGGTGGCGGACTTGATCGTGGGTGCCGTCGTC
+ATGCCTATGAACATCCTCTACCTGCTCATGTCCAAGTGGTCACTGGGCCGTCCTCTCTGC
+CTCTTTTGGCTTTCCATGGACTATGTGGCCAGCACAGCGTCCATTTTCAGTGTCTTCATC
+CTGTGCATTGATCGCTACCGCTCTGTCCAGCAGCCCCTCAGGTACCTTAAGTATCGTACC
+AAGACCCGAGCCTCGGCCACCATTCTGGGGGCCTGGTTTCTCTCTTTTCTGTGGGTTATT
+CCCATTCTAGGCTGGAATCACTTCATGCAGCAGACCTCGGTGCGCCGAGAGGACAAGTGT
+GAGACAGACTTCTATGATGTCACCTGGTTCAAGGTCATGACTGCCATCATCAACTTCTAC
+CTGCCCACCTTGCTCATGCTCTGGTTCTATGCCAAGATCTACAAGGCCGTACGACAACAC
+TGCCAGCACCGGGAGCTCATCAATAGGTCCCTCCCTTCCTTCTCAGAAATTAAGCTGAGG
+CCAGAGAACCCCAAGGGGGATGCCAAGAAACCAGGGAAGGAGTCTCCCTGGGAGGTTCTG
+AAAAGGAAGCCAAAAGATGCTGGTGGTGGATCTGTCTTGAAGTCACCATCCCAAACCCCC
+AAGGAGATGAAATCCCCAGTTGTCTTCAGCCAAGAGGATGATAGAGAAGTAGACAAACTC
+TACTGCTTTCCACTTGATATTGTGCACATGCAGGCTGCGGCAGAGGGGAGTAGCAGGGAC
+TATGTAGCCGTCAACCGGAGCCATGGCCAGCTCAAGACAGATGAGCAGGGCCTGAACACA
+CATGGGGCCAGCGAGATATCAGAGGATCAGATGTTAGGTGATAGCCAATCCTTCTCTCGA
+ACGGACTCAGATACCACCACAGAGACAGCACCAGGCAAAGGCAAATTGAGGAGTGGGTCT
+AACACAGGCCTGGATTACATCAAGTTTACTTGGAAGAGGCTCCGCTCGCATTCAAGACAG
+TATGTATCTGGGTTGCACATGAACCGCGAAAGGAAGGCCGCCAAACAGTTGGGTTTTATC
+ATGGCAGCCTTCATCCTCTGCTGGATCCCTTATTTCATCTTCTTCATGGTCATTGCCTTC
+TGCAAGAACTGTTGCAATGAACATTTGCACATGTTCACCATCTGGCTGGGCTACATCAAC
+TCCACACTGAACCCCCTCATCTACCCCTTGTGCAATGAGAACTTCAAGAAGACATTCAAG
+AGAATTCTGCATATTCGCTCCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histamine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histamine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to histamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>eosinophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inositol phosphate-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>modulation of synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inositol trisphosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic plasticity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of vascular permeability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000451</id>
+      <name>5-hydroxytryptamine receptor 2A</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P28223" source="Swiss-Prot">
+        <name>5-hydroxytryptamine receptor 2A</name>
+        <general-function>Virus receptor activity</general-function>
+        <specific-function>G-protein coupled receptor for 5-hydroxytryptamine (serotonin). Also functions as a receptor for various drugs and psychoactive substances, including mescaline, psilocybin, 1-(2,5-dimethoxy-4-iodophenyl)-2-aminopropane (DOI) and lysergic acid diethylamide (LSD). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors. Beta-arrestin family members inhibit signaling via G proteins and mediate activation of alternative signaling pathways. Signaling activates phospholipase C and a phosphatidylinositol-calcium second messenger system that modulates the activity of phosphatidylinositol 3-kinase and promotes the release of Ca(2+) ions from intracellular stores. Affects neural activity, perception, cognition and mood. Plays a role in the regulation of behavior, including responses to anxiogenic situations and psychoactive substances. Plays a role in intestinal smooth muscle contraction, and may play a role in arterial vasoconstriction.(Microbial infection) Acts as a receptor for human JC polyomavirus/JCPyV.</specific-function>
+        <gene-name>HTR2A</gene-name>
+        <locus>13q14-q21</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>76-99
+111-132
+149-171
+192-215
+234-254
+325-346
+363-384</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.72</theoretical-pi>
+        <molecular-weight>52602.58</molecular-weight>
+        <chromosome-location>13</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5293</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HTR2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S42168</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>36431</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P28223</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>5HT2A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5-HT-2</synonym>
+          <synonym>HTR2</synonym>
+          <synonym>Serotonin receptor 2A</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000899|5-hydroxytryptamine receptor 2A
+MDILCEENTSLSSTTNSLMQLNDDTRLYSNDFNSGEANTSDAFNWTVDSENRTNLSCEGC
+LSPSCLSLLHLQEKNWSALLTAVVIILTIAGNILVIMAVSLEKKLQNATNYFLMSLAIAD
+MLLGFLVMPVSMLTILYGYRWPLPSKLCAVWIYLDVLFSTASIMHLCAISLDRYVAIQNP
+IHHSRFNSRTKAFLKIIAVWTISVGISMPIPVFGLQDDSKVFKEGSCLLADDNFVLIGSF
+VSFFIPLTIMVITYFLTIKSLQKEATLCVSDLGTRAKLASFSFLPQSSLSSEKLFQRSIH
+REPGSYTGRRTMQSISNEQKACKVLGIVFFLFVVMWCPFFITNIMAVICKESCNEDVIGA
+LLNVFVWIGYLSSAVNPLVYTLFNKTYRSAFSRYIQCQYKENKKPLQLILVNTIPALAYK
+SSQLQMGQKKNSKQDAKTTDNDCSMVALGKQHSEEASKDNSDGVNEKVSCV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020465|5-hydroxytryptamine receptor 2A (HTR2A)
+ATGGATATTCTTTGTGAAGAAAATACTTCTTTGAGCTCAACTACGAACTCCCTAATGCAA
+TTAAATGATGACACCAGGCTCTACAGTAATGACTTTAACTCCGGAGAAGCTAACACTTCT
+GATGCATTTAACTGGACAGTCGACTCTGAAAATCGAACCAACCTTTCCTGTGAAGGGTGC
+CTCTCACCGTCGTGTCTCTCCTTACTTCATCTCCAGGAAAAAAACTGGTCTGCTTTACTG
+ACAGCCGTAGTGATTATTCTAACTATTGCTGGAAACATACTCGTCATCATGGCAGTGTCC
+CTAGAGAAAAAGCTGCAGAATGCCACCAACTATTTCCTGATGTCACTTGCCATAGCTGAT
+ATGCTGCTGGGTTTCCTTGTCATGCCCGTGTCCATGTTAACCATCCTGTATGGGTACCGG
+TGGCCTCTGCCGAGCAAGCTTTGTGCAGTCTGGATTTACCTGGACGTGCTCTTCTCCACG
+GCCTCCATCATGCACCTCTGCGCCATCTCGCTGGACCGCTACGTCGCCATCCAGAATCCC
+ATCCACCACAGCCGCTTCAACTCCAGAACTAAGGCATTTCTGAAAATCATTGCTGTTTGG
+ACCATATCAGTAGGTATATCCATGCCAATACCAGTCTTTGGGCTACAGGACGATTCGAAG
+GTCTTTAAGGAGGGGAGTTGCTTACTCGCCGATGATAACTTTGTCCTGATCGGCTCTTTT
+GTGTCATTTTTCATTCCCTTAACCATCATGGTGATCACCTACTTTCTAACTATCAAGTCA
+CTCCAGAAAGAAGCTACTTTGTGTGTAAGTGATCTTGGCACACGGGCCAAATTAGCTTCT
+TTCAGCTTCCTCCCTCAGAGTTCTTTGTCTTCAGAAAAGCTCTTCCAGCGGTCGATCCAT
+AGGGAGCCAGGGTCCTACACAGGCAGGAGGACTATGCAGTCCATCAGCAATGAGCAAAAG
+GCATGCAAGGTGCTGGGCATCGTCTTCTTCCTGTTTGTGGTGATGTGGTGCCCTTTCTTC
+ATCACAAACATCATGGCCGTCATCTGCAAAGAGTCCTGCAATGAGGATGTCATTGGGGCC
+CTGCTCAATGTGTTTGTTTGGATCGGTTATCTCTCTTCAGCAGTCAACCCACTAGTCTAC
+ACACTGTTCAACAAGACCTATAGGTCAGCCTTTTCACGGTATATTCAGTGTCAGTACAAG
+GAAAACAAAAAACCATTGCAGTTAATTTTAGTGAACACAATACCGGCTTTGGCCTACAAG
+TCTAGCCAACTTCAAATGGGACAAAAAAAGAATTCAAAGCAAGATGCCAAGACAACAGAT
+AATGACTGCTCAATGGTTGCTCTAGGAAAGCAGCATTCTGAAGAGGCTTCTAAAGACAAT
+AGCGACGGAGTGAATGAAAAGGTGAGCTGTGTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell body fiber</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic membrane-bounded vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic shaft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-(4-iodo-2,5-dimethoxyphenyl)propan-2-amine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>virus receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>artery smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral response to cocaine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of mechanical stimulus involved in sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of temperature stimulus involved in sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of potassium ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of synaptic transmission, glutamatergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating serotonin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fat cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of glycolytic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAP kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein localization to cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of dopamine secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of hormone secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>release of sequestered calcium ion into cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>serotonin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sleep</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>temperature homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>urinary bladder smooth muscle contraction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

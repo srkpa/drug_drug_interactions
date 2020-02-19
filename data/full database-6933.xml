@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2010-09-15" updated="2019-12-02">
+  <drugbank-id primary="true">DB07856</drugbank-id>
+  <name>6-{4-[4-(4-CHLOROPHENYL)PIPERIDIN-4-YL]PHENYL}-9H-PURINE</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>389.881</average-mass>
+  <monoisotopic-mass>389.140723372</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as diphenylmethanes. These are compounds containing a diphenylmethane moiety, which consists of a methane wherein two hydrogen atoms are replaced by two phenyl groups.</description>
+    <direct-parent>Diphenylmethanes</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Benzene and substituted derivatives</class>
+    <subclass>Diphenylmethanes</subclass>
+    <alternative-parent>Aralkylamines</alternative-parent>
+    <alternative-parent>Aryl chlorides</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Chlorobenzenes</alternative-parent>
+    <alternative-parent>Dialkylamines</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Imidazoles</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Phenylpiperidines</alternative-parent>
+    <alternative-parent>Phenylpyrimidines</alternative-parent>
+    <alternative-parent>Purines and purine derivatives</alternative-parent>
+    <substituent>4-phenylpyrimidine</substituent>
+    <substituent>5-phenylpyrimidine</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aralkylamine</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Aryl chloride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Chlorobenzene</substituent>
+    <substituent>Diphenylmethane</substituent>
+    <substituent>Halobenzene</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imidazole</substituent>
+    <substituent>Imidazopyrimidine</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organochloride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenylpiperidine</substituent>
+    <substituent>Piperidine</substituent>
+    <substituent>Purine</substituent>
+    <substituent>Pyrimidine</substituent>
+    <substituent>Secondary aliphatic amine</substituent>
+    <substituent>Secondary amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>2uw0</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>3.74</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-5.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.43e-03 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>6-{4-[4-(4-chlorophenyl)piperidin-4-yl]phenyl}-9H-purine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>6-{4-[4-(4-chlorophenyl)piperidin-4-yl]phenyl}-9H-purine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>389.881</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>389.140723372</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>ClC1=CC=C(C=C1)C1(CCNCC1)C1=CC=C(C=C1)C1=C2N=CNC2=NC=N1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C22H20ClN5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C22H20ClN5/c23-18-7-5-17(6-8-18)22(9-11-24-12-10-22)16-3-1-15(2-4-16)19-20-21(27-13-25-19)28-14-26-20/h1-8,13-14,24H,9-12H2,(H,25,26,27,28)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HPWBHQIUIBFTQC-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>66.49</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>121.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>41.73</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>10.43</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>16122633</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>99444327</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>17279546</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>16232</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>GVK</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL228133</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0003761</id>
+      <name>cAMP-dependent protein kinase catalytic subunit alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P17612" source="Swiss-Prot">
+        <name>cAMP-dependent protein kinase catalytic subunit alpha</name>
+        <general-function>Ubiquitin protein ligase binding</general-function>
+        <specific-function>Phosphorylates a large number of substrates in the cytoplasm and the nucleus. Regulates the abundance of compartmentalized pools of its regulatory subunits through phosphorylation of PJA2 which binds and ubiquitinates these subunits, leading to their subsequent proteolysis. Phosphorylates CDC25B, ABL1, NFKB1, CLDN3, PSMC5/RPT6, PJA2, RYR2, RORA and VASP. RORA is activated by phosphorylation. Required for glucose-mediated adipogenic differentiation increase and osteogenic differentiation inhibition from osteoblasts. Involved in the regulation of platelets in response to thrombin and collagen; maintains circulating platelets in a resting state by phosphorylating proteins in numerous platelet inhibitory pathways when in complex with NF-kappa-B (NFKB1 and NFKB2) and I-kappa-B-alpha (NFKBIA), but thrombin and collagen disrupt these complexes and free active PRKACA stimulates platelets and leads to platelet aggregation by phosphorylating VASP. Prevents the antiproliferative and anti-invasive effects of alpha-difluoromethylornithine in breast cancer cells when activated. RYR2 channel activity is potentiated by phosphorylation in presence of luminal Ca(2+), leading to reduced amplitude and increased frequency of store overload-induced Ca(2+) release (SOICR) characterized by an increased rate of Ca(2+) release and propagation velocity of spontaneous Ca(2+) waves, despite reduced wave amplitude and resting cytosolic Ca(2+). PSMC5/RPT6 activation by phosphorylation stimulates proteasome. Negatively regulates tight junctions (TJs) in ovarian cancer cells via CLDN3 phosphorylation. NFKB1 phosphorylation promotes NF-kappa-B p50-p50 DNA binding. Involved in embryonic development by down-regulating the Hedgehog (Hh) signaling pathway that determines embryo pattern formation and morphogenesis. Prevents meiosis resumption in prophase-arrested oocytes via CDC25B inactivation by phosphorylation. May also regulate rapid eye movement (REM) sleep in the pedunculopontine tegmental (PPT). Phosphorylates APOBEC3G and AICDA. Isoform 2 phosphorylates and activates ABL1 in sperm flagellum to promote spermatozoa capacitation.</specific-function>
+        <gene-name>PRKACA</gene-name>
+        <locus>19p13.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.22</theoretical-pi>
+        <molecular-weight>40589.38</molecular-weight>
+        <chromosome-location>19</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9380</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X07767</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>35479</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1476</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P17612</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>KAPCA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.11</synonym>
+          <synonym>PKA C-alpha</synonym>
+          <synonym>PKACA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007218|cAMP-dependent protein kinase catalytic subunit alpha
+MGNAAAAKKGSEQESVKEFLAKAKEDFLKKWESPAQNTAHLDQFERIKTLGTGSFGRVML
+VKHKETGNHYAMKILDKQKVVKLKQIEHTLNEKRILQAVNFPFLVKLEFSFKDNSNLYMV
+MEYVPGGEMFSHLRRIGRFSEPHARFYAAQIVLTFEYLHSLDLIYRDLKPENLLIDQQGY
+IQVTDFGFAKRVKGRTWTLCGTPEYLAPEIILSKGYNKAVDWWALGVLIYEMAAGYPPFF
+ADQPIQIYEKIVSGKVRFPSHFSSDLKDLLRNLLQVDLTKRFGNLKNGVNDIKNHKWFAT
+TDWIAIYQRKVEAPFIPKFKGPGDTSNFDDYEEEEIRVSINEKCGKEFSEF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017217|cAMP-dependent protein kinase catalytic subunit alpha (PRKACA)
+ATGTTCACCTTGGGATACCATGGGGCCGAGGAGTGGGCATCGGGCGAGACTTCCCTTGAA
+CCAGCTCTGGAGCAATGCCCTTGCGATTGCCACGGAGAGGAACAGGGCCAGCTGGGGGCC
+AAGGTGACAGCTGAGCCCCCCAAGGGCACCTGCTACCCGAGCCCCCGAGGCCTCCATCCC
+AGGCCCGGCCTCCCCAGAGAAGGGGCCAGAGGAACAGCCAAATCCCAAGGCTATAAATAC
+CTCGGCTGGCGTCGGCCCTGGCCATGGAATGTCGTGAAAGAATTCTTAGCCAAAGCCAAA
+GAAGATTTTCTTAAAAAATGGGAAAGTCCCGCTCAGAACACAGCCCACTTGGATCAGTTT
+GAACGAATCAAGACCCTCGGCACGGGCTCCTTCGGGCGGGTGATGCTGGTGAAACACAAG
+GAGACCGGGAACCACTATGCCATGAAGATCCTCGACAAACAGAAGGTGGTGAAACTGAAA
+CAGATCGAACACACCCTGAATGAAAAGCGCATCCTGCAAGCTGTCAACTTTCCGTTCCTC
+GTCAAACTCGAGTTCTCCTTCAAGGACAACTCAAACTTATACATGGTCATGGAGTACGTG
+CCCGGCGGGGAGATGTTCTCACACCTACGGCGGATCGGAAGGTTCAGTGAGCCCCATGCC
+CGTTTCTACGCGGCCCAGATCGTCCTGACCTTTGAGTATCTGCACTCGCTGGATCTCATC
+TACAGGGACCTGAAGCCGGAGAATCTGCTCATTGACCAGCAGGGCTACATTCAGGTGACA
+GACTTCGGTTTCGCCAAGCGCGTGAAGGGCCGCACTTGGACCTTGTGCGGCACCCCTGAG
+TACCTGGCCCCTGAGATTATCCTGAGCAAAGGCTACAACAAGGCCGTGGACTGGTGGGCC
+CTGGGGGTTCTTATCTATGAAATGGCCGCTGGCTACCCGCCCTTCTTCGCAGACCAGCCC
+ATCCAGATCTATGAGAAGATCGTCTCTGGGAAGGTGCGCTTCCCTTCCCACTTCAGCTCT
+GACTTGAAGGACCTGCTGCGGAACCTCCTGCAGGTAGATCTCACCAAGCGCTTTGGGAAC
+CTCAAGAATGGGGTCAACGATATCAAGAACCACAAGTGGTTTGCCACAACTGACTGGATT
+GCCATCTACCAGAGGAAGGTGGAAGCTCCCTTCATACCAAAGTTTAAAGGCCCTGGGGAT
+ACGAGTAACTTTGACGACTATGAGGAAGAAGAAATCCGGGTCTCCATCAATGAGAAGTGT
+GGCAAGGAGTTTTCTGAGTTTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00069</identifier>
+            <name>Pkinase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>calcium channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cAMP-dependent protein kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>ciliary base</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>motile cilium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuromuscular junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleotide-activated protein kinase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sperm midpiece</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cAMP-dependent protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase A regulatory subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine/tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin protein ligase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of protein kinase A activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium-mediated signaling using intracellular calcium source</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell communication by electrical coupling involved in cardiac conduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to epinephrine stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to glucagon stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to glucose stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to parathyroid hormone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytosolic calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>energy reserve metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G2/M transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gluconeogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mesoderm formation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of meiotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of smoothened signaling pathway involved in dorsal/ventral neural tube patterning</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neural tube closure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organelle organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-serine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-threonine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein export from nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of bicellular tight junction assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cardiac muscle contraction by regulation of the release of sequestered calcium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular respiration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of heart rate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of osteoblast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of proteasomal protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein processing</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of ryanodine-sensitive calcium-release channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic transmission, glutamatergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>renal water homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sperm capacitation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stimulatory C-type lectin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>triglyceride catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>water transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0003762</id>
+      <name>cAMP-dependent protein kinase inhibitor alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P61925" source="Swiss-Prot">
+        <name>cAMP-dependent protein kinase inhibitor alpha</name>
+        <general-function>Protein kinase a catalytic subunit binding</general-function>
+        <specific-function>Extremely potent competitive inhibitor of cAMP-dependent protein kinase activity, this protein interacts with the catalytic subunit of the enzyme after the cAMP-induced dissociation of its regulatory chains.</specific-function>
+        <gene-name>PKIA</gene-name>
+        <locus>8q21.12</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.18</theoretical-pi>
+        <molecular-weight>7988.435</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9017</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S76965</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>243494</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P61925</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IPKA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>cAMP-dependent protein kinase inhibitor, muscle/brain isoform</synonym>
+          <synonym>PKI-alpha</synonym>
+          <synonym>PRKACN1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012626|cAMP-dependent protein kinase inhibitor alpha
+MTDVETTYADFIASGRTGRRNAIHDILVSSASGNSNELALKLAGLDINKTEGEEDAQRSS
+TEQSGEAQGEAAKSES</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012627|cAMP-dependent protein kinase inhibitor alpha (PKIA)
+ATGACTGATGTGGAAACTACATATGCAGATTTTATTGCTTCAGGAAGAACAGGTAGAAGA
+AATGCAATACATGATATCCTGGTTTCCTCTGCAAGTGGCAACAGCAATGAATTAGCCTTG
+AAATTAGCAGGTCTTGATATCAACAAGACAGAAGGTGAAGAAGATGCACAACGAAGTTCT
+ACAGAACAAAGTGGGGAAGCCCAGGGAGAAGCAGCAAAATCTGAAAGCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02827</identifier>
+            <name>PKI</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cAMP-dependent protein kinase inhibitor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase A catalytic subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cAMP-dependent protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of G2/M transition of mitotic cell cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

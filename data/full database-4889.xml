@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05217</drugbank-id>
+  <name>GMX1777</name>
+  <description>GMX1777 is a water-soluble prodrug of the cyanoguanidine compound GMX1778 with potential antineoplastic activity. In vivo, apoptosis inducer GMX1777 is rapidly converted into GMX1778 through hydrolytic cleavage of a carbonate ester bond. Although the exact mechanism of action has yet to be fully elucidated, GMX1778 appears to antagonize nuclear factor-kappa B (NF-kB) transcription, resulting in the induction of tumor cell apoptosis.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L22</ref-id>
+        <title>Link</title>
+        <url>http://www.geminx.com/en/research/gmx1777.php</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Intended for the treatment of solid tumors and lymphomas.</indication>
+  <pharmacodynamics>GMX1777 exhibits unusually potent anti-tumor activity in preclinical animal models. The novel mechanism of action of GMX1778 supports the clinical use of GMX1777 as an anti-cancer agent. Moreover, the strong dependency of cancer cells on NAD+ to support DNA repair suggests a strong rationale for the use of GMX1777 in combination with DNA damaging agents for future trials.</pharmacodynamics>
+  <mechanism-of-action>The cytotoxicity of GMX1777, a prodrug of GMX1778, occurs exclusively through its ability to selectively inhibit nicotinamide phosphoribosyl transferase (NAMPRT). Tumor cells have elevated NAMPRT, an enzyme involved in the biosynthesis of oxidized nicotinamide adenine dinucleotide (NAD+). These cells have a high rate of NAD+ turnover due to elevated glycolysis and high ADP-ribosylation activity required for DNA repair, genome stability and telomere maintenance. These latter characteristics make cancer cells more susceptible to NAMPRT inhibition than normal cells. Although the mechanism of action of GMX1778 was initially believed to include NF-κB inhibition, a transcriptional factor that plays a role in cancer cell survival, NF-κB inhibition occurs as a consequence of ATP loss following NAMPRT inhibition and NAD+ decline.</mechanism-of-action>
+  <toxicity/>
+  <metabolism>GMX1777 is rapidly converted to GMX1778 in vivo through hydrolytic cleavage of an ester carbonate bond.</metabolism>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amidines</category>
+      <mesh-id>D000578</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910031</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002413</id>
+      <name>Nicotinamide phosphoribosyltransferase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P43490" source="Swiss-Prot">
+        <name>Nicotinamide phosphoribosyltransferase</name>
+        <general-function>Nicotinate-nucleotide diphosphorylase (carboxylating) activity</general-function>
+        <specific-function>Catalyzes the condensation of nicotinamide with 5-phosphoribosyl-1-pyrophosphate to yield nicotinamide mononucleotide, an intermediate in the biosynthesis of NAD. It is the rate limiting component in the mammalian NAD biosynthesis pathway. The secreted form behaves both as a cytokine with immunomodulating properties and an adipokine with anti-diabetic properties, it has no enzymatic activity, partly because of lack of activation by ATP, which has a low level in extracellular space and plasma. Plays a role in the modulation of circadian clock function. NAMPT-dependent oscillatory production of NAD regulates oscillation of clock target gene expression by releasing the core clock component: CLOCK-ARNTL/BMAL1 heterodimer from NAD-dependent SIRT1-mediated suppression (By similarity).</specific-function>
+        <gene-name>NAMPT</gene-name>
+        <locus/>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.18</theoretical-pi>
+        <molecular-weight>55520.8</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:30092</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>NAMPT</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U02020</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P43490</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NAMPT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.12</synonym>
+          <synonym>NAmPRTase</synonym>
+          <synonym>PBEF</synonym>
+          <synonym>PBEF1</synonym>
+          <synonym>Pre-B cell-enhancing factor</synonym>
+          <synonym>Pre-B-cell colony-enhancing factor 1</synonym>
+          <synonym>Visfatin</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004739|Nicotinamide phosphoribosyltransferase
+MNPAAEAEFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTENSKLRKVKYEETVFY
+GLQYILNKYLKGKVVTKEKIQEAKDVYKEHFQDDVFNEKGWNYILEKYDGHLPIEIKAVP
+EGFVIPRGNVLFTVENTDPECYWLTNWIETILVQSWYPITVATNSREQKKILAKYLLETS
+GNLDGLEYKLHDFGYRGVSSQETAGIGASAHLVNFKGTDTVAGLALIKKYYGTKDPVPGY
+SVPAAEHSTITAWGKDHEKDAFEHIVTQFSSVPVSVVSDSYDIYNACEKIWGEDLRHLIV
+SRSTQAPLIIRPDSGNPLDTVLKVLEILGKKFPVTENSKGYKLLPPYLRVIQGDGVDINT
+LQEIVEGMKQKMWSIENIAFGSGGGLLQKLTRDLLNCSFKCSYVVTNGLGINVFKDPVAD
+PNKRSKKGRLSLHRTPAGNFVTLEEGKGDLEEYGQDLLHTVFKNGKVTKSYSFDEIRKNA
+QLNIELEAAHH</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011726|Nicotinamide phosphoribosyltransferase (NAMPT)
+ATGAATCCTGCGGCAGAAGCCGAGTTCAACATCCTCCTGGCCACCGACTCCTACAAGGTT
+ACTCACTATAAACAATATCCACCCAACACAAGCAAAGTTTATTCCTACTTTGAATGCCGT
+GAAAAGAAGACAGAAAACTCCAAATTAAGGAAGGTGAAATATGAGGAAACAGTATTTTAT
+GGGTTGCAGTACATTCTTAATAAGTACTTAAAAGGTAAAGTAGTAACCAAAGAGAAAATC
+CAGGAAGCCAAAGATGTCTACAAAGAACATTTCCAAGATGATGTCTTTAATGAAAAGGGA
+TGGAACTACATTCTTGAGAAGTATGATGGGCATCTTCCAATAGAAATAAAAGCTGTTCCT
+GAGGGCTTTGTCATTCCCAGAGGAAATGTTCTCTTCACGGTGGAAAACACAGATCCAGAG
+TGTTACTGGCTTACAAATTGGATTGAGACTATTCTTGTTCAGTCCTGGTATCCAATCACA
+GTGGCCACAAATTCTAGAGAGCAGAAGAAAATATTGGCCAAATATTTGTTAGAAACTTCT
+GGTAACTTAGATGGTCTGGAATACAAGTTACATGATTTTGGCTACAGAGGAGTCTCTTCC
+CAAGAGACTGCTGGCATAGGAGCATCTGCTCACTTGGTTAACTTCAAAGGAACAGATACA
+GTAGCAGGACTTGCTCTAATTAAAAAATATTATGGAACGAAAGATCCTGTTCCAGGCTAT
+TCTGTTCCAGCAGCAGAACACAGTACCATAACAGCTTGGGGGAAAGACCATGAAAAAGAT
+GCTTTTGAACATATTGTAACACAGTTTTCATCAGTGCCTGTATCTGTGGTCAGCGATAGC
+TATGACATTTATAATGCGTGTGAGAAAATATGGGGTGAAGATCTAAGACATTTAATAGTA
+TCAAGAAGTACACAGGCACCACTAATAATCAGACCTGATTCTGGAAACCCTCTTGACACT
+GTGTTAAAGGTTTTGGAGATTTTAGGTAAGAAGTTTCCTGTTACTGAGAACTCAAAGGGT
+TACAAGTTGCTGCCACCTTATCTTAGAGTTATTCAAGGGGATGGAGTAGATATTAATACC
+TTACAAGAGATTGTAGAAGGCATGAAACAAAAAATGTGGAGTATTGAAAATATTGCCTTC
+GGTTCTGGTGGAGGTTTGCTACAGAAGTTGACAAGAGATCTCTTGAATTGTTCCTTCAAG
+TGTAGCTATGTTGTAACTAATGGCCTTGGGATTAACGTCTTCAAGGACCCAGTTGCTGAT
+CCCAACAAAAGGTCCAAAAAGGGCCGATTATCTTTACATAGGACGCCAGCAGGGAATTTT
+GTTACACTGGAGGAAGGAAAAGGAGACCTTGAGGAATATGGTCAGGATCTTCTCCATACT
+GTCTTCAAGAATGGCAAGGTGACAAAAAGCTATTCATTTGATGAAATAAGAAAAAATGCA
+CAGCTGAATATTGAACTGGAAGCAGCACATCATTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF04095</identifier>
+            <name>NAPRTase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nicotinamide phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nicotinate-nucleotide diphosphorylase (carboxylating) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>female pregnancy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>NAD biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>NAD metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nicotinamide metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>water-soluble vitamin metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

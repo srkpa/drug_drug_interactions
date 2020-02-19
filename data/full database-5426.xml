@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB06111</drugbank-id>
+  <name>AB192</name>
+  <description>AB192 is a DPP IV enzymatic activity inhibitor.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in diabetes mellitus type 2.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids, Acyclic</category>
+      <mesh-id>D000144</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids</category>
+      <mesh-id>D000596</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Cyclic</category>
+      <mesh-id>D000598</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Dipeptidyl-Peptidases and Tripeptidyl-Peptidases, antagonists &amp; inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Imines</category>
+      <mesh-id>D007097</mesh-id>
+    </category>
+    <category>
+      <category>Imino Acids</category>
+      <mesh-id>D007098</mesh-id>
+    </category>
+    <category>
+      <category>Organophosphorus Compounds</category>
+      <mesh-id>D009943</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0001075</id>
+      <name>Myeloperoxidase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17728</ref-id>
+            <pubmed-id>20018218</pubmed-id>
+            <citation>Jungraithmayr W, De Meester I, Matheeussen V, Inci I, Augustyns K, Scharpe S, Weder W, Korom S: Inhibition of CD26/DPP IV attenuates ischemia/reperfusion injury in orthotopic mouse lung transplants: the pivotal role of vasoactive intestinal peptide. Peptides. 2010 Apr;31(4):585-91. doi: 10.1016/j.peptides.2009.12.012. Epub 2009 Dec 16.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P05164" source="Swiss-Prot">
+        <name>Myeloperoxidase</name>
+        <general-function>Peroxidase activity</general-function>
+        <specific-function>Part of the host defense system of polymorphonuclear leukocytes. It is responsible for microbicidal activity against a wide range of organisms. In the stimulated PMN, MPO catalyzes the production of hypohalous acids, primarily hypochlorous acid in physiologic situations, and other toxic intermediates that greatly enhance PMN microbicidal activity.</specific-function>
+        <gene-name>MPO</gene-name>
+        <locus>17q23.1</locus>
+        <cellular-location>Lysosome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-48</signal-regions>
+        <theoretical-pi>9.14</theoretical-pi>
+        <molecular-weight>83867.71</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7218</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MPO</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J02694</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189040</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2789</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P05164</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PERM_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.11.2.2</synonym>
+          <synonym>MPO</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002139|Myeloperoxidase
+MGVPFFSSLRCMVDLGPCWAGGLTAEMKLLLALAGLLAILATPQPSEGAAPAVLGEVDTS
+LVLSSMEEAKQLVDKAYKERRESIKQRLRSGSASPMELLSYFKQPVAATRTAVRAADYLH
+VALDLLERKLRSLWRRPFNVTDVLTPAQLNVLSKSSGCAYQDVGVTCPEQDKYRTITGMC
+NNRRSPTLGASNRAFVRWLPAEYEDGFSLPYGWTPGVKRNGFPVALARAVSNEIVRFPTD
+QLTPDQERSLMFMQWGQLLDHDLDFTPEPAARASFVTGVNCETSCVQQPPCFPLKIPPND
+PRIKNQADCIPFFRSCPACPGSNITIRNQINALTSFVDASMVYGSEEPLARNLRNMSNQL
+GLLAVNQRFQDNGRALLPFDNLHDDPCLLTNRSARIPCFLAGDTRSSEMPELTSMHTLLL
+REHNRLATELKSLNPRWDGERLYQEARKIVGAMVQIITYRDYLPLVLGPTAMRKYLPTYR
+SYNDSVDPRIANVFTNAFRYGHTLIQPFMFRLDNRYQPMEPNPRVPLSRVFFASWRVVLE
+GGIDPILRGLMATPAKLNRQNQIAVDEIRERLFEQVMRIGLDLPALNMQRSRDHGLPGYN
+AWRRFCGLPQPETVGQLGTVLRNLKLARKLMEQYGTPNNIDIWMGGVSEPLKRKGRVGPL
+LACIIGTQFRKLRDGDRFWWENEGVFSMQQRQALAQISLPRIICDNTGITTVSKNNIFMS
+NSYPRDFVNCSTLPALNLASWREAS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016304|Myeloperoxidase (MPO)
+ATGGGGGTTCCCTTCTTCTCTTCTCTCAGATGCATGGTGGACTTAGGACCTTGCTGGGCT
+GGGGGTCTCACTGCAGAGATGAAGCTGCTTCTGGCCCTAGCAGGGCTCCTGGCCATTCTG
+GCCACGCCCCAGCCCTCTGAAGGTGCTGCTCCAGCTGTCCTGGGGGAGGTGGACACCTCG
+TTGGTGCTGAGCTCCATGGAGGAGGCCAAGCAGCTGGTGGACAAGGCCTACAAGGAGCGG
+CGGGAAAGCATCAAGCAGCGGCTTCGCAGCGGCTCAGCCAGCCCCATGGAACTCCTATCC
+TACTTCAAGCAGCCGGTGGCAGCCACCAGGACGGCGGTGAGGGCCGCTGACTACCTGCAC
+GTGGCTCTAGACCTGCTGGAGAGGAAGCTGCGGTCCCTGTGGCGAAGGCCATTCAATGTC
+ACTGATGTGCTGACGCCCGCCCAGCTGAATGTGTTGTCCAAGTCAAGCGGCTGCGCCTAC
+CAGGACGTGGGGGTGACTTGCCCGGAGCAGGACAAATACCGCACCATCACCGGGATGTGC
+AACAACAGACGCAGCCCCACGCTGGGGGCCTCCAACCGTGCCTTTGTGCGCTGGCTGCCG
+GCGGAGTATGAGGACGGCTTCTCTCTTCCCTACGGCTGGACGCCCGGGGTCAAGCGCAAC
+GGCTTCCCGGTGGCTCTGGCTCGCGCGGTCTCCAACGAGATCGTGCGCTTCCCCACTGAT
+CAGCTGACTCCGGACCAGGAGCGCTCACTCATGTTCATGCAATGGGGCCAGCTGTTGGAC
+CACGACCTCGACTTCACCCCTGAGCCGGCCGCCCGGGCCTCCTTCGTCACTGGCGTCAAC
+TGCGAGACCAGCTGCGTTCAGCAGCCGCCCTGCTTCCCGCTCAAGATCCCGCCCAATGAC
+CCCCGCATCAAGAACCAAGCCGACTGCATCCCGTTCTTCCGCTCCTGCCCGGCTTGCCCC
+GGGAGCAACATCACCATCCGCAACCAGATCAACGCGCTCACTTCCTTCGTGGACGCCAGC
+ATGGTGTACGGCAGCGAGGAGCCCCTGGCCAGGAACCTGCGCAACATGTCCAACCAGCTG
+GGGCTGCTGGCCGTCAACCAGCGCTTCCAAGACAACGGCCGGGCCCTGCTGCCCTTTGAC
+AACCTGCACGATGACCCCTGTCTCCTCACCAACCGCTCAGCGCGCATCCCCTGCTTCCTG
+GCAGGGGACACCCGTTCCAGTGAGATGCCCGAGCTCACCTCCATGCACACCCTCTTACTT
+CGGGAGCACAACCGGCTGGCCACAGAGCTCAAGAGCCTGAACCCTAGGTGGGATGGGGAG
+AGGCTCTACCAGGAAGCCCGGAAGATCGTGGGGGCCATGGTCCAGATCATCACTTACCGG
+GACTACCTGCCCCTGGTGCTGGGGCCAACGGCCATGAGGAAGTACCTGCCCACGTACCGT
+TCCTACAATGACTCAGTGGACCCACGCATCGCCAACGTCTTCACCAATGCCTTCCGCTAC
+GGCCACACCCTCATCCAACCCTTCATGTTCCGCCTGGACAATCGGTACCAGCCCATGGAA
+CCCAACCCCCGTGTCCCCCTCAGCAGGGTCTTTTTTGCCTCCTGGAGGGTCGTGCTGGAA
+GGTGGCATTGACCCCATCCTCCGGGGCCTCATGGCCACCCCTGCCAAGCTGAATCGTCAG
+AACCAAATTGCAGTGGATGAGATCCGGGAGCGATTGTTTGAGCAGGTCATGAGGATTGGG
+CTGGACCTGCCTGCTCTGAACATGCAGCGCAGCAGGGACCACGGCCTCCCAGGATACAAT
+GCCTGGAGGCGCTTCTGTGGGCTCCCGCAGCCTGAAACTGTGGGCCAGCTGGGCACGGTG
+CTGAGGAACCTGAAATTGGCGAGGAAACTGATGGAGCAGTATGGCACGCCCAACAACATC
+GACATCTGGATGGGCGGCGTGTCCGAGCCTCTGAAGCGCAAAGGCCGCGTGGGCCCACTC
+CTCGCCTGCATCATCGGTACCCAGTTCAGGAAGCTCCGGGATGGTGATCGGTTTTGGTGG
+GAGAACGAGGGTGTGTTCAGCATGCAGCAGCGACAGGCCCTGGCCCAGATCTCATTGCCC
+CGGATCATCTGCGACAACACAGGCATCACCACCGTGTCTAAGAACAACATCTTCATGTCC
+AACTCATATCCCCGGGACTTTGTCAACTGCAGTACACTTCCTGCATTGAACCTGGCTTCC
+TGGAGGGAAGCCTCCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03098</identifier>
+            <name>An_peroxidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>azurophil granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>secretory granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heparin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peroxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to fungus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hydrogen peroxide catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hypochlorous acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>low-density lipoprotein particle remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of growth of symbiont in host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>removal of superoxide radicals</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory burst involved in defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to yeast</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength>unknown</inhibition-strength>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

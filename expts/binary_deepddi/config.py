@@ -18,13 +18,14 @@ dataset_params = list(ParameterGrid(
          use_pharm=[False],
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
-         label=['binary'],
-         debug=[True]
+         label=['ml'],
+         debug=[False],
+         density=[True]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[2], batch_size=[256], with_early_stopping=[True])))
 
 network_params = list(ParameterGrid(dict(
     network_name=['deepddi'],
@@ -46,8 +47,8 @@ model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
     lr=[1e-5],
-    loss=['bce'],
-    metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
+    loss=['bce'], #[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']
+    metrics_names=[[]],
     loss_params=loss_params,
     dataloader=[True]
 )))

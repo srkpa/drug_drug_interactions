@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05165</drugbank-id>
+  <name>LY2275796</name>
+  <description>LY2275796 is a second-generation antisense anti-cancer drug candidate for clinical development. LY2275796 targets eukaryotic initiation factor- 4E (eIF-4E), a protein involved in the translation of key growth and survival factors that drive tumor progression, angiogenesis and metastases.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in cancer/tumors (unspecified) and solid tumors.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>LY2275796 targets eIF-4E, a protein that is upregulated or overexpressed in a variety of cancers, including breast, head and neck, prostate, lung, bladder, colon, thyroid and non-Hodgkin's lymphomas. The molecule facilitates the synthesis of tumor angiogenic factors (factors that facilitate the growth of new blood vessels to support the development and progression of tumors), growth factors and survival factors by selectively enhancing their translation. Based on scientific literature, there is a strong indication that eIF-4E may act as a critical "switch" in cancer progression.&#13;
+</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+    <category>
+      <category>Nucleotides</category>
+      <mesh-id>D009711</mesh-id>
+    </category>
+    <category>
+      <category>Polynucleotides</category>
+      <mesh-id>D011119</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909993</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000957</id>
+      <name>Eukaryotic translation initiation factor 4E</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06730" source="Swiss-Prot">
+        <name>Eukaryotic translation initiation factor 4E</name>
+        <general-function>Translation initiation factor activity</general-function>
+        <specific-function>Recognizes and binds the 7-methylguanosine-containing mRNA cap during an early step in the initiation of protein synthesis and facilitates ribosome binding by inducing the unwinding of the mRNAs secondary structures. Component of the CYFIP1-EIF4E-FMR1 complex which binds to the mRNA cap and mediates translational repression. In the CYFIP1-EIF4E-FMR1 complex this subunit mediates the binding to the mRNA cap.</specific-function>
+        <gene-name>EIF4E</gene-name>
+        <locus>4q21-q25</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.04</theoretical-pi>
+        <molecular-weight>25097.07</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3287</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>EIF4E</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M15353</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>306487</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06730</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IF4E_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>eIF-4E</synonym>
+          <synonym>eIF-4F 25 kDa subunit</synonym>
+          <synonym>EIF4EL1</synonym>
+          <synonym>EIF4F</synonym>
+          <synonym>mRNA cap-binding protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001905|Eukaryotic translation initiation factor 4E
+MATVEPETTPTPNPPTTEEEKTESNQEVANPEHYIKHPLQNRWALWFFKNDKSKTWQANL
+RLISKFDTVEDFWALYNHIQLSSNLMPGCDYSLFKDGIEPMWEDEKNKRGGRWLITLNKQ
+QRRSDLDRFWLETLLCLIGESFDDYSDDVCGAVVNVRAKGDKIAIWTTECENREAVTHIG
+RVYKERLGLPPKIVIGYQSHADTATKSGSTTKNRFVV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010673|Eukaryotic translation initiation factor 4E (EIF4E)
+ATGTTGGACCTGACCTCCCGCGGACAAGTGGGGACGTCCCGGAGGATGGCCGAGGCGGCG
+TGTAGCGCACACTTTCTGGAAACCACCCCTACTCCTAATCCCCCGACTACAGAAGAGGAG
+AAAACGGAATCTAATCAGGAGGTTGCTAACCCAGAACACTATATTAAACATCCCCTACAG
+AACAGATGGGCACTCTGGTTTTTTAAAAATGATAAAAGCAAAACTTGGCAAGCAAACCTG
+CGGCTGATCTCCAAGTTTGATACTGTTGAAGACTTTTGGGCTCTGTACAACCATATCCAG
+TTGTCTAGTAATTTAATGCCTGGCTGTGACTACTCACTTTTTAAGGATGGTATTGAGCCT
+ATGTGGGAAGATGAGAAAAACAAACGGGGAGGACGATGGCTAATTACATTGAACAAACAG
+CAGAGACGAAGTGACCTCGATCGCTTTTGGCTAGAGACACTTCTGTGCCTTATTGGAGAA
+TCTTTTGATGACTACAGTGATGATGTATGTGGCGCTGTTGTTAATGTTAGAGCTAAAGGT
+GATAAGATAGCAATATGGACTACTGAATGTGAAAACAGAGAAGCTGTTACACATATAGGG
+AGGGTATACAAGGAAAGGTTAGGACTTCCTCCAAAGATAGTGATTGGTTATCAGTCCCAC
+GCAGACACAGCTACTAAGAGCGGCTCCACCACTAAAAATAGGTTTGTTGTTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01652</identifier>
+            <name>IF4E</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>chromatoid body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic mRNA processing body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic stress granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>eukaryotic translation initiation factor 4F complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mRNA cap binding complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>RISC complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>eukaryotic initiation factor 4G binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>repressing transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA cap binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>translation initiation factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral fear response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G1/S transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mRNA export from nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nuclear-transcribed mRNA poly(A) tail shortening</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stem cell population maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>translational initiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

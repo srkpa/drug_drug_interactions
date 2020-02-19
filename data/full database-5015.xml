@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05404</drugbank-id>
+  <name>AZD 3355</name>
+  <description>AZD 3355 is a reflux inhibitor used for the treatment of Gastroesophageal Reflux Disease. It is developed by AstraZeneca  and is currently in phase I/II trials.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in gastroesophageal reflux disease (GERD).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>AZD3355 is reflux inhibitors which offer a new approach to the treatment of Gastroesophageal reflux disease (GERD) by improving the function of the lower oesophageal sphincter (LOS) through receptors responsible for opening and closing the sphincter.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids</category>
+      <mesh-id>D000143</mesh-id>
+    </category>
+    <category>
+      <category>Acids, Noncarboxylic</category>
+      <mesh-id>D000148</mesh-id>
+    </category>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>GABA Agents</category>
+      <mesh-id>D018682</mesh-id>
+    </category>
+    <category>
+      <category>GABA Agonists</category>
+      <mesh-id>D018755</mesh-id>
+    </category>
+    <category>
+      <category>GABA-A Receptor Agonists</category>
+      <mesh-id>D058785</mesh-id>
+    </category>
+    <category>
+      <category>Gastrointestinal Agents</category>
+      <mesh-id>D005765</mesh-id>
+    </category>
+    <category>
+      <category>Neurotransmitter Agents</category>
+      <mesh-id>D018377</mesh-id>
+    </category>
+    <category>
+      <category>Organophosphorus Compounds</category>
+      <mesh-id>D009943</mesh-id>
+    </category>
+    <category>
+      <category>Phosphorus Acids</category>
+      <mesh-id>D017976</mesh-id>
+    </category>
+    <category>
+      <category>Phosphorus Compounds</category>
+      <mesh-id>D017553</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910120</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003380</id>
+      <name>Cellular tumor antigen p53</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04637" source="Swiss-Prot">
+        <name>Cellular tumor antigen p53</name>
+        <general-function/>
+        <specific-function/>
+        <gene-name>TP53</gene-name>
+        <locus>17p13.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.78</theoretical-pi>
+        <molecular-weight>43652.79</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11998</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TP53</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X02469</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>P53_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Antigen NY-CO-13</synonym>
+          <synonym>P53</synonym>
+          <synonym>Phosphoprotein p53</synonym>
+          <synonym>Tumor suppressor p53</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006595|Cellular tumor antigen p53
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021858|Cellular tumor antigen p53 (TP53)
+ATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCA
+GACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATG
+GATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCA
+GATGAAGCTCCCAGAATGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCT
+ACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAG
+AAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAG
+TCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACC
+TGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATG
+GCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAG
+CGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAAT
+TTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCGACATAGTGTGGTGGTGCCCTAT
+GAGCCGCCTGAGGTTGGCTCTGACTGTACCACCATCCACTACAACTACATGTGTAACAGT
+TCCTGCATGGGCGGCATGAACCGGAGGCCCATCCTCACCATCATCACACTGGAAGACTCC
+AGTGGTAATCTACTGGGACGGAACAGCTTTGAGGTGCGTGTTTGTGCCTGTCCTGGGAGA
+GACCGGCGCACAGAGGAAGAGAATCTCCGCAAGAAAGGGGAGCCTCACCACGAGCTGCCC
+CCAGGGAGCACTAAGCGAGCACTGCCCAACAACACCAGCTCCTCTCCCCAGCCAAAGAAG
+AAACCACTGGATGGAGAATATTTCACCCTTCAGATCCGTGGGCGTGAGCGCTTCGAGATG
+TTCCGAGAGCTGAATGAGGCCTTGGAACTCAAGGATGCCCAGGCTGGGAAGGAGCCAGGG
+GGGAGCAGGGCTCACTCCAGCCACCTGAAGTCCAAAAAGGGTCAGTCTACCTCCCGCCAT
+AAAAAACTCATGTTCAAGACAGAAGGGCCTGACTCAGACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00870</identifier>
+            <name>P53</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08563</identifier>
+            <name>P53_TAD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07710</identifier>
+            <name>P53_tetramer</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear chromatin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>PML body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>replication fork</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chaperone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>core promoter sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>damaged DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>double-stranded DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone acetyltransferase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone deacetylase regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>p53 binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protease binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein N-terminus binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein phosphatase 2A binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein phosphatase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein self-association</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor tyrosine kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II core promoter sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription regulatory region DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcriptional activator activity, RNA polymerase II core promoter proximal region sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcriptional activator activity, RNA polymerase II transcription regulatory region sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin protein ligase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>base-excision repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein localization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to DNA damage stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to glucose starvation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to ionizing radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to UV</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to UV-C</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cerebellum development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromatin assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromosome breakage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>determination of adult lifespan</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA damage response, signal transduction by p53 class mediator</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA damage response, signal transduction by p53 class mediator resulting in cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA damage response, signal transduction by p53 class mediator resulting in transcription of p21 class mediator</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA strand renaturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic organ development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>entrainment of circadian clock by photoperiod</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ER overload response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gastrulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>in utero embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway by p53 class mediator</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrial DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic G1 DNA damage checkpoint</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organism growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>necroptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of fibroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of glucose catabolic process to lactate via pyruvate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of helicase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of macromitophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of reactive oxygen species metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Notch signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide-excision repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oligodendrocyte apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidative stress-induced premature senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cardiac muscle cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell cycle arrest</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of execution phase of apoptosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of histone deacetylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of intrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitochondrial membrane permeability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein insertion into mitochondrial membrane involved in apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein oligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of reactive oxygen species metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of release of cytochrome c from mitochondria</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of thymocyte apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter in response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter in response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein complex assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein import into nucleus, translocation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein localization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein tetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of fibroblast apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of glycolytic process by positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of intrinsic apoptotic signaling pathway by p53 class mediator</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of mitochondrial membrane permeability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of mitochondrial membrane permeability involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of tissue remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>release of cytochrome c from mitochondria</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>replicative senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to gamma radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ischemia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to salt stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to X-ray</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rRNA transcription</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>somitogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell differentiation in thymus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell lineage commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell proliferation involved in immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05029</drugbank-id>
+  <name>Lancovutide</name>
+  <description>Lancovutide, a peptide antibiotic, is in clinical development for the treatment of cystic fibrosis. Duramycin is a 19-amino-acid tetracyclic peptide produced by Streptoverticillium cinnamoneus and is closely related to cinnamycin (Ro09-0198). It belongs to the lantibiotics. Lantibiotics are bacteriocins that are characterized by the presence of a high proportion of unusual amino acids.</description>
+  <cas-number>1391-36-2</cas-number>
+  <unii>BPR0F3X56H</unii>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in cystic fibrosis and eye disorders/infections.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>Duramycin becomes deposited in cellular membranes where it binds to phosphatidylethanolamine. It may thereby change biophysical membrane properties and perturb ion channel function.&#13;
+Duramycin stimulates secretion of electrically charged atoms (ions) of chloride from epithelial cells in the lungs. Increased chloride secretion is accompanied by obligatory increase in water secretion from same cells. This may prevent the thickening of lung secretions and prevent further mucus build up and its progressive contribution to lung tissue damage.&#13;
+&#13;
+</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">Duramycin</synonym>
+    <synonym language="english" coder="inn">Lancovutide</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Bacterial Proteins</category>
+      <mesh-id>D001426</mesh-id>
+    </category>
+    <category>
+      <category>Membrane Proteins</category>
+      <mesh-id>D008565</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+    <category>
+      <category>Pore Forming Cytotoxic Proteins</category>
+      <mesh-id>D052899</mesh-id>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909900</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0000657</id>
+      <name>Cytosolic phospholipase A2</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17731</ref-id>
+            <pubmed-id>1548189</pubmed-id>
+            <citation>Tanaka K, Itazaki H, Yoshida T: Cinatrins, a novel family of phospholipase A2 inhibitors. II. Biological activities. J Antibiot (Tokyo). 1992 Jan;45(1):50-5.</citation>
+          </article>
+          <article>
+            <ref-id>A17732</ref-id>
+            <pubmed-id>1741778</pubmed-id>
+            <citation>Marki F, Hanni E, Fredenhagen A, van Oostrum J: Mode of action of the lanthionine-containing peptide antibiotics duramycin, duramycin B and C, and cinnamycin as indirect inhibitors of phospholipase A2. Biochem Pharmacol. 1991 Oct 24;42(10):2027-35.</citation>
+          </article>
+          <article>
+            <ref-id>A17733</ref-id>
+            <pubmed-id>12423799</pubmed-id>
+            <citation>Hechard Y, Sahl HG: Mode of action of modified and unmodified bacteriocins from Gram-positive bacteria. Biochimie. 2002 May-Jun;84(5-6):545-57.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P47712" source="Swiss-Prot">
+        <name>Cytosolic phospholipase A2</name>
+        <general-function>Phospholipase a2 activity</general-function>
+        <specific-function>Selectively hydrolyzes arachidonyl phospholipids in the sn-2 position releasing arachidonic acid. Together with its lysophospholipid activity, it is implicated in the initiation of the inflammatory response.</specific-function>
+        <gene-name>PLA2G4A</gene-name>
+        <locus>1q25</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.03</theoretical-pi>
+        <molecular-weight>85238.2</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9035</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PLA2G4A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M72393</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>190007</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1424</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P47712</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PA24A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CPLA2</synonym>
+          <synonym>Phospholipase A2 group IVA</synonym>
+          <synonym>PLA2G4</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010456|Cytosolic phospholipase A2
+MSFIDPYQHIIVEHQYSHKFTVVVLRATKVTKGAFGDMLDTPDPYVELFISTTPDSRKRT
+RHFNNDINPVWNETFEFILDPNQENVLEITLMDANYVMDETLGTATFTVSSMKVGEKKEV
+PFIFNQVTEMVLEMSLEVCSCPDLRFSMALCDQEKTFRQQRKEHIRESMKKLLGPKNSEG
+LHSARDVPVVAILGSGGGFRAMVGFSGVMKALYESGILDCATYVAGLSGSTWYMSTLYSH
+PDFPEKGPEEINEELMKNVSHNPLLLLTPQKVKRYVESLWKKKSSGQPVTFTDIFGMLIG
+ETLIHNRMNTTLSSLKEKVNTAQCPLPLFTCLHVKPDVSELMFADWVEFSPYEIGMAKYG
+TFMAPDLFGSKFFMGTVVKKYEENPLHFLMGVWGSAFSILFNRVLGVSGSQSRGSTMEEE
+LENITTKHIVSNDSSDSDDESHEPKGTENEDAGSDYQSDNQASWIHRMIMALVSDSALFN
+TREGRAGKVHNFMLGLNLNTSYPLSPLSDFATQDSFDDDELDAAVADPDEFERIYEPLDV
+KSKKIHVVDSGLTFNLPYPLILRPQRGVDLIISFDFSARPSDSSPPFKELLLAEKWAKMN
+KLPFPKIDPYVFDREGLKECYVFKPKNPDMEKDCPTIIHFVLANINFRKYRAPGVPRETE
+EEKEIADFDIFDDPESPFSTFNFQYPNQAFKRLHDLMHFNTLNNIDVIKEAMVESIEYRR
+QNPSRCSVSLSNVEARRFFNKEFLSKPKA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010457|Cytosolic phospholipase A2 (PLA2G4A)
+ATGTCATTTATAGATCCTTACCAGCACATTATAGTGGAGCACCAGTATTCCCACAAGTTT
+ACGGTAGTGGTGTTACGTGCCACCAAAGTGACAAAGGGGGCCTTTGGTGACATGCTTGAT
+ACTCCAGATCCCTATGTGGAACTTTTTATCTCTACAACCCCTGACAGCAGGAAGAGAACA
+AGACATTTCAATAATGACATAAACCCTGTGTGGAATGAGACCTTTGAATTTATTTTGGAT
+CCTAATCAGGAAAATGTTTTGGAGATTACGTTAATGGATGCCAATTATGTCATGGATGAA
+ACTCTAGGGACAGCAACATTTACTGTATCTTCTATGAAGGTGGGAGAAAAGAAAGAAGTT
+CCTTTTATTTTCAACCAAGTCACTGAAATGGTTCTAGAAATGTCTCTTGAAGTTTGCTCA
+TGCCCAGACCTACGATTTAGTATGGCTCTGTGTGATCAGGAGAAGACTTTCAGACAACAG
+AGAAAAGAACACATAAGGGAGAGCATGAAGAAACTCTTGGGTCCAAAGAATAGTGAAGGA
+TTGCATTCTGCACGTGATGTGCCTGTGGTAGCCATATTGGGTTCAGGTGGGGGTTTCCGA
+GCCATGGTGGGATTCTCTGGTGTGATGAAGGCATTATACGAATCAGGAATTCTGGATTGT
+GCTACCTACGTTGCTGGTCTTTCTGGCTCCACCTGGTATATGTCAACCTTGTATTCTCAC
+CCTGATTTTCCAGAGAAAGGGCCAGAGGAGATTAATGAAGAACTAATGAAAAATGTTAGC
+CACAATCCCCTTTTACTTCTCACACCACAGAAAGTTAAAAGATATGTTGAGTCTTTATGG
+AAGAAGAAAAGCTCTGGACAACCTGTCACCTTTACTGATATCTTTGGGATGTTAATAGGA
+GAAACACTAATTCATAATAGAATGAATACTACTCTGAGCAGTTTGAAGGAAAAAGTTAAT
+ACTGCACAATGCCCTTTACCTCTTTTCACCTGTCTTCATGTCAAACCTGACGTTTCAGAG
+CTGATGTTTGCAGATTGGGTTGAATTTAGTCCATACGAAATTGGCATGGCTAAATATGGT
+ACTTTTATGGCTCCCGACTTATTTGGAAGCAAATTTTTTATGGGAACAGTCGTTAAGAAG
+TATGAAGAAAACCCCTTGCATTTCTTAATGGGTGTCTGGGGCAGTGCCTTTTCCATATTG
+TTCAACAGAGTTTTGGGCGTTTCTGGTTCACAAAGCAGAGGCTCCACAATGGAGGAAGAA
+TTAGAAAATATTACCACAAAGCATATTGTGAGTAATGATAGCTCGGACAGTGATGATGAA
+TCACACGAACCCAAAGGCACTGAAAATGAAGATGCTGGAAGTGACTATCAAAGTGATAAT
+CAAGCAAGTTGGATTCATCGTATGATAATGGCCTTGGTGAGTGATTCAGCTTTATTCAAT
+ACCAGAGAAGGACGTGCTGGGAAGGTACACAACTTCATGCTGGGCTTGAATCTCAATACA
+TCTTATCCACTGTCTCCTTTGAGTGACTTTGCCACACAGGACTCCTTTGATGATGATGAA
+CTGGATGCAGCTGTAGCAGATCCTGATGAATTTGAGCGAATATATGAGCCTCTGGATGTC
+AAAAGTAAAAAGATTCATGTAGTGGACAGTGGGCTCACATTTAACCTGCCGTATCCCTTG
+ATACTGAGACCTCAGAGAGGGGTTGATCTCATAATCTCCTTTGACTTTTCTGCAAGGCCA
+AGTGACTCTAGTCCTCCGTTCAAGGAACTTCTACTTGCAGAAAAGTGGGCTAAAATGAAC
+AAGCTCCCCTTTCCAAAGATTGATCCTTATGTGTTTGATCGGGAAGGGCTGAAGGAGTGC
+TATGTCTTTAAACCCAAGAATCCTGATATGGAGAAAGATTGCCCAACCATCATCCACTTT
+GTTCTGGCCAACATCAACTTCAGAAAGTACAAGGCTCCAGGTGTTCCAAGGGAAACTGAG
+GAAGAGAAAGAAATCGCTGACTTTGATATTTTTGATGACCCAGAATCACCATTTTCAACC
+TTCAATTTTCAATATCCAAATCAAGCATTCAAAAGACTACATGATCTTATGCACTTCAAT
+ACTCTGAACAACATTGATGTGATAAAAGAAGCCATGGTTGAAAGCATTGAATATAGAAGA
+CAGAATCCATCTCGTTGCTCTGTTTCCCTTAGTAATGTTGAGGCAAGAAGATTTTTCAAC
+AAGGAGTTTCTAAGTAAACCCAAAGCATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00168</identifier>
+            <name>C2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01735</identifier>
+            <name>PLA2_B</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic membrane-bounded vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium-dependent phospholipase A2 activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium-dependent phospholipid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lysophospholipase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipase A2 activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arachidonic acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arachidonic acid secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiolipin acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to antibiotic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycerophospholipid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>icosanoid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>icosanoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidic acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylcholine acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylethanolamine acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylglycerol acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylserine acyl-chain remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activating factor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength>unknown</inhibition-strength>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

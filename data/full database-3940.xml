@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04185</drugbank-id>
+  <drugbank-id>EXPT00144</drugbank-id>
+  <drugbank-id>EXPT02397</drugbank-id>
+  <drugbank-id>DB03519</drugbank-id>
+  <name>Norvaline</name>
+  <description>Norvaline is an isomer of the more common amino acid valine.</description>
+  <cas-number>6600-40-4</cas-number>
+  <unii>A70UKS48FE</unii>
+  <average-mass>117.1463</average-mass>
+  <monoisotopic-mass>117.078978601</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Naoyuki Harada, Masataka Hikota, "Norvaline Derivative and Method for Preparation Thereof." U.S. Patent US20080076769, issued March 27, 2008.</synthesis-reference>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as l-alpha-amino acids. These are alpha amino acids which have the L-configuration of the alpha-carbon atom.</description>
+    <direct-parent>L-alpha-amino acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Methyl-branched fatty acids</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Branched fatty acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Fatty acid</substituent>
+    <substituent>Fatty acyl</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>Methyl-branched fatty acid</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">(S)-2-Aminopentanoic acid</synonym>
+    <synonym language="english" coder="">2-Aminopentanoic acid</synonym>
+    <synonym language="english" coder="">2-Aminovaleric acid</synonym>
+    <synonym language="english" coder="">L-2-aminopentanoic acid</synonym>
+    <synonym language="english" coder="">L-2-Aminovaleric acid</synonym>
+    <synonym language="english" coder="">L-Norvaline</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids</category>
+      <mesh-id>D000596</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Branched-Chain</category>
+      <mesh-id>D000597</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Essential</category>
+      <mesh-id>D000601</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1b6h</pdb-entry>
+    <pdb-entry>1c9y</pdb-entry>
+    <pdb-entry>1fb5</pdb-entry>
+    <pdb-entry>1jdx</pdb-entry>
+    <pdb-entry>1obc</pdb-entry>
+    <pdb-entry>1obh</pdb-entry>
+    <pdb-entry>1z3m</pdb-entry>
+    <pdb-entry>1z3p</pdb-entry>
+    <pdb-entry>1znm</pdb-entry>
+    <pdb-entry>2bte</pdb-entry>
+    <pdb-entry>2i6u</pdb-entry>
+    <pdb-entry>2n2v</pdb-entry>
+    <pdb-entry>2n2w</pdb-entry>
+    <pdb-entry>2n2x</pdb-entry>
+    <pdb-entry>4h31</pdb-entry>
+    <pdb-entry>4nf2</pdb-entry>
+    <pdb-entry>4wj5</pdb-entry>
+    <pdb-entry>5bpo</pdb-entry>
+    <pdb-entry>5bqq</pdb-entry>
+    <pdb-entry>5zef</pdb-entry>
+    <pdb-entry>6d37</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.26</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.12e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-aminopentanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>norvaline</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>117.1463</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>117.078978601</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCC[C@H](N)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C5H11NO2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C5H11NO2/c1-2-3-4(6)5(7)8/h4H,2-3,6H2,1H3,(H,7,8)/t4-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>SNDPXSYFESPGGJ-BYPYZUCNSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>63.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>29.62</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>12.51</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.53</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>18314</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>65098</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507762</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C01826</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>58608</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50357215</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>NVA</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Norvaline</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL55612</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000306</id>
+      <name>Ornithine carbamoyltransferase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00480" source="Swiss-Prot">
+        <name>Ornithine carbamoyltransferase, mitochondrial</name>
+        <general-function>Phospholipid binding</general-function>
+        <specific-function/>
+        <gene-name>OTC</gene-name>
+        <locus>Xp21.1</locus>
+        <cellular-location>Mitochondrion matrix</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.96</theoretical-pi>
+        <molecular-weight>39934.775</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8512</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>OTC</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>K02100</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189407</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00480</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OTC_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.1.3.3</synonym>
+          <synonym>Ornithine transcarbamylase</synonym>
+          <synonym>OTCase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010073|Ornithine carbamoyltransferase, mitochondrial
+MLFNLRILLNNAAFRNGHNFMVRNFRCGQPLQNKVQLKGRDLLTLKNFTGEEIKYMLWLS
+ADLKFRIKQKGEYLPLLQGKSLGMIFEKRSTRTRLSTETGFALLGGHPCFLTTQDIHLGV
+NESLTDTARVLSSMADAVLARVYKQSDLDTLAKEASIPIINGLSDLYHPIQILADYLTLQ
+EHYSSLKGLTLSWIGDGNNILHSIMMSAAKFGMHLQAATPKGYEPDASVTKLAEQYAKEN
+GTKLLLTNDPLEAAHGGNVLITDTWISMGQEEEKKKRLQAFQGYQVTMKTAKVAASDWTF
+LHCLPRKPEEVDDEVFYSPRSLVFPEAENRKWTIMAVMVSLLTDYSPQLQKPKF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010074|Ornithine carbamoyltransferase, mitochondrial (OTC)
+ATGCTGTTTAATCTGAGGATCCTGTTAAACAATGCAGCTTTTAGAAATGGTCACAACTTC
+ATGGTTCGAAATTTTCGGTGTGGACAACCACTACAAAATAAAGTGCAGCTGAAGGGCCGT
+GACCTTCTCACTCTAAAAAACTTTACCGGAGAAGAAATTAAATATATGCTATGGCTATCA
+GCAGATCTGAAATTTAGGATAAAACAGAAAGGAGAGTATTTGCCTTTATTGCAAGGGAAG
+TCCTTAGGCATGATTTTTGAGAAAAGAAGTACTCGAACAAGATTGTCTACAGAAACAGGC
+TTTGCACTTCTGGGAGGACATCCTTGTTTTCTTACCACACAAGATATTCATTTGGGTGTG
+AATGAAAGTCTCACGGACACGGCCCGTGTATTGTCTAGCATGGCAGATGCAGTATTGGCT
+CGAGTGTATAAACAATCAGATTTGGACACCCTGGCTAAAGAAGCATCCATCCCAATTATC
+AATGGGCTGTCAGATTTGTACCATCCTATCCAGATCCTGGCTGATTACCTCACGCTCCAG
+GAACACTATAGCTCTCTGAAAGGTCTTACCCTCAGCTGGATCGGGGATGGGAACAATATC
+CTGCACTCCATCATGATGAGCGCAGCGAAATTCGGAATGCACCTTCAGGCAGCTACTCCA
+AAGGGTTATGAGCCGGATGCTAGTGTAACCAAGTTGGCAGAGCAGTATGCCAAAGAGAAT
+GGTACCAAGCTGTTGCTGACAAATGATCCATTGGAAGCAGCGCATGGAGGCAATGTATTA
+ATTACAGACACTTGGATAAGCATGGGACAAGAAGAGGAGAAGAAAAAGCGGCTCCAGGCT
+TTCCAAGGTTACCAGGTTACAATGAAGACTGCTAAAGTTGCTGCCTCTGACTGGACATTT
+TTACACTGCTTGCCCAGAAAGCCAGAAGAAGTGGATGATGAAGTCTTTTATTCTCCTCGA
+TCACTAGTGTTCCCAGAGGCAGAAAACAGAAAGTGGACAATCATGGCTGTCATGGTGTCC
+CTGCTGACAGATTACTCACCTCAGCTCCAGAAGCCTAAATTTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00185</identifier>
+            <name>OTCace</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02729</identifier>
+            <name>OTCace_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>amino acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ornithine carbamoyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphate ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ammonia homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arginine biosynthetic process via ornithine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>citrulline biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>liver development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>midgut development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ornithine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polyamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homotrimerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to biotin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to insulin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to zinc ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>urea cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000347</id>
+      <name>Glycine amidinotransferase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P50440" source="Swiss-Prot">
+        <name>Glycine amidinotransferase, mitochondrial</name>
+        <general-function>Glycine amidinotransferase activity</general-function>
+        <specific-function>Catalyzes the biosynthesis of guanidinoacetate, the immediate precursor of creatine. Creatine plays a vital role in energy metabolism in muscle tissues. May play a role in embryonic and central nervous system development. May be involved in the response to heart failure by elevating local creatine synthesis.</specific-function>
+        <gene-name>GATM</gene-name>
+        <locus>15q21.1</locus>
+        <cellular-location>Mitochondrion inner membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.15</theoretical-pi>
+        <molecular-weight>48455.01</molecular-weight>
+        <chromosome-location>15</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4175</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GATM</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S68805</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>545385</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P50440</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GATM_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.1.4.1</synonym>
+          <synonym>AGAT</synonym>
+          <synonym>L-arginine:glycine amidinotransferase</synonym>
+          <synonym>Transamidinase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000691|Glycine amidinotransferase, mitochondrial
+MLRVRCLRGGSRGAEAVHYIGSRLGRTLTGWVQRTFQSTQAATASSRNSCAADDKATEPL
+PKDCPVSSYNEWDPLEEVIVGRAENACVPPFTIEVKANTYEKYWPFYQKQGGHYFPKDHL
+KKAVAEIEEMCNILKTEGVTVRRPDPIDWSLKYKTPDFESTGLYSAMPRDILIVVGNEII
+EAPMAWRSRFFEYRAYRSIIKDYFHRGAKWTTAPKPTMADELYNQDYPIHSVEDRHKLAA
+QGKFVTTEFEPCFDAADFIRAGRDIFAQRSQVTNYLGIEWMRRHLAPDYRVHIISFKDPN
+PMHIDATFNIIGPGIVLSNPDRPCHQIDLFKKAGWTIITPPTPIIPDDHPLWMSSKWLSM
+NVLMLDEKRVMVDANEVPIQKMFEKLGITTIKVNIRNANSLGGGFHCWTCDVRRRGTLQS
+YLD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010101|Glycine amidinotransferase, mitochondrial (GATM)
+ATGCTGCGGGTGCGGTGTCTGCGCGGCGGGAGCCGCGGCGCCGAGGCGGTGCACTACATC
+GGATCTCGGCTTGGACGAACCTTGACAGGATGGGTGCAGCGAACTTTCCAGAGCACCCAG
+GCAGCTACGGCTTCCTCCCGGAACTCCTGTGCAGCTGACGACAAAGCCACTGAGCCTCTG
+CCCAAGGACTGCCCTGTCTCTTCTTACAACGAATGGGACCCCTTAGAGGAAGTGATAGTG
+GGCAGAGCAGAAAACGCCTGTGTTCCACCGTTCACCATCGAGGTGAAGGCCAACACATAT
+GAAAAGTACTGGCCATTTTACCAGAAGCAAGGAGGGCATTATTTTCCCAAAGATCATTTG
+AAAAAGGCTGTTGCTGAAATTGAAGAAATGTGCAATATTTTAAAAACGGAAGGAGTGACA
+GTAAGGAGGCCTGACCCCATTGACTGGTCATTGAAGTATAAAACTCCTGATTTTGAGTCT
+ACGGGTTTATACAGTGCAATGCCTCGAGACATCCTGATAGTTGTGGGCAATGAGATTATC
+GAGGCTCCCATGGCATGGCGTTCACGCTTCTTTGAGTACCGAGCGTACAGGTCAATTATC
+AAAGACTACTTCCACCGTGGCGCCAAGTGGACAACAGCTCCTAAGCCCACAATGGCTGAT
+GAGCTTTATAACCAGGATTATCCCATCCACTCTGTAGAAGACAGACACAAATTGGCTGCT
+CAGGGAAAATTTGTGACAACTGAGTTTGAGCCATGCTTTGATGCTGCTGACTTCATTCGA
+GCTGGAAGAGATATTTTTGCACAGAGAAGCCAGGTTACAAACTACCTAGGCATTGAATGG
+ATGCGTAGGCATCTTGCTCCAGACTACAGAGTGCATATCATCTCCTTTAAAGATCCCAAT
+CCCATGCATATTGATGCTACCTTCAACATCATTGGACCTGGTATTGTGCTTTCCAACCCT
+GACCGACCATGTCACCAGATTGATCTTTTCAAGAAAGCAGGATGGACTATCATTACTCCT
+CCAACACCAATCATCCCAGACGATCATCCACTCTGGATGTCATCCAAATGGCTTTCCATG
+AATGTCTTAATGCTAGATGAAAAACGTGTTATGGTGGATGCCAATGAAGTTCCAATTCAA
+AAGATGTTTGAAAAGCTGGGTATCACTACCATTAAAGTTAACATTCGTAATGCCAATTCC
+CTGGGAGGAGGCTTCCATTGCTGGACCTGCGATGTCCGGCGCCGAGGCACCTTACAGTCC
+TACTTGGACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02274</identifier>
+            <name>Amidinotransf</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial intermembrane space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glycine amidinotransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>creatine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>creatine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic liver development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polyamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to mercury ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to peptide hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tissue regeneration</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

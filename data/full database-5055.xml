@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05447</drugbank-id>
+  <name>AVI-4557</name>
+  <description>AVI-4557 is an oral antisense compound that selectively inhibits the metabolic enzyme cytochrome P450 3A4 (CYP), a liver enzyme responsible for the metabolism or breakdown of approximately half of currently marketed drugs. Studies indicate that AVI-4557 can successfully reduce the rate of metabolism for certain drugs, therefore allowing greater and longer availability of the drug in the patient's system through a decrease in clearance and an increase in maximal blood concentration (Cmax). AVI-4557 is therefore indicated to limit toxicity for patients receiving highly-toxic therapeutic drugs for treatment of anxiety, cancer, and a number of other serious conditions.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3504</ref-id>
+        <pubmed-id>12065433</pubmed-id>
+        <citation>Arora V, Cate ML, Ghosh C, Iversen PL: Phosphorodiamidate morpholino antisense oligomers inhibit expression of human cytochrome P450 3A4 and alter selected drug metabolism. Drug Metab Dispos. 2002 Jul;30(7):757-62.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in adverse effects (chemotherapy) and adverse effects (drug).</indication>
+  <pharmacodynamics>selectively inhibits the metabolic enzyme cytochrome P450 3A4 (CYP), a liver enzyme responsible for the metabolism or breakdown of approximately half of currently marketed drugs. Studies indicate that AVI-4557 can successfully reduce the rate of metabolism when co-administered with certain therapeutic drugs, allowing greater and longer availability of the drug in the patient's system without an increase in toxicity.</pharmacodynamics>
+  <mechanism-of-action>selectively inhibits the metabolic enzyme cytochrome P450 3A4 (CYP), a liver enzyme responsible for the metabolism or breakdown of approximately half of currently marketed drugs. S</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>Neugene</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910144</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0004019</id>
+      <name>Hepatocyte nuclear factor 4-alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P41235" source="Swiss-Prot">
+        <name>Hepatocyte nuclear factor 4-alpha</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Transcriptionally controlled transcription factor. Binds to DNA sites required for the transcription of alpha 1-antitrypsin, apolipoprotein CIII, transthyretin genes and HNF1-alpha. May be essential for development of the liver, kidney and intestine.</specific-function>
+        <gene-name>HNF4A</gene-name>
+        <locus>20q12-q13.1</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.46</theoretical-pi>
+        <molecular-weight>52784.205</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5024</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X87870</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1595752</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P41235</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HNF4A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>HNF-4-alpha</synonym>
+          <synonym>HNF4</synonym>
+          <synonym>NR2A1</synonym>
+          <synonym>Nuclear receptor subfamily 2 group A member 1</synonym>
+          <synonym>TCF-14</synonym>
+          <synonym>TCF14</synonym>
+          <synonym>Transcription factor 14</synonym>
+          <synonym>Transcription factor HNF-4</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007682|Hepatocyte nuclear factor 4-alpha
+MRLSKTLVDMDMADYSAALDPAYTTLEFENVQVLTMGNDTSPSEGTNLNAPNSLGVSALC
+AICGDRATGKHYGASSCDGCKGFFRRSVRKNHMYSCRFSRQCVVDKDKRNQCRYCRLKKC
+FRAGMKKEAVQNERDRISTRRSSYEDSSLPSINALLQAEVLSRQITSPVSGINGDIRAKK
+IASIADVCESMKEQLLVLVEWAKYIPAFCELPLDDQVALLRAHAGEHLLLGATKRSMVFK
+DVLLLGNDYIVPRHCPELAEMSRVSIRILDELVLPFQELQIDDNEYAYLKAIIFFDPDAK
+GLSDPGKIKRLRSQVQVSLEDYINDRQYDSRGRFGELLLLLPTLQSITWQMIEQIQFIKL
+FGMAKIDNLLQEMLLGGSPSDAPHAHHPLHPHLMQEHMGTNVIVANTMPTHLSNGQMCEW
+PRPRGQAATPETPQPSPPGGSGSEPYKLLPGAVATIVKPLSAIPQPTITKQEVI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012799|Hepatocyte nuclear factor 4-alpha (HNF4A)
+ATGCGACTCTCCAAAACCCTCGTCGACATGGACATGGCCGACTACAGTGCTGCACTGGAC
+CCAGCCTACACCACCCTGGAATTTGAGAATGTGCAGGTGTTGACGATGGGCAATGACACG
+TCCCCATCAGAAGGCACCAACCTCAACGCGCCCAACAGCCTGGGTGTCAGCGCCCTGTGT
+GCCATCTGCGGGGACCGGGCCACGGGCAAACACTACGGTGCCTCGAGCTGTGACGGCTGC
+AAGGGCTTCTTCCGGAGGAGCGTGCGGAAGAACCACATGTACTCCTGCAGATTTAGCCGG
+CAGTGCGTGGTGGACAAAGACAAGAGGAACCAGTGCCGCTACTGCAGGCTCAAGAAATGC
+TTCCGGGCTGGCATGAAGAAGGAAGCCGTCCAGAATGAGCGGGACCGGATCAGCACTCGA
+AGGTCAAGCTATGAGGACAGCAGCCTGCCCTCCATCAATGCGCTCCTGCAGGCGGAGGTC
+CTGTCCCGACAGATCACCTCCCCCGTCTCCGGGATCAACGGCGACATTCGGGCGAAGAAG
+ATTGCCAGCATCGCAGATGTGTGTGAGTCCATGAAGGAGCAGCTGCTGGTTCTCGTTGAG
+TGGGCCAAGTACATCCCAGCTTTCTGCGAGCTCCCCCTGGACGACCAGGTGGCCCTGCTC
+AGAGCCCATGCTGGCGAGCACCTGCTGCTCGGAGCCACCAAGAGATCCATGGTGTTCAAG
+GACGTGCTGCTCCTAGGCAATGACTACATTGTCCCTCGGCACTGCCCGGAGCTGGCGGAG
+ATGAGCCGGGTGTCCATACGCATCCTTGACGAGCTGGTGCTGCCCTTCCAGGAGCTGCAG
+ATCGATGACAATGAGTATGCCTACCTCAAAGCCATCATCTTCTTTGACCCAGATGCCAAG
+GGGCTGAGCGATCCAGGGAAGATCAAGCGGCTGCGTTCCCAGGTGCAGGTGAGCTTGGAG
+GACTACATCAACGACCGCCAGTATGACTCGCGTGGCCGCTTTGGAGAGCTGCTGCTGCTG
+CTGCCCACCTTGCAGAGCATCACCTGGCAGATGATCGAGCAGATCCAGTTCATCAAGCTC
+TTCGGCATGGCCAAGATTGACAACCTGTTGCAGGAGATGCTGCTGGGAGGGTCCCCCAGC
+GATGCACCCCATGCCCACCACCCCCTGCACCCTCACCTGATGCAGGAACATATGGGAACC
+AACGTCATCGTTGCCAACACAATGCCCACTCACCTCAGCAACGGACAGATGTGTGAGTGG
+CCCCGACCCAGGGGACAGGCAGCCACCCCTGAGACCCCACAGCCCTCACCGCCAGGTGGC
+TCAGGGTCTGAGCCCTATAAGCTCCTGCCGGGAGCCGTCGCCACAATCGTCAAGCCCCTC
+TCTGCCATCCCCCAGCCGACCATCACCAAGCAGGAAGTTATCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00104</identifier>
+            <name>Hormone_recep</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00105</identifier>
+            <name>zf-C4</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II activating transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II core promoter sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor activity, ligand-activated sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hormone receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, RNA polymerase II distal enhancer sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription regulatory region DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcriptional activator activity, RNA polymerase II core promoter proximal region sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endocrine pancreas development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ornithine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cholesterol homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of gastrulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of growth hormone receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to glucose</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sex differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction involved in regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>SMAD protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>triglyceride homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

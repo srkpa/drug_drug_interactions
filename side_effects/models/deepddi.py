@@ -12,10 +12,9 @@ class DeepDDI(nn.Module):
         layers = []
         in_ = input_dim
         self.is_binary_output = is_binary_output
-        self.testing = testing
+        self.testing = True #testing
         self.exp_prefix = exp_prefix
         output_dim = 1 if is_binary_output else nb_side_effects
-        print("ooo", output_dim)
         if is_binary_output:
             self.embedding = nn.Embedding(nb_side_effects, ss_embedding_dim)
             in_ += ss_embedding_dim
@@ -29,6 +28,7 @@ class DeepDDI(nn.Module):
                                                     ), nn.Sigmoid())
 
     def forward(self, batch):
+
         did1 = did2 = sid = None
         if not self.is_binary_output:
             drugs_a, drugs_b, = batch[:2]

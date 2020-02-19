@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05309</drugbank-id>
+  <name>TP-508</name>
+  <description>TP508 is a non-proteolytic synthetic peptide representing the portion of human thrombin originally identified as the fibroblast high-affinity receptor binding domain. </description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3360</ref-id>
+        <pubmed-id>11208179</pubmed-id>
+        <citation>Norfleet AM, Huang Y, Sower LE, Redin WR, Fritz RR, Carney DH: Thrombin peptide TP508 accelerates closure of dermal excisions in animal tissue with surgically induced ischemia. Wound Repair Regen. 2000 Nov-Dec;8(6):517-29.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in bone fractures, diabetic foot ulcers, and wounds.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>TP508 is a 23-amino-acid peptide representing the receptor-binding domain of thrombin, and is thought to work by mimicking the ability of thrombin to activate platelets and a cascade of growth factors and enzymes that initiate and regulate the healing process. Although not tested with allografts, TP508/Chrysalin has been shown to improve fracture healing in experimental models and its application is associated with upregulation of angiogenic genes.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>Chrysalin</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910071</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000326</id>
+      <name>Fibroblast growth factor 4</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08620" source="Swiss-Prot">
+        <name>Fibroblast growth factor 4</name>
+        <general-function>Heparin binding</general-function>
+        <specific-function>Plays an important role in the regulation of embryonic development, cell proliferation, and cell differentiation. Required for normal limb and cardiac valve development during embryogenesis.</specific-function>
+        <gene-name>FGF4</gene-name>
+        <locus>11q13.3</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-30</signal-regions>
+        <theoretical-pi>10.19</theoretical-pi>
+        <molecular-weight>22047.355</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3682</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>FGF4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J02986</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>386788</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08620</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FGF4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>FGF-4</synonym>
+          <synonym>HBGF-4</synonym>
+          <synonym>Heparin secretory-transforming protein 1</synonym>
+          <synonym>Heparin-binding growth factor 4</synonym>
+          <synonym>HST</synonym>
+          <synonym>HST-1</synonym>
+          <synonym>HSTF-1</synonym>
+          <synonym>HSTF1</synonym>
+          <synonym>KS3</synonym>
+          <synonym>Transforming protein KS3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000649|Fibroblast growth factor 4
+MSGPGTAAVALLPAVLLALLAPWAGRGGAAAPTAPNGTLEAELERRWESLVALSLARLPV
+AAQPKEAAVQSGAGDYLLGIKRLRRLYCNVGIGFHLQALPDGRIGGAHADTRDSLLELSP
+VERGVVSIFGVASRFFVAMSSKGKLYGSPFFTDECTFKEILLPNNYNAYESYKYPGMFIA
+LSKNGKTKKGNRVSPTMKVTHFLPRL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0018940|Fibroblast growth factor 4 (FGF4)
+ATGTCGGGGCCCGGGACGGCCGCGGTAGCGCTGCTCCCGGCGGTCCTGCTGGCCTTGCTG
+GCGCCCTGGGCGGGCCGAGGGGGCGCCGCCGCACCCACTGCACCCAACGGCACGCTGGAG
+GCCGAGCTGGAGCGCCGCTGGGAGAGCCTGGTGGCGCTCTCGTTGGCGCGCCTGCCGGTG
+GCAGCGCAGCCCAAGGAGGCGGCCGTCCAGAGCGGCGCCGGCGACTACCTGCTGGGCATC
+AAGCGGCTGCGGCGGCTCTACTGCAACGTGGGCATCGGCTTCCACCTCCAGGCGCTCCCC
+GACGGCCGCATCGGCGGCGCGCACGCGGACACCCGCGACAGCCTGCTGGAGCTCTCGCCC
+GTGGAGCGGGGCGTGGTGAGCATCTTCGGCGTGGCCAGCCGGTTCTTCGTGGCCATGAGC
+AGCAAGGGCAAGCTCTATGGCTCGCCCTTCTTCACCGATGAGTGCACGTTCAAGGAGATT
+CTCCTTCCCAACAACTACAACGCCTACGAGTCCTACAAGTACCCCGGCATGTTCATCGCC
+CTGAGCAAGAATGGGAAGACCAAGAAGGGGAACCGAGTGTCGCCCACCATGAAGGTCACC
+CACTTCCTCCCCAGGCTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00167</identifier>
+            <name>FGF</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>growth factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heparin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process involved in morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cartilage condensation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chondroblast differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cranial suture morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic hindlimb morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mesenchymal cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>odontogenesis of dentin-containing tooth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of endothelial cell chemotaxis to fibroblast growth factor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stem cell population maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

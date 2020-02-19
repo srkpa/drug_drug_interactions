@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05530</drugbank-id>
+  <name>CPG 10101</name>
+  <description>CPG 10101 is a synthetic oligodeoxynucleotide (ODN) in clinical trials. It is a toll-like receptor 9 (TLR9) agonist with antiviral and immunomodulatory properties that could potentially influence chronic infection with HCV.</description>
+  <cas-number>957255-05-9</cas-number>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3678</ref-id>
+        <pubmed-id>17929306</pubmed-id>
+        <citation>McHutchison JG, Bacon BR, Gordon SC, Lawitz E, Shiffman M, Afdhal NH, Jacobson IM, Muir A, Al-Adhami M, Morris ML, Lekstrom-Himes JA, Efler SM, Davis HL: Phase 1B, randomized, double-blind, dose-escalation trial of CPG 10101 in patients with chronic hepatitis C virus. Hepatology. 2007 Nov;46(5):1341-9.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in hepatitis (viral, C) and viral infection.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands>
+    <international-brand>
+      <name>Actilon</name>
+      <company/>
+    </international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+    <category>
+      <category>Nucleotides</category>
+      <mesh-id>D009711</mesh-id>
+    </category>
+    <category>
+      <category>Oligonucleotides</category>
+      <mesh-id>D009841</mesh-id>
+    </category>
+    <category>
+      <category>Polynucleotides</category>
+      <mesh-id>D011119</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001171</id>
+      <name>Toll-like receptor 9</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A3678</ref-id>
+            <pubmed-id>17929306</pubmed-id>
+            <citation>McHutchison JG, Bacon BR, Gordon SC, Lawitz E, Shiffman M, Afdhal NH, Jacobson IM, Muir A, Al-Adhami M, Morris ML, Lekstrom-Himes JA, Efler SM, Davis HL: Phase 1B, randomized, double-blind, dose-escalation trial of CPG 10101 in patients with chronic hepatitis C virus. Hepatology. 2007 Nov;46(5):1341-9.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9NR96" source="Swiss-Prot">
+        <name>Toll-like receptor 9</name>
+        <general-function>Transmembrane signaling receptor activity</general-function>
+        <specific-function>Key component of innate and adaptive immunity. TLRs (Toll-like receptors) control host immune response against pathogens through recognition of molecular patterns specific to microorganisms. TLR9 is a nucleotide-sensing TLR which is activated by unmethylated cytidine-phosphate-guanosine (CpG) dinucleotides. Acts via MYD88 and TRAF6, leading to NF-kappa-B activation, cytokine secretion and the inflammatory response. Controls lymphocyte response to Helicobacter infection.</specific-function>
+        <gene-name>TLR9</gene-name>
+        <locus>3p21.3</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions>819-839</transmembrane-regions>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>8.23</theoretical-pi>
+        <molecular-weight>115858.665</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:15633</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TLR9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF259262</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>8099652</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1759</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9NR96</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TLR9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CD289 antigen</synonym>
+          <synonym>Toll-like receptor 9 precursor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002329|Toll-like receptor 9
+MGFCRSALHPLSLLVQAIMLAMTLALGTLPAFLPCELQPHGLVNCNWLFLKSVPHFSMAA
+PRGNVTSLSLSSNRIHHLHDSDFAHLPSLRHLNLKWNCPPVGLSPMHFPCHMTIEPSTFL
+AVPTLEELNLSYNNIMTVPALPKSLISLSLSHTNILMLDSASLAGLHALRFLFMDGNCYY
+KNPCRQALEVAPGALLGLGNLTHLSLKYNNLTVVPRNLPSSLEYLLLSYNRIVKLAPEDL
+ANLTALRVLDVGGNCRRCDHAPNPCMECPRHFPQLHPDTFSHLSRLEGLVLKDSSLSWLN
+ASWFRGLGNLRVLDLSENFLYKCITKTKAFQGLTQLRKLNLSFNYQKRVSFAHLSLAPSF
+GSLVALKELDMHGIFFRSLDETTLRPLARLPMLQTLRLQMNFINQAQLGIFRAFPGLRYV
+DLSDNRISGASELTATMGEADGGEKVWLQPGDLAPAPVDTPSSEDFRPNCSTLNFTLDLS
+RNNLVTVQPEMFAQLSHLQCLRLSHNCISQAVNGSQFLPLTGLQVLDLSHNKLDLYHEHS
+FTELPRLEALDLSYNSQPFGMQGVGHNFSFVAHLRTLRHLSLAHNNIHSQVSQQLCSTSL
+RALDFSGNALGHMWAEGDLYLHFFQGLSGLIWLDLSQNRLHTLLPQTLRNLPKSLQVLRL
+RDNYLAFFKWWSLHFLPKLEVLDLAGNQLKALTNGSLPAGTRLRRLDVSCNSISFVAPGF
+FSKAKELRELNLSANALKTVDHSWFGPLASALQILDVSANPLHCACGAAFMDFLLEVQAA
+VPGLPSRVKCGSPGQLQGLSIFAQDLRLCLDEALSWDCFALSLLAVALGLGVPMLHHLCG
+WDLWYCFHLCLAWLPWRGRQSGRDEDALPYDAFVVFDKTQSAVADWVYNELRGQLEECRG
+RWALRLCLEERDWLPGKTLFENLWASVYGSRKTLFVLAHTDRVSGLLRASFLLAQQRLLE
+DRKDVVVLVILSPDGRRSRYVRLRQRLCRQSVLLWPHQPSGQRSFWAQLGMALTRDNHHF
+YNRNFCQGPTAE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019078|Toll-like receptor 9 (TLR9)
+ATGGGTTTCTGCCGCAGCGCCCTGCACCCGCTGTCTCTCCTGGTGCAGGCCATCATGCTG
+GCCATGACCCTGGCCCTGGGTACCTTGCCTGCCTTCCTACCCTGTGAGCTCCAGCCCCAC
+GGCCTGGTGAACTGCAACTGGCTGTTCCTGAAGTCTGTGCCCCACTTCTCCATGGCAGCA
+CCCCGTGGCAATGTCACCAGCCTTTCCTTGTCCTCCAACCGCATCCACCACCTCCATGAT
+TCTGACTTTGCCCACCTGCCCAGCCTGCGGCATCTCAACCTCAAGTGGAACTGCCCGCCG
+GTTGGCCTCAGCCCCATGCACTTCCCCTGCCACATGACCATCGAGCCCAGCACCTTCTTG
+GCTGTGCCCACCCTGGAAGAGCTAAACCTGAGCTACAACAACATCATGACTGTGCCTGCG
+CTGCCCAAATCCCTCATATCCCTGTCCCTCAGCCATACCAACATCCTGATGCTAGACTCT
+GCCAGCCTCGCCGGCCTGCATGCCCTGCGCTTCCTATTCATGGACGGCAACTGTTATTAC
+AAGAACCCCTGCAGGCAGGCACTGGAGGTGGCCCCGGGTGCCCTCCTTGGCCTGGGCAAC
+CTCACCCACCTGTCACTCAAGTACAACAACCTCACTGTGGTGCCCCGCAACCTGCCTTCC
+AGCCTGGAGTATCTGCTGTTGTCCTACAACCGCATCGTCAAACTGGCGCCTGAGGACCTG
+GCCAATCTGACCGCCCTGCGTGTGCTCGATGTGGGCGGAAATTGCCGCCGCTGCGACCAC
+GCTCCCAACCCCTGCATGGAGTGCCCTCGTCACTTCCCCCAGCTACATCCCGATACCTTC
+AGCCACCTGAGCCGTCTTGAAGGCCTGGTGTTGAAGGACAGTTCTCTCTCCTGGCTGAAT
+GCCAGTTGGTTCCGTGGGCTGGGAAACCTCCGAGTGCTGGACCTGAGTGAGAACTTCCTC
+TACAAATGCATCACTAAAACCAAGGCCTTCCAGGGCCTAACACAGCTGCGCAAGCTTAAC
+CTGTCCTTCAATTACCAAAAGAGGGTGTCCTTTGCCCACCTGTCTCTGGCCCCTTCCTTC
+GGGAGCCTGGTCGCCCTGAAGGAGCTGGACATGCACGGCATCTTCTTCCGCTCACTCGAT
+GAGACCACGCTCCGGCCACTGGCCCGCCTGCCCATGCTCCAGACTCTGCGTCTGCAGATG
+AACTTCATCAACCAGGCCCAGCTCGGCATCTTCAGGGCCTTCCCTGGCCTGCGCTACGTG
+GACCTGTCGGACAACCGCATCAGCGGAGCTTCGGAGCTGACAGCCACCATGGGGGAGGCA
+GATGGAGGGGAGAAGGTCTGGCTGCAGCCTGGGGACCTTGCTCCGGCCCCAGTGGACACT
+CCCAGCTCTGAAGACTTCAGGCCCAACTGCAGCACCCTCAACTTCACCTTGGATCTGTCA
+CGGAACAACCTGGTGACCGTGCAGCCGGAGATGTTTGCCCAGCTCTCGCACCTGCAGTGC
+CTGCGCCTGAGCCACAACTGCATCTCGCAGGCAGTCAATGGCTCCCAGTTCCTGCCGCTG
+ACCGGTCTGCAGGTGCTAGACCTGTCCCACAATAAGCTGGACCTCTACCACGAGCACTCA
+TTCACGGAGCTACCGCGACTGGAGGCCCTGGACCTCAGCTACAACAGCCAGCCCTTTGGC
+ATGCAGGGCGTGGGCCACAACTTCAGCTTCGTGGCTCACCTGCGCACCCTGCGCCACCTC
+AGCCTGGCCCACAACAACATCCACAGCCAAGTGTCCCAGCAGCTCTGCAGTACGTCGCTG
+CGGGCCCTGGACTTCAGCGGCAATGCACTGGGCCATATGTGGGCCGAGGGAGACCTCTAT
+CTGCACTTCTTCCAAGGCCTGAGCGGTTTGATCTGGCTGGACTTGTCCCAGAACCGCCTG
+CACACCCTCCTGCCCCAAACCCTGCGCAACCTCCCCAAGAGCCTACAGGTGCTGCGTCTC
+CGTGACAATTACCTGGCCTTCTTTAAGTGGTGGAGCCTCCACTTCCTGCCCAAACTGGAA
+GTCCTCGACCTGGCAGGAAACCAGCTGAAGGCCCTGACCAATGGCAGCCTGCCTGCTGGC
+ACCCGGCTCCGGAGGCTGGATGTCAGCTGCAACAGCATCAGCTTCGTGGCCCCCGGCTTC
+TTTTCCAAGGCCAAGGAGCTGCGAGAGCTCAACCTTAGCGCCAACGCCCTCAAGACAGTG
+GACCACTCCTGGTTTGGGCCCCTGGCGAGTGCCCTGCAAATACTAGATGTAAGCGCCAAC
+CCTCTGCACTGCGCCTGTGGGGCGGCCTTTATGGACTTCCTGCTGGAGGTGCAGGCTGCC
+GTGCCCGGTCTGCCCAGCCGGGTGAAGTGTGGCAGTCCGGGCCAGCTCCAGGGCCTCAGC
+ATCTTTGCACAGGACCTGCGCCTCTGCCTGGATGAGGCCCTCTCCTGGGACTGTTTCGCC
+CTCTCGCTGCTGGCTGTGGCTCTGGGCCTGGGTGTGCCCATGCTGCATCACCTCTGTGGC
+TGGGACCTCTGGTACTGCTTCCACCTGTGCCTGGCCTGGCTTCCCTGGCGGGGGCGGCAA
+AGTGGGCGAGATGAGGATGCCCTGCCCTACGATGCCTTCGTGGTCTTCGACAAAACGCAG
+AGCGCAGTGGCAGACTGGGTGTACAACGAGCTTCGGGGGCAGCTGGAGGAGTGCCGTGGG
+CGCTGGGCACTCCGCCTGTGCCTGGAGGAACGCGACTGGCTGCCTGGCAAAACCCTCTTT
+GAGAACCTGTGGGCCTCGGTCTATGGCAGCCGCAAGACGCTGTTTGTGCTGGCCCACACG
+GACCGGGTCAGTGGTCTCTTGCGCGCCAGCTTCCTGCTGGCCCAGCAGCGCCTGCTGGAG
+GACCGCAAGGACGTCGTGGTGCTGGTGATCCTGAGCCCTGACGGCCGCCGCTCCCGCTAC
+GTGCGGCTGCGCCAGCGCCTCTGCCGCCAGAGTGTCCTCCTCTGGCCCCACCAGCCCAGT
+GGTCAGCGCAGCTTCTGGGCCCAGCTGGGCATGGCCCTGACCAGGGACAACCACCACTTC
+TATAACCGGAACTTCTGCCAGGGACCCACGGCCGAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01582</identifier>
+            <name>TIR</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13855</identifier>
+            <name>LRR_8</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>early phagosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endolysosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>interleukin-1 receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>siRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane signaling receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>I-kappaB phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of gastrointestinal epithelium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MyD88-dependent toll-like receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of calcium-transporting ATPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-6 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-8 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of NF-kappaB transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of toll-like receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of chemokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of granulocyte macrophage colony-stimulating factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-alpha biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-beta biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-beta production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-gamma biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-10 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-12 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-18 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-6 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-8 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JNK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JUN kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NF-kappaB import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of NF-kappaB transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of toll-like receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tumor necrosis factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cytokine secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to molecule of bacterial origin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toll-like receptor 9 signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toll-like receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tumor necrosis factor production</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

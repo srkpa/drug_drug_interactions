@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2018-02-13" updated="2019-12-02">
+  <drugbank-id primary="true">DB13988</drugbank-id>
+  <name>SB-269970</name>
+  <description>SB-269970 is an experimental drug developed by GlaxoSmithKline. In the studies performed with this agent, it has been suggested that SB-269970 acts either as a selective antagonist or inverse agonist of the serotonin receptor 7 (5-HT7).[A31816,A31817]</description>
+  <cas-number>201038-74-6</cas-number>
+  <unii/>
+  <average-mass>352.49</average-mass>
+  <monoisotopic-mass>352.182063944</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A31815</ref-id>
+        <pubmed-id>16018977</pubmed-id>
+        <citation>Hedlund PB, Huitron-Resendiz S, Henriksen SJ, Sutcliffe JG: 5-HT7 receptor inhibition and inactivation induce antidepressantlike behavior and sleep pattern. Biol Psychiatry. 2005 Nov 15;58(10):831-7. doi: 10.1016/j.biopsych.2005.05.012. Epub 2005 Jul 14.</citation>
+      </article>
+      <article>
+        <ref-id>A31816</ref-id>
+        <pubmed-id>15249157</pubmed-id>
+        <citation>Mahe C, Loetscher E, Feuerbach D, Muller W, Seiler MP, Schoeffter P: Differential inverse agonist efficacies of SB-258719, SB-258741 and SB-269970 at human recombinant serotonin 5-HT7 receptors. Eur J Pharmacol. 2004 Jul 14;495(2-3):97-102. doi: 10.1016/j.ejphar.2004.05.033.</citation>
+      </article>
+      <article>
+        <ref-id>A31817</ref-id>
+        <pubmed-id>10669560</pubmed-id>
+        <citation>Lovell PJ, Bromidge SM, Dabbs S, Duckworth DM, Forbes IT, Jennings AJ, King FD, Middlemiss DN, Rahman SK, Saunders DV, Collin LL, Hagan JJ, Riley GJ, Thomas DR: A novel, potent, and selective 5-HT(7) antagonist: (R)-3-(2-(2-(4-methylpiperidin-1-yl)ethyl)pyrrolidine-1-sulfonyl) phen ol (SB-269970). J Med Chem. 2000 Feb 10;43(3):342-5.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002645</drugbank-id>
+      <name>SB-269970 hydrochloride</name>
+      <unii/>
+      <cas-number/>
+      <inchikey>XQCJOYZLWFNDIO-PKLMIRHRSA-N</inchikey>
+      <average-mass>388.95</average-mass>
+      <monoisotopic-mass>388.1587417</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amides</category>
+      <mesh-id>D000577</mesh-id>
+    </category>
+    <category>
+      <category>Benzene Derivatives</category>
+      <mesh-id>D001555</mesh-id>
+    </category>
+    <category>
+      <category>Sulfones</category>
+      <mesh-id>D013450</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.81</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.63e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.52</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>3-{[(2R)-2-[2-(4-methylpiperidin-1-yl)ethyl]pyrrolidin-1-yl]sulfonyl}phenol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>3-[(2R)-2-[2-(4-methylpiperidin-1-yl)ethyl]pyrrolidin-1-ylsulfonyl]phenol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>352.49</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>352.182063944</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC1CCN(CC[C@H]2CCCN2S(=O)(=O)C2=CC=CC(O)=C2)CC1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C18H28N2O3S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C18H28N2O3S/c1-15-7-11-19(12-8-15)13-9-16-4-3-10-20(16)24(22,23)18-6-2-5-17(21)14-18/h2,5-6,14-16,21H,3-4,7-13H2,1H3/t16-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HWKROQUZSKPIKQ-MRXNPFEDSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>60.85</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>96.78</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>39.09</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>8.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>92426</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>5037148</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50098551</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>SB-269970</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL282199</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000650</id>
+      <name>5-hydroxytryptamine receptor 7</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>antagonist</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A31817</ref-id>
+            <pubmed-id>10669560</pubmed-id>
+            <citation>Lovell PJ, Bromidge SM, Dabbs S, Duckworth DM, Forbes IT, Jennings AJ, King FD, Middlemiss DN, Rahman SK, Saunders DV, Collin LL, Hagan JJ, Riley GJ, Thomas DR: A novel, potent, and selective 5-HT(7) antagonist: (R)-3-(2-(2-(4-methylpiperidin-1-yl)ethyl)pyrrolidine-1-sulfonyl) phen ol (SB-269970). J Med Chem. 2000 Feb 10;43(3):342-5.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P34969" source="Swiss-Prot">
+        <name>5-hydroxytryptamine receptor 7</name>
+        <general-function>Serotonin receptor activity</general-function>
+        <specific-function>This is one of the several different receptors for 5-hydroxytryptamine (serotonin), a biogenic hormone that functions as a neurotransmitter, a hormone, and a mitogen. The activity of this receptor is mediated by G proteins that stimulate adenylate cyclase.</specific-function>
+        <gene-name>HTR7</gene-name>
+        <locus>10q21-q24</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>84-104
+118-138
+158-178
+202-222
+237-257
+326-346
+368-388</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.97</theoretical-pi>
+        <molecular-weight>53554.43</molecular-weight>
+        <chromosome-location>10</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5302</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HTR7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U68487</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1857143</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>12</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>12</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P34969</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>5HT7R_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5-HT-7</synonym>
+          <synonym>5-HT-X</synonym>
+          <synonym>Serotonin receptor 7</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001296|5-hydroxytryptamine receptor 7
+MMDVNSSGRPDLYGHLRSFLLPEVGRGLPDLSPDGGADPVAGSWAPHLLSEVTASPAPTW
+DAPPDNASGCGEQINYGRVEKVVIGSILTLITLLTIAGNCLVVISVCFVKKLRQPSNYLI
+VSLALADLSVAVAVMPFVSVTDLIGGKWIFGHFFCNVFIAMDVMCCTASIMTLCVISIDR
+YLGITRPLTYPVRQNGKCMAKMILSVWLLSASITLPPLFGWAQNVNDDKVCLISQDFGYT
+IYSTAVAFYIPMSVMLFMYYQIYKAARKSAAKHKFPGFPRVEPDSVIALNGIVKLQKEVE
+ECANLSRLLKHERKNISIFKREQKAATTLGIIVGAFTVCWLPFFLLSTARPFICGTSCSC
+IPLWVERTFLWLGYANSLINPFIYAFFNRDLRTTYRSLLQCQYRNINRKLSAAGMHEALK
+LAERPERPEFVLRACTRRVLLRPEKRPPVSVWVLQSPDHHNWLADKMLTTVEKKVMIHD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010453|5-hydroxytryptamine receptor 7 (HTR7)
+ATGATGGACGTTAACAGCAGCGGCCGCCCGGACCTCTACGGGCACCTCCGCTCTTTCCTT
+CTGCCAGAAGTGGGGCGCGGGCTGCCCGACTTGAGCCCCGACGGTGGCGCCGACCCGGTC
+GCGGGCTCCTGGGCGCCGCACCTGCTGAGCGAGGTGACAGCCAGCCCGGCGCCCACCTGG
+GACGCGCCCCCGGACAATGCCTCCGGCTGTGGGGAACAGATCAACTACGGCAGAGTCGAG
+AAAGTTGTGATCGGCTCCATCCTGACGCTCATCACGCTGCTGACGATCGCGGGCAACTGC
+CTGGTGGTGATCTCCGTGTGCTTCGTCAAGAAGCTCCGCCAGCCCTCCAACTACCTGATC
+GTGTCCCTGGCGCTGGCCGACCTCTCGGTGGCTGTGGCGGTCATGCCCTTCGTCAGCGTC
+ACCGACCTCATCGGGGGCAAGTGGATCTTTGGACACTTTTTCTGTAATGTCTTCATCGCC
+ATGGACGTCATGTGCTGCACGGCCTCGATCATGACCCTGTGCGTGATCAGCATTGACAGG
+TACCTTGGGATCACAAGGCCCCTCACATACCCTGTGAGGCAGAATGGGAAATGCATGGCG
+AAGATGATTCTCTCCGTCTGGCTTCTCTCCGCCTCCATCACCTTACCTCCACTCTTTGGA
+TGGGCTCAGAATGTAAATGATGATAAGGTGTGCTTGATCAGCCAGGACTTTGGCTATACG
+ATTTACTCTACCGCAGTGGCATTTTATATCCCCATGTCCGTCATGCTTTTCATGTACTAC
+CAGATTTACAAGGCTGCCAGGAAGAGTGCTGCCAAACACAAGTTTCCTGGCTTCCCTCGA
+GTGGAGCCAGACAGCGTCATCGCCCTGAATGGCATAGTGAAGCTCCAGAAGGAGGTGGAA
+GAGTGTGCAAACCTTTCGAGACTCCTCAAGCATGAAAGGAAAAACATCTCCATCTTTAAG
+CGAGAACAGAAAGCAGCCACCACCCTGGGGATCATCGTCGGGGCCTTTACCGTGTGCTGG
+CTGCCATTTTTCCTCCTCTCGACAGCCAGACCCTTCATCTGTGGCACTTCCTGCAGCTGC
+ATCCCACTGTGGGTGGAGAGGACATTTCTGTGGCTAGGCTATGCAAACTCTCTCATTAAC
+CCTTTTATATATGCCTTCTTCAACCGGGACCTGAGGACCACCTATCGCAGCCTGCTCCAG
+TGCCAGTACCGGAATATCAACCGGAAGCTCTCAGCTGCAGGCATGCATGAAGCCCTGAAG
+CTTGCTGAGAGGCCAGAGAGACCTGAGTTTGTGCTACAAAATGCTGACTACTGTAGAAAA
+AAAGGTCATGATTCATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood circulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>serotonin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasoconstriction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

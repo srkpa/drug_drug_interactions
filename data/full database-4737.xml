@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05046</drugbank-id>
+  <name>V1003</name>
+  <description>V1003 is an intranasal formulation of buprenorphine, an opiate analgesic, for the management of post-operative pain in hospital and home settings. Buprenorphine is a well-known analgesic and the intranasal formulation has the potential to provide a convenient alternative to other treatments, allowing patients to manage their post-operative pain both prior to discharge from hospital and at home during their recovery period.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in pain (acute or chronic).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>V1003 is an intranasal formulation of buprenorphine. Buprenorphine's analgesic effect is due to partial agonist activity at mu-opioid receptors. Buprenorphine is also a kappa-opioid receptor antagonist. The partial agonist activity means that opioid receptor antagonists (e.g., an antidote such as naloxone) only partially reverse the effects of buprenorphine. The binding to the mu and kappa receptors results in hyperpolarization and reduced neuronal excitability.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909911</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000632</id>
+      <name>Kappa-type opioid receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P41145" source="Swiss-Prot">
+        <name>Kappa-type opioid receptor</name>
+        <general-function>Opioid receptor activity</general-function>
+        <specific-function>G-protein coupled opioid receptor that functions as receptor for endogenous alpha-neoendorphins and dynorphins, but has low affinity for beta-endorphins. Also functions as receptor for various synthetic opioids and for the psychoactive diterpene salvinorin A. Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase. Signaling leads to the inhibition of adenylate cyclase activity. Inhibits neurotransmitter release by reducing calcium ion currents and increasing potassium ion conductance. Plays a role in the perception of pain. Plays a role in mediating reduced physical activity upon treatment with synthetic opioids. Plays a role in the regulation of salivation in response to synthetic opioids. May play a role in arousal and regulation of autonomic and neuroendocrine functions.</specific-function>
+        <gene-name>OPRK1</gene-name>
+        <locus>8q11.2</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>58-85
+96-119
+133-154
+174-196
+223-247
+275-296
+312-333</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.79</theoretical-pi>
+        <molecular-weight>42644.665</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8154</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>OPRK1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U11053</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>532060</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>318</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>318</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P41145</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OPRK_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>K-OR-1</synonym>
+          <synonym>OPRK</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001260|Kappa-type opioid receptor
+MDSPIQIFRGEPGPTCAPSACLPPNSSAWFPGWAEPDSNGSAGSEDAQLEPAHISPAIPV
+IITAVYSVVFVVGLVGNSLVMFVIIRYTKMKTATNIYIFNLALADALVTTTMPFQSTVYL
+MNSWPFGDVLCKIVISIDYYNMFTSIFTLTMMSVDRYIAVCHPVKALDFRTPLKAKIINI
+CIWLLSSSVGISAIVLGGTKVREDVDVIECSLQFPDDDYSWWDLFMKICVFIFAFVIPVL
+IIIVCYTLMILRLKSVRLLSGSREKDRNLRRITRLVLVVVAVFVVCWTPIHIFILVEALG
+STSHSTAALSSYYFCIALGYTNSSLNPILYAFLDENFKRCFRDFCFPLKMRMERQSTSRV
+RNTVQDPAYLRDIDGMNKPV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021645|Kappa-type opioid receptor (OPRK1)
+ATGGACTCCCCGATCCAGATCTTCCGCGGGGAGCCGGGCCCTACCTGCGCCCCGAGCGCC
+TGCCTGCCCCCCAACAGCAGCGCCTGGTTTCCCGGCTGGGCCGAGCCCGACAGCAACGGC
+AGCGCCGGCTCGGAGGACGCGCAGCTGGAGCCCGCGCACATCTCCCCGGCCATCCCGGTC
+ATCATCACGGCGGTCTACTCCGTAGTGTTCGTCGTGGGCTTGGTGGGCAACTCGCTGGTC
+ATGTTCGTGATCATCCGATACACAAAGATGAAGACAGCAACCAACATTTACATATTTAAC
+CTGGCTTTGGCAGATGCTTTAGTTACTACAACCATGCCCTTTCAGAGTACGGTCTACTTG
+ATGAATTCCTGGCCTTTTGGGGATGTGCTGTGCAAGATAGTAATTTCCATTGATTACTAC
+AACATGTTCACCAGCATCTTCACCTTGACCATGATGAGCGTGGACCGCTACATTGCCGTG
+TGCCACCCCGTGAAGGCTTTGGACTTCCGCACACCCTTGAAGGCAAAGATCATCAATATC
+TGCATCTGGCTGCTGTCGTCATCTGTTGGCATCTCTGCAATAGTCCTTGGAGGCACCAAA
+GTCAGGGAAGACGTCGATGTCATTGAGTGCTCCTTGCAGTTCCCAGATGATGACTACTCC
+TGGTGGGACCTCTTCATGAAGATCTGCGTCTTCATCTTTGCCTTCGTGATCCCTGTCCTC
+ATCATCATCGTCTGCTACACCCTGATGATCCTGCGTCTCAAGAGCGTCCGGCTCCTTTCT
+GGCTCCCGAGAGAAAGATCGCAACCTGCGTAGGATCACCAGACTGGTCCTGGTGGTGGTG
+GCAGTCTTCGTCGTCTGCTGGACTCCCATTCACATATTCATCCTGGTGGAGGCTCTGGGG
+AGCACCTCCCACAGCACAGCTGCTCTCTCCAGCTATTACTTCTGCATCGCCTTAGGCTAT
+ACCAACAGTAGCCTGAATCCCATTCTCTACGCCTTTCTTGATGAAAACTTCAAGCGGTGT
+TTCCGGGACTTCTGCTTTCCACTGAAGATGAGGATGGAGCGGCAGAGCACTAGCAGAGTC
+CGAAATACAGTTCAGGATCCTGCTTACCTGAGGGACATCGATGGGATGAATAAACCAGTA
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perikaryon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>dynorphin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>neuropeptide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>opioid receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting opioid receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral response to cocaine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>eating behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>estrous cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maternal behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of luteinizing hormone secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuropeptide signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>opioid receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of dopamine secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of locomotion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of p38MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of potassium ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of aerobic respiration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of energy homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of saliva secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to acrylamide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estrogen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to insulin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to morphine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of temperature stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000770</id>
+      <name>Mu-type opioid receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35372" source="Swiss-Prot">
+        <name>Mu-type opioid receptor</name>
+        <general-function>Voltage-gated calcium channel activity</general-function>
+        <specific-function>Receptor for endogenous opioids such as beta-endorphin and endomorphin. Receptor for natural and synthetic opioids including morphine, heroin, DAMGO, fentanyl, etorphine, buprenorphin and methadone. Agonist binding to the receptor induces coupling to an inactive GDP-bound heterotrimeric G-protein complex and subsequent exchange of GDP for GTP in the G-protein alpha subunit leading to dissociation of the G-protein complex with the free GTP-bound G-protein alpha and the G-protein beta-gamma dimer activating downstream cellular effectors. The agonist- and cell type-specific activity is predominantly coupled to pertussis toxin-sensitive G(i) and G(o) G alpha proteins, GNAI1, GNAI2, GNAI3 and GNAO1 isoforms Alpha-1 and Alpha-2, and to a lesser extend to pertussis toxin-insensitive G alpha proteins GNAZ and GNA15. They mediate an array of downstream cellular responses, including inhibition of adenylate cyclase activity and both N-type and L-type calcium channels, activation of inward rectifying potassium channels, mitogen-activated protein kinase (MAPK), phospholipase C (PLC), phosphoinositide/protein kinase (PKC), phosphoinositide 3-kinase (PI3K) and regulation of NF-kappa-B. Also couples to adenylate cyclase stimulatory G alpha proteins. The selective temporal coupling to G-proteins and subsequent signaling can be regulated by RGSZ proteins, such as RGS9, RGS17 and RGS4. Phosphorylation by members of the GPRK subfamily of Ser/Thr protein kinases and association with beta-arrestins is involved in short-term receptor desensitization. Beta-arrestins associate with the GPRK-phosphorylated receptor and uncouple it from the G-protein thus terminating signal transduction. The phosphorylated receptor is internalized through endocytosis via clathrin-coated pits which involves beta-arrestins. The activation of the ERK pathway occurs either in a G-protein-dependent or a beta-arrestin-dependent manner and is regulated by agonist-specific receptor phosphorylation. Acts as a class A G-protein coupled receptor (GPCR) which dissociates from beta-arrestin at or near the plasma membrane and undergoes rapid recycling. Receptor down-regulation pathways are varying with the agonist and occur dependent or independent of G-protein coupling. Endogenous ligands induce rapid desensitization, endocytosis and recycling whereas morphine induces only low desensitization and endocytosis. Heterooligomerization with other GPCRs can modulate agonist binding, signaling and trafficking properties. Involved in neurogenesis. Isoform 12 couples to GNAS and is proposed to be involved in excitatory effects. Isoform 16 and isoform 17 do not bind agonists but may act through oligomerization with binding-competent OPRM1 isoforms and reduce their ligand binding activity.</specific-function>
+        <gene-name>OPRM1</gene-name>
+        <locus>6q24-q25</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>69-93
+107-131
+143-165
+186-207
+231-255
+284-307
+315-338</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.29</theoretical-pi>
+        <molecular-weight>44778.855</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8156</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>OPRM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L25119</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>452073</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>319</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>319</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35372</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OPRM_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>hMOP</synonym>
+          <synonym>M-OR-1</synonym>
+          <synonym>MOP</synonym>
+          <synonym>MOR1</synonym>
+          <synonym>Mu opiate receptor</synonym>
+          <synonym>Mu opioid receptor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001536|Mu-type opioid receptor
+MDSSAAPTNASNCTDALAYSSCSPAPSPGSWVNLSHLDGNLSDPCGPNRTDLGGRDSLCP
+PTGSPSMITAITIMALYSIVCVVGLFGNFLVMYVIVRYTKMKTATNIYIFNLALADALAT
+STLPFQSVNYLMGTWPFGTILCKIVISIDYYNMFTSIFTLCTMSVDRYIAVCHPVKALDF
+RTPRNAKIINVCNWILSSAIGLPVMFMATTKYRQGSIDCTLTFSHPTWYWENLLKICVFI
+FAFIMPVLIITVCYGLMILRLKSVRMLSGSKEKDRNLRRITRMVLVVVAVFIVCWTPIHI
+YVIIKALVTIPETTFQTVSWHFCIALGYTNSCLNPVLYAFLDENFKRCFREFCIPTSSNI
+EQQNSTRIRQNTRDHPSTANTVDRTNHQLENLEAETAPLP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021649|Mu-type opioid receptor (OPRM1)
+ATGGACAGCAGCGCTGCCCCCACGAACGCCAGCAATTGCACTGATGCCTTGGCGTACTCA
+AGTTGCTCCCCAGCACCCAGCCCCGGTTCCTGGGTCAACTTGTCCCACTTAGATGGCAAC
+CTGTCCGACCCATGCGGTCCGAACCGCACCGACCTGGGCGGGAGAGACAGCCTGTGCCCT
+CCGACCGGCAGTCCCTCCATGATCACGGCCATCACGATCATGGCCCTCTACTCCATCGTG
+TGCGTGGTGGGGCTCTTCGGAAACTTCCTGGTCATGTATGTGATTGTCAGATACACCAAG
+ATGAAGACTGCCACCAACATCTACATTTTCAACCTTGCTCTGGCAGATGCCTTAGCCACC
+AGTACCCTGCCCTTCCAGAGTGTGAATTACCTAATGGGAACATGGCCATTTGGAACCATC
+CTTTGCAAGATAGTGATCTCCATAGATTACTATAACATGTTCACCAGCATATTCACCCTC
+TGCACCATGAGTGTTGATCGATACATTGCAGTCTGCCACCCTGTCAAGGCCTTAGATTTC
+CGTACTCCCCGAAATGCCAAAATTATCAATGTCTGCAACTGGATCCTCTCTTCAGCCATT
+GGTCTTCCTGTAATGTTCATGGCTACAACAAAATACAGGCAAGGTTCCATAGATTGTACA
+CTAACATTCTCTCATCCAACCTGGTACTGGGAAAACCTGCTGAAGATCTGTGTTTTCATC
+TTCGCCTTCATTATGCCAGTGCTCATCATTACCGTGTGCTATGGACTGATGATCTTGCGC
+CTCAAGAGTGTCCGCATGCTCTCTGGCTCCAAAGAAAAGGACAGGAATCTTCGAAGGATC
+ACCAGGATGGTGCTGGTGGTGGTGGCTGTGTTCATCGTCTGCTGGACTCCCATTCACATT
+TACGTCATCATTAAAGCCTTGGTTACAATCCCAGAAACTACGTTCCAGACTGTTTCTTGG
+CACTTCTGCATTGCTCTAGGTTACACAAACAGCTGCCTCAACCCAGTCCTTTATGCATTT
+CTGGATGAAAACTTCAAACGATGCTTCAGAGAGTTCTGTATCCCAACCTCTTCCAACATT
+GAGCAACAAAACTCCACTCGAATTCGTCAGAACACTAGAGACCACCCCTCCACGGCCAAT
+ACAGTGGATAGAACTAATCATCAGCTAGAAAATCTGGAAGCAGAAACTGCTCCGTTGCCC
+TAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>beta-endorphin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein alpha-subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein beta-subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>morphine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>neuropeptide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>voltage-gated calcium channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-activating dopamine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to morphine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cAMP-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of Wnt protein secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuropeptide signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>opioid receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cAMP-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of neurogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of N-methyl-D-aspartate selective glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

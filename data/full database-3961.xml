@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04207</drugbank-id>
+  <drugbank-id>EXPT02906</drugbank-id>
+  <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+  <description/>
+  <cas-number/>
+  <unii>WBQ73O8W32</unii>
+  <average-mass>276.2863</average-mass>
+  <monoisotopic-mass>276.132136382</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as glutamic acid and derivatives. These are compounds containing glutamic acid or a derivative thereof resulting from reaction of glutamic acid at the amino group or the carboxy group, or from the replacement of any hydrogen of glycine by a heteroatom.</description>
+    <direct-parent>Glutamic acid and derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Amino fatty acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dialkylamines</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>L-alpha-amino acids</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Tricarboxylic acids and derivatives</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Alpha-amino acid</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Amino fatty acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Fatty acyl</substituent>
+    <substituent>Glutamic acid or derivatives</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Secondary aliphatic amine</substituent>
+    <substituent>Secondary amine</substituent>
+    <substituent>Tricarboxylic acid or derivatives</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1e5q</pdb-entry>
+    <pdb-entry>3uh1</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.25e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-5.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-{[(5S)-5-amino-5-carboxypentyl]amino}pentanedioic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>saccharopine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>276.2863</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>276.132136382</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>N[C@@H](CCCCN[C@@H](CCC(O)=O)C(O)=O)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C11H20N2O6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C11H20N2O6/c12-7(10(16)17)3-1-2-6-13-8(11(18)19)4-5-9(14)15/h7-8,13H,1-6,12H2,(H,14,15)(H,16,17)(H,18,19)/t7-,8-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ZDGJAHTZVHVLOT-YUMQZZPRSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>149.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>63.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>28.14</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.44</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>10.89</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>16927</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>160556</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505056</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00449</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>141086</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>SHR</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000719</smpdb-id>
+      <name>2-Aminoadipic 2-Oxoadipic Aciduria</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000186</smpdb-id>
+      <name>Glutaric Aciduria Type I</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000239</smpdb-id>
+      <name>Saccharopinuria/Hyperlysinemia II</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000527</smpdb-id>
+      <name>Hyperlysinemia I, Familial</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000037</smpdb-id>
+      <name>Lysine Degradation</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000528</smpdb-id>
+      <name>Hyperlysinemia II or Saccharopinuria</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000571</smpdb-id>
+      <name>Pyridoxine Dependency with Seizures</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00123</drugbank-id>
+          <name>L-Lysine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04207</drugbank-id>
+          <name>N-(5-Amino-5-Carboxypentyl)Glutamic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>Q9UDR5</uniprot-id>
+        <uniprot-id>P49419</uniprot-id>
+        <uniprot-id>Q8N5Z0</uniprot-id>
+        <uniprot-id>P30084</uniprot-id>
+        <uniprot-id>Q16836</uniprot-id>
+        <uniprot-id>P24752</uniprot-id>
+        <uniprot-id>P52569</uniprot-id>
+        <uniprot-id>Q9BXI2</uniprot-id>
+        <uniprot-id>Q9P0Z9</uniprot-id>
+        <uniprot-id>Q92947</uniprot-id>
+        <uniprot-id>Q96HY7</uniprot-id>
+        <uniprot-id>P36957</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000073</id>
+      <name>Alpha-aminoadipic semialdehyde synthase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9UDR5" source="Swiss-Prot">
+        <name>Alpha-aminoadipic semialdehyde synthase, mitochondrial</name>
+        <general-function>Saccharopine dehydrogenase (nadp+, l-lysine-forming) activity</general-function>
+        <specific-function>Bifunctional enzyme that catalyzes the first two steps in lysine degradation. The N-terminal and the C-terminal contain lysine-ketoglutarate reductase and saccharopine dehydrogenase activity, respectively.</specific-function>
+        <gene-name>AASS</gene-name>
+        <locus>7q31.3</locus>
+        <cellular-location>Mitochondrion</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.62</theoretical-pi>
+        <molecular-weight>102130.895</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:17366</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AASS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF229180</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>7264724</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9UDR5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AASS_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>LKR/SDH</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009917|Alpha-aminoadipic semialdehyde synthase, mitochondrial
+MLQVHRTGLGRLGVSLSKGLHHKAVLAVRREDVNAWERRAPLAPKHIKGITNLGYKVLIQ
+PSNRRAIHDKDYVKAGGILQEDISEACLILGVKRPPEEKLMSRKTYAFFSHTIKAQEANM
+GLLDEILKQEIRLIDYEKMVDHRGVRVVAFGQWAGVAGMINILHGMGLRLLALGHHTPFM
+HIGMAHNYRNSSQAVQAVRDAGYEISLGLMPKSIGPLTFVFTGTGNVSKGAQAIFNELPC
+EYVEPHELKEVSQTGDLRKVYGTVLSRHHHLVRKTDAVYDPAEYDKHPERYISRFNTDIA
+PYTTCLINGIYWEQNTPRLLTRQDAQSLLAPGKFSPAGVEGCPALPHKLVAICDISADTG
+GSIEFMTECTTIEHPFCMYDADQHIIHDSVEGSGILMCSIDNLPAQLPIEATECFGDMLY
+PYVEEMILSDATQPLESQNFSPVVRDAVITSNGTLPDKYKYIQTLRESRERAQSLSMGTR
+RKVLVLGSGYISEPVLEYLSRDGNIEITVGSDMKNQIEQLGKKYNINPVSMDICKQEEKL
+GFLVAKQDLVISLLPYVLHPLVAKACITNKVNMVTASYITPALKELEKSVEDAGITIIGE
+LGLDPGLDHMLAMETIDKAKEVGATIESYISYCGGLPAPEHSNNPLRYKFSWSPVGVLMN
+VMQSATYLLDGKVVNVAGGISFLDAVTSMDFFPGLNLEGYPNRDSTKYAEIYGISSAHTL
+LRGTLRYKGYMKALNGFVKLGLINREALPAFRPEANPLTWKQLLCDLVGISPSSEHDVLK
+EAVLKKLGGDNTQLEAAEWLGLLGDEQVPQAESILDALSKHLVMKLSYGPEEKDMIVMRD
+SFGIRHPSGHLEHKTIDLVAYGDINGFSAMAKTVGLPTAMAAKMLLDGEIGAKGLMGPFS
+KEIYGPILERIKAEGIIYTTQSTIKP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009918|Alpha-aminoadipic semialdehyde synthase, mitochondrial (AASS)
+ATGCTGCAAGTACATAGGACTGGACTGGGCAGGCTGGGGGTCAGCCTCTCCAAGGGTCTT
+CACCACAAAGCTGTGTTGGCCGTCCGGAGGGAGGATGTGAACGCCTGGGAGAGAAGGGCC
+CCGCTAGCTCCCAAGCACATCAAAGGCATCACCAATCTGGGATACAAGGTCTTGATACAG
+CCTTCGAATCGGCGGGCCATTCATGATAAGGACTATGTCAAAGCTGGTGGCATTCTTCAG
+GAGGATATTTCTGAAGCTTGTCTAATTTTAGGAGTTAAAAGACCTCCAGAGGAAAAATTA
+ATGTCCAGGAAGACTTATGCATTTTTCTCCCACACAATAAAAGCTCAGGAGGCCAATATG
+GGCTTGTTGGATGAGATTCTAAAACAGGAAATTCGCCTTATTGATTATGAGAAAATGGTG
+GATCATAGAGGAGTACGGGTAGTGGCATTTGGACAGTGGGCTGGTGTGGCAGGAATGATC
+AACATTTTACATGGAATGGGTTTAAGGCTCCTTGCTTTGGGACATCACACACCTTTTATG
+CACATTGGCATGGCTCATAACTACAGGAATAGCAGTCAGGCTGTGCAAGCTGTCCGTGAT
+GCTGGCTATGAAATATCTTTGGGTTTGATGCCTAAGTCAATAGGACCCTTAACATTTGTG
+TTCACAGGAACTGGTAATGTTTCTAAGGGAGCCCAAGCAATCTTTAATGAGCTACCTTGT
+GAATATGTGGAGCCCCATGAATTAAAAGAAGTTTCCCAAACTGGAGACCTCAGAAAAGTG
+TATGGGACGGTGTTAAGTCGTCATCATCATCTTGTCAGGAAAACAGATGCTGTGTATGAT
+CCTGCAGAGTATGACAAACATCCGGAGCGCTACATAAGTCGTTTTAATACTGATATTGCA
+CCCTATACAACTTGCTTAATTAATGGAATCTACTGGGAACAAAACACTCCTCGCCTCCTA
+ACCCGCCAAGATGCTCAGAGTCTCCTGGCTCCGGGCAAGTTCTCACCTGCTGGTGTGGAA
+GGCTGCCCTGCATTACCACACAAACTCGTGGCAATATGTGACATTTCAGCTGACACAGGA
+GGGTCTATAGAGTTTATGACTGAGTGTACAACAATAGAGCATCCCTTTTGCATGTATGAT
+GCAGACCAGCATATTATTCATGACAGTGTTGAAGGCTCGGGGATCCTGATGTGTTCCATT
+GACAATTTGCCGGCACAGCTCCCAATTGAAGCTACAGAATGCTTTGGAGACATGCTTTAC
+CCTTATGTTGAAGAAATGATATTATCAGACGCGACACAGCCTCTTGAAAGTCAGAATTTT
+TCTCCTGTGGTGAGAGATGCAGTGATTACATCCAACGGTACATTACCTGATAAATATAAA
+TATATCCAGACACTCCGGGAGAGCAGGGAACGTGCTCAGTCACTTTCAATGGGCACCAGG
+AGAAAGGTTTTGGTTCTTGGATCTGGCTACATATCTGAGCCTGTATTAGAATATTTATCA
+AGAGATGGCAATATAGAAATAACAGTAGGATCTGACATGAAGAATCAAATTGAACAGTTA
+GGCAAGAAATATAATATTAATCCTGTTAGCATGGACATTTGTAAACAAGAAGAGAAGCTG
+GGCTTCTTGGTGGCAAAACAGGATCTTGTCATCAGCTTGTTGCCTTATGTATTGCACCCT
+CTTGTGGCCAAGGCCTGCATCACAAACAAAGTTAACATGGTCACTGCAAGCTACATCACA
+CCAGCACTAAAAGAATTGGAAAAGAGTGTGGAAGATGCTGGCATCACAATCATTGGTGAA
+TTGGGATTGGACCCTGGTCTGGATCACATGTTAGCAATGGAAACAATAGATAAAGCCAAG
+GAAGTGGGAGCCACGATTGAATCATATATTTCCTACTGTGGTGGGCTTCCAGCCCCTGAA
+CATTCAAACAATCCATTGAGATATAAATTTAGCTGGAGTCCAGTGGGAGTTTTGATGAAT
+GTAATGCAGTCTGCCACCTATCTGCTCGATGGAAAGGTTGTGAATGTTGCAGGAGGCATC
+TCCTTTCTTGATGCCGTTACGTCCATGGATTTTTTTCCAGGATTAAATTTGGAAGGCTAT
+CCTAACAGAGACAGTACGAAATATGCTGAGATTTATGGCATTTCTTCTGCTCACACTTTG
+TTGCGGGGGACACTGAGATATAAGGGATATATGAAAGCTTTGAATGGATTTGTAAAATTA
+GGTCTTATAAACAGAGAAGCGCTTCCTGCCTTTAGACCTGAGGCCAACCCTCTCACCTGG
+AAACAACTCCTCTGTGACCTAGTTGGGATTTCACCCTCCTCTGAGCATGATGTGTTGAAG
+GAAGCTGTTCTTAAGAAACTAGGAGGAGACAATACCCAGTTGGAGGCTGCTGAATGGTTG
+GGCTTACTTGGGGATGAACAAGTTCCTCAGGCAGAGTCCATTCTGGATGCCCTCTCCAAG
+CATTTGGTCATGAAGCTTTCCTATGGTCCTGAAGAAAAAGATATGATTGTGATGAGAGAC
+AGCTTTGGAATCAGACATCCTTCTGGACATTTAGAACATAAAACGATTGATCTTGTGGCT
+TATGGGGACATCAATGGCTTTTCAGCCATGGCTAAAACCGTGGGGTTACCCACCGCCATG
+GCAGCCAAAATGTTGCTTGATGGTGAAATTGGAGCCAAAGGCCTAATGGGGCCCTTTTCA
+AAGGAGATCTATGGACCAATATTGGAGCGAATTAAAGCAGAAGGCATTATATATACTACA
+CAGAGTACAATTAAACCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05222</identifier>
+            <name>AlaDh_PNT_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03435</identifier>
+            <name>Sacchrp_dh_NADP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16653</identifier>
+            <name>Sacchrp_dh_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>saccharopine dehydrogenase (NAD+, L-glutamate-forming) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>saccharopine dehydrogenase (NADP+, L-lysine-forming) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>L-lysine catabolic process to acetyl-CoA via saccharopine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lysine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein tetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

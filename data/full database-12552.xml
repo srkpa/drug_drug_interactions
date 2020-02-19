@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2018-09-01" updated="2019-11-02">
+  <drugbank-id primary="true">DB14650</drugbank-id>
+  <drugbank-id>DBSALT000878</drugbank-id>
+  <name>Menadiol diphosphate</name>
+  <description/>
+  <cas-number>84-98-0</cas-number>
+  <unii>GRL65FEU3T</unii>
+  <average-mass>334.1557</average-mass>
+  <monoisotopic-mass>334.000740384</monoisotopic-mass>
+  <groups>
+    <group>approved</group>
+    <group>nutraceutical</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as naphthalenes. These are compounds containing a naphthalene moiety, which consists of two fused benzene rings.</description>
+    <direct-parent>Naphthalenes</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Naphthalenes</class>
+    <subclass/>
+    <alternative-parent>Aryl phosphomonoesters</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <substituent>Aromatic homopolycyclic compound</substituent>
+    <substituent>Aryl phosphate</substituent>
+    <substituent>Aryl phosphomonoester</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Naphthalene</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organic phosphoric acid derivative</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Phosphoric acid ester</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002791</drugbank-id>
+      <name>Menadiol sodium diphosphate</name>
+      <unii>2OVL75B30W</unii>
+      <cas-number>6700-42-1</cas-number>
+      <inchikey>QIWDGSYHBCMXSI-UHFFFAOYSA-J</inchikey>
+      <average-mass>530.174</average-mass>
+      <monoisotopic-mass>529.99190644</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">2-methyl-1,4-naphthalenediol diphosphate</synonym>
+    <synonym language="english" coder="">Menadiol bis(dihydrogen phosphate)</synonym>
+    <synonym language="english" coder="">Menadiol phosphate</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Diterpenes</category>
+      <mesh-id>D004224</mesh-id>
+    </category>
+    <category>
+      <category>Naphthalenes</category>
+      <mesh-id>D009281</mesh-id>
+    </category>
+    <category>
+      <category>Naphthoquinones</category>
+      <mesh-id>D009285</mesh-id>
+    </category>
+    <category>
+      <category>Phytol</category>
+      <mesh-id>D010836</mesh-id>
+    </category>
+    <category>
+      <category>Quinones</category>
+      <mesh-id>D011809</mesh-id>
+    </category>
+    <category>
+      <category>Terpenes</category>
+      <mesh-id>D013729</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.84</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.54e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.56</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>{[3-methyl-4-(phosphonooxy)naphthalen-1-yl]oxy}phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>[3-methyl-4-(phosphonooxy)naphthalen-1-yl]oxyphosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>334.1557</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>334.000740384</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC1=C(OP(O)(O)=O)C2=CC=CC=C2C(OP(O)(O)=O)=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C11H12O8P2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C11H12O8P2/c1-7-6-10(18-20(12,13)14)8-4-2-3-5-9(8)11(7)19-21(15,16)17/h2-6H,1H3,(H2,12,13,14)(H2,15,16,17)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>JTNHOVZOOVVGHI-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>133.52</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>73.26</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>27.43</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.47</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>134713</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>8556</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>8238</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201348</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03953</drugbank-id>
+  <drugbank-id>EXPT02866</drugbank-id>
+  <name>Thiocitrulline</name>
+  <description/>
+  <cas-number>156719-37-8</cas-number>
+  <unii/>
+  <average-mass>191.251</average-mass>
+  <monoisotopic-mass>191.072847365</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as l-alpha-amino acids. These are alpha amino acids which have the L-configuration of the alpha-carbon atom.</description>
+    <direct-parent>L-alpha-amino acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Fatty acids and conjugates</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Thioureas</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Fatty acid</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Organosulfur compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Thiourea</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">L-thiocitrulline</synonym>
+    <synonym language="english" coder="">Thiocitrulline</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids</category>
+      <mesh-id>D000596</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Diamino</category>
+      <mesh-id>D000599</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Enzyme Inhibitors</category>
+      <mesh-id>D004791</mesh-id>
+    </category>
+    <category>
+      <category>Nitric Oxide Synthase, antagonists &amp; inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>3nod</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>3.51e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-amino-5-(carbamothioylamino)pentanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>L-thiocitrulline</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>191.251</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>191.072847365</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H]N([H])[C@@H](CCCN([H])C(=S)N([H])[H])C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C6H13N3O2S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C6H13N3O2S/c7-4(5(10)11)2-1-3-9-6(8)12/h4H,1-3,7H2,(H,10,11)(H3,8,9,12)/t4-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>BKGWACHYAMTLAF-BYPYZUCNSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>101.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>49.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>19.42</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.69</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>2733514</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505566</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>2015302</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50095201</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>SCI</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL93247</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000005</id>
+      <name>Nitric oxide synthase, inducible</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35228" source="Swiss-Prot">
+        <name>Nitric oxide synthase, inducible</name>
+        <general-function>Tetrahydrobiopterin binding</general-function>
+        <specific-function>Produces nitric oxide (NO) which is a messenger molecule with diverse functions throughout the body. In macrophages, NO mediates tumoricidal and bactericidal actions. Also has nitrosylase activity and mediates cysteine S-nitrosylation of cytoplasmic target proteins such COX2. As component of the iNOS-S100A8/9 transnitrosylase complex involved in the selective inflammatory stimulus-dependent S-nitrosylation of GAPDH on 'Cys-247' implicated in regulation of the GAIT complex activity and probably multiple targets including ANXA5, EZR, MSN and VIM.</specific-function>
+        <gene-name>NOS2</gene-name>
+        <locus>17q11.2-q12</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.01</theoretical-pi>
+        <molecular-weight>131116.3</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7873</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>NOS2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L09210</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>292242</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1250</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35228</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NOS2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.13.39</synonym>
+          <synonym>HEP-NOS</synonym>
+          <synonym>Hepatocyte NOS</synonym>
+          <synonym>Inducible NO synthase</synonym>
+          <synonym>Inducible NOS</synonym>
+          <synonym>iNOS</synonym>
+          <synonym>NOS type II</synonym>
+          <synonym>NOS2A</synonym>
+          <synonym>Peptidyl-cysteine S-nitrosylase NOS2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000010|Nitric oxide synthase, inducible
+MACPWKFLFKTKFHQYAMNGEKDINNNVEKAPCATSSPVTQDDLQYHNLSKQQNESPQPL
+VETGKKSPESLVKLDATPLSSPRHVRIKNWGSGMTFQDTLHHKAKGILTCRSKSCLGSIM
+TPKSLTRGPRDKPTPPDELLPQAIEFVNQYYGSFKEAKIEEHLARVEAVTKEIETTGTYQ
+LTGDELIFATKQAWRNAPRCIGRIQWSNLQVFDARSCSTAREMFEHICRHVRYSTNNGNI
+RSAITVFPQRSDGKHDFRVWNAQLIRYAGYQMPDGSIRGDPANVEFTQLCIDLGWKPKYG
+RFDVVPLVLQANGRDPELFEIPPDLVLEVAMEHPKYEWFRELELKWYALPAVANMLLEVG
+GLEFPGCPFNGWYMGTEIGVRDFCDVQRYNILEEVGRRMGLETHKLASLWKDQAVVEINI
+AVLHSFQKQNVTIMDHHSAAESFMKYMQNEYRSRGGCPADWIWLVPPMSGSITPVFHQEM
+LNYVLSPFYYYQVEAWKTHVWQDEKRRPKRREIPLKVLVKAVLFACMLMRKTMASRVRVT
+ILFATETGKSEALAWDLGALFSCAFNPKVVCMDKYRLSCLEEERLLLVVTSTFGNGDCPG
+NGEKLKKSLFMLKELNNKFRYAVFGLGSSMYPRFCAFAHDIDQKLSHLGASQLTPMGEGD
+ELSGQEDAFRSWAVQTFKAACETFDVRGKQHIQIPKLYTSNVTWDPHHYRLVQDSQPLDL
+SKALSSMHAKNVFTMRLKSRQNLQSPTSSRATILVELSCEDGQGLNYLPGEHLGVCPGNQ
+PALVQGILERVVDGPTPHQTVRLEALDESGSYWVSDKRLPPCSLSQALTYFLDITTPPTQ
+LLLQKLAQVATEEPERQRLEALCQPSEYSKWKFTNSPTFLEVLEEFPSLRVSAGFLLSQL
+PILKPRFYSISSSRDHTPTEIHLTVAVVTYHTRDGQGPLHHGVCSTWLNSLKPQDPVPCF
+VRNASGFHLPEDPSHPCILIGPGTGIAPFRSFWQQRLHDSQHKGVRGGRMTLVFGCRRPD
+EDHIYQEEMLEMAQKGVLHAVHTAYSRLPGKPKVYVQDILRQQLASEVLRVLHKEPGHLY
+VCGDVRMARDVAHTLKQLVAAKLKLNEEQVEDYFFQLKSQKRYHEDIFGAVFPYEAKKDR
+VAVQPSSLEMSAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020444|Nitric oxide synthase, inducible (NOS2)
+ATGGCCTGTCCTTGGAAATTTCTGTTCAAGACCAAATTCCACCAGTATGCAATGAATGGG
+GAAAAAGACATCAACAACAATGTGGAGAAAGCCCCCTGTGCCACCTCCAGTCCAGTGACA
+CAGGATGACCTTCAGTATCACAACCTCAGCAAGCAGCAGAATGAGTCCCCGCAGCCCCTC
+GTGGAGACGGGAAAGAAGTCTCCAGAATCTCTGGTCAAGCTGGATGCAACCCCATTGTCC
+TCCCCACGGCATGTGAGGATCAAAAACTGGGGCAGCGGGATGACTTTCCAAGACACACTT
+CACCATAAGGCCAAAGGGATTTTAACTTGCAGGTCCAAATCTTGCCTGGGGTCCATTATG
+ACTCCCAAAAGTTTGACCAGAGGACCCAGGGACAAGCCTACCCCTCCAGATGAGCTTCTA
+CCTCAAGCTATCGAATTTGTCAACCAATATTACGGCTCCTTCAAAGAGGCAAAAATAGAG
+GAACATCTGGCCAGGGTGGAAGCGGTAACAAAGGAGATAGAAACAACAGGAACCTACCAA
+CTGACGGGAGATGAGCTCATCTTCGCCACCAAGCAGGCCTGGCGCAATGCCCCACGCTGC
+ATTGGGAGGATCCAGTGGTCCAACCTGCAGGTCTTCGATGCCCGCAGCTGTTCCACTGCC
+CGGGAAATGTTTGAACACATCTGCAGACACGTGCGTTACTCCACCAACAATGGCAACATC
+AGGTCGGCCATCACCGTGTTCCCCCAGCGGAGTGATGGCAAGCACGACTTCCGGGTGTGG
+AATGCTCAGCTCATCCGCTATGCTGGCTACCAGATGCCAGATGGCAGCATCAGAGGGGAC
+CCTGCCAACGTGGAATTCACTCAGCTGTGCATCGACCTGGGCTGGAAGCCCAAGTACGGC
+CGCTTCGATGTGGTCCCCCTGGTCCTGCAGGCCAATGGCCGTGACCCTGAGCTCTTCGAA
+ATCCCACCTGACCTTGTGCTTGAGGTGGCCATGGAACATCCCAAATACGAGTGGTTTCGG
+GAACTGGAGCTAAAGTGGTACGCCCTGCCTGCAGTGGCCAACATGCTGCTTGAGGTGGGC
+GGCCTGGAGTTCCCAGGGTGCCCCTTCAATGGCTGGTACATGGGCACAGAGATCGGAGTC
+CGGGACTTCTGTGACGTCCAGCGCTACAACATCCTGGAGGAAGTGGGCAGGAGAATGGGC
+CTGGAAACGCACAAGCTGGCCTCGCTCTGGAAAGACCAGGCTGTCGTTGAGATCAACATT
+GCTGTGCTCCATAGTTTCCAGAAGCAGAATGTGACCATCATGGACCACCACTCGGCTGCA
+GAATCCTTCATGAAGTACATGCAGAATGAATACCGGTCCCGTGGGGGCTGCCCGGCAGAC
+TGGATTTGGCTGGTCCCTCCCATGTCTGGGAGCATCACCCCCGTGTTTCACCAGGAGATG
+CTGAACTACGTCCTGTCCCCTTTCTACTACTATCAGGTAGAGGCCTGGAAAACCCATGTC
+TGGCAGGACGAGAAGCGGAGACCCAAGAGAAGAGAGATTCCATTGAAAGTCTTGGTCAAA
+GCTGTGCTCTTTGCCTGTATGCTGATGCGCAAGACAATGGCGTCCCGAGTCAGAGTCACC
+ATCCTCTTTGCGACAGAGACAGGAAAATCAGAGGCGCTGGCCTGGGACCTGGGGGCCTTA
+TTCAGCTGTGCCTTCAACCCCAAGGTTGTCTGCATGGATAAGTACAGGCTGAGCTGCCTG
+GAGGAGGAACGGCTGCTGTTGGTGGTGACCAGTACGTTTGGCAATGGAGACTGCCCTGGC
+AATGGAGAGAAACTGAAGAAATCGCTCTTCATGCTGAAAGAGCTCAACAACAAATTCAGG
+TACGCTGTGTTTGGCCTCGGCTCCAGCATGTACCCTCGGTTCTGCGCCTTTGCTCATGAC
+ATTGATCAGAAGCTGTCCCACCTGGGGGCCTCTCAGCTCACCCCGATGGGAGAAGGGGAT
+GAGCTCAGTGGGCAGGAGGACGCCTTCCGCAGCTGGGCCGTGCAAACCTTCAAGGCAGCC
+TGTGAGACGTTTGATGTCCGAGGCAAACAGCACATTCAGATCCCCAAGCTCTACACCTCC
+AATGTGACCTGGGACCCGCACCACTACAGGCTCGTGCAGGACTCACAGCCTTTGGACCTC
+AGCAAAGCCCTCAGCAGCATGCATGCCAAGAACGTGTTCACCATGAGGCTCAAATCTCGG
+CAGAATCTACAAAGTCCGACATCCAGCCGTGCCACCATCCTGGTGGAACTCTCCTGTGAG
+GATGGCCAAGGCCTGAACTACCTGCCGGGGGAGCACCTTGGGGTTTGCCCAGGCAACCAG
+CCGGCCCTGGTCCAAGGTATCCTGGAGCGAGTGGTGGATGGCCCCACACCCCACCAGACA
+GTGCGCCTGGAGGCCCTGGATGAGAGTGGCAGCTACTGGGTCAGTGACAAGAGGCTGCCC
+CCCTGCTCACTCAGCCAGGCCCTCACCTACTTCCTGGACATCACCACACCCCCAACCCAG
+CTGCTGCTCCAAAAGCTGGCCCAGGTGGCCACAGAAGAGCCTGAGAGACAGAGGCTGGAG
+GCCCTGTGCCAGCCCTCAGAGTACAGCAAGTGGAAGTTCACCAACAGCCCCACATTCCTG
+GAGGTGCTAGAGGAGTTCCCGTCCCTGCGGGTGTCTGCTGGCTTCCTGCTTTCCCAGCTC
+CCCATTCTGAAGCCCAGGTTCTACTCCATCAGCTCCTCCCGGGATCACACGCCCACAGAG
+ATCCACCTGACTGTGGCCGTGGTCACCTACCACACCCGAGATGGCCAGGGTCCCCTGCAC
+CACGGCGTCTGCAGCACATGGCTCAACAGCCTGAAGCCCCAAGACCCAGTGCCCTGCTTT
+GTGCGGAATGCCAGCGGCTTCCACCTCCCCGAGGATCCCTCCCATCCTTGCATCCTCATC
+GGGCCTGGCACAGGCATCGCGCCCTTCCGCAGTTTCTGGCAGCAACGGCTCCATGACTCC
+CAGCACAAGGGAGTGCGGGGAGGCCGCATGACCTTGGTGTTTGGGTGCCGCCGCCCAGAT
+GAGGACCACATCTACCAGGAGGAGATGCTGGAGATGGCCCAGAAGGGGGTGCTGCATGCG
+GTGCACACAGCCTATTCCCGCCTGCCTGGCAAGCCCAAGGTCTATGTTCAGGACATCCTG
+CGGCAGCAGCTGGCCAGCGAGGTGCTCCGTGTGCTCCACAAGGAGCCAGGCCACCTCTAT
+GTTTGCGGGGATGTGCGCATGGCCCGGGACGTGGCCCACACCCTGAAGCAGCTGGTGGCT
+GCCAAGCTGAAATTGAATGAGGAGCAGGTCGAGGACTATTTCTTTCAGCTCAAGAGCCAG
+AAGCGCTATCACGAAGATATCTTTGGTGCTGTATTTCCTTACGAGGCGAAGAAGGACAGG
+GTGGCGGTGCAGCCCAGCAGCCTGGAGATGTCAGCGCTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00667</identifier>
+            <name>FAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00258</identifier>
+            <name>Flavodoxin_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00175</identifier>
+            <name>NAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02898</identifier>
+            <name>NO_synthase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cortical cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>peroxisome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>arginine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>FMN binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADPH-hemoprotein reductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tetrahydrobiopterin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arginine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interferon-gamma</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response in mucosa</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-cysteine S-nitrosylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phagosome maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of guanylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of killing of cells of other organism</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of leukocyte mediated cytotoxicity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasodilation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular respiration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>superoxide metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

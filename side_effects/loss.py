@@ -68,6 +68,7 @@ class BinaryCrossEntropyP(Module):
             [isinstance(val, torch.Tensor) or val is True for val in list(self.weighted_loss_params.values())])
 
     def forward(self, input, target):
+        print(input.shape, target.shape)
         assert input.shape == target.shape
         if self.use_negative_sampling and self.training:
             mask = (target == 1).float()

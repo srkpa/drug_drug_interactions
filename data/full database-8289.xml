@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2015-10-29" updated="2019-12-02">
+  <drugbank-id primary="true">DB09284</drugbank-id>
+  <name>Imolamine</name>
+  <description>Imolamine is a compound with a molecular weight of 260.33 g/mol with the formula diethyl[2-{5-imino-3-phenyl-4,5-dihydro-1,2,3-oxadiazol,-4-yl)ethyl]amine. It is developed under the brand name Coremax by Novartis consumer health SA.</description>
+  <cas-number>318-23-0</cas-number>
+  <unii>K5F4RU5VQJ</unii>
+  <average-mass>260.341</average-mass>
+  <monoisotopic-mass>260.16371128</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A32048</ref-id>
+        <pubmed-id>15646539</pubmed-id>
+        <citation>Biour M, Ben Salem C, Chazouilleres O, Grange JD, Serfaty L, Poupon R: [Drug-induced liver injury; fourteenth updated edition of the bibliographic database of liver injuries and related drugs]. Gastroenterol Clin Biol. 2004 Aug-Sep;28(8-9):720-59.</citation>
+      </article>
+    </articles>
+    <textbooks>
+      <textbook>
+        <ref-id>T83</ref-id>
+        <isbn/>
+        <citation>Elks J. and Ganellin C.R. (1990). The dictionary of drugs. Springer Science.</citation>
+      </textbook>
+    </textbooks>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Imolamine is indicated for the treatment of angina pectoris. The hydrochloride form is used as a local anesthetic.[T83]</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity>It is reported to present a moderate liver toxicity.[A32048] In preclinical studies, the acute toxicity was analyzed when administered orally and intravenously. The LD50 of imolamine was 650 mg/kg and 250 mg/kg for oral and intravenous administration, respectively.[MSDS]</toxicity>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as phenyloxadiazoles. These are polycyclic aromatic compounds containing a benzene ring linked to a 1,2,4-oxadiazole ring through a CC or CN bond.</description>
+    <direct-parent>Phenyloxadiazoles</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Azoles</class>
+    <subclass>Oxadiazoles</subclass>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Benzene and substituted derivatives</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Trialkylamines</alternative-parent>
+    <substituent>Amine</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Phenyl-1,2,4-oxadiazole</substituent>
+    <substituent>Tertiary aliphatic amine</substituent>
+    <substituent>Tertiary amine</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT001282</drugbank-id>
+      <name>Imolamine hydrochloride</name>
+      <unii>YJ3KV70R41</unii>
+      <cas-number>15823-89-9</cas-number>
+      <inchikey>OMMBWIJMWMSGBX-UHFFFAOYSA-N</inchikey>
+      <average-mass>296.8</average-mass>
+      <monoisotopic-mass>296.140389</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">3-Phenyl-4-diethylaminoethyl-5-imino-1,2,4-oxadiazol</synonym>
+    <synonym language="spanish" coder="inn">Imolamina</synonym>
+    <synonym language="english" coder="inn/ban/dcf">Imolamine</synonym>
+    <synonym language="latin" coder="inn">Imolaminum</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Cardiac Therapy</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cardiovascular Agents</category>
+      <mesh-id>D002317</mesh-id>
+    </category>
+    <category>
+      <category>Oxazoles</category>
+      <mesh-id>D010080</mesh-id>
+    </category>
+    <category>
+      <category>Vasodilating Agents</category>
+      <mesh-id>D014665</mesh-id>
+    </category>
+    <category>
+      <category>Vasodilators Used in Cardiac Diseases</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes>
+    <atc-code code="C01DX09">
+      <level code="C01DX">Other vasodilators used in cardiac diseases</level>
+      <level code="C01D">VASODILATORS USED IN CARDIAC DISEASES</level>
+      <level code="C01">CARDIAC THERAPY</level>
+      <level code="C">CARDIOVASCULAR SYSTEM</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB09284.pdf?1520012519</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB13967</drugbank-id>
+      <name>Patent Blue</name>
+      <description>The therapeutic efficacy of Imolamine can be decreased when used in combination with Patent Blue.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.92</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.62e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.78</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>diethyl[2-(5-imino-3-phenyl-4,5-dihydro-1,2,4-oxadiazol-4-yl)ethyl]amine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>imolamine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>260.341</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>260.16371128</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCN(CC)CCN1C(=N)ON=C1C1=CC=CC=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C14H20N4O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C14H20N4O/c1-3-17(4-2)10-11-18-13(16-19-14(18)15)12-8-6-5-7-9-12/h5-9,15H,3-4,10-11H2,1-2H3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>MGSPDRWOUCPKNZ-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>51.92</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>87.17</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>28.81</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.17</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>154-155ºC</value>
+      <source>Buckingham.  Dictionary of organic compounds. vol. 4. 1996.</source>
+    </property>
+    <property>
+      <kind>Boiling Point</kind>
+      <value>165ºC</value>
+      <source>Elks. The dictionary of drugs.  1990</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.96</value>
+      <source>'MSDS'</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>135072</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>27501</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>310265177</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D07159</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>10669810</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Imolamine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL2104282</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

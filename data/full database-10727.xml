@@ -1,0 +1,3744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB12768</drugbank-id>
+  <name>BCG vaccine</name>
+  <description>BCG vaccine has been investigated for the treatment of Neoplasms, Bladder Cancer, Neoplasms by Site, Urologic Diseases, and Urologic Neoplasms, among others.</description>
+  <cas-number/>
+  <unii>8VJE55B0VG</unii>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">Bacillus calmette-guerin live antigen, unspecified substrain</synonym>
+    <synonym language="english" coder="">BCG</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Adjuvants, Immunologic</category>
+      <mesh-id>D000276</mesh-id>
+    </category>
+    <category>
+      <category>Antineoplastic and Immunomodulating Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Bacterial Vaccines</category>
+      <mesh-id>D001428</mesh-id>
+    </category>
+    <category>
+      <category>Biological Products</category>
+      <mesh-id>D001688</mesh-id>
+    </category>
+    <category>
+      <category>Complex Mixtures</category>
+      <mesh-id>D045424</mesh-id>
+    </category>
+    <category>
+      <category>Immunologic Factors</category>
+      <mesh-id>D007155</mesh-id>
+    </category>
+    <category>
+      <category>Live Attenuated Bacillus Calmette-Guerin Vaccine</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Live vaccines</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Tuberculosis Vaccines</category>
+      <mesh-id>D032581</mesh-id>
+    </category>
+    <category>
+      <category>Vaccines</category>
+      <mesh-id>D014612</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes>
+    <atc-code code="L03AX03">
+      <level code="L03AX">Other immunostimulants</level>
+      <level code="L03A">IMMUNOSTIMULANTS</level>
+      <level code="L03">IMMUNOSTIMULANTS</level>
+      <level code="L">ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00027</drugbank-id>
+      <name>Gramicidin D</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gramicidin D.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00080</drugbank-id>
+      <name>Daptomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Daptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00218</drugbank-id>
+      <name>Moxifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Moxifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00229</drugbank-id>
+      <name>Cefotiam</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefotiam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00233</drugbank-id>
+      <name>Aminosalicylic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Aminosalicylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00254</drugbank-id>
+      <name>Doxycycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Doxycycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00256</drugbank-id>
+      <name>Lymecycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lymecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00260</drugbank-id>
+      <name>Cycloserine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cycloserine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00263</drugbank-id>
+      <name>Sulfisoxazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfisoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00267</drugbank-id>
+      <name>Cefmenoxime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefmenoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00274</drugbank-id>
+      <name>Cefmetazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefmetazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00301</drugbank-id>
+      <name>Flucloxacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flucloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00303</drugbank-id>
+      <name>Ertapenem</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ertapenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00314</drugbank-id>
+      <name>Capreomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Capreomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00319</drugbank-id>
+      <name>Piperacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Piperacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00330</drugbank-id>
+      <name>Ethambutol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ethambutol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00339</drugbank-id>
+      <name>Pyrazinamide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pyrazinamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00359</drugbank-id>
+      <name>Sulfadiazine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfadiazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00365</drugbank-id>
+      <name>Grepafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Grepafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00415</drugbank-id>
+      <name>Ampicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00417</drugbank-id>
+      <name>Phenoxymethylpenicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Phenoxymethylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00430</drugbank-id>
+      <name>Cefpiramide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefpiramide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00438</drugbank-id>
+      <name>Ceftazidime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftazidime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00446</drugbank-id>
+      <name>Chloramphenicol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Chloramphenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00447</drugbank-id>
+      <name>Loracarbef</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Loracarbef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00453</drugbank-id>
+      <name>Clomocycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clomocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00456</drugbank-id>
+      <name>Cefalotin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefalotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00467</drugbank-id>
+      <name>Enoxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Enoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00479</drugbank-id>
+      <name>Amikacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amikacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00485</drugbank-id>
+      <name>Dicloxacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dicloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00487</drugbank-id>
+      <name>Pefloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pefloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00493</drugbank-id>
+      <name>Cefotaxime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefotaxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00512</drugbank-id>
+      <name>Vancomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Vancomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00535</drugbank-id>
+      <name>Cefdinir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefdinir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00560</drugbank-id>
+      <name>Tigecycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tigecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00567</drugbank-id>
+      <name>Cephalexin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cephalexin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00578</drugbank-id>
+      <name>Carbenicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Carbenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00595</drugbank-id>
+      <name>Oxytetracycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oxytetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00601</drugbank-id>
+      <name>Linezolid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Linezolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00602</drugbank-id>
+      <name>Ivermectin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ivermectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00607</drugbank-id>
+      <name>Nafcillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nafcillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00609</drugbank-id>
+      <name>Ethionamide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ethionamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00615</drugbank-id>
+      <name>Rifabutin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifabutin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00618</drugbank-id>
+      <name>Demeclocycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Demeclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00671</drugbank-id>
+      <name>Cefixime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefixime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00681</drugbank-id>
+      <name>Amphotericin B</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amphotericin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00685</drugbank-id>
+      <name>Trovafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Trovafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00688</drugbank-id>
+      <name>Mycophenolate mofetil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mycophenolate mofetil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00689</drugbank-id>
+      <name>Cephaloglycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cephaloglycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00698</drugbank-id>
+      <name>Nitrofurantoin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nitrofurantoin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00713</drugbank-id>
+      <name>Oxacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00739</drugbank-id>
+      <name>Hetacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hetacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00759</drugbank-id>
+      <name>Tetracycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00760</drugbank-id>
+      <name>Meropenem</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Meropenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00766</drugbank-id>
+      <name>Clavulanic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clavulanic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00778</drugbank-id>
+      <name>Roxithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Roxithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00779</drugbank-id>
+      <name>Nalidixic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nalidixic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00817</drugbank-id>
+      <name>Rosoxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rosoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00827</drugbank-id>
+      <name>Cinoxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cinoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00828</drugbank-id>
+      <name>Fosfomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fosfomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00833</drugbank-id>
+      <name>Cefaclor</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefaclor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00845</drugbank-id>
+      <name>Clofazimine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clofazimine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tacrolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00895</drugbank-id>
+      <name>Benzylpenicilloyl polylysine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Benzylpenicilloyl polylysine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00911</drugbank-id>
+      <name>Tinidazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tinidazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00919</drugbank-id>
+      <name>Spectinomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Spectinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00923</drugbank-id>
+      <name>Ceforanide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceforanide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00931</drugbank-id>
+      <name>Metacycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Metacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00948</drugbank-id>
+      <name>Mezlocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mezlocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00951</drugbank-id>
+      <name>Isoniazid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Isoniazid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00954</drugbank-id>
+      <name>Dirithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dirithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00955</drugbank-id>
+      <name>Netilmicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Netilmicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00976</drugbank-id>
+      <name>Telithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Telithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00978</drugbank-id>
+      <name>Lomefloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lomefloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00994</drugbank-id>
+      <name>Neomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Neomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01000</drugbank-id>
+      <name>Cyclacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cyclacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01015</drugbank-id>
+      <name>Sulfamethoxazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfamethoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01017</drugbank-id>
+      <name>Minocycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Minocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01024</drugbank-id>
+      <name>Mycophenolic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mycophenolic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01041</drugbank-id>
+      <name>Thalidomide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Thalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01045</drugbank-id>
+      <name>Rifampicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifampicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01051</drugbank-id>
+      <name>Novobiocin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Novobiocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01053</drugbank-id>
+      <name>Benzylpenicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Benzylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01059</drugbank-id>
+      <name>Norfloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Norfloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01060</drugbank-id>
+      <name>Amoxicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amoxicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01061</drugbank-id>
+      <name>Azlocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Azlocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01066</drugbank-id>
+      <name>Cefditoren</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefditoren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01082</drugbank-id>
+      <name>Streptomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Streptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01112</drugbank-id>
+      <name>Cefuroxime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefuroxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01137</drugbank-id>
+      <name>Levofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Levofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01139</drugbank-id>
+      <name>Cefapirin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefapirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01140</drugbank-id>
+      <name>Cefadroxil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefadroxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01147</drugbank-id>
+      <name>Cloxacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01150</drugbank-id>
+      <name>Cefprozil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefprozil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01152</drugbank-id>
+      <name>Candicidin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Candicidin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01155</drugbank-id>
+      <name>Gemifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gemifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01163</drugbank-id>
+      <name>Amdinocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amdinocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01165</drugbank-id>
+      <name>Ofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01172</drugbank-id>
+      <name>Kanamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Kanamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01201</drugbank-id>
+      <name>Rifapentine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifapentine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01208</drugbank-id>
+      <name>Sparfloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sparfloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01211</drugbank-id>
+      <name>Clarithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clarithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01212</drugbank-id>
+      <name>Ceftriaxone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftriaxone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01220</drugbank-id>
+      <name>Rifaximin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifaximin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01301</drugbank-id>
+      <name>Rolitetracycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rolitetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01321</drugbank-id>
+      <name>Josamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Josamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01326</drugbank-id>
+      <name>Cefamandole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefamandole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01327</drugbank-id>
+      <name>Cefazolin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefazolin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01328</drugbank-id>
+      <name>Cefonicid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefonicid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01329</drugbank-id>
+      <name>Cefoperazone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefoperazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01330</drugbank-id>
+      <name>Cefotetan</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefotetan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01331</drugbank-id>
+      <name>Cefoxitin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefoxitin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01332</drugbank-id>
+      <name>Ceftizoxime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftizoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01333</drugbank-id>
+      <name>Cefradine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefradine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01369</drugbank-id>
+      <name>Quinupristin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Quinupristin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01405</drugbank-id>
+      <name>Temafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Temafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01413</drugbank-id>
+      <name>Cefepime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefepime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01414</drugbank-id>
+      <name>Cefacetrile</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefacetrile.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01415</drugbank-id>
+      <name>Ceftibuten</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftibuten.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01416</drugbank-id>
+      <name>Cefpodoxime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefpodoxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01421</drugbank-id>
+      <name>Paromomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Paromomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01581</drugbank-id>
+      <name>Sulfamerazine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfamerazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Everolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01598</drugbank-id>
+      <name>Imipenem</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Imipenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01602</drugbank-id>
+      <name>Bacampicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bacampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01603</drugbank-id>
+      <name>Meticillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Meticillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01604</drugbank-id>
+      <name>Pivampicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pivampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01605</drugbank-id>
+      <name>Pivmecillinam</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pivmecillinam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01607</drugbank-id>
+      <name>Ticarcillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ticarcillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01627</drugbank-id>
+      <name>Lincomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lincomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01669</drugbank-id>
+      <name>Virginiamycin M1</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Virginiamycin M1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01764</drugbank-id>
+      <name>Dalfopristin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dalfopristin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01873</drugbank-id>
+      <name>Epothilone D</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Epothilone D.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02237</drugbank-id>
+      <name>Maltotetraose</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Maltotetraose.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02948</drugbank-id>
+      <name>Fosmidomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fosmidomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02975</drugbank-id>
+      <name>GE-2270A</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with GE-2270A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03010</drugbank-id>
+      <name>Patupilone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Patupilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03166</drugbank-id>
+      <name>Acetic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Acetic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03424</drugbank-id>
+      <name>Ubenimex</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ubenimex.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03615</drugbank-id>
+      <name>Ribostamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ribostamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04070</drugbank-id>
+      <name>6-Deoxyerythronolide B</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with 6-Deoxyerythronolide B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04124</drugbank-id>
+      <name>Aurodox</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Aurodox.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04263</drugbank-id>
+      <name>Geneticin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Geneticin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04570</drugbank-id>
+      <name>Latamoxef</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Latamoxef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04576</drugbank-id>
+      <name>Fleroxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fleroxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04626</drugbank-id>
+      <name>Apramycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Apramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04729</drugbank-id>
+      <name>Gentamicin C1a</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gentamicin C1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04785</drugbank-id>
+      <name>Streptolydigin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Streptolydigin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04808</drugbank-id>
+      <name>Neamine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Neamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04845</drugbank-id>
+      <name>Ixabepilone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ixabepilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04911</drugbank-id>
+      <name>Oritavancin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oritavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04918</drugbank-id>
+      <name>Ceftobiprole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftobiprole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04934</drugbank-id>
+      <name>Rifalazil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifalazil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04952</drugbank-id>
+      <name>Ramoplanin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ramoplanin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05488</drugbank-id>
+      <name>Technetium Tc-99m ciprofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Technetium Tc-99m ciprofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05773</drugbank-id>
+      <name>Trastuzumab emtansine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Trastuzumab emtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05814</drugbank-id>
+      <name>GPI-1485</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with GPI-1485.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05903</drugbank-id>
+      <name>KOS-1584</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with KOS-1584.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06145</drugbank-id>
+      <name>Spiramycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Spiramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06149</drugbank-id>
+      <name>Teicoplanin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Teicoplanin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06160</drugbank-id>
+      <name>Garenoxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Garenoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06211</drugbank-id>
+      <name>Doripenem</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Doripenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06219</drugbank-id>
+      <name>Dalbavancin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dalbavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06233</drugbank-id>
+      <name>Ridaforolimus</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ridaforolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06287</drugbank-id>
+      <name>Temsirolimus</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Temsirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06318</drugbank-id>
+      <name>AVE9633</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with AVE9633.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06342</drugbank-id>
+      <name>Coltuximab ravtansine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Coltuximab ravtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06402</drugbank-id>
+      <name>Telavancin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Telavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06419</drugbank-id>
+      <name>Cethromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cethromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06461</drugbank-id>
+      <name>Squalamine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Squalamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06587</drugbank-id>
+      <name>Mitemcinal</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mitemcinal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06590</drugbank-id>
+      <name>Ceftaroline fosamil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftaroline fosamil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06600</drugbank-id>
+      <name>Nemonoxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nemonoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06696</drugbank-id>
+      <name>Arbekacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Arbekacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06799</drugbank-id>
+      <name>Methenamine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Methenamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06821</drugbank-id>
+      <name>Sulfameter</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfameter.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06827</drugbank-id>
+      <name>Viomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Viomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07348</drugbank-id>
+      <name>Brefeldin A</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Brefeldin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07374</drugbank-id>
+      <name>Anisomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Anisomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07565</drugbank-id>
+      <name>Chloramphenicol succinate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Chloramphenicol succinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08437</drugbank-id>
+      <name>Puromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Puromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08621</drugbank-id>
+      <name>Thiamphenicol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Thiamphenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08795</drugbank-id>
+      <name>Azidocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Azidocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08903</drugbank-id>
+      <name>Bedaquiline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bedaquiline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08965</drugbank-id>
+      <name>Fusafungine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fusafungine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08972</drugbank-id>
+      <name>Flumequine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flumequine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08993</drugbank-id>
+      <name>Enviomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Enviomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09008</drugbank-id>
+      <name>Cefaloridine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefaloridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09042</drugbank-id>
+      <name>Tedizolid phosphate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tedizolid phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09050</drugbank-id>
+      <name>Ceftolozane</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftolozane.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09062</drugbank-id>
+      <name>Cefminox</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefminox.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09308</drugbank-id>
+      <name>Solithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Solithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09309</drugbank-id>
+      <name>Kitasamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Kitasamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09319</drugbank-id>
+      <name>Carindacillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Carindacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09320</drugbank-id>
+      <name>Procaine benzylpenicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Procaine benzylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11367</drugbank-id>
+      <name>Cefroxadine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefroxadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11375</drugbank-id>
+      <name>Avilamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Avilamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11377</drugbank-id>
+      <name>Bambermycins</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bambermycins.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11383</drugbank-id>
+      <name>Carbomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Carbomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11400</drugbank-id>
+      <name>Doramectin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Doramectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11401</drugbank-id>
+      <name>Efrotomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Efrotomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11404</drugbank-id>
+      <name>Enrofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Enrofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11405</drugbank-id>
+      <name>Eprinomectin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Eprinomectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11413</drugbank-id>
+      <name>Florfenicol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Florfenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11416</drugbank-id>
+      <name>Gamithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gamithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11423</drugbank-id>
+      <name>Lasalocid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lasalocid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11426</drugbank-id>
+      <name>Marbofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Marbofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11432</drugbank-id>
+      <name>Narasin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Narasin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11442</drugbank-id>
+      <name>Oleandomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oleandomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11443</drugbank-id>
+      <name>Orbifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Orbifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11458</drugbank-id>
+      <name>Roxarsone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Roxarsone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11459</drugbank-id>
+      <name>Selamectin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Selamectin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11467</drugbank-id>
+      <name>Thiostrepton</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Thiostrepton.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11468</drugbank-id>
+      <name>Tiamulin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tiamulin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11470</drugbank-id>
+      <name>Tildipirosin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tildipirosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11471</drugbank-id>
+      <name>Tilmicosin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tilmicosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11474</drugbank-id>
+      <name>Tulathromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tulathromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11475</drugbank-id>
+      <name>Tylosin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tylosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11485</drugbank-id>
+      <name>Ceftiofur</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftiofur.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11491</drugbank-id>
+      <name>Sarafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sarafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11511</drugbank-id>
+      <name>Difloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Difloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11512</drugbank-id>
+      <name>Dihydrostreptomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dihydrostreptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11520</drugbank-id>
+      <name>Hygromycin B</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hygromycin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11525</drugbank-id>
+      <name>Maduramicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Maduramicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11537</drugbank-id>
+      <name>Pirlimycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pirlimycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11544</drugbank-id>
+      <name>Salinomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Salinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11554</drugbank-id>
+      <name>Tylvalosin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tylvalosin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11593</drugbank-id>
+      <name>Isatoic anhydride</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Isatoic anhydride.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11744</drugbank-id>
+      <name>Epetraborole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Epetraborole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11752</drugbank-id>
+      <name>Bryostatin 1</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bryostatin 1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11753</drugbank-id>
+      <name>Rifamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rifamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11774</drugbank-id>
+      <name>Pazufloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pazufloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11892</drugbank-id>
+      <name>Prulifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prulifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11912</drugbank-id>
+      <name>Lanopepden</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lanopepden.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11935</drugbank-id>
+      <name>Flomoxef</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flomoxef.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11943</drugbank-id>
+      <name>Delafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Delafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12035</drugbank-id>
+      <name>Sarecycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sarecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12089</drugbank-id>
+      <name>Lorvotuzumab mertansine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lorvotuzumab mertansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12127</drugbank-id>
+      <name>Sultamicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sultamicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12266</drugbank-id>
+      <name>Epofolate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Epofolate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12329</drugbank-id>
+      <name>Eravacycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Eravacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12339</drugbank-id>
+      <name>Radezolid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Radezolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12343</drugbank-id>
+      <name>Temocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Temocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12391</drugbank-id>
+      <name>Sagopilone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sagopilone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12447</drugbank-id>
+      <name>Nadifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nadifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12455</drugbank-id>
+      <name>Omadacycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Omadacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12489</drugbank-id>
+      <name>Mirvetuximab Soravtansine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mirvetuximab Soravtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12604</drugbank-id>
+      <name>Sisomicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sisomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12615</drugbank-id>
+      <name>Plazomicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Plazomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12667</drugbank-id>
+      <name>Protionamide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Protionamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12829</drugbank-id>
+      <name>Amithiozone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amithiozone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13028</drugbank-id>
+      <name>Biapenem</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Biapenem.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13077</drugbank-id>
+      <name>LCB01-0371</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with LCB01-0371.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13092</drugbank-id>
+      <name>Meclocycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13172</drugbank-id>
+      <name>Tunicamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tunicamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13179</drugbank-id>
+      <name>Troleandomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Troleandomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13261</drugbank-id>
+      <name>Sitafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sitafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13264</drugbank-id>
+      <name>Penimepicycline</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Penimepicycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13266</drugbank-id>
+      <name>Cefatrizine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefatrizine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13270</drugbank-id>
+      <name>Dibekacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dibekacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13274</drugbank-id>
+      <name>Micronomicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Micronomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13287</drugbank-id>
+      <name>Miocamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Miocamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13294</drugbank-id>
+      <name>Azidamfenicol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Azidamfenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13300</drugbank-id>
+      <name>Epicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Epicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13337</drugbank-id>
+      <name>Pheneticillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pheneticillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13338</drugbank-id>
+      <name>Flurithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flurithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13409</drugbank-id>
+      <name>Rokitamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rokitamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13456</drugbank-id>
+      <name>Midecamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Midecamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13461</drugbank-id>
+      <name>Cefcapene</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefcapene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13470</drugbank-id>
+      <name>Cefodizime</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefodizime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13499</drugbank-id>
+      <name>Cefsulodin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefsulodin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13503</drugbank-id>
+      <name>Tyrothricin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tyrothricin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13504</drugbank-id>
+      <name>Cefetamet</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefetamet.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13506</drugbank-id>
+      <name>Carfecillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Carfecillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13540</drugbank-id>
+      <name>Isepamicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Isepamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13627</drugbank-id>
+      <name>Oxolinic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oxolinic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13633</drugbank-id>
+      <name>Mepartricin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Mepartricin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13638</drugbank-id>
+      <name>Cefbuperazone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefbuperazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13660</drugbank-id>
+      <name>Propicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Propicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13667</drugbank-id>
+      <name>Cefozopran</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefozopran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13673</drugbank-id>
+      <name>Bekanamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bekanamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13682</drugbank-id>
+      <name>Cefpirome</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefpirome.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13686</drugbank-id>
+      <name>Clometocillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clometocillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13693</drugbank-id>
+      <name>Sulbenicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulbenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13704</drugbank-id>
+      <name>Pristinamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pristinamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13705</drugbank-id>
+      <name>Decamethoxine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Decamethoxine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13739</drugbank-id>
+      <name>Penamecillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Penamecillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13744</drugbank-id>
+      <name>Piromidic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Piromidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13772</drugbank-id>
+      <name>Rufloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rufloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13773</drugbank-id>
+      <name>Sulfamethoxypyridazine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sulfamethoxypyridazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13778</drugbank-id>
+      <name>Cefazedone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefazedone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13814</drugbank-id>
+      <name>Talampicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Talampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13816</drugbank-id>
+      <name>Aspoxicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Aspoxicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13821</drugbank-id>
+      <name>Ceftezole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftezole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13823</drugbank-id>
+      <name>Pipemidic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pipemidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13836</drugbank-id>
+      <name>Metampicillin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Metampicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14025</drugbank-id>
+      <name>Clinafloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clinafloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14033</drugbank-id>
+      <name>Acetyl sulfisoxazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Acetyl sulfisoxazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14051</drugbank-id>
+      <name>Malacidin A</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14052</drugbank-id>
+      <name>Malacidin B</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Malacidin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14056</drugbank-id>
+      <name>Nigericin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nigericin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14057</drugbank-id>
+      <name>Valinomycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Valinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14521</drugbank-id>
+      <name>Silver cation</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Silver cation.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14569</drugbank-id>
+      <name>Tedizolid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tedizolid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14725</drugbank-id>
+      <name>Cefamandole nafate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14733</drugbank-id>
+      <name>Ceftobiprole medocaril</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ceftobiprole medocaril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00781</drugbank-id>
+      <name>Polymyxin B</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Polymyxin B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14777</drugbank-id>
+      <name>Murepavadin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Murepavadin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15213</drugbank-id>
+      <name>25-desacetylrifapentine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with 25-desacetylrifapentine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00199</drugbank-id>
+      <name>Erythromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Erythromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00207</drugbank-id>
+      <name>Azithromycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Azithromycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00250</drugbank-id>
+      <name>Dapsone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dapsone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00355</drugbank-id>
+      <name>Aztreonam</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Aztreonam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00537</drugbank-id>
+      <name>Ciprofloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ciprofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00626</drugbank-id>
+      <name>Bacitracin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bacitracin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00684</drugbank-id>
+      <name>Tobramycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tobramycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00798</drugbank-id>
+      <name>Gentamicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gentamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00916</drugbank-id>
+      <name>Metronidazole</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Metronidazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01044</drugbank-id>
+      <name>Gatifloxacin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Gatifloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01190</drugbank-id>
+      <name>Clindamycin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clindamycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02703</drugbank-id>
+      <name>Fusidic acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fusidic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08874</drugbank-id>
+      <name>Fidaxomicin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fidaxomicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06261</drugbank-id>
+      <name>Hexaminolevulinate</name>
+      <description>BCG vaccine may decrease effectiveness of Hexaminolevulinate as a diagnostic agent.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00005</drugbank-id>
+      <name>Etanercept</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Etanercept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00008</drugbank-id>
+      <name>Peginterferon alfa-2a</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Peginterferon alfa-2a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00011</drugbank-id>
+      <name>Interferon alfa-n1</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfa-n1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00018</drugbank-id>
+      <name>Interferon alfa-n3</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfa-n3.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00022</drugbank-id>
+      <name>Peginterferon alfa-2b</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Peginterferon alfa-2b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00026</drugbank-id>
+      <name>Anakinra</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Anakinra.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00033</drugbank-id>
+      <name>Interferon gamma-1b</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon gamma-1b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00034</drugbank-id>
+      <name>Interferon alfa-2a, Recombinant</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfa-2a, Recombinant.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00041</drugbank-id>
+      <name>Aldesleukin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Aldesleukin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00051</drugbank-id>
+      <name>Adalimumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Adalimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00056</drugbank-id>
+      <name>Gemtuzumab ozogamicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Gemtuzumab ozogamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00059</drugbank-id>
+      <name>Pegaspargase</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pegaspargase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00065</drugbank-id>
+      <name>Infliximab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Infliximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00068</drugbank-id>
+      <name>Interferon beta-1b</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon beta-1b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00069</drugbank-id>
+      <name>Interferon alfacon-1</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfacon-1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00072</drugbank-id>
+      <name>Trastuzumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Trastuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00073</drugbank-id>
+      <name>Rituximab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Rituximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00074</drugbank-id>
+      <name>Basiliximab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Basiliximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00075</drugbank-id>
+      <name>Muromonab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Muromonab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00078</drugbank-id>
+      <name>Ibritumomab tiuxetan</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ibritumomab tiuxetan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00081</drugbank-id>
+      <name>Tositumomab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tositumomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00087</drugbank-id>
+      <name>Alemtuzumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Alemtuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cyclosporine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00092</drugbank-id>
+      <name>Alefacept</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Alefacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00095</drugbank-id>
+      <name>Efalizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Efalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00098</drugbank-id>
+      <name>Antithymocyte immunoglobulin (rabbit)</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Antithymocyte immunoglobulin (rabbit).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00105</drugbank-id>
+      <name>Interferon alfa-2b</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfa-2b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00108</drugbank-id>
+      <name>Natalizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Natalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00111</drugbank-id>
+      <name>Daclizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Daclizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00112</drugbank-id>
+      <name>Bevacizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bevacizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00120</drugbank-id>
+      <name>Phenylalanine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Phenylalanine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00188</drugbank-id>
+      <name>Bortezomib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bortezomib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00242</drugbank-id>
+      <name>Cladribine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cladribine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00262</drugbank-id>
+      <name>Carmustine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Carmustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00276</drugbank-id>
+      <name>Amsacrine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Amsacrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00290</drugbank-id>
+      <name>Bleomycin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bleomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00291</drugbank-id>
+      <name>Chlorambucil</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Chlorambucil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00293</drugbank-id>
+      <name>Raltitrexed</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Raltitrexed.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00305</drugbank-id>
+      <name>Mitomycin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mitomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00307</drugbank-id>
+      <name>Bexarotene</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bexarotene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00309</drugbank-id>
+      <name>Vindesine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vindesine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00322</drugbank-id>
+      <name>Floxuridine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Floxuridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Indomethacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00352</drugbank-id>
+      <name>Tioguanine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tioguanine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00361</drugbank-id>
+      <name>Vinorelbine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vinorelbine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00380</drugbank-id>
+      <name>Dexrazoxane</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dexrazoxane.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00398</drugbank-id>
+      <name>Sorafenib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Sorafenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00428</drugbank-id>
+      <name>Streptozocin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Streptozocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00432</drugbank-id>
+      <name>Trifluridine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Trifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00441</drugbank-id>
+      <name>Gemcitabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Gemcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00444</drugbank-id>
+      <name>Teniposide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Teniposide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00445</drugbank-id>
+      <name>Epirubicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Epirubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00480</drugbank-id>
+      <name>Lenalidomide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Lenalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00488</drugbank-id>
+      <name>Altretamine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Altretamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00495</drugbank-id>
+      <name>Zidovudine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Zidovudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00515</drugbank-id>
+      <name>Cisplatin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cisplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00526</drugbank-id>
+      <name>Oxaliplatin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Oxaliplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00531</drugbank-id>
+      <name>Cyclophosphamide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cyclophosphamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vincristine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00544</drugbank-id>
+      <name>Fluorouracil</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Fluorouracil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00550</drugbank-id>
+      <name>Propylthiouracil</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Propylthiouracil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00552</drugbank-id>
+      <name>Pentostatin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pentostatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Methotrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00564</drugbank-id>
+      <name>Carbamazepine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Carbamazepine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vinblastine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00619</drugbank-id>
+      <name>Imatinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Imatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00631</drugbank-id>
+      <name>Clofarabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Clofarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00642</drugbank-id>
+      <name>Pemetrexed</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pemetrexed.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00694</drugbank-id>
+      <name>Daunorubicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Daunorubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00755</drugbank-id>
+      <name>Tretinoin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tretinoin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00762</drugbank-id>
+      <name>Irinotecan</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Irinotecan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00763</drugbank-id>
+      <name>Methimazole</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Methimazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00773</drugbank-id>
+      <name>Etoposide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Etoposide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00795</drugbank-id>
+      <name>Sulfasalazine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Sulfasalazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00851</drugbank-id>
+      <name>Dacarbazine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dacarbazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00853</drugbank-id>
+      <name>Temozolomide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Temozolomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00859</drugbank-id>
+      <name>Penicillamine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Penicillamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00888</drugbank-id>
+      <name>Mechlorethamine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mechlorethamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00928</drugbank-id>
+      <name>Azacitidine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Azacitidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00958</drugbank-id>
+      <name>Carboplatin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Carboplatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00970</drugbank-id>
+      <name>Dactinomycin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dactinomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00987</drugbank-id>
+      <name>Cytarabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cytarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00993</drugbank-id>
+      <name>Azathioprine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Azathioprine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00997</drugbank-id>
+      <name>Doxorubicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Doxorubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01005</drugbank-id>
+      <name>Hydroxyurea</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Hydroxyurea.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01008</drugbank-id>
+      <name>Busulfan</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Busulfan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01030</drugbank-id>
+      <name>Topotecan</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Topotecan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01033</drugbank-id>
+      <name>Mercaptopurine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mercaptopurine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01042</drugbank-id>
+      <name>Melphalan</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Melphalan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01073</drugbank-id>
+      <name>Fludarabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Fludarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01097</drugbank-id>
+      <name>Leflunomide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Leflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01099</drugbank-id>
+      <name>Flucytosine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Flucytosine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01101</drugbank-id>
+      <name>Capecitabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Capecitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01168</drugbank-id>
+      <name>Procarbazine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Procarbazine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01169</drugbank-id>
+      <name>Arsenic trioxide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Arsenic trioxide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01177</drugbank-id>
+      <name>Idarubicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Idarubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01181</drugbank-id>
+      <name>Ifosfamide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ifosfamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01196</drugbank-id>
+      <name>Estramustine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Estramustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01204</drugbank-id>
+      <name>Mitoxantrone</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mitoxantrone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01206</drugbank-id>
+      <name>Lomustine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Lomustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01229</drugbank-id>
+      <name>Paclitaxel</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Paclitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01248</drugbank-id>
+      <name>Docetaxel</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Docetaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01254</drugbank-id>
+      <name>Dasatinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dasatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01257</drugbank-id>
+      <name>Eculizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Eculizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01262</drugbank-id>
+      <name>Decitabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Decitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01268</drugbank-id>
+      <name>Sunitinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Sunitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01280</drugbank-id>
+      <name>Nelarabine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Nelarabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01281</drugbank-id>
+      <name>Abatacept</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Abatacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01394</drugbank-id>
+      <name>Colchicine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Colchicine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01423</drugbank-id>
+      <name>Stepronin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Stepronin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01611</drugbank-id>
+      <name>Hydroxychloroquine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Hydroxychloroquine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01816</drugbank-id>
+      <name>Castanospermine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Castanospermine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02546</drugbank-id>
+      <name>Vorinostat</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vorinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02806</drugbank-id>
+      <name>2-Methoxyethanol</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with 2-Methoxyethanol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03523</drugbank-id>
+      <name>Brequinar</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Brequinar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04572</drugbank-id>
+      <name>Thiotepa</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Thiotepa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04868</drugbank-id>
+      <name>Nilotinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Nilotinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04951</drugbank-id>
+      <name>Pirfenidone</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pirfenidone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04956</drugbank-id>
+      <name>Afelimomab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Afelimomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05015</drugbank-id>
+      <name>Belinostat</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Belinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05109</drugbank-id>
+      <name>Trabectedin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Trabectedin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05258</drugbank-id>
+      <name>Interferon alfa</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Interferon alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05259</drugbank-id>
+      <name>Glatiramer</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05260</drugbank-id>
+      <name>Gallium nitrate</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Gallium nitrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05459</drugbank-id>
+      <name>Briakinumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Briakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05472</drugbank-id>
+      <name>omega interferon</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with omega interferon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05676</drugbank-id>
+      <name>Apremilast</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Apremilast.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06168</drugbank-id>
+      <name>Canakinumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Canakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06273</drugbank-id>
+      <name>Tocilizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tocilizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06372</drugbank-id>
+      <name>Rilonacept</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Rilonacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06589</drugbank-id>
+      <name>Pazopanib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pazopanib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06603</drugbank-id>
+      <name>Panobinostat</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Panobinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06612</drugbank-id>
+      <name>Mepolizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mepolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06616</drugbank-id>
+      <name>Bosutinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bosutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06643</drugbank-id>
+      <name>Denosumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Denosumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06662</drugbank-id>
+      <name>Abetimus</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Abetimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06674</drugbank-id>
+      <name>Golimumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Golimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06681</drugbank-id>
+      <name>Belatacept</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Belatacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06769</drugbank-id>
+      <name>Bendamustine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bendamustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06772</drugbank-id>
+      <name>Cabazitaxel</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cabazitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06813</drugbank-id>
+      <name>Pralatrexate</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pralatrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08059</drugbank-id>
+      <name>Wortmannin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Wortmannin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08868</drugbank-id>
+      <name>Fingolimod</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Fingolimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08870</drugbank-id>
+      <name>Brentuximab vedotin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Brentuximab vedotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08871</drugbank-id>
+      <name>Eribulin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Eribulin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08877</drugbank-id>
+      <name>Ruxolitinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ruxolitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08879</drugbank-id>
+      <name>Belimumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Belimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08880</drugbank-id>
+      <name>Teriflunomide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Teriflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08889</drugbank-id>
+      <name>Carfilzomib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Carfilzomib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08895</drugbank-id>
+      <name>Tofacitinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tofacitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08901</drugbank-id>
+      <name>Ponatinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ponatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08904</drugbank-id>
+      <name>Certolizumab pegol</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Certolizumab pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08908</drugbank-id>
+      <name>Dimethyl fumarate</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dimethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08910</drugbank-id>
+      <name>Pomalidomide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pomalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08935</drugbank-id>
+      <name>Obinutuzumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Obinutuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09029</drugbank-id>
+      <name>Secukinumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Secukinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09033</drugbank-id>
+      <name>Vedolizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vedolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09036</drugbank-id>
+      <name>Siltuximab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Siltuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09052</drugbank-id>
+      <name>Blinatumomab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Blinatumomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09053</drugbank-id>
+      <name>Ibrutinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ibrutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Idelalisib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09073</drugbank-id>
+      <name>Palbociclib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Palbociclib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09074</drugbank-id>
+      <name>Olaparib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Olaparib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09077</drugbank-id>
+      <name>Dinutuximab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Dinutuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09082</drugbank-id>
+      <name>Vilanterol</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Vilanterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09122</drugbank-id>
+      <name>Peginterferon beta-1a</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Peginterferon beta-1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09312</drugbank-id>
+      <name>Antilymphocyte immunoglobulin (horse)</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Antilymphocyte immunoglobulin (horse).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11466</drugbank-id>
+      <name>Tepoxalin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tepoxalin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11569</drugbank-id>
+      <name>Ixekizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ixekizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11580</drugbank-id>
+      <name>Ravulizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ravulizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11616</drugbank-id>
+      <name>Pirarubicin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Pirarubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11693</drugbank-id>
+      <name>Voclosporin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Voclosporin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11708</drugbank-id>
+      <name>Peficitinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Peficitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11767</drugbank-id>
+      <name>Sarilumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Sarilumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11776</drugbank-id>
+      <name>Brodalumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Brodalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11803</drugbank-id>
+      <name>Sirukumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Sirukumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Baricitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11834</drugbank-id>
+      <name>Guselkumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Guselkumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11988</drugbank-id>
+      <name>Ocrelizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ocrelizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12025</drugbank-id>
+      <name>Triptolide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Triptolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12612</drugbank-id>
+      <name>Ozanimod</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Ozanimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12617</drugbank-id>
+      <name>Mizoribine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Mizoribine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12692</drugbank-id>
+      <name>Gusperimus</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Gusperimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12814</drugbank-id>
+      <name>Cepeginterferon alfa-2B</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Cepeginterferon alfa-2B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12902</drugbank-id>
+      <name>Trofosfamide</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Trofosfamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12947</drugbank-id>
+      <name>Doxifluridine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Doxifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12991</drugbank-id>
+      <name>Deoxyspergualin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Deoxyspergualin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12996</drugbank-id>
+      <name>Acteoside</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Acteoside.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13014</drugbank-id>
+      <name>Hypericin</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Hypericin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13068</drugbank-id>
+      <name>9-(N-methyl-L-isoleucine)-cyclosporin A</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with 9-(N-methyl-L-isoleucine)-cyclosporin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13241</drugbank-id>
+      <name>Begelomab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Begelomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14066</drugbank-id>
+      <name>Tetrandrine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Tetrandrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14219</drugbank-id>
+      <name>Monomethyl fumarate</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Monomethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14724</drugbank-id>
+      <name>Emapalumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Emapalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14919</drugbank-id>
+      <name>Rozanolixizumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Rozanolixizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15253</drugbank-id>
+      <name>Bleselumab</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Bleselumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00198</drugbank-id>
+      <name>Oseltamivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oseltamivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00558</drugbank-id>
+      <name>Zanamivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Zanamivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06614</drugbank-id>
+      <name>Peramivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Peramivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00478</drugbank-id>
+      <name>Rimantadine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rimantadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00915</drugbank-id>
+      <name>Amantadine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amantadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14039</drugbank-id>
+      <name>Erenumab</name>
+      <description>The risk or severity of adverse effects can be increased when Erenumab is combined with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00277</drugbank-id>
+      <name>Theophylline</name>
+      <description>The serum concentration of Theophylline can be increased when it is combined with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12371</drugbank-id>
+      <name>Siponimod</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Siponimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14762</drugbank-id>
+      <name>Risankizumab</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Risankizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12159</drugbank-id>
+      <name>Dupilumab</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dupilumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15528</drugbank-id>
+      <name>Onasemnogene abeparvovec</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Onasemnogene abeparvovec.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14681</drugbank-id>
+      <name>Cortisone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cortisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00180</drugbank-id>
+      <name>Flunisolide</name>
+      <description>The therapeutic efficacy of Flunisolide can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00394</drugbank-id>
+      <name>Beclomethasone dipropionate</name>
+      <description>The therapeutic efficacy of Beclomethasone dipropionate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00443</drugbank-id>
+      <name>Betamethasone</name>
+      <description>The therapeutic efficacy of Betamethasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00588</drugbank-id>
+      <name>Fluticasone propionate</name>
+      <description>The therapeutic efficacy of Fluticasone propionate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00591</drugbank-id>
+      <name>Fluocinolone acetonide</name>
+      <description>The therapeutic efficacy of Fluocinolone acetonide can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00620</drugbank-id>
+      <name>Triamcinolone</name>
+      <description>The therapeutic efficacy of Triamcinolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00635</drugbank-id>
+      <name>Prednisone</name>
+      <description>The therapeutic efficacy of Prednisone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00687</drugbank-id>
+      <name>Fludrocortisone</name>
+      <description>The therapeutic efficacy of Fludrocortisone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00741</drugbank-id>
+      <name>Hydrocortisone</name>
+      <description>The therapeutic efficacy of Hydrocortisone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00764</drugbank-id>
+      <name>Mometasone</name>
+      <description>The therapeutic efficacy of Mometasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00860</drugbank-id>
+      <name>Prednisolone</name>
+      <description>The therapeutic efficacy of Prednisolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00959</drugbank-id>
+      <name>Methylprednisolone</name>
+      <description>The therapeutic efficacy of Methylprednisolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01108</drugbank-id>
+      <name>Trilostane</name>
+      <description>The therapeutic efficacy of Trilostane can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01222</drugbank-id>
+      <name>Budesonide</name>
+      <description>The therapeutic efficacy of Budesonide can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01234</drugbank-id>
+      <name>Dexamethasone</name>
+      <description>The therapeutic efficacy of Dexamethasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01285</drugbank-id>
+      <name>Corticotropin</name>
+      <description>The therapeutic efficacy of Corticotropin can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01380</drugbank-id>
+      <name>Cortisone acetate</name>
+      <description>The therapeutic efficacy of Cortisone acetate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01384</drugbank-id>
+      <name>Paramethasone</name>
+      <description>The therapeutic efficacy of Paramethasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01410</drugbank-id>
+      <name>Ciclesonide</name>
+      <description>The therapeutic efficacy of Ciclesonide can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04630</drugbank-id>
+      <name>Aldosterone</name>
+      <description>The therapeutic efficacy of Aldosterone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08906</drugbank-id>
+      <name>Fluticasone furoate</name>
+      <description>The therapeutic efficacy of Fluticasone furoate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08970</drugbank-id>
+      <name>Fluprednidene</name>
+      <description>The therapeutic efficacy of Fluprednidene can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08971</drugbank-id>
+      <name>Fluocortolone</name>
+      <description>The therapeutic efficacy of Fluocortolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09091</drugbank-id>
+      <name>Tixocortol</name>
+      <description>The therapeutic efficacy of Tixocortol can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09378</drugbank-id>
+      <name>Fluprednisolone</name>
+      <description>The therapeutic efficacy of Fluprednisolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09383</drugbank-id>
+      <name>Meprednisone</name>
+      <description>The therapeutic efficacy of Meprednisone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11487</drugbank-id>
+      <name>Dexamethasone isonicotinate</name>
+      <description>The therapeutic efficacy of Dexamethasone isonicotinate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11529</drugbank-id>
+      <name>Melengestrol</name>
+      <description>The therapeutic efficacy of Melengestrol can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11750</drugbank-id>
+      <name>Clobetasol</name>
+      <description>The therapeutic efficacy of Clobetasol can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11921</drugbank-id>
+      <name>Deflazacort</name>
+      <description>The therapeutic efficacy of Deflazacort can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13003</drugbank-id>
+      <name>Cortivazol</name>
+      <description>The therapeutic efficacy of Cortivazol can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13208</drugbank-id>
+      <name>Prednylidene</name>
+      <description>The therapeutic efficacy of Prednylidene can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13223</drugbank-id>
+      <name>Fluocortin</name>
+      <description>The therapeutic efficacy of Fluocortin can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13491</drugbank-id>
+      <name>Fluperolone</name>
+      <description>The therapeutic efficacy of Fluperolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13664</drugbank-id>
+      <name>Formocortal</name>
+      <description>The therapeutic efficacy of Formocortal can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13728</drugbank-id>
+      <name>Halometasone</name>
+      <description>The therapeutic efficacy of Halometasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13843</drugbank-id>
+      <name>Cloprednol</name>
+      <description>The therapeutic efficacy of Cloprednol can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13856</drugbank-id>
+      <name>Fluclorolone</name>
+      <description>The therapeutic efficacy of Fluclorolone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13867</drugbank-id>
+      <name>Fluticasone</name>
+      <description>The therapeutic efficacy of Fluticasone can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14512</drugbank-id>
+      <name>Mometasone furoate</name>
+      <description>The therapeutic efficacy of Mometasone furoate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14538</drugbank-id>
+      <name>Hydrocortisone aceponate</name>
+      <description>The therapeutic efficacy of Hydrocortisone aceponate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14539</drugbank-id>
+      <name>Hydrocortisone acetate</name>
+      <description>The therapeutic efficacy of Hydrocortisone acetate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14545</drugbank-id>
+      <name>Hydrocortisone succinate</name>
+      <description>The therapeutic efficacy of Hydrocortisone succinate can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00223</drugbank-id>
+      <name>Diflorasone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Diflorasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00240</drugbank-id>
+      <name>Alclometasone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Alclometasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00253</drugbank-id>
+      <name>Medrysone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Medrysone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00288</drugbank-id>
+      <name>Amcinonide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amcinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00324</drugbank-id>
+      <name>Fluorometholone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fluorometholone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00547</drugbank-id>
+      <name>Desoximetasone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Desoximetasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00596</drugbank-id>
+      <name>Ulobetasol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ulobetasol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00663</drugbank-id>
+      <name>Flumethasone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flumethasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00838</drugbank-id>
+      <name>Clocortolone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00846</drugbank-id>
+      <name>Flurandrenolide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Flurandrenolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14596</drugbank-id>
+      <name>Loteprednol etabonate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Loteprednol etabonate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00896</drugbank-id>
+      <name>Rimexolone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rimexolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01013</drugbank-id>
+      <name>Clobetasol propionate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clobetasol propionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01047</drugbank-id>
+      <name>Fluocinonide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fluocinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01130</drugbank-id>
+      <name>Prednicarbate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prednicarbate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01260</drugbank-id>
+      <name>Desonide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Desonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06781</drugbank-id>
+      <name>Difluprednate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Difluprednate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06786</drugbank-id>
+      <name>Halcinonide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Halcinonide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09095</drugbank-id>
+      <name>Difluocortolone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Difluocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13158</drugbank-id>
+      <name>Clobetasone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clobetasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14540</drugbank-id>
+      <name>Hydrocortisone butyrate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hydrocortisone butyrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14541</drugbank-id>
+      <name>Hydrocortisone cypionate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hydrocortisone cypionate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14543</drugbank-id>
+      <name>Hydrocortisone probutate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hydrocortisone probutate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14544</drugbank-id>
+      <name>Hydrocortisone valerate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Hydrocortisone valerate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00873</drugbank-id>
+      <name>Loteprednol</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Loteprednol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14631</drugbank-id>
+      <name>Prednisolone phosphate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prednisolone phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14633</drugbank-id>
+      <name>Prednisolone hemisuccinate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prednisolone hemisuccinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14634</drugbank-id>
+      <name>Fluprednidene acetate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fluprednidene acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14643</drugbank-id>
+      <name>Methylprednisolone aceponate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Methylprednisolone aceponate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14644</drugbank-id>
+      <name>Methylprednisolone hemisuccinate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Methylprednisolone hemisuccinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14646</drugbank-id>
+      <name>Prednisone acetate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prednisone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14652</drugbank-id>
+      <name>Clocortolone acetate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clocortolone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14659</drugbank-id>
+      <name>Melengestrol acetate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Melengestrol acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14669</drugbank-id>
+      <name>Betamethasone phosphate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Betamethasone phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15566</drugbank-id>
+      <name>Prednisolone acetate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Prednisolone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15595</drugbank-id>
+      <name>Ebola Zaire vaccine (live, attenuated)</name>
+      <description>The therapeutic efficacy of Ebola Zaire vaccine (live, attenuated) can be decreased when used in combination with BCG vaccine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00060</drugbank-id>
+      <name>Interferon beta-1a</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Interferon beta-1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00109</drugbank-id>
+      <name>Enfuvirtide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Enfuvirtide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00110</drugbank-id>
+      <name>Palivizumab</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Palivizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00220</drugbank-id>
+      <name>Nelfinavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nelfinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00224</drugbank-id>
+      <name>Indinavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Indinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00238</drugbank-id>
+      <name>Nevirapine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Nevirapine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00300</drugbank-id>
+      <name>Tenofovir disoproxil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tenofovir disoproxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00369</drugbank-id>
+      <name>Cidofovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cidofovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00426</drugbank-id>
+      <name>Famciclovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Famciclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00442</drugbank-id>
+      <name>Entecavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Entecavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00503</drugbank-id>
+      <name>Ritonavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ritonavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00529</drugbank-id>
+      <name>Foscarnet</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Foscarnet.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00577</drugbank-id>
+      <name>Valaciclovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Valaciclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00625</drugbank-id>
+      <name>Efavirenz</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Efavirenz.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00649</drugbank-id>
+      <name>Stavudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Stavudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00701</drugbank-id>
+      <name>Amprenavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Amprenavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00705</drugbank-id>
+      <name>Delavirdine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Delavirdine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00709</drugbank-id>
+      <name>Lamivudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lamivudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00718</drugbank-id>
+      <name>Adefovir dipivoxil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Adefovir dipivoxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00787</drugbank-id>
+      <name>Acyclovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Acyclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00811</drugbank-id>
+      <name>Ribavirin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ribavirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00879</drugbank-id>
+      <name>Emtricitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Emtricitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00900</drugbank-id>
+      <name>Didanosine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Didanosine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00932</drugbank-id>
+      <name>Tipranavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tipranavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00943</drugbank-id>
+      <name>Zalcitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01004</drugbank-id>
+      <name>Ganciclovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ganciclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01048</drugbank-id>
+      <name>Abacavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Abacavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01072</drugbank-id>
+      <name>Atazanavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Atazanavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01232</drugbank-id>
+      <name>Saquinavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Saquinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01264</drugbank-id>
+      <name>Darunavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Darunavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01265</drugbank-id>
+      <name>Telbivudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Telbivudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01319</drugbank-id>
+      <name>Fosamprenavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fosamprenavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01601</drugbank-id>
+      <name>Lopinavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lopinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01610</drugbank-id>
+      <name>Valganciclovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Valganciclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02600</drugbank-id>
+      <name>Oseltamivir acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Oseltamivir acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03312</drugbank-id>
+      <name>Brivudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Brivudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04835</drugbank-id>
+      <name>Maraviroc</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Maraviroc.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04886</drugbank-id>
+      <name>Calanolide A</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Calanolide A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05102</drugbank-id>
+      <name>Rupintrivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rupintrivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05105</drugbank-id>
+      <name>Pleconaril</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pleconaril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05521</drugbank-id>
+      <name>Telaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Telaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05532</drugbank-id>
+      <name>BMS-488043</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with BMS-488043.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05871</drugbank-id>
+      <name>UC-781</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with UC-781.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05941</drugbank-id>
+      <name>Leronlimab</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Leronlimab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06198</drugbank-id>
+      <name>Alovudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Alovudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06234</drugbank-id>
+      <name>Maribavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Maribavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06236</drugbank-id>
+      <name>Elvucitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Elvucitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06290</drugbank-id>
+      <name>Simeprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Simeprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06408</drugbank-id>
+      <name>Taribavirin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Taribavirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06414</drugbank-id>
+      <name>Etravirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Etravirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06683</drugbank-id>
+      <name>Clevudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Clevudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06759</drugbank-id>
+      <name>Fomivirsen</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fomivirsen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06817</drugbank-id>
+      <name>Raltegravir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Raltegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08188</drugbank-id>
+      <name>Emivirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Emivirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08502</drugbank-id>
+      <name>Capravirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Capravirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08639</drugbank-id>
+      <name>Dapivirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dapivirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08864</drugbank-id>
+      <name>Rilpivirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Rilpivirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08873</drugbank-id>
+      <name>Boceprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Boceprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08930</drugbank-id>
+      <name>Dolutegravir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dolutegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08934</drugbank-id>
+      <name>Sofosbuvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sofosbuvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09027</drugbank-id>
+      <name>Ledipasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ledipasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09101</drugbank-id>
+      <name>Elvitegravir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Elvitegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09102</drugbank-id>
+      <name>Daclatasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Daclatasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09183</drugbank-id>
+      <name>Dasabuvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dasabuvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09296</drugbank-id>
+      <name>Ombitasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ombitasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09297</drugbank-id>
+      <name>Paritaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Paritaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09299</drugbank-id>
+      <name>Tenofovir alafenamide</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tenofovir alafenamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11574</drugbank-id>
+      <name>Elbasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Elbasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11575</drugbank-id>
+      <name>Grazoprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Grazoprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11586</drugbank-id>
+      <name>Asunaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Asunaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11613</drugbank-id>
+      <name>Velpatasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Velpatasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11713</drugbank-id>
+      <name>Ruzasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ruzasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11758</drugbank-id>
+      <name>Cenicriviroc</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cenicriviroc.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11799</drugbank-id>
+      <name>Bictegravir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Bictegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11808</drugbank-id>
+      <name>Faldaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Faldaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11844</drugbank-id>
+      <name>Pritelivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pritelivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11888</drugbank-id>
+      <name>Laninamivir octanoate</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Laninamivir octanoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11944</drugbank-id>
+      <name>Ingavirin</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ingavirin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11948</drugbank-id>
+      <name>Lapachone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lapachone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11998</drugbank-id>
+      <name>Sorivudine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Sorivudine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12020</drugbank-id>
+      <name>Tecovirimat</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tecovirimat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12026</drugbank-id>
+      <name>Voxilaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Voxilaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12037</drugbank-id>
+      <name>Vedroprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Vedroprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12070</drugbank-id>
+      <name>Letermovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Letermovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12225</drugbank-id>
+      <name>Beclabuvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Beclabuvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12264</drugbank-id>
+      <name>Atevirdine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Atevirdine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12301</drugbank-id>
+      <name>Doravirine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Doravirine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12470</drugbank-id>
+      <name>Dexelvucitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dexelvucitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12480</drugbank-id>
+      <name>Betulinic Acid</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Betulinic Acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12531</drugbank-id>
+      <name>Lobucavir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Lobucavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12687</drugbank-id>
+      <name>Vesatolimod</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Vesatolimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12698</drugbank-id>
+      <name>Ibalizumab</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ibalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12753</drugbank-id>
+      <name>Racivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Racivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12791</drugbank-id>
+      <name>Laninamivir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Laninamivir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12901</drugbank-id>
+      <name>Fiacitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fiacitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13041</drugbank-id>
+      <name>Odalasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Odalasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13156</drugbank-id>
+      <name>Inosine pranobex</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Inosine pranobex.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13288</drugbank-id>
+      <name>Tromantadine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tromantadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13597</drugbank-id>
+      <name>Moroxydine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Moroxydine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13609</drugbank-id>
+      <name>Umifenovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Umifenovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13641</drugbank-id>
+      <name>Metisazone</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Metisazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13776</drugbank-id>
+      <name>Ibacitabine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Ibacitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13868</drugbank-id>
+      <name>Adefovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Adefovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13878</drugbank-id>
+      <name>Pibrentasvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Pibrentasvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13879</drugbank-id>
+      <name>Glecaprevir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Glecaprevir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13997</drugbank-id>
+      <name>Baloxavir marboxil</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Baloxavir marboxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14126</drugbank-id>
+      <name>Tenofovir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Tenofovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14813</drugbank-id>
+      <name>PF-232798</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with PF-232798.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14906</drugbank-id>
+      <name>Adafosbuvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Adafosbuvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14930</drugbank-id>
+      <name>Alovudine F-18</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Alovudine F-18.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15193</drugbank-id>
+      <name>BMS-955176</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with BMS-955176.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15206</drugbank-id>
+      <name>Uprifosbuvir</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Uprifosbuvir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15332</drugbank-id>
+      <name>Radavirsen</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Radavirsen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15427</drugbank-id>
+      <name>Fialuridine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Fialuridine.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347911376</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>BCG_vaccine</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

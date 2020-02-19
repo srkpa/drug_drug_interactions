@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02468</drugbank-id>
+  <drugbank-id>EXPT00073</drugbank-id>
+  <name>12-Phenylheme</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>694.599</average-mass>
+  <monoisotopic-mass>694.224247857</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>6.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-5.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.74e-03 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>8.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>5,9-bis(2-carboxyethyl)-15,20-diethenyl-4,10,14,19-tetramethyl-17-phenyl-2,22,23,25-tetraaza-1-ferraoctacyclo[11.9.1.1¹,⁸.1³,²¹.0²,⁶.0¹⁶,²³.0¹⁸,²².0¹¹,²⁵]pentacosa-3,5,7,9,11,13,15,17,21(24)-nonaene-1,1-bis(ylium)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>5,9-bis(2-carboxyethyl)-15,20-diethenyl-4,10,14,19-tetramethyl-17-phenyl-2,22,23,25-tetraaza-1-ferraoctacyclo[11.9.1.1¹,⁸.1³,²¹.0²,⁶.0¹⁶,²³.0¹⁸,²².0¹¹,²⁵]pentacosa-3,5,7,9,11,13,15,17,21(24)-nonaene-1,1-bis(ylium)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>694.599</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>694.224247857</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC1C(C=C)C2=CC3=C(C)C(CCC(O)=O)=C4C=C5N6C(=CC7=C(C)C(C=C)=C8N7[Fe++]6(N34)N2C1=C8C1=CC=CC=C1)C(C)=C5CCC(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C40H38FeN4O4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C40H38N4O4.Fe/c1-7-26-24(6)39-38(25-12-10-9-11-13-25)40-27(8-2)21(3)32(43-40)18-30-22(4)28(14-16-36(45)46)34(41-30)20-35-29(15-17-37(47)48)23(5)31(42-35)19-33(26)44-39;/h7-13,18-20,24,26H,1-2,14-17H2,3-6H3,(H,45,46)(H,47,48);/q-4;+6/b30-18-,33-19-,34-20-,39-38-;</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ULDWFUFUNJMSCJ-ZXHVEAKLSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>94.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>194.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>78.93</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>131704203</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505538</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>1FH</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000735</id>
+      <name>Heme oxygenase 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P09601" source="Swiss-Prot">
+        <name>Heme oxygenase 1</name>
+        <general-function>Signal transducer activity</general-function>
+        <specific-function>Heme oxygenase cleaves the heme ring at the alpha methene bridge to form biliverdin. Biliverdin is subsequently converted to bilirubin by biliverdin reductase. Under physiological conditions, the activity of heme oxygenase is highest in the spleen, where senescent erythrocytes are sequestrated and destroyed. Exhibits cytoprotective effects since excess of free heme sensitizes cells to undergo apoptosis.</specific-function>
+        <gene-name>HMOX1</gene-name>
+        <locus>22q12|22q13.1</locus>
+        <cellular-location>Microsome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.68</theoretical-pi>
+        <molecular-weight>32818.345</molecular-weight>
+        <chromosome-location>22</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5013</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HMOX1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X06985</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>35173</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1441</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P09601</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HMOX1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.14.18</synonym>
+          <synonym>HO</synonym>
+          <synonym>HO-1</synonym>
+          <synonym>HO1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021270|Heme oxygenase 1
+MERPQPDSMPQDLSEALKEATKEVHTQAENAEFMRNFQKGQVTRDGFKLVMASLYHIYVA
+LEEEIERNKESPVFAPVYFPEELHRKAALEQDLAFWYGPRWQEVIPYTPAMQRYVKRLHE
+VGRTEPELLVAHAYTRYLGDLSGGQVLKKIAQKALDLPSSGEGLAFFTFPNIASATKFKQ
+LYRSRMNSLEMTPAVRQRVIEEAKTAFLLNIQLFEELQELLTHDTKDQSPSRAPGLRQRA
+SNKVQDSAPVETPRGKPPLNTRSQAPLLRWVLTLSFLVATVAVGLYAM</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021271|Heme oxygenase 1 (HMOX1)
+ATGGAGCGTCCGCAACCCGACAGCATGCCCCAGGATTTGTCAGAGGCCCTGAAGGAGGCC
+ACCAAGGAGGTGCACACCCAGGCAGAGAATGCTGAGTTCATGAGGAACTTTCAGAAGGGC
+CAGGTGACCCGAGACGGCTTCAAGCTGGTGATGGCCTCCCTGTACCACATCTATGTGGCC
+CTGGAGGAGGAGATTGAGCGCAACAAGGAGAGCCCAGTCTTCGCCCCTGTCTACTTCCCA
+GAAGAGCTGCACCGCAAGGCTGCCCTGGAGCAGGACCTGGCCTTCTGGTACGGGCCCCGC
+TGGCAGGAGGTCATCCCCTACACACCAGCCATGCAGCGCTATGTGAAGCGGCTCCACGAG
+GTGGGGCGCACAGAGCCCGAGCTGCTGGTGGCCCACGCCTACACCCGCTACCTGGGTGAC
+CTGTCTGGGGGCCAGGTGCTCAAAAAGATTGCCCAGAAAGCCCTGGACCTGCCCAGCTCT
+GGCGAGGGCCTGGCCTTCTTCACCTTCCCCAACATTGCCAGTGCCACCAAGTTCAAGCAG
+CTCTACCGCTCCCGCATGAACTCCCTGGAGATGACTCCCGCAGTCAGGCAGAGGGTGATA
+GAAGAGGCCAAGACTGCGTTCCTGCTCAACATCCAGCTCTTTGAGGAGTTGCAGGAGCTG
+CTGACCCATGACACCAAGGACCAGAGCCCCTCACGGGCACCAGGGCTTCGCCAGCGGGCC
+AGCAACAAAGTGCAAGATTCTGCCCCCGTGGAGACTCCCAGAGGGAAGCCCCCACTCAAC
+ACCCGCTCCCAGGCTCCGCTTCTCCGATGGGTCCTTACACTCAGCTTTCTGGTGGCGACA
+GTTGCTGTAGGGCTTTATGCCATGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01126</identifier>
+            <name>Heme_oxygenase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme oxygenase (decyclizing) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipase D activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>signal transducer activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular iron ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to arsenic-containing substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to cadmium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>erythrocyte homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>excretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heme catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heme oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to DNA damage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>iron ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>low-density lipoprotein particle clearance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway via death domain receptors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of mast cell cytokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of mast cell degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of muscle cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>porphyrin-containing compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of chemokine biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasodilation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homooligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription from RNA polymerase II promoter in response to iron</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription from RNA polymerase II promoter in response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estrogen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to nicotine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle hyperplasia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>wound healing involved in inflammatory response</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

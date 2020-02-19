@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05301</drugbank-id>
+  <name>LAX-101</name>
+  <description>LAX-101 treats hungtington’s disease, not just the symptoms but the disease itself. The active molecule in LAX-101 is Eicosapentaenoic Acid (EPA). All molecules of EPA are identical. The molecules of EPA found in LAX-101 are identical to the molecules of EPA found in fish oil food supplements.</description>
+  <cas-number>909712-41-0</cas-number>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in depression and huntington's disease.</indication>
+  <pharmacodynamics>LAX-101, a novel and proprietary compound that inhibits certain harmful enzymes including phospholipases and caspases, represents a new class of drugs sometimes referred to as NPLs. This class may function as "neuroprotectants" and appears to inhibit degradation of brain tissue by a variety of proposed mechanisms, including stabilization of the phospholipid components of cell membranes and mitochondria, cell structures that are important in cell regulation and brain function. </pharmacodynamics>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910064</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002181</id>
+      <name>Phospholipase D1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q13393" source="Swiss-Prot">
+        <name>Phospholipase D1</name>
+        <general-function>Phospholipase d activity</general-function>
+        <specific-function>Implicated as a critical step in numerous cellular pathways, including signal transduction, membrane trafficking, and the regulation of mitosis. May be involved in the regulation of perinuclear intravesicular membrane traffic (By similarity).</specific-function>
+        <gene-name>PLD1</gene-name>
+        <locus>3q26</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.07</theoretical-pi>
+        <molecular-weight>124183.135</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9067</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PLD1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U38545</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1185463</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1433</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q13393</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PLD1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.4.4</synonym>
+          <synonym>Choline phosphatase 1</synonym>
+          <synonym>Phosphatidylcholine-hydrolyzing phospholipase D1</synonym>
+          <synonym>PLD 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004280|Phospholipase D1
+MSLKNEPRVNTSALQKIAADMSNIIENLDTRELHFEGEEVDYDVSPSDPKIQEVYIPFSA
+IYNTQGFKEPNIQTYLSGCPIKAQVLEVERFTSTTRVPSINLYTIELTHGEFKWQVKRKF
+KHFQEFHRELLKYKAFIRIPIPTRRHTFRRQNVREEPREMPSLPRSSENMIREEQFLGRR
+KQLEDYLTKILKMPMYRNYHATTEFLDISQLSFIHDLGPKGIEGMIMKRSGGHRIPGLNC
+CGQGRACYRWSKRWLIVKDSFLLYMKPDSGAIAFVLLVDKEFKIKVGKKETETKYGIRID
+NLSRTLILKCNSYRHARWWGGAIEEFIQKHGTNFLKDHRFGSYAAIQENALAKWYVNAKG
+YFEDVANAMEEANEEIFITDWWLSPEIFLKRPVVEGNRWRLDCILKRKAQQGVRIFIMLY
+KEVELALGINSEYTKRTLMRLHPNIKVMRHPDHVSSTVYLWAHHEKLVIIDQSVAFVGGI
+DLAYGRWDDNEHRLTDVGSVKRVTSGPSLGSLPPAAMESMESLRLKDKNEPVQNLPIQKS
+IDDVDSKLKGIGKPRKFSKFSLYKQLHRHHLHDADSISSIDSTSSYFNHYRSHHNLIHGL
+KPHFKLFHPSSESEQGLTRPHADTGSIRSLQTGVGELHGETRFWHGKDYCNFVFKDWVQL
+DKPFADFIDRYSTPRMPWHDIASAVHGKAARDVARHFIQRWNFTKIMKSKYRSLSYPFLL
+PKSQTTAHELRYQVPGSVHANVQLLRSAADWSAGIKYHEESIHAAYVHVIENSRHYIYIE
+NQFFISCADDKVVFNKIGDAIAQRILKAHRENQKYRVYVVIPLLPGFEGDISTGGGNALQ
+AIMHFNYRTMCRGENSILGQLKAELGNQWINYISFCGLRTHAELEGNLVTELIYVHSKLL
+IADDNTVIIGSANINDRSMLGKRDSEMAVIVQDTETVPSVMDGKEYQAGRFARGLRLQCF
+RVVLGYLDDPSEDIQDPVSDKFFKEVWVSTAARNATIYDKVFRCLPNDEVHNLIQLRDFI
+NKPVLAKEDPIRAEEELKKIRGFLVQFPFYFLSEESLLPSVGTKEAIVPMEVWT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004279|3225 bp
+ATGTCACTGAAAAACGAGCCACGGGTAAATACCTCTGCACTGCAGAAAATTGCTGCTGAC
+ATGAGTAATATCATAGAAAATCTGGACACGCGGGAACTCCACTTTGAGGGAGAGGAGGTA
+GACTACGACGTGTCTCCCAGCGATCCCAAGATACAAGAAGTGTATATCCCTTTCTCTGCT
+ATTTATAACACTCAAGGATTTAAGGAGCCTAATATACAGACGTATCTCTCCGGCTGTCCA
+ATAAAAGCACAAGTTCTGGAAGTGGAACGCTTCACATCTACAACAAGGGTACCAAGTATT
+AATCTTTACACTATTGAATTAACACATGGGGAATTTAAATGGCAAGTTAAGAGGAAATTC
+AAGCATTTTCAAGAATTTCACAGAGAGCTGCTCAAGTACAAAGCCTTTATCCGCATCCCC
+ATTCCCACTAGAAGACACACGTTTAGGAGGCAAAACGTCAGAGAGGAGCCTCGAGAGATG
+CCCAGTTTGCCCCGTTCATCTGAAAACATGATAAGAGAAGAACAATTCCTTGGTAGAAGA
+AAACAACTGGAAGATTACTTGACAAAGATACTAAAAATGCCCATGTATAGAAACTATCAT
+GCCACAACAGAGTTTCTTGATATAAGCCAGCTGTCTTTCATCCATGATTTGGGACCAAAG
+GGCATAGAAGGTATGATAATGAAAAGATCTGGAGGACACAGAATACCAGGCTTGAATTGC
+TGTGGTCAGGGAAGAGCCTGCTACAGATGGTCAAAAAGATGGTTAATAGTGAAAGATTCC
+TTTTTATTGTATATGAAACCAGACAGCGGTGCCATTGCCTTCGTCCTGCTGGTAGACAAA
+GAATTCAAAATTAAGGTGGGGAAGAAGGAGACAGAAACGAAATATGGAATCCGAATTGAT
+AATCTTTCAAGGACACTTATTTTAAAATGCAACAGCTATAGACATGCTCGGTGGTGGGGA
+GGGGCTATAGAAGAATTCATCCAGAAACATGGCACCAACTTTCTCAAAGATCATCGATTT
+GGGTCATATGCTGCTATCCAAGAGAATGCTTTAGCTAAATGGTATGTTAATGCCAAAGGA
+TATTTTGAAGATGTGGCAAATGCAATGGAAGAGGCAAATGAAGAGATTTTTATCACAGAC
+TGGTGGCTGAGTCCAGAAATCTTCCTGAAACGCCCAGTGGTTGAGGGAAATCGTTGGAGG
+TTGGACTGCATTCTTAAACGAAAAGCACAACAAGGAGTGAGGATCTTCATAATGCTCTAC
+AAAGAGGTGGAACTCGCTCTTGGCATCAATAGTGAATACACCAAGAGGACTTTGATGCGT
+CTACATCCCAACATAAAGGTGATGAGACACCCGGATCATGTGTCATCCACCGTCTATTTG
+TGGGCTCACCATGAGAAGCTTGTCATCATTGACCAATCGGTGGCCTTTGTGGGAGGGATT
+GACCTGGCCTATGGAAGGTGGGACGACAATGAGCACAGACTCACAGACGTGGGCAGTGTG
+AAGCGGGTCACTTCAGGACCGTCTCTGGGTTCCCTCCCACCTGCCGCAATGGAGTCTATG
+GAATCCTTAAGACTCAAAGATAAAAATGAGCCTGTTCAAAACCTACCCATCCAGAAGAGT
+ATTGATGATGTGGATTCAAAACTGAAAGGAATAGGAAAGCCAAGAAAGTTCTCCAAATTT
+AGTCTCTACAAGCAGCTCCACAGGCACCACCTGCACGACGCAGATAGCATCAGCAGCATT
+GACAGCACCTCCAGTTATTTTAATCACTATAGAAGTCATCACAATTTAATCCATGGTTTA
+AAACCCCACTTCAAACTCTTTCACCCGTCCAGTGAGTCTGAGCAAGGACTCACTAGACCT
+CATGCTGATACCGGGTCCATCCGTAGTTTACAGACAGGTGTGGGAGAGCTGCATGGGGAA
+ACCAGATTCTGGCATGGAAAGGACTACTGCAATTTCGTCTTCAAAGACTGGGTTCAACTT
+GATAAACCTTTTGCTGATTTCATTGACAGGTACTCCACGCCCCGGATGCCCTGGCATGAC
+ATTGCCTCTGCAGTCCACGGGAAGGCGGCTCGTGATGTGGCACGTCACTTCATCCAGCGC
+TGGAACTTCACAAAAATTATGAAATCAAAATATCGGTCCCTTTCTTATCCTTTTCTGCTT
+CCAAAGTCTCAAACAACAGCCCATGAGTTGAGATATCAAGTGCCTGGGTCTGTCCATGCT
+AACGTACAGTTGCTCCGCTCTGCTGCTGATTGGTCTGCTGGTATAAAGTACCATGAAGAG
+TCCATCCACGCCGCTTACGTCCATGTGATAGAGAACAGCAGGCACTATATCTATATCGAA
+AACCAGTTTTTCATAAGCTGTGCTGATGACAAAGTTGTGTTCAACAAGATAGGCGATGCC
+ATTGCCCAGAGGATCCTGAAAGCTCACAGGGAAAACCAGAAATACCGGGTATATGTCGTG
+ATACCACTTCTGCCAGGGTTCGAAGGAGACATTTCAACCGGCGGAGGAAATGCTCTACAG
+GCAATCATGCACTTCAACTACAGAACCATGTGCAGAGGAGAAAATTCCATCCTTGGACAG
+TTAAAAGCAGAGCTTGGTAATCAGTGGATAAATTACATATCATTCTGTGGTCTTAGAACA
+CATGCAGAGCTCGAAGGAAACCTAGTAACTGAGCTTATCTATGTCCACAGCAAGTTGTTA
+ATTGCTGATGATAACACTGTTATTATTGGCTCTGCCAACATAAATGACCGCAGCATGCTG
+GGAAAGCGTGACAGTGAAATGGCTGTCATTGTGCAAGATACAGAGACTGTTCCTTCAGTA
+ATGGATGGAAAAGAGTACCAAGCTGGCCGGTTTGCCCGAGGACTTCGGCTACAGTGCTTT
+AGGGTTGTCCTTGGCTATCTTGATGACCCAAGTGAGGACATTCAGGATCCAGTGAGTGAC
+AAATTCTTCAAGGAGGTGTGGGTTTCAACAGCAGCTCGAAATGCTACAATTTATGACAAG
+GTTTTCCGGTGCCTTCCCAATGATGAAGTACACAATTTAATTCAGCTGAGAGACTTTATA
+AACAAGCCCGTATTAGCTAAGGAAGATCCCATTCGAGCTGAGGAGGAACTGAAGAAGATC
+CGTGGATTTTTGGTGCAATTCCCCTTTTATTTCTTGTCTGAAGAAAGCCTACTGCCTTCT
+GTTGGGACCAAAGAGGCCATAGTGCCCATGGAGGTTTGGACTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00169</identifier>
+            <name>PH</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00787</identifier>
+            <name>PX</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00614</identifier>
+            <name>PLDc</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13091</identifier>
+            <name>PLDc_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endocytic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>late endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>N-acylphosphatidylethanolamine-specific phospholipase D activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipase D activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell motility</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-positive bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>exocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycerophospholipid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inositol lipid-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidic acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidic acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylglycerol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of microvillus assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phagocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of vesicle-mediated transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000444</id>
+      <name>Caspase-1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P29466" source="Swiss-Prot">
+        <name>Caspase-1</name>
+        <general-function>Endopeptidase activity</general-function>
+        <specific-function>Thiol protease that cleaves IL-1 beta between an Asp and an Ala, releasing the mature cytokine which is involved in a variety of inflammatory processes. Important for defense against pathogens. Cleaves and activates sterol regulatory element binding proteins (SREBPs). Can also promote apoptosis.</specific-function>
+        <gene-name>CASP1</gene-name>
+        <locus>11q23</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.71</theoretical-pi>
+        <molecular-weight>45158.215</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1499</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CASP1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X65019</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>33793</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1617</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P29466</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CASP1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.22.36</synonym>
+          <synonym>CASP-1</synonym>
+          <synonym>ICE</synonym>
+          <synonym>IL-1 beta-converting enzyme</synonym>
+          <synonym>IL-1BC</synonym>
+          <synonym>IL1BC</synonym>
+          <synonym>IL1BCE</synonym>
+          <synonym>Interleukin-1 beta convertase</synonym>
+          <synonym>Interleukin-1 beta-converting enzyme</synonym>
+          <synonym>p45</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000885|Caspase-1
+MADKVLKEKRKLFIRSMGEGTINGLLDELLQTRVLNKEEMEKVKRENATVMDKTRALIDS
+VIPKGAQACQICITYICEEDSYLAGTLGLSADQTSGNYLNMQDSQGVLSSFPAPQAVQDN
+PAMPTSSGSEGNVKLCSLEEAQRIWKQKSAEIYPIMDKSSRTRLALIICNEEFDSIPRRT
+GAEVDITGMTMLLQNLGYSVDVKKNLTASDMTTELEAFAHRPEHKTSDSTFLVFMSHGIR
+EGICGKKHSEQVPDILQLNAIFNMLNTKNCPSLKDKPKVIIIQACRGDSPGVVWFKDSVG
+VSGNLSLPTTEEFEDDAIKKAHIEKDFIAFCSSTPDNVSWRHPTMGSVFIGRLIEHMQEY
+ACSCDVEEIFRKVRFSFEQPDGRAQMPTTERVTLTRCFYLFPGH</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020459|Caspase-1 (CASP1)
+ATGGCCGACAAGGTCCTGAAGGAGAAGAGAAAGCTGTTTATCCGTTCCATGGGTGAAGGT
+ACAATAAATGGCTTACTGGATGAATTATTACAGACAAGGGTGCTGAACAAGGAAGAGATG
+GAGAAAGTAAAACGTGAAAATGCTACAGTTATGGATAAGACCCGAGCTTTGATTGACTCC
+GTTATTCCGAAAGGGGCACAGGCATGCCAAATTTGCATCACATACATTTGTGAAGAAGAC
+AGTTACCTGGCAGGGACGCTGGGACTCTCAGCAGCTCCTCAGGCAGTGCAGGACAACCCA
+GCTATGCCCACATCCTCAGGCTCAGAAGGGAATGTCAAGCTTTGCTCCCTAGAAGAAGCT
+CAAAGGATATGGAAACAAAAGTCGGCAGAGATTTATCCAATAATGGACAAGTCAAGCCGC
+ACACGTCTTGCTCTCATTATCTGCAATGAAGAATTTGACAGTATTCCTAGAAGAACTGGA
+GCTGAGGTTGACATCACAGGCATGACAATGCTGCTACAAAATCTGGGGTACAGCGTAGAT
+GTGAAAAAAAATCTCACTGCTTCGGACATGACTACAGAGCTGGAGGCATTTGCACACCGC
+CCAGAGCACAAGACCTCTGACAGCACGTTCCTGGTGTTCATGTCTCATGGTATTCGGGAA
+GGCATTTGTGGGAAGAAACACTCTGAGCAAGTCCCAGATATACTACAACTCAATGCAATC
+TTTAACATGTTGAATACCAAGAACTGCCCAAGTTTGAAGGACAAACCGAAGGTGATCATC
+ATCCAGGCCTGCCGTGGTGACAGCCCTGGTGTGGTGTGGTTTAAAGATTCAGTAGGAGTT
+TCTGGAAACCTATCTTTACCAACTACAGAAGAGTTTGAGGATGATGCTATTAAGAAAGCC
+CACATAGAGAAGGATTTTATCGCTTTCTGCTCTTCCACACCAGATAATGTTTCTTGGAGA
+CATCCCACAATGGGCTCTGTTTTTATTGGAAGACTCATTGAACATATGCAAGAATATGCC
+TGTTCCTGTGATGTGGAGGAAATTTTCCGCAAGGTTCGATTTTCATTTGAGCAGCCAGAT
+GGTAGAGCGCAGATGCCCACCACTGAAAGAGTGACTTTGACAAGATGTTTCTACCTCTTC
+CCAGGACATTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00619</identifier>
+            <name>CARD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00656</identifier>
+            <name>Peptidase_C14</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>AIM2 inflammasome complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>IPAF inflammasome complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>NLRP1 inflammasome complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>NLRP3 inflammasome complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cysteine-type endopeptidase activator activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cysteine-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to mechanical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to organic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interleukin-1 beta production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane hyperpolarization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrial depolarization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-1 alpha secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-1 beta secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed necrotic cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyroptosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of autophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ATP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toxin transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02169</drugbank-id>
+  <drugbank-id>EXPT02429</drugbank-id>
+  <name>9,10-Deepithio-9,10-Didehydroacanthifolicin</name>
+  <description>A specific inhibitor of phosphoserine/threonine protein phosphatase 1 and 2a. It is also a potent tumor promoter. (Thromb Res 1992;67(4):345-54 &amp; Cancer Res 1993;53(2):239-41)</description>
+  <cas-number>78111-17-8</cas-number>
+  <unii>1W21G5Q4N2</unii>
+  <average-mass>805.0029</average-mass>
+  <monoisotopic-mass>804.465992262</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as ketals. These are acetals derived from ketones by replacement of the oxo group by two hydrocarbyloxy groups R2C(OR)2 ( R not Hydrogen ). This term, once abandoned, has been reinstated as a subclass of acetals.</description>
+    <direct-parent>Ketals</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Ethers</subclass>
+    <alternative-parent>Alpha hydroxy acids and derivatives</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dialkyl ethers</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Oxanes</alternative-parent>
+    <alternative-parent>Pyrans</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Tertiary alcohols</alternative-parent>
+    <alternative-parent>Tetrahydrofurans</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic heteropolycyclic compound</substituent>
+    <substituent>Alpha-hydroxy acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Dialkyl ether</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Hydroxy acid</substituent>
+    <substituent>Ketal</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Oxane</substituent>
+    <substituent>Pyran</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Tertiary alcohol</substituent>
+    <substituent>Tetrahydrofuran</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1jk7</pdb-entry>
+    <pdb-entry>1u32</pdb-entry>
+    <pdb-entry>2ie4</pdb-entry>
+    <pdb-entry>4wri</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.73</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-5.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.42e-03 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>5.13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2R)-3-[(2S,5R,6R,8S)-8-[(2R,3E)-4-[(2R,4'aR,5R,6'S,8'R,8'aS)-8'-hydroxy-6'-[(1S,3S)-1-hydroxy-3-[(2S,3R,6S)-3-methyl-1,7-dioxaspiro[5.5]undecan-2-yl]butyl]-7'-methylidene-hexahydro-3'H-spiro[oxolane-2,2'-pyrano[3,2-b]pyran]-5-yl]but-3-en-2-yl]-5-hydroxy-10-methyl-1,7-dioxaspiro[5.5]undec-10-en-2-yl]-2-hydroxy-2-methylpropanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>okadaic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>805.0029</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>804.465992262</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H]\C(=C(\[H])[C@@]1([H])CC[C@@]2(CC[C@@]3([H])O[C@@]([H])(C(=C)[C@@]([H])(O)[C@]3([H])O2)[C@@]([H])(O)C[C@]([H])(C)[C@@]2([H])O[C@@]3(CCCCO3)CC[C@@]2([H])C)O1)[C@@]([H])(C)[C@]1([H])CC(C)=C[C@@]2(O[C@]([H])(C[C@@](C)(O)C(O)=O)CC[C@@]2([H])O)O1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C44H68O13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C44H68O13/c1-25-21-34(55-44(23-25)35(46)12-11-31(54-44)24-41(6,50)40(48)49)26(2)9-10-30-14-18-43(53-30)19-15-33-39(57-43)36(47)29(5)38(52-33)32(45)22-28(4)37-27(3)13-17-42(56-37)16-7-8-20-51-42/h9-10,23,26-28,30-39,45-47,50H,5,7-8,11-22,24H2,1-4,6H3,(H,48,49)/b10-9+/t26-,27-,28+,30+,31+,32+,33-,34+,35-,36-,37+,38+,39-,41-,42+,43-,44-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>QNDVLZJODHBUFM-WFXQOWMNSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>182.83</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>210.78</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>88.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>10</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.76</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>44658</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>446512</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46504468</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C01945</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>393845</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50110676</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>OKA</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL280487</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001447</id>
+      <name>Serine/threonine-protein phosphatase PP1-gamma catalytic subunit</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P36873" source="Swiss-Prot">
+        <name>Serine/threonine-protein phosphatase PP1-gamma catalytic subunit</name>
+        <general-function>Protein serine/threonine phosphatase activity</general-function>
+        <specific-function>Protein phosphatase that associates with over 200 regulatory proteins to form highly specific holoenzymes which dephosphorylate hundreds of biological targets. Protein phosphatase 1 (PP1) is essential for cell division, and participates in the regulation of glycogen metabolism, muscle contractility and protein synthesis. Dephosphorylates RPS6KB1. Involved in regulation of ionic conductances and long-term synaptic plasticity. May play an important role in dephosphorylating substrates such as the postsynaptic density-associated Ca(2+)/calmodulin dependent protein kinase II. Component of the PTW/PP1 phosphatase complex, which plays a role in the control of chromatin structure and cell cycle progression during the transition from mitosis into interphase. In balance with CSNK1D and CSNK1E, determines the circadian period length, through the regulation of the speed and rhythmicity of PER1 and PER2 phosphorylation. May dephosphorylate CSNK1D and CSNK1E. Dephosphorylates the 'Ser-418' residue of FOXP3 in regulatory T-cells (Treg) from patients with rheumatoid arthritis, thereby inactivating FOXP3 and rendering Treg cells functionally defective (PubMed:23396208).</specific-function>
+        <gene-name>PPP1CC</gene-name>
+        <locus>12q24.1-q24.2</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.5</theoretical-pi>
+        <molecular-weight>36983.4</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9283</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PPP1CC</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X74008</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>402778</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P36873</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PP1G_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.3.16</synonym>
+          <synonym>PP-1G</synonym>
+          <synonym>Protein phosphatase 1C catalytic subunit</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002872|Serine/threonine-protein phosphatase PP1-gamma catalytic subunit
+MADLDKLNIDSIIQRLLEVRGSKPGKNVQLQENEIRGLCLKSREIFLSQPILLELEAPLK
+ICGDIHGQYYDLLRLFEYGGFPPESNYLFLGDYVDRGKQSLETICLLLAYKIKYPENFFL
+LRGNHECASINRIYGFYDECKRRYNIKLWKTFTDCFNCLPIAAIVDEKIFCCHGGLSPDL
+QSMEQIRRIMRPTDVPDQGLLCDLLWSDPDKDVLGWGENDRGVSFTFGAEVVAKFLHKHD
+LDLICRAHQVVEDGYEFFAKRQLVTLFSAPNYCGEFDNAGAMMSVDETLMCSFQILKPAE
+KKKPNATRPVTPPRGMITKQAKK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021660|Serine/threonine-protein phosphatase PP1-gamma catalytic subunit (PPP1CC)
+ATGGCGGATTTAGATAAACTCAACATCGACAGCATTATCCAACGGCTGCTGGAAGTGAGA
+GGGTCCAAGCCTGGTAAGAATGTCCAGCTTCAGGAGAATGAAATCAGAGGACTGTGCTTA
+AAGTCTCGTGAAATCTTTCTCAGTCAGCCTATCCTACTAGAACTTGAAGCACCACTCAAA
+ATATGTGGTGACATCCATGGACAATACTATGATTTGCTGCGACTTTTTGAGTACGGTGGT
+TTCCCACCAGAAAGCAACTACCTGTTTCTTGGGGACTATGTGGACAGGGGAAAGCAGTCA
+TTGGAGACGATCTGCCTCTTACTGGCCTACAAAATAAAATATCCTGAGAATTTTTTTCTT
+CTCAGAGGGAACCATGAATGTGCCAGCATCAACAGAATTTATGGATTTTATGATGAATGT
+AAAAGAAGATACAACATTAAACTATGGAAAACTTTCACAGACTGTTTTAACTGTTTACCG
+ATAGCAGCCATCGTGGATGAGAAGATATTCTGCTGTCATGGAGGTTTATCACCAGATCTT
+CAATCTATGGAGCAGATTCGGCGAATTATGCGACCAACTGATGTACCAGATCAAGGTCTT
+CTTTGTGATCTTTTGTGGTCTGACCCCGATAAAGATGTCTTAGGCTGGGGTGAAAATGAC
+AGAGGAGTGTCCTTCACATTTGGTGCAGAAGTGGTTGCAAAATTTCTCCATAAGCATGAT
+TTGGATCTTATATGTAGAGCCCATCAGGTGGTTGAAGATGGATATGAATTTTTTGCAAAG
+AGGCAGTTGGTCACTCTGTTTTCTGCGCCCAATTATTGCGGAGAGTTTGACAATGCAGGT
+GCCATGATGAGTGTGGATGAAACACTAATGTGTTCTTTTCAGATTTTAAAGCCTGCAGAG
+AAAAAGAAGCCAAATGCCACGAGACCTGTAACGCCTCCAAGGGTTGCATCAGGCCTGAAC
+CCGTCCATTCAGAAAGCTTCAAATTATAGAAACAATACTGTTCTATACGAGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00149</identifier>
+            <name>Metallophos</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16891</identifier>
+            <name>STPPase_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cleavage furrow</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed chromosome kinetochore</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>focal adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>midbody</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>MLL5-L complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear speck</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>PTW/PP1 phosphatase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphoprotein phosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein N-terminus binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine phosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>entrainment of circadian clock by photoperiod</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycogen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein dephosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>triglyceride catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

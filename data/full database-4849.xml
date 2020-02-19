@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05169</drugbank-id>
+  <name>AT9283</name>
+  <description>AT9283 is an aurora Kinase inhibitor developed by Astex Therapeutics for the treatment of cancer. It was discovered and developed internally using Astex’s fragment-based drug discovery platform, Pyramid.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3279</ref-id>
+        <pubmed-id>18163976</pubmed-id>
+        <citation>Sun L, Li D, Dong X, Yu H, Dong JT, Zhang C, Lu X, Zhou J: Small-molecule inhibition of Aurora kinases triggers spindle checkpoint-independent apoptosis in cancer cells. Biochem Pharmacol. 2008 Mar 1;75(5):1027-34. doi: 10.1016/j.bcp.2007.11.007. Epub 2007 Nov 22.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in cancer/tumors (unspecified), leukemia (myeloid), and solid tumors.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>AT9283 is an inhibitor of mitosis (cell division) and is the second most progressed drug candidate in the Astex portfolio of novel molecularly targeted cancer drugs. All of Astex’s current products have been discovered internally using its proprietary drug discovery approach. AT9283 is a potent inhibitor of the Aurora A and B kinases and has been shown to arrest tumour growth in a range of tumour models. Aurora kinases play a key role in mitotic checkpoint control in cell division. Both Aurora A and B are over-expressed in many human tumours and are believed to be excellent targets for anti-cancer therapy.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Protein Kinase Inhibitors</category>
+      <mesh-id>D047428</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909996</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Aurora_inhibitors</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000991</id>
+      <name>Aurora kinase A</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O14965" source="Swiss-Prot">
+        <name>Aurora kinase A</name>
+        <general-function>Protein serine/threonine/tyrosine kinase activity</general-function>
+        <specific-function>Mitotic serine/threonine kinases that contributes to the regulation of cell cycle progression. Associates with the centrosome and the spindle microtubules during mitosis and plays a critical role in various mitotic events including the establishment of mitotic spindle, centrosome duplication, centrosome separation as well as maturation, chromosomal alignment, spindle assembly checkpoint, and cytokinesis. Required for initial activation of CDK1 at centrosomes. Phosphorylates numerous target proteins, including ARHGEF2, BORA, BRCA1, CDC25B, DLGP5, HDAC6, KIF2A, LATS2, NDEL1, PARD3, PPP1R2, PLK1, RASSF1, TACC3, p53/TP53 and TPX2. Regulates KIF2A tubulin depolymerase activity. Required for normal axon formation. Plays a role in microtubule remodeling during neurite extension. Important for microtubule formation and/or stabilization. Also acts as a key regulatory component of the p53/TP53 pathway, and particularly the checkpoint-response pathways critical for oncogenic transformation of cells, by phosphorylating and stabilizing p53/TP53. Phosphorylates its own inhibitors, the protein phosphatase type 1 (PP1) isoforms, to inhibit their activity. Necessary for proper cilia disassembly prior to mitosis.</specific-function>
+        <gene-name>AURKA</gene-name>
+        <locus>20q13.2-q13.3</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.9</theoretical-pi>
+        <molecular-weight>45809.03</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11393</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AURKA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D84212</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2641948</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1936</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O14965</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AURKA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.1</synonym>
+          <synonym>AIK</synonym>
+          <synonym>AIRK1</synonym>
+          <synonym>ARK-1</synonym>
+          <synonym>ARK1</synonym>
+          <synonym>AURA</synonym>
+          <synonym>Aurora 2</synonym>
+          <synonym>Aurora-related kinase 1</synonym>
+          <synonym>Aurora/IPL1-related kinase 1</synonym>
+          <synonym>AYK1</synonym>
+          <synonym>Breast tumor-amplified kinase</synonym>
+          <synonym>BTAK</synonym>
+          <synonym>hARK1</synonym>
+          <synonym>IAK1</synonym>
+          <synonym>Serine/threonine-protein kinase 15</synonym>
+          <synonym>Serine/threonine-protein kinase 6</synonym>
+          <synonym>Serine/threonine-protein kinase aurora-A</synonym>
+          <synonym>STK15</synonym>
+          <synonym>STK6</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001973|Aurora kinase A
+MDRSKENCISGPVKATAPVGGPKRVLVTQQFPCQNPLPVNSGQAQRVLCPSNSSQRVPLQ
+AQKLVSSHKPVQNQKQKQLQATSVPHPVSRPLNNTQKSKQPLPSAPENNPEEELASKQKN
+EESKKRQWALEDFEIGRPLGKGKFGNVYLAREKQSKFILALKVLFKAQLEKAGVEHQLRR
+EVEIQSHLRHPNILRLYGYFHDATRVYLILEYAPLGTVYRELQKLSKFDEQRTATYITEL
+ANALSYCHSKRVIHRDIKPENLLLGSAGELKIADFGWSVHAPSSRRTTLCGTLDYLPPEM
+IEGRMHDEKVDLWSLGVLCYEFLVGKPPFEANTYQETYKRISRVEFTFPDFVTEGARDLI
+SRLLKHNPSQRPMLREVLEHPWITANSSKPSNCQNKESASKQS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016278|Aurora kinase A (AURKA)
+ATGGACCGATCTAAAGAAAACTGCATTTCAGGACCTGTTAAGGCTACAGCTCCAGTTGGA
+GGTCCAAAACGTGTTCTCGTGACTCAGCAATTTCCTTGTCAGAATCCATTACCTGTAAAT
+AGTGGCCAGGCTCAGCGGGTCTTGTGTCCTTCAAATTCTTCCCAGCGCATTCCTTTGCAA
+GCACAAAAGCTTGTCTCCAGTCACAAGCCGGTTCAGAATCAGAAGCAGAAGCAATTGCAG
+GCAACCAGTGTACCTCATCCTGTCTCCAGGCCACTGAATAACACCCAAAAGAGCAAGCAG
+CCCCTGCCATCGGCACCTGAAAATAATCCTGAGGAGGAACTGGCATCAAAACAGAAAAAT
+GAAGAATCAAAAAAGAGGCAGTGGGCTTTGGAAGACTTTGAAATTGGTCGCCCTCTGGGT
+AAAGGAAAGTTTGGTAATGTTTATTTGGCAAGAGAAAAGCAAAGCAAGTTTATTCTGGCT
+CTTAAAGTGTTATTTAAAGCTCAGCTGGAGAAAGCCGGAGTGGAGCATCAGCTCAGAAGA
+GAAGTAGAAATACAGTCCCACCTTCGGCATCCTAATATTCTTAGACTGTATGGTTATTTC
+CATGATGCTACCAGAGTCTACCTAATTCTGGAATATGCACCACTTGGAACAGTTTATAGA
+GAACTTCAGAAACTTTCAAAGTTTGATGAGCAGAGAACTGCTACTTATATAACAGAATTG
+GCAAATGCCCTGTCTTACTGTCATTCGAAGAGAGTTATTCATAGAGACATTAAGCCAGAG
+AACTTACTTCTTGGATCAGCTGGAGAGCTTAAAATTGCAGATTTTGGGTGGTCAGTACAT
+GCTCCATCTTCCAGGAGGACCACTCTCTGTGGCACCCTGGACTACCTGCCCCCTGAAATG
+ATTGAAGGTCGGATGCATGATGAGAAGGTGGATCTCTGGAGCCTTGGAGTTCTTTGCTAT
+GAATTTTTAGTTGGGAAGCCTCCTTTTGAGGCAAACACATACCAAGAGACCTACAAAAGA
+ATATCACGGGTTGAATTCACATTCCCTGACTTTGTAACAGAGGGAGCCAGGGACCTCATT
+TCAAGACTGTTGAAGCATAATCCCAGCCAGAGGCCAATGCTCAGAGAAGTACTTGAACAC
+CCCTGGATCACAGCAAATTCATCAAAACCATCAAATTGCCAAAACAAAGAATCAGCTAGC
+AAACAGTCTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00069</identifier>
+            <name>Pkinase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon hillock</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>centriole</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chromosome passenger complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cilium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed nuclear chromosome, centromeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>germinal vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>meiotic spindle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>microtubule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>microtubule cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>midbody</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitotic spindle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>pronucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle midzone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle pole centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone serine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine/tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anaphase-promoting complex-dependent proteasomal ubiquitin-dependent protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anterior/posterior axis specification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>centrosome localization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G2/M transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic centrosome separation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic nuclear division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic spindle organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron projection extension</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic nuclear division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of oocyte maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of proteasomal ubiquitin-dependent protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein localization to centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of centrosome cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cytokinesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein stability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estradiol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spindle assembly involved in female meiosis I</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spindle stabilization</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003404</id>
+      <name>Aurora kinase B</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q96GD4" source="Swiss-Prot">
+        <name>Aurora kinase B</name>
+        <general-function>Protein serine/threonine/tyrosine kinase activity</general-function>
+        <specific-function>Serine/threonine-protein kinase component of the chromosomal passenger complex (CPC), a complex that acts as a key regulator of mitosis. The CPC complex has essential functions at the centromere in ensuring correct chromosome alignment and segregation and is required for chromatin-induced microtubule stabilization and spindle assembly. Involved in the bipolar attachment of spindle microtubules to kinetochores and is a key regulator for the onset of cytokinesis during mitosis. Required for central/midzone spindle assembly and cleavage furrow formation. Key component of the cytokinesis checkpoint, a process required to delay abscission to prevent both premature resolution of intercellular chromosome bridges and accumulation of DNA damage: phosphorylates CHMP4C, leading to retain abscission-competent VPS4 (VPS4A and/or VPS4B) at the midbody ring until abscission checkpoint signaling is terminated at late cytokinesis (PubMed:22422861, PubMed:24814515). AURKB phosphorylates the CPC complex subunits BIRC5/survivin, CDCA8/borealin and INCENP. Phosphorylation of INCENP leads to increased AURKB activity. Other known AURKB substrates involved in centromeric functions and mitosis are CENPA, DES/desmin, GPAF, KIF2C, NSUN2, RACGAP1, SEPT1, VIM/vimentin, GSG2/Haspin, and histone H3. A positive feedback loop involving GSG2 and AURKB contributes to localization of CPC to centromeres. Phosphorylation of VIM controls vimentin filament segregation in cytokinetic process, whereas histone H3 is phosphorylated at 'Ser-10' and 'Ser-28' during mitosis (H3S10ph and H3S28ph, respectively). A positive feedback between GSG2 and AURKB contributes to CPC localization. AURKB is also required for kinetochore localization of BUB1 and SGOL1. Phosphorylation of p53/TP53 negatively regulates its transcriptional activity. Key regulator of active promoters in resting B- and T-lymphocytes: acts by mediating phosphorylation of H3S28ph at active promoters in resting B-cells, inhibiting RNF2/RING1B-mediated ubiquitination of histone H2A and enhancing binding and activity of the USP16 deubiquitinase at transcribed genes.</specific-function>
+        <gene-name>AURKB</gene-name>
+        <locus>17p13.1</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.7</theoretical-pi>
+        <molecular-weight>39310.195</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11390</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AURKB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF008552</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1937</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q96GD4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AURKB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.1</synonym>
+          <synonym>AIK2</synonym>
+          <synonym>AIM-1</synonym>
+          <synonym>AIM1</synonym>
+          <synonym>AIRK2</synonym>
+          <synonym>ARK-2</synonym>
+          <synonym>ARK2</synonym>
+          <synonym>Aurora 1</synonym>
+          <synonym>Aurora- and IPL1-like midbody-associated protein 1</synonym>
+          <synonym>Aurora-related kinase 2</synonym>
+          <synonym>Aurora/IPL1-related kinase 2</synonym>
+          <synonym>Serine/threonine-protein kinase 12</synonym>
+          <synonym>Serine/threonine-protein kinase 5</synonym>
+          <synonym>Serine/threonine-protein kinase aurora-B</synonym>
+          <synonym>STK-1</synonym>
+          <synonym>STK1</synonym>
+          <synonym>STK12</synonym>
+          <synonym>STK5</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037232|Aurora kinase B
+MAQKENSYPWPYGRQTAPSGLSTLPQRVLRKEPVTPSALVLMSRSNVQPTAAPGQKVMEN
+SSGTPDILTRHFTIDDFEIGRPLGKGKFGNVYLAREKKSHFIVALKVLFKSQIEKEGVEH
+QLRREIEIQAHLHHPNILRLYNYFYDRRRIYLILEYAPRGELYKELQKSCTFDEQRTATI
+MEELADALMYCHGKKVIHRDIKPENLLLGLKGELKIADFGWSVHAPSLRRKTMCGTLDYL
+PPEMIEGRMHNEKVDLWCIGVLCYELLVGNPPFESASHNETYRRIVKVDLKFPASVPMGA
+QDLISKLLRHNPSERLPLAQVSAHPWVRANSRRVLPPSALQSVA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019418|Aurora kinase B (AURKB)
+ATGAGCCGCTCCAATGTCCAGCCCACAGCTGCCCCTGGCCAGAAGGTGATGGAGAATAGC
+AGTGGGACACCCGACATCTTAACGCGGCACTTCACAATTGATGACTTTGAGATTGGGCGT
+CCTCTGGGCAAAGGCAAGTTTGGAAACGTGTACTTGGCTCGGGAGAAGAAAAGCCATTTC
+ATCGTGGCGCTCAAGGTCCTCTTCAAGTCCCAGATAGAGAAGGAGGGCGTGGAGCATCAG
+CTGCGCAGAGAGATCGAAATCCAGGCCCACCTGCACCATCCCAACATCCTGCGTCTCTAC
+AACTATTTTTATGACCGGAGGAGGATCTACTTGATTCTAGAGTATGCCCCCCGCGGGGAG
+CTCTACAAGGAGCTGCAGAAGAGCTGCACATTTGACGAGCAGCGAACAGCCACGATCATG
+GAGGAGTTGGCAGATGCTCTAATGTACTGCCATGGGAAGAAGGTGATTCACAGAGACATA
+AAGCCAGAAAATCTGCTCTTAGGGCTCAAGGGAGAGCTGAAGATTGCTGACTTCGGCTGG
+TCTGTGCATGCGCCCTCCCTGAGGAGGAAGACAATGTGTGGCACCCTGGACTACCTGCCC
+CCAGAGATGATTGAGGGGCGCATGCACAATGAGAAGGTGGATCTGTGGTGCATTGGAGTG
+CTTTGCTATGAGCTGCTGGTGGGGAACCCACCCTTTGAGAGTGCATCACACAACGAGACC
+TATCGCCGCATCGTCAAGGTGGACCTAAAGTTCCCCGCTTCCGTGCCCATGGGAGCCCAG
+GACCTCATCTCCAAACTGCTCAGGCATAACCCCTCGGAACGGCTGCCCCTGGCCCAGGTC
+TCAGCCCACCCTTGGGTCCGGGCCAACTCTCGGAGGGTGCTGCCTCCCTCTGCCCTTCAA
+TCTGTCGCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00069</identifier>
+            <name>Pkinase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>chromocenter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chromosome passenger complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed chromosome, centromeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed nuclear chromosome, centromeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intercellular bridge</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>midbody</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle microtubule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle midzone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>spindle pole centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histone serine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine/tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>abscission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anaphase-promoting complex-dependent proteasomal ubiquitin-dependent protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>attachment of spindle microtubules to kinetochore</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to UV</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cleavage furrow formation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histone H3-S28 phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histone modification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic spindle midzone assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic spindle organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of B cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cytokinesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytokinesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of telomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of telomere capping</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of telomere maintenance via telomerase</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein localization to kinetochore</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of chromosome segregation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spindle checkpoint</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spindle stabilization</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

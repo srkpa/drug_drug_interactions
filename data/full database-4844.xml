@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05164</drugbank-id>
+  <name>CMLVAX100</name>
+  <description>CMLVAX100 is a vaccine targeting the BCR-ABL-derived p210 fusion protein which reduces residual disease in some patients with chronic myeloid leukemia. It is developed by Breakthrough Therapeutics and has completed phase I of its clinical trial.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3276</ref-id>
+        <pubmed-id>15721470</pubmed-id>
+        <citation>Bocchia M, Gentili S, Abruzzese E, Fanelli A, Iuliano F, Tabilio A, Amabile M, Forconi F, Gozzetti A, Raspadori D, Amadori S, Lauria F: Effect of a p210 multipeptide vaccine associated with imatinib or interferon in patients with chronic myeloid leukaemia and persistent residual disease: a multicentre observational trial. Lancet. 2005 Feb 19-25;365(9460):657-62.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in leukemia (myeloid).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>CMLVAX100 is a BCR-ABL peptide vaccine designed to reduce persistent disease in patients with chronic myeloid leukemia (CML) whom have had stable disease during conventional therapy. Targeting the BCR-ABL breakpoint with vaccine based medicines is an important approach to those with detectable CML. Breakthrough has optimized the components of VAX100 to enhance its activity.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909992</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003406</id>
+      <name>BCR/ABL p210 fusion protein</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="A1Z199" source="TrEMBL">
+        <name>BCR/ABL p210 fusion protein</name>
+        <general-function/>
+        <specific-function/>
+        <gene-name>BCR/ABL fusion</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.75</theoretical-pi>
+        <molecular-weight>10731.94</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>EF158045</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>A1Z199</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A1Z199_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012386|BCR/ABL p210 fusion protein
+QMLTNSCVKLQTVHSIPLTINKEEALQRPVASDFEPQGLSEAARWNSKENLLAGPSENDP
+NLFVALYDFVASGDNTLSITKGEKLRVLGYNHNGEWC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0006646|293 bp
+CAGATGCTGACCAACTCGTGTGTGAAACTCCAGACTGTCCACAGCATTCCGCTGACCATC
+AATAAGGAAGAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGT
+GAAGCCGCTCGTTGGAACTCCAAGGAAAACCTTCTCGCTGGACCCAGTGAAAATGACCCC
+AACCTTTTCGTTGCACTGTATGATTTTGTGGCCAGTGGAGATAACACTCTAAGCATAACT
+AAAGGTGAAAAGCTCCGGGTCTTAGGCTATAATCACAATGGGGAATGGTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00018</identifier>
+            <name>SH3_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers/>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,3869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03366</drugbank-id>
+  <drugbank-id>EXPT01865</drugbank-id>
+  <name>Imidazole</name>
+  <description/>
+  <cas-number>288-32-4</cas-number>
+  <unii>7GBN705NH1</unii>
+  <average-mass>68.0773</average-mass>
+  <monoisotopic-mass>68.037448138</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as imidazoles. These are compounds containing an imidazole ring, which is an aromatic five-member ring with two nitrogen atoms at positions 1 and 3, and three carbon atoms.</description>
+    <direct-parent>Imidazoles</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Azoles</class>
+    <subclass>Imidazoles</subclass>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imidazole</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Enzyme Inhibitors</category>
+      <mesh-id>D004791</mesh-id>
+    </category>
+    <category>
+      <category>Thromboxane-A Synthase, antagonists &amp; inhibitors</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.21</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.38e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-0.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>1H-imidazole</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>Him</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>68.0773</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>68.037448138</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>N1C=CN=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C3H4N2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>RAXXELZNTBOGNW-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>28.68</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>19.01</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>6.56</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>13.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>6.97</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>90.5 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>Boiling Point</kind>
+      <value>257 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-0.08</value>
+      <source>HANSCH,C ET AL. (1995)</source>
+    </property>
+    <property>
+      <kind>pKa</kind>
+      <value>6.95 (at 25 °C)</value>
+      <source>PERRIN,DD (1965)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>16069</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>795</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507926</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C01589</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>773</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>7882</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>IMD</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Imidazole</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL540</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001301</id>
+      <name>Monomeric sarcosine oxidase</name>
+      <organism>Bacillus sp. (strain B-0618)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P40859" source="Swiss-Prot">
+        <name>Monomeric sarcosine oxidase</name>
+        <general-function>Sarcosine oxidase activity</general-function>
+        <specific-function>Catalyzes the oxidative demethylation of sarcosine. Can also oxidize other secondary amino acids such as N-methyl-L-alanine.</specific-function>
+        <gene-name>soxA</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.28</theoretical-pi>
+        <molecular-weight>43181.395</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="69000">Bacillus sp. (strain B-0618)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D16521</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>984788</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P40859</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MSOX_BACB0</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.5.3.1</synonym>
+          <synonym>MSOX</synonym>
+          <synonym>sox</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016377|Monomeric sarcosine oxidase
+MSTHFDVIVVGAGSMGMAAGYQLAKQGVKTLLVDAFDPPHTNGSHHGDTRIIRHAYGEGR
+EYVPLALRSQELWYELEKETHHKIFTKTGVLVFGPKGESAFVAETMEAAKEHSLTVDLLE
+GDEINKRWPGITVPENYNAIFEPNSGVLFSENCIRAYRELAEARGAKVLTHTRVEDFDIS
+PDSVKIETANGSYTADKLIVSMGAWNSKLLSKLNLDIPLQPYRQVVGFFESDESKYSNDI
+DFPGFMVEVPNGIYYGFPSFGGCGLKLGYHTFGQKIDPDTINREFGVYPEDESNLRAFLE
+EYMPGANGELKRGAVCMYTKTLDEHFIIDLHPEHSNVVIAAGFSGHGFKFSSGVGEVLSQ
+LALTGKTEHDISIFSINRPALKESLQKTTI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0002584|1173 bp
+ATGAGCACACATTTTGATGTCATCGTTGTTGGAGCTGGATCAATGGGAATGGCGGCAGGT
+TATCAATTAGCAAAGCAAGGAGTCAAAACATTATTAGTGGATGCATTTGATCCGCCGCAT
+ACAAACGGAAGCCATCACGGTGATACTCGTATCATCCGCCATGCTTACGGTGAGGGAAGA
+GAATATGTTCCTCTTGCATTAAGATCACAAGAGTTATGGTATGAACTAGAAAAAGAAACA
+CACCATAAAATATTCACGAAAACGGGCGTACTCGTATTTGGTCCTAAAGGTGAATCGGCT
+TTCGTTGCAGAAACGATGGAAGCGGCAAAGGAACATTCATTGACTGTTGATTTACTGGAA
+GGTGATGAAATAAATAAGCGTTGGCCGGGTATAACGGTTCCGGAAAACTACAATGCTATT
+TTCGAACCGAACTCAGGTGTATTATTCAGTGAAAATTGTATTCGTGCCTACCGCGAGTTA
+GCTGAAGCGCGAGGTGCTAAAGTTCTAACACATACACGCGTTGAGGACTTTGACATTTCA
+CCGGACTCAGTCAAAATCGAAACAGCAAATGGATCATACACAGCTGATAAATTAATTGTT
+AGCATGGGAGCTTGGAATAGCAAACTACTTTCAAAACTAAATCTTGACATCCCATTACAG
+CCATATCGTCAAGTGGTAGGTTTCTTTGAATCCGATGAATCAAAGTATAGCAATGATATT
+GATTTCCCAGGATTCATGGTTGAAGTGCCAAATGGTATTTATTACGGATTCCCAAGCTTC
+GGCGGCTGTGGATTGAAACTAGGATATCATACGTTCGGGCAGAAAATTGACCCTGATACA
+ATTAATCGCGAATTTGGCGTTTATCCAGAAGATGAAAGTAATCTTCGCGCTTTCTTGGAA
+GAATATATGCCAGGAGCAAATGGAGAGTTAAAAAGAGGGGCAGTCTGCATGTACACGAAA
+ACATTAGATGAACATTTCATTATAGACTTACATCCTGAACATTCCAACGTAGTCATCGCT
+GCCGGCTTCTCTGGCCATGGATTTAAGTTTTCCAGTGGAGTTGGTGAAGTGCTAAGTCAA
+TTAGCTTTAACTGGTAAAACAGAGCACGATATTTCAATCTTCTCCATTAACCGTCCTGCT
+TTGAAAGAATCGTTACAAAAAACAACTATCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01266</identifier>
+            <name>DAO</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sarcosine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tetrahydrofolate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001229</id>
+      <name>Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase</name>
+      <organism>Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q05603" source="Swiss-Prot">
+        <name>Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase</name>
+        <general-function>Nicotinate-nucleotide-dimethylbenzimidazole phosphoribosyltransferase activity</general-function>
+        <specific-function>Catalyzes the synthesis of alpha-ribazole-5'-phosphate from nicotinate mononucleotide (NAMN) and 5,6-dimethylbenzimidazole (DMB).</specific-function>
+        <gene-name>cobT</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.3</theoretical-pi>
+        <molecular-weight>36612.305</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="99287">Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L35477</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>535767</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q05603</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>COBT_SALTY</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.2.21</synonym>
+          <synonym>N(1)-alpha-phosphoribosyltransferase</synonym>
+          <synonym>NN:DBI PRT</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002447|Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase
+MQTLHALLRDIPAPDAEAMARAQQHIDGLLKPPGSLGRLETLAVQLAGMPGLNGTPQVGE
+KAVLVMCADHGVWDEGVAVSPKIVTAIQAANMTRGTTGVCVLAAQAGAKVHVIDVGIDAE
+PIPGVVNMRVARGCGNIAVGPAMSRLQAEALLLEVSRYTCDLAQRGVTLFGVGELGMANT
+TPAAAMVSVFTGSDAKEVVGIGANLPPSRIDNKVDVVRRAIAINQPNPRDGIDVLSKVGG
+FDLVGMTGVMLGAARCGLPVLLDGFLSYSAALAACQIAPAVRPYLIPSHFSAEKGARIAL
+AHLSMEPYLHMAMRLGEGSGAALAMPIVEAACAMFHNMGELAASNIVLPEGNANAT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016358|Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase (cobT)
+ATGCAGACACTACACGCTTTACTCCGTGACATTCCTGCGCCGGACGCCGAGGCGATGGCG
+CGTGCGCAGCAACATATTGACGGCCTGCTCAAACCGCCGGGCAGCCTGGGCAGACTGGAA
+ACCTTAGCCGTTCAGCTCGCGGGTATGCCGGGTCTTAACGGTACGCCGCAGGTAGGTGAA
+AAGGCGGTGCTGGTGATGTGCGCCGACCATGGCGTCTGGGATGAAGGCGTAGCGGTTTCG
+CCCAAAATCGTGACGGCGATTCAGGCGGCGAATATGACGCGGGGAACAACCGGCGTATGC
+GTGCTTGCCGCTCAGGCCGGTGCGAAGGTGCATGTCATTGATGTCGGTATTGATGCCGAA
+CCTATTCCTGGCGTAGTTAATATGCGCGTCGCGCGCGGCTGCGGAAATATTGCCGTTGGC
+CCGGCGATGAGTCGCTTGCAGGCTGAGGCGCTTTTGCTGGAGGTTTCCCGCTACACCTGC
+GACCTGGCGCAACGCGGCGTGACCTTATTTGGCGTAGGGGAGCTGGGAATGGCGAACACT
+ACGCCAGCCGCCGCGATGGTCAGCGTTTTTACAGGAAGTGATGCAAAAGAGGTGGTGGGG
+ATTGGCGCGAATCTTCCGCCTTCCCGCATCGATAATAAAGTGGACGTCGTGCGGCGGGCG
+ATTGCGATTAATCAGCCCAATCCGCGCGACGGCATTGATGTGTTGTCGAAGGTGGGTGGT
+TTTGATCTGGTCGGGATGACCGGCGTGATGCTTGGCGCGGCAAGGTGTGGCTTACCCGTA
+TTGCTGGATGGCTTTCTTTCCTACTCGGCAGCGCTGGCGGCCTGTCAGATTGCGCCTGCG
+GTGAGACCTTATCTGATCCCGTCGCACTTTTCGGCGGAAAAGGGCGCCCGCATCGCGCTC
+GCGCATTTGTCTATGGAACCCTATTTGCATATGGCGATGCGGTTAGGTGAAGGAAGCGGC
+GCGGCGCTGGCGATGCCGATCGTGGAAGCCGCGTGCGCCATGTTCCACAACATGGGGGAG
+TTGGCGGCCAGTAATATTGTCCTGCCGGAGGGGAACGCAAACGCAACATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02277</identifier>
+            <name>DBI_PRT</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>cobalamin-transporting ATPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nicotinate-nucleotide-dimethylbenzimidazole phosphoribosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cobalamin biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleoside biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004467</id>
+      <name>Myoglobin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P02144" source="Swiss-Prot">
+        <name>Myoglobin</name>
+        <general-function>Oxygen transporter activity</general-function>
+        <specific-function>Serves as a reserve supply of oxygen and facilitates the movement of oxygen within muscles.</specific-function>
+        <gene-name>MB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>17183.725</molecular-weight>
+        <chromosome-location>22</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6915</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02144</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MYG_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013125|Myoglobin
+MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASE
+DLKKHGATVLTALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQVLQSKH
+PGDFGADAQGAMNKALELFRKDMASNYKELGFQG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013126|Myoglobin (MB)
+ATGGGGCTCAGCGACGGGGAATGGCAGTTGGTGCTGAACGTCTGGGGGAAGGTGGAGGCT
+GACATCCCAGGCCATGGGCAGGAAGTCCTCATCAGGCTCTTTAAGGGTCACCCAGAGACT
+CTGGAGAAGTTTGACAAGTTCAAGCACCTGAAGTCAGAGGACGAGATGAAGGCGTCTGAG
+GACTTAAAGAAGCATGGTGCCACCGTGCTCACCGCCCTGGGTGGCATCCTTAAGAAGAAG
+GGGCATCATGAGGCAGAGATTAAGCCCCTGGCACAGTCGCATGCCACCAAGCACAAGATC
+CCCGTGAAGTACCTGGAGTTCATCTCGGAATGCATCATCCAGGTTCTGCAGAGCAAGCAT
+CCCGGGGACTTTGGTGCTGATGCCCAGGGGGCCATGAACAAGGCCCTGGAGCTGTTCCGG
+AAGGACATGGCCTCCAACTACAAGGAGCTGGGCTTCCAGGGCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00042</identifier>
+            <name>Globin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brown fat cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>enucleate erythrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>slow-twitch skeletal muscle fiber contraction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000005</id>
+      <name>Nitric oxide synthase, inducible</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35228" source="Swiss-Prot">
+        <name>Nitric oxide synthase, inducible</name>
+        <general-function>Tetrahydrobiopterin binding</general-function>
+        <specific-function>Produces nitric oxide (NO) which is a messenger molecule with diverse functions throughout the body. In macrophages, NO mediates tumoricidal and bactericidal actions. Also has nitrosylase activity and mediates cysteine S-nitrosylation of cytoplasmic target proteins such COX2. As component of the iNOS-S100A8/9 transnitrosylase complex involved in the selective inflammatory stimulus-dependent S-nitrosylation of GAPDH on 'Cys-247' implicated in regulation of the GAIT complex activity and probably multiple targets including ANXA5, EZR, MSN and VIM.</specific-function>
+        <gene-name>NOS2</gene-name>
+        <locus>17q11.2-q12</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.01</theoretical-pi>
+        <molecular-weight>131116.3</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7873</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>NOS2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L09210</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>292242</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1250</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35228</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NOS2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.13.39</synonym>
+          <synonym>HEP-NOS</synonym>
+          <synonym>Hepatocyte NOS</synonym>
+          <synonym>Inducible NO synthase</synonym>
+          <synonym>Inducible NOS</synonym>
+          <synonym>iNOS</synonym>
+          <synonym>NOS type II</synonym>
+          <synonym>NOS2A</synonym>
+          <synonym>Peptidyl-cysteine S-nitrosylase NOS2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000010|Nitric oxide synthase, inducible
+MACPWKFLFKTKFHQYAMNGEKDINNNVEKAPCATSSPVTQDDLQYHNLSKQQNESPQPL
+VETGKKSPESLVKLDATPLSSPRHVRIKNWGSGMTFQDTLHHKAKGILTCRSKSCLGSIM
+TPKSLTRGPRDKPTPPDELLPQAIEFVNQYYGSFKEAKIEEHLARVEAVTKEIETTGTYQ
+LTGDELIFATKQAWRNAPRCIGRIQWSNLQVFDARSCSTAREMFEHICRHVRYSTNNGNI
+RSAITVFPQRSDGKHDFRVWNAQLIRYAGYQMPDGSIRGDPANVEFTQLCIDLGWKPKYG
+RFDVVPLVLQANGRDPELFEIPPDLVLEVAMEHPKYEWFRELELKWYALPAVANMLLEVG
+GLEFPGCPFNGWYMGTEIGVRDFCDVQRYNILEEVGRRMGLETHKLASLWKDQAVVEINI
+AVLHSFQKQNVTIMDHHSAAESFMKYMQNEYRSRGGCPADWIWLVPPMSGSITPVFHQEM
+LNYVLSPFYYYQVEAWKTHVWQDEKRRPKRREIPLKVLVKAVLFACMLMRKTMASRVRVT
+ILFATETGKSEALAWDLGALFSCAFNPKVVCMDKYRLSCLEEERLLLVVTSTFGNGDCPG
+NGEKLKKSLFMLKELNNKFRYAVFGLGSSMYPRFCAFAHDIDQKLSHLGASQLTPMGEGD
+ELSGQEDAFRSWAVQTFKAACETFDVRGKQHIQIPKLYTSNVTWDPHHYRLVQDSQPLDL
+SKALSSMHAKNVFTMRLKSRQNLQSPTSSRATILVELSCEDGQGLNYLPGEHLGVCPGNQ
+PALVQGILERVVDGPTPHQTVRLEALDESGSYWVSDKRLPPCSLSQALTYFLDITTPPTQ
+LLLQKLAQVATEEPERQRLEALCQPSEYSKWKFTNSPTFLEVLEEFPSLRVSAGFLLSQL
+PILKPRFYSISSSRDHTPTEIHLTVAVVTYHTRDGQGPLHHGVCSTWLNSLKPQDPVPCF
+VRNASGFHLPEDPSHPCILIGPGTGIAPFRSFWQQRLHDSQHKGVRGGRMTLVFGCRRPD
+EDHIYQEEMLEMAQKGVLHAVHTAYSRLPGKPKVYVQDILRQQLASEVLRVLHKEPGHLY
+VCGDVRMARDVAHTLKQLVAAKLKLNEEQVEDYFFQLKSQKRYHEDIFGAVFPYEAKKDR
+VAVQPSSLEMSAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020444|Nitric oxide synthase, inducible (NOS2)
+ATGGCCTGTCCTTGGAAATTTCTGTTCAAGACCAAATTCCACCAGTATGCAATGAATGGG
+GAAAAAGACATCAACAACAATGTGGAGAAAGCCCCCTGTGCCACCTCCAGTCCAGTGACA
+CAGGATGACCTTCAGTATCACAACCTCAGCAAGCAGCAGAATGAGTCCCCGCAGCCCCTC
+GTGGAGACGGGAAAGAAGTCTCCAGAATCTCTGGTCAAGCTGGATGCAACCCCATTGTCC
+TCCCCACGGCATGTGAGGATCAAAAACTGGGGCAGCGGGATGACTTTCCAAGACACACTT
+CACCATAAGGCCAAAGGGATTTTAACTTGCAGGTCCAAATCTTGCCTGGGGTCCATTATG
+ACTCCCAAAAGTTTGACCAGAGGACCCAGGGACAAGCCTACCCCTCCAGATGAGCTTCTA
+CCTCAAGCTATCGAATTTGTCAACCAATATTACGGCTCCTTCAAAGAGGCAAAAATAGAG
+GAACATCTGGCCAGGGTGGAAGCGGTAACAAAGGAGATAGAAACAACAGGAACCTACCAA
+CTGACGGGAGATGAGCTCATCTTCGCCACCAAGCAGGCCTGGCGCAATGCCCCACGCTGC
+ATTGGGAGGATCCAGTGGTCCAACCTGCAGGTCTTCGATGCCCGCAGCTGTTCCACTGCC
+CGGGAAATGTTTGAACACATCTGCAGACACGTGCGTTACTCCACCAACAATGGCAACATC
+AGGTCGGCCATCACCGTGTTCCCCCAGCGGAGTGATGGCAAGCACGACTTCCGGGTGTGG
+AATGCTCAGCTCATCCGCTATGCTGGCTACCAGATGCCAGATGGCAGCATCAGAGGGGAC
+CCTGCCAACGTGGAATTCACTCAGCTGTGCATCGACCTGGGCTGGAAGCCCAAGTACGGC
+CGCTTCGATGTGGTCCCCCTGGTCCTGCAGGCCAATGGCCGTGACCCTGAGCTCTTCGAA
+ATCCCACCTGACCTTGTGCTTGAGGTGGCCATGGAACATCCCAAATACGAGTGGTTTCGG
+GAACTGGAGCTAAAGTGGTACGCCCTGCCTGCAGTGGCCAACATGCTGCTTGAGGTGGGC
+GGCCTGGAGTTCCCAGGGTGCCCCTTCAATGGCTGGTACATGGGCACAGAGATCGGAGTC
+CGGGACTTCTGTGACGTCCAGCGCTACAACATCCTGGAGGAAGTGGGCAGGAGAATGGGC
+CTGGAAACGCACAAGCTGGCCTCGCTCTGGAAAGACCAGGCTGTCGTTGAGATCAACATT
+GCTGTGCTCCATAGTTTCCAGAAGCAGAATGTGACCATCATGGACCACCACTCGGCTGCA
+GAATCCTTCATGAAGTACATGCAGAATGAATACCGGTCCCGTGGGGGCTGCCCGGCAGAC
+TGGATTTGGCTGGTCCCTCCCATGTCTGGGAGCATCACCCCCGTGTTTCACCAGGAGATG
+CTGAACTACGTCCTGTCCCCTTTCTACTACTATCAGGTAGAGGCCTGGAAAACCCATGTC
+TGGCAGGACGAGAAGCGGAGACCCAAGAGAAGAGAGATTCCATTGAAAGTCTTGGTCAAA
+GCTGTGCTCTTTGCCTGTATGCTGATGCGCAAGACAATGGCGTCCCGAGTCAGAGTCACC
+ATCCTCTTTGCGACAGAGACAGGAAAATCAGAGGCGCTGGCCTGGGACCTGGGGGCCTTA
+TTCAGCTGTGCCTTCAACCCCAAGGTTGTCTGCATGGATAAGTACAGGCTGAGCTGCCTG
+GAGGAGGAACGGCTGCTGTTGGTGGTGACCAGTACGTTTGGCAATGGAGACTGCCCTGGC
+AATGGAGAGAAACTGAAGAAATCGCTCTTCATGCTGAAAGAGCTCAACAACAAATTCAGG
+TACGCTGTGTTTGGCCTCGGCTCCAGCATGTACCCTCGGTTCTGCGCCTTTGCTCATGAC
+ATTGATCAGAAGCTGTCCCACCTGGGGGCCTCTCAGCTCACCCCGATGGGAGAAGGGGAT
+GAGCTCAGTGGGCAGGAGGACGCCTTCCGCAGCTGGGCCGTGCAAACCTTCAAGGCAGCC
+TGTGAGACGTTTGATGTCCGAGGCAAACAGCACATTCAGATCCCCAAGCTCTACACCTCC
+AATGTGACCTGGGACCCGCACCACTACAGGCTCGTGCAGGACTCACAGCCTTTGGACCTC
+AGCAAAGCCCTCAGCAGCATGCATGCCAAGAACGTGTTCACCATGAGGCTCAAATCTCGG
+CAGAATCTACAAAGTCCGACATCCAGCCGTGCCACCATCCTGGTGGAACTCTCCTGTGAG
+GATGGCCAAGGCCTGAACTACCTGCCGGGGGAGCACCTTGGGGTTTGCCCAGGCAACCAG
+CCGGCCCTGGTCCAAGGTATCCTGGAGCGAGTGGTGGATGGCCCCACACCCCACCAGACA
+GTGCGCCTGGAGGCCCTGGATGAGAGTGGCAGCTACTGGGTCAGTGACAAGAGGCTGCCC
+CCCTGCTCACTCAGCCAGGCCCTCACCTACTTCCTGGACATCACCACACCCCCAACCCAG
+CTGCTGCTCCAAAAGCTGGCCCAGGTGGCCACAGAAGAGCCTGAGAGACAGAGGCTGGAG
+GCCCTGTGCCAGCCCTCAGAGTACAGCAAGTGGAAGTTCACCAACAGCCCCACATTCCTG
+GAGGTGCTAGAGGAGTTCCCGTCCCTGCGGGTGTCTGCTGGCTTCCTGCTTTCCCAGCTC
+CCCATTCTGAAGCCCAGGTTCTACTCCATCAGCTCCTCCCGGGATCACACGCCCACAGAG
+ATCCACCTGACTGTGGCCGTGGTCACCTACCACACCCGAGATGGCCAGGGTCCCCTGCAC
+CACGGCGTCTGCAGCACATGGCTCAACAGCCTGAAGCCCCAAGACCCAGTGCCCTGCTTT
+GTGCGGAATGCCAGCGGCTTCCACCTCCCCGAGGATCCCTCCCATCCTTGCATCCTCATC
+GGGCCTGGCACAGGCATCGCGCCCTTCCGCAGTTTCTGGCAGCAACGGCTCCATGACTCC
+CAGCACAAGGGAGTGCGGGGAGGCCGCATGACCTTGGTGTTTGGGTGCCGCCGCCCAGAT
+GAGGACCACATCTACCAGGAGGAGATGCTGGAGATGGCCCAGAAGGGGGTGCTGCATGCG
+GTGCACACAGCCTATTCCCGCCTGCCTGGCAAGCCCAAGGTCTATGTTCAGGACATCCTG
+CGGCAGCAGCTGGCCAGCGAGGTGCTCCGTGTGCTCCACAAGGAGCCAGGCCACCTCTAT
+GTTTGCGGGGATGTGCGCATGGCCCGGGACGTGGCCCACACCCTGAAGCAGCTGGTGGCT
+GCCAAGCTGAAATTGAATGAGGAGCAGGTCGAGGACTATTTCTTTCAGCTCAAGAGCCAG
+AAGCGCTATCACGAAGATATCTTTGGTGCTGTATTTCCTTACGAGGCGAAGAAGGACAGG
+GTGGCGGTGCAGCCCAGCAGCCTGGAGATGTCAGCGCTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00667</identifier>
+            <name>FAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00258</identifier>
+            <name>Flavodoxin_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00175</identifier>
+            <name>NAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02898</identifier>
+            <name>NO_synthase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cortical cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>peroxisome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>arginine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>FMN binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADPH-hemoprotein reductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tetrahydrobiopterin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arginine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interferon-gamma</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response in mucosa</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-cysteine S-nitrosylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phagosome maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of guanylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of killing of cells of other organism</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of leukocyte mediated cytotoxicity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasodilation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cellular respiration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>superoxide metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004477</id>
+      <name>Adenylate kinase 2, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P54819" source="Swiss-Prot">
+        <name>Adenylate kinase 2, mitochondrial</name>
+        <general-function>Atp binding</general-function>
+        <specific-function>Catalyzes the reversible transfer of the terminal phosphate group between ATP and AMP. Plays an important role in cellular energy homeostasis and in adenine nucleotide metabolism. Adenylate kinase activity is critical for regulation of the phosphate utilization and the AMP de novo biosynthesis pathways. Plays a key role in hematopoiesis.</specific-function>
+        <gene-name>AK2</gene-name>
+        <locus/>
+        <cellular-location>Mitochondrion intermembrane space</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>26477.44</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:362</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P54819</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>KAD2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.4.3</synonym>
+          <synonym>Adenylate monophosphate kinase</synonym>
+          <synonym>ADK2</synonym>
+          <synonym>AK 2</synonym>
+          <synonym>ATP-AMP transphosphorylase 2</synonym>
+          <synonym>ATP:AMP phosphotransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009398|Adenylate kinase 2, mitochondrial
+MAPSVPAAEPEYPKGIRAVLLGPPGAGKGTQAPRLAENFCVCHLATGDMLRAMVASGSEL
+GKKLKATMDAGKLVSDEMVVELIEKNLETPLCKNGFLLDGFPRTVRQAEMLDDLMEKRKE
+KLDSVIEFSIPDSLLIRRITGRLIHPKSGRSYHEEFNPPKEPMKDDITGEPLIRRSDDNE
+KALKIRLQAYHTQTTPLIEYYRKRGIHSAIDASQTPDVVFASILAAFSKATCKDLVMFI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017449|Adenylate kinase 2, mitochondrial (AK2)
+ATGGCTCCCAGCGTGCCAGCGGCAGAACCCGAGTATCCTAAAGGCATCCGGGCCGTGCTG
+CTGGGGCCTCCCGGGGCCGGTAAAGGGACCCAGGCACCCAGATTGGCTGAAAACTTCTGT
+GTCTGCCATTTAGCTACTGGGGACATGCTGAGGGCCATGGTGGCTTCTGGCTCAGAGCTA
+GGAAAAAAGCTGAAGGCAACTATGGATGCTGGGAAACTGGTGAGTGATGAAATGGTAGTG
+GAGCTCATTGAGAAGAATTTGGAGACCCCCTTGTGCAAAAATGGTTTTCTTCTGGATGGC
+TTCCCTCGGACTGTGAGGCAGGCAGAAATGCTCGATGACCTCATGGAGAAGAGGAAAGAG
+AAGCTTGATTCTGTGATTGAATTCAGCATCCCAGACTCTCTGCTGATTCACCCCAAGAGT
+GGCCGTTCCTACCACGAGGAGTTCAACCCTCCAAAAGAGCCCATGAAAGATGACATCACC
+GGGGAACCCTTGATCCGTCGATCAGATGATAATGAAAAGGCCTTGAAAATCCGCCTGCAA
+GCCTACCACACTCAAACCACCCCACTCATAGAGTACTACAGGAAACGGGGGATCCACTCC
+GCCATCGATGCATCCCAGACCCCCGATGTCGTGTTCGCAAGCATCCTAGCAGCCTTCTCC
+AAAGCCACATCCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05191</identifier>
+            <name>ADK_lid</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial intermembrane space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sperm mitochondrial sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>adenylate kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ADP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>AMP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ATP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule interconversion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001277</id>
+      <name>Serine/threonine-protein kinase pim-1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11309" source="Swiss-Prot">
+        <name>Serine/threonine-protein kinase pim-1</name>
+        <general-function>Transcription factor binding</general-function>
+        <specific-function>Proto-oncogene with serine/threonine kinase activity involved in cell survival and cell proliferation and thus providing a selective advantage in tumorigenesis. Exerts its oncogenic activity through: the regulation of MYC transcriptional activity, the regulation of cell cycle progression and by phosphorylation and inhibition of proapoptotic proteins (BAD, MAP3K5, FOXO3). Phosphorylation of MYC leads to an increase of MYC protein stability and thereby an increase of transcriptional activity. The stabilization of MYC exerted by PIM1 might explain partly the strong synergism between these two oncogenes in tumorigenesis. Mediates survival signaling through phosphorylation of BAD, which induces release of the anti-apoptotic protein Bcl-X(L)/BCL2L1. Phosphorylation of MAP3K5, an other proapoptotic protein, by PIM1, significantly decreases MAP3K5 kinase activity and inhibits MAP3K5-mediated phosphorylation of JNK and JNK/p38MAPK subsequently reducing caspase-3 activation and cell apoptosis. Stimulates cell cycle progression at the G1-S and G2-M transitions by phosphorylation of CDC25A and CDC25C. Phosphorylation of CDKN1A, a regulator of cell cycle progression at G1, results in the relocation of CDKN1A to the cytoplasm and enhanced CDKN1A protein stability. Promote cell cycle progression and tumorigenesis by down-regulating expression of a regulator of cell cycle progression, CDKN1B, at both transcriptional and post-translational levels. Phosphorylation of CDKN1B,induces 14-3-3-proteins binding, nuclear export and proteasome-dependent degradation. May affect the structure or silencing of chromatin by phosphorylating HP1 gamma/CBX3. Acts also as a regulator of homing and migration of bone marrow cells involving functional interaction with the CXCL12-CXCR4 signaling axis.</specific-function>
+        <gene-name>PIM1</gene-name>
+        <locus>6p21.2</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.01</theoretical-pi>
+        <molecular-weight>45411.905</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8986</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PIM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M27903</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>387022</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2158</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11309</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PIM1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.11.1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002541|Serine/threonine-protein kinase pim-1
+MPHEPHEPLTPPFSALPDPAGAPSRRQSRQRPQLSSDSPSAFRASRSHSRNATRSHSHSH
+SPRHSLRHSPGSGSCGSSSGHRPCADILEVGMLLSKINSLAHLRAAPCNDLHATKLAPGK
+EKEPLESQYQVGPLLGSGGFGSVYSGIRVSDNLPVAIKHVEKDRISDWGELPNGTRVPME
+VVLLKKVSSGFSGVIRLLDWFERPDSFVLILERPEPVQDLFDFITERGALQEELARSFFW
+QVLEAVRHCHNCGVLHRDIKDENILIDLNRGELKLIDFGSGALLKDTVYTDFDGTRVYSP
+PEWIRYHRYHGRSAAVWSLGILLYDMVCGDIPFEHDEEIIRGQVFFRQRVSSECQHLIRW
+CLALRPSDRPTFEEIQNHPWMQDVLLPQETAEIHLHSLSPGPSK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010889|Serine/threonine-protein kinase pim-1 (PIM1)
+CTGCCGCACGAGCCCCACGAGCCGCTCACCCCGCCGTTCTCAGCGCTGCCCGACCCCGCT
+GGCGCGCCCTCCCGCCGCCAGTCCCGGCAGCGCCCTCAGTTGTCCTCCGACTCGCCCTCG
+GCCTTCCGCGCCAGCCGCAGCCACAGCCGCAACGCCACCCGCAGCCACAGCCACAGCCAC
+AGCCCCAGGCATAGCCTTCGGCACAGCCCCGGCTCCGGCTCCTGCGGCAGCTCCTCTGGG
+CACCGTCCCTGCGCCGACATCCTGGAGGTTGGGATGCTCTTGTCCAAAATCAACTCGCTT
+GCCCACCTGCGCGCCGCGCCCTGCAACGACCTGCACGCCACCAAGCTGGCGCCCGGCAAG
+GAGAAGGAGCCCCTGGAGTCGCAGTACCAGGTGGGCCCGCTACTGGGCAGCGGCGGCTTC
+GGCTCGGTCTACTCAGGCATCCGCGTCTCCGACAACTTGCCGGTGGCCATCAAACACGTG
+GAGAAGGACCGGATTTCCGACTGGGGAGAGCTGCCTAATGGCACTCGAGTGCCCATGGAA
+GTGGTCCTGCTGAAGAAGGTGAGCTCGGGTTTCTCCGGCGTCATTAGGCTCCTGGACTGG
+TTCGAGAGGCCCGACAGTTTCGTCCTGATCCTGGAGAGGCCCGAGCCGGTGCAAGATCTC
+TTCGACTTCATCACGGAAAGGGGAGCCCTGCAAGAGGAGCTGGCCCGCAGCTTCTTCTGG
+CAGGTGCTGGAGGCCGTGCGGCACTGCCACAACTGCGGGGTGCTCCACCGCGACATCAAG
+GACGAAAACATCCTTATCGACCTCAATCGCGGCGAGCTCAAGCTCATCGACTTCGGGTCG
+GGGGCGCTGCTCAAGGACACCGTCTACACGGACTTCGATGGGACCCGAGTGTATAGCCCT
+CCAGAGTGGATCCGCTACCATCGCTACCATGGCAGGTCGGCGGCAGTCTGGTCCCTGGGG
+ATCCTGCTGTATGATATGGTGTGTGGAGATATTCCTTTCGAGCATGACGAAGAGATCATC
+AGGGGCCAGGTTTTCTTCAGGCAGAGGGTCTCTTCAGAATGTCAGCATCTCATTAGATGG
+TGCTTGGCCCTGAGACCATCAGATAGGCCAACCTTCGAAGAAATCCAGAACCATCCATGG
+ATGCAAGATGTTCTCCTGCCCCAGGAAACTGCTGAGATCCACCTCCACAGCCTGTCGCCG
+GGGCCCAGCAAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00069</identifier>
+            <name>Pkinase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>manganese ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ribosomal small subunit binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hyaluronan metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cyclin-dependent protein serine/threonine kinase activity involved in G1/S transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001417</id>
+      <name>Isopentenyl-diphosphate Delta-isomerase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q46822" source="Swiss-Prot">
+        <name>Isopentenyl-diphosphate Delta-isomerase</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Catalyzes the 1,3-allylic rearrangement of the homoallylic substrate isopentenyl (IPP) to its highly electrophilic allylic isomer, dimethylallyl diphosphate (DMAPP).</specific-function>
+        <gene-name>idi</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.35</theoretical-pi>
+        <molecular-weight>20508.085</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF119715</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>4633513</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q46822</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IDI_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.3.3.2</synonym>
+          <synonym>IPP isomerase</synonym>
+          <synonym>IPP:DMAPP isomerase</synonym>
+          <synonym>Isopentenyl pyrophosphate isomerase</synonym>
+          <synonym>ygfV</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0020531|Isopentenyl-diphosphate Delta-isomerase
+MQTEHVILLNAQGVPTGTLEKYAAHTADTRLHLAFSSWLFNAKGQLLVTRRALSKKAWPG
+VWTNSVCGHPQLGESNEDAVIRRCRYELGVEITPPESIYPDFRYRATDPSGIVENEVCPV
+FAARTTSALQINDDEVMDYQWCDLADVLHGIDATPWAFSPWMVMQATNREARKRLSAFTQ
+LK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020532|Isopentenyl-diphosphate Delta-isomerase (idi)
+ATGCAAACGGAACACGTCATTTTATTGAATGCACAGGGAGTTCCCACGGGTACGCTGGAA
+AAGTATGCCGCACACACGGCAGACACCCGCTTACATCTCGCGTTCTCCAGTTGGCTGTTT
+AATGCCAAAGGACAATTATTAGTTACCCGCCGCGCACTGAGCAAAAAAGCATGGCCTGGC
+GTGTGGACTAACTCGGTTTGTGGGCACCCACAACTGGGAGAAAGCAACGAAGACGCAGTG
+ATCCGCCGTTGCCGTTATGAGCTTGGCGTGGAAATTACGCCTCCTGAATCTATCTATCCT
+GACTTTCGCTACCGCGCCACCGATCCGAGTGGCATTGTGGAAAATGAAGTGTGTCCGGTA
+TTTGCCGCACGCACCACTAGTGCGTTACAGATCAATGATGATGAAGTGATGGATTATCAA
+TGGTGTGATTTAGCAGATGTATTACACGGTATTGATGCCACGCCGTGGGCGTTCAGTCCG
+TGGATGGTGATGCAGGCGACAAATCGCGAAGCCAGAAAACGATTATCTGCATTTACCCAG
+CTTAAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00293</identifier>
+            <name>NUDIX</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>isopentenyl-diphosphate delta-isomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to DNA damage stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dimethylallyl diphosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>isoprenoid biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001334</id>
+      <name>Alpha,alpha-trehalose-phosphate synthase [UDP-forming]</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P31677" source="Swiss-Prot">
+        <name>Alpha,alpha-trehalose-phosphate synthase [UDP-forming]</name>
+        <general-function>Alpha,alpha-trehalose-phosphate synthase (udp-forming) activity</general-function>
+        <specific-function>Catalyzes the transfer of glucose from UDP-glucose to glucose-6-phosphate to form alpha,alpha-1,1 trehalose-6-phosphate. Acts with retention of the anomeric configuration of the UDP-sugar donor. Essential for viability of the cells at low temperatures and at elevated osmotic strength.</specific-function>
+        <gene-name>otsA</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.85</theoretical-pi>
+        <molecular-weight>53610.655</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X69160</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>577561</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P31677</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OTSA_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.15</synonym>
+          <synonym>Osmoregulatory trehalose synthesis protein A</synonym>
+          <synonym>Trehalose-6-phosphate synthase</synonym>
+          <synonym>UDP-glucose-glucosephosphate glucosyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016390|Alpha,alpha-trehalose-phosphate synthase [UDP-forming]
+MSRLVVVSNRIAPPDEHAASAGGLAVGILGALKAAGGLWFGWSGETGNEDQPLKKVKKGN
+ITWASFNLSEQDLDEYYNQFSNAVLWPAFHYRLDLVQFQRPAWDGYLRVNALLADKLLPL
+LQDDDIIWIHDYHLLPFAHELRKRGVNNRIGFFLHIPFPTPEIFNALPTYDTLLEQLCDY
+DLLGFQTENDRLAFLDCLSNLTRVTTRSAKSHTAWGKAFRTEVYPIGIEPKEIAKQAAGP
+LPPKLAQLKAELKNVQNIFSVERLDYSKGLPERFLAYEALLEKYPQHHGKIRYTQIAPTS
+RGDVQAYQDIRHQLENEAGRINGKYGQLGWTPLYYLNQHFDRKLLMKIFRYSDVGLVTPL
+RDGMNLVAKEYVAAQDPANPGVLVLSQFAGAANELTSALIVNPYDRDEVAAALDRALTMS
+LAERISRHAEMLDVIVKNDINHWQECFISDLKQIVPRSAESQQRDKVATFPKLA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016391|Alpha,alpha-trehalose-phosphate synthase [UDP-forming] (otsA)
+ATGAGTCGTTTAGTCGTAGTATCTAACCGGATTGCACCACCAGACGAGCACGCCGCCAGT
+GCCGGTGGCCTTGCCGTTGGCATACTGGGGGCACTGAAAGCCGCAGGCGGACTGTGGTTT
+GGCTGGAGTGGTGAAACAGGGAATGAGGATCAGCCGCTAAAAAAGGTGAAAAAAGGTAAC
+ATTACGTGGGCCTCTTTTAACCTCAGCGAACAGGACCTTGACGAATACTACAACCAATTC
+TCCAATGCCGTTCTCTGGCCCGCTTTTCATTATCGGCTCGATCTGGTGCAATTTCAGCGT
+CCTGCCTGGGACGGCTATCTACGCGTAAATGCGTTGCTGGCAGATAAATTACTGCCGCTG
+TTGCAAGACGATGACATTATCTGGATCCACGATTATCACCTGTTGCCATTTGCGCATGAA
+TTACGCAAACGGGGAGTGAATAATCGCATTGGTTTCTTTCTGCATATTCCTTTCCCGACA
+CCGGAAATCTTCAACGCGCTGCCGACATATGACACCTTGCTTGAACAGCTTTGTGATTAT
+GATTTGCTGGGTTTCCAGACAGAAAACGATCGTCTGGCGTTCCTGGATTGTCTTTCTAAC
+CTGACCCGCGTCACGACACGTAGCGCAAAAAGCCATACAGCCTGGGGCAAAGCATTTCGA
+ACAGAAGTCTACCCGATCGGCATTGAACCGAAAGAAATAGCCAAACAGGCTGCCGGGCCA
+CTGCCGCCAAAACTGGCGCAACTTAAAGCGGAACTGAAAAACGTACAAAATATCTTTTCT
+GTCGAACGGCTGGATTATTCCAAAGGTTTGCCAGAGCGTTTTCTCGCCTATGAAGCGTTG
+CTGGAAAAATATCCGCAGCATCATGGTAAAATTCGTTATACCCAGATTGCACCAACGTCG
+CGTGGTGATGTGCAAGCCTATCAGGATATTCGTCATCAGCTCGAAAATGAAGCTGGACGA
+ATTAATGGTAAATACGGGCAATTAGGCTGGACGCCGCTTTATTATTTGAATCAGCATTTT
+GACCGTAAATTACTGATGAAAATATTCCGCTACTCTGACGTGGGCTTAGTGACGCCACTG
+CGTGACGGGATGAACCTGGTAGCAAAAGAGTATGTTGCTGCTCAGGACCCAGCCAATCCG
+GGCGTTCTTGTTCTTTCGCAATTTGCGGGAGCGGCAAACGAGTTAACGTCGGCGTTAATT
+GTTAACCCCTACGATCGTGACGAAGTTGCAGCTGCGCTGGATCGTGCATTGACTATGTCG
+CTGGCGGAACGTATTTCCCGTCATGCAGAAATGCTGGACGTTATCGTGAAAAACGATATT
+AACCACTGGCAGGAGTGCTTCATTAGCGACCTAAAGCAGATAGTTCCGCGAAGCGCGGAA
+AGCCAGCAGCGCGATAAAGTTGCTACCTTTCCAAAGCTTGCGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00982</identifier>
+            <name>Glyco_transf_20</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha,alpha-trehalose-phosphate synthase (UDP-forming) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to DNA damage stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to osmotic stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>trehalose biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>trehalose metabolism in response to cold stress</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002755</id>
+      <name>A/G-specific adenine glycosylase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P17802" source="Swiss-Prot">
+        <name>Adenine DNA glycosylase</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Adenine glycosylase active on G-A mispairs. MutY also corrects error-prone DNA synthesis past GO lesions which are due to the oxidatively damaged form of guanine: 7,8-dihydro-8-oxoguanine (8-oxo-dGTP).</specific-function>
+        <gene-name>mutY</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.46</theoretical-pi>
+        <molecular-weight>39148.835</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X52391</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P17802</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MUTY_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.2.2.-</synonym>
+          <synonym>A/G-specific adenine glycosylase</synonym>
+          <synonym>micA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011939|Adenine DNA glycosylase
+MQASQFSAQVLDWYDKYGRKTLPWQIDKTPYKVWLSEVMLQQTQVATVIPYFERFMARFP
+TVTDLANAPLDEVLHLWTGLGYYARARNLHKAAQQVATLHGGKFPETFEEVAALPGVGRS
+TAGAILSLSLGKHFPILDGNVKRVLARCYAVSGWPGKKEVENKLWSLSEQVTPAVGVERF
+NQAMMDLGAMICTRSKPKCSLCPLQNGCIAAANNSWALYPGKKPKQTLPERTGYFLLLQH
+EDEVLLAQRPPSGLWGGLYCFPQFADEESLRQWLAQRQIAADNLTQLTAFRHTFSHFHLD
+IVPMWLPVSSFTGCMDEGNALWYNLAQPPSVGLAAPVERLLQQLRTGAPV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011940|Adenine DNA glycosylase (mutY)
+ATGCAAGCGTCGCAATTTTCAGCCCAGGTTCTGGACTGGTACGATAAATACGGGCGAAAA
+ACTCTGCCCTGGCAAATTGACAAGACGCCCTACAAAGTATGGCTCTCAGAAGTGATGTTG
+CAACAAACTCAGGTTGCGACCGTTATCCCCTATTTTGAACGCTTTATGGCGCGCTTCCCG
+ACGGTGACCGATCTCGCCAATGCGCCGCTCGACGAAGTTCTCCACTTGTGGACCGGGCTT
+GGCTATTACGCCCGCGCGCGCAATCTGCATAAAGCGGCACAACAAGTGGCGACCTTACAC
+GGCGGTAAATTCCCGGAAACCTTTGAGGAAGTTGCAGCACTGCCGGGCGTCGGGCGTTCC
+ACCGCAGGCGCGATTCTCTCGCTTTCTCTGGGTAAGCACTTTCCGATTCTCGACGGTAAC
+GTCAAACGCGTGCTGGCGCGCTGCTATGCTGTAAGCGGCTGGCCTGGGAAAAAAGAGGTC
+GAGAATAAATTATGGAGTTTGAGCGAGCAGGTGACGCCCGCGGTTGGCGTGGAACGGTTT
+AATCAGGCGATGATGGATTTGGGTGCGATGATTTGTACGCGCTCGAAACCGAAATGTTCG
+CTCTGTCCGCTACAAAACGGATGTATTGCCGCCGCCAACAATAGCTGGGCGCTTTATCCG
+GGCAAAAAACCGAAACAGACGCTGCCGGAGCGCACCGGCTACTTTTTGCTATTACAGCAC
+GAAGATGAAGTATTGCTGGCGCAGCGTCCGCCGAGCGGATTGTGGGGCGGTTTATACTGT
+TTCCCGCAGTTTGCCGACGAAGAAAGTTTGCGGCAGTGGCTGGCGCAACGGCAGATTGCT
+GCCGATAACCTGACGCAACTGACCGCGTTTCGGCATACCTTCAGCCATTTCCACTTAGAT
+ATTGTGCCTATGTGGCTTCCCGTGTCGTCATTCACCGGCTGCATGGATGAAGGCAATGCG
+CTCTGGTATAACTTAGCGCAACCGCCGTCAGTTGGCCTAGCGGCTCCCGTGGAGCGTTTG
+TTACAGCAGTTACGCACTGGCGCGCCGGTTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00633</identifier>
+            <name>HHH</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00730</identifier>
+            <name>HhH-GPD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10576</identifier>
+            <name>EndIII_4Fe-2S</name>
+          </pfam>
+          <pfam>
+            <identifier>PF14815</identifier>
+            <name>NUDIX_4</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>4 iron, 4 sulfur cluster binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA N-glycosylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>base-excision repair</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003060</id>
+      <name>YopE regulator</name>
+      <organism>Yersinia pestis</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P31491" source="Swiss-Prot">
+        <name>YopE regulator</name>
+        <general-function/>
+        <specific-function>Positive regulator of YopE.</specific-function>
+        <gene-name>yerA</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.34</theoretical-pi>
+        <molecular-weight>14649.515</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="632">Yersinia pestis</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M34279</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P31491</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>YERA_YERPE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016980|YopE regulator
+MYSFEQAITQLFQQLSLSIPDTIEPVIGVKVGEFACHITEHPVGQILMFTLPSLDNNDEK
+ETLLSHNIFSQDILKPILSWDEVGGHPVLWNRQPLNSLDNNSLYTQLEMLVQGAERLQTS
+SLISPPRSFS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016981|YopE regulator (yerA)
+ATGTATTCATTTGAACAAGCTATCACTCAATTATTTCAACAACTTTCGTTGTCTATTCCA
+GATACTATTGAACCGGTTATCGGTGTCAAAGTTGGGGAATTCGCCTGCCATATAACAGAG
+CATCCTGTCGGGCAAATATTAATGTTTACCCTACCTTCTCTTGACAATAATGATGAAAAG
+GAAACCTTACTTAGCCATAATATATTCAGTCAAGATATATTAAAACCCATCTTATCCTGG
+GACGAGGTTGGGGGGCACCCAGTGTTATGGAATCGACAACCATTGAACAGCCTGGATAAT
+AACTCACTATATACTCAGCTTGAGATGCTGGTGCAGGGGGCTGAACGGCTACAAACCTCA
+TCACTAATCTCACCACCACGGTCATTTAGTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05932</identifier>
+            <name>CesT</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pathogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription, DNA-templated</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004532</id>
+      <name>Unconventional myosin-Ie</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q12965" source="Swiss-Prot">
+        <name>Unconventional myosin-Ie</name>
+        <general-function>Phosphatidylinositol binding</general-function>
+        <specific-function>Myosins are actin-based motor molecules with ATPase activity. Unconventional myosins serve in intracellular movements. Their highly divergent tails bind to membranous compartments, which are then moved relative to actin filaments. Binds to membranes containing anionic phospholipids via its tail domain. Required for normal morphology of the glomerular basement membrane, normal development of foot processes by kidney podocytes and normal kidney function. In dendritic cells, may control the movement of class II-containing cytoplasmic vesicles along the actin cytoskeleton by connecting them with the actin network via ARL14EP and ARL14.</specific-function>
+        <gene-name>MYO1E</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>127061.075</molecular-weight>
+        <chromosome-location>15</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7599</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q12965</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MYO1E_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>MYO1C</synonym>
+          <synonym>Myosin-Ic</synonym>
+          <synonym>Unconventional myosin 1E</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013168|Unconventional myosin-Ie
+MGSKGVYQYHWQSHNVKHSGVDDMVLLSKITENSIVENLKKRYMDDYIFTYIGSVLISVN
+PFKQMPYFGEKEIEMYQGAAQYENPPHIYALADNMYRNMIIDRENQCVIISGESGAGKTV
+AAKYIMSYISRVSGGGTKVQHVKDIILQSNPLLEAFGNAKTVRNNNSSRFGKYFEIQFSP
+GGEPDGGKISNFLLEKSRVVMRNPGERSFHIFYQLIEGASAEQKHSLGITSMDYYYYLSL
+SGSYKVDDIDDRREFQETLHAMNVIGIFAEEQTLVLQIVAGILHLGNISFKEVGNYAAVE
+SEEFLAFPAYLLGINQDRLKEKLTSRQMDSKWGGKSESIHVTLNVEQACYTRDALAKALH
+ARVFDFLVDSINKAMEKDHEEYNIGVLDIYGFEIFQKNGFEQFCINFVNEKLQQIFIELT
+LKAEQEEYVQEGIRWTPIEYFNNKIVCDLIENKVNPPGIMSILDDVCATMHAVGEGADQT
+LLQKLQMQIGSHEHFNSWNQGFIIHHYAGKVSYDMDGFCERNRDVLFMDLIELMQSSELP
+FIKSLFPENLQADKKGRPTTAGSKIKKQANDLVSTLMKCTPHYIRCIKPNETKKPRDWEE
+SRVKHQVEYLGLKENIRVRRAGYAYRRIFQKFLQRYAILTKATWPSWQGEEKQGVLHLLQ
+SVNMDSDQFQLGRSKVFIKAPESLFLLEEMRERKYDGYARVIQKSWRKFVARKKYVQMRE
+EASDLLLNKKERRRNSINRNFIGDYIGMEEHPELQQFVGKREKIDFADTVTKYDRRFKGV
+KRDLLLTPKCLYLIGREKVKQGPDKGLVKEVLKRKIEIERILSVSLSTMQDDIFILHEQE
+YDSLLESVFKTEFLSLLAKRYEEKTQKQLPLKFSNTLELKLKKENWGPWSAGGSRQVQFH
+QGFGDLAVLKPSNKVLQVSIGPGLPKNSRPTRRNTTQNTGYSSGTQNANYPVRAAPPPPG
+YHQNGVIRNQYVPYPHAPGSQRSNQKSLYTSMARPPLPRQQSTSSDRVSQTPESLDFLKV
+PDQGAAGVRRQTTSRPPPAGGRPKPQPKPKPQVPQCKALYAYDAQDTDELSFNANDIIDI
+IKEDPSGWWTGRLRGKQGLFPNNYVTKI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013169|Unconventional myosin-Ie (MYO1E)
+ATGGGAAGCAAAGGTGTCTACCAGTACCACTGGCAAAGCCACAATGTCAAGCACAGTGGT
+GTGGACGACATGGTGCTACTGTCCAAGATCACAGAGAACTCCATCGTGGAGAATCTGAAG
+AAGAGATACATGGATGACTACATTTTTACATATATAGGATCTGTATTAATCTCAGTCAAC
+CCTTTCAAGCAGATGCCATATTTTGGGGAAAAGGAAATTGAAATGTACCAAGGAGCGGCA
+CAGTATGAAAACCCACCACATATCTATGCCCTTGCAGATAATATGTACAGAAACATGATC
+ATTGACAGAGAGAACCAGTGCGTCATTATCAGTGGTGAAAGTGGTGCTGGAAAAACAGTG
+GCTGCCAAATATATCATGAGCTACATCTCCAGAGTGTCTGGAGGAGGGACCAAAGTCCAG
+CACGTGAAGGACATTATCCTGCAGTCCAACCCGCTGCTGGAGGCCTTCGGGAACGCCAAG
+ACCGTCCGGAACAACAACTCCAGCCGATTTGGAAAATACTTTGAAATCCAGTTCAGTCCA
+GGTGGGGAACCAGATGGTGGAAAGATCTCCAACTTCCTTCTGGAAAAATCTAGGGTGGTG
+ATGAGGAACCCAGGAGAGCGGAGTTTTCACATATTTTACCAGCTCATCGAGGGCGCCTCT
+GCAGAGCAGAAACACAGCCTTGGCATCACCAGCATGGACTATTATTACTACCTGAGCCTC
+TCGGGCTCATACAAGGTTGATGACATTGACGACAGGCGGGAGTTTCAGGAAACTCTGCAC
+GCCATGAATGTGATTGGGATCTTTGCAGAAGAGCAAACGCTGGTGTTGCAGATAGTGGCG
+GGTATTCTCCACCTGGGAAACATCAGCTTCAAAGAAGTTGGCAACTACGCGGCTGTGGAG
+AGTGAAGAGTTTTTAGCTTTTCCTGCATATCTGCTAGGGATAAACCAGGACCGGTTGAAA
+GAAAAGCTAACAAGCCGGCAGATGGATAGCAAGTGGGGAGGCAAATCCGAATCCATCCAC
+GTGACCCTCAACGTAGAGCAGGCCTGTTACACCCGGGATGCGCTCGCCAAGGCCCTGCAC
+GCCCGGGTCTTTGATTTCTTGGTAGATTCCATCAATAAAGCCATGGAGAAAGACCATGAA
+GAATACAACATTGGCGTCCTAGACATCTATGGCTTTGAAATATTCCAGAAAAATGGCTTT
+GAACAGTTTTGTATCAATTTTGTTAATGAAAAACTGCAGCAGATTTTTATTGAACTGACA
+TTAAAGGCAGAACAGGAAGAATATGTTCAAGAGGGAATAAGATGGACACCCATTGAGTAC
+TTTAATAATAAAATCGTATGTGACCTCATAGAGAACAAAGTGAACCCTCCTGGCATCATG
+AGCATCCTGGATGACGTGTGCGCCACGATGCATGCGGTGGGTGAGGGGGCAGATCAGACG
+CTGCTCCAGAAACTTCAGATGCAGATTGGGAGTCATGAGCACTTCAACAGTTGGAACCAA
+GGCTTCATCATTCATCATTATGCTGGGAAGGTATCCTATGACATGGATGGCTTTTGTGAA
+AGGAACCGGGATGTGCTTTTTATGGATCTCATCGAGCTTATGCAGAGCAGCGAGCTGCCT
+TTCATAAAGTCTTTATTTCCGGAAAATCTGCAGGCTGACAAGAAAGGGCGCCCAACTACT
+GCCGGAAGCAAAATAAAGAAACAAGCCAATGACCTTGTGAGCACCCTGATGAAATGTACG
+CCCCACTACATTCGCTGCATCAAGCCAAACGAAACCAAGAAGCCCAGAGACTGGGAGGAA
+AGCAGGGTAAAGCATCAAGTCGAATATTTGGGTCTGAAAGAGAACATTCGAGTGAGAAGA
+GCTGGCTATGCCTATCGGCGCATCTTCCAAAAATTCCTACAGAGGTATGCCATTCTGACC
+AAAGCCACCTGGCCTTCTTGGCAGGGAGAGGAGAAGCAAGGCGTCCTGCACCTGCTGCAG
+TCGGTCAACATGGACAGCGACCAGTTCCAGCTGGGGAGGAGTAAAGTGTTCATCAAAGCC
+CCCGAGTCTCTATTTCTTTTAGAAGAGATGAGAGAGAGAAAGTATGATGGGTATGCTCGA
+GTGATACAGAAATCATGGAGGAAATTCGTGGCCCGGAAGAAATACGTTCAAATGAGAGAA
+GAAGCCTCAGACCTCTTATTGAACAAGAAGGAGAGAAGGAGAAACAGTATTAACAGGAAC
+TTTATAGGGGATTATATTGGGATGGAAGAGCACCCAGAACTCCAGCAGTTCGTGGGCAAG
+AGGGAGAAGATTGATTTCGCAGACACAGTCACCAAGTATGACAGGAGGTTCAAGGGTGTA
+AAGCGAGACCTGCTCCTTACCCCAAAGTGCTTGTACTTAATCGGACGAGAAAAAGTCAAA
+CAGGGCCCAGACAAGGGCCTGGTGAAAGAAGTCCTGAAGCGGAAAATCGAGATAGAACGG
+ATCTTGTCTGTGTCCCTCAGTACTATGCAGGATGACATTTTTATTCTCCATGAGCAAGAG
+TATGACAGTTTGCTTGAATCTGTCTTCAAAACTGAATTCCTAAGCCTCTTAGCAAAGCGT
+TACGAGGAGAAGACCCAGAAGCAACTACCTCTGAAATTCAGCAATACGCTTGAACTGAAG
+TTGAAAAAGGAAAACTGGGGCCCCTGGAGTGCAGGGGGCTCCCGGCAAGTGCAGTTCCAC
+CAAGGGTTTGGGGACCTGGCTGTCCTCAAGCCCAGTAACAAAGTGCTGCAGGTCAGCATC
+GGACCTGGACTGCCCAAGAACTCCCGTCCTACCAGAAGGAACACTACCCAAAATACAGGT
+TATTCCAGTGGGACTCAAAATGCCAACTACCCAGTGAGAGCTGCCCCTCCTCCCCCAGGA
+TACCATCAGAACGGAGTCATCAGAAACCAGTATGTGCCATATCCCCATGCTCCTGGAAGC
+CAGAGGTCCAATCAGAAAAGCCTGTACACCTCCATGGCCCGCCCGCCCTTGCCTCGGCAG
+CAGTCTACCAGTTCAGACCGAGTGTCACAGACGCCAGAGAGCCTGGATTTCCTCAAGGTC
+CCGGACCAGGGAGCTGCAGGGGTCAGGAGACAAACAACCAGTCGGCCTCCCCCAGCAGGG
+GGCAGACCCAAGCCCCAGCCCAAGCCCAAGCCTCAGGTGCCACAGTGCAAGGCTTTGTAT
+GCCTATGACGCTCAGGACACAGACGAACTCAGCTTTAATGCCAATGACATTATTGATATT
+ATCAAAGAAGATCCTTCTGGCTGGTGGACGGGTCGACTACGAGGCAAGCAGGGCCTGTTC
+CCCAACAACTATGTGACCAAGATCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00018</identifier>
+            <name>SH3_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00063</identifier>
+            <name>Myosin_head</name>
+          </pfam>
+          <pfam>
+            <identifier>PF06017</identifier>
+            <name>Myosin_TH1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>actin cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>adherens junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>brush border</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell-cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>clathrin-coated vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myosin complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>actin filament binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calmodulin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>microfilament motor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>motor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>actin filament-based movement</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glomerular basement membrane development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glomerular filtration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glomerular visceral epithelial cell development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>in utero embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-embryonic hemopoiesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasculogenesis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004447</id>
+      <name>Meiotic recombination protein DMC1/LIM15 homolog</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q14565" source="Swiss-Prot">
+        <name>Meiotic recombination protein DMC1/LIM15 homolog</name>
+        <general-function>Single-stranded dna binding</general-function>
+        <specific-function>May participate in meiotic recombination, specifically in homologous strand assimilation, which is required for the resolution of meiotic double-strand breaks.</specific-function>
+        <gene-name>DMC1</gene-name>
+        <locus/>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>37680.725</molecular-weight>
+        <chromosome-location>22</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2927</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q14565</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DMC1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>DMC1H</synonym>
+          <synonym>LIM15</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009368|Meiotic recombination protein DMC1/LIM15 homolog
+MKEDQVVAEEPGFQDEEESLFQDIDLLQKHGINVADIKKLKSVGICTIKGIQMTTRRALC
+NVKGLSEAKVDKIKEAANKLIEPGFLTAFEYSEKRKMVFHITTGSQEFDKLLGGGIESMA
+ITEAFGEFRTGKTQLSHTLCVTAQLPGAGGYPGGKIIFIDTENTFRPDRLRDIADRFNVD
+HDAVLDNVLYARAYTSEHQMELLDYVAAKFHEEAGIFKLLIIDSIMALFRVDFSGRGELA
+ERQQKLAQMLSRLQKISEEYNVAVFVTNQMTADPGATMTFQADPKKPIGGHILAHASTTR
+ISLRKGRGELRIAKIYDSPEMPENEATFAITAGGIGDAKE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013115|Meiotic recombination protein DMC1/LIM15 homolog (DMC1)
+ATGAAGGAGGATCAAGTTGTGGCGGAAGAACCAGGATTCCAAGATGAAGAGGAATCTTTG
+TTTCAAGATATTGACCTGTTACAGAAACATGGAATTAACGTGGCTGACATTAAGAAACTG
+AAATCAGTAGGAATCTGTACCATCAAAGGTATACAGATGACAACAAGAAGAGCTCTATGC
+AATGTCAAAGGACTCTCAGAAGCCAAAGTAGACAAGATTAAAGAGGCAGCGAACAAACTA
+ATTGAACCAGGATTCTTGACTGCATTTGAGTATAGTGAAAAGAGGAAAATGGTTTTCCAT
+ATCACCACCGGGAGCCAGGAATTTGATAAGTTACTAGGAGGTGGAATTGAAAGTATGGCA
+ATTACAGAAGCTTTTGGAGAATTTCGTACTGGAAAAACCCAGCTTTCTCATACCCTCTGT
+GGTGAACATCAGATGGAGCTACTTGATTATGTAGCAGCAAAGTTCCATGAAGAAGCTGGC
+ATCTTCAAGCTATTGATTATCGATTCAATAATGGCACTTTTTCGAGTGGATTTCAGTGGC
+CGTGGGGAGTTGGCCGAACGGCAGCAAAAATTGGCCCAGATGTTGTCACGACTCCAAAAA
+ATCTCAGAAGAATATAACGTGGCTGTTTTTGTGACCAATCAAATGACTGCCGATCCAGGA
+GCAACTATGACCTTTCAGGCAGATCCCAAAAAACCCATTGGGGGACACATTCTGGCTCAT
+GCTTCAACAACAAGAATAAGCTTGCGAAAGGGAAGAGGAGAGCTCAGAATTGCCAAGATT
+TATGACAGTCCTGAGATGCCTGAAAATGAAGCCACCTTCGCAATAACTGCTGGAGGAATT
+GGGGATGCCAAGGAGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF08423</identifier>
+            <name>Rad51</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>chromosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chromosome, telomeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>condensed nuclear chromosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA-dependent ATPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>double-stranded DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>four-way junction DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>recombinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>single-stranded DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromosome organization involved in meiotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA recombinase assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>female gamete generation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>male meiosis I</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>meiotic nuclear division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitotic recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oocyte maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ovarian follicle development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>reciprocal meiotic recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ionizing radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spermatid development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spermatogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>strand invasion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synapsis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003061</id>
+      <name>Guanine deaminase</name>
+      <organism>Bacillus subtilis (strain 168)</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O34598" source="Swiss-Prot">
+        <name>Guanine deaminase</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Catalyzes the hydrolytic deamination of guanine, producing xanthine and ammonia.</specific-function>
+        <gene-name>guaD</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.97</theoretical-pi>
+        <molecular-weight>17156.265</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224308">Bacillus subtilis (strain 168)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AJ002571</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O34598</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GUAD_BACSU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.5.4.3</synonym>
+          <synonym>GAH</synonym>
+          <synonym>gde</synonym>
+          <synonym>GDEase</synonym>
+          <synonym>Guanine aminohydrolase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019363|Guanine deaminase
+MNHETFLKRAVTLACEGVNAGIGGPFGAVIVKDGAIIAEGQNNVTTSNDPTAHAEVTAIR
+KACKVLGAYQLDDCILYTSCEPCPMCLGAIYWARPKAVFYAAEHTDAAEAGFDDSFIYKE
+IDKPAEERTIPFYQVTLTEHLSPFQAWRNFANKKEY</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019364|Guanine deaminase (guaD)
+ATGAATCATGAAACGTTCTTAAAACGGGCTGTCACTCTCGCATGTGAAGGAGTGAATGCA
+GGAATCGGCGGGCCTTTTGGAGCCGTTATCGTGAAAGACGGAGCCATTATTGCAGAGGGA
+CAGAACAACGTCACAACAAGCAATGATCCGACTGCCCACGCGGAAGTCACAGCTATTCGG
+AAAGCCTGTAAGGTGCTAGGAGCCTACCAGCTTGATGACTGCATTTTGTATACGAGCTGT
+GAACCATGCCCAATGTGCTTGGGCGCCATCTACTGGGCCCGGCCTAAAGCCGTTTTCTAT
+GCAGCTGAGCACACAGACGCTGCCGAAGCCGGGTTTGATGATTCATTCATTTATAAAGAA
+ATTGATAAACCTGCTGAAGAAAGAACGATCCCCTTTTATCAAGTGACACTAACAGAGCAT
+TTATCCCCGTTTCAAGCATGGCGGAACTTCGCCAATAAGAAAGAATATTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00383</identifier>
+            <name>dCMP_cyt_deam_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>guanine deaminase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>guanine catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002766</id>
+      <name>Endo-1,4-beta-xylanase A</name>
+      <organism>Streptomyces lividans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P26514" source="Swiss-Prot">
+        <name>Endo-1,4-beta-xylanase A</name>
+        <general-function>Endo-1,4-beta-xylanase activity</general-function>
+        <specific-function>Contributes to hydrolyze hemicellulose, the major component of plant cell-walls. XLNA and XLNB seem to act sequentially on the substrate to yield xylobiose and xylose as carbon sources.</specific-function>
+        <gene-name>xlnA</gene-name>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-41</signal-regions>
+        <theoretical-pi>6.61</theoretical-pi>
+        <molecular-weight>51162.3</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1916">Streptomyces lividans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M64551</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P26514</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>XYNA_STRLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-beta-D-xylan xylanohydrolase A</synonym>
+          <synonym>3.2.1.8</synonym>
+          <synonym>Xylanase A</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019328|Endo-1,4-beta-xylanase A
+MGSYALPRSGVRRSIRVLLLALVVGVLGTATALIAPPGAHAAESTLGAAAAQSGRYFGTA
+IASGRLSDSTYTSIAGREFNMVTAENEMKIDATEPQRGQFNFSSADRVYNWAVQNGKQVR
+GHTLAWHSQQPGWMQSLSGSALRQAMIDHINGVMAHYKGKIVQWDVVNEAFADGSSGARR
+DSNLQRSGNDWIEVAFRTARAADPSAKLCYNDYNVENWTWAKTQAMYNMVRDFKQRGVPI
+DCVGFQSHFNSGSPYNSNFRTTLQNFAALGVDVAITELDIQGAPASTYANVTNDCLAVSR
+CLGITVWGVRDSDSWRSEQTPLLFNNDGSKKAAYTAVLDALNGGDSSEPPADGGQIKGVG
+SGRCLDVPDASTSDGTQLQLWDCHSGTNQQWAATDAGELRVYGDKCLDAAGTSNGSKVQI
+YSCWGGDNQKWRLNSDGSVVGVQSGLCLDAVGNGTANGTLIQLYTCSNGSNQRWTRT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005418|1434 bp
+ATGGGCTCCTACGCCCTTCCCAGATCAGGTGTCCGCAGGAGCATTCGCGTCCTGCTGCTG
+GCGCTGGTCGTCGGCGTACTCGGCACGGCCACCGCACTGATCGCGCCGCCGGGGGCACAC
+GCCGCCGAGAGCACGCTCGGCGCCGCGGCGGCGCAGAGCGGCCGCTACTTCGGCACCGCC
+ATCGCCTCGGGCAGGCTGAGCGACTCGACGTACACGTCGATCGCGGGCCGTGAGTTCAAC
+ATGGTGACGGCCGAGAACGAGATGAAGATCGACGCCACCGAACCGCAGCGGGGCCAGTTC
+AACTTCAGCTCCGCCGACCGCGTCTACAACTGGGCGGTGCAGAACGGCAAGCAGGTGCGC
+GGCCACACCCTGGCCTGGCACTCCCAGCAGCCCGGCTGGATGCAGAGCCTCAGCGGCAGC
+GCGCTGCGCCAGGCGATGATCGACCACATCAACGGCGTGATGGCCCACTACAAGGGCAAG
+ATCGTCCAGTGGGACGTCGTGAACGAGGCCTTCGCCGACGGCAGTTCGGGAGCGCGGCGG
+GACTCCAACCTGCAACGCAGCGGCAACGACTGGATCGAGGTCGCCTTCCGCACCGCGCGC
+GCCGCCGACCCGTCCGCCAAGCTCTGCTACAACGACTACAACGTCGAGAACTGGACCTGG
+GCCAAGACCCAGGCCATGTACAACATGGTGCGGGACTTCAAGCAGCGCGGCGTGCCGATC
+GACTGCGTCGGCTTCCAGTCGCACTTCAACAGCGGCAGCCCCTACAACAGCAACTTCCGC
+ACCACACTGCAGAACTTCGCCGCCCTCGGCGTCGACGTGGCCATCACCGAGCTGGACATC
+CAGGGCGCCCCGGCCTCGACCTACGCCAACGTGACCAACGACTGCCTGGCCGTCTCGCGC
+TGCCTCGGCATCACCGTCTGGGGTGTGCGCGACAGCGACTCCTGGCGGTCGGAGCAGACG
+CCGTTGCTGTTCAACAACGACGGCAGCAAGAAGGCCGCGTACACCGCCGTCCTCGACGCA
+CTCAACGGCGGCGACTCCTCGGAGCCCCCCGCGGACGGGGGACAGATCAAGGGCGTCGGT
+TCGGGCCGCTGCCTCGACGTGCCCGACGCCAGCACCTCCGACGGCACCCAGCTCCAGCTG
+TGGGACTGCCACAGCGGCACCAACCAGCAGTGGGCCGCCACTGACGCGGGCGAGCTCAGG
+GTCTACGGCGACAAGTGCCTGGACGCCGCAGGCACCAGCAACGGCTCCAAGGTCCAGATC
+TACAGCTGCTGGGGCGGCGACAACCAGAAGTGGCGCCTCAACTCCGACGGGTCCGTCGTC
+GGCGTCCAGTCCGGCCTCTGCCTCGACGCCGTCGGGAACGGCACGGCCAACGGCACCCTG
+ATCCAGCTGTACACCTGCTCCAACGGCAGCAACCAACGCTGGACCCGCACCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00331</identifier>
+            <name>Glyco_hydro_10</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00652</identifier>
+            <name>Ricin_B_lectin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endo-1,4-beta-xylanase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xylan catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002903</id>
+      <name>Bacterial hemoglobin</name>
+      <organism>Vitreoscilla stercoraria</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04252" source="Swiss-Prot">
+        <name>Bacterial hemoglobin</name>
+        <general-function>Oxygen transporter activity</general-function>
+        <specific-function>This protein functions as a terminal oxidase.</specific-function>
+        <gene-name>vhb</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.16</theoretical-pi>
+        <molecular-weight>15774.205</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="61">Vitreoscilla stercoraria</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L21670</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04252</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>BAHG_VITST</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Soluble cytochrome O</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016924|Bacterial hemoglobin
+MLDQQTINIIKATVPVLKEHGVTITTTFYKNLFAKHPEVRPLFDMGRQESLEQPKALAMT
+VLAAAQNIENLPAILPAVKKIAVKHCQAGVAAAHYPIVGQELLGAIKEVLGDAATDDILD
+AWGKAYGVIADVFIQVEADLYAQAVE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005677|441 bp
+ATGTTAGACCAGCAAACCATTAACATCATCAAAGCCACTGTTCCTGTATTGAAGGAGCAT
+GGCGTTACCATTACCACGACTTTTTATAAAAACTTGTTTGCCAAACACCCTGAAGTACGT
+CCTTTGTTTGATATGGGTCGCCAAGAATCTTTGGAGCAGCCTAAGGCTTTGGCGATGACG
+GTATTGGCGGCAGCGCAAAACATTGAAAATTTGCCAGCTATTTTGCCTGCGGTCAAAAAA
+ATTGCAGTCAAACATTGTCAAGCAGGCGTGGCAGCAGCGCATTATCCGATTGTCGGTCAA
+GAATTGTTGGGTGCGATTAAAGAAGTATTGGGCGATGCCGCAACCGATGACATTTTGGAC
+GCGTGGGGCAAGGCTTATGGCGTGATTGCAGATGTGTTTATTCAAGTGGAAGCAGATTTG
+TACGCTCAAGCGGTTGAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00042</identifier>
+            <name>Globin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen transporter activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003062</id>
+      <name>Molybdenum cofactor biosynthesis protein B</name>
+      <organism>Bacillus cereus (strain ATCC 14579 / DSM 31)</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q816R0" source="Swiss-Prot">
+        <name>Molybdenum cofactor biosynthesis protein B</name>
+        <general-function/>
+        <specific-function>May be involved in the biosynthesis of molybdopterin.</specific-function>
+        <gene-name>moaB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.8</theoretical-pi>
+        <molecular-weight>18535.2</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="226900">Bacillus cereus (strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 9373 / NRRL B-3711)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE016877</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q816R0</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MOAB_BACCR</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012144|Molybdenum cofactor biosynthesis protein B
+MSVTEHKKQAPKEVRCKIVTISDTRTEETDKSGQLLHELLKEAGHKVTSYEIVKDDKESI
+QQAVLAGYHKEDVDVVLTNGGTGITKRDVTIEAVSALLDKEIVGFGELFRMISYLEDIGS
+SAMLSRAIGGTIGRKVVFSMPGSSGAVRLAMNKLILPELGHITFELHRQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012145|Molybdenum cofactor biosynthesis protein B (moaB)
+ATGAGTGTAACTGAACATAAAAAACAAGCTCCAAAAGAAGTGCGTTGCAAGATCGTGACG
+ATTTCCGATACACGTACGGAAGAAACAGATAAGAGCGGACAACTATTACATGAATTGTTA
+AAAGAAGCGGGACATAAAGTAACTTCTTATGAAATTGTAAAAGATGATAAAGAAAGTATT
+CAGCAAGCAGTGTTAGCTGGTTATCATAAGGAAGATGTAGATGTTGTATTAACAAATGGC
+GGTACTGGTATTACGAAACGCGATGTCACAATTGAAGCAGTATCAGCGTTATTAGATAAA
+GAAATTGTTGGATTTGGTGAGCTGTTCCGTATGATTAGTTATTTAGAAGATATCGGAAGC
+AGCGCAATGTTAAGTAGAGCGATTGGTGGTACAATTGGGCGCAAAGTAGTCTTCTCGATG
+CCAGGGTCTAGCGGAGCGGTTCGCCTTGCGATGAATAAATTAATTTTACCGGAATTAGGT
+CATATTACATTTGAGCTGCATCGCCAATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00994</identifier>
+            <name>MoCF_biosynth</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>process</category>
+            <description>Mo-molybdopterin cofactor biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003063</id>
+      <name>Uracil-DNA glycosylase inhibitor</name>
+      <organism>Bacteriophage PBS2</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P14739" source="Swiss-Prot">
+        <name>Uracil-DNA glycosylase inhibitor</name>
+        <general-function/>
+        <specific-function>This protein binds specifically and reversibly to the host uracil-DNA glycosylase, preventing removal of uracil residues from PBS2 DNA by the host uracil-excision repair system.</specific-function>
+        <gene-name>UGI</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>3.87</theoretical-pi>
+        <molecular-weight>9475.645</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="10684">Bacillus phage PBS2</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J04434</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P14739</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>UNGI_BPPB2</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012146|Uracil-DNA glycosylase inhibitor
+MTNLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTS
+DAPEYKPWALVIQDSNGENKIKML</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005983|255 bp
+ATGACAAATTTATCTGACATCATTGAAAAAGAAACAGGAAAACAACTAGTGATTCAAGAA
+TCAATTCTAATGTTACCAGAAGAAGTAGAGGAAGTAATTGGGAATAAACCAGAAAGTGAT
+ATTTTAGTTCATACTGCTTATGATGAAAGTACAGATGAAAATGTAATGCTATTAACTTCA
+GATGCTCCAGAATATAAACCTTGGGCTTTAGTAATTCAAGACAGTAATGGAGAAAATAAA
+ATTAAAATGTTATAA</gene-sequence>
+        <pfams/>
+        <go-classifiers/>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0003064</id>
+      <name>Recombination protein RecR</name>
+      <organism>Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422)</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9ZNA2" source="Swiss-Prot">
+        <name>Recombination protein RecR</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>May play a role in DNA repair. It seems to be involved in an RecBC-independent recombinational process of DNA repair. It may act with RecF and RecO.</specific-function>
+        <gene-name>recR</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.67</theoretical-pi>
+        <molecular-weight>23722.925</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="243230">Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB020240</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9ZNA2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RECR_DEIRA</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016984|Recombination protein RecR
+MKYPPSLVSLIRELSRLPGIGPKSAQRLAFHLFEQPREDIERLASALLEAKRDLHVCPIC
+FNITDAEKCDVCADPSRDQRTICVVEEPGDVIALERSGEYRGLYHVLHGVLSPMNGVGPD
+KLHIKPLLPRVGQGMEVILATGTTVEGDATALYLQRLLEPLGAAISRIAYGVPVGGSLEY
+TDEVTLGRALTGRQTVSKPQPPQRPGDEDGADGAAVPASR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016985|Recombination protein RecR (recR)
+ATGAAATATCCGCCTTCCCTCGTGTCCCTCATCCGCGAGCTGTCACGCTTGCCGGGCATC
+GGCCCCAAGAGCGCGCAGCGACTCGCCTTTCACCTGTTCGAGCAGCCGCGTGAGGACATC
+GAGCGCCTCGCCTCCGCCCTGCTCGAAGCCAAGCGCGACCTGCACGTCTGCCCGATTTGT
+TTCAACATCACCGACGCCGAGAAGTGCGACGTGTGCGCCGACCCCAGCCGCGACCAGCGC
+ACCATCTGCGTGGTGGAAGAACCCGGCGACGTGATTGCGCTGGAGCGCAGCGGCGAGTAC
+CGGGGGCTCTACCACGTCCTGCACGGCGTTCTGAGCCCGATGAACGGCGTCGGCCCCGAC
+AAGCTGCACATCAAGCCGCTGCTGCCCCGCGTGGGGCAAGGCATGGAAGTGATTCTGGCG
+ACTGGCACAACGGTGGAGGGCGACGCCACCGCGCTCTACCTTCAGCGGCTGCTCGAACCG
+CTCGGCGCCGCCATCAGCCGCATCGCCTACGGGGTGCCGGTGGGCGGCTCGCTGGAATAC
+ACCGACGAGGTGACGCTGGGCCGTGCGCTCACAGGCCGCCAGACCGTGAGCAAGCCCCAG
+CCGCCGCAACGTCCCGGTGACGAAGACGGCGCCGACGGAGCAGCGGTGCCCGCATCCCGC
+TAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02132</identifier>
+            <name>RecR</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13662</identifier>
+            <name>Toprim_4</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA recombination</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>double-strand break repair</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001680</id>
+      <name>Leukotriene A-4 hydrolase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P09960" source="Swiss-Prot">
+        <name>Leukotriene A-4 hydrolase</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Epoxide hydrolase that catalyzes the final step in the biosynthesis of the proinflammatory mediator leukotriene B4. Has also aminopeptidase activity.</specific-function>
+        <gene-name>LTA4H</gene-name>
+        <locus>12q22</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.1</theoretical-pi>
+        <molecular-weight>69284.64</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6710</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>LTA4H</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U27293</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>976396</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1395</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P09960</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>LKHA4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.3.2.6</synonym>
+          <synonym>Leukotriene A(4) hydrolase</synonym>
+          <synonym>LTA-4 hydrolase</synonym>
+          <synonym>LTA4</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003332|Leukotriene A-4 hydrolase
+MPEIVDTCSLASPASVCRTKHLHLRCSVDFTRRTLTGTAALTVQSQEDNLRSLVLDTKDL
+TIEKVVINGQEVKYALGERQSYKGSPMEISLPIALSKNQEIVIEISFETSPKSSALQWLT
+PEQTSGKEHPYLFSQCQAIHCRAILPCQDTPSVKLTYTAEVSVPKELVALMSAIRDGETP
+DPEDPSRKIYKFIQKVPIPCYLIALVVGALESRQIGPRTLVWSEKEQVEKSAYEFSETES
+MLKIAEDLGGPYVWGQYDLLVLPPSFPYGGMENPCLTFVTPTLLAGDKSLSNVIAHEISH
+SWTGNLVTNKTWDHFWLNEGHTVYLERHICGRLFGEKFRHFNALGGWGELQNSVKTFGET
+HPFTKLVVDLTDIDPDVAYSSVPYEKGFALLFYLEQLLGGPEIFLGFLKAYVEKFSYKSI
+TTDDWKDFLYSYFKDKVDVLNQVDWNAWLYSPGLPPIKPNYDMTLTNACIALSQRWITAK
+EDDLNSFNATDLKDLSSHQLNEFLAQTLQRAPLPLGHIKRMQEVYNFNAINNSEIRFRWL
+RLCIQSKWEDAIPLALKMATEQGRMKFTRPLFKDLAAFDKSHDQAVRTYQEHKASMHPVT
+AMLVGKDLKVD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020556|Leukotriene A-4 hydrolase (LTA4H)
+ATGCCCGAGATAGTGGATACCTGTTCGTTGGCCTCTCCGGCTTCCGTCTGCCGGACCAAG
+CACCTGCACCTGCGCTGCAGCGTCGACTTTACTCGCCGGACGCTGACCGGGACTGCTGCT
+CTCACGGTCCAGTCTCAGGAGGACAATCTGCGCAGCCTGGTTTTGGATACAAAGGACCTT
+ACAATAGAAAAAGTAGTGATCAATGGACAAGAAGTCAAATATGCTCTTGGAGAAAGACAA
+AGTTACAAGGGATCGCCAATGGAAATCTCTCTTCCTATCGCTTTGAGCAAAAATCAAGAA
+ATTGTTATAGAAATTTCTTTTGAGACCTCTCCAAAATCTTCTGCTCTCCAGTGGCTCACT
+CCTGAACAGACTTCTGGGAAGGAACACCCATATCTCTTTAGTCAGTGCCAGGCCATCCAC
+TGCAGAGCAATCCTTCCTTGTCAGGACACTCCTTCTGTGAAATTAACCTATACTGCAGAG
+GTGTCTGTCCCTAAAGAACTGGTGGCACTTATGAGTGCTATTCGTGATGGAGAAACACCT
+GACCCAGAAGACCCAAGCAGGAAAATATACAAATTCATCCAAAAAGTTCCAATACCCTGC
+TACCTGATTGCTTTAGTTGTTGGAGCTTTAGAAAGCAGGCAAATTGGCCCAAGAACTTTG
+GTGTGGTCTGAGAAAGAGCAGGTGGAAAAGTCTGCTTATGAGTTTTCTGAGACTGAATCT
+ATGCTTAAAATAGCAGAAGATCTGGGAGGACCGTATGTATGGGGACAGTATGACCTATTG
+GTCCTGCCACCATCCTTCCCTTATGGTGGCATGGAGAATCCTTGCCTTACTTTTGTAACT
+CCTACTCTACTGGCAGGCGACAAGTCACTCTCCAATGTCATTGCACATGAAATATCTCAT
+AGCTGGACAGGGAATCTAGTGACCAACAAAACTTGGGATCACTTTTGGTTAAATGAGGGA
+CATACTGTGTACTTGGAACGCCACATTTGCGGACGATTGTTTGGTGAAAAGTTCAGACAT
+TTTAATGCTCTGGGAGGATGGGGAGAACTACAGAATTCGGTAAAGACATTTGGGGAGACA
+CATCCTTTCACCAAACTTGTGGTTGATCTGACAGATATAGACCCTGATGTAGCTTATTCT
+TCAGTTCCCTATGAGAAGGGCTTTGCTTTACTTTTTTACCTTGAACAACTGCTTGGAGGA
+CCAGAGATTTTCCTAGGATTCTTAAAAGCTTATGTTGAGAAGTTTTCCTATAAGAGCATA
+ACTACTGATGACTGGAAGGATTTCCTGTATTCCTATTTTAAAGATAAGGTTGATGTTCTC
+AATCAAGTTGATTGGAATGCCTGGCTCTACTCTCCTGGACTGCCTCCCATAAAGCCCAAT
+TATGATATGACTCTGACAAATGCTTGTATTGCCTTAAGTCAAAGATGGATTACTGCCAAA
+GAAGATGATTTAAATTCATTCAATGCCACAGACCTGAAGGATCTCTCTTCTCATCAATTG
+AATGAGTTTTTAGCACAGACGCTCCAGAGGGCACCTCTTCCATTGGGGCACATAAAGCGA
+ATGCAAGAGGTGTACAACTTCAATGCCATTAACAATTCTGAAATACGATTCAGATGGCTG
+CGGCTCTGCATTCAATCCAAGTGGGAGGACGCAATTCCTTTGGCGCTAAAGATGGCAACT
+GAACAAGGAAGAATGAAGTTTACCCGGCCCTTATTCAAGGATCTTGCTGCCTTTGACAAA
+TCCCATGATCAAGCTGTCCGAACCTACCAAGAGCACAAAGCAAGCATGCATCCCGTGACT
+GCAATGCTGGTGGGGAAAGACTTAAAAGTGGATTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01433</identifier>
+            <name>Peptidase_M1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09127</identifier>
+            <name>Leuk-A4-hydro_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aminopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>epoxide hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>leukotriene-A4 hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metalloaminopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arachidonic acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukotriene biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukotriene metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptide catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to peptide hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to zinc ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Type I pneumocyte differentiation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002014</id>
+      <name>Acyl-CoA thioesterase I</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0ADA1" source="Swiss-Prot">
+        <name>Acyl-CoA thioesterase I</name>
+        <general-function>Phospholipase activity</general-function>
+        <specific-function>Hydrolyzes only long chain acyl thioesters (C12-C18). Specificity similar to chymotrypsin.</specific-function>
+        <gene-name>tesA</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-26</signal-regions>
+        <theoretical-pi>7.83</theoretical-pi>
+        <molecular-weight>23621.955</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L06182</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>290474</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0ADA1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TESA_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.2.-</synonym>
+          <synonym>apeA</synonym>
+          <synonym>Lecithinase B</synonym>
+          <synonym>Lysophospholipase L1</synonym>
+          <synonym>pldC</synonym>
+          <synonym>Protease I</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003987|Acyl-CoA thioesterase I
+MMNFNNVFRWHLPFLFLVLLTFRAAAADTLLILGDSLSAGYRMSASAAWPALLNDKWQSK
+TSVVNASISGDTSQQGLARLPALLKQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQD
+VKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDD
+GIHPNRDAQPFIADWMAKQLQPLVNHDS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021308|Acyl-CoA thioesterase I (tesA)
+ATGATGAACTTCAACAATGTTTTCCGCTGGCATTTGCCCTTCCTGTTCCTGGTCCTGTTA
+ACCTTCCGTGCCGCCGCAGCGGACACGTTATTGATTCTGGGTGATAGCCTGAGCGCCGGG
+TATCGAATGTCTGCCAGCGCGGCCTGGCCTGCCTTGTTGAATGATAAGTGGCAGAGTAAA
+ACGTCGGTAGTTAATGCCAGCATCAGCGGCGACACCTCGCAACAAGGACTGGCGCGCCTT
+CCGGCTCTGCTGAAACAGCATCAGCCGCGTTGGGTGCTGGTTGAACTGGGCGGCAATGAC
+GGTTTGCGTGGTTTTCAGCCACAGCAAACCGAGCAAACGCTGCGCCAGATTTTGCAGGAT
+GTCAAAGCCGCCAACGCTGAACCATTGTTAATGCAAATACGTCTGCCTGCAAACTATGGT
+CGCCGTTATAATGAAGCCTTTAGCGCCATTTACCCCAAACTCGCCAAAGAGTTTGATGTT
+CCGCTGCTGCCCTTTTTTATGGAAGAGGTCTACCTCAAGCCACAATGGATGCAGGATGAC
+GGTATTCATCCCAACCGCGACGCCCAGCCGTTTATTGCCGACTGGATGGCGAAGCAGTTG
+CAGCCTTTAGTAAATCATGACTCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF13472</identifier>
+            <name>Lipase_GDSL_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>outer membrane-bounded periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acyl-CoA hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lysophospholipase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>palmitoyl-CoA hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002652</id>
+      <name>Gephyrin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9NQX3" source="Swiss-Prot">
+        <name>Gephyrin</name>
+        <general-function>Molybdopterin molybdotransferase activity</general-function>
+        <specific-function>Microtubule-associated protein involved in membrane protein-cytoskeleton interactions. It is thought to anchor the inhibitory glycine receptor (GLYR) to subsynaptic microtubules (By similarity). Catalyzes two steps in the biosynthesis of the molybdenum cofactor. In the first step, molybdopterin is adenylated. Subsequently, molybdate is inserted into adenylated molybdopterin and AMP is released.</specific-function>
+        <gene-name>GPHN</gene-name>
+        <locus>14q23.3</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.09</theoretical-pi>
+        <molecular-weight>79747.635</molecular-weight>
+        <chromosome-location>14</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:15465</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GPHN</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF272663</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9NQX3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GEPH_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GPH</synonym>
+          <synonym>KIAA1385</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0005202|Gephyrin
+MATEGMILTNHDHQIRVGVLTVSDSCFRNLAEDRSGINLKDLVQDPSLLGGTISAYKIVP
+DEIEEIKETLIDWCDEKELNLILTTGGTGFAPRDVTPEATKEVIEREAPGMALAMLMGSL
+NVTPLGMLSRPVCGIRGKTLIINLPGSKKGSQECFQFILPALPHAIDLLRDAIVKVKEVH
+DELEDLPSPPPPLSPPPTTSPHKQTEDKGVQCEEEEEEKKDSGVASTEDSSSSHITAAAI
+AAKIPDSIISRGVQVLPRDTASLSTTPSESPRAQATSRLSTASCPTPKVQSRCSSKENIL
+RASHSAVDITKVARRHRMSPFPLTSMDKAFITVLEMTPVLGTEIINYRDGMGRVLAQDVY
+AKDNLPPFPASVKDGYAVRAADGPGDRFIIGESQAGEQPTQTVMPGQVMRVTTGAPIPCG
+ADAVVQVEDTELIRESDDGTEELEVRILVQARPGQDIRPIGHDIKRGECVLAKGTHMGPS
+EIGLLATVGVTEVEVNKFPVVAVMSTGNELLNPEDDLLPGKIRDSNRSTLLATIQEHGYP
+TINLGIVGDNPDDLLNALNEGISRADVIITSGGVSMGEKDYLKQVLDIDLHAQIHFGRVF
+MKPGLPTTFATLDIDGVRKIIFALPGNPVSAVVTCNLFVVPALRKMQGILDPRPTIIKAR
+LSCDVKLDPRPEYHRCILTWHHQEPLPWAQSTGNQMSSRLMSMRSANGLLMLPPKTEQYV
+ELHKGEVVDVMVIGRL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021679|Gephyrin (GPHN)
+ATGGCGACCGAGGGAATGATCCTTACTAACCACGACCATCAAATCCGTGTCGGAGTCCTT
+ACAGTGAGTGATAGTTGCTTCAGGAATCTTGCAGAAGACCGCAGTGGGATAAATCTCAAA
+GATCTCGTACAAGATCCTTCTTTGTTGGGTGGGACTATATCAGCATACAAGATAGTACCA
+GATGAAATAGAAGAAATCAAGGAAACCCTGATAGATTGGTGTGATGAAAAGGAACTTAAT
+TTGATATTAACAACTGGAGGAACAGGATTTGCACCACGAGATGTCACTCCAGAGGCCACA
+AAAGAAGTAATAGAACGGGAAGCACCAGGGATGGCCCTGGCAATGCTGATGGGATCACTT
+AATGTTACACCTCTGGGCATGCTCTCTAGGCCTGTATGTGGAATCAGAGGGAAAACGCTC
+ATAATTAACCTGCCAGGTAGCAAGAAAGGATCTCAGGAATGCTTTCAATTCATACTGCCA
+GCTCTACCTCATGCCATTGACCTTTTACGTGATGCCATTGTAAAAGTAAAGGAGGTGCAT
+GATGAACTTGAAGATTTGCCTTCCCCACCTCCCCCTCTTTCCCCTCCTCCTACTACCAGC
+CCCCATAAACAGACAGAAGACAAAGGAGTTCAATGTGAGGAAGAGGAAGAAGAGAAGAAA
+GACAGTGGTGTTGCTTCAACAGAAGATAGTTCCTCATCACATATAACTGCAGCAGCCATT
+GCTGCCAAGATTCCAGACTCCATCATTTCTCGTGGTGTTCAGGTGCTCCCACGAGACACA
+GCCTCCCTCAGCACTACTCCTTCAGAATCGCCTCGTGCTCAGGCTACATCTCGCCTCTCT
+ACAGCTTCCTGCCCAACACCAAAAGTCCAGTCCAGGTGCAGCAGCAAGGAGAACATTCTC
+AGAGCCAGTCACAGTGCTGTCGATATCACCAAGGTGGCTAGAAGACATCGCATGTCTCCT
+TTTCCTCTGACATCTATGGACAAAGCCTTTATCACAGTCCTGGAGATGACTCCGGTGCTT
+GGGACAGAAATCATCAATTACCGAGATGGAATGGGGCGAGTCCTTGCTCAAGATGTATAT
+GCAAAAGACAATTTACCCCCCTTCCCAGCATCAGTAAAAGATGGCTATGCTGTCCGAGCT
+GCTGATGGCCCAGGAGATCGTTTCATCATTGGGGAATCCCAAGCTGGTGAACAGCCAACT
+CAGACAGTAATGCCAGGACAAGTCATGCGGGTTACAACAGGTGCTCCAATACCCTGCGGT
+GCTGATGCAGTAGTACAAGTGGAAGATACCGAACTTATCAGGGAATCAGATGATGGCACT
+GAAGAACTTGAAGTGCGAATTCTGGTGCAAGCTCGGCCAGGCCAAGATATCAGACCCATC
+GGCCATGACATTAAAAGAGGGGAATGTGTTTTGGCCAAAGGAACCCACATGGGCCCCTCA
+GAGATTGGTCTTCTGGCAACTGTAGGTGTCACAGAGGTTGAAGTTAATAAGTTTCCAGTG
+GTTGCAGTCATGTCAACAGGGAATGAGCTGCTAAATCCTGAAGATGACCTCTTACCAGGG
+AAGATTCGAGACAGCAATCGTTCAACTCTTCTAGCAACAATTCAGGAACATGGTTACCCC
+ACGATCAACTTGGGTATTGTAGGAGACAACCCAGATGACTTACTCAATGCCTTGAATGAG
+GGTATCAGTCGTGCTGATGTCATCATCACATCAGGGGGTGTATCCATGGGGGAAAAGGAC
+TATCTCAAGCAGGTGCTGGACATTGATCTTCATGCTCAGATCCATTTTGGCAGGGTTTTT
+ATGAAACCAGGCTTGCCAACAACATTTGCAACTTTGGATATTGATGGTGTAAGAAAAATA
+ATCTTTGCACTACCTGGGAATCCTGTATCGGCTGTGGTCACCTGCAATCTCTTTGTTGTG
+CCTGCACTGAGGAAAATGCAGGGCATCTTGGATCCTCGGCCAACCATCATCAAAGCAAGG
+TTATCATGTGATGTAAAACTTGATCCTCGTCCAGAATACCATCGGTGTATACTAACTTGG
+CATCACCAAGAACCACTACCTTGGGCACAGAGTACAGGTAATCAAATGAGCAGCCGTCTG
+ATGAGCATGCGCAGTGCCAATGGATTGTTGATGCTACCTCCAAAGACAGAACAGTACGTG
+GAGCTCCACAAAGGCGAGGTGGTGGATGTCATGGTCATTGGACGGCTATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00994</identifier>
+            <name>MoCF_biosynth</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03454</identifier>
+            <name>MoeA_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03453</identifier>
+            <name>MoeA_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>molybdopterin adenylyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>molybdopterin molybdotransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>establishment of synaptic specificity at neuromuscular junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycine receptor clustering</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Mo-molybdopterin cofactor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>molybdenum incorporation into molybdenum-molybdopterin complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>molybdopterin cofactor biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>water-soluble vitamin metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001948</id>
+      <name>Acyl carrier protein</name>
+      <organism>Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0A6B1" source="Swiss-Prot">
+        <name>Acyl carrier protein</name>
+        <general-function>Acp phosphopantetheine attachment site binding involved in fatty acid biosynthetic process</general-function>
+        <specific-function>Carrier of the growing fatty acid chain in fatty acid biosynthesis.</specific-function>
+        <gene-name>acpP</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>3.71</theoretical-pi>
+        <molecular-weight>8639.455</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="99287">Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE008752</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>16419713</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0A6B1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACP_SALTY</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ACP</synonym>
+          <synonym>CAF</synonym>
+          <synonym>Cytosolic-activating factor</synonym>
+          <synonym>Fatty acid synthase acyl carrier protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011403|Acyl carrier protein
+MSTIEERVKKIIGEQLGVKQEEVTNNASFVEDLGADSLDTVELVMALEEEFDTEIPDEEA
+EKITTVQAAIDYINGHQA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011404|Acyl carrier protein (acpP)
+ATGAGCACTATCGAAGAACGCGTTAAGAAAATTATCGGCGAACAGCTGGGCGTTAAGCAG
+GAAGAAGTAACCAACAATGCTTCTTTCGTTGAAGACCTGGGCGCAGATTCTCTTGACACC
+GTTGAGCTGGTAATGGCTCTGGAAGAAGAGTTTGATACTGAGATTCCGGACGAAGAAGCT
+GAGAAAATCACCACCGTTCAGGCTGCCATTGATTACATCAACGGCCACCAGGCGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00550</identifier>
+            <name>PP-binding</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ACP phosphopantetheine attachment site binding involved in fatty acid biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001604</id>
+      <name>Sensor protein FixL</name>
+      <organism>Bradyrhizobium japonicum (strain USDA 110)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P23222" source="Swiss-Prot">
+        <name>Sensor protein FixL</name>
+        <general-function>Phosphorelay sensor kinase activity</general-function>
+        <specific-function>Putative oxygen sensor; modulates the activity of FixJ, a transcriptional activator of nitrogen fixation fixK gene. FixL probably acts as a kinase that phosphorylates FixJ.</specific-function>
+        <gene-name>fixL</gene-name>
+        <locus/>
+        <cellular-location>Cell inner membrane; multi-pass membrane protein</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.38</theoretical-pi>
+        <molecular-weight>55651.92</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224911">Bradyrhizobium diazoefficiens (strain JCM 10833 / IAM 13628 / NBRC 14792 / USDA 110)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X56808</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>39523</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P23222</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FIXL_BRADU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.13.3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016493|Sensor protein FixL
+MAPTRVTHPPDDGRGEHFRVRIEGFGVGTWDLDLKTWALDWSDTARTLLGIGQDQPASYD
+LFLSRLEPDDRERVESAIKRVSERGGGFDVSFRVAGTSNAGQWIRARAGLIRDEAGTARH
+LSGIFLDIDEEKQVEGALRTRETHLRSILHTIPDAMIVIDGHGIIQLFSTAAERLFGWSE
+LEAIGQNVNILMPEPDRSRHDSYISRYRTTSDPHIIGIGRIVTGKRRDGTTFPMHLSIGE
+MQSGGEPYFTGFVRDLTEHQQTQARLQELQSELVHVSRLSAMGEMASALAHELNQPLAAI
+SNYMKGSRRLLAGSSDPNTPKVESALDRAAEQALRAGQIIRRLRDFVARGESEKRVESLS
+KLIEEAGALGLAGAREQNVQLRFSLDPGADLVLADRVQIQQVLVNLFRNALEAMAQSQRR
+ELVVTNTPAADDMIEVEVSDTGSGFQDDVIPNLFQTFFTTKDTGMGVGLSISRSIIEAHG
+GRMWAESNASGGATFRFTLPAADEN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016494|Sensor protein FixL (fixL)
+TTGGCGCCGACCCGCGTAACGCATCCGCCGGATGACGGCCGGGGCGAGCATTTCCGGGTC
+AGGATCGAGGGATTCGGCGTCGGCACCTGGGATCTCGACCTCAAGACCTGGGCGCTGGAC
+TGGTCGGATACCGCGCGGACCCTGCTCGGAATCGGGCAGGACCAGCCGGCGAGCTACGAC
+CTCTTCCTGTCACGCCTCGAGCCCGACGACCGCGAGCGCGTGGAGAGCGCGATCAAGCGC
+GTCTCCGAACGCGGTGGCGGCTTCGACGTGTCCTTCAGGGTCGCCGGCACCTCCAACGCA
+GGACAGTGGATTCGCGCCCGGGCCGGACTCATTCGGGACGAAGCCGGCACCGCCCGCCAT
+CTCAGCGGCATCTTTCTCGATATCGACGAGGAGAAGCAGGTCGAGGGTGCGCTCCGTACC
+CGCGAGACCCACCTCCGCTCGATCCTCCACACAATTCCCGACGCCATGATCGTCATCGAC
+GGCCACGGCATCATCCAGCTGTTCAGCACCGCCGCCGAGCGCCTGTTCGGCTGGTCCGAG
+CTCGAGGCGATCGGCCAGAACGTCAACATCCTGATGCCGGAGCCCGACCGCTCCCGGCAT
+GACAGCTACATTTCGCGTTACCGCACCACGAGCGATCCCCACATCATCGGCATCGGGCGC
+ATCGTGACCGGCAAGCGCCGCGACGGCACCACCTTCCCGATGCACCTGTCGATCGGCGAG
+ATGCAGTCCGGCGGCGAGCCCTATTTTACCGGTTTCGTCCGCGATCTCACCGAGCACCAG
+CAGACCCAGGCGCGTCTCCAGGAACTGCAATCCGAGCTCGTCCACGTCTCCAGGCTGAGC
+GCCATGGGCGAAATGGCGTCCGCGCTCGCGCACGAGCTCAACCAGCCGCTGGCGGCGATC
+AGCAACTACATGAAGGGCTCGCGGCGGCTGCTTGCCGGCAGCAGTGATCCGAACACACCG
+AAGGTCGAAAGCGCCCTGGACCGCGCCGCCGAGCAGGCGCTGCGCGCCGGCCAGATCATC
+CGGCGCCTGCGCGACTTCGTTGCCCGCGGCGAATCGGAGAAGCGGGTCGAGAGTCTCTCC
+AAGCTGATCGAGGAGGCCGGCGCGCTCGGGCTTGCCGGCGCGCGCGAGCAGAACGTGCAG
+CTCCGCTTCAGTCTCGATCCGGGCGCCGATCTCGTTCTCGCCGACCGGGTGCAGATCCAG
+CAGGTCCTGGTCAACCTGTTCCGCAACGCGCTGGAAGCGATGGCTCAGTCGCAGCGACGC
+GAGCTCGTCGTCACCAACACCCCCGCCGCCGACGACATGATCGAGGTCGAAGTGTCCGAC
+ACCGGCAGCGGTTTCCAGGACGACGTCATTCCGAACCTGTTTCAGACTTTCTTCACCACC
+AAGGACACCGGCATGGGCGTGGGACTGTCCATCAGCCGCTCGATCATCGAAGCTCACGGC
+GGGCGCATGTGGGCCGAGAGCAACGCATCGGGCGGGGCGACCTTCCGCTTCACCCTCCCG
+GCAGCCGACGAGAATTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00989</identifier>
+            <name>PAS</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02518</identifier>
+            <name>HATPase_c</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00512</identifier>
+            <name>HisKA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphorelay sensor kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitrogen fixation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-histidine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphorelay signal transduction system</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction by protein phosphorylation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001009</id>
+      <name>Cytochrome c</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P99999" source="Swiss-Prot">
+        <name>Cytochrome c</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Electron carrier protein. The oxidized form of the cytochrome c heme group can accept an electron from the heme group of the cytochrome c1 subunit of cytochrome reductase. Cytochrome c then transfers this electron to the cytochrome oxidase complex, the final protein carrier in the mitochondrial electron-transport chain.Plays a role in apoptosis. Suppression of the anti-apoptotic members or activation of the pro-apoptotic members of the Bcl-2 family leads to altered mitochondrial membrane permeability resulting in release of cytochrome c into the cytosol. Binding of cytochrome c to Apaf-1 triggers the activation of caspase-9, which then accelerates apoptosis by activating other caspases.</specific-function>
+        <gene-name>CYCS</gene-name>
+        <locus>7p15.2</locus>
+        <cellular-location>Mitochondrion intermembrane space</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>10.16</theoretical-pi>
+        <molecular-weight>11748.69</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:19986</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CYCS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M22877</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>181242</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P99999</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CYC_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CYC</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010707|Cytochrome c
+MGDVEKGKKIFIMKCSQCHTVEKGGKHKTGPNLHGLFGRKTGQAPGYSYTAANKNKGIIW
+GEDTLMEYLENPKKYIPGTKMIFVGIKKKEERADLIAYLKKATNE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010708|Cytochrome c (CYCS)
+ATGGGTGATGTTGAGAAAGGCAAGAAGATTTTTATTATGAAGTGTTCCCAGTGCCACACC
+GTTGAAAAGGGAGGCAAGCACAAGACTGGGCCAAATCTCCATGGTCTCTTTGGGCGGAAG
+ACAGGTCAGGCCCCTGGATACTCTTACACAGCCGCCAATAAGAACAAAGGCATCATCTGG
+GGAGAGGATACACTGATGGAGTATTTGGAGAATCCCAAGAAGTACATCCCTGGAACAAAA
+ATGATCTTTGTCGGCATTAAGAAGAAGGAAGAAAGGGCAGACTTAATAGCTTATCTCAAA
+AAAGCTACTAATGAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00034</identifier>
+            <name>Cytochrom_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial intermembrane space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein phosphatase type 2A complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>respiratory chain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron transporter, transferring electrons from CoQH2-cytochrome c reductase complex and cytochrome c oxidase complex activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process by cytochrome c</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ATP synthesis coupled electron transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular respiration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrial electron transport, cytochrome c to oxygen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrial electron transport, ubiquinol to cytochrome c</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrion organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organelle organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein dephosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory electron transport chain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to reactive oxygen species</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001588</id>
+      <name>Circadian clock protein KaiB</name>
+      <organism>Synechocystis sp. (strain PCC 6803 / Kazusa)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P74645" source="Swiss-Prot">
+        <name>Circadian clock protein KaiB</name>
+        <general-function>Identical protein binding</general-function>
+        <specific-function>Component of the KaiABC clock protein complex, which constitutes the main circadian regulator in cyanobacteria. The KaiABC complex may act as a promoter-non-specific transcription regulator that represses transcription, possibly by acting on the state of chromosome compaction. In the complex, it decreases the phosphorylation status of KaiC. It has no effect on KaiC by itself, but instead needs the presence of both KaiA and KaiC, suggesting that it acts by antagonizing the interaction between KaiA and KaiC.</specific-function>
+        <gene-name>kaiB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.84</theoretical-pi>
+        <molecular-weight>11934.89</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1111708">Synechocystis sp. (strain PCC 6803 / Kazusa)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BA000022</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1653851</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P74645</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>KAIB_SYNY3</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011125|Circadian clock protein KaiB
+MSPFKKTYVLKLYVAGNTPNSVRALKMLKNILEQEFQGVYALKVIDVLKNPQLAEEDKIL
+ATPTLAKILPPPVRKIIGDLSDREKVLIGLDLLYDEIREREAEDQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0003151|318 bp
+ATGAGCCCCTTTAAAAAAACTTACGTTCTCAAACTCTACGTAGCTGGCAACACCCCCAAC
+TCTGTGCGGGCCTTAAAAATGCTAAAAAATATCCTTGAGCAAGAATTCCAGGGAGTTTAT
+GCCCTCAAAGTAATCGACGTGTTGAAAAATCCCCAATTAGCCGAAGAAGATAAAATTCTT
+GCCACCCCCACCTTGGCTAAAATCCTACCGCCCCCTGTCAGGAAAATCATCGGCGACCTT
+TCCGACCGAGAGAAAGTATTGATTGGTTTAGACCTGCTCTATGACGAAATTCGGGAACGG
+GAAGCAGAAGACCAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07689</identifier>
+            <name>KaiB</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian rhythm</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001751</id>
+      <name>Histidinol dehydrogenase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06988" source="Swiss-Prot">
+        <name>Histidinol dehydrogenase</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Catalyzes the sequential NAD-dependent oxidations of L-histidinol to L-histidinaldehyde and then to L-histidine.</specific-function>
+        <gene-name>hisD</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.81</theoretical-pi>
+        <molecular-weight>46109.815</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X13462</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>41709</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06988</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HISX_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.23</synonym>
+          <synonym>HDH</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011249|Histidinol dehydrogenase
+MSFNTIIDWNSCTAEQQRQLLMRPAISASESITRTVNDILDNVKARGDEALREYSAKFDK
+TTVTALKVSAEEIAAASERLSDELKQAMAVAVKNIETFHTAQKLPPVDVETQPGVRCQQV
+TRPVASVGLYIPGGSAPLFSTVLMLATPASIAGCKKVVLCSPPPIADEILYAAQLCGVQD
+VFNVGGAQAIAALAFGTESVPKVDKIFGPGNAFVTEAKRQVSQRLDGAAIDMPAGPSEVL
+VIADSGATPDFVASDLLSQAEHGPDSQVILLTPAADMARRVAEAVERQLAELPRAETARQ
+ALNASRLIVTKDLAQCVEISNQYGPEHLIIQTRNARELVDSITSAGSVFLGDWSPESAGD
+YASGTNHVLPTYGYTATCSSLGLADFQKRMTVQELSKEGFSALASTIETLAAAERLTAHK
+NAVTLRVNALKEQA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011250|Histidinol dehydrogenase (hisD)
+ATGAGCTTTAACACAATCATTGACTGGAATAGCTGTACTGCGGAGCAACAACGCCAGCTG
+TTAATGCGCCCGGCGATTTCCGCCTCTGAAAGCATTACCCGCACTGTTAACGATATTCTC
+GATAACGTGAAAGCACGCGGCGATGAGGCCCTGCGGGAATACAGCGCGAAGTTTGATAAA
+ACCACGGTTACCGCGCTGAAGGTGTCTGCAGAGGAGATCGCCGCCGCCAGCGAACGCCTG
+AGCGACGAGCTAAAACAGGCGATGGCGGTGGCAGTAAAGAATATTGAAACCTTCCACACT
+GCGCAAAAACTGCCGCCGGTAGATGTAGAAACGCAGCCAGGCGTGCGTTGCCAGCAGGTC
+ACGCGTCCGGTAGCTTCAGTTGGGTTGTATATTCCTGGCGGCTCCGCCCCGCTCTTCTCA
+ACGGTATTAATGCTGGCGACTCCGGCGAGTATTGCGGGCTGTAAAAAAGTGGTGCTGTGC
+TCACCGCCGCCGATTGCCGATGAGATCCTTTATGCGGCGCAGCTGTGCGGTGTGCAGGAC
+GTGTTTAACGTCGGCGGCGCACAGGCCATTGCCGCACTGGCGTTTGGTACGGAATCTGTG
+CCAAAAGTGGACAAAATCTTCGGGCCGGGTAACGCCTTTGTCACCGAAGCGAAACGTCAG
+GTGAGCCAGCGTCTGGACGGTGCGGCGATCGATATGCCCGCAGGCCCGTCGGAAGTGCTG
+GTGATTGCTGACAGCGGCGCTACGCCGGATTTCGTGGCTTCTGATTTGCTCTCTCAGGCT
+GAACACGGCCCGGACTCACAGGTGATTTTACTGACGCCCGCTGCTGATATGGCGCGTCGC
+GTTGCCGAGGCCGTCGAACGCCAACTGGCAGAACTGCCGCGTGCCGAAACCGCCCGCCAG
+GCACTGAACGCCAGCCGCCTGATCGTGACTAAAGATTTAGCGCAGTGCGTGGAGATCTCC
+AACCAGTACGGCCCGGAGCACCTGATCATTCAGACCCGCAACGCCCGTGAACTGGTCGAT
+AGCATCACCAGCGCCGGTTCGGTATTTCTTGGTGACTGGTCACCGGAATCGGCAGGTGAT
+TACGCCTCCGGCACCAACCACGTTCTACCGACTTACGGTTACACCGCCACCTGTTCCAGC
+CTCGGGCTGGCAGATTTCCAGAAGCGCATGACCGTACAGGAACTGTCGAAAGAGGGGTTC
+TCCGCGCTGGCTTCAACCATAGAAACACTGGCCGCCGCCGAGCGCCTGACCGCCCACAAA
+AATGCCGTTACTTTGCGTGTTAACGCCCTTAAGGAGCAAGCATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00815</identifier>
+            <name>Histidinol_dh</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histidinol dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>manganese ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histidine biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

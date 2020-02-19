@@ -1,0 +1,1900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02007</drugbank-id>
+  <drugbank-id>EXPT01537</drugbank-id>
+  <name>alpha-D-glucose 6-phosphate</name>
+  <description/>
+  <cas-number/>
+  <unii>03JQ7I74CO</unii>
+  <average-mass>260.1358</average-mass>
+  <monoisotopic-mass>260.029718526</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as hexose phosphates. These are carbohydrate derivatives containing a hexose substituted by one or more phosphate groups.</description>
+    <direct-parent>Hexose phosphates</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbohydrates and carbohydrate conjugates</subclass>
+    <alternative-parent>Hemiacetals</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkyl phosphates</alternative-parent>
+    <alternative-parent>Monosaccharide phosphates</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Oxanes</alternative-parent>
+    <alternative-parent>Polyols</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic heteromonocyclic compound</substituent>
+    <substituent>Alkyl phosphate</substituent>
+    <substituent>Hemiacetal</substituent>
+    <substituent>Hexose phosphate</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monoalkyl phosphate</substituent>
+    <substituent>Monosaccharide phosphate</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic phosphoric acid derivative</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Oxane</substituent>
+    <substituent>Phosphoric acid ester</substituent>
+    <substituent>Polyol</substituent>
+    <substituent>Secondary alcohol</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">6-O-phosphono-α-D-glucopyranose</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1bg3</pdb-entry>
+    <pdb-entry>1cza</pdb-entry>
+    <pdb-entry>1gpy</pdb-entry>
+    <pdb-entry>1gz5</pdb-entry>
+    <pdb-entry>1hkb</pdb-entry>
+    <pdb-entry>1mor</pdb-entry>
+    <pdb-entry>1p5g</pdb-entry>
+    <pdb-entry>1qha</pdb-entry>
+    <pdb-entry>1u0f</pdb-entry>
+    <pdb-entry>1u8x</pdb-entry>
+    <pdb-entry>1up6</pdb-entry>
+    <pdb-entry>1up7</pdb-entry>
+    <pdb-entry>2acq</pdb-entry>
+    <pdb-entry>2h0z</pdb-entry>
+    <pdb-entry>2ho7</pdb-entry>
+    <pdb-entry>2vez</pdb-entry>
+    <pdb-entry>2wf9</pdb-entry>
+    <pdb-entry>2z74</pdb-entry>
+    <pdb-entry>2zj3</pdb-entry>
+    <pdb-entry>3l3c</pdb-entry>
+    <pdb-entry>3nb0</pdb-entry>
+    <pdb-entry>3ooj</pdb-entry>
+    <pdb-entry>3rt1</pdb-entry>
+    <pdb-entry>4bxc</pdb-entry>
+    <pdb-entry>4kq1</pdb-entry>
+    <pdb-entry>4kq2</pdb-entry>
+    <pdb-entry>4kqm</pdb-entry>
+    <pdb-entry>4qfh</pdb-entry>
+    <pdb-entry>4r73</pdb-entry>
+    <pdb-entry>4zew</pdb-entry>
+    <pdb-entry>5huu</pdb-entry>
+    <pdb-entry>5jio</pdb-entry>
+    <pdb-entry>5oly</pdb-entry>
+    <pdb-entry>5suk</pdb-entry>
+    <pdb-entry>5uw0</pdb-entry>
+    <pdb-entry>5uw1</pdb-entry>
+    <pdb-entry>5uw4</pdb-entry>
+    <pdb-entry>5ux7</pdb-entry>
+    <pdb-entry>5v0t</pdb-entry>
+    <pdb-entry>5vnc</pdb-entry>
+    <pdb-entry>5wsa</pdb-entry>
+    <pdb-entry>5wsb</pdb-entry>
+    <pdb-entry>5wsc</pdb-entry>
+    <pdb-entry>6bj0</pdb-entry>
+    <pdb-entry>6bzc</pdb-entry>
+    <pdb-entry>6mgi</pdb-entry>
+    <pdb-entry>6nnp</pdb-entry>
+    <pdb-entry>6nns</pdb-entry>
+    <pdb-entry>6qxl</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.92</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>3.14e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>{[(2R,3S,4S,5R,6S)-3,4,5,6-tetrahydroxyoxan-2-yl]methoxy}phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>α-D-glucose 6-phosphate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>260.1358</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>260.029718526</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>O[C@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H](O)[C@H]1O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C6H13O9P</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C6H13O9P/c7-3-2(1-14-16(11,12)13)15-6(10)5(9)4(3)8/h2-10H,1H2,(H2,11,12,13)/t2-,3-,4+,5-,6+/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>NBSCHQHZLSJFNQ-DVKNGEFBSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>156.91</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>46.8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>20.56</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.22</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>17665</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>439284</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505235</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00668</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>388417</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>G6P</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001108</id>
+      <name>Hexokinase-1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P19367" source="Swiss-Prot">
+        <name>Hexokinase-1</name>
+        <general-function>Mannokinase activity</general-function>
+        <specific-function/>
+        <gene-name>HK1</gene-name>
+        <locus>10q22</locus>
+        <cellular-location>Mitochondrion outer membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.78</theoretical-pi>
+        <molecular-weight>102485.1</molecular-weight>
+        <chromosome-location>10</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4922</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HK1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M75126</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>184021</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P19367</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HXK1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.1.1</synonym>
+          <synonym>Brain form hexokinase</synonym>
+          <synonym>Hexokinase type I</synonym>
+          <synonym>HK I</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002205|Hexokinase-1
+MIAAQLLAYYFTELKDDQVKKIDKYLYAMRLSDETLIDIMTRFRKEMKNGLSRDFNPTAT
+VKMLPTFVRSIPDGSEKGDFIALDLGGSSFRILRVQVNHEKNQNVHMESEVYDTPENIVH
+GSGSQLFDHVAECLGDFMEKRKIKDKKLPVGFTFSFPCQQSKIDEAILITWTKRFKASGV
+EGADVVKLLNKAIKKRGDYDANIVAVVNDTVGTMMTCGYDDQHCEVGLIIGTGTNACYME
+ELRHIDLVEGDEGRMCINTEWGAFGDDGSLEDIRTEFDREIDRGSLNPGKQLFEKMVSGM
+YLGELVRLILVKMAKEGLLFEGRITPELLTRGKFNTSDVSAIEKNKEGLHNAKEILTRLG
+VEPSDDDCVSVQHVCTIVSFRSANLVAATLGAILNRLRDNKGTPRLRTTVGVDGSLYKTH
+PQYSRRFHKTLRRLVPDSDVRFLLSESGSGKGAAMVTAVAYRLAEQHRQIEETLAHFHLT
+KDMLLEVKKRMRAEMELGLRKQTHNNAVVKMLPSFVRRTPDGTENGDFLALDLGGTNFRV
+LLVKIRSGKKRTVEMHNKIYAIPIEIMQGTGEELFDHIVSCISDFLDYMGIKGPRMPLGF
+TFSFPCQQTSLDAGILITWTKGFKATDCVGHDVVTLLRDAIKRREEFDLDVVAVVNDTVG
+TMMTCAYEEPTCEVGLIVGTGSNACYMEEMKNVEMVEGDQGQMCINMEWGAFGDNGCLDD
+IRTHYDRLVDEYSLNAGKQRYEKMISGMYLGEIVRNILIDFTKKGFLFRGQISETLKTRG
+IFETKFLSQIESDRLALLQVRAILQQLGLNSTCDDSILVKTVCGVVSRRAAQLCGAGMAA
+VVDKIRENRGLDRLNVTVGVDGTLYKLHPHFSRIMHQTVKELSPKCNVSFLLSEDGSGKG
+AALITAVGVRLRTEASS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016317|Hexokinase-1 (HK1)
+ATGATCGCCGCGCAGCTCCTGGCCTATTACTTCACGGAGCTGAAGGATGACCAGGTCAAA
+AAGATTGACAAGTATCTCTATGCCATGCGGCTCTCCGATGAAACTCTCATAGATATCATG
+ACTCGCTTCAGGAAGGAGATGAAGAATGGCCTCTCCCGGGATTTTAATCCAACAGCCACA
+GTCAAGATGTTGCCAACATTCGTAAGGTCCATTCCTGATGGCTCTGAAAAGGGAGATTTC
+ATTGCCCTGGATCTTGGTGGGTCTTCCTTTCGAATTCTGCGGGTGCAAGTGAATCATGAG
+AAAAACCAGAATGTTCACATGGAGTCCGAGGTTTATGACACCCCAGAGAACATCGTGCAC
+GGCAGTGGAAGCCAGCTTTTTGATCATGTTGCTGAGTGCCTGGGAGATTTCATGGAGAAA
+AGGAAGATCAAGGACAAGAAGTTACCTGTGGGATTCACGTTTTCTTTTCCTTGCCAACAA
+TCCAAAATAGATGAGGCCATCCTGATCACCTGGACAAAGCGATTTAAAGCGAGCGGAGTG
+GAAGGAGCAGATGTGGTCAAACTGCTTAACAAAGCCATCAAAAAGCGAGGGGACTATGAT
+GCCAACATCGTAGCTGTGGTGAATGACACAGTGGGCACCATGATGACCTGTGGCTATGAC
+GACCAGCACTGTGAAGTCGGCCTGATCATCGGCACTGGCACCAATGCTTGCTACATGGAG
+GAACTGAGGCACATTGATCTGGTGGAAGGAGACGAGGGGAGGATGTGTATCAATACAGAA
+TGGGGAGCCTTTGGAGACGATGGATCATTAGAAGACATCCGGACAGAGTTTGACAGGGAG
+ATAGACCGGGGATCCCTCAACCCTGGAAAACAGCTGTTTGAGAAGATGGTCAGTGGCATG
+TACTTGGGAGAGCTGGTTCGACTGATCCTAGTCAAGATGGCCAAGGAGGGCCTCTTATTT
+GAAGGGCGGATCACCCCGGAGCTGCTCACCCGAGGGAAGTTTAACACCAGTGATGTGTCA
+GCCATCGAAAAGAATAAGGAAGGCCTCCACAATGCCAAAGAAATCCTGACCCGCCTGGGA
+GTGGAGCCGTCCGATGATGACTGTGTCTCAGTCCAGCACGTTTGCACCATTGTCTCATTT
+CGCTCAGCCAACTTGGTGGCTGCCACACTGGGCGCCATCTTGAACCGCCTGCGTGATAAC
+AAGGGCACACCCAGGCTGCGGACCACGGTTGGTGTCGACGGATCTCTTTACAAGACGCAC
+CCACAGTATTCCCGGCGTTTCCACAAGACTCTAAGGCGCTTGGTGCCAGACTCCGATGTG
+CGCTTCCTCCTCTCGGAGAGTGGCAGCGGCAAGGGGGCTGCCATGGTGACGGCGGTGGCC
+TACCGCTTGGCCGAGCAGCACCGGCAGATAGAGGAGACCCTGGCTCATTTCCACCTCACC
+AAGGACATGCTGCTGGAGGTGAAGAAGAGGATGCGGGCCGAGATGGAGCTGGGGCTGAGG
+AAGCAGACGCACAACAATGCCGTGGTTAAGATGCTGCCCTCCTTCGTCCGGAGAACTCCC
+GACGGGACCGAGAATGGTGACTTCTTGGCCCTGGATCTTGGAGGAACCAATTTCCGTGTG
+CTGCTGGTGAAAATCCGTAGTGGGAAAAAGAGAACGGTGGAAATGCACAACAAGATCTAC
+GCCATTCCTATTGAAATCATGCAGGGCACTGGGGAAGAGCTGTTTGATCACATTGTCTCC
+TGCATCTCTGACTTCTTGGACTACATGGGGATCAAAGGCCCCAGGATGCCTCTGGGCTTC
+ACGTTCTCATTTCCCTGCCAGCAGACGAGTCTGGACGCGGGAATCTTGATCACGTGGACA
+AAGGGTTTTAAGGCAACAGACTGCGTGGGCCACGATGTAGTCACCTTACTAAGGGATGCG
+ATAAAAAGGAGAGAGGAATTTGACCTGGACGTGGTGGCTGTGGTCAACGACACAGTGGGC
+ACCATGATGACCTGTGCTTATGAGGAGCCCACCTGTGAGGTTGGACTCATTGTTGGGACC
+GGCAGCAATGCCTGCTACATGGAGGAGATGAAGAACGTGGAGATGGTGGAGGGGGACCAG
+GGGCAGATGTGCATCAACATGGAGTGGGGGGCCTTTGGGGACAACGGGTGTCTGGATGAT
+ATCAGGACACACTACGACAGACTGGTGGACGAATATTCCCTAAATGCTGGGAAACAAAGG
+TATGAGAAGATGATCAGTGGTATGTACCTGGGTGAAATCGTCCGCAACATCTTAATCGAC
+TTCACCAAGAAGGGATTCCTCTTCCGAGGGCAGATCTCTGAGACGCTGAAGACCCGGGGC
+ATCTTTGAGACCAAGTTTCTCTCTCAGATCGAGAGTGACCGATTAGCACTGCTCCAGGTC
+CGGGCTATCCTCCAGCAGCTAGGTCTGAATAGCACCTGCGATGACAGTATCCTCGTCAAG
+ACAGTGTGCGGGGTGGTGTCCAGGAGGGCCGCACAGCTGTGTGGCGCAGGCATGGCTGCG
+GTTGTGGATAAGATCCGCGAGAACAGAGGACTGGACCGTCTGAATGTGACTGTGGGAGTG
+GACGGGACACTCTACAAGCTTCATCCACACTTCTCCAGAATCATGCACCAGACGGTGAAG
+GAACTGTCACCAAAATGTAACGTGTCCTTCCTCCTGTCTGAGGATGGCAGCGGCAAGGGG
+GCCGCCCTCATCACGGCCGTGGGCGTGCGGTTACGCACAGAGGCAAGCAGCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00349</identifier>
+            <name>Hexokinase_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03727</identifier>
+            <name>Hexokinase_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fructokinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glucokinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glucose binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hexokinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mannokinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>canonical glycolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>establishment of protein localization to mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose 6-phosphate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycolytic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hexose transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of protein location in mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001369</id>
+      <name>Phosphomannomutase/phosphoglucomutase</name>
+      <organism>Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P26276" source="Swiss-Prot">
+        <name>Phosphomannomutase/phosphoglucomutase</name>
+        <general-function>Phosphomannomutase activity</general-function>
+        <specific-function>Highly reversible phosphoryltransferase. The phosphomannomutase activity produces a precursor for alginate polymerization, the alginate layer causes a mucoid phenotype and provides a protective barrier against host immune defenses and antibiotics. Also involved in core lipopolysaccaride (LPS) biosynthesis due to its phosphoglucomutase activity. Essential for rhamnolipid production, an exoproduct correlated with pathogenicity (PubMed:10481091). Required for biofilm production. The reaction proceeds via 2 processive phosphoryl transferase reactions; first from enzyme-phospho-Ser-108 to the substrate (generating a bisphosphorylated substrate intermediate and a dephosphorylated enzyme), a 180 degree rotation of the intermediate (probably aided by movement of domain 4), and subsequent transfer of phosphate back to the enzyme (PubMed:11716469, PubMed:16880541, PubMed:16595672, PubMed:22242625).</specific-function>
+        <gene-name>algC</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.95</theoretical-pi>
+        <molecular-weight>50295.09</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="208964">Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M60873</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>150994</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P26276</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ALGC_PSEAE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.4.2.2</synonym>
+          <synonym>PMM / PGM</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019106|Phosphomannomutase/phosphoglucomutase
+MSTAKAPTLPASIFRAYDIRGVVGDTLTAETAYWIGRAIGSESLARGEPCVAVGRDGRLS
+GPELVKQLIQGLVDCGCQVSDVGMVPTPVLYYAANVLEGKSGVMLTGSHNPPDYNGFKIV
+VAGETLANEQIQALRERIEKNDLASGVGSVEQVDILPRYFKQIRDDIAMAKPMKVVVDCG
+NGVAGVIAPQLIEALGCSVIPLYCEVDGNFPNHHPDPGKPENLKDLIAKVKAENADLGLA
+FDGDGDRVGVVTNTGTIIYPDRLLMLFAKDVVSRNPGADIIFDVKCTRRLIALISGYGGR
+PVMWKTGHSLIKKKMKETGALLAGEMSGHVFFKERWFGFDDGIYSAARLLEILSQDQRDS
+EHVFSAFPSDISTPEINITVTEDSKFAIIEALQRDAQWGEGNITTLDGVRVDYPKGWGLV
+RASNTTPVLVLRFEADTEEELERIKTVFRNQLKAVDSSLPVPF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0002716|1392 bp
+ATGAGCACTGTAAAAGCACCGACGCTGCCCGCCAGCATCTTCCGCGCCTACGACATCCGT
+CGCGTGGTAGGCGATACCCTCACCGCCGAGACCGCCTACTGGATCGGTCGCGCCATCGGC
+TCGGAAAGCCTCGCCCGCGGCGAACCGTGCGTCGCTGTCGGCCGCGATGGCCGCCTGTCC
+GGTCCCGAGCTGGTCAAGCAGCTGATCCAGGGCCTGGTGGACTGCGGTTGCCAGGTCAGC
+GACGTGGGCATGGTGCCTACCCCGGTGCTGTACTACGCGGCCAACGTGCTCGAGGGCAAG
+TCCGGGGTGATGCTGACCGGCAGCCACAATCCGCCGGACTACAACGGCTTCAAGATCGTG
+GTCGCCGGCGAGACCCTGGCCAACGAGCAGATCCAGGCCCTGCGCGAGCGCATCGAGAAA
+AACGACCTGGCATCCGGCGTCGGCAGCGTAGAGCAGGTCGACATCCTGCCGCGCTACTTC
+AAGCAGATCCGCGACGACATCGCCATGGCCAAGCCGATGAAGGTGGTGGTCGACTGCGGC
+AACGGCGTGGCCGGGGTGATCGCCCCGCAGTTGATCGAGGCCCTGGGCTGCAGCGTGATC
+CCGCTGTACTGCGAGGTCGACGGCAACTTCCCGAACCACCATCCGGACCCGGGCAAGCCG
+GAGAACCTGAAGGACCTGATCGCCAAGGTCAAGGCCGAGAACGCCGACCTGGGCCTGGCC
+TTCGACGGCGACGGCGATCGCGTCGGCGTGGTCACCAATACCGGTACCATCATCTATCCG
+GACCGTCTGCTGATGCTGTTCGCCAAGGACGTGGTCTCGCGCAACCCGGGGGCCGACATC
+ATCTTCGACGTCAAGTGCACCCGCCGTCTGATCGCCCTGATCAGCGGCTACGGCGGCCGT
+CCGGTGATGTGGAAGACCGGCCACTCGCTGATCAAGAAGAAGATGAAGGAAACCGGCGCC
+CTGCTGGCTGGCGAGATGAGCGGCCACGTGTTCTTCAAGGAGCGCTGGTTCGGCTTCGAC
+GATGGCATCTACAGCGCCGCCCGCCTGCTGGAAATCCTCAGCCAGGATCAGCGTGACAGC
+GAGCACGTGTTCTCGGCCTTCCCGAGCGACATTTCCACCCCGGAAATCAACATCACCGTC
+ACCGAGGACAGCAAGTTCGCCATCATCGAGGCGCTGCAACGCGACGCCCAATGGGGCGAA
+GGCAACATCACCACCCTCGACGGCGTGCGGGTCGACTACCCCAAAGGCTGGGGCCTGGTA
+CGCGCCTCCAACACCACTCCCGTGCTGGTCCTGCGCTTCGAAGCGGACCCCGAGGAAGAG
+CTGGAGCGCATCAAGACCGTCTTCCGTAACCAACTGAAGGCAGTGGATTCCTCGCTGCCC
+GTGCCCTTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02878</identifier>
+            <name>PGM_PMM_I</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02879</identifier>
+            <name>PGM_PMM_II</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02880</identifier>
+            <name>PGM_PMM_III</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00408</identifier>
+            <name>PGM_PMM_IV</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphoglucomutase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphomannomutase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alginic acid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>GDP-mannose biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipopolysaccharide core region biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>O antigen biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pathogenesis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001309</id>
+      <name>Maltose-6'-phosphate glucosidase</name>
+      <organism>Bacillus subtilis (strain 168)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P54716" source="Swiss-Prot">
+        <name>Maltose-6'-phosphate glucosidase</name>
+        <general-function>Oxidoreductase activity, acting on the ch-oh group of donors, nad or nadp as acceptor</general-function>
+        <specific-function>Hydrolyzes maltose-6'-phosphate and trehalose-6'-phosphate. Is involved in the catabolism of alpha-glycosides accumulated via a phosphoenolpyruvate-dependent maltose phosphotransferase system (PEP-PTS). Is also able to significantly catalyze the hydrolysis of both 6-phospho-alpha- and 6-phospho-beta-glucosides containing activated leaving groups such as p-nitrophenol and does so with retention and inversion, respectively, of the substrate anomeric configuration.</specific-function>
+        <gene-name>glvA</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.67</theoretical-pi>
+        <molecular-weight>50513.14</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224308">Bacillus subtilis (strain 168)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D50543</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1486241</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P54716</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GLVA_BACSU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.2.1.122</synonym>
+          <synonym>6-phospho-alpha-D-glucosidase</synonym>
+          <synonym>6-phosphoryl-O-alpha-D-glucopyranosyl:phosphoglucohydrolase</synonym>
+          <synonym>glv-1</synonym>
+          <synonym>glvG</synonym>
+          <synonym>malA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016381|Maltose-6'-phosphate glucosidase
+MKKKSFSIVIAGGGSTFTPGIVLMLLDHLEEFPIRKLKLYDNDKERQDRIAGACDVFIRE
+KAPDIEFAATTDPEEAFTDVDFVMAHIRVGKYAMRALDEQIPLKYGVVGQETCGPGGIAY
+GMRSIGGVLEILDYMEKYSPDAWMLNYSNPAAIVAEATRRLRPNSKILNICDMPVGIEDR
+MAQILGLSSRKEMKVRYYGLNHFGWWTSIQDQEGNDLMPKLKEHVSQYGYIPKTEAEAVE
+ASWNDTFAKARDVQAADPDTLPNTYLQYYLFPDDMVKKSNPNHTRANEVMEGREAFIFSQ
+CDMITREQSSENSEIKIDDHASYIVDLARAIAYNTGERMLLIVENNGAIANFDPTAMVEV
+PCIVGSNGPEPITVGTIPQFQKGLMEQQVSVEKLTVEAWAEKSFQKLWQALILSKTVPNA
+RVARLILEDLVEANKDFWPELDQSPTRIS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016382|Maltose-6'-phosphate glucosidase (glvA)
+ATGAAGAAAAAATCATTCTCAATCGTAATAGCGGGCGGAGGGAGCACTTTCACTCCAGGG
+ATCGTACTCATGCTCTTGGACCATTTGGAGGAGTTTCCGATCAGAAAGCTGAAGCTGTAT
+GATAATGATAAGGAGAGACAGGATCGAATTGCAGGCGCCTGTGACGTTTTTATCAGAGAA
+AAAGCGCCGGATATTGAATTTGCAGCGACGACTGACCCGGAAGAAGCTTTTACAGATGTC
+GATTTTGTTATGGCGCACATCAGAGTAGGGAAATACGCGATGCGCGCGCTTGATGAGCAA
+ATTCCGTTAAAGTACGGAGTTGTCGGCCAGGAGACGTGCGGGCCGGGCGGGATCGCATAC
+GGTATGCGTTCGATCGGCGGTGTGCTTGAAATATTAGATTACATGGAAAAATACTCGCCT
+GATGCGTGGATGCTCAATTATTCCAATCCGGCGGCAATTGTGGCTGAAGCTACGAGACGC
+CTTAGACCGAATTCTAAAATTCTCAATATCTGTGATATGCCGGTTGGGATCGAAGACCGG
+ATGGCGCAAATTCTTGGCTTATCCTCAAGAAAAGAAATGAAGGTCCGCTATTACGGATTG
+AATCATTTCGGCTGGTGGACATCGATTCAGGATCAAGAGGGCAACGATTTAATGCCGAAG
+CTGAAGGAACATGTATCCCAATACGGTTATATTCCGAAAACAGAGGCTGAAGCTGTGGAG
+GCAAGCTGGAATGACACGTTCGCCAAAGCGCGTGACGTGCAGGCTGCAGATCCTGACACA
+CTGCCGAATACGTATTTGCAATATTATTTGTTCCCAGATGATATGGTGAAAAAATCAAAT
+CCGAATCATACGCGGGCGAATGAAGTCATGGAAGGGCGCGAAGCTTTTATTTTCAGCCAA
+TGTGACATGATCACACGTGAACAGTCCTCGGAAAACAGCGAAATTAAAATCGATGACCAC
+GCATCGTATATCGTTGATCTTGCCCGGGCGATTGCCTACAACACAGGTGAAAGAATGCTG
+TTGATTGTTGAAAATAACGGTGCAATTGCGAACTTTGACCCGACTGCGATGGTTGAGGTG
+CCATGCATCGTCGGCTCAAATGGACCTGAACCGATTACCGTTGGCACCATTCCGCAATTC
+CAGAAAGGGCTCATGGAGCAGCAGGTATCCGTTGAGAAGCTGACTGTTGAAGCGTGGGCA
+GAGAAATCGTTCCAAAAGCTGTGGCAGGCGCTGATCCTGTCAAAAACAGTGCCGAACGCG
+CGTGTGGCAAGACTCATTCTTGAGGATTTAGTGGAGGCCAACAAAGACTTCTGGCCTGAG
+CTTGATCAAAGCCCAACCCGCATATCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02056</identifier>
+            <name>Glyco_hydro_4</name>
+          </pfam>
+          <pfam>
+            <identifier>PF11975</identifier>
+            <name>Glyco_hydro_4C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>maltose-6'-phosphate glucosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000916</id>
+      <name>Glycogen phosphorylase, muscle form</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11217" source="Swiss-Prot">
+        <name>Glycogen phosphorylase, muscle form</name>
+        <general-function>Pyridoxal phosphate binding</general-function>
+        <specific-function>Phosphorylase is an important allosteric enzyme in carbohydrate metabolism. Enzymes from different sources differ in their regulatory mechanisms and in their natural substrates. However, all known phosphorylases share catalytic and structural properties.</specific-function>
+        <gene-name>PYGM</gene-name>
+        <locus>11q12-q13.2</locus>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.03</theoretical-pi>
+        <molecular-weight>97091.265</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9726</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PYGM</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M32598</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>190784</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11217</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PYGM_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.1</synonym>
+          <synonym>Myophosphorylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001824|Glycogen phosphorylase, muscle form
+MSRPLSDQEKRKQISVRGLAGVENVTELKKNFNRHLHFTLVKDRNVATPRDYYFALAHTV
+RDHLVGRWIRTQQHYYEKDPKRIYYLSLEFYMGRTLQNTMVNLALENACDEATYQLGLDM
+EELEEIEEDAGLGNGGLGRLAACFLDSMATLGLAAYGYGIRYEFGIFNQKISGGWQMEEA
+DDWLRYGNPWEKARPEFTLPVHFYGHVEHTSQGAKWVDTQVVLAMPYDTPVPGYRNNVVN
+TMRLWSAKAPNDFNLKDFNVGGYIQAVLDRNLAENISRVLYPNDNFFEGKELRLKQEYFV
+VAATLQDIIRRFKSSKFGCRDPVRTNFDAFPDKVAIQLNDTHPSLAIPELMRILVDLERM
+DWDKAWDVTVRTCAYTNHTVLPEALERWPVHLLETLLPRHLQIIYEINQRFLNRVAAAFP
+GDVDRLRRMSLVEEGAVKRINMAHLCIAGSHAVNGVARIHSEILKKTIFKDFYELEPHKF
+QNKTNGITPRRWLVLCNPGLAEVIAERIGEDFISDLDQLRKLLSFVDDEAFIRDVAKVKQ
+ENKLKFAAYLEREYKVHINPNSLFDIQVKRIHEYKRQLLNCLHVITLYNRIKREPNKFFV
+PRTVMIGGKAAPGYHMAKMIIRLVTAIGDVVNHDPAVGDRLRVIFLENYRVSLAEKVIPA
+ADLSEQISTAGTEASGTGNMKFMLNGALTIGTMDGANVEMAEEAGEENFFIFGMRVEDVD
+KLDQRGYNAQEYYDRIPELRQVIEQLSSGFFSPKQPDLFKDIVNMLMHHDRFKVFADYED
+YIKCQEKVSALYKNPREWTRMVIRNIATSGKFSSDRTIAQYAREIWGVEPSRQRLPAPDE
+AI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010645|Glycogen phosphorylase, muscle form (PYGM)
+ATGTCCCGGCCCCTGTCAGACCAAGAGAAAAGAAAGCAAATCAGTGTGCGTGGCCTGGCC
+GGCGTGGAGAACGTGACTGAGCTGAAAAAGAACTTCAACCGGCACCTGCATTTCACACTC
+GTAAAGGACCGCAATGTGGCCACCCCACGAGACTACTACTTTGCTCTGGCCCATACCGTG
+CGCGACCACCTCGTGGGGCGCTGGATCCGCACGCAGCAGCACTACTATGAGAAGGACCCC
+AAGAAGATCTCCGGGGGCTGGCAGATGGAGGAGGCCGATGACTGGCTTCGCTACGGCAAC
+CCCTGGGAGAAGGCCCGGCCCGAGTTCACGCTACCTGTGCACTTCTACGGCCATGTGGAG
+CACACCAGCCAGGGTGCCAAGTGGGTGGACACACAGGTGGTACTGGCCATGCCCTACGAT
+ACGCCCGTGCCTGGCTATCGCAACAATGTTGTCAACACCATGCGCCTCTGGTCTGCCAAG
+GCTCCCAATGACTTCAACCTCAAGGACTTCAATGTCGGTGGCTACATCCAGGCTGTGTTG
+GACCGAAACCTGGCGGAGAACATCTCTCGTGTCCTGTACCCCAATGATAATTTCTTCGAA
+GGGAAGGAGCTGCGGCTGAAGCAGGAGTATTTCGTGGTGGCTGCCACCCTCCAGGACATC
+ATCCGTCGCTTCAAGTCTTCCAAGTTCGGCTGCCGTGATCCCGTGCGCACGAACTTCGAT
+GCCTTCCCAGATAAGGTGGCCATCCAGCTCAATGACACCCACCCCTCCCTGGCCATCCCC
+GAGCTGATGAGGATCCTGGTGGACCTGGAACGGATGGACTGGGACAAGGCGTGGGATGTG
+ACAGTGAGGACCTGTGCCTACACCAACCACACGGTGCTGCCCGAGGCCCTGGAGCGCTGG
+CCGGTGCACCTCTTGGAGACGCTGCTGCCGCGGCACCTCCAGATCATCTACGAGATCAAC
+CAGCGCTTCCTCAACCGGGTGGCGGCCGCATTCCCAGGGGACGTAGACCGGCTGCGGCGC
+ATGTCGCTGGTGGAGGAGGGCGCAGTGAAGCGCATCAACATGGCACACCTGTGCATCGCG
+GGGTCGCACGCCGTCAACGGCGTGGCGCGCATCCACTCCGAGATCCTCAAGAAGACCATC
+TTCAAAGACTTCTATGAGCTGGAGCCTCATAAGTTCCAGAATAAGACCAACGGCATCACC
+CCTCGGCGCTGGCTGGTTCTGTGTAACCCCGGGCTGGCAGAGGTCATTGCTGAGCGCATC
+GGGGAGGACTTCATCTCTGACCTGGACCAGCTGCGCAAACTGCTCTCCTTTGTGGATGAT
+GAAGCTTTCATTCGGGATGTGGCCAAAGTGAAGCAGGAAAACAAGTTGAAGTTTGCTGCC
+TACCTAGAGAGGGAATACAAAGTCCACATCAACCCCAACTCACTCTTCGACATCCAGGTG
+AAGCGGATTCACGAATATAAACGACAGCTCCTCAACTGCCTCCATGTCATCACCCTGTAC
+AACCGCATCAAGAGGGAGCCCAATAAGTTTTTTGTGCCTCGGACTGTGATGATTGGAGGG
+AAGGCTGCACCTGGGTACCACATGGCCAAGATGATCATCAGACTCGTCACAGCCATCGGG
+GATGTGGTCAACCATGACCCGGCAGTGGGTGACCGCCTCCGTGTCATCTTCCTGGAGAAC
+TACCGAGTCTCACTGGCCGAGAAAGTGATCCCAGCTGCAGACCTCTCTGAGCAGATCTCC
+ACTGCGGGCACTGAAGCCTCAGGCACCGGCAACATGAAGTTCATGCTCAACGGGGCTCTG
+ACCATTGGCACCATGGACGGGGCCAATGTGGAGATGGCAGAAGAGGCGGGAGAGGAAAAC
+TTCTTCATCTTTGGCATGCGGGTGGAGGATGTGGATAAGCTTGACCAAAGAGGGTACAAT
+GCCCAGGAGTACTACGATCGCATTCCTGAGCTTCGGCAGGTCATTGAGCAGCTGAGCAGT
+GGCTTCTTCTCCCCCAAACAGCCCGACCTGTTCAAGGACATTGTCAATATGCTCATGCAC
+CATGACCGGTTTAAAGTCTTCGCAGATTATGAAGACTACATTAAATGCCAGGAGAAAGTC
+AGCGCCTTGTACAAGAACCCAAGAGAGTGGACGCGGATGGTGATCCGGAACATAGCCACC
+TCTGGCAAGTTCTCCAGTGACCGCACCATTGCCCAGTATGCCCGGGAGATCTGGGGTGTG
+GAGCCTTCCCGCCAGCGCCTGCCAGCCCCGGATGAGGCCATCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00343</identifier>
+            <name>Phosphorylase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sarcoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>AMP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glycogen phosphorylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxal phosphate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycogen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycogen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to cAMP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001334</id>
+      <name>Alpha,alpha-trehalose-phosphate synthase [UDP-forming]</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P31677" source="Swiss-Prot">
+        <name>Alpha,alpha-trehalose-phosphate synthase [UDP-forming]</name>
+        <general-function>Alpha,alpha-trehalose-phosphate synthase (udp-forming) activity</general-function>
+        <specific-function>Catalyzes the transfer of glucose from UDP-glucose to glucose-6-phosphate to form alpha,alpha-1,1 trehalose-6-phosphate. Acts with retention of the anomeric configuration of the UDP-sugar donor. Essential for viability of the cells at low temperatures and at elevated osmotic strength.</specific-function>
+        <gene-name>otsA</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.85</theoretical-pi>
+        <molecular-weight>53610.655</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X69160</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>577561</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P31677</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OTSA_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.15</synonym>
+          <synonym>Osmoregulatory trehalose synthesis protein A</synonym>
+          <synonym>Trehalose-6-phosphate synthase</synonym>
+          <synonym>UDP-glucose-glucosephosphate glucosyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016390|Alpha,alpha-trehalose-phosphate synthase [UDP-forming]
+MSRLVVVSNRIAPPDEHAASAGGLAVGILGALKAAGGLWFGWSGETGNEDQPLKKVKKGN
+ITWASFNLSEQDLDEYYNQFSNAVLWPAFHYRLDLVQFQRPAWDGYLRVNALLADKLLPL
+LQDDDIIWIHDYHLLPFAHELRKRGVNNRIGFFLHIPFPTPEIFNALPTYDTLLEQLCDY
+DLLGFQTENDRLAFLDCLSNLTRVTTRSAKSHTAWGKAFRTEVYPIGIEPKEIAKQAAGP
+LPPKLAQLKAELKNVQNIFSVERLDYSKGLPERFLAYEALLEKYPQHHGKIRYTQIAPTS
+RGDVQAYQDIRHQLENEAGRINGKYGQLGWTPLYYLNQHFDRKLLMKIFRYSDVGLVTPL
+RDGMNLVAKEYVAAQDPANPGVLVLSQFAGAANELTSALIVNPYDRDEVAAALDRALTMS
+LAERISRHAEMLDVIVKNDINHWQECFISDLKQIVPRSAESQQRDKVATFPKLA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016391|Alpha,alpha-trehalose-phosphate synthase [UDP-forming] (otsA)
+ATGAGTCGTTTAGTCGTAGTATCTAACCGGATTGCACCACCAGACGAGCACGCCGCCAGT
+GCCGGTGGCCTTGCCGTTGGCATACTGGGGGCACTGAAAGCCGCAGGCGGACTGTGGTTT
+GGCTGGAGTGGTGAAACAGGGAATGAGGATCAGCCGCTAAAAAAGGTGAAAAAAGGTAAC
+ATTACGTGGGCCTCTTTTAACCTCAGCGAACAGGACCTTGACGAATACTACAACCAATTC
+TCCAATGCCGTTCTCTGGCCCGCTTTTCATTATCGGCTCGATCTGGTGCAATTTCAGCGT
+CCTGCCTGGGACGGCTATCTACGCGTAAATGCGTTGCTGGCAGATAAATTACTGCCGCTG
+TTGCAAGACGATGACATTATCTGGATCCACGATTATCACCTGTTGCCATTTGCGCATGAA
+TTACGCAAACGGGGAGTGAATAATCGCATTGGTTTCTTTCTGCATATTCCTTTCCCGACA
+CCGGAAATCTTCAACGCGCTGCCGACATATGACACCTTGCTTGAACAGCTTTGTGATTAT
+GATTTGCTGGGTTTCCAGACAGAAAACGATCGTCTGGCGTTCCTGGATTGTCTTTCTAAC
+CTGACCCGCGTCACGACACGTAGCGCAAAAAGCCATACAGCCTGGGGCAAAGCATTTCGA
+ACAGAAGTCTACCCGATCGGCATTGAACCGAAAGAAATAGCCAAACAGGCTGCCGGGCCA
+CTGCCGCCAAAACTGGCGCAACTTAAAGCGGAACTGAAAAACGTACAAAATATCTTTTCT
+GTCGAACGGCTGGATTATTCCAAAGGTTTGCCAGAGCGTTTTCTCGCCTATGAAGCGTTG
+CTGGAAAAATATCCGCAGCATCATGGTAAAATTCGTTATACCCAGATTGCACCAACGTCG
+CGTGGTGATGTGCAAGCCTATCAGGATATTCGTCATCAGCTCGAAAATGAAGCTGGACGA
+ATTAATGGTAAATACGGGCAATTAGGCTGGACGCCGCTTTATTATTTGAATCAGCATTTT
+GACCGTAAATTACTGATGAAAATATTCCGCTACTCTGACGTGGGCTTAGTGACGCCACTG
+CGTGACGGGATGAACCTGGTAGCAAAAGAGTATGTTGCTGCTCAGGACCCAGCCAATCCG
+GGCGTTCTTGTTCTTTCGCAATTTGCGGGAGCGGCAAACGAGTTAACGTCGGCGTTAATT
+GTTAACCCCTACGATCGTGACGAAGTTGCAGCTGCGCTGGATCGTGCATTGACTATGTCG
+CTGGCGGAACGTATTTCCCGTCATGCAGAAATGCTGGACGTTATCGTGAAAAACGATATT
+AACCACTGGCAGGAGTGCTTCATTAGCGACCTAAAGCAGATAGTTCCGCGAAGCGCGGAA
+AGCCAGCAGCGCGATAAAGTTGCTACCTTTCCAAAGCTTGCGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00982</identifier>
+            <name>Glyco_transf_20</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha,alpha-trehalose-phosphate synthase (UDP-forming) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to DNA damage stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to osmotic stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>trehalose biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>trehalose metabolism in response to cold stress</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001423</id>
+      <name>Glutamine--fructose-6-phosphate aminotransferase [isomerizing]</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P17169" source="Swiss-Prot">
+        <name>Glutamine--fructose-6-phosphate aminotransferase [isomerizing]</name>
+        <general-function>Glutamine-fructose-6-phosphate transaminase (isomerizing) activity</general-function>
+        <specific-function>Catalyzes the first step in hexosamine metabolism, converting fructose-6P into glucosamine-6P using glutamine as a nitrogen source.</specific-function>
+        <gene-name>glmS</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.74</theoretical-pi>
+        <molecular-weight>66893.7</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X01631</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>43268</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P17169</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GLMS_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.6.1.16</synonym>
+          <synonym>D-fructose-6-phosphate amidotransferase</synonym>
+          <synonym>GFAT</synonym>
+          <synonym>Glucosamine-6-phosphate synthase</synonym>
+          <synonym>Hexosephosphate aminotransferase</synonym>
+          <synonym>L-glutamine--D-fructose-6-phosphate amidotransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016420|Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+MCGIVGAIAQRDVAEILLEGLRRLEYRGYDSAGLAVVDAEGHMTRLRRLGKVQMLAQAAE
+EHPLHGGTGIAHTRWATHGEPSEVNAHPHVSEHIVVVHNGIIENHEPLREELKARGYTFV
+SETDTEVIAHLVNWELKQGGTLREAVLRAIPQLRGAYGTVIMDSRHPDTLLAARSGSPLV
+IGLGMGENFIASDQLALLPVTRRFIFLEEGDIAEITRRSVNIFDKTGAEVKRQDIESNLQ
+YDAGDKGIYRHYMQKEIYEQPNAIKNTLTGRISHGQVDLSELGPNADELLSKVEHIQILA
+CGTSYNSGMVSRYWFESLAGIPCDVEIASEFRYRKSAVRRNSLMITLSQSGETADTLAGL
+RLSKELGYLGSLAICNVPGSSLVRESDLALMTNAGTEIGVASTKAFTTQLTVLLMLVAKL
+SRLKGLDASIEHDIVHGLQALPSRIEQMLSQDKRIEALAEDFSDKHHALFLGRGDQYPIA
+LEGALKLKEISYIHAEAYAAGELKHGPLALIDADMPVIVVAPNNELLEKLKSNIEEVRAR
+GGQLYVFADQDAGFVSSDNMHIIEMPHVEEVIAPIFYTVPLQLLAYHVALIKGTDVDQPR
+NLAKSVTVE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016421|Glutamine--fructose-6-phosphate aminotransferase [isomerizing] (glmS)
+ATGTGTGGAATTGTTGGCGCGATCGCGCAACGTGATGTAGCAGAAATCCTTCTTGAAGGT
+TTACGTCGTCTGGAATACCGCGGATATGACTCTGCCGGTCTGGCCGTTGTTGATGCAGAA
+GGTCATATGACCCGCCTGCGTCGCCTCGGTAAAGTCCAGATGCTGGCACAGGCAGCGGAA
+GAACATCCTCTGCATGGCGGCACTGGTATTGCTCACACTCGCTGGGCGACCCACGGTGAA
+CCTTCAGAAGTGAATGCGCATCCGCATGTTTCTGAACACATTGTGGTGGTGCATAACGGC
+ATCATCGAAAACCATGAACCGCTGCGTGAAGAGCTAAAAGCGCGTGGCTATACCTTCGTT
+TCTGAAACCGACACCGAAGTGATTGCCCATCTGGTGAACTGGGAGCTGAAACAAGGCGGG
+ACTCTGCGTGAGGCCGTTCTGCGTGCTATCCCGCAGCTGCGTGGTGCGTACGGTACAGTG
+ATCATGGACTCCCGTCACCCGGATACCCTGCTGGCGGCACGTTCTGGTAGTCCGCTGGTG
+ATTGGCCTGGGGATGGGCGAAAACTTTATCGCTTCTGACCAGCTGGCGCTGTTGCCGGTG
+ACCCGTCGCTTTATCTTCCTTGAAGAGGGCGATATTGCGGAAATCACTCGCCGTTCGGTA
+AACATCTTCGATAAAACTGGCGCGGAAGTAAAACGTCAGGATATCGAATCCAATCTGCAA
+TATGACGCGGGCGATAAAGGCATTTACCGTCACTACATGCAGAAAGAGATCTACGAACAG
+CCGAACGCGATCAAAAACACCCTTACCGGACGCATCAGCCACGGTCAGGTTGATTTAAGC
+GAGCTGGGACCGAACGCCGACGAACTGCTGTCGAAGGTTGAGCATATTCAGATCCTCGCC
+TGTGGTACTTCTTATAACTCCGGTATGGTTTCCCGCTACTGGTTTGAATCGCTAGCAGGT
+ATTCCGTGCGACGTCGAAATCGCCTCTGAATTCCGCTATCGCAAATCTGCCGTGCGTCGT
+AACAGCCTGATGATCACCTTGTCACAGTCTGGCGAAACCGCGGATACCCTGGCTGGCCTG
+CGTCTGTCGAAAGAGCTGGGTTACCTTGGTTCACTGGCAATCTGTAACGTTCCGGGTTCT
+TCTCTGGTGCGCGAATCCGATCTGGCGCTAATGACCAACGCGGGTACAGAAATCGGCGTG
+GCATCCACTAAAGCATTCACCACTCAGTTAACTGTGCTGTTGATGCTGGTGGCGAAGCTG
+TCTCGCCTGAAAGGTCTGGATGCCTCCATTGAACATGACATCGTGCATGGTCTGCAGGCG
+CTGCCGAGCCGTATTGAGCAGATGCTGTCTCAGGACAAACGCATTGAAGCGCTGGCAGAA
+GATTTCTCTGACAAACATCACGCGCTGTTCCTGGGCCGTGGCGATCAGTACCCAATCGCG
+CTGGAAGGCGCATTGAAGTTGAAAGAGATCTCTTACATTCACGCTGAAGCCTACGCTGCT
+GGCGAACTGAAACACGGTCCGCTGGCGCTAATTGATGCCGATATGCCGGTTATTGTTGTT
+GCACCGAACAACGAATTGCTGGAAAAACTGAAATCCAACATTGAAGAAGTTCGCGCGCGT
+GGCGGTCAGTTGTATGTCTTCGCCGATCAGGATGCGGGTTTTGTAAGTAGCGATAACATG
+CACATCATCGAGATGCCGCATGTGGAAGAGGTGATTGCACCGATCTTCTACACCGTTCCG
+CTGCAGCTGCTGGCTTACCATGTCGCGCTGATCAAAGGCACCGACGTTGACCAGCCGCGT
+AACCTGGCAAAATCGGTTACGGTTGAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01380</identifier>
+            <name>SIS</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glutamine-fructose-6-phosphate transaminase (isomerizing) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glutamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>UDP-N-acetylglucosamine biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001390</id>
+      <name>6-phospho-beta-glucosidase BglT</name>
+      <organism>Thermotoga maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9X108" source="Swiss-Prot">
+        <name>6-phospho-beta-glucosidase BglT</name>
+        <general-function>Oxidoreductase activity, acting on the ch-oh group of donors, nad or nadp as acceptor</general-function>
+        <specific-function>Hydrolyzes cellobiose 6'-phosphate into glucose 6-phosphate (Glc6P) and glucose.</specific-function>
+        <gene-name>bglT</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.92</theoretical-pi>
+        <molecular-weight>47626.38</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="243274">Thermotoga maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE000512</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>4981838</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9X108</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>BGLT_THEMA</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.2.1.86</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010974|6-phospho-beta-glucosidase BglT
+MRIAVIGGGSSYTPELVKGLLDISEDVRIDEVIFYDIDEEKQKIVVDFVKRLVKDRFKVL
+ISDTFEGAVVDAKYVIFQFRPGGLKGRENDEGIPLKYGLIGQETTGVGGFSAALRAFPIV
+EEYVDTVRKTSNATIVNFTNPSGHITEFVRNYLEYEKFIGLCNVPINFIREIAEMFSARL
+EDVFLKYYGLNHLSFIEKVFVKGEDVTEKVFENLKLKLSNIPDEDFPTWFYDSVRLIVNP
+YLRYYLMEKKMFKKISTHELRAREVMKIEKELFEKYRTAVEIPEELTKRGGSMYSTAAAH
+LIRDLETDEGKIHIVNTRNNGSIENLPDDYVLEIPCYVRSGRVHTLSQGKGDHFALSFIH
+AVKMYERLTIEAYLKRSKKLALKALLSHPLGPDVEDAKDLLEEILEANREYVKLG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010975|6-phospho-beta-glucosidase BglT (bglT)
+ATGAGAATTGCGGTGATAGGTGGGGGAAGCAGCTACACCCCGGAGCTGGTGAAGGGACTT
+CTCGACATTTCCGAGGATGTTCGCATCGACGAGGTGATCTTCTACGACATCGACGAAGAA
+AAGCAGAAAATCGTCGTTGATTTCGTGAAGAGACTCGTCAAAGACAGGTTCAAGGTGCTC
+ATAAGCGACACCTTCGAGGGTGCTGTCGTGGACGCGAAGTACGTGATCTTTCAGTTCAGA
+CCCGGCGGACTCAAAGGTAGAGAAAACGACGAAGGCATTCCGCTGAAGTACGGTCTCATA
+GGTCAAGAGACAACGGGGGTTGGGGGATTTTCAGCGGCTTTGAGGGCGTTTCCCATAGTA
+GAAGAGTACGTTGATACCGTGAGAAAAACATCGAACGCGACCATCGTAAACTTCACCAAC
+CCATCCGGCCACATTACGGAGTTCGTGAGAAACTACCTCGAATACGAAAAATTCATAGGT
+CTCTGCAACGTTCCCATAAACTTCATCCGGGAGATCGCAGAGATGTTCTCAGCAAGGCTC
+GAAGACGTGTTCCTGAAGTACTACGGCCTCAACCATCTGAGCTTCATAGAGAAGGTCTTC
+GTAAAAGGTGAAGACGTGACGGAAAAGGTTTTCGAGAACCTGAAGCTGAAGCTCTCCAAC
+ATACCAGACGAGGATTTCCCGACGTGGTTCTACGACTCGGTGAGACTCATTGTGAATCCT
+TACCTGAGGTACTACCTGATGGAGAAGAAGATGTTCAAAAAGATCTCCACACACGAGCTC
+AGAGCAAGGGAAGTGATGAAGATAGAGAAAGAACTCTTCGAGAAGTACAGAACCGCTGTC
+GAGATACCGGAGGAACTCACAAAACGCGGTGGCAGCATGTATTCCACAGCGGCAGCTCAC
+CTGATAAGAGACCTCGAAACCGACGAAGGAAAGATACACATCGTGAACACGAGAAACAAC
+GGCTCGATCGAGAACCTCCCGGATGATTACGTTCTGGAGATCCCGTGTTATGTGAGATCC
+GGCAGGGTTCACACGCTCTCGCAGGGAAAAGGAGATCACTTTGCTCTTTCTTTCATCCAC
+GCGGTGAAGATGTACGAGCGACTCACAATAGAAGCGTATCTGAAGAGATCGAAAAAACTC
+GCTCTAAAGGCTTTGCTTTCCCATCCTCTCGGACCCGATGTGGAGGACGCAAAAGACCTT
+CTCGAAGAGATACTGGAGGCGAACAGAGAATACGTGAAACTGGGGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02056</identifier>
+            <name>Glyco_hydro_4</name>
+          </pfam>
+          <pfam>
+            <identifier>PF11975</identifier>
+            <name>Glyco_hydro_4C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>6-phospho-beta-glucosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001199</id>
+      <name>Glucose-6-phosphate isomerase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06744" source="Swiss-Prot">
+        <name>Glucose-6-phosphate isomerase</name>
+        <general-function>Ubiquitin protein ligase binding</general-function>
+        <specific-function>Besides it's role as a glycolytic enzyme, mammalian GPI can function as a tumor-secreted cytokine and an angiogenic factor (AMF) that stimulates endothelial cell motility. GPI is also a neurotrophic factor (Neuroleukin) for spinal and sensory neurons.</specific-function>
+        <gene-name>GPI</gene-name>
+        <locus>19q13.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.55</theoretical-pi>
+        <molecular-weight>63146.745</molecular-weight>
+        <chromosome-location>19</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4458</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GPI</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>K03515</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189238</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06744</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>G6PI_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.3.1.9</synonym>
+          <synonym>AMF</synonym>
+          <synonym>Autocrine motility factor</synonym>
+          <synonym>GPI</synonym>
+          <synonym>Neuroleukin</synonym>
+          <synonym>NLK</synonym>
+          <synonym>PGI</synonym>
+          <synonym>PHI</synonym>
+          <synonym>Phosphoglucose isomerase</synonym>
+          <synonym>Phosphohexose isomerase</synonym>
+          <synonym>SA-36</synonym>
+          <synonym>Sperm antigen 36</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002385|Glucose-6-phosphate isomerase
+MAALTRDPQFQKLQQWYREHRSELNLRRLFDANKDRFNHFSLTLNTNHGHILVDYSKNLV
+TEDVMRMLVDLAKSRGVEAARERMFNGEKINYTEGRAVLHVALRNRSNTPILVDGKDVMP
+EVNKVLDKMKSFCQRVRSGDWKGYTGKTITDVINIGIGGSDLGPLMVTEALKPYSSGGPR
+VWYVSNIDGTHIAKTLAQLNPESSLFIIASKTFTTQETITNAETAKEWFLQAAKDPSAVA
+KHFVALSTNTTKVKEFGIDPQNMFEFWDWVGGRYSLWSAIGLSIALHVGFDNFEQLLSGA
+HWMDQHFRTTPLEKNAPVLLALLGIWYINCFGCETHAMLPYDQYLHRFAAYFQQGDMESN
+GKYITKSGTRVDHQTGPIVWGEPGTNGQHAFYQLIHQGTKMIPCDFLIPVQTQHPIRKGL
+HHKILLANFLAQTEALMRGKSTEEARKELQAAGKSPEDLERLLPHKVFEGNRPTNSIVFT
+KLTPFMLGALVAMYEHKIFVQGIIWDINSFDQWGVELGKQLAKKIEPELDGSAQVTSHDA
+STNGLINFIKQQREARVQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019079|Glucose-6-phosphate isomerase (GPI)
+ATGGCCGCTCTCACCCGGGACCCCCAGTTCCAGAAGCTGCAGCAATGGTACCGCGAGCAC
+CGCTCCGAGCTGAACCTGCGCCGCCTCTTCGATGCCAACAAGGACCGCTTCAACCACTTC
+AGCTTGACCCTCAACACCAACCATGGGCATATCCTGGTGGATTACTCCAAGAACCTGGTG
+ACGGAGGACGTGATGCGGATGCTGGTGGACTTGGCCAAGTCCAGGGGCGTGGAGGCCGCC
+CGGGAGCGGATGTTCAATGGTGAGAAGATCAACTACACCGAGGGTCGAGCCGTGCTGCAC
+GTGGCTCTGCGGAACCGGTCAAACACACCCATCCTGGTAGACGGCAAGGATGTGATGCCA
+GAGGTCAACAAGGTTCTGGACAAGATGAAGTCTTTCTGCCAGCGTGTCCGGAGCGGTGAC
+TGGAAGGGGTACACAGGCAAGACCATCACGGACGTCATCAACATTGGCATTGGCGGCTCC
+GACCTGGGACCCCTCATGGTGACTGAAGCCCTTAAGCCATACTCTTCAGGAGGTCCCCGC
+GTCTGGTATGTCTCCAACATTGATGGAACTCACATTGCCAAAACCCTGGCCCAGCTGAAC
+CCCGAGTCCTCCCTGTTCATCATTGCCTCCAAGACCTTTACTACCCAGGAGACCATCACG
+AATGCAGAGACGGCGAAGGAGTGGTTTCTCCAGGCGGCCAAGGATCCTTCTGCAGTGGCG
+AAGCACTTTGTTGCCCTGTCTACTAACACAACCAAAGTGAAGGAGTTTGGAATTGACCCT
+CAAAACATGTTCGAGTTCTGGGATTGGGTGGGAGGACGCTACTCGCTGTGGTCGGCCATC
+GGACTCTCCATTGCCCTGCACGTGGGTTTTGACAACTTCGAGCAGCTGCTCTCGGGGGCT
+CACTGGATGGACCAGCACTTCCGCACGACGCCCCTGGAGAAGAACGCCCCCGTCTTGCTG
+GCCCTGCTGGGTATCTGGTACATCAACTGCTTTGGGTGTGAGACACACGCCATGCTGCCC
+TATGACCAGTACCTGCACCGCTTTGCTGCGTACTTCCAGCAGGGCGACATGGAGTCCAAT
+GGGAAATACATCACCAAATCTGGAACCCGTGTGGACCACCAGACAGGCCCCATTGTGTGG
+GGGGAGCCAGGGACCAATGGCCAGCATGCTTTTTACCAGCTCATCCACCAAGGCACCAAG
+ATGATACCCTGTGACTTCCTCATCCCGGTCCAGACCCAGCACCCCATACGGAAGGGTCTG
+CATCACAAGATCCTCCTGGCCAACTTCTTGGCCCAGACAGAGGCCCTGATGAGGGGAAAA
+TCGACGGAGGAGGCCCGAAAGGAGCTCCAGGCTGCGGGCAAGAGTCCAGAGGACCTTGAG
+AGGCTGCTGCCACATAAGGTCTTTGAAGGAAATCGCCCAACCAACTCTATTGTGTTCACC
+AAGCTCACACCATTCATGCTTGGAGCCTTGGTCGCCATGTATGAGCACAAGATCTTCGTT
+CAGGGCATCATCTGGGACATCAACAGCTTTGACCAGTGGGGAGTGGAGCTGGGAAAGCAG
+CTGGCTAAGAAAATAGAGCCTGAGCTTGATGGCAGTGCTCAAGTGACCTCTCACGACGCT
+TCTACCAATGGGCTCATCAACTTCATCAAGCAGCAGCGCGAGGCCAGAGTCCAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00342</identifier>
+            <name>PGI</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glucose-6-phosphate isomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>intramolecular transferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monosaccharide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin protein ligase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aldehyde catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>canonical glycolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gluconeogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose 6-phosphate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hemostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>humoral immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>learning or memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>methylglyoxal biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000747</id>
+      <name>Aldose reductase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P15121" source="Swiss-Prot">
+        <name>Aldose reductase</name>
+        <general-function>Glyceraldehyde oxidoreductase activity</general-function>
+        <specific-function>Catalyzes the NADPH-dependent reduction of a wide variety of carbonyl-containing compounds to their corresponding alcohols with a broad range of catalytic efficiencies.</specific-function>
+        <gene-name>AKR1B1</gene-name>
+        <locus>7q35</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.99</theoretical-pi>
+        <molecular-weight>35853.125</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:381</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AKR1B1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J04795</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>178487</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P15121</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ALDR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.21</synonym>
+          <synonym>Aldehyde reductase</synonym>
+          <synonym>Aldo-keto reductase family 1 member B1</synonym>
+          <synonym>ALDR1</synonym>
+          <synonym>AR</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016194|Aldose reductase
+MASRLLLNNGAKMPILGLGTWKSPPGQVTEAVKVAIDVGYRHIDCAHVYQNENEVGVAIQ
+EKLREQVVKREELFIVSKLWCTYHEKGLVKGACQKTLSDLKLDYLDLYLIHWPTGFKPGK
+EFFPLDESGNVVPSDTNILDTWAAMEELVDEGLVKAIGISNFNHLQVEMILNKPGLKYKP
+AVNQIECHPYLTQEKLIQYCQSKGIVVTAYSPLGSPDRPWAKPEDPSLLEDPRIKAIAAK
+HNKTTAQVLIRFPMQRNLVVIPKSVTPERIAENFKVFDFELSSQDMTTLLSYNRNWRVCA
+LLSCTSHKDYPFHEEF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016195|Aldose reductase (AKR1B1)
+ATGGCAAGCCGTCTCCTGCTCAACAACGGCGCCAAGATGCCCATCCTGGGGTTGGGTACC
+TGGAAGTCCCCTCCAGGGCAGGTGACTGAGGCCGTGAAGGTGGCCATTGACGTCGGGTAC
+CGCCACATCGACTGTGCCCATGTGTACCAGAATGAGAATGAGGTGGGGGTGGCCATTCAG
+GAGAAGCTCAGGGAGCAGGTGGTGAAGCGTGAGGAGCTCTTCATCGTCAGCAAGCTGTGG
+TGCACGTACCATGAGAAGGGCCTGGTGAAAGGAGCCTGCCAGAAGACACTCAGCGACCTG
+AAGCTGGACTACCTGGACCTCTACCTTATTCACTGGCCGACTGGCTTTAAGCCTGGGAAG
+GAATTTTTCCCATTGGATGAGTCGGGCAATGTGGTTCCCAGTGACACCAACATTCTGGAC
+ACGTGGGCGGCCATGGAAGAGCTGGTGGATGAAGGGCTGGTGAAAGCTATTGGCATCTCC
+AACTTCAACCATCTCCAGGTGGAGATGATCTTAAACAAACCTGGCTTGAAGTATAAGCCT
+GCAGTTAACCAGATTGAGTGCCACCCATATCTCACTCAGGAGAAGTTAATCCAGTACTGC
+CAGTCCAAAGGCATCGTGGTGACCGCCTACAGCCCCCTCGGCTCTCCTGACAGGCCCTGG
+GCCAAGCCCGAGGACCCTTCTCTCCTGGAGGATCCCAGGATCAAGGCGATCGCAGCCAAG
+CACAATAAAACTACAGCCCAGGTCCTGATCCGGTTCCCCATGCAGAGGAACTTGGTGGTG
+ATCCCCAAGTCTGTGACACCAGAACGCATTGCTGAGAACTTTAAGGTCTTTGACTTTGAA
+CTGAGCAGCCAGGATATGACCACCTTACTCAGCTACAACAGGAACTGGAGGGTCTGTGCC
+TTGTTGAGCTGTACCTCCCACAAGGATTACCCCTTCCATGAAGAGTTTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00248</identifier>
+            <name>Aldo_ket_red</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell projection cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mast cell granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>paranodal junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Schmidt-Lanterman incisure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Schwann cell microvillus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alditol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aldo-keto reductase (NADP) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glyceraldehyde oxidoreductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>C21-steroid hormone biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to methylglyoxal</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to peptide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>daunorubicin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>doxorubicin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fructose biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fructose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inner medullary collecting duct development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maternal process involved in female pregnancy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>naphthalene metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>norepinephrine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JAK-STAT cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to thyroid hormone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to water deprivation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sorbitol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stress-activated protein kinase signaling cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tissue homeostasis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

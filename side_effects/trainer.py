@@ -194,6 +194,7 @@ def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
             end = min(i + batch_size, len(dataset))
             a = [dataset[idx[ii]] for ii in range(start, end)]
             x, y = zip(*a)
-            y = torch.cat(y).unsqueeze(dim=1)
+            #y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
+            y = torch.cat(y, dim=0)#.unsqueeze(dim=1)
             yield list(zip(*x)), y
         loop += 1

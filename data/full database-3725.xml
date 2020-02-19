@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03958</drugbank-id>
+  <drugbank-id>EXPT01655</drugbank-id>
+  <name>7-methyl-guanosine-5'-triphosphate-5'-guanosine</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>803.4404</average-mass>
+  <monoisotopic-mass>803.095238742</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">mRNA cap analog N7-Methyl GpppG</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1mwh</pdb-entry>
+    <pdb-entry>1n52</pdb-entry>
+    <pdb-entry>1ri1</pdb-entry>
+    <pdb-entry>1ri2</pdb-entry>
+    <pdb-entry>1st0</pdb-entry>
+    <pdb-entry>2p40</pdb-entry>
+    <pdb-entry>3emb</pdb-entry>
+    <pdb-entry>3hxi</pdb-entry>
+    <pdb-entry>3qx8</pdb-entry>
+    <pdb-entry>4j7n</pdb-entry>
+    <pdb-entry>5abu</pdb-entry>
+    <pdb-entry>5tef</pdb-entry>
+    <pdb-entry>5yni</pdb-entry>
+    <pdb-entry>5ynj</pdb-entry>
+    <pdb-entry>5ynn</pdb-entry>
+    <pdb-entry>5ynq</pdb-entry>
+    <pdb-entry>6ogy</pdb-entry>
+    <pdb-entry>6pw3</pdb-entry>
+    <pdb-entry>6qcs</pdb-entry>
+    <pdb-entry>6qct</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.06e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>9-[(2R,3R,4S,5R)-5-({[({[({[(2R,3S,4R,5R)-3,4-dihydroxy-5-(6-hydroxy-2-imino-3,9-dihydro-2H-purin-9-yl)oxolan-2-yl]methoxy}(hydroxy)phosphoryl)oxy](hydroxy)phosphoryl}oxy)(hydroxy)phosphoryl]oxy}methyl)-3,4-dihydroxyoxolan-2-yl]-6-hydroxy-2-imino-7-methyl-3,9-dihydro-2H-purin-7-ium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>9-[(2R,3R,4S,5R)-5-({[({[(2R,3S,4R,5R)-3,4-dihydroxy-5-(6-hydroxy-2-imino-3H-purin-9-yl)oxolan-2-yl]methoxy(hydroxy)phosphoryl}oxy(hydroxy)phosphoryl)oxy(hydroxy)phosphoryl]oxy}methyl)-3,4-dihydroxyoxolan-2-yl]-6-hydroxy-2-imino-7-methyl-3H-purin-7-ium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>803.4404</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>803.095238742</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(COP(O)(=O)OP(O)(=O)OP(O)(=O)OC[C@@]2([H])O[C@@]([H])(N3C=[N+](C)C4=C3NC(=N)N=C4O)[C@]([H])(O)[C@]2([H])O)O[C@@]([H])(N2C=NC3=C2NC(=N)N=C3O)[C@]([H])(O)[C@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C21H30N10O18P3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C21H29N10O18P3/c1-29-5-31(15-9(29)17(37)28-21(23)26-15)19-13(35)11(33)7(47-19)3-45-51(40,41)49-52(42,43)48-50(38,39)44-2-6-10(32)12(34)18(46-6)30-4-24-8-14(30)25-20(22)27-16(8)36/h4-7,10-13,18-19,32-35H,2-3H2,1H3,(H8-,22,23,25,26,27,28,36,37,38,39,40,41,42,43)/p+1/t6-,7-,10-,11-,12-,13-,18-,19-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>FHHZHGZBHYYWTG-INFSMZHSSA-O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>411.77</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>184.44</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>67.34</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>0.88</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>4.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>121959</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46504811</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>108799</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>GTG</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001215</id>
+      <name>m7GpppX diphosphatase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q96C86" source="Swiss-Prot">
+        <name>m7GpppX diphosphatase</name>
+        <general-function>Rna 7-methylguanosine cap binding</general-function>
+        <specific-function>Decapping scavenger enzyme that catalyzes the cleavage of a residual cap structure following the degradation of mRNAs by the 3'-&gt;5' exosome-mediated mRNA decay pathway. Hydrolyzes cap analog structures like 7-methylguanosine nucleoside triphosphate (m7GpppG) with up to 10 nucleotide substrates (small capped oligoribonucleotides) and specifically releases 5'-phosphorylated RNA fragments and 7-methylguanosine monophosphate (m7GMP). Cleaves cap analog structures like tri-methyl guanosine nucleoside triphosphate (m3(2,2,7)GpppG) with very poor efficiency. Does not hydrolyze unmethylated cap analog (GpppG) and shows no decapping activity on intact m7GpppG-capped mRNA molecules longer than 25 nucleotides. Does not hydrolyze 7-methylguanosine diphosphate (m7GDP) to m7GMP (PubMed:22985415). May also play a role in the 5'-&gt;3 mRNA decay pathway; m7GDP, the downstream product released by the 5'-&gt;3' mRNA mediated decapping activity, may be also converted by DCPS to m7GMP (PubMed:14523240). Binds to m7GpppG and strongly to m7GDP. Plays a role in first intron splicing of pre-mRNAs. Inhibits activation-induced cell death.</specific-function>
+        <gene-name>DCPS</gene-name>
+        <locus>11q24.2</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.35</theoretical-pi>
+        <molecular-weight>38608.45</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:29812</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>DCPS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AY040773</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>21654920</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q96C86</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DCPS_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.6.1.59</synonym>
+          <synonym>DCS-1</synonym>
+          <synonym>DCS1</synonym>
+          <synonym>Decapping scavenger enzyme</synonym>
+          <synonym>HINT-5</synonym>
+          <synonym>Hint-related 7meGMP-directed hydrolase</synonym>
+          <synonym>HINT5</synonym>
+          <synonym>Histidine triad nucleotide-binding protein 5</synonym>
+          <synonym>Histidine triad protein member 5</synonym>
+          <synonym>Scavenger mRNA-decapping enzyme DcpS</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010846|m7GpppX diphosphatase
+MADAAPQLGKRKRELDVEEAHAASTEEKEAGVGNGTCAPVRLPFSGFRLQKVLRESARDK
+IIFLHGKVNEASGDGDGEDAVVILEKTPFQVEQVAQLLTGSPELQLQFSNDIYSTYHLFP
+PRQLNDVKTTVVYPATEKHLQKYLRQDLRLIRETGDDYRNITLPHLESQSLSIQWVYNIL
+DKKAEADRIVFENPDPSDGFVLIPDLKWNQQQLDDLYLIAICHRRGIRSLRDLTPEHLPL
+LRNILHQGQEAILQRYRMKGDHLRVYLHYLPSYYHLHVHFTALGFEAPGSGVERAHLLAE
+VIENLECDPRHYQQRTLTFALRADDPLLKLLQEAQQS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010847|m7GpppX diphosphatase (DCPS)
+ATGGCGGACGCAGCTCCTCAACTAGGCAAGAGGAAGCGCGAATTGGACGTGGAGGAGGCC
+CACGCCGCCAGCACAGAGGAAAAGGAGGCAGGAGTTGGAAATGGTACCTGTGCTCCTGTC
+CGCTTACCGTTCTCCGGCTTCAGACTGCAGAAGGTGCTGAGGGAGTCTGCGCGGGACAAA
+ATCATTTTCCTACACGGGAAGGTGAATGAGGCCTCTGGGGATGGGGATGGAGAGGATGCC
+GTTGTGATCCTGGAGAAGACGCCATTTCAGGTGGAACAGGTGGCTCAGCTCCTGACGGGC
+AGCCCTGAGCTCCAGTTGCAGTTCTCCAATGATATCTACAGCACCTATCACTTGTTCCCT
+CCAAGACAACTGAATGATGTAAAGACGACCGTGGTTTACCCTGCCACAGAGAAACACCTG
+CAGAAGTACCTGCGCCAGGACCTCCGCCTGATCCGAGAGACGGGAGATGACTACAGGAAT
+ATTACTTTACCCCACCTGGAGTCCCAGAGCCTCAGCATCCAGTGGGTGTATAACATTCTC
+GACAAGAAGGCTGAAGCGGACCGGATTGTTTTCGAGAACCCAGATCCCTCTGATGGTTTT
+GTCCTCATCCCTGACCTCAAGTGGAACCAACAGCAGCTCGATGACTTGTACTTGATCGCC
+ATCTGCCATCGCCGGGGCATCAGATCCCTACGCGACCTTACTCCGGAGCACTTGCCGCTG
+CTCAGGAACATCCTCCACCAGGGGCAGGAGGCCATCCTGCAGCGCTACCGGATGAAGGGA
+GACCATCTGCGAGTATACCTGCACTACCTGCCCTCCTACTACCACCTGCATGTGCACTTC
+ACCGCCCTGGGCTTCGAGGCCCCCGGCTCAGGCGTGGAGCGGGCCCACCTGCTGGCTGAG
+GTGATCGAGAACTTGGAGTGTGACCCTAGGCACTACCAGCAGCGCACGCTCACCTTCGCC
+CTCAGGGCTGACGACCCCCTGCTCAAGCTCTTGCAGGAGGCTCAGCAAAGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05652</identifier>
+            <name>DcpS</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>m7G(5')pppN diphosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA 7-methylguanosine cap binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to menadione</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>deadenylation-dependent decapping of nuclear-transcribed mRNA</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>exonucleolytic nuclear-transcribed mRNA catabolic process involved in deadenylation-dependent decay</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mRNA cis splicing, via spliceosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004792</id>
+      <name>RNA-directed RNA polymerase lambda-3</name>
+      <organism>T3D</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0CK31" source="Swiss-Prot">
+        <name>RNA-directed RNA polymerase lambda-3</name>
+        <general-function>Rna-directed rna polymerase activity</general-function>
+        <specific-function>RNA-directed RNA polymerase that is involved in transcription and genome replication. Following infection, it catalyzes the synthesis of fully conservative plus strands. After core assembly, which consists in recruitment of one capped plus-strand for each genomic segments and polymerase complexes, the polymerase switches mode and catalyzes the synthesis of complementary minus-strands.</specific-function>
+        <gene-name>L1</gene-name>
+        <locus/>
+        <cellular-location>Virion</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.02</theoretical-pi>
+        <molecular-weight>142268.83</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="10886">T3D</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M24734</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>499864</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0CK31</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RDRP_REOVD</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.7.48</synonym>
+          <synonym>Lambda3</synonym>
+          <synonym>Lambda3(Pol)</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013321|RNA-directed RNA polymerase lambda-3
+MSSMILTQFGPFIESISGITDQSNDVFEDAAKAFSMFTRSDVYKALDEIPFSDDAMLPIP
+PTIYTKPSHDSYYYIDALNRVRRKTYQGPDDVYVPNCSIVELLEPHETLTSYGRLSEAIE
+NRAKDGDSQARIATTYGRIAESQARQIKAPLEKFVLALLVAEAGGSLYDPVLQKYDEIPD
+LSHNCPLWCFREICRHISGPLPDRAPYLYLSAGVFWLMSPRMTSAIPPLLSDLVNLAILQ
+QTAGLDPSLVKLGVQICLHAAASSSYSWFILKTKSIFPQNTLHSMYESLEGGYCPNLEWL
+EPRSDYKFMYMGVMPLSAKYARSAPSNDKKARELGEKYGLSSVVGELRKRTKTYVKHDFA
+SVRYIRDAMACTSGIFLVRTPTETVLQEYTQSPEIKVPIPQKDWTGPIGEIRILKDTTSS
+IARYLYRTWYLAAARMAAQPRTWDPLFQAIMRSQYVTARGGSGAALRESLYAINVSLPDF
+KGLPVKAATKIFQAAQLANLPFSHTSVAILADTSMGLRNQVQRRPRSIMPLNVPQQQVSA
+PHTLTADYINYHMNLSPTSGSAVIEKVIPLGVYASSPPNQSINIDISACDASITWDFFLS
+VIMAAIHEGVASSSIGKPFMGVPASIVNDESVVGVRAARPISGMQNMIQHLSKLYKRGFS
+YRVNDSFSPGNDFTHMTTTFPSGSTATSTEHTANNSTMMETFLTVWGPEHTDDPDVLRLM
+KSLTIQRNYVCQGDDGLMIIDGTTAGKVNSETIQNDLELISKYGEEFGWKYDIAYDGTAE
+YLKLYFIFGCRIPNLSRHPIVGKERANSSAEEPWPAILDQIMGVFFNGVHDGLQWQRWIR
+YSWALCCAFSRQRTMIGESVGYLQYPMWSFVYWGLPLVKAFGSDPWIFSWYMPTGDLGMY
+SWISLIRPLMTRWMVANGYVTDRCSTVFGNADYRRCFNELKLYQGYYMAQLPRNPKKSGR
+AASREVREQFTQALSDYLMQNPELKSRVLRGRSEWEKYGAGIIHNPPSLFDVPHKWYQGA
+QEAAIATREELAEMDETLMRARRHSYSSFSKLLEAYLLVKWRMCEAREPSVDLRLPLCAG
+IDPLNSDPFLKMVSVGPMLQSTRKYFAQTLFMAKTVSGLDVNAIDSALLRLRTLGADKKA
+LTAQLLMVGLQESEADALAGKIMLQDVNTVQLARVVNLAVPDTWMSLDFDSMFKHHVKLL
+PKDGRHLNTDIPPRMGWLRAILRFLGAGMVMTATGVAVDIYLEDIHGGGRSLGQRFMTWM
+RQEGRSA</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF07925</identifier>
+            <name>RdRP_5</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>viral nucleocapsid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA-directed RNA polymerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral genome replication</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

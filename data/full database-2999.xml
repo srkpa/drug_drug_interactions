@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03183</drugbank-id>
+  <drugbank-id>EXPT00243</drugbank-id>
+  <name>1-(4-Aminophenyl)-3,5-Dimethyl-1h-Pyrazole-4-Carboxylic Acid Ethyl Ester</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>259.3037</average-mass>
+  <monoisotopic-mass>259.132076803</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as phenylpyrazoles. These are compounds containing a phenylpyrazole skeleton, which consists of a pyrazole bound to a phenyl group.</description>
+    <direct-parent>Phenylpyrazoles</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Azoles</class>
+    <subclass>Pyrazoles</subclass>
+    <alternative-parent>Amino acids and derivatives</alternative-parent>
+    <alternative-parent>Aniline and substituted anilines</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Carboxylic acid esters</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Primary amines</alternative-parent>
+    <alternative-parent>Pyrazole carboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Vinylogous amides</alternative-parent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Aniline or substituted anilines</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Carboxylic acid ester</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenylpyrazole</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Pyrazole-4-carboxylic acid or derivatives</substituent>
+    <substituent>Vinylogous amide</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1y2e</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.47</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.48e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.92</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>ethyl 1-(4-aminophenyl)-3,5-dimethyl-1H-pyrazole-4-carboxylate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>ethyl 1-(4-aminophenyl)-3,5-dimethylpyrazole-4-carboxylate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>259.3037</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>259.132076803</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCOC(=O)C1=C(C)N(N=C1C)C1=CC=C(N)C=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C14H17N3O2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C14H17N3O2/c1-4-19-14(18)13-9(2)16-17(10(13)3)12-7-5-11(15)6-8-12/h5-8H,4,15H2,1-3H3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>FIEYZIRYXYDMSK-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>70.14</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>75.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>28.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>4.66</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>656966</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508369</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>571202</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>14796</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>5DE</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0001287</id>
+      <name>cAMP-specific 3',5'-cyclic phosphodiesterase 4D</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q08499" source="Swiss-Prot">
+        <name>cAMP-specific 3',5'-cyclic phosphodiesterase 4D</name>
+        <general-function>Ubiquitin protein ligase binding</general-function>
+        <specific-function>Hydrolyzes the second messenger cAMP, which is a key regulator of many important physiological processes.</specific-function>
+        <gene-name>PDE4D</gene-name>
+        <locus>5q12</locus>
+        <cellular-location>Apical cell membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.25</theoretical-pi>
+        <molecular-weight>91114.1</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8783</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PDE4D</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L20970</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>347130</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1303</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q08499</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PDE4D_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.4.53</synonym>
+          <synonym>DPDE3</synonym>
+          <synonym>PDE43</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002560|cAMP-specific 3',5'-cyclic phosphodiesterase 4D
+MEAEGSSAPARAGSGEGSDSAGGATLKAPKHLWRHEQHHQYPLRQPQFRLLHPHHHLPPP
+PPPSPQPQPQCPLQPPPPPPLPPPPPPPGAARGRYASSGATGRVRHRGYSDTERYLYCRA
+MDRTSYAVETGHRPGLKKSRMSWPSSFQGLRRFDVDNGTSAGRSPLDPMTSPGSGLILQA
+NFVHSQRRESFLYRSDSDYDLSPKSMSRNSSIASDIHGDDLIVTPFAQVLASLRTVRNNF
+AALTNLQDRAPSKRSPMCNQPSINKATITEEAYQKLASETLEELDWCLDQLETLQTRHSV
+SEMASNKFKRMLNRELTHLSEMSRSGNQVSEFISNTFLDKQHEVEIPSPTQKEKEKKKRP
+MSQISGVKKLMHSSSLTNSSIPRFGVKTEQEDVLAKELEDVNKWGLHVFRIAELSGNRPL
+TVIMHTIFQERDLLKTFKIPVDTLITYLMTLEDHYHADVAYHNNIHAADVVQSTHVLLST
+PALEAVFTDLEILAAIFASAIHDVDHPGVSNQFLINTNSELALMYNDSSVLENHHLAVGF
+KLLQEENCDIFQNLTKKQRQSLRKMVIDIVLATDMSKHMNLLADLKTMVETKKVTSSGVL
+LLDNYSDRIQVLQNMVHCADLSNPTKPLQLYRQWTDRIMEEFFRQGDRERERGMEISPMC
+DKHNASVEKSQVGFIDYIVHPLWETWADLVHPDAQDILDTLEDNREWYQSTIPQSPSPAP
+DDPEEGRQGQTEKFQFELTLEEDGESDTEKDSGSQVEEDTSCSDSKTLCTQDSESTEIPL
+DEQVEEEAVGEEEESQPEACVIDDRSPDT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020514|cAMP-specific 3',5'-cyclic phosphodiesterase 4D (PDE4D)
+ATGGAGGCAGAGGGCAGCAGCGCGCCGGCCCGGGCGGGCAGCGGAGAGGGCAGCGACAGC
+GCCGGCGGGGCCACGCTCAAAGCCCCCAAGCATCTCTGGAGGCACGAGCAGCACCACCAG
+TACCCGCTCCGGCAGCCCCAGTTCCGCCTCCTGCATCCCCATCACCACCTGCCCCCGCCG
+CCGCCACCCTCGCCCCAGCCCCAGCCCCAGTGTCCGCTACAGCCGCCGCCGCCGCCCCCC
+CTGCCGCCGCCCCCGCCGCCGCCCGGGGCTGCCCGCGGCCGCTACGCCTCGAGCGGGGCC
+ACCGGCCGCGTCCGGCATCGCGGCTACTCGGACACCGAGCGCTACCTGTACTGTCGCGCC
+ATGGACCGCACCTCCTACGCGGTGGAGACCGGCCACCGGCCCGGCCTGAAGAAATCCAGG
+ATGTCCTGGCCCTCCTCGTTCCAGGGACTCAGGCGTTTTGATGTGGACAATGGCACATCT
+GCGGGACGGAGTCCCTTGGATCCCATGACCAGCCCAGGATCCGGGCTAATTCTCCAAGCA
+AATTTTGTCCACAGTCAACGACGGGAGTCCTTCCTGTATCGATCCGACAGCGATTATGAC
+CTCTCTCCAAAGTCTATGTCCCGGAACTCCTCCATTGCCAGTGATATACACGGAGATGAC
+TTGATTGTGACTCCATTTGCTCAGGTCTTGGCCAGTCTGCGAACTGTACGAAACAACTTT
+GCTGCATTAACTAATTTGCAAGATCGAGCACCTAGCAAAAGATCACCCATGTGCAACCAA
+CCATCCATCAACAAAGCCACCATAACAGAGGAGGCCTACCAGAAACTGGCCAGCGAGACC
+CTGGAGGAGCTGGACTGGTGTCTGGACCAGCTAGAGACCCTACAGACCAGGCACTCCGTC
+AGTGAGATGGCCTCCAACAAGTTTAAAAGGATGCTTAATCGGGAGCTCACCCATCTCTCT
+GAAATGAGTCGGTCTGGAAATCAAGTGTCAGAGTTTATATCAAACACATTCTTAGATAAG
+CAACATGAAGTGGAAATTCCTTCTCCAACTCAGAAGGAAAAGGAGAAAAAGAAAAGACCA
+ATGTCTCAGATCAGTGGAGTCAAGAAATTGATGCACAGCTCTAGTCTGACTAATTCAAGT
+ATCCCAAGGTTTGGAGTTAAAACTGAACAAGAAGATGTCCTTGCCAAGGAACTAGAAGAT
+GTGAACAAATGGGGTCTTCATGTTTTCAGAATAGCAGAGTTGTCTGGTAACCGGCCCTTG
+ACTGTTATCATGCACACCATTTTTCAGGAACGGGATTTATTAAAAACATTTAAAATTCCA
+GTAGATACTTTAATTACATATCTTATGACTCTCGAAGACCATTACCATGCTGATGTGGCC
+TATCACAACAATATCCATGCTGCAGATGTTGTCCAGTCTACTCATGTGCTATTATCTACA
+CCTGCTTTGGAGGCTGTGTTTACAGATTTGGAGATTCTTGCAGCAATTTTTGCCAGTGCA
+ATACATGATGTAGATCATCCTGGTGTGTCCAATCAATTTCTGATCAATACAAACTCTGAA
+CTTGCCTTGATGTACAATGATTCCTCAGTCTTAGAGAACCATCATTTGGCTGTGGGCTTT
+AAATTGCTTCAGGAAGAAAACTGTGACATTTTCCAGAATTTGACCAAAAAACAAAGACAA
+TCTTTAAGGAAAATGGTCATTGACATCGTACTTGCAACAGATATGTCAAAACACATGAAT
+CTACTGGCTGATTTGAAGACTATGGTTGAAACTAAGAAAGTGACAAGCTCTGGAGTTCTT
+CTTCTTGATAATTATTCCGATAGGATTCAGGTTCTTCAGAATATGGTGCACTGTGCAGAT
+CTGAGCAACCCAACAAAGCCTCTCCAGCTGTACCGCCAGTGGACGGACCGGATAATGGAG
+GAGTTCTTCCGCCAAGGAGACCGAGAGAGGGAACGTGGCATGGAGATAAGCCCCATGTGT
+GACAAGCACAATGCTTCCGTGGAAAAATCACAGGTGGGCTTCATAGACTATATTGTTCAT
+CCCCTCTGGGAGACATGGGCAGACCTCGTCCACCCTGACGCCCAGGATATTTTGGACACT
+TTGGAGGACAATCGTGAATGGTACCAGAGCACAATCCCTCAGAGCCCCTCTCCTGCACCT
+GATGACCCAGAGGAGGGCCGGCAGGGTCAAACTGAGAAATTCCAGTTTGAACTAACTTTA
+GAGGAAGATGGTGAGTCAGACACGGAAAAGGACAGTGGCAGTCAAGTGGAAGAAGACACT
+AGCTGCAGTGACTCCAAGACTCTTTGTACTCAAGACTCAGAGTCTACTGAAATTCCCCTT
+GATGAACAGGTTGAAGAGGAGGCAGTAGGGGAAGAAGAGGAAAGCCAGCCTGAAGCCTGT
+GTCATAGATGATCGTTCTCCTGACACGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00233</identifier>
+            <name>PDEase_I</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>calcium channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myofibril</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>voltage-gated calcium channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>3',5'-cyclic-AMP phosphodiesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>3',5'-cyclic-nucleotide phosphodiesterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>beta-2 adrenergic receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cAMP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ion channel binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>scaffold protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin protein ligase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adrenergic receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adrenergic receptor signaling pathway involved in positive regulation of heart rate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aging</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cAMP catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cAMP-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein complex assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to cAMP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to epinephrine stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>establishment of endothelial barrier</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lung development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organism growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of heart contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of peptidyl-serine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of relaxation of cardiac muscle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neutrophil chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interferon-gamma production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-2 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of interleukin-5 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cAMP metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cardiac muscle cell contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell communication by electrical coupling involved in cardiac conduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of G-protein coupled receptor protein signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of heart rate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein kinase A signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of ryanodine-sensitive calcium-release channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

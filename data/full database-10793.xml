@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB12839</drugbank-id>
+  <name>Pegvaliase</name>
+  <description>Pegvaliase is a recombinant phenylalanine ammonia lyase (PAL) enzyme derived from _Anabaena variabilis_ that converts phenylalanine to ammonia and _trans_-cinnamic acid [A33284]. Both the U.S. Food and Drug Administration and European Medicines Agency approved pegvaliase-pqpz in May 2018 for the treatment of adult patients with phenylketonuria (PKU). Phenylketonuria is a rare autosomal recessive disorder that is characterized by deficiency of the enzyme phenylalanine hydroxylase (PAH) [A33284] and affects about 1 in 10,000 to 15,000 people in the United States [L2925]. PAH deficiency and inability to break down an amino acid phenylalanine (Phe) leads to elevated blood phenylalanine concentrations and accumulation of neurotoxic Phe in the brain, causing chronic intellectual, neurodevelopmental and psychiatric disabilities if untreated [A33284]. Individuals with PKU also need to be under a strictly restricted diet as Phe is present in foods and products with high-intensity sweeteners [L2925]. The primary goal of lifelong treatment of PKU, as recommended by the American College of Medical Genetics and Genomics (ACMG) guidelines, is to maintain blood Phe concentration in the range of 120 µmol/L to 3690 µmol/L [A33286]. Pegvaliase-pqpz, or PEGylated pegvaliase, is used as a novel enzyme substitution therapy and is marketed as Palynziq for subcutanoues injection. It is advantageous over currently available management therapies for PKU, such as [DB00360], that are ineffective to many patients due to long-term adherence issues or inadequate Phe-lowering effects [A33284]. The presence of a PEG moiety in pegvaliase-pqpz allows a reduced immune response and improved pharmacodynamic stability [A33284].</description>
+  <cas-number>1585984-95-7</cas-number>
+  <unii>N6UAH27EUV</unii>
+  <average-mass>318.414</average-mass>
+  <monoisotopic-mass>318.215472074</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A33284</ref-id>
+        <pubmed-id>29653686</pubmed-id>
+        <citation>Thomas J, Levy H, Amato S, Vockley J, Zori R, Dimmock D, Harding CO, Bilder DA, Weng HH, Olbertz J, Merilainen M, Jiang J, Larimore K, Gupta S, Gu Z, Northrup H: Pegvaliase for the treatment of phenylketonuria: Results of a long-term phase 3 clinical trial program (PRISM). Mol Genet Metab. 2018 May;124(1):27-38. doi: 10.1016/j.ymgme.2018.03.006. Epub 2018 Mar 31.</citation>
+      </article>
+      <article>
+        <ref-id>A33286</ref-id>
+        <pubmed-id>29628378</pubmed-id>
+        <citation>Harding CO, Amato RS, Stuy M, Longo N, Burton BK, Posner J, Weng HH, Merilainen M, Gu Z, Jiang J, Vockley J: Pegvaliase for the treatment of phenylketonuria: A pivotal, double-blind randomized discontinuation Phase 3 clinical trial. Mol Genet Metab. 2018 May;124(1):20-26. doi: 10.1016/j.ymgme.2018.03.003. Epub 2018 Mar 18.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L2925</ref-id>
+        <title>FDA Press Announcements: FDA approves a new treatment for PKU, a rare and serious genetic disease</title>
+        <url>https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm608835.htm</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Pegvaliase is indicated for the management of phenylketonuria (PKU) in adult patients who have uncontrolled blood phenylalanine concentrations greater than 600 micromol/L on existing management. </indication>
+  <pharmacodynamics>In a phase 3 clinical trial of adult patients with phenylketonuria and blood phenylalanine concentrations greater than 600 µmol/L on existing management therapies, subcutaneous administration of pegvaliase resulted in significantly reduced blood phenylalanine concentrations in most patients compared to their pre-treatment baseline levels within 24 months in addition to improved neuropsychiatric symptoms [A33284, A33286]. </pharmacodynamics>
+  <mechanism-of-action>Pegvaliase is a phenylalanine ammonia lyase (PAL) enzyme that temporarily restores the levels of deficient enzyme and reduces blood phenylalanine concentrations by converting phenylalanine to ammonia and _trans_-cinnamic acid [A33284]. Formed conversion products are metabolized in the liver and later excreted in the urine [A33286]. </mechanism-of-action>
+  <toxicity>No LD50 value has been reported for pegvaliase. A subcutaneous dose of 20 mg/kg/day of pegvaliase-pqpz produced impaired fertility in female rats leading to decreases in corpora lutea, implantations, and litter size, in association with toxic effects including decreased weight, ovarian weight, and food consumption [FDA Label]. The carcinogenic and genototoxic potential have not been studied. </toxicity>
+  <metabolism>It is expected that pegvaliase undergoes the catabolic pathway to be degraded into small peptides and amino acids [FDA Label]. </metabolism>
+  <absorption>At steady state during maintenance treatment with pegvaliase 20 mg and 40 mg subcutaneously once daily, the mean ± SD (range) peak plasma concentration (Cmax) was 14.0 ± 16.3 (0.26 to 68.5) mg/L and 16.7 ± 19.5 (0.24 to 63.8) mg/L, respectively [FDA Label]. The time to reach Cmax (Tmax) was approximately 8 hours [FDA Label].</absorption>
+  <half-life>Following once-daily subcutaneous administration of 20 mg and 40 mg pegvaliase, the mean ± SD (range) half-life at steady state was 47 ± 42 (14 to 132) hours and 60 ± 45 (14 to 127) hours, respectively [FDA Label].</half-life>
+  <protein-binding>No protein binding has been reported. </protein-binding>
+  <route-of-elimination>Human elimination pathway of pegvaliase has not been studied. </route-of-elimination>
+  <volume-of-distribution>The mean ± SD (range) apparent volume of distribution at steady state was 26.4 ± 64.8 (1.8 to 241) L and 22.2 ± 19.7 (3.1 to 49.5) L after once-daily subcutaneous administration of 20 mg and 40 mg pegvaliase, respectively [FDA Label]. </volume-of-distribution>
+  <clearance>At steady state following once-daily subcutaneous administration of 20 mg and 40 mg pegvaliase, the mean ± SD (range) apparent clearance was 0.39 ± 0.87 L/h and 1.25 ± 2.46 L/h, respectively [FDA Label]. </clearance>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as l-alpha-amino acids. These are alpha amino acids which have the L-configuration of the alpha-carbon atom.</description>
+    <direct-parent>L-alpha-amino acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Amino fatty acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dialkyl ethers</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Medium-chain fatty acids</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>N-acyl amines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Secondary carboxylic acid amides</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Amino fatty acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Dialkyl ether</substituent>
+    <substituent>Ether</substituent>
+    <substituent>Fatty acid</substituent>
+    <substituent>Fatty acyl</substituent>
+    <substituent>Fatty amide</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>Medium-chain fatty acid</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>N-acyl-amine</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Secondary carboxylic acid amide</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">PEG-PAL</synonym>
+    <synonym language="english" coder="inn">Pegvaliase</synonym>
+    <synonym language="english" coder="">pegvaliase-pqpz</synonym>
+    <synonym language="english" coder="">Phenylase</synonym>
+    <synonym language="english" coder="">rAvPAL-PEG</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Palynziq</name>
+      <labeller>BioMarin Pharmaceutical Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>68135-058</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-05-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>2.5 mg/0.5mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>BLA761079</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Palynziq</name>
+      <labeller>BioMarin Pharmaceutical Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>68135-756</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-05-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>10 mg/0.5mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>BLA761079</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Palynziq</name>
+      <labeller>BioMarin Pharmaceutical Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>68135-673</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-05-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>20 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>BLA761079</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Palynziq</name>
+      <ingredients>Pegvaliase</ingredients>
+    </mixture>
+    <mixture>
+      <name>Palynziq</name>
+      <ingredients>Pegvaliase</ingredients>
+    </mixture>
+    <mixture>
+      <name>Palynziq</name>
+      <ingredients>Pegvaliase</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Ammonia-Lyases</category>
+      <mesh-id>D000642</mesh-id>
+    </category>
+    <category>
+      <category>Carbon-Nitrogen Lyases</category>
+      <mesh-id>D019759</mesh-id>
+    </category>
+    <category>
+      <category>Enzymes</category>
+      <mesh-id>D004798</mesh-id>
+    </category>
+    <category>
+      <category>Enzymes and Coenzymes</category>
+      <mesh-id>D045762</mesh-id>
+    </category>
+    <category>
+      <category>Lyases</category>
+      <mesh-id>D008190</mesh-id>
+    </category>
+    <category>
+      <category>Pegylated agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Subcutaneous</route>
+      <strength>10 mg/0.5mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Subcutaneous</route>
+      <strength>2.5 mg/0.5mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Subcutaneous</route>
+      <strength>20 mg/1mL</strength>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB12839.pdf?1528232960</fda-label>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00008</drugbank-id>
+      <name>Peginterferon alfa-2a</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Peginterferon alfa-2a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00019</drugbank-id>
+      <name>Pegfilgrastim</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegfilgrastim.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00022</drugbank-id>
+      <name>Peginterferon alfa-2b</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Peginterferon alfa-2b.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00059</drugbank-id>
+      <name>Pegaspargase</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegaspargase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00061</drugbank-id>
+      <name>Pegademase</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegademase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00082</drugbank-id>
+      <name>Pegvisomant</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegvisomant.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01839</drugbank-id>
+      <name>Propylene glycol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Propylene glycol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03394</drugbank-id>
+      <name>Heptaethylene glycol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Heptaethylene glycol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04895</drugbank-id>
+      <name>Pegaptanib</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegaptanib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05202</drugbank-id>
+      <name>Egaptivon pegol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Egaptivon pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05321</drugbank-id>
+      <name>PEG-uricase</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with PEG-uricase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05860</drugbank-id>
+      <name>Peginterferon alfacon-1</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Peginterferon alfacon-1.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06022</drugbank-id>
+      <name>GlycoPEG-GCSF</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with GlycoPEG-GCSF.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06293</drugbank-id>
+      <name>Pegnivacogin</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegnivacogin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06325</drugbank-id>
+      <name>Pegpleranib</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegpleranib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06611</drugbank-id>
+      <name>Pegsunercept</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegsunercept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06811</drugbank-id>
+      <name>Polidocanol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Polidocanol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08894</drugbank-id>
+      <name>Peginesatide</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Peginesatide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08904</drugbank-id>
+      <name>Certolizumab pegol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Certolizumab pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09107</drugbank-id>
+      <name>Methoxy polyethylene glycol-epoetin beta</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Methoxy polyethylene glycol-epoetin beta.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09122</drugbank-id>
+      <name>Peginterferon beta-1a</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Peginterferon beta-1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09208</drugbank-id>
+      <name>Pegloticase</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Pegloticase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09287</drugbank-id>
+      <name>Polyethylene glycol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Polyethylene glycol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09329</drugbank-id>
+      <name>Antihemophilic Factor (Recombinant), PEGylated</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Antihemophilic Factor (Recombinant), PEGylated.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11077</drugbank-id>
+      <name>Polyethylene glycol 400</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Polyethylene glycol 400.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11567</drugbank-id>
+      <name>Insulin peglispro</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Insulin peglispro.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11661</drugbank-id>
+      <name>Eptacog alfa pegol (activated)</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Eptacog alfa pegol (activated).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11707</drugbank-id>
+      <name>Olaptesed Pegol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Olaptesed Pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12258</drugbank-id>
+      <name>Abicipar Pegol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Abicipar Pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12578</drugbank-id>
+      <name>Lexaptepid Pegol</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Lexaptepid Pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12814</drugbank-id>
+      <name>Cepeginterferon alfa-2B</name>
+      <description>The therapeutic efficacy of Pegvaliase can be decreased when used in combination with Cepeginterferon alfa-2B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12842</drugbank-id>
+      <name>Pegamotecan</name>
+      <description>The therapeutic efficacy of Pegamotecan can be decreased when used in combination with Pegvaliase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13200</drugbank-id>
+      <name>Lipegfilgrastim</name>
+      <description>The therapeutic efficacy of Lipegfilgrastim can be decreased when used in combination with Pegvaliase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13933</drugbank-id>
+      <name>Nonacog beta pegol</name>
+      <description>The therapeutic efficacy of Nonacog beta pegol can be decreased when used in combination with Pegvaliase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14700</drugbank-id>
+      <name>Damoctocog alfa pegol</name>
+      <description>The therapeutic efficacy of Damoctocog alfa pegol can be decreased when used in combination with Pegvaliase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14712</drugbank-id>
+      <name>Elapegademase</name>
+      <description>The therapeutic efficacy of Elapegademase can be decreased when used in combination with Pegvaliase.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.30e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-amino-6-[6-(2-methoxyethoxy)hexanamido]hexanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S)-2-amino-6-[6-(2-methoxyethoxy)hexanamido]hexanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>318.414</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>318.215472074</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>COCCOCCCCCC(=O)NCCCC[C@H](N)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C15H30N2O5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C15H30N2O5/c1-21-11-12-22-10-6-2-3-8-14(18)17-9-5-4-7-13(16)15(19)20/h13H,2-12,16H2,1H3,(H,17,18)(H,19,20)/t13-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>NPOCDVAOUKODSQ-ZDUSSCGKSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>110.88</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>83.41</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>36.89</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.24</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.53</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>86278362</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347829004</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>58172730</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Pegvaliase</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

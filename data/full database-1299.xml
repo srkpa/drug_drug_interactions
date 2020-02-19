@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-06-30" updated="2020-01-02">
+  <drugbank-id primary="true">DB01341</drugbank-id>
+  <name>Dihydroquinidine barbiturate</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action>Barbiturates work by binding to the GABAA receptor at either the alpha or the beta sub unit.  These are binding sites that are distinct from GABA itself and also distinct from the benzodiazepine binding site. Like benzodiazepines, barbiturates potentiate the effect of GABA at this receptor.  This GABAA receptor binding decreases input resistance, depresses burst and tonic firing, especially in ventrobasal and intralaminar neurons, while at the same time increasing burst duration and mean conductance at individual chloride channels; this increases both the amplitude and decay time of inhibitory postsynaptic currents.  In addition to this GABA-ergic effect, barbiturates also block the AMPA receptor, a subtype of glutamate receptor. Glutamate is the principal excitatory neurotransmitter in the mammalian CNS.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507930</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000795</id>
+      <name>Gamma-aminobutyric acid receptor subunit alpha-1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>potentiator</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P14867" source="Swiss-Prot">
+        <name>Gamma-aminobutyric acid receptor subunit alpha-1</name>
+        <general-function>Inhibitory extracellular ligand-gated ion channel activity</general-function>
+        <specific-function>Component of the heteropentameric receptor for GABA, the major inhibitory neurotransmitter in the vertebrate brain. Functions also as histamine receptor and mediates cellular responses to histamine. Functions as receptor for diazepines and various anesthetics, such as pentobarbital; these are bound at a separate allosteric effector binding site. Functions as ligand-gated chloride channel (By similarity).</specific-function>
+        <gene-name>GABRA1</gene-name>
+        <locus>5q34-q35</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>252-273
+279-300
+313-334
+422-443</transmembrane-regions>
+        <signal-regions>1-27</signal-regions>
+        <theoretical-pi>9.61</theoretical-pi>
+        <molecular-weight>51801.395</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4075</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GABRA1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X13584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>31631</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P14867</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GBRA1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GABA(A) receptor subunit alpha-1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010561|Gamma-aminobutyric acid receptor subunit alpha-1
+MRKSPGLSDCLWAWILLLSTLTGRSYGQPSLQDELKDNTTVFTRILDRLLDGYDNRLRPG
+LGERVTEVKTDIFVTSFGPVSDHDMEYTIDVFFRQSWKDERLKFKGPMTVLRLNNLMASK
+IWTPDTFFHNGKKSVAHNMTMPNKLLRITEDGTLLYTMRLTVRAECPMHLEDFPMDAHAC
+PLKFGSYAYTRAEVVYEWTREPARSVVVAEDGSRLNQYDLLGQTVDSGIVQSSTGEYVVM
+TTHFHLKRKIGYFVIQTYLPCIMTVILSQVSFWLNRESVPARTVFGVTTVLTMTTLSISA
+RNSLPKVAYATAMDWFIAVCYAFVFSALIEFATVNYFTKRGYAWDGKSVVPEKPKKVKDP
+LIKKNNTYAPTATSYTPNLARGDPGLATIAKSATIEPKEVKPETKPPEPKKTFNSVSKID
+RLSRIAFPLLFGIFNLVYWATYLNREPQLKAPTPHQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010562|Gamma-aminobutyric acid receptor subunit alpha-1 (GABRA1)
+ATGAGGAAAAGTCCAGGTCTGTCTGACTGTCTTTGGGCCTGGATCCTCCTTCTGAGCACA
+CTGACTGGAAGAAGCTATGGACAGCCGTCATTACAAGATGAACTTAAAGACAATACCACT
+GTCTTCACCAGGATTTTGGACAGACTCCTAGATGGTTATGACAATCGCCTGAGACCAGGA
+TTGGGAGAGCGTGTAACCGAAGTGAAGACTGATATCTTCGTCACCAGTTTCGGACCCGTT
+TCAGACCATGATATGGAATATACAATAGATGTATTTTTCCGTCAAAGCTGGAAGGATGAA
+AGGTTAAAATTTAAAGGACCTATGACAGTCCTCCGGTTAAATAACCTAATGGCAAGTAAA
+ATCTGGACTCCGGACACATTTTTCCACAATGGAAAGAAGTCAGTGGCCCACAACATGACC
+ATGCCCAACAAACTCCTGCGGATCACAGAGGATGGCACCTTGCTGTACACCATGAGGCTG
+ACAGTGAGAGCTGAATGTCCGATGCATTTGGAGGACTTCCCTATGGATGCCCATGCTTGC
+CCACTAAAATTTGGAAGTTATGCTTATACAAGAGCAGAAGTTGTTTATGAATGGACCAGA
+GAGCCAGCACGCTCAGTGGTTGTAGCAGAAGATGGATCACGTCTAAACCAGTATGACCTT
+CTTGGACAAACAGTAGACTCTGGAATTGTCCAGTCAAGTACAGGAGAATATGTTGTTATG
+ACCACTCATTTCCACTTGAAGAGAAAGATTGGCTACTTTGTTATTCAAACATACCTGCCA
+TGCATAATGACAGTGATTCTCTCACAAGTCTCCTTCTGGCTCAACAGAGAGTCTGTACCA
+GCAAGAACTGTCTTTGGAGTAACAACTGTGCTCACCATGACAACATTGAGCATCAGTGCC
+AGAAACTCCCTCCCTAAGGTGGCTTATGCAACAGCTATGGATTGGTTTATTGCCGTGTGC
+TATGCCTTTGTGTTCTCAGCTCTGATTGAGTTTGCCACAGTAAACTATTTCACTAAGAGA
+GGTTATGCATGGGATGGCAAAAGTGTGGTTCCAGAAAAGCCAAAGAAAGTAAAGGATCCT
+CTTATTAAGAAAAACAACACTTACGCTCCAACAGCAACCAGCTACACCCCTAATTTGGCC
+AGGGGCGACCCGGGCTTAGCCACCATTGCTAAAAGTGCAACCATAGAACCTAAAGAGGTC
+AAGCCCGAAACAAAACCACCAGAACCCAAGAAAACCTTTAACAGTGTCAGCAAAATTGAC
+CGACTGTCAAGAATAGCCTTCCCGCTGCTATTTGGAATCTTTAACTTAGTCTACTGGGCT
+ACGTATTTAAACAGAGAGCCTCAGCTAAAAGCCCCCACACCACATCAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chloride channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA-A receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GABA-A receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>inhibitory extracellular ligand-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to histamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gamma-aminobutyric acid signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, GABAergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

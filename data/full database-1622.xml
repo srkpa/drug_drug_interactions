@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB01702</drugbank-id>
+  <drugbank-id>EXPT01685</drugbank-id>
+  <drugbank-id>EXPT01200</drugbank-id>
+  <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+  <description>A deaminated metabolite of levodopa. [PubChem]</description>
+  <cas-number>102-32-9</cas-number>
+  <unii>KEX5N0R4N5</unii>
+  <average-mass>168.1467</average-mass>
+  <monoisotopic-mass>168.042258744</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as catechols. These are compounds containing a 1,2-benzenediol moiety.</description>
+    <direct-parent>Catechols</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Phenols</class>
+    <subclass>Benzenediols</subclass>
+    <alternative-parent>1-hydroxy-2-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>1-hydroxy-4-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>Benzene and substituted derivatives</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <substituent>1-hydroxy-2-unsubstituted benzenoid</substituent>
+    <substituent>1-hydroxy-4-unsubstituted benzenoid</substituent>
+    <substituent>Aromatic homomonocyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Catechol</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1ai4</pdb-entry>
+    <pdb-entry>1f1v</pdb-entry>
+    <pdb-entry>1q0c</pdb-entry>
+    <pdb-entry>3mfl</pdb-entry>
+    <pdb-entry>3pcn</pdb-entry>
+    <pdb-entry>4ghd</pdb-entry>
+    <pdb-entry>4ghg</pdb-entry>
+    <pdb-entry>4z6o</pdb-entry>
+    <pdb-entry>4z6p</pdb-entry>
+    <pdb-entry>4z6q</pdb-entry>
+    <pdb-entry>5bwh</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.93</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>7.23e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>2-(3,4-dihydroxyphenyl)acetic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>methoxytyramine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>168.1467</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>168.042258744</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>OC(=O)CC1=CC(O)=C(O)C=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C8H8O4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C8H8O4/c9-6-2-1-5(3-7(6)10)4-8(11)12/h1-3,9-10H,4H2,(H,11,12)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>CFFZDZCDUFSOFZ-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>77.76</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>41.33</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>15.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.61</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-6.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>128.5 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.98</value>
+      <source>SANGSTER (1994)</source>
+    </property>
+    <property>
+      <kind>pKa</kind>
+      <value>4.25 (at 30 °C)</value>
+      <source>SERJEANT,EP &amp; DEMPSEY,B (1979)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>41941</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>547</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507886</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C01161</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>532</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>52946</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>DHY</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1284</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000006</smpdb-id>
+      <name>Tyrosine Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000218</smpdb-id>
+      <name>Tyrosinemia Type I</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000429</smpdb-id>
+      <name>Disulfiram Action Pathway</name>
+      <category>drug_action</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00822</drugbank-id>
+          <name>Disulfiram</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00898</drugbank-id>
+          <name>Ethanol</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02577</drugbank-id>
+          <name>Mesoheme</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03166</drugbank-id>
+          <name>Acetic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P30837</uniprot-id>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+        <uniprot-id>P00325</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>P05181</uniprot-id>
+        <uniprot-id>P04040</uniprot-id>
+        <uniprot-id>Q9NR19</uniprot-id>
+        <uniprot-id>Q9NUB1</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000169</smpdb-id>
+      <name>Alkaptonuria</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000190</smpdb-id>
+      <name>Hawkinsinuria</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000494</smpdb-id>
+      <name>Tyrosinemia, Transient, of the Newborn</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000498</smpdb-id>
+      <name>Dopamine beta-Hydroxylase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000533</smpdb-id>
+      <name>Monoamine Oxidase-A Deficiency (MAO-A)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00126</drugbank-id>
+          <name>Ascorbic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00128</drugbank-id>
+          <name>Aspartic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00135</drugbank-id>
+          <name>Tyrosine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00360</drugbank-id>
+          <name>Sapropterin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00368</drugbank-id>
+          <name>Norepinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00668</drugbank-id>
+          <name>Epinephrine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00988</drugbank-id>
+          <name>Dopamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01235</drugbank-id>
+          <name>Levodopa</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01373</drugbank-id>
+          <name>Calcium</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01592</drugbank-id>
+          <name>Iron</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01702</drugbank-id>
+          <name>2-(3,4-Dihydroxyphenyl)Acetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01762</drugbank-id>
+          <name>Acetoacetic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01828</drugbank-id>
+          <name>Methylamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02232</drugbank-id>
+          <name>1,2-Dihydroxybenzene</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03205</drugbank-id>
+          <name>Pyrroloquinoline Quinone</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04299</drugbank-id>
+          <name>Maleic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB07718</drugbank-id>
+          <name>3-(4-HYDROXY-PHENYL)PYRUVIC ACID</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB08327</drugbank-id>
+          <name>2-(3,6-DIHYDROXYPHENYL)ACETIC ACID</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P17735</uniprot-id>
+        <uniprot-id>P17174</uniprot-id>
+        <uniprot-id>P32754</uniprot-id>
+        <uniprot-id>O43708</uniprot-id>
+        <uniprot-id>P16930</uniprot-id>
+        <uniprot-id>P20711</uniprot-id>
+        <uniprot-id>P30838</uniprot-id>
+        <uniprot-id>P14679</uniprot-id>
+        <uniprot-id>P09172</uniprot-id>
+        <uniprot-id>P40126</uniprot-id>
+        <uniprot-id>P11086</uniprot-id>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P07327</uniprot-id>
+        <uniprot-id>Q93099</uniprot-id>
+        <uniprot-id>P14174</uniprot-id>
+        <uniprot-id>P19801</uniprot-id>
+        <uniprot-id>P21964</uniprot-id>
+        <uniprot-id>P46952</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0004796</id>
+      <name>DNA</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+    </target>
+    <target>
+      <id>BE0002510</id>
+      <name>3,4-dihydroxyphenylacetate 2,3-dioxygenase</name>
+      <organism>Arthrobacter globiformis</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q44048" source="TrEMBL">
+        <name>3,4-dihydroxyphenylacetate 2,3-dioxygenase</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function/>
+        <gene-name>mndD</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.88</theoretical-pi>
+        <molecular-weight>38861.14</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1665">Arthrobacter globiformis</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U19817</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q44048</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q44048_ARTGO</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021997|3,4-dihydroxyphenylacetate 2,3-dioxygenase
+MTNFVPTPSVPAPDIVRCAYMEIVVTDLAKSREFYVDVLGLHVTEEDENTIYLRSLEEFI
+HHNLVLRQGPIAAVAAFAYRVKSPAEVDAAEAYYKELGCRTERRKEGFTKGIGDSVRVED
+PLGFPYEFFYETEHVERLTQRYDLYSAGELVRLDHFNQVTPDVPRGRAYLEDLGFRVSED
+IKDSDGVTYAAWMHRKQTVHDTALTGGNGPRMHHVAFATHEKHNIIQICDKMRPCASATG
+SNGPRPAPVSNAFYLYILDPDGHRIEIYTQDYYTGDPDNPTITWDVHDNQRRDWWGNPVV
+PSWYTEASLVLDLDGNPQPVIVREEKSEMAVTVGAEPSPTPAR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004928|1032 bp
+ATGACCAACTTCGTTCCCACCCCCTCTGTCCCGGCACCGGATATCGTCCGCTGCGCCTAC
+ATGGAGATCGTGGTCACGGACCTCGCCAAGTCGCGCGAGTTCTACGTGGACGTCCTGGGC
+CTGCACGTCACCGAAGAGGATGAAAACACCATCTACCTCCGCTCCCTGGAGGAGTTCATC
+CACCACAACCTGGTACTCCGCCAGGGACCCATCGCCGCCGTCGCAGCCTTCGCCTACCGG
+GTGAAGTCCCCCGCCGAGGTGGATGCCGCCGAGGCGTACTACAAGGAGCTGGGCTGCCGC
+ACCGAGCGCCGCAAGGAAGGCTTCACCAAGGGCATCGGCGACTCCGTCCGCGTCGAGGAC
+CCGCTGGGCTTCCCCTACGAGTTCTTCTACGAGACCGAGCACGTGGAGCGCCTCACCCAG
+CGCTACGACCTCTACTCCGCCGGTGAACTGGTGCGCCTGGACCACTTCAACCAGGTCACC
+CCGGACGTTCCCCGCGGCCGGGCGTACCTGGAGGACCTCGGCTTCCGCGTCTCCGAAGAC
+ATCAAGGACTCCGACGGCGTCACCTACGCCGCCTGGATGCACCGCAAGCAGACCGTGCAC
+GACACCGCCCTGACCGGCGGCAACGGCCCGCGCATGCACCACGTCGCGTTCGCCACGCAC
+GAGAAGCACAACATCATCCAGATCTGCGACAAGATGCGGCCCTGCGCATCAGCGACCGGA
+TCGAACGGCCCCCGGCCGGCACCGGTCTCCAACGCCTTCTACCTCTACATCCTGGACCCG
+GACGGCCACCGCATCGAGATCTACACCCAGGACTACTACACCGGCGACCCGGACAACCCC
+ACCATCACCTGGGACGTCCACGACAACCAGCGCCGCGACTGGTGGGGCAACCCCGTGGTC
+CCGTCCTGGTACACCGAGGCCTCCCTGGTCCTGGACCTGGACGGCAACCCGCAGCCGGTC
+ATCGTCCGCGAGGAAAAGTCCGAAATGGCCGTGACCGTCGGAGCCGAGCCTTCTCCTACA
+CCCGCAAGATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00903</identifier>
+            <name>Glyoxalase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>dioxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002511</id>
+      <name>Homoprotocatechuate 2,3-dioxygenase</name>
+      <organism>Brevibacterium fuscum</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q45135" source="TrEMBL">
+        <name>Homoprotocatechuate 2,3-dioxygenase</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.08</theoretical-pi>
+        <molecular-weight>41699.11</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="47914">Brevibacterium fuscum</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U58132</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q45135</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q45135_9MICO</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022426|Homoprotocatechuate 2,3-dioxygenase
+MSNEIPKPVAPAPDILRCAYAELVVTDLAKSRNFYVDVLGLHVSYEDENQIYLRSFEEFI
+HHNLVLTKGPVAALKAMAFRVRTPEDVDKAEAYYQELGCRTERRKDGFVKGIGDALRVED
+PLGFPYEFFFETTHVERLHMRYDLYSAGELVRLDHFNQVTPDVPRGRKYLEDLGFRVTED
+IQDDEGTTYAAWMHRKGTVHDTALTGGNGPRLHHVAFSTHEKHNIIQICDKMGALRISDR
+IERGPGRHGVSNAFYLYILDPDNHRIEIYTQDYYTGDPDNPTITWNVHDNQRRDWWGNPV
+VPSWYTEASKVLDLDGNVQEIIERTDDSELEVTIGADGFSFTRAGDEDGSYHGQASKGFK
+LGNQL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004930|1098 bp
+ATGAGCAACGAAATCCCCAAGCCAGTCGCACCAGCACCGGATATCCTGCGCTGCGCCTAC
+GCCGAACTGGTCGTCACCGACCTGGCCAAGTCCCGCAACTTCTACGTGGACGTCCTGGGC
+CTGCACGTATCCTACGAGGACGAGAACCAGATCTACCTGCGCTCCTTCGAGGAGTTCATC
+CACCACAACCTGGTCCTGACCAAGGGTCCGGTCGCCGCGCTGAAGGCCATGGCATTCCGC
+GTGCGCACCCCTGAGGACGTCGACAAGGCCGAGGCCTACTACCAGGAGCTGGGCTGCCGC
+ACCGAGCGCCGCAAGGACGGCTTCGTCAAGGGCATCGGCGACGCCCTGCGCGTGGAGGAT
+CCGCTGGGCTTCCCGTACGAGTTCTTCTTCGAGACCACCCACGTCGAACGCCTGCACATG
+CGCTACGACCTGTACTCGGCCGGCGAACTGGTCCGCCTGGACCACTTCAACCAGGTGACC
+CCGGACGTGCCGCGCGGCCGCAAGTACCTCGAGGACCTGGGCTTCCGCGTCACCGAGGAC
+ATCCAGGACGATGAGGGCACCACCTACGCAGCCTGGATGCACCGCAAGGGCACCGTGCAC
+GACACCGCCCTGACCGGCGGCAACGGCCCGCGCCTGCACCACGTGGCCTTCTCCACCCAT
+GAGAAGCACAACATCATCCAGATCTGCGACAAGATGGGCGCCCTGCGCATCTCGGACCGG
+ATCGAGCGCGGCCCGGGCCGCCACGGCGTCTCCAACGCGTTCTACCTGTACATCCTGGAT
+CCGGACAACCACCGCATCGAGATCTACACCCAGGACTACTACACCGGCGACCCGGACAAC
+CCGACCATCACCTGGAACGTCCACGACAACCAGCGCCGCGACTGGTGGGGCAACCCGGTT
+GTGCCTTCGTGGTACACCGAGGCCTCCAAGGTCCTGGACCTGGACGGCAACGTGCAGGAG
+ATCATCGAGCGCACCGACGACTCCGAACTGGAAGTCACCATCGGCGCCGACGGCTTCTCC
+TTCACCCGCGCGGGCGACGAGGACGGCTCGTACCACGGCCAGGCTTCGAAGGGCTTCAAG
+CTGGGCAACCAGCTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00903</identifier>
+            <name>Glyoxalase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>dioxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="1">
+      <id>BE0003806</id>
+      <name>Penicillin G acylase</name>
+      <organism>Escherichia coli</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06875" source="Swiss-Prot">
+        <name>Penicillin G acylase</name>
+        <general-function>Penicillin amidase activity</general-function>
+        <specific-function/>
+        <gene-name>pac</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-26</signal-regions>
+        <theoretical-pi>6.59</theoretical-pi>
+        <molecular-weight>94642.025</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="562">Escherichia coli</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M15950</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>147063</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06875</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PAC_ECOLX</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.5.1.11</synonym>
+          <synonym>Penicillin G amidase</synonym>
+          <synonym>Penicillin G amidohydrolase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012652|Penicillin G acylase
+MKNRNRMIVNCVTASLMYYWSLPALAEQSSSEIKIVRDEYGMPHIYANDTWHLFYGYGYV
+VAQDRLFQMEMARRSTQGTVAEVLGKDFVKFDKDIRRNYWPDAIRAQIAALSPEDMSILQ
+GYADGMNAWIDKVNTNPETLLPKQFNTFGFTPKRWEPFDVAMIFVGTMANRFSDSTSEID
+NLALLTALKDKYGVSQGMAVFNQLKWLVNPSAPTTIAVQESNYPLKFNQQNSQTAALLPR
+YDLPAPMLDRPAKGADGALLALTAGKNRETIAAQFAQGGANGLAGYPTTSNMWVIGKSKA
+QDAKAIMVNGPQFGWYAPAYTYGIGLHGAGYDVTGNTPFAYPGLVFGHNGVISWGSTAGF
+GDDVDIFAERLSAEKPGYYLHNGKWVKMLSREETITVKNGQAETFTVWRTVHGNILQTDQ
+TTQTAYAKSRAWDGKEVASLLAWTHQMKAKNWQEWTQQAAKQALTINWYYADVNGNIGYV
+HTGAYPDRQSGHDPRLPVPGTGKWDWKGLLPFEMNPKVYNPQSGYIANWNNSPQKDYPAS
+DLFAFLWGGADRVTEIDRLLEQKPRLTADQAWDVIRQTSRQDLNLRLFLPTLQAATSGLT
+QSDPRRQLVETLTRWDGINLLNDDGKTWQQPGSAILNVWLTSMLKRTVVAAVPMPFDKWY
+SASGYETTQDGPTGSLNISVGAKILYEAVQGDKSPIPQAVDLFAGKPQQEVVLAALEDTW
+ETLSKRYGNNVSNWKTPAMALTFRANNFFGVPQAAAEETRHQAEYQNRGTENDMIVFSPT
+TSDRPVLAWDVVAPGQSGFIAPDGTVDKHYEDQLKMYENFGRKSLWLTKQDVEAHKESQE
+VLHVQR</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF01804</identifier>
+            <name>Penicil_amidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>penicillin amidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antibiotic biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0004034</id>
+      <name>Protocatechuate 3,4-dioxygenase alpha chain</name>
+      <organism>Pseudomonas putida</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00436" source="Swiss-Prot">
+        <name>Protocatechuate 3,4-dioxygenase alpha chain</name>
+        <general-function>Protocatechuate 3,4-dioxygenase activity</general-function>
+        <specific-function>Plays an essential role in the utilization of numerous aromatic and hydroaromatic compounds via the beta-ketoadipate pathway.</specific-function>
+        <gene-name>pcaG</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.77</theoretical-pi>
+        <molecular-weight>22386.9</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="303">Pseudomonas putida</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L14836</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>294344</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00436</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PCXA_PSEPU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.13.11.3</synonym>
+          <synonym>3,4-PCD</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017310|Protocatechuate 3,4-dioxygenase alpha chain
+MPIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGN
+GHLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAG
+VPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDG
+KTAYRFDIRIQGEGETVFFDF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0007711|720 bp
+ATGCCCGCCCAGGACAACAGCCGCTTCGTGATCCGTGATCGCAACTGGCACCCCAAAGCC
+CTTACGCCTGACTACAAAACGTCCATTGCCCGCTCGCCGCGCCAGGCACTGGTCAGCATT
+CCACAGTCGATCAGCGAAACCACTGGTCCGAACTTTTCCCACCTGGGCTTCGGCGCCCAC
+GACCATGACCTGCTGCTGAACTTCAACAACGGTGGCCTGCCAATCGGCGAGCGCATCATC
+GTGGCCGGCCGCGTCGTCGACCAGTACGGCAAGCCTGTGCCGAACACCCTGGTGGAGATG
+TGGCAAGCCAACGCCGGTGGCCGCTACCGGCACAAGAACGACCGTTACCTGGCACCGCTG
+GACCCGAACTTTGGTGGTGTCGGCCGTTGCCTGACCGACAGCGACGGCTACTACAGCTTC
+CGCACCATCAAGCCGGGCCCGTACCCCTGGCGCAACGGCCCGAACGACTGGCGCCCGGCG
+CACATCCACTTCGGCATCAGCGGCCCGTCGATTGCGACCAAGCTGATCACCCAGTTGTAT
+TTCGAGGGTGACCCGCTGATCCCGATGTGCCCGATCGTCAAGTCGATCGCCAACCCTGAA
+GCTGTACAGCAGTTGATCGCCAAGCTCGACATGAACAACGCCAACCCGATGGACTGCCTG
+GCCTACCGCTTTGACATCGTGCTGCGCGGCCAGCGCAAGACCCACTTCGAAAACTGCTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00775</identifier>
+            <name>Dioxygenase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>ferric iron binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protocatechuate 3,4-dioxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>beta-ketoadipate pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0004035</id>
+      <name>Protocatechuate 3,4-dioxygenase beta chain</name>
+      <organism>Pseudomonas putida</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00437" source="Swiss-Prot">
+        <name>Protocatechuate 3,4-dioxygenase beta chain</name>
+        <general-function>Protocatechuate 3,4-dioxygenase activity</general-function>
+        <specific-function>Plays an essential role in the utilization of numerous aromatic and hydroaromatic compounds via the beta-ketoadipate pathway.</specific-function>
+        <gene-name>pcaH</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>9.12</theoretical-pi>
+        <molecular-weight>26793.25</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="303">Pseudomonas putida</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L14836</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>294344</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00437</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PCXB_PSEPU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.13.11.3</synonym>
+          <synonym>3,4-PCD</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012811|Protocatechuate 3,4-dioxygenase beta chain
+MPAQDNSRFVIRDRNWHPKALTPDYKTSIARSPRQALVSIPQSISETTGPNFSHLGFGAH
+DHDLLLNFNNGGLPIGERIIVAGRVVDQYGKPVPNTLVEMWQANAGGRYRHKNDRYLAPL
+DPNFGGVGRCLTDSDGYYSFRTIKPGPYPWRNGPNDWRPAHIHFGISGPSIATKLITQLY
+FEGDPLIPMCPIVKSIANPEAVQQLIAKLDMNNANPMDCLAYRFDIVLRGQRKTHFENC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0007713|720 bp
+ATGCCCGCCCAGGACAACAGCCGCTTCGTGATCCGTGATCGCAACTGGCACCCCAAAGCC
+CTTACGCCTGACTACAAAACGTCCATTGCCCGCTCGCCGCGCCAGGCACTGGTCAGCATT
+CCACAGTCGATCAGCGAAACCACTGGTCCGAACTTTTCCCACCTGGGCTTCGGCGCCCAC
+GACCATGACCTGCTGCTGAACTTCAACAACGGTGGCCTGCCAATCGGCGAGCGCATCATC
+GTGGCCGGCCGCGTCGTCGACCAGTACGGCAAGCCTGTGCCGAACACCCTGGTGGAGATG
+TGGCAAGCCAACGCCGGTGGCCGCTACCGGCACAAGAACGACCGTTACCTGGCACCGCTG
+GACCCGAACTTTGGTGGTGTCGGCCGTTGCCTGACCGACAGCGACGGCTACTACAGCTTC
+CGCACCATCAAGCCGGGCCCGTACCCCTGGCGCAACGGCCCGAACGACTGGCGCCCGGCG
+CACATCCACTTCGGCATCAGCGGCCCGTCGATTGCGACCAAGCTGATCACCCAGTTGTAT
+TTCGAGGGTGACCCGCTGATCCCGATGTGCCCGATCGTCAAGTCGATCGCCAACCCTGAA
+GCTGTACAGCAGTTGATCGCCAAGCTCGACATGAACAACGCCAACCCGATGGACTGCCTG
+GCCTACCGCTTTGACATCGTGCTGCGCGGCCAGCGCAAGACCCACTTCGAAAACTGCTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00775</identifier>
+            <name>Dioxygenase_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12391</identifier>
+            <name>PCDO_beta_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>ferric iron binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protocatechuate 3,4-dioxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>3,4-dihydroxybenzoate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>beta-ketoadipate pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

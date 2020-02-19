@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2008-03-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB06219</drugbank-id>
+  <name>Dalbavancin</name>
+  <description>Dalbavancin is a second-generation lipoglycopeptide antibiotic that was designed to improve on the natural glycopeptides currently available, such as vancomycin and teicoplanin [A4072, A4073]. Modifications from these older glycoprotein classes facilitated a similar mechanism of action for dalbavancin but with increased activity and once-weekly dosing [FDA Label, F2356, A4072, A4073]. Its use is indicated for the treatment of acute bacterial skin and skin structure infections (ABSSSI) caused by the following gram-positive microorganisms: Staphylococcus aureus (including methicillin-susceptible and methicillin-resistant strains), S. pyogenes, S. agalactiae, S. dysgalactiae, the S. anginosus group (including S. anginosus, S. intermedius, and S. constellatus), and Enterococcus faecalis (vancomycin susceptible strains) [FDA Label, F2356]. Dalbavancin acts by interfering with bacterial cell wall synthesis by binding to the D-alanyl-D-alanine terminus of nascent cell wall peptidoglycan and preventing cross-linking [FDA Label, F2356, A4072, A4073].</description>
+  <cas-number>171500-79-1</cas-number>
+  <unii>808UI9MS5K</unii>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A4072</ref-id>
+        <pubmed-id>18359966</pubmed-id>
+        <citation>Bailey J, Summers KM: Dalbavancin: a new lipoglycopeptide antibiotic. Am J Health Syst Pharm. 2008 Apr 1;65(7):599-610. doi: 10.2146/ajhp070255.</citation>
+      </article>
+      <article>
+        <ref-id>A4073</ref-id>
+        <pubmed-id>18728718</pubmed-id>
+        <citation>Bennett JW, Lewis JS, Ellis MW: Dalbavancin in the treatment of complicated skin and soft-tissue infections: a review. Ther Clin Risk Manag. 2008 Feb;4(1):31-40.</citation>
+      </article>
+      <article>
+        <ref-id>A4074</ref-id>
+        <pubmed-id>25578881</pubmed-id>
+        <citation>Leuthner KD, Yuen A, Mao Y, Rahbar A: Dalbavancin (BI-387) for the treatment of complicated skin and skin structure infection. Expert Rev Anti Infect Ther. 2015 Feb;13(2):149-59. doi: 10.1586/14787210.2015.995633.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments>
+      <attachment>
+        <ref-id>F2356</ref-id>
+        <title>Dalbavacin Health Canada Product Monograph</title>
+        <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/356/original/00047194.PDF?1545155127</url>
+      </attachment>
+      <attachment>
+        <ref-id>F2380</ref-id>
+        <title>Dalbavancin EMA Label</title>
+        <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/380/original/anx_136966_en.pdf?1545238693</url>
+      </attachment>
+    </attachments>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Dalbavancin for injection is indicated for the treatment of adult patients with acute bacterial skin and skin structure infections (ABSSSI), caused by susceptible isolates of the following gram-positive microorganisms: Staphylococcus aureus (including methicillin-susceptible and methicillin-resistant strains), Streptococcus pyogenes, Streptococcus agalactiae, Streptococcus dysgalactiae, Streptococcus anginosus group (including Streptococcus anginosus, Streptococcus intermedius, Streptococcus constellatus) and Enterococcus faecalis (vancomycin susceptible strains) [FDA Label, F2356].&#13;
+&#13;
+Dalbavancin is not active against gram-negative bacteria; therefore, combination therapy may be clinically indicated if the ABSSSI is polymicrobial and includes a suspected or documented gram-negative pathogen [F2356].&#13;
+&#13;
+To reduce the development of drug-resistant bacteria and maintain the effectiveness of dalbavancin and other antibacterial drugs, dalbavancin should be used only to treat infections that are proven or strongly suspected to be caused by susceptible bacteria [FDA Label, F2356]. When culture and susceptibility information are available, they should be considered in selecting or modifying antibacterial therapy [FDA Label, F2356]. In the absence of such data, local epidemiology and susceptibility patterns may contribute to the empiric selection of therapy [FDA Label, F2356].   </indication>
+  <pharmacodynamics>The antibacterial activity of dalbavancin appears to best correlate with the ratio of area under the concentration-time curve to minimal inhibitory concentration (AUC/MIC) for Staphylococcus aureus based on animal models of infection [FDA Label, F2356]. An exposure-response analysis of a single study in patients with complicated skin and skin structure infections supports the two-dose regimen for which dalbavancin injection is administered [FDA Label, F2356].&#13;
+&#13;
+Subsequently, the recommended dosage regimen of dalbavancin in patients with normal renal function is 1500 mg, administered either as a single dose, or 1000 mg followed one week later by 500 mg [FDA Label, F2356. Dalbavancin should be administered over 30 minutes by intravenous infusion [FDA Label, F2356].&#13;
+&#13;
+Furthermore, inn a randomized, positive- and placebo-controlled, thorough QT/QTc study, 200 healthy subjects received either dalbavancin 1000 mg intravenous (IV), dalbavancin 1500 mg IV, oral moxifloxacin 400 mg, or placebo. Neither dalbavancin 1000 mg nor dalbavancin 1500 mg had any clinically relevant adverse effect on cardiac repolarization [FDA Label, F2356]. </pharmacodynamics>
+  <mechanism-of-action>Dalbavancin has a spectrum and mechanism of action similar to vancomycin, a naturally formed glycopeptide antimicrobial [A4073]. The bactericidal action of dalbavancin results primarily from inhibition of cell-wall biosynthesis [FDA Label, F2356, A4072, A4073, A4074]. Specifically, dalbavancin prevents incorporation of N-acetylmuramic acid (NAM)- and N-acetylglucosamine (NAG)-peptide subunits from being incorporated into the peptidoglycan matrix; which forms the major structural component of Gram-positive cell walls [A4072, A4073]. The large hydrophilic molecule is able to form hydrogen bond interactions with the terminal D-alanyl-D-alanine moieties of the NAM/NAG-peptides, which is normally a five-point interaction [FDA Label, A4072, A4073]. Binding of dalbavancin to the D-Ala-D-Ala prevents the incorporation of the NAM/NAG-peptide subunits into the peptidoglycan matrix [FDA Label, A4072, A4073]. In addition, dalbavancin alters bacterial-cell-membrane permeability and RNA synthesis. </mechanism-of-action>
+  <toxicity>Treatment with antibacterial agents can alter the normal flora of the colon leading to growth of C. difficile and commonly occurs in the development of C. difficile-associated diarrhea [FDA Label, F2356]. Other common side effects include nausea, vomiting, diarrhea, headache, rash, and pruritis [FDA Label, F2356]. Side effects that occurred in less than 2% of patients during clinical trials include blood and lymphatic system disorders, gastrointestinal disorders, hepatotoxicity, anaphylactoid reactions, hepatic enzyme elevation, hypoglycaemia, dizziness, bronchospasm, urticaria, and vascular disorders [FDA Label, F2356]. There have been no adequate or well-controlled studies to conclude that use of dalbavancin is safe during pregnancy or breastfeeding [FDA Label, F2356]. </toxicity>
+  <metabolism>Dalbavancin is not a substrate, inhibitor, or inducer of CYP450 isoenzymes [FDA Label, F2356]. Subsequently, metabolites have not been observed in significant amounts in human plasma [FDA Label, F2356]. The metabolites hydroxy-dalbavancin and mannosyl aglycone have been detected in urine (&lt; 25% of administered dose) [FDA Label, F2356]. The metabolic pathways responsible for producing these metabolites have not been identified; however, due to the relatively minor contribution of metabolism to the overall elimination of dalbavancin, drug-drug interactions via inhibition or induction of metabolism of dalbavancin are not anticipated [FDA Label, F2356]. Hydroxy-dalbavancin and mannosyl aglycone show significantly less antibacterial activity compared to dalbavancin [FDA Label, F2356]. </metabolism>
+  <absorption>In healthy subjects, dalbavancin AUC0-24h and Cmax both increased proportionally to dose following single intravenous (IV) dalbavancin doses ranging from 140 mg to 1500 mg, indicating linear pharmacokinetics [FDA Label, F2356].&#13;
+&#13;
+No apparent accumulation of dalbavancin was observed following multiple IV infusions administered once weekly for up to eight weeks, with 1000 mg on Day 1 followed by up to seven weekly 500 mg doses, in healthy adults with normal renal function [FDA Label, F2356].</absorption>
+  <half-life>Terminal half life is 346 hours [FDA Label, F2356]. </half-life>
+  <protein-binding>Dalbavancin is reversibly bound to human plasma proteins, primarily to albumin [FDA Label, F2356]. The plasma protein binding of dalbavancin is 93% and is not altered as a function of drug concentration, renal insufficiency, or hepatic insufficiency [FDA Label, F2356]. </protein-binding>
+  <route-of-elimination>Following administration of a single 1000 mg dose in healthy subjects, an average of 33% of the administered dalbavancin dose was excreted in urine as unchanged dalbavancin and approximately 12% of the administered dose was excreted in urine as the metabolite hydroxy-dalbavancin through 42 days post-dose. Approximately 20% of the administered dose was excreted in feces through 70 days post-dose [FDA Label, F2356]. </route-of-elimination>
+  <volume-of-distribution>Clearance and volume of distribution at steady state are comparable between healthy subjects and patients with infections [F2380]. The volume of distribution at steady state was similar to the volume of extracellular fluid [F2380].</volume-of-distribution>
+  <clearance>0.0513 L/h [FDA Label, F2356].</clearance>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT001105</drugbank-id>
+      <name>Dalbavancin hydrochloride</name>
+      <unii>33WDQ7T81E</unii>
+      <cas-number/>
+      <inchikey/>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="inn/usan">Dalbavancin</synonym>
+    <synonym language="spanish" coder="">Dalbavancina</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Dalvance</name>
+      <labeller>Durata Therapeutics Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>57970-100</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2014-05-23</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, for solution</dosage-form>
+      <strength>500 mg/25mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA021883</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Xydalba</name>
+      <labeller>Allergan</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id/>
+      <ema-product-code>EMEA/H/C/002840</ema-product-code>
+      <ema-ma-number>EU/1/14/986/001</ema-ma-number>
+      <started-marketing-on>2015-02-19</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, powder, for solution</dosage-form>
+      <strength>500 mg</strength>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>EU</country>
+      <source>EMA</source>
+    </product>
+    <product>
+      <name>Xydalba</name>
+      <labeller>Cipher Pharmaceuticals Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02480522</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand>
+      <name>Zeven</name>
+      <company>Pfizer</company>
+    </international-brand>
+  </international-brands>
+  <mixtures>
+    <mixture>
+      <name>Xydalba</name>
+      <ingredients>Dalbavancin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Dalvance</name>
+      <ingredients>Dalbavancin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Xydalba</name>
+      <ingredients>Dalbavancin</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Antibacterials for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antiinfectives for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Glycoconjugates</category>
+      <mesh-id>D006001</mesh-id>
+    </category>
+    <category>
+      <category>Glycopeptide Antibacterials</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Glycopeptides</category>
+      <mesh-id>D006020</mesh-id>
+    </category>
+    <category>
+      <category>Lipids</category>
+      <mesh-id>D008055</mesh-id>
+    </category>
+    <category>
+      <category>Lipoglycopeptide Antibacterial</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Lipoglycopeptides</category>
+      <mesh-id>D000077427</mesh-id>
+    </category>
+    <category>
+      <category>Lipopeptides</category>
+      <mesh-id>D055666</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Gram-positive Bacteria</affected-organism>
+    <affected-organism>Streptococcus pyogenes</affected-organism>
+    <affected-organism>Streptococcus agalactiae</affected-organism>
+    <affected-organism>Staphylococcus aureus</affected-organism>
+    <affected-organism>Enterococcus faecalis</affected-organism>
+    <affected-organism>Streptococcus anginosus</affected-organism>
+    <affected-organism>Staphylococcus intermedius</affected-organism>
+    <affected-organism>Streptococcus constellatus</affected-organism>
+    <affected-organism>Streptococcus dysgalactiae</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Injection, powder, for solution</form>
+      <route>Intravenous</route>
+      <strength>500 mg/25mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, powder, for solution</form>
+      <route>Intravenous</route>
+      <strength>500 mg</strength>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intravenous</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="J01XA04">
+      <level code="J01XA">Glycopeptide antibacterials</level>
+      <level code="J01X">OTHER ANTIBACTERIALS</level>
+      <level code="J01">ANTIBACTERIALS FOR SYSTEMIC USE</level>
+      <level code="J">ANTIINFECTIVES FOR SYSTEMIC USE</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB06219.pdf?1545156358</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB06219.pdf?1427736064</msds>
+  <patents>
+    <patent>
+      <number>6900175</number>
+      <country>United States</country>
+      <approved>2005-05-31</approved>
+      <expires>2023-12-25</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8143212</number>
+      <country>United States</country>
+      <approved>2012-03-27</approved>
+      <expires>2023-11-14</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>7119061</number>
+      <country>United States</country>
+      <approved>2006-10-10</approved>
+      <expires>2023-11-14</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>7115564</number>
+      <country>United States</country>
+      <approved>2006-10-03</approved>
+      <expires>2023-11-14</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Dalbavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Dalbavancin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Dalbavancin is combined with (S)-Warfarin.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>13099</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>82721</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>23724878</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>310264863</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D03640</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>30791917</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Dalbavancin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL3301669</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/dalvance-drug.htm</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/dalvance.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0004826</id>
+      <name>D-Ala-D-Ala moiety of NAM/NAG peptide subunits of peptidoglycan</name>
+      <organism>Gram-positive Bacteria</organism>
+      <actions>
+        <action>binder</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A4072</ref-id>
+            <pubmed-id>18359966</pubmed-id>
+            <citation>Bailey J, Summers KM: Dalbavancin: a new lipoglycopeptide antibiotic. Am J Health Syst Pharm. 2008 Apr 1;65(7):599-610. doi: 10.2146/ajhp070255.</citation>
+          </article>
+          <article>
+            <ref-id>A4073</ref-id>
+            <pubmed-id>18728718</pubmed-id>
+            <citation>Bennett JW, Lewis JS, Ellis MW: Dalbavancin in the treatment of complicated skin and soft-tissue infections: a review. Ther Clin Risk Manag. 2008 Feb;4(1):31-40.</citation>
+          </article>
+          <article>
+            <ref-id>A4074</ref-id>
+            <pubmed-id>25578881</pubmed-id>
+            <citation>Leuthner KD, Yuen A, Mao Y, Rahbar A: Dalbavancin (BI-387) for the treatment of complicated skin and skin structure infection. Expert Rev Anti Infect Ther. 2015 Feb;13(2):149-59. doi: 10.1586/14787210.2015.995633.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments>
+          <attachment>
+            <ref-id>F2362</ref-id>
+            <title>Dalbavancin FDA Label</title>
+            <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/362/original/021883s003lbl.pdf?1545165340</url>
+          </attachment>
+          <attachment>
+            <ref-id>F2363</ref-id>
+            <title>Dalbavancin Health Canada Product Monograph</title>
+            <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/002/363/original/00047194.PDF?1545165370</url>
+          </attachment>
+        </attachments>
+      </references>
+      <known-action>yes</known-action>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

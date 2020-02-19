@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05146</drugbank-id>
+  <name>XL820</name>
+  <description>XL820 is investigated for use/treatment in solid tumors. XL820 is a solid. The proteins that XL820 inhibit include platelet-derived growth factor receptor beta (PDGFR), mast/stem cell growth factor receptor KIT, vascular endothelial growth factor receptor 2, and platelet-derived growth factor receptor alpha, clinically validated targets implicated in a variety of human cancers. XL820 exhibits dose-dependent growth inhibition in models of breast carcinoma, gliomas and leukemia.</description>
+  <cas-number>1123889-88-2</cas-number>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3272</ref-id>
+        <pubmed-id>23344264</pubmed-id>
+        <citation>Yeh P, Chen H, Andrews J, Naser R, Pao W, Horn L: DNA-Mutation Inventory to Refine and Enhance Cancer Treatment (DIRECT): a catalog of clinically relevant cancer mutations to enable genome-directed anticancer therapy. Clin Cancer Res. 2013 Apr 1;19(7):1894-901. doi: 10.1158/1078-0432.CCR-12-1894. Epub 2013 Jan 23.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in solid tumors.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>XL820 inhibits KIT as well as VEGFR2 and PDGFR, clinically validated targets implicated in a variety of human cancers. In tumor models of breast carcinoma, glioma and leukemia, the compound exhibited dose-dependent growth inhibition and has been shown to cause tumor regression. XL820 demonstrated excellent activity in target-specific cellular functional assays. In biochemical and cellular assays, XL820 potently inhibits mutant forms of KIT that confer resistance to approved KIT inhibitors. XL820 has good oral bioavailability and has shown sustained inhibition of target RTKs in vivo following a single oral dose.&#13;
+&#13;
+</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909978</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000369</id>
+      <name>Vascular endothelial growth factor receptor 2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35968" source="Swiss-Prot">
+        <name>Vascular endothelial growth factor receptor 2</name>
+        <general-function>Vascular endothelial growth factor-activated receptor activity</general-function>
+        <specific-function>Tyrosine-protein kinase that acts as a cell-surface receptor for VEGFA, VEGFC and VEGFD. Plays an essential role in the regulation of angiogenesis, vascular development, vascular permeability, and embryonic hematopoiesis. Promotes proliferation, survival, migration and differentiation of endothelial cells. Promotes reorganization of the actin cytoskeleton. Isoforms lacking a transmembrane domain, such as isoform 2 and isoform 3, may function as decoy receptors for VEGFA, VEGFC and/or VEGFD. Isoform 2 plays an important role as negative regulator of VEGFA- and VEGFC-mediated lymphangiogenesis by limiting the amount of free VEGFA and/or VEGFC and preventing their binding to FLT4. Modulates FLT1 and FLT4 signaling by forming heterodimers. Binding of vascular growth factors to isoform 1 leads to the activation of several signaling cascades. Activation of PLCG1 leads to the production of the cellular signaling molecules diacylglycerol and inositol 1,4,5-trisphosphate and the activation of protein kinase C. Mediates activation of MAPK1/ERK2, MAPK3/ERK1 and the MAP kinase signaling pathway, as well as of the AKT1 signaling pathway. Mediates phosphorylation of PIK3R1, the regulatory subunit of phosphatidylinositol 3-kinase, reorganization of the actin cytoskeleton and activation of PTK2/FAK1. Required for VEGFA-mediated induction of NOS2 and NOS3, leading to the production of the signaling molecule nitric oxide (NO) by endothelial cells. Phosphorylates PLCG1. Promotes phosphorylation of FYN, NCK1, NOS3, PIK3R1, PTK2/FAK1 and SRC.</specific-function>
+        <gene-name>KDR</gene-name>
+        <locus>4q11-q12</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>765-785</transmembrane-regions>
+        <signal-regions>1-19</signal-regions>
+        <theoretical-pi>5.64</theoretical-pi>
+        <molecular-weight>151525.555</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6307</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>KDR</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF035121</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2655412</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1813</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35968</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>VGFR2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.1</synonym>
+          <synonym>Fetal liver kinase 1</synonym>
+          <synonym>FLK-1</synonym>
+          <synonym>FLK1</synonym>
+          <synonym>KDR</synonym>
+          <synonym>Kinase insert domain receptor</synonym>
+          <synonym>Protein-tyrosine kinase receptor flk-1</synonym>
+          <synonym>VEGFR-2</synonym>
+          <synonym>VEGFR2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000735|Vascular endothelial growth factor receptor 2
+MQSKVLLAVALWLCVETRAASVGLPSVSLDLPRLSIQKDILTIKANTTLQITCRGQRDLD
+WLWPNNQSGSEQRVEVTECSDGLFCKTLTIPKVIGNDTGAYKCFYRETDLASVIYVYVQD
+YRSPFIASVSDQHGVVYITENKNKTVVIPCLGSISNLNVSLCARYPEKRFVPDGNRISWD
+SKKGFTIPSYMISYAGMVFCEAKINDESYQSIMYIVVVVGYRIYDVVLSPSHGIELSVGE
+KLVLNCTARTELNVGIDFNWEYPSSKHQHKKLVNRDLKTQSGSEMKKFLSTLTIDGVTRS
+DQGLYTCAASSGLMTKKNSTFVRVHEKPFVAFGSGMESLVEATVGERVRIPAKYLGYPPP
+EIKWYKNGIPLESNHTIKAGHVLTIMEVSERDTGNYTVILTNPISKEKQSHVVSLVVYVP
+PQIGEKSLISPVDSYQYGTTQTLTCTVYAIPPPHHIHWYWQLEEECANEPSQAVSVTNPY
+PCEEWRSVEDFQGGNKIEVNKNQFALIEGKNKTVSTLVIQAANVSALYKCEAVNKVGRGE
+RVISFHVTRGPEITLQPDMQPTEQESVSLWCTADRSTFENLTWYKLGPQPLPIHVGELPT
+PVCKNLDTLWKLNATMFSNSTNDILIMELKNASLQDQGDYVCLAQDRKTKKRHCVVRQLT
+VLERVAPTITGNLENQTTSIGESIEVSCTASGNPPPQIMWFKDNETLVEDSGIVLKDGNR
+NLTIRRVRKEDEGLYTCQACSVLGCAKVEAFFIIEGAQEKTNLEIIILVGTAVIAMFFWL
+LLVIILRTVKRANGGELKTGYLSIVMDPDELPLDEHCERLPYDASKWEFPRDRLKLGKPL
+GRGAFGQVIEADAFGIDKTATCRTVAVKMLKEGATHSEHRALMSELKILIHIGHHLNVVN
+LLGACTKPGGPLMVIVEFCKFGNLSTYLRSKRNEFVPYKTKGARFRQGKDYVGAIPVDLK
+RRLDSITSSQSSASSGFVEEKSLSDVEEEEAPEDLYKDFLTLEHLICYSFQVAKGMEFLA
+SRKCIHRDLAARNILLSEKNVVKICDFGLARDIYKDPDYVRKGDARLPLKWMAPETIFDR
+VYTIQSDVWSFGVLLWEIFSLGASPYPGVKIDEEFCRRLKEGTRMRAPDYTTPEMYQTML
+DCWHGEPSQRPTFSELVEHLGNLLQANAQQDGKDYIVLPISETLSMEEDSGLSLPTSPVS
+CMEEEEVCDPKFHYDNTAGISQYLQNSKRKSRPVSVKTFEDIPLEEPEVKVIPDDNQTDS
+GMVLASEELKTLEDRTKLSPSFGGMVPSKSRESVASEGSNQTSGYQSGYHSDDTDTTVYS
+SEEAELLKLIEIGVQTGSTAQILQPDSGTTLSSPPV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020462|Vascular endothelial growth factor receptor 2 (KDR)
+ATGCAGAGCAAGGTGCTGCTGGCCGTCGCCCTGTGGCTCTGCGTGGAGACCCGGGCCGCC
+TCTGTGGGTTTGCCTAGTGTTTCTCTTGATCTGCCCAGGCTCAGCATACAAAAAGACATA
+CTTACAATTAAGGCTAATACAACTCTTCAAATTACTTGCAGGGGACAGAGGGACTTGGAC
+TGGCTTTGGCCCAATAATCAGAGTGGCAGTGAGCAAAGGGTGGAGGTGACTGAGTGCAGC
+GATGGCCTCTTCTGTAAGACACTCACAATTCCAAAAGTGATCGGAAATGACACTGGAGCC
+TACAAGTGCTTCTACCGGGAAACTGACTTGGCCTCGGTCATTTATGTCTATGTTCAAGAT
+TACAGATCTCCATTTATTGCTTCTGTTAGTGACCAACATGGAGTCGTGTACATTACTGAG
+AACAAAAACAAAACTGTGGTGATTCCATGTCTCGGGTCCATTTCAAATCTCAACGTGTCA
+CTTTGTGCAAGATACCCAGAAAAGAGATTTGTTCCTGATGGTAACAGAATTTCCTGGGAC
+AGCAAGAAGGGCTTTACTATTCCCAGCTACATGATCAGCTATGCTGGCATGGTCTTCTGT
+GAAGCAAAAATTAATGATGAAAGTTACCAGTCTATTATGTACATAGTTGTCGTTGTAGGG
+TATAGGATTTATGATGTGGTTCTGAGTCCGTCTCATGGAATTGAACTATCTGTTGGAGAA
+AAGCTTGTCTTAAATTGTACAGCAAGAACTGAACTAAATGTGGGGATTGACTTCAACTGG
+GAATACCCTTCTTCGAAGCATCAGCATAAGAAACTTGTAAACCGAGACCTAAAAACCCAG
+TCTGGGAGTGAGATGAAGAAATTTTTGAGCACCTTAACTATAGATGGTGTAACCCGGAGT
+GACCAAGGATTGTACACCTGTGCAGCATCCAGTGGGCTGATGACCAAGAAGAACAGCACA
+TTTGTCAGGGTCCATGAAAAACCTTTTGTTGCTTTTGGAAGTGGCATGGAATCTCTGGTG
+GAAGCCACGGTGGGGGAGCGTGTCAGAATCCCTGCGAAGTACCTTGGTTACCCACCCCCA
+GAAATAAAATGGTATAAAAATGGAATACCCCTTGAGTCCAATCACACAATTAAAGCGGGG
+CATGTACTGACGATTATGGAAGTGAGTGAAAGAGACACAGGAAATTACACTGTCATCCTT
+ACCAATCCCATTTCAAAGGAGAAGCAGAGCCATGTGGTCTCTCTGGTTGTGTATGTCCCA
+CCCCAGATTGGTGAGAAATCTCTAATCTCTCCTGTGGATTCCTACCAGTACGGCACCACT
+CAAACGCTGACATGTACGGTCTATGCCATTCCTCCCCCGCATCACATCCACTGGTATTGG
+CAGTTGGAGGAAGAGTGCGCCAACGAGCCCAGCCAAGCTGTCTCAGTGACAAACCCATAC
+CCTTGTGAAGAATGGAGAAGTGTGGAGGACTTCCAGGGAGGAAATAAAATTGAAGTTAAT
+AAAAATCAATTTGCTCTAATTGAAGGAAAAAACAAAACTGTAAGTACCCTTGTTATCCAA
+GCGGCAAATGTGTCAGCTTTGTACAAATGTGAAGCGGTCAACAAAGTCGGGAGAGGAGAG
+AGGGTGATCTCCTTCCACGTGACCAGGGGTCCTGAAATTACTTTGCAACCTGACATGCAG
+CCCACTGAGCAGGAGAGCGTGTCTTTGTGGTGCACTGCAGACAGATCTACGTTTGAGAAC
+CTCACATGGTACAAGCTTGGCCCACAGCCTCTGCCAATCCATGTGGGAGAGTTGCCCACA
+CCTGTTTGCAAGAACTTGGATACTCTTTGGAAATTGAATGCCACCATGTTCTCTAATAGC
+ACAAATGACATTTTGATCATGGAGCTTAAGAATGCATCCTTGCAGGACCAAGGAGACTAT
+GTCTGCCTTGCTCAAGACAGGAAGACCAAGAAAAGACATTGCGTGGTCAGGCAGCTCACA
+GTCCTAGAGCGTGTGGCACCCACGATCACAGGAAACCTGGAGAATCAGACGACAAGTATT
+GGGGAAAGCATCGAAGTCTCATGCACGGCATCTGGGAATCCCCCTCCACAGATCATGTGG
+TTTAAAGATAATGAGACCCTTGTAGAAGACTCAGGCATTGTATTGAAGGATGGGAACCGG
+AACCTCACTATCCGCAGAGTGAGGAAGGAGGACGAAGGCCTCTACACCTGCCAGGCATGC
+AGTGTTCTTGGCTGTGCAAAAGTGGAGGCATTTTTCATAATAGAAGGTGCCCAGGAAAAG
+ACGAACTTGGAAATCATTATTCTAGTAGGCACGGCGGTGATTGCCATGTTCTTCTGGCTA
+CTTCTTGTCATCATCCTACGGACCGTTAAGCGGGCCAATGGAGGGGAACTGAAGACAGGC
+TACTTGTCCATCGTCATGGATCCAGATGAACTCCCATTGGATGAACATTGTGAACGACTG
+CCTTATGATGCCAGCAAATGGGAATTCCCCAGAGACCGGCTGAAGCTAGGTAAGCCTCTT
+GGCCGTGGTGCCTTTGGCCAAGTGATTGAAGCAGATGCCTTTGGAATTGACAAGACAGCA
+ACTTGCAGGACAGTAGCAGTCAAAATGTTGAAAGAAGGAGCAACACACAGTGAGCATCGA
+GCTCTCATGTCTGAACTCAAGATCCTCATTCATATTGGTCACCATCTCAATGTGGTCAAC
+CTTCTAGGTGCCTGTACCAAGCCAGGAGGGCCACTCATGGTGATTGTGGAATTCTGCAAA
+TTTGGAAACCTGTCCACTTACCTGAGGAGCAAGAGAAATGAATTTGTCCCCTACAAGACC
+AAAGGGGCACGATTCCGTCAAGGGAAAGACTACGTTGGAGCAATCCCTGTGGATCTGAAA
+CGGCGCTTGGACAGCATCACCAGTAGCCAGAGCTCAGCCAGCTCTGGATTTGTGGAGGAG
+AAGTCCCTCAGTGATGTAGAAGAAGAGGAAGCTCCTGAAGATCTGTATAAGGACTTCCTG
+ACCTTGGAGCATCTCATCTGTTACAGCTTCCAAGTGGCTAAGGGCATGGAGTTCTTGGCA
+TCGCGAAAGTGTATCCACAGGGACCTGGCGGCACGAAATATCCTCTTATCGGAGAAGAAC
+GTGGTTAAAATCTGTGACTTTGGCTTGGCCCGGGATATTTATAAAGATCCAGATTATGTC
+AGAAAAGGAGATGCTCGCCTCCCTTTGAAATGGATGGCCCCAGAAACAATTTTTGACAGA
+GTGTACACAATCCAGAGTGACGTCTGGTCTTTTGGTGTTTTGCTGTGGGAAATATTTTCC
+TTAGGTGCTTCTCCATATCCTGGGGTAAAGATTGATGAAGAATTTTGTAGGCGATTGAAA
+GAAGGAACTAGAATGAGGGCCCCTGATTATACTACACCAGAAATGTACCAGACCATGCTG
+GACTGCTGGCACGGGGAGCCCAGTCAGAGACCCACGTTTTCAGAGTTGGTGGAACATTTG
+GGAAATCTCTTGCAAGCTAATGCTCAGCAGGATGGCAAAGACTACATTGTTCTTCCGATA
+TCAGAGACTTTGAGCATGGAAGAGGATTCTGGACTCTCTCTGCCTACCTCACCTGTTTCC
+TGTATGGAGGAGGAGGAAGTATGTGACCCCAAATTCCATTATGACAACACAGCAGGAATC
+AGTCAGTATCTGCAGAACAGTAAGCGAAAGAGCCGGCCTGTGAGTGTAAAAACATTTGAA
+GATATCCCGTTAGAAGAACCAGAAGTAAAAGTAATCCCAGATGACAACCAGACGGACAGT
+GGTATGGTTCTTGCCTCAGAAGAGCTGAAAACTTTGGAAGACAGAACCAAATTATCTCCA
+TCTTTTGGTGGAATGGTGCCCAGCAAAAGCAGGGAGTCTGTGGCATCTGAAGGCTCAAAC
+CAGACAAGCGGCTACCAGTCCGGATATCACTCCGATGACACAGACACCACCGTGTACTCC
+AGTGAGGAAGCAGAACTTTTAAAGCTGATAGAGATTGGAGTGCAAACCGGTAGCACAGCC
+CAGATTCTCCAGCCTGACTCGGGGACCACACTGAGCTCTCCTCCTGTTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00047</identifier>
+            <name>ig</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07679</identifier>
+            <name>I-set</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic membrane-bounded vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>early endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sorting endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>Hsp90 protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>integrin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor signaling protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane receptor protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vascular endothelial growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vascular endothelial growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>branching morphogenesis of an epithelial tube</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium-mediated signaling using intracellular calcium source</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell fate commitment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration involved in sprouting angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to vascular endothelial growth factor stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic hemopoiesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelium development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lung alveolus development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lymph vessel development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endothelial cell apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ovarian follicle development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of endothelial cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of endothelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of focal adhesion assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mesenchymal cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of positive chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasculogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of endothelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of hematopoietic progenitor cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction by protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>surfactant homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane receptor protein tyrosine kinase signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasculogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000453</id>
+      <name>Mast/stem cell growth factor receptor Kit</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P10721" source="Swiss-Prot">
+        <name>Mast/stem cell growth factor receptor Kit</name>
+        <general-function>Transmembrane receptor protein tyrosine kinase activity</general-function>
+        <specific-function>Tyrosine-protein kinase that acts as cell-surface receptor for the cytokine KITLG/SCF and plays an essential role in the regulation of cell survival and proliferation, hematopoiesis, stem cell maintenance, gametogenesis, mast cell development, migration and function, and in melanogenesis. In response to KITLG/SCF binding, KIT can activate several signaling pathways. Phosphorylates PIK3R1, PLCG1, SH2B2/APS and CBL. Activates the AKT1 signaling pathway by phosphorylation of PIK3R1, the regulatory subunit of phosphatidylinositol 3-kinase. Activated KIT also transmits signals via GRB2 and activation of RAS, RAF1 and the MAP kinases MAPK1/ERK2 and/or MAPK3/ERK1. Promotes activation of STAT family members STAT1, STAT3, STAT5A and STAT5B. Activation of PLCG1 leads to the production of the cellular signaling molecules diacylglycerol and inositol 1,4,5-trisphosphate. KIT signaling is modulated by protein phosphatases, and by rapid internalization and degradation of the receptor. Activated KIT promotes phosphorylation of the protein phosphatases PTPN6/SHP-1 and PTPRU, and of the transcription factors STAT1, STAT3, STAT5A and STAT5B. Promotes phosphorylation of PIK3R1, CBL, CRK (isoform Crk-II), LYN, MAPK1/ERK2 and/or MAPK3/ERK1, PLCG1, SRC and SHC1.</specific-function>
+        <gene-name>KIT</gene-name>
+        <locus>4q11-q12</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>525-545</transmembrane-regions>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>6.96</theoretical-pi>
+        <molecular-weight>109863.655</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6342</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>KIT</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X06182</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>34085</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1805</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P10721</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>KIT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.1</synonym>
+          <synonym>p145 c-kit</synonym>
+          <synonym>PBT</synonym>
+          <synonym>Piebald trait protein</synonym>
+          <synonym>Proto-oncogene c-Kit</synonym>
+          <synonym>SCFR</synonym>
+          <synonym>Tyrosine-protein kinase Kit</synonym>
+          <synonym>v-kit Hardy-Zuckerman 4 feline sarcoma viral oncogene homolog</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000903|Mast/stem cell growth factor receptor Kit
+MRGARGAWDFLCVLLLLLRVQTGSSQPSVSPGEPSPPSIHPGKSDLIVRVGDEIRLLCTD
+PGFVKWTFEILDETNENKQNEWITEKAEATNTGKYTCTNKHGLSNSIYVFVRDPAKLFLV
+DRSLYGKEDNDTLVRCPLTDPEVTNYSLKGCQGKPLPKDLRFIPDPKAGIMIKSVKRAYH
+RLCLHCSVDQEGKSVLSEKFILKVRPAFKAVPVVSVSKASYLLREGEEFTVTCTIKDVSS
+SVYSTWKRENSQTKLQEKYNSWHHGDFNYERQATLTISSARVNDSGVFMCYANNTFGSAN
+VTTTLEVVDKGFINIFPMINTTVFVNDGENVDLIVEYEAFPKPEHQQWIYMNRTFTDKWE
+DYPKSENESNIRYVSELHLTRLKGTEGGTYTFLVSNSDVNAAIAFNVYVNTKPEILTYDR
+LVNGMLQCVAAGFPEPTIDWYFCPGTEQRCSASVLPVDVQTLNSSGPPFGKLVVQSSIDS
+SAFKHNGTVECKAYNDVGKTSAYFNFAFKGNNKEQIHPHTLFTPLLIGFVIVAGMMCIIV
+MILTYKYLQKPMYEVQWKVVEEINGNNYVYIDPTQLPYDHKWEFPRNRLSFGKTLGAGAF
+GKVVEATAYGLIKSDAAMTVAVKMLKPSAHLTEREALMSELKVLSYLGNHMNIVNLLGAC
+TIGGPTLVITEYCCYGDLLNFLRRKRDSFICSKQEDHAEAALYKNLLHSKESSCSDSTNE
+YMDMKPGVSYVVPTKADKRRSVRIGSYIERDVTPAIMEDDELALDLEDLLSFSYQVAKGM
+AFLASKNCIHRDLAARNILLTHGRITKICDFGLARDIKNDSNYVVKGNARLPVKWMAPES
+IFNCVYTFESDVWSYGIFLWELFSLGSSPYPGMPVDSKFYKMIKEGFRMLSPEHAPAEMY
+DIMKTCWDADPLKRPTFKQIVQLIEKQISESTNHIYSNLANCSPNRQKPVVDHSVRINSV
+GSTASSSQPLLVHDDV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020461|Mast/stem cell growth factor receptor Kit (KIT)
+ATGAGAGGCGCTCGCGGCGCCTGGGATTTTCTCTGCGTTCTGCTCCTACTGCTTCGCGTC
+CAGACAGGCTCTTCTCAACCATCTGTGAGTCCAGGGGAACCGTCTCCACCATCCATCCAT
+CCAGGAAAATCAGACTTAATAGTCCGCGTGGGCGACGAGATTAGGCTGTTATGCACTGAT
+CCGGGCTTTGTCAAATGGACTTTTGAGATCCTGGATGAAACGAATGAGAATAAGCAGAAT
+GAATGGATCACGGAAAAGGCAGAAGCCACCAACACCGGCAAATACACGTGCACCAACAAA
+CACGGCTTAAGCAATTCCATTTATGTGTTTGTTAGAGATCCTGCCAAGCTTTTCCTTGTT
+GACCGCTCCTTGTATGGGAAAGAAGACAACGACACGCTGGTCCGCTGTCCTCTCACAGAC
+CCAGAAGTGACCAATTATTCCCTCAAGGGGTGCCAGGGGAAGCCTCTTCCCAAGGACTTG
+AGGTTTATTCCTGACCCCAAGGCGGGCATCATGATCAAAAGTGTGAAACGCGCCTACCAT
+CGGCTCTGTCTGCATTGTTCTGTGGACCAGGAGGGCAAGTCAGTGCTGTCGGAAAAATTC
+ATCCTGAAAGTGAGGCCAGCCTTCAAAGCTGTGCCTGTTGTGTCTGTGTCCAAAGCAAGC
+TATCTTCTTAGGGAAGGGGAAGAATTCACAGTGACGTGCACAATAAAAGATGTGTCTAGT
+TCTGTGTACTCAACGTGGAAAAGAGAAAACAGTCAGACTAAACTACAGGAGAAATATAAT
+AGCTGGCATCACGGTGACTTCAATTATGAACGTCAGGCAACGTTGACTATCAGTTCAGCG
+AGAGTTAATGATTCTGGAGTGTTCATGTGTTATGCCAATAATACTTTTGGATCAGCAAAT
+GTCACAACAACCTTGGAAGTAGTAGATAAAGGATTCATTAATATCTTCCCCATGATAAAC
+ACTACAGTATTTGTAAACGATGGAGAAAATGTAGATTTGATTGTTGAATATGAAGCATTC
+CCCAAACCTGAACACCAGCAGTGGATCTATATGAACAGAACCTTCACTGATAAATGGGAA
+GATTATCCCAAGTCTGAGAATGAAAGTAATATCAGATACGTAAGTGAACTTCATCTAACG
+AGATTAAAAGGCACCGAAGGAGGCACTTACACATTCCTAGTGTCCAATTCTGACGTCAAT
+GCTGCCATAGCATTTAATGTTTATGTGAATACAAAACCAGAAATCCTGACTTACGACAGG
+CTCGTGAATGGCATGCTCCAATGTGTGGCAGCAGGATTCCCAGAGCCCACAATAGATTGG
+TATTTTTGTCCAGGAACTGAGCAGAGATGCTCTGCTTCTGTACTGCCAGTGGATGTGCAG
+ACACTAAACTCATCTGGGCCACCGTTTGGAAAGCTAGTGGTTCAGAGTTCTATAGATTCT
+AGTGCATTCAAGCACAATGGCACGGTTGAATGTAAGGCTTACAACGATGTGGGCAAGACT
+TCTGCCTATTTTAACTTTGCATTTAAAGGTAACAACAAAGAGCAAATCCATCCCCACACC
+CTGTTCACTCCTTTGCTGATTGGTTTCGTAATCGTAGCTGGCATGATGTGCATTATTGTG
+ATGATTCTGACCTACAAATATTTACAGAAACCCATGTATGAAGTACAGTGGAAGGTTGTT
+GAGGAGATAAATGGAAACAATTATGTTTACATAGACCCAACACAACTTCCTTATGATCAC
+AAATGGGAGTTTCCCAGAAACAGGCTGAGTTTTGGGAAAACCCTGGGTGCTGGAGCTTTC
+GGGAAGGTTGTTGAGGCAACTGCTTATGGCTTAATTAAGTCAGATGCGGCCATGACTGTC
+GCTGTAAAGATGCTCAAGCCGAGTGCCCATTTGACAGAACGGGAAGCCCTCATGTCTGAA
+CTCAAAGTCCTGAGTTACCTTGGTAATCACATGAATATTGTGAATCTACTTGGAGCCTGC
+ACCATTGGAGGGCCCACCCTGGTCATTACAGAATATTGTTGCTATGGTGATCTTTTGAAT
+TTTTTGAGAAGAAAACGTGATTCATTTATTTGTTCAAAGCAGGAAGATCATGCAGAAGCT
+GCACTTTATAAGAATCTTCTGCATTCAAAGGAGTCTTCCTGCAGCGATAGTACTAATGAG
+TACATGGACATGAAACCTGGAGTTTCTTATGTTGTCCCAACCAAGGCCGACAAAAGGAGA
+TCTGTGAGAATAGGCTCATACATAGAAAGAGATGTGACTCCCGCCATCATGGAGGATGAC
+GAGTTGGCCCTAGACTTAGAAGACTTGCTGAGCTTTTCTTACCAGGTGGCAAAGGGCATG
+GCTTTCCTCGCCTCCAAGAATTGTATTCACAGAGACTTGGCAGCCAGAAATATCCTCCTT
+ACTCATGGTCGGATCACAAAGATTTGTGATTTTGGTCTAGCCAGAGACATCAAGAATGAT
+TCTAATTATGTGGTTAAAGGAAACGCTCGACTACCTGTGAAGTGGATGGCACCTGAAAGC
+ATTTTCAACTGTGTATACACGTTTGAAAGTGACGTCTGGTCCTATGGGATTTTTCTTTGG
+GAGCTGTTCTCTTTAGGAAGCAGCCCCTATCCTGGAATGCCGGTCGATTCTAAGTTCTAC
+AAGATGATCAAGGAAGGCTTCCGGATGCTCAGCCCTGAACACGCACCTGCTGAAATGTAT
+GACATAATGAAGACTTGCTGGGATGCAGATCCCCTAAAAAGACCAACATTCAAGCAAATT
+GTTCAGCTAATTGAGAAGCAGATTTCAGAGAGCACCAATCATATTTACTCCAACTTAGCA
+AACTGCAGCCCCAACCGACAGAAGCCCGTGGTAGACCATTCTGTGCGGATCAATTCTGTC
+GGCAGCACCGCTTCCTCCTCCCAGCCTCTGCTTGTGCACGACGATGTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00047</identifier>
+            <name>ig</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>acrosomal vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell-cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mast cell granule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor signaling protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>stem cell factor receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane receptor protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>actin cytoskeleton reorganization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to thyroid hormone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dendritic cell cytokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of mechanical stimulus involved in sensory perception of sound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestive tract development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ectopic germ cell programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic hemopoiesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epithelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>erythrocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>erythropoietin-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>germ cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycosphingolipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hemopoiesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immature B cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Kit signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lamellipodium assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lymphoid progenitor cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>male gonad development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell cytokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mast cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>megakaryocyte development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>melanocyte adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>melanocyte differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>melanocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>myeloid progenitor cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ovarian follicle development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pigmentation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of JAK-STAT cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of long-term neuronal synaptic plasticity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of Notch signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of pseudopodium assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat1 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat3 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of tyrosine phosphorylation of Stat5 protein</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of developmental pigmentation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>somatic stem cell division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>somatic stem cell population maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spermatid development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spermatogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stem cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stem cell population maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000852</id>
+      <name>Platelet-derived growth factor receptor alpha</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P16234" source="Swiss-Prot">
+        <name>Platelet-derived growth factor receptor alpha</name>
+        <general-function>Vascular endothelial growth factor-activated receptor activity</general-function>
+        <specific-function>Tyrosine-protein kinase that acts as a cell-surface receptor for PDGFA, PDGFB and PDGFC and plays an essential role in the regulation of embryonic development, cell proliferation, survival and chemotaxis. Depending on the context, promotes or inhibits cell proliferation and cell migration. Plays an important role in the differentiation of bone marrow-derived mesenchymal stem cells. Required for normal skeleton development and cephalic closure during embryonic development. Required for normal development of the mucosa lining the gastrointestinal tract, and for recruitment of mesenchymal cells and normal development of intestinal villi. Plays a role in cell migration and chemotaxis in wound healing. Plays a role in platelet activation, secretion of agonists from platelet granules, and in thrombin-induced platelet aggregation. Binding of its cognate ligands - homodimeric PDGFA, homodimeric PDGFB, heterodimers formed by PDGFA and PDGFB or homodimeric PDGFC -leads to the activation of several signaling cascades; the response depends on the nature of the bound ligand and is modulated by the formation of heterodimers between PDGFRA and PDGFRB. Phosphorylates PIK3R1, PLCG1, and PTPN11. Activation of PLCG1 leads to the production of the cellular signaling molecules diacylglycerol and inositol 1,4,5-trisphosphate, mobilization of cytosolic Ca(2+) and the activation of protein kinase C. Phosphorylates PIK3R1, the regulatory subunit of phosphatidylinositol 3-kinase, and thereby mediates activation of the AKT1 signaling pathway. Mediates activation of HRAS and of the MAP kinases MAPK1/ERK2 and/or MAPK3/ERK1. Promotes activation of STAT family members STAT1, STAT3 and STAT5A and/or STAT5B. Receptor signaling is down-regulated by protein phosphatases that dephosphorylate the receptor and its down-stream effectors, and by rapid internalization of the activated receptor.</specific-function>
+        <gene-name>PDGFRA</gene-name>
+        <locus>4q11-q13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>529-549</transmembrane-regions>
+        <signal-regions>1-23</signal-regions>
+        <theoretical-pi>4.81</theoretical-pi>
+        <molecular-weight>122668.46</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8803</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PDGFRA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M21574</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189734</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1803</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P16234</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PGFRA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.1</synonym>
+          <synonym>Alpha platelet-derived growth factor receptor</synonym>
+          <synonym>Alpha-type platelet-derived growth factor receptor</synonym>
+          <synonym>CD140 antigen-like family member A</synonym>
+          <synonym>CD140a antigen</synonym>
+          <synonym>PDGF-R-alpha</synonym>
+          <synonym>PDGFR-2</synonym>
+          <synonym>PDGFR2</synonym>
+          <synonym>Platelet-derived growth factor alpha receptor</synonym>
+          <synonym>Platelet-derived growth factor receptor 2</synonym>
+          <synonym>RHEPDGFRA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001698|Platelet-derived growth factor receptor alpha
+MGTSHPAFLVLGCLLTGLSLILCQLSLPSILPNENEKVVQLNSSFSLRCFGESEVSWQYP
+MSEEESSDVEIRNEENNSGLFVTVLEVSSASAAHTGLYTCYYNHTQTEENELEGRHIYIY
+VPDPDVAFVPLGMTDYLVIVEDDDSAIIPCRTTDPETPVTLHNSEGVVPASYDSRQGFNG
+TFTVGPYICEATVKGKKFQTIPFNVYALKATSELDLEMEALKTVYKSGETIVVTCAVFNN
+EVVDLQWTYPGEVKGKGITMLEEIKVPSIKLVYTLTVPEATVKDSGDYECAARQATREVK
+EMKKVTISVHEKGFIEIKPTFSQLEAVNLHEVKHFVVEVRAYPPPRISWLKNNLTLIENL
+TEITTDVEKIQEIRYRSKLKLIRAKEEDSGHYTIVAQNEDAVKSYTFELLTQVPSSILDL
+VDDHHGSTGGQTVRCTAEGTPLPDIEWMICKDIKKCNNETSWTILANNVSNIITEIHSRD
+RSTVEGRVTFAKVEETIAVRCLAKNLLGAENRELKLVAPTLRSELTVAAAVLVLLVIVII
+SLIVLVVIWKQKPRYEIRWRVIESISPDGHEYIYVDPMQLPYDSRWEFPRDGLVLGRVLG
+SGAFGKVVEGTAYGLSRSQPVMKVAVKMLKPTARSSEKQALMSELKIMTHLGPHLNIVNL
+LGACTKSGPIYIITEYCFYGDLVNYLHKNRDSFLSHHPEKPKKELDIFGLNPADESTRSY
+VILSFENNGDYMDMKQADTTQYVPMLERKEVSKYSDIQRSLYDRPASYKKKSMLDSEVKN
+LLSDDNSEGLTLLDLLSFTYQVARGMEFLASKNCVHRDLAARNVLLAQGKIVKICDFGLA
+RDIMHDSNYVSKGSTFLPVKWMAPESIFDNLYTTLSDVWSYGILLWEIFSLGGTPYPGMM
+VDSTFYNKIKSGYRMAKPDHATSEVYEIMVKCWNSEPEKRPSFYHLSEIVENLLPGQYKK
+SYEKIHLDFLKSDHPAVARMRVDSDNAYIGVTYKNEEDKLKDWEGGLDEQRLSADSGYII
+PLPDIDPVPEEEDLGKRNRHSSQTSEESAIETGSSSSTFIKREDETIEDIDMMDDIGIDS
+SDLVEDSFL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019023|Platelet-derived growth factor receptor alpha (PDGFRA)
+ATGGGGACTTCCCATCCGGCGTTCCTGGTCTTAGGCTGTCTTCTCACAGGGCTGAGCCTA
+ATCCTCTGCCAGCTTTCATTACCCTCTATCCTTCCAAATGAAAATGAAAAGGTTGTGCAG
+CTGAATTCATCCTTTTCTCTGAGATGCTTTGGGGAGAGTGAAGTGAGCTGGCAGTACCCC
+ATGTCTGAAGAAGAGAGCTCCGATGTGGAAATCAGAAATGAAGAAAACAACAGCGGCCTT
+TTTGTGACGGTCTTGGAAGTGAGCAGTGCCTCGGCGGCCCACACAGGGTTGTACACTTGC
+TATTACAACCACACTCAGACAGAAGAGAATGAGCTTGAAGGCAGGCACATTTACATCTAT
+GTGCCAGACCCAGATGTAGCCTTTGTACCTCTAGGAATGACGGATTATTTAGTCATCGTG
+GAGGATGATGATTCTGCCATTATACCTTGTCGCACAACTGATCCCGAGACTCCTGTAACC
+TTACACAACAGTGAGGGGGTGGTACCTGCCTCCTACGACAGCAGACAGGGCTTTAATGGG
+ACCTTCACTGTAGGGCCCTATATCTGTGAGGCCACCGTCAAAGGAAAGAAGTTCCAGACC
+ATCCCATTTAATGTTTATGCTTTAAAAGCAACATCAGAGCTGGATCTAGAAATGGAAGCT
+CTTAAAACCGTGTATAAGTCAGGGGAAACGATTGTGGTCACCTGTGCTGTTTTTAACAAT
+GAGGTGGTTGACCTTCAATGGACTTACCCTGGAGAAGTGAAAGGCAAAGGCATCACAATG
+CTGGAAGAAATCAAAGTCCCATCCATCAAATTGGTGTACACTTTGACGGTCCCCGAGGCC
+ACGGTGAAAGACAGTGGAGATTACGAATGTGCTGCCCGCCAGGCTACCAGGGAGGTCAAA
+GAAATGAAGAAAGTCACTATTTCTGTCCATGAGAAAGGTTTCATTGAAATCAAACCCACC
+TTCAGCCAGTTGGAAGCTGTCAACCTGCATGAAGTCAAACATTTTGTTGTAGAGGTGCGG
+GCCTACCCACCTCCCAGGATATCCTGGCTGAAAAACAATCTGACTCTGATTGAAAATCTC
+ACTGAGATCACCACTGATGTGGAAAAGATTCAGGAAATAAGGTATCGAAGCAAATTAAAG
+CTGATCCGTGCTAAGGAAGAAGACAGTGGCCATTATACTATTGTAGCTCAAAATGAAGAT
+GCTGTGAAGAGCTATACTTTTGAACTGTTAACTCAAGTTCCTTCATCCATTCTGGACTTG
+GTCGATGATCACCATGGCTCAACTGGGGGACAGACGGTGAGGTGCACAGCTGAAGGCACG
+CCGCTTCCTGATATTGAGTGGATGATATGCAAAGATATTAAGAAATGTAATAATGAAACT
+TCCTGGACTATTTTGGCCAACAATGTCTCAAACATCATCACGGAGATCCACTCCCGAGAC
+AGGAGTACCGTGGAGGGCCGTGTGACTTTCGCCAAAGTGGAGGAGACCATCGCCGTGCGA
+TGCCTGGCTAAGAATCTCCTTGGAGCTGAGAACCGAGAGCTGAAGCTGGTGGCTCCCACC
+CTGCGTTCTGAACTCACGGTGGCTGCTGCAGTCCTGGTGCTGTTGGTGATTGTGATCATC
+TCACTTATTGTCCTGGTTGTCATTTGGAAACAGAAACCGAGGTATGAAATTCGCTGGAGG
+GTCATTGAATCAATCAGCCCAGATGGACATGAATATATTTATGTGGACCCGATGCAGCTG
+CCTTATGACTCAAGATGGGAGTTTCCAAGAGATGGACTAGTGCTTGGTCGGGTCTTGGGG
+TCTGGAGCGTTTGGGAAGGTGGTTGAAGGAACAGCCTATGGATTAAGCCGGTCCCAACCT
+GTCATGAAAGTTGCAGTGAAGATGCTAAAACCCACGGCCAGATCCAGTGAAAAACAAGCT
+CTCATGTCTGAACTGAAGATAATGACTCACCTGGGGCCACATTTGAACATTGTAAACTTG
+CTGGGAGCCTGCACCAAGTCAGGCCCCATTTACATCATCACAGAGTATTGCTTCTATGGA
+GATTTGGTCAACTATTTGCATAAGAATAGGGATAGCTTCCTGAGCCACCACCCAGAGAAG
+CCAAAGAAAGAGCTGGATATCTTTGGATTGAACCCTGCTGATGAAAGCACACGGAGCTAT
+GTTATTTTATCTTTTGAAAACAATGGTGACTACATGGACATGAAGCAGGCTGATACTACA
+CAGTATGTCCCCATGCTAGAAAGGAAAGAGGTTTCTAAATATTCCGACATCCAGAGATCA
+CTCTATGATCGTCCAGCCTCATATAAGAAGAAATCTATGTTAGACTCAGAAGTCAAAAAC
+CTCCTTTCAGATGATAACTCAGAAGGCCTTACTTTATTGGATTTGTTGAGCTTCACCTAT
+CAAGTTGCCCGAGGAATGGAGTTTTTGGCTTCAAAAAATTGTGTCCACCGTGATCTGGCT
+GCTCGCAACGTCCTCCTGGCACAAGGAAAAATTGTGAAGATCTGTGACTTTGGCCTGGCC
+AGAGACATCATGCATGATTCGAACTATGTGTCGAAAGGCAGTACCTTTCTGCCCGTGAAG
+TGGATGGCTCCTGAGAGCATCTTTGACAACCTCTACACCACACTGAGTGATGTCTGGTCT
+TATGGCATTCTGCTCTGGGAGATCTTTTCCCTTGGTGGCACCCCTTACCCCGGCATGATG
+GTGGATTCTACTTTCTACAATAAGATCAAGAGTGGGTACCGGATGGCCAAGCCTGACCAC
+GCTACCAGTGAAGTCTACGAGATCATGGTGAAATGCTGGAACAGTGAGCCGGAGAAGAGA
+CCCTCCTTTTACCACCTGAGTGAGATTGTGGAGAATCTGCTGCCTGGACAATATAAAAAG
+AGTTATGAAAAAATTCACCTGGACTTCCTGAAGAGTGACCATCCTGCTGTGGCACGCATG
+CGTGTGGACTCAGACAATGCATACATTGGTGTCACCTACAAAAACGAGGAAGACAAGCTG
+AAGGACTGGGAGGGTGGTCTGGATGAGCAGAGACTGAGCGCTGACAGTGGCTACATCATT
+CCTCTGCCTGACATTGACCCTGTCCCTGAGGAGGAGGACCTGGGCAAGAGGAACAGACAC
+AGCTCGCAGACCTCTGAAGAGAGTGCCATTGAGACGGGTTCCAGCAGTTCCACCTTCATC
+AAGAGAGAGGACGAGACCATTGAAGACATCGACATGATGGATGACATCGGCATAGACTCT
+TCAGACCTGGTGGAAGACAGCTTCCTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07679</identifier>
+            <name>I-set</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intrinsic component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor alpha-receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane receptor protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vascular endothelial growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vascular endothelial growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiac myofibril assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to reactive oxygen species</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic cranial skeleton morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic digestive tract morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic skeletal system morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>luteinization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric glomerular capillary formation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet aggregation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor-alpha signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation by VEGF-activated platelet derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fibroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of actin cytoskeleton reorganization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of mesenchymal stem cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina vasculature development in camera-type eye</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>wound healing</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000205</id>
+      <name>Platelet-derived growth factor receptor beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P09619" source="Swiss-Prot">
+        <name>Platelet-derived growth factor receptor beta</name>
+        <general-function>Vascular endothelial growth factor binding</general-function>
+        <specific-function>Tyrosine-protein kinase that acts as cell-surface receptor for homodimeric PDGFB and PDGFD and for heterodimers formed by PDGFA and PDGFB, and plays an essential role in the regulation of embryonic development, cell proliferation, survival, differentiation, chemotaxis and migration. Plays an essential role in blood vessel development by promoting proliferation, migration and recruitment of pericytes and smooth muscle cells to endothelial cells. Plays a role in the migration of vascular smooth muscle cells and the formation of neointima at vascular injury sites. Required for normal development of the cardiovascular system. Required for normal recruitment of pericytes (mesangial cells) in the kidney glomerulus, and for normal formation of a branched network of capillaries in kidney glomeruli. Promotes rearrangement of the actin cytoskeleton and the formation of membrane ruffles. Binding of its cognate ligands - homodimeric PDGFB, heterodimers formed by PDGFA and PDGFB or homodimeric PDGFD -leads to the activation of several signaling cascades; the response depends on the nature of the bound ligand and is modulated by the formation of heterodimers between PDGFRA and PDGFRB. Phosphorylates PLCG1, PIK3R1, PTPN11, RASA1/GAP, CBL, SHC1 and NCK1. Activation of PLCG1 leads to the production of the cellular signaling molecules diacylglycerol and inositol 1,4,5-trisphosphate, mobilization of cytosolic Ca(2+) and the activation of protein kinase C. Phosphorylation of PIK3R1, the regulatory subunit of phosphatidylinositol 3-kinase, leads to the activation of the AKT1 signaling pathway. Phosphorylation of SHC1, or of the C-terminus of PTPN11, creates a binding site for GRB2, resulting in the activation of HRAS, RAF1 and down-stream MAP kinases, including MAPK1/ERK2 and/or MAPK3/ERK1. Promotes phosphorylation and activation of SRC family kinases. Promotes phosphorylation of PDCD6IP/ALIX and STAM. Receptor signaling is down-regulated by protein phosphatases that dephosphorylate the receptor and its down-stream effectors, and by rapid internalization of the activated receptor.</specific-function>
+        <gene-name>PDGFRB</gene-name>
+        <locus>5q31-q32</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>533-553</transmembrane-regions>
+        <signal-regions>1-32</signal-regions>
+        <theoretical-pi>4.62</theoretical-pi>
+        <molecular-weight>123966.895</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8804</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PDGFRB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J03278</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189732</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1804</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P09619</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PGFRB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.1</synonym>
+          <synonym>Beta platelet-derived growth factor receptor</synonym>
+          <synonym>Beta-type platelet-derived growth factor receptor</synonym>
+          <synonym>CD140 antigen-like family member B</synonym>
+          <synonym>PDGF-R-beta</synonym>
+          <synonym>PDGFR</synonym>
+          <synonym>PDGFR-1</synonym>
+          <synonym>PDGFR1</synonym>
+          <synonym>Platelet-derived growth factor receptor 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000409|Platelet-derived growth factor receptor beta
+MRLPGAMPALALKGELLLLSLLLLLEPQISQGLVVTPPGPELVLNVSSTFVLTCSGSAPV
+VWERMSQEPPQEMAKAQDGTFSSVLTLTNLTGLDTGEYFCTHNDSRGLETDERKRLYIFV
+PDPTVGFLPNDAEELFIFLTEITEITIPCRVTDPQLVVTLHEKKGDVALPVPYDHQRGFS
+GIFEDRSYICKTTIGDREVDSDAYYVYRLQVSSINVSVNAVQTVVRQGENITLMCIVIGN
+EVVNFEWTYPRKESGRLVEPVTDFLLDMPYHIRSILHIPSAELEDSGTYTCNVTESVNDH
+QDEKAINITVVESGYVRLLGEVGTLQFAELHRSRTLQVVFEAYPPPTVLWFKDNRTLGDS
+SAGEIALSTRNVSETRYVSELTLVRVKVAEAGHYTMRAFHEDAEVQLSFQLQINVPVRVL
+ELSESHPDSGEQTVRCRGRGMPQPNIIWSACRDLKRCPRELPPTLLGNSSEEESQLETNV
+TYWEEEQEFEVVSTLRLQHVDRPLSVRCTLRNAVGQDTQEVIVVPHSLPFKVVVISAILA
+LVVLTIISLIILIMLWQKKPRYEIRWKVIESVSSDGHEYIYVDPMQLPYDSTWELPRDQL
+VLGRTLGSGAFGQVVEATAHGLSHSQATMKVAVKMLKSTARSSEKQALMSELKIMSHLGP
+HLNVVNLLGACTKGGPIYIITEYCRYGDLVDYLHRNKHTFLQHHSDKRRPPSAELYSNAL
+PVGLPLPSHVSLTGESDGGYMDMSKDESVDYVPMLDMKGDVKYADIESSNYMAPYDNYVP
+SAPERTCRATLINESPVLSYMDLVGFSYQVANGMEFLASKNCVHRDLAARNVLICEGKLV
+KICDFGLARDIMRDSNYISKGSTFLPLKWMAPESIFNSLYTTLSDVWSFGILLWEIFTLG
+GTPYPELPMNEQFYNAIKRGYRMAQPAHASDEIYEIMQKCWEEKFEIRPPFSQLVLLLER
+LLGEGYKKKYQQVDEEFLRSDHPAILRSQARLPGFHGLRSPLDTSSVLYTAVQPNEGDND
+YIIPLPDPKPEVADEGPLEGSPSLASSTLNEVNTSSTISCDSPLEPQDEPEPEPQLELQV
+EPEPELEQLPDSGCPAPRAEAEDSFL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021922|Platelet-derived growth factor receptor beta (PDGFRB)
+ATGCGGCTTCCGGGTGCGATGCCAGCTCTGGCCCTCAAAGGCGAGCTGCTGTTGCTGTCT
+CTCCTGTTACTTCTGGAACCACAGATCTCTCAGGGCCTGGTCGTCACACCCCCGGGGCCA
+GAGCTTGTCCTCAATGTCTCCAGCACCTTCGTTCTGACCTGCTCGGGTTCAGCTCCGGTG
+GTGTGGGAACGGATGTCCCAGGAGCCCCCACAGGAAATGGCCAAGGCCCAGGATGGCACC
+TTCTCCAGCGTGCTCACACTGACCAACCTCACTGGGCTAGACACGGGAGAATACTTTTGC
+ACCCACAATGACTCCCGTGGACTGGAGACCGATGAGCGGAAACGGCTCTACATCTTTGTG
+CCAGATCCCACCGTGGGCTTCCTCCCTAATGATGCCGAGGAACTATTCATCTTTCTCACG
+GAAATAACTGAGATCACCATTCCATGCCGAGTAACAGACCCACAGCTGGTGGTGACACTG
+CACGAGAAGAAAGGGGACGTTGCACTGCCTGTCCCCTATGATCACCAACGTGGCTTTTCT
+GGTATCTTTGAGGACAGAAGCTACATCTGCAAAACCACCATTGGGGACAGGGAGGTGGAT
+TCTGATGCCTACTATGTCTACAGACTCCAGGTGTCATCCATCAACGTCTCTGTGAACGCA
+GTGCAGACTGTGGTCCGCCAGGGTGAGAACATCACCCTCATGTGCATTGTGATCGGGAAT
+GAGGTGGTCAACTTCGAGTGGACATACCCCCGCAAAGAAAGTGGGCGGCTGGTGGAGCCG
+GTGACTGACTTCCTCTTGGATATGCCTTACCACATCCGCTCCATCCTGCACATCCCCAGT
+GCCGAGTTAGAAGACTCGGGGACCTACACCTGCAATGTGACGGAGAGTGTGAATGACCAT
+CAGGATGAAAAGGCCATCAACATCACCGTGGTTGAGAGCGGCTACGTGCGGCTCCTGGGA
+GAGGTGGGCACACTACAATTTGCTGAGCTGCATCGGAGCCGGACACTGCAGGTAGTGTTC
+GAGGCCTACCCACCGCCCACTGTCCTGTGGTTCAAAGACAACCGCACCCTGGGCGACTCC
+AGCGCTGGCGAAATCGCCCTGTCCACGCGCAACGTGTCGGAGACCCGGTATGTGTCAGAG
+CTGACACTGGTTCGCGTGAAGGTGGCAGAGGCTGGCCACTACACCATGCGGGCCTTCCAT
+GAGGATGCTGAGGTCCAGCTCTCCTTCCAGCTACAGATCAATGTCCCTGTCCGAGTGCTG
+GAGCTAAGTGAGAGCCACCCTGACAGTGGGGAACAGACAGTCCGCTGTCGTGGCCGGGGC
+ATGCCCCAGCCGAACATCATCTGGTCTGCCTGCAGAGACCTCAAAAGGTGTCCACGTGAG
+CTGCCGCCCACGCTGCTGGGGAACAGTTCCGAAGAGGAGAGCCAGCTGGAGACTAACGTG
+ACGTACTGGGAGGAGGAGCAGGAGTTTGAGGTGGTGAGCACACTGCGTCTGCAGCACGTG
+GATCGGCCACTGTCGGTGCGCTGCACGCTGCGCAACGCTGTGGGCCAGGACACGCAGGAG
+GTCATCGTGGTGCCACACTCCTTGCCCTTTAAGGTGGTGGTGATCTCAGCCATCCTGGCC
+CTGGTGGTGCTCACCATCATCTCCCTTATCATCCTCATCATGCTTTGGCAGAAGAAGCCA
+CGTTACGAGATCCGATGGAAGGTGATTGAGTCTGTGAGCTCTGACGGCCATGAGTACATC
+TACGTGGACCCCATGCAGCTGCCCTATGACTCCACGTGGGAGCTGCCGCGGGACCAGCTT
+GTGCTGGGACGCACCCTCGGCTCTGGGGCCTTTGGGCAGGTGGTGGAGGCCACGGCTCAT
+GGCCTGAGCCATTCTCAGGCCACGATGAAAGTGGCCGTCAAGATGCTTAAATCCACAGCC
+CGCAGCAGTGAGAAGCAAGCCCTTATGTCGGAGCTGAAGATCATGAGTCACCTTGGGCCC
+CACCTGAACGTGGTCAACCTGTTGGGGGCCTGCACCAAAGGAGGACCCATCTATATCATC
+ACTGAGTACTGCCGCTACGGAGACCTGGTGGACTACCTGCACCGCAACAAACACACCTTC
+CTGCAGCACCACTCCGACAAGCGCCGCCCGCCCAGCGCGGAGCTCTACAGCAATGCTCTG
+CCCGTTGGGCTCCCCCTGCCCAGCCATGTGTCCTTGACCGGGGAGAGCGACGGTGGCTAC
+ATGGACATGAGCAAGGACGAGTCGGTGGACTATGTGCCCATGCTGGACATGAAAGGAGAC
+GTCAAATATGCAGACATCGAGTCCTCCAACTACATGGCCCCTTACGATAACTACGTTCCC
+TCTGCCCCTGAGAGGACCTGCCGAGCAACTTTGATCAACGAGTCTCCAGTGCTAAGCTAC
+ATGGACCTCGTGGGCTTCAGCTACCAGGTGGCCAATGGCATGGAGTTTCTGGCCTCCAAG
+AACTGCGTCCACAGAGACCTGGCGGCTAGGAACGTGCTCATCTGTGAAGGCAAGCTGGTC
+AAGATCTGTGACTTTGGCCTGGCTCGAGACATCATGCGGGACTCGAATTACATCTCCAAA
+GGCAGCACCTTTTTGCCTTTAAAGTGGATGGCTCCGGAGAGCATCTTCAACAGCCTCTAC
+ACCACCCTGAGCGACGTGTGGTCCTTCGGGATCCTGCTCTGGGAGATCTTCACCTTGGGT
+GGCACCCCTTACCCAGAGCTGCCCATGAACGAGCAGTTCTACAATGCCATCAAACGGGGT
+TACCGCATGGCCCAGCCTGCCCATGCCTCCGACGAGATCTATGAGATCATGCAGAAGTGC
+TGGGAAGAGAAGTTTGAGATTCGGCCCCCCTTCTCCCAGCTGGTGCTGCTTCTCGAGAGA
+CTGTTGGGCGAAGGTTACAAAAAGAAGTACCAGCAGGTGGATGAGGAGTTTCTGAGGAGT
+GACCACCCAGCCATCCTTCGGTCCCAGGCCCGCTTGCCTGGGTTCCATGGCCTCCGATCT
+CCCCTGGACACCAGCTCCGTCCTCTATACTGCCGTGCAGCCCAATGAGGGTGACAACGAC
+TATATCATCCCCCTGCCTGACCCCAAACCCGAGGTTGCTGACGAGGGCCCACTGGAGGGT
+TCCCCCAGCCTAGCCAGCTCCACCCTGAATGAAGTCAACACCTCCTCAACCATCTCCTGT
+GACAGCCCCCTGGAGCCCCAGGACGAACCAGAGCCAGAGCCCCAGCTTGAGCTCCAGGTG
+GAGCCGGAGCCAGAGCTGGAACAGTTGCCGGATTCGGGGTGCCCTGCGCCTCGGGCGGAA
+GCAGAGGATAGCTTCCTGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00047</identifier>
+            <name>ig</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07679</identifier>
+            <name>I-set</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13895</identifier>
+            <name>Ig_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic membrane-bounded vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>focal adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intrinsic component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet activating factor receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor beta-receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-derived growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vascular endothelial growth factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adrenal gland development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>aorta morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiac myofibril assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration involved in coronary angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell migration involved in vasculogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to platelet-derived growth factor stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycosaminoglycan biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>in utero embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inner ear development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric comma-shaped body morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric glomerular capillary formation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric glomerular mesangial cell proliferation involved in metanephros development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric mesenchymal cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric mesenchyme development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metanephric S-shaped body morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet-derived growth factor receptor-beta signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of calcium ion import</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation by VEGF-activated platelet derived growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of collagen biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAP kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of metanephric mesenchymal cell migration by platelet-derived growth factor receptor-beta signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic nuclear division</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphatidylinositol 3-kinase signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphoprotein phosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of reactive oxygen species metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of actin cytoskeleton organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to estradiol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to fluid shear stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hyperoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to retinoic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina vasculature development in camera-type eye</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>skeletal system morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle cell chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle tissue development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tissue homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>wound healing</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

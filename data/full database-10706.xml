@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB12747</drugbank-id>
+  <drugbank-id>DB04937</drugbank-id>
+  <name>Tertomotide</name>
+  <description>Tertomotide is under investigation in clinical trial NCT01223209 (A Study, Combination, Immunologic Study of LTX-315 as adjunct to tertomotide in Patients Following Curative Surgery for Carcinoma). It is a peptide vaccine that activates the immune system so that it recognizes and kills cancer cells. It is being developed by Pharmexa A/S.</description>
+  <cas-number>915019-08-8</cas-number>
+  <unii>55R7RG342O</unii>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A2997</ref-id>
+        <pubmed-id>16491401</pubmed-id>
+        <citation>Brunsvig PF, Aamdal S, Gjertsen MK, Kvalheim G, Markowski-Grimsrud CJ, Sve I, Dyrhaug M, Trachsel S, Moller M, Eriksen JA, Gaudernack G: Telomerase peptide vaccination: a phase I/II study in patients with non-small cell lung cancer. Cancer Immunol Immunother. 2006 Dec;55(12):1553-64. Epub 2006 Feb 21.</citation>
+      </article>
+      <article>
+        <ref-id>A2998</ref-id>
+        <pubmed-id>17258078</pubmed-id>
+        <citation>Kokhaei P, Palma M, Hansson L, Osterborg A, Mellstedt H, Choudhury A: Telomerase (hTERT 611-626) serves as a tumor antigen in B-cell chronic lymphocytic leukemia and generates spontaneously antileukemic, cytotoxic T cells. Exp Hematol. 2007 Feb;35(2):297-304.</citation>
+      </article>
+      <article>
+        <ref-id>A2999</ref-id>
+        <pubmed-id>17060934</pubmed-id>
+        <citation>Bernhardt SL, Gjertsen MK, Trachsel S, Moller M, Eriksen JA, Meo M, Buanes T, Gaudernack G: Telomerase peptide vaccination of patients with non-resectable pancreatic cancer: A dose escalating phase I/II study. Br J Cancer. 2006 Dec 4;95(11):1474-82. Epub 2006 Oct 24.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics>Tertomotide is a peptide vaccine that activates the immune system so that it recognises and kills cancer cells.</pharmacodynamics>
+  <mechanism-of-action>Tertomotide targets an enzyme called telomerase. Telomerase is seldom found in normal cell types but is overexpressed in most cancer cells.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">TERTOMOTIDE</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347911372</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002449</id>
+      <name>Telomerase reverse transcriptase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A2998</ref-id>
+            <pubmed-id>17258078</pubmed-id>
+            <citation>Kokhaei P, Palma M, Hansson L, Osterborg A, Mellstedt H, Choudhury A: Telomerase (hTERT 611-626) serves as a tumor antigen in B-cell chronic lymphocytic leukemia and generates spontaneously antileukemic, cytotoxic T cells. Exp Hematol. 2007 Feb;35(2):297-304.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O14746" source="Swiss-Prot">
+        <name>Telomerase reverse transcriptase</name>
+        <general-function>Trna binding</general-function>
+        <specific-function>Telomerase is a ribonucleoprotein enzyme essential for the replication of chromosome termini in most eukaryotes. Active in progenitor and cancer cells. Inactive, or very low activity, in normal somatic cells. Catalytic component of the teleromerase holoenzyme complex whose main activity is the elongation of telomeres by acting as a reverse transcriptase that adds simple sequence repeats to chromosome ends by copying a template sequence within the RNA component of the enzyme. Catalyzes the RNA-dependent extension of 3'-chromosomal termini with the 6-nucleotide telomeric repeat unit, 5'-TTAGGG-3'. The catalytic cycle involves primer binding, primer extension and release of product once the template boundary has been reached or nascent product translocation followed by further extension. More active on substrates containing 2 or 3 telomeric repeats. Telomerase activity is regulated by a number of factors including telomerase complex-associated proteins, chaperones and polypeptide modifiers. Modulates Wnt signaling. Plays important roles in aging and antiapoptosis.</specific-function>
+        <gene-name>TERT</gene-name>
+        <locus>5p15.33</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>11.08</theoretical-pi>
+        <molecular-weight>126995.435</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11730</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TERT</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF015950</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O14746</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TERT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.7.49</synonym>
+          <synonym>EST2</synonym>
+          <synonym>HEST2</synonym>
+          <synonym>TCS1</synonym>
+          <synonym>Telomerase catalytic subunit</synonym>
+          <synonym>Telomerase-associated protein 2</synonym>
+          <synonym>TP2</synonym>
+          <synonym>TRT</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004809|Telomerase reverse transcriptase
+MPRAPRCRAVRSLLRSHYREVLPLATFVRRLGPQGWRLVQRGDPAAFRALVAQCLVCVPW
+DARPPPAAPSFRQVSCLKELVARVLQRLCERGAKNVLAFGFALLDGARGGPPEAFTTSVR
+SYLPNTVTDALRGSGAWGLLLRRVGDDVLVHLLARCALFVLVAPSCAYQVCGPPLYQLGA
+ATQARPPPHASGPRRRLGCERAWNHSVREAGVPLGLPAPGARRRGGSASRSLPLPKRPRR
+GAAPEPERTPVGQGSWAHPGRTRGPSDRGFCVVSPARPAEEATSLEGALSGTRHSHPSVG
+RQHHAGPPSTSRPPRPWDTPCPPVYAETKHFLYSSGDKEQLRPSFLLSSLRPSLTGARRL
+VETIFLGSRPWMPGTPRRLPRLPQRYWQMRPLFLELLGNHAQCPYGVLLKTHCPLRAAVT
+PAAGVCAREKPQGSVAAPEEEDTDPRRLVQLLRQHSSPWQVYGFVRACLRRLVPPGLWGS
+RHNERRFLRNTKKFISLGKHAKLSLQELTWKMSVRDCAWLRRSPGVGCVPAAEHRLREEI
+LAKFLHWLMSVYVVELLRSFFYVTETTFQKNRLFFYRKSVWSKLQSIGIRQHLKRVQLRE
+LSEAEVRQHREARPALLTSRLRFIPKPDGLRPIVNMDYVVGARTFRREKRAERLTSRVKA
+LFSVLNYERARRPGLLGASVLGLDDIHRAWRTFVLRVRAQDPPPELYFVKVDVTGAYDTI
+PQDRLTEVIASIIKPQNTYCVRRYAVVQKAAHGHVRKAFKSHVSTLTDLQPYMRQFVAHL
+QETSPLRDAVVIEQSSSLNEASSGLFDVFLRFMCHHAVRIRGKSYVQCQGIPQGSILSTL
+LCSLCYGDMENKLFAGIRRDGLLLRLVDDFLLVTPHLTHAKTFLRTLVRGVPEYGCVVNL
+RKTVVNFPVEDEALGGTAFVQMPAHGLFPWCGLLLDTRTLEVQSDYSSYARTSIRASLTF
+NRGFKAGRNMRRKLFGVLRLKCHSLFLDLQVNSLQTVCTNIYKILLLQAYRFHACVLQLP
+FHQQVWKNPTFFLRVISDTASLCYSILKAKNAGMSLGAKGAAGPLPSEAVQWLCHQAFLL
+KLTRHRVTYVPLLGSLRTAQTQLSRKLPGTTLTALEAAANPALPSDFKTILD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019287|Telomerase reverse transcriptase (TERT)
+ATGCCGCGCGCTCCCCGCTGCCGAGCCGTGCGCTCCCTGCTGCGCAGCCACTACCGCGAG
+GTGCTGCCGCTGGCCACGTTCGTGCGGCGCCTGGGGCCCCAGGGCTGGCGGCTGGTGCAG
+CGCGGGGACCCGGCGGCTTTCCGCGCGCTGGTGGCCCAGTGCCTGGTGTGCGTGCCCTGG
+GACGCACGGCCGCCCCCCGCCGCCCCCTCCTTCCGCCAGGTGTCCTGCCTGAAGGAGCTG
+GTGGCCCGAGTGCTGCAGAGGCTGTGCGAGCGCGGCGCGAAGAACGTGCTGGCCTTCGGC
+TTCGCGCTGCTGGACGGGGCCCGCGGGGGCCCCCCCGAGGCCTTCACCACCAGCGTGCGC
+AGCTACCTGCCCAACACGGTGACCGACGCACTGCGGGGGAGCGGGGCGTGGGGGCTGCTG
+CTGCGCCGCGTGGGCGACGACGTGCTGGTTCACCTGCTGGCACGCTGCGCGCTCTTTGTG
+CTGGTGGCTCCCAGCTGCGCCTACCAGGTGTGCGGGCCGCCGCTGTACCAGCTCGGCGCT
+GCCACTCAGGCCCGGCCCCCGCCACACGCTAGTGGACCCCGAAGGCGTCTGGGATGCGAA
+CGGGCCTGGAACCATAGCGTCAGGGAGGCCGGGGTCCCCCTGGGCCTGCCAGCCCCGGGT
+GCGAGGAGGCGCGGGGGCAGTGCCAGCCGAAGTCTGCCGTTGCCCAAGAGGCCCAGGCGT
+GGCGCTGCCCCTGAGCCGGAGCGGACGCCCGTTGGGCAGGGGTCCTGGGCCCACCCGGGC
+AGGACGCGTGGACCGAGTGACCGTGGTTTCTGTGTGGTGTCACCTGCCAGACCCGCCGAA
+GAAGCCACCTCTTTGGAGGGTGCGCTCTCTGGCACGCGCCACTCCCACCCATCCGTGGGC
+CGCCAGCACCACGCGGGCCCCCCATCCACATCGCGGCCACCACGTCCCTGGGACACGCCT
+TGTCCCCCGGTGTACGCCGAGACCAAGCACTTCCTCTACTCCTCAGGCGACAAGGAGCAG
+CTGCGGCCCTCCTTCCTACTCAGCTCTCTGAGGCCCAGCCTGACTGGCGCTCGGAGGCTC
+GTGGAGACCATCTTTCTGGGTTCCAGGCCCTGGATGCCAGGGACTCCCCGCAGGTTGCCC
+CGCCTGCCCCAGCGCTACTGGCAAATGCGGCCCCTGTTTCTGGAGCTGCTTGGGAACCAC
+GCGCAGTGCCCCTACGGGGTGCTCCTCAAGACGCACTGCCCGCTGCGAGCTGCGGTCACC
+CCAGCAGCCGGTGTCTGTGCCCGGGAGAAGCCCCAGGGCTCTGTGGCGGCCCCCGAGGAG
+GAGGACACAGACCCCCGTCGCCTGGTGCAGCTGCTCCGCCAGCACAGCAGCCCCTGGCAG
+GTGTACGGCTTCGTGCGGGCCTGCCTGCGCCGGCTGGTGCCCCCAGGCCTCTGGGGCTCC
+AGGCACAACGAACGCCGCTTCCTCAGGAACACCAAGAAGTTCATCTCCCTGGGGAAGCAT
+GCCAAGCTCTCGCTGCAGGAGCTGACGTGGAAGATGAGCGTGCGGGACTGCGCTTGGCTG
+CGCAGGAGCCCAGGGGTTGGCTGTGTTCCGGCCGCAGAGCACCGTCTGCGTGAGGAGATC
+CTGGCCAAGTTCCTGCACTGGCTGATGAGTGTGTACGTCGTCGAGCTGCTCAGGTCTTTC
+TTTTATGTCACGGAGACCACGTTTCAAAAGAACAGGCTCTTTTTCTACCGGAAGAGTGTC
+TGGAGCAAGTTGCAAAGCATTGGAATCAGACAGCACTTGAAGAGGGTGCAGCTGCGGGAG
+CTGTCGGAAGCAGAGGTCAGGCAGCATCGGGAAGCCAGGCCCGCCCTGCTGACGTCCAGA
+CTCCGCTTCATCCCCAAGCCTGACGGGCTGCGGCCGATTGTGAACATGGACTACGTCGTG
+GGAGCCAGAACGTTCCGCAGAGAAAAGAGGGCCGAGCGTCTCACCTCGAGGGTGAAGGCA
+CTGTTCAGCGTGCTCAACTACGAGCGGGCGCGGCGCCCCGGCCTCCTGGGCGCCTCTGTG
+CTGGGCCTGGACGATATCCACAGGGCCTGGCGCACCTTCGTGCTGCGTGTGCGGGCCCAG
+GACCCGCCGCCTGAGCTGTACTTTGTCAAGGTGGATGTGACGGGCGCGTACGACACCATC
+CCCCAGGACAGGCTCACGGAGGTCATCGCCAGCATCATCAAACCCCAGAACACGTACTGC
+GTGCGTCGGTATGCCGTGGTCCAGAAGGCCGCCCATGGGCACGTCCGCAAGGCCTTCAAG
+AGCCACGTCTCTACCTTGACAGACCTCCAGCCGTACATGCGACAGTTCGTGGCTCACCTG
+CAGGAGACCAGCCCGCTGAGGGATGCCGTCGTCATCGAGCAGAGCTCCTCCCTGAATGAG
+GCCAGCAGTGGCCTCTTCGACGTCTTCCTACGCTTCATGTGCCACCACGCCGTGCGCATC
+AGGGGCAAGTCCTACGTCCAGTGCCAGGGGATCCCGCAGGGCTCCATCCTCTCCACGCTG
+CTCTGCAGCCTGTGCTACGGCGACATGGAGAACAAGCTGTTTGCGGGGATTCGGCGGGAC
+GGGCTGCTCCTGCGTTTGGTGGATGATTTCTTGTTGGTGACACCTCACCTCACCCACGCG
+AAAACCTTCCTCAGCTATGCCCGGACCTCCATCAGAGCCAGTCTCACCTTCAACCGCGGC
+TTCAAGGCTGGGAGGAACATGCGTCGCAAACTCTTTGGGGTCTTGCGGCTGAAGTGTCAC
+AGCCTGTTTCTGGATTTGCAGGTGAACAGCCTCCAGACGGTGTGCACCAACATCTACAAG
+ATCCTCCTGCTGCAGGCGTACAGGTTTCACGCATGTGTGCTGCAGCTCCCATTTCATCAG
+CAAGTTTGGAAGAACCCCACATTTTTCCTGCGCGTCATCTCTGACACGGCCTCCCTCTGC
+TACTCCATCCTGAAAGCCAAGAACGCAGGGATGTCGCTGGGGGCCAAGGGCGCCGCCGGC
+CCTCTGCCCTCCGAGGCCGTGCAGTGGCTGTGCCACCAAGCATTCCTGCTCAAGCTGACT
+CGACACCGTGTCACCTACGTGCCACTCCTGGGGTCACTCAGGACAGCCCAGACGCAGCTG
+AGTCGGAAGCTCCCGGGGACGACGCTGACTGCCCTGGAGGCCGCAGCCAACCCGGCACTG
+CCCTCAGACTTCAAGACCATCCTGGACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00078</identifier>
+            <name>RVT_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12009</identifier>
+            <name>Telomerase_RBD</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>chromosome, telomeric region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial nucleoid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear telomere cap complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>PML body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>RNA-directed RNA polymerase complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>telomerase catalytic core complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>telomerase holoenzyme complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>TERT-RMRP complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleotidyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA-directed DNA polymerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>telomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>telomerase RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>telomerase RNA reverse transcriptase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>telomeric DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription coactivator binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA strand elongation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrion organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cellular senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway in absence of ligand</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of production of siRNA involved in RNA interference</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of hair cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of pri-miRNA transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein localization to nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of stem cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of Wnt signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>production of siRNA involved in RNA interference</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein stability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>replicative senescence</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>RNA biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>RNA-dependent DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>telomere maintenance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>telomere maintenance via telomerase</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription, RNA-templated</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

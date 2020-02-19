@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2008-03-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB06515</drugbank-id>
+  <name>Resiniferatoxin</name>
+  <description>Resiniferatoxin (RTX) is a naturally occurring, ultrapotent capsaicin analog that activates the vanilloid receptor in a subpopulation of primary afferent sensory neurons involved in nociception (the transmission of physiological pain).</description>
+  <cas-number>57444-62-9</cas-number>
+  <unii>A5O6P1UL4I</unii>
+  <average-mass>628.718</average-mass>
+  <monoisotopic-mass>628.267232868</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A6864</ref-id>
+        <pubmed-id>2747924</pubmed-id>
+        <citation>Szallasi A, Blumberg PM: Resiniferatoxin, a phorbol-related diterpene, acts as an ultrapotent analog of capsaicin, the irritant constituent in red pepper. Neuroscience. 1989;30(2):515-20.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in interstitial cystitis and urinary incontinence.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">RTX</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Neurotoxins</category>
+      <mesh-id>D009498</mesh-id>
+    </category>
+    <category>
+      <category>Terpenes</category>
+      <mesh-id>D013729</mesh-id>
+    </category>
+    <category>
+      <category>TRPV Cation Channels</category>
+      <mesh-id>D050916</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>5irx</pdb-entry>
+    <pdb-entry>6bwj</pdb-entry>
+    <pdb-entry>6oo3</pdb-entry>
+    <pdb-entry>6oo4</pdb-entry>
+    <pdb-entry>6oo5</pdb-entry>
+    <pdb-entry>6oo7</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-5.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.20e-04 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>5.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>[(1R,2R,6R,10S,11R,15R,17R)-13-benzyl-6-hydroxy-4,17-dimethyl-5-oxo-15-(prop-1-en-2-yl)-12,14,18-trioxapentacyclo[11.4.1.0^{1,10}.0^{2,6}.0^{11,15}]octadeca-3,8-dien-8-yl]methyl 2-(4-hydroxy-3-methoxyphenyl)acetate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>[(1R,2R,6R,10S,11R,15R,17R)-13-benzyl-6-hydroxy-4,17-dimethyl-5-oxo-15-(prop-1-en-2-yl)-12,14,18-trioxapentacyclo[11.4.1.0^{1,10}.0^{2,6}.0^{11,15}]octadeca-3,8-dien-8-yl]methyl 2-(4-hydroxy-3-methoxyphenyl)acetate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>628.718</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>628.267232868</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]12O[C@]3(CC4=CC=CC=C4)O[C@]1(C[C@@]([H])(C)[C@]1(O3)[C@]3([H])C=C(C)C(=O)[C@@]3(O)CC(COC(=O)CC3=CC(OC)=C(O)C=C3)=C[C@@]21[H])C(C)=C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C37H40O9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C37H40O9/c1-21(2)35-17-23(4)37-27(33(35)44-36(45-35,46-37)19-24-9-7-6-8-10-24)14-26(18-34(41)30(37)13-22(3)32(34)40)20-43-31(39)16-25-11-12-28(38)29(15-25)42-5/h6-15,23,27,30,33,38,41H,1,16-20H2,2-5H3/t23-,27+,30-,33-,34-,35-,36-,37-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>DSDNAKHZNJAGHN-MXTYGGKSSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>120.75</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>170.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>66.87</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.94</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>104826</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4642871</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50052442</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>6EU</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Resiniferatoxin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL17976</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001023</id>
+      <name>Transient receptor potential cation channel subfamily V member 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A14646</ref-id>
+            <pubmed-id>2174484</pubmed-id>
+            <citation>Szallasi A, Blumberg PM: Resiniferatoxin and its analogs provide novel insights into the pharmacology of the vanilloid (capsaicin) receptor. Life Sci. 1990;47(16):1399-408.</citation>
+          </article>
+          <article>
+            <ref-id>A14647</ref-id>
+            <pubmed-id>8483387</pubmed-id>
+            <citation>Szallasi A, Conte B, Goso C, Blumberg PM, Manzini S: Characterization of a peripheral vanilloid (capsaicin) receptor in the urinary bladder of the rat. Life Sci. 1993;52(20):PL221-6.</citation>
+          </article>
+          <article>
+            <ref-id>A14648</ref-id>
+            <pubmed-id>11906962</pubmed-id>
+            <citation>Nishihara K, Nozawa Y, Nakano M, Ajioka H, Matsuura N: Sensitizing effects of lafutidine on CGRP-containing afferent nerves in the rat stomach. Br J Pharmacol. 2002 Mar;135(6):1487-94.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8NER1" source="Swiss-Prot">
+        <name>Transient receptor potential cation channel subfamily V member 1</name>
+        <general-function>Transmembrane signaling receptor activity</general-function>
+        <specific-function>Ligand-activated non-selective calcium permeant cation channel involved in detection of noxious chemical and thermal stimuli. Seems to mediate proton influx and may be involved in intracellular acidosis in nociceptive neurons. Involved in mediation of inflammatory pain and hyperalgesia. Sensitized by a phosphatidylinositol second messenger system activated by receptor tyrosine kinases, which involves PKC isozymes and PCL. Can be activated by endogenous compounds, including 12-hydroperoxytetraenoic acid and bradykinin. Acts as ionotropic endocannabinoid receptor with central neuromodulatory effects. Triggers a form of long-term depression (TRPV1-LTD) mediated by the endocannabinoid anandamine in the hippocampus and nucleus accumbens by affecting AMPA receptors endocytosis (By similarity). Activation by vanilloids, like capsaicin, and temperatures higher than 42 degrees Celsius, exhibits a time- and Ca(2+)-dependent outward rectification, followed by a long-lasting refractory state. Mild extracellular acidic pH (6.5) potentiates channel activation by noxious heat and vanilloids, whereas acidic conditions (pH &lt;6) directly activate the channel.</specific-function>
+        <gene-name>TRPV1</gene-name>
+        <locus>17p13.3</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>434-454
+472-497
+511-531
+536-556
+572-599
+659-687</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.26</theoretical-pi>
+        <molecular-weight>94955.33</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:12716</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TRPV1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AJ277028</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>8977866</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>507</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>507</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8NER1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TRPV1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Capsaicin receptor</synonym>
+          <synonym>Osm-9-like TRP channel 1</synonym>
+          <synonym>OTRPC1</synonym>
+          <synonym>TrpV1</synonym>
+          <synonym>Vanilloid receptor 1</synonym>
+          <synonym>VR1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037113|Transient receptor potential cation channel subfamily V member 1
+MKKWSSTDLGAAADPLQKDTCPDPLDGDPNSRPPPAKPQLSTAKSRTRLFGKGDSEEAFP
+VDCPHEEGELDSCPTITVSPVITIQRPGDGPTGARLLSQDSVAASTEKTLRLYDRRSIFE
+AVAQNNCQDLESLLLFLQKSKKHLTDNEFKDPETGKTCLLKAMLNLHDGQNTTIPLLLEI
+ARQTDSLKELVNASYTDSYYKGQTALHIAIERRNMALVTLLVENGADVQAAAHGDFFKKT
+KGRPGFYFGELPLSLAACTNQLGIVKFLLQNSWQTADISARDSVGNTVLHALVEVADNTA
+DNTKFVTSMYNEILMLGAKLHPTLKLEELTNKKGMTPLALAAGTGKIGVLAYILQREIQE
+PECRHLSRKFTEWAYGPVHSSLYDLSCIDTCEKNSVLEVIAYSSSETPNRHDMLLVEPLN
+RLLQDKWDRFVKRIFYFNFLVYCLYMIIFTMAAYYRPVDGLPPFKMEKTGDYFRVTGEIL
+SVLGGVYFFFRGIQYFLQRRPSMKTLFVDSYSEMLFFLQSLFMLATVVLYFSHLKEYVAS
+MVFSLALGWTNMLYYTRGFQQMGIYAVMIEKMILRDLCRFMFVYIVFLFGFSTAVVTLIE
+DGKNDSLPSESTSHRWRGPACRPPDSSYNSLYSTCLELFKFTIGMGDLEFTENYDFKAVF
+IILLLAYVILTYILLLNMLIALMGETVNKIAQESKNIWKLQRAITILDTEKSFLKCMRKA
+FRSGKLLQVGYTPDGKDDYRWCFRVDEVNWTTWNTNVGIINEDPGNCEGVKRTLSFSLRS
+SRVSGRHWKNFALVPLLREASARDRQSAQPEEVYLRQFSGSLKPEDAEVFKSPAASGEK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020500|Transient receptor potential cation channel subfamily V member 1 (TRPV1)
+ATGAAGAAATGGAGCAGCACAGACTTGGGGGCAGCTGCGGACCCACTCCAAAAGGACACC
+TGCCCAGACCCCCTGGATGGAGACCCTAACTCCAGGCCACCTCCAGCCAAGCCCCAGCTC
+TCCACGGCCAAGAGCCGCACCCGGCTCTTTGGGAAGGGTGACTCGGAGGAGGCTTTCCCG
+GTGGATTGCCCTCACGAGGAAGGTGAGCTGGACTCCTGCCCGACCATCACAGTCAGCCCT
+GTTATCACCATCCAGAGGCCAGGAGACGGCCCCACCGGTGCCAGGCTGCTGTCCCAGGAC
+TCTGTCGCCGCCAGCACCGAGAAGACCCTCAGGCTCTATGATCGCAGGAGTATCTTTGAA
+GCCGTTGCTCAGAATAACTGCCAGGATCTGGAGAGCCTGCTGCTCTTCCTGCAGAAGAGC
+AAGAAGCACCTCACAGACAACGAGTTCAAAGACCCTGAGACAGGGAAGACCTGTCTGCTG
+AAAGCCATGCTCAACCTGCACGACGGACAGAACACCACCATCCCCCTGCTCCTGGAGATC
+GCGCGGCAAACGGACAGCCTGAAGGAGCTTGTCAACGCCAGCTACACGGACAGCTACTAC
+AAGGGCCAGACAGCACTGCACATCGCCATCGAGAGACGCAACATGGCCCTGGTGACCCTC
+CTGGTGGAGAACGGAGCAGACGTCCAGGCTGCGGCCCATGGGGACTTCTTTAAGAAAACC
+AAAGGGCGGCCTGGATTCTACTTCGGTGAACTGCCCCTGTCCCTGGCCGCGTGCACCAAC
+CAGCTGGGCATCGTGAAGTTCCTGCTGCAGAACTCCTGGCAGACGGCCGACATCAGCGCC
+AGGGACTCGGTGGGCAACACGGTGCTGCACGCCCTGGTGGAGGTGGCCGACAACACGGCC
+GACAACACGAAGTTTGTGACGAGCATGTACAATGAGATTCTGATGCTGGGGGCCAAACTG
+CACCCGACGCTGAAGCTGGAGGAGCTCACCAACAAGAAGGGAATGACGCCGCTGGCTCTG
+GCAGCTGGGACCGGGAAGATCGGGGTCTTGGCCTATATTCTCCAGCGGGAGATCCAGGAG
+CCCGAGTGCAGGCACCTGTCCAGGAAGTTCACCGAGTGGGCCTACGGGCCCGTGCACTCC
+TCGCTGTACGACCTGTCCTGCATCGACACCTGCGAGAAGAACTCGGTGCTGGAGGTGATC
+GCCTACAGCAGCAGCGAGACCCCTAATCGCCACGACATGCTCTTGGTGGAGCCGCTGAAC
+CGACTCCTGCAGGACAAGTGGGACAGATTCGTCAAGCGCATCTTCTACTTCAACTTCCTG
+GTCTACTGCCTGTACATGATCATCTTCACCATGGCTGCCTACTACAGGCCCGTGGATGGC
+TTGCCTCCCTTTAAGATGGAAAAAACTGGAGACTATTTCCGAGTTACTGGAGAGATCCTG
+TCTGTGTTAGGAGGAGTCTACTTCTTTTTCCGAGGGATTCAGTATTTCCTGCAGAGGCGG
+CCGTCGATGAAGACCCTGTTTGTGGACAGCTACAGTGAGATGCTTTTCTTTCTGCAGTCA
+CTGTTCATGCTGGCCACCGTGGTGCTGTACTTCAGCCACCTCAAGGAGTATGTGGCTTCC
+ATGGTATTCTCCCTGGCCTTGGGCTGGACCAACATGCTCTACTACACCCGCGGTTTCCAG
+CAGATGGGCATCTATGCCGTCATGATAGAGAAGATGATCCTGAGAGACCTGTGCCGTTTC
+ATGTTTGTCTACATCGTCTTCTTGTTCGGGTTTTCCACAGCGGTGGTGACGCTGATTGAA
+GACGGGAAGAATGACTCCCTGCCGTCTGAGTCCACGTCGCACAGGTGGCGGGGGCCTGCC
+TGCAGGCCCCCCGATAGCTCCTACAACAGCCTGTACTCCACCTGCCTGGAGCTGTTCAAG
+TTCACCATCGGCATGGGCGACCTGGAGTTCACTGAGAACTATGACTTCAAGGCTGTCTTC
+ATCATCCTGCTGCTGGCCTATGTAATTCTCACCTACATCCTCCTGCTCAACATGCTCATC
+GCCCTCATGGGTGAGACTGTCAACAAGATCGCACAGGAGAGCAAGAACATCTGGAAGCTG
+CAGAGAGCCATCACCATCCTGGACACGGAGAAGAGCTTCCTTAAGTGCATGAGGAAGGCC
+TTCCGCTCAGGCAAGCTGCTGCAGGTGGGGTACACACCTGATGGCAAGGACGACTACCGG
+TGGTGCTTCAGGGTGGACGAGGTGAACTGGACCACCTGGAACACCAACGTGGGCATCATC
+AACGAAGACCCGGGCAACTGTGAGGGCGTCAAGCGCACCCTGAGCTTCTCCCTGCGGTCA
+AGCAGAGTTTCAGGCAGACACTGGAAGAACTTTGCCCTGGTCCCCCTTTTAAGAGAGGCA
+AGTGCTCGAGATAGGCAGTCTGCTCAGCCCGAGGAAGTTTATCTGCGACAGTTTTCAGGG
+TCTCTGAAGCCAGAGGACGCTGAGGTCTTCAAGAGTCCTGCCGCTTCCGGGGAGAAGTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00520</identifier>
+            <name>Ion_trans</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12796</identifier>
+            <name>Ank_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intrinsic component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium-release channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>excitatory extracellular ligand-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphoprotein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane signaling receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to alkaloid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to ATP</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemosensory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>thermoception</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

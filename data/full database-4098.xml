@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04352</drugbank-id>
+  <drugbank-id>EXPT02809</drugbank-id>
+  <name>beta-D-Ribose-5-phosphate</name>
+  <description/>
+  <cas-number>34980-66-0</cas-number>
+  <unii>BVJ0IQF3T8</unii>
+  <average-mass>230.1098</average-mass>
+  <monoisotopic-mass>230.01915384</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as pentose phosphates. These are carbohydrate derivatives containing a pentose substituted by one or more phosphate groups.</description>
+    <direct-parent>Pentose phosphates</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbohydrates and carbohydrate conjugates</subclass>
+    <alternative-parent>1,2-diols</alternative-parent>
+    <alternative-parent>Hemiacetals</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkyl phosphates</alternative-parent>
+    <alternative-parent>Monosaccharide phosphates</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Tetrahydrofurans</alternative-parent>
+    <substituent>1,2-diol</substituent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic heteromonocyclic compound</substituent>
+    <substituent>Alkyl phosphate</substituent>
+    <substituent>Hemiacetal</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monoalkyl phosphate</substituent>
+    <substituent>Monosaccharide phosphate</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic phosphoric acid derivative</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Pentose phosphate</substituent>
+    <substituent>Pentose-5-phosphate</substituent>
+    <substituent>Phosphoric acid ester</substituent>
+    <substituent>Polyol</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Tetrahydrofuran</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">5-O-phosphono-beta-D-ribofuranose</synonym>
+    <synonym language="english" coder="">5-O-phosphono-β-D-ribofuranose</synonym>
+    <synonym language="english" coder="">β-D-ribofuranose 5-phosphate</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1oge</pdb-entry>
+    <pdb-entry>1qvj</pdb-entry>
+    <pdb-entry>2c37</pdb-entry>
+    <pdb-entry>2nx1</pdb-entry>
+    <pdb-entry>2obc</pdb-entry>
+    <pdb-entry>2r5n</pdb-entry>
+    <pdb-entry>3m7i</pdb-entry>
+    <pdb-entry>3upt</pdb-entry>
+    <pdb-entry>4z7j</pdb-entry>
+    <pdb-entry>5aju</pdb-entry>
+    <pdb-entry>5ebe</pdb-entry>
+    <pdb-entry>5lnw</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.84</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>3.36e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>{[(2R,3S,4R,5R)-3,4,5-trihydroxyoxolan-2-yl]methoxy}phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>[(2R,3S,4R,5R)-3,4,5-trihydroxyoxolan-2-yl]methoxyphosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>230.1098</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>230.01915384</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]1(O)O[C@]([H])(COP(O)(O)=O)[C@@]([H])(O)[C@@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C5H11O8P</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C5H11O8P/c6-3-2(1-12-14(9,10)11)13-5(8)4(3)7/h2-8H,1H2,(H2,9,10,11)/t2-,3-,4-,5-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>KTVPXOYAKDPRHY-TXICZTDVSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>136.68</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>40.83</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>18.29</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.22</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>45425</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>447634</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506522</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>394672</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>RP5</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1235722</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001942</id>
+      <name>D-ribose pyranase</name>
+      <organism>Bacillus subtilis (strain 168)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P36946" source="Swiss-Prot">
+        <name>D-ribose pyranase</name>
+        <general-function>Monosaccharide binding</general-function>
+        <specific-function>Catalyzes the interconversion of beta-pyran and beta-furan forms of D-ribose.</specific-function>
+        <gene-name>rbsD</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.95</theoretical-pi>
+        <molecular-weight>14227.32</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="224308">Bacillus subtilis (strain 168)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Z25798</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>397496</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P36946</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RBSD_BACSU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.4.99.62</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019201|D-ribose pyranase
+MKKHGILNSHLAKILADLGHTDKIVIADAGLPVPDGVLKIDLSLKPGLPAFQDTAAVLAE
+EMAVEKVIAAAEIKASNQENAKFLENLFSEQEIEYLSHEEFKLLTKDAKAVIRTGEFTPY
+ANCILQAGVLF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019202|D-ribose pyranase (rbsD)
+ATGAAAAAACACGGTATACTGAACAGCCATCTTGCCAAGATTTTAGCCGACCTTGGCCAC
+ACTGATAAAATTGTCATCGCGGATGCCGGACTGCCGGTTCCTGACGGCGTTTTGAAAATT
+GATCTTTCACTGAAGCCGGGCCTTCCGGCTTTCCAAGATACAGCGGCAGTACTGGCTGAG
+GAAATGGCGGTCGAAAAAGTCATTGCTGCAGCTGAAATAAAAGCATCCAATCAGGAGAAT
+GCGAAATTTCTAGAAAATCTTTTCTCTGAACAAGAGATTGAATACCTTTCTCACGAGGAG
+TTTAAGCTGCTGACAAAAGATGCAAAGGCAGTCATAAGAACAGGAGAATTCACACCATAT
+GCCAACTGCATCCTGCAGGCAGGTGTACTTTTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF05025</identifier>
+            <name>RbsD_FucU</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>intramolecular lyase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monosaccharide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>D-ribose catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001935</id>
+      <name>ADP-ribose pyrophosphatase, mitochondrial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9BW91" source="Swiss-Prot">
+        <name>ADP-ribose pyrophosphatase, mitochondrial</name>
+        <general-function>Adp-sugar diphosphatase activity</general-function>
+        <specific-function>Hydrolyzes ADP-ribose (ADPR) to AMP and ribose 5'-phosphate.</specific-function>
+        <gene-name>NUDT9</gene-name>
+        <locus>4q22.1</locus>
+        <cellular-location>Mitochondrion</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.45</theoretical-pi>
+        <molecular-weight>39124.685</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8056</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>NUDT9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AY026252</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>14160858</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9BW91</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NUDT9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.6.1.13</synonym>
+          <synonym>Adenosine diphosphoribose pyrophosphatase</synonym>
+          <synonym>ADP-ribose diphosphatase</synonym>
+          <synonym>ADP-ribose phosphohydrolase</synonym>
+          <synonym>ADPR-PPase</synonym>
+          <synonym>Nucleoside diphosphate-linked moiety X motif 9</synonym>
+          <synonym>Nudix motif 9</synonym>
+          <synonym>NUDT10</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003833|ADP-ribose pyrophosphatase, mitochondrial
+MAGRLLGKALAAVSLSLALASVTIRSSRCRGIQAFRNSFSSSWFHLNTNVMSGSNGSKEN
+SHNKARTSPYPGSKVERSQVPNEKVGWLVEWQDYKPVEYTAVSVLAGPRWADPQISESNF
+SPKFNEKDGHVERKSKNGLYEIENGRPRNPAGRTGLVGRGLLGRWGPNHAADPIITRWKR
+DSSGNKIMHPVSGKHILQFVAIKRKDCGEWAIPGGMVDPGEKISATLKREFGEEALNSLQ
+KTSAEKREIEEKLHKLFSQDHLVIYKGYVDDPRNTDNAWMETEAVNYHDETGEIMDNLML
+EAGDDAGKVKWVDINDKLKLYASHSQFIKLVAEKRDAHWSEDSEADCHAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021672|ADP-ribose pyrophosphatase, mitochondrial (NUDT9)
+ATGGCGGGACGCCTCCTGGGAAAGGCTTTAGCCGCGGTGTCTCTCTCTCTGGCCTTGGCC
+TCTGTGACTATCAGGTCCTCGCGCTGCCGCGGCATCCAGGCGTTCAGAAACTCGTTTTCA
+TCTTCTTGGTTTCATCTTAATACCAACGTCATGTCTGGTTCTAATGGTTCCAAAGAAAAT
+TCTCACAATAAGGCTCGGACGTCTCCTTACCCAGGTTCAAAAGTTGAACGAAGCCAGGTT
+CCTAATGAGAAAGTGGGCTGGCTTGTTGAGTGGCAAGACTATAAGCCTGTGGAATACACT
+GCAGTCTCTGTCTTGGCTGGACCCAGGTGGGCAGATCCTCAGATCAGAAATCCTGCAGGA
+CGGACTGGACTGGTGGGCCGGGGGCTTTTGGGGCGATGGGGCCCAAATCACGCTGCAGAT
+CCCATTATAACCAGATGGAAAAGGGATAGCAGTGGAAATAAAATCATGCATCCTGTTTCT
+GGGAAGCATATCTTACAATTTGTTGCAATAAAAAGGAAAGACTGTGGAGAATGGGCAATC
+CCAGGGGGGATGGTGGATCCAGGAGAGAAGATTAGTGCCACACTGAAAAGAGAATTTGGT
+GAGGAAGCTCTCAACTCCTTACAGAAAACCAGTGCTGAGAAGAGAGAAATAGAGGAAAAG
+TTGCACAAACTCTTCAGCCAAGACCACCTAGTGATATATAAGGGATATGTTGATGATCCT
+CGAAACACTGATAATGCATGGATGGAGACAGAAGCTGTGAACTACCATGACGAAACAGGT
+GAGATAATGGATAATCTTATGCTAGAAGCTGGAGATGATGCTGGAAAAGTGAAATGGGTG
+GACATCAATGATAAACTGAAGCTTTATGCCAGTCACTCTCAATTCATCAAACTTGTGGCT
+GAGAAACGAGATGCACACTGGAGCGAGGACTCTGAAGCTGACTGCCATGCGTTGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00293</identifier>
+            <name>NUDIX</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>adenosine-diphosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ADP-ribose diphosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ADP-sugar diphosphatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ADP catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>IDP catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

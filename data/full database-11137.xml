@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2017-06-23" updated="2019-12-02">
+  <drugbank-id primary="true">DB13201</drugbank-id>
+  <drugbank-id>DB06298</drugbank-id>
+  <name>Trenonacog alfa</name>
+  <description>Human coagulation factor IX (EC 3.4.21.22, Christmas factor, plasma thromboplastin component), produced in CHO cells.</description>
+  <cas-number>1232401-60-3</cas-number>
+  <unii>OMD1OJM5L7</unii>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Biological Factors</category>
+      <mesh-id>D001685</mesh-id>
+    </category>
+    <category>
+      <category>Blood Coagulation Factors</category>
+      <mesh-id>D001779</mesh-id>
+    </category>
+    <category>
+      <category>Blood Proteins</category>
+      <mesh-id>D001798</mesh-id>
+    </category>
+    <category>
+      <category>Enzyme Precursors</category>
+      <mesh-id>D004792</mesh-id>
+    </category>
+    <category>
+      <category>Enzymes and Coenzymes</category>
+      <mesh-id>D045762</mesh-id>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00513</drugbank-id>
+      <name>Aminocaproic acid</name>
+      <description>The risk or severity of adverse effects can be increased when Aminocaproic acid is combined with Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00058</drugbank-id>
+      <name>Alpha-1-proteinase inhibitor</name>
+      <description>Alpha-1-proteinase inhibitor may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00170</drugbank-id>
+      <name>Menadione</name>
+      <description>Menadione may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00302</drugbank-id>
+      <name>Tranexamic acid</name>
+      <description>Tranexamic acid may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06692</drugbank-id>
+      <name>Aprotinin</name>
+      <description>Aprotinin may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11091</drugbank-id>
+      <name>Hydrogen peroxide</name>
+      <description>Hydrogen peroxide may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13244</drugbank-id>
+      <name>Aminomethylbenzoic acid</name>
+      <description>Aminomethylbenzoic acid may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13729</drugbank-id>
+      <name>Camostat</name>
+      <description>Camostat may increase the thrombogenic activities of Trenonacog alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12726</drugbank-id>
+      <name>Monteplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Monteplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00001</drugbank-id>
+      <name>Lepirudin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Lepirudin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00006</drugbank-id>
+      <name>Bivalirudin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Bivalirudin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00009</drugbank-id>
+      <name>Alteplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Alteplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00013</drugbank-id>
+      <name>Urokinase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Urokinase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00015</drugbank-id>
+      <name>Reteplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Reteplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00029</drugbank-id>
+      <name>Anistreplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Anistreplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00031</drugbank-id>
+      <name>Tenecteplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Tenecteplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00054</drugbank-id>
+      <name>Abciximab</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Abciximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00055</drugbank-id>
+      <name>Drotrecogin alfa</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Drotrecogin alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00086</drugbank-id>
+      <name>Streptokinase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Streptokinase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00261</drugbank-id>
+      <name>Anagrelide</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Anagrelide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00278</drugbank-id>
+      <name>Argatroban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Argatroban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00407</drugbank-id>
+      <name>Ardeparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ardeparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00569</drugbank-id>
+      <name>Fondaparinux</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Fondaparinux.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00686</drugbank-id>
+      <name>Pentosan polysulfate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Pentosan polysulfate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00945</drugbank-id>
+      <name>Acetylsalicylic acid</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Acetylsalicylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00975</drugbank-id>
+      <name>Dipyridamole</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dipyridamole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01088</drugbank-id>
+      <name>Iloprost</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Iloprost.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01109</drugbank-id>
+      <name>Heparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Heparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01225</drugbank-id>
+      <name>Enoxaparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Enoxaparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01240</drugbank-id>
+      <name>Epoprostenol</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Epoprostenol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04898</drugbank-id>
+      <name>Ximelagatran</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ximelagatran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04925</drugbank-id>
+      <name>Desmoteplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Desmoteplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04932</drugbank-id>
+      <name>Defibrotide</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Defibrotide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05099</drugbank-id>
+      <name>Ancrod</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ancrod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05229</drugbank-id>
+      <name>Beraprost</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Beraprost.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05254</drugbank-id>
+      <name>Fibrinolysin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Fibrinolysin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06209</drugbank-id>
+      <name>Prasugrel</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Prasugrel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06228</drugbank-id>
+      <name>Rivaroxaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Rivaroxaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06271</drugbank-id>
+      <name>Sulodexide</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Sulodexide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06406</drugbank-id>
+      <name>Idraparinux</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Idraparinux.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06441</drugbank-id>
+      <name>Cangrelor</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Cangrelor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06543</drugbank-id>
+      <name>Astaxanthin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Astaxanthin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06605</drugbank-id>
+      <name>Apixaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Apixaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06635</drugbank-id>
+      <name>Otamixaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Otamixaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06679</drugbank-id>
+      <name>Amediplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Amediplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06695</drugbank-id>
+      <name>Dabigatran etexilate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dabigatran etexilate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06754</drugbank-id>
+      <name>Danaparoid</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Danaparoid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06779</drugbank-id>
+      <name>Dalteparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dalteparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06822</drugbank-id>
+      <name>Tinzaparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Tinzaparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07767</drugbank-id>
+      <name>Ferulic acid</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ferulic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08813</drugbank-id>
+      <name>Nadroparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Nadroparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08814</drugbank-id>
+      <name>Triflusal</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Triflusal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08816</drugbank-id>
+      <name>Ticagrelor</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ticagrelor.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08994</drugbank-id>
+      <name>Ditazole</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Ditazole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09030</drugbank-id>
+      <name>Vorapaxar</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Vorapaxar.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09075</drugbank-id>
+      <name>Edoxaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Edoxaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09125</drugbank-id>
+      <name>Potassium citrate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Potassium citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09154</drugbank-id>
+      <name>Sodium citrate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Sodium citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09255</drugbank-id>
+      <name>Dextran</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dextran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09258</drugbank-id>
+      <name>Bemiparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Bemiparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09259</drugbank-id>
+      <name>Reviparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Reviparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09260</drugbank-id>
+      <name>Parnaparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Parnaparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09261</drugbank-id>
+      <name>Certoparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Certoparin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11095</drugbank-id>
+      <name>Desirudin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Desirudin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11154</drugbank-id>
+      <name>Zinc citrate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Zinc citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11166</drugbank-id>
+      <name>Antithrombin Alfa</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Antithrombin Alfa.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11312</drugbank-id>
+      <name>Protein C</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Protein C.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11598</drugbank-id>
+      <name>Antithrombin III human</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Antithrombin III human.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11984</drugbank-id>
+      <name>Letaxaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Letaxaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12289</drugbank-id>
+      <name>Darexaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Darexaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12364</drugbank-id>
+      <name>Betrixaban</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Betrixaban.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12598</drugbank-id>
+      <name>Nafamostat</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Nafamostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12831</drugbank-id>
+      <name>Gabexate</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Gabexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13149</drugbank-id>
+      <name>Protein S human</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Protein S human.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13199</drugbank-id>
+      <name>Brinase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Brinase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13616</drugbank-id>
+      <name>Melagatran</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Melagatran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13646</drugbank-id>
+      <name>Saruplase</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Saruplase.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14094</drugbank-id>
+      <name>Tocopherylquinone</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Tocopherylquinone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14598</drugbank-id>
+      <name>Edetate calcium disodium anhydrous</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Edetate calcium disodium anhydrous.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14600</drugbank-id>
+      <name>Edetate disodium anhydrous</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Edetate disodium anhydrous.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14726</drugbank-id>
+      <name>Dabigatran</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Dabigatran.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06294</drugbank-id>
+      <name>Semuloparin</name>
+      <description>The therapeutic efficacy of Trenonacog alfa can be decreased when used in combination with Semuloparin.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

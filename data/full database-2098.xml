@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02216</drugbank-id>
+  <drugbank-id>EXPT01076</drugbank-id>
+  <drugbank-id>EXPT02919</drugbank-id>
+  <name>S-Methylcysteine</name>
+  <description/>
+  <cas-number>1187-84-4</cas-number>
+  <unii>A34I1H07YM</unii>
+  <average-mass>135.185</average-mass>
+  <monoisotopic-mass>135.035399227</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as l-cysteine-s-conjugates. These are compounds containing L-cysteine where the thio-group is conjugated.</description>
+    <direct-parent>L-cysteine-S-conjugates</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dialkylthioethers</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>L-alpha-amino acids</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Sulfenyl compounds</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Alpha-amino acid</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Dialkylthioether</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>L-cysteine-s-conjugate</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Organosulfur compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Sulfenyl compound</substituent>
+    <substituent>Thioether</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids</category>
+      <mesh-id>D000596</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Neutral</category>
+      <mesh-id>D021542</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Sulfur</category>
+      <mesh-id>D000603</mesh-id>
+    </category>
+    <category>
+      <category>Carbon Radioisotopes</category>
+      <mesh-id>D002250</mesh-id>
+    </category>
+    <category>
+      <category>Sulfhydryl Compounds</category>
+      <mesh-id>D013438</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1czi</pdb-entry>
+    <pdb-entry>1e6y</pdb-entry>
+    <pdb-entry>1eh7</pdb-entry>
+    <pdb-entry>1gk8</pdb-entry>
+    <pdb-entry>1hbm</pdb-entry>
+    <pdb-entry>1hbn</pdb-entry>
+    <pdb-entry>1hbo</pdb-entry>
+    <pdb-entry>1hbu</pdb-entry>
+    <pdb-entry>1ir2</pdb-entry>
+    <pdb-entry>1lfo</pdb-entry>
+    <pdb-entry>1mro</pdb-entry>
+    <pdb-entry>1u8b</pdb-entry>
+    <pdb-entry>1uw9</pdb-entry>
+    <pdb-entry>1uwa</pdb-entry>
+    <pdb-entry>1uzd</pdb-entry>
+    <pdb-entry>1uzh</pdb-entry>
+    <pdb-entry>1wpk</pdb-entry>
+    <pdb-entry>1zgw</pdb-entry>
+    <pdb-entry>2ob2</pdb-entry>
+    <pdb-entry>2v63</pdb-entry>
+    <pdb-entry>2v67</pdb-entry>
+    <pdb-entry>2v68</pdb-entry>
+    <pdb-entry>2v69</pdb-entry>
+    <pdb-entry>2v6a</pdb-entry>
+    <pdb-entry>2vdh</pdb-entry>
+    <pdb-entry>2vdi</pdb-entry>
+    <pdb-entry>3hau</pdb-entry>
+    <pdb-entry>3haw</pdb-entry>
+    <pdb-entry>3hbo</pdb-entry>
+    <pdb-entry>3hdk</pdb-entry>
+    <pdb-entry>3m1v</pdb-entry>
+    <pdb-entry>3m2r</pdb-entry>
+    <pdb-entry>3m2u</pdb-entry>
+    <pdb-entry>3m2v</pdb-entry>
+    <pdb-entry>3m30</pdb-entry>
+    <pdb-entry>3m32</pdb-entry>
+    <pdb-entry>3pot</pdb-entry>
+    <pdb-entry>3rfa</pdb-entry>
+    <pdb-entry>4pl1</pdb-entry>
+    <pdb-entry>4zyg</pdb-entry>
+    <pdb-entry>5a0y</pdb-entry>
+    <pdb-entry>5a8k</pdb-entry>
+    <pdb-entry>5a8r</pdb-entry>
+    <pdb-entry>5a8w</pdb-entry>
+    <pdb-entry>5g0r</pdb-entry>
+    <pdb-entry>5gjj</pdb-entry>
+    <pdb-entry>5hr6</pdb-entry>
+    <pdb-entry>5hr7</pdb-entry>
+    <pdb-entry>6f1f</pdb-entry>
+    <pdb-entry>6fz6</pdb-entry>
+    <pdb-entry>6p78</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.31</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.58e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2R)-2-amino-3-(methylsulfanyl)propanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>S-methylcysteine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>135.185</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>135.035399227</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CSC[C@H](N)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C4H9NO2S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C4H9NO2S/c1-8-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>IDIDJDIHTAOVLG-VKHMYHEASA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>63.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>32.87</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>13.56</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.44</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>45658</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>24417</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506571</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>22826</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50213729</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>SMC</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>S-Methylcysteine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL394875</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000941</id>
+      <name>Cathepsin D</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P07339" source="Swiss-Prot">
+        <name>Cathepsin D</name>
+        <general-function>Aspartic-type endopeptidase activity</general-function>
+        <specific-function>Acid protease active in intracellular protein breakdown. Involved in the pathogenesis of several diseases such as breast cancer and possibly Alzheimer disease.</specific-function>
+        <gene-name>CTSD</gene-name>
+        <locus>11p15.5</locus>
+        <cellular-location>Lysosome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>6.5</theoretical-pi>
+        <molecular-weight>44551.845</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2529</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CTSD</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M11233</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>181180</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2345</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P07339</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CATD_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.23.5</synonym>
+          <synonym>CPSD</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016260|Cathepsin D
+MQPSSLLPLALCLLAAPASALVRIPLHKFTSIRRTMSEVGGSVEDLIAKGPVSKYSQAVP
+AVTEGPIPEVLKNYMDAQYYGEIGIGTPPQCFTVVFDTGSSNLWVPSIHCKLLDIACWIH
+HKYNSDKSSTYVKNGTSFDIHYGSGSLSGYLSQDTVSVPCQSASSASALGGVKVERQVFG
+EATKQPGITFIAAKFDGILGMAYPRISVNNVLPVFDNLMQQKLVDQNIFSFYLSRDPDAQ
+PGGELMLGGTDSKYYKGSLSYLNVTRKAYWQVHLDQVEVASGLTLCKEGCEAIVDTGTSL
+MVGPVDEVRELQKAIGAVPLIQGEYMIPCEKVSTLPAITLKLGGKGYKLSPEDYTLKVSQ
+AGKTLCLSGFMGMDIPPPSGPLWILGDVFIGRYYTVFDRDNNRVGFAEAARL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016261|Cathepsin D (CTSD)
+ATGCAGCCCTCCAGCCTTCTGCCGCTCGCCCTCTGCCTGCTGGCTGCACCCGCCTCCGCG
+CTCGTCAGGATCCCGCTGCACAAGTTCACGTCCATCCGCCGGACCATGTCGGAGGTTGGG
+GGCTCTGTGGAGGACCTGATTGCCAAAGGCCCCGTCTCAAAGTACTCCCAGGCGGTGCCA
+GCCGTGACCGAGGGGCCCATTCCCGAGGTGCTCAAGAACTACATGGACGCCCAGTACTAC
+GGGGAGATTGGCATCGGGACGCCCCCCCAGTGCTTCACAGTCGTCTTCGACACGGGCTCC
+TCCAACCTGTGGGTCCCCTCCATCCACTGCAAACTGCTGGACATCGCTTGCTGGATCCAC
+CACAAGTACAACAGCGACAAGTCCAGCACCTACGTGAAGAATGGTACCTCGTTTGACATC
+CACTATGGCTCGGGCAGCCTCTCCGGGTACCTGAGCCAGGACACTGTGTCGGTGCCCTGC
+CAGTCAGCGTCGTCAGCCTCTGCCCTGGGCGGTGTCAAAGTGGAGAGGCAGGTCTTTGGG
+GAGGCCACCAAGCAGCCAGGCATCACCTTCATCGCAGCCAAGTTCGATGGCATCCTGGGC
+ATGGCCTACCCCCGCATCTCCGTCAACAACGTGCTGCCCGTCTTCGACAACCTGATGCAG
+CAGAAGCTGGTGGACCAGAACATCTTCTCCTTCTACCTGAGCAGGGACCCAGATGCGCAG
+CCTGGGGGTGAGCTGATGCTGGGTGGCACAGACTCCAAGTATTACAAGGGTTCTCTGTCC
+TACCTGAATGTCACCCGCAAGGCCTACTGGCAGGTCCACCTGGACCAGGTGGAGGTGGCC
+AGCGGGCTGACCCTGTGCAAGGAGGGCTGTGAGGCCATTGTGGACACAGGCACTTCCCTC
+ATGGTGGGCCCGGTGGATGAGGTGCGCGAGCTGCAGAAGGCCATCGGGGCCGTGCCGCTG
+ATTCAGGGCGAGTACATGATCCCCTGTGAGAAGGTGTCCACCCTGCCCGCGATCACACTG
+AAGCTGGGAGGCAAAGGCTACAAGCTGTCCCCAGAGGACTACACGCTCAAGGTGTCGCAG
+GCCGGGAAGACCCTCTGCCTGAGCGGCTTCATGGGCATGGACATCCCGCCACCCAGCGGG
+CCACTCTGGATCCTGGGCGACGTCTTCATCGGCCGCTACTACACTGTGTTTGACCGTGAC
+AACAACAGGGTGGGCTTCGCCGAGGCTGCCCGCCTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07966</identifier>
+            <name>A1_Propeptide</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00026</identifier>
+            <name>Asp</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>melanosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aspartic-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antigen processing and presentation of exogenous peptide antigen via MHC class II</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>autophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>collagen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix disassembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001145</id>
+      <name>Methylated-DNA--protein-cysteine methyltransferase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P16455" source="Swiss-Prot">
+        <name>Methylated-DNA--protein-cysteine methyltransferase</name>
+        <general-function>Methyltransferase activity</general-function>
+        <specific-function>Involved in the cellular defense against the biological effects of O6-methylguanine (O6-MeG) in DNA. Repairs alkylated guanine in DNA by stoichiometrically transferring the alkyl group at the O-6 position to a cysteine residue in the enzyme. This is a suicide reaction: the enzyme is irreversibly inactivated.</specific-function>
+        <gene-name>MGMT</gene-name>
+        <locus>10q26</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.23</theoretical-pi>
+        <molecular-weight>21645.83</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7059</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MGMT</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X54228</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>34559</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P16455</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MGMT_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.1.1.63</synonym>
+          <synonym>6-O-methylguanine-DNA methyltransferase</synonym>
+          <synonym>MGMT</synonym>
+          <synonym>O-6-methylguanine-DNA-alkyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010800|Methylated-DNA--protein-cysteine methyltransferase
+MDKDCEMKRTTLDSPLGKLELSGCEQGLHEIKLLGKGTSAADAVEVPAPAAVLGGPEPLM
+QCTAWLNAYFHQPEAIEEFPVPALHHPVFQQESFTRQVLWKLLKVVKFGEVISYQQLAAL
+AGNPKAARAVGGAMRGNPVPILIPCHRVVCSSGAVGNYSGGLAVKEWLLAHEGHRLGKPG
+LGGSSGLAGAWLKGAGATSGSPPAGRN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0002276|624 bp
+ATGGACAAGGATTGTGAAATGAAACGCACCACACTGGACAGCCCTTTGGGGAAGCTGGAG
+CTGTCTGGTTGTGAGCAGGGTCTGCACGAAATAAAGCTCCTGGGCAAGGGGACGTCTGCA
+GCTGATGCCGTGGAGGTCCCAGCCCCCGCTGCGGTTCTCGGAGGTCCGGAGCCCCTGATG
+CAGTGCACAGCCTGGCTGAATGCCTATTTCCACCAGCCCGAGGCTATCGAAGAGTTCCCC
+GTGCCGGCACTTCACCATCCCGTTTTCCAGCAAGAGTCGTTCACCAGACAGGTGTTATGG
+AAGCTGCTGAAGGTTGTGAAATTCGGAGAAGTGATTTCTTACCAGCAATTAGCAGCCCTG
+GCAGGCAACCCCAAAGCCGCGCGAGCAGTGGGAGGAGCAATGAGAGGCAATCCTGTCCCC
+ATCCTCATCCCGTGCCACAGAGTGGTCTGCAGCAGCGGAGCCGTGGGCAACTACTCCGGA
+GGACTGGCCGTGAAGGAATGGCTTCTGGCCCATGAAGGCCACCGGTTGGGGAAGCCAGGC
+TTGGGAGGGAGCTCAGGTCTGGCAGGGGCCTGGCTCAAGGGAGCGGGAGCTACCTCGGGC
+TCCCCGCCTGCTGGCCGAAACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01035</identifier>
+            <name>DNA_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02870</identifier>
+            <name>Methyltransf_1N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>damaged DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA-methyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methylated-DNA-[protein]-cysteine S-methyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to ionizing radiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to oxidative stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA dealkylation involved in DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA ligation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA methylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mammary gland epithelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to folic acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers>
+    <carrier>
+      <id>BE0003998</id>
+      <name>Fatty acid-binding protein, liver</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P07148" source="Swiss-Prot">
+        <name>Fatty acid-binding protein, liver</name>
+        <general-function>Phospholipid binding</general-function>
+        <specific-function>Plays a role in lipoprotein-mediated cholesterol uptake in hepatocytes (PubMed:25732850). Binds cholesterol (PubMed:25732850). Binds free fatty acids and their coenzyme A derivatives, bilirubin, and some other small molecules in the cytoplasm. May be involved in intracellular lipid transport (By similarity).</specific-function>
+        <gene-name>FABP1</gene-name>
+        <locus>2p11</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.37</theoretical-pi>
+        <molecular-weight>14208.34</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3555</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M10617</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>182358</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P07148</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FABPL_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>FABPL</synonym>
+          <synonym>Fatty acid-binding protein 1</synonym>
+          <synonym>L-FABP</synonym>
+          <synonym>Liver-type fatty acid-binding protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012785|Fatty acid-binding protein, liver
+MSFSGKYQLQSQENFEAFMKAIGLPEELIQKGKDIKGVSEIVQNGKHFKFTITAGSKVIQ
+NEFTVGEECELETMTGEKVKTVVQLEGDNKLVTTFKNIKSVTELNGDIITNTMTLGDIVF
+KRISKRI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012786|Fatty acid-binding protein, liver (FABP1)
+ATGAGTTTCTCCGGCAAGTACCAACTGCAGAGCCAGGAAAACTTTGAAGCCTTCATGAAG
+GCAATCGGTCTGCCGGAAGAGCTCATCCAGAAGGGGAAGGATATCAAGGGGGTGTCGGAA
+ATCGTGCAGAATGGGAAGCACTTCAAGTTCACCATCACCGCTGGGTCCAAAGTGATCCAA
+AACGAATTCACGGTGGGGGAGGAATGTGAGCTGGAGACAATGACAGGGGAGAAAGTCAAG
+ACAGTGGTTCAGTTGGAAGGTGACAATAAACTGGTGACAACTTTCAAAAACATCAAGTCT
+GTGACCGAACTCAACGGCGACATAATCACCAATACCATGACATTGGGTGACATTGTCTTC
+AAGAGAATCAGCAAGAGAATTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00061</identifier>
+            <name>Lipocalin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical cortex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>peroxisomal matrix</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>antioxidant activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>bile acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>long-chain fatty acid transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hydrogen peroxide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intestinal absorption</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitophagy in response to mitochondrial depolarization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of defense response to virus by host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fatty acid beta-oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>triglyceride catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenophagy</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters/>
+</drug>

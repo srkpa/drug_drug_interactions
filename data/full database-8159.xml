@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2015-10-01" updated="2019-12-02">
+  <drugbank-id primary="true">DB09151</drugbank-id>
+  <name>Flutemetamol (18F)</name>
+  <description>Flutemetamol (18F) is a PET scanning radiopharmaceutical containing the radionuclide fluorine-18. It is indicated for Positron Emission Tomography (PET) imaging of the brain to estimate β amyloid neuritic plaque density in adult patients with cognitive impairment who are being evaluated for Alzheimer's disease (AD) or other causes of cognitive decline.</description>
+  <cas-number>765922-62-1</cas-number>
+  <unii>L49M066S0O</unii>
+  <average-mass>273.32</average-mass>
+  <monoisotopic-mass>273.060146823</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A18518</ref-id>
+        <pubmed-id>27031469</pubmed-id>
+        <citation>Beach TG, Thal DR, Zanette M, Smith A, Buckley C: Detection of Striatal Amyloid Plaques with [18F]flutemetamol: Validation with Postmortem Histopathology. J Alzheimers Dis. 2016 Mar 31;52(3):863-73. doi: 10.3233/JAD-150732.</citation>
+      </article>
+      <article>
+        <ref-id>A18519</ref-id>
+        <pubmed-id>26440450</pubmed-id>
+        <citation>Heurling K, Leuzy A, Zimmer ER, Lubberink M, Nordberg A: Imaging beta-amyloid using [(18)F]flutemetamol positron emission tomography: from dosimetry to clinical diagnosis. Eur J Nucl Med Mol Imaging. 2016 Feb;43(2):362-73. doi: 10.1007/s00259-015-3208-1. Epub 2015 Oct 6.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Flutemetamol F18 is indicated for Positron Emission Tomography (PET) imaging of the brain to estimate β amyloid neuritic plaque density in adult patients with cognitive impairment who are being evaluated for Alzheimer's disease (AD) or other causes of cognitive decline. </indication>
+  <pharmacodynamics>Following intravenous injection, flutemetamol F 18 diffuses across the human blood-brain barrier and produces a radioactivity signal detectable throughout the brain. Subsequently, cerebral perfusion decreases the brain flutemetamol F 18 content, with differential retention of the drug in cortical areas that contain β-amyloid aggregates compared to areas that lack the aggregates.</pharmacodynamics>
+  <mechanism-of-action>Fluorine-18 (F 18) is a cyclotron-produced radionuclide that decays by positron emission (β+ decay, 96.7%) and orbital electron capture (3.3%) to stable oxygen-18 with a physical half-life of 109.8 minutes. The positron can undergo annihilation with an electron to produce two gamma rays; the energy of each gamma ray is 511 keV. After flumetamol F18 is given intravenously, it accumulates in beta amyloid plaques in the brain, and thus becomes visible via positron emission tomography (PET).</mechanism-of-action>
+  <toxicity>Most commonly reported adverse reactions were flushing (2%), headache (1%), increased blood pressure (2%), nausea (1%), and dizziness (1%).</toxicity>
+  <metabolism>The F 18 in circulation during the 30-120 minutes imaging window in plasma was principally associated with flutemetamol metabolites.</metabolism>
+  <absorption>The time-activity curves for flutemetamol F 18 in the brain of subjects with positive scans shows continual signal increases from time zero through 30 minutes post administration, with stable values thereafter up to at least 120 minutes post-injection. Following intravenous injection of 185 MBq (5 mCi) of Vizamyl in humans, flutemetamol F 18 plasma concentrations declined by approximately 75% in the first 20 minutes post-injection, and by approximately 90% in the first 180 minutes.</absorption>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination>Excretion was found to be approximately 37% renal and 52% hepatobiliary.</route-of-elimination>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as benzothiazoles. These are organic compounds containing a benzene fused to a thiazole ring (a five-membered ring with four carbon atoms, one nitrogen atom and one sulfur atom).</description>
+    <direct-parent>Benzothiazoles</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Benzothiazoles</class>
+    <subclass/>
+    <alternative-parent>1-hydroxy-2-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>Aniline and substituted anilines</alternative-parent>
+    <alternative-parent>Aryl fluorides</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Fluorobenzenes</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organofluorides</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Phenylalkylamines</alternative-parent>
+    <alternative-parent>Secondary alkylarylamines</alternative-parent>
+    <alternative-parent>Thiazoles</alternative-parent>
+    <substituent>1,3-benzothiazole</substituent>
+    <substituent>1-hydroxy-2-unsubstituted benzenoid</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aniline or substituted anilines</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Aryl fluoride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Fluorobenzene</substituent>
+    <substituent>Halobenzene</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organofluoride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenylalkylamine</substituent>
+    <substituent>Secondary aliphatic/aromatic amine</substituent>
+    <substituent>Secondary amine</substituent>
+    <substituent>Thiazole</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">[18F]-Flutemetamol</synonym>
+    <synonym language="english" coder="iupac">2-[3-(18F)fluoro-4-(methylamino)phenyl]-1,3-benzothiazol-6-ol</synonym>
+    <synonym language="english" coder="inn">Flutemetamol (18F)</synonym>
+    <synonym language="english" coder="">Flutemetamol F 18</synonym>
+    <synonym language="english" coder="">Flutemetamol F-18</synonym>
+    <synonym language="english" coder="">Flutemetamol F18</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Vizamyl</name>
+      <labeller>Medi-Physics, Inc. dba GE Healthcare</labeller>
+      <ndc-id/>
+      <ndc-product-code>17156-067</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2014-01-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>4.05 mCi/1mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA203137</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Vizamyl</name>
+      <ingredients>Flutemetamol (18F)</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Central Nervous System</category>
+      <mesh-id>D002490</mesh-id>
+    </category>
+    <category>
+      <category>Compounds used in a research, industrial, or household setting</category>
+      <mesh-id>D020313</mesh-id>
+    </category>
+    <category>
+      <category>Contrast Media</category>
+      <mesh-id>D003287</mesh-id>
+    </category>
+    <category>
+      <category>Diagnostic Radiopharmaceuticals</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Diagnostic Uses of Chemicals</category>
+      <mesh-id>D064907</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Indicators and Reagents</category>
+      <mesh-id>D007202</mesh-id>
+    </category>
+    <category>
+      <category>Laboratory Chemicals</category>
+      <mesh-id>D019995</mesh-id>
+    </category>
+    <category>
+      <category>Radioactive Diagnostic Agent</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Radiopharmaceutical Activity</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Radiopharmaceuticals</category>
+      <mesh-id>D019275</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+    <category>
+      <category>Thiazoles</category>
+      <mesh-id>D013844</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Solution</form>
+      <route>Intravenous</route>
+      <strength>4.05 mCi/1mL</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="V09AX04">
+      <level code="V09AX">Other central nervous system diagnostic radiopharmaceuticals</level>
+      <level code="V09A">CENTRAL NERVOUS SYSTEM</level>
+      <level code="V09">DIAGNOSTIC RADIOPHARMACEUTICALS</level>
+      <level code="V">VARIOUS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB09151.pdf?1471992072</fda-label>
+  <patents>
+    <patent>
+      <number>7351401</number>
+      <country>United States</country>
+      <approved>2008-04-01</approved>
+      <expires>2023-01-24</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8691185</number>
+      <country>United States</country>
+      <approved>2014-04-08</approved>
+      <expires>2023-01-24</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>7270800</number>
+      <country>United States</country>
+      <approved>2007-09-18</approved>
+      <expires>2027-04-14</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8236282</number>
+      <country>United States</country>
+      <approved>2012-08-07</approved>
+      <expires>2024-05-21</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8916131</number>
+      <country>United States</country>
+      <approved>2014-12-23</approved>
+      <expires>2028-09-16</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.16</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.35e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>2-[3-(¹⁸F)fluoro-4-(methylamino)phenyl]-1,3-benzothiazol-6-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>2-[3-(¹⁸F)fluoro-4-(methylamino)phenyl]-1,3-benzothiazol-6-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>273.32</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>273.060146823</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CNC1=C([18F])C=C(C=C1)C1=NC2=CC=C(O)C=C2S1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C14H11FN2OS</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C14H11FN2OS/c1-16-11-4-2-8(6-10(11)15)14-17-12-5-3-9(18)7-13(12)19-14/h2-7,16,18H,1H3/i15-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>VVECGOCJFKTUAX-HUYCHCPVSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>45.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>84.62</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>28.19</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>2.89</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>76611</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>15950376</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>310265064</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D10231</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>13092196</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Flutemetamol_(18F)</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL2042122</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/vizamyl-drug.htm</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>https://www.drugs.com/vizamyl.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0003392</id>
+      <name>Amyloid beta A4 protein</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>binder</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A18518</ref-id>
+            <pubmed-id>27031469</pubmed-id>
+            <citation>Beach TG, Thal DR, Zanette M, Smith A, Buckley C: Detection of Striatal Amyloid Plaques with [18F]flutemetamol: Validation with Postmortem Histopathology. J Alzheimers Dis. 2016 Mar 31;52(3):863-73. doi: 10.3233/JAD-150732.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P05067" source="Swiss-Prot">
+        <name>Amyloid beta A4 protein</name>
+        <general-function>Transition metal ion binding</general-function>
+        <specific-function>Functions as a cell surface receptor and performs physiological functions on the surface of neurons relevant to neurite growth, neuronal adhesion and axonogenesis. Involved in cell mobility and transcription regulation through protein-protein interactions. Can promote transcription activation through binding to APBB1-KAT5 and inhibits Notch signaling through interaction with Numb. Couples to apoptosis-inducing pathways such as those mediated by G(O) and JIP. Inhibits G(o) alpha ATPase activity (By similarity). Acts as a kinesin I membrane receptor, mediating the axonal transport of beta-secretase and presenilin 1. Involved in copper homeostasis/oxidative stress through copper ion reduction. In vitro, copper-metallated APP induces neuronal death directly or is potentiated through Cu(2+)-mediated low-density lipoprotein oxidation. Can regulate neurite outgrowth through binding to components of the extracellular matrix such as heparin and collagen I and IV. The splice isoforms that contain the BPTI domain possess protease inhibitor activity. Induces a AGER-dependent pathway that involves activation of p38 MAPK, resulting in internalization of amyloid-beta peptide and leading to mitochondrial dysfunction in cultured cortical neurons. Provides Cu(2+) ions for GPC1 which are required for release of nitric oxide (NO) and subsequent degradation of the heparan sulfate chains on GPC1.Beta-amyloid peptides are lipophilic metal chelators with metal-reducing activity. Bind transient metals such as copper, zinc and iron. In vitro, can reduce Cu(2+) and Fe(3+) to Cu(+) and Fe(2+), respectively. Beta-amyloid 42 is a more effective reductant than beta-amyloid 40. Beta-amyloid peptides bind to lipoproteins and apolipoproteins E and J in the CSF and to HDL particles in plasma, inhibiting metal-catalyzed oxidation of lipoproteins. Beta-APP42 may activate mononuclear phagocytes in the brain and elicit inflammatory responses. Promotes both tau aggregation and TPK II-mediated phosphorylation. Interaction with overexpressed HADH2 leads to oxidative stress and neurotoxicity. Also binds GPC1 in lipid rafts.Appicans elicit adhesion of neural cells to the extracellular matrix and may regulate neurite outgrowth in the brain.The gamma-CTF peptides as well as the caspase-cleaved peptides, including C31, are potent enhancers of neuronal apoptosis.N-APP binds TNFRSF21 triggering caspase activation and degeneration of both neuronal cell bodies (via caspase-3) and axons (via caspase-6).</specific-function>
+        <gene-name>APP</gene-name>
+        <locus/>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>700-723</transmembrane-regions>
+        <signal-regions>1-17</signal-regions>
+        <theoretical-pi>4.45</theoretical-pi>
+        <molecular-weight>86942.715</molecular-weight>
+        <chromosome-location>21</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:620</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>APP</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X06989</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P05067</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>A4</synonym>
+          <synonym>ABPP</synonym>
+          <synonym>AD1</synonym>
+          <synonym>Alzheimer disease amyloid protein</synonym>
+          <synonym>APP</synonym>
+          <synonym>APPI</synonym>
+          <synonym>Cerebral vascular amyloid peptide</synonym>
+          <synonym>CVAP</synonym>
+          <synonym>PN-II</synonym>
+          <synonym>PreA4</synonym>
+          <synonym>Protease nexin-II</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006619|Amyloid beta A4 protein
+MLPGLALLLLAAWTARALEVPTDGNAGLLAEPQIAMFCGRLNMHMNVQNGKWDSDPSGTK
+TCIDTKEGILQYCQEVYPELQITNVVEANQPVTIQNWCKRGRKQCKTHPHFVIPYRCLVG
+EFVSDALLVPDKCKFLHQERMDVCETHLHWHTVAKETCSEKSTNLHDYGMLLPCGIDKFR
+GVEFVCCPLAEESDNVDSADAEEDDSDVWWGGADTDYADGSEDKVVEVAEEEEVAEVEEE
+EADDDEDDEDGDEVEEEAEEPYEEATERTTSIATTTTTTTESVEEVVREVCSEQAETGPC
+RAMISRWYFDVTEGKCAPFFYGGCGGNRNNFDTEEYCMAVCGSAMSQSLLKTTQEPLARD
+PVKLPTTAASTPDAVDKYLETPGDENEHAHFQKAKERLEAKHRERMSQVMREWEEAERQA
+KNLPKADKKAVIQHFQEKVESLEQEAANERQQLVETHMARVEAMLNDRRRLALENYITAL
+QAVPPRPRHVFNMLKKYVRAEQKDRQHTLKHFEHVRMVDPKKAAQIRSQVMTHLRVIYER
+MNQSLSLLYNVPAVAEEIQDEVDELLQKEQNYSDDVLANMISEPRISYGNDALMPSLTET
+KTTVELLPVNGEFSLDDLQPWHSFGADSVPANTENEVEPVDARPAADRGLTTRPGSGLTN
+IKTEEISEVKMDAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIATVIVITL
+VMLKKKQYTSIHHGVVEVDAAVTPEERHLSKMQQNGYENPTYKFFEQMQN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019416|Amyloid beta A4 protein (APP)
+ATGCTGCCCGGTTTGGCACTGCTCCTGCTGGCCGCCTGGACGGCTCGGGCGCTGGAGGTA
+CCCACTGATGGTAATGCTGGCCTGCTGGCTGAACCCCAGATTGCCATGTTCTGTGGCAGA
+CTGAACATGCACATGAATGTCCAGAATGGGAAGTGGGATTCAGATCCATCAGGGACCAAA
+ACCTGCATTGATACCAAGGAAGGCATCCTGCAGTATTGCCAAGAAGTCTACCCTGAACTG
+CAGATCACCAATGTGGTAGAAGCCAACCAACCAGTGACCATCCAGAACTGGTGCAAGCGG
+GGCCGCAAGCAGTGCAAGACCCATCCCCACTTTGTGATTCCCTACCGCTGCTTAGTTGGT
+GAGTTTGTAAGTGATGCCCTTCTCGTTCCTGACAAGTGCAAATTCTTACACCAGGAGAGG
+ATGGATGTTTGCGAAACTCATCTTCACTGGCACACCGTCGCCAAAGAGACATGCAGTGAG
+AAGAGTACCAACTTGCATGACTACGGCATGTTGCTGCCCTGCGGAATTGACAAGTTCCGA
+GGGGTAGAGTTTGTGTGTTGCCCACTGGCTGAAGAAAGTGACAATGTGGATTCTGCTGAT
+GCGGAGGAGGATGACTCGGATGTCTGGTGGGGCGGAGCAGACACAGACTATGCAGATGGG
+AGTGAAGACAAAGTAGTAGAAGTAGCAGAGGAGGAAGAAGTGGCTGAGGTGGAAGAAGAA
+GAAGCCGATGATGACGAGGACGATGAGGATGGTGATGAGGTAGAGGAAGAGGCTGAGGAA
+CCCTACGAAGAAGCCACAGAGAGAACCACCAGCATTGCCACCACCACCACCACCACCACA
+GAGTCTGTGGAAGAGGTGGTTCGAGAGGTGTGCTCTGAACAAGCCGAGACGGGGCCGTGC
+CGAGCAATGATCTCCCGCTGGTACTTTGATGTGACTGAAGGGAAGTGTGCCCCATTCTTT
+TACGGCGGATGTGGCGGCAACCGGAACAACTTTGACACAGAAGAGTACTGCATGGCCGTG
+TGTGGCAGCGCCATGTCCCAAAGTTTACTCAAGACTACCCAGGAACCTCTTGCCCGAGAT
+CCTGTTAAACTTCCTACAACAGCAGCCAGTACCCCTGATGCCGTTGACAAGTATCTCGAG
+ACACCTGGGGATGAGAATGAACATGCCCATTTCCAGAAAGCCAAAGAGAGGCTTGAGGCC
+AAGCACCGAGAGAGAATGTCCCAGGTCATGAGAGAATGGGAAGAGGCAGAACGTCAAGCA
+AAGAACTTGCCTAAAGCTGATAAGAAGGCAGTTATCCAGCATTTCCAGGAGAAAGTGGAA
+TCTTTGGAACAGGAAGCAGCCAACGAGAGACAGCAGCTGGTGGAGACACACATGGCCAGA
+GTGGAAGCCATGCTCAATGACCGCCGCCGCCTGGCCCTGGAGAACTACATCACCGCTCTG
+CAGGCTGTTCCTCCTCGGCCTCGTCACGTGTTCAATATGCTAAAGAAGTATGTCCGCGCA
+GAACAGAAGGACAGACAGCACACCCTAAAGCATTTCGAGCATGTGCGCATGGTGGATCCC
+AAGAAAGCCGCTCAGATCCGGTCCCAGGTTATGACACACCTCCGTGTGATTTATGAGCGC
+ATGAATCAGTCTCTCTCCCTGCTCTACAACGTGCCTGCAGTGGCCGAGGAGATTCAGGAT
+GAAGTTGATGAGCTGCTTCAGAAAGAGCAAAACTATTCAGATGACGTCTTGGCCAACATG
+ATTAGTGAACCAAGGATCAGTTACGGAAACGATGCTCTCATGCCATCTTTGACCGAAACG
+AAAACCACCGTGGAGCTCCTTCCCGTGAATGGAGAGTTCAGCCTGGACGATCTCCAGCCG
+TGGCATTCTTTTGGGGCTGACTCTGTGCCAGCCAACACAGAAAACGAAGTTGAGCCTGTT
+GATGCCCGCCCTGCTGCCGACCGAGGACTGACCACTCGACCAGGTTCTGGGTTGACAAAT
+ATCAAGACGGAGGAGATCTCTGAAGTGAAGATGGATGCAGAATTCCGACATGACTCAGGA
+TATGAAGTTCATCATCAAAAATTGGTGTTCTTTGCAGAAGATGTGGGTTCAAACAAAGGT
+GCAATCATTGGACTCATGGTGGGCGGTGTTGTCATAGCGACAGTGATCGTCATCACCTTG
+GTGATGCTGAAGAAGAAACAGTACACATCCATTCATCATGGTGTGGTGGAGGTTGACGCC
+GCTGTCACCCCAGAGGAGCGCCACCTGTCCAAGATGCAGCAGAACGGCTACGAAAATCCA
+ACCTACAAGTTCTTTGAGCAGATGCAGAACTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00014</identifier>
+            <name>Kunitz_BPTI</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02177</identifier>
+            <name>APP_N</name>
+          </pfam>
+          <pfam>
+            <identifier>PF03494</identifier>
+            <name>Beta-APP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10515</identifier>
+            <name>APP_amyloid</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12924</identifier>
+            <name>APP_Cu_bd</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12925</identifier>
+            <name>APP_E2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>coated pit</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic shaft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear envelope lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet alpha granule lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>terminal bouton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>trans-Golgi network membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heparin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidase activator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>PTB domain binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase inhibitor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transition metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antibacterial humoral response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antifungal humoral response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon cargo transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon midline choice point recognition</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axonogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular copper ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>collateral sprouting in absence of injury</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-negative bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>defense response to Gram-positive bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dendrite development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ionotropic glutamate receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mating behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mRNA polyadenylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron projection development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuron remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Notch signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-Golgi vesicle-mediated transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of epidermal growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of multicellular organism growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synapse structure or activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to yeast</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

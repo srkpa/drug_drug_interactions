@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05092</drugbank-id>
+  <name>CDP323</name>
+  <description>CDP323 is an antagonist of the _vascular cell adhesion molecule 1_ (VCAM-1) binding to alpha4-integrins (other adhesion molecules), a process thought to be implicated in the pathophysiology of Multiple Sclerosis (MS). It is considered a small-molecule prodrug. CDP323 was originally developed by the British biopharmaceutical company Celltech plc. (now UCB S.A.) and is a putative new drug for oral treatment of multiple sclerosis.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in multiple sclerosis.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>CDP323 is believed to stop immune cells from migrating from blood vessels walls to reach other tissues, including tissues in the central nervous system, where they can cause encephalomyelitis (or inflammation of the white matter in the brain and spinal cord). This inhibition of cell migration prevents immunogenic reactions that lead to tissue damage, which is often a consequence of uncontrolled cell migration.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids</category>
+      <mesh-id>D000596</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Aromatic</category>
+      <mesh-id>D024322</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Cyclic</category>
+      <mesh-id>D000598</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Essential</category>
+      <mesh-id>D000601</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Integrin alpha4</category>
+      <mesh-id>D039441</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909941</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>CDP323</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000590</id>
+      <name>Integrin alpha-4</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P13612" source="Swiss-Prot">
+        <name>Integrin alpha-4</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Integrins alpha-4/beta-1 (VLA-4) and alpha-4/beta-7 are receptors for fibronectin. They recognize one or more domains within the alternatively spliced CS-1 and CS-5 regions of fibronectin. They are also receptors for VCAM1. Integrin alpha-4/beta-1 recognizes the sequence Q-I-D-S in VCAM1. Integrin alpha-4/beta-7 is also a receptor for MADCAM1. It recognizes the sequence L-D-T in MADCAM1. On activated endothelial cells integrin VLA-4 triggers homotypic aggregation for most VLA-4-positive leukocyte cell lines. It may also participate in cytolytic T-cell interactions with target cells.</specific-function>
+        <gene-name>ITGA4</gene-name>
+        <locus>2q31.3</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>978-1001</transmembrane-regions>
+        <signal-regions>1-33</signal-regions>
+        <theoretical-pi>6.32</theoretical-pi>
+        <molecular-weight>114898.745</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6140</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ITGA4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X16983</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>33946</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P13612</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ITA4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CD49 antigen-like family member D</synonym>
+          <synonym>CD49D</synonym>
+          <synonym>Integrin alpha-IV</synonym>
+          <synonym>VLA-4 subunit alpha</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037051|Integrin alpha-4
+MAWEARREPGPRRAAVRETVMLLLCLGVPTGRPYNVDTESALLYQGPHNTLFGYSVVLHS
+HGANRWLLVGAPTANWLANASVINPGAIYRCRIGKNPGQTCEQLQLGSPNGEPCGKTCLE
+ERDNQWLGVTLSRQPGENGSIVTCGHRWKNIFYIKNENKLPTGGCYGVPPDLRTELSKRI
+APCYQDYVKKFGENFASCQAGISSFYTKDLIVMGAPGSSYWTGSLFVYNITTNKYKAFLD
+KQNQVKFGSYLGYSVGAGHFRSQHTTEVVGGAPQHEQIGKAYIFSIDEKELNILHEMKGK
+KLGSYFGASVCAVDLNADGFSDLLVGAPMQSTIREEGRVFVYINSGSGAVMNAMETNLVG
+SDKYAARFGESIVNLGDIDNDGFEDVAIGAPQEDDLQGAIYIYNGRADGISSTFSQRIEG
+LQISKSLSMFGQSISGQIDADNNGYVDVAVGAFRSDSAVLLRTRPVVIVDASLSHPESVN
+RTKFDCVENGWPSVCIDLTLCFSYKGKEVPGYIVLFYNMSLDVNRKAESPPRFYFSSNGT
+SDVITGSIQVSSREANCRTHQAFMRKDVRDILTPIQIEAAYHLGPHVISKRSTEEFPPLQ
+PILQQKKEKDIMKKTINFARFCAHENCSADLQVSAKIGFLKPHENKTYLAVGSMKTLMLN
+VSLFNAGDDAYETTLHVKLPVGLYFIKILELEEKQINCEVTDNSGVVQLDCSIGYIYVDH
+LSRIDISFLLDVSSLSRAEEDLSITVHATCENEEEMDNLKHSRVTVAIPLKYEVKLTVHG
+FVNPTSFVYGSNDENEPETCMVEKMNLTFHVINTGNSMAPNVSVEIMVPNSFSPQTDKLF
+NILDVQTTTGECHFENYQRVCALEQQKSAMQTLKGIVRFLSKTDKRLLYCIKADPHCLNF
+LCNFGKMESGKEASVHIQLEGRPSILEMDETSALKFEIRATGFPEPNPRVIELNKDENVA
+HVLLEGLHHQRPKRYFTIVIISSSLLLGLIVLLLISYVMWKAGFFKRQYKSILQEENRRD
+SWSYINSKSNDD</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010411|Integrin alpha-4 (ITGA4)
+ATGGCTTGGGAAGCGAGGCGCGAACCCGGCCCCCGAAGGGCCGCCGTCCGGGAGACGGTG
+ATGCTGTTGCTGTGCCTGGGGGTCCCGACCGGCCGCCCCTACAACGTGGACACTGAGAGC
+GCGCTGCTTTACCAGGGCCCCCACAACACGCTGTTCGGCTACTCGGTCGTGCTGCACAGC
+CACGGGGCGAACCGATGGCTCCTAGTGGGTGCGCCCACTGCCAACTGGCTCGCCAACGCT
+TCAGTGATCAATCCCGGGGCGATTTACAGATGCAGGATCGGAAAGAATCCCGGCCAGACG
+TGCGAACAGCTCCAGCTGGGTAGCCCTAATGGAGAACCTTGTGGAAAGACTTGTTTGGAA
+GAGAGAGACAATCAGTGGTTGGGGGTCACACTTTCCAGACAGCCAGGAGAAAATGGATCC
+ATCGTGACTTGTGGGCATAGATGGAAAAATATATTTTACATAAAGAATGAAAATAAGCTC
+CCCACTGGTGGTTGCTATGGAGTGCCCCCTGATTTACGAACAGAACTGAGTAAAAGAATA
+GCTCCGTGTTATCAAGATTATGTGAAAAAATTTGGAGAAAATTTTGCATCATGTCAAGCT
+GGAATATCCAGTTTTTACACAAAGGATTTAATTGTGATGGGGGCCCCAGGATCATCTTAC
+TGGACTGGCTCTCTTTTTGTCTACAATATAACTACAAATAAATACAAGGCTTTTTTAGAC
+AAACAAAATCAAGTAAAATTTGGAAGTTATTTAGGATATTCAGTCGGAGCTGGTCATTTT
+CGGAGCCAGCATACTACCGAAGTAGTCGGAGGAGCTCCTCAACATGAGCAGATTGGTAAG
+GCATATATATTCAGCATTGATGAAAAAGAACTAAATATCTTACATGAAATGAAAGGTAAA
+AAGCTTGGATCGTACTTTGGAGCTTCTGTCTGTGCTGTGGACCTCAATGCAGATGGCTTC
+TCAGATCTGCTCGTGGGAGCACCCATGCAGAGCACCATCAGAGAGGAAGGAAGAGTGTTT
+GTGTACATCAACTCTGGCTCGGGAGCAGTAATGAATGCAATGGAAACAAACCTCGTTGGA
+AGTGACAAATATGCTGCAAGATTTGGGGAATCTATAGTTAATCTTGGCGACATTGACAAT
+GATGGCTTTGAAGATGTTGCTATCGGAGCTCCACAAGAAGATGACTTGCAAGGTGCTATT
+TATATTTACAATGGCCGTGCAGATGGGATCTCGTCAACCTTCTCACAGAGAATTGAAGGA
+CTTCAGATCAGCAAATCGTTAAGTATGTTTGGACAGTCTATATCAGGACAAATTGATGCA
+GATAATAATGGCTATGTAGATGTAGCAGTTGGTGCTTTTCGGTCTGATTCTGCTGTCTTG
+CTAAGGACAAGACCTGTAGTAATTGTTGACGCTTCTTTAAGCCACCCTGAGTCAGTAAAT
+AGAACGAAATTTGACTGTGTTGAAAATGGATGGCCTTCTGTGTGCATAGATCTAACACTT
+TGTTTCTCATATAAGGGCAAGGAAGTTCCAGGTTACATTGTTTTGTTTTATAACATGAGT
+TTGGATGTGAACAGAAAGGCAGAGTCTCCACCAAGATTCTATTTCTCTTCTAATGGAACT
+TCTGACGTGATTACAGGAAGCATACAGGTGTCCAGCAGAGAAGCTAACTGTAGAACACAT
+CAAGCATTTATGCGGAAAGATGTGCGGGACATCCTCACCCCAATTCAGATTGAAGCTGCT
+TACCACCTTGGTCCTCATGTCATCAGTAAACGAAGTACAGAGGAATTCCCACCACTTCAG
+CCAATTCTTCAGCAGAAGAAAGAAAAAGACATAATGAAAAAAACAATAAACTTTGCAAGG
+TTTTGTGCCCATGAAAATTGTTCTGCTGATTTACAGGTTTCTGCAAAGATTGGGTTTTTG
+AAGCCCCATGAAAATAAAACATATCTTGCTGTTGGGAGTATGAAGACATTGATGTTGAAT
+GTGTCCTTGTTTAATGCTGGAGATGATGCATATGAAACGACTCTACATGTCAAACTACCC
+GTGGGTCTTTATTTCATTAAGATTTTAGAGCTGGAAGAGAAGCAAATAAACTGTGAAGTC
+ACAGATAACTCTGGCGTGGTACAACTTGACTGCAGTATTGGCTATATATATGTAGATCAT
+CTCTCAAGGATAGATATTAGCTTTCTCCTGGATGTGAGCTCACTCAGCAGAGCGGAAGAG
+GACCTCAGTATCACAGTGCATGCTACCTGTGAAAATGAAGAGGAAATGGACAATCTAAAG
+CACAGCAGAGTGACTGTAGCAATACCTTTAAAATATGAGGTTAAGCTGACTGTTCATGGG
+TTTGTAAACCCAACTTCATTTGTGTATGGATCAAATGATGAAAATGAGCCTGAAACGTGC
+ATGGTGGAGAAAATGAACTTAACTTTCCATGTTATCAACACTGGCAATAGTATGGCTCCC
+AATGTTAGTGTGGAAATAATGGTACCAAATTCTTTTAGCCCCCAAACTGATAAGCTGTTC
+AACATTTTGGATGTCCAGACTACTACTGGAGAATGCCACTTTGAAAATTATCAAAGAGTG
+TGTGCATTAGAGCAGCAAAAGAGTGCAATGCAGACCTTGAAAGGCATAGTCCGGTTCTTG
+TCCAAGACTGATAAGAGGCTATTGTACTGCATAAAAGCTGATCCACATTGTTTAAATTTC
+TTGTGTAATTTTGGGAAAATGGAAAGTGGAAAAGAAGCCAGTGTTCATATCCAACTGGAA
+GGCCGGCCATCCATTTTAGAAATGGATGAGACTTCAGCACTCAAGTTTGAAATAAGAGCA
+ACAGGTTTTCCAGAGCCAAATCCAAGAGTAATTGAACTAAACAAGGATGAGAATGTTGCG
+CATGTTCTACTGGAAGGACTACATCATCAAAGACCCAAACGTTATTTCACCATAGTGATT
+ATTTCAAGTAGCTTGCTACTTGGACTTATTGTACTTCTGTTGATCTCATATGTTATGTGG
+AAGGCTGGCTTCTTTAAAAGACAATACAAATCTATCCTACAAGAAGAAAACAGAAGAGAC
+AGTTGGAGTTATATCAACAGTAAAAGCAATGATGATTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01839</identifier>
+            <name>FG-GAP</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08441</identifier>
+            <name>Integrin_alpha2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell-cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>focal adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integrin alpha4-beta7 complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cell adhesion molecule binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood vessel remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-matrix adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-matrix adhesion involved in ameboidal cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to cytokine stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chorio-allantoic fusion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>diapedesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endodermal cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>face development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heterotypic cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>import into cell</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>integrin-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte tethering or rolling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of leukocyte tethering or rolling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of T cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor clustering</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substrate adhesion-dependent cell spreading</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell migration</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

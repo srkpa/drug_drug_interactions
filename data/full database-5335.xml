@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05895</drugbank-id>
+  <name>HGS-TR2J</name>
+  <description>HGS-TR2J is a novel agonistic human monoclonal antibody to TRAIL Receptor 2, in patients with advanced solid malignancies. It is developed by Human Genome Sciences, Inc and is under Phase I of clinical trial.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in solid tumors.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>HGS-TR2J binds TRAIL Receptor 2 with high affinity, induces apoptosis and has anti-tumor activity, both as a single agent and in combination with chemotherapy. HGS-TR2J mimics the activity of native TRAIL (tumor necrosis factor-related apoptosis-inducing ligand) and, thus, is considered an agonistic antibody. Numerous nonclinical studies have shown that cell lines derived from a broad array of solid and hematological human tumors, including lung, colon, breast, multiple myeloma, prostate and pancreas, are sensitive to killing by apoptosis (programmed cell death) induced by native TRAIL or by agonistic antibodies to TRAIL Receptors 1 and 2.2-24.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910300</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003433</id>
+      <name>Tumor necrosis factor receptor superfamily member 10B</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O14763" source="Swiss-Prot">
+        <name>Tumor necrosis factor receptor superfamily member 10B</name>
+        <general-function>Tumor necrosis factor-activated receptor activity</general-function>
+        <specific-function>Receptor for the cytotoxic ligand TNFSF10/TRAIL. The adapter molecule FADD recruits caspase-8 to the activated receptor. The resulting death-inducing signaling complex (DISC) performs caspase-8 proteolytic activation which initiates the subsequent cascade of caspases (aspartate-specific cysteine proteases) mediating apoptosis. Promotes the activation of NF-kappa-B. Essential for ER stress-induced apoptosis.</specific-function>
+        <gene-name>TNFRSF10B</gene-name>
+        <locus/>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>211-231</transmembrane-regions>
+        <signal-regions>1-55</signal-regions>
+        <theoretical-pi>5.25</theoretical-pi>
+        <molecular-weight>47877.885</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11905</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>TNFRSF10B</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF016849</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O14763</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TR10B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Death receptor 5</synonym>
+          <synonym>DR5</synonym>
+          <synonym>KILLER</synonym>
+          <synonym>TNF-related apoptosis-inducing ligand receptor 2</synonym>
+          <synonym>TRAIL receptor 2</synonym>
+          <synonym>TRAIL-R2</synonym>
+          <synonym>TRAILR2</synonym>
+          <synonym>TRICK2</synonym>
+          <synonym>ZTNFR9</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037236|Tumor necrosis factor receptor superfamily member 10B
+MEQRGQNAPAASGARKRHGPGPREARGARPGPRVPKTLVLVVAAVLLLVSAESALITQQD
+LAPQQRAAPQQKRSSPSEGLCPPGHHISEDGRDCISCKYGQDYSTHWNDLLFCLRCTRCD
+SGEVELSPCTTTRNTVCQCEEGTFREEDSPEMCRKCRTGCPRGMVKVGDCTPWSDIECVH
+KESGTKHSGEVPAVEETVTSSPGTPASPCSLSGIIIGVTVAAVVLIVAVFVCKSLLWKKV
+LPYLKGICSGGGGDPERVDRSSQRPGAEDNVLNEIVSILQPTQVPEQEMEVQEPAEPTGV
+NMLSPGESEHLLEPAEAERSQRRRLLVPANEGDPTETLRQCFDDFADLVPFDSWEPLMRK
+LGLMDNEIKVAKAEAAGHRDTLYTMLIKWVNKTGRDASVHTLLDALETLGERLAKQKIED
+HLLSSGKFMYLEGNADSAMS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012403|Tumor necrosis factor receptor superfamily member 10B (TNFRSF10B)
+ATGGAACAACGGGGACAGAACGCCCCGGCCGCTTCGGGGGCCCGGAAAAGGCACGGCCCA
+GGACCCAGGGAGGCGCGGGGAGCCAGGCCTGGGCCCCGGGTCCCCAAGACCCTTGTGCTC
+GTTGTCGCCGCGGTCCTGCTGTTGGTCTCAGCTGAGTCTGCTCTGATCACCCAACAAGAC
+CTAGCTCCCCAGCAGAGAGCGGCCCCACAACAAAAGAGGTCCAGCCCCTCAGAGGGATTG
+TGTCCACCTGGACACCATATCTCAGAAGACGGTAGAGATTGCATCTCCTGCAAATATGGA
+CAGGACTATAGCACTCACTGGAATGACCTCCTTTTCTGCTTGCGCTGCACCAGGTGTGAT
+TCAGGTGAAGTGGAGCTAAGTCCCTGCACCACGACCAGAAACACAGTGTGTCAGTGCGAA
+GAAGGCACCTTCCGGGAAGAAGATTCTCCTGAGATGTGCCGGAAGTGCCGCACAGGGTGT
+CCCAGAGGGATGGTCAAGGTCGGTGATTGTACACCCTGGAGTGACATCGAATGTGTCCAC
+AAAGAATCAGGTACAAAGCACAGTGGGGAAGTCCCAGCTGTGGAGGAGACGGTGACCTCC
+AGCCCAGGGACTCCTGCCTCTCCCTGTTCTCTCTCAGGCATCATCATAGGAGTCACAGTT
+GCAGCCGTAGTCTTGATTGTGGCTGTGTTTGTTTGCAAGTCTTTACTGTGGAAGAAAGTC
+CTTCCTTACCTGAAAGGCATCTGCTCAGGTGGTGGTGGGGACCCTGAGCGTGTGGACAGA
+AGCTCACAACGACCTGGGGCTGAGGACAATGTCCTCAATGAGATCGTGAGTATCTTGCAG
+CCCACCCAGGTCCCTGAGCAGGAAATGGAAGTCCAGGAGCCAGCAGAGCCAACAGGTGTC
+AACATGTTGTCCCCCGGGGAGTCAGAGCATCTGCTGGAACCGGCAGAAGCTGAAAGGTCT
+CAGAGGAGGAGGCTGCTGGTTCCAGCAAATGAAGGTGATCCCACTGAGACTCTGAGACAG
+TGCTTCGATGACTTTGCAGACTTGGTGCCCTTTGACTCCTGGGAGCCGCTCATGAGGAAG
+TTGGGCCTCATGGACAATGAGATAAAGGTGGCTAAAGCTGAGGCAGCGGGCCACAGGGAC
+ACCTTGTACACGATGCTGATAAAGTGGGTCAACAAAACCGGGCGAGATGCCTCTGTCCAC
+ACCCTGCTGGATGCCTTGGAGACGCTGGGAGAGAGACTTGCCAAGCAGAAGATTGAGGAC
+CACTTGTTGAGCTCTGGAAAGTTCATGTATCTAGAAGGTAATGCAGACTCTGCCATGTCC
+TAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00020</identifier>
+            <name>TNFR_c6</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00531</identifier>
+            <name>Death</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>TRAIL binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tumor necrosis factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of cysteine-type endopeptidase activity involved in apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of NF-kappaB-inducing kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to mechanical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extrinsic apoptotic signaling pathway via death domain receptors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intrinsic apoptotic signaling pathway in response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>multicellular organismal development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>necroptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of I-kappaB kinase/NF-kappaB signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>programmed necrotic cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of extrinsic apoptotic signaling pathway via death domain receptors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of necrotic cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to endoplasmic reticulum stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tumor necrosis factor-mediated signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

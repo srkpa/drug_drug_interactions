@@ -203,7 +203,7 @@ class DDIdataset(Dataset):
                  build_graph=False, side_effects_idx_dict=None, graph_drugs_mapping=None, gene_net=None,
                  drug_gene_net=None, decagon=False,
                  drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward", switch='ml',
-                 negative_sampling=False, read_as_triplets=False, criteria=0.5):
+                 negative_sampling=False, read_as_triplets=False, criteria=0.5, density=False):
 
         # raise an exception if side effect is None
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
@@ -221,6 +221,7 @@ class DDIdataset(Dataset):
         self.decagon = decagon
         self.has_purpose = purpose
         self.neg_sampling = negative_sampling
+        self.sampler = density
         self.side_effects_idx_dict = side_effects_idx_dict
         self.use_binary_labels = (switch == "binary") and (side_effects_idx_dict is not None) and len(self.samples) > 0
         self.testing = switch == "binary" and (len(self.samples) > 0) and read_as_triplets
@@ -235,6 +236,11 @@ class DDIdataset(Dataset):
             self.prepare_test_feeding_insts()
         if self.has_graph:
             self.build_graph()
+        if self.sampler:
+            print(self.labels_vectorizer.classes_)
+            self.sample_pairs()
+
+        exit()
 
     def __len__(self):
         return len(self.samples) if not self.testing else len(self.samples) * len(
@@ -242,7 +248,7 @@ class DDIdataset(Dataset):
 
     def __getitem__(self, item):
         if self.use_binary_labels:
-            self.__get_binary_inst(item)
+            return self.__get_binary_inst(item)
         drug1_id, drug2_id, label = self.samples[item]
         target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
         if self.graph_nodes_mapping is None:
@@ -279,10 +285,11 @@ class DDIdataset(Dataset):
                     drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
                     drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
                     target = to_tensor(np.expand_dims(target, axis=0), self.gpu)
-            res = ((drug1, drug2), target)
+            res = ((drug1, drug2), to_tensor(target, self.gpu))  # C,est ici qui faut mettre cela sur tensor
         else:
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
+
         if self.has_purpose == "autoencoder":
             res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
         return res
@@ -297,7 +304,6 @@ class DDIdataset(Dataset):
                         [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
                     drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
                     drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
-
                 else:
                     drug1 = to_tensor(drug1, self.gpu)
                     drug2 = to_tensor(drug2, self.gpu)
@@ -344,7 +350,16 @@ class DDIdataset(Dataset):
         self.targets = np.array([1] * len(pos_insts) + [0] * len(neg_insts))
         print("target shape", self.targets.shape)
 
-    def get_aux_input_dim(self):
+    #
+    def sample_pairs(self):
+        n_classes = len(
+            self.labels_vectorizer.classes_)
+        samples = list(zip(*self.samples))[2]
+        p = [len(labels) for i, labels in enumerate(samples) if len(labels) >= 100]
+        print(max(p), len(p), len(samples))
+        exit()
+
+    def set_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
         offside_dim = 2 * list(self.drugse.values())[0].shape[0] if self.drugse else 0
         target_dim = 2 * list(self.drugs_targets.values())[0].shape[0] if self.drugs_targets else 0
@@ -425,7 +440,7 @@ def _rank(data, v=100):
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_clusters=False, use_as_filter=None, use_targets=False, use_side_effect=False,
-                        use_pharm=False, n_folds=0, test_fold=0, label='ml', debug=False):
+                        use_pharm=False, n_folds=0, test_fold=0, label='ml', debug=False, density=False):
     data, drugs2smiles = load_data(input_path, dataset_name)
     load_data(input_path, dataset_name)
     drug_offsides, drug2targets, drugs2pharm = {}, {}, {}
@@ -478,6 +493,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     mbl = MultiLabelBinarizer().fit(labels)
     labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
 
+    side_effect_dict = pd.read_csv("/home/rogia/Bureau/side_effects_dict.csv", sep=",")
+    print(set(side_effect_dict["side effect"].values) - set(labels_mapping.keys())  )
+    exit()
+
     if decagon:
         ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"
         gene_gene_ass = pd.read_csv(ppi_path)
@@ -514,13 +533,13 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         else:
             train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                        drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                                       read_as_triplets=False)
+                                       read_as_triplets=True, density=density)
             valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                        drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                                       read_as_triplets=False)
+                                       read_as_triplets=True, density=density)
             test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                       drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                                      read_as_triplets=True)
+                                      read_as_triplets=True, density=density)
             print(train_dataset.nb_labels)
             unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
                                         drugstargets=drug2targets, side_effects_idx_dict=labels_mapping, switch=label,

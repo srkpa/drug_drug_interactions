@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2015-11-26" updated="2019-12-02">
+  <drugbank-id primary="true">DB09334</drugbank-id>
+  <name>Seractide acetate</name>
+  <description>Seractide acetate is the acetate salt of full length human corticotropin.</description>
+  <cas-number>39295-97-1</cas-number>
+  <unii>DI9132OQ3R</unii>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences>
+    <sequence format="FASTA">&gt; Corticotropin-lipotropin precursor
+MPRSCCSRSGALLLALLLQASMEVRGWCLESSQCQDLTTESNLLECIRACKPDLSAETPM
+FPGNGDEQPLTENPRKYVMGHFRWDRFGRRNSSSSGSSGAGQKREDVSAGEDCGPLPEGG
+PEPRSDGAKPGPREGKRSYSMEHFRWGKPVGKKRRPVKVYPNGAEDESAEAFPLEFKREL
+TGQRLREGDGPDGPADDGAGAQADLEHSLLVAAEKKDEGPYRMEHFRWGSPPKDKRYGGF
+MTSEKSQTPLVTLFKNAIIKNAYKKGE</sequence>
+  </sequences>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201489</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000848</id>
+      <name>Adrenocorticotropic hormone receptor</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>agonist</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="Q01718" source="Swiss-Prot">
+        <name>Adrenocorticotropic hormone receptor</name>
+        <general-function>Melanocortin receptor activity</general-function>
+        <specific-function>Receptor for corticotropin (ACTH). This receptor is mediated by G proteins (G(s)) which activate adenylate cyclase (cAMP).</specific-function>
+        <gene-name>MC2R</gene-name>
+        <locus>18p11.2</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>24-49
+59-79
+105-126
+148-168
+181-199
+218-244
+257-278</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.82</theoretical-pi>
+        <molecular-weight>33926.28</molecular-weight>
+        <chromosome-location>18</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6930</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MC2R</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X65633</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28344</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>283</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>283</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q01718</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACTHR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ACTH receptor</synonym>
+          <synonym>ACTHR</synonym>
+          <synonym>Adrenocorticotropin receptor</synonym>
+          <synonym>MC2-R</synonym>
+          <synonym>Melanocortin receptor 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010598|Adrenocorticotropic hormone receptor
+MKHIINSYENINNTARNNSDCPRVVLPEEIFFTISIVGVLENLIVLLAVFKNKNLQAPMY
+FFICSLAISDMLGSLYKILENILIILRNMGYLKPRGSFETTADDIIDSLFVLSLLGSIFS
+LSVIAADRYITIFHALRYHSIVTMRRTVVVLTVIWTFCTGTGITMVIFSHHVPTVITFTS
+LFPLMLVFILCLYVHMFLLARSHTRKISTLPRANMKGAITLTILLGVFIFCWAPFVLHVL
+LMTFCPSNPYCACYMSLFQVNGMLIMCNAVIDPFIYAFRSPELRDAFKKMIFCSRYW</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010599|Adrenocorticotropic hormone receptor (MC2R)
+ATGAAGCACATTATCAACTCGTATGAAAACATCAACAACACAGCAAGAAATAATTCCGAC
+TGTCCTCGTGTGGTTTTGCCGGAGGAGATATTTTTCACAATTTCCATTGTTGGAGTTTTG
+GAGAATCTGATCGTCCTGCTGGCTGTGTTCAAGAATAAGAATCTCCAGGCACCCATGTAC
+TTTTTCATCTGTAGCTTGGCCATATCTGATATGCTGGGCAGCCTATATAAGATCTTGGAA
+AATATCCTGATCATATTGAGAAACATGGGCTATCTCAAGCCACGTGGCAGTTTTGAAACC
+ACAGCCGATGACATCATCGACTCCCTGTTTGTCCTCTCCCTGCTTGGCTCCATCTTCAGC
+CTGTCTGTGATTGCTGCGGACCGCTACATCACCATCTTCCACGCACTGCGGTACCACAGC
+ATCGTGACCATGCGCCGCACTGTGGTGGTGCTTACGGTCATCTGGACGTTCTGCACGGGG
+ACTGGCATCACCATGGTGATCTTCTCCCATCATGTGCCCACAGTGATCACCTTCACGTCG
+CTGTTCCCGCTGATGCTGGTCTTCATCCTGTGCCTCTATGTGCACATGTTCCTGCTGGCT
+CGATCCCACACCAGGAAGATCTCCACCCTCCCCAGAGCCAACATGAAAGGGGCCATCACA
+CTGACCATCCTGCTCGGGGTCTTCATCTTCTGCTGGGCCCCCTTTGTGCTTCATGTCCTC
+TTGATGACATTCTGCCCAAGTAACCCCTACTGCGCCTGCTACATGTCTCTCTTCCAGGTG
+AACGGCATGTTGATCATGTGCAATGCCGTCATTGACCCCTTCATATATGCCTTCCGGAGC
+CCAGAGCTCAGGGACGCATTCAAAAAGATGATCTTCTGCAGCAGGTACTGGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>corticotropin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>melanocortin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuropeptide signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>placenta development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cAMP biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

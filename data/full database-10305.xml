@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB12328</drugbank-id>
+  <name>Cantharidin</name>
+  <description>Cantharidin is a naturally occurring odorless, colorless fatty substance of the terpenoid class that is produced as an oral fluid in the alimentary canal of the male blister beetle [A32891, A32892]. For its natural purpose, the male blister beetle secretes and presents the cantharidin to a female beetle as a copulatory gift during mating. Post-copulation, the female beetle places the cantharidin over her eggs as protection against any potential predators.&#13;
+&#13;
+Available synthetically since the 1950s, topical applications of cantharidin have been used predominantly as a treatment for cutaneous warts since that time [A32891, A32892]. In 1962 however, marketers of cantharidin failed to produce sufficient efficacy data, resulting in the FDA revision of approval of cantharidin [A32892].&#13;
+&#13;
+Today, topcial cantharidin products do not necessarily demonstrate any particular better effectiveness at treating topical skin conditions like warts than other commonly available vesicant and/or keratolytics although various studies have also investigated the possibility of using cantharidin as an inflammatory model or in cancer treatment [A32892]. Regardless, the onging lack of FDA approval is likely related to certain toxic effects that were observed following oral ingestion, which includes ulceration of the gastrointestinal and genitourinary tracts, along with electrolyte and renal function disturbance in humans and animals [A32891].</description>
+  <cas-number>56-25-7</cas-number>
+  <unii>IGL471WQ8P</unii>
+  <average-mass>196.202</average-mass>
+  <monoisotopic-mass>196.073558866</monoisotopic-mass>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A32891</ref-id>
+        <pubmed-id>27319954</pubmed-id>
+        <citation>Al-Dawsari NA, Masterpol KS: Cantharidin in Dermatology. Skinmed. 2016 Apr 1;14(2):111-4. eCollection 2016.</citation>
+      </article>
+      <article>
+        <ref-id>A32892</ref-id>
+        <pubmed-id>24945640</pubmed-id>
+        <citation>Torbeck R, Pan M, DeMoll E, Levitt J: Cantharidin: a comprehensive review of the clinical literature. Dermatol Online J. 2014 Jun 15;20(6).</citation>
+      </article>
+      <article>
+        <ref-id>A32900</ref-id>
+        <pubmed-id>20331621</pubmed-id>
+        <citation>Li W, Xie L, Chen Z, Zhu Y, Sun Y, Miao Y, Xu Z, Han X: Cantharidin, a potent and selective PP2A inhibitor, induces an oxidative stress-independent growth inhibition of pancreatic cancer cells through G2/M cell-cycle arrest and apoptosis. Cancer Sci. 2010 May;101(5):1226-33. doi: 10.1111/j.1349-7006.2010.01523.x. Epub 2010 Feb 5.</citation>
+      </article>
+      <article>
+        <ref-id>A32901</ref-id>
+        <pubmed-id>19938553</pubmed-id>
+        <citation>Dang Y, Zhu C: [Pharmacokinetics and bioavailability of cantharidin in beagle dogs]. Zhongguo Zhong Yao Za Zhi. 2009 Aug;34(16):2088-91.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L2647</ref-id>
+        <title>NIH ClinicalTrials.gov: First-time-in-Human (FTIH) Study to Evaluate Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Single (in Both Fed and Fasted States) or Repeat Doses of GSK3358699</title>
+        <url>https://clinicaltrials.gov/ct2/show/NCT03426995</url>
+      </link>
+      <link>
+        <ref-id>L2648</ref-id>
+        <title>NLM Toxnet: Catharidine</title>
+        <url>https://toxnet.nlm.nih.gov/cgi-bin/sis/search/a?dbs+hsdb:@term+@DOCNO+2181</url>
+      </link>
+    </links>
+    <attachments>
+      <attachment>
+        <ref-id>F32</ref-id>
+        <title>Canthacur (cantharidin 0.7%) Solution for Topical Use Package Insert</title>
+        <url>//s3-us-west-2.amazonaws.com/drugbank/cite_this/attachments/files/000/000/032/original/Canthacur_Insert_En.pdf?1525365901</url>
+      </attachment>
+    </attachments>
+  </general-references>
+  <synthesis-reference/>
+  <indication>The only therapeutic use for which cantharidin is currently primarily indicated for is as an active ingredient in topical agents for treating common warts (verruca vulgaris), periungual warts, plantar warts, and molluscum contagiosum [A32891, A32892, F32]. &#13;
+&#13;
+At the same time, such topical cantharidin applications have also been used for a number of off-label indications like callus removal, cutaneous leishmaniasis, herpes zoster, and acquired perforating dermatosis [A32892]. Furthermore, since most topical cantharidin applications are most commonly available in a 0.7% formulation or a more potent 1% mixture, the 0.7% formulation is most commonly indicated for the treatment of common warts, periungual warts, and molluscum contagiosum while the more potent 1% mixture is typically limited only for use by healthcare professionals in a clinical setting for treating plantar warts and other more specialized off-label conditions [A32891, A32892, F32].&#13;
+&#13;
+Moreover, there have also been studies into whether or not cantharidin could be effective at being used as an inflammatory model or in cancer treatment - either of which has yet to formally elucidate any results [A32892].</indication>
+  <pharmacodynamics>Cantharidin is a natural toxin produced by the blistering beetle that possesses both vesicant (blistering) and keratolytic effects [A32891, A32892]. The substance elicits these effects by inducing acantholysis (loss of intercellular connections) through the targeting of the desmosomal dense plaque, resulting in the detachment of the desmosomes from the tonofilaments [A32891, A32892]. Cantharidin's effectiveness against warts is proposed to be a result of the exfoliation of the wart body as a consequence of the compound's acantholytic action [F32]. This acantholytic action generally does not go beyond the epidermal cells so that the basal layer remains intact and minimal effect occurs on the corium [F32]. There is consequently no scarring from the topical application of cantharidin [F32]. </pharmacodynamics>
+  <mechanism-of-action>Cantharidin is specifically absorbed by lipids in the membrane of epidermal keratinocytes, where it activates the release of neutral serine proteases [A32891, A32892]. These enzymes subsequently break the peptide bonds in surrounding proteins, leading to the progressive degeneration of desmosomal dense plaques, which are important cellular structures that participate in cell-to-cell adhesion [A32891, A32892]. Such degeneration results in the detachment of the tonofilaments that hold cells together. This process as a whole leads to the selective acantholysis (loss of cellular connections) and blistering of the skin when the cantharidin topical application is applied upon specific topical developments like warts [A32891, A32892]. A blister(s) at the application site develop within 24 to 48 hours of application and typically resolve within 4 to 7 days [A32891, A32892]. Factors that can modify this proposed time frame include the volume or concentration of cantharidin used, physical contact time of the applied compound (usually between 4 to 24 hours), the presence of any occlusive dressings, or even patient sensitivity to cantharidin [A32891, A32892]. The blistered lesions ultimately heal without scarring [A32891, A32892].&#13;
+&#13;
+Finally, there are some studies that suggest cantharidin's chemical profile as a potent and selective inhibitor of protein phosphatase 2A confers upon it an oxidative stress-independent growth inhibition of pancreatic cancer cells through cancer cell-cycle arrest and apoptosis [A32900]. &#13;
+&#13;
+Nevertheless, the fact that little data regarding the pharmacodynamics and pharmacokinetics of cantharidin in the human body exists [L2647] and certain toxic effects of cantharidin that have been observed following oral ingestion in humans like ulceration of the gastrointestinal and genitourinary tracts, along with electrolyte and renal function disturbance [A32891] are strong reasons as to why the compound currently lacks FDA approval is used fairly limitedly for formal therapeutic indications.</mechanism-of-action>
+  <toxicity>Side effects observed from the topical application of cantharidin include blistering, erythema, pain, bleeding, ring warts, post-inflammatory hyperpigmentation, lymphangitis, secondary bacterial cellulitis, scarring, and varicelliform vesicular dermatitis [A32892]. </toxicity>
+  <metabolism>Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</metabolism>
+  <absorption>Cantharidin is absorbed from the gastrointestinal tract, and, to a limited extent from the skin as well [L2648].&#13;
+&#13;
+Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</absorption>
+  <half-life>Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</half-life>
+  <protein-binding>Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</protein-binding>
+  <route-of-elimination>It has been observed that absorbed cantharidin is excreted by the kidney [L2648].&#13;
+&#13;
+Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</route-of-elimination>
+  <volume-of-distribution>After oral or IP injection of (3)H-labeled cantharidin, high levels of radioactivity distributed to and were exhibited in the bile, kidney, liver, stomach, and tumor cells of ascites hepatoma-bearing mice [L2648]. Such distribution suggests the agent has an affinity for liver and tumor tissues [L2648].&#13;
+&#13;
+Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</volume-of-distribution>
+  <clearance>Little pharmacodynamic and pharmacokinetic data regarding cantharidin in the human body currently exists; recruitment for First-Time-In-Human clinical trials regarding such information have been ongoing in 2018 [L2647]. There are however some studies regarding such data in animal models like beagle dogs [A32901].</clearance>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as furofurans. These are organic compounds containing a two furan rings fused to each other. Furan is a five-membered aromatic ring with four carbon atoms and one oxygen atom.</description>
+    <direct-parent>Furofurans</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Furofurans</class>
+    <subclass/>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acid anhydrides</alternative-parent>
+    <alternative-parent>Dialkyl ethers</alternative-parent>
+    <alternative-parent>Dicarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Lactones</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Tetrahydrofurans</alternative-parent>
+    <substituent>Aliphatic heteropolycyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid anhydride</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Dialkyl ether</substituent>
+    <substituent>Dicarboxylic acid or derivatives</substituent>
+    <substituent>Ether</substituent>
+    <substituent>Furofuran</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Lactone</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Tetrahydrofuran</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">1,2-Dimethyl-3,6-epoxyperhydrophthalic anhydride</synonym>
+    <synonym language="english" coder="">Cantharidine</synonym>
+    <synonym language="english" coder="">Cantharone</synonym>
+    <synonym language="english" coder="">exo-1,2-cis-Dimethyl-3,6-epoxyhexahydrophthalic anhydride</synonym>
+    <synonym language="german" coder="">Kantharidin</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Canthacur-PS</name>
+      <labeller>Paladin Labs Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00589500</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1983-12-31</started-marketing-on>
+      <ended-marketing-on>2017-05-30</ended-marketing-on>
+      <dosage-form>Liquid</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cantharidin 0.7%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-9035</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-17</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Liquid</dosage-form>
+      <strength>0.7 g/100g</strength>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Cantharidin 1% / Podophyllum Resin 5% / Salicylic Acid 30%</name>
+      <labeller>Sincerus Florida, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>72934-9036</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2019-05-17</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Liquid</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Cantharone Plus</name>
+      <labeller>Dormer Laboratories Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00772011</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1984-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Liquid</dosage-form>
+      <strength/>
+      <route>Topical</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Cantharidin 0.7%</name>
+      <ingredients>Cantharidin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cantharidin 1% / Podophyllum Resin 5% / Salicylic Acid 30%</name>
+      <ingredients>Cantharidin + Podophyllin + Salicylic acid</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cantharone Plus</name>
+      <ingredients>Cantharidin + Podophyllin + Salicylic acid</ingredients>
+    </mixture>
+    <mixture>
+      <name>Canthacur-PS</name>
+      <ingredients>Cantharidin + Podophyllin + Salicylic acid</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Benzofurans</category>
+      <mesh-id>D001572</mesh-id>
+    </category>
+    <category>
+      <category>Compounds used in a research, industrial, or household setting</category>
+      <mesh-id>D020313</mesh-id>
+    </category>
+    <category>
+      <category>Enzyme Inhibitors</category>
+      <mesh-id>D004791</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Irritants</category>
+      <mesh-id>D007509</mesh-id>
+    </category>
+    <category>
+      <category>Noxae</category>
+      <mesh-id>D009676</mesh-id>
+    </category>
+    <category>
+      <category>Toxic Actions</category>
+      <mesh-id>D004786</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Liquid</form>
+      <route>Topical</route>
+      <strength>0.7 g/100g</strength>
+    </dosage>
+    <dosage>
+      <form>Liquid</form>
+      <route>Topical</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB12328.pdf?1525366376</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.66e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.06</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(1R,2S,6R,7S)-2,6-dimethyl-4,10-dioxatricyclo[5.2.1.0²,⁶]decane-3,5-dione</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>cantharidin</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>196.202</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>196.073558866</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]12CC[C@]([H])(O1)[C@]1(C)C(=O)OC(=O)[C@]21C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C10H12O4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C10H12O4/c1-9-5-3-4-6(13-5)10(9,2)8(12)14-7(9)11/h5-6H,3-4H2,1-2H3/t5-,6+,9+,10-</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>DHZBEENLJMYSHQ-XCVPVQRUSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>52.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>45.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>18.54</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-4.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>4322</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>64213</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5944</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347828590</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C16778</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>5731</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50090505</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Cantharidin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL48449</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0003721</id>
+      <name>Aryl hydrocarbon receptor</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>agonist</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19890</ref-id>
+            <pubmed-id>14644660</pubmed-id>
+            <citation>Zhang S, Qin C, Safe SH: Flavonoids as aryl hydrocarbon receptor agonists/antagonists: effects of structure and cell context. Environ Health Perspect. 2003 Dec;111(16):1877-82.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P35869" source="Swiss-Prot">
+        <name>Aryl hydrocarbon receptor</name>
+        <general-function>Transcription regulatory region dna binding</general-function>
+        <specific-function>Ligand-activated transcriptional activator. Binds to the XRE promoter region of genes it activates. Activates the expression of multiple phase I and II xenobiotic chemical metabolizing enzyme genes (such as the CYP1A1 gene). Mediates biochemical and toxic effects of halogenated aromatic hydrocarbons. Involved in cell-cycle regulation. Likely to play an important role in the development and maturation of many tissues. Regulates the circadian clock by inhibiting the basal and circadian expression of the core circadian component PER1. Inhibits PER1 by repressing the CLOCK-ARNTL/BMAL1 heterodimer mediated transcriptional activation of PER1.</specific-function>
+        <gene-name>AHR</gene-name>
+        <locus>7p15</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.34</theoretical-pi>
+        <molecular-weight>96146.705</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:348</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D16354</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>533324</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P35869</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AHR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Ah receptor</synonym>
+          <synonym>BHLHE76</synonym>
+          <synonym>Class E basic helix-loop-helix protein 76</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017202|Aryl hydrocarbon receptor
+MNSSSANITYASRKRRKPVQKTVKPIPAEGIKSNPSKRHRDRLNTELDRLASLLPFPQDV
+INKLDKLSVLRLSVSYLRAKSFFDVALKSSPTERNGGQDNCRAANFREGLNLQEGEFLLQ
+ALNGFVLVVTTDALVFYASSTIQDYLGFQQSDVIHQSVYELIHTEDRAEFQRQLHWALNP
+SQCTESGQGIEEATGLPQTVVCYNPDQIPPENSPLMERCFICRLRCLLDNSSGFLAMNFQ
+GKLKYLHGQKKKGKDGSILPPQLALFAIATPLQPPSILEIRTKNFIFRTKHKLDFTPIGC
+DAKGRIVLGYTEAELCTRGSGYQFIHAADMLYCAESHIRMIKTGESGMIVFRLLTKNNRW
+TWVQSNARLLYKNGRPDYIIVTQRPLTDEEGTEHLRKRNTKLPFMFTTGEAVLYEATNPF
+PAIMDPLPLRTKNGTSGKDSATTSTLSKDSLNPSSLLAAMMQQDESIYLYPASSTSSTAP
+FENNFFNESMNECRNWQDNTAPMGNDTILKHEQIDQPQDVNSFAGGHPGLFQDSKNSDLY
+SIMKNLGIDFEDIRHMQNEKFFRNDFSGEVDFRDIDLTDEILTYVQDSLSKSPFIPSDYQ
+QQQSLALNSSCMVQEHLHLEQQQQHHQKQVVVEPQQQLCQKMKHMQVNGMFENWNSNQFV
+PFNCPQQDPQQYNVFTDLHGISQEFPYKSEMDSMPYTQNFISCNQPVLPQHSKCTELDYP
+MGSFEPSPYPTTSSLEDFVTCLQLPENQKHGLNPQSAIITPQTCYAGAVSMYQCQPEPQH
+THVGQMQYNPVLPGQQAFLNKFQNGVLNETYPAELNNINNTQTTTHLQPLHHPSEARPFP
+DLTSSGFL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017203|Aryl hydrocarbon receptor (AHR)
+ATGAACAGCAGCAGCGCCAACATCACCTACGCCAGTCGCAAGCGGCGGAAGCCGGTGCAG
+AAAACAGTAAAGCCAATCCCAGCTGAAGGAATCAAGTCAAATCCTTCCAAGCGGCATAGA
+GACCGACTTAATACAGAGTTGGACCGTTTGGCTAGCCTGCTGCCTTTCCCACAAGATGTT
+ATTAATAAGTTGGACAAACTTTCAGTTCTTAGGCTCAGCGTCAGTTACCTGAGAGCCAAG
+AGCTTCTTTGATGTTGCATTAAAATCCTCCCCTACTGAAAGAAACGGAGGCCAGGATAAC
+TGTAGAGCAGCAAATTTCAGAGAAGGCCTGAACTTACAAGAAGGAGAATTCTTATTACAG
+GCTCTGAATGGCTTTGTATTAGTTGTCACTACAGATGCTTTGGTCTTTTATGCTTCTTCT
+ACTATACAAGATTATCTAGGGTTTCAGCAGTCTGATGTCATACATCAGAGTGTATATGAA
+CTTATCCATACCGAAGACCGAGCTGAATTTCAGCGTCAGCTACACTGGGCATTAAATCCT
+TCTCAGTGTACAGAGTCTGGACAAGGAATTGAAGAAGCCACTGGTCTCCCCCAGACAGTA
+GTCTGTTATAACCCAGACCAGATTCCTCCAGAAAACTCTCCTTTAATGGAGAGGTGCTTC
+ATATGTCGTCTAAGGTGTCTGCTGGATAATTCATCTGGTTTTCTGGCAATGAATTTCCAA
+GGGAAGTTAAAGTATCTTCATGGACAGAAAAAGAAAGGGAAAGATGGATCAATACTTCCA
+CCTCAGTTGGCTTTGTTTGCGATAGCTACTCCACTTCAGCCACCATCCATACTTGAAATC
+CGGACCAAAAATTTTATCTTTAGAACCAAACACAAACTAGACTTCACACCTATTGGTTGT
+GATGCCAAAGGAAGAATTGTTTTAGGATATACTGAAGCAGAGCTGTGCACGAGAGGCTCA
+GGTTATCAGTTTATTCATGCAGCTGATATGCTTTATTGTGCCGAGTCCCATATCCGAATG
+ATTAAGACTGGAGAAAGTGGCATGATAGTTTTCCGGCTTCTTACAAAAAACAACCGATGG
+ACTTGGGTCCAGTCTAATGCACGCCTGCTTTATAAAAATGGAAGACCAGATTATATCATT
+GTAACTCAGAGACCACTAACAGATGAGGAAGGAACAGAGCATTTACGAAAACGAAATACG
+AAGTTGCCTTTTATGTTTACCACTGGAGAAGCTGTGTTGTATGAGGCAACCAACCCTTTT
+CCTGCCATAATGGATCCCTTACCACTAAGGACTAAAAATGGCACTAGTGGAAAAGACTCT
+GCTACCACATCCACTCTAAGCAAGGACTCTCTCAATCCTAGTTCCCTCCTGGCTGCCATG
+ATGCAACAAGATGAGTCTATTTATCTCTATCCTGCTTCAAGTACTTCAAGTACTGCACCT
+TTTGAAAACAACTTTTTCAACGAATCTATGAATGAATGCAGAAATTGGCAAGATAATACT
+GCACCGATGGGAAATGATACTATCCTGAAACATGAGCAAATTGACCAGCCTCAGGATGTG
+AACTCATTTGCTGGAGGTCACCCAGGGCTCTTTCAAGATAGTAAAAACAGTGACTTGTAC
+AGCATAATGAAAAACCTAGGCATTGATTTTGAAGACATCAGACACATGCAGAATGAAAAA
+TTTTTCAGAAATGATTTTTCTGGTGAGGTTGACTTCAGAGACATTGACTTAACGGATGAA
+ATCCTGACGTATGTCCAAGATTCTTTAAGTAAGTCTCCCTTCATACCTTCAGATTATCAA
+CAGCAACAGTCCTTGGCTCTGAACTCAAGCTGTATGGTACAGGAACACCTACATCTAGAA
+CAGCAACAGCAACATCACCAAAAGCAAGTAGTAGTGGAGCCACAGCAACAGCTGTGTCAG
+AAGATGAAGCACATGCAAGTTAATGGCATGTTTGAAAATTGGAACTCTAACCAATTCGTG
+CCTTTCAATTGTCCACAGCAAGACCCACAACAATATAATGTCTTTACAGACTTACATGGG
+ATCAGTCAAGAGTTCCCCTACAAATCTGAAATGGATTCTATGCCTTATACACAGAACTTT
+ATTTCCTGTAATCAGCCTGTATTACCACAACATTCCAAATGTACAGAGCTGGACTACCCT
+ATGGGGAGTTTTGAACCATCCCCATACCCCACTACTTCTAGTTTAGAAGATTTTGTCACT
+TGTTTACAACTTCCTGAAAACCAAAAGCATGGATTAAATCCACAGTCAGCCATAATAACT
+CCTCAGACATGTTATGCTGGGGCCGTGTCGATGTATCAGTGCCAGCCAGAACCTCAGCAC
+ACCCACGTGGGTCAGATGCAGTACAATCCAGTACTGCCAGGCCAACAGGCATTTTTAAAC
+AAGTTTCAGAATGGAGTTTTAAATGAAACATATCCAGCTGAATTAAATAACATAAATAAC
+ACTCAGACTACCACACATCTTCAGCCACTTCATCATCCGTCAGAAGCCAGACCTTTTCCT
+GATTTGACATCCAGTGGATTCCTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00989</identifier>
+            <name>PAS</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00010</identifier>
+            <name>HLH</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08447</identifier>
+            <name>PAS_3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosolic aryl hydrocarbon receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear aryl hydrocarbon receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>transcription factor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>E-box binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enhancer binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>Hsp90 protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein dimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor activity, ligand-activated sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, RNA polymerase II distal enhancer sequence-specific binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription regulatory region DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood vessel development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>circadian regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of RNA polymerase II transcriptional preinitiation complex assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>prostate gland development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of B cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to xenobiotic stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0009373</id>
+      <name>Skin epithelial cells</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>vesicant</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A32891</ref-id>
+            <pubmed-id>27319954</pubmed-id>
+            <citation>Al-Dawsari NA, Masterpol KS: Cantharidin in Dermatology. Skinmed. 2016 Apr 1;14(2):111-4. eCollection 2016.</citation>
+          </article>
+          <article>
+            <ref-id>A32892</ref-id>
+            <pubmed-id>24945640</pubmed-id>
+            <citation>Torbeck R, Pan M, DeMoll E, Levitt J: Cantharidin: a comprehensive review of the clinical literature. Dermatol Online J. 2014 Jun 15;20(6).</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

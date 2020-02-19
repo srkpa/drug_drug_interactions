@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB12865</drugbank-id>
+  <name>Etelcalcetide</name>
+  <description>Etelcalcetide is a calcimimetic drug for the treatment of secondary hyperparathyroidism in patients undergoing hemodialysis. Etelcalcetide was approved (trade name Parsabiv) for the treatment of secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on hemodialysis in February, 2017.</description>
+  <cas-number>1262780-97-1</cas-number>
+  <unii>60ME133FJB</unii>
+  <average-mass>1048.26</average-mass>
+  <monoisotopic-mass>1047.529069983</monoisotopic-mass>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L663</ref-id>
+        <title>FDA label</title>
+        <url>https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/208325Orig1s000Lbledt.pdf</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Etelcalcetide is a calcium-sensing receptor agonist indicated for: &#13;
+Secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on hemodialysis.</indication>
+  <pharmacodynamics>Following a single intravenous bolus administration of etelcalcetide, PTH levels decreased within 30 minutes post dose. In the single-dose study, the extent and duration of the reduction in PTH increased with increasing dose. Reduction in PTH levels correlated with plasma etelcalcetide concentrations in hemodialysis patients. The reduction in PTH resulted in reductions in calcium and attenuation of post-dialytic phosphate elevation. The effect of reducing PTH levels was maintained throughout the 6-month dosing period when etelcalcetide was administered by intravenous bolus three times a week. </pharmacodynamics>
+  <mechanism-of-action>Etelcalcetide is a calcimimetic agent that allosterically modulates the calcium-sensing receptor (CaSR). Etelcalcetide binds to the CaSR and enhances activation of the receptor by extracellular calcium. Activation of the CaSR on parathyroid chief cells decreases PTH secretion.   </mechanism-of-action>
+  <toxicity/>
+  <metabolism>Etelcalcetide is not metabolized by CYP450 enzymes. Etelcalcetide is biotransformed in blood by reversible disulfide exchange with endogenous thiols to predominantly form conjugates with serum albumin.    Following a single radiolabeled dose of etelcalcetide in chronic kidney disease patients with secondary hyperparathyroidism requiring hemodialysis, the plasma exposure of biotransformation products is approximately 5-fold higher than that of etelcalcetide and their concentration-time course parallels that of etelcalcetide. </metabolism>
+  <absorption>The pharmacokinetics of etelcalcetide is linear and does not change over time following single (5 to 60 mg) and multiple intravenous doses (2.5 to 20 mg) in chronic kidney disease patients with secondary hyperparathyroidism requiring hemodialysis. Etelcalcetide exhibited tri-exponential decay following intravenous administration. Based on population pharmacokinetic analysis, following three times a week intravenous dosing at the end of each 3- to 6-hour hemodialysis session in chronic kidney disease patients, etelcalcetide plasma levels reached steady state in 7-8 weeks after dosing with a predicted accumulation ratio of 3- to 4-fold</absorption>
+  <half-life>3 to 4 days</half-life>
+  <protein-binding>Etelcalcetide is predominately bound to plasma albumin by reversible covalent binding. Non-covalent binding of etelcalcetide to plasma proteins is low with a fraction unbound ratio of 0.53. The ratio of blood-to-plasma [14C]-etelcalcetide concentrations is approximately 0.6. </protein-binding>
+  <route-of-elimination>Etelcalcetide is cleared by renal excretion</route-of-elimination>
+  <volume-of-distribution>796 L</volume-of-distribution>
+  <clearance>7.66 L/hr</clearance>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as oligopeptides. These are organic compounds containing a sequence of between three and ten alpha-amino acids joined by peptide bonds.</description>
+    <direct-parent>Oligopeptides</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Acetamides</alternative-parent>
+    <alternative-parent>Alanine and derivatives</alternative-parent>
+    <alternative-parent>Alpha amino acid amides</alternative-parent>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboximidamides</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dialkyldisulfides</alternative-parent>
+    <alternative-parent>Guanidines</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>L-alpha-amino acids</alternative-parent>
+    <alternative-parent>L-cysteine-S-conjugates</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>N-acyl amines</alternative-parent>
+    <alternative-parent>N-acyl-alpha amino acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Primary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Propargyl-type 1,3-dipolar organic compounds</alternative-parent>
+    <alternative-parent>Secondary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Sulfenyl compounds</alternative-parent>
+    <substituent>Acetamide</substituent>
+    <substituent>Alanine or derivatives</substituent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Alpha-amino acid</substituent>
+    <substituent>Alpha-amino acid amide</substituent>
+    <substituent>Alpha-amino acid or derivatives</substituent>
+    <substituent>Alpha-oligopeptide</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboximidamide</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Cysteine or derivatives</substituent>
+    <substituent>Dialkyldisulfide</substituent>
+    <substituent>Fatty acyl</substituent>
+    <substituent>Fatty amide</substituent>
+    <substituent>Guanidine</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>L-cysteine-s-conjugate</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>N-acyl-alpha amino acid or derivatives</substituent>
+    <substituent>N-acyl-amine</substituent>
+    <substituent>N-substituted-alpha-amino acid</substituent>
+    <substituent>Organic 1,3-dipolar compound</substituent>
+    <substituent>Organic disulfide</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organosulfur compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Primary carboxylic acid amide</substituent>
+    <substituent>Propargyl-type 1,3-dipolar organic compound</substituent>
+    <substituent>Secondary carboxylic acid amide</substituent>
+    <substituent>Sulfenyl compound</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002195</drugbank-id>
+      <name>Etelcalcetide hydrochloride</name>
+      <unii>72PT5993DU</unii>
+      <cas-number>1334237-71-6</cas-number>
+      <inchikey>KHQMSZGKHGQUHG-WZDHWKSBSA-N</inchikey>
+      <average-mass>1084.72</average-mass>
+      <monoisotopic-mass>1083.5057477</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="spanish" coder="">Etelcalcetida</synonym>
+    <synonym language="english" coder="inn/usan">Etelcalcetide</synonym>
+    <synonym language="english" coder="">Velcalcetide</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Parsabiv</name>
+      <labeller>AMGEN INC</labeller>
+      <ndc-id/>
+      <ndc-product-code>55513-740</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-04-03</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>2.5 mg/0.5mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA208325</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Parsabiv</name>
+      <labeller>AMGEN INC</labeller>
+      <ndc-id/>
+      <ndc-product-code>55513-741</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-04-03</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>5 mg/1mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA208325</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Parsabiv</name>
+      <labeller>AMGEN INC</labeller>
+      <ndc-id/>
+      <ndc-product-code>55513-742</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-04-03</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>10 mg/2mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>NDA208325</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Parsabiv</name>
+      <ingredients>Etelcalcetide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Parsabiv</name>
+      <ingredients>Etelcalcetide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Parsabiv</name>
+      <ingredients>Etelcalcetide</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Parathyroid Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Calcium Homeostasis</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Calcium-sensing Receptor Agonist</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Increased Calcium-sensing Receptor Sensitivity</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Systemic Hormonal Preparations, Excl. Sex Hormones and Insulins</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Intravenous</route>
+      <strength>10 mg/2mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Intravenous</route>
+      <strength>2.5 mg/0.5mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Intravenous</route>
+      <strength>5 mg/1mL</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="H05BX04">
+      <level code="H05BX">Other anti-parathyroid agents</level>
+      <level code="H05B">ANTI-PARATHYROID AGENTS</level>
+      <level code="H05">CALCIUM HOMEOSTASIS</level>
+      <level code="H">SYSTEMIC HORMONAL PREPARATIONS, EXCL. SEX HORMONES AND INSULINS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents>
+    <patent>
+      <number>8377880</number>
+      <country>United States</country>
+      <approved>2013-02-19</approved>
+      <expires>2030-07-29</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9278995</number>
+      <country>United States</country>
+      <approved>2016-03-08</approved>
+      <expires>2030-07-29</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8999932</number>
+      <country>United States</country>
+      <approved>2015-04-07</approved>
+      <expires>2030-07-29</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9701712</number>
+      <country>United States</country>
+      <approved>2017-07-11</approved>
+      <expires>2030-07-29</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9820938</number>
+      <country>United States</country>
+      <approved>2017-11-21</approved>
+      <expires>2034-06-27</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>10344765</number>
+      <country>United States</country>
+      <approved>2019-07-09</approved>
+      <expires>2034-06-27</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-3.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.32e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2R)-2-amino-3-{[(2S)-2-{[(1R)-1-{[(1R)-4-carbamimidamido-1-{[(1R)-4-carbamimidamido-1-{[(1R)-4-carbamimidamido-1-{[(1R)-1-{[(1R)-4-carbamimidamido-1-carbamoylbutyl]carbamoyl}ethyl]carbamoyl}butyl]carbamoyl}butyl]carbamoyl}butyl]carbamoyl}ethyl]carbamoyl}-2-acetamidoethyl]disulfanyl}propanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2R)-2-amino-3-{[(2S)-2-{[(1R)-1-{[(1R)-4-carbamimidamido-1-{[(1R)-4-carbamimidamido-1-{[(1R)-4-carbamimidamido-1-{[(1R)-1-{[(1R)-4-carbamimidamido-1-carbamoylbutyl]carbamoyl}ethyl]carbamoyl}butyl]carbamoyl}butyl]carbamoyl}butyl]carbamoyl}ethyl]carbamoyl}-2-acetamidoethyl]disulfanyl}propanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>1048.26</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>1047.529069983</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>C[C@@H](NC(=O)[C@@H](CCCNC(N)=N)NC(=O)[C@@H](CCCNC(N)=N)NC(=O)[C@@H](CCCNC(N)=N)NC(=O)[C@@H](C)NC(=O)[C@@H](CSSC[C@H](N)C(O)=O)NC(C)=O)C(=O)N[C@H](CCCNC(N)=N)C(N)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C38H73N21O10S2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C38H73N21O10S2/c1-18(28(62)56-22(27(40)61)8-4-12-49-35(41)42)53-30(64)23(9-5-13-50-36(43)44)58-32(66)25(11-7-15-52-38(47)48)59-31(65)24(10-6-14-51-37(45)46)57-29(63)19(2)54-33(67)26(55-20(3)60)17-71-70-16-21(39)34(68)69/h18-19,21-26H,4-17,39H2,1-3H3,(H2,40,61)(H,53,64)(H,54,67)(H,55,60)(H,56,62)(H,57,63)(H,58,66)(H,59,65)(H,68,69)(H4,41,42,49)(H4,43,44,50)(H4,45,46,51)(H4,47,48,52)/t18-,19-,21+,22-,23-,24-,25-,26-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ANIAZGVDEUQPRI-ZJQCGQFWSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>557.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>303.63</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>107.58</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>36</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>22</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>-1.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>12.57</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>134700</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>71511839</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347829023</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D10676</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>32697932</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Etelcalcetide</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL3545184</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000509</id>
+      <name>Extracellular calcium-sensing receptor</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>agonist</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A18724</ref-id>
+            <pubmed-id>24235081</pubmed-id>
+            <citation>Martin KJ, Bell G, Pickthorn K, Huang S, Vick A, Hodsman P, Peacock M: Velcalcetide (AMG 416), a novel peptide agonist of the calcium-sensing receptor, reduces serum parathyroid hormone and FGF23 levels in healthy male subjects. Nephrol Dial Transplant. 2014 Feb;29(2):385-92. doi: 10.1093/ndt/gft417. Epub 2013 Nov 13.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P41180" source="Swiss-Prot">
+        <name>Extracellular calcium-sensing receptor</name>
+        <general-function>Phosphatidylinositol phospholipase c activity</general-function>
+        <specific-function>Senses changes in the extracellular concentration of calcium ions. The activity of this receptor is mediated by a G-protein that activates a phosphatidylinositol-calcium second messenger system.</specific-function>
+        <gene-name>CASR</gene-name>
+        <locus>3q13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>613-635
+650-670
+682-700
+725-745
+770-792
+806-828
+837-862</transmembrane-regions>
+        <signal-regions>1-19</signal-regions>
+        <theoretical-pi>5.82</theoretical-pi>
+        <molecular-weight>120672.385</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1514</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CASR</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X81086</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>599820</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>54</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>54</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P41180</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CASR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CaSR</synonym>
+          <synonym>GPRC2A</synonym>
+          <synonym>Parathyroid cell calcium-sensing receptor 1</synonym>
+          <synonym>PCAR1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001016|Extracellular calcium-sensing receptor
+MAFYSCCWVLLALTWHTSAYGPDQRAQKKGDIILGGLFPIHFGVAAKDQDLKSRPESVEC
+IRYNFRGFRWLQAMIFAIEEINSSPALLPNLTLGYRIFDTCNTVSKALEATLSFVAQNKI
+DSLNLDEFCNCSEHIPSTIAVVGATGSGVSTAVANLLGLFYIPQVSYASSSRLLSNKNQF
+KSFLRTIPNDEHQATAMADIIEYFRWNWVGTIAADDDYGRPGIEKFREEAEERDICIDFS
+ELISQYSDEEEIQHVVEVIQNSTAKVIVVFSSGPDLEPLIKEIVRRNITGKIWLASEAWA
+SSSLIAMPQYFHVVGGTIGFALKAGQIPGFREFLKKVHPRKSVHNGFAKEFWEETFNCHL
+QEGAKGPLPVDTFLRGHEESGDRFSNSSTAFRPLCTGDENISSVETPYIDYTHLRISYNV
+YLAVYSIAHALQDIYTCLPGRGLFTNGSCADIKKVEAWQVLKHLRHLNFTNNMGEQVTFD
+ECGDLVGNYSIINWHLSPEDGSIVFKEVGYYNVYAKKGERLFINEEKILWSGFSREVPFS
+NCSRDCLAGTRKGIIEGEPTCCFECVECPDGEYSDETDASACNKCPDDFWSNENHTSCIA
+KEIEFLSWTEPFGIALTLFAVLGIFLTAFVLGVFIKFRNTPIVKATNRELSYLLLFSLLC
+CFSSSLFFIGEPQDWTCRLRQPAFGISFVLCISCILVKTNRVLLVFEAKIPTSFHRKWWG
+LNLQFLLVFLCTFMQIVICVIWLYTAPPSSYRNQELEDEIIFITCHEGSLMALGFLIGYT
+CLLAAICFFFAFKSRKLPENFNEAKFITFSMLIFFIVWISFIPAYASTYGKFVSAVEVIA
+ILAASFGLLACIFFNKIYIILFKPSRNTIEEVRCSTAAHAFKVAARATLRRSNVSRKRSS
+SLGGSTGSTPSSSISSKSNSEDPFPQPERQKQQQPLALTQQEQQQQPLTLPQQQRSQQQP
+RCKQKVIFGSGTVTFSLSFDEPQKNAMAHRNSTHQNSLEAQKSSDTLTRHQPLLPLQCGE
+TDLDLTVQETGLQGPVGGDQRPEVEDPEELSPALVVSSSQSFVISGGGSTVTENVVNS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016113|Extracellular calcium-sensing receptor (CASR)
+ATGGCATTTTATAGCTGCTGCTGGGTCCTCTTGGCACTCACCTGGCACACCTCTGCCTAC
+GGGCCAGACCAGCGAGCCCAAAAGAAGGGGGACATTATCCTTGGGGGGCTCTTTCCTATT
+CATTTTGGAGTAGCAGCTAAAGATCAAGATCTCAAATCAAGGCCGGAGTCTGTGGAATGT
+ATCAGGTATAATTTCCGTGGGTTTCGCTGGTTACAGGCTATGATATTTGCCATAGAGGAG
+ATAAACAGCAGCCCAGCCCTTCTTCCCAACTTGACGCTGGGATACAGGATATTTGACACT
+TGCAACACCGTTTCTAAGGCCTTGGAAGCCACCCTGAGTTTTGTTGCTCAAAACAAAATT
+GATTCTTTGAACCTTGATGAGTTCTGCAACTGCTCAGAGCACATTCCCTCTACGATTGCT
+GTGGTGGGAGCAACTGGCTCAGGCGTCTCCACGGCAGTGGCAAATCTGCTGGGGCTCTTC
+TACATTCCCCAGGTCAGTTATGCCTCCTCCAGCAGACTCCTCAGCAACAAGAATCAATTC
+AAGTCTTTCCTCCGAACCATCCCCAATGATGAGCACCAGGCCACTGCCATGGCAGACATC
+ATCGAGTATTTCCGCTGGAACTGGGTGGGCACAATTGCAGCTGATGACGACTATGGGCGG
+CCGGGGATTGAGAAATTCCGAGAGGAAGCTGAGGAAAGGGATATCTGCATCGACTTCAGT
+GAACTCATCTCCCAGTACTCTGATGAGGAAGAGATCCAGCATGTGGTAGAGGTGATTCAA
+AATTCCACGGCCAAAGTCATCGTGGTTTTCTCCAGTGGCCCAGATCTTGAGCCCCTCATC
+AAGGAGATTGTCCGGCGCAATATCACGGGCAAGATCTGGCTGGCCAGCGAGGCCTGGGCC
+AGCTCCTCCCTGATCGCCATGCCTCAGTACTTCCACGTGGTTGGCGGCACCATTGGATTC
+GCTCTGAAGGCTGGGCAGATCCCAGGCTTCCGGGAATTCCTGAAGAAGGTCCATCCCAGG
+AAGTCTGTCCACAATGGTTTTGCCAAGGAGTTTTGGGAAGAAACATTTAACTGCCACCTC
+CAAGAAGGTGCAAAAGGACCTTTACCTGTGGACACCTTTCTGAGAGGTCACGAAGAAAGT
+GGCGACAGGTTTAGCAACAGCTCGACAGCCTTCCGACCCCTCTGTACAGGGGATGAGAAC
+ATCAGCAGTGTCGAGACCCCTTACATAGATTACACGCATTTACGGATATCCTACAATGTG
+TACTTAGCAGTCTACTCCATTGCCCACGCCTTGCAAGATATATATACCTGCTTACCTGGG
+AGAGGGCTCTTCACCAATGGCTCCTGTGCAGACATCAAGAAAGTTGAGGCGTGGCAGGTC
+CTGAAGCACCTACGGCATCTAAACTTTACAAACAATATGGGGGAGCAGGTGACCTTTGAT
+GAGTGTGGTGACCTGGTGGGGAACTATTCCATCATCAACTGGCACCTCTCCCCAGAGGAT
+GGCTCCATCGTGTTTAAGGAAGTCGGGTATTACAACGTCTATGCCAAGAAGGGAGAAAGA
+CTCTTCATCAACGAGGAGAAAATCCTGTGGAGTGGGTTCTCCAGGGAGGTGCCCTTCTCC
+AACTGCAGCCGAGACTGCCTGGCAGGGACCAGGAAAGGGATCATTGAGGGGGAGCCCACC
+TGCTGCTTTGAGTGTGTGGAGTGTCCTGATGGGGAGTATAGTGATGAGACAGATGCCAGT
+GCCTGTAACAAGTGCCCAGATGACTTCTGGTCCAATGAGAACCACACCTCCTGCATTGCC
+AAGGAGATCGAGTTTCTGTCGTGGACGGAGCCCTTTGGGATCGCACTCACCCTCTTTGCC
+GTGCTGGGCATTTTCCTGACAGCCTTTGTGCTGGGTGTGTTTATCAAGTTCCGCAACACA
+CCCATTGTCAAGGCCACCAACCGAGAGCTCTCCTACCTCCTCCTCTTCTCCCTGCTCTGC
+TGCTTCTCCAGCTCCCTGTTCTTCATCGGGGAGCCCCAGGACTGGACGTGCCGCCTGCGC
+CAGCCGGCCTTTGGCATCAGCTTCGTGCTCTGCATCTCATGCATCCTGGTGAAAACCAAC
+CGTGTCCTCCTGGTGTTTGAGGCCAAGATCCCCACCAGCTTCCACCGCAAGTGGTGGGGG
+CTCAACCTGCAGTTCCTGCTGGTTTTCCTCTGCACCTTCATGCAGATTGTCATCTGTGTG
+ATCTGGCTCTACACCGCGCCCCCCTCAAGCTACCGCAACCAGGAGCTGGAGGATGAGATC
+ATCTTCATCACGTGCCACGAGGGCTCCCTCATGGCCCTGGGCTTCCTGATCGGCTACACC
+TGCCTGCTGGCTGCCATCTGCTTCTTCTTTGCCTTCAAGTCCCGGAAGCTGCCGGAGAAC
+TTCAATGAAGCCAAGTTCATCACCTTCAGCATGCTCATCTTCTTCATCGTCTGGATCTCC
+TTCATTCCAGCCTATGCCAGCACCTATGGCAAGTTTGTCTCTGCCGTAGAGGTGATTGCC
+ATCCTGGCAGCCAGCTTTGGCTTGCTGGCGTGCATCTTCTTCAACAAGATCTACATCATT
+CTCTTCAAGCCATCCCGCAACACCATCGAGGAGGTGCGTTGCAGCACCGCAGCTCACGCT
+TTCAAGGTGGCTGCCCGGGCCACGCTGCGCCGCAGCAACGTCTCCCGCAAGCGGTCCAGC
+AGCCTTGGAGGCTCCACGGGATCCACCCCCTCCTCCTCCATCAGCAGCAAGAGCAACAGC
+GAAGACCCATTCCCACAGCCCGAGAGGCAGAAGCAGCAGCAGCCGCTGGCCCTAACCCAG
+CAAGAGCAGCAGCAGCAGCCCCTGACCCTCCCACAGCAGCAACGATCTCAGCAGCAGCCC
+AGATGCAAGCAGAAGGTCATCTTTGGCAGCGGCACGGTCACCTTCTCACTGAGCTTTGAT
+GAGCCTCAGAAGAACGCCATGGCCCACAGGAATTCTACGCACCAGAACTCCCTGGAGGCC
+CAGAAAAGCAGCGATACGCTGACCCGACACCAGCCATTACTCCCGCTGCAGTGCGGGGAA
+ACGGACTTAGATCTGACCGTCCAGGAAACAGGTCTGCAAGGACCTGTGGGTGGAGACCAG
+CGGCCAGAGGTGGAGGACCCTGAAGAGTTGTCCCCAGCACTTGTAGTGTCCAGTTCACAG
+AGCTTTGTCATCAGTGGTGGAGGCAGCACTGTTACAGAAAACGTAGTGAATTCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00003</identifier>
+            <name>7tm_3</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01094</identifier>
+            <name>ANF_receptor</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07562</identifier>
+            <name>NCD3G</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anatomical structure morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion import</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chemosensory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of calcium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ossification</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2015-12-03" updated="2019-12-02">
+  <drugbank-id primary="true">DB11068</drugbank-id>
+  <name>Selenic acid</name>
+  <description>Selenic acid is an organic compound with the chemical formula H2SeO4. It may be found in over-the-counter daily dietary supplements as a source of [DB11135], an essential trace mineral for human health.</description>
+  <cas-number>7783-08-6</cas-number>
+  <unii>HV0Y51NC4J</unii>
+  <average-mass>144.97</average-mass>
+  <monoisotopic-mass>145.91183038</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A33007</ref-id>
+        <pubmed-id>22381456</pubmed-id>
+        <citation>Rayman MP: Selenium and human health. Lancet. 2012 Mar 31;379(9822):1256-68. doi: 10.1016/S0140-6736(11)61452-9. Epub 2012 Feb 29.</citation>
+      </article>
+      <article>
+        <ref-id>A33008</ref-id>
+        <pubmed-id>10963212</pubmed-id>
+        <citation>Rayman MP: The importance of selenium to human health. Lancet. 2000 Jul 15;356(9225):233-41. doi: 10.1016/S0140-6736(00)02490-9.</citation>
+      </article>
+      <article>
+        <ref-id>A33009</ref-id>
+        <pubmed-id>23825349</pubmed-id>
+        <citation>Davis TZ, Stegelmeier BL, Welch KD, Pfister JA, Panter KE, Hall JO: Comparative oral dose toxicokinetics of selenium compounds commonly found in selenium accumulator plants. J Anim Sci. 2013 Sep;91(9):4501-9. doi: 10.2527/jas.2012-6101. Epub 2013 Jul 3.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Indicated for use as a nutritional supplement. </indication>
+  <pharmacodynamics>[DB11135] is an essential trace mineral that plays a critical role in antioxidant actions, anti-inflammatory effects, immune function, and the production of active thyroid hormone [A33007]. </pharmacodynamics>
+  <mechanism-of-action>[DB11135] is a constituent of selenoproteins thus has structural and enzymatic roles. It acts as an antioxidant via the actions of selenoproteins for protection against oxidative stress, and acts as a catayst for the production of active thyroid hormone []. It may also play a role in sperm motility [A33008]. </mechanism-of-action>
+  <toxicity>Injectable selenium is more acutely toxic than oral administration, with an intramuscular LD50 of 0.5 mg/kg BW in lambs [A33009]. </toxicity>
+  <metabolism>No pharmacokinetic data available. </metabolism>
+  <absorption>Following single oral administration of sodium selenate concentrations ranging from 1 mg Se/kg to 4 mg Se/kg in lambs, the peak plasma concentrations ranged from 0.79 mg Se/L to 2.54 mg Se/L [A33009]. The time to reach peak plasma concentrations ranged from 7 to 12 hours [A33009].</absorption>
+  <half-life>Following single oral administration of 1 mg Se/kg of sodium selenate in lambs, the elimination half life was 313 hours. The elimination half life was 142 hours following a single oral dosing of 4 mg Se/kg as sodium selenate [A33009]. </half-life>
+  <protein-binding>No pharmacokinetic data available. </protein-binding>
+  <route-of-elimination/>
+  <volume-of-distribution>No pharmacokinetic data available. </volume-of-distribution>
+  <clearance>No pharmacokinetic data available. </clearance>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002579</drugbank-id>
+      <name>Sodium selenate</name>
+      <unii>5DQP25600A</unii>
+      <cas-number>13410-01-0</cas-number>
+      <inchikey>MHQOTKLEMKRJIR-UHFFFAOYSA-L</inchikey>
+      <average-mass>188.94</average-mass>
+      <monoisotopic-mass>189.875719666</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms/>
+  <products>
+    <product>
+      <name>Balance Ace - Cap</name>
+      <labeller>Pharmavite</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02218569</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1996-09-06</started-marketing-on>
+      <ended-marketing-on>2002-07-25</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cavan Heme OB</name>
+      <labeller>Seton Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>13925-128</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-08-03</started-marketing-on>
+      <ended-marketing-on>2012-06-10</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Cell-wise Natural Source</name>
+      <labeller>Melaleuca, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02237865</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1998-05-26</started-marketing-on>
+      <ended-marketing-on>2005-06-28</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Duet DHA Balanced</name>
+      <labeller>Eckson Labs, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>44118-750</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2012-10-30</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form/>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>HemeNatal OB</name>
+      <labeller>Wh Nutritionals, Llc</labeller>
+      <ndc-id/>
+      <ndc-product-code>76331-901</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2012-03-08</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>HemeNatal OB plus DHA</name>
+      <labeller>Wh Nutritionals, Llc</labeller>
+      <ndc-id/>
+      <ndc-product-code>76331-904</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2012-03-08</started-marketing-on>
+      <ended-marketing-on>2019-04-30</ended-marketing-on>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>High Potency Multivitamins &amp; Minerals Caplets</name>
+      <labeller>Ashbury Research Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02239374</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>K.L. Vitamin-mineral</name>
+      <labeller>Abundance Naturally Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02240707</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Powder</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Materna</name>
+      <labeller>Wyeth Ltd.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02248555</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2004-05-17</started-marketing-on>
+      <ended-marketing-on>2006-07-24</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Ocuvite Tab</name>
+      <labeller>Bausch &amp; Lomb Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01947893</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2002-07-29</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>One Daily Vitamin and Mineral Dietary Supplement</name>
+      <labeller>Garden State Nutritionals</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02238784</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1998-09-25</started-marketing-on>
+      <ended-marketing-on>2000-06-07</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>One Tablet Daily Mens Formula</name>
+      <labeller>Vita Health Products Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02247241</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2003-05-16</started-marketing-on>
+      <ended-marketing-on>2008-08-05</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>One-A-day Advance Men's</name>
+      <labeller>Bayer Inc Consumer Care</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02242204</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2000-08-01</started-marketing-on>
+      <ended-marketing-on>2002-02-06</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Optivite Vitamin and Mineral Supplement Tablet</name>
+      <labeller>Pharmetics (2011) Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02237161</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1998-11-10</started-marketing-on>
+      <ended-marketing-on>2005-08-04</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Paire OB Plus DHA</name>
+      <labeller>Centrix Pharmaceutical</labeller>
+      <ndc-id/>
+      <ndc-product-code>11528-095</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2010-10-13</started-marketing-on>
+      <ended-marketing-on>2015-07-31</ended-marketing-on>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>PreferaOB</name>
+      <labeller>Meda Pharmaceuticals Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code>0037-0084</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-04-28</started-marketing-on>
+      <ended-marketing-on>2018-09-21</ended-marketing-on>
+      <dosage-form>Tablet, coated</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>PreferaOB plus DHA</name>
+      <labeller>Meda Pharmaceuticals Ltd</labeller>
+      <ndc-id/>
+      <ndc-product-code>0037-0083</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-02-01</started-marketing-on>
+      <ended-marketing-on>2018-09-21</ended-marketing-on>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Prenatal and Post Partum Supplement</name>
+      <labeller>Vita Health Products Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02240840</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2000-02-01</started-marketing-on>
+      <ended-marketing-on>2007-07-30</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Super-A Vitamins With Selenium Dietary Supplement</name>
+      <labeller>Garden State Nutritionals</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02238694</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1998-09-22</started-marketing-on>
+      <ended-marketing-on>2000-06-07</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Total Living Concepts Formula One - Tab</name>
+      <labeller>Total Living Concepts</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02135809</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1995-12-31</started-marketing-on>
+      <ended-marketing-on>1998-06-08</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>true</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Ultimate OB DHA</name>
+      <labeller>Trigen Laboratories, LLC</labeller>
+      <ndc-id/>
+      <ndc-product-code>13811-505</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2012-07-01</started-marketing-on>
+      <ended-marketing-on>2014-02-11</ended-marketing-on>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Vp-heme Ob</name>
+      <labeller>Virtus Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>76439-237</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2013-10-14</started-marketing-on>
+      <ended-marketing-on>2016-05-31</ended-marketing-on>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Vp-heme Ob</name>
+      <labeller>Virtus Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>69543-237</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-09-30</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Vp-heme Ob DHA</name>
+      <labeller>Virtus Pharmaceuticals</labeller>
+      <ndc-id/>
+      <ndc-product-code>76439-238</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2013-12-01</started-marketing-on>
+      <ended-marketing-on>2016-02-05</ended-marketing-on>
+      <dosage-form>Kit</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>false</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>HemeNatal OB</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cavan Heme OB</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Iron + Niacin + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>PreferaOB plus DHA</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Schizochytrium DHA oil + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>PreferaOB</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Paire OB Plus DHA</name>
+      <ingredients>Biotin + Cupric sulfate + Cyanocobalamin + D-alpha-Tocopherol acetate + Doconexent + Ferrous asparto glycinate + Folic acid + Iron + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Vitamin D + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Vp-heme Ob</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Copper gluconate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Vp-heme Ob DHA</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Niacin + Omega-3 fatty acids + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>HemeNatal OB plus DHA</name>
+      <ingredients>alpha-Linolenic acid + alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Doconexent + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Osbond acid + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Vp-heme Ob</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Folic acid + Heme iron polypeptide + Iron sucrose + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Ultimate OB DHA</name>
+      <ingredients>alpha-Tocopherol succinate + Biotin + Cholecalciferol + Cupric sulfate + Cyanocobalamin + Doconexent + Ferrous aspartate + Ferrous bisglycinate + Folic acid + Iron + Nicotinamide + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Duet DHA Balanced</name>
+      <ingredients>Ascorbic acid + Beta carotene + Calcium carbonate + Cholecalciferol + Choline + Cupric oxide + Cyanocobalamin + D-alpha-Tocopherol acetate + Folic acid + Iodine + Iron + Magnesium + Nicotinamide + Omega-3 fatty acids + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Zinc oxide</ingredients>
+    </mixture>
+    <mixture>
+      <name>Ocuvite Tab</name>
+      <ingredients>Ascorbic acid + Beta carotene + Cupric oxide + DL-alpha tocopheryl acetate + Selenic acid + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Total Living Concepts Formula One - Tab</name>
+      <ingredients>Ascorbic acid + Biotin + Calcium + Calcium + Copper + Cyanocobalamin + DL-alpha tocopheryl acetate + Ferrous fumarate + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Thiamine + Vitamin A + Vitamin D + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Balance Ace - Cap</name>
+      <ingredients>Ascorbic acid + Beta carotene + Cupric oxide + DL-alpha tocopheryl acetate + Manganese + Selenic acid + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Optivite Vitamin and Mineral Supplement Tablet</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Cupric oxide + Selenic acid + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cell-wise Natural Source</name>
+      <ingredients>Ascorbic acid + Beta carotene + Calcium + Cupric oxide + Manganese + Selenic acid + Vitamin E + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Super-A Vitamins With Selenium Dietary Supplement</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Selenic acid + Vitamin A</ingredients>
+    </mixture>
+    <mixture>
+      <name>One Daily Vitamin and Mineral Dietary Supplement</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Biotin + Calcium + Cholecalciferol + Chromium + Copper + Cyanocobalamin + Ferrous fumarate + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium + Potassium chloride + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Prenatal and Post Partum Supplement</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Biotin + Calcium + Cholecalciferol + Chromic chloride + Cupric oxide + Cyanocobalamin + Ferrous fumarate + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>One-A-day Advance Men's</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Chromic chloride + Cupric sulfate + Cyanocobalamin + Folic acid + Magnesium + Manganese + Niacin + Pantothenic acid + Potassium + Potassium chloride + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Vitamin D + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>One Tablet Daily Mens Formula</name>
+      <ingredients>Ascorbic acid + Beta carotene + Chromic chloride + Cupric oxide + Cyanocobalamin + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium + Potassium chloride + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Vitamin D + Vitamin E + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>Materna</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Biotin + Calcium + Cholecalciferol + Chromic chloride + Cupric oxide + Cyanocobalamin + Ferrous fumarate + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>High Potency Multivitamins &amp; Minerals Caplets</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Beta carotene + Biotin + Calcium + Calcium Phosphate + Cholecalciferol + Chromic chloride + Cupric sulfate + Cyanocobalamin + Ferrous fumarate + Folic acid + Magnesium + Manganese + Nickel sulfate + Nicotinamide + Pantothenic acid + Potassium + Potassium chloride + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Silicon + Sodium metavanadate + Sodium molybdate + Stannous chloride + Thiamine + Vitamin A + Zinc</ingredients>
+    </mixture>
+    <mixture>
+      <name>K.L. Vitamin-mineral</name>
+      <ingredients>alpha-Tocopherol acetate + Ascorbic acid + Biotin + Calcium + Calcium Phosphate + Cholecalciferol + Chromium + Copper + Cyanocobalamin + Ferrous sulfate anhydrous + Folic acid + Magnesium + Manganese + Nicotinamide + Pantothenic acid + Potassium Iodide + Pyridoxine + Riboflavin + Selenic acid + Sodium molybdate + Thiamine + Vitamin A + Zinc</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Alimentary Tract and Metabolism</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antioxidants</category>
+      <mesh-id>D000975</mesh-id>
+    </category>
+    <category>
+      <category>Compounds used in a research, industrial, or household setting</category>
+      <mesh-id>D020313</mesh-id>
+    </category>
+    <category>
+      <category>Diet, Food, and Nutrition</category>
+      <mesh-id>D000066888</mesh-id>
+    </category>
+    <category>
+      <category>Food</category>
+      <mesh-id>D005502</mesh-id>
+    </category>
+    <category>
+      <category>Food and Beverages</category>
+      <mesh-id>D019602</mesh-id>
+    </category>
+    <category>
+      <category>Growth Substances</category>
+      <mesh-id>D006133</mesh-id>
+    </category>
+    <category>
+      <category>Micronutrients</category>
+      <mesh-id>D018977</mesh-id>
+    </category>
+    <category>
+      <category>Mineral Supplements</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Physiological Phenomena</category>
+      <mesh-id>D010829</mesh-id>
+    </category>
+    <category>
+      <category>Protective Agents</category>
+      <mesh-id>D020011</mesh-id>
+    </category>
+    <category>
+      <category>Selenium Compounds</category>
+      <mesh-id>D018036</mesh-id>
+    </category>
+    <category>
+      <category>Trace Elements</category>
+      <mesh-id>D014131</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Capsule</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form/>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Tablet</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Powder</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Tablet, coated</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Kit</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Tablet, film coated</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="A12CE01">
+      <level code="A12CE">Selenium</level>
+      <level code="A12C">OTHER MINERAL SUPPLEMENTS</level>
+      <level code="A12">MINERAL SUPPLEMENTS</level>
+      <level code="A">ALIMENTARY TRACT AND METABOLISM</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB11068.pdf?1525903989</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB06210</drugbank-id>
+      <name>Eltrombopag</name>
+      <description>The bioavailability of Selenic acid can be decreased when combined with Eltrombopag.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>selenic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>selenic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>144.97</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>145.91183038</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>O[Se](O)(=O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>H2O4Se</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/H2O4Se/c1-5(2,3)4/h(H2,1,2,3,4)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>QYHFIVBSNOWOCQ-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>74.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>21.13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>6.65</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>-3.8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>Soluble</value>
+      <source>MSDS</source>
+    </property>
+    <property>
+      <kind>Melting Point</kind>
+      <value>70</value>
+      <source>MSDS</source>
+    </property>
+    <property>
+      <kind>Boiling Point</kind>
+      <value>Decomposes</value>
+      <source>MSDS</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>2295</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>18170</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>1089</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347827883</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C05697</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>1058</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50147596</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>SE4</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Selenic_acid</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL2097002</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

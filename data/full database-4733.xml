@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05042</drugbank-id>
+  <name>SGS518</name>
+  <description>SGS518, a novel antagonist for the 5HT6 subtype of the serotonin receptor, is being developed as a treatment for Cognitive Impairment Associated with Schizophrenia (CIAS).</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in neurologic disorders and schizophrenia and schizoaffective disorders.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>SGS518 is a selective antagonist of the 5-Hydroxytryptamine-6 (5-HT6) serotonin receptor believed to act by enhancing transmission of chemicals in the brain. </mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909908</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000945</id>
+      <name>5-hydroxytryptamine receptor 6</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P50406" source="Swiss-Prot">
+        <name>5-hydroxytryptamine receptor 6</name>
+        <general-function>Serotonin receptor activity</general-function>
+        <specific-function>This is one of the several different receptors for 5-hydroxytryptamine (serotonin), a biogenic hormone that functions as a neurotransmitter, a hormone, and a mitogen. The activity of this receptor is mediated by G proteins that stimulate adenylate cyclase. It has a high affinity for tricyclic psychotropic drugs (By similarity). Controls pyramidal neurons migration during corticogenesis, through the regulation of CDK5 activity (By similarity). Is an activator of TOR signaling (PubMed:23027611).</specific-function>
+        <gene-name>HTR6</gene-name>
+        <locus>1p36-p35</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>35-57
+65-85
+101-122
+145-166
+185-208
+266-290
+296-320</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.02</theoretical-pi>
+        <molecular-weight>46953.625</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5301</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HTR6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L41147</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1162924</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>11</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>11</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P50406</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>5HT6R_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5-HT-6</synonym>
+          <synonym>Serotonin receptor 6</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010665|5-hydroxytryptamine receptor 6
+MVPEPGPTANSTPAWGAGPPSAPGGSGWVAAALCVVIALTAAANSLLIALICTQPALRNT
+SNFFLVSLFTSDLMVGLVVMPPAMLNALYGRWVLARGLCLLWTAFDVMCCSASILNLCLI
+SLDRYLLILSPLRYKLRMTPLRALALVLGAWSLAALASFLPLLLGWHELGHARPPVPGQC
+RLLASLPFVLVASGLTFFLPSGAICFTYCRILLAARKQAVQVASLTTGMASQASETLQVP
+RTPRPGVESADSRRLATKHSRKALKASLTLGILLGMFFVTWLPFFVANIVQAVCDCISPG
+LFDVLTWLGYCNSTMNPIIYPLFMRDFKRALGRFLPCPRCPRERQASLASPSLRTSHSGP
+RPGLSLQQVLPLPLPPDSDSDSDAGSGGSSGLRLTAQLLLPGEATQDPPLPTRAAAAVNF
+FNIDPAEPELRPHPLGIPTN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010666|5-hydroxytryptamine receptor 6 (HTR6)
+ATGGTCCCAGAGCCGGGCCCAACCGCCAATAGCACCCCGGCCTGGGGGGCAGGGCCGCCG
+TCGGCCCCGGGGGGCAGCGGCTGGGTGGCGGCCGCGCTGTGCGTGGTCATCGCGCTGACG
+GCGGCGGCCAACTCGCTGCTGATCGCGCTCATCTGCACTCAGCCCGCGCTGCGCAACACG
+TCCAACTTCTTCCTGGTGTCGCTCTTCACGTCTGACCTGATGGTGGGGCTGGTGGTGATG
+CCGCCGGCCATGCTGAACGCGCTGTACGGGCGCTGGGTGCTGGCGCGCGGCCTCTGCCTG
+CTCTGGACCGCCTTCGACGTGATGTGCTGCAGCGCCTCCATCCTCAACCTCTGCCTCATC
+AGCCTGGACCGCTACCTGCTCATCCTCTCGCCGCTGCGCTACAAGCTGCGCATGACGCCC
+CTGCGTGCCCTGGCCCTAGTCCTGGGCGCCTGGAGCCTCGCCGCTCTCGCCTCCTTCCTG
+CCCCTGCTGCTGGGCTGGCACGAGCTGGGCCACGCACGGCCACCCGTCCCTGGCCAGTGC
+CGCCTGCTGGCCAGCCTGCCTTTTGTCCTTGTGGCGTCGGGCCTCACCTTCTTCCTGCCC
+TCGGGTGCCATATGCTTCACCTACTGCAGGATCCTGCTAGCTGCCCGCAAGCAGGCCGTG
+CAGGTGGCCTCCCTCACCACCGGCATGGCCAGTCAGGCCTCGGAGACGCTGCAGGTGCCC
+AGGACCCCACGCCCAGGGGTGGAGTCTGCTGACAGCAGGCGTCTAGCCACGAAGCACAGC
+AGGAAGGCCCTGAAGGCCAGCCTGACGCTGGGCATCCTGCTGGGCATGTTCTTTGTGACC
+TGGTTGCCCTTCTTTGTGGCCAACATAGTCCAGGCCGTGTGCGACTGCATCTCCCCAGGC
+CTCTTCGATGTCCTCACATGGCTGGGTTACTGTAACAGCACCATGAACCCCATCATCTAC
+CCACTCTTCATGCGGGACTTCAAGCGGGCGCTGGGCAGGTTCCTGCCATGTCCACGCTGT
+CCCCGGGAGCGCCAGGCCAGCCTGGCCTCGCCATCACTGCGCACCTCTCACAGCGGCCCC
+CGGCCCGGCCTTAGCCTACAGCAGGTGCTGCCGCTGCCCCTGCCGCCGGACTCAGATTCG
+GACTCAGACGCAGGCTCAGGCGGCTCCTCGGGCCTGCGGCTCACGGCCCAGCTGCTGCTT
+CCTGGCGAGGCCACCCAGGACCCCCCGCTGCCCACCAGGGCCGCTGCCGCCGTCAATTTC
+TTCAACATCGACCCCGCGGAGCCCGAGCTGCGGCCGCATCCACTTGGCATCCCCACGAAC
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cilium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histamine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serotonin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cerebral cortex cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of TOR signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,3843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB11828</drugbank-id>
+  <name>Neratinib</name>
+  <description>Neratinib was approved in July 2017 for use as an extended adjuvant therapy in Human Epidermal Growth Factor Receptor 2 (HER2) positive breast cancer. Approval was granted to Puma Biotechnology Inc. for the tradename Nerlynx. Neratinib is currently under investigation for use in many other forms of cancer.</description>
+  <cas-number>698387-09-6</cas-number>
+  <unii>JJH94R3PWB</unii>
+  <average-mass>557.05</average-mass>
+  <monoisotopic-mass>556.1989665</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For use as an extended adjuvant treatment in adult patients with early stage HER2-overexpressed/amplified breast cancer, to follow adjuvant trastuzumab-based therapy [FDA Label].</indication>
+  <pharmacodynamics>Neratinib is a tyrosine kinase inhibitor which exhibits antitumor action against Epidermal Growth Factor Receptor (EGFR), HER2, and Human Epidermal Growth Factor Receptor 4 (HER4) postive carcinomas [FDA Label].</pharmacodynamics>
+  <mechanism-of-action>Neratinib binds to and irreversibly inhibits EGFR, HER2, and HER4 [FDA Label]. This prevents auotphoshorylation of tyrosine residues on the receptor and reduces oncogenic signalling through the mitogen-activated protein kinase and Akt pathways.</mechanism-of-action>
+  <toxicity>Use of neratinib may produce diarrhea and hepatotoxicity as clinically significant adverse effects [FDA Label]. Serious adverse reactions in the neratinib arm of the clinical trials included diarrhea (1.6%), vomiting (0.9%), dehydration (0.6%), cellulitis (0.4%), renal failure (0.4%), erysipelas (0.4%), alanine aminotransferase increase (0.3%), aspartate aminotransferase increase (0.3%), nausea (0.3%), fatigue (0.2%), and abdominal pain (0.2%).</toxicity>
+  <metabolism>Neratinib is mainly undergoes metabolism via CYP3A4 [FDA Label]. It is also metabolized by flavin-containing monooxygenase to a lesser extent. The systemic exposures of neratinib's active metabolites M3, M6, M7, and M11 are 15%, 33%, 22%, and 4%.</metabolism>
+  <absorption>Neratinib and its major active metabolites M3. M6, and M7 have a Tmax of 2-8 h [FDA Label]. Administration with a high fat meal increases Cmax by 1.7-fold and total exposure by 2.2-fold. Administration with a standard meal increases Cmax by 1.2-fold and total exposure by 1.1-fold. Administration with gastric acid reducing agents such as proton pump inhibitors reduces Cmax by 71% and total exposure by 65%.</absorption>
+  <half-life>The mean half life of elimination ranges from 7-17 h following a single dose [FDA Label]. The mean plasma half life during multiple doses is 14.6 h for neratinib, 21.6 h for M3, 13.8 h for M6, and 10.4 h for M7.</half-life>
+  <protein-binding>Neratinib is over 99% bound to human plasma proteins [FDA Label]. It binds both human serum albumin and α1 acid glycoprotein.</protein-binding>
+  <route-of-elimination>97.1% of the total dose is excreted in the feces and 1.13% in the urine [FDA Label]. </route-of-elimination>
+  <volume-of-distribution>The apparent volume of distribution at steady state is 6433 L [FDA Label].</volume-of-distribution>
+  <clearance>The total clearance during multiple doses is 216 L/h for after the first dose and 281 L/h during steady state [FDA Label].</clearance>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as 4-aminoquinolines. These are organic compounds containing an amino group attached to the 4-position of a quinoline ring system.</description>
+    <direct-parent>4-aminoquinolines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Quinolines and derivatives</class>
+    <subclass>Aminoquinolines and derivatives</subclass>
+    <alternative-parent>Alkyl aryl ethers</alternative-parent>
+    <alternative-parent>Amino acids and derivatives</alternative-parent>
+    <alternative-parent>Aminophenyl ethers</alternative-parent>
+    <alternative-parent>Aminopyridines and derivatives</alternative-parent>
+    <alternative-parent>Aniline and substituted anilines</alternative-parent>
+    <alternative-parent>Aryl chlorides</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Chlorobenzenes</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>N-arylamides</alternative-parent>
+    <alternative-parent>Nitriles</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Phenoxy compounds</alternative-parent>
+    <alternative-parent>Secondary amines</alternative-parent>
+    <alternative-parent>Secondary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Trialkylamines</alternative-parent>
+    <substituent>4-aminoquinoline</substituent>
+    <substituent>Alkyl aryl ether</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Aminophenyl ether</substituent>
+    <substituent>Aminopyridine</substituent>
+    <substituent>Aniline or substituted anilines</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Aryl chloride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carbonitrile</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Chlorobenzene</substituent>
+    <substituent>Ether</substituent>
+    <substituent>Halobenzene</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>N-arylamide</substituent>
+    <substituent>Nitrile</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organochloride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenol ether</substituent>
+    <substituent>Phenoxy compound</substituent>
+    <substituent>Pyridine</substituent>
+    <substituent>Secondary amine</substituent>
+    <substituent>Secondary carboxylic acid amide</substituent>
+    <substituent>Tertiary aliphatic amine</substituent>
+    <substituent>Tertiary amine</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002087</drugbank-id>
+      <name>Neratinib Maleate</name>
+      <unii>9RM7XY23ZS</unii>
+      <cas-number>915942-22-2</cas-number>
+      <inchikey>VXZCUHNJXSIJIM-MEBGWEOYSA-N</inchikey>
+      <average-mass>673.12</average-mass>
+      <monoisotopic-mass>672.2099251</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="inn/usan">Neratinib</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Nerlynx</name>
+      <labeller>Knight Therapeutics Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02490536</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Tablet</dosage-form>
+      <strength>40 mg</strength>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Nerlynx</name>
+      <labeller>Puma Biotechnology, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>70437-240</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-07-17</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Tablet</dosage-form>
+      <strength>40 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA208051</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Nerlynx</name>
+      <ingredients>Neratinib</ingredients>
+    </mixture>
+    <mixture>
+      <name>Nerlynx</name>
+      <ingredients>Neratinib</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Antineoplastic Agents</category>
+      <mesh-id>D000970</mesh-id>
+    </category>
+    <category>
+      <category>Antineoplastic and Immunomodulating Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 CYP3A4 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Cytochrome P-450 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Kinase Inhibitor</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>P-glycoprotein inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Protein Kinase Inhibitors</category>
+      <mesh-id>D047428</mesh-id>
+    </category>
+    <category>
+      <category>Tyrosine Kinase Inhibitors</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Tablet</form>
+      <route>Oral</route>
+      <strength>40 mg/1</strength>
+    </dosage>
+    <dosage>
+      <form>Tablet</form>
+      <route>Oral</route>
+      <strength>40 mg</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="L01XE45">
+      <level code="L01XE">Protein kinase inhibitors</level>
+      <level code="L01X">OTHER ANTINEOPLASTIC AGENTS</level>
+      <level code="L01">ANTINEOPLASTIC AGENTS</level>
+      <level code="L">ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB11828.pdf?1500393251</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB11828.pdf?1500393251</msds>
+  <patents>
+    <patent>
+      <number>8790708</number>
+      <country>United States</country>
+      <approved>2014-07-29</approved>
+      <expires>2030-11-05</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9139558</number>
+      <country>United States</country>
+      <approved>2015-09-22</approved>
+      <expires>2028-10-15</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>6288082</number>
+      <country>United States</country>
+      <approved>2001-09-11</approved>
+      <expires>2019-09-24</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9211291</number>
+      <country>United States</country>
+      <approved>2015-12-15</approved>
+      <expires>2030-03-24</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>7982043</number>
+      <country>United States</country>
+      <approved>2011-07-19</approved>
+      <expires>2025-10-08</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9630946</number>
+      <country>United States</country>
+      <approved>2017-04-25</approved>
+      <expires>2028-10-15</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8518446</number>
+      <country>United States</country>
+      <approved>2013-08-27</approved>
+      <expires>2030-11-20</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>7399865</number>
+      <country>United States</country>
+      <approved>2008-07-15</approved>
+      <expires>2025-12-29</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>10035788</number>
+      <country>United States</country>
+      <approved>2018-07-31</approved>
+      <expires>2028-10-15</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00012</drugbank-id>
+      <name>Darbepoetin alfa</name>
+      <description>The risk or severity of Thrombosis can be increased when Darbepoetin alfa is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00016</drugbank-id>
+      <name>Erythropoietin</name>
+      <description>The risk or severity of Thrombosis can be increased when Erythropoietin is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08894</drugbank-id>
+      <name>Peginesatide</name>
+      <description>The risk or severity of Thrombosis can be increased when Peginesatide is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09107</drugbank-id>
+      <name>Methoxy polyethylene glycol-epoetin beta</name>
+      <description>The risk or severity of Thrombosis can be increased when Methoxy polyethylene glycol-epoetin beta is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00316</drugbank-id>
+      <name>Acetaminophen</name>
+      <description>The serum concentration of Acetaminophen can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09288</drugbank-id>
+      <name>Propacetamol</name>
+      <description>The serum concentration of Propacetamol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00017</drugbank-id>
+      <name>Salmon Calcitonin</name>
+      <description>The therapeutic efficacy of Salmon Calcitonin can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00024</drugbank-id>
+      <name>Thyrotropin alfa</name>
+      <description>The therapeutic efficacy of Thyrotropin alfa can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00066</drugbank-id>
+      <name>Follitropin</name>
+      <description>The therapeutic efficacy of Follitropin can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00279</drugbank-id>
+      <name>Liothyronine</name>
+      <description>The therapeutic efficacy of Liothyronine can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00389</drugbank-id>
+      <name>Carbimazole</name>
+      <description>The therapeutic efficacy of Carbimazole can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00550</drugbank-id>
+      <name>Propylthiouracil</name>
+      <description>The therapeutic efficacy of Propylthiouracil can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01583</drugbank-id>
+      <name>Liotrix</name>
+      <description>The therapeutic efficacy of Liotrix can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03374</drugbank-id>
+      <name>3,5-Diiodotyrosine</name>
+      <description>The therapeutic efficacy of 3,5-Diiodotyrosine can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03604</drugbank-id>
+      <name>Tiratricol</name>
+      <description>The therapeutic efficacy of Tiratricol can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05084</drugbank-id>
+      <name>Abaloparatide</name>
+      <description>The therapeutic efficacy of Abaloparatide can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05829</drugbank-id>
+      <name>Parathyroid hormone</name>
+      <description>The therapeutic efficacy of Parathyroid hormone can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06285</drugbank-id>
+      <name>Teriparatide</name>
+      <description>The therapeutic efficacy of Teriparatide can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06715</drugbank-id>
+      <name>Potassium Iodide</name>
+      <description>The therapeutic efficacy of Potassium Iodide can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07637</drugbank-id>
+      <name>Dibromotyrosine</name>
+      <description>The therapeutic efficacy of Dibromotyrosine can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09100</drugbank-id>
+      <name>Thyroid, porcine</name>
+      <description>The therapeutic efficacy of Thyroid, porcine can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09418</drugbank-id>
+      <name>Potassium perchlorate</name>
+      <description>The therapeutic efficacy of Potassium perchlorate can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09421</drugbank-id>
+      <name>Protirelin</name>
+      <description>The therapeutic efficacy of Protirelin can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12629</drugbank-id>
+      <name>3,5-diiodothyropropionic acid</name>
+      <description>The therapeutic efficacy of 3,5-diiodothyropropionic acid can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13644</drugbank-id>
+      <name>Methylthiouracil</name>
+      <description>The therapeutic efficacy of Methylthiouracil can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13742</drugbank-id>
+      <name>Elcatonin</name>
+      <description>The therapeutic efficacy of Elcatonin can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13804</drugbank-id>
+      <name>Benzylthiouracil</name>
+      <description>The therapeutic efficacy of Benzylthiouracil can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15263</drugbank-id>
+      <name>Thyrotropin</name>
+      <description>The therapeutic efficacy of Thyrotropin can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00451</drugbank-id>
+      <name>Levothyroxine</name>
+      <description>The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00763</drugbank-id>
+      <name>Methimazole</name>
+      <description>The therapeutic efficacy of Methimazole can be decreased when used in combination with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08916</drugbank-id>
+      <name>Afatinib</name>
+      <description>The serum concentration of Afatinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06616</drugbank-id>
+      <name>Bosutinib</name>
+      <description>The serum concentration of Bosutinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08870</drugbank-id>
+      <name>Brentuximab vedotin</name>
+      <description>The serum concentration of Brentuximab vedotin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01394</drugbank-id>
+      <name>Colchicine</name>
+      <description>The serum concentration of Colchicine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09075</drugbank-id>
+      <name>Edoxaban</name>
+      <description>The serum concentration of Edoxaban can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09027</drugbank-id>
+      <name>Ledipasvir</name>
+      <description>The serum concentration of Ledipasvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09049</drugbank-id>
+      <name>Naloxegol</name>
+      <description>The serum concentration of Naloxegol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06589</drugbank-id>
+      <name>Pazopanib</name>
+      <description>The serum concentration of Pazopanib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06480</drugbank-id>
+      <name>Prucalopride</name>
+      <description>The serum concentration of Prucalopride can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00243</drugbank-id>
+      <name>Ranolazine</name>
+      <description>The serum concentration of Ranolazine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06207</drugbank-id>
+      <name>Silodosin</name>
+      <description>The serum concentration of Silodosin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01030</drugbank-id>
+      <name>Topotecan</name>
+      <description>The serum concentration of Topotecan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The serum concentration of Everolimus can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01220</drugbank-id>
+      <name>Rifaximin</name>
+      <description>The serum concentration of Rifaximin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The excretion of Vincristine can be decreased when combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00997</drugbank-id>
+      <name>Doxorubicin</name>
+      <description>The serum concentration of Doxorubicin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12364</drugbank-id>
+      <name>Betrixaban</name>
+      <description>The serum concentration of Betrixaban can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06695</drugbank-id>
+      <name>Dabigatran etexilate</name>
+      <description>The serum concentration of Dabigatran etexilate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The serum concentration of Cyclosporine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00321</drugbank-id>
+      <name>Amitriptyline</name>
+      <description>The serum concentration of Amitriptyline can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00458</drugbank-id>
+      <name>Imipramine</name>
+      <description>The serum concentration of Imipramine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00564</drugbank-id>
+      <name>Carbamazepine</name>
+      <description>The serum concentration of Carbamazepine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00575</drugbank-id>
+      <name>Clonidine</name>
+      <description>The serum concentration of Clonidine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00726</drugbank-id>
+      <name>Trimipramine</name>
+      <description>The serum concentration of Trimipramine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>The serum concentration of Tacrolimus can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The serum concentration of Sirolimus can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00908</drugbank-id>
+      <name>Quinidine</name>
+      <description>The serum concentration of Quinidine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01045</drugbank-id>
+      <name>Rifampicin</name>
+      <description>The serum concentration of Rifampicin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01174</drugbank-id>
+      <name>Phenobarbital</name>
+      <description>The serum concentration of Phenobarbital can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01229</drugbank-id>
+      <name>Paclitaxel</name>
+      <description>The serum concentration of Paclitaxel can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01396</drugbank-id>
+      <name>Digitoxin</name>
+      <description>The serum concentration of Digitoxin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06287</drugbank-id>
+      <name>Temsirolimus</name>
+      <description>The serum concentration of Temsirolimus can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00252</drugbank-id>
+      <name>Phenytoin</name>
+      <description>The serum concentration of Phenytoin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00390</drugbank-id>
+      <name>Digoxin</name>
+      <description>Neratinib may decrease the excretion rate of Digoxin which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13401</drugbank-id>
+      <name>Metildigoxin</name>
+      <description>Neratinib may decrease the excretion rate of Metildigoxin which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13691</drugbank-id>
+      <name>Acetyldigoxin</name>
+      <description>Neratinib may decrease the excretion rate of Acetyldigoxin which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12825</drugbank-id>
+      <name>Lefamulin</name>
+      <description>Neratinib may decrease the excretion rate of Lefamulin which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00027</drugbank-id>
+      <name>Gramicidin D</name>
+      <description>The serum concentration of Gramicidin D can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00104</drugbank-id>
+      <name>Octreotide</name>
+      <description>The serum concentration of Octreotide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00126</drugbank-id>
+      <name>Ascorbic acid</name>
+      <description>The serum concentration of Ascorbic acid can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00175</drugbank-id>
+      <name>Pravastatin</name>
+      <description>The serum concentration of Pravastatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00193</drugbank-id>
+      <name>Tramadol</name>
+      <description>The serum concentration of Tramadol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00199</drugbank-id>
+      <name>Erythromycin</name>
+      <description>The serum concentration of Erythromycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00206</drugbank-id>
+      <name>Reserpine</name>
+      <description>The serum concentration of Reserpine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00207</drugbank-id>
+      <name>Azithromycin</name>
+      <description>The serum concentration of Azithromycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00213</drugbank-id>
+      <name>Pantoprazole</name>
+      <description>The serum concentration of Pantoprazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00215</drugbank-id>
+      <name>Citalopram</name>
+      <description>The serum concentration of Citalopram can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00248</drugbank-id>
+      <name>Cabergoline</name>
+      <description>The serum concentration of Cabergoline can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00255</drugbank-id>
+      <name>Diethylstilbestrol</name>
+      <description>The serum concentration of Diethylstilbestrol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00264</drugbank-id>
+      <name>Metoprolol</name>
+      <description>The serum concentration of Metoprolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00273</drugbank-id>
+      <name>Topiramate</name>
+      <description>The serum concentration of Topiramate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00285</drugbank-id>
+      <name>Venlafaxine</name>
+      <description>The serum concentration of Venlafaxine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00286</drugbank-id>
+      <name>Conjugated estrogens</name>
+      <description>The serum concentration of Conjugated estrogens can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00291</drugbank-id>
+      <name>Chlorambucil</name>
+      <description>The serum concentration of Chlorambucil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00295</drugbank-id>
+      <name>Morphine</name>
+      <description>The serum concentration of Morphine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00300</drugbank-id>
+      <name>Tenofovir disoproxil</name>
+      <description>The serum concentration of Tenofovir disoproxil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00305</drugbank-id>
+      <name>Mitomycin</name>
+      <description>The serum concentration of Mitomycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00317</drugbank-id>
+      <name>Gefitinib</name>
+      <description>The serum concentration of Gefitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The serum concentration of Indomethacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00334</drugbank-id>
+      <name>Olanzapine</name>
+      <description>The serum concentration of Olanzapine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00338</drugbank-id>
+      <name>Omeprazole</name>
+      <description>The serum concentration of Omeprazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00341</drugbank-id>
+      <name>Cetirizine</name>
+      <description>The serum concentration of Cetirizine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00343</drugbank-id>
+      <name>Diltiazem</name>
+      <description>The serum concentration of Diltiazem can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00349</drugbank-id>
+      <name>Clobazam</name>
+      <description>The serum concentration of Clobazam can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00358</drugbank-id>
+      <name>Mefloquine</name>
+      <description>The serum concentration of Mefloquine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00361</drugbank-id>
+      <name>Vinorelbine</name>
+      <description>The serum concentration of Vinorelbine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00363</drugbank-id>
+      <name>Clozapine</name>
+      <description>The serum concentration of Clozapine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00365</drugbank-id>
+      <name>Grepafloxacin</name>
+      <description>The serum concentration of Grepafloxacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00373</drugbank-id>
+      <name>Timolol</name>
+      <description>The serum concentration of Timolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00381</drugbank-id>
+      <name>Amlodipine</name>
+      <description>The serum concentration of Amlodipine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00382</drugbank-id>
+      <name>Tacrine</name>
+      <description>The serum concentration of Tacrine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00394</drugbank-id>
+      <name>Beclomethasone dipropionate</name>
+      <description>The serum concentration of Beclomethasone dipropionate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00396</drugbank-id>
+      <name>Progesterone</name>
+      <description>The serum concentration of Progesterone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00398</drugbank-id>
+      <name>Sorafenib</name>
+      <description>The serum concentration of Sorafenib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00439</drugbank-id>
+      <name>Cerivastatin</name>
+      <description>The serum concentration of Cerivastatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00441</drugbank-id>
+      <name>Gemcitabine</name>
+      <description>The serum concentration of Gemcitabine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00443</drugbank-id>
+      <name>Betamethasone</name>
+      <description>The serum concentration of Betamethasone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00444</drugbank-id>
+      <name>Teniposide</name>
+      <description>The serum concentration of Teniposide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00448</drugbank-id>
+      <name>Lansoprazole</name>
+      <description>The serum concentration of Lansoprazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00457</drugbank-id>
+      <name>Prazosin</name>
+      <description>The serum concentration of Prazosin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00468</drugbank-id>
+      <name>Quinine</name>
+      <description>The serum concentration of Quinine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00477</drugbank-id>
+      <name>Chlorpromazine</name>
+      <description>The serum concentration of Chlorpromazine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00480</drugbank-id>
+      <name>Lenalidomide</name>
+      <description>The serum concentration of Lenalidomide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00481</drugbank-id>
+      <name>Raloxifene</name>
+      <description>The serum concentration of Raloxifene can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00482</drugbank-id>
+      <name>Celecoxib</name>
+      <description>The serum concentration of Celecoxib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00495</drugbank-id>
+      <name>Zidovudine</name>
+      <description>The serum concentration of Zidovudine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00501</drugbank-id>
+      <name>Cimetidine</name>
+      <description>The serum concentration of Cimetidine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00502</drugbank-id>
+      <name>Haloperidol</name>
+      <description>The serum concentration of Haloperidol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00515</drugbank-id>
+      <name>Cisplatin</name>
+      <description>The serum concentration of Cisplatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00523</drugbank-id>
+      <name>Alitretinoin</name>
+      <description>The serum concentration of Alitretinoin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00530</drugbank-id>
+      <name>Erlotinib</name>
+      <description>The serum concentration of Erlotinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00537</drugbank-id>
+      <name>Ciprofloxacin</name>
+      <description>The serum concentration of Ciprofloxacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00539</drugbank-id>
+      <name>Toremifene</name>
+      <description>The serum concentration of Toremifene can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00555</drugbank-id>
+      <name>Lamotrigine</name>
+      <description>The serum concentration of Lamotrigine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The serum concentration of Methotrexate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The serum concentration of Vinblastine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00571</drugbank-id>
+      <name>Propranolol</name>
+      <description>The serum concentration of Propranolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00585</drugbank-id>
+      <name>Nizatidine</name>
+      <description>The serum concentration of Nizatidine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00588</drugbank-id>
+      <name>Fluticasone propionate</name>
+      <description>The serum concentration of Fluticasone propionate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00602</drugbank-id>
+      <name>Ivermectin</name>
+      <description>The serum concentration of Ivermectin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00608</drugbank-id>
+      <name>Chloroquine</name>
+      <description>The serum concentration of Chloroquine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00612</drugbank-id>
+      <name>Bisoprolol</name>
+      <description>The serum concentration of Bisoprolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00619</drugbank-id>
+      <name>Imatinib</name>
+      <description>The serum concentration of Imatinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00622</drugbank-id>
+      <name>Nicardipine</name>
+      <description>The serum concentration of Nicardipine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00635</drugbank-id>
+      <name>Prednisone</name>
+      <description>The serum concentration of Prednisone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00652</drugbank-id>
+      <name>Pentazocine</name>
+      <description>The serum concentration of Pentazocine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00661</drugbank-id>
+      <name>Verapamil</name>
+      <description>The serum concentration of Verapamil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00669</drugbank-id>
+      <name>Sumatriptan</name>
+      <description>The serum concentration of Sumatriptan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00675</drugbank-id>
+      <name>Tamoxifen</name>
+      <description>The serum concentration of Tamoxifen can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00678</drugbank-id>
+      <name>Losartan</name>
+      <description>The serum concentration of Losartan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00688</drugbank-id>
+      <name>Mycophenolate mofetil</name>
+      <description>The serum concentration of Mycophenolate mofetil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00694</drugbank-id>
+      <name>Daunorubicin</name>
+      <description>The serum concentration of Daunorubicin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00698</drugbank-id>
+      <name>Nitrofurantoin</name>
+      <description>The serum concentration of Nitrofurantoin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00701</drugbank-id>
+      <name>Amprenavir</name>
+      <description>The serum concentration of Amprenavir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00709</drugbank-id>
+      <name>Lamivudine</name>
+      <description>The serum concentration of Lamivudine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00734</drugbank-id>
+      <name>Risperidone</name>
+      <description>The serum concentration of Risperidone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00736</drugbank-id>
+      <name>Esomeprazole</name>
+      <description>The serum concentration of Esomeprazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00741</drugbank-id>
+      <name>Hydrocortisone</name>
+      <description>The serum concentration of Hydrocortisone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00742</drugbank-id>
+      <name>Mannitol</name>
+      <description>The serum concentration of Mannitol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00758</drugbank-id>
+      <name>Clopidogrel</name>
+      <description>The serum concentration of Clopidogrel can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00759</drugbank-id>
+      <name>Tetracycline</name>
+      <description>The serum concentration of Tetracycline can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00762</drugbank-id>
+      <name>Irinotecan</name>
+      <description>The serum concentration of Irinotecan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00768</drugbank-id>
+      <name>Olopatadine</name>
+      <description>The serum concentration of Olopatadine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00773</drugbank-id>
+      <name>Etoposide</name>
+      <description>The serum concentration of Etoposide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00783</drugbank-id>
+      <name>Estradiol</name>
+      <description>The serum concentration of Estradiol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00829</drugbank-id>
+      <name>Diazepam</name>
+      <description>The serum concentration of Diazepam can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00831</drugbank-id>
+      <name>Trifluoperazine</name>
+      <description>The serum concentration of Trifluoperazine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00860</drugbank-id>
+      <name>Prednisolone</name>
+      <description>The serum concentration of Prednisolone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00863</drugbank-id>
+      <name>Ranitidine</name>
+      <description>The serum concentration of Ranitidine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00875</drugbank-id>
+      <name>Flupentixol</name>
+      <description>The serum concentration of Flupentixol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00882</drugbank-id>
+      <name>Clomifene</name>
+      <description>The serum concentration of Clomifene can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00904</drugbank-id>
+      <name>Ondansetron</name>
+      <description>The serum concentration of Ondansetron can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00945</drugbank-id>
+      <name>Acetylsalicylic acid</name>
+      <description>The serum concentration of Acetylsalicylic acid can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00950</drugbank-id>
+      <name>Fexofenadine</name>
+      <description>The serum concentration of Fexofenadine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00959</drugbank-id>
+      <name>Methylprednisolone</name>
+      <description>The serum concentration of Methylprednisolone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00970</drugbank-id>
+      <name>Dactinomycin</name>
+      <description>The serum concentration of Dactinomycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00973</drugbank-id>
+      <name>Ezetimibe</name>
+      <description>The serum concentration of Ezetimibe can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00975</drugbank-id>
+      <name>Dipyridamole</name>
+      <description>The serum concentration of Dipyridamole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00977</drugbank-id>
+      <name>Ethinylestradiol</name>
+      <description>The serum concentration of Ethinylestradiol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00987</drugbank-id>
+      <name>Cytarabine</name>
+      <description>The serum concentration of Cytarabine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01005</drugbank-id>
+      <name>Hydroxyurea</name>
+      <description>The serum concentration of Hydroxyurea can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01042</drugbank-id>
+      <name>Melphalan</name>
+      <description>The serum concentration of Melphalan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01050</drugbank-id>
+      <name>Ibuprofen</name>
+      <description>The serum concentration of Ibuprofen can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01076</drugbank-id>
+      <name>Atorvastatin</name>
+      <description>The serum concentration of Atorvastatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01079</drugbank-id>
+      <name>Tegaserod</name>
+      <description>The serum concentration of Tegaserod can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01115</drugbank-id>
+      <name>Nifedipine</name>
+      <description>The serum concentration of Nifedipine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01137</drugbank-id>
+      <name>Levofloxacin</name>
+      <description>The serum concentration of Levofloxacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01169</drugbank-id>
+      <name>Arsenic trioxide</name>
+      <description>The serum concentration of Arsenic trioxide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01184</drugbank-id>
+      <name>Domperidone</name>
+      <description>The serum concentration of Domperidone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01193</drugbank-id>
+      <name>Acebutolol</name>
+      <description>The serum concentration of Acebutolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01202</drugbank-id>
+      <name>Levetiracetam</name>
+      <description>The serum concentration of Levetiracetam can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01203</drugbank-id>
+      <name>Nadolol</name>
+      <description>The serum concentration of Nadolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01204</drugbank-id>
+      <name>Mitoxantrone</name>
+      <description>The serum concentration of Mitoxantrone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01208</drugbank-id>
+      <name>Sparfloxacin</name>
+      <description>The serum concentration of Sparfloxacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01248</drugbank-id>
+      <name>Docetaxel</name>
+      <description>The serum concentration of Docetaxel can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01261</drugbank-id>
+      <name>Sitagliptin</name>
+      <description>The serum concentration of Sitagliptin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01267</drugbank-id>
+      <name>Paliperidone</name>
+      <description>The serum concentration of Paliperidone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01268</drugbank-id>
+      <name>Sunitinib</name>
+      <description>The serum concentration of Sunitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01339</drugbank-id>
+      <name>Vecuronium</name>
+      <description>The serum concentration of Vecuronium can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01400</drugbank-id>
+      <name>Neostigmine</name>
+      <description>The serum concentration of Neostigmine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01420</drugbank-id>
+      <name>Testosterone propionate</name>
+      <description>The serum concentration of Testosterone propionate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01587</drugbank-id>
+      <name>Ketazolam</name>
+      <description>The serum concentration of Ketazolam can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02901</drugbank-id>
+      <name>Stanolone</name>
+      <description>The serum concentration of Stanolone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03203</drugbank-id>
+      <name>Sphingosine</name>
+      <description>The serum concentration of Sphingosine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03825</drugbank-id>
+      <name>Rhodamine 6G</name>
+      <description>The serum concentration of Rhodamine 6G can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04348</drugbank-id>
+      <name>Taurocholic acid</name>
+      <description>The serum concentration of Taurocholic acid can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04573</drugbank-id>
+      <name>Estriol</name>
+      <description>The serum concentration of Estriol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04630</drugbank-id>
+      <name>Aldosterone</name>
+      <description>The serum concentration of Aldosterone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04690</drugbank-id>
+      <name>Camptothecin</name>
+      <description>The serum concentration of Camptothecin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04840</drugbank-id>
+      <name>Debrisoquine</name>
+      <description>The serum concentration of Debrisoquine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04846</drugbank-id>
+      <name>Celiprolol</name>
+      <description>The serum concentration of Celiprolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05015</drugbank-id>
+      <name>Belinostat</name>
+      <description>The serum concentration of Belinostat can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05039</drugbank-id>
+      <name>Indacaterol</name>
+      <description>The serum concentration of Indacaterol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05239</drugbank-id>
+      <name>Cobimetinib</name>
+      <description>The serum concentration of Cobimetinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05773</drugbank-id>
+      <name>Trastuzumab emtansine</name>
+      <description>The serum concentration of Trastuzumab emtansine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05889</drugbank-id>
+      <name>Inotuzumab ozogamicin</name>
+      <description>The serum concentration of Inotuzumab ozogamicin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06176</drugbank-id>
+      <name>Romidepsin</name>
+      <description>The serum concentration of Romidepsin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06290</drugbank-id>
+      <name>Simeprevir</name>
+      <description>The serum concentration of Simeprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06292</drugbank-id>
+      <name>Dapagliflozin</name>
+      <description>The serum concentration of Dapagliflozin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06403</drugbank-id>
+      <name>Ambrisentan</name>
+      <description>The serum concentration of Ambrisentan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06603</drugbank-id>
+      <name>Panobinostat</name>
+      <description>The serum concentration of Panobinostat can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06605</drugbank-id>
+      <name>Apixaban</name>
+      <description>The serum concentration of Apixaban can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06626</drugbank-id>
+      <name>Axitinib</name>
+      <description>The serum concentration of Axitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06670</drugbank-id>
+      <name>Odanacatib</name>
+      <description>The serum concentration of Odanacatib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06702</drugbank-id>
+      <name>Fesoterodine</name>
+      <description>The serum concentration of Fesoterodine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06772</drugbank-id>
+      <name>Cabazitaxel</name>
+      <description>The serum concentration of Cabazitaxel can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08828</drugbank-id>
+      <name>Vismodegib</name>
+      <description>The serum concentration of Vismodegib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08860</drugbank-id>
+      <name>Pitavastatin</name>
+      <description>The serum concentration of Pitavastatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08865</drugbank-id>
+      <name>Crizotinib</name>
+      <description>The serum concentration of Crizotinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08874</drugbank-id>
+      <name>Fidaxomicin</name>
+      <description>The serum concentration of Fidaxomicin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08881</drugbank-id>
+      <name>Vemurafenib</name>
+      <description>The serum concentration of Vemurafenib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08882</drugbank-id>
+      <name>Linagliptin</name>
+      <description>The serum concentration of Linagliptin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08889</drugbank-id>
+      <name>Carfilzomib</name>
+      <description>The serum concentration of Carfilzomib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08893</drugbank-id>
+      <name>Mirabegron</name>
+      <description>The serum concentration of Mirabegron can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08896</drugbank-id>
+      <name>Regorafenib</name>
+      <description>The serum concentration of Regorafenib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08901</drugbank-id>
+      <name>Ponatinib</name>
+      <description>The serum concentration of Ponatinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08906</drugbank-id>
+      <name>Fluticasone furoate</name>
+      <description>The serum concentration of Fluticasone furoate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08907</drugbank-id>
+      <name>Canagliflozin</name>
+      <description>The serum concentration of Canagliflozin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08910</drugbank-id>
+      <name>Pomalidomide</name>
+      <description>The serum concentration of Pomalidomide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08912</drugbank-id>
+      <name>Dabrafenib</name>
+      <description>The serum concentration of Dabrafenib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08918</drugbank-id>
+      <name>Levomilnacipran</name>
+      <description>The serum concentration of Levomilnacipran can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08930</drugbank-id>
+      <name>Dolutegravir</name>
+      <description>The serum concentration of Dolutegravir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08934</drugbank-id>
+      <name>Sofosbuvir</name>
+      <description>The serum concentration of Sofosbuvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09063</drugbank-id>
+      <name>Ceritinib</name>
+      <description>The serum concentration of Ceritinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09073</drugbank-id>
+      <name>Palbociclib</name>
+      <description>The serum concentration of Palbociclib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09074</drugbank-id>
+      <name>Olaparib</name>
+      <description>The serum concentration of Olaparib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09076</drugbank-id>
+      <name>Umeclidinium</name>
+      <description>The serum concentration of Umeclidinium can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09078</drugbank-id>
+      <name>Lenvatinib</name>
+      <description>The serum concentration of Lenvatinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09079</drugbank-id>
+      <name>Nintedanib</name>
+      <description>The serum concentration of Nintedanib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09099</drugbank-id>
+      <name>Somatostatin</name>
+      <description>The serum concentration of Somatostatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09161</drugbank-id>
+      <name>Technetium Tc-99m sestamibi</name>
+      <description>The serum concentration of Technetium Tc-99m sestamibi can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09183</drugbank-id>
+      <name>Dasabuvir</name>
+      <description>The serum concentration of Dasabuvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09270</drugbank-id>
+      <name>Ubidecarenone</name>
+      <description>The serum concentration of Ubidecarenone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09296</drugbank-id>
+      <name>Ombitasvir</name>
+      <description>The serum concentration of Ombitasvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09297</drugbank-id>
+      <name>Paritaprevir</name>
+      <description>The serum concentration of Paritaprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09299</drugbank-id>
+      <name>Tenofovir alafenamide</name>
+      <description>The serum concentration of Tenofovir alafenamide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09330</drugbank-id>
+      <name>Osimertinib</name>
+      <description>The serum concentration of Osimertinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11362</drugbank-id>
+      <name>Selexipag</name>
+      <description>The serum concentration of Selexipag can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11431</drugbank-id>
+      <name>Moxidectin</name>
+      <description>The serum concentration of Moxidectin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11447</drugbank-id>
+      <name>Phenothiazine</name>
+      <description>The serum concentration of Phenothiazine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11574</drugbank-id>
+      <name>Elbasvir</name>
+      <description>The serum concentration of Elbasvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11575</drugbank-id>
+      <name>Grazoprevir</name>
+      <description>The serum concentration of Grazoprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11581</drugbank-id>
+      <name>Venetoclax</name>
+      <description>The serum concentration of Venetoclax can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11586</drugbank-id>
+      <name>Asunaprevir</name>
+      <description>The serum concentration of Asunaprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11613</drugbank-id>
+      <name>Velpatasvir</name>
+      <description>The serum concentration of Velpatasvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11641</drugbank-id>
+      <name>Vinflunine</name>
+      <description>The serum concentration of Vinflunine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11712</drugbank-id>
+      <name>Tezacaftor</name>
+      <description>The serum concentration of Tezacaftor can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11760</drugbank-id>
+      <name>Talazoparib</name>
+      <description>The serum concentration of Talazoparib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11770</drugbank-id>
+      <name>Talinolol</name>
+      <description>The serum concentration of Talinolol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The serum concentration of Baricitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11827</drugbank-id>
+      <name>Ertugliflozin</name>
+      <description>The serum concentration of Ertugliflozin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11855</drugbank-id>
+      <name>Revefenacin</name>
+      <description>The serum concentration of Revefenacin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11869</drugbank-id>
+      <name>Valspodar</name>
+      <description>The serum concentration of Valspodar can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11952</drugbank-id>
+      <name>Duvelisib</name>
+      <description>The serum concentration of Duvelisib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11963</drugbank-id>
+      <name>Dacomitinib</name>
+      <description>The serum concentration of Dacomitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11978</drugbank-id>
+      <name>Glasdegib</name>
+      <description>The serum concentration of Glasdegib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11979</drugbank-id>
+      <name>Elagolix</name>
+      <description>The serum concentration of Elagolix can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11995</drugbank-id>
+      <name>Avatrombopag</name>
+      <description>The serum concentration of Avatrombopag can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12001</drugbank-id>
+      <name>Abemaciclib</name>
+      <description>The serum concentration of Abemaciclib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12015</drugbank-id>
+      <name>Alpelisib</name>
+      <description>The serum concentration of Alpelisib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12026</drugbank-id>
+      <name>Voxilaprevir</name>
+      <description>The serum concentration of Voxilaprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12070</drugbank-id>
+      <name>Letermovir</name>
+      <description>The serum concentration of Letermovir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12141</drugbank-id>
+      <name>Gilteritinib</name>
+      <description>The serum concentration of Gilteritinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12147</drugbank-id>
+      <name>Erdafitinib</name>
+      <description>The serum concentration of Erdafitinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12332</drugbank-id>
+      <name>Rucaparib</name>
+      <description>The serum concentration of Rucaparib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12401</drugbank-id>
+      <name>Bromperidol</name>
+      <description>The serum concentration of Bromperidol can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12455</drugbank-id>
+      <name>Omadacycline</name>
+      <description>The serum concentration of Omadacycline can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12483</drugbank-id>
+      <name>Copanlisib</name>
+      <description>The serum concentration of Copanlisib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12836</drugbank-id>
+      <name>Grapiprant</name>
+      <description>The serum concentration of Grapiprant can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13125</drugbank-id>
+      <name>Lusutrombopag</name>
+      <description>The serum concentration of Lusutrombopag can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13146</drugbank-id>
+      <name>Fluciclovine (18F)</name>
+      <description>The serum concentration of Fluciclovine (18F) can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13173</drugbank-id>
+      <name>Cerliponase alfa</name>
+      <description>The serum concentration of Cerliponase alfa can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13867</drugbank-id>
+      <name>Fluticasone</name>
+      <description>The serum concentration of Fluticasone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13878</drugbank-id>
+      <name>Pibrentasvir</name>
+      <description>The serum concentration of Pibrentasvir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13879</drugbank-id>
+      <name>Glecaprevir</name>
+      <description>The serum concentration of Glecaprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13951</drugbank-id>
+      <name>Stanolone acetate</name>
+      <description>The serum concentration of Stanolone acetate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13952</drugbank-id>
+      <name>Estradiol acetate</name>
+      <description>The serum concentration of Estradiol acetate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13953</drugbank-id>
+      <name>Estradiol benzoate</name>
+      <description>The serum concentration of Estradiol benzoate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13954</drugbank-id>
+      <name>Estradiol cypionate</name>
+      <description>The serum concentration of Estradiol cypionate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13955</drugbank-id>
+      <name>Estradiol dienanthate</name>
+      <description>The serum concentration of Estradiol dienanthate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13956</drugbank-id>
+      <name>Estradiol valerate</name>
+      <description>The serum concentration of Estradiol valerate can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14057</drugbank-id>
+      <name>Valinomycin</name>
+      <description>The serum concentration of Valinomycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14126</drugbank-id>
+      <name>Tenofovir</name>
+      <description>The serum concentration of Tenofovir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14568</drugbank-id>
+      <name>Ivosidenib</name>
+      <description>The serum concentration of Ivosidenib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14723</drugbank-id>
+      <name>Larotrectinib</name>
+      <description>The serum concentration of Larotrectinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00455</drugbank-id>
+      <name>Loratadine</name>
+      <description>The serum concentration of Neratinib can be increased when it is combined with Loratadine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00203</drugbank-id>
+      <name>Sildenafil</name>
+      <description>The serum concentration of Sildenafil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00216</drugbank-id>
+      <name>Eletriptan</name>
+      <description>The serum concentration of Eletriptan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00224</drugbank-id>
+      <name>Indinavir</name>
+      <description>The serum concentration of Indinavir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00342</drugbank-id>
+      <name>Terfenadine</name>
+      <description>The serum concentration of Terfenadine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00641</drugbank-id>
+      <name>Simvastatin</name>
+      <description>The serum concentration of Simvastatin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00862</drugbank-id>
+      <name>Vardenafil</name>
+      <description>The serum concentration of Vardenafil can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01142</drugbank-id>
+      <name>Doxepin</name>
+      <description>The serum concentration of Doxepin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01200</drugbank-id>
+      <name>Bromocriptine</name>
+      <description>The serum concentration of Bromocriptine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01222</drugbank-id>
+      <name>Budesonide</name>
+      <description>The serum concentration of Budesonide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01224</drugbank-id>
+      <name>Quetiapine</name>
+      <description>The serum concentration of Quetiapine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01232</drugbank-id>
+      <name>Saquinavir</name>
+      <description>The serum concentration of Saquinavir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01254</drugbank-id>
+      <name>Dasatinib</name>
+      <description>The serum concentration of Dasatinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06212</drugbank-id>
+      <name>Tolvaptan</name>
+      <description>The serum concentration of Tolvaptan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06228</drugbank-id>
+      <name>Rivaroxaban</name>
+      <description>The serum concentration of Rivaroxaban can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08816</drugbank-id>
+      <name>Ticagrelor</name>
+      <description>The serum concentration of Ticagrelor can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00843</drugbank-id>
+      <name>Donepezil</name>
+      <description>The serum concentration of Neratinib can be increased when it is combined with Donepezil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11986</drugbank-id>
+      <name>Entrectinib</name>
+      <description>The serum concentration of Entrectinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12500</drugbank-id>
+      <name>Fedratinib</name>
+      <description>The serum concentration of Fedratinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00220</drugbank-id>
+      <name>Nelfinavir</name>
+      <description>The serum concentration of Neratinib can be increased when it is combined with Nelfinavir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01233</drugbank-id>
+      <name>Metoclopramide</name>
+      <description>The serum concentration of Metoclopramide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00776</drugbank-id>
+      <name>Oxcarbazepine</name>
+      <description>The serum concentration of Oxcarbazepine can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01195</drugbank-id>
+      <name>Flecainide</name>
+      <description>The serum concentration of Flecainide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01217</drugbank-id>
+      <name>Anastrozole</name>
+      <description>The serum concentration of Anastrozole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11732</drugbank-id>
+      <name>Lasmiditan</name>
+      <description>The serum concentration of Lasmiditan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00503</drugbank-id>
+      <name>Ritonavir</name>
+      <description>The serum concentration of Ritonavir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00836</drugbank-id>
+      <name>Loperamide</name>
+      <description>The serum concentration of Loperamide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01026</drugbank-id>
+      <name>Ketoconazole</name>
+      <description>The serum concentration of Ketoconazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01072</drugbank-id>
+      <name>Atazanavir</name>
+      <description>The serum concentration of Atazanavir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01167</drugbank-id>
+      <name>Itraconazole</name>
+      <description>The serum concentration of Itraconazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01183</drugbank-id>
+      <name>Naloxone</name>
+      <description>The serum concentration of Naloxone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01211</drugbank-id>
+      <name>Clarithromycin</name>
+      <description>The serum concentration of Clarithromycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01234</drugbank-id>
+      <name>Dexamethasone</name>
+      <description>The serum concentration of Dexamethasone can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01263</drugbank-id>
+      <name>Posaconazole</name>
+      <description>The serum concentration of Posaconazole can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04868</drugbank-id>
+      <name>Nilotinib</name>
+      <description>The serum concentration of Nilotinib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05521</drugbank-id>
+      <name>Telaprevir</name>
+      <description>The serum concentration of Telaprevir can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The serum concentration of Idelalisib can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11672</drugbank-id>
+      <name>Curcumin</name>
+      <description>The serum concentration of Curcumin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11753</drugbank-id>
+      <name>Rifamycin</name>
+      <description>The serum concentration of Rifamycin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13007</drugbank-id>
+      <name>Enfortumab vedotin</name>
+      <description>The serum concentration of Enfortumab vedotin can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14962</drugbank-id>
+      <name>Trastuzumab deruxtecan</name>
+      <description>The serum concentration of Trastuzumab deruxtecan can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12941</drugbank-id>
+      <name>Darolutamide</name>
+      <description>The serum concentration of Darolutamide can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09046</drugbank-id>
+      <name>Metreleptin</name>
+      <description>The metabolism of Neratinib can be increased when combined with Metreleptin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06119</drugbank-id>
+      <name>Cenobamate</name>
+      <description>The serum concentration of Neratinib can be decreased when it is combined with Cenobamate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15328</drugbank-id>
+      <name>Ubrogepant</name>
+      <description>The serum concentration of Ubrogepant can be increased when it is combined with Neratinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11642</drugbank-id>
+      <name>Pitolisant</name>
+      <description>The serum concentration of Neratinib can be decreased when it is combined with Pitolisant.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.72</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.74e-03 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>4.47</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2E)-N-[4-({3-chloro-4-[(pyridin-2-yl)methoxy]phenyl}amino)-3-cyano-7-ethoxyquinolin-6-yl]-4-(dimethylamino)but-2-enamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>neratinib</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>557.05</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>556.1989665</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCOC1=C(NC(=O)\C=C\CN(C)C)C=C2C(NC3=CC=C(OCC4=CC=CC=N4)C(Cl)=C3)=C(C=NC2=C1)C#N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C30H29ClN6O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C30H29ClN6O3/c1-4-39-28-16-25-23(15-26(28)36-29(38)9-7-13-37(2)3)30(20(17-32)18-34-25)35-21-10-11-27(24(31)14-21)40-19-22-8-5-6-12-33-22/h5-12,14-16,18H,4,13,19H2,1-3H3,(H,34,35)(H,36,38)/b9-7+</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>JWNPDZNEKVCWMY-VQHVLOKHSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>112.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>157.29</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>58.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>12.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.81</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>23331</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>9915743</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347828174</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>8091392</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50161957</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Neratinib</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL180022</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="4">
+      <id>BE0000767</id>
+      <name>Epidermal growth factor receptor</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P00533" source="Swiss-Prot">
+        <name>Epidermal growth factor receptor</name>
+        <general-function>Ubiquitin protein ligase binding</general-function>
+        <specific-function>Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses. Known ligands include EGF, TGFA/TGF-alpha, amphiregulin, epigen/EPGN, BTC/betacellulin, epiregulin/EREG and HBEGF/heparin-binding EGF. Ligand binding triggers receptor homo- and/or heterodimerization and autophosphorylation on key cytoplasmic residues. The phosphorylated receptor recruits adapter proteins like GRB2 which in turn activates complex downstream signaling cascades. Activates at least 4 major downstream signaling cascades including the RAS-RAF-MEK-ERK, PI3 kinase-AKT, PLCgamma-PKC and STATs modules. May also activate the NF-kappa-B signaling cascade. Also directly phosphorylates other proteins like RGS16, activating its GTPase activity and probably coupling the EGF receptor signaling to the G protein-coupled receptor signaling. Also phosphorylates MUC1 and increases its interaction with SRC and CTNNB1/beta-catenin.Isoform 2 may act as an antagonist of EGF action.</specific-function>
+        <gene-name>EGFR</gene-name>
+        <locus>7p12</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>646-668</transmembrane-regions>
+        <signal-regions>1-24</signal-regions>
+        <theoretical-pi>6.67</theoretical-pi>
+        <molecular-weight>134276.185</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3236</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>EGFR</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X00588</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>757924</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1797</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00533</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>EGFR_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.1</synonym>
+          <synonym>ERBB</synonym>
+          <synonym>ERBB1</synonym>
+          <synonym>HER1</synonym>
+          <synonym>Proto-oncogene c-ErbB-1</synonym>
+          <synonym>Receptor tyrosine-protein kinase erbB-1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001530|Epidermal growth factor receptor
+MRPSGTAGAALLALLAALCPASRALEEKKVCQGTSNKLTQLGTFEDHFLSLQRMFNNCEV
+VLGNLEITYVQRNYDLSFLKTIQEVAGYVLIALNTVERIPLENLQIIRGNMYYENSYALA
+VLSNYDANKTGLKELPMRNLQEILHGAVRFSNNPALCNVESIQWRDIVSSDFLSNMSMDF
+QNHLGSCQKCDPSCPNGSCWGAGEENCQKLTKIICAQQCSGRCRGKSPSDCCHNQCAAGC
+TGPRESDCLVCRKFRDEATCKDTCPPLMLYNPTTYQMDVNPEGKYSFGATCVKKCPRNYV
+VTDHGSCVRACGADSYEMEEDGVRKCKKCEGPCRKVCNGIGIGEFKDSLSINATNIKHFK
+NCTSISGDLHILPVAFRGDSFTHTPPLDPQELDILKTVKEITGFLLIQAWPENRTDLHAF
+ENLEIIRGRTKQHGQFSLAVVSLNITSLGLRSLKEISDGDVIISGNKNLCYANTINWKKL
+FGTSGQKTKIISNRGENSCKATGQVCHALCSPEGCWGPEPRDCVSCRNVSRGRECVDKCN
+LLEGEPREFVENSECIQCHPECLPQAMNITCTGRGPDNCIQCAHYIDGPHCVKTCPAGVM
+GENNTLVWKYADAGHVCHLCHPNCTYGCTGPGLEGCPTNGPKIPSIATGMVGALLLLLVV
+ALGIGLFMRRRHIVRKRTLRRLLQERELVEPLTPSGEAPNQALLRILKETEFKKIKVLGS
+GAFGTVYKGLWIPEGEKVKIPVAIKELREATSPKANKEILDEAYVMASVDNPHVCRLLGI
+CLTSTVQLITQLMPFGCLLDYVREHKDNIGSQYLLNWCVQIAKGMNYLEDRRLVHRDLAA
+RNVLVKTPQHVKITDFGLAKLLGAEEKEYHAEGGKVPIKWMALESILHRIYTHQSDVWSY
+GVTVWELMTFGSKPYDGIPASEISSILEKGERLPQPPICTIDVYMIMVKCWMIDADSRPK
+FRELIIEFSKMARDPQRYLVIQGDERMHLPSPTDSNFYRALMDEEDMDDVVDADEYLIPQ
+QGFFSSPSTSRTPLLSSLSATSNNSTVACIDRNGLQSCPIKEDSFLQRYSSDPTGALTED
+SIDDTFLPVPEYINQSVPKRPAGSVQNPVYHNQPLNPAPSRDPHYQDPHSTAVGNPEYLN
+TVQPTCVNSTFDSPAHWAQKGSHQISLDNPDYQQDFFPKEAKPNGIFKGSTAENAEYLRV
+APQSSEFIGA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019007|Epidermal growth factor receptor (EGFR)
+ATGCGACCCTCCGGGACGGCCGGGGCAGCGCTCCTGGCGCTGCTGGCTGCGCTCTGCCCG
+GCGAGTCGGGCTCTGGAGGAAAAGAAAGTTTGCCAAGGCACGAGTAACAAGCTCACGCAG
+TTGGGCACTTTTGAAGATCATTTTCTCAGCCTCCAGAGGATGTTCAATAACTGTGAGGTG
+GTCCTTGGGAATTTGGAAATTACCTATGTGCAGAGGAATTATGATCTTTCCTTCTTAAAG
+ACCATCCAGGAGGTGGCTGGTTATGTCCTCATTGCCCTCAACACAGTGGAGCGAATTCCT
+TTGGAAAACCTGCAGATCATCAGAGGAAATATGTACTACGAAAATTCCTATGCCTTAGCA
+GTCTTATCTAACTATGATGCAAATAAAACCGGACTGAAGGAGCTGCCCATGAGAAATTTA
+CAGGAAATCCTGCATGGCGCCGTGCGGTTCAGCAACAACCCTGCCCTGTGCAACGTGGAG
+AGCATCCAGTGGCGGGACATAGTCAGCAGTGACTTTCTCAGCAACATGTCGATGGACTTC
+CAGAACCACCTGGGCAGCTGCCAAAAGTGTGATCCAAGCTGTCCCAATGGGAGCTGCTGG
+GGTGCAGGAGAGGAGAACTGCCAGAAACTGACCAAAATCATCTGTGCCCAGCAGTGCTCC
+GGGCGCTGCCGTGGCAAGTCCCCCAGTGACTGCTGCCACAACCAGTGTGCTGCAGGCTGC
+ACAGGCCCCCGGGAGAGCGACTGCCTGGTCTGCCGCAAATTCCGAGACGAAGCCACGTGC
+AAGGACACCTGCCCCCCACTCATGCTCTACAACCCCACCACGTACCAGATGGATGTGAAC
+CCCGAGGGCAAATACAGCTTTGGTGCCACCTGCGTGAAGAAGTGTCCCCGTAATTATGTG
+GTGACAGATCACGGCTCGTGCGTCCGAGCCTGTGGGGCCGACAGCTATGAGATGGAGGAA
+GACGGCGTCCGCAAGTGTAAGAAGTGCGAAGGGCCTTGCCGCAAAGTGTGTAACGGAATA
+GGTATTGGTGAATTTAAAGACTCACTCTCCATAAATGCTACGAATATTAAACACTTCAAA
+AACTGCACCTCCATCAGTGGCGATCTCCACATCCTGCCGGTGGCATTTAGGGGTGACTCC
+TTCACACATACTCCTCCTCTGGATCCACAGGAACTGGATATTCTGAAAACCGTAAAGGAA
+ATCACAGGGTTTTTGCTGATTCAGGCTTGGCCTGAAAACAGGACGGACCTCCATGCCTTT
+GAGAACCTAGAAATCATACGCGGCAGGACCAAGCAACATGGTCAGTTTTCTCTTGCAGTC
+GTCAGCCTGAACATAACATCCTTGGGATTACGCTCCCTCAAGGAGATAAGTGATGGAGAT
+GTGATAATTTCAGGAAACAAAAATTTGTGCTATGCAAATACAATAAACTGGAAAAAACTG
+TTTGGGACCTCCGGTCAGAAAACCAAAATTATAAGCAACAGAGGTGAAAACAGCTGCAAG
+GCCACAGGCCAGGTCTGCCATGCCTTGTGCTCCCCCGAGGGCTGCTGGGGCCCGGAGCCC
+AGGGACTGCGTCTCTTGCCGGAATGTCAGCCGAGGCAGGGAATGCGTGGACAAGTGCAAC
+CTTCTGGAGGGTGAGCCAAGGGAGTTTGTGGAGAACTCTGAGTGCATACAGTGCCACCCA
+GAGTGCCTGCCTCAGGCCATGAACATCACCTGCACAGGACGGGGACCAGACAACTGTATC
+CAGTGTGCCCACTACATTGACGGCCCCCACTGCGTCAAGACCTGCCCGGCAGGAGTCATG
+GGAGAAAACAACACCCTGGTCTGGAAGTACGCAGACGCCGGCCATGTGTGCCACCTGTGC
+CATCCAAACTGCACCTACGGATGCACTGGGCCAGGTCTTGAAGGCTGTCCAACGAATGGG
+CCTAAGATCCCGTCCATCGCCACTGGGATGGTGGGGGCCCTCCTCTTGCTGCTGGTGGTG
+GCCCTGGGGATCGGCCTCTTCATGCGAAGGCGCCACATCGTTCGGAAGCGCACGCTGCGG
+AGGCTGCTGCAGGAGAGGGAGCTTGTGGAGCCTCTTACACCCAGTGGAGAAGCTCCCAAC
+CAAGCTCTCTTGAGGATCTTGAAGGAAACTGAATTCAAAAAGATCAAAGTGCTGGGCTCC
+GGTGCGTTCGGCACGGTGTATAAGGGACTCTGGATCCCAGAAGGTGAGAAAGTTAAAATT
+CCCGTCGCTATCAAGGAATTAAGAGAAGCAACATCTCCGAAAGCCAACAAGGAAATCCTC
+GATGAAGCCTACGTGATGGCCAGCGTGGACAACCCCCACGTGTGCCGCCTGCTGGGCATC
+TGCCTCACCTCCACCGTGCAGCTCATCACGCAGCTCATGCCCTTCGGCTGCCTCCTGGAC
+TATGTCCGGGAACACAAAGACAATATTGGCTCCCAGTACCTGCTCAACTGGTGTGTGCAG
+ATCGCAAAGGGCATGAACTACTTGGAGGACCGTCGCTTGGTGCACCGCGACCTGGCAGCC
+AGGAACGTACTGGTGAAAACACCGCAGCATGTCAAGATCACAGATTTTGGGCTGGCCAAA
+CTGCTGGGTGCGGAAGAGAAAGAATACCATGCAGAAGGAGGCAAAGTGCCTATCAAGTGG
+ATGGCATTGGAATCAATTTTACACAGAATCTATACCCACCAGAGTGATGTCTGGAGCTAC
+GGGGTGACCGTTTGGGAGTTGATGACCTTTGGATCCAAGCCATATGACGGAATCCCTGCC
+AGCGAGATCTCCTCCATCCTGGAGAAAGGAGAACGCCTCCCTCAGCCACCCATATGTACC
+ATCGATGTCTACATGATCATGGTCAAGTGCTGGATGATAGACGCAGATAGTCGCCCAAAG
+TTCCGTGAGTTGATCATCGAATTCTCCAAAATGGCCCGAGACCCCCAGCGCTACCTTGTC
+ATTCAGGGGGATGAAAGAATGCATTTGCCAAGTCCTACAGACTCCAACTTCTACCGTGCC
+CTGATGGATGAAGAAGACATGGACGACGTGGTGGATGCCGACGAGTACCTCATCCCACAG
+CAGGGCTTCTTCAGCAGCCCCTCCACGTCACGGACTCCCCTCCTGAGCTCTCTGAGTGCA
+ACCAGCAACAATTCCACCGTGGCTTGCATTGATAGAAATGGGCTGCAAAGCTGTCCCATC
+AAGGAAGACAGCTTCTTGCAGCGATACAGCTCAGACCCCACAGGCGCCTTGACTGAGGAC
+AGCATAGACGACACCTTCCTCCCAGTGCCTGAATACATAAACCAGTCCGTTCCCAAAAGG
+CCCGCTGGCTCTGTGCAGAATCCTGTCTATCACAATCAGCCTCTGAACCCCGCGCCCAGC
+AGAGACCCACACTACCAGGACCCCCACAGCACTGCAGTGGGCAACCCCGAGTATCTCAAC
+ACTGTCCAGCCCACCTGTGTCAACAGCACATTCGACAGCCCTGCCCACTGGGCCCAGAAA
+GGCAGCCACCAAATTAGCCTGGACAACCCTGACTACCAGCAGGACTTCTTTCCCAAGGAA
+GCCAAGCCAAATGGCATCTTTAAGGGCTCCACAGCTGAAAATGCAGAATACCTAAGGGTC
+GCGCCACAAAGCAGTGAATTTATTGGAGCATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00757</identifier>
+            <name>Furin-like</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01030</identifier>
+            <name>Recep_L_domain</name>
+          </pfam>
+          <pfam>
+            <identifier>PF14843</identifier>
+            <name>GF_recep_IV</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>early endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endocytic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>focal adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>multivesicular body, internal vesicle lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Shc-EGFR complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>actin filament binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chromatin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>double-stranded DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>epidermal growth factor-activated receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>MAP kinase kinase kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein heterodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein phosphatase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor signaling protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane receptor protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmembrane signaling receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ubiquitin protein ligase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase A2 activity by calcium-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to amino acid stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to epidermal growth factor stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to estradiol stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cerebral cortex cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestive tract morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>embryonic placenta development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hair follicle development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>learning or memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>morphogenesis of an epithelial fold</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ossification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of catenin import into nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cyclin-dependent protein serine/threonine kinase activity involved in G1/S transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA repair</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of DNA replication</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of epithelial cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of fibroblast proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of MAP kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein kinase B signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein insertion into membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to UV-A</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>salivary gland morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>single organismal cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme position="1">
+      <id>BE0002638</id>
+      <name>Cytochrome P450 3A4</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08684" source="Swiss-Prot">
+        <name>Cytochrome P450 3A4</name>
+        <general-function>Vitamin d3 25-hydroxylase activity</general-function>
+        <specific-function>Cytochromes P450 are a group of heme-thiolate monooxygenases. In liver microsomes, this enzyme is involved in an NADPH-dependent electron transport pathway. It performs a variety of oxidation reactions (e.g. caffeine 8-oxidation, omeprazole sulphoxidation, midazolam 1'-hydroxylation and midazolam 4-hydroxylation) of structurally unrelated compounds, including steroids, fatty acids, and xenobiotics. Acts as a 1,8-cineole 2-exo-monooxygenase. The enzyme also hydroxylates etoposide (PubMed:11159812). Catalyzes 4-beta-hydroxylation of cholesterol. May catalyze 25-hydroxylation of cholesterol in vitro (PubMed:21576599).</specific-function>
+        <gene-name>CYP3A4</gene-name>
+        <locus>7q21.1</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions>2-22</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.25</theoretical-pi>
+        <molecular-weight>57342.67</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CYP3A4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18907</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1337</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08684</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CP3A4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,8-cineole 2-exo-monooxygenase</synonym>
+          <synonym>1.14.13.-</synonym>
+          <synonym>Albendazole monooxygenase</synonym>
+          <synonym>Albendazole sulfoxidase</synonym>
+          <synonym>Cholesterol 25-hydroxylase</synonym>
+          <synonym>CYP3A3</synonym>
+          <synonym>CYPIIIA3</synonym>
+          <synonym>CYPIIIA4</synonym>
+          <synonym>Cytochrome P450 3A3</synonym>
+          <synonym>Cytochrome P450 HLp</synonym>
+          <synonym>Cytochrome P450 NF-25</synonym>
+          <synonym>Cytochrome P450-PCN1</synonym>
+          <synonym>Nifedipine oxidase</synonym>
+          <synonym>Quinine 3-monooxygenase</synonym>
+          <synonym>Taurochenodeoxycholate 6-alpha-hydroxylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0021936|Cytochrome P450 3A4
+MALIPDLAMETWLLLAVSLVLLYLYGTHSHGLFKKLGIPGPTPLPFLGNILSYHKGFCMF
+DMECHKKYGKVWGFYDGQQPVLAITDPDMIKTVLVKECYSVFTNRRPFGPVGFMKSAISI
+AEDEEWKRLRSLLSPTFTSGKLKEMVPIIAQYGDVLVRNLRREAETGKPVTLKDVFGAYS
+MDVITSTSFGVNIDSLNNPQDPFVENTKKLLRFDFLDPFFLSITVFPFLIPILEVLNICV
+FPREVTNFLRKSVKRMKESRLEDTQKHRVDFLQLMIDSQNSKETESHKALSDLELVAQSI
+IFIFAGYETTSSVLSFIMYELATHPDVQQKLQEEIDAVLPNKAPPTYDTVLQMEYLDMVV
+NETLRLFPIAMRLERVCKKDVEINGMFIPKGVVVMIPSYALHRDPKYWTEPEKFLPERFS
+KKNKDNIDPYIYTPFGSGPRNCIGMRFALMNMKLALIRVLQNFSFKPCKETQIPLKLSLG
+GLLQPEKPVVLKVESRDGTVSGA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021937|Cytochrome P450 3A4 (CYP3A4)
+ATGGCTCTCATCCCAGACTTGGCCATGGAAACCTGGCTTCTCCTGGCTGTCAGCCTGGTG
+CTCCTCTATCTATATGGAACCCATTCACATGGACTTTTTAAGAAGCTTGGAATTCCAGGG
+CCCACACCTCTGCCTTTTTTGGGAAATATTTTGTCCTACCATAAGGGCTTTTGTATGTTT
+GACATGGAATGTCATAAAAAGTATGGAAAAGTGTGGGGCTTTTATGATGGTCAACAGCCT
+GTGCTGGCTATCACAGATCCTGACATGATCAAAACAGTGCTAGTGAAAGAATGTTATTCT
+GTCTTCACAAACCGGAGGCCTTTTGGTCCAGTGGGATTTATGAAAAGTGCCATCTCTATA
+GCTGAGGATGAAGAATGGAAGAGATTACGATCATTGCTGTCTCCAACCTTCACCAGTGGA
+AAACTCAAGGAGATGGTCCCTATCATTGCCCAGTATGGAGATGTGTTGGTGAGAAATCTG
+AGGCGGGAAGCAGAGACAGGCAAGCCTGTCACCTTGAAAGACGTCTTTGGGGCCTACAGC
+ATGGATGTGATCACTAGCACATCATTTGGAGTGAACATCGACTCTCTCAACAATCCACAA
+GACCCCTTTGTGGAAAACACCAAGAAGCTTTTAAGATTTGATTTTTTGGATCCATTCTTT
+CTCTCAATAATCTTTCCATTCCTCATCCCAATTCTTGAAGTATTAAATATCTGTGTGTTT
+CCAAGAGAAGTTACAAATTTTTTAAGAAAATCTGTAAAAAGGATGAAAGAAAGTCGCCTC
+GAAGATACACAAAAGCACCGAGTGGATTTCCTTCAGCTGATGATTGACTCTCAGAATTCA
+AAAGAAACTGAGTCCCACAAAGCTCTGTCCGATCTGGAGCTCGTGGCCCAATCAATTATC
+TTTATTTTTGCTGGCTATGAAACCACGAGCAGTGTTCTCTCCTTCATTATGTATGAACTG
+GCCACTCACCCTGATGTCCAGCAGAAACTGCAGGAGGAAATTGATGCAGTTTTACCCAAT
+AAGGCACCACCCACCTATGATACTGTGCTACAGATGGAGTATCTTGACATGGTGGTGAAT
+GAAACGCTCAGATTATTCCCAATTGCTATGAGACTTGAGAGGGTCTGCAAAAAAGATGTT
+GAGATCAATGGGATGTTCATTCCCAAAGGGGTGGTGGTGATGATTCCAAGCTATGCTCTT
+CACCGTGACCCAAAGTACTGGACAGAGCCTGAGAAGTTCCTCCCTGAAAGATTCAGCAAG
+AAGAACAAGGACAACATAGATCCTTACATATACACACCCTTTGGAAGTGGACCCAGAAAC
+TGCATTGGCATGAGGTTTGCTCTCATGAACATGAAACTTGCTCTAATCAGAGTCCTTCAG
+AACTTCTCCTTCAAACCTTGTAAAGAAACACAGATCCCCCTGAAATTAAGCTTAGGAGGA
+CTTCTTCAACCAGAAAAACCCGTTGTTCTAAAGGTTGAGTCAAGGGATGGCACCGTAAGT
+GGAGCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00067</identifier>
+            <name>p450</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>albendazole monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aromatase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>caffeine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxygen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>quinine 3-monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>taurochenodeoxycholate 6alpha-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>testosterone 6-beta-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D 24-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>vitamin D3 25-hydroxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alkaloid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>androgen metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcitriol biosynthetic process from calciol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>exogenous drug catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heterocycle metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monoterpenoid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidative demethylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vitamin D metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+    <enzyme position="2">
+      <id>BE0003606</id>
+      <name>Dimethylaniline monooxygenase [N-oxide-forming] 3</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P31513" source="Swiss-Prot">
+        <name>Dimethylaniline monooxygenase [N-oxide-forming] 3</name>
+        <general-function>Trimethylamine monooxygenase activity</general-function>
+        <specific-function>Involved in the oxidative metabolism of a variety of xenobiotics such as drugs and pesticides. It N-oxygenates primary aliphatic alkylamines as well as secondary and tertiary amines. Plays an important role in the metabolism of trimethylamine (TMA), via the production of TMA N-oxide (TMAO). Is also able to perform S-oxidation when acting on sulfide compounds (PubMed:9224773).</specific-function>
+        <gene-name>FMO3</gene-name>
+        <locus>1q23-q25</locus>
+        <cellular-location>Microsome membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.87</theoretical-pi>
+        <molecular-weight>60032.975</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3771</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M83772</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>188631</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P31513</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FMO3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.13.8</synonym>
+          <synonym>Dimethylaniline oxidase 3</synonym>
+          <synonym>FMO 3</synonym>
+          <synonym>FMO form 2</synonym>
+          <synonym>FMO II</synonym>
+          <synonym>Hepatic flavin-containing monooxygenase 3</synonym>
+          <synonym>Trimethylamine monooxygenase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012507|Dimethylaniline monooxygenase [N-oxide-forming] 3
+MGKKVAIIGAGVSGLASIRSCLEEGLEPTCFEKSNDIGGLWKFSDHAEEGRASIYKSVFS
+NSSKEMMCFPDFPFPDDFPNFMHNSKIQEYIIAFAKEKNLLKYIQFKTFVSSVNKHPDFA
+TTGQWDVTTERDGKKESAVFDAVMVCSGHHVYPNLPKESFPGLNHFKGKCFHSRDYKEPG
+VFNGKRVLVVGLGNSGCDIATELSRTAEQVMISSRSGSWVMSRVWDNGYPWDMLLVTRFG
+TFLKNNLPTAISDWLYVKQMNARFKHENYGLMPLNGVLRKEPVFNDELPASILCGIVSVK
+PNVKEFTETSAIFEDGTIFEGIDCVIFATGYSFAYPFLDESIIKSRNNEIILFKGVFPPL
+LEKSTIAVIGFVQSLGAAIPTVDLQSRWAAQVIKGTCTLPSMEDMMNDINEKMEKKRKWF
+GKSETIQTDYIVYMDELSSFIGAKPNIPWLFLTDPKLAMEVYFGPCSPYQFRLVGPGQWP
+GARNAILTQWDRSLKPMQTRVVGRLQKPCFFFHWLKLFAIPILLIAVFLVLT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012508|Dimethylaniline monooxygenase [N-oxide-forming] 3 (FMO3)
+ATGGGGAAGAAAGTGGCCATCATTGGAGCTGGTGTGAGTGGCTTGGCCTCCATCAGGAGC
+TGTCTGGAAGAGGGGCTGGAGCCCACCTGCTTTGAGAAGAGCAATGACATTGGGGGCCTG
+TGGAAATTTTCAGACCATGCAGAGGAGGGCAGGGCTAGCATTTACAAATCAGTCTTTTCC
+AACTCTTCCAAAGAGATGATGTGTTTCCCAGACTTCCCATTTCCCGATGACTTCCCCAAC
+TTTATGCACAACAGCAAGATCCAGGAATATATCATTGCATTTGCCAAAGAAAAGAACCTC
+CTGAAGTACATACAATTTAAGACATTTGTATCCAGTGTAAATAAACATCCTGATTTTGCA
+ACTACTGGCCAGTGGGATGTTACCACTGAAAGGGATGGTAAAAAAGAATCGGCTGTCTTT
+GATGCTGTAATGGTTTGTTCCGGACATCATGTGTATCCCAACCTACCAAAAGAGTCCTTT
+CCAGGACTAAACCACTTTAAAGGCAAATGCTTCCACAGCAGGGACTATAAAGAACCAGGT
+GTATTCAATGGAAAGCGTGTCCTGGTGGTTGGCCTGGGGAATTCGGGCTGTGATATTGCC
+ACAGAACTCAGCCGCACAGCAGAACAGGTCATGATCAGTTCCAGAAGTGGCTCCTGGGTG
+ATGAGCCGGGTCTGGGACAATGGTTATCCTTGGGACATGCTGCTCGTCACTCGATTTGGA
+ACCTTCCTCAAGAACAATTTACCGACAGCCATCTCTGACTGGTTGTACGTGAAGCAGATG
+AATGCAAGATTCAAGCATGAAAACTATGGCTTGATGCCTTTAAATGGAGTCCTGAGGAAA
+GAGCCTGTATTTAACGATGAGCTCCCAGCAAGCATTCTGTGTGGCATTGTGTCCGTAAAG
+CCTAACGTGAAGGAATTCACAGAGACCTCGGCCATTTTTGAGGATGGGACCATATTTGAG
+GGCATTGACTGTGTAATCTTTGCAACAGGGTATAGTTTTGCCTACCCCTTCCTTGATGAG
+TCTATCATCAAAAGCAGAAACAATGAGATCATTTTATTTAAAGGAGTATTTCCTCCTCTA
+CTTGAGAAGTCAACCATAGCAGTGATTGGCTTTGTCCAGTCCCTTGGGGCTGCCATTCCC
+ACAGTTGACCTCCAGTCCCGCTGGGCAGCACAAGTAATAAAGGGAACTTGTACTTTGCCT
+TCTATGGAAGACATGATGAATGATATTAATGAGAAAATGGAGAAAAAGCGCAAATGGTTT
+GGCAAAAGCGAGACCATACAGACAGATTACATTGTTTATATGGATGAACTCTCCTCCTTC
+ATTGGGGCAAAGCCCAACATCCCATGGCTGTTTCTCACAGATCCCAAATTGGCCATGGAA
+GTTTATTTTGGCCCTTGTAGTCCCTACCAGTTTAGGCTGGTGGGCCCAGGGCAGTGGCCA
+GGAGCCAGAAATGCCATACTGACCCAGTGGGACCGGTCGTTGAAACCCATGCAGACACGA
+GTGGTCGGGAGACTTCAGAAGCCTTGCTTCTTTTTCCATTGGCTGAAGCTCTTTGCAATT
+CCTATTCTGTTAATCGCTGTTTTCCTTGTGTTGACCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00743</identifier>
+            <name>FMO-like</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>N,N-dimethylaniline monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>trimethylamine monooxygenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers>
+    <carrier position="5">
+      <id>BE0000530</id>
+      <name>Serum albumin</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>no</known-action>
+      <polypeptide id="P02768" source="Swiss-Prot">
+        <name>Serum albumin</name>
+        <general-function>Toxic substance binding</general-function>
+        <specific-function>Serum albumin, the main protein of plasma, has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. Major zinc transporter in plasma, typically binds about 80% of all plasma zinc.</specific-function>
+        <gene-name>ALB</gene-name>
+        <locus>4q11-q13</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>6.21</theoretical-pi>
+        <molecular-weight>69365.94</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:399</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ALB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>V00494</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28590</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ALBU_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Serum albumin precursor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001058|Serum albumin
+MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPF
+EDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEP
+ERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLF
+FAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKAWAV
+ARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLK
+ECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYEYAR
+RHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFE
+QLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYLSVV
+LNQLCVLHEKTPVSDRVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADICTL
+SEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLV
+AASQAALGL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010372|Serum albumin (ALB)
+ATGAAGTGGGTAACCTTTATTTCCCTTCTTTTTCTCTTTAGCTCGGCTTATTCCAGGGGT
+GTGTTTCGTCGAGATGCACACAAGAGTGAGGTTGCTCATCGGTTTAAAGATTTGGGAGAA
+GAAAATTTCAAAGCCTTGGTGTTGATTGCCTTTGCTCAGTATCTTCAGCAGTGTCCATTT
+GAAGATCATGTAAAATTAGTGAATGAAGTAACTGAATTTGCAAAAACATGTGTTGCTGAT
+GAGTCAGCTGAAAATTGTGACAAATCACTTCATACCCTTTTTGGAGACAAATTATGCACA
+GTTGCAACTCTTCGTGAAACCTATGGTGAAATGGCTGACTGCTGTGCAAAACAAGAACCT
+GAGAGAAATGAATGCTTCTTGCAACACAAAGATGACAACCCAAACCTCCCCCGATTGGTG
+AGACCAGAGGTTGATGTGATGTGCACTGCTTTTCATGACAATGAAGAGACATTTTTGAAA
+AAATACTTATATGAAATTGCCAGAAGACATCCTTACTTTTATGCCCCGGAACTCCTTTTC
+TTTGCTAAAAGGTATAAAGCTGCTTTTACAGAATGTTGCCAAGCTGCTGATAAAGCTGCC
+TGCCTGTTGCCAAAGCTCGATGAACTTCGGGATGAAGGGAAGGCTTCGTCTGCCAAACAG
+AGACTCAAGTGTGCCAGTCTCCAAAAATTTGGAGAAAGAGCTTTCAAAGCATGGGCAGTA
+GCTCGCCTGAGCCAGAGATTTCCCAAAGCTGAGTTTGCAGAAGTTTCCAAGTTAGTGACA
+GATCTTACCAAAGTCCACACGGAATGCTGCCATGGAGATCTGCTTGAATGTGCTGATGAC
+AGGGCGGACCTTGCCAAGTATATCTGTGAAAATCAAGATTCGATCTCCAGTAAACTGAAG
+GAATGCTGTGAAAAACCTCTGTTGGAAAAATCCCACTGCATTGCCGAAGTGGAAAATGAT
+GAGATGCCTGCTGACTTGCCTTCATTAGCTGCTGATTTTGTTGAAAGTAAGGATGTTTGC
+AAAAACTATGCTGAGGCAAAGGATGTCTTCCTGGGCATGTTTTTGTATGAATATGCAAGA
+AGGCATCCTGATTACTCTGTCGTGCTGCTGCTGAGACTTGCCAAGACATATGAAACCACT
+CTAGAGAAGTGCTGTGCCGCTGCAGATCCTCATGAATGCTATGCCAAAGTGTTCGATGAA
+TTTAAACCTCTTGTGGAAGAGCCTCAGAATTTAATCAAACAAAATTGTGAGCTTTTTGAG
+CAGCTTGGAGAGTACAAATTCCAGAATGCGCTATTAGTTCGTTACACCAAGAAAGTACCC
+CAAGTGTCAACTCCAACTCTTGTAGAGGTCTCAAGAAACCTAGGAAAAGTGGGCAGCAAA
+TGTTGTAAACATCCTGAAGCAAAAAGAATGCCCTGTGCAGAAGACTATCTATCCGTGGTC
+CTGAACCAGTTATGTGTGTTGCATGAGAAAACGCCAGTAAGTGACAGAGTCACCAAATGC
+TGCACAGAATCCTTGGTGAACAGGCGACCATGCTTTTCAGCTCTGGAAGTCGATGAAACA
+TACGTTCCCAAAGAGTTTAATGCTGAAACATTCACCTTCCATGCAGATATATGCACACTT
+TCTGAGAAGGAGAGACAAATCAAGAAACAAACTGCACTTGTTGAGCTCGTGAAACACAAG
+CCCAAGGCAACAAAAGAGCAACTGAAAGCTGTTATGGATGATTTCGCAGCTTTTGTAGAG
+AAGTGCTGCAAGGCTGACGATAAGGAGACCTGCTTTGCCGAGGAGGGTAAAAAACTTGTT
+GCTGCAAGTCAAGCTGCCTTAGGCTTATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00273</identifier>
+            <name>Serum_albumin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myelin sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet alpha granule lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>antioxidant activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chaperone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxal phosphate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>toxic substance binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to starvation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hemolysis by symbiont of host erythrocytes</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of mitochondrion location</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor-mediated endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+    <carrier position="6">
+      <id>BE0004879</id>
+      <name>alpha1-acid glycoprotein</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>no</known-action>
+      <polypeptide id="P02763" source="Swiss-Prot">
+        <name>Alpha-1-acid glycoprotein 1</name>
+        <general-function/>
+        <specific-function>Functions as transport protein in the blood stream. Binds various ligands in the interior of its beta-barrel domain. Also binds synthetic drugs and influences their distribution and availability in the body. Appears to function in modulating the activity of the immune system during the acute-phase reaction.</specific-function>
+        <gene-name>ORM1</gene-name>
+        <locus>9q31-q32</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>4.66</theoretical-pi>
+        <molecular-weight>23511.38</molecular-weight>
+        <chromosome-location>9</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8498</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ORM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X02544</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>757907</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02763</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A1AG1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>AGP 1</synonym>
+          <synonym>AGP1</synonym>
+          <synonym>OMD 1</synonym>
+          <synonym>Orosomucoid-1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001842|Alpha-1-acid glycoprotein 1
+MALSWVLTVLSLLPLLEAQIPLCANLVPVPITNATLDQITGKWFYIASAFRNEEYNKSVQ
+EIQATFFYFTPNKTEDTIFLREYQTRQDQCIYNTTYLNVQRENGTISRYVGGQEHFAHLL
+ILRDTKTYMLAFDVNDEKNWGLSVYADKPETTKEQLGEFYEALDCLRIPKSDVVYTDWKK
+DKCEPLEKQHEKERKQEEGES</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010649|Alpha-1-acid glycoprotein 1 (ORM1)
+ATGGCGCTGTCCTGGGTTCTTACAGTCCTGAGCCTCCTACCTCTGCTGGAAGCCCAGATC
+CCATTGTGTGCCAACCTAGTACCGGTGCCCATCACCAACGCCACCCTGGACCGGATCACT
+GGCAAGTGGTTTTATATCGCATCGGCCTTTCGAAACGAGGAGTACAATAAGTCGGTTCAG
+GAGATCCAAGCAACCTTCTTTTACTTCACCCCCAACAAGACAGAGGACACGATCTTTCTC
+AGAGAGTACCAGACCCGACAGGACCAGTGCATCTATAACACCACCTACCTGAATGTCCAG
+CGGGAAAATGGGACCATCTCCAGATACGTGGGAGGCCAAGAGCATTTCGCTCACTTGCTG
+ATCCTCAGGGACACCAAGACCTACATGCTTGCTTTTGACGTGAACGATGAGAAGAACTGG
+GGGCTGTCTGTCTATGCTGACAAGCCAGAGACGACCAAGGAGCAACTGGGAGAGTTCTAC
+GAAGCTCTCGACTGCTTGCGCATTCCCAAGTCAGATGTCGTGTACACCGATTGGAAAAAG
+GATAAGTGTGAGCCACTGGAGAAGCAGCACGAGAAGGAGAGGAAACAGGAGGAGGGGGAA
+TCCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00061</identifier>
+            <name>Lipocalin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acute-phase response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interleukin-6 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of tumor necrosis factor production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of immune system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <polypeptide id="P19652" source="Swiss-Prot">
+        <name>Alpha-1-acid glycoprotein 2</name>
+        <general-function/>
+        <specific-function>Functions as transport protein in the blood stream. Binds various hydrophobic ligands in the interior of its beta-barrel domain. Also binds synthetic drugs and influences their distribution and availability. Appears to function in modulating the activity of the immune system during the acute-phase reaction.</specific-function>
+        <gene-name>ORM2</gene-name>
+        <locus>9q32</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>4.76</theoretical-pi>
+        <molecular-weight>23602.43</molecular-weight>
+        <chromosome-location>9</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8499</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BC015964</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>16359000</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P19652</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>A1AG2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>AGP 2</synonym>
+          <synonym>AGP2</synonym>
+          <synonym>OMD 2</synonym>
+          <synonym>Orosomucoid-2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007040|Alpha-1-acid glycoprotein 2
+MALSWVLTVLSLLPLLEAQIPLCANLVPVPITNATLDRITGKWFYIASAFRNEEYNKSVQ
+EIQATFFYFTPNKTEDTIFLREYQTRQNQCFYNSSYLNVQRENGTVSRYEGGREHVAHLL
+FLRDTKTLMFGSYLDDEKNWGLSFYADKPETTKEQLGEFYEALDCLCIPRSDVMYTDWKK
+DKCEPLEKQHEKERKQEEGES</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012546|Alpha-1-acid glycoprotein 2 (ORM2)
+ATGGCGCTGTCCTGGGTTCTTACAGTCCTGAGCCTCCTACCTCTGCTGGAAGCCCAGATC
+CCATTGTGTGCCAACCTAGTACCGGTGCCCATCACCAACGCCACCCTGGACCGGATCACT
+GGCAAGTGGTTTTATATCGCATCGGCCTTTCGAAACGAGGAGTACAATAAGTCGGTTCAG
+GAGATCCAAGCAACCTTCTTTTACTTTACCCCCAACAAGACAGAGGACACGATCTTTCTC
+AGAGAGTACCAGACCCGCCAGAACCAGTGCTTCTATAACTCCAGTTACCTGAATGTCCAG
+CGGGAGAATGGGACCGTCTCCAGATACGAGGGAGGCCGAGAACATGTTGCTCACCTGCTG
+TTCCTTAGGGACACCAAGACCTTGATGTTTGGTTCCTACCTGGACGATGAGAAGAACTGG
+GGGCTGTCTTTCTATGCTGACAAGCCAGAGACGACCAAGGAGCAACTGGGAGAGTTCTAC
+GAAGCTCTCGACTGCTTGTGCATTCCCAGGTCAGATGTCATGTACACCGACTGGAAAAAG
+GATAAGTGTGAGCCACTGGAGAAGCAGCACGAGAAGGAGAGGAAACAGGAGGAGGGGGAA
+TCCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00061</identifier>
+            <name>Lipocalin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acute-phase response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of immune system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters>
+    <transporter position="3">
+      <id>BE0001032</id>
+      <name>P-glycoprotein 1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08183" source="Swiss-Prot">
+        <name>Multidrug resistance protein 1</name>
+        <general-function>Xenobiotic-transporting atpase activity</general-function>
+        <specific-function>Energy-dependent efflux pump responsible for decreased drug accumulation in multidrug-resistant cells.</specific-function>
+        <gene-name>ABCB1</gene-name>
+        <locus>7q21.1</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>45-67
+117-137
+187-208
+216-236
+293-316
+331-352
+712-732
+757-777
+833-853
+855-874
+935-957
+974-995</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.44</theoretical-pi>
+        <molecular-weight>141477.255</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:40</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ABCB1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M14758</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>307180</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08183</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MDR1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.6.3.44</synonym>
+          <synonym>ATP-binding cassette sub-family B member 1</synonym>
+          <synonym>MDR1</synonym>
+          <synonym>P-glycoprotein 1</synonym>
+          <synonym>PGY1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037114|Multidrug resistance protein 1
+MDLEGDRNGGAKKKNFFKLNNKSEKDKKEKKPTVSVFSMFRYSNWLDKLYMVVGTLAAII
+HGAGLPLMMLVFGEMTDIFANAGNLEDLMSNITNRSDINDTGFFMNLEEDMTRYAYYYSG
+IGAGVLVAAYIQVSFWCLAAGRQIHKIRKQFFHAIMRQEIGWFDVHDVGELNTRLTDDVS
+KINEGIGDKIGMFFQSMATFFTGFIVGFTRGWKLTLVILAISPVLGLSAAVWAKILSSFT
+DKELLAYAKAGAVAEEVLAAIRTVIAFGGQKKELERYNKNLEEAKRIGIKKAITANISIG
+AAFLLIYASYALAFWYGTTLVLSGEYSIGQVLTVFFSVLIGAFSVGQASPSIEAFANARG
+AAYEIFKIIDNKPSIDSYSKSGHKPDNIKGNLEFRNVHFSYPSRKEVKILKGLNLKVQSG
+QTVALVGNSGCGKSTTVQLMQRLYDPTEGMVSVDGQDIRTINVRFLREIIGVVSQEPVLF
+ATTIAENIRYGRENVTMDEIEKAVKEANAYDFIMKLPHKFDTLVGERGAQLSGGQKQRIA
+IARALVRNPKILLLDEATSALDTESEAVVQVALDKARKGRTTIVIAHRLSTVRNADVIAG
+FDDGVIVEKGNHDELMKEKGIYFKLVTMQTAGNEVELENAADESKSEIDALEMSSNDSRS
+SLIRKRSTRRSVRGSQAQDRKLSTKEALDESIPPVSFWRIMKLNLTEWPYFVVGVFCAII
+NGGLQPAFAIIFSKIIGVFTRIDDPETKRQNSNLFSLLFLALGIISFITFFLQGFTFGKA
+GEILTKRLRYMVFRSMLRQDVSWFDDPKNTTGALTTRLANDAAQVKGAIGSRLAVITQNI
+ANLGTGIIISFIYGWQLTLLLLAIVPIIAIAGVVEMKMLSGQALKDKKELEGSGKIATEA
+IENFRTVVSLTQEQKFEHMYAQSLQVPYRNSLRKAHIFGITFSFTQAMMYFSYAGCFRFG
+AYLVAHKLMSFEDVLLVFSAVVFGAMAVGQVSSFAPDYAKAKISAAHIIMIIEKTPLIDS
+YSTEGLMPNTLEGNVTFGEVVFNYPTRPDIPVLQGLSLEVKKGQTLALVGSSGCGKSTVV
+QLLERFYDPLAGKVLLDGKEIKRLNVQWLRAHLGIVSQEPILFDCSIAENIAYGDNSRVV
+SQEEIVRAAKEANIHAFIESLPNKYSTKVGDKGTQLSGGQKQRIAIARALVRQPHILLLD
+EATSALDTESEKVVQEALDKAREGRTCIVIAHRLSTIQNADLIVVFQNGRVKEHGTHQQL
+LAQKGIYFSMVSVQAGTKRQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016291|Multidrug resistance protein 1 (ABCB1)
+ATGGATCTTGAAGGGGACCGCAATGGAGGAGCAAAGAAGAAGAACTTTTTTAAACTGAAC
+AATAAAAGTGAAAAAGATAAGAAGGAAAAGAAACCAACTGTCAGTGTATTTTCAATGTTT
+CGCTATTCAAATTGGCTTGACAAGTTGTATATGGTGGTGGGAACTTTGGCTGCCATCATC
+CATGGGGCTGGACTTCCTCTCATGATGCTGGTGTTTGGAGAAATGACAGATATCTTTGCA
+AATGCAGGAAATTTAGAAGATCTGATGTCAAACATCACTAATAGAAGTGATATCAATGAT
+ACAGGGTTCTTCATGAATCTGGAGGAAGACATGACCAGGTATGCCTATTATTACAGTGGA
+ATTGGTGCTGGGGTGCTGGTTGCTGCTTACATTCAGGTTTCATTTTGGTGCCTGGCAGCT
+GGAAGACAAATACACAAAATTAGAAAACAGTTTTTTCATGCTATAATGCGACAGGAGATA
+GGCTGGTTTGATGTGCACGATGTTGGGGAGCTTAACACCCGACTTACAGATGATGTCTCC
+AAGATTAATGAAGGAATTGGTGACAAAATTGGAATGTTCTTTCAGTCAATGGCAACATTT
+TTCACTGGGTTTATAGTAGGATTTACACGTGGTTGGAAGCTAACCCTTGTGATTTTGGCC
+ATCAGTCCTGTTCTTGGACTGTCAGCTGCTGTCTGGGCAAAGATACTATCTTCATTTACT
+GATAAAGAACTCTTAGCGTATGCAAAAGCTGGAGCAGTAGCTGAAGAGGTCTTGGCAGCA
+ATTAGAACTGTGATTGCATTTGGAGGACAAAAGAAAGAACTTGAAAGGTACAACAAAAAT
+TTAGAAGAAGCTAAAAGAATTGGGATAAAGAAAGCTATTACAGCCAATATTTCTATAGGT
+GCTGCTTTCCTGCTGATCTATGCATCTTATGCTCTGGCCTTCTGGTATGGGACCACCTTG
+GTCCTCTCAGGGGAATATTCTATTGGACAAGTACTCACTGTATTCTTTTCTGTATTAATT
+GGGGCTTTTAGTGTTGGACAGGCATCTCCAAGCATTGAAGCATTTGCAAATGCAAGAGGA
+GCAGCTTATGAAATCTTCAAGATAATTGATAATAAGCCAAGTATTGACAGCTATTCGAAG
+AGTGGGCACAAACCAGATAATATTAAGGGAAATTTGGAATTCAGAAATGTTCACTTCAGT
+TACCCATCTCGAAAAGAAGTTAAGATCTTGAAGGGTCTGAACCTGAAGGTGCAGAGTGGG
+CAGACGGTGGCCCTGGTTGGAAACAGTGGCTGTGGGAAGAGCACAACAGTCCAGCTGATG
+CAGAGGCTCTATGACCCCACAGAGGGGATGGTCAGTGTTGATGGACAGGATATTAGGACC
+ATAAATGTAAGGTTTCTACGGGAAATCATTGGTGTGGTGAGTCAGGAACCTGTATTGTTT
+GCCACCACGATAGCTGAAAACATTCGCTATGGCCGTGAAAATGTCACCATGGATGAGATT
+GAGAAAGCTGTCAAGGAAGCCAATGCCTATGACTTTATCATGAAACTGCCTCATAAATTT
+GACACCCTGGTTGGAGAGAGAGGGGCCCAGTTGAGTGGTGGGCAGAAGCAGAGGATCGCC
+ATTGCACGTGCCCTGGTTCGCAACCCCAAGATCCTCCTGCTGGATGAGGCCACGTCAGCC
+TTGGACACAGAAAGCGAAGCAGTGGTTCAGGTGGCTCTGGATAAGGCCAGAAAAGGTCGG
+ACCACCATTGTGATAGCTCATCGTTTGTCTACAGTTCGTAATGCTGACGTCATCGCTGGT
+TTCGATGATGGAGTCATTGTGGAGAAAGGAAATCATGATGAACTCATGAAAGAGAAAGGC
+ATTTACTTCAAACTTGTCACAATGCAGACAGCAGGAAATGAAGTTGAATTAGAAAATGCA
+GCTGATGAATCCAAAAGTGAAATTGATGCCTTGGAAATGTCTTCAAATGATTCAAGATCC
+AGTCTAATAAGAAAAAGATCAACTCGTAGGAGTGTCCGTGGATCACAAGCCCAAGACAGA
+AAGCTTAGTACCAAAGAGGCTCTGGATGAAAGTATACCTCCAGTTTCCTTTTGGAGGATT
+ATGAAGCTAAATTTAACTGAATGGCCTTATTTTGTTGTTGGTGTATTTTGTGCCATTATA
+AATGGAGGCCTGCAACCAGCATTTGCAATAATATTTTCAAAGATTATAGGGGTTTTTACA
+AGAATTGATGATCCTGAAACAAAACGACAGAATAGTAACTTGTTTTCACTATTGTTTCTA
+GCCCTTGGAATTATTTCTTTTATTACATTTTTCCTTCAGGGTTTCACATTTGGCAAAGCT
+GGAGAGATCCTCACCAAGCGGCTCCGATACATGGTTTTCCGATCCATGCTCAGACAGGAT
+GTGAGTTGGTTTGATGACCCTAAAAACACCACTGGAGCATTGACTACCAGGCTCGCCAAT
+GATGCTGCTCAAGTTAAAGGGGCTATAGGTTCCAGGCTTGCTGTAATTACCCAGAATATA
+GCAAATCTTGGGACAGGAATAATTATATCCTTCATCTATGGTTGGCAACTAACACTGTTA
+CTCTTAGCAATTGTACCCATCATTGCAATAGCAGGAGTTGTTGAAATGAAAATGTTGTCT
+GGACAAGCACTGAAAGATAAGAAAGAACTAGAAGGTTCTGGGAAGATCGCTACTGAAGCA
+ATAGAAAACTTCCGAACCGTTGTTTCTTTGACTCAGGAGCAGAAGTTTGAACATATGTAT
+GCTCAGAGTTTGCAGGTACCATACAGAAACTCTTTGAGGAAAGCACACATCTTTGGAATT
+ACATTTTCCTTCACCCAGGCAATGATGTATTTTTCCTATGCTGGATGTTTCCGGTTTGGA
+GCCTACTTGGTGGCACATAAACTCATGAGCTTTGAGGATGTTCTGTTAGTATTTTCAGCT
+GTTGTCTTTGGTGCCATGGCCGTGGGGCAAGTCAGTTCATTTGCTCCTGACTATGCCAAA
+GCCAAAATATCAGCAGCCCACATCATCATGATCATTGAAAAAACCCCTTTGATTGACAGC
+TACAGCACGGAAGGCCTAATGCCGAACACATTGGAAGGAAATGTCACATTTGGTGAAGTT
+GTATTCAACTATCCCACCCGACCGGACATCCCAGTGCTTCAGGGACTGAGCCTGGAGGTG
+AAGAAGGGCCAGACGCTGGCTCTGGTGGGCAGCAGTGGCTGTGGGAAGAGCACAGTGGTC
+CAGCTCCTGGAGCGGTTCTACGACCCCTTGGCAGGGAAAGTGCTGCTTGATGGCAAAGAA
+ATAAAGCGACTGAATGTTCAGTGGCTCCGAGCACACCTGGGCATCGTGTCCCAGGAGCCC
+ATCCTGTTTGACTGCAGCATTGCTGAGAACATTGCCTATGGAGACAACAGCCGGGTGGTG
+TCACAGGAAGAGATTGTGAGGGCAGCAAAGGAGGCCAACATACATGCCTTCATCGAGTCA
+CTGCCTAATAAATATAGCACTAAAGTAGGAGACAAAGGAACTCAGCTCTCTGGTGGCCAG
+AAACAACGCATTGCCATAGCTCGTGCCCTTGTTAGACAGCCTCATATTTTGCTTTTGGAT
+GAAGCCACGTCAGCTCTGGATACAGAAAGTGAAAAGGTTGTCCAAGAAGCCCTGGACAAA
+GCCAGAGAAGGCCGCACCTGCATTGTGATTGCTCACCGCCTGTCCACCATCCAGAATGCA
+GACTTAATAGTGGTGTTTCAGAATGGCAGAGTCAAGGAGCATGGCACGCATCAGCAGCTG
+CTGGCACAGAAAGGCATCTATTTTTCAATGGTCAGTGTCCAGGCTGGAACAAAGCGCCAG
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00005</identifier>
+            <name>ABC_tran</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00664</identifier>
+            <name>ABC_membrane</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATPase activity, coupled to transmembrane movement of substances</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>xenobiotic-transporting ATPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G2/M transition of mitotic cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stem cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

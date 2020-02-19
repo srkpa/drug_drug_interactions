@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03659</drugbank-id>
+  <drugbank-id>EXPT02080</drugbank-id>
+  <name>Butylamine</name>
+  <description>Butylamine is a colourless liquid which acquires a yellow colour upon storage in air. It is one of the four isomeric amines of butane. It is known to have the fishy, ammonia-like odor common to amines.</description>
+  <cas-number>109-73-9</cas-number>
+  <unii>N2QV60B4WR</unii>
+  <average-mass>73.1368</average-mass>
+  <monoisotopic-mass>73.089149357</monoisotopic-mass>
+  <state>liquid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Andrew P. Dunlop, "Bis(hydroxymethylfurfuryl)butylamine and method of preparation." U.S. Patent US4219485, issued July, 1979.</synthesis-reference>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity>Oral rat LD&lt;sub&gt;50&lt;/sub&gt; is 366 mg/kg.</toxicity>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as monoalkylamines. These are organic compounds containing an primary aliphatic amine group.</description>
+    <direct-parent>Monoalkylamines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic nitrogen compounds</superclass>
+    <class>Organonitrogen compounds</class>
+    <subclass>Amines</subclass>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">1-aminobutane</synonym>
+    <synonym language="english" coder="">1-butanamine</synonym>
+    <synonym language="english" coder="">n-butylamine</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Alkanes</category>
+      <mesh-id>D000473</mesh-id>
+    </category>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Butanes</category>
+      <mesh-id>D002073</mesh-id>
+    </category>
+    <category>
+      <category>Hydrocarbons, Acyclic</category>
+      <mesh-id>D006839</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1ym2</pdb-entry>
+    <pdb-entry>4lkm</pdb-entry>
+  </pdb-entries>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB03659.pdf?1265922740</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.85</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.04</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.07e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>butan-1-amine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>butylamine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>73.1368</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>73.089149357</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCCCN</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C4H11N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C4H11N/c1-2-3-4-5/h2-5H2,1H3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HQABUPZFAYXKJW-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>26.02</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>23.79</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>9.66</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>10.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1E+006 mg/L (at 20 °C)</value>
+      <source>YALKOWSKY,SH &amp; DANNENFELSER,RM (1992)</source>
+    </property>
+    <property>
+      <kind>Melting Point</kind>
+      <value>-49.1 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>Boiling Point</kind>
+      <value>77 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.97</value>
+      <source>HANSCH,C ET AL. (1995)</source>
+    </property>
+    <property>
+      <kind>pKa</kind>
+      <value>10.8 (at 20 °C)</value>
+      <source>PERRIN,DD (1965)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>43799</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>8007</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508030</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>7716</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>LYT</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>N-Butylamine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL13968</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0004793</id>
+      <name>Candidapepsin-2</name>
+      <organism>Yeast</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0DJ06" source="Swiss-Prot">
+        <name>Candidapepsin-2</name>
+        <general-function>Drug binding</general-function>
+        <specific-function>Secreted aspartic peptidases (SAPs) are a group of ten acidic hydrolases considered as key virulence factors. These enzymes supply the fungus with nutrient amino acids as well as are able to degrade the selected host's proteins involved in the immune defense. Induces host inflammatory cytokine production in a proteolytic activity-independent way. Plays a role in tissue damage during superficial infection. Moreover, acts toward human hemoglobin though limited proteolysis to generate a variety of antimicrobial hemocidins, enabling to compete with the other microorganisms of the same physiological niche using the microbicidal peptides generated from the host protein.</specific-function>
+        <gene-name>SAP2</gene-name>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>4.25</theoretical-pi>
+        <molecular-weight>42315.655</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="237561">Yeast</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M83663</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>170841</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0DJ06</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CARP2_CANAL</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.23.24</synonym>
+          <synonym>ACP 2</synonym>
+          <synonym>Aspartate protease 2</synonym>
+          <synonym>PEP11</synonym>
+          <synonym>PRA11</synonym>
+          <synonym>PRA2</synonym>
+          <synonym>Secreted aspartic protease 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017538|Candidapepsin-2
+MFLKNIFIALAIALLVDATPTTTKRSAGFVALDFSVVKTPKAFPVTNGQEGKTSKRQAVP
+VTLHNEQVTYAADITVGSNNQKLNVIVDTGSSDLWVPDVNVDCQVTYSDQTADFCKQKGT
+YDPSGSSASQDLNTPFKIGYGDGSSSQGTLYKDTVGFGGVSIKNQVLADVDSTSIDQGIL
+GVGYKTNEAGGSYDNVPVTLKKQGVIAKNAYSLYLNSPDAATGQIIFGGVDNAKYSGSLI
+ALPVTSDRELRISLGSVEVSGKTINTDNVDVLVDSGTTITYLQQDLADQIIKAFNGKLTQ
+DSNGNSFYEVDCNLSGDVVFNFSKNAKISVPASEFAASLQGDDGQPYDKCQLLFDVNDAN
+ILGDNFLRSAYIVYDLDDNEISLAQVKYTSASSISALT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017539|Candidapepsin-2 (SAP2)
+ATGTTTTTAAAGAATATTTTCATTGCTCTTGCTATTGCTTTATTAGTCGATGCTACTCCA
+ACAACAACCAAAAGATCAGCTGGTTTCGTTGCTTTAGATTTCAGTGTTGTGAAAACTCCT
+AAAGCATTCCCAGTTACTAATGGTCAAGAAGGTAAAACTTCCAAAAGACAAGCTGTCCCA
+GTGACTTTACACAATGAACAAGTCACTTATGCTGCTGATATTACCGTTGGATCCAATAAT
+CAAAAACTTAATGTTATTGTTGATACTGGATCATCAGATTTATGGGTTCCTGATGTTAAT
+GTTGATTGTCAAGTCACTTATAGTGATCAAACTGCAGATTTCTGTAAACAAAAGGGGACA
+TATGATCCAAGTGGTTCATCAGCTTCACAAGATTTGAATACTCCATTCAAAATTGGTTAT
+GGTGATGGATCTTCATCTCAAGGTACTTTATATAAGGATACCGTTGGATTTGGTGGTGTT
+TCGATTAAAAATCAAGTTTTAGCTGATGTTGATTCTACTTCAATTGATCAAGGTATTTTA
+GGGGTTGGTTATAAAACCAATGAAGCCGGTGGTAGTTATGATAATGTCCCTGTCACTTTA
+AAAAAACAAGGAGTCATTGCTAAGAATGCTTATTCACTTTATCTTAATTCTCCAGATGCT
+GCCACGGGACAAATAATTTTCGGTGGGGTTGATAATGCTAAATATAGTGGTTCATTAATT
+GCATTACCAGTTACTTCTGATCGTGAATTAAGAATTAGTTTGGGTTCAGTTGAAGTTTCT
+GGTAAAACCATCAATACTGATAATGTCGATGTTCTTGTGGATTCAGGTACCACCATTACT
+TATTTGCAACAAGATCTTGCTGATCAAATCATTAAAGCTTTCAATGGTAAATTAACTCAA
+GATTCCAATGGTAATTCATTCTATGAAGTTGATTGTAATTTGTCAGGGGATGTTGTATTC
+AATTTTAGTAAAAATGCTAAAATTTCCGTTCCAGCTTCCGAATTTGCTGCTTCTTTACAA
+GGTGATGATGGTCAACCATATGATAAATGTCAATTACTTTTCGATGTTAATGATGCTAAC
+ATTCTTGGTGATAACTTTTTGAGATCAGCTTATATTGTTTATGATTTGGATGATAATGAA
+ATTTCTTTGGCTCAAGTCAAATATACTTCTGCTTCCAGTATTTCTGCCTTGACCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00026</identifier>
+            <name>Asp</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>anchored component of external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>fungal-type cell wall</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aspartic-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adhesion of symbiont to host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fungal-type cell wall organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>induction by symbiont of defense-related host calcium ion flux</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>induction by symbiont of host defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitrogen compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pathogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal peptide processing</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

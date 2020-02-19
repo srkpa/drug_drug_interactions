@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2018-12-14" updated="2019-11-02">
+  <drugbank-id primary="true">DB14725</drugbank-id>
+  <name>Cefamandole nafate</name>
+  <description/>
+  <cas-number>57268-80-1</cas-number>
+  <unii/>
+  <average-mass>490.51</average-mass>
+  <monoisotopic-mass>490.072924672</monoisotopic-mass>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002822</drugbank-id>
+      <name>Cefamandole nafate sodium</name>
+      <unii>8HDO7941DO</unii>
+      <cas-number>42540-40-9</cas-number>
+      <inchikey>ICZOIXFFVKYXOM-YCLOEFEOSA-M</inchikey>
+      <average-mass>512.49</average-mass>
+      <monoisotopic-mass>512.05486892</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">O-formylcefamandole</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Mandol Inj 1gm/amp</name>
+      <labeller>Eli Lilly &amp; Co. Ltd.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00439320</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1978-12-31</started-marketing-on>
+      <ended-marketing-on>2000-10-02</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Mandol Inj 2gm/amp</name>
+      <labeller>Eli Lilly &amp; Co. Ltd.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00439312</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1978-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-03</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand>
+      <name>Kefadol</name>
+      <company>Lilly</company>
+    </international-brand>
+    <international-brand>
+      <name>Kefandol</name>
+      <company>Lilly</company>
+    </international-brand>
+    <international-brand>
+      <name>Mandokef</name>
+      <company>Lilly</company>
+    </international-brand>
+    <international-brand>
+      <name>Mandol</name>
+      <company>Lilly</company>
+    </international-brand>
+  </international-brands>
+  <mixtures>
+    <mixture>
+      <name>Mandol Inj 2gm/amp</name>
+      <ingredients>Cefamandole nafate</ingredients>
+    </mixture>
+    <mixture>
+      <name>Mandol Inj 1gm/amp</name>
+      <ingredients>Cefamandole nafate</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amides</category>
+      <mesh-id>D000577</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>beta-Lactams</category>
+      <mesh-id>D047090</mesh-id>
+    </category>
+    <category>
+      <category>Cephalosporins</category>
+      <mesh-id>D002511</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Lactams</category>
+      <mesh-id>D007769</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+    <category>
+      <category>Thiazines</category>
+      <mesh-id>D013843</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intramuscular; Intravenous</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intravenous</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB01032</drugbank-id>
+      <name>Probenecid</name>
+      <description>The serum concentration of Cefamandole nafate can be increased when it is combined with Probenecid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Cefamandole nafate is combined with (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00001</drugbank-id>
+      <name>Lepirudin</name>
+      <description>The therapeutic efficacy of Lepirudin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00006</drugbank-id>
+      <name>Bivalirudin</name>
+      <description>The therapeutic efficacy of Bivalirudin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00009</drugbank-id>
+      <name>Alteplase</name>
+      <description>The therapeutic efficacy of Alteplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00013</drugbank-id>
+      <name>Urokinase</name>
+      <description>The therapeutic efficacy of Urokinase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00015</drugbank-id>
+      <name>Reteplase</name>
+      <description>The therapeutic efficacy of Reteplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00029</drugbank-id>
+      <name>Anistreplase</name>
+      <description>The therapeutic efficacy of Anistreplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00031</drugbank-id>
+      <name>Tenecteplase</name>
+      <description>The therapeutic efficacy of Tenecteplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00054</drugbank-id>
+      <name>Abciximab</name>
+      <description>The therapeutic efficacy of Abciximab can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00055</drugbank-id>
+      <name>Drotrecogin alfa</name>
+      <description>The therapeutic efficacy of Drotrecogin alfa can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00086</drugbank-id>
+      <name>Streptokinase</name>
+      <description>The therapeutic efficacy of Streptokinase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00261</drugbank-id>
+      <name>Anagrelide</name>
+      <description>The therapeutic efficacy of Anagrelide can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00278</drugbank-id>
+      <name>Argatroban</name>
+      <description>The therapeutic efficacy of Argatroban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00407</drugbank-id>
+      <name>Ardeparin</name>
+      <description>The therapeutic efficacy of Ardeparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00569</drugbank-id>
+      <name>Fondaparinux</name>
+      <description>The therapeutic efficacy of Fondaparinux can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00686</drugbank-id>
+      <name>Pentosan polysulfate</name>
+      <description>The therapeutic efficacy of Pentosan polysulfate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00945</drugbank-id>
+      <name>Acetylsalicylic acid</name>
+      <description>The therapeutic efficacy of Acetylsalicylic acid can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00975</drugbank-id>
+      <name>Dipyridamole</name>
+      <description>The therapeutic efficacy of Dipyridamole can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01088</drugbank-id>
+      <name>Iloprost</name>
+      <description>The therapeutic efficacy of Iloprost can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01109</drugbank-id>
+      <name>Heparin</name>
+      <description>The therapeutic efficacy of Heparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01225</drugbank-id>
+      <name>Enoxaparin</name>
+      <description>The therapeutic efficacy of Enoxaparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01240</drugbank-id>
+      <name>Epoprostenol</name>
+      <description>The therapeutic efficacy of Epoprostenol can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04898</drugbank-id>
+      <name>Ximelagatran</name>
+      <description>The therapeutic efficacy of Ximelagatran can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04925</drugbank-id>
+      <name>Desmoteplase</name>
+      <description>The therapeutic efficacy of Desmoteplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04932</drugbank-id>
+      <name>Defibrotide</name>
+      <description>The therapeutic efficacy of Defibrotide can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05099</drugbank-id>
+      <name>Ancrod</name>
+      <description>The therapeutic efficacy of Ancrod can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05229</drugbank-id>
+      <name>Beraprost</name>
+      <description>The therapeutic efficacy of Beraprost can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05254</drugbank-id>
+      <name>Fibrinolysin</name>
+      <description>The therapeutic efficacy of Fibrinolysin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06209</drugbank-id>
+      <name>Prasugrel</name>
+      <description>The therapeutic efficacy of Prasugrel can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06228</drugbank-id>
+      <name>Rivaroxaban</name>
+      <description>The therapeutic efficacy of Rivaroxaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06271</drugbank-id>
+      <name>Sulodexide</name>
+      <description>The therapeutic efficacy of Sulodexide can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06294</drugbank-id>
+      <name>Semuloparin</name>
+      <description>The therapeutic efficacy of Semuloparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06406</drugbank-id>
+      <name>Idraparinux</name>
+      <description>The therapeutic efficacy of Idraparinux can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06441</drugbank-id>
+      <name>Cangrelor</name>
+      <description>The therapeutic efficacy of Cangrelor can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06543</drugbank-id>
+      <name>Astaxanthin</name>
+      <description>The therapeutic efficacy of Astaxanthin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06605</drugbank-id>
+      <name>Apixaban</name>
+      <description>The therapeutic efficacy of Apixaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06635</drugbank-id>
+      <name>Otamixaban</name>
+      <description>The therapeutic efficacy of Otamixaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06679</drugbank-id>
+      <name>Amediplase</name>
+      <description>The therapeutic efficacy of Amediplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06695</drugbank-id>
+      <name>Dabigatran etexilate</name>
+      <description>The therapeutic efficacy of Dabigatran etexilate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06754</drugbank-id>
+      <name>Danaparoid</name>
+      <description>The therapeutic efficacy of Danaparoid can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06779</drugbank-id>
+      <name>Dalteparin</name>
+      <description>The therapeutic efficacy of Dalteparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06822</drugbank-id>
+      <name>Tinzaparin</name>
+      <description>The therapeutic efficacy of Tinzaparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB07767</drugbank-id>
+      <name>Ferulic acid</name>
+      <description>The therapeutic efficacy of Ferulic acid can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08813</drugbank-id>
+      <name>Nadroparin</name>
+      <description>The therapeutic efficacy of Nadroparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08814</drugbank-id>
+      <name>Triflusal</name>
+      <description>The therapeutic efficacy of Triflusal can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08816</drugbank-id>
+      <name>Ticagrelor</name>
+      <description>The therapeutic efficacy of Ticagrelor can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08994</drugbank-id>
+      <name>Ditazole</name>
+      <description>The therapeutic efficacy of Ditazole can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09030</drugbank-id>
+      <name>Vorapaxar</name>
+      <description>The therapeutic efficacy of Vorapaxar can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09075</drugbank-id>
+      <name>Edoxaban</name>
+      <description>The therapeutic efficacy of Edoxaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09125</drugbank-id>
+      <name>Potassium citrate</name>
+      <description>The therapeutic efficacy of Potassium citrate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09154</drugbank-id>
+      <name>Sodium citrate</name>
+      <description>The therapeutic efficacy of Sodium citrate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09255</drugbank-id>
+      <name>Dextran</name>
+      <description>The therapeutic efficacy of Dextran can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09258</drugbank-id>
+      <name>Bemiparin</name>
+      <description>The therapeutic efficacy of Bemiparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09259</drugbank-id>
+      <name>Reviparin</name>
+      <description>The therapeutic efficacy of Reviparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09260</drugbank-id>
+      <name>Parnaparin</name>
+      <description>The therapeutic efficacy of Parnaparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09261</drugbank-id>
+      <name>Certoparin</name>
+      <description>The therapeutic efficacy of Certoparin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11095</drugbank-id>
+      <name>Desirudin</name>
+      <description>The therapeutic efficacy of Desirudin can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11154</drugbank-id>
+      <name>Zinc citrate</name>
+      <description>The therapeutic efficacy of Zinc citrate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11166</drugbank-id>
+      <name>Antithrombin Alfa</name>
+      <description>The therapeutic efficacy of Antithrombin Alfa can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11312</drugbank-id>
+      <name>Protein C</name>
+      <description>The therapeutic efficacy of Protein C can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11598</drugbank-id>
+      <name>Antithrombin III human</name>
+      <description>The therapeutic efficacy of Antithrombin III human can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11984</drugbank-id>
+      <name>Letaxaban</name>
+      <description>The therapeutic efficacy of Letaxaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12289</drugbank-id>
+      <name>Darexaban</name>
+      <description>The therapeutic efficacy of Darexaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12364</drugbank-id>
+      <name>Betrixaban</name>
+      <description>The therapeutic efficacy of Betrixaban can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12598</drugbank-id>
+      <name>Nafamostat</name>
+      <description>The therapeutic efficacy of Nafamostat can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12726</drugbank-id>
+      <name>Monteplase</name>
+      <description>The therapeutic efficacy of Monteplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12831</drugbank-id>
+      <name>Gabexate</name>
+      <description>The therapeutic efficacy of Gabexate can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13149</drugbank-id>
+      <name>Protein S human</name>
+      <description>The therapeutic efficacy of Protein S human can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13199</drugbank-id>
+      <name>Brinase</name>
+      <description>The therapeutic efficacy of Brinase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13616</drugbank-id>
+      <name>Melagatran</name>
+      <description>The therapeutic efficacy of Melagatran can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13646</drugbank-id>
+      <name>Saruplase</name>
+      <description>The therapeutic efficacy of Saruplase can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14094</drugbank-id>
+      <name>Tocopherylquinone</name>
+      <description>The therapeutic efficacy of Tocopherylquinone can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14598</drugbank-id>
+      <name>Edetate calcium disodium anhydrous</name>
+      <description>The therapeutic efficacy of Edetate calcium disodium anhydrous can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14600</drugbank-id>
+      <name>Edetate disodium anhydrous</name>
+      <description>The therapeutic efficacy of Edetate disodium anhydrous can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14726</drugbank-id>
+      <name>Dabigatran</name>
+      <description>The therapeutic efficacy of Dabigatran can be decreased when used in combination with Cefamandole nafate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00822</drugbank-id>
+      <name>Disulfiram</name>
+      <description>The risk or severity of adverse effects can be increased when Cefamandole nafate is combined with Disulfiram.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.61</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.27e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.42</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(6R,7R)-7-[(2R)-2-(formyloxy)-2-phenylacetamido]-3-{[(1-methyl-1H-1,2,3,4-tetrazol-5-yl)sulfanyl]methyl}-8-oxo-5-thia-1-azabicyclo[4.2.0]oct-2-ene-2-carboxylic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>O-formylcefamandole</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>490.51</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>490.072924672</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]12SCC(CSC3=NN=NN3C)=C(N1C(=O)[C@H]2NC(=O)[C@H](OC=O)C1=CC=CC=C1)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C19H18N6O6S2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C19H18N6O6S2/c1-24-19(21-22-23-24)33-8-11-7-32-17-12(16(28)25(17)13(11)18(29)30)20-15(27)14(31-9-26)10-5-3-2-4-6-10/h2-6,9,12,14,17H,7-8H2,1H3,(H,20,27)(H,29,30)/t12-,14-,17-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>RRJHESVQVSRQEX-SUYBPPKGSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>156.61</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>131.31</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>45.27</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-1.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>2121</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>53654</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4447585</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Cefamandole</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201218</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

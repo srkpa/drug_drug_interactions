@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05131</drugbank-id>
+  <name>TTP889</name>
+  <description>TTP889, an orally bioavailable selective inhibitor of the intrinsic coagulation pathway, is being developed as an anticoagulant for the treatment of thromboembolic disorders. TTP889 is the only known selective small molecule inhibitor of Factor IX, a key enzyme of the intrinsic pathway of the blood coagulation system. TTP889 has proven to be effective in preventing clot formation in several animal models of human disease, without any signs of the bleeding associated with traditional anticoagulants. </description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3254</ref-id>
+        <pubmed-id>16906775</pubmed-id>
+        <citation>Eriksson BI, Quinlan DJ: Oral anticoagulants in development: focus on thromboprophylaxis in patients undergoing orthopaedic surgery. Drugs. 2006;66(11):1411-29.</citation>
+      </article>
+      <article>
+        <ref-id>A3255</ref-id>
+        <pubmed-id>17272750</pubmed-id>
+        <citation>Howard EL, Becker KC, Rusconi CP, Becker RC: Factor IXa inhibitors as novel anticoagulants. Arterioscler Thromb Vasc Biol. 2007 Apr;27(4):722-7. Epub 2007 Feb 1.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in blood (blood forming organ disorders, unspecified), cardiac surgery, and venous thromboembolism.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>TTP889 is a factor IXa inhibitor with little or no activity against factors VIIIa, Xa, XIa, or XIIa. It is the only molecule in development that is an inhibitor of the intrinsic pathway in vitro and in vivo via FIX/IXa. TTP889 inhibits the ability of FIXa to form a fully functional tenase complex with FVIIIa. FIXa plays an integral role in the intrinsic coagulation pathway and a lesser role in the extrinsic pathway.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life>20 hours</half-life>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909966</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000364</id>
+      <name>Coagulation factor IX</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00740" source="Swiss-Prot">
+        <name>Coagulation factor IX</name>
+        <general-function>Serine-type endopeptidase activity</general-function>
+        <specific-function>Factor IX is a vitamin K-dependent plasma protein that participates in the intrinsic pathway of blood coagulation by converting factor X to its active form in the presence of Ca(2+) ions, phospholipids, and factor VIIIa.</specific-function>
+        <gene-name>F9</gene-name>
+        <locus>Xq27.1-q27.2</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>5.16</theoretical-pi>
+        <molecular-weight>51778.11</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3551</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>F9</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>K02402</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>182609</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2364</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00740</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FA9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.21.22</synonym>
+          <synonym>Christmas factor</synonym>
+          <synonym>Plasma thromboplastin component</synonym>
+          <synonym>PTC</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000725|Coagulation factor IX
+MQRVNMIMAESPGLITICLLGYLLSAECTVFLDHENANKILNRPKRYNSGKLEEFVQGNL
+ERECMEEKCSFEEAREVFENTERTTEFWKQYVDGDQCESNPCLNGGSCKDDINSYECWCP
+FGFEGKNCELDVTCNIKNGRCEQFCKNSADNKVVCSCTEGYRLAENQKSCEPAVPFPCGR
+VSVSQTSKLTRAETVFPDVDYVNSTEAETILDNITQSTQSFNDFTRVVGGEDAKPGQFPW
+QVVLNGKVDAFCGGSIVNEKWIVTAAHCVETGVKITVVAGEHNIEETEHTEQKRNVIRII
+PHHNYNAAINKYNHDIALLELDEPLVLNSYVTPICIADKEYTNIFLKFGSGYVSGWGRVF
+HKGRSALVLQYLRVPLVDRATCLRSTKFTIYNNMFCAGFHEGGRDSCQGDSGGPHVTEVE
+GTSFLTGIISWGEECAMKGKYGIYTKVSRYVNWIKEKTKLT</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010262|Coagulation factor IX (F9)
+ATGCAGCGCGTGAACATGATCATGGCAGAATCACCAGGCCTCATCACCATCTGCCTTTTA
+GGATATCTACTCAGTGCTGAATGTACAGTTTTTCTTGATCATGAAAACGCCAACAAAATT
+CTGAATCGGCCAAAGAGGTATAATTCAGGTAAATTGGAAGAGTTTGTTCAAGGGAACCTT
+GAGAGAGAATGTATGGAAGAAAAGTGTAGTTTTGAAGAAGCACGAGAAGTTTTTGAAAAC
+ACTGAAAGAACAACTGAATTTTGGAAGCAGTATGTTGATGGAGATCAGTGTGAGTCCAAT
+CCATGTTTAAATGGCGGCAGTTGCAAGGATGACATTAATTCCTATGAATGTTGGTGTCCC
+TTTGGATTTGAAGGAAAGAACTGTGAATTAGATGTAACATGTAACATTAAGAATGGCAGA
+TGCGAGCAGTTTTGTAAAAATAGTGCTGATAACAAGGTGGTTTGCTCCTGTACTGAGGGA
+TATCGACTTGCAGAAAACCAGAAGTCCTGTGAACCAGCAGTGCCATTTCCATGTGGAAGA
+GTTTCTGTTTCACAAACTTCTAAGCTCACCCGTGCTGAGACTGTTTTTCCTGATGTGGAC
+TATGTAAATTCTACTGAAGCTGAAACCATTTTGGATAACATCACTCAAAGCACCCAATCA
+TTTAATGACTTCACTCGGGTTGTTGGTGGAGAAGATGCCAAACCAGGTCAATTCCCTTGG
+CAGGTTGTTTTGAATGGTAAAGTTGATGCATTCTGTGGAGGCTCTATCGTTAATGAAAAA
+TGGATTGTAACTGCTGCCCACTGTGTTGAAACTGGTGTTAAAATTACAGTTGTCGCAGGT
+GAACATAATATTGAGGAGACAGAACATACAGAGCAAAAGCGAAATGTGATTCGAATTATT
+CCTCACCACAACTACAATGCAGCTATTAATAAGTACAACCATGACATTGCCCTTCTGGAA
+CTGGACGAACCCTTAGTGCTAAACAGCTACGTTACACCTATTTGCATTGCTGACAAGGAA
+TACACGAACATCTTCCTCAAATTTGGATCTGGCTATGTAAGTGGCTGGGGAAGAGTCTTC
+CACAAAGGGAGATCAGCTTTAGTTCTTCAGTACCTTAGAGTTCCACTTGTTGACCGAGCC
+ACATGTCTTCGATCTACAAAGTTCACCATCTATAACAACATGTTCTGTGCTGGCTTCCAT
+GAAGGAGGTAGAGATTCATGTCAAGGAGATAGTGGGGGACCCCATGTTACTGAAGTGGAA
+GGGACCAGTTTCTTAACTGGAATTATTAGCTGGGGTGAAGAGTGTGCAATGAAAGGCAAA
+TATGGAATATATACCAAGGTATCCCGGTATGTCAACTGGATTAAGGAAAAAACAAAGCTC
+ACTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00008</identifier>
+            <name>EGF</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00594</identifier>
+            <name>Gla</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00089</identifier>
+            <name>Trypsin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation, extrinsic pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation, intrinsic pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-glutamic acid carboxylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-translational protein modification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>zymogen activation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

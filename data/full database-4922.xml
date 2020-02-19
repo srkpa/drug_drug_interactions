@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05259</drugbank-id>
+  <drugbank-id>APRD00999</drugbank-id>
+  <name>Glatiramer</name>
+  <description>Glatiramer acetate consists of the acetate salts of synthetic polypeptides, containing four naturally occurring amino acids: L-glutamic acid, L-alanine, L-tyrosine, and L-lysine with an average molar fraction of 0.141, 0.427, 0.095, and 0.338, respectively. The average molecular weight of glatiramer acetate is 5,000-9,000 daltons.  It is an immunomodulator, licensed in much of the world for reduced frequency of relapses in relapsing-remitting multiple sclerosis.</description>
+  <cas-number>28704-27-0</cas-number>
+  <unii>U782C039QP</unii>
+  <state>liquid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3315</ref-id>
+        <pubmed-id>17920545</pubmed-id>
+        <citation>Weber MS, Hohlfeld R, Zamvil SS: Mechanism of action of glatiramer acetate in treatment of multiple sclerosis. Neurotherapeutics. 2007 Oct;4(4):647-53.</citation>
+      </article>
+      <article>
+        <ref-id>A3316</ref-id>
+        <pubmed-id>15371592</pubmed-id>
+        <citation>Arnon R, Aharoni R: Mechanism of action of glatiramer acetate in multiple sclerosis and its potential for the development of new applications. Proc Natl Acad Sci U S A. 2004 Oct 5;101 Suppl 2:14593-8. Epub 2004 Sep 15.</citation>
+      </article>
+      <article>
+        <ref-id>A3317</ref-id>
+        <pubmed-id>11501229</pubmed-id>
+        <citation>Francis DA: Glatiramer acetate (Copaxone). Int J Clin Pract. 2001 Jul-Aug;55(6):394-8.</citation>
+      </article>
+      <article>
+        <ref-id>A3318</ref-id>
+        <pubmed-id>9548401</pubmed-id>
+        <citation>Li Q, Milo R, Panitch H, Swoveland P, Bever CT Jr: Glatiramer acetate blocks the activation of THP-1 cells by interferon-gamma. Eur J Pharmacol. 1998 Jan 26;342(2-3):303-10.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Tsung-Yu Hsiao, Meng-Fen Ho, "Synthesis of Glatiramer Acetate." U.S. Patent US20100036092, issued February 11, 2010.</synthesis-reference>
+  <indication>For reduction of the frequency of relapses in patients with Relapsing-Remitting Multiple Sclerosis.</indication>
+  <pharmacodynamics>Glatiramer acetate was originally designed to mimic a protein in myelin, called myelin basic protein, with the intention of inducing EAE (an animal model of MS). Quite to the contrary, it was found to suppress the disease and as a result came to be trialed in human MS. There is some evidence that Glatiramer acetate converts the body's immune response from a Th1 type to a Th2 one, promotes suppressor T cells or acts as an altered peptide ligand. Studies in animals and in vitro systems suggest that upon its administration, glatiramer acetate-specific suppressor T-cells are induced and activated in the periphery. Some fraction of the injected material, either intact or partially hydrolyzed, is presumed to enter the lymphatic circulation, enabling it to reach regional lymph nodes, and some may enter the systemic circulation intact.</pharmacodynamics>
+  <mechanism-of-action>Glatiramer acetate (GA) exhibits strong and promiscuous binding to MHC molecules (HLA DRB1* variants) and consequent competition with various myelin antigens for their presentation to T cells. A further aspect of its action is potent induction of specific suppressor cells of the T helper 2 (Th2) type that migrate to the brain and lead to in situ bystander suppression. Furthermore, the GA-specific cells in the brain express the anti-inflammatory cytokines IL-10 and transforming growth factor beta, in addition to brain-derived neurotrophic factor, whereas they do not express the inflammatory cytokine IFN-gamma. Recent evidence also suggests that Glatiramer acetate directly inhibits dendritic cells and monocytes - both of which are circulating antigen presenting cells.</mechanism-of-action>
+  <toxicity>Adverse reactions include injection site reactions, vasodilatation, chest pain, asthenia, infection, pain, nausea, arthralgia, anxiety, and hypertonia.</toxicity>
+  <metabolism>Hydrolyzed by proteases</metabolism>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002719</drugbank-id>
+      <name>Glatiramer acetate</name>
+      <unii>5M691HL4BO</unii>
+      <cas-number>147245-92-9</cas-number>
+      <inchikey/>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">(T,G)-A-L</synonym>
+    <synonym language="english" coder="">COP 1</synonym>
+    <synonym language="english" coder="">COP-1</synonym>
+    <synonym language="english" coder="">Copolymer I (synthetic peptide)</synonym>
+    <synonym language="english" coder="">Copolymer-1</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Copaxone</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02245619</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2002-05-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>20 mg</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Copaxone</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02456915</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2016-08-26</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength>40 mg</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Copaxone</name>
+      <labeller>Sanofi Aventis</labeller>
+      <ndc-id/>
+      <ndc-product-code>0088-1153</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2002-04-22</started-marketing-on>
+      <ended-marketing-on>2010-01-31</ended-marketing-on>
+      <dosage-form>Injection</dosage-form>
+      <strength>20 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>NDA020622</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Copaxone</name>
+      <labeller>Teva Neuroscience, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>68546-317</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2008-04-28</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>20 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>NDA020622</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Copaxone</name>
+      <labeller>Teva Neuroscience, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>68546-325</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2014-01-29</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>40 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>NDA020622</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Copaxone</name>
+      <labeller>Teva Pharmaceutical Industries</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02233014</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1997-10-14</started-marketing-on>
+      <ended-marketing-on>2011-04-28</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength>20 mg</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Glatect</name>
+      <labeller>Pharmascience Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02460661</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-08-21</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Glatiramer Acetate</name>
+      <labeller>Mylan Pharmaceuticals Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0378-6961</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-10-04</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>40 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>ANDA206936</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Glatiramer Acetate</name>
+      <labeller>Mylan Pharmaceuticals Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0378-6960</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-10-04</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>20 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>ANDA091646</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Glatopa</name>
+      <labeller>Sandoz Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>0781-3234</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2015-06-18</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>20 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>ANDA090218</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Glatopa</name>
+      <labeller>Sandoz Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code>0781-3250</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2018-02-12</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Injection, solution</dosage-form>
+      <strength>40 mg/1mL</strength>
+      <route>Subcutaneous</route>
+      <fda-application-number>ANDA206921</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Teva-glatiramer Acetate</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02481510</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Teva-glatiramer Acetate</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02441446</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Solution</dosage-form>
+      <strength/>
+      <route>Subcutaneous</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Glatopa</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Glatopa</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Glatiramer Acetate</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Glatiramer Acetate</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Teva-glatiramer Acetate</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Copaxone</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Glatect</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+    <mixture>
+      <name>Teva-glatiramer Acetate</name>
+      <ingredients>Glatiramer</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers>
+    <packager>
+      <name>Baxter International Inc.</name>
+      <url>http://www.baxter.com</url>
+    </packager>
+    <packager>
+      <name>Ben Venue Laboratories Inc.</name>
+      <url>http://www.benvenue.com</url>
+    </packager>
+    <packager>
+      <name>Sanofi-Aventis Inc.</name>
+      <url>http://www.sanofi-aventis.com</url>
+    </packager>
+    <packager>
+      <name>Teva Pharmaceutical Industries Ltd.</name>
+      <url>http://www.tevapharm.com</url>
+    </packager>
+  </packagers>
+  <manufacturers/>
+  <prices>
+    <price>
+      <description>Copaxone 20 mg injection kit</description>
+      <cost currency="USD">2264.26</cost>
+      <unit>kit</unit>
+    </price>
+    <price>
+      <description>Copaxone 20 mg/ml Kit 20 mg Solution, 1 Box = 30 Pre-Filled Syringes</description>
+      <cost currency="USD">3775.25</cost>
+      <unit>box</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Adjuvants, Immunologic</category>
+      <mesh-id>D000276</mesh-id>
+    </category>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Antineoplastic and Immunomodulating Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antirheumatic Agents</category>
+      <mesh-id>D018501</mesh-id>
+    </category>
+    <category>
+      <category>Immunologic Factors</category>
+      <mesh-id>D007155</mesh-id>
+    </category>
+    <category>
+      <category>Immunomodulatory Agents</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Immunosuppressive Agents</category>
+      <mesh-id>D007166</mesh-id>
+    </category>
+    <category>
+      <category>Membrane Proteins</category>
+      <mesh-id>D008565</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+    <category>
+      <category>T-Lymphocytes, Helper-Inducer, immunology</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Vesicular Transport Proteins</category>
+      <mesh-id>D033921</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Injection</form>
+      <route>Subcutaneous</route>
+      <strength>20 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Subcutaneous</route>
+      <strength>20 mg</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Subcutaneous</route>
+      <strength>20 mg</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Subcutaneous</route>
+      <strength>40 mg</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Subcutaneous</route>
+      <strength>20 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Injection, solution</form>
+      <route>Subcutaneous</route>
+      <strength>40 mg/1mL</strength>
+    </dosage>
+    <dosage>
+      <form>Solution</form>
+      <route>Subcutaneous</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="L03AX13">
+      <level code="L03AX">Other immunostimulants</level>
+      <level code="L03A">IMMUNOSTIMULANTS</level>
+      <level code="L03">IMMUNOSTIMULANTS</level>
+      <level code="L">ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>92:20.00</ahfs-code>
+  </ahfs-codes>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB05259.pdf?1265922795</fda-label>
+  <patents>
+    <patent>
+      <number>5981589</number>
+      <country>United States</country>
+      <approved>1999-11-09</approved>
+      <expires>2014-05-24</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>2191088</number>
+      <country>Canada</country>
+      <approved>2004-09-28</approved>
+      <expires>2015-05-23</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8232250</number>
+      <country>United States</country>
+      <approved>2012-07-31</approved>
+      <expires>2030-08-19</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8399413</number>
+      <country>United States</country>
+      <approved>2013-03-19</approved>
+      <expires>2030-08-19</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>8969302</number>
+      <country>United States</country>
+      <approved>2015-03-03</approved>
+      <expires>2030-08-19</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9155776</number>
+      <country>United States</country>
+      <approved>2015-10-13</approved>
+      <expires>2030-08-19</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+    <patent>
+      <number>9402874</number>
+      <country>United States</country>
+      <approved>2016-08-02</approved>
+      <expires>2030-08-19</expires>
+      <pediatric-extension>false</pediatric-extension>
+    </patent>
+  </patents>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB06643</drugbank-id>
+      <name>Denosumab</name>
+      <description>The risk or severity of adverse effects can be increased when Denosumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00108</drugbank-id>
+      <name>Natalizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Natalizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00337</drugbank-id>
+      <name>Pimecrolimus</name>
+      <description>The risk or severity of adverse effects can be increased when Pimecrolimus is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01656</drugbank-id>
+      <name>Roflumilast</name>
+      <description>Roflumilast may increase the immunosuppressive activities of Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06688</drugbank-id>
+      <name>Sipuleucel-T</name>
+      <description>The therapeutic efficacy of Sipuleucel-T can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01015</drugbank-id>
+      <name>Sulfamethoxazole</name>
+      <description>The risk or severity of myelosuppression can be increased when Sulfamethoxazole is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01097</drugbank-id>
+      <name>Leflunomide</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Leflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08895</drugbank-id>
+      <name>Tofacitinib</name>
+      <description>Glatiramer may increase the immunosuppressive activities of Tofacitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00072</drugbank-id>
+      <name>Trastuzumab</name>
+      <description>Trastuzumab may increase the neutropenic activities of Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08868</drugbank-id>
+      <name>Fingolimod</name>
+      <description>Glatiramer may increase the immunosuppressive activities of Fingolimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00864</drugbank-id>
+      <name>Tacrolimus</name>
+      <description>Tacrolimus may increase the immunosuppressive activities of Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04914</drugbank-id>
+      <name>G17DT</name>
+      <description>The therapeutic efficacy of G17DT can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05144</drugbank-id>
+      <name>PEV3A</name>
+      <description>The therapeutic efficacy of PEV3A can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05325</drugbank-id>
+      <name>INGN 225</name>
+      <description>The therapeutic efficacy of INGN 225 can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05374</drugbank-id>
+      <name>Rindopepimut</name>
+      <description>The therapeutic efficacy of Rindopepimut can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05440</drugbank-id>
+      <name>SRP 299</name>
+      <description>The therapeutic efficacy of SRP 299 can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05942</drugbank-id>
+      <name>GI-5005</name>
+      <description>The therapeutic efficacy of GI-5005 can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06400</drugbank-id>
+      <name>Vitespen</name>
+      <description>The therapeutic efficacy of Vitespen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06584</drugbank-id>
+      <name>TG4010</name>
+      <description>The therapeutic efficacy of TG4010 can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09057</drugbank-id>
+      <name>Anthrax immune globulin human</name>
+      <description>The therapeutic efficacy of Anthrax immune globulin human can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10062</drugbank-id>
+      <name>Rabies virus inactivated antigen, B</name>
+      <description>The therapeutic efficacy of Rabies virus inactivated antigen, B can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10076</drugbank-id>
+      <name>Haemophilus influenzae type B strain 1482 capsular polysaccharide tetanus toxoid conjugate antigen</name>
+      <description>The therapeutic efficacy of Haemophilus influenzae type B strain 1482 capsular polysaccharide tetanus toxoid conjugate antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10276</drugbank-id>
+      <name>Rotavirus vaccine</name>
+      <description>The therapeutic efficacy of Rotavirus vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10283</drugbank-id>
+      <name>Rabies virus inactivated antigen, A</name>
+      <description>The therapeutic efficacy of Rabies virus inactivated antigen, A can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10342</drugbank-id>
+      <name>Haemophilus influenzae type B capsular polysaccharide meningococcal outer membrane protein conjugate antigen</name>
+      <description>The therapeutic efficacy of Haemophilus influenzae type B capsular polysaccharide meningococcal outer membrane protein conjugate antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10583</drugbank-id>
+      <name>Clostridium tetani toxoid antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Clostridium tetani toxoid antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10584</drugbank-id>
+      <name>Corynebacterium diphtheriae toxoid antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Corynebacterium diphtheriae toxoid antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10600</drugbank-id>
+      <name>Influenza A virus A/California/7/2009 X-181 (H1N1) antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/California/7/2009 X-181 (H1N1) antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10769</drugbank-id>
+      <name>Japanese encephalitis virus strain sa 14-14-2 antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Japanese encephalitis virus strain sa 14-14-2 antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10794</drugbank-id>
+      <name>Influenza B virus B/Brisbane/60/2008 antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Influenza B virus B/Brisbane/60/2008 antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10803</drugbank-id>
+      <name>Typhoid Vi polysaccharide vaccine</name>
+      <description>The therapeutic efficacy of Typhoid Vi polysaccharide vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10989</drugbank-id>
+      <name>Hepatitis A Vaccine</name>
+      <description>The therapeutic efficacy of Hepatitis A Vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10990</drugbank-id>
+      <name>Haemophilus influenzae type B strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen</name>
+      <description>The therapeutic efficacy of Haemophilus influenzae type B strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11038</drugbank-id>
+      <name>Influenza A virus A/Brisbane/59/2007(H1N1) hemagglutinin antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Brisbane/59/2007(H1N1) hemagglutinin antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11040</drugbank-id>
+      <name>Influenza B virus B/Brisbane/60/2008 hemagglutinin antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza B virus B/Brisbane/60/2008 hemagglutinin antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11041</drugbank-id>
+      <name>Influenza A virus A/California/7/2009 X-181 (H1N1) hemagglutinin antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/California/7/2009 X-181 (H1N1) hemagglutinin antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11044</drugbank-id>
+      <name>Influenza B virus B/Brisbane/60/2008 antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza B virus B/Brisbane/60/2008 antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11603</drugbank-id>
+      <name>Human rabies virus immune globulin</name>
+      <description>The therapeutic efficacy of Human rabies virus immune globulin can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11627</drugbank-id>
+      <name>Hepatitis B Vaccine (Recombinant)</name>
+      <description>The therapeutic efficacy of Hepatitis B Vaccine (Recombinant) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12568</drugbank-id>
+      <name>Tecemotide</name>
+      <description>The therapeutic efficacy of Tecemotide can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14384</drugbank-id>
+      <name>Influenza A virus A/Victoria/210/2009 X-187 (H3N2) hemagglutinin antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Victoria/210/2009 X-187 (H3N2) hemagglutinin antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14385</drugbank-id>
+      <name>Influenza B virus B/Brisbane/60/2008 hemagglutinin antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Influenza B virus B/Brisbane/60/2008 hemagglutinin antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14394</drugbank-id>
+      <name>Influenza A virus A/California/7/2009 (H1N1) live (attenuated) antigen</name>
+      <description>The therapeutic efficacy of Influenza A virus A/California/7/2009 (H1N1) live (attenuated) antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14445</drugbank-id>
+      <name>Influenza A virus A/Victoria/210/2009 X-187 (H3N2) antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Victoria/210/2009 X-187 (H3N2) antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14449</drugbank-id>
+      <name>Influenza A virus A/Perth/16/2009 (H3N2) live (attenuated) antigen</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Perth/16/2009 (H3N2) live (attenuated) antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14619</drugbank-id>
+      <name>Influenza A virus A/Uruguay/716/2007(H3N2) antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Uruguay/716/2007(H3N2) antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14620</drugbank-id>
+      <name>Influenza A virus A/Brisbane/59/2007(H1N1) antigen (propiolactone inactivated)</name>
+      <description>The therapeutic efficacy of Influenza A virus A/Brisbane/59/2007(H1N1) antigen (propiolactone inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14711</drugbank-id>
+      <name>Vaccinia virus strain new york city board of health live antigen</name>
+      <description>The therapeutic efficacy of Vaccinia virus strain new york city board of health live antigen can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15274</drugbank-id>
+      <name>Pertussis vaccine</name>
+      <description>The therapeutic efficacy of Pertussis vaccine can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15461</drugbank-id>
+      <name>Yersinia pestis 195/p antigen (formaldehyde inactivated)</name>
+      <description>The therapeutic efficacy of Yersinia pestis 195/p antigen (formaldehyde inactivated) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13924</drugbank-id>
+      <name>Varicella Zoster Vaccine (Recombinant)</name>
+      <description>The therapeutic efficacy of Varicella Zoster Vaccine (Recombinant) can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15483</drugbank-id>
+      <name>Modified vaccinia ankara</name>
+      <description>The therapeutic efficacy of Modified vaccinia ankara can be decreased when used in combination with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10317</drugbank-id>
+      <name>Rubella virus vaccine</name>
+      <description>The risk or severity of infection can be increased when Rubella virus vaccine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10318</drugbank-id>
+      <name>Varicella Zoster Vaccine (Live/attenuated)</name>
+      <description>The risk or severity of infection can be increased when Varicella Zoster Vaccine (Live/attenuated) is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10343</drugbank-id>
+      <name>Bacillus calmette-guerin substrain tice live antigen</name>
+      <description>The risk or severity of infection can be increased when Bacillus calmette-guerin substrain tice live antigen is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10804</drugbank-id>
+      <name>Bacillus calmette-guerin substrain connaught live antigen</name>
+      <description>The risk or severity of infection can be increased when Bacillus calmette-guerin substrain connaught live antigen is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10805</drugbank-id>
+      <name>Yellow Fever Vaccine</name>
+      <description>The risk or severity of infection can be increased when Yellow Fever Vaccine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11003</drugbank-id>
+      <name>Anthrax vaccine</name>
+      <description>The risk or severity of infection can be increased when Anthrax vaccine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11050</drugbank-id>
+      <name>Typhoid Vaccine Live</name>
+      <description>The risk or severity of infection can be increased when Typhoid Vaccine Live is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12386</drugbank-id>
+      <name>Bacillus calmette-guerin substrain danish 1331 live antigen</name>
+      <description>The risk or severity of infection can be increased when Bacillus calmette-guerin substrain danish 1331 live antigen is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The risk or severity of infection can be increased when BCG vaccine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14409</drugbank-id>
+      <name>Human adenovirus e serotype 4 strain cl-68578 antigen</name>
+      <description>The risk or severity of infection can be increased when Human adenovirus e serotype 4 strain cl-68578 antigen is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14443</drugbank-id>
+      <name>Vibrio cholerae CVD 103-HgR strain live antigen</name>
+      <description>The risk or severity of infection can be increased when Vibrio cholerae CVD 103-HgR strain live antigen is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14685</drugbank-id>
+      <name>Adenovirus type 7 vaccine live</name>
+      <description>The risk or severity of infection can be increased when Adenovirus type 7 vaccine live is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>Glatiramer may increase the immunosuppressive activities of Cyclosporine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00005</drugbank-id>
+      <name>Etanercept</name>
+      <description>The risk or severity of adverse effects can be increased when Etanercept is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00008</drugbank-id>
+      <name>Peginterferon alfa-2a</name>
+      <description>The risk or severity of adverse effects can be increased when Peginterferon alfa-2a is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00011</drugbank-id>
+      <name>Interferon alfa-n1</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfa-n1 is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00018</drugbank-id>
+      <name>Interferon alfa-n3</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfa-n3 is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00022</drugbank-id>
+      <name>Peginterferon alfa-2b</name>
+      <description>The risk or severity of adverse effects can be increased when Peginterferon alfa-2b is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00026</drugbank-id>
+      <name>Anakinra</name>
+      <description>The risk or severity of adverse effects can be increased when Anakinra is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00033</drugbank-id>
+      <name>Interferon gamma-1b</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon gamma-1b is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00034</drugbank-id>
+      <name>Interferon alfa-2a, Recombinant</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfa-2a, Recombinant is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00041</drugbank-id>
+      <name>Aldesleukin</name>
+      <description>The risk or severity of adverse effects can be increased when Aldesleukin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00051</drugbank-id>
+      <name>Adalimumab</name>
+      <description>The risk or severity of adverse effects can be increased when Adalimumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00056</drugbank-id>
+      <name>Gemtuzumab ozogamicin</name>
+      <description>The risk or severity of adverse effects can be increased when Gemtuzumab ozogamicin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00059</drugbank-id>
+      <name>Pegaspargase</name>
+      <description>The risk or severity of adverse effects can be increased when Pegaspargase is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00065</drugbank-id>
+      <name>Infliximab</name>
+      <description>The risk or severity of adverse effects can be increased when Infliximab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00068</drugbank-id>
+      <name>Interferon beta-1b</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon beta-1b is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00069</drugbank-id>
+      <name>Interferon alfacon-1</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfacon-1 is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00073</drugbank-id>
+      <name>Rituximab</name>
+      <description>The risk or severity of adverse effects can be increased when Rituximab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00074</drugbank-id>
+      <name>Basiliximab</name>
+      <description>The risk or severity of adverse effects can be increased when Basiliximab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00075</drugbank-id>
+      <name>Muromonab</name>
+      <description>The risk or severity of adverse effects can be increased when Muromonab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00078</drugbank-id>
+      <name>Ibritumomab tiuxetan</name>
+      <description>The risk or severity of adverse effects can be increased when Ibritumomab tiuxetan is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00081</drugbank-id>
+      <name>Tositumomab</name>
+      <description>The risk or severity of adverse effects can be increased when Tositumomab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00087</drugbank-id>
+      <name>Alemtuzumab</name>
+      <description>The risk or severity of adverse effects can be increased when Alemtuzumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00092</drugbank-id>
+      <name>Alefacept</name>
+      <description>The risk or severity of adverse effects can be increased when Alefacept is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00095</drugbank-id>
+      <name>Efalizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Efalizumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00098</drugbank-id>
+      <name>Antithymocyte immunoglobulin (rabbit)</name>
+      <description>The risk or severity of adverse effects can be increased when Antithymocyte immunoglobulin (rabbit) is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00105</drugbank-id>
+      <name>Interferon alfa-2b</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfa-2b is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00111</drugbank-id>
+      <name>Daclizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Daclizumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00112</drugbank-id>
+      <name>Bevacizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Bevacizumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00120</drugbank-id>
+      <name>Phenylalanine</name>
+      <description>The risk or severity of adverse effects can be increased when Phenylalanine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00180</drugbank-id>
+      <name>Flunisolide</name>
+      <description>The risk or severity of adverse effects can be increased when Flunisolide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00188</drugbank-id>
+      <name>Bortezomib</name>
+      <description>The risk or severity of adverse effects can be increased when Bortezomib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00242</drugbank-id>
+      <name>Cladribine</name>
+      <description>The risk or severity of adverse effects can be increased when Cladribine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00262</drugbank-id>
+      <name>Carmustine</name>
+      <description>The risk or severity of adverse effects can be increased when Carmustine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00276</drugbank-id>
+      <name>Amsacrine</name>
+      <description>The risk or severity of adverse effects can be increased when Amsacrine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00290</drugbank-id>
+      <name>Bleomycin</name>
+      <description>The risk or severity of adverse effects can be increased when Bleomycin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00291</drugbank-id>
+      <name>Chlorambucil</name>
+      <description>The risk or severity of adverse effects can be increased when Chlorambucil is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00293</drugbank-id>
+      <name>Raltitrexed</name>
+      <description>The risk or severity of adverse effects can be increased when Raltitrexed is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00305</drugbank-id>
+      <name>Mitomycin</name>
+      <description>The risk or severity of adverse effects can be increased when Mitomycin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00307</drugbank-id>
+      <name>Bexarotene</name>
+      <description>The risk or severity of adverse effects can be increased when Bexarotene is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00309</drugbank-id>
+      <name>Vindesine</name>
+      <description>The risk or severity of adverse effects can be increased when Vindesine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00322</drugbank-id>
+      <name>Floxuridine</name>
+      <description>The risk or severity of adverse effects can be increased when Floxuridine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The risk or severity of adverse effects can be increased when Indomethacin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00352</drugbank-id>
+      <name>Tioguanine</name>
+      <description>The risk or severity of adverse effects can be increased when Tioguanine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00361</drugbank-id>
+      <name>Vinorelbine</name>
+      <description>The risk or severity of adverse effects can be increased when Vinorelbine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00380</drugbank-id>
+      <name>Dexrazoxane</name>
+      <description>The risk or severity of adverse effects can be increased when Dexrazoxane is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00394</drugbank-id>
+      <name>Beclomethasone dipropionate</name>
+      <description>The risk or severity of adverse effects can be increased when Beclomethasone dipropionate is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00398</drugbank-id>
+      <name>Sorafenib</name>
+      <description>The risk or severity of adverse effects can be increased when Sorafenib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00428</drugbank-id>
+      <name>Streptozocin</name>
+      <description>The risk or severity of adverse effects can be increased when Streptozocin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00432</drugbank-id>
+      <name>Trifluridine</name>
+      <description>The risk or severity of adverse effects can be increased when Trifluridine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00441</drugbank-id>
+      <name>Gemcitabine</name>
+      <description>The risk or severity of adverse effects can be increased when Gemcitabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00443</drugbank-id>
+      <name>Betamethasone</name>
+      <description>The risk or severity of adverse effects can be increased when Betamethasone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00444</drugbank-id>
+      <name>Teniposide</name>
+      <description>The risk or severity of adverse effects can be increased when Teniposide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00445</drugbank-id>
+      <name>Epirubicin</name>
+      <description>The risk or severity of adverse effects can be increased when Epirubicin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00446</drugbank-id>
+      <name>Chloramphenicol</name>
+      <description>The risk or severity of adverse effects can be increased when Chloramphenicol is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00480</drugbank-id>
+      <name>Lenalidomide</name>
+      <description>The risk or severity of adverse effects can be increased when Lenalidomide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00488</drugbank-id>
+      <name>Altretamine</name>
+      <description>The risk or severity of adverse effects can be increased when Altretamine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00495</drugbank-id>
+      <name>Zidovudine</name>
+      <description>The risk or severity of adverse effects can be increased when Zidovudine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00515</drugbank-id>
+      <name>Cisplatin</name>
+      <description>The risk or severity of adverse effects can be increased when Cisplatin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00526</drugbank-id>
+      <name>Oxaliplatin</name>
+      <description>The risk or severity of adverse effects can be increased when Oxaliplatin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00531</drugbank-id>
+      <name>Cyclophosphamide</name>
+      <description>The risk or severity of adverse effects can be increased when Cyclophosphamide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00541</drugbank-id>
+      <name>Vincristine</name>
+      <description>The risk or severity of adverse effects can be increased when Vincristine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00544</drugbank-id>
+      <name>Fluorouracil</name>
+      <description>The risk or severity of adverse effects can be increased when Fluorouracil is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00550</drugbank-id>
+      <name>Propylthiouracil</name>
+      <description>The risk or severity of adverse effects can be increased when Propylthiouracil is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00552</drugbank-id>
+      <name>Pentostatin</name>
+      <description>The risk or severity of adverse effects can be increased when Pentostatin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The risk or severity of adverse effects can be increased when Methotrexate is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00564</drugbank-id>
+      <name>Carbamazepine</name>
+      <description>The risk or severity of adverse effects can be increased when Carbamazepine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00570</drugbank-id>
+      <name>Vinblastine</name>
+      <description>The risk or severity of adverse effects can be increased when Vinblastine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00588</drugbank-id>
+      <name>Fluticasone propionate</name>
+      <description>The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00591</drugbank-id>
+      <name>Fluocinolone acetonide</name>
+      <description>The risk or severity of adverse effects can be increased when Fluocinolone acetonide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00601</drugbank-id>
+      <name>Linezolid</name>
+      <description>The risk or severity of adverse effects can be increased when Linezolid is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00619</drugbank-id>
+      <name>Imatinib</name>
+      <description>The risk or severity of adverse effects can be increased when Imatinib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00620</drugbank-id>
+      <name>Triamcinolone</name>
+      <description>The risk or severity of adverse effects can be increased when Triamcinolone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00631</drugbank-id>
+      <name>Clofarabine</name>
+      <description>The risk or severity of adverse effects can be increased when Clofarabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00635</drugbank-id>
+      <name>Prednisone</name>
+      <description>The risk or severity of adverse effects can be increased when Prednisone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00642</drugbank-id>
+      <name>Pemetrexed</name>
+      <description>The risk or severity of adverse effects can be increased when Pemetrexed is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00687</drugbank-id>
+      <name>Fludrocortisone</name>
+      <description>The risk or severity of adverse effects can be increased when Fludrocortisone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00688</drugbank-id>
+      <name>Mycophenolate mofetil</name>
+      <description>The risk or severity of adverse effects can be increased when Mycophenolate mofetil is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00694</drugbank-id>
+      <name>Daunorubicin</name>
+      <description>The risk or severity of adverse effects can be increased when Daunorubicin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00755</drugbank-id>
+      <name>Tretinoin</name>
+      <description>The risk or severity of adverse effects can be increased when Tretinoin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00762</drugbank-id>
+      <name>Irinotecan</name>
+      <description>The risk or severity of adverse effects can be increased when Irinotecan is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00763</drugbank-id>
+      <name>Methimazole</name>
+      <description>The risk or severity of adverse effects can be increased when Methimazole is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00764</drugbank-id>
+      <name>Mometasone</name>
+      <description>The risk or severity of adverse effects can be increased when Mometasone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00773</drugbank-id>
+      <name>Etoposide</name>
+      <description>The risk or severity of adverse effects can be increased when Etoposide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00795</drugbank-id>
+      <name>Sulfasalazine</name>
+      <description>The risk or severity of adverse effects can be increased when Sulfasalazine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00851</drugbank-id>
+      <name>Dacarbazine</name>
+      <description>The risk or severity of adverse effects can be increased when Dacarbazine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00853</drugbank-id>
+      <name>Temozolomide</name>
+      <description>The risk or severity of adverse effects can be increased when Temozolomide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00859</drugbank-id>
+      <name>Penicillamine</name>
+      <description>The risk or severity of adverse effects can be increased when Penicillamine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00860</drugbank-id>
+      <name>Prednisolone</name>
+      <description>The risk or severity of adverse effects can be increased when Prednisolone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00877</drugbank-id>
+      <name>Sirolimus</name>
+      <description>The risk or severity of adverse effects can be increased when Sirolimus is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00888</drugbank-id>
+      <name>Mechlorethamine</name>
+      <description>The risk or severity of adverse effects can be increased when Mechlorethamine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00928</drugbank-id>
+      <name>Azacitidine</name>
+      <description>The risk or severity of adverse effects can be increased when Azacitidine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00958</drugbank-id>
+      <name>Carboplatin</name>
+      <description>The risk or severity of adverse effects can be increased when Carboplatin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00959</drugbank-id>
+      <name>Methylprednisolone</name>
+      <description>The risk or severity of adverse effects can be increased when Methylprednisolone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00970</drugbank-id>
+      <name>Dactinomycin</name>
+      <description>The risk or severity of adverse effects can be increased when Dactinomycin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00987</drugbank-id>
+      <name>Cytarabine</name>
+      <description>The risk or severity of adverse effects can be increased when Cytarabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00993</drugbank-id>
+      <name>Azathioprine</name>
+      <description>The risk or severity of adverse effects can be increased when Azathioprine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00997</drugbank-id>
+      <name>Doxorubicin</name>
+      <description>The risk or severity of adverse effects can be increased when Doxorubicin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01005</drugbank-id>
+      <name>Hydroxyurea</name>
+      <description>The risk or severity of adverse effects can be increased when Hydroxyurea is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01008</drugbank-id>
+      <name>Busulfan</name>
+      <description>The risk or severity of adverse effects can be increased when Busulfan is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01024</drugbank-id>
+      <name>Mycophenolic acid</name>
+      <description>The risk or severity of adverse effects can be increased when Mycophenolic acid is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01030</drugbank-id>
+      <name>Topotecan</name>
+      <description>The risk or severity of adverse effects can be increased when Topotecan is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01033</drugbank-id>
+      <name>Mercaptopurine</name>
+      <description>The risk or severity of adverse effects can be increased when Mercaptopurine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01041</drugbank-id>
+      <name>Thalidomide</name>
+      <description>The risk or severity of adverse effects can be increased when Thalidomide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01042</drugbank-id>
+      <name>Melphalan</name>
+      <description>The risk or severity of adverse effects can be increased when Melphalan is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01073</drugbank-id>
+      <name>Fludarabine</name>
+      <description>The risk or severity of adverse effects can be increased when Fludarabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01099</drugbank-id>
+      <name>Flucytosine</name>
+      <description>The risk or severity of adverse effects can be increased when Flucytosine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01101</drugbank-id>
+      <name>Capecitabine</name>
+      <description>The risk or severity of adverse effects can be increased when Capecitabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01108</drugbank-id>
+      <name>Trilostane</name>
+      <description>The risk or severity of adverse effects can be increased when Trilostane is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01168</drugbank-id>
+      <name>Procarbazine</name>
+      <description>The risk or severity of adverse effects can be increased when Procarbazine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01169</drugbank-id>
+      <name>Arsenic trioxide</name>
+      <description>The risk or severity of adverse effects can be increased when Arsenic trioxide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01177</drugbank-id>
+      <name>Idarubicin</name>
+      <description>The risk or severity of adverse effects can be increased when Idarubicin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01181</drugbank-id>
+      <name>Ifosfamide</name>
+      <description>The risk or severity of adverse effects can be increased when Ifosfamide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01196</drugbank-id>
+      <name>Estramustine</name>
+      <description>The risk or severity of adverse effects can be increased when Estramustine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01204</drugbank-id>
+      <name>Mitoxantrone</name>
+      <description>The risk or severity of adverse effects can be increased when Mitoxantrone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01206</drugbank-id>
+      <name>Lomustine</name>
+      <description>The risk or severity of adverse effects can be increased when Lomustine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01222</drugbank-id>
+      <name>Budesonide</name>
+      <description>The risk or severity of adverse effects can be increased when Budesonide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01229</drugbank-id>
+      <name>Paclitaxel</name>
+      <description>The risk or severity of adverse effects can be increased when Paclitaxel is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01234</drugbank-id>
+      <name>Dexamethasone</name>
+      <description>The risk or severity of adverse effects can be increased when Dexamethasone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01248</drugbank-id>
+      <name>Docetaxel</name>
+      <description>The risk or severity of adverse effects can be increased when Docetaxel is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01254</drugbank-id>
+      <name>Dasatinib</name>
+      <description>The risk or severity of adverse effects can be increased when Dasatinib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01257</drugbank-id>
+      <name>Eculizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Eculizumab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01262</drugbank-id>
+      <name>Decitabine</name>
+      <description>The risk or severity of adverse effects can be increased when Decitabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01268</drugbank-id>
+      <name>Sunitinib</name>
+      <description>The risk or severity of adverse effects can be increased when Sunitinib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01280</drugbank-id>
+      <name>Nelarabine</name>
+      <description>The risk or severity of adverse effects can be increased when Nelarabine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01281</drugbank-id>
+      <name>Abatacept</name>
+      <description>The risk or severity of adverse effects can be increased when Abatacept is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01285</drugbank-id>
+      <name>Corticotropin</name>
+      <description>The risk or severity of adverse effects can be increased when Corticotropin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01380</drugbank-id>
+      <name>Cortisone acetate</name>
+      <description>The risk or severity of adverse effects can be increased when Cortisone acetate is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01384</drugbank-id>
+      <name>Paramethasone</name>
+      <description>The risk or severity of adverse effects can be increased when Paramethasone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01394</drugbank-id>
+      <name>Colchicine</name>
+      <description>The risk or severity of adverse effects can be increased when Colchicine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01410</drugbank-id>
+      <name>Ciclesonide</name>
+      <description>The risk or severity of adverse effects can be increased when Ciclesonide is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01423</drugbank-id>
+      <name>Stepronin</name>
+      <description>The risk or severity of adverse effects can be increased when Stepronin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01590</drugbank-id>
+      <name>Everolimus</name>
+      <description>The risk or severity of adverse effects can be increased when Everolimus is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01611</drugbank-id>
+      <name>Hydroxychloroquine</name>
+      <description>The risk or severity of adverse effects can be increased when Hydroxychloroquine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01816</drugbank-id>
+      <name>Castanospermine</name>
+      <description>The risk or severity of adverse effects can be increased when Castanospermine is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02546</drugbank-id>
+      <name>Vorinostat</name>
+      <description>The risk or severity of adverse effects can be increased when Vorinostat is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02806</drugbank-id>
+      <name>2-Methoxyethanol</name>
+      <description>The risk or severity of adverse effects can be increased when 2-Methoxyethanol is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03523</drugbank-id>
+      <name>Brequinar</name>
+      <description>The risk or severity of adverse effects can be increased when Brequinar is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04572</drugbank-id>
+      <name>Thiotepa</name>
+      <description>The risk or severity of adverse effects can be increased when Thiotepa is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04630</drugbank-id>
+      <name>Aldosterone</name>
+      <description>The risk or severity of adverse effects can be increased when Aldosterone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04845</drugbank-id>
+      <name>Ixabepilone</name>
+      <description>The risk or severity of adverse effects can be increased when Ixabepilone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04868</drugbank-id>
+      <name>Nilotinib</name>
+      <description>The risk or severity of adverse effects can be increased when Nilotinib is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04951</drugbank-id>
+      <name>Pirfenidone</name>
+      <description>The risk or severity of adverse effects can be increased when Pirfenidone is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04956</drugbank-id>
+      <name>Afelimomab</name>
+      <description>The risk or severity of adverse effects can be increased when Afelimomab is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05015</drugbank-id>
+      <name>Belinostat</name>
+      <description>The risk or severity of adverse effects can be increased when Belinostat is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05109</drugbank-id>
+      <name>Trabectedin</name>
+      <description>The risk or severity of adverse effects can be increased when Trabectedin is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05258</drugbank-id>
+      <name>Interferon alfa</name>
+      <description>The risk or severity of adverse effects can be increased when Interferon alfa is combined with Glatiramer.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05260</drugbank-id>
+      <name>Gallium nitrate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Gallium nitrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05459</drugbank-id>
+      <name>Briakinumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Briakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05472</drugbank-id>
+      <name>omega interferon</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with omega interferon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05676</drugbank-id>
+      <name>Apremilast</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Apremilast.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05773</drugbank-id>
+      <name>Trastuzumab emtansine</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Trastuzumab emtansine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06168</drugbank-id>
+      <name>Canakinumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Canakinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06273</drugbank-id>
+      <name>Tocilizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Tocilizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06287</drugbank-id>
+      <name>Temsirolimus</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Temsirolimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06372</drugbank-id>
+      <name>Rilonacept</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Rilonacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06589</drugbank-id>
+      <name>Pazopanib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Pazopanib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06603</drugbank-id>
+      <name>Panobinostat</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Panobinostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06612</drugbank-id>
+      <name>Mepolizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Mepolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06616</drugbank-id>
+      <name>Bosutinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Bosutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06662</drugbank-id>
+      <name>Abetimus</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Abetimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06674</drugbank-id>
+      <name>Golimumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Golimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06681</drugbank-id>
+      <name>Belatacept</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Belatacept.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06769</drugbank-id>
+      <name>Bendamustine</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Bendamustine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06772</drugbank-id>
+      <name>Cabazitaxel</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Cabazitaxel.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06813</drugbank-id>
+      <name>Pralatrexate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Pralatrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08059</drugbank-id>
+      <name>Wortmannin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Wortmannin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08870</drugbank-id>
+      <name>Brentuximab vedotin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Brentuximab vedotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08871</drugbank-id>
+      <name>Eribulin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Eribulin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08877</drugbank-id>
+      <name>Ruxolitinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ruxolitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08879</drugbank-id>
+      <name>Belimumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Belimumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08880</drugbank-id>
+      <name>Teriflunomide</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Teriflunomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08889</drugbank-id>
+      <name>Carfilzomib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Carfilzomib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08901</drugbank-id>
+      <name>Ponatinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ponatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08904</drugbank-id>
+      <name>Certolizumab pegol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Certolizumab pegol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08906</drugbank-id>
+      <name>Fluticasone furoate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluticasone furoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08908</drugbank-id>
+      <name>Dimethyl fumarate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Dimethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08910</drugbank-id>
+      <name>Pomalidomide</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Pomalidomide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08935</drugbank-id>
+      <name>Obinutuzumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Obinutuzumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08970</drugbank-id>
+      <name>Fluprednidene</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluprednidene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08971</drugbank-id>
+      <name>Fluocortolone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluocortolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09029</drugbank-id>
+      <name>Secukinumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Secukinumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09033</drugbank-id>
+      <name>Vedolizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Vedolizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09036</drugbank-id>
+      <name>Siltuximab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Siltuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09042</drugbank-id>
+      <name>Tedizolid phosphate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Tedizolid phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09052</drugbank-id>
+      <name>Blinatumomab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Blinatumomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09053</drugbank-id>
+      <name>Ibrutinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ibrutinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09054</drugbank-id>
+      <name>Idelalisib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Idelalisib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09073</drugbank-id>
+      <name>Palbociclib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Palbociclib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09074</drugbank-id>
+      <name>Olaparib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Olaparib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09077</drugbank-id>
+      <name>Dinutuximab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Dinutuximab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09082</drugbank-id>
+      <name>Vilanterol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Vilanterol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09091</drugbank-id>
+      <name>Tixocortol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Tixocortol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09122</drugbank-id>
+      <name>Peginterferon beta-1a</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Peginterferon beta-1a.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09312</drugbank-id>
+      <name>Antilymphocyte immunoglobulin (horse)</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Antilymphocyte immunoglobulin (horse).</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09378</drugbank-id>
+      <name>Fluprednisolone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluprednisolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09383</drugbank-id>
+      <name>Meprednisone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Meprednisone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11466</drugbank-id>
+      <name>Tepoxalin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Tepoxalin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11487</drugbank-id>
+      <name>Dexamethasone isonicotinate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Dexamethasone isonicotinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11529</drugbank-id>
+      <name>Melengestrol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Melengestrol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11569</drugbank-id>
+      <name>Ixekizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ixekizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11580</drugbank-id>
+      <name>Ravulizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ravulizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11616</drugbank-id>
+      <name>Pirarubicin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Pirarubicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11693</drugbank-id>
+      <name>Voclosporin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Voclosporin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11708</drugbank-id>
+      <name>Peficitinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Peficitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11750</drugbank-id>
+      <name>Clobetasol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Clobetasol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11767</drugbank-id>
+      <name>Sarilumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Sarilumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11776</drugbank-id>
+      <name>Brodalumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Brodalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11803</drugbank-id>
+      <name>Sirukumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Sirukumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Baricitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11834</drugbank-id>
+      <name>Guselkumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Guselkumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11921</drugbank-id>
+      <name>Deflazacort</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Deflazacort.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11988</drugbank-id>
+      <name>Ocrelizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ocrelizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12025</drugbank-id>
+      <name>Triptolide</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Triptolide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12371</drugbank-id>
+      <name>Siponimod</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Siponimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12612</drugbank-id>
+      <name>Ozanimod</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Ozanimod.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12617</drugbank-id>
+      <name>Mizoribine</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Mizoribine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12692</drugbank-id>
+      <name>Gusperimus</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Gusperimus.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12814</drugbank-id>
+      <name>Cepeginterferon alfa-2B</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Cepeginterferon alfa-2B.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12902</drugbank-id>
+      <name>Trofosfamide</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Trofosfamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12947</drugbank-id>
+      <name>Doxifluridine</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Doxifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12991</drugbank-id>
+      <name>Deoxyspergualin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Deoxyspergualin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12996</drugbank-id>
+      <name>Acteoside</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Acteoside.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13003</drugbank-id>
+      <name>Cortivazol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Cortivazol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13014</drugbank-id>
+      <name>Hypericin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Hypericin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13068</drugbank-id>
+      <name>9-(N-methyl-L-isoleucine)-cyclosporin A</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with 9-(N-methyl-L-isoleucine)-cyclosporin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13208</drugbank-id>
+      <name>Prednylidene</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Prednylidene.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13223</drugbank-id>
+      <name>Fluocortin</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluocortin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13241</drugbank-id>
+      <name>Begelomab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Begelomab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13491</drugbank-id>
+      <name>Fluperolone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluperolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13664</drugbank-id>
+      <name>Formocortal</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Formocortal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13728</drugbank-id>
+      <name>Halometasone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Halometasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13843</drugbank-id>
+      <name>Cloprednol</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Cloprednol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13856</drugbank-id>
+      <name>Fluclorolone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluclorolone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13867</drugbank-id>
+      <name>Fluticasone</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Fluticasone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14066</drugbank-id>
+      <name>Tetrandrine</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Tetrandrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14219</drugbank-id>
+      <name>Monomethyl fumarate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Monomethyl fumarate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14512</drugbank-id>
+      <name>Mometasone furoate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Mometasone furoate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14538</drugbank-id>
+      <name>Hydrocortisone aceponate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Hydrocortisone aceponate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14539</drugbank-id>
+      <name>Hydrocortisone acetate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Hydrocortisone acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14545</drugbank-id>
+      <name>Hydrocortisone succinate</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Hydrocortisone succinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14724</drugbank-id>
+      <name>Emapalumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Emapalumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14762</drugbank-id>
+      <name>Risankizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Risankizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14919</drugbank-id>
+      <name>Rozanolixizumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Rozanolixizumab.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB15253</drugbank-id>
+      <name>Bleselumab</name>
+      <description>The risk or severity of adverse effects can be increased when Glatiramer is combined with Bleselumab.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <sequences>
+    <sequence format="FASTA">&gt;Example Glatiramer peptide
+EAYKAAEKAYAAKEAAKEAAKAKAEKKAAYAKAKAAKYEKKAKKAAAEYKKK</sequence>
+  </sequences>
+  <experimental-properties>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>7000.0</value>
+      <source/>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C254H422N70O72</value>
+      <source/>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>11533</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505299</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA449760</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Therapeutic Targets Database</resource>
+      <identifier>DAP001315</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Glatiramer_acetate</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1201507</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/cgi/generic/glatiramer.htm</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/cdi/glatiramer.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002416</id>
+      <name>HLA class II histocompatibility antigen, DRB1-1 beta chain</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>binder</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A3316</ref-id>
+            <pubmed-id>15371592</pubmed-id>
+            <citation>Arnon R, Aharoni R: Mechanism of action of glatiramer acetate in multiple sclerosis and its potential for the development of new applications. Proc Natl Acad Sci U S A. 2004 Oct 5;101 Suppl 2:14593-8. Epub 2004 Sep 15.</citation>
+          </article>
+          <article>
+            <ref-id>A9</ref-id>
+            <pubmed-id>11752352</pubmed-id>
+            <citation>Chen X, Ji ZL, Chen YZ: TTD: Therapeutic Target Database. Nucleic Acids Res. 2002 Jan 1;30(1):412-5.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04229" source="Swiss-Prot">
+        <name>HLA class II histocompatibility antigen, DRB1-1 beta chain</name>
+        <general-function>Virus receptor activity</general-function>
+        <specific-function>Binds peptides derived from antigens that access the endocytic route of antigen presenting cells (APC) and presents them on the cell surface for recognition by the CD4 T-cells. The peptide binding cleft accommodates peptides of 10-30 residues. The peptides presented by MHC class II molecules are generated mostly by degradation of proteins that access the endocytic route; where they are processed by lysosomal proteases and other hydrolases. Exogenous antigens that have been endocytosed by the APC are thus readily available for presentation via MHC II molecules; and for this reason this antigen presentation pathway is usually referred to as exogenous. As membrane proteins on their way to degradation in lysosomes as part of their normal turn-over are also contained in the endosomal/lysosomal compartments; exogenous antigens must compete with those derived from endogenous components. Autophagy is also a source of endogenous peptides; autophagosomes constitutively fuse with MHC class II loading compartments. In addition to APCs; other cells of the gastrointestinal tract; such as epithelial cells; express MHC class II molecules and CD74 and act as APCs; which is an unusual trait of the GI tract. To produce a MHC class II molecule that presents an antigen; three MHC class II molecules (heterodimers of an alpha and a beta chain) associate with a CD74 trimer in the ER to form a heterononamer. Soon after the entry of this complex into the endosomal/lysosomal system where antigen processing occurs; CD74 undergoes a sequential degradation by various proteases; including CTSS and CTSL; leaving a small fragment termed CLIP (class-II-associated invariant chain peptide). The removal of CLIP is facilitated by HLA-DM via direct binding to the alpha-beta-CLIP complex so that CLIP is released. HLA-DM stabilizes MHC class II molecules until primary high affinity antigenic peptides are bound. The MHC II molecule bound to a peptide is then transported to the cell membrane surface. In B-cells; the interaction between HLA-DM and MHC class II molecules is regulated by HLA-DO. Primary dendritic cells (DCs) also to express HLA-DO. Lysosomal microenvironment has been implicated in the regulation of antigen loading into MHC II molecules; increased acidification produces increased proteolysis and efficient peptide loading.(Microbial infection) Acts as a receptor for Epstein-Barr virus on lymphocytes.</specific-function>
+        <gene-name>HLA-DRB1</gene-name>
+        <locus>6p21.3</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>228-250</transmembrane-regions>
+        <signal-regions>1-29</signal-regions>
+        <theoretical-pi>7.78</theoretical-pi>
+        <molecular-weight>29913.945</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4948</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HLA-DRB1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M11161</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04229</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>2B11_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>DR-1</synonym>
+          <synonym>DR1</synonym>
+          <synonym>MHC class II antigen DRB1*1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016785|HLA class II histocompatibility antigen, DRB1-1 beta chain
+MVCLKLPGGSCMTALTVTLMVLSSPLALAGDTRPRFLWQLKFECHFFNGTERVRLLERCI
+YNQEESVRFDSDVGEYRAVTELGRPDAEYWNSQKDLLEQRRAAVDTYCRHNYGVGESFTV
+QRRVEPKVTVYPSKTQPLQHHNLLVCSVSGFYPGSIEVRWFRNGQEEKAGVVSTGLIQNG
+DWTFQTLVMLETVPRSGEVYTCQVEHPSVTSPLTVEWRARSESAQSKMLSGVGGFVLGLL
+FLGAGLFIYFRNQKGHSGLQPTGFLS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004744|801 bp
+ATGGTGTGTCTGAAGCTCCCTGGAGGCTCCTGCATGACAGCGCTGACAGTGACACTGATG
+GTGCTGAGCTCCCGACTGGCTTTGGCTGGGGACACCCGACCACGTTTCTTGTGGCAGCTT
+AAGTTTGAATGTCATTTCTTCAATGGGACGGAGCGGGTGCGGTTGCTGGAAAGATGCATC
+TATAACCAAGAGGAGTCCGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTTGAG
+GAGCTGGGGCGGCCTGATGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAAG
+CGGGGCCAGGTGGACAATTACTGCAGACACAACTACGGGGTTGGTGAGAGCTTCACAGTG
+CAGCGGCGAGTTGAGCCTAAGGTGACTGTGTATCCTTCAAAGACCCAGCCCCTGCAGCAC
+CACAACCTCCTGGTCTGCTCTGTGAGTGGTTTCTATCCAGGCAGCATTGAAGTCAGGTGG
+TTCCGGAACGGCCAGGAAGAGAAGGCTGGGGTGGTGTCCACGGGCCTGATCCAGAATGGA
+GATTGGACCTTCCAGACCCTGGTGATGCTGGAAATAGTTCCTCGGAGTGGAGAGGTTTAC
+ACCTGCCAAGTGGAGCACCCAAGTGTGACGAGCCCTCTCACAGTGGAATGGAGAGCACGG
+TCTGAATCTGCACAGAGCAAGATGCTGAGTGGAGTCGGGGGCTTCGTGCTGGGCCTGCTC
+TTCCTTGGGGCCGGGCTGTTCATCTACTTCAGGAATCAGAAAGGACACTCTGGACTTCAG
+CCAACAGGATTCCTGAGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07654</identifier>
+            <name>C1-set</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00969</identifier>
+            <name>MHC_II_beta</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>clathrin-coated endocytic vesicle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endocytic vesicle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>ER to Golgi transport vesicle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of lumenal side of endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>late endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>MHC class II protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>trans-Golgi network membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>transport vesicle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>MHC class II protein complex binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide antigen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>virus receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antigen processing and presentation of exogenous peptide antigen via MHC class II</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>detection of bacterium</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>humoral immune response mediated by circulating immunoglobulin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>immunoglobulin production involved in immunoglobulin mediated immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inflammatory response to antigenic stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interferon-gamma-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of interferon-gamma production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of T cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of insulin secretion involved in cellular response to glucose stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein tetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of interleukin-10 secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of interleukin-4 production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell costimulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T-helper 1 type immune response</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

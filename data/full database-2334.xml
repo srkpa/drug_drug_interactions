@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02467</drugbank-id>
+  <drugbank-id>EXPT02173</drugbank-id>
+  <name>L-methionine (S)-S-oxide</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>165.211</average-mass>
+  <monoisotopic-mass>165.045963913</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as l-alpha-amino acids. These are alpha amino acids which have the L-configuration of the alpha-carbon atom.</description>
+    <direct-parent>L-alpha-amino acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Amino acids</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Sulfinyl compounds</alternative-parent>
+    <alternative-parent>Sulfoxides</alternative-parent>
+    <alternative-parent>Thia fatty acids</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Fatty acid</substituent>
+    <substituent>Fatty acyl</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>L-alpha-amino acid</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Organosulfur compound</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Sulfinyl compound</substituent>
+    <substituent>Sulfoxide</substituent>
+    <substituent>Thia fatty acid</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1ek0</pdb-entry>
+    <pdb-entry>1f4g</pdb-entry>
+    <pdb-entry>1nlr</pdb-entry>
+    <pdb-entry>1sf5</pdb-entry>
+    <pdb-entry>1st2</pdb-entry>
+    <pdb-entry>1up0</pdb-entry>
+    <pdb-entry>1up2</pdb-entry>
+    <pdb-entry>1xjo</pdb-entry>
+    <pdb-entry>2a9e</pdb-entry>
+    <pdb-entry>2idt</pdb-entry>
+    <pdb-entry>2idu</pdb-entry>
+    <pdb-entry>2iqf</pdb-entry>
+    <pdb-entry>2iuf</pdb-entry>
+    <pdb-entry>2qdv</pdb-entry>
+    <pdb-entry>2qdw</pdb-entry>
+    <pdb-entry>3d94</pdb-entry>
+    <pdb-entry>3f00</pdb-entry>
+    <pdb-entry>3m1x</pdb-entry>
+    <pdb-entry>3sqg</pdb-entry>
+    <pdb-entry>3zw0</pdb-entry>
+    <pdb-entry>3zw1</pdb-entry>
+    <pdb-entry>4ljd</pdb-entry>
+    <pdb-entry>4lwm</pdb-entry>
+    <pdb-entry>4whp</pdb-entry>
+    <pdb-entry>4whr</pdb-entry>
+    <pdb-entry>4whs</pdb-entry>
+    <pdb-entry>4wuw</pdb-entry>
+    <pdb-entry>4wux</pdb-entry>
+    <pdb-entry>4xky</pdb-entry>
+    <pdb-entry>4xr4</pdb-entry>
+    <pdb-entry>4yqe</pdb-entry>
+    <pdb-entry>5an7</pdb-entry>
+    <pdb-entry>5aou</pdb-entry>
+    <pdb-entry>5f12</pdb-entry>
+    <pdb-entry>5o84</pdb-entry>
+    <pdb-entry>5pab</pdb-entry>
+    <pdb-entry>5pb1</pdb-entry>
+    <pdb-entry>5sx0</pdb-entry>
+    <pdb-entry>5zrq</pdb-entry>
+    <pdb-entry>5zrr</pdb-entry>
+    <pdb-entry>5zrs</pdb-entry>
+    <pdb-entry>9pti</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.49</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.40e+01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-4.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-azaniumyl-4-[(S)-methanesulfinyl]butanoate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>L-methionine (S)-S-oxide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>165.211</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>165.045963913</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H]C([H])([H])[S@](=O)C([H])([H])C([H])([H])[C@@]([H])(C([O-])=O)[N+]([H])([H])[H]</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C5H11NO3S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C5H11NO3S/c1-10(9)3-2-4(6)5(7)8/h4H,2-3,6H2,1H3,(H,7,8)/t4-,10-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>QEFRNWWLZKMPFJ-MFXDVPHUSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>84.84</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>61.47</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>16.12</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>49031</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>10909908</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508428</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C15999</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>9085165</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>MHO</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002490</id>
+      <name>Possible cellulase CelA1 (Endoglucanase) (Endo-1,4-beta-glucanase) (FI-cmcase) (Carboxymethyl cellulase)</name>
+      <organism>Mycobacterium tuberculosis</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q79G13" source="TrEMBL">
+        <name>Possible cellulase CelA1 (Endoglucanase) (Endo-1,4-beta-glucanase) (FI-cmcase) (Carboxymethyl cellulase)</name>
+        <general-function>Cellulase activity</general-function>
+        <specific-function/>
+        <gene-name>celA1</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions>51-71</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.2</theoretical-pi>
+        <molecular-weight>39973.515</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83332">Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BX842572</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q79G13</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q79G13_MYCTU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CARBOXYMETHYL CELLULASE</synonym>
+          <synonym>EC 3.2.1.4</synonym>
+          <synonym>ENDO-1,4-BETA-GLUCANASE</synonym>
+          <synonym>ENDOGLUCANASE</synonym>
+          <synonym>FI-CMCASE</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011779|Possible cellulase CelA1 (Endoglucanase) (Endo-1,4-beta-glucanase) (FI-cmcase) (Carboxymethyl cellulase)
+MTRRTGQRWRGTLPGRRPWTRPAPATCRRHLAFVELRHYFARVMSSAIGSVARWIVPLLG
+VAAVASIGVIADPVRVVRAPALILVDAANPLAGKPFYVDPASAAMVAARNANPPNAELTS
+VANTPQSYWLDQAFPPATVGGTVARYTGAAQAAGAMPVLTLYGIPHRDCGSYASGGFATG
+TDYRGWIDAVASGLGSSPATIIVEPDALAMADCLSPDQRQERFDLVRYAVDTLTRDPAAA
+VYVDAGHSRWLSAEAMAARLNDVGVGRARGFSLNVSNFYTTDEEIGYGEAISGLTNGSHY
+VIDTSRNGAGPAPDAPLNWCNPSGRALGAPPTTATAGAHADAYLWIKRPGESDGTCGRGE
+PQAGRFVSQYAIDLAHNAGQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011780|Possible cellulase CelA1 (Endoglucanase) (Endo-1,4-beta-glucanase) (FI-cmcase) (Carboxymethyl cellulase) (celA1)
+ATGACGCGTCGGACTGGGCAGCGATGGCGCGGGACTCTGCCCGGGCGCCGGCCTTGGACA
+CGGCCAGCGCCCGCCACCTGTCGTCGGCATTTGGCGTTTGTCGAATTGCGGCATTATTTT
+GCTCGGGTGATGTCATCAGCTATTGGTTCGGTCGCGCGGTGGATAGTCCCCCTCCTGGGG
+GTTGCAGCCGTTGCTTCCATCGGTGTTATCGCGGACCCGGTGCGGGTCGTTCGGGCCCCG
+GCGTTGATCCTGGTCGATGCGGCAAACCCGCTGGCCGGAAAGCCCTTCTACGTCGATCCC
+GCCTCGGCGGCCATGGTCGCCGCGCGCAACGCCAACCCGCCGAACGCCGAGCTGACCTCC
+GTCGCCAACACCCCGCAGTCCTACTGGCTCGACCAGGCATTCCCGCCGGCGACCGTCGGC
+GGCACGGTTGCCAGGTACACCGGAGCGGCGCAGGCGGCCGGCGCCATGCCGGTTCTGACG
+CTGTATGGAATCCCCCATCGCGACTGCGGTAGCTACGCATCCGGTGGGTTCGCGACGGGC
+ACTGATTACCGCGGGTGGATCGACGCTGTCGCATCCGGCCTGGGCTCATCGCCGGCGACG
+ATCATCGTCGAACCCGATGCGCTGGCCATGGCCGACTGCCTGTCGCCTGACCAGCGCCAG
+GAACGTTTCGACTTGGTGCGCTACGCCGTCGACACGCTGACCCGCGACCCGGCCGCTGCC
+GTGTACGTCGATGCGGGGCATTCGCGCTGGCTGAGCGCCGAGGCAATGGCCGCCAGGCTC
+AACGATGTCGGTGTGGGCCGCGCGCGCGGGTTTAGCCTCAACGTCTCGAACTTCTACACC
+ACCGATGAGGAAATCGGCTATGGCGAGGCGATTTCGGGGCTCACGAACGGTTCGCATTAC
+GTGATCGACACGTCGCGCAACGGCGCCGGACCCGCGCCCGACGCCCCGCTCAACTGGTGT
+AACCCCAGCGGCCGCGCCCTGGGCGCACCGCCCACCACGGCGACCGCGGGCGCGCACGCC
+GACGCTTACCTGTGGATCAAACGTCCCGGGGAATCGGACGGAACCTGCGGTCGCGGGGAG
+CCTCAGGCGGGTCGGTTCGTTAGCCAGTACGCCATCGATCTGGCCCACAACGCCGGCCAG
+TAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01341</identifier>
+            <name>Glyco_hydro_6</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cellulase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellulose catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004533</id>
+      <name>Ras-related protein Rab-5A</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P20339" source="Swiss-Prot">
+        <name>Ras-related protein Rab-5A</name>
+        <general-function>Gtpase activity</general-function>
+        <specific-function>The small GTPases Rab are key regulators of intracellular membrane trafficking, from the formation of transport vesicles to their fusion with membranes. Rabs cycle between an inactive GDP-bound form and an active GTP-bound form that is able to recruit to membranes different sets of downstream effectors directly responsible for vesicle formation, movement, tethering and fusion. RAB5A is required for the fusion of plasma membranes and early endosomes. Contributes to the regulation of filopodia extension.</specific-function>
+        <gene-name>RAB5A</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>23658.5</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9783</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P20339</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RAB5A_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>RAB5</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009454|Ras-related protein Rab-5A
+MASRGATRPNGPNTGNKICQFKLVLLGESAVGKSSLVLRFVKGQFHEFQESTIGAAFLTQ
+TVCLDDTTVKFEIWDTAGQERYHSLAPMYYRGAQAAIVVYDITNEESFARAKNWVKELQR
+QASPNIVIALSGNKADLANKRAVDFQEAQSYADDNSLLFMETSAKTSMNVNEIFMAIAKK
+LPKNEPQNPGANSARGRGVDLTEPTQPTRNQCCSN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021389|Ras-related protein Rab-5A (RAB5A)
+ATGGCTAGTCGAGGCGCAACAAGACCCAACGGGCCAAATACGGGAAATAAAATATGCCAG
+TTCAAACTAGTACTTCTGGGAGAGTCCGCTGTTGGCAAATCAAGCCTAGTGCTTCGTTTT
+GTGAAAGGCCAATTTCATGAATTTCAAGAGAGTACCATTGGGGTAAAGTTTGAAATATGG
+GATACAGCTGGTCAAGAACGATACCATAGCCTAGCACCAATGTACTACAGAGGAGCACAA
+GCAGCCATAGTTGTATATGATATCACAAATGAGGAGTCCTTTGCAAGAGCAAAAAATTGG
+GTTAAAGAACTTCAGAGGCAAGCAAGTCCTAACATTGTAATAGCTTTATCGGGAAACAAG
+GCCGACCTAGCAAATAAAAGAGCAGTAGATTTCCAGGAAGCACAGTCCTATGCAGATGAC
+AATAGTTTATTATTCATGGAGACATCCGCTAAAACATCAATGAATGTAAATGAAATATTC
+ATGGCAATAGCTAAAAAATTGCCAAAGAATGAACCACAAAATCCAGGAGCAAATTCTGCC
+AGAGGAAGAGGAGTAGACCTTACCGAACCCACACAACCAACCAGGAATCAGTGTTGTAGT
+AACTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00071</identifier>
+            <name>Ras</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>actin cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasmic side of early endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>early endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endocytic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endosome membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>melanosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane raft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>phagocytic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>ruffle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>somatodendritic compartment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synaptic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>terminal bouton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GDP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GTP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GTPase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>early endosome to late endosome transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular protein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of exocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Rab protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor internalization involved in canonical Wnt signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of endosome size</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of filopodium assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic vesicle exocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic vesicle recycling</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002060</id>
+      <name>Cellulase B</name>
+      <organism>Streptomyces lividans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q54331" source="TrEMBL">
+        <name>Cellulase B</name>
+        <general-function>Polysaccharide binding</general-function>
+        <specific-function/>
+        <gene-name>celB</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-40</signal-regions>
+        <theoretical-pi>4.47</theoretical-pi>
+        <molecular-weight>39239.03</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1916">Streptomyces lividans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U04629</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q54331</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q54331_STRLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011493|Cellulase B
+MRTLRPQARAPRGLLAALGAVLAAFALVSSLVTAAAPAQADTTICEPFGTTTIQGRYVVQ
+NNRWGSTAPQCVTATDTGFRVTQADGSAPTNGAPKSYPSVFNGCHYTNCSPGTDLPVRLD
+TVSAAPSSISYGFVDGAVYNASYDIWLDPTARTDGVNQTEIMIWFNRVGPIQPIGSPVGT
+ASVGGRTWEVWSGGNGSNDVLSFVAPSAISGWSFDVMDFVRATVARGLAENDWYLTSVQA
+GFEPWQNGAGLAVNSFSSTVETGTPGGTDPGDPGGPSACAVSYGTNVWQDGFTADVTVTN
+TGTAPVDGWQLAFTLPSGQRITNAWNASLTPSSGSVTATGASHNARIAPGGSLSFGFQGT
+YGGAFAEPTGFRLNGTACTTV</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF00553</identifier>
+            <name>CBM_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01670</identifier>
+            <name>Glyco_hydro_12</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>cellulase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>polysaccharide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polysaccharide catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002746</id>
+      <name>Amicyanin</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P22364" source="Swiss-Prot">
+        <name>Amicyanin</name>
+        <general-function>Electron carrier activity</general-function>
+        <specific-function>Primary acceptor of electrons from methylamine dehydrogenase. Passes those electrons on either a soluble cytochrome c or to pseudoazurin.</specific-function>
+        <gene-name>mauC</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-26</signal-regions>
+        <theoretical-pi>6.67</theoretical-pi>
+        <molecular-weight>13983.11</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X55665</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P22364</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMCY_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ami</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011934|Amicyanin
+MISATKIRSCLAACVLAAFGATGALADKATIPSESPFAAAEVADGAIVVDIAKMKYETPE
+LHVKVGDTVTWINREAMPHNVHFVAGVLGEAALKGPMMKKEQAYSLTFTEAGTYDYHCTP
+HPFMRGKVVVE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005382|396 bp
+ATGATTTCTGCGACCAAGATCCGCTCGTGCCTGGCGGCCTGCGTCCTGGCGGCATTCGGC
+GCGACGGGCGCCCTGGCCGACAAGGCGACGATCCCCTCGGAAAGCCCCTTTGCCGCCGCC
+GAGGTGGCCGATGGCGCCATCGTCGTCGACATCGCCAAGATGAAATACGAAACCCCCGAA
+CTTCATGTGAAGGTCGGCGACACCGTCACCTGGATCAACCGCGAGGCGATGCCGCACAAT
+GTCCATTTCGTCGCCGGCGTGCTGGGCGAGGCGGCGTTGAAAGGCCCGATGATGAAGAAG
+GAGCAGGCCTATTCCCTGACCTTCACCGAGGCCGGCACCTATGACTATCACTGCACCCCG
+CATCCCTTCATGCGCGGCAAGGTCGTCGTCGAGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00127</identifier>
+            <name>Copper-bind</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002747</id>
+      <name>Aminopeptidase S</name>
+      <organism>Streptomyces griseus</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P80561" source="Swiss-Prot">
+        <name>Aminopeptidase S</name>
+        <general-function>Serine-type endopeptidase activity</general-function>
+        <specific-function>An exopeptidase specific for larger hydrophobic amino acids (especially leucine), no cleavage occurs if the next residue is proline (PubMed:8444149).</specific-function>
+        <gene-name/>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-45</signal-regions>
+        <theoretical-pi>5.87</theoretical-pi>
+        <molecular-weight>45939.31</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="455632">Streptomyces griseus subsp. griseus (strain JCM 4626 / NBRC 13350)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P80561</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>APX_STRGG</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.11.24</synonym>
+          <synonym>API</synonym>
+          <synonym>SGAP</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016877|Aminopeptidase S
+MRPNRFSLRRSPTAVAAVALAAVLAAGAPAAQAAGAAAPTAAAAAAPDIPLANVKAHLTQ
+LSTIAANNGGNRAHGRPGYKASVDYVKAKLDAAGYTTTLQQFTSGGATGYNLIADWPGGD
+PNKVLMAGAHLDSVSSGAGINDNGSGSAAVLETALAVSRAGYQPDKHLRFAWWGAEELGL
+IGSKYYVNNLPSADRSKLAGYLNFDMIGSPNPGYFVYDDDPVIEKTFKDYFAGLNVPTEI
+ETEGDGRSDHAPFKNVGVPVGGLFTGAGYTKSAAQAQKWGGTAGQAFDRCYHSSCDSLSN
+INDTALDRNSDAAAHAIWTLSSGTGEPPTGEGVFSNTTDVAIPDAGAAVTSSVAVTGRTG
+NAPAALQVGVDIKHTYRGDLVVDLLAPDGTAYRLKNSSSGDSADNVIATYTVNASSEVAN
+GSWKLRVQDIARQDTGYIDSWKLTF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016878|Aminopeptidase S
+ATGAGACCGAACCGCTTCTCCCTGCGCAGATCCCCGACGGCCGTCGCCGCCGTGGCCCTC
+GCCGCCGTCCTCGCGGCCGGTGCCCCGGCCGCCCAGGCCGCCGGCGCCGCGGCCCCGACG
+GCAGCCGCCGCGGCCGCGCCCGACATCCCCCTGGCCAACGTCAAGGCCCACCTCACGCAG
+CTCTCGACGATCGCCGCGAACAACGGCGGCAACCGCGCCCACGGCCGCCCCGGCTACAAG
+GCGTCCGTCGACTACGTGAAGGCCAAGCTCGACGCGGCCGGATACACCACCACGCTCCAG
+CAGTTCACCTCGGGCGGGGCCACCGGCTACAACCTGATAGCCGACTGGCCCGGCGGCGAC
+CCCAACAAGGTCCTGATGGCCGGGGCCCACCTCGACTCGGTCTCCTCCGGCGCCGGGATC
+AACGACAACGGCTCCGGCTCGGCCGCCGTGCTGGAGACCGCGCTCGCCGTCTCCCGCGCC
+GGGTACCAGCCCGACAAGCACCTGCGGTTCGCCTGGTGGGGCGCGGAGGAGCTGGGCCTG
+ATCGGCTCGAAGTACTACGTCAACAACCTGCCGTCCGCCGACCGCTCCAAGCTCGCCGGA
+TATCTCAACTTCGACATGATCGGCTCGCCCAACCCCGGTTACTTCGTCTACGACGACGAC
+CCGGTCATCGAGAAGACCTTCAAGGACTACTTCGCCGGCCTGAACGTCCCGACCGAGATC
+GAGACCGAGGGCGACGGCCGCTCCGACCACGCCCCGTTCAAGAACGTCGGCGTCCCCGTC
+GGCGGACTCTTCACCGGCGCCGGCTACACCAAGTCCGCCGCCCAGGCGCAGAAGTGGGGC
+GGGACGGCCGGGCAGGCCTTCGACCGCTGCTACCACTCCTCGTGCGACAGCCTGAGCAAC
+ATCAACGACACCGCCCTGGACCGCAACAGCGACGCCGCCGCCCACGCGATCTGGACCCTG
+TCCTCCGGCACCGGCGAACCGCCCACCGGCGAGGGCGTCTTCAGCAACACCACGGACGTG
+GCCATCCCGGACGCCGGGGCCGCGGTCACCTCGTCGGTCGCCGTCACCGGACGCACGGGC
+AACGCCCCGGCCGCCCTCCAGGTCGGCGTCGACATCAAGCACACCTACCGCGGCGACCTC
+GTCGTGGACCTGCTCGCCCCGGACGGCACCGCGTACCGGCTGAAGAACTCCAGCAGCGGC
+GACTCGGCCGACAACGTCATCGCGACGTACACGGTCAACGCCTCCAGCGAGGTGGCCAAC
+GGGTCCTGGAAGCTCCGTGTCCAGGACATCGCCCGCCAGGACACCGGATACATCGACAGC
+TGGAAGCTCACCTTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF04389</identifier>
+            <name>Peptidase_M28</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01483</identifier>
+            <name>P_proprotein</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>aminopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001438</id>
+      <name>Thymidylate synthase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0A884" source="Swiss-Prot">
+        <name>Thymidylate synthase</name>
+        <general-function>Thymidylate synthase activity</general-function>
+        <specific-function>Provides the sole de novo source of dTMP for DNA biosynthesis. This protein also binds to its mRNA thus repressing its own translation.</specific-function>
+        <gene-name>thyA</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.94</theoretical-pi>
+        <molecular-weight>30479.475</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J01710</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>147987</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0A884</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>TYSY_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.1.1.45</synonym>
+          <synonym>TS</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011008|Thymidylate synthase
+MKQYLELMQKVLDEGTQKNDRTGTGTLSIFGHQMRFNLQDGFPLVTTKRCHLRSIIHELL
+WFLQGDTNIAYLHENNVTIWDEWADENGDLGPVYGKQWRAWPTPDGRHIDQITTVLNQLK
+NDPDSRRIIVSAWNVGELDKMALAPCHAFFQFYVADGKLSCQLYQRSCDVFLGLPFNIAS
+YALLVHMMAQQCDLEVGDFVWTGGDTHLYSNHMDQTHLQLSREPRPLPKLIIKRKPESIF
+DYRFEDFEIEGYDPHPGIKAPVAI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011009|Thymidylate synthase (thyA)
+ATGAAACAGTATTTAGAACTGATGCAAAAAGTGCTCGACGAAGGCACACAGAAAAACGAC
+CGTACCGGAACCGGAACGCTTTCCATTTTTGGTCATCAGATGCGTTTTAACCTGCAAGAT
+GGATTCCCGCTGGTGACAACTAAACGTTGCCACCTGCGTTCCATCATCCATGAACTGCTG
+TGGTTTCTGCAGGGCGACACTAACATTGCTTATCTACACGAAAACAATGTCACCATCTGG
+GACGAATGGGCCGATGAAAACGGCGACCTCGGGCCAGTGTATGGTAAACAGTGGCGCGCC
+TGGCCAACGCCAGATGGTCGTCATATTGACCAGATCACTACGGTACTGAACCAGCTGAAA
+AACGACCCGGATTCGCGCCGCATTATTGTTTCAGCGTGGAACGTAGGCGAACTGGATAAA
+ATGGCGCTGGCACCGTGCCATGCATTCTTCCAGTTCTATGTGGCAGACGGCAAACTCTCT
+TGCCAGCTTTATCAGCGCTCCTGTGACGTCTTCCTCGGCCTGCCGTTCAACATTGCCAGC
+TACGCGTTATTGGTGCATATGATGGCGCAGCAGTGCGATCTGGAAGTGGGTGATTTTGTC
+TGGACCGGTGGCGACACGCATCTGTACAGCAACCATATGGATCAAACTCATCTGCAATTA
+AGCCGCGAACCGCGTCCGCTGCCGAAGTTGATTATCAAACGTAAACCCGAATCCATCTTC
+GACTACCGTTTCGAAGACTTTGAGATTGAAGGCTACGATCCGCATCCGGGCATTAAAGCG
+CCGGTGGCTATCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00303</identifier>
+            <name>Thymidylat_synt</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>thymidylate synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dTMP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dTTP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of translation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB04929</drugbank-id>
+  <name>DG031</name>
+  <description>DG031, deCODE genetics's lead compound, is being developed for the prevention of myocardial infarction, or heart attack.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in heart disease and myocardial infarction.</indication>
+  <pharmacodynamics>DG031 is an inhibitor of 5-lipoxygenase activating protein, or FLAP. deCODE has linked variants in the gene encoding FLAP, and the gene encoding leukotriene A4 hydrolase (LTA4H) to risk of heart attack. These variants appear to confer increased risk of heart attack by increasing the production of leukotriene B4 (LTB4), a potent driver of inflammation produced in atherosclerotic plaques. In Phase II trials completed last year, DG031 was shown to be well tolerated at all doses tested and to reduce the production of LTB4 in a dose-dependent manner. Late last year deCODE discovered that the HapK variant of the LTA4H gene, discovered in Iceland and which confers a moderate increase in risk of heart attack in people of predominantly European ancestry, confers a 250% increase in risk of the disease in African Americans. deCODE licensed DG031 from Bayer AG, which developed it originally for the treatment of asthma. In deCODE’s clinical trials and those conducted previously by Bayer, a total of approximately 2000 people have been dosed with DG031.</pharmacodynamics>
+  <mechanism-of-action>DG031 inhibits the activity of the FLAP, or 5-lipoxygenase activating protein, that modulates the activity of the leukotriene pathway.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909852</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002382</id>
+      <name>Arachidonate 5-lipoxygenase-activating protein</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P20292" source="Swiss-Prot">
+        <name>Arachidonate 5-lipoxygenase-activating protein</name>
+        <general-function>Protein n-terminus binding</general-function>
+        <specific-function>Required for leukotriene biosynthesis by ALOX5 (5-lipoxygenase). Anchors ALOX5 to the membrane. Binds arachidonic acid, and could play an essential role in the transfer of arachidonic acid to ALOX5. Binds to MK-886, a compound that blocks the biosynthesis of leukotrienes.</specific-function>
+        <gene-name>ALOX5AP</gene-name>
+        <locus>13q12</locus>
+        <cellular-location>Nucleus membrane</cellular-location>
+        <transmembrane-regions>9-30
+53-77
+81-102
+116-128</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.64</theoretical-pi>
+        <molecular-weight>18156.96</molecular-weight>
+        <chromosome-location>13</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:436</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ALOX5AP</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X52195</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P20292</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AL5AP_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>FLAP</synonym>
+          <synonym>MK-886-binding protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011708|Arachidonate 5-lipoxygenase-activating protein
+MDQETVGNVVLLAIVTLISVVQNGFFAHKVEHESRTQNGRSFQRTGTLAFERVYTANQNC
+VDAYPTFLAVLWSAGLLCSQVPAAFAGLMYLFVRQKYFVGYLGERTQSTPGYIFGKRIIL
+FLFLMSVAGIFNYYLIFFFGSDFENYIKTISTTISPLLLIP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011709|Arachidonate 5-lipoxygenase-activating protein (ALOX5AP)
+ATGCTCACATTTAATCACGATGCTCCCTGGCATACACAGAAGACTCTGAAAACTTCTGAA
+TTTGGGAAATCCTTTGGCACCTTGGGGCACATTGGGAACATAAGCCATCAGTGCTGGGCA
+GGTTGTGCAGCTGGAGGCAGAGCAGTCCTCTCTGGGGAGCCTGAAGCAAACATGGATCAA
+GAAACTGTAGGCAATGTTGTCCTGTTGGCCATCGTCACCCTCATCAGCGTGGTCCAGAAT
+GGATTCTTTGCCCATAAAGTGGAGCACGAAAGCAGGACCCAGAATGGGAGGAGCTTCCAG
+AGGACCGGAACACTTGCCTTTGAGCGGGTCTACACTGCCAACCAGAACTGTGTAGATGCG
+TACCCCACTTTCCTCGCTGTGCTCTGGTCTGCGGGGCTACTTTGCAGCCAAGTTCCTGCT
+GCGTTTGCTGGACTGATGTACTTGTTTGTGAGGCAAAAGTACTTTGTCGGTTACCTAGGA
+GAGAGAACGCAGAGCACCCCTGGCTACATATTTGGGAAACGCATCATACTCTTCCTGTTC
+CTCATGTCCGTTGCTGGCATATTCAACTATTACCTCATCTTCTTTTTCGGAAGTGACTTT
+GAAAACTACATAAAGACGATCTCCACCACCATCTCCCCTCTACTTCTCATTCCCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01124</identifier>
+            <name>MAPEG</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear envelope</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>arachidonic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme activator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein N-terminus binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arachidonic acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to calcium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukotriene biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukotriene metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoxin metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoxygenase pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homotrimerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

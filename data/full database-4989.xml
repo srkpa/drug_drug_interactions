@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05367</drugbank-id>
+  <name>Actelion-1</name>
+  <description>Actelion-1 is a tissue-targeting Endothelin Receptor Antagonist that has been discovered by Actelion Pharmaceuticals.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in cardiovascular disorders, hypertension, and pulmonary hypertension.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>Through complete blockade of tissular endothelin, Actelion-1 is expected to protect tissue from the damaging effect of elevated endothelin, specifically in the cardiovascular system. In pre-clinical studies, Actelion-1 also exhibited effects suggesting that it maintains the integrity of the vascular wall and improves long-term outcome. Accordingly, Actelion-1 may provide therapeutic benefit in a wide range of cardiovascular indications.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amides</category>
+      <mesh-id>D000577</mesh-id>
+    </category>
+    <category>
+      <category>Endothelin A Receptor Antagonists</category>
+      <mesh-id>D065130</mesh-id>
+    </category>
+    <category>
+      <category>Endothelin B Receptor Antagonists</category>
+      <mesh-id>D065131</mesh-id>
+    </category>
+    <category>
+      <category>Endothelin Receptor Antagonists</category>
+      <mesh-id>D065128</mesh-id>
+    </category>
+    <category>
+      <category>Sulfones</category>
+      <mesh-id>D013450</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910103</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000521</id>
+      <name>Endothelin-1 receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P25101" source="Swiss-Prot">
+        <name>Endothelin-1 receptor</name>
+        <general-function>Phosphatidylinositol phospholipase c activity</general-function>
+        <specific-function>Receptor for endothelin-1. Mediates its action by association with G proteins that activate a phosphatidylinositol-calcium second messenger system. The rank order of binding affinities for ET-A is: ET1 &gt; ET2 &gt;&gt; ET3.</specific-function>
+        <gene-name>EDNRA</gene-name>
+        <locus>4q31.23</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>81-102
+113-132
+160-181
+206-229
+257-278
+307-328
+348-372</transmembrane-regions>
+        <signal-regions>1-20</signal-regions>
+        <theoretical-pi>8.41</theoretical-pi>
+        <molecular-weight>48721.76</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3179</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>EDNRA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S63938</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>238636</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>219</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>219</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P25101</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>EDNRA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Endothelin A receptor</synonym>
+          <synonym>ET-A</synonym>
+          <synonym>ETA</synonym>
+          <synonym>ETA-R</synonym>
+          <synonym>ETRA</synonym>
+          <synonym>hET-AR</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001040|Endothelin-1 receptor
+METLCLRASFWLALVGCVISDNPERYSTNLSNHVDDFTTFRGTELSFLVTTHQPTNLVLP
+SNGSMHNYCPQQTKITSAFKYINTVISCTIFIVGMVGNATLLRIIYQNKCMRNGPNALIA
+SLALGDLIYVVIDLPINVFKLLAGRWPFDHNDFGVFLCKLFPFLQKSSVGITVLNLCALS
+VDRYRAVASWSRVQGIGIPLVTAIEIVSIWILSFILAIPEAIGFVMVPFEYRGEQHKTCM
+LNATSKFMEFYQDVKDWWLFGFYFCMPLVCTAIFYTLMTCEMLNRRNGSLRIALSEHLKQ
+RREVAKTVFCLVVIFALCWFPLHLSRILKKTVYNEMDKNRCELLSFLLLMDYIGINLATM
+NSCINPIALYFVSKKFKNCFQSCLCCCCYQSKSLMTSVPMNGTSIQWKNHDQNNHNTDRS
+SHKDSMN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010366|Endothelin-1 receptor (EDNRA)
+ATGGAAACCCTTTGCCTCAGGGCATCCTTTTGGCTGGCACTGGTTGGATGTGTAATCAGT
+GATAATCCTGAGAGATACAGCACAAATCTAAGCAATCATGTGGATGATTTCACCACTTTT
+CGTGGCACAGAGCTCAGCTTCCTGGTTACCACTCATCAACCCACTAATTTGGTCCTACCC
+AGCAATGGCTCAATGCACAACTATTGCCCACAGCAGACTAAAATTACTTCAGCTTTCAAA
+TACATTAACACTGTGATATCTTGTACTATTTTCATCGTGGGAATGGTGGGGAATGCAACT
+CTGCTCAGGATCATTTACCAGAACAAATGTATGAGGAATGGCCCCAACGCGCTGATAGCC
+AGTCTTGCCCTTGGAGACCTTATCTATGTGGTCATTGATCTCCCTATCAATGTATTTAAG
+TTCTACCAAGATGTAAAGGACTGGTGGCTCTTCGGGTTCTATTTCTGTATGCCCTTGGTG
+TGCACTGCGATCTTCTACACCCTCATGACTTGTGAGATGTTGAACAGAAGGAATGGCAGC
+TTGAGAATTGCCCTCAGTGAACATCTTAAGCAGCGTCGAGAAGTGGCAAAAACAGTTTTC
+TGCTTGGTTGTAATTTTTGCTCTTTGCTGGTTCCCTCTTCATTTAAGCCGTATATTGAAG
+AAAACTGTGTATAACGAGATGGACAAGAACCGATGTGAATTACTTAGTTTCTTACTGCTC
+ATGGATTACATCGGTATTAACTTGGCAACCATGAATTCATGTATAAACCCCATAGCTCTG
+TATTTTGTGAGCAAGAAATTTAAAAATTGTTTCCAGTCATGCCTCTGCTGCTGCTGTTAC
+CAGTCCAAAAGTCTGATGACCTCGGTCCCCATGAACGGAACAAGCATCCAGTGGAAGAAC
+CACGATCAAAACAACCACAACACAGACCGGAGCAGCCATAAGGACAGCATGAACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endothelin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>artery smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>enteric nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>head development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>in utero embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cAMP biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neural crest cell development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>patterning of blood vessels</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cytosolic calcium ion concentration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory gaseous exchange</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasoconstriction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

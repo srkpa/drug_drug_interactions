@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-05">
+  <drugbank-id primary="true">DB12458</drugbank-id>
+  <name>Muscimol</name>
+  <description>Muscimol has been used in trials studying the treatment of Epilepsy and Parkinson's Disease.</description>
+  <cas-number>2763-96-4</cas-number>
+  <unii>D5M179TY2E</unii>
+  <average-mass>114.1026</average-mass>
+  <monoisotopic-mass>114.042927446</monoisotopic-mass>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as aralkylamines. These are alkylamines in which the alkyl group is substituted at one carbon atom by an aromatic hydrocarbyl group.</description>
+    <direct-parent>Aralkylamines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic nitrogen compounds</superclass>
+    <class>Organonitrogen compounds</class>
+    <subclass>Amines</subclass>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Isoxazoles</alternative-parent>
+    <alternative-parent>Lactams</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <substituent>Aralkylamine</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Isoxazole</substituent>
+    <substituent>Lactam</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002901</drugbank-id>
+      <name>Muscimol hydrobromide</name>
+      <unii/>
+      <cas-number>18174-72-6</cas-number>
+      <inchikey>OPZOJWHOZRKYQX-UHFFFAOYSA-N</inchikey>
+      <average-mass>195.016</average-mass>
+      <monoisotopic-mass>193.96909</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">5-(aminomethyl)-3(2H)-isoxazolone</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Biological Factors</category>
+      <mesh-id>D001685</mesh-id>
+    </category>
+    <category>
+      <category>GABA Agents</category>
+      <mesh-id>D018682</mesh-id>
+    </category>
+    <category>
+      <category>GABA Agonists</category>
+      <mesh-id>D018755</mesh-id>
+    </category>
+    <category>
+      <category>GABA-A Receptor Agonists</category>
+      <mesh-id>D058785</mesh-id>
+    </category>
+    <category>
+      <category>Mycotoxins</category>
+      <mesh-id>D009183</mesh-id>
+    </category>
+    <category>
+      <category>Neurotransmitter Agents</category>
+      <mesh-id>D018377</mesh-id>
+    </category>
+    <category>
+      <category>Oxazoles</category>
+      <mesh-id>D010080</mesh-id>
+    </category>
+    <category>
+      <category>Toxins, Biological</category>
+      <mesh-id>D014118</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.42</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>3.03e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>5-(aminomethyl)-2,3-dihydro-1,2-oxazol-3-one</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>[(2R,3S,4R,5R)-5-(4-amino-5-methyl-2-oxopyrimidin-1-yl)-3,4-dihydroxyoxolan-2-yl]methoxyphosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>114.1026</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>114.042927446</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>NCC1=CC(=O)NO1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C4H6N2O2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C4H6N2O2/c5-2-3-1-4(7)6-8-3/h1H,2,5H2,(H,6,7)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ZJQHPWUVQPJPQT-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>64.35</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>28.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>10.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>5.86</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.97</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>7035</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>4266</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347828698</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C08311</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4116</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>23183</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Muscimol</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL273481</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000795</id>
+      <name>Gamma-aminobutyric acid receptor subunit alpha-1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A20179</ref-id>
+            <pubmed-id>22029276</pubmed-id>
+            <citation>Stewart DS, Savechenkov PY, Dostalova Z, Chiara DC, Ge R, Raines DE, Cohen JB, Forman SA, Bruzik KS, Miller KW: p-(4-Azipentyl)propofol: a potent photoreactive general anesthetic derivative of propofol. J Med Chem. 2011 Dec 8;54(23):8124-35. doi: 10.1021/jm200943f. Epub 2011 Nov 10.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P14867" source="Swiss-Prot">
+        <name>Gamma-aminobutyric acid receptor subunit alpha-1</name>
+        <general-function>Inhibitory extracellular ligand-gated ion channel activity</general-function>
+        <specific-function>Component of the heteropentameric receptor for GABA, the major inhibitory neurotransmitter in the vertebrate brain. Functions also as histamine receptor and mediates cellular responses to histamine. Functions as receptor for diazepines and various anesthetics, such as pentobarbital; these are bound at a separate allosteric effector binding site. Functions as ligand-gated chloride channel (By similarity).</specific-function>
+        <gene-name>GABRA1</gene-name>
+        <locus>5q34-q35</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>252-273
+279-300
+313-334
+422-443</transmembrane-regions>
+        <signal-regions>1-27</signal-regions>
+        <theoretical-pi>9.61</theoretical-pi>
+        <molecular-weight>51801.395</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4075</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GABRA1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X13584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>31631</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P14867</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GBRA1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GABA(A) receptor subunit alpha-1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010561|Gamma-aminobutyric acid receptor subunit alpha-1
+MRKSPGLSDCLWAWILLLSTLTGRSYGQPSLQDELKDNTTVFTRILDRLLDGYDNRLRPG
+LGERVTEVKTDIFVTSFGPVSDHDMEYTIDVFFRQSWKDERLKFKGPMTVLRLNNLMASK
+IWTPDTFFHNGKKSVAHNMTMPNKLLRITEDGTLLYTMRLTVRAECPMHLEDFPMDAHAC
+PLKFGSYAYTRAEVVYEWTREPARSVVVAEDGSRLNQYDLLGQTVDSGIVQSSTGEYVVM
+TTHFHLKRKIGYFVIQTYLPCIMTVILSQVSFWLNRESVPARTVFGVTTVLTMTTLSISA
+RNSLPKVAYATAMDWFIAVCYAFVFSALIEFATVNYFTKRGYAWDGKSVVPEKPKKVKDP
+LIKKNNTYAPTATSYTPNLARGDPGLATIAKSATIEPKEVKPETKPPEPKKTFNSVSKID
+RLSRIAFPLLFGIFNLVYWATYLNREPQLKAPTPHQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010562|Gamma-aminobutyric acid receptor subunit alpha-1 (GABRA1)
+ATGAGGAAAAGTCCAGGTCTGTCTGACTGTCTTTGGGCCTGGATCCTCCTTCTGAGCACA
+CTGACTGGAAGAAGCTATGGACAGCCGTCATTACAAGATGAACTTAAAGACAATACCACT
+GTCTTCACCAGGATTTTGGACAGACTCCTAGATGGTTATGACAATCGCCTGAGACCAGGA
+TTGGGAGAGCGTGTAACCGAAGTGAAGACTGATATCTTCGTCACCAGTTTCGGACCCGTT
+TCAGACCATGATATGGAATATACAATAGATGTATTTTTCCGTCAAAGCTGGAAGGATGAA
+AGGTTAAAATTTAAAGGACCTATGACAGTCCTCCGGTTAAATAACCTAATGGCAAGTAAA
+ATCTGGACTCCGGACACATTTTTCCACAATGGAAAGAAGTCAGTGGCCCACAACATGACC
+ATGCCCAACAAACTCCTGCGGATCACAGAGGATGGCACCTTGCTGTACACCATGAGGCTG
+ACAGTGAGAGCTGAATGTCCGATGCATTTGGAGGACTTCCCTATGGATGCCCATGCTTGC
+CCACTAAAATTTGGAAGTTATGCTTATACAAGAGCAGAAGTTGTTTATGAATGGACCAGA
+GAGCCAGCACGCTCAGTGGTTGTAGCAGAAGATGGATCACGTCTAAACCAGTATGACCTT
+CTTGGACAAACAGTAGACTCTGGAATTGTCCAGTCAAGTACAGGAGAATATGTTGTTATG
+ACCACTCATTTCCACTTGAAGAGAAAGATTGGCTACTTTGTTATTCAAACATACCTGCCA
+TGCATAATGACAGTGATTCTCTCACAAGTCTCCTTCTGGCTCAACAGAGAGTCTGTACCA
+GCAAGAACTGTCTTTGGAGTAACAACTGTGCTCACCATGACAACATTGAGCATCAGTGCC
+AGAAACTCCCTCCCTAAGGTGGCTTATGCAACAGCTATGGATTGGTTTATTGCCGTGTGC
+TATGCCTTTGTGTTCTCAGCTCTGATTGAGTTTGCCACAGTAAACTATTTCACTAAGAGA
+GGTTATGCATGGGATGGCAAAAGTGTGGTTCCAGAAAAGCCAAAGAAAGTAAAGGATCCT
+CTTATTAAGAAAAACAACACTTACGCTCCAACAGCAACCAGCTACACCCCTAATTTGGCC
+AGGGGCGACCCGGGCTTAGCCACCATTGCTAAAAGTGCAACCATAGAACCTAAAGAGGTC
+AAGCCCGAAACAAAACCACCAGAACCCAAGAAAACCTTTAACAGTGTCAGCAAAATTGAC
+CGACTGTCAAGAATAGCCTTCCCGCTGCTATTTGGAATCTTTAACTTAGTCTACTGGGCT
+ACGTATTTAAACAGAGAGCCTCAGCTAAAAGCCCCCACACCACATCAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chloride channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA-A receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GABA-A receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>inhibitory extracellular ligand-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to histamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gamma-aminobutyric acid signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, GABAergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0002345</id>
+      <name>Gamma-aminobutyric acid receptor subunit beta-3</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A20179</ref-id>
+            <pubmed-id>22029276</pubmed-id>
+            <citation>Stewart DS, Savechenkov PY, Dostalova Z, Chiara DC, Ge R, Raines DE, Cohen JB, Forman SA, Bruzik KS, Miller KW: p-(4-Azipentyl)propofol: a potent photoreactive general anesthetic derivative of propofol. J Med Chem. 2011 Dec 8;54(23):8124-35. doi: 10.1021/jm200943f. Epub 2011 Nov 10.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P28472" source="Swiss-Prot">
+        <name>Gamma-aminobutyric acid receptor subunit beta-3</name>
+        <general-function>Gaba-gated chloride ion channel activity</general-function>
+        <specific-function>Component of the heteropentameric receptor for GABA, the major inhibitory neurotransmitter in the vertebrate brain. Functions also as histamine receptor and mediates cellular responses to histamine. Functions as receptor for diazepines and various anesthetics, such as pentobarbital; these are bound at a separate allosteric effector binding site. Functions as ligand-gated chloride channel.</specific-function>
+        <gene-name>GABRB3</gene-name>
+        <locus>15q11.2-q12</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>246-267
+271-293
+305-327
+451-472</transmembrane-regions>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>9.41</theoretical-pi>
+        <molecular-weight>54115.04</molecular-weight>
+        <chromosome-location>15</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4083</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GABRB3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M82919</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>182925</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>412</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>412</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P28472</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GBRB3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GABA(A) receptor subunit beta-3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004605|Gamma-aminobutyric acid receptor subunit beta-3
+MWGLAGGRLFGIFSAPVLVAVVCCAQSVNDPGNMSFVKETVDKLLKGYDIRLRPDFGGPP
+VCVGMNIDIASIDMVSEVNMDYTLTMYFQQYWRDKRLAYSGIPLNLTLDNRVADQLWVPD
+TYFLNDKKSFVHGVTVKNRMIRLHPDGTVLYGLRITTTAACMMDLRRYPLDEQNCTLEIE
+SYGYTTDDIEFYWRGGDKAVTGVERIELPQFSIVEHRLVSRNVVFATGAYPRLSLSFRLK
+RNIGYFILQTYMPSILITILSWVSFWINYDASAARVALGITTVLTMTTINTHLRETLPKI
+PYVKAIDMYLMGCFVFVFLALLEYAFVNYIFFGRGPQRQKKLAEKTAKAKNDRSKSESNR
+VDAHGNILLTSLEVHNEMNEVSGGIGDTRNSAISFDNSGIQYRKQSMPREGHGRFLGDRS
+LPHKKTHLRRRSSQLKIKIPDLTDVNAIDRWSRIVFPFTFSLFNLVYWLYYVN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016761|Gamma-aminobutyric acid receptor subunit beta-3 (GABRB3)
+ATGTGGGGCCTTGCGGGAGGAAGGCTTTTCGGCATCTTCTCGGCCCCGGTGCTGGTGGCT
+GTGGTGTGCTGCGCCCAGAGTGTGAACGATCCCGGGAACATGTCCTTTGTGAAGGAGACG
+GTGGACAAGCTGTTGAAAGGCTACGACATTCGCCTAAGACCCGACTTCGGGGGTCCCCCG
+GTCTGCGTGGGGATGAACATCGACATCGCCAGCATCGACATGGTTTCCGAAGTCAACATG
+GATTATACCTTAACCATGTATTTTCAACAATATTGGAGAGATAAAAGGCTCGCCTATTCT
+GGGATCCCTCTCAACCTCACGCTTGACAATCGAGTGGCTGACCAGCTATGGGTGCCCGAC
+ACATATTTCTTAAATGACAAAAAGTCATTTGTGCATGGAGTGACAGTGAAAAACCGCATG
+ATCCGTCTTCACCCTGATGGGACAGTGCTGTATGGGCTCAGAATCACCACGACAGCAGCA
+TGCATGATGGACCTCAGGAGATACCCCCTGGACGAGCAGAACTGCACTCTGGAAATTGAA
+AGCTATGGCTACACCACGGATGACATTGAGTTTTACTGGCGAGGCGGGGACAAGGCTGTT
+ACCGGAGTGGAAAGGATTGAGCTCCCGCAGTTCTCCATCGTGGAGCACCGTCTGGTCTCG
+AGGAATGTTGTCTTCGCCACAGGTGCCTATCCTCGACTGTCACTGAGCTTTCGGTTGAAG
+AGGAACATTGGATACTTCATTCTTCAGACTTATATGCCCTCTATACTGATAACGATTCTG
+TCGTGGGTGTCCTTCTGGATCAATTATGATGCATCTGCTGCTAGAGTTGCCCTCGGGATC
+ACAACTGTGCTGACAATGACAACCATCAACACCCACCTTCGGGAGACCTTGCCCAAAATC
+CCCTATGTCAAAGCCATTGACATGTACCTTATGGGCTGCTTCGTCTTTGTGTTCCTGGCC
+CTTCTGGAGTATGCCTTTGTCAACTACATTTTCTTTGGAAGAGGCCCTCAAAGGCAGAAG
+AAGCTTGCAGAAAAGACAGCCAAGGCAAAGAATGACCGTTCAAAGAGCGAAAGCAACCGG
+GTGGATGCTCATGGAAATATTCTGTTGACATCGCTGGAAGTTCACAATGAAATGAATGAG
+GTCTCAGGCGGCATTGGCGATACCAGGAATTCAGCAATATCCTTTGACAACTCAGGAATC
+CAGTACAGGAAACAGAGCATGCCTCGAGAAGGGCATGGGCGATTCCTGGGGGACAGAAGC
+CTCCCGCACAAGAAGACCCATCTACGGAGGAGGTCTTCACAGCTCAAAATTAAAATACCT
+GATCTAACCGATGTGAATGCCATAGACAGATGGTCCAGGATCGTGTTTCCATTCACTTTT
+TCTCTTTTCAACTTAGTTTACTGGCTGTACTATGTTAACTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chloride channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA-A receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>extracellular ligand-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GABA-A receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GABA-gated chloride ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to histamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cochlea development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inhibitory postsynaptic potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inner ear receptor cell development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innervation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>palate development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of sound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0003592</id>
+      <name>Gamma-aminobutyric acid receptor subunit gamma-2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A20179</ref-id>
+            <pubmed-id>22029276</pubmed-id>
+            <citation>Stewart DS, Savechenkov PY, Dostalova Z, Chiara DC, Ge R, Raines DE, Cohen JB, Forman SA, Bruzik KS, Miller KW: p-(4-Azipentyl)propofol: a potent photoreactive general anesthetic derivative of propofol. J Med Chem. 2011 Dec 8;54(23):8124-35. doi: 10.1021/jm200943f. Epub 2011 Nov 10.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P18507" source="Swiss-Prot">
+        <name>Gamma-aminobutyric acid receptor subunit gamma-2</name>
+        <general-function>Inhibitory extracellular ligand-gated ion channel activity</general-function>
+        <specific-function>Component of the heteropentameric receptor for GABA, the major inhibitory neurotransmitter in the vertebrate brain. Functions also as histamine receptor and mediates cellular responses to histamine. Functions as receptor for diazepines and various anesthetics, such as pentobarbital; these are bound at a separate allosteric effector binding site. Functions as ligand-gated chloride channel.</specific-function>
+        <gene-name>GABRG2</gene-name>
+        <locus>5q31.1-q33.1</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>274-296
+300-322
+334-356
+444-466</transmembrane-regions>
+        <signal-regions>1-39</signal-regions>
+        <theoretical-pi>8.6</theoretical-pi>
+        <molecular-weight>54161.78</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4087</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X15376</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>31637</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P18507</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GBRG2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GABA(A) receptor subunit gamma-2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006917|Gamma-aminobutyric acid receptor subunit gamma-2
+MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPGFTSQKSDDDYEDYASNKTWVLTPK
+VPEGDVTVILNNLLEGYDNKLRPDIGVKPTLIHTDMYVNSIGPVNAINMEYTIDIFFAQT
+WYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRMLRIWNDGRVLY
+TLRLTIDAECQLQLHNFPMDEHSCPLEFSSYGYPREEIVYQWKRSSVEVGDTRSWRLYQF
+SFVGLRNTTEVVKTTSGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDA
+VPARTSLGITTVLTMTTLSTIARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV
+SNRKPSKDKDKKKKNPAPTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCC
+FEDCRTGAWRHGRIHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019445|Gamma-aminobutyric acid receptor subunit gamma-2 (GABRG2)
+ATGAGTTCGCCAAATATATGGAGCACAGGAAGCTCAGTCTACTCGACTCCTGTATTTTCA
+CAGAAAATGACGGTGTGGATTCTGCTCCTGCTGTCGCTCTACCCTGGCTTCACTAGCCAG
+AAATCTGATGATGACTATGAAGATTATGCTTCTAACAAAACATGGGTCTTGACTCCAAAA
+GTTCCTGAGGGTGATGTCACTGTCATCTTAAACAACCTGCTGGAAGGATATGACAATAAA
+CTTCGGCCTGATATAGGAGTGAAGCCAACGTTAATTCACACAGACATGTATGTGAATAGC
+ATTGGTCCAGTGAACGCTATCAATATGGAATACACTATTGATATATTTTTTGCGCAAACG
+TGGTATGACAGACGTTTGAAATTTAACAGCACCATTAAAGTCCTCCGATTGAACAGCAAC
+ATGGTGGGGAAAATCTGGATTCCAGACACTTTCTTCAGAAATTCCAAAAAAGCTGATGCA
+CACTGGATCACCACCCCCAACAGGATGCTGAGAATTTGGAATGATGGTCGAGTGCTCTAC
+ACCCTAAGGTTGACAATTGATGCTGAGTGCCAATTACAATTGCACAACTTTCCAATGGAT
+GAACACTCCTGCCCCTTGGAGTTCTCCAGTTATGGCTATCCACGTGAAGAAATTGTTTAT
+CAATGGAAGCGAAGTTCTGTTGAAGTGGGCGACACAAGATCCTGGAGGCTTTATCAATTC
+TCATTTGTTGGTCTAAGAAATACCACCGAAGTAGTGAAGACAACTTCCGGAGATTATGTG
+GTCATGTCTGTCTACTTTGATCTGAGCAGAAGAATGGGATACTTTACCATCCAGACCTAT
+ATCCCCTGCACACTCATTGTCGTCCTATCCTGGGTGTCTTTCTGGATCAATAAGGATGCT
+GTTCCAGCCAGAACATCTTTAGGTATCACCACTGTCCTGACAATGACCACCCTCAGCACC
+ATTGCCCGGAAATCGCTCCCCAAGGTCTCCTATGTCACAGCGATGGATCTCTTTGTATCT
+GTTTGTTTCATCTTTGTCTTCTCTGCTCTGGTGGAGTATGGCACCTTGCATTATTTTGTC
+AGCAACCGGAAACCAAGCAAGGACAAAGATAAAAAGAAGAAAAACCCTGCCCCTACCATT
+GATATCCGCCCAAGATCAGCAACCATTCAAATGAATAATGCTACACACCTTCAAGAGAGA
+GATGAAGAGTACGGCTATGAGTGTCTGGACGGCAAGGACTGTGCCAGTTTTTTCTGCTGT
+TTTGAAGATTGTCGAACAGGAGCTTGGAGACATGGGAGGATACATATCCGCATTGCCAAA
+ATGGACTCCTATGCTCGGATCTTCTTCCCCACTGCCTTCTGCCTGTTTAATCTGGTCTAT
+TGGGTCTCCTACCTCTACCTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chloride channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>GABA-A receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>benzodiazepine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>GABA-A receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>inhibitory extracellular ligand-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to histamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gamma-aminobutyric acid signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, GABAergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

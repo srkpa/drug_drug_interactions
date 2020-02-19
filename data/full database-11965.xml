@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2018-06-11" updated="2019-12-02">
+  <drugbank-id primary="true">DB14051</drugbank-id>
+  <name>Malacidin A</name>
+  <description>Malacidin A, along with [DB14052], is a member of a class of chemicals made by bacteria found in soil that can kill Gram-positive bacteria [A33312]. Malacidins are 10-member macrocycle lipopeptides discovered via gene sequencing and bioinformatic analysis. While structurally similar to other macrocycle drugs like [DB00080] and [DB06087], Malacidin A appears to act via its own distinct mechanism.</description>
+  <cas-number/>
+  <unii/>
+  <average-mass>1249.384</average-mass>
+  <monoisotopic-mass>1248.623783282</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A33312</ref-id>
+        <pubmed-id>29434326</pubmed-id>
+        <citation>Hover BM, Kim SH, Katz M, Charlop-Powers Z, Owen JG, Ternei MA, Maniko J, Estrela AB, Molina H, Park S, Perlin DS, Brady SF: Culture-independent discovery of the malacidins as calcium-dependent antibiotics with activity against multidrug-resistant Gram-positive pathogens. Nat Microbiol. 2018 Apr;3(4):415-422. doi: 10.1038/s41564-018-0110-1. Epub 2018 Feb 12.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Hover BM, Kim SH, Katz M, et al. Culture-independent discovery of the malacidins as calcium-dependent antibiotics with activity against multidrug-resistant Gram-positive pathogens. Nat Microbiol. 2018;3(4):415-422.</synthesis-reference>
+  <indication>Malacidin A is being investigated for its antibiotic action and has potential for use as an antibacterial agent in the future [A33312].</indication>
+  <pharmacodynamics>Malacidin A disrupts bacterial cell wall synthesis likely leading to cell death in Gram-positive bacteria [A33312]. This bactericidal effect reduces the number of live bacteria present during infection. Malacidin A has exhibited broad spectrum activity against Gram-positive bacteria including several multi-drug resistant pathogens.</pharmacodynamics>
+  <mechanism-of-action>Malacidin A appears to bind Lipid II via a calcium dependent mechanism despite the absence of the typical Asp-X-Asp-Gly motif associate with calcium binding. The structure of Malacidin A includes a 3-hydroxy-aspartate residue while the "X" variable spacer residue is absent. It is unknown how these unique structural features may impact the drug's mechanism of action. The binding of Malacidin A to Lipid II prevents the incorporation of the subunit into the cell wall, disrupting synthesis and likely resulting in death of the bacterial cell. Malacidin A does not appear to form pores nor does it seem to integrate into the cell wall. While this mechanism is similar to that of [DB00512], Malacidin A retains its activity against [DB00512]-resistant pathogens. Unlike other antibiotic agents, Malacidin A also retains its activity in the presence of pulmonary surfactants.</mechanism-of-action>
+  <toxicity>Malacidin A has no observed toxicity or haemolytic effect on mammalian cells at concentrations of up to 100-250 μg/mL, over 100 times the MIC for affected pathogens [A33312].</toxicity>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Lipids</category>
+      <mesh-id>D008055</mesh-id>
+    </category>
+    <category>
+      <category>Malacidins</category>
+      <mesh-id>C000626256</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB09268</drugbank-id>
+      <name>Picosulfuric acid</name>
+      <description>The therapeutic efficacy of Picosulfuric acid can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Malacidin A is combined with (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00581</drugbank-id>
+      <name>Lactulose</name>
+      <description>The therapeutic efficacy of Lactulose can be decreased when used in combination with Malacidin A.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.39</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.8</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.97e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(3S)-3-{[(4S,7R,10S,13S,16S,22R,25S,29R,30aS)-10-(4-aminobutyl)-13-[carboxy(hydroxy)methyl]-22-(1-carboxyethyl)-16-(carboxymethyl)-3,29-dimethyl-1,5,8,11,14,17,20,23,26-nonaoxo-7,25-bis(propan-2-yl)-triacontahydropyrrolo[2,1-c]1,4,7,10,13,16,19,22,25-nonaazacyclooctacosan-4-yl]carbamoyl}-2-methyl-3-[(2E,4Z)-8-methylnona-2,4-dienamido]propanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(3S)-3-{[(4S,7R,10S,13S,16S,22R,25S,29R,30aS)-10-(4-aminobutyl)-13-[carboxy(hydroxy)methyl]-22-(1-carboxyethyl)-16-(carboxymethyl)-7,25-diisopropyl-3,29-dimethyl-1,5,8,11,14,17,20,23,26-nonaoxo-icosahydro-2H-pyrrolo[2,1-c]1,4,7,10,13,16,19,22,25-nonaazacyclooctacosan-4-yl]carbamoyl}-2-methyl-3-[(2E,4Z)-8-methylnona-2,4-dienamido]propanoic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>1249.384</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>1248.623783282</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC(C)CC\C=C/C=C/C(=O)N[C@@H](C(C)C(O)=O)C(=O)N[C@H]1C(C)NC(=O)[C@@H]2C[C@@H](C)CN2C(=O)[C@@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CCCCN)NC(=O)[C@H](NC1=O)C(C)C)C(O)C(O)=O)C(C)C(O)=O)C(C)C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C56H88N12O20</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C56H88N12O20/c1-25(2)17-13-11-12-14-19-35(69)62-40(29(8)54(83)84)50(79)66-42-31(10)59-47(76)34-21-28(7)24-68(34)53(82)39(27(5)6)65-49(78)41(30(9)55(85)86)63-36(70)23-58-45(74)33(22-37(71)72)61-52(81)43(44(73)56(87)88)67-46(75)32(18-15-16-20-57)60-48(77)38(26(3)4)64-51(42)80/h11-12,14,19,25-34,38-44,73H,13,15-18,20-24,57H2,1-10H3,(H,58,74)(H,59,76)(H,60,77)(H,61,81)(H,62,69)(H,63,70)(H,64,80)(H,65,78)(H,66,79)(H,67,75)(H,71,72)(H,83,84)(H,85,86)(H,87,88)/b12-11-,19-14+/t28-,29?,30?,31?,32+,33+,34+,38-,39+,40+,41-,42+,43+,44?/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>USNOUEMKNKRWQT-ORRWAHHJSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>506.76</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>306.63</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>127.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>22</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>16</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>10.18</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>140173</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Malacidin</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0009551</id>
+      <name>NAM/NAG peptide subunits of peptidoglycan</name>
+      <organism>Gram positive bacteria</organism>
+      <actions>
+        <action>ligand</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A33312</ref-id>
+            <pubmed-id>29434326</pubmed-id>
+            <citation>Hover BM, Kim SH, Katz M, Charlop-Powers Z, Owen JG, Ternei MA, Maniko J, Estrela AB, Molina H, Park S, Perlin DS, Brady SF: Culture-independent discovery of the malacidins as calcium-dependent antibiotics with activity against multidrug-resistant Gram-positive pathogens. Nat Microbiol. 2018 Apr;3(4):415-422. doi: 10.1038/s41564-018-0110-1. Epub 2018 Feb 12.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

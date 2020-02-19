@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB06138</drugbank-id>
+  <name>IRL-1620</name>
+  <description>SPI-1620 is an endothelin B receptor agonist. In animal models SPI-1620 selectively and transiently increases tumor blood flow allowing increased delivery of anticancer agents to the tumor. It is being developed as an adjunct to chemotherapy.</description>
+  <cas-number>142569-99-1</cas-number>
+  <unii>11X778QIZS</unii>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in cancer/tumors (unspecified).</indication>
+  <pharmacodynamics>In animal models SPI-1620 selectively and transiently increases tumor blood flow allowing increased delivery of anticancer agents to the tumor.</pharmacodynamics>
+  <mechanism-of-action>SPI-1620 is a highly selective peptide agonist of endothelin-B receptors, which can stimulate receptors on endothelial cells, the innermost layer of cells lining the blood vessels. The blood supply to tumors is different than the blood supply to healthy organs. Blood vessels in the growing part of tumors are relatively devoid of smooth muscle covering and are rich in endothelial cells.  Therefore, by stimulating the endothelial-B receptors present on the endothelial cells, SPI-1620 should selectively increase tumor blood flow while sparing healthy tissue.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+    <category>
+      <category>Biological Factors</category>
+      <mesh-id>D001685</mesh-id>
+    </category>
+    <category>
+      <category>Intercellular Signaling Peptides and Proteins</category>
+      <mesh-id>D036341</mesh-id>
+    </category>
+    <category>
+      <category>Peptides</category>
+      <mesh-id>D010455</mesh-id>
+    </category>
+    <category>
+      <category>Proteins</category>
+      <mesh-id>D011506</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000043</id>
+      <name>Endothelin B receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P24530" source="Swiss-Prot">
+        <name>Endothelin B receptor</name>
+        <general-function>Peptide hormone binding</general-function>
+        <specific-function>Non-specific receptor for endothelin 1, 2, and 3. Mediates its action by association with G proteins that activate a phosphatidylinositol-calcium second messenger system.</specific-function>
+        <gene-name>EDNRB</gene-name>
+        <locus>13q22</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>102-126
+138-163
+176-197
+219-243
+272-296
+325-350
+363-389</transmembrane-regions>
+        <signal-regions>1-26</signal-regions>
+        <theoretical-pi>9.05</theoretical-pi>
+        <molecular-weight>49643.255</molecular-weight>
+        <chromosome-location>13</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3180</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>EDNRB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M74921</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>182276</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>220</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>220</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P24530</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>EDNRB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Endothelin receptor non-selective type</synonym>
+          <synonym>ET-B</synonym>
+          <synonym>ETRB</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000086|Endothelin B receptor
+MQPPPSLCGRALVALVLACGLSRIWGEERGFPPDRATPLLQTAEIMTPPTKTLWPKGSNA
+SLARSLAPAEVPKGDRTAGSPPRTISPPPCQGPIEIKETFKYINTVVSCLVFVLGIIGNS
+TLLRIIYKNKCMRNGPNILIASLALGDLLHIVIDIPINVYKLLAEDWPFGAEMCKLVPFI
+QKASVGITVLSLCALSIDRYRAVASWSRIKGIGVPKWTAVEIVLIWVVSVVLAVPEAIGF
+DIITMDYKGSYLRICLLHPVQKTAFMQFYKTAKDWWLFSFYFCLPLAITAFFYTLMTCEM
+LRKKSGMQIALNDHLKQRREVAKTVFCLVLVFALCWLPLHLSRILKLTLYNQNDPNRCEL
+LSFLLVLDYIGINMASLNSCINPIALYLVSKRFKNCFKSCLCCWCQSFEEKQSLEEKQSC
+LKFKANDHGYDNFRSSNKYSSS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016003|Endothelin B receptor (EDNRB)
+ATGCAGCCGCCTCCAAGTCTGTGCGGACGCGCCCTGGTTGCGCTGGTTCTTGCCTGCGGC
+CTGTCGCGGATCTGGGGAGAGGAGAGAGGCTTCCCGCCTGACAGGGCCACTCCGCTTTTG
+CAAACCGCAGAGATAATGACGCCACCCACTAAGACCTTATGGCCCAAGGGTTCCAACGCC
+AGTCTGGCGCGGTCGTTGGCACCTGCGGAGGTGCCTAAAGGAGACAGGACGGCAGGATCT
+CCGCCACGCACCATCTCCCCTCCCCCGTGCCAAGGACCCATCGAGATCAAGGAGACTTTC
+AAATACATCAACACGGTTGTGTCCTGCCTTGTGTTCGTGCTGGGGATCATCGGGAACTCC
+ACACTTCTGAGAATTATCTACAAGAACAAGTGCATGCGAAACGGTCCCAATATCTTGATC
+GCCAGCTTGGCTCTGGGAGACCTGCTGCACATCGTCATTGACATCCCTATCAATGTCTAC
+AAGCTGCTGGCAGAGGACTGGCCATTTGGAGCTGAGATGTGTAAGCTGGTGCCTTTCATA
+CAGAAAGCCTCCGTGGGAATCACTGTGCTGAGTCTATGTGCTCTGAGTATTGACAGATAT
+CGAGCTGTTGCTTCTTGGAGTAGAATTAAAGGAATTGGGGTTCCAAAATGGACAGCAGTA
+GAAATTGTTTTGATTTGGGTGGTCTCTGTGGTTCTGGCTGTCCCTGAAGCCATAGGTTTT
+GATATAATTACGATGGACTACAAAGGAAGTTATCTGCGAATCTGCTTGCTTCATCCCGTT
+CAGAAGACAGCTTTCATGCAGTTTTACAAGACAGCAAAAGATTGGTGGCTATTCAGTTTC
+TATTTCTGCTTGCCATTGGCCATCACTGCATTTTTTTATACACTAATGACCTGTGAAATG
+TTGAGAAAGAAAAGTGGCATGCAGATTGCTTTAAATGATCACCTAAAGCAGAGACGGGAA
+GTGGCCAAAACCGTCTTTTGCCTGGTCCTTGTCTTTGCCCTCTGCTGGCTTCCCCTTCAC
+CTCAGCAGGATTCTGAAGCTCACTCTTTATAATCAGAATGATCCCAATAGATGTGAACTT
+TTGAGCTTTCTGTTGGTATTGGACTATATTGGTATCAACATGGCTTCACTGAATTCCTGC
+ATTAACCCAATTGCTCTGTATTTGGTGAGCAAAAGATTCAAAAACTGCTTTAAGTCATGC
+TTATGCTGCTGGTGCCAGTCATTTGAAGAAAAACAGTCCTTGGAGGAAAAGCAGTCGTGC
+TTAAAGTTCAAAGCTAATGATCACGGATATGACAACTTCCGTTCCAGTAATAAATACAGC
+TCATCTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>endothelin receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide hormone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>enteric nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>enteric smooth muscle cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>macrophage chemotaxis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vasoconstriction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vein smooth muscle contraction</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

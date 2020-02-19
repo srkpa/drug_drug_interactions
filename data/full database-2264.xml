@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02394</drugbank-id>
+  <drugbank-id>EXPT02443</drugbank-id>
+  <name>Oxiranpseudoglucose</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>176.1672</average-mass>
+  <monoisotopic-mass>176.068473494</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>6cgt</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.82</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.16e+03 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-2.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(1S,2S,3R,4S,6R)-1-(hydroxymethyl)-7-oxabicyclo[4.1.0]heptane-2,3,4-triol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(1S,2S,3R,4S,6R)-1-(hydroxymethyl)-7-oxabicyclo[4.1.0]heptane-2,3,4-triol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>176.1672</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>176.068473494</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]12C[C@]([H])(O)[C@@]([H])(O)[C@]([H])(O)[C@]1(CO)O2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C7H12O5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C7H12O5/c8-2-7-4(12-7)1-3(9)5(10)6(7)11/h3-6,8-11H,1-2H2/t3-,4+,5+,6-,7+/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>BDIDRHMZXLEMIZ-CXNFULCWSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>93.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>37.35</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>16.36</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>12.63</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5289076</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506050</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4451111</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>OPG</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001243</id>
+      <name>Cyclomaltodextrin glucanotransferase</name>
+      <organism>Bacillus circulans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P30920" source="Swiss-Prot">
+        <name>Cyclomaltodextrin glucanotransferase</name>
+        <general-function>Starch binding</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-34</signal-regions>
+        <theoretical-pi>6.65</theoretical-pi>
+        <molecular-weight>78046.265</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1397">Bacillus circulans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X68326</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>39420</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P30920</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CDGT1_BACCI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.19</synonym>
+          <synonym>CGTase</synonym>
+          <synonym>Cyclodextrin-glycosyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016362|Cyclomaltodextrin glucanotransferase
+MFQMAKRAFLSTTLTLGLLAGSALPFLPASAVYADPDTAVTNKQSFSTDVIYQVFTDRFL
+DGNPSNNPTGAAYDATCSNLKLYCGGDWQGLINKINDNYFSDLGVTALWISQPVENIFAT
+INYSGVTNTAYHGYWARDFKKTNPYFGTMADFQNLITTAHAKGIKIVIDFAPNHTSPAME
+TDTSFAENGRLYDNGTLVGGYTNDTNGYFHHNGGSDFSSLENGIYKNLYDLADFNHNNAT
+IDKYFKDAIKLWLDMGVDGIRVDAVKHMPLGWQKSWMSSIYAHKPVFTFGEWFLGSAASD
+ADNTDFANKSGMSLLDFRFNSAVRNVFRDNTSNMYALDSMINSTATDYNQVNDQVTFIDN
+HDMDRFKTSAVNNRRLEQALAFTLTSRGVPAIYYGTEQYLTGNGDPDNRAKMPSFSKSTT
+AFNVISKLAPLRKSNPAIAYGSTQQRWINNDVYVYERKFGKSVAVVAVNRNLSTSASITG
+LSTSLPTGSYTDVLGGVLNGNNITSTNGSINNFTLAAGATAVWQYTTAETTPTIGHVGPV
+MGKPGNVVTIDGRGFGSTKGTVYFGTTAVTGAAITSWEDTQIKVTIPSVAAGNYAVKVAA
+SGVNSNAYNNFTILTGDQVTVRFVVNNASTTLGQNLYLTGNVAELGNWSTGSTAIGPAFN
+QVIHQYPTWYYDVSVPAGKQLEFKFFKKNGSTITWESGSNHTFTTPASGTATVTVNWQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0002474|2157 bp
+ATGTTTCAAATGGCCAAACGCGCATTCCTCAGCACCACACTGACCCTCGGCTTGCTTGCC
+GGCAGCGCCCTGCCGTTCTTGCCAGCTTCCGCTGTATACGCCGATCCGGACACTGCTGTG
+ACCAACAAACAGAGCTTCAGTACAGATGTGATCTACCAAGTATTTACGGATCGCTTTTTG
+GACGGCAATCCCTCCAACAACCCCACCGGAGCCGCTTATGATGCCACATGCAGCAATTTG
+AAGCTGTACTGCGGCGGAGACTGGCAAGGGTTAATCAACAAAATCAACGATAACTATTTC
+AGTGATCTGGGTGTCACAGCGTTGTGGATCTCCCAGCCTGTCGAAAATATTTTTGCGACG
+ATCAACTATAGCGGTGTAACCAATACTGCCTACCACGGCTACTGGGCTCGAGACTTCAAA
+AAGACCAATCCGTACTTCGGCACGATGGCGGACTTTCAGAACCTGATTACGACGGCTCAT
+GCCAAAGGCATCAAGATTGTCATTGACTTTGCACCGAATCACACCTCTCCAGCGATGGAA
+ACCGACACCTCTTTTGCCGAAAATGGCAGACTGTACGATAACGGTACACTGGTAGGCGGT
+TATACCAATGATACCAACGGGTACTTCCATCACAATGGCGGCTCCGACTTCTCTTCCCTG
+GAGAACGGCATCTACAAAAACCTGTATGACCTGGCCGACTTCAACCACAATAATGCGACC
+ATCGACAAATACTTCAAAGATGCGATCAAACTGTGGCTTGATATGGGCGTTGACGGTATT
+CGGGTGGATGCGGTGAAACATATGCCTCTCGGTTGGCAAAAGAGCTGGATGTCCTCCATC
+TACGCACACAAACCCGTGTTCACTTTTGGAGAATGGTTCTTGGGATCAGCTGCATCCGAT
+GCAGATAACACGGATTTTGCTAACAAGTCTGGTATGAGCCTGCTCGACTTCCGCTTTAAC
+TCTGCGGTGCGTAATGTGTTCCGTGACAACACGTCCAACATGTACGCTCTGGATTCCATG
+ATTAACAGCACAGCTACGGACTACAACCAAGTGAACGATCAGGTGACGTTCATCGACAAC
+CATGATATGGATCGTTTCAAAACAAGTGCGGTCAACAATCGCCGTCTGGAACAGGCTTTG
+GCCTTCACATTGACTTCACGTGGTGTACCTGCCATCTACTATGGTACTGAACAGTATTTG
+ACGGGGAATGGCGATCCAGATAACCGGGCCAAAATGCCTTCGTTCTCCAAATCCACTACA
+GCTTTTAACGTCATAAGTAAACTCGCGCCTCTGCGCAAATCCAATCCGGCCATTGCCTAC
+GGTTCCACACAGCAGCGCTGGATTAATAATGATGTATATGTTTATGAGCGTAAATTCGGC
+AAGAGCGTAGCCGTTGTCGCGGTAAACCGCAATCTTTCCACGTCTGCAAGCATTACAGGG
+TTAAGCACTTCCCTGCCTACAGGCTCATACACGGATGTGCTTGGCGGGGTGCTGAACGGA
+AATAACATCACCTCCACGAATGGTAGCATTAACAACTTCACCCTTGCTGCGGGTGCAACG
+GCAGTATGGCAATACACAACTGCCGAAACAACACCAACCATCGGTCATGTTGGTCCGGTT
+ATGGGGAAACCCGGTAATGTGGTGACAATTGATGGCCGTGGATTCGGCTCGACGAAAGGC
+ACGGTCTACTTCGGCACTACAGCGGTTACCGGAGCAGCGATTACGTCTTGGGAAGATACA
+CAGATTAAAGTAACCATCCCTTCCGTTGCCGCTGGCAACTATGCAGTCAAAGTTGCGGCA
+AGCGGGGTAAACAGCAATGCATACAACAACTTCACCATCCTGACTGGCGATCAGGTCACC
+GTTCGCTTCGTCGTAAACAATGCGTCCACAACGCTTGGACAGAACCTCTATTTGACAGGC
+AACGTAGCCGAGCTTGGCAACTGGAGCACCGGTTCGACTGCCATTGGACCCGCATTCAAT
+CAGGTCATTCATCAATACCCAACCTGGTACTATGATGTCAGCGTACCGGCAGGCAAACAG
+CTGGAGTTCAAATTTTTCAAGAAAAACGGTTCAACGATTACATGGGAAAGCGGTTCTAAC
+CACACATTCACTACACCAGCGAGCGGAACAGCCACCGTTACGGTGAACTGGCAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01833</identifier>
+            <name>TIG</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00686</identifier>
+            <name>CBM_20</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cyclomaltodextrin glucanotransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>starch binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

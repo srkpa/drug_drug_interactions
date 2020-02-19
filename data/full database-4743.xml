@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05052</drugbank-id>
+  <name>MF101</name>
+  <description>MF101 is a novel estrogen receptor beta (ERβ) selective agonist and unlike currently available hormone therapies, does not activate the estrogen receptor alpha (ERα), known to be implicated in tumor formation. MF101 is an oral drug designed for the treatment of hot flashes and night sweats in peri-menopausal and menopausal women.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3189</ref-id>
+        <pubmed-id>17095596</pubmed-id>
+        <citation>Cvoro A, Paruthiyil S, Jones JO, Tzagarakis-Foster C, Clegg NJ, Tatomer D, Medina RT, Tagliaferri M, Schaufele F, Scanlan TS, Diamond MI, Cohen I, Leitman DC: Selective activation of estrogen receptor-beta transcriptional pathways by an herbal extract. Endocrinology. 2007 Feb;148(2):538-47. Epub 2006 Nov 9.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in hormone replacement therapy: menopause and menopause.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>MF101 promoted ERbeta, but not ERalpha, activation of an estrogen response element (ERE) upstream of the luciferase reporter gene. MF101 also selectively regulates transcription of endogenous genes through ERbeta. The ERbeta-selectivity was not due to differential binding, since MF101 binds equally to ERalpha and ERbeta. Fluorescence resonance energy transfer and protease digestion studies showed that MF101 produces a different conformation in ERalpha from ERbeta, when compared with the conformations produced by estradiol. The specific conformational change induced by MF101 allows ERbeta to bind to an ERE and recruit coregulatory proteins that are required for gene activation. MF101 did not activate the ERalpha-regulated proliferative genes, c-myc and cyclin D1, or stimulate MCF-7 breast cancer cell proliferation or tumor formation in a mouse xenograft model.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909916</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000792</id>
+      <name>Estrogen receptor beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q92731" source="Swiss-Prot">
+        <name>Estrogen receptor beta</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Nuclear hormone receptor. Binds estrogens with an affinity similar to that of ESR1, and activates expression of reporter genes containing estrogen response elements (ERE) in an estrogen-dependent manner (PubMed:20074560). Isoform beta-cx lacks ligand binding ability and has no or only very low ere binding activity resulting in the loss of ligand-dependent transactivation ability. DNA-binding by ESR1 and ESR2 is rapidly lost at 37 degrees Celsius in the absence of ligand while in the presence of 17 beta-estradiol and 4-hydroxy-tamoxifen loss in DNA-binding at elevated temperature is more gradual.</specific-function>
+        <gene-name>ESR2</gene-name>
+        <locus>14q23.2</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.55</theoretical-pi>
+        <molecular-weight>59215.765</molecular-weight>
+        <chromosome-location>14</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3468</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ESR2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB006590</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2911152</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>621</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>621</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q92731</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ESR2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ER-beta</synonym>
+          <synonym>ESTRB</synonym>
+          <synonym>NR3A2</synonym>
+          <synonym>Nuclear receptor subfamily 3 group A member 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001580|Estrogen receptor beta
+MDIKNSPSSLNSPSSYNCSQSILPLEHGSIYIPSSYVDSHHEYPAMTFYSPAVMNYSIPS
+NVTNLEGGPGRQTTSPNVLWPTPGHLSPLVVHRQLSHLYAEPQKSPWCEARSLEHTLPVN
+RETLKRKVSGNRCASPVTGPGSKRDAHFCAVCSDYASGYHYGVWSCEGCKAFFKRSIQGH
+NDYICPATNQCTIDKNRRKSCQACRLRKCYEVGMVKCGSRRERCGYRLVRRQRSADEQLH
+CAGKAKRSGGHAPRVRELLLDALSPEQLVLTLLEAEPPHVLISRPSAPFTEASMMMSLTK
+LADKELVHMISWAKKIPGFVELSLFDQVRLLESCWMEVLMMGLMWRSIDHPGKLIFAPDL
+VLDRDEGKCVEGILEIFDMLLATTSRFRELKLQHKEYLCVKAMILLNSSMYPLVTATQDA
+DSSRKLAHLLNAVTDALVWVIAKSGISSQQQSMRLANLLMLLSHVRHASNKGMEHLLNMK
+CKNVVPVYDLLLEMLNAHVLRGCKSSITGSECSPAEDSKSKEGSQNPQSQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0020485|Estrogen receptor beta (ESR2)
+ATGGATATAAAAAACTCACCATCTAGCCTTAATTCTCCTTCCTCCTACAACTGCAGTCAA
+TCCATCTTACCCCTGGAGCACGGCTCCATATACATACCTTCCTCCTATGTAGACAGCCAC
+CATGAATATCCAGCCATGACATTCTATAGCCCTGCTGTGATGAATTACAGCATTCCCAGC
+AATGTCACTAACTTGGAAGGTGGGCCTGGTCGGCAGACCACAAGCCCAAATGTGTTGTGG
+CCAACACCTGGGCACCTTTCTCCTTTAGTGGTCCATCGCCAGTTATCACATCTGTATGCG
+GAACCTCAAAAGAGTCCCTGGTGTGAAGCAAGATCGCTAGAACACACCTTACCTGTAAAC
+AGAGAGACACTGAAAAGGAAGGTTAGTGGGAACCGTTGCGCCAGCCCTGTTACTGGTCCA
+GGTTCAAAGAGGGATGCTCACTTCTGCGCTGTCTGCAGCGATTACGCATCGGGATATCAC
+TATGGAGTCTGGTCGTGTGAAGGATGTAAGGCCTTTTTTAAAAGAAGCATTCAAGGACAT
+AATGATTATATTTGTCCAGCTACAAATCAGTGTACAATCGATAAAAACCGGCGCAAGAGC
+TGCCAGGCCTGCCGACTTCGGAAGTGTTACGAAGTGGGAATGGTGAAGTGTGGCTCCCGG
+AGAGAGAGATGTGGGTACCGCCTTGTGCGGAGACAGAGAAGTGCCGACGAGCAGCTGCAC
+TGTGCCGGCAAGGCCAAGAGAAGTGGCGGCCACGCGCCCCGAGTGCGGGAGCTGCTGCTG
+GACGCCCTGAGCCCCGAGCAGCTAGTGCTCACCCTCCTGGAGGCTGAGCCGCCCCATGTG
+CTGATCAGCCGCCCCAGTGCGCCCTTCACCGAGGCCTCCATGATGATGTCCCTGACCAAG
+TTGGCCGACAAGGAGTTGGTACACATGATCAGCTGGGCCAAGAAGATTCCCGGCTTTGTG
+GAGCTCAGCCTGTTCGACCAAGTGCGGCTCTTGGAGAGCTGTTGGATGGAGGTGTTAATG
+ATGGGGCTGATGTGGCGCTCAATTGACCACCCCGGCAAGCTCATCTTTGCTCCAGATCTT
+GTTCTGGACAGGGATGAGGGGAAATGCGTAGAAGGAATTCTGGAAATCTTTGACATGCTC
+CTGGCAACTACTTCAAGGTTTCGAGAGTTAAAACTCCAACACAAAGAATATCTCTGTGTC
+AAGGCCATGATCCTGCTCAATTCCAGTATGTACCCTCTGGTCACAGCGACCCAGGATGCT
+GACAGCAGCCGGAAGCTGGCTCACTTGCTGAACGCCGTGACCGATGCTTTGGTTTGGGTG
+ATTGCCAAGAGCGGCATCTCCTCCCAGCAGCAATCCATGCGCCTGGCTAACCTCCTGATG
+CTCCTGTCCCACGTCAGGCATGCGAGGGCAGAAAAGGCCTCTCAAACACTCACCTCATTT
+GGAATGAAGATGGAGACTCTTTTGCCTGAAGCAACGATGGAGCAGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00104</identifier>
+            <name>Hormone_recep</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00105</identifier>
+            <name>zf-C4</name>
+          </pfam>
+          <pfam>
+            <identifier>PF12497</identifier>
+            <name>ERbeta_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>core promoter sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>estrogen receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>estrogen response element binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor antagonist activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA polymerase II transcription factor activity, ligand-activated sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>steroid hormone receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription coactivator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transcription factor activity, sequence-specific DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell-cell signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular negative regulation of signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gene expression</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular estrogen receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell growth</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of sequence-specific DNA binding transcription factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transcription initiation from RNA polymerase II promoter</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

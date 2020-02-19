@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03811</drugbank-id>
+  <drugbank-id>EXPT01786</drugbank-id>
+  <name>Histidinol</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>142.181</average-mass>
+  <monoisotopic-mass>142.097488439</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as aralkylamines. These are alkylamines in which the alkyl group is substituted at one carbon atom by an aromatic hydrocarbyl group.</description>
+    <direct-parent>Aralkylamines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic nitrogen compounds</superclass>
+    <class>Organonitrogen compounds</class>
+    <subclass>Amines</subclass>
+    <alternative-parent>1,2-aminoalcohols</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Imidazoles</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Organic cations</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Primary alcohols</alternative-parent>
+    <substituent>1,2-aminoalcohol</substituent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aralkylamine</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imidazole</substituent>
+    <substituent>Organic cation</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Primary alcohol</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Alcohols</category>
+      <mesh-id>D000438</mesh-id>
+    </category>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Amino Alcohols</category>
+      <mesh-id>D000605</mesh-id>
+    </category>
+    <category>
+      <category>Imidazoles</category>
+      <mesh-id>D007093</mesh-id>
+    </category>
+    <category>
+      <category>Propanolamines</category>
+      <mesh-id>D011412</mesh-id>
+    </category>
+    <category>
+      <category>Propanols</category>
+      <mesh-id>D020005</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1h3j</pdb-entry>
+    <pdb-entry>1kae</pdb-entry>
+    <pdb-entry>1kmn</pdb-entry>
+    <pdb-entry>2bkd</pdb-entry>
+    <pdb-entry>2fpu</pdb-entry>
+    <pdb-entry>4gyf</pdb-entry>
+    <pdb-entry>4v8y</pdb-entry>
+    <pdb-entry>4v8z</pdb-entry>
+    <pdb-entry>5eq8</pdb-entry>
+    <pdb-entry>5vlc</pdb-entry>
+    <pdb-entry>5yht</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-0.11</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.36e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-1-hydroxy-3-(1H-imidazol-5-yl)propan-2-aminium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S)-1-hydroxy-3-(3H-imidazol-4-yl)propan-2-aminium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>142.181</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>142.097488439</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]([NH3+])(CO)CC1=CN=CN1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C6H12N3O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C6H11N3O/c7-5(3-10)1-6-2-8-4-9-6/h2,4-5,10H,1,3,7H2,(H,8,9)/p+1/t5-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ZQISRDCJNBUVMM-YFKPBYRVSA-O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>76.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>49.48</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>15.05</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>13.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.41</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>57699</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>6950298</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505522</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>5323244</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>HSO</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001751</id>
+      <name>Histidinol dehydrogenase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P06988" source="Swiss-Prot">
+        <name>Histidinol dehydrogenase</name>
+        <general-function>Zinc ion binding</general-function>
+        <specific-function>Catalyzes the sequential NAD-dependent oxidations of L-histidinol to L-histidinaldehyde and then to L-histidine.</specific-function>
+        <gene-name>hisD</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.81</theoretical-pi>
+        <molecular-weight>46109.815</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X13462</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>41709</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P06988</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>HISX_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.23</synonym>
+          <synonym>HDH</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011249|Histidinol dehydrogenase
+MSFNTIIDWNSCTAEQQRQLLMRPAISASESITRTVNDILDNVKARGDEALREYSAKFDK
+TTVTALKVSAEEIAAASERLSDELKQAMAVAVKNIETFHTAQKLPPVDVETQPGVRCQQV
+TRPVASVGLYIPGGSAPLFSTVLMLATPASIAGCKKVVLCSPPPIADEILYAAQLCGVQD
+VFNVGGAQAIAALAFGTESVPKVDKIFGPGNAFVTEAKRQVSQRLDGAAIDMPAGPSEVL
+VIADSGATPDFVASDLLSQAEHGPDSQVILLTPAADMARRVAEAVERQLAELPRAETARQ
+ALNASRLIVTKDLAQCVEISNQYGPEHLIIQTRNARELVDSITSAGSVFLGDWSPESAGD
+YASGTNHVLPTYGYTATCSSLGLADFQKRMTVQELSKEGFSALASTIETLAAAERLTAHK
+NAVTLRVNALKEQA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011250|Histidinol dehydrogenase (hisD)
+ATGAGCTTTAACACAATCATTGACTGGAATAGCTGTACTGCGGAGCAACAACGCCAGCTG
+TTAATGCGCCCGGCGATTTCCGCCTCTGAAAGCATTACCCGCACTGTTAACGATATTCTC
+GATAACGTGAAAGCACGCGGCGATGAGGCCCTGCGGGAATACAGCGCGAAGTTTGATAAA
+ACCACGGTTACCGCGCTGAAGGTGTCTGCAGAGGAGATCGCCGCCGCCAGCGAACGCCTG
+AGCGACGAGCTAAAACAGGCGATGGCGGTGGCAGTAAAGAATATTGAAACCTTCCACACT
+GCGCAAAAACTGCCGCCGGTAGATGTAGAAACGCAGCCAGGCGTGCGTTGCCAGCAGGTC
+ACGCGTCCGGTAGCTTCAGTTGGGTTGTATATTCCTGGCGGCTCCGCCCCGCTCTTCTCA
+ACGGTATTAATGCTGGCGACTCCGGCGAGTATTGCGGGCTGTAAAAAAGTGGTGCTGTGC
+TCACCGCCGCCGATTGCCGATGAGATCCTTTATGCGGCGCAGCTGTGCGGTGTGCAGGAC
+GTGTTTAACGTCGGCGGCGCACAGGCCATTGCCGCACTGGCGTTTGGTACGGAATCTGTG
+CCAAAAGTGGACAAAATCTTCGGGCCGGGTAACGCCTTTGTCACCGAAGCGAAACGTCAG
+GTGAGCCAGCGTCTGGACGGTGCGGCGATCGATATGCCCGCAGGCCCGTCGGAAGTGCTG
+GTGATTGCTGACAGCGGCGCTACGCCGGATTTCGTGGCTTCTGATTTGCTCTCTCAGGCT
+GAACACGGCCCGGACTCACAGGTGATTTTACTGACGCCCGCTGCTGATATGGCGCGTCGC
+GTTGCCGAGGCCGTCGAACGCCAACTGGCAGAACTGCCGCGTGCCGAAACCGCCCGCCAG
+GCACTGAACGCCAGCCGCCTGATCGTGACTAAAGATTTAGCGCAGTGCGTGGAGATCTCC
+AACCAGTACGGCCCGGAGCACCTGATCATTCAGACCCGCAACGCCCGTGAACTGGTCGAT
+AGCATCACCAGCGCCGGTTCGGTATTTCTTGGTGACTGGTCACCGGAATCGGCAGGTGAT
+TACGCCTCCGGCACCAACCACGTTCTACCGACTTACGGTTACACCGCCACCTGTTCCAGC
+CTCGGGCTGGCAGATTTCCAGAAGCGCATGACCGTACAGGAACTGTCGAAAGAGGGGTTC
+TCCGCGCTGGCTTCAACCATAGAAACACTGGCCGCCGCCGAGCGCCTGACCGCCCACAAA
+AATGCCGTTACTTTGCGTGTTAACGCCCTTAAGGAGCAAGCATGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00815</identifier>
+            <name>Histidinol_dh</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histidinol dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>manganese ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zinc ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histidine biosynthetic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001795</id>
+      <name>Histidine--tRNA ligase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P60906" source="Swiss-Prot">
+        <name>Histidine--tRNA ligase</name>
+        <general-function>Histidine-trna ligase activity</general-function>
+        <specific-function/>
+        <gene-name>hisS</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.72</theoretical-pi>
+        <molecular-weight>47029.085</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M11843</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>146372</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P60906</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SYH_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>6.1.1.21</synonym>
+          <synonym>HisRS</synonym>
+          <synonym>Histidyl-tRNA synthetase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011282|Histidine--tRNA ligase
+MAKNIQAIRGMNDYLPGETAIWQRIEGTLKNVLGSYGYSEIRLPIVEQTPLFKRAIGEVT
+DVVEKEMYTFEDRNGDSLTLRPEGTAGCVRAGIEHGLLYNQEQRLWYIGPMFRHERPQKG
+RYRQFHQLGCEVFGLQGPDIDAELIMLTARWWRALGISEHVTLELNSIGSLEARANYRDA
+LVAFLEQHKEKLDEDCKRRMYTNPLRVLDSKNPEVQALLNDAPALGDYLDEESREHFAGL
+CKLLESAGIAYTVNQRLVRGLDYYNRTVFEWVTNSLGSQGTVCAGGRYDGLVEQLGGRAT
+PAVGFAMGLERLVLLVQAVNPEFKADPVVDIYLVASGADTQSAAMALAERLRDELPGVKL
+MTNHGGGNFKKQFARADKWGARVAVVLGESEVANGTAVVKDLRSGEQTAVAQDSVAAHLR
+TLLG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011283|Histidine--tRNA ligase (hisS)
+GTGGCAAAAAACATTCAAGCCATTCGCGGCATGAACGATTACCTGCCTGGCGAAACGGCC
+ATCTGGCAGCGCATTGAAGGCACACTGAAAAACGTGCTCGGCAGCTACGGTTACAGTGAA
+ATCCGCTTGCCGATTGTAGAGCAGACCCCGCTATTCAAACGTGCGATTGGTGAAGTCACC
+GACGTGGTTGAAAAAGAGATGTACACCTTTGAGGATCGCAATGGCGACAGCCTGACTCTG
+CGCCCTGAAGGGACGGCGGGCTGTGTACGCGCCGGCATCGAGCATGGTCTTCTGTACAAT
+CAGGAACAGCGTCTGTGGTATATCGGGCCGATGTTCCGTCACGAGCGTCCGCAGAAAGGG
+CGTTATCGTCAGTTCCATCAGTTGGGCTGCGAAGTTTTCGGTCTGCAAGGTCCGGATATC
+GACGCTGAACTGATTATGCTCACTGCCCGCTGGTGGCGCGCGCTGGGTATTTCCGAGCAC
+GTAACTCTTGAGCTGAACTCTATCGGTTCGCTGGAAGCACGCGCCAATTACCGCGATGCG
+CTGGTGGCATTCCTTGAGCAGCATAAAGAAAAGCTGGACGAAGACTGCAAACGCCGCATG
+TACACTAACCCGCTGCGCGTGCTGGATTCAAAAAATCCGGAAGTGCAGGCGCTTCTCAAC
+GACGCTCCGGCATTAGGTGACTATCTGGACGAGGAATCTCGTGAGCATTTTGCCGGTCTG
+TGCAAACTGCTGGAGAGCGCGGGGATCGCTTACACCGTAAACCAGCGTCTGGTGCGTGGT
+CTGGATTACTACAACCGTACCGTTTTCGAGTGGGTGACTAACAGTCTCGGCTCCCAGGGC
+ACCGTGTGTGCAGGCGGTCGTTATGACGGTCTTGTGGAACAACTGGGCGGTCGTGCAACA
+CCGGCTGTCGGTTTTGCTATGGGCCTCGAACGTCTTGTATTGTTAGTACAGGCCGTTAAT
+CCGGAATTTAAAGCCGATCCTGTTGTCGATATATACCTGGTGGCTTCAGGTGCTGATACA
+CAATCTGCGGCTATGGCATTAGCTGAGCGTCTGCGTGATGAATTACCGGGCGTGAAATTG
+ATGACCAACCACGGCGGCGGCAACTTTAAGAAACAGTTTGCCCGTGCTGATAAATGGGGT
+GCCCGCGTTGCTGTGGTGCTGGGTGAGTCTGAAGTGGCTAACGGCACAGCAGTAGTGAAG
+GATTTGCGCTCTGGTGAGCAAACGGCAGTTGCGCAGGATAGCGTAGCCGCGCATTTGCGC
+ACGTTACTGGGTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03129</identifier>
+            <name>HGTP_anticodon</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>histidine-tRNA ligase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>histidyl-tRNA aminoacylation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

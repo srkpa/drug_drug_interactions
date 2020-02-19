@@ -208,7 +208,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
 
         # Configure the auxiliary network who process additional features
         if model_params['network_params'].get('auxnet_params', None):
-            model_params['network_params']["auxnet_params"]["input_dim"] = train_data.get_aux_input_dim()
+            model_params['network_params']["auxnet_params"]["input_dim"] = train_data.set_input_dim()
 
         if model_name == "adnn":
             train_data, valid_data, model_params = fit_encoders(model_params=model_params, train_data=train_data,

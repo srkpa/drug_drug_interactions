@@ -1,0 +1,1942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB13092</drugbank-id>
+  <drugbank-id>DB06798</drugbank-id>
+  <drugbank-id>DB05709</drugbank-id>
+  <name>Meclocycline</name>
+  <description>Meclocycline is under investigation in clinical trial NCT00385515 (Efficacy of SNX-1012 in the Treatment of Oral Mucositis) [L797].</description>
+  <cas-number>2013-58-3</cas-number>
+  <unii>23Q8M2HE6S</unii>
+  <average-mass>476.87</average-mass>
+  <monoisotopic-mass>476.0986433</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A19429</ref-id>
+        <pubmed-id>11381101</pubmed-id>
+        <citation>Chopra I, Roberts M: Tetracycline antibiotics: mode of action, applications, molecular biology, and epidemiology of bacterial resistance. Microbiol Mol Biol Rev. 2001 Jun;65(2):232-60 ; second page, table of contents.</citation>
+      </article>
+      <article>
+        <ref-id>A1424</ref-id>
+        <pubmed-id>16816396</pubmed-id>
+        <citation>Agwuh KN, MacGowan A: Pharmacokinetics and pharmacodynamics of the tetracyclines including glycylcyclines. J Antimicrob Chemother. 2006 Aug;58(2):256-65. Epub 2006 Jul 1.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links>
+      <link>
+        <ref-id>L797</ref-id>
+        <title>Meclocycline Phase II Trial: Oral Mucositis</title>
+        <url>https://clinicaltrials.gov/ct2/show/NCT00385515</url>
+      </link>
+    </links>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Currently under investigation for the topical treatment of ulcerative oral mucositis [L797]</indication>
+  <pharmacodynamics>Tetracyclines such as meclocycline are broad spectrum bacteriostatic agents [A19429]. Meclocyclin likely inhibits the growth of bacterial species present in the damaged oral mucosa, allowing the immune system to more easily eliminate infections.</pharmacodynamics>
+  <mechanism-of-action>As a tetracycline, meclocycline likely works by reversably associating with the 30s subint of the bacterial ribosome [A19429]. A likely binding site for tetracyclines has been identified on protein S7 of this subunit. This association blocks the association of aminoacyl-tRNA with the ribosome, inhibiting protein synthesis. Ultimately this inhibits bacterial growth due to a lack of proteins necessary for reproduction.</mechanism-of-action>
+  <toxicity>Oral LD50 of 6443mg/kg in rats [MSDS].</toxicity>
+  <metabolism>Most tetracyclines are not metabolized. It is unlikely that meclocycline would be metabolized [A1424].</metabolism>
+  <absorption>Estimated oral bioavailability of ~66% and tmax of 4h based on that of demeclocycline due to structural similarity [A1424].</absorption>
+  <half-life>Half life estimated to be ~5.6h based on that of chlortetracycline due to structural similarity [A1424].</half-life>
+  <protein-binding>Estimated plasma protein binding of ~75-91% based on that of demeclocycline due to structural similarity [A1424].</protein-binding>
+  <route-of-elimination>Estimated urinary excretion of ~40% and fecal excretion of ~43% based on that of demeclocycline due to structural similarity [A1424].</route-of-elimination>
+  <volume-of-distribution>Estimated Vd of 121L based on that of demeclocycline due to structural similarity [A1424].</volume-of-distribution>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as tetracyclines. These are polyketides having an octahydrotetracene-2-carboxamide skeleton, substituted with many hydroxy and other groups.</description>
+    <direct-parent>Tetracyclines</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Phenylpropanoids and polyketides</superclass>
+    <class>Tetracyclines</class>
+    <subclass/>
+    <alternative-parent>1-hydroxy-2-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>Amino acids and derivatives</alternative-parent>
+    <alternative-parent>Anthracenecarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Aryl chlorides</alternative-parent>
+    <alternative-parent>Aryl ketones</alternative-parent>
+    <alternative-parent>Cyclohexenones</alternative-parent>
+    <alternative-parent>Enols</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Naphthacenes</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Polyols</alternative-parent>
+    <alternative-parent>Primary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <alternative-parent>Tertiary alcohols</alternative-parent>
+    <alternative-parent>Tetralins</alternative-parent>
+    <alternative-parent>Trialkylamines</alternative-parent>
+    <alternative-parent>Vinylogous acids</alternative-parent>
+    <substituent>1-hydroxy-2-unsubstituted benzenoid</substituent>
+    <substituent>Alcohol</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Amino acid or derivatives</substituent>
+    <substituent>Anthracene carboxylic acid or derivatives</substituent>
+    <substituent>Aromatic homopolycyclic compound</substituent>
+    <substituent>Aryl chloride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Aryl ketone</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Cyclohexenone</substituent>
+    <substituent>Enol</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Ketone</substituent>
+    <substituent>Naphthacene</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organochloride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Polyol</substituent>
+    <substituent>Primary carboxylic acid amide</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Tertiary alcohol</substituent>
+    <substituent>Tertiary aliphatic amine</substituent>
+    <substituent>Tertiary amine</substituent>
+    <substituent>Tetracene</substituent>
+    <substituent>Tetracycline</substituent>
+    <substituent>Tetralin</substituent>
+    <substituent>Vinylogous acid</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002414</drugbank-id>
+      <name>Meclocycline sulfosalicylate</name>
+      <unii>46VZA7RX2B</unii>
+      <cas-number>73816-42-9</cas-number>
+      <inchikey>FYSVKUUNXYGFLA-CCHMMTNSSA-N</inchikey>
+      <average-mass>695.05</average-mass>
+      <monoisotopic-mass>694.0871524</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="spanish" coder="inn">Meclociclina</synonym>
+    <synonym language="english" coder="inn/ban/usan">Meclocycline</synonym>
+    <synonym language="latin" coder="inn">Meclocyclinum</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Anti-Acne Preparations</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Anti-Acne Preparations for Topical Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Antiinfectives for Treatment of Acne</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Dermatologicals</category>
+      <mesh-id>D003879</mesh-id>
+    </category>
+    <category>
+      <category>Naphthacenes</category>
+      <mesh-id>D009279</mesh-id>
+    </category>
+    <category>
+      <category>Tetracyclines</category>
+      <mesh-id>D013754</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Gram negative and gram positive bacteria</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes>
+    <atc-code code="D10AF04">
+      <level code="D10AF">Antiinfectives for treatment of acne</level>
+      <level code="D10A">ANTI-ACNE PREPARATIONS FOR TOPICAL USE</level>
+      <level code="D10">ANTI-ACNE PREPARATIONS</level>
+      <level code="D">DERMATOLOGICALS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB13092.pdf?1496421055</msds>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB01294</drugbank-id>
+      <name>Bismuth subsalicylate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Bismuth subsalicylate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00657</drugbank-id>
+      <name>Mecamylamine</name>
+      <description>Meclocycline may increase the neuromuscular blocking activities of Mecamylamine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05528</drugbank-id>
+      <name>Mipomersen</name>
+      <description>Meclocycline may increase the hepatotoxic activities of Mipomersen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00881</drugbank-id>
+      <name>Quinapril</name>
+      <description>Quinapril can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00364</drugbank-id>
+      <name>Sucralfate</name>
+      <description>Sucralfate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09146</drugbank-id>
+      <name>Iron sucrose</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Iron sucrose.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00301</drugbank-id>
+      <name>Flucloxacillin</name>
+      <description>The therapeutic efficacy of Flucloxacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00319</drugbank-id>
+      <name>Piperacillin</name>
+      <description>The therapeutic efficacy of Piperacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00415</drugbank-id>
+      <name>Ampicillin</name>
+      <description>The therapeutic efficacy of Ampicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00417</drugbank-id>
+      <name>Phenoxymethylpenicillin</name>
+      <description>The therapeutic efficacy of Phenoxymethylpenicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00485</drugbank-id>
+      <name>Dicloxacillin</name>
+      <description>The therapeutic efficacy of Dicloxacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00578</drugbank-id>
+      <name>Carbenicillin</name>
+      <description>The therapeutic efficacy of Carbenicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00607</drugbank-id>
+      <name>Nafcillin</name>
+      <description>The therapeutic efficacy of Nafcillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00713</drugbank-id>
+      <name>Oxacillin</name>
+      <description>The therapeutic efficacy of Oxacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00739</drugbank-id>
+      <name>Hetacillin</name>
+      <description>The therapeutic efficacy of Hetacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00895</drugbank-id>
+      <name>Benzylpenicilloyl polylysine</name>
+      <description>The therapeutic efficacy of Benzylpenicilloyl polylysine can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00948</drugbank-id>
+      <name>Mezlocillin</name>
+      <description>The therapeutic efficacy of Mezlocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01000</drugbank-id>
+      <name>Cyclacillin</name>
+      <description>The therapeutic efficacy of Cyclacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01053</drugbank-id>
+      <name>Benzylpenicillin</name>
+      <description>The therapeutic efficacy of Benzylpenicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01060</drugbank-id>
+      <name>Amoxicillin</name>
+      <description>The therapeutic efficacy of Amoxicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01061</drugbank-id>
+      <name>Azlocillin</name>
+      <description>The therapeutic efficacy of Azlocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01147</drugbank-id>
+      <name>Cloxacillin</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01163</drugbank-id>
+      <name>Amdinocillin</name>
+      <description>The therapeutic efficacy of Amdinocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01602</drugbank-id>
+      <name>Bacampicillin</name>
+      <description>The therapeutic efficacy of Bacampicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01603</drugbank-id>
+      <name>Meticillin</name>
+      <description>The therapeutic efficacy of Meticillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01604</drugbank-id>
+      <name>Pivampicillin</name>
+      <description>The therapeutic efficacy of Pivampicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01605</drugbank-id>
+      <name>Pivmecillinam</name>
+      <description>The therapeutic efficacy of Pivmecillinam can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01607</drugbank-id>
+      <name>Ticarcillin</name>
+      <description>The therapeutic efficacy of Ticarcillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08795</drugbank-id>
+      <name>Azidocillin</name>
+      <description>The therapeutic efficacy of Azidocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09319</drugbank-id>
+      <name>Carindacillin</name>
+      <description>The therapeutic efficacy of Carindacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09320</drugbank-id>
+      <name>Procaine benzylpenicillin</name>
+      <description>The therapeutic efficacy of Procaine benzylpenicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12127</drugbank-id>
+      <name>Sultamicillin</name>
+      <description>The therapeutic efficacy of Sultamicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12343</drugbank-id>
+      <name>Temocillin</name>
+      <description>The therapeutic efficacy of Temocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13300</drugbank-id>
+      <name>Epicillin</name>
+      <description>The therapeutic efficacy of Epicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13337</drugbank-id>
+      <name>Pheneticillin</name>
+      <description>The therapeutic efficacy of Pheneticillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13506</drugbank-id>
+      <name>Carfecillin</name>
+      <description>The therapeutic efficacy of Carfecillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13660</drugbank-id>
+      <name>Propicillin</name>
+      <description>The therapeutic efficacy of Propicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13686</drugbank-id>
+      <name>Clometocillin</name>
+      <description>The therapeutic efficacy of Clometocillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13693</drugbank-id>
+      <name>Sulbenicillin</name>
+      <description>The therapeutic efficacy of Sulbenicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13739</drugbank-id>
+      <name>Penamecillin</name>
+      <description>The therapeutic efficacy of Penamecillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13814</drugbank-id>
+      <name>Talampicillin</name>
+      <description>The therapeutic efficacy of Talampicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13816</drugbank-id>
+      <name>Aspoxicillin</name>
+      <description>The therapeutic efficacy of Aspoxicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13836</drugbank-id>
+      <name>Metampicillin</name>
+      <description>The therapeutic efficacy of Metampicillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09268</drugbank-id>
+      <name>Picosulfuric acid</name>
+      <description>The therapeutic efficacy of Picosulfuric acid can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09275</drugbank-id>
+      <name>Bismuth subcitrate potassium</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Bismuth subcitrate potassium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09267</drugbank-id>
+      <name>Strontium ranelate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Strontium ranelate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00326</drugbank-id>
+      <name>Calcium glucoheptonate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium glucoheptonate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13142</drugbank-id>
+      <name>Calcium glubionate anhydrous</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium glubionate anhydrous.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11126</drugbank-id>
+      <name>Calcium gluconate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium gluconate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11093</drugbank-id>
+      <name>Calcium Citrate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium Citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11348</drugbank-id>
+      <name>Calcium Phosphate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium Phosphate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13231</drugbank-id>
+      <name>Calcium lactate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium lactate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13365</drugbank-id>
+      <name>Calcium lactate gluconate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium lactate gluconate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13590</drugbank-id>
+      <name>Calcium pangamate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium pangamate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13800</drugbank-id>
+      <name>Calcium levulinate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium levulinate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00258</drugbank-id>
+      <name>Calcium acetate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium acetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01164</drugbank-id>
+      <name>Calcium chloride</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium Chloride.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06724</drugbank-id>
+      <name>Calcium carbonate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium carbonate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01373</drugbank-id>
+      <name>Calcium</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14577</drugbank-id>
+      <name>Calcium cation</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium cation.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14684</drugbank-id>
+      <name>Calcium polycarbophil</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Calcium polycarbophil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00375</drugbank-id>
+      <name>Colestipol</name>
+      <description>Colestipol can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00930</drugbank-id>
+      <name>Colesevelam</name>
+      <description>Colesevelam can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01432</drugbank-id>
+      <name>Cholestyramine</name>
+      <description>Cholestyramine can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00658</drugbank-id>
+      <name>Sevelamer</name>
+      <description>Sevelamer can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00653</drugbank-id>
+      <name>Magnesium sulfate</name>
+      <description>Magnesium sulfate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01377</drugbank-id>
+      <name>Magnesium oxide</name>
+      <description>Magnesium oxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01397</drugbank-id>
+      <name>Magnesium salicylate</name>
+      <description>Magnesium salicylate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08938</drugbank-id>
+      <name>Magaldrate</name>
+      <description>Magaldrate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09104</drugbank-id>
+      <name>Magnesium hydroxide</name>
+      <description>Magnesium hydroxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09281</drugbank-id>
+      <name>Magnesium trisilicate</name>
+      <description>Magnesium trisilicate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09407</drugbank-id>
+      <name>Magnesium chloride</name>
+      <description>Magnesium chloride can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09481</drugbank-id>
+      <name>Magnesium carbonate</name>
+      <description>Magnesium carbonate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11110</drugbank-id>
+      <name>Magnesium citrate</name>
+      <description>Magnesium citrate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13249</drugbank-id>
+      <name>Magnesium silicate</name>
+      <description>Magnesium silicate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13322</drugbank-id>
+      <name>Hydrotalcite</name>
+      <description>Hydrotalcite can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13359</drugbank-id>
+      <name>Magnesium aspartate</name>
+      <description>Magnesium aspartate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13486</drugbank-id>
+      <name>Magnesium peroxide</name>
+      <description>Magnesium peroxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13749</drugbank-id>
+      <name>Magnesium gluconate</name>
+      <description>Magnesium gluconate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13786</drugbank-id>
+      <name>Magnesium orotate</name>
+      <description>Magnesium orotate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14513</drugbank-id>
+      <name>Magnesium</name>
+      <description>Magnesium can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14514</drugbank-id>
+      <name>Magnesium levulinate</name>
+      <description>Magnesium levulinate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14515</drugbank-id>
+      <name>Magnesium lactate</name>
+      <description>Magnesium lactate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06723</drugbank-id>
+      <name>Aluminum hydroxide</name>
+      <description>Aluminum hydroxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01370</drugbank-id>
+      <name>Aluminium</name>
+      <description>Aluminium can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13209</drugbank-id>
+      <name>Bismuth subnitrate</name>
+      <description>Bismuth subnitrate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13280</drugbank-id>
+      <name>Aluminium acetoacetate</name>
+      <description>Aluminium acetoacetate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13595</drugbank-id>
+      <name>Almasilate</name>
+      <description>Almasilate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13626</drugbank-id>
+      <name>Aluminium glycinate</name>
+      <description>Aluminium glycinate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13650</drugbank-id>
+      <name>Aloglutamol</name>
+      <description>Aloglutamol can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13829</drugbank-id>
+      <name>Calcium silicate</name>
+      <description>Calcium silicate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01390</drugbank-id>
+      <name>Sodium bicarbonate</name>
+      <description>Sodium bicarbonate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14517</drugbank-id>
+      <name>Aluminium phosphate</name>
+      <description>Aluminium phosphate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01593</drugbank-id>
+      <name>Zinc</name>
+      <description>Zinc can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02165</drugbank-id>
+      <name>Zinc trihydroxide</name>
+      <description>Zinc trihydroxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04249</drugbank-id>
+      <name>Zinc Substituted Heme C</name>
+      <description>Zinc Substituted Heme C can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09221</drugbank-id>
+      <name>Polaprezinc</name>
+      <description>Polaprezinc can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09321</drugbank-id>
+      <name>Zinc oxide</name>
+      <description>Zinc oxide can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09322</drugbank-id>
+      <name>Zinc sulfate</name>
+      <description>Zinc sulfate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11154</drugbank-id>
+      <name>Zinc citrate</name>
+      <description>Zinc citrate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11175</drugbank-id>
+      <name>Zinc picolinate</name>
+      <description>Zinc picolinate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11248</drugbank-id>
+      <name>Zinc gluconate</name>
+      <description>Zinc gluconate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14193</drugbank-id>
+      <name>Ditiocarb Zinc</name>
+      <description>Ditiocarb Zinc can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14194</drugbank-id>
+      <name>Zinc Dibutyldithiocarbamate</name>
+      <description>Zinc Dibutyldithiocarbamate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14479</drugbank-id>
+      <name>Acetylcysteine zinc</name>
+      <description>Acetylcysteine zinc can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14485</drugbank-id>
+      <name>Zinc ascorbate</name>
+      <description>Zinc ascorbate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14487</drugbank-id>
+      <name>Zinc acetate</name>
+      <description>Zinc acetate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14493</drugbank-id>
+      <name>Zinc glycinate</name>
+      <description>Zinc glycinate can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14533</drugbank-id>
+      <name>Zinc chloride</name>
+      <description>Zinc chloride can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14548</drugbank-id>
+      <name>Zinc sulfate, unspecified form</name>
+      <description>Zinc sulfate, unspecified form can cause a decrease in the absorption of Meclocycline resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06792</drugbank-id>
+      <name>Lanthanum carbonate</name>
+      <description>The serum concentration of Meclocycline can be decreased when it is combined with Lanthanum carbonate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00294</drugbank-id>
+      <name>Etonogestrel</name>
+      <description>The serum concentration of Etonogestrel can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00304</drugbank-id>
+      <name>Desogestrel</name>
+      <description>The serum concentration of Desogestrel can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00351</drugbank-id>
+      <name>Megestrol acetate</name>
+      <description>The serum concentration of Megestrol acetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00367</drugbank-id>
+      <name>Levonorgestrel</name>
+      <description>The serum concentration of Levonorgestrel can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00378</drugbank-id>
+      <name>Dydrogesterone</name>
+      <description>The serum concentration of Dydrogesterone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00396</drugbank-id>
+      <name>Progesterone</name>
+      <description>The serum concentration of Progesterone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00603</drugbank-id>
+      <name>Medroxyprogesterone acetate</name>
+      <description>The serum concentration of Medroxyprogesterone acetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00717</drugbank-id>
+      <name>Norethisterone</name>
+      <description>The serum concentration of Norethisterone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00823</drugbank-id>
+      <name>Ethynodiol diacetate</name>
+      <description>The serum concentration of Ethynodiol diacetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00957</drugbank-id>
+      <name>Norgestimate</name>
+      <description>The serum concentration of Norgestimate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01395</drugbank-id>
+      <name>Drospirenone</name>
+      <description>The serum concentration of Drospirenone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01431</drugbank-id>
+      <name>Allylestrenol</name>
+      <description>The serum concentration of Allylestrenol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04839</drugbank-id>
+      <name>Cyproterone acetate</name>
+      <description>The serum concentration of Cyproterone acetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06713</drugbank-id>
+      <name>Norelgestromin</name>
+      <description>The serum concentration of Norelgestromin can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06730</drugbank-id>
+      <name>Gestodene</name>
+      <description>The serum concentration of Gestodene can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06789</drugbank-id>
+      <name>Hydroxyprogesterone caproate</name>
+      <description>The serum concentration of Hydroxyprogesterone caproate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09123</drugbank-id>
+      <name>Dienogest</name>
+      <description>The serum concentration of Dienogest can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09124</drugbank-id>
+      <name>Medrogestone</name>
+      <description>The serum concentration of Medrogestone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09371</drugbank-id>
+      <name>Norethynodrel</name>
+      <description>The serum concentration of Norethynodrel can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09389</drugbank-id>
+      <name>Norgestrel</name>
+      <description>The serum concentration of Norgestrel can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11372</drugbank-id>
+      <name>Altrenogest</name>
+      <description>The serum concentration of Altrenogest can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11619</drugbank-id>
+      <name>Gestrinone</name>
+      <description>The serum concentration of Gestrinone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11636</drugbank-id>
+      <name>Nomegestrol</name>
+      <description>The serum concentration of Nomegestrol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12474</drugbank-id>
+      <name>Lynestrenol</name>
+      <description>The serum concentration of Lynestrenol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13230</drugbank-id>
+      <name>Gestonorone</name>
+      <description>The serum concentration of Gestonorone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13528</drugbank-id>
+      <name>Chlormadinone</name>
+      <description>The serum concentration of Chlormadinone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13533</drugbank-id>
+      <name>Methylestrenolone</name>
+      <description>The serum concentration of Methylestrenolone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13563</drugbank-id>
+      <name>Norgestrienone</name>
+      <description>The serum concentration of Norgestrienone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13602</drugbank-id>
+      <name>Promegestone</name>
+      <description>The serum concentration of Promegestone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13685</drugbank-id>
+      <name>Quingestanol</name>
+      <description>The serum concentration of Quingestanol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13857</drugbank-id>
+      <name>Demegestone</name>
+      <description>The serum concentration of Demegestone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13866</drugbank-id>
+      <name>Etynodiol</name>
+      <description>The serum concentration of Etynodiol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13981</drugbank-id>
+      <name>Nomegestrol acetate</name>
+      <description>The serum concentration of Nomegestrol acetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14570</drugbank-id>
+      <name>Hydroxyprogesterone</name>
+      <description>The serum concentration of Hydroxyprogesterone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14678</drugbank-id>
+      <name>Norethindrone enanthate</name>
+      <description>The serum concentration of Norethindrone enanthate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14679</drugbank-id>
+      <name>Quingestanol acetate</name>
+      <description>The serum concentration of Quingestanol acetate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09139</drugbank-id>
+      <name>Technetium Tc-99m oxidronate</name>
+      <description>Meclocycline may decrease effectiveness of Technetium Tc-99m oxidronate as a diagnostic agent.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>The risk or severity of bleeding can be increased when Meclocycline is combined with (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04272</drugbank-id>
+      <name>Citric acid</name>
+      <description>The therapeutic efficacy of Meclocycline can be decreased when used in combination with Citric acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09125</drugbank-id>
+      <name>Potassium citrate</name>
+      <description>The therapeutic efficacy of Meclocycline can be decreased when used in combination with Potassium citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09154</drugbank-id>
+      <name>Sodium citrate</name>
+      <description>The therapeutic efficacy of Meclocycline can be decreased when used in combination with Sodium citrate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09459</drugbank-id>
+      <name>L-tartaric acid</name>
+      <description>The therapeutic efficacy of Meclocycline can be decreased when used in combination with L-tartaric acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00390</drugbank-id>
+      <name>Digoxin</name>
+      <description>Meclocycline can cause an increase in the absorption of Digoxin resulting in an increased serum concentration and potentially a worsening of adverse effects.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13401</drugbank-id>
+      <name>Metildigoxin</name>
+      <description>Meclocycline can cause an increase in the absorption of Metildigoxin resulting in an increased serum concentration and potentially a worsening of adverse effects.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13691</drugbank-id>
+      <name>Acetyldigoxin</name>
+      <description>Meclocycline can cause an increase in the absorption of Acetyldigoxin resulting in an increased serum concentration and potentially a worsening of adverse effects.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00162</drugbank-id>
+      <name>Vitamin A</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Vitamin A is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00307</drugbank-id>
+      <name>Bexarotene</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Bexarotene is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00459</drugbank-id>
+      <name>Acitretin</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Acitretin is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00523</drugbank-id>
+      <name>Alitretinoin</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Alitretinoin is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00755</drugbank-id>
+      <name>Tretinoin</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Tretinoin is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00799</drugbank-id>
+      <name>Tazarotene</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Tazarotene is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00926</drugbank-id>
+      <name>Etretinate</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Etretinate is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00982</drugbank-id>
+      <name>Isotretinoin</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Isotretinoin is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02699</drugbank-id>
+      <name>4-Oxoretinol</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when 4-Oxoretinol is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05076</drugbank-id>
+      <name>Fenretinide</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Fenretinide is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08455</drugbank-id>
+      <name>Ro 12-7310</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Ro 12-7310 is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12112</drugbank-id>
+      <name>Zuretinol acetate</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Zuretinol acetate is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13368</drugbank-id>
+      <name>Motretinide</name>
+      <description>The risk or severity of pseudotumor cerebri and elevated intracranial pressure can be increased when Motretinide is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00255</drugbank-id>
+      <name>Diethylstilbestrol</name>
+      <description>The serum concentration of Diethylstilbestrol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00783</drugbank-id>
+      <name>Estradiol</name>
+      <description>The serum concentration of Estradiol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00834</drugbank-id>
+      <name>Mifepristone</name>
+      <description>The serum concentration of Mifepristone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00977</drugbank-id>
+      <name>Ethinylestradiol</name>
+      <description>The serum concentration of Ethinylestradiol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01115</drugbank-id>
+      <name>Nifedipine</name>
+      <description>The serum concentration of Nifedipine can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01357</drugbank-id>
+      <name>Mestranol</name>
+      <description>The serum concentration of Mestranol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04066</drugbank-id>
+      <name>para-Coumaric Acid</name>
+      <description>The serum concentration of para-Coumaric Acid can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04574</drugbank-id>
+      <name>Estrone sulfate</name>
+      <description>The serum concentration of Estrone sulfate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04682</drugbank-id>
+      <name>Octylphenoxy polyethoxyethanol</name>
+      <description>The serum concentration of Octylphenoxy polyethoxyethanol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05830</drugbank-id>
+      <name>Trestolone</name>
+      <description>The serum concentration of Trestolone can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06266</drugbank-id>
+      <name>Lonidamine</name>
+      <description>The serum concentration of Lonidamine can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08867</drugbank-id>
+      <name>Ulipristal</name>
+      <description>The serum concentration of Ulipristal can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09401</drugbank-id>
+      <name>Isosorbide</name>
+      <description>The serum concentration of Isosorbide can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11507</drugbank-id>
+      <name>Cloprostenol</name>
+      <description>The serum concentration of Cloprostenol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12025</drugbank-id>
+      <name>Triptolide</name>
+      <description>The serum concentration of Triptolide can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13044</drugbank-id>
+      <name>Gossypol</name>
+      <description>The serum concentration of Gossypol can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13310</drugbank-id>
+      <name>Ormeloxifene</name>
+      <description>The serum concentration of Ormeloxifene can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13944</drugbank-id>
+      <name>Testosterone enanthate</name>
+      <description>The serum concentration of Testosterone enanthate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13953</drugbank-id>
+      <name>Estradiol benzoate</name>
+      <description>The serum concentration of Estradiol benzoate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13954</drugbank-id>
+      <name>Estradiol cypionate</name>
+      <description>The serum concentration of Estradiol cypionate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13956</drugbank-id>
+      <name>Estradiol valerate</name>
+      <description>The serum concentration of Estradiol valerate can be decreased when it is combined with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Methotrexate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00581</drugbank-id>
+      <name>Lactulose</name>
+      <description>The therapeutic efficacy of Lactulose can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00893</drugbank-id>
+      <name>Iron Dextran</name>
+      <description>Meclocycline can cause a decrease in the absorption of Iron Dextran resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01592</drugbank-id>
+      <name>Iron</name>
+      <description>Meclocycline can cause a decrease in the absorption of Iron resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06783</drugbank-id>
+      <name>Prussian blue</name>
+      <description>Meclocycline can cause a decrease in the absorption of Prussian blue resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09147</drugbank-id>
+      <name>Ferric pyrophosphate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric pyrophosphate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09501</drugbank-id>
+      <name>Ferric ammonium citrate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric ammonium citrate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09507</drugbank-id>
+      <name>Ferumoxsil</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferumoxsil resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09508</drugbank-id>
+      <name>Ferumoxides</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferumoxides resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11171</drugbank-id>
+      <name>Ferric sulfate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric sulfate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11210</drugbank-id>
+      <name>Ferrous bisglycinate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous bisglycinate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11417</drugbank-id>
+      <name>Gleptoferron</name>
+      <description>Meclocycline can cause a decrease in the absorption of Gleptoferron resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11576</drugbank-id>
+      <name>Ferric oxide</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric oxide resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12208</drugbank-id>
+      <name>Iron isomaltoside 1000</name>
+      <description>Meclocycline can cause a decrease in the absorption of Iron isomaltoside 1000 resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12821</drugbank-id>
+      <name>Perflubutane</name>
+      <description>Meclocycline can cause a decrease in the absorption of Perflubutane resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13257</drugbank-id>
+      <name>Ferrous sulfate anhydrous</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous sulfate anhydrous resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13381</drugbank-id>
+      <name>Sodium feredetate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Sodium feredetate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13423</drugbank-id>
+      <name>Ferric hydroxide</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric hydroxide resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13569</drugbank-id>
+      <name>Ferrous chloride</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous chloride resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13949</drugbank-id>
+      <name>Ferric cation</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric cation resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14488</drugbank-id>
+      <name>Ferrous gluconate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous gluconate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14489</drugbank-id>
+      <name>Ferrous succinate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous succinate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14491</drugbank-id>
+      <name>Ferrous fumarate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferrous fumarate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14520</drugbank-id>
+      <name>Tetraferric tricitrate decahydrate</name>
+      <description>Meclocycline can cause a decrease in the absorption of Tetraferric tricitrate decahydrate resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14695</drugbank-id>
+      <name>Ferric oxyhydroxide</name>
+      <description>Meclocycline can cause a decrease in the absorption of Ferric oxyhydroxide resulting in a reduced serum concentration and potentially a decrease in efficacy.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0.11</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.42e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(4S,4aR,5S,5aR,12aS)-7-chloro-4-(dimethylamino)-3,5,10,12,12a-pentahydroxy-6-methylidene-1,11-dioxo-1,4,4a,5,5a,6,11,12a-octahydrotetracene-2-carboxamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>4-{5-methoxy-2-[(4-methoxy-3,5-dimethylpyridin-2-yl)methanesulfinyl]-1,3-benzodiazol-1-ylsulfonyl}phenoxyacetic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>476.87</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>476.0986433</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]12[C@@H](O)[C@]3([H])C(=C)C4=C(C(O)=CC=C4Cl)C(=O)C3=C(O)[C@]1(O)C(=O)C(C(N)=O)=C(O)[C@H]2N(C)C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C22H21ClN2O8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C22H21ClN2O8/c1-6-9-7(23)4-5-8(26)11(9)16(27)12-10(6)17(28)14-15(25(2)3)18(29)13(21(24)32)20(31)22(14,33)19(12)30/h4-5,10,14-15,17,26,28-30,33H,1H2,2-3H3,(H2,24,32)/t10-,14-,15+,17+,22+/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>GGQJXCQBBONZFX-IWVLMIASSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>181.62</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>118.47</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>44.05</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.95</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.82</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>Soluble</value>
+      <source>MSDS</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>135772</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>54676539</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347829216</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>16735890</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Meclocycline</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1237124</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="3">
+      <id>BE0004653</id>
+      <name>30S ribosomal protein S7</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions>
+        <action>antagonist</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19429</ref-id>
+            <pubmed-id>11381101</pubmed-id>
+            <citation>Chopra I, Roberts M: Tetracycline antibiotics: mode of action, applications, molecular biology, and epidemiology of bacterial resistance. Microbiol Mol Biol Rev. 2001 Jun;65(2):232-60 ; second page, table of contents.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P02359" source="Swiss-Prot">
+        <name>30S ribosomal protein S7</name>
+        <general-function>Trna binding</general-function>
+        <specific-function>One of the primary rRNA binding proteins, it binds directly to 16S rRNA where it nucleates assembly of the head domain of the 30S subunit. Is located at the subunit interface close to the decoding center, where it has been shown to contact mRNA. Has been shown to contact tRNA in both the P and E sites; it probably blocks exit of the E site tRNA.Protein S7 is also a translational repressor protein; it regulates the expression of the str operon members to different degrees by binding to its mRNA.</specific-function>
+        <gene-name>rpsG</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>20018.91</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02359</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RS7_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017498|30S ribosomal protein S7
+MPRRRVIGQRKILPDPKFGSELLAKFVNILMVDGKKSTAESIVYSALETLAQRSGKSELE
+AFEVALENVRPTVEVKSRRVGGSTYQVPVEVRPVRRNALAMRWIVEAARKRGDKSMALRL
+ANELSDAAENKGTAVKKREDVHRMAEANKAFAHYRWLSLRSFSHQAGASSKQPALGYLN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0017499|30S ribosomal protein S7 (rpsG)
+ATGCCACGTCGTCGCGTCATTGGTCAGCGTAAAATTCTGCCGGATCCGAAGTTCGGATCA
+GAACTGCTGGCTAAATTTGTAAATATCCTGATGGTAGATGGTAAAAAATCTACTGCTGAA
+TCTATCGTATACAGCGCGCTGGAGACCCTGGCTCAGCGCTCTGGTAAATCTGAACTGGAA
+GCATTCGAAGTAGCTCTCGAAAACGTGCGCCCGACTGTAGAAGTTAAGTCTCGCCGCGTT
+GGTGGTTCTACTTATCAGGTACCAGTTGAAGTCCGTCCGGTTCGTCGTAATGCTCTGGCA
+ATGCGTTGGATCGTTGAAGCTGCTCGTAAACGCGGTGATAAATCCATGGCTCTGCGCCTG
+GCGAACGAACTTTCTGATGCTGCAGAAAACAAAGGTACTGCAGTTAAGAAACGTGAAGAC
+GTTCACCGTATGGCCGAAGCCAACAAGGCGTTCGCACACTACCGTTGGTTATCCCTTCGG
+AGTTTTAGTCACCAGGCGGGCGCTTCCAGTAAGCAGCCCGCTTTGGGCTACTTAAATTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00177</identifier>
+            <name>Ribosomal_S7</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosolic small ribosomal subunit</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>rRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>structural constituent of ribosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of translation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ribosomal small subunit assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>translation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme position="4">
+      <id>BE0008679</id>
+      <name>TetX family tetracycline inactivation enzyme</name>
+      <organism>Bacteroides thetaiotaomicron</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19429</ref-id>
+            <pubmed-id>11381101</pubmed-id>
+            <citation>Chopra I, Roberts M: Tetracycline antibiotics: mode of action, applications, molecular biology, and epidemiology of bacterial resistance. Microbiol Mol Biol Rev. 2001 Jun;65(2):232-60 ; second page, table of contents.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>no</known-action>
+      <polypeptide id="Q93L51" source="TrEMBL">
+        <name>TetX family tetracycline inactivation enzyme</name>
+        <general-function>Oxidoreductase activity</general-function>
+        <specific-function/>
+        <gene-name>tetX2</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>43707.345</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="818">Bacteroides thetaiotaomicron</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q93L51</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q93L51_BACT4</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>TetX2 protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0049435|TetX family tetracycline inactivation enzyme
+MTMRIDTDKQMNLLSDKNVAIIGGGPVGLTMAKLLQQNGIDVSVYERDNDREARIFGGTL
+DLHKGSGQEAMKKAGLLQTYYDLALPMGVNIADEKGNILSTKNVKPENRFDNPEINRNDL
+RAILLNSLENDTVIWDRKLVMLEPGKKKWTLTFENKPSETADLVILANGGMSKVRKFVTD
+TEVEETGTFNIQADIHQPEINCPGFFQLCNGNRLMASHQGNLLFANPNNNGALHFGISFK
+TPDEWKNQTQVDFQNRNSVVDFLLKEFSDWDERYKELIHTTLSFVGLATRIFPLEKPWKS
+KRPLPITMIGDAAHLMPPFAGQGVNSGLVDALILSDNLADGKFNSIEEAVKNYEQQMFIY
+GKEAQEESTQNEIEMFKPDFTFQQLLNV</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF01494</identifier>
+            <name>FAD_binding_3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>FAD binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters>
+    <transporter position="1">
+      <id>BE0001570</id>
+      <name>Outer membrane protein F</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19429</ref-id>
+            <pubmed-id>11381101</pubmed-id>
+            <citation>Chopra I, Roberts M: Tetracycline antibiotics: mode of action, applications, molecular biology, and epidemiology of bacterial resistance. Microbiol Mol Biol Rev. 2001 Jun;65(2):232-60 ; second page, table of contents.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>no</known-action>
+      <polypeptide id="P02931" source="Swiss-Prot">
+        <name>Outer membrane protein F</name>
+        <general-function>Porin activity</general-function>
+        <specific-function>Forms pores that allow passive diffusion of small molecules across the outer membrane. It is also a receptor for the bacteriophage T2.</specific-function>
+        <gene-name>ompF</gene-name>
+        <locus/>
+        <cellular-location>Cell outer membrane</cellular-location>
+        <transmembrane-regions>23-28
+30-45
+61-73
+76-88
+105-113
+116-122
+157-163
+172-181
+194-204
+206-217
+233-244
+246-257
+275-287
+290-303
+314-325
+328-337
+353-362</transmembrane-regions>
+        <signal-regions>1-22</signal-regions>
+        <theoretical-pi>4.53</theoretical-pi>
+        <molecular-weight>39333.105</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J01655</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>147010</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02931</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>OMPF_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>cmlB</synonym>
+          <synonym>coa</synonym>
+          <synonym>cry</synonym>
+          <synonym>Outer membrane protein 1A</synonym>
+          <synonym>Outer membrane protein B</synonym>
+          <synonym>Outer membrane protein IA</synonym>
+          <synonym>Porin OmpF</synonym>
+          <synonym>tolF</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011111|Outer membrane protein F
+MMKRNILAVIVPALLVAGTANAAEIYNKDGNKVDLYGKAVGLHYFSKGNGENSYGGNGDM
+TYARLGFKGETQINSDLTGYGQWEYNFQGNNSEGADAQTGNKTRLAFAGLKYADVGSFDY
+GRNYGVVYDALGYTDMLPEFGGDTAYSDDFFVGRVGGVATYRNSNFFGLVDGLNFAVQYL
+GKNERDTARRSNGDGVGGSISYEYEGFGIVGAYGAADRTNLQEAQPLGNGKKAEQWATGL
+KYDANNIYLAANYGETRNATPITNKFTNTSGFANKTQDVLLVAQYQFDFGLRPSIAYTKS
+KAKDVEGIGDVDLVNYFEVGATYYFNKNMSTYVDYIINQIDSDNKLGVGSDDTVAVGIVY
+QF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011112|Outer membrane protein F (ompF)
+ATGATGAAGCGCAATATTCTGGCAGTGATCGTCCCTGCTCTGTTAGTAGCAGGTACTGCA
+AACGCTGCAGAAATCTATAACAAAGATGGCAACAAAGTAGATCTGTACGGTAAAGCTGTT
+GGTCTGCATTATTTTTCCAAGGGTAACGGTGAAAACAGTTACGGTGGCAATGGCGACATG
+ACCTATGCCCGTCTTGGTTTTAAAGGGGAAACTCAAATCAATTCCGATCTGACCGGTTAT
+GGTCAGTGGGAATATAACTTCCAGGGTAACAACTCTGAAGGCGCTGACGCTCAAACTGGT
+AACAAAACGCGTCTGGCATTCGCGGGTCTTAAATACGCTGACGTTGGTTCTTTCGATTAC
+GGCCGTAACTACGGTGTGGTTTATGATGCACTGGGTTACACCGATATGCTGCCAGAATTT
+GGTGGTGATACTGCATACAGCGATGACTTCTTCGTTGGTCGTGTTGGCGGCGTTGCTACC
+TATCGTAACTCCAACTTCTTTGGTCTGGTTGATGGCCTGAACTTCGCTGTTCAGTACCTG
+GGTAAAAACGAGCGTGACACTGCACGCCGTTCTAACGGCGACGGTGTTGGCGGTTCTATC
+AGCTACGAATACGAAGGCTTTGGTATCGTTGGTGCTTATGGTGCAGCTGACCGTACCAAC
+CTGCAAGAAGCTCAACCTCTTGGCAACGGTAAAAAAGCTGAACAGTGGGCTACTGGTCTG
+AAGTACGACGCGAACAACATCTACCTGGCAGCGAACTACGGTGAAACCCGTAACGCTACG
+CCGATCACTAATAAATTTACAAACACCAGCGGCTTCGCCAACAAAACGCAAGACGTTCTG
+TTAGTTGCGCAATACCAGTTCGATTTCGGTCTGCGTCCGTCCATCGCTTACACCAAATCT
+AAAGCGAAAGACGTAGAAGGTATCGGTGATGTTGATCTGGTGAACTACTTTGAAGTGGGC
+GCAACCTACTACTTCAACAAAAACATGTCCACCTATGTTGACTACATCATCAACCAGATC
+GATTCTGACAACAAACTGGGCGTAGGTTCAGACGACACCGTTGCTGTGGGTATCGTTTAC
+CAGTTCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00267</identifier>
+            <name>Porin_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>pore complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>colicin transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>porin activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bacteriocin transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="2">
+      <id>BE0003941</id>
+      <name>Outer membrane porin C</name>
+      <organism>Escherichia coli</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19429</ref-id>
+            <pubmed-id>11381101</pubmed-id>
+            <citation>Chopra I, Roberts M: Tetracycline antibiotics: mode of action, applications, molecular biology, and epidemiology of bacterial resistance. Microbiol Mol Biol Rev. 2001 Jun;65(2):232-60 ; second page, table of contents.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9K597" source="TrEMBL">
+        <name>Membrane protein</name>
+        <general-function>Porin activity</general-function>
+        <specific-function/>
+        <gene-name>ompC</gene-name>
+        <locus/>
+        <cellular-location>Cell outer membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-21</signal-regions>
+        <theoretical-pi>4.3</theoretical-pi>
+        <molecular-weight>40311.865</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="562">Escherichia coli</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>EU372012</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>166079762</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9K597</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q9K597_ECOLX</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Outer membrane porin C</synonym>
+          <synonym>Outer membrane protein C</synonym>
+          <synonym>Uncharacterized protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0017274|Membrane protein
+MKVKVLSLLVPALLVAGAANAAEIYNKDGNKLDLYGKVDGLHYFSDNDSKDGDKTYMRLG
+FKGETQVTDQLTGYGQWEYQIQGNEPESDNSSWTRVAFAGLKFQDVGSFDYGRNYGVVYD
+VTSWTDVLPEFGGDTYDSDNFMQQRGNGFATYRNTDFFGLVDGLDFAVQYQGKNGSAHGE
+GMTTNGRDDVFEQNGDGVGGSITYNYEGFGIGAAVSSSKRTWDQNNTGLIGTGDRAETYT
+GGLKYDANNIYLAAQYTQTYNATRVGSLGWANKAQNFEAVAQYQFDFGLRPSLAYLQSKG
+KNLGRGYDDEDILKYVDVGATYYFNKNMSTYVDYKINLLDDNRFTRDAGINTDDIVALGL
+VYQF</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF00267</identifier>
+            <name>Porin_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>pore complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>porin activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

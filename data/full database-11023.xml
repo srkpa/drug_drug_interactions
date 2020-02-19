@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2016-10-20" updated="2019-12-02">
+  <drugbank-id primary="true">DB13076</drugbank-id>
+  <name>Yttrium Y-90</name>
+  <description>Yttrium 90 has been investigated for the treatment of Colon Cancer and Colorectal Cancer.</description>
+  <cas-number>10098-91-6</cas-number>
+  <unii>1K8M7UR6O1</unii>
+  <average-mass>89.9072</average-mass>
+  <monoisotopic-mass>89.907151443</monoisotopic-mass>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of inorganic compounds known as homogeneous transition metal compounds. These are inorganic compounds containing only metal atoms,with the largest atom being a transition metal atom.</description>
+    <direct-parent>Homogeneous transition metal compounds</direct-parent>
+    <kingdom>Inorganic compounds</kingdom>
+    <superclass>Homogeneous metal compounds</superclass>
+    <class>Homogeneous transition metal compounds</class>
+    <subclass/>
+    <substituent>Homogeneous transition metal</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT002630</drugbank-id>
+      <name>Yttrium-90 chloride</name>
+      <unii>TN98A27Q17</unii>
+      <cas-number>39271-65-3</cas-number>
+      <inchikey>PCMOZDDGXKIOLL-SGNQUONSSA-K</inchikey>
+      <average-mass>196.26</average-mass>
+      <monoisotopic-mass>194.8137095</monoisotopic-mass>
+    </salt>
+    <salt>
+      <drugbank-id primary="true">DBSALT002476</drugbank-id>
+      <name>Yttrium-90 citrate</name>
+      <unii>J8L3BWC4BD</unii>
+      <cas-number>67023-60-3</cas-number>
+      <inchikey>YCWCJWQILLXGBP-IEOVAKBOSA-K</inchikey>
+      <average-mass>279.006</average-mass>
+      <monoisotopic-mass>278.910678944</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">Yttrium (90 Y)</synonym>
+    <synonym language="english" coder="">Yttrium Y 90</synonym>
+    <synonym language="english" coder="">Yttrium-90</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Ytracis</name>
+      <labeller>Cis Bio International</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id/>
+      <ema-product-code>EMEA/H/C/000460</ema-product-code>
+      <ema-ma-number>EU/1/03/250/001</ema-ma-number>
+      <started-marketing-on>2003-03-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form/>
+      <strength>1.850 GBq/ml</strength>
+      <route/>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>EU</country>
+      <source>EMA</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Ytracis</name>
+      <ingredients>Yttrium Y-90</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids, Acyclic</category>
+      <mesh-id>D000144</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Inflammatory Agents</category>
+      <mesh-id>D000893</mesh-id>
+    </category>
+    <category>
+      <category>Elements</category>
+      <mesh-id>D004602</mesh-id>
+    </category>
+    <category>
+      <category>Isotopes</category>
+      <mesh-id>D007554</mesh-id>
+    </category>
+    <category>
+      <category>Metals</category>
+      <mesh-id>D008670</mesh-id>
+    </category>
+    <category>
+      <category>Metals, Rare Earth</category>
+      <mesh-id>D008674</mesh-id>
+    </category>
+    <category>
+      <category>Radioisotopes</category>
+      <mesh-id>D011868</mesh-id>
+    </category>
+    <category>
+      <category>Therapeutic Radiopharmaceuticals</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Transition Elements</category>
+      <mesh-id>D028561</mesh-id>
+    </category>
+    <category>
+      <category>Tricarboxylic Acids</category>
+      <mesh-id>D014233</mesh-id>
+    </category>
+    <category>
+      <category>Yttrium</category>
+      <mesh-id>D015019</mesh-id>
+    </category>
+    <category>
+      <category>Yttrium (90Y) Compounds</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Yttrium Isotopes</category>
+      <mesh-id>D015020</mesh-id>
+    </category>
+    <category>
+      <category>Yttrium Radioisotopes</category>
+      <mesh-id>D015021</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages>
+    <dosage>
+      <form/>
+      <route/>
+      <strength>1.850 GBq/ml</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="V10AA01">
+      <level code="V10AA">Yttrium (90Y) compounds</level>
+      <level code="V10A">ANTIINFLAMMATORY AGENTS</level>
+      <level code="V10">THERAPEUTIC RADIOPHARMACEUTICALS</level>
+      <level code="V">VARIOUS</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(90Y)yttrium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(90Y)yttrium</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>89.9072</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>89.907151443</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[90Y]</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>Y</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/Y/i1+1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>VWQVUPCCIRVNHF-OUBTZVSYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>1.78</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>104760</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347829203</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>94570</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets/>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

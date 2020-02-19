@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB01931</drugbank-id>
+  <drugbank-id>EXPT01212</drugbank-id>
+  <name>5,7-Dichlorokynurenic acid</name>
+  <description/>
+  <cas-number>131123-76-7</cas-number>
+  <unii>T61ORK73PY</unii>
+  <average-mass>258.058</average-mass>
+  <monoisotopic-mass>256.964648445</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as quinoline carboxylic acids. These are quinolines in which the quinoline ring system is substituted by a carboxyl group at one or more positions.</description>
+    <direct-parent>Quinoline carboxylic acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Quinolines and derivatives</class>
+    <subclass>Quinoline carboxylic acids</subclass>
+    <alternative-parent>Aryl chlorides</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Benzenoids</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Chloroquinolines</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Hydroquinolines</alternative-parent>
+    <alternative-parent>Hydroquinolones</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Pyridinecarboxylic acids</alternative-parent>
+    <alternative-parent>Vinylogous amides</alternative-parent>
+    <alternative-parent>Vinylogous halides</alternative-parent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Aryl chloride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Chloroquinoline</substituent>
+    <substituent>Dihydroquinoline</substituent>
+    <substituent>Dihydroquinolone</substituent>
+    <substituent>Haloquinoline</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organochloride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Pyridine</substituent>
+    <substituent>Pyridine carboxylic acid</substituent>
+    <substituent>Pyridine carboxylic acid or derivatives</substituent>
+    <substituent>Quinoline-2-carboxylic acid</substituent>
+    <substituent>Vinylogous amide</substituent>
+    <substituent>Vinylogous halide</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">5,7-Dcka</synonym>
+    <synonym language="english" coder="">5,7-Dichloroquinurenic acid</synonym>
+    <synonym language="english" coder="">5,7-Dichorokynurenic acid</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Excitatory Amino Acid Agents</category>
+      <mesh-id>D018683</mesh-id>
+    </category>
+    <category>
+      <category>Excitatory Amino Acid Antagonists</category>
+      <mesh-id>D018691</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Hydroxyquinolines</category>
+      <mesh-id>D006912</mesh-id>
+    </category>
+    <category>
+      <category>Neurotransmitter Agents</category>
+      <mesh-id>D018377</mesh-id>
+    </category>
+    <category>
+      <category>Quinolines</category>
+      <mesh-id>D011804</mesh-id>
+    </category>
+    <category>
+      <category>Xanthurenates</category>
+      <mesh-id>D014977</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1pbq</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>3.63</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.2</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.56e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>3.08</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>5,7-dichloro-4-hydroxyquinoline-2-carboxylic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S,3S,4R,5S)-2-{4-amino-3H,4H,5H-pyrrolo[3,2-d]pyrimidin-7-yl}-5-[(methylsulfanyl)methyl]pyrrolidine-3,4-diol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>258.058</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>256.964648445</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>OC(=O)C1=CC(O)=C2C(Cl)=CC(Cl)=CC2=N1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C10H5Cl2NO3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C10H5Cl2NO3/c11-4-1-5(12)9-6(2-4)13-7(10(15)16)3-8(9)14/h1-3H,(H,13,14)(H,15,16)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>BGKFPRIGXAVYNX-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>70.42</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>58.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>22.69</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.69</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>0.38</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>107660</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>1779</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46504992</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>1714</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50001266</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>DK1</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>IUPHAR</resource>
+      <identifier>2361</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Guide to Pharmacology</resource>
+      <identifier>2361</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>5,7-Dichlorokynurenic_acid</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL50267</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000365</id>
+      <name>Glutamate receptor ionotropic, NMDA 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q05586" source="Swiss-Prot">
+        <name>Glutamate receptor ionotropic, NMDA 1</name>
+        <general-function>Voltage-gated cation channel activity</general-function>
+        <specific-function>NMDA receptor subtype of glutamate-gated ion channels with high calcium permeability and voltage-dependent sensitivity to magnesium. Mediated by glycine. This protein plays a key role in synaptic plasticity, synaptogenesis, excitotoxicity, memory acquisition and learning. It mediates neuronal functions in glutamate neurotransmission. Is involved in the cell surface targeting of NMDA receptors (By similarity).</specific-function>
+        <gene-name>GRIN1</gene-name>
+        <locus>9q34.3</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>560-580
+637-657
+813-833</transmembrane-regions>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>9.2</theoretical-pi>
+        <molecular-weight>105371.945</molecular-weight>
+        <chromosome-location>9</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GRIN1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D13515</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>219920</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>455</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q05586</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NMDZ1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GluN1</synonym>
+          <synonym>Glutamate [NMDA] receptor subunit zeta-1</synonym>
+          <synonym>N-methyl-D-aspartate receptor subunit NR1</synonym>
+          <synonym>NMD-R1</synonym>
+          <synonym>NMDAR1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000727|Glutamate receptor ionotropic, NMDA 1
+MSTMRLLTLALLFSCSVARAACDPKIVNIGAVLSTRKHEQMFREAVNQANKRHGSWKIQL
+NATSVTHKPNAIQMALSVCEDLISSQVYAILVSHPPTPNDHFTPTPVSYTAGFYRIPVLG
+LTTRMSIYSDKSIHLSFLRTVPPYSHQSSVWFEMMRVYSWNHIILLVSDDHEGRAAQKRL
+ETLLEERESKAEKVLQFDPGTKNVTALLMEAKELEARVIILSASEDDAATVYRAAAMLNM
+TGSGYVWLVGEREISGNALRYAPDGILGLQLINGKNESAHISDAVGVVAQAVHELLEKEN
+ITDPPRGCVGNTNIWKTGPLFKRVLMSSKYADGVTGRVEFNEDGDRKFANYSIMNLQNRK
+LVQVGIYNGTHVIPNDRKIIWPGGETEKPRGYQMSTRLKIVTIHQEPFVYVKPTLSDGTC
+KEEFTVNGDPVKKVICTGPNDTSPGSPRHTVPQCCYGFCIDLLIKLARTMNFTYEVHLVA
+DGKFGTQERVNNSNKKEWNGMMGELLSGQADMIVAPLTINNERAQYIEFSKPFKYQGLTI
+LVKKEIPRSTLDSFMQPFQSTLWLLVGLSVHVVAVMLYLLDRFSPFGRFKVNSEEEEEDA
+LTLSSAMWFSWGVLLNSGIGEGAPRSFSARILGMVWAGFAMIIVASYTANLAAFLVLDRP
+EERITGINDPRLRNPSDKFIYATVKQSSVDIYFRRQVELSTMYRHMEKHNYESAAEAIQA
+VRDNKLHAFIWDSAVLEFEASQKCDLVTTGELFFRSGFGIGMRKDSPWKQNVSLSILKSH
+ENGFMEDLDKTWVRYQECDSRSNAPATLTFENMAGVFMLVAGGIVAGIFLIFIEIAYKRH
+KDARRKQMQLAFAAVNVWRKNLQDRKSGRAEPDPKKKATFRAITSTLASSFKRRRSSKDT
+STGGGRGALQNQKDTVLPRRAIEREEGQLQLCSRHRES</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016071|Glutamate receptor ionotropic, NMDA 1 (GRIN1)
+ATGAGCACCATGCGCCTGCTGACGCTCGCCCTGCTGTTCTCCTGCTCCGTCGCCCGTGCC
+GCGTGCGACCCCAAGATCGTCAACATTGGCGCGGTGCTGAGCACGCGGAAGCACGAGCAG
+ATGTTCCGCGAGGCCGTGAACCAGGCCAACAAGCGGCACGGCTCCTGGAAGATTCAGCTC
+AATGCCACCTCCGTCACGCACAAGCCCAACGCCATCCAGATGGCTCTGTCGGTGTGCGAG
+GACCTCATCTCCAGCCAGGTCTACGCCATCCTAGTTAGCCATCCACCTACCCCCAACGAC
+CACTTCACTCCCACCCCTGTCTCCTACACAGCCGGCTTCTACCGCATACCCGTGCTGGGG
+CTGACCACCCGCATGTCCATCTACTCGGACAAGAGCATCCACCTGAGCTTCCTGCGCACC
+GTGCCGCCCTACTCCCACCAGTCCAGCGTGTGGTTTGAGATGATGCGTGTCTACAGCTGG
+AACCACATCATCCTGCTGGTCAGCGACGACCACGAGGGCCGGGCGGCTCAGAAACGCCTG
+GAGACGCTGCTGGAGGAGCGTGAGTCCAAGGCAGAGAAGGTGCTGCAGTTTGACCCAGGG
+ACCAAGAACGTGACGGCCCTGCTGATGGAGGCGAAAGAGCTGGAGGCCCGGGTCATCATC
+CTTTCTGCCAGCGAGGACGATGCTGCCACTGTATACCGCGCAGCCGCGATGCTGAACATG
+ACGGGCTCCGGGTACGTGTGGCTGGTCGGCGAGCGCGAGATCTCGGGGAACGCCCTGCGC
+TACGCCCCAGACGGCATCCTCGGGCTGCAGCTCATCAACGGCAAGAACGAGTCGGCCCAC
+ATCAGCGACGCCGTGGGCGTGGTGGCCCAGGCCGTGCACGAGCTCCTCGAGAAGGAGAAC
+ATCACCGACCCGCCGCGGGGCTGCGTGGGCAACACCAACATCTGGAAGACCGGGCCGCTC
+TTCAAGAGAGTGCTGATGTCTTCCAAGTATGCGGATGGGGTGACTGGTCGCGTGGAGTTC
+AATGAGGATGGGGACCGGAAGTTCGCCAACTACAGCATCATGAACCTGCAGAACCGCAAG
+CTGGTGCAAGTGGGCATCTACAATGGCACCCACGTCATCCCTAATGACAGGAAGATCATC
+TGGCCAGGCGGAGAGACAGAGAAGCCTCGAGGGTACCAGATGTCCACCAGACTGAAGATT
+GTGACGATCCACCAGGAGCCCTTCGTGTACGTCAAGCCCACGCTGAGTGATGGGACATGC
+AAGGAGGAGTTCACAGTCAACGGCGACCCAGTCAAGAAGGTGATCTGCACCGGGCCCAAC
+GACACGTCGCCGGGCAGCCCCCGCCACACGGTGCCTCAGTGTTGCTACGGCTTTTGCATC
+GACCTGCTCATCAAGCTGGCACGGACCATGAACTTCACCTACGAGGTGCACCTGGTGGCA
+GATGGCAAGTTCGGCACACAGGAGCGGGTGAACAACAGCAACAAGAAGGAGTGGAATGGG
+ATGATGGGCGAGCTGCTCAGCGGGCAGGCAGACATGATCGTGGCGCCGCTAACCATAAAC
+AACGAGCGCGCGCAGTACATCGAGTTTTCCAAGCCCTTCAAGTACCAGGGCCTGACTATT
+CTGGTCAAGAAGGAGATTCCCCGGAGCACGCTGGACTCGTTCATGCAGCCGTTCCAGAGC
+ACACTGTGGCTGCTGGTGGGGCTGTCGGTGCACGTGGTGGCCGTGATGCTGTACCTGCTG
+GACCGCTTCAGCCCCTTCGGCCGGTTCAAGGTGAACAGCGAGGAGGAGGAGGAGGACGCA
+CTGACCCTGTCCTCGGCCATGTGGTTCTCCTGGGGCGTCCTGCTCAACTCCGGCATCGGG
+GAAGGCGCCCCCAGAAGCTTCTCAGCGCGCATCCTGGGCATGGTGTGGGCCGGCTTTGCC
+ATGATCATCGTGGCCTCCTACACCGCCAACCTGGCGGCCTTCCTGGTGCTGGACCGGCCG
+GAGGAGCGCATCACGGGCATCAACGACCCTCGGCTGAGGAACCCCTCGGACAAGTTTATC
+TACGCCACGGTGAAGCAGAGCTCCGTGGATATCTACTTCCGGCGCCAGGTGGAGCTGAGC
+ACCATGTACCGGCATATGGAGAAGCACAACTACGAGAGTGCGGCGGAGGCCATCCAGGCC
+GTGAGAGACAACAAGCTGCATGCCTTCATCTGGGACTCGGCGGTGCTGGAGTTCGAGGCC
+TCGCAGAAGTGCGACCTGGTGACGACTGGAGAGCTGTTTTTCCGCTCGGGCTTCGGCATA
+GGCATGCGCAAAGACAGCCCCTGGAAGCAGAACGTCTCCCTGTCCATCCTCAAGTCCCAC
+GAGAATGGCTTCATGGAAGACCTGGACAAGACGTGGGTTCGGTATCAGGAATGTGACTCG
+CGCAGCAACGCCCCTGCGACCCTTACTTTTGAGAACATGGCCGGGGTCTTCATGCTGGTA
+GCTGGGGGCATCGTGGCCGGGATCTTCCTGATTTTCATCGAGATTGCCTACAAGCGGCAC
+AAGGATGCTCGCCGGAAGCAGATGCAGCTGGCCTTTGCCGCCGTTAACGTGTGGCGGAAG
+AACCTGCAGCAGTACCATCCCACTGATATCACGGGCCCGCTCAACCTCTCAGATCCCTCG
+GTCAGCACCGTGGTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01094</identifier>
+            <name>ANF_receptor</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00060</identifier>
+            <name>Lig_chan</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10613</identifier>
+            <name>Lig_chan-Glu_bd</name>
+          </pfam>
+          <pfam>
+            <identifier>PF10562</identifier>
+            <name>CaM_bdg_C0</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic branch</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>excitatory synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal postsynaptic density</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>NMDA selective glutamate receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic density</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synaptic cleft</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synaptic vesicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>terminal bouton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calmodulin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>extracellular-glutamate-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glutamate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glycine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>neurotransmitter binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NMDA glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>voltage-gated cation channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>calcium ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cation transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular calcium ion homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to manganese ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cerebral cortex development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>conditioned taste aversion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ephrin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>excitatory postsynaptic potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ionotropic glutamate receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>long-term memory</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>male mating behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of neuron apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>olfactory learning</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pons maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of excitatory postsynaptic potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of transcription from RNA polymerase II promoter</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>prepulse inhibition</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>propylene metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein tetramerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of axonogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of dendrite morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of long-term neuronal synaptic plasticity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of respiratory gaseous exchange</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synapse assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory gaseous exchange</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to amphetamine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to calcium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to fungicide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to morphine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>rhythmic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of pain</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>social behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>suckling behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, glutamatergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual learning</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

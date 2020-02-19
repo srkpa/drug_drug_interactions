@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05752</drugbank-id>
+  <name>ALKS 27</name>
+  <description>ALKS 27 is an inhaled formulation of trospium chloride for the treatment of chronic obstructive pulmonary disease (COPD). Study showed that ALKS 27 was well-tolerated over a wide dose range, with no dose-limited effects observed.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in chronic obstructive pulmonary disease (COPD).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>ALKS 27 is a muscarinic receptor antagonist that relaxes smooth muscle tissue and has the potential to improve airflow in patients with chronic obstructive pulmonary disease (COPD).</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910212</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000092</id>
+      <name>Muscarinic acetylcholine receptor M1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P11229" source="Swiss-Prot">
+        <name>Muscarinic acetylcholine receptor M1</name>
+        <general-function>Phosphatidylinositol phospholipase c activity</general-function>
+        <specific-function>The muscarinic acetylcholine receptor mediates various cellular responses, including inhibition of adenylate cyclase, breakdown of phosphoinositides and modulation of potassium channels through the action of G proteins. Primary transducing effect is Pi turnover.</specific-function>
+        <gene-name>CHRM1</gene-name>
+        <locus>11q13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>25-47
+62-82
+100-121
+142-164
+187-209
+367-387
+402-421</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.67</theoretical-pi>
+        <molecular-weight>51420.375</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1950</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRM1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X52068</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>34451</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>13</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>13</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P11229</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACM1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000184|Muscarinic acetylcholine receptor M1
+MNTSAPPAVSPNITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVN
+NYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLIS
+FDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQCYI
+QFLSQPIITFGTAMAAFYLPVTVMCTLYWRIYRETENRARELAALQGSETPGKGGGSSSS
+SERSQPGAEGSPETPPGRCCRCCRAPRLLQAYSWKEEEEEDEGSMESLTSSEGEEPGSEV
+VIKMPMVDPEAQAPTKQPPRSSPNTVKRPTKKGRDRAGKGQKPRGKEQLAKRKTFSLVKE
+KKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWLCYVNSTINPMCYAL
+CNKAFRDTFRLLLLCRWDKRRWRKIPKRPGSVHRTPSRQC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009929|Muscarinic acetylcholine receptor M1 (CHRM1)
+ATGAACACTTCAGCCCCACCTGCTGTCAGCCCCAACATCACCGTCCTGGCACCAGGAAAG
+GGTCCCTGGCAAGTGGCCTTCATTGGGATCACCACGGGCCTCCTGTCGCTAGCCACAGTG
+ACAGGCAACCTGCTGGTACTCATCTCTTTCAAGGTCAACACGGAGCTCAAGACAGTCAAT
+AACTACTTCCTGCTGAGCCTGGCCTGTGCTGACCTCATCATCGGTACCTTCTCCATGAAC
+CTCTATACCACGTACCTGCTCATGGGCCACTGGGCTCTGGGCACGCTGGCTTGTGACCTC
+TGGCTGGCCCTGGACTATGTGGCCAGCAATGCCTCCGTCATGAATCTGCTGCTCATCAGC
+TTTGACCGCTACTTCTCCGTGACTCGGCCCCTGAGCTACCGTGCCAAGCGCACACCCCGC
+CGGGCAGCTCTGATGATCGGCCTGGCCTGGCTGGTTTCCTTTGTGCTCTGGGCCCCAGCC
+ATCCTCTTCTGGCAGTACCTGGTAGGGGAGCGGACAGTGCTAGCTGGGCAGTGCTACATC
+CAGTTCCTCTCCCAGCCCATCATCACCTTTGGCACAGCCATGGCTGCCTTCTACCTCCCT
+GTCACAGTCATGTGCACGCTCTACTGGCGCATCTACCGGGAGACAGAGAACCGAGCACGG
+GAGCTGGCAGCCCTTCAGGGCTCCGAGACGCCAGGCAAAGGGGGTGGCAGCAGCAGCAGC
+TCAGAGAGGTCTCAGCCAGGGGCTGAGGGCTCACCAGAGACTCCTCCAGGCCGCTGCTGT
+CGCTGCTGCCGGGCCCCCAGGCTGCTGCAGGCCTACAGCTGGAAGGAAGAAGAGGAAGAG
+GACGAAGGCTCCATGGAGTCCCTCACATCCTCAGAGGGAGAGGAGCCTGGCTCCGAAGTG
+GTGATCAAGATGCCAATGGTGGACCCCGAGGCACAGGCCCCCACCAAGCAGCCCCCACGG
+AGCTCCCCAAATACAGTCAAGAGGCCGACTAAGAAAGGGCGTGATCGAGCTGGCAAGGGC
+CAGAAGCCCCGTGGAAAGGAGCAGCTGGCCAAGCGGAAGACCTTCTCGCTGGTCAAGGAG
+AAGAAGGCGGCTCGGACCCTGAGTGCCATCCTCCTGGCCTTCATCCTCACCTGGACACCG
+TACAACATCATGGTGCTGGTGTCCACCTTCTGCAAGGACTGTGTTCCCGAGACCCTGTGG
+GAGCTGGGCTACTGGCTGTGCTACGTCAACAGCACCATCAACCCCATGTGCTACGCACTC
+TGCAACAAAGCCTTCCGGGACACCTTTCGCCTGCTGCTGCTTTGCCGCTGGGACAAGAGA
+CGCTGGCGCAAGATCCCCAAGCGCCCTGGCTCCGTGCACCGCACTCCCTCCCGCCAATGC
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>asymmetric synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic density</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled acetylcholine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein modification process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cognition</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>entrainment of circadian clock</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular synaptic transmission</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phototransduction, visible light</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of intracellular protein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein kinase C-activating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of locomotion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>saliva secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000560</id>
+      <name>Muscarinic acetylcholine receptor M2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08172" source="Swiss-Prot">
+        <name>Muscarinic acetylcholine receptor M2</name>
+        <general-function>G-protein coupled acetylcholine receptor activity</general-function>
+        <specific-function>The muscarinic acetylcholine receptor mediates various cellular responses, including inhibition of adenylate cyclase, breakdown of phosphoinositides and modulation of potassium channels through the action of G proteins. Primary transducing effect is adenylate cyclase inhibition. Signaling promotes phospholipase C activity, leading to the release of inositol trisphosphate (IP3); this then triggers calcium ion release into the cytosol.</specific-function>
+        <gene-name>CHRM2</gene-name>
+        <locus>7q31-q35</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>23-45
+60-80
+98-119
+140-162
+185-209
+388-410
+419-442</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.08</theoretical-pi>
+        <molecular-weight>51714.605</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1951</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRM2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M16404</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>177990</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>14</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>14</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08172</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACM2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016133|Muscarinic acetylcholine receptor M2
+MNNSTNSSNNSLALTSPYKTFEVVFIVLVAGSLSLVTIIGNILVMVSIKVNRHLQTVNNY
+FLFSLACADLIIGVFSMNLYTLYTVIGYWPLGPVVCDLWLALDYVVSNASVMNLLIISFD
+RYFCVTKPLTYPVKRTTKMAGMMIAAAWVLSFILWAPAILFWQFIVGVRTVEDGECYIQF
+FSNAAVTFGTAIAAFYLPVIIMTVLYWHISRASKSRIKKDKKEPVANQDPVSPSLVQGRI
+VKPNNNNMPSSDDGLEHNKIQNGKAPRDPVTENCVQGEEKESSNDSTSVSAVASNMRDDE
+ITQDENTVSTSLGHSKDENSKQTCIRIGTKTPKSDSCTPTNTTVEVVGSSGQNGDEKQNI
+VARKIVKMTKQPAKKKPPPSREKKVTRTILAILLAFIITWAPYNVMVLINTFCAPCIPNT
+VWTIGYWLCYINSTINPACYALCNATFKKTFKHLLMCHYKNIGATR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016134|Muscarinic acetylcholine receptor M2 (CHRM2)
+ATGAATAACTCAACAAACTCCTCTAACAATAGCCTGGCTCTTACAAGTCCTTATAAGACA
+TTTGAAGTGGTGTTTATTGTCCTGGTGGCTGGATCCCTCAGTTTGGTGACCATTATCGGG
+AACATCCTAGTCATGGTTTCCATTAAAGTCAACCGCCACCTCCAGACCGTCAACAATTAC
+TTTTTATTCAGCTTGGCCTGTGCTGACCTTATCATAGGTGTTTTCTCCATGAACTTGTAC
+ACCCTCTACACTGTGATTGGTTACTGGCCTTTGGGACCTGTGGTGTGTGACCTTTGGCTA
+GCCCTGGACTATGTGGTCAGCAATGCCTCAGTTATGAATCTGCTCATCATCAGCTTTGAC
+AGGTACTTCTGTGTCACAAAACCTCTGACCTACCCAGTCAAGCGGACCACAAAAATGGCA
+GGTATGATGATTGCAGCTGCCTGGGTCCTCTCTTTCATCCTCTGGGCTCCAGCCATTCTC
+TTCTGGCAGTTCATTGTAGGGGTGAGAACTGTGGAGGATGGGGAGTGCTACATTCAGTTT
+TTTTCCAATGCTGCTGTCACCTTTGGTACGGCTATTGCAGCCTTCTATTTGCCAGTGATC
+ATCATGACTGTGCTATATTGGCACATATCCCGAGCCAGCAAGAGCAGGATAAAGAAGGAC
+AAGAAGGAGCCTGTTGCCAACCAAGACCCCGTTTCTCCAAGTCTGGTACAAGGAAGGATA
+GTGAAGCCAAACAATAACAACATGCCCAGCAGTGACGATGGCCTGGAGCACAACAAAATC
+CAGAATGGCAAAGCCCCCAGGGATCCTGTGACTGAAAACTGTGTTCAGGGAGAGGAGAAG
+GAGAGCTCCAATGACTCCACCTCAGTCAGTGCTGTTGCCTCTAATATGAGAGATGATGAA
+ATAACCCAGGATGAAAACACAGTTTCCACTTCCCTGGGCCATTCCAAAGATGAGAACTCT
+AAGCAAACATGCATCAGAATTGGCACCAAGACCCCAAAAAGTGACTCATGTACCCCAACT
+AATACCACCGTGGAGGTAGTGGGGTCTTCAGGTCAGAATGGAGATGAAAAGCAGAATATT
+GTAGCCCGCAAGATTGTGAAGATGACTAAGCAGCCTGCAAAAAAGAAGCCTCCTCCTTCC
+CGGGAAAAGAAAGTCACCAGGACAATCTTGGCTATTCTGTTGGCTTTCATCATCACTTGG
+GCCCCATACAATGTCATGGTGCTCATTAACACCTTTTGTGCACCTTGCATCCCCAACACT
+GTGTGGACAATTGGTTACTGGCTTTGTTACATCAACAGCACTATCAACCCTGCCTGCTAT
+GCACTTTGCAATGCCACCTTCAAGAAGACCTTTAAACACCTTCTCATGTGTCATTATAAG
+AACATAGGCGCTACAAGGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>asymmetric synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>symmetric synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled acetylcholine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-modulating G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of heart contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to virus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000045</id>
+      <name>Muscarinic acetylcholine receptor M3</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P20309" source="Swiss-Prot">
+        <name>Muscarinic acetylcholine receptor M3</name>
+        <general-function>Receptor activity</general-function>
+        <specific-function>The muscarinic acetylcholine receptor mediates various cellular responses, including inhibition of adenylate cyclase, breakdown of phosphoinositides and modulation of potassium channels through the action of G proteins. Primary transducing effect is Pi turnover.</specific-function>
+        <gene-name>CHRM3</gene-name>
+        <locus>1q43</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>68-91
+105-130
+143-164
+185-206
+230-252
+492-514
+527-546</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.62</theoretical-pi>
+        <molecular-weight>66127.445</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1952</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRM3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X15266</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>32324</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>15</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>15</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P20309</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACM3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009898|Muscarinic acetylcholine receptor M3
+MTLHNNSTTSPLFPNISSSWIHSPSDAGLPPGTVTHFGSYNVSRAAGNFSSPDGTTDDPL
+GGHTVWQVVFIAFLTGILALVTIIGNILVIVSFKVNKQLKTVNNYFLLSLACADLIIGVI
+SMNLFTTYIIMNRWALGNLACDLWLAIDYVASNASVMNLLVISFDRYFSITRPLTYRAKR
+TTKRAGVMIGLAWVISFVLWAPAILFWQYFVGKRTVPPGECFIQFLSEPTITFGTAIAAF
+YMPVTIMTILYWRIYKETEKRTKELAGLQASGTEAETENFVHPTGSSRSCSSYELQQQSM
+KRSNRRKYGRCHFWFTTKSWKPSSEQMDQDHSSSDSWNNNDAAASLENSASSDEEDIGSE
+TRAIYSIVLKLPGHSTILNSTKLPSSDNLQVPEEELGMVDLERKADKLQAQKSVDDGGSF
+PKSFSKLPIQLESAVDTAKTSDVNSSVGKSTATLPLSFKEATLAKRFALKTRSQITKRKR
+MSLVKEKKAAQTLSAILLAFIITWTPYNIMVLVNTFCDSCIPKTFWNLGYWLCYINSTVN
+PVCYALCNKTFRTTFKMLLLCQCDKKKRRKQQYQQRQSVIFHKRAPEQAL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0009899|Muscarinic acetylcholine receptor M3 (CHRM3)
+ATGACCTTGCACAATAACAGTACAACCTCGCCTTTGTTTCCAAACATCAGCTCCTCCTGG
+ATACACAGCCCCTCCGATGCAGGGCTGCCCCCGGGAACCGTCACTCATTTCGGCAGCTAC
+AATGTTTCTCGAGCAGCTGGCAATTTCTCCTCTCCAGACGGTACCACCGATGACCCTCTG
+GGAGGTCATACCGTCTGGCAAGTGGTCTTCATCGCTTTCTTAACGGGCATCCTGGCCTTG
+GTGACCATCATCGGCAACATCCTGGTAATTGTGTCATTTAAGGTCAACAAGCAGCTGAAG
+ACGGTCAACAACTACTTCCTCTTAAGCCTGGCCTGTGCCGATCTGATTATCGGGGTCATT
+TCAATGAATCTGTTTACGACCTACATCATCATGAATCGATGGGCCTTAGGGAACTTGGCC
+TGTGACCTCTGGCTTGCCATTGACTACGTAGCCAGCAATGCCTCTGTTATGAATCTTCTG
+GTCATCAGCTTTGACAGATACTTTTCCATCACGAGGCCGCTCACGTACCGAGCCAAACGA
+ACAACAAAGAGAGCCGGTGTGATGATCGGTCTGGCTTGGGTCATCTCCTTTGTCCTTTGG
+GCTCCTGCCATCTTGTTCTGGCAATACTTTGTTGGAAAGAGAACTGTGCCTCCGGGAGAG
+TGCTTCATTCAGTTCCTCAGTGAGCCCACCATTACTTTTGGCACAGCCATCGCTGCTTTT
+TATATGCCTGTCACCATTATGACTATTTTATACTGGAGGATCTATAAGGAAACTGAAAAG
+CGTACCAAAGAGCTTGCTGGCCTGCAAGCCTCTGGGACAGAGGCAGAGACAGAAAACTTT
+GTCCACCCCACGGGCAGTTCTCGAAGCTGCAGCAGTTACGAACTTCAACAGCAAAGCATG
+AAACGCTCCAACAGGAGGAAGTATGGCCGCTGCCACTTCTGGTTCACAACCAAGAGCTGG
+AAACCCAGCTCCGAGCAGATGGACCAAGACCACAGCAGCAGTGACAGTTGGAACAACAAT
+GATGCTGCTGCCTCCCTGGAGAACTCCGCCTCCTCCGACGAGGAGGACATTGGCTCCGAG
+ACGAGAGCCATCTACTCCATCGTGCTCAAGCTTCCGGGTCACAGCACCATCCTCAACTCC
+ACCAAGTTACCCTCATCGGACAACCTGCAGGTGCCTGAGGAGGAGCTGGGGATGGTGGAC
+TTGGAGAGGAAAGCCGACAAGCTGCAGGCCCAGAAGAGCGTGGACGATGGAGGCAGTTTT
+CCAAAAAGCTTCTCCAAGCTTCCCATCCAGCTAGAGTCAGCCGTGGACACAGCTAAGACT
+TCTGACGTCAACTCCTCAGTGGGTAAGAGCACGGCCACTCTACCTCTGTCCTTCAAGGAA
+GCCACTCTGGCCAAGAGGTTTGCTCTGAAGACCAGAAGTCAGATCACTAAGCGGAAAAGG
+ATGTCCCTGGTCAAGGAGAAGAAAGCGGCCCAGACCCTCAGTGCGATCTTGCTTGCCTTC
+ATCATCACTTGGACCCCATACAACATCATGGTTCTGGTGAACACCTTTTGTGACAGCTGC
+ATACCCAAAACCTTTTGGAATCTGGGCTACTGGCTGTGCTACATCAACAGCACCGTGAAC
+CCCGTGTGCTATGCTCTGTGCAACAAAACATTCAGAACCACTTTCAAGATGCTGCTGCTG
+TGCCAGTGTGACAAAAAAAAGAGGCGCAAGCAGCAGTACCAGCAGAGACAGTCGGTCATT
+TTTCACAAGCGCGCACCCGAGCAGGCCTTGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>asymmetric synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>acetylcholine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled acetylcholine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein modification process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>energy reserve metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of vascular smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>saliva secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000405</id>
+      <name>Muscarinic acetylcholine receptor M4</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08173" source="Swiss-Prot">
+        <name>Muscarinic acetylcholine receptor M4</name>
+        <general-function>Guanyl-nucleotide exchange factor activity</general-function>
+        <specific-function>The muscarinic acetylcholine receptor mediates various cellular responses, including inhibition of adenylate cyclase, breakdown of phosphoinositides and modulation of potassium channels through the action of G proteins. Primary transducing effect is inhibition of adenylate cyclase.</specific-function>
+        <gene-name>CHRM4</gene-name>
+        <locus>11p12-p11.2</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>32-54
+69-89
+107-128
+149-171
+194-216
+402-422
+437-456</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>10.34</theoretical-pi>
+        <molecular-weight>53048.65</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1953</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRM4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M16405</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>61970253</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>16</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>16</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08173</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACM4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010280|Muscarinic acetylcholine receptor M4
+MANFTPVNGSSGNQSVRLVTSSSHNRYETVEMVFIATVTGSLSLVTVVGNILVMLSIKVN
+RQLQTVNNYFLFSLACADLIIGAFSMNLYTVYIIKGYWPLGAVVCDLWLALDYVVSNASV
+MNLLIISFDRYFCVTKPLTYPARRTTKMAGLMIAAAWVLSFVLWAPAILFWQFVVGKRTV
+PDNQCFIQFLSNPAVTFGTAIAAFYLPVVIMTVLYIHISLASRSRVHKHRPEGPKEKKAK
+TLAFLKSPLMKQSVKKPPPGEAAREELRNGKLEEAPPPALPPPPRPVADKDTSNESSSGS
+ATQNTKERPATELSTTEATTPAMPAPPLQPRALNPASRWSKIQIVTKQTGNECVTAIEIV
+PATPAGMRPAANVARKFASIARNQVRKKRQMAARERKVTRTIFAILLAFILTWTPYNVMV
+LVNTFCQSCIPDTVWSIGYWLCYVNSTINPACYALCNATFKKTFRHLLLCQYRNIGTAR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010281|Muscarinic acetylcholine receptor M4 (CHRM4)
+ATGGCCAACTTCACACCTGTCAATGGCAGCTCGGGCAATCAGTCCGTGCGCCTGGTCACG
+TCATCATCCCACAATCGCTATGAGACGGTGGAAATGGTCTTCATTGCCACAGTGACAGGC
+TCCCTGAGCCTGGTGACTGTCGTGGGCAACATCCTGGTGATGCTGTCCATCAAGGTCAAC
+AGGCAGCTGCAGACAGTCAACAACTACTTCCTCTTCAGCCTGGCGTGTGCTGATCTCATC
+ATAGGCGCCTTCTCCATGAACCTCTACACCGTGTACATCATCAAGGGCTACTGGCCCCTG
+GGCGCCGTGGTCTGCGACCTGTGGCTGGCCCTGGACTACGTGGTGAGCAACGCCTCCGTC
+ATGAACCTTCTCATCATCAGCTTTGACCGCTACTTCTGCGTCACCAAGCCTCTCACCTAC
+CCTGCCCGGCGCACCACCAAGATGGCAGGCCTCATGATTGCTGCTGCCTGGGTACTGTCC
+TTCGTGCTCTGGGCGCCTGCCATCTTGTTCTGGCAGTTTGTGGTGGGTAAGCGGACGGTG
+CCCGACAACCAGTGCTTCATCCAGTTCCTGTCCAACCCAGCAGTGACCTTTGGCACAGCC
+ATTGCTGCCTTCTACCTGCCTGTGGTCATCATGACGGTGCTGTACATCCACATCTCCCTG
+GCCAGTCGCAGCCGAGTCCACAAGCACCGGCCCGAGGGCCCGAAGGAGAAGAAAGCCAAG
+ACGCTGGCCTTCCTCAAGAGCCCACTAATGAAGCAGAGCGTCAAGAAGCCCCCGCCCGGG
+GAGGCCGCCCGGGAGGAGCTGCGCAATGGCAAGCTGGAGGAGGCCCCCCCGCCAGCGCTG
+CCACCGCCACCGCGCCCCGTGGCTGATAAGGACACTTCCAATGAGTCCAGCTCAGGCAGT
+GCCACCCAGAACACCAAGGAACGCCCAGCCACAGAGCTGTCCACCACAGAGGCCACCACG
+CCCGCCATGCCCGCCCCTCCCCTGCAGCCGCGGGCCCTCAACCCAGCCTCCAGATGGTCC
+AAGATCCAGATTGTGACGAAGCAGACAGGCAATGAGTGTGTGACAGCCATTGAGATTGTG
+CCTGCCACGCCGGCTGGCATGCGCCCTGCGGCCAACGTGGCCCGCAAGTTCGCCAGCATC
+GCTCGCAACCAGGTGCGCAAGAAGCGGCAGATGGCGGCCCGGGAGCGCAAAGTGACACGA
+ACGATCTTTGCCATTCTGCTAGCCTTCATCCTCACCTGGACGCCCTACAACGTCATGGTC
+CTGGTGAACACCTTCTGCCAGAGCTGCATCCCTGACACGGTGTGGTCCATTGGCTACTGG
+CTCTGCTACGTCAACAGCACCATCAACCCTGCCTGCTATGCTCTGTGCAACGCCACCTTT
+AAAAAGACCTTCCGGCACCTGCTGCTGTGCCAGTATCGGAACATCGGCACTGCCAGGTAG
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>asymmetric synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>axon terminus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuronal cell body</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic density</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>sarcolemma</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled acetylcholine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>guanyl-nucleotide exchange factor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of locomotion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to organic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0000247</id>
+      <name>Muscarinic acetylcholine receptor M5</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P08912" source="Swiss-Prot">
+        <name>Muscarinic acetylcholine receptor M5</name>
+        <general-function>Phosphatidylinositol phospholipase c activity</general-function>
+        <specific-function>The muscarinic acetylcholine receptor mediates various cellular responses, including inhibition of adenylate cyclase, breakdown of phosphoinositides and modulation of potassium channels through the action of G proteins. Primary transducing effect is Pi turnover.</specific-function>
+        <gene-name>CHRM5</gene-name>
+        <locus>15q26</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>30-53
+67-87
+105-126
+147-169
+192-214
+444-464
+479-498</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.64</theoretical-pi>
+        <molecular-weight>60073.205</molecular-weight>
+        <chromosome-location>15</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1954</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CHRM5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M80333</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>177988</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>17</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>17</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P08912</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACM5_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010217|Muscarinic acetylcholine receptor M5
+MEGDSYHNATTVNGTPVNHQPLERHRLWEVITIAAVTAVVSLITIVGNVLVMISFKVNSQ
+LKTVNNYYLLSLACADLIIGIFSMNLYTTYILMGRWALGSLACDLWLALDYVASNASVMN
+LLVISFDRYFSITRPLTYRAKRTPKRAGIMIGLAWLISFILWAPAILCWQYLVGKRTVPL
+DECQIQFLSEPTITFGTAIAAFYIPVSVMTILYCRIYRETEKRTKDLADLQGSDSVTKAE
+KRKPAHRALFRSCLRCPRPTLAQRERNQASWSSSRRSTSTTGKPSQATGPSANWAKAEQL
+TTCSSYPSSEDEDKPATDPVLQVVYKSQGKESPGEEFSAEETEETFVKAETEKSDYDTPN
+YLLSPAAAHRPKSQKCVAYKFRLVVKADGNQETNNGCHKVKIMPCPFPVAKEPSTKGLNP
+NPSHQMTKRKRVVLVKERKAAQTLSAILLAFIITWTPYNIMVLVSTFCDKCVPVTLWHLG
+YWLCYVNSTVNPICYALCNRTFRKTFKMLLLCRWKKKKVEEKLYWQGNSKLP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010218|Muscarinic acetylcholine receptor M5 (CHRM5)
+ATGGAAGGGGATTCTTACCACAATGCAACCACCGTCAATGGCACCCCAGTAAATCACCAG
+CCTTTGGAACGCCACAGGTTGTGGGAAGTCATCACCATTGCAGCTGTGACTGCTGTGGTA
+AGCCTGATCACCATTGTGGGCAATGTCTTGGTCATGATCTCCTTCAAAGTCAACAGCCAG
+CTCAAGACAGTTAACAACTATTACCTGCTCAGCTTAGCCTGTGCAGATCTCATCATTGGA
+ATCTTCTCCATGAACCTCTACACCACCTACATCCTCATGGGACGCTGGGCTCTCGGGAGT
+CTGGCTTGTGACCTTTGGCTTGCACTGGACTACGTGGCCAGCAACGCTTCTGTCATGAAC
+CTTCTGGTGATCAGTTTTGACCGTTACTTTTCCATCACAAGACCCTTGACATATCGGGCC
+AAGCGTACTCCGAAAAGGGCTGGCATCATGATTGGCTTGGCCTGGCTGATCTCCTTCATC
+CTCTGGGCCCCAGCAATCCTCTGCTGGCAGTACTTGGTTGGGAAGCGGACAGTTCCACTG
+GATGAGTGCCAGATCCAGTTTCTCTCTGAGCCCACCATCACTTTTGGCACTGCCATTGCT
+GCCTTCTACATCCCTGTTTCTGTCATGACCATCCTCTACTGTCGAATCTACCGGGAAACA
+GAGAAGCGAACCAAGGACCTGGCTGACCTCCAGGGTTCTGACTCTGTGACCAAAGCTGAG
+AAGAGAAAGCCAGCTCATAGGGCTCTGTTCAGATCCTGCTTGCGCTGTCCTCGACCCACC
+CTGGCCCAGCGGGAAAGGAACCAGGCCTCCTGGTCATCCTCCCGCAGGAGCACCTCCACC
+ACTGGGAAGCCATCCCAAGCCACTGGCCCAAGCGCCAATTGGGCCAAAGCTGAGCAGCTC
+ACCACCTGTAGCAGCTACCCTTCCTCAGAGGATGAGGACAAGCCCGCCACTGACCCTGTC
+CTCCAAGTGGTCTACAAGAGTCAGGGTAAGGAAAGCCCAGGGGAAGAATTCAGTGCTGAA
+GAGACTGAGGAAACTTTTGTGAAAGCTGAAACTGAAAAAAGTGACTATGACACCCCAAAC
+TACCTTCTGTCTCCAGCAGCTGCTCATAGACCCAAGAGTCAGAAATGTGTGGCCTATAAG
+TTCCGATTGGTGGTAAAAGCTGACGGGAACCAGGAGACCAACAATGGCTGTCACAAGGTG
+AAAATCATGCCCTGCCCCTTCCCAGTGGCCAAGGAACCTTCAACGAAAGGCCTCAATCCC
+AACCCCAGCCATCAAATGACCAAACGAAAGAGAGTGGTCCTAGTCAAAGAGAGGAAAGCA
+GCCCAGACACTGAGTGCCATTCTCCTGGCCTTCATCATCACATGGACCCCGTATAACATC
+ATGGTCCTGGTTTCTACCTTCTGTGACAAGTGTGTCCCAGTCACCCTGTGGCACTTGGGC
+TATTGGTTGTGCTATGTCAATAGCACTGTCAACCCCATCTGCTATGCCCTCTGCAACAGA
+ACCTTCAGGAAGACCTTTAAGATGCTGCTTCTCTGCCGATGGAAAAAGAAAAAAGTGGAA
+GAGAAGTTGTACTGGCAGGGGAACAGCAAGCTACCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled acetylcholine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylinositol phospholipase C activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dopamine transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>gastric acid secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phospholipase C-activating G-protein coupled acetylcholine receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of phosphatidylinositol dephosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sensory perception of chemical stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, cholinergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmission of nerve impulse</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05736</drugbank-id>
+  <name>MIV-701</name>
+  <description>MIV-701 is a selective, potent inhibitor of the protease Cathepsin K. It is developed for the treatment of osteoporosis.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in osteoporosis.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>MIV-701 inhibits an enzyme, cathepsin K, which degrades bone, but most probably also contributes to cartilage damage in joint diseases. It greatly reduces degradation of bone.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910201</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003417</id>
+      <name>Cathepsin K</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P43235" source="Swiss-Prot">
+        <name>Cathepsin K</name>
+        <general-function>Proteoglycan binding</general-function>
+        <specific-function>Closely involved in osteoclastic bone resorption and may participate partially in the disorder of bone remodeling. Displays potent endoprotease activity against fibrinogen at acid pH. May play an important role in extracellular matrix degradation.</specific-function>
+        <gene-name>CTSK</gene-name>
+        <locus>1q21</locus>
+        <cellular-location>Lysosome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>8.65</theoretical-pi>
+        <molecular-weight>36965.82</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2536</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CTSK</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U13665</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2350</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P43235</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CATK_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.22.38</synonym>
+          <synonym>Cathepsin O</synonym>
+          <synonym>Cathepsin O2</synonym>
+          <synonym>Cathepsin X</synonym>
+          <synonym>CTSO</synonym>
+          <synonym>CTSO2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012392|Cathepsin K
+MWGLKVLLLPVVSFALYPEEILDTHWELWKKTHRKQYNNKVDEISRRLIWEKNLKYISIH
+NLEASLGVHTYELAMNHLGDMTSEEVVQKMTGLKVPLSHSRSNDTLYIPEWEGRAPDSVD
+YRKKGYVTPVKNQGQCGSCWAFSSVGALEGQLKKKTGKLLNLSPQNLVDCVSENDGCGGG
+YMTNAFQYVQKNRGIDSEDAYPYVGQEESCMYNPTGKAAKCRGYREIPEGNEKALKRAVA
+RVGPVSVAIDASLTSFQFYSKGVYYDESCNSDNLNHAVLAVGYGIQKGNKHWIIKNSWGE
+NWGNKGYILMARNKNNACGIANLASFPKM</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012393|Cathepsin K (CTSK)
+ATGTGGGGGCTCAAGGTTCTGCTGCTACCTGTGGTGAGCTTTGCTCTGTACCCTGAGGAG
+ATACTGGACACCCACTGGGAGCTATGGAAGAAGACCCACAGGAAGCAATATAACAACAAG
+GTGGATGAAATCTCTCGGCGTTTAATTTGGGAAAAAAACCTGAAGTATATTTCCATCCAT
+AACCTTGAGGCTTCTCTTGGTGTCCATACATATGAACTGGCTATGAACCACCTGGGGGAC
+ATGACCAGTGAAGAGGTGGTTCAGAAGATGACTGGACTCAAAGTACCCCTGTCTCATTCC
+CGCAGTAATGACACCCTTTATATCCCAGAATGGGAAGGTAGAGCCCCAGACTCTGTCGAC
+TATCGAAAGAAAGGATATGTTACTCCTGTCAAAAATCAGGGTCAGTGTGGTTCCTGTTGG
+GCTTTTAGCTCTGTGGGTGCCCTGGAGGGCCAACTCAAGAAGAAAACTGGCAAACTCTTA
+AATCTGAGTCCCCAGAACCTAGTGGATTGTGTGTCTGAGAATGATGGCTGTGGAGGGGGC
+TACATGACCAATGCCTTCCAATATGTGCAGAAGAACCGGGGTATTGACTCTGAAGATGCC
+TACCCATATGTGGGACAGGAAGAGAGTTGTATGTACAACCCAACAGGCAAGGCAGCTAAA
+TGCAGAGGGTACAGAGAGATCCCCGAGGGGAATGAGAAAGCCCTGAAGAGGGCAGTGGCC
+CGAGTGGGACCTGTCTCTGTGGCCATTGATGCAAGCCTGACCTCCTTCCAGTTTTACAGC
+AAAGGTGTGTATTATGATGAAAGCTGCAATAGCGATAATCTGAACCATGCGGTTTTGGCA
+GTGGGATATGGAATCCAGAAGGGAAACAAGCACTGGATAATTAAAAACAGCTGGGGAGAA
+AACTGGGGAAACAAAGGATATATCCTCATGGCTCGAAATAAGAACAACGCCTGTGGCATT
+GCCAACCTGGCCAGCTTCCCCAAGATGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00112</identifier>
+            <name>Peptidase_C1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF08246</identifier>
+            <name>Inhibitor_I29</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endolysosome lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>collagen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cysteine-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cysteine-type peptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fibronectin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>proteoglycan binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bone resorption</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>collagen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix disassembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>extracellular matrix organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intramembranous ossification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein targeting to mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proteolysis involved in cellular protein catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of mitophagy</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>toll-like receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2010-09-15" updated="2019-12-02">
+  <drugbank-id primary="true">DB08646</drugbank-id>
+  <name>TRW3-(2-AMINO-3-HYDROXY-PROPYL)-6-(N'-CYCLOHEXYL-HYDRAZINO)OCTAHYDRO-INDOL-7-OL</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>310.3504</average-mass>
+  <monoisotopic-mass>310.14297584</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as hydroxyindoles. These are organic compounds containing an indole moiety that carries a hydroxyl group.</description>
+    <direct-parent>Hydroxyindoles</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organoheterocyclic compounds</superclass>
+    <class>Indoles and derivatives</class>
+    <subclass>Hydroxyindoles</subclass>
+    <alternative-parent>1-hydroxy-4-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>3-alkylindoles</alternative-parent>
+    <alternative-parent>Aldehydes</alternative-parent>
+    <alternative-parent>Aralkylamines</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrazines and derivatives</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monoalkylamines</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Phenylhydrazines</alternative-parent>
+    <alternative-parent>Substituted pyrroles</alternative-parent>
+    <substituent>1-hydroxy-4-unsubstituted benzenoid</substituent>
+    <substituent>3-alkylindole</substituent>
+    <substituent>Aldehyde</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aralkylamine</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrazine derivative</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Hydroxyindole</substituent>
+    <substituent>Indole</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phenylhydrazine</substituent>
+    <substituent>Primary aliphatic amine</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Pyrrole</substituent>
+    <substituent>Substituted pyrrole</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1mg3</pdb-entry>
+    <pdb-entry>1pby</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.08e-01 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.34</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S)-2-amino-3-[7-hydroxy-6-(2-phenylhydrazin-1-yl)-1H-indol-3-yl]propanal</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2S)-2-amino-3-[7-hydroxy-6-(2-phenylhydrazin-1-yl)-1H-indol-3-yl]propanal</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>310.3504</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>310.14297584</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@](N)(CC1=CNC2=C1C=CC(NNC1=CC=CC=C1)=C2O)C=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C17H18N4O2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C17H18N4O2/c18-12(10-22)8-11-9-19-16-14(11)6-7-15(17(16)23)21-20-13-4-2-1-3-5-13/h1-7,9-10,12,19-21,23H,8,18H2/t12-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>PSUOZWHAKZSNOB-LBPRGKRZSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>103.17</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>92.16</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>33.85</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>7.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>46937169</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>99445117</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>25058064</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>TRW</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0002746</id>
+      <name>Amicyanin</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P22364" source="Swiss-Prot">
+        <name>Amicyanin</name>
+        <general-function>Electron carrier activity</general-function>
+        <specific-function>Primary acceptor of electrons from methylamine dehydrogenase. Passes those electrons on either a soluble cytochrome c or to pseudoazurin.</specific-function>
+        <gene-name>mauC</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-26</signal-regions>
+        <theoretical-pi>6.67</theoretical-pi>
+        <molecular-weight>13983.11</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X55665</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P22364</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMCY_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ami</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011934|Amicyanin
+MISATKIRSCLAACVLAAFGATGALADKATIPSESPFAAAEVADGAIVVDIAKMKYETPE
+LHVKVGDTVTWINREAMPHNVHFVAGVLGEAALKGPMMKKEQAYSLTFTEAGTYDYHCTP
+HPFMRGKVVVE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005382|396 bp
+ATGATTTCTGCGACCAAGATCCGCTCGTGCCTGGCGGCCTGCGTCCTGGCGGCATTCGGC
+GCGACGGGCGCCCTGGCCGACAAGGCGACGATCCCCTCGGAAAGCCCCTTTGCCGCCGCC
+GAGGTGGCCGATGGCGCCATCGTCGTCGACATCGCCAAGATGAAATACGAAACCCCCGAA
+CTTCATGTGAAGGTCGGCGACACCGTCACCTGGATCAACCGCGAGGCGATGCCGCACAAT
+GTCCATTTCGTCGCCGGCGTGCTGGGCGAGGCGGCGTTGAAAGGCCCGATGATGAAGAAG
+GAGCAGGCCTATTCCCTGACCTTCACCGAGGCCGGCACCTATGACTATCACTGCACCCCG
+CATCCCTTCATGCGCGGCAAGGTCGTCGTCGAGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00127</identifier>
+            <name>Copper-bind</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0004354</id>
+      <name>Methylamine dehydrogenase heavy chain</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P29894" source="Swiss-Prot">
+        <name>Methylamine dehydrogenase heavy chain</name>
+        <general-function>Methylamine dehydrogenase (amicyanin) activity</general-function>
+        <specific-function>Methylamine dehydrogenase carries out the oxidation of methylamine. Electrons are passed from methylamine dehydrogenase to amicyanin.</specific-function>
+        <gene-name>mauB</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>4.58</theoretical-pi>
+        <molecular-weight>45439.73</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M90099</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>150584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P29894</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DHMH_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.9.1</synonym>
+          <synonym>MADH</synonym>
+          <synonym>Methylamine dehydrogenase (amicyanin)</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013035|Methylamine dehydrogenase heavy chain
+MALPPNFMPLFRASLIGLGLGCSALALAASAQDAPEAETQAQETQGQAAARAAAADLAAG
+QDDEPRILEAPAPDARRVYVNDPAHFAAVTQQFVIDGEAGRVIGMIDGGFLPNPVVADDG
+SFIAHASTVFSRIARGERTDYVEVFDPVTLLPTADIELPDAPRFLVGTYPWMTSLTPDGK
+TLLFYQFSPAPAVGVVDLEGKAFKRMLDVPDCYHIFPTAPDTFFMHCRDGSLAKVAFGTE
+GTPEITHTEVFHPEDEFLINHPAYSQKAGRLVWPTYTGKIHQIDLSSGDAKFLPAVEALT
+EAERADGWRPGGWQQVAYHRALDRIYLLVDQRDEWRHKTASRLLVVLDAKTGERLAKFEM
+GHEIDSINVSQDEKPLLYALSTGDKTLYIHDAESGEELRSVNQLGHGPQVITTADMG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008268|450 bp
+GCCGGCTTTTCCGGTTTCGGCAGCACGGCCCTGCTGGTGCTGGGGCTGGTCGGCCTGGCT
+TACGGTGCGCATCAGCTTGACTTCCTGCGCGTGCCCTATCCGCAGCGCCGGGCGCAGGTG
+CCGCATGACGCACGCCAGCGTTTCCCGAAATGGGTCATCGGCGGGCTTTACGGGCTGTCG
+CTGGGGCTCGATTACCTGACCTATGTGCAGACGCCGCTGCTTTACATGATGACGCTGGCG
+GCGGTCTTTACCGGCAATATCGCCCATGCCATCGCCATTGTCGCGCTGTTCAACCTGGGC
+CGGTTCCTGCCGGTCGCGGTCAACGCGCTGCCGATCCCCGATTACCGGGTGCAGGCATGG
+CTGGCCCGGCACCAGGAAAACGCCGCGCTGGCCGACGGCGCCATCCTGACCGCGCTTGGC
+GCGGGCTTCACGGTGCTGGCGCTGATCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF06433</identifier>
+            <name>Me-amine-dh_H</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>amine dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methylamine dehydrogenase (amicyanin) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>methylamine metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0004355</id>
+      <name>Methylamine dehydrogenase light chain</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P22619" source="Swiss-Prot">
+        <name>Methylamine dehydrogenase light chain</name>
+        <general-function>Methylamine dehydrogenase (amicyanin) activity</general-function>
+        <specific-function>Methylamine dehydrogenase carries out the oxidation of methylamine. Electrons are passed from methylamine dehydrogenase to amicyanin.</specific-function>
+        <gene-name>mauA</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-57</signal-regions>
+        <theoretical-pi>6.45</theoretical-pi>
+        <molecular-weight>20392.855</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M90098</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>150581</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P22619</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DHML_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.9.1</synonym>
+          <synonym>MADH</synonym>
+          <synonym>Methylamine dehydrogenase (amicyanin)</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013036|Methylamine dehydrogenase light chain
+MLGNFRFDDMVEKLSRRVAGQTSRRSVIGKLGTAMLGIGLVPLLPVDRRGRVSRANAADA
+PAGTDPRAKWVPQDNDIQACDYWRHCSIDGNICDCSGGSLTNCPPGTKLATASWVASCYN
+PTDGQSYLIAYRDCCGYNVSGRCPCLNTEGELPVYRPEFANDIIWCFGAEDDAMTYHCTI
+SPIVGKAS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008270|72 bp
+CTCGAGGCCGATAGGACCGGCTTCGCCTCGTTGCAGCAATACATGGCCAGCCGGAAGAAA
+CAGGCGGCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02975</identifier>
+            <name>Me-amine-dh_L</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>outer membrane-bounded periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>amine dehydrogenase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methylamine dehydrogenase (amicyanin) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>amine metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="4">
+      <id>BE0004356</id>
+      <name>Cytochrome c-L</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P29899" source="Swiss-Prot">
+        <name>Cytochrome c-L</name>
+        <general-function>Iron ion binding</general-function>
+        <specific-function>Electron acceptor for MDH. Acts in methanol oxidation.</specific-function>
+        <gene-name>moxG</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-22</signal-regions>
+        <theoretical-pi>4.06</theoretical-pi>
+        <molecular-weight>19395.54</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M57684</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>150590</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P29899</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CYCL_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Cytochrome c551I</synonym>
+          <synonym>Cytochrome c552</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013037|Cytochrome c-L
+MTKPRILAAFAMTLIIPVAAMAAPQFFNIIDGSPLNFDDAMEEGRDTEAVKHFLETGENV
+YNEDPEILPEAEELYAGMCSGCHGHYAEGKIGPGLNDAYWTYPGNETDVGLFSTLYGGAT
+GQMGPMWGSLTLDEMLRTMAWVRHLYTGDPKDASWLTDEQKAGFTPFQPKSSGEDQS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008272|831 bp
+ATGCTCATTGATTTCCGCCAGGTTTGCGGCGCGGGGGCGGCGGCCCTGGCCCTTGCCTCG
+CCCGCTCTGGCAGACACGACGAACCTGCGCGTCTGCGCCTCGACCAAGGACGCGCCCTTC
+TCGGACGCGCAGGGCGCCGGCTTTGAAAACAAGATCGCCCAAGTGCTGGCCGACGAGATG
+GGCGCCACGCTTGATCTGGTGATGCTGGAAAAAGACGCGATCTATCTGGTCCGCGACGGC
+ATCGAAAAGGATCTGTGCGACGTTCTGGTCGGCGTGGATGCGGGCGACGAGCGGCTGCTG
+ACCACCCGGCCCTATTACCGCTCGGGCTATGCCTTCGTCACGCGGCAGGACCGCAACTTC
+GAGGGCGACAAGTGGCAGGACGTGGATCAGGAGGGGTTCGACACCTTCTCGTATCGCCTG
+CATTCCCCGGCCGAGACGATCCTGAAATATACCGGCCGCTACGAATACAACCTGATCTAC
+CAGGCCTCGCTGACCAATTTCGAGGACCGGCGAAACAAATACACCCAGGTCGAGGCCAGC
+CGCGTCATCACGGAGGTCGCGGATGGCGGGGCCGATCTGGCCATCGTCTTCGCCCCCGAG
+GCGGCGCGCTATGTCCGCGACTCGCGCGAGCCCTTGCGTATGACCCTGATTACCAATGAA
+ATCGAACGCTCGGACGGCGTCATCATCCCGCTGCAATATTCGCAGTCCGTGGGCGTGTCC
+AAGACCCATCCCGAGCTTCTGGGGCCGATCGAACAGGCCCTGCAATCCGGCAAAGCCAGG
+ATTGATGCCATCCTGACCGAGGAAGGCATCCCCCTGCTGCCGTCAAGCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF13442</identifier>
+            <name>Cytochrome_CBB3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>methanol metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oxidation-reduction process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="5">
+      <id>BE0004357</id>
+      <name>Quinohemoprotein amine dehydrogenase subunit gamma</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8VUS8" source="Swiss-Prot">
+        <name>Quinohemoprotein amine dehydrogenase subunit gamma</name>
+        <general-function>Oxidoreductase activity, acting on the ch-nh2 group of donors</general-function>
+        <specific-function>Catalyzes the oxidative deamination of a wide range of aliphatic and aromatic amines.</specific-function>
+        <gene-name>qhnDH</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>3.62</theoretical-pi>
+        <molecular-weight>8965.865</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB063330</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>17402568</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8VUS8</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>QADG_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.99.-</synonym>
+          <synonym>QH-AmDH</synonym>
+          <synonym>Quinohemoprotein amine dehydrogenase 9 kDa subunit</synonym>
+          <synonym>Quinohemoprotein amine dehydrogenase catalytic subunit</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0008275|Quinohemoprotein amine dehydrogenase subunit gamma
+MNALVGCTTSFDPGWEVDAFGAVSNLCQPMEADLYGCADPCWWPAQVADTLNTYPNWSAG
+ADDVMQDWRKLQSVFPETKGSS</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008274|1539 bp
+ATGAAGCCATTCACCCGAACCGCGCTGGTCTCTGTCTCCGCCCTCGCCTTCGCCGCGCCG
+GTCCTTGCGGTGACGGGCGAGGAGGTGCTGCAGAACGCCTGCGCCGCCTGCCATGTCCAG
+CACGAGGACGGCCGATGGGAGCGCATCGACGCCGCGCGCAAGACGCCGGAAGGCTGGGAC
+ATGACCGTCACGCGGATGATGCGCAACCACGGCGTCGCGCTGGAACCCGAGGAGCGCGCC
+GCCATCGTGCGCCACCTCTCGGACACGCGCGGCCTGAGCCTGGCCGAGACCGAGGAGCGC
+CGCTATATCCTGGAACGCGAGCCGGTGGCCTGGGACGAGGGCCCCGACACGTCGATGACC
+CAGACCTGCGGCCGCTGCCATTCCTATGCCCGCGTCGCGCTGCAACGCCGCACGCCCGAG
+GACTGGAAGCATCTGGTCAACTTCCACCTGGGCCAGTTCCCGACGCTGGAATACCAGGCG
+CTGGCGCGGGACCGCGACTGGTGGGGCATCGCGCAGGCCGAGATCATCCCCTTCCTTGCC
+AGGACCTATCCGCTGGGCGAGGCGCCGGACGCCTATGCCGACGACGCCTCGGGCGCCTAT
+GTGCTGGCCGGACGGCAGCCGGGGCGCGGCGATTATACCGGCCGGCTGGTGCTGAAGAAG
+GCAGGCGAGGATTACGAGGTGACCATGACCCTCGACTTCGCCGATGGCAGCCGGAGCTTT
+TCCGGCACCGGCCGCATCCTCGGCGCCGGCGAATGGCGAGCGACGCTGAGCGACGGGACG
+GTGACCATTCGCCAGATCTTTGCCCTGCAGGACGGCCGCTTCTCGGGCCGCTGGCACGAC
+GCGGACAGCGACGTGATCGGCGGGCGGCTGGCAGCGGTCAAGGCGGATGCCGCGCCGCAG
+GTGCTGGCGGTCGCGCCCGCGCGGCTGAAGATCGGCGAGGAAACGCAGCTCCGCGTCGCT
+GGCACCGGGCTGGGCAGCGACCTGACCCTGCCCGAAGGCGTCGCCGGCAGCGTCGAAAGC
+GCCGGGAACGGCGTGACCGTGCTGAAGCTGACCGCCACCGGCACGCCCGGGCCGGTCAGC
+CTGGAATTGGGCGGGCAAAAGGTCGATCTGGTGGCCTATGACCGGCCCGACCGCATCAGC
+ATCGTGCCCGACCTGACCATCGCCCGCATCGGCGGCAATGGCGGCCCGATCCCCAAGGTG
+CCGGCCCAGTTCGAGGCGATGGGCTGGCTGAACGGCCCAGACGGCCAACCCGGGACCGGC
+GACGACATCGCCCTTGGCGCCTTTCCGGCCAGTTGGGCCACAGACAATTTCGACGAGGAG
+GCGGAAAAGATGCAGGACGCGAAATATGCGGGCTCCATCGACGACACCGGCCTGTTCACG
+CCGGCCGAGGCCGGGCCGAACCCTGAACGCCCGATGCAGACCAACAATGCCGGCAACCTG
+AAGGTGATCGCCACCGTCGATGCCGAAGGCGAGCCGCTGAGTGCCGAGGCGCATCTTTAT
+GCGACGGTGCAGCGCTTCGTCGATGCGCCGATCCGGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF08992</identifier>
+            <name>QH-AmDH_gamma</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxidoreductase activity, acting on the CH-NH2 group of donors</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="6">
+      <id>BE0004358</id>
+      <name>Quinohemoprotein amine dehydrogenase 60 kDa subunit</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8VUT0" source="TrEMBL">
+        <name>Quinohemoprotein amine dehydrogenase 60 kDa subunit</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions>1-23</signal-regions>
+        <theoretical-pi>4.66</theoretical-pi>
+        <molecular-weight>54998.075</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB063330</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>17402568</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8VUT0</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q8VUT0_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022107|Quinohemoprotein amine dehydrogenase 60 kDa subunit
+MKPFTRTALVSVSALAFAAPVLAVTGEEVLQNACAACHVQHEDGRWERIDAARKTPEGWD
+MTVTRMMRNHGVALEPEERAAIVRHLSDTRGLSLAETEERRYILEREPVAWDEGPDTSMT
+QTCGRCHSYARVALQRRTPEDWKHLVNFHLGQFPTLEYQALARDRDWWGIAQAEIIPFLA
+RTYPLGEAPDAYADDASGAYVLAGRQPGRGDYTGRLVLKKAGEDYEVTMTLDFADGSRSF
+SGTGRILGAGEWRATLSDGTVTIRQIFALQDGRFSGRWHDADSDVIGGRLAAVKADAAPQ
+VLAVAPARLKIGEETQLRVAGTGLGSDLTLPEGVAGSVESAGNGVTVLKLTATGTPGPVS
+LELGGQKVDLVAYDRPDRISIVPDLTIARIGGNGGPIPKVPAQFEAMGWLNGPDGQPGTG
+DDIALGAFPASWATDNFDEEAEKMQDAKYAGSIDDTGLFTPAEAGPNPERPMQTNNAGNL
+KVIATVDAEGEPLSAEAHLYATVQRFVDAPIR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008276|1539 bp
+ATGAAGCCATTCACCCGAACCGCGCTGGTCTCTGTCTCCGCCCTCGCCTTCGCCGCGCCG
+GTCCTTGCGGTGACGGGCGAGGAGGTGCTGCAGAACGCCTGCGCCGCCTGCCATGTCCAG
+CACGAGGACGGCCGATGGGAGCGCATCGACGCCGCGCGCAAGACGCCGGAAGGCTGGGAC
+ATGACCGTCACGCGGATGATGCGCAACCACGGCGTCGCGCTGGAACCCGAGGAGCGCGCC
+GCCATCGTGCGCCACCTCTCGGACACGCGCGGCCTGAGCCTGGCCGAGACCGAGGAGCGC
+CGCTATATCCTGGAACGCGAGCCGGTGGCCTGGGACGAGGGCCCCGACACGTCGATGACC
+CAGACCTGCGGCCGCTGCCATTCCTATGCCCGCGTCGCGCTGCAACGCCGCACGCCCGAG
+GACTGGAAGCATCTGGTCAACTTCCACCTGGGCCAGTTCCCGACGCTGGAATACCAGGCG
+CTGGCGCGGGACCGCGACTGGTGGGGCATCGCGCAGGCCGAGATCATCCCCTTCCTTGCC
+AGGACCTATCCGCTGGGCGAGGCGCCGGACGCCTATGCCGACGACGCCTCGGGCGCCTAT
+GTGCTGGCCGGACGGCAGCCGGGGCGCGGCGATTATACCGGCCGGCTGGTGCTGAAGAAG
+GCAGGCGAGGATTACGAGGTGACCATGACCCTCGACTTCGCCGATGGCAGCCGGAGCTTT
+TCCGGCACCGGCCGCATCCTCGGCGCCGGCGAATGGCGAGCGACGCTGAGCGACGGGACG
+GTGACCATTCGCCAGATCTTTGCCCTGCAGGACGGCCGCTTCTCGGGCCGCTGGCACGAC
+GCGGACAGCGACGTGATCGGCGGGCGGCTGGCAGCGGTCAAGGCGGATGCCGCGCCGCAG
+GTGCTGGCGGTCGCGCCCGCGCGGCTGAAGATCGGCGAGGAAACGCAGCTCCGCGTCGCT
+GGCACCGGGCTGGGCAGCGACCTGACCCTGCCCGAAGGCGTCGCCGGCAGCGTCGAAAGC
+GCCGGGAACGGCGTGACCGTGCTGAAGCTGACCGCCACCGGCACGCCCGGGCCGGTCAGC
+CTGGAATTGGGCGGGCAAAAGGTCGATCTGGTGGCCTATGACCGGCCCGACCGCATCAGC
+ATCGTGCCCGACCTGACCATCGCCCGCATCGGCGGCAATGGCGGCCCGATCCCCAAGGTG
+CCGGCCCAGTTCGAGGCGATGGGCTGGCTGAACGGCCCAGACGGCCAACCCGGGACCGGC
+GACGACATCGCCCTTGGCGCCTTTCCGGCCAGTTGGGCCACAGACAATTTCGACGAGGAG
+GCGGAAAAGATGCAGGACGCGAAATATGCGGGCTCCATCGACGACACCGGCCTGTTCACG
+CCGGCCGAGGCCGGGCCGAACCCTGAACGCCCGATGCAGACCAACAATGCCGGCAACCTG
+AAGGTGATCGCCACCGTCGATGCCGAAGGCGAGCCGCTGAGTGCCGAGGCGCATCTTTAT
+GCGACGGTGCAGCGCTTCGTCGATGCGCCGATCCGGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF09098</identifier>
+            <name>Dehyd-heme_bind</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09099</identifier>
+            <name>Qn_am_d_aIII</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09100</identifier>
+            <name>Qn_am_d_aIV</name>
+          </pfam>
+          <pfam>
+            <identifier>PF14930</identifier>
+            <name>Qn_am_d_aII</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="7">
+      <id>BE0004359</id>
+      <name>Quinohemoprotein amine dehydrogenase 40 kDa subunit</name>
+      <organism>Paracoccus denitrificans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8VUS7" source="TrEMBL">
+        <name>Quinohemoprotein amine dehydrogenase 40 kDa subunit</name>
+        <general-function/>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions>1-21</signal-regions>
+        <theoretical-pi>4.85</theoretical-pi>
+        <molecular-weight>39051.235</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="266">Paracoccus denitrificans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB063330</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>17402568</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8VUS7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q8VUS7_PARDE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0013038|Quinohemoprotein amine dehydrogenase 40 kDa subunit
+MRKSLMLLASAAAMLAGPALARDYILAPARPDKLVVIDTEKMAVDKVITIADAGPTPMVP
+MVAPGGRIAYATVNKSESLVKIDLVTGETLGRIDLSTPEERVKSLFGAALSPDGKTLAIY
+ESPVRLELTHFEVQPTRVALYDAETLSRRKAFEAPRQITMLAWARDGSKLYGLGRDLHVM
+DPEAGTLVEDKPIQSWEAETYAQPDVLAVWNQHESSGVMATPFYTARKDIDPADPTAYRT
+GLLTMDLETGEMAMREVRIMDVFYFSTAVNPAKTRAFGAYNVLESFDLEKNASIKRVPLP
+HSYYSVNVSTDGSTVWLGGALGDLAAYDAETLEKKGQVDLPGNASMSLASVRLFTRDE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0008278|1539 bp
+ATGAAGCCATTCACCCGAACCGCGCTGGTCTCTGTCTCCGCCCTCGCCTTCGCCGCGCCG
+GTCCTTGCGGTGACGGGCGAGGAGGTGCTGCAGAACGCCTGCGCCGCCTGCCATGTCCAG
+CACGAGGACGGCCGATGGGAGCGCATCGACGCCGCGCGCAAGACGCCGGAAGGCTGGGAC
+ATGACCGTCACGCGGATGATGCGCAACCACGGCGTCGCGCTGGAACCCGAGGAGCGCGCC
+GCCATCGTGCGCCACCTCTCGGACACGCGCGGCCTGAGCCTGGCCGAGACCGAGGAGCGC
+CGCTATATCCTGGAACGCGAGCCGGTGGCCTGGGACGAGGGCCCCGACACGTCGATGACC
+CAGACCTGCGGCCGCTGCCATTCCTATGCCCGCGTCGCGCTGCAACGCCGCACGCCCGAG
+GACTGGAAGCATCTGGTCAACTTCCACCTGGGCCAGTTCCCGACGCTGGAATACCAGGCG
+CTGGCGCGGGACCGCGACTGGTGGGGCATCGCGCAGGCCGAGATCATCCCCTTCCTTGCC
+AGGACCTATCCGCTGGGCGAGGCGCCGGACGCCTATGCCGACGACGCCTCGGGCGCCTAT
+GTGCTGGCCGGACGGCAGCCGGGGCGCGGCGATTATACCGGCCGGCTGGTGCTGAAGAAG
+GCAGGCGAGGATTACGAGGTGACCATGACCCTCGACTTCGCCGATGGCAGCCGGAGCTTT
+TCCGGCACCGGCCGCATCCTCGGCGCCGGCGAATGGCGAGCGACGCTGAGCGACGGGACG
+GTGACCATTCGCCAGATCTTTGCCCTGCAGGACGGCCGCTTCTCGGGCCGCTGGCACGAC
+GCGGACAGCGACGTGATCGGCGGGCGGCTGGCAGCGGTCAAGGCGGATGCCGCGCCGCAG
+GTGCTGGCGGTCGCGCCCGCGCGGCTGAAGATCGGCGAGGAAACGCAGCTCCGCGTCGCT
+GGCACCGGGCTGGGCAGCGACCTGACCCTGCCCGAAGGCGTCGCCGGCAGCGTCGAAAGC
+GCCGGGAACGGCGTGACCGTGCTGAAGCTGACCGCCACCGGCACGCCCGGGCCGGTCAGC
+CTGGAATTGGGCGGGCAAAAGGTCGATCTGGTGGCCTATGACCGGCCCGACCGCATCAGC
+ATCGTGCCCGACCTGACCATCGCCCGCATCGGCGGCAATGGCGGCCCGATCCCCAAGGTG
+CCGGCCCAGTTCGAGGCGATGGGCTGGCTGAACGGCCCAGACGGCCAACCCGGGACCGGC
+GACGACATCGCCCTTGGCGCCTTTCCGGCCAGTTGGGCCACAGACAATTTCGACGAGGAG
+GCGGAAAAGATGCAGGACGCGAAATATGCGGGCTCCATCGACGACACCGGCCTGTTCACG
+CCGGCCGAGGCCGGGCCGAACCCTGAACGCCCGATGCAGACCAACAATGCCGGCAACCTG
+AAGGTGATCGCCACCGTCGATGCCGAAGGCGAGCCGCTGAGTGCCGAGGCGCATCTTTAT
+GCGACGGTGCAGCGCTTCGTCGATGCGCCGATCCGGTGA</gene-sequence>
+        <pfams/>
+        <go-classifiers/>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

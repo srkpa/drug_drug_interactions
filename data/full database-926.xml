@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB00943</drugbank-id>
+  <drugbank-id>APRD00562</drugbank-id>
+  <name>Zalcitabine</name>
+  <description>A dideoxynucleoside compound in which the 3'-hydroxyl group on the sugar moiety has been replaced by a hydrogen. This modification prevents the formation of 5' to 3' phosphodiester linkages, which are needed for the elongation of DNA chains, thus resulting in the termination of viral DNA growth. The compound is a potent inhibitor of HIV replication at low concentrations, acting as a chain-terminator of viral DNA by binding to reverse transcriptase. Its principal toxic side effect is axonal degeneration resulting in peripheral neuropathy.</description>
+  <cas-number>7481-89-2</cas-number>
+  <unii>6L3XT8CB3I</unii>
+  <average-mass>211.2178</average-mass>
+  <monoisotopic-mass>211.095691297</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A1436</ref-id>
+        <pubmed-id>8097417</pubmed-id>
+        <citation>Shelton MJ, O'Donnell AM, Morse GD: Zalcitabine. Ann Pharmacother. 1993 Apr;27(4):480-9.</citation>
+      </article>
+      <article>
+        <ref-id>A14580</ref-id>
+        <pubmed-id>7614775</pubmed-id>
+        <citation>Devineni D, Gallo JM: Zalcitabine. Clinical pharmacokinetics and efficacy. Clin Pharmacokinet. 1995 May;28(5):351-60.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of Human immunovirus (HIV) infections in conjunction with other antivirals.</indication>
+  <pharmacodynamics>Zalcitabine is an analog of 2'-deoxycytidine that is pharmacologically related to but structurally different from other nucleotide reverse transcriptase inhibitors (NRTIs). Zalcitabine inhibits the activity of HIV-1 reverse transcriptase (RT) both by competing with the natural substrate dGTP and by its incorporation into viral DNA.</pharmacodynamics>
+  <mechanism-of-action>Zalcitabine is a nucleoside reverse transcriptase inhibitor (NRTI) with activity against Human Immunodeficiency Virus Type 1 (HIV-1). Within cells, zalcitabine is converted to its active metabolite, dideoxycytidine 5'-triphosphate (ddCTP), by the sequential action of cellular enzymes. ddCTP interferes with viral RNA-directed DNA polymerase (reverse transcriptase) by competing for utilization of the natural substrate deoxycytidine 5'-triphosphate (dCTP), as well as incorpating into viral DNA. Due to it's lack of a 3'-OH group, the formation of a 5' to 3' phosphodiester linkage that is necessary for DNA chain elongation is inhibited, thus leading to the termination of viral DNA growth.</mechanism-of-action>
+  <toxicity>Acute overdose: Inadvertent pediatric overdoses have occurred with doses up to 1.5 mg/kg zalcitabine. Chronic overdose: in an initial dose-finding study in which zalcitabine was administered at doses 25 times (0.25 mg/kg every 8 hours) the currently recommended dose, one patient discontinued zalcitabine after 1½ weeks of treatment subsequent to the development of a rash and fever.</toxicity>
+  <metabolism>Zalcitabine is not reported to undergo significant hepatic metabolism; it is mainly phosphorylated intracellularly to zalcitabine triphosphate, the active substrate for HIV-reverse transcriptase. The concentration of zalcitabine triphosphate remains low for quantitative detection and measurement in the plasma following administration of therapeutic doses [FDA Label]. </metabolism>
+  <absorption>Bioavailability is over 80% following oral administration.</absorption>
+  <half-life>2 hours</half-life>
+  <protein-binding>Less than 4%</protein-binding>
+  <route-of-elimination>Renal excretion of unchanged drug appears to be the primary route of elimination, accounting for approximately 80% of an intravenous dose and 60% of an orally administered dose within 24 hours after dosing (n=19). Renal clearance exceeds glomerular filtration rate suggesting renal tubular secretion contributes to the elimination of zalcitabine by the kidneys.</route-of-elimination>
+  <volume-of-distribution>* 0.304 to 0.734 L/kg</volume-of-distribution>
+  <clearance>* 285 mL/min [HIV-infected patients receiving 1.5 mg IV infusion for 1 hour]</clearance>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as pyrimidine 2',3'-dideoxyribonucleosides. These are compounds consisting of a pyrimidine linked to a ribose which lacks a hydroxyl group at positions 2 and 3.</description>
+    <direct-parent>Pyrimidine 2',3'-dideoxyribonucleosides</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Nucleosides, nucleotides, and analogues</superclass>
+    <class>Pyrimidine nucleosides</class>
+    <subclass>Pyrimidine 2',3'-dideoxyribonucleosides</subclass>
+    <alternative-parent>Aminopyrimidines and derivatives</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Hydropyrimidines</alternative-parent>
+    <alternative-parent>Imidolactams</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Primary alcohols</alternative-parent>
+    <alternative-parent>Primary amines</alternative-parent>
+    <alternative-parent>Pyrimidones</alternative-parent>
+    <alternative-parent>Tetrahydrofurans</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aminopyrimidine</substituent>
+    <substituent>Aromatic heteromonocyclic compound</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Hydropyrimidine</substituent>
+    <substituent>Imidolactam</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Primary alcohol</substituent>
+    <substituent>Primary amine</substituent>
+    <substituent>Pyrimidine</substituent>
+    <substituent>Pyrimidine 2',3'-dideoxyribonucleoside</substituent>
+    <substituent>Pyrimidone</substituent>
+    <substituent>Tetrahydrofuran</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="iupac">2',3'-Dideoxycytidine</synonym>
+    <synonym language="english" coder="">4-amino-1-[(2R,5S)-5-(hydroxymethyl)tetrahydrofuran-2-yl]pyrimidin-2(1H)-one</synonym>
+    <synonym language="english" coder="">DDC</synonym>
+    <synonym language="english" coder="">DDCYD</synonym>
+    <synonym language="english" coder="">Dideoxycytidine</synonym>
+    <synonym language="english" coder="inn/usan">Zalcitabine</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Hivid</name>
+      <labeller>Physicians Total Care, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>54868-2500</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-06-19</started-marketing-on>
+      <ended-marketing-on>2007-08-21</ended-marketing-on>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>0.75 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA020199</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Hivid</name>
+      <labeller>Genentech, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0004-0220</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-06-19</started-marketing-on>
+      <ended-marketing-on>2009-06-18</ended-marketing-on>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>0.375 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA020199</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Hivid</name>
+      <labeller>Genentech, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>0004-0221</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-06-19</started-marketing-on>
+      <ended-marketing-on>2009-06-18</ended-marketing-on>
+      <dosage-form>Tablet, film coated</dosage-form>
+      <strength>0.75 mg/1</strength>
+      <route>Oral</route>
+      <fda-application-number>NDA020199</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Hivid Tab 0.375mg</name>
+      <labeller>Hoffmann La Roche</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01990918</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2003-07-30</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Hivid Tab 0.75 mg</name>
+      <labeller>Hoffmann La Roche</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01990896</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2006-07-25</ended-marketing-on>
+      <dosage-form>Tablet</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Hivid</name>
+      <ingredients>Zalcitabine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Hivid</name>
+      <ingredients>Zalcitabine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Hivid</name>
+      <ingredients>Zalcitabine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Hivid Tab 0.75 mg</name>
+      <ingredients>Zalcitabine</ingredients>
+    </mixture>
+    <mixture>
+      <name>Hivid Tab 0.375mg</name>
+      <ingredients>Zalcitabine</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers>
+    <packager>
+      <name>Murfreesboro Pharmaceutical Nursing Supply</name>
+      <url>http://www.unitdosesupply.com</url>
+    </packager>
+    <packager>
+      <name>Pharmaceutical Utilization Management Program VA Inc.</name>
+      <url/>
+    </packager>
+    <packager>
+      <name>Physicians Total Care Inc.</name>
+      <url>http://www.physicianstotalcare.com</url>
+    </packager>
+  </packagers>
+  <manufacturers>
+    <manufacturer generic="false" url="">Hoffmann la roche inc</manufacturer>
+  </manufacturers>
+  <prices>
+    <price>
+      <description>Hivid 0.375 mg tablet</description>
+      <cost currency="USD">2.27</cost>
+      <unit>tablet</unit>
+    </price>
+    <price>
+      <description>Hivid 0.75 mg tablet</description>
+      <cost currency="USD">2.84</cost>
+      <unit>tablet</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Anti-HIV Agents</category>
+      <mesh-id>D019380</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Retroviral Agents</category>
+      <mesh-id>D044966</mesh-id>
+    </category>
+    <category>
+      <category>Antiinfectives for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antimetabolites</category>
+      <mesh-id>D000963</mesh-id>
+    </category>
+    <category>
+      <category>Antiviral Agents</category>
+      <mesh-id>D000998</mesh-id>
+    </category>
+    <category>
+      <category>Antivirals for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Deoxycytidine</category>
+      <mesh-id>D003841</mesh-id>
+    </category>
+    <category>
+      <category>Deoxyribonucleosides</category>
+      <mesh-id>D003853</mesh-id>
+    </category>
+    <category>
+      <category>Dideoxynucleosides</category>
+      <mesh-id>D015224</mesh-id>
+    </category>
+    <category>
+      <category>Direct Acting Antivirals</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Enzyme Inhibitors</category>
+      <mesh-id>D004791</mesh-id>
+    </category>
+    <category>
+      <category>Glycosides</category>
+      <mesh-id>D006027</mesh-id>
+    </category>
+    <category>
+      <category>Noxae</category>
+      <mesh-id>D009676</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acid Synthesis Inhibitors</category>
+      <mesh-id>D019384</mesh-id>
+    </category>
+    <category>
+      <category>Nucleic Acids, Nucleotides, and Nucleosides</category>
+      <mesh-id>D009706</mesh-id>
+    </category>
+    <category>
+      <category>Nucleoside and Nucleotide Reverse Transcriptase Inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Nucleoside Reverse Transcriptase Inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Nucleosides</category>
+      <mesh-id>D009705</mesh-id>
+    </category>
+    <category>
+      <category>OAT1/SLC22A6 Substrates</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Pyrimidine Nucleosides</category>
+      <mesh-id>D011741</mesh-id>
+    </category>
+    <category>
+      <category>Pyrimidines</category>
+      <mesh-id>D011743</mesh-id>
+    </category>
+    <category>
+      <category>Reverse Transcriptase Inhibitors</category>
+      <mesh-id>D018894</mesh-id>
+    </category>
+    <category>
+      <category>Ribonucleosides</category>
+      <mesh-id>D012263</mesh-id>
+    </category>
+    <category>
+      <category>Toxic Actions</category>
+      <mesh-id>D004786</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Human Immunodeficiency Virus</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Tablet, film coated</form>
+      <route>Oral</route>
+      <strength>0.375 mg/1</strength>
+    </dosage>
+    <dosage>
+      <form>Tablet, film coated</form>
+      <route>Oral</route>
+      <strength>0.75 mg/1</strength>
+    </dosage>
+    <dosage>
+      <form>Tablet</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="J05AF03">
+      <level code="J05AF">Nucleoside and nucleotide reverse transcriptase inhibitors</level>
+      <level code="J05A">DIRECT ACTING ANTIVIRALS</level>
+      <level code="J05">ANTIVIRALS FOR SYSTEMIC USE</level>
+      <level code="J">ANTIINFECTIVES FOR SYSTEMIC USE</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB00943.pdf?1265922808</fda-label>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB00943.pdf?1265922746</msds>
+  <patents/>
+  <food-interactions>
+    <food-interaction>Do not take calcium, aluminium, magnesium or iron supplements within 2 hours of taking this medication.</food-interaction>
+    <food-interaction>Take on empty stomach: 1 hour before or 2 hours after meals.</food-interaction>
+  </food-interactions>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB00811</drugbank-id>
+      <name>Ribavirin</name>
+      <description>Ribavirin may increase the hepatotoxic activities of Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01004</drugbank-id>
+      <name>Ganciclovir</name>
+      <description>The risk or severity of cytopenia can be increased when Ganciclovir is combined with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01610</drugbank-id>
+      <name>Valganciclovir</name>
+      <description>The risk or severity of cytopenia can be increased when Valganciclovir is combined with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00091</drugbank-id>
+      <name>Cyclosporine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cyclosporine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00140</drugbank-id>
+      <name>Riboflavin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Riboflavin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00158</drugbank-id>
+      <name>Folic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Folic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00168</drugbank-id>
+      <name>Aspartame</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Aspartame.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00175</drugbank-id>
+      <name>Pravastatin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Pravastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00229</drugbank-id>
+      <name>Cefotiam</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefotiam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00254</drugbank-id>
+      <name>Doxycycline</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Doxycycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00311</drugbank-id>
+      <name>Ethoxzolamide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ethoxzolamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00313</drugbank-id>
+      <name>Valproic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Valproic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00318</drugbank-id>
+      <name>Codeine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Codeine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00319</drugbank-id>
+      <name>Piperacillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Piperacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Indomethacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00345</drugbank-id>
+      <name>Aminohippuric acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Aminohippuric acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00369</drugbank-id>
+      <name>Cidofovir</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cidofovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00432</drugbank-id>
+      <name>Trifluridine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Trifluridine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00438</drugbank-id>
+      <name>Ceftazidime</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ceftazidime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00446</drugbank-id>
+      <name>Chloramphenicol</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Chloramphenicol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00456</drugbank-id>
+      <name>Cefalotin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefalotin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00493</drugbank-id>
+      <name>Cefotaxime</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefotaxime.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00500</drugbank-id>
+      <name>Tolmetin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Tolmetin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00501</drugbank-id>
+      <name>Cimetidine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cimetidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00520</drugbank-id>
+      <name>Caspofungin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Caspofungin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00529</drugbank-id>
+      <name>Foscarnet</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Foscarnet.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00554</drugbank-id>
+      <name>Piroxicam</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Piroxicam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Methotrexate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00567</drugbank-id>
+      <name>Cephalexin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cephalexin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00578</drugbank-id>
+      <name>Carbenicillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Carbenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00584</drugbank-id>
+      <name>Enalapril</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Enalapril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00586</drugbank-id>
+      <name>Diclofenac</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Diclofenac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00595</drugbank-id>
+      <name>Oxytetracycline</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Oxytetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00605</drugbank-id>
+      <name>Sulindac</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Sulindac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00606</drugbank-id>
+      <name>Cyclothiazide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cyclothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00607</drugbank-id>
+      <name>Nafcillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Nafcillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00672</drugbank-id>
+      <name>Chlorpropamide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Chlorpropamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00678</drugbank-id>
+      <name>Losartan</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Losartan.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00693</drugbank-id>
+      <name>Fluorescein</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Fluorescein.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00695</drugbank-id>
+      <name>Furosemide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Furosemide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00703</drugbank-id>
+      <name>Methazolamide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Methazolamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00712</drugbank-id>
+      <name>Flurbiprofen</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Flurbiprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00718</drugbank-id>
+      <name>Adefovir dipivoxil</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Adefovir dipivoxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00731</drugbank-id>
+      <name>Nateglinide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Nateglinide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00749</drugbank-id>
+      <name>Etodolac</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Etodolac.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00759</drugbank-id>
+      <name>Tetracycline</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Tetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00770</drugbank-id>
+      <name>Alprostadil</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Alprostadil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00779</drugbank-id>
+      <name>Nalidixic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Nalidixic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00787</drugbank-id>
+      <name>Acyclovir</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Acyclovir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00788</drugbank-id>
+      <name>Naproxen</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Naproxen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00798</drugbank-id>
+      <name>Gentamicin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Gentamicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00812</drugbank-id>
+      <name>Phenylbutazone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Phenylbutazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00819</drugbank-id>
+      <name>Acetazolamide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Acetazolamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00821</drugbank-id>
+      <name>Carprofen</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Carprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00827</drugbank-id>
+      <name>Cinoxacin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cinoxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00861</drugbank-id>
+      <name>Diflunisal</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Diflunisal.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00863</drugbank-id>
+      <name>Ranitidine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ranitidine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00880</drugbank-id>
+      <name>Chlorothiazide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Chlorothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00887</drugbank-id>
+      <name>Bumetanide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Bumetanide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00903</drugbank-id>
+      <name>Etacrynic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Etacrynic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00917</drugbank-id>
+      <name>Dinoprostone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Dinoprostone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00936</drugbank-id>
+      <name>Salicylic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Salicylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00939</drugbank-id>
+      <name>Meclofenamic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Meclofenamic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00945</drugbank-id>
+      <name>Acetylsalicylic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Acetylsalicylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00999</drugbank-id>
+      <name>Hydrochlorothiazide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Hydrochlorothiazide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01009</drugbank-id>
+      <name>Ketoprofen</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ketoprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01016</drugbank-id>
+      <name>Glyburide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Glyburide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01017</drugbank-id>
+      <name>Minocycline</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Minocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01032</drugbank-id>
+      <name>Probenecid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Probenecid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01045</drugbank-id>
+      <name>Rifampicin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Rifampicin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01050</drugbank-id>
+      <name>Ibuprofen</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ibuprofen.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01051</drugbank-id>
+      <name>Novobiocin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Novobiocin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01053</drugbank-id>
+      <name>Benzylpenicillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Benzylpenicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01059</drugbank-id>
+      <name>Norfloxacin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Norfloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01060</drugbank-id>
+      <name>Amoxicillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Amoxicillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01082</drugbank-id>
+      <name>Streptomycin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Streptomycin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01124</drugbank-id>
+      <name>Tolbutamide</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Tolbutamide.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01140</drugbank-id>
+      <name>Cefadroxil</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefadroxil.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01147</drugbank-id>
+      <name>Cloxacillin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01165</drugbank-id>
+      <name>Ofloxacin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ofloxacin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01197</drugbank-id>
+      <name>Captopril</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Captopril.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01212</drugbank-id>
+      <name>Ceftriaxone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ceftriaxone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01326</drugbank-id>
+      <name>Cefamandole</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefamandole.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01327</drugbank-id>
+      <name>Cefazolin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefazolin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01329</drugbank-id>
+      <name>Cefoperazone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefoperazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01333</drugbank-id>
+      <name>Cefradine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefradine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01414</drugbank-id>
+      <name>Cefacetrile</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cefacetrile.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01424</drugbank-id>
+      <name>Aminophenazone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Aminophenazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01435</drugbank-id>
+      <name>Antipyrine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Antipyrine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01597</drugbank-id>
+      <name>Cilastatin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cilastatin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01606</drugbank-id>
+      <name>Tazobactam</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Tazobactam.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01685</drugbank-id>
+      <name>Topiroxostat</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Topiroxostat.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02266</drugbank-id>
+      <name>Flufenamic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Flufenamic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03553</drugbank-id>
+      <name>Glutaric Acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Glutaric Acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03585</drugbank-id>
+      <name>Oxyphenbutazone</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Oxyphenbutazone.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03783</drugbank-id>
+      <name>Phenacetin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Phenacetin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04348</drugbank-id>
+      <name>Taurocholic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Taurocholic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04519</drugbank-id>
+      <name>Caprylic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Caprylic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05016</drugbank-id>
+      <name>Ataluren</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ataluren.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08846</drugbank-id>
+      <name>Ellagic acid</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Ellagic acid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08912</drugbank-id>
+      <name>Dabrafenib</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Dabrafenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08930</drugbank-id>
+      <name>Dolutegravir</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Dolutegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09078</drugbank-id>
+      <name>Lenvatinib</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Lenvatinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09298</drugbank-id>
+      <name>Silibinin</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Silibinin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11751</drugbank-id>
+      <name>Cabotegravir</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cabotegravir.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11817</drugbank-id>
+      <name>Baricitinib</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Baricitinib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12332</drugbank-id>
+      <name>Rucaparib</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Rucaparib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13874</drugbank-id>
+      <name>Enasidenib</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Enasidenib.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11757</drugbank-id>
+      <name>Istradefylline</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Istradefylline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10317</drugbank-id>
+      <name>Rubella virus vaccine</name>
+      <description>The therapeutic efficacy of Rubella virus vaccine can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10343</drugbank-id>
+      <name>Bacillus calmette-guerin substrain tice live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain tice live antigen can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10804</drugbank-id>
+      <name>Bacillus calmette-guerin substrain connaught live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain connaught live antigen can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10805</drugbank-id>
+      <name>Yellow Fever Vaccine</name>
+      <description>The therapeutic efficacy of Yellow Fever Vaccine can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11003</drugbank-id>
+      <name>Anthrax vaccine</name>
+      <description>The therapeutic efficacy of Anthrax vaccine can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11050</drugbank-id>
+      <name>Typhoid Vaccine Live</name>
+      <description>The therapeutic efficacy of Typhoid Vaccine Live can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12386</drugbank-id>
+      <name>Bacillus calmette-guerin substrain danish 1331 live antigen</name>
+      <description>The therapeutic efficacy of Bacillus calmette-guerin substrain danish 1331 live antigen can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14409</drugbank-id>
+      <name>Human adenovirus e serotype 4 strain cl-68578 antigen</name>
+      <description>The therapeutic efficacy of Human adenovirus e serotype 4 strain cl-68578 antigen can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14443</drugbank-id>
+      <name>Vibrio cholerae CVD 103-HgR strain live antigen</name>
+      <description>The therapeutic efficacy of Vibrio cholerae CVD 103-HgR strain live antigen can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14685</drugbank-id>
+      <name>Adenovirus type 7 vaccine live</name>
+      <description>The therapeutic efficacy of Adenovirus type 7 vaccine live can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB10318</drugbank-id>
+      <name>Varicella Zoster Vaccine (Live/attenuated)</name>
+      <description>The therapeutic efficacy of Varicella Zoster Vaccine (Live/attenuated) can be decreased when used in combination with Zalcitabine.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-1.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.5</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>7.05e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>4-amino-1-[(2R,5S)-5-(hydroxymethyl)oxolan-2-yl]-1,2-dihydropyrimidin-2-one</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>zalcitabine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>211.2178</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>211.095691297</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>NC1=NC(=O)N(C=C1)[C@H]1CC[C@@H](CO)O1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C9H13N3O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C9H13N3O3/c10-7-3-4-12(9(14)11-7)8-2-1-6(5-13)15-8/h3-4,6,8,13H,1-2,5H2,(H2,10,11,14)/t6-,8+/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>WREGKURFCTUGRC-POYBYMJQSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>88.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>52.24</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>20.86</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>14.67</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>0.18</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>7.64E+004 mg/L (at 25 °C)</value>
+      <source>PHYSICIANS DESK REFERENCE (2001)</source>
+    </property>
+    <property>
+      <kind>Melting Point</kind>
+      <value>217-218 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.30</value>
+      <source>SANGSTER (1993)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>884</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>10101</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>24066</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507879</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C07207</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D00412</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>22498</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50145605</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA451950</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Therapeutic Targets Database</resource>
+      <identifier>DNC000527</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Zalcitabine</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL853</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/cgi/generic2/zalcit.htm</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/cdi/zalcitabine.html</url>
+    </external-link>
+  </external-links>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000746</smpdb-id>
+      <name>Zalcitabine Action Pathway</name>
+      <category>drug_action</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00943</drugbank-id>
+          <name>Zalcitabine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+      </drugs>
+      <enzymes/>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="3">
+      <id>BE0004136</id>
+      <name>Reverse transcriptase/RNaseH</name>
+      <organism>Human immunodeficiency virus 1</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A14580</ref-id>
+            <pubmed-id>7614775</pubmed-id>
+            <citation>Devineni D, Gallo JM: Zalcitabine. Clinical pharmacokinetics and efficacy. Clin Pharmacokinet. 1995 May;28(5):351-60.</citation>
+          </article>
+          <article>
+            <ref-id>A17445</ref-id>
+            <pubmed-id>9179531</pubmed-id>
+            <citation>Adkins JC, Peters DH, Faulds D: Zalcitabine. An update of its pharmacodynamic and pharmacokinetic properties and clinical efficacy in the management of HIV infection. Drugs. 1997 Jun;53(6):1054-80.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="Q72547" source="TrEMBL">
+        <name>Reverse transcriptase/RNaseH</name>
+        <general-function>Rna-dna hybrid ribonuclease activity</general-function>
+        <specific-function/>
+        <gene-name>pol</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>8.45</theoretical-pi>
+        <molecular-weight>65223.615</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="11676">Human immunodeficiency virus 1</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U28646</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>896047</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q72547</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q72547_9HIV1</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012880|Reverse transcriptase/RNaseH
+PISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPV
+FAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKRKSVTVLDVGDAYFSVPL
+DEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVI
+YQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWT
+VQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIRVRQLCKLLRGTKALTEVIPLTEEAE
+LELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLRTGKYARMRGA
+HTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTP
+PLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQ
+AIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHK
+GIGGNEQVDKLVSAGIRKVLFLDGID</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF00078</identifier>
+            <name>RVT_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00075</identifier>
+            <name>RNase_H</name>
+          </pfam>
+          <pfam>
+            <identifier>PF06815</identifier>
+            <name>RVT_connect</name>
+          </pfam>
+          <pfam>
+            <identifier>PF06817</identifier>
+            <name>RVT_thumb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleic acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA-directed DNA polymerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>RNA-DNA hybrid ribonuclease activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme>
+      <id>BE0002804</id>
+      <name>Deoxycytidine kinase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A15105</ref-id>
+            <pubmed-id>10585881</pubmed-id>
+            <citation>Rossi L, Serafini S, Schiavano GF, Casabianca A, Vallanti G, Chiarantini L, Magnani M: Metabolism, mitochondrial uptake and toxicity of 2', 3'-dideoxycytidine. Biochem J. 1999 Dec 15;344 Pt 3:915-20.</citation>
+          </article>
+          <article>
+            <ref-id>A15106</ref-id>
+            <pubmed-id>7763311</pubmed-id>
+            <citation>Kitos TE, Tyrrell DL: Intracellular metabolism of 2',3'-dideoxynucleosides in duck hepatocyte primary cultures. Biochem Pharmacol. 1995 May 11;49(9):1291-302.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P27707" source="Swiss-Prot">
+        <name>Deoxycytidine kinase</name>
+        <general-function>Protein homodimerization activity</general-function>
+        <specific-function>Required for the phosphorylation of the deoxyribonucleosides deoxycytidine (dC), deoxyguanosine (dG) and deoxyadenosine (dA). Has broad substrate specificity, and does not display selectivity based on the chirality of the substrate. It is also an essential enzyme for the phosphorylation of numerous nucleoside analogs widely employed as antiviral and chemotherapeutic agents.</specific-function>
+        <gene-name>DCK</gene-name>
+        <locus>4q13.3-q21.1</locus>
+        <cellular-location>Nucleus</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.88</theoretical-pi>
+        <molecular-weight>30518.315</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2704</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>DCK</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M60527</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P27707</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DCK_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.1.74</synonym>
+          <synonym>dCK</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016896|Deoxycytidine kinase
+MATPPKRSCPSFSASSEGTRIKKISIEGNIAAGKSTFVNILKQLCEDWEVVPEPVARWCN
+VQSTQDEFEELTMSQKNGGNVLQMMYEKPERWSFTFQTYACLSRIRAQLASLNGKLKDAE
+KPVLFFERSVYSDRYIFASNLYESECMNETEWTIYQDWHDWMNNQFGQSLELDGIIYLQA
+TPETCLHRIYLRGRNEEQGIPLEYLEKLHYKHESWLLHRTLKTNFDYLQEVPILTLDVNE
+DFKDKYESLVEKVKEFLSTL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016897|Deoxycytidine kinase (DCK)
+ATGGCCACCCCGCCCAAGAGAAGCTGCCCGTCTTTCTCAGCCAGCTCTGAGGGGACCCGC
+ATCAAGAAAATCTCCATCGAAGGGAACATCGCTGCAGGGAAGTCAACATTTGTGAATATC
+CTTAAACAATTGTGTGAAGATTGGGAAGTGGTTCCTGAACCTGTTGCCAGATGGTGCAAT
+GTTCAAAGTACTCAAGATGAATTTGAGGAACTTACAATGTCTCAGAAAAATGGTGGGAAT
+GTTCTTCAGATGATGTATGAGAAACCTGAACGATGGTCTTTTACCTTCCAAACATATGCC
+TGTCTCAGTCGAATAAGAGCTCAGCTTGCCTCTCTGAATGGCAAGCTCAAAGATGCAGAG
+AAACCTGTATTATTTTTTGAACGATCTGTGTATAGTGACAGGTATATTTTTGCATCTAAT
+TTGTATGAATCTGAATGCATGAATGAGACAGAGTGGACAATTTATCAAGACTGGCATGAC
+TGGATGAATAACCAATTTGGCCAAAGCCTTGAATTGGATGGAATCATTTATCTTCAAGCC
+ACTCCAGAGACATGCTTACATAGAATATATTTACGGGGAAGAAATGAAGAGCAAGGCATT
+CCTCTTGAATATTTAGAGAAGCTTCATTATAAACATGAAAGCTGGCTCCTGCATAGGACA
+CTGAAAACCAACTTCGATTATCTTCAAGAGGTGCCTATCTTAACACTGGATGTTAATGAA
+GACTTTAAAGACAAATATGAAAGTCTGGTTGAAAAGGTCAAAGAGTTTTTGAGTACTTTG
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01712</identifier>
+            <name>dNK</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>deoxycytidine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleoside kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>deoxyribonucleoside monophosphate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleotide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>purine-containing compound salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleobase metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleoside salvage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyrimidine nucleotide metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers>
+    <carrier position="6">
+      <id>BE0000530</id>
+      <name>Serum albumin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A19948</ref-id>
+            <pubmed-id>15814459</pubmed-id>
+            <citation>Bocedi A, Notaril S, Narciso P, Bolli A, Fasano M, Ascenzi P: Binding of anti-HIV drugs to human serum albumin. IUBMB Life. 2004 Oct;56(10):609-14.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P02768" source="Swiss-Prot">
+        <name>Serum albumin</name>
+        <general-function>Toxic substance binding</general-function>
+        <specific-function>Serum albumin, the main protein of plasma, has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. Major zinc transporter in plasma, typically binds about 80% of all plasma zinc.</specific-function>
+        <gene-name>ALB</gene-name>
+        <locus>4q11-q13</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>6.21</theoretical-pi>
+        <molecular-weight>69365.94</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:399</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ALB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>V00494</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28590</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ALBU_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Serum albumin precursor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001058|Serum albumin
+MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPF
+EDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEP
+ERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLF
+FAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKAWAV
+ARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLK
+ECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYEYAR
+RHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFE
+QLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYLSVV
+LNQLCVLHEKTPVSDRVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADICTL
+SEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLV
+AASQAALGL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010372|Serum albumin (ALB)
+ATGAAGTGGGTAACCTTTATTTCCCTTCTTTTTCTCTTTAGCTCGGCTTATTCCAGGGGT
+GTGTTTCGTCGAGATGCACACAAGAGTGAGGTTGCTCATCGGTTTAAAGATTTGGGAGAA
+GAAAATTTCAAAGCCTTGGTGTTGATTGCCTTTGCTCAGTATCTTCAGCAGTGTCCATTT
+GAAGATCATGTAAAATTAGTGAATGAAGTAACTGAATTTGCAAAAACATGTGTTGCTGAT
+GAGTCAGCTGAAAATTGTGACAAATCACTTCATACCCTTTTTGGAGACAAATTATGCACA
+GTTGCAACTCTTCGTGAAACCTATGGTGAAATGGCTGACTGCTGTGCAAAACAAGAACCT
+GAGAGAAATGAATGCTTCTTGCAACACAAAGATGACAACCCAAACCTCCCCCGATTGGTG
+AGACCAGAGGTTGATGTGATGTGCACTGCTTTTCATGACAATGAAGAGACATTTTTGAAA
+AAATACTTATATGAAATTGCCAGAAGACATCCTTACTTTTATGCCCCGGAACTCCTTTTC
+TTTGCTAAAAGGTATAAAGCTGCTTTTACAGAATGTTGCCAAGCTGCTGATAAAGCTGCC
+TGCCTGTTGCCAAAGCTCGATGAACTTCGGGATGAAGGGAAGGCTTCGTCTGCCAAACAG
+AGACTCAAGTGTGCCAGTCTCCAAAAATTTGGAGAAAGAGCTTTCAAAGCATGGGCAGTA
+GCTCGCCTGAGCCAGAGATTTCCCAAAGCTGAGTTTGCAGAAGTTTCCAAGTTAGTGACA
+GATCTTACCAAAGTCCACACGGAATGCTGCCATGGAGATCTGCTTGAATGTGCTGATGAC
+AGGGCGGACCTTGCCAAGTATATCTGTGAAAATCAAGATTCGATCTCCAGTAAACTGAAG
+GAATGCTGTGAAAAACCTCTGTTGGAAAAATCCCACTGCATTGCCGAAGTGGAAAATGAT
+GAGATGCCTGCTGACTTGCCTTCATTAGCTGCTGATTTTGTTGAAAGTAAGGATGTTTGC
+AAAAACTATGCTGAGGCAAAGGATGTCTTCCTGGGCATGTTTTTGTATGAATATGCAAGA
+AGGCATCCTGATTACTCTGTCGTGCTGCTGCTGAGACTTGCCAAGACATATGAAACCACT
+CTAGAGAAGTGCTGTGCCGCTGCAGATCCTCATGAATGCTATGCCAAAGTGTTCGATGAA
+TTTAAACCTCTTGTGGAAGAGCCTCAGAATTTAATCAAACAAAATTGTGAGCTTTTTGAG
+CAGCTTGGAGAGTACAAATTCCAGAATGCGCTATTAGTTCGTTACACCAAGAAAGTACCC
+CAAGTGTCAACTCCAACTCTTGTAGAGGTCTCAAGAAACCTAGGAAAAGTGGGCAGCAAA
+TGTTGTAAACATCCTGAAGCAAAAAGAATGCCCTGTGCAGAAGACTATCTATCCGTGGTC
+CTGAACCAGTTATGTGTGTTGCATGAGAAAACGCCAGTAAGTGACAGAGTCACCAAATGC
+TGCACAGAATCCTTGGTGAACAGGCGACCATGCTTTTCAGCTCTGGAAGTCGATGAAACA
+TACGTTCCCAAAGAGTTTAATGCTGAAACATTCACCTTCCATGCAGATATATGCACACTT
+TCTGAGAAGGAGAGACAAATCAAGAAACAAACTGCACTTGTTGAGCTCGTGAAACACAAG
+CCCAAGGCAACAAAAGAGCAACTGAAAGCTGTTATGGATGATTTCGCAGCTTTTGTAGAG
+AAGTGCTGCAAGGCTGACGATAAGGAGACCTGCTTTGCCGAGGAGGGTAAAAAACTTGTT
+GCTGCAAGTCAAGCTGCCTTAGGCTTATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00273</identifier>
+            <name>Serum_albumin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myelin sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet alpha granule lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>antioxidant activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chaperone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxal phosphate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>toxic substance binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to starvation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hemolysis by symbiont of host erythrocytes</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of mitochondrion location</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor-mediated endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters>
+    <transporter position="1">
+      <id>BE0001066</id>
+      <name>Solute carrier family 22 member 6</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16301</ref-id>
+            <pubmed-id>10945832</pubmed-id>
+            <citation>Wada S, Tsuda M, Sekine T, Cha SH, Kimura M, Kanai Y, Endou H: Rat multispecific organic anion transporter 1 (rOAT1) transports zidovudine, acyclovir, and other antiviral nucleoside analogs. J Pharmacol Exp Ther. 2000 Sep;294(3):844-9.</citation>
+          </article>
+          <article>
+            <ref-id>A33352</ref-id>
+            <pubmed-id>19953504</pubmed-id>
+            <citation>VanWert AL, Gionfriddo MR, Sweet DH: Organic anion transporters: discovery, pharmacology, regulation and roles in pathophysiology. Biopharm Drug Dispos. 2010 Jan;31(1):1-71. doi: 10.1002/bdd.693.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q4U2R8" source="Swiss-Prot">
+        <name>Solute carrier family 22 member 6</name>
+        <general-function>Sodium-independent organic anion transmembrane transporter activity</general-function>
+        <specific-function>Involved in the renal elimination of endogenous and exogenous organic anions. Functions as organic anion exchanger when the uptake of one molecule of organic anion is coupled with an efflux of one molecule of endogenous dicarboxylic acid (glutarate, ketoglutarate, etc). Mediates the sodium-independent uptake of 2,3-dimercapto-1-propanesulfonic acid (DMPS) (By similarity). Mediates the sodium-independent uptake of p-aminohippurate (PAH), ochratoxin (OTA), acyclovir (ACV), 3'-azido-3-'deoxythymidine (AZT), cimetidine (CMD), 2,4-dichloro-phenoxyacetate (2,4-D), hippurate (HA), indoleacetate (IA), indoxyl sulfate (IS) and 3-carboxy-4-methyl-5-propyl-2-furanpropionate (CMPF), cidofovir, adefovir, 9-(2-phosphonylmethoxyethyl) guanine (PMEG), 9-(2-phosphonylmethoxyethyl) diaminopurine (PMEDAP) and edaravone sulfate. PAH uptake is inhibited by p-chloromercuribenzenesulphonate (PCMBS), diethyl pyrocarbonate (DEPC), sulindac, diclofenac, carprofen, glutarate and okadaic acid (By similarity). PAH uptake is inhibited by benzothiazolylcysteine (BTC), S-chlorotrifluoroethylcysteine (CTFC), cysteine S-conjugates S-dichlorovinylcysteine (DCVC), furosemide, steviol, phorbol 12-myristate 13-acetate (PMA), calcium ionophore A23187, benzylpenicillin, furosemide, indomethacin, bumetamide, losartan, probenecid, phenol red, urate, and alpha-ketoglutarate.</specific-function>
+        <gene-name>SLC22A6</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>10-30
+136-156
+165-187
+191-213
+225-245
+249-269
+338-358
+369-389
+396-416
+426-446
+456-475
+485-505</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.78</theoretical-pi>
+        <molecular-weight>61815.78</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10970</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>hROAT1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF057039</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3831566</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1025</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q4U2R8</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S22A6_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>hOAT1</synonym>
+          <synonym>hPAHT</synonym>
+          <synonym>hROAT1</synonym>
+          <synonym>OAT1</synonym>
+          <synonym>Organic anion transporter 1</synonym>
+          <synonym>PAH transporter</synonym>
+          <synonym>PAHT</synonym>
+          <synonym>Renal organic anion transporter 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037120|Solute carrier family 22 member 6
+MAFNDLLQQVGGVGRFQQIQVTLVVLPLLLMASHNTLQNFTAAIPTHHCRPPADANLSKN
+GGLEVWLPRDRQGQPESCLRFTSPQWGLPFLNGTEANGTGATEPCTDGWIYDNSTFPSTI
+VTEWDLVCSHRALRQLAQSLYMVGVLLGAMVFGYLADRLGRRKVLILNYLQTAVSGTCAA
+FAPNFPIYCAFRLLSGMALAGISLNCMTLNVEWMPIHTRACVGTLIGYVYSLGQFLLAGV
+AYAVPHWRHLQLLVSAPFFAFFIYSWFFIESARWHSSSGRLDLTLRALQRVARINGKREE
+GAKLSMEVLRASLQKELTMGKGQASAMELLRCPTLRHLFLCLSMLWFATSFAYYGLVMDL
+QGFGVSIYLIQVIFGAVDLPAKLVGFLVINSLGRRPAQMAALLLAGICILLNGVIPQDQS
+IVRTSLAVLGKGCLAASFNCIFLYTGELYPTMIRQTGMGMGSTMARVGSIVSPLVSMTAE
+LYPSMPLFIYGAVPVAASAVTVLLPETLGQPLPDTVQDLESRWAPTQKEAGIYPRKGKQT
+RQQQEHQKYMVPLQASAQEKNGL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010747|Solute carrier family 22 member 6 (SLC22A6)
+ATGGCCTTTAATGACCTCCTGCAGCAGGTGGGGGGTGTCGGCCGCTTCCAGCAGATCCAG
+GTCACCCTGGTGGTCCTCCCCCTGCTCCTGATGGCTTCTCACAACACCCTGCAGAACTTC
+ACTGCTGCCATCCCTACCCACCACTGCCGCCCGCCTGCCGATGCCAACCTCAGCAAGAAC
+GGGGGGCTGGAGGTCTGGCTGCCCCGGGACAGGCAGGGGCAGCCTGAGTCCTGCCTCCGC
+TTCACCTCCCCGCAGTGGGGACTGCCCTTTCTCAATGGCACAGAAGCCAATGGCACAGGG
+GCCACAGAGCCCTGCACCGATGGCTGGATCTATGACAACAGCACCTTCCCATCTACCATC
+GTGACTGAGTGGGACCTTGTGTGCTCTCACAGGGCCCTACGCCAGCTGGCCCAGTCCTTG
+TACATGGTGGGGGTGCTGCTCGGAGCCATGGTGTTCGGCTACCTTGCAGACAGGCTAGGC
+CGCCGGAAGGTACTCATCTTGAACTACCTGCAGACAGCTGTGTCAGGGACCTGCGCAGCC
+TTCGCACCCAACTTCCCCATCTACTGCGCCTTCCGGCTCCTCTCGGGCATGGCTCTGGCT
+GGCATCTCCCTCAACTGCATGACACTGAATGTGGAGTGGATGCCCATTCACACACGGGCC
+TGCGTGGGCACCTTGATTGGCTATGTCTACAGCCTGGGCCAGTTCCTCCTGGCTGGTGTG
+GCCTACGCTGTGCCCCACTGGCGCCACCTGCAGCTACTGGTCTCTGCGCCTTTTTTTGCC
+TTCTTCATCTACTCCTGGTTCTTCATTGAGTCGGCCCGCTGGCACTCCTCCTCCGGGAGG
+CTGGACCTCACCCTGAGGGCCCTGCAGAGAGTCGCCCGGATCAATGGGAAGCGGGAAGAA
+GGAGCCAAATTGAGTATGGAGGTACTCCGGGCCAGTCTGCAGAAGGAGCTGACCATGGGC
+AAAGGCCAGGCATCGGCCATGGAGCTGCTGCGCTGCCCCACCCTCCGCCACCTCTTCCTC
+TGCCTCTCCATGCTGTGGTTTGCCACTAGCTTTGCATACTATGGGCTGGTCATGGACCTG
+CAGGGCTTTGGAGTCAGCATCTACCTAATCCAGGTGATCTTTGGTGCTGTGGACCTGCCT
+GCCAAGCTTGTGGGCTTCCTTGTCATCAACTCCCTGGGTCGCCGGCCTGCCCAGATGGCT
+GCACTGCTGCTGGCAGGCATCTGCATCCTGCTCAATGGGGTGATACCCCAGGACCAGTCC
+ATTGTCCGAACCTCTCTTGCTGTGCTGGGGAAGGGTTGTCTGGCTGCCTCCTTCAACTGC
+ATCTTCCTGTATACTGGGGAACTGTATCCCACAATGATCCGGCAGACAGGCATGGGAATG
+GGCAGCACCATGGCCCGAGTGGGCAGCATCGTGAGCCCACTGGTGAGCATGACTGCCGAG
+CTCTACCCCTCCATGCCTCTCTTCATCTACGGTGCTGTTCCTGTGGCCGCCAGCGCTGTC
+ACTGTCCTCCTGCCAGAGACCCTGGGCCAGCCACTGCCAGACACGGTGCAGGACCTGGAG
+AGCAGGTGGGCCCCCACTCAGAAAGAAGCAGGGATATATCCCAGGAAAGGGAAACAGACG
+CGACAGCAACAAGAGCACCAGAAGTATATGGTCCCACTGCAGGCCTCAGCACAAGAGAAG
+AATGGACTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00083</identifier>
+            <name>Sugar_tr</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>inorganic anion exchanger activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sodium-independent organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alpha-ketoglutarate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homooligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>renal tubular secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to methotrexate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="2">
+      <id>BE0003646</id>
+      <name>Solute carrier family 22 member 7</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16404</ref-id>
+            <pubmed-id>11504818</pubmed-id>
+            <citation>Morita N, Kusuhara H, Sekine T, Endou H, Sugiyama Y: Functional characterization of rat organic anion transporter 2 in LLC-PK1 cells. J Pharmacol Exp Ther. 2001 Sep;298(3):1179-84.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9Y694" source="Swiss-Prot">
+        <name>Solute carrier family 22 member 7</name>
+        <general-function>Sodium-independent organic anion transmembrane transporter activity</general-function>
+        <specific-function>Mediates sodium-independent multispecific organic anion transport. Transport of prostaglandin E2, prostaglandin F2, tetracycline, bumetanide, estrone sulfate, glutarate, dehydroepiandrosterone sulfate, allopurinol, 5-fluorouracil, paclitaxel, L-ascorbic acid, salicylate, ethotrexate, and alpha-ketoglutarate.</specific-function>
+        <gene-name>SLC22A7</gene-name>
+        <locus>6p21.2-p21.1</locus>
+        <cellular-location>Basolateral cell membrane</cellular-location>
+        <transmembrane-regions>21-41
+146-166
+180-200
+204-224
+234-254
+259-279
+346-366
+376-397
+404-423
+432-452
+466-486
+493-513</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.03</theoretical-pi>
+        <molecular-weight>60025.025</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10971</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF097518</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>5001689</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9Y694</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S22A7_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>hOAT2</synonym>
+          <synonym>NLT</synonym>
+          <synonym>Novel liver transporter</synonym>
+          <synonym>OAT2</synonym>
+          <synonym>Organic anion transporter 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0007007|Solute carrier family 22 member 7
+MGFEELLEQVGGFGPFQLRNVALLALPRVLLPLHFLLPIFLAAVPAHRCALPGAPANFSH
+QDVWLEAHLPREPDGTLSSCLRFAYPQALPNTTLGEERQSRGELEDEPATVPCSQGWEYD
+HSEFSSTIATESQWDLVCEQKGLNRAASTFFFAGVLVGAVAFGYLSDRFGRRRLLLVAYV
+STLVLGLASAASVSYVMFAITRTLTGSALAGFTIIVMPLELEWLDVEHRTVAGVLSSTFW
+TGGVMLLALVGYLIRDWRWLLLAVTLPCAPGILSLWWVPESARWLLTQGHVKEAHRYLLH
+CARLNGRPVCEDSFSQEAVSKVAAGERVVRRPSYLDLFRTPRLRHISLCCVVVWFGVNFS
+YYGLSLDVSGLGLNVYQTQLLFGAVELPSKLLVYLSVRYAGRRLTQAGTLLGTALAFGTR
+LLVSSDMKSWSTVLAVMGKAFSEAAFTTAYLFTSELYPTVLRQTGMGLTALVGRLGGSLA
+PLAALLDGVWLSLPKLTYGGIALLAAGTALLLPETRQAQLPETIQDVERKSAPTSLQEEE
+MPMKQVQN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012535|Solute carrier family 22 member 7 (SLC22A7)
+ATGGGCTTTGAGGAGCTGCTGGAGCAGGTGGGCGGCTTTGGGCCCTTCCAACTGCGGAAT
+GTGGCACTGCTGGCCCTGCCCCGAGTGCTGCTACCACTGCACTTCCTCCTGCCCATCTTC
+CTGGCTGCCGTGCCTGCCCACCGATGTGCCCTGCCGGGTGCCCCTGCCAACTTCAGCCAT
+CAGGATGTGTGGCTGGAGGCCCATCTTCCCCGGGAGCCTGATGGCACGCTCAGCTCCTGC
+CTCCGCTTTGCCTATCCCCAGGCTCTCCCCAACACCACGTTGGGGGAAGAAAGGCAGAGC
+CGTGGGGAGCTGGAGGATGAACCTGCCACAGTGCCCTGCTCTCAGGGCTGGGAGTACGAC
+CACTCAGAATTCTCCTCTACCATTGCAACTGAGTGGGATCTGGTGTGTGAGCAGAAAGGT
+CTGAACAGAGCTGCGTCCACTTTCTTCTTCGCCGGTGTGCTGGTGGGGGCTGTGGCCTTT
+GGATATCTGTCCGACAGGTTTGGGCGGCGGCGTCTGCTGCTGGTAGCCTACGTGAGTACC
+CTGGTGCTGGGCCTGGCATCTGCAGCCTCCGTCAGCTATGTAATGTTTGCCATCACCCGC
+ACCCTTACTGGCTCAGCCCTGGCTGGTTTTACCATCATCGTGATGCCACTGGAGCTGGAG
+TGGCTGGATGTGGAGCACCGCACCGTGGCTGGAGTCCTGAGCAGCACCTTCTGGACAGGG
+GGCGTGATGCTGCTGGCACTGGTTGGGTACCTGATACGGGACTGGCGATGGCTTCTGCTA
+GCTGTCACCCTGCCTTGTGCCCCAGGCATCCTCAGCCTCTGGTGGGTGCCTGAGTCTGCA
+CGCTGGCTTCTGACCCAAGGCCATGTGAAAGAGGCCCACAGGTACTTGCTCCACTGTGCC
+AGGCTCAATGGGCGGCCAGTGTGTGAGGACAGCTTCAGCCAGGAGGCTGTGAGCAAAGTG
+GCCGCCGGGGAACGGGTGGTCCGAAGACCTTCATACCTAGACCTGTTCCGCACACCACGG
+CTCCGACACATCTCACTGTGCTGCGTGGTGGTGTGGTTCGGAGTGAACTTCTCCTATTAC
+GGCCTGAGTCTGGATGTGTCGGGGCTGGGGCTGAACGTGTACCAGACACAGCTGTTGTTC
+GGGGCTGTGGAACTGCCCTCCAAGCTGCTGGTCTACTTGTCGGTGCGCTACGCAGGACGC
+CGCCTCACGCAAGCCGGGACACTGCTGGGCACGGCCCTGGCGTTCGGCACTAGACTGCTA
+GTGTCCTCCGATATGAAGTCCTGGAGCACTGTCCTGGCAGTGATGGGGAAAGCTTTTTCT
+GAAGCTGCCTTCACCACTGCCTACCTGTTCACTTCAGAGTTGTACCCTACGGTGCTCAGA
+CAGACAGGGATGGGGCTGACTGCACTGGTGGGCCGGCTGGGGGGCTCTTTGGCCCCACTG
+GCGGCCTTGCTGGATGGAGTGTGGCTGTCACTGCCCAAGCTTACTTATGGGGGGATCGCC
+CTGCTGGCTGCCGGCACCGCCCTCCTGCTGCCAGAGACGAGGCAGGCACAGCTGCCAGAG
+ACCATCCAGGACGTGGAGAGAAAGAGTGCCCCAACCAGTCTTCAGGAGGAAGAGATGCCC
+ATGAAGCAGGTCCAGAACTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07690</identifier>
+            <name>MFS_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sodium-independent organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="4">
+      <id>BE0001204</id>
+      <name>Equilibrative nucleoside transporter 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17882</ref-id>
+            <pubmed-id>11463208</pubmed-id>
+            <citation>Yao SY, Ng AM, Sundaram M, Cass CE, Baldwin SA, Young JD: Transport of antiviral 3'-deoxy-nucleoside drugs by recombinant human and rat equilibrative, nitrobenzylthioinosine (NBMPR)-insensitive (ENT2) nucleoside transporter proteins produced in Xenopus oocytes. Mol Membr Biol. 2001 Apr-Jun;18(2):161-7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q99808" source="Swiss-Prot">
+        <name>Equilibrative nucleoside transporter 1</name>
+        <general-function>Nucleoside transmembrane transporter activity</general-function>
+        <specific-function>Mediates both influx and efflux of nucleosides across the membrane (equilibrative transporter). It is sensitive (ES) to low concentrations of the inhibitor nitrobenzylmercaptopurine riboside (NBMPR) and is sodium-independent. It has a higher affinity for adenosine. Inhibited by dipyridamole and dilazep (anticancer chemotherapeutics drugs).</specific-function>
+        <gene-name>SLC29A1</gene-name>
+        <locus>6p21.2-p21.1</locus>
+        <cellular-location>Basolateral cell membrane</cellular-location>
+        <transmembrane-regions>13-29
+83-107
+112-130
+139-157
+175-199
+207-227
+292-311
+324-342
+360-378
+394-413
+432-452</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.39</theoretical-pi>
+        <molecular-weight>50218.805</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11003</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC29A1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U81375</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1845345</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1117</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q99808</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S29A1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ENT1</synonym>
+          <synonym>Equilibrative NBMPR-sensitive nucleoside transporter</synonym>
+          <synonym>Equilibrative nitrobenzylmercaptopurine riboside-sensitive nucleoside transporter</synonym>
+          <synonym>Nucleoside transporter, es-type</synonym>
+          <synonym>Solute carrier family 29 member 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002395|Equilibrative nucleoside transporter 1
+MTTSHQPQDRYKAVWLIFFMLGLGTLLPWNFFMTATQYFTNRLDMSQNVSLVTAELSKDA
+QASAAPAAPLPERNSLSAIFNNVMTLCAMLPLLLFTYLNSFLHQRIPQSVRILGSLVAIL
+LVFLITAILVKVQLDALPFFVITMIKIVLINSFGAILQGSLFGLAGLLPASYTAPIMSGQ
+GLAGFFASVAMICAIASGSELSESAFGYFITACAVIILTIICYLGLPRLEFYRYYQQLKL
+EGPGEQETKLDLISKGEEPRAGKEESGVSVSNSQPTNESHSIKAILKNISVLAFSVCFIF
+TITIGMFPAVTVEVKSSIAGSSTWERYFIPVSCFLTFNIFDWLGRSLTAVFMWPGKDSRW
+LPSLVLARLVFVPLLLLCNIKPRRYLTVVFEHDAWFIFFMAAFAFSNGYLASLCMCFGPK
+KVKPAEAETAGAIMAFFLCLGLALGAVFSFLFRAIV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019080|Equilibrative nucleoside transporter 1 (SLC29A1)
+ATGACAACCAGTCACCAGCCTCAGGACAGATACAAAGCTGTCTGGCTTATCTTCTTCATG
+CTGGGTCTGGGAACGCTGCTCCCGTGGAATTTTTTCATGACGGCCACTCAGTATTTCACA
+AACCGCCTGGACATGTCCCAGAATGTGTCCTTGGTCACTGCTGAACTGAGCAAGGACGCC
+CAGGCGTCAGCCGCCCCTGCAGCACCCTTGCCTGAGCGGAACTCTCTCAGTGCCATCTTC
+AACAATGTCATGACCCTATGTGCCATGCTGCCCCTGCTGTTATTCACCTACCTCAACTCC
+TTCCTGCATCAGAGGATCCCCCAGTCCGTACGGATCCTGGGCAGCCTGGTGGCCATCCTG
+CTGGTGTTTCTGATCACTGCCATCCTGGTGAAGGTGCAGCTGGATGCTCTGCCCTTCTTT
+GTCATCACCATGATCAAGATCGTGCTCATTAATTCATTTGGTGCCATCCTGCAGGGCAGC
+CTGTTTGGTCTGGCTGGCCTTCTGCCTGCCAGCTACACGGCCCCCATCATGAGTGGCCAG
+GGCCTAGCAGGCTTCTTTGCCTCCGTGGCCATGATCTGCGCTATTGCCAGTGGCTCGGAG
+CTATCAGAAAGTGCCTTCGGCTACTTTATCACAGCCTGTGCTGTTATCATTTTGACCATC
+ATCTGTTACCTGGGCCTGCCCCGCCTGGAATTCTACCGCTACTACCAGCAGCTCAAGCTT
+GAAGGACCCGGGGAGCAGGAGACCAAGTTGGACCTCATTAGCAAAGGAGAGGAGCCAAGA
+GCAGGCAAAGAGGAATCTGGAGTTTCAGTCTCCAACTCTCAGCCCACCAATGAAAGCCAC
+TCTATCAAAGCCATCCTGAAAAATATCTCAGTCCTGGCTTTCTCTGTCTGCTTCATCTTC
+ACTATCACCATTGGGATGTTTCCAGCCGTGACTGTTGAGGTCAAGTCCAGCATCGCAGGC
+AGCAGCACCTGGGAACGTTACTTCATTCCTGTGTCCTGTTTCTTGACTTTCAATATCTTT
+GACTGGTTGGGCCGGAGCCTCACAGCTGTATTCATGTGGCCTGGGAAGGACAGCCGCTGG
+CTGCCAAGCCTGGTGCTGGCCCGGCTGGTGTTTGTGCCACTGCTGCTGCTGTGCAACATT
+AAGCCCCGCCGCTACCTGACTGTGGTCTTCGAGCACGATGCCTGGTTCATCTTCTTCATG
+GCTGCCTTTGCCTTCTCCAACGGCTACCTCGCCAGCCTCTGCATGTGCTTCGGGCCCAAG
+AAAGTGAAGCCAGCTGAGGCAGAGACCGCAGGAGCCATCATGGCCTTCTTCCTGTGTCTG
+GGTCTGGCACTGGGGGCTGTTTTCTCCTTCCTGTTCCGGGCAATTGTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01733</identifier>
+            <name>Nucleoside_tran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>apical plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleoside transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to glucose stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>excitatory postsynaptic potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleoside transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleoside transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sleep</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>uridine transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="5">
+      <id>BE0004706</id>
+      <name>Equilibrative nucleoside transporter 2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A17882</ref-id>
+            <pubmed-id>11463208</pubmed-id>
+            <citation>Yao SY, Ng AM, Sundaram M, Cass CE, Baldwin SA, Young JD: Transport of antiviral 3'-deoxy-nucleoside drugs by recombinant human and rat equilibrative, nitrobenzylthioinosine (NBMPR)-insensitive (ENT2) nucleoside transporter proteins produced in Xenopus oocytes. Mol Membr Biol. 2001 Apr-Jun;18(2):161-7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q14542" source="Swiss-Prot">
+        <name>Equilibrative nucleoside transporter 2</name>
+        <general-function>Nucleoside transmembrane transporter activity</general-function>
+        <specific-function>Mediates equilibrative transport of purine, pyrimidine nucleosides and the purine base hypoxanthine. Very less sensitive than SLC29A1 to inhibition by nitrobenzylthioinosine (NBMPR), dipyridamole, dilazep and draflazine.</specific-function>
+        <gene-name>SLC29A2</gene-name>
+        <locus/>
+        <cellular-location>Basolateral cell membrane</cellular-location>
+        <transmembrane-regions>13-33
+70-90
+99-119
+124-144
+162-182
+193-213
+291-311
+324-344
+360-380
+386-406
+432-452</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>50112.335</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11004</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q14542</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S29A2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>36 kDa nucleolar protein HNP36</synonym>
+          <synonym>Delayed-early response protein 12</synonym>
+          <synonym>DER12</synonym>
+          <synonym>ENT2</synonym>
+          <synonym>Equilibrative NBMPR-insensitive nucleoside transporter</synonym>
+          <synonym>Equilibrative nitrobenzylmercaptopurine riboside-insensitive nucleoside transporter</synonym>
+          <synonym>HNP36</synonym>
+          <synonym>Hydrophobic nucleolar protein, 36 kDa</synonym>
+          <synonym>Nucleoside transporter, ei-type</synonym>
+          <synonym>Solute carrier family 29 member 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0008557|Equilibrative nucleoside transporter 2
+MARGDAPRDSYHLVGISFFILGLGTLLPWNFFITAIPYFQARLAGAGNSTARILSTNHTG
+PEDAFNFNNWVTLLSQLPLLLFTLLNSFLYQCVPETVRILGSLLAILLLFALTAALVKVD
+MSPGPFFSITMASVCFINSFSAVLQGSLFGQLGTMPSTYSTLFLSGQGLAGIFAALAMLL
+SMASGVDAETSALGYFITPCVGILMSIVCYLSLPHLKFARYYLANKSSQAQAQELETKAE
+LLQSDENGIPSSPQKVALTLDLDLEKEPESEPDEPQKPGKPSVFTVFQKIWLTALCLVLV
+FTVTLSVFPAITAMVTSSTSPGKWSQFFNPICCFLLFNIMDWLGRSLTSYFLWPDEDSRL
+LPLLVCLRFLFVPLFMLCHVPQRSRLPILFPQDAYFITFMLLFAVSNGYLVSLTMCLAPR
+QVLPHEREVAGALMTFFLALGLSCGASLSFLFKALL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013271|Equilibrative nucleoside transporter 2 (SLC29A2)
+ATGGCGCGAGGAGACGCCCCGCGGGACAGCTACCACCTGGTCGGGATCAGCTTCTTCATC
+CTGGGGCTGGGCACCCTCCTTCCCTGGAACTTCTTCATCACCGCCATCCCGTACTTCCAG
+GCGCGACTGGCCGGGGCCGGCAACAGCACAGCCAGGATCCTGAGCACCAACCACACGGGT
+CCCGAGGATGCCTTCAACTTCAACAATTGGGTGACGCTGCTGTCCCAGCTGCCCCTGCTG
+CTCTTCACCCTCCTCAACTCCTTCCTGTACCAGTGCGTCCCGGAGACGGTGCGCATTCTG
+GGCAGCCTGCTGGCCATACTGCTGCTCTTTGCCCTGACAGCAGCGCTGGTCAAGGTGGAC
+ATGAGCCCCGGACCCTTCTTCTCCATCACCATGGCCTCCGTCTGCTTCATCAACTCCTTC
+AGTGCAGTCCTACAGGGCAGCCTCTTCGGGCAGCTGGGCACCATGCCCTCCACCTACAGC
+ACCCTCTTCCTCAGCGGCCAGGGCCTGGCTGGGATCTTTGCTGCCCTTGCCATGCTCCTG
+TCCATGGCCAGTGGCGTGGACGCCGAGACCTCTGCCCTGGGGTACTTTATCACGCCCTGT
+GTGGGCATCCTCATGTCCATCGTGTGTTACCTGAGCCTGCCTCACCTGAAGTTTGCCCGC
+TACTACCTGGCCAATAAATCATCCCAGGCCCAAGCTCAGGAGCTGGAGACCAAAGCTGAG
+CTCCTCCAGTCTGATGAGAACGGGATTCCCAGTAGTCCCCAGAAAGTAGCTCTGACCCTG
+GATCTTGACCTGGAGAAGGAGCCGGAATCAGAGCCAGATGAGCCCCAGAAGCCAGGAAAA
+CCTTCAGTCTTCACTGTCTTCCAGAAGATCTGGCTGACAGCGCTGTGCCTTGTGTTGGTC
+TTCACAGTCACCCTGTCCGTCTTCCCCGCCATCACAGCCATGGTGACCAGCTCCACCAGT
+CCTGGGAAGTGGAGTCAGTTCTTCAACCCCATCTGCTGCTTCCTCCTCTTCAACATCATG
+GACTGGCTGGGACGGAGCCTGACCTCTTACTTCCTGTGGCCAGACGAGGACAGCCGGCTG
+CTGCCCCTGCTGGTCTGCCTGCGGTTCCTGTTCGTGCCCCTCTTCATGCTGTGCCACGTG
+CCCCAGAGGTCCCGGCTGCCCATCCTCTTCCCACAGGATGCCTACTTCATCACCTTCATG
+CTGCTCTTTGCCGTTTCTAATGGCTACCTGGTGTCCCTCACCATGTGCCTGGCGCCCAGG
+CAGGTGCTGCCACACGAGAGGGAGGTGGCCGGCGCCCTCATGACCTTCTTCCTGGCCCTG
+GGACTTTCCTGTGGAGCCTCCCTCTCCTTCCTCTTCAAGGCGCTGCTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01733</identifier>
+            <name>Nucleoside_tran</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleolus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nucleoside transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleobase-containing compound metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleoside transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nucleoside transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

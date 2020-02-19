@@ -1,0 +1,2584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04343</drugbank-id>
+  <drugbank-id>EXPT01614</drugbank-id>
+  <name>Glyoxylic acid</name>
+  <description/>
+  <cas-number>298-12-4</cas-number>
+  <unii>JQ39C92HH6</unii>
+  <average-mass>74.0355</average-mass>
+  <monoisotopic-mass>74.00039393</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as carboxylic acids. These are compounds containing a carboxylic acid group with the formula -C(=O)OH.</description>
+    <direct-parent>Carboxylic acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Carboxylic acids</subclass>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Short-chain aldehydes</alternative-parent>
+    <substituent>Aldehyde</substituent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Short-chain aldehyde</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Acids, Aldehydic</category>
+      <mesh-id>D000145</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1d8c</pdb-entry>
+    <pdb-entry>1f8i</pdb-entry>
+    <pdb-entry>1n8i</pdb-entry>
+    <pdb-entry>1n8w</pdb-entry>
+    <pdb-entry>1nxj</pdb-entry>
+    <pdb-entry>1yqc</pdb-entry>
+    <pdb-entry>2bkw</pdb-entry>
+    <pdb-entry>2et1</pdb-entry>
+    <pdb-entry>2ete</pdb-entry>
+    <pdb-entry>2hcj</pdb-entry>
+    <pdb-entry>2hui</pdb-entry>
+    <pdb-entry>2nzl</pdb-entry>
+    <pdb-entry>2rdu</pdb-entry>
+    <pdb-entry>3oyx</pdb-entry>
+    <pdb-entry>3pug</pdb-entry>
+    <pdb-entry>3u88</pdb-entry>
+    <pdb-entry>4fju</pdb-entry>
+    <pdb-entry>4l9y</pdb-entry>
+    <pdb-entry>4lh0</pdb-entry>
+    <pdb-entry>4pxe</pdb-entry>
+    <pdb-entry>5aov</pdb-entry>
+    <pdb-entry>5cc5</pdb-entry>
+    <pdb-entry>5e9g</pdb-entry>
+    <pdb-entry>5ecx</pdb-entry>
+    <pdb-entry>5h8u</pdb-entry>
+    <pdb-entry>5tao</pdb-entry>
+    <pdb-entry>5xr3</pdb-entry>
+    <pdb-entry>6c4c</pdb-entry>
+    <pdb-entry>6g1o</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.59</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.48</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.24e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-0.13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>2-oxoacetic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>glyoxylic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>74.0355</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>74.00039393</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>OC(=O)C=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C2H2O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C2H2O3/c3-1-2(4)5/h1H,(H,4,5)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>HHLFWLYXYJOTON-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>54.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>13.5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>5.35</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.61</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-9.2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>98 °C</value>
+      <source>PhysProp</source>
+    </property>
+    <property>
+      <kind>pKa</kind>
+      <value>3.3 (at 25 °C)</value>
+      <source>DEAN,JA (1985)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>16891</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>760</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507705</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C00048</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>740</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>19472</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>GLV</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Glyoxylic_acid</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1162545</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways>
+    <pathway>
+      <smpdb-id>SMP0000004</smpdb-id>
+      <name>Glycine and Serine Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000223</smpdb-id>
+      <name>Non-Ketotic Hyperglycinemia</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000244</smpdb-id>
+      <name>Sarcosinemia</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000313</smpdb-id>
+      <name>Lactic Acidemia</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P49588</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>Q5JTZ9</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000352</smpdb-id>
+      <name>Primary Hyperoxaluria Type I</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P49588</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>Q5JTZ9</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000055</smpdb-id>
+      <name>Alanine Metabolism</name>
+      <category>metabolic</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P49588</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>Q5JTZ9</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000179</smpdb-id>
+      <name>Dihydropyrimidine Dehydrogenase Deficiency (DHPD)</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000242</smpdb-id>
+      <name>Dimethylglycine Dehydrogenase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000350</smpdb-id>
+      <name>Pyruvate Carboxylase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00121</drugbank-id>
+          <name>Biotin</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P49588</uniprot-id>
+        <uniprot-id>P24298</uniprot-id>
+        <uniprot-id>P11498</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>Q5JTZ9</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000484</smpdb-id>
+      <name>Dimethylglycine Dehydrogenase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000485</smpdb-id>
+      <name>Hyperglycinemia, Non-Ketotic</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+    <pathway>
+      <smpdb-id>SMP0000721</smpdb-id>
+      <name>3-Phosphoglycerate Dehydrogenase Deficiency</name>
+      <category>disease</category>
+      <drugs>
+        <drug>
+          <drugbank-id>DB00114</drugbank-id>
+          <name>Pyridoxal phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00116</drugbank-id>
+          <name>Tetrahydrofolic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00118</drugbank-id>
+          <name>Ademetionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00119</drugbank-id>
+          <name>Pyruvic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00125</drugbank-id>
+          <name>L-Arginine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00131</drugbank-id>
+          <name>Adenosine phosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00133</drugbank-id>
+          <name>Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00134</drugbank-id>
+          <name>Methionine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00142</drugbank-id>
+          <name>Glutamic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00145</drugbank-id>
+          <name>Glycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00148</drugbank-id>
+          <name>Creatine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00151</drugbank-id>
+          <name>L-Cysteine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00157</drugbank-id>
+          <name>NADH</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00160</drugbank-id>
+          <name>L-Alanine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00171</drugbank-id>
+          <name>ATP</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB00855</drugbank-id>
+          <name>Aminolevulinic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01378</drugbank-id>
+          <name>Magnesium cation</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB01593</drugbank-id>
+          <name>Zinc</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02083</drugbank-id>
+          <name>N,N-dimethylglycine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02751</drugbank-id>
+          <name>Glycocyamine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02951</drugbank-id>
+          <name>3-Hydroxypyruvic Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB02957</drugbank-id>
+          <name>Orotidine-5'-Monophosphate</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03147</drugbank-id>
+          <name>Flavin adenine dinucleotide</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03587</drugbank-id>
+          <name>Pyruvaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03843</drugbank-id>
+          <name>Formaldehyde</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03915</drugbank-id>
+          <name>2-Amino-3-Ketobutyric Acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB03929</drugbank-id>
+          <name>D-Serine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04160</drugbank-id>
+          <name>Pyrophosphoric acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04343</drugbank-id>
+          <name>Glyoxylic acid</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04522</drugbank-id>
+          <name>Dexfosfoserine</name>
+        </drug>
+        <drug>
+          <drugbank-id>DB04553</drugbank-id>
+          <name>2-Oxobutanoic Acid</name>
+        </drug>
+      </drugs>
+      <enzymes>
+        <uniprot-id>P21397</uniprot-id>
+        <uniprot-id>P05091</uniprot-id>
+        <uniprot-id>O75600</uniprot-id>
+        <uniprot-id>Q9UI17</uniprot-id>
+        <uniprot-id>Q9UL12</uniprot-id>
+        <uniprot-id>P23378</uniprot-id>
+        <uniprot-id>P48728</uniprot-id>
+        <uniprot-id>P34897</uniprot-id>
+        <uniprot-id>P09622</uniprot-id>
+        <uniprot-id>P21549</uniprot-id>
+        <uniprot-id>P50440</uniprot-id>
+        <uniprot-id>Q14353</uniprot-id>
+        <uniprot-id>P13196</uniprot-id>
+        <uniprot-id>Q93088</uniprot-id>
+        <uniprot-id>Q14749</uniprot-id>
+        <uniprot-id>Q8IVS8</uniprot-id>
+        <uniprot-id>O43175</uniprot-id>
+        <uniprot-id>Q9Y617</uniprot-id>
+        <uniprot-id>P78330</uniprot-id>
+        <uniprot-id>P20132</uniprot-id>
+        <uniprot-id>P34896</uniprot-id>
+        <uniprot-id>Q9GZT4</uniprot-id>
+        <uniprot-id>P35520</uniprot-id>
+        <uniprot-id>P32929</uniprot-id>
+        <uniprot-id>P49591</uniprot-id>
+        <uniprot-id>P41250</uniprot-id>
+      </enzymes>
+    </pathway>
+  </pathways>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001216</id>
+      <name>Malate synthase G</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P37330" source="Swiss-Prot">
+        <name>Malate synthase G</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function>Involved in the glycolate utilization. Catalyzes the condensation and subsequent hydrolysis of acetyl-coenzyme A (acetyl-CoA) and glyoxylate to form malate and CoA.</specific-function>
+        <gene-name>glcB</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.09</theoretical-pi>
+        <molecular-weight>80487.88</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X74547</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>517247</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P37330</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MASZ_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.3.3.9</synonym>
+          <synonym>glc</synonym>
+          <synonym>MSG</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016351|Malate synthase G
+MSQTITQSRLRIDANFKRFVDEEVLPGTGLDAAAFWRNFDEIVHDLAPENRQLLAERDRI
+QAALDEWHRSNPGPVKDKAAYKSFLRELGYLVPQPERVTVETTGIDSEITSQAGPQLVVP
+AMNARYALNAANARWGSLYDALYGSDIIPQEGAMVSGYDPQRGEQVIAWVRRFLDESLPL
+ENGSYQDVVAFKVVDKQLRIQLKNGKETTLRTPAQFVGYRGDAAAPTCILLKNNGLHIEL
+QIDANGRIGKDDPAHINDVIVEAAISTILDCEDSVAAVDAEDKILLYRNLLGLMQGTLQE
+KMEKNGRQIVRKLNDDRHYTAADGSEISLHGRSLLFIRNVGHLMTIPVIWDSEGNEIPEG
+ILDGVMTGAIALYDLKVQKNSRTGSVYIVKPKMHGPQEVAFANKLFTRIETMLGMAPNTL
+KMGIMDEERRTSLNLRSCIAQARNRVAFINTGFLDRTGDEMHSVMEAGPMLRKNQMKSTP
+WIKAYERNNVLSGLFCGLRGKAQIGKGMWAMPDLMADMYSQKGDQLRAGANTAWVPSPTA
+ATLHALHYHQTNVQSVQANIAQTEFNAEFEPLLDDLLTIPVAENANWSAQEIQQELDNNV
+QGILGYVVRWVEQGIGCSKVPDIHNVALMEDRATLRISSQHIANWLRHGILTKEQVQASL
+ENMAKVVDQQNAGDPAYRPMAGNFANSCAFKAASDLIFLGVKQPNGYTEPLLHAWRLREK
+ESH</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016352|Malate synthase G (glcB)
+ATGAGTCAAACCATAACCCAGAGCCGTTTACGCATTGACGCCAATTTTAAACGTTTTGTG
+GATGAAGAAGTTTTACCGGGAACAGGGCTGGACGCTGCGGCGTTCTGGCGCAATTTTGAT
+GAGATCGTTCATGATCTGGCACCAGAAAATCGTCAGTTGCTGGCAGAACGCGATCGCATT
+CAGGCAGCGCTTGATGAGTGGCATCGCAGCAATCCGGGGCCGGTAAAAGATAAAGCGGCC
+TATAAATCTTTCCTGCGTGAACTGGGCTACCTGGTGCCGCAACCGGAGCGCGTGACGGTG
+GAAACCACGGGCATTGACAGCGAAATCACCAGCCAGGCGGGGCCGCAGCTGGTGGTTCCG
+GCAATGAACGCCCGCTACGCGCTGAACGCGGCGAACGCTCGCTGGGGCTCACTGTACGAT
+GCGTTATACGGCAGCGACATCATCCCGCAGGAAGGGGCGATGGTCAGCGGCTACGATCCG
+CAACGCGGTGAGCAGGTTATCGCCTGGGTTCGGCGTTTCCTCGATGAATCTCTACCGCTG
+GAAAACGGCAGCTATCAGGATGTGGTGGCGTTTAAGGTGGTTGATAAACAATTACGCATC
+CAGTTGAAAAATGGTAAAGAAACCACGTTACGTACTCCAGCACAGTTTGTCGGTTACCGT
+GGCGATGCCGCTGCGCCGACCTGCATTTTGCTGAAAAATAACGGCCTGCATATTGAGCTG
+CAAATCGATGCCAATGGGCGGATTGGCAAAGACGATCCGGCGCACATCAACGATGTTATC
+GTCGAAGCTGCTATCAGTACCATTCTCGACTGCGAAGATTCGGTCGCGGCGGTTGATGCG
+GAAGATAAAATCCTGCTGTACCGCAACCTGCTGGGCCTGATGCAGGGGACTCTGCAAGAG
+AAAATGGAGAAAAACGGTCGGCAAATCGTGCGTAAACTGAATGACGATCGTCATTACACC
+GCCGCCGATGGCTCTGAAATTTCTCTGCACGGACGCTCGCTGCTGTTTATCCGCAACGTG
+GGTCATTTGATGACCATTCCTGTGATTTGGGACAGCGAAGGCAATGAAATCCCGGAAGGC
+ATTCTTGATGGCGTCATGACTGGCGCGATTGCCCTCTATGATTTAAAAGTGCAGAAAAAC
+TCGCGCACTGGCAGCGTCTATATTGTGAAACCGAAAATGCACGGTCCGCAGGAAGTGGCG
+TTCGCCAACAAACTGTTTACCCGCATTGAGACAATGCTCGGTATGGCACCGAATACCCTG
+AAAATGGGCATTATGGATGAAGAACGTCGGACCTCGCTGAACTTGCGTAGCTGTATCGCT
+CAGGCGCGCAACCGCGTGGCGTTCATCAATACCGGTTTCCTCGACCGTACCGGCGATGAA
+ATGCATTCGGTGATGGAAGCTGGCCCGATGCTGCGTAAAAATCAGATGAAATCGACGCCT
+TGGATCAAAGCCTACGAGCGTAATAACGTGCTTTCCGGTCTGTTCTGTGGGCTGCGCGGT
+AAAGCGCAAATTGGTAAAGGCATGTGGGCAATGCCGGACCTGATGGCAGACATGTACAGC
+CAGAAGGGCGACCAACTGCGTGCCGGGGCAAACACAGCCTGGGTTCCGTCACCAACCGCT
+GCTACGCTCCATGCGCTGCACTACCACCAAACCAACGTACAGAGCGTACAAGCCAACATT
+GCCCAGACCGAGTTCAATGCTGAATTTGAACCGCTGCTGGACGATCTGCTGACTATTCCG
+GTTGCTGAAAACGCTAACTGGTCGGCGCAAGAGATCCAACAAGAGCTGGATAACAACGTG
+CAGGGGATTCTGGGGTACGTGGTGCGCTGGGTGGAGCAGGGGATTGGTTGTTCAAAAGTG
+CCGGATATTCACAATGTGGCGTTGATGGAAGACCGCGCAACGCTGCGTATCTCCAGCCAG
+CATATCGCCAACTGGTTACGTCACGGTATTCTGACCAAAGAACAGGTGCAGGCGTCGCTG
+GAGAATATGGCGAAAGTGGTTGATCAGCAAAACGCTGGCGATCCGGCTTATCGTCCGATG
+GCGGGGAATTTCGCTAACTCGTGTGCTTTTAAAGCTGCCAGCGATTTAATCTTCCTCGGC
+GTGAAACAGCCAAACGGCTATACCGAACCGTTATTACACGCCTGGCGTTTACGCGAAAAA
+GAAAGTCATTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01274</identifier>
+            <name>Malate_synthase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>malate synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tricarboxylic acid cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001761</id>
+      <name>Isocitrate lyase</name>
+      <organism>Mycobacterium tuberculosis</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P9WKK7" source="Swiss-Prot">
+        <name>Isocitrate lyase</name>
+        <general-function>Involved in the persistence and virulence of M.tuberculosis. Catalyzes the reversible formation of succinate and glyoxylate from isocitrate, a key step of the glyoxylate cycle, which operates as an anaplerotic route for replenishing the tricarboxylic acid cycle during growth on fatty acid substrates (PubMed:10932251, PubMed:10963599, PubMed:18275086, PubMed:24354272). It could also catalyze the formation of pyruvate and succinate from 2-methylisocitrate, a key step in the methylcitrate cycle (propionate degradation route) (By similarity).</general-function>
+        <specific-function>Isocitrate lyase activity</specific-function>
+        <gene-name>icl</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>47086.255</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83332">Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P9WKK7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ACEA_MYCTU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>4.1.3.1</synonym>
+          <synonym>ICL</synonym>
+          <synonym>Isocitrase</synonym>
+          <synonym>Isocitratase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0051124|Isocitrate lyase
+MSVVGTPKSAEQIQQEWDTNPRWKDVTRTYSAEDVVALQGSVVEEHTLARRGAEVLWEQL
+HDLEWVNALGALTGNMAVQQVRAGLKAIYLSGWQVAGDANLSGHTYPDQSLYPANSVPQV
+VRRINNALQRADQIAKIEGDTSVENWLAPIVADGEAGFGGALNVYELQKALIAAGVAGSH
+WEDQLASEKKCGHLGGKVLIPTQQHIRTLTSARLAADVADVPTVVIARTDAEAATLITSD
+VDERDQPFITGERTREGFYRTKNGIEPCIARAKAYAPFADLIWMETGTPDLEAARQFSEA
+VKAEYPDQMLAYNCSPSFNWKKHLDDATIAKFQKELAAMGFKFQFITLAGFHALNYSMFD
+LAYGYAQNQMSAYVELQEREFAAEERGYTATKHQREVGAGYFDRIATTVDPNSSTTALTG
+STEEGQFH</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0051125|Isocitrate lyase (icl)
+ATGTCTGTCGTCGGCACCCCGAAGAGCGCGGAGCAGATCCAGCAGGAATGGGACACGAAC
+CCGCGCTGGAAGGACGTCACCCGCACCTACTCCGCCGAGGACGTCGTCGCCCTCCAGGGC
+AGCGTGGTCGAGGAGCACACGCTGGCCCGCCGCGGTGCGGAGGTGCTGTGGGAGCAGCTG
+CACGACCTCGAGTGGGTCAACGCGCTGGGCGCGCTGACCGGCAACATGGCCGTCCAGCAG
+GTGCGCGCCGGCCTGAAGGCCATCTACCTGTCGGGCTGGCAGGTCGCCGGCGATGCCAAC
+CTGTCCGGGCACACCTACCCCGACCAGAGCCTGTATCCCGCCAACTCGGTGCCGCAGGTG
+GTCCGCCGGATCAACAACGCACTGCAGCGCGCCGACCAGATCGCCAAGATCGAGGGCGAT
+ACTTCGGTGGAGAACTGGCTGGCGCCGATTGTCGCCGACGGCGAGGCCGGCTTTGGCGGC
+GCGCTCAACGTCTACGAGCTGCAGAAAGCCCTGATCGCCGCGGGCGTTGCGGGTTCGCAC
+TGGGAGGACCAGTTGGCCTCTGAGAAGAAGTGCGGCCACCTGGGCGGCAAGGTGTTGATC
+CCGACCCAGCAGCACATCCGCACTTTGACGTCTGCTCGGCTCGCGGCCGATGTGGCTGAT
+GTTCCCACGGTGGTGATCGCCCGTACCGACGCCGAGGCGGCCACGCTGATCACCTCCGAC
+GTCGACGAGCGCGACCAGCCGTTCATCACCGGCGAGCGCACCCGGGAAGGCTTCTACCGC
+ACCAAGAACGGCATCGAGCCTTGCATCGCTCGGGCGAAGGCCTACGCCCCGTTCGCCGAC
+TTGATCTGGATGGAGACCGGTACCCCGGACCTCGAGGCCGCCCGGCAGTTCTCCGAGGCG
+GTCAAGGCGGAGTACCCGGACCAGATGCTGGCCTACAACTGCTCGCCATCGTTCAACTGG
+AAAAAGCACCTCGACGACGCCACCATCGCCAAGTTCCAGAAGGAGCTGGCAGCCATGGGC
+TTCAAGTTCCAGTTCATCACGCTGGCCGGCTTCCATGCGCTGAACTACTCGATGTTCGAT
+CTGGCCTACGGCTACGCCCAGAACCAGATGAGCGCGTATGTCGAACTGCAGGAACGCGAG
+TTCGCCGCCGAAGAACGGGGCTACACCGCGACCAAGCACCAGCGCGAGGTCGGCGCCGGC
+TACTTCGACCGGATTGCCACCACCGTGGACCCGAATTCGTCGACCACCGCGTTGACCGGT
+TCCACCGAAGAGGGCCAGTTCCACTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00463</identifier>
+            <name>ICL</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>isocitrate lyase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methylisocitrate lyase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>zymogen binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to hypoxia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>isocitrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of symbiont tolerance to host environment</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pathogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to acetate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to acid chemical</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to fatty acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to host immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tricarboxylic acid cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001750</id>
+      <name>Malate synthase G</name>
+      <organism>Mycobacterium tuberculosis</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P9WK17" source="Swiss-Prot">
+        <name>Malate synthase G</name>
+        <general-function>Involved in the glycolate utilization. Catalyzes the condensation and subsequent hydrolysis of acetyl-coenzyme A (acetyl-CoA) and glyoxylate to form malate and CoA.</general-function>
+        <specific-function>Coenzyme binding</specific-function>
+        <gene-name>glcB</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>80402.24</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83332">Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P9WK17</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MASZ_MYCTU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.3.3.9</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0051251|Malate synthase G
+MTDRVSVGNLRIARVLYDFVNNEALPGTDIDPDSFWAGVDKVVADLTPQNQALLNARDEL
+QAQIDKWHRRRVIEPIDMDAYRQFLTEIGYLLPEPDDFTITTSGVDAEITTTAGPQLVVP
+VLNARFALNAANARWGSLYDALYGTDVIPETDGAEKGPTYNKVRGDKVIAYARKFLDDSV
+PLSSGSFGDATGFTVQDGQLVVALPDKSTGLANPGQFAGYTGAAESPTSVLLINHGLHIE
+ILIDPESQVGTTDRAGVKDVILESAITTIMDFEDSVAAVDAADKVLGYRNWLGLNKGDLA
+AAVDKDGTAFLRVLNRDRNYTAPGGGQFTLPGRSLMFVRNVGHLMTNDAIVDTDGSEVFE
+GIMDALFTGLIAIHGLKASDVNGPLINSRTGSIYIVKPKMHGPAEVAFTCELFSRVEDVL
+GLPQNTMKIGIMDEERRTTVNLKACIKAAADRVVFINTGFLDRTGDEIHTSMEAGPMVRK
+GTMKSQPWILAYEDHNVDAGLAAGFSGRAQVGKGMWTMTELMADMVETKIAQPRAGASTA
+WVPSPTAATLHALHYHQVDVAAVQQGLAGKRRATIEQLLTIPLAKELAWAPDEIREEVDN
+NCQSILGYVVRWVDQGVGCSKVPDIHDVALMEDRATLRISSQLLANWLRHGVITSADVRA
+SLERMAPLVDRQNAGDVAYRPMAPNFDDSIAFLAAQELILSGAQQPNGYTEPILHRRRRE
+FKARAAEKPAPSDRAGDDAAR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0051252|Malate synthase G (glcB)
+ATGACAGATCGCGTGTCGGTGGGCAACTTGCGCATCGCTCGGGTGCTCTACGACTTCGTG
+AACAATGAAGCCCTGCCTGGCACCGATATCGACCCGGACAGCTTCTGGGCGGGCGTCGAC
+AAGGTCGTCGCCGACCTGACCCCGCAGAACCAAGCTCTGTTGAACGCCCGCGACGAGCTG
+CAGGCGCAGATCGACAAGTGGCACCGGCGTCGGGTGATCGAGCCCATCGACATGGATGCC
+TACCGCCAGTTCCTCACCGAGATCGGCTACCTGCTTCCCGAACCTGATGACTTCACCATC
+ACCACGTCCGGTGTCGACGCTGAGATCACCACGACCGCCGGCCCCCAGCTGGTGGTGCCG
+GTGCTCAACGCGCGGTTTGCTCTGAACGCGGCCAACGCTCGCTGGGGCTCCCTCTACGAC
+GCCTTGTATGGCACCGATGTCATCCCCGAGACCGACGGCGCCGAAAAAGGCCCCACGTAC
+AACAAGGTTCGTGGCGACAAGGTGATCGCGTATGCCCGCAAGTTCCTCGACGACAGTGTT
+CCGCTGTCGTCGGGTTCCTTTGGCGACGCCACCGGTTTCACAGTGCAGGATGGCCAGCTC
+GTGGTTGCCTTGCCGGATAAGTCCACCGGCCTGGCCAACCCCGGCCAGTTCGCCGGCTAC
+ACCGGCGCAGCCGAGTCGCCGACATCGGTGCTGCTAATCAATCACGGTTTGCACATCGAG
+ATCCTGATCGATCCGGAGTCGCAGGTCGGCACCACCGACCGGGCCGGCGTCAAGGACGTG
+ATCCTGGAATCCGCGATCACCACGATCATGGACTTCGAGGACTCGGTGGCCGCCGTGGAC
+GCCGCCGACAAGGTGCTGGGTTATCGGAACTGGCTCGGCCTGAACAAGGGCGACCTGGCA
+GCAGCGGTAGACAAGGACGGCACCGCTTTCCTGCGGGTGCTCAATAGGGACCGGAACTAC
+ACCGCACCCGGCGGTGGCCAGTTCACGCTGCCTGGACGCAGCCTCATGTTCGTCCGCAAC
+GTCGGTCACTTGATGACGAATGACGCCATCGTCGACACTGACGGCAGCGAGGTGTTCGAA
+GGCATCATGGATGCCCTATTCACCGGCCTGATCGCCATCCACGGGCTAAAGGCCAGCGAC
+GTCAACGGGCCGCTGATCAACAGCCGCACCGGCTCCATCTACATCGTCAAGCCGAAGATG
+CACGGTCCGGCCGAGGTGGCGTTTACCTGCGAACTGTTCAGCCGGGTTGAAGATGTGCTG
+GGGTTGCCGCAAAACACCATGAAGATCGGCATCATGGACGAGGAACGCCGGACCACGGTC
+AACCTCAAGGCGTGCATCAAAGCTGCCGCGGACCGCGTGGTGTTCATCAACACCGGGTTC
+CTGGACCGCACCGGCGATGAAATCCACACCTCGATGGAGGCCGGCCCGATGGTGCGCAAG
+GGCACCATGAAGAGCCAGCCGTGGATCTTGGCCTACGAGGACCACAACGTCGATGCCGGC
+CTGGCCGCCGGGTTCAGCGGCCGAGCCCAGGTCGGCAAGGGCATGTGGACAATGACCGAG
+CTGATGGCCGACATGGTCGAGACAAAAATCGCCCAGCCGCGCGCCGGGGCCAGCACCGCC
+TGGGTTCCCTCTCCCACTGCGGCCACCCTGCATGCGCTGCACTACCACCAGGTCGACGTC
+GCCGCGGTGCAACAAGGACTGGCGGGGAAGCGTCGCGCCACCATCGAACAATTGCTGACC
+ATTCCGCTGGCCAAGGAATTGGCCTGGGCTCCCGACGAGATCCGCGAAGAGGTCGACAAC
+AACTGTCAATCCATCCTCGGCTACGTGGTTCGCTGGGTTGATCAAGGTGTCGGCTGCTCG
+AAGGTGCCCGACATCCACGACGTCGCGCTCATGGAGGACCGGGCCACGCTGCGAATCTCC
+AGCCAATTGTTGGCCAACTGGCTGCGCCACGGTGTGATCACCAGCGCGGATGTGCGGGCC
+AGCTTGGAGCGGATGGCGCCGTTGGTCGATCGACAAAACGCGGGCGACGTGGCATACCGA
+CCGATGGCACCCAACTTCGACGACAGTATCGCCTTCCTGGCCGCGCAGGAGCTGATCTTG
+TCCGGGGCCCAGCAGCCCAACGGCTACACCGAGCCGATCCTGCACCGACGTCGTCGGGAG
+TTTAAGGCCCGGGCCGCTGAGAAGCCGGCCCCATCGGACAGGGCCGGTGACGATGCGGCC
+CGCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01274</identifier>
+            <name>Malate_synthase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>capsule</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell surface</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell wall</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>coenzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fibronectin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>host cell extracellular matrix binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>laminin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>magnesium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>malate synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein homodimerization activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adhesion of symbiont to host</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>coenzyme A metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glyoxylate cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tricarboxylic acid cycle</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001689</id>
+      <name>Putative regulator of ribonuclease activity</name>
+      <organism>Mycobacterium tuberculosis</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P9WGY3" source="Swiss-Prot">
+        <name>Putative 4-hydroxy-4-methyl-2-oxoglutarate aldolase</name>
+        <general-function>Catalyzes the aldol cleavage of 4-hydroxy-4-methyl-2-oxoglutarate (HMG) into 2 molecules of pyruvate. Also contains a secondary oxaloacetate (OAA) decarboxylase activity due to the common pyruvate enolate transition state formed following C-C bond cleavage in the retro-aldol and decarboxylation reactions (By similarity).</general-function>
+        <specific-function>4-hydroxy-4-methyl-2-oxoglutarate aldolase activity</specific-function>
+        <gene-name>rraA</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>16235.24</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83332">Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P9WGY3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>RRAAH_MYCTU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>4.1.3.17</synonym>
+          <synonym>HMG aldolase</synonym>
+          <synonym>OAA decarboxylase</synonym>
+          <synonym>Oxaloacetate decarboxylase</synonym>
+          <synonym>Regulator of ribonuclease activity homolog</synonym>
+          <synonym>RraA-like protein</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0051203|Putative 4-hydroxy-4-methyl-2-oxoglutarate aldolase
+MAISFRPTADLVDDIGPDVRSCDLQFRQFGGRSQFAGPISTVRCFQDNALLKSVLSQPSA
+GGVLVIDGAGSLHTALVGDVIAELARSTGWTGLIVHGAVRDAAALRGIDIGIKALGTNPR
+KSTKTGAGERDVEITLGGVTFVPGDIAYSDDDGIIVV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0051204|Putative 4-hydroxy-4-methyl-2-oxoglutarate aldolase (rraA)
+GTGGCCATCTCATTTCGCCCAACCGCTGACCTCGTCGACGACATCGGGCCCGACGTGCGC
+AGCTGTGACCTACAGTTCCGCCAATTCGGCGGCCGATCGCAGTTCGCCGGACCGATCAGC
+ACCGTGCGGTGTTTTCAGGACAATGCGTTGCTGAAGTCGGTGCTCTCGCAGCCAAGTGCG
+GGCGGTGTGCTGGTCATCGACGGCGCCGGGTCCCTGCACACCGCGTTGGTCGGTGATGTC
+ATCGCCGAGTTGGCCCGCTCTACCGGCTGGACCGGGTTGATCGTCCACGGCGCGGTGCGA
+GATGCCGCCGCGCTGCGCGGCATCGACATCGGCATCAAAGCGCTGGGCACCAATCCCCGC
+AAGAGCACCAAGACCGGTGCCGGAGAACGCGACGTTGAAATCACGCTGGGCGGGGTGACA
+TTCGTTCCGGGCGATATCGCCTACAGCGACGACGACGGCATCATCGTCGTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03737</identifier>
+            <name>RraA-like</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>4-hydroxy-4-methyl-2-oxoglutarate aldolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>oxaloacetate decarboxylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ribonuclease inhibitor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of RNA metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters>
+    <transporter position="1">
+      <id>BE0000449</id>
+      <name>Monocarboxylate transporter 4</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>substrate</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16418</ref-id>
+            <pubmed-id>11101640</pubmed-id>
+            <citation>Manning Fox JE, Meredith D, Halestrap AP: Characterisation of human monocarboxylate transporter 4 substantiates its role in lactic acid efflux from skeletal muscle. J Physiol. 2000 Dec 1;529 Pt 2:285-93.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O15427" source="Swiss-Prot">
+        <name>Monocarboxylate transporter 4</name>
+        <general-function>Symporter activity</general-function>
+        <specific-function>Proton-linked monocarboxylate transporter. Catalyzes the rapid transport across the plasma membrane of many monocarboxylates such as lactate, pyruvate, branched-chain oxo acids derived from leucine, valine and isoleucine, and the ketone bodies acetoacetate, beta-hydroxybutyrate and acetate (By similarity).</specific-function>
+        <gene-name>SLC16A3</gene-name>
+        <locus>17q25</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>18-38
+62-82
+85-105
+110-130
+150-170
+180-200
+228-248
+265-285
+295-315
+318-338
+352-372
+385-405</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.03</theoretical-pi>
+        <molecular-weight>49468.9</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10924</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC16A3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U81800</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>2463634</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O15427</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MOT4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>MCT 4</synonym>
+          <synonym>MCT4</synonym>
+          <synonym>Solute carrier family 16 member 3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010312|Monocarboxylate transporter 4
+MGGAVVDEGPTGVKAPDGGWGWAVLFGCFVITGFSYAFPKAVSVFFKELIQEFGIGYSDT
+AWISSILLAMLYGTGPLCSVCVNRFGCRPVMLVGGLFASLGMVAASFCRSIIQVYLTTGV
+ITGLGLALNFQPSLIMLNRYFSKRRPMANGLAAAGSPVFLCALSPLGQLLQDRYGWRGGF
+LILGGLLLNCCVCAALMRPLVVTAQPGSGPPRPSRRLLDLSVFRDRGFVLYAVAASVMVL
+GLFVPPVFVVSYAKDLGVPDTKAAFLLTILGFIDIFARPAAGFVAGLGKVRPYSVYLFSF
+SMFFNGLADLAGSTAGDYGGLVVFCIFFGISYGMVGALQFEVLMAIVGTHKFSSAIGLVL
+LMEAVAVLVGPPSGGKLLDATHVYMYVFILAGAEVLTSSLILLLGNFFCIRKKPKEPQPE
+VAAAEEEKLHKPPADSGVDLREVEHFLKAEPEKNGEVVHTPETSV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010313|Monocarboxylate transporter 4 (SLC16A3)
+ATGGGAGGGGCCGTGGTGGACGAGGGCCCCACAGGCGTCAAGGCCCCTGACGGCGGCTGG
+GGCTGGGCCGTGCTCTTCGGCTGTTTCGTCATCACTGGCTTCTCCTACGCCTTCCCCAAG
+GCCGTCAGTGTCTTCTTCAAGGAGCTCATACAGGAGTTTGGGATCGGCTACAGCGACACA
+GCCTGGATCTCCTCCATCCTGCTGGCCATGCTCTACGGGACAGGTCCGCTCTGCAGTGTG
+TGCGTGAACCGCTTTGGCTGCCGGCCCGTCATGCTTGTGGGGGGTCTCTTTGCGTCGCTG
+GGCATGGTGGCTGCGTCCTTTTGCCGGAGCATCATCCAGGTCTACCTCACCACTGGGGTC
+ATCACGGGGTTGGGTTTGGCACTCAACTTCCAGCCCTCGCTCATCATGCTGAACCGCTAC
+TTCAGCAAGCGGCGCCCCATGGCCAACGGGCTGGCGGCAGCAGGTAGCCCTGTCTTCCTG
+TGTGCCCTGAGCCCGCTGGGGCAGCTGCTGCAGGACCGCTACGGCTGGCGGGGCGGCTTC
+CTCATCCTGGGCGGCCTGCTGCTCAACTGCTGCGTGTGTGCCGCACTCATGAGGCCCCTG
+GTGGTCACGGCCCAGCCGGGCTCGGGGCCGCCGCGACCCTCCCGGCGCCTGCTAGACCTG
+AGCGTCTTCCGGGACCGCGGCTTTGTGCTTTACGCCGTGGCCGCCTCGGTCATGGTGCTG
+GGGCTCTTCGTCCCGCCCGTGTTCGTGGTGAGCTACGCCAAGGACCTGGGCGTGCCCGAC
+ACCAAGGCCGCCTTCCTGCTCACCATCCTGGGCTTCATTGACATCTTCGCGCGGCCGGCC
+GCGGGCTTCGTGGCGGGGCTTGGGAAGGTGCGGCCCTACTCCGTCTACCTCTTCAGCTTC
+TCCATGTTCTTCAACGGCCTCGCGGACCTGGCGGGCTCTACGGCGGGCGACTACGGCGGC
+CTCGTGGTCTTCTGCATCTTCTTTGGCATCTCCTACGGCATGGTGGGGGCCCTGCAGTTC
+GAGGTGCTCATGGCCATCGTGGGCACCCACAAGTTCTCCAGTGCCATTGGCCTGGTGCTG
+CTGATGGAGGCGGTGGCCGTGCTCGTCGGGCCCCCTTCGGGAGGCAAACTCCTGGATGCG
+ACCCACGTCTACATGTACGTGTTCATCCTGGCGGGGGCCGAGGTGCTCACCTCCTCCCTG
+ATTTTGCTGCTGGGCAACTTCTTCTGCATTAGGAAGAAGCCCAAAGAGCCACAGCCTGAG
+GTGGCGGCCGCGGAGGAGGAGAAGCTCCACAAGCCTCCTGCAGACTCGGGGGTGGACTTG
+CGGGAGGTGGAGCATTTCCTGAAGGCTGAGCCTGAGAAAAACGGGGAGGTGGTTCACACC
+CCGGAAACAAGTGTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07690</identifier>
+            <name>MFS_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>actin cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nuclear membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lactate transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monocarboxylic acid transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>poly(A) RNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>symporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocarboxylic acid transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>plasma membrane lactate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

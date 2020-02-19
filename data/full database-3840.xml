@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04080</drugbank-id>
+  <drugbank-id>EXPT00305</drugbank-id>
+  <name>RU78191</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>180.1574</average-mass>
+  <monoisotopic-mass>180.042258744</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as benzene and substituted derivatives. These are aromatic compounds containing one monocyclic ring system consisting of benzene.</description>
+    <direct-parent>Benzene and substituted derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Benzene and substituted derivatives</class>
+    <subclass/>
+    <alternative-parent>1,3-dicarbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Dicarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <substituent>1,3-dicarbonyl compound</substituent>
+    <substituent>Aromatic homomonocyclic compound</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Carboxylic acid derivative</substituent>
+    <substituent>Dicarboxylic acid or derivatives</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1o4p</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.32</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.84e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.35</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>2-phenylpropanedioic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>2-phenylpropanedioic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>180.1574</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>180.042258744</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>OC(=O)C(C(O)=O)C1=CC=CC=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C9H8O4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C9H8O4/c10-8(11)7(9(12)13)6-4-2-1-3-5-6/h1-5,7H,(H,10,11)(H,12,13)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>WWYDYZMNFQIYPT-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>74.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>43.66</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>16.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>2.49</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>75791</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507607</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>68300</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>14676</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>791</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL78794</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000838</id>
+      <name>Proto-oncogene tyrosine-protein kinase Src</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P12931" source="Swiss-Prot">
+        <name>Proto-oncogene tyrosine-protein kinase Src</name>
+        <general-function>Sh3/sh2 adaptor activity</general-function>
+        <specific-function>Non-receptor protein tyrosine kinase which is activated following engagement of many different classes of cellular receptors including immune response receptors, integrins and other adhesion receptors, receptor protein tyrosine kinases, G protein-coupled receptors as well as cytokine receptors. Participates in signaling pathways that control a diverse spectrum of biological activities including gene transcription, immune response, cell adhesion, cell cycle progression, apoptosis, migration, and transformation. Due to functional redundancy between members of the SRC kinase family, identification of the specific role of each SRC kinase is very difficult. SRC appears to be one of the primary kinases activated following engagement of receptors and plays a role in the activation of other protein tyrosine kinase (PTK) families. Receptor clustering or dimerization leads to recruitment of SRC to the receptor complexes where it phosphorylates the tyrosine residues within the receptor cytoplasmic domains. Plays an important role in the regulation of cytoskeletal organization through phosphorylation of specific substrates such as AFAP1. Phosphorylation of AFAP1 allows the SRC SH2 domain to bind AFAP1 and to localize to actin filaments. Cytoskeletal reorganization is also controlled through the phosphorylation of cortactin (CTTN). When cells adhere via focal adhesions to the extracellular matrix, signals are transmitted by integrins into the cell resulting in tyrosine phosphorylation of a number of focal adhesion proteins, including PTK2/FAK1 and paxillin (PXN). In addition to phosphorylating focal adhesion proteins, SRC is also active at the sites of cell-cell contact adherens junctions and phosphorylates substrates such as beta-catenin (CTNNB1), delta-catenin (CTNND1), and plakoglobin (JUP). Another type of cell-cell junction, the gap junction, is also a target for SRC, which phosphorylates connexin-43 (GJA1). SRC is implicated in regulation of pre-mRNA-processing and phosphorylates RNA-binding proteins such as KHDRBS1. Also plays a role in PDGF-mediated tyrosine phosphorylation of both STAT1 and STAT3, leading to increased DNA binding activity of these transcription factors. Involved in the RAS pathway through phosphorylation of RASA1 and RASGRF1. Plays a role in EGF-mediated calcium-activated chloride channel activation. Required for epidermal growth factor receptor (EGFR) internalization through phosphorylation of clathrin heavy chain (CLTC and CLTCL1) at 'Tyr-1477'. Involved in beta-arrestin (ARRB1 and ARRB2) desensitization through phosphorylation and activation of ADRBK1, leading to beta-arrestin phosphorylation and internalization. Has a critical role in the stimulation of the CDK20/MAPK3 mitogen-activated protein kinase cascade by epidermal growth factor. Might be involved not only in mediating the transduction of mitogenic signals at the level of the plasma membrane but also in controlling progression through the cell cycle via interaction with regulatory proteins in the nucleus. Plays an important role in osteoclastic bone resorption in conjunction with PTK2B/PYK2. Both the formation of a SRC-PTK2B/PYK2 complex and SRC kinase activity are necessary for this function. Recruited to activated integrins by PTK2B/PYK2, thereby phosphorylating CBL, which in turn induces the activation and recruitment of phosphatidylinositol 3-kinase to the cell membrane in a signaling pathway that is critical for osteoclast function. Promotes energy production in osteoclasts by activating mitochondrial cytochrome C oxidase. Phosphorylates DDR2 on tyrosine residues, thereby promoting its subsequent autophosphorylation. Phosphorylates RUNX3 and COX2 on tyrosine residues, TNK2 on 'Tyr-284' and CBL on 'Tyr-731'. Enhances DDX58/RIG-I-elicited antiviral signaling. Phosphorylates PDPK1 at 'Tyr-9', 'Tyr-373' and 'Tyr-376'. Phosphorylates BCAR1 at 'Tyr-128'. Phosphorylates CBLC at multiple tyrosine residues, phosphorylation at 'Tyr-341' activates CBLC E3 activity. Required for podosome formation (By similarity).</specific-function>
+        <gene-name>SRC</gene-name>
+        <locus>20q12-q13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.47</theoretical-pi>
+        <molecular-weight>59834.295</molecular-weight>
+        <chromosome-location>20</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:11283</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SRC</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AL133293</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>10635153</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2206</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P12931</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SRC_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.7.10.2</synonym>
+          <synonym>p60-Src</synonym>
+          <synonym>pp60c-src</synonym>
+          <synonym>Proto-oncogene c-Src</synonym>
+          <synonym>SRC1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037090|Proto-oncogene tyrosine-protein kinase Src
+MGSNKSKPKDASQRRRSLEPAENVHGAGGGAFPASQTPSKPASADGHRGPSAAFAPAAAE
+PKLFGGFNSSDTVTSPQRAGPLAGGVTTFVALYDYESRTETDLSFKKGERLQIVNNTEGD
+WWLAHSLSTGQTGYIPSNYVAPSDSIQAEEWYFGKITRRESERLLLNAENPRGTFLVRES
+ETTKGAYCLSVSDFDNAKGLNVKHYKIRKLDSGGFYITSRTQFNSLQQLVAYYSKHADGL
+CHRLTTVCPTSKPQTQGLAKDAWEIPRESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTL
+KPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKY
+LRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYT
+ARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVER
+GYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021959|Proto-oncogene tyrosine-protein kinase Src (SRC)
+ATGGGTAGCAACAAGAGCAAGCCCAAGGATGCCAGCCAGCGGCGCCGCAGCCTGGAGCCC
+GCCGAGAACGTGCACGGCGCTGGCGGGGGCGCTTTCCCCGCCTCGCAGACCCCCAGCAAG
+CCAGCCTCGGCCGACGGCCACCGCGGCCCCAGCGCGGCCTTCGCCCCCGCGGCCGCCGAG
+CCCAAGCTGTTCGGAGGCTTCAACTCCTCGGACACCGTCACCTCCCCGCAGAGGGCGGGC
+CCGCTGGCCGGTGGAGTGACCACCTTTGTGGCCCTCTATGACTATGAGTCTAGGACGGAG
+ACAGACCTGTCCTTCAAGAAAGGCGAGCGGCTCCAGATTGTCAACAACACAGAGGGAGAC
+TGGTGGCTGGCCCACTCGCTCAGCACAGGACAGACAGGCTACATCCCCAGCAACTACGTG
+GCGCCCTCCGACTCCATCCAGGCTGAGGAGTGGTATTTTGGCAAGATCACCAGACGGGAG
+TCAGAGCGGTTACTGCTCAATGCAGAGAACCCGAGAGGGACCTTCCTCGTGCGAGAAAGT
+GAGACCACGAAAGGTGCCTACTGCCTCTCAGTGTCTGACTTCGACAACGCCAAGGGCCTC
+AACGTGAAGCACTACAAGATCCGCAAGCTGGACAGCGGCGGCTTCTACATCACCTCCCGC
+ACCCAGTTCAACAGCCTGCAGCAGCTGGTGGCCTACTACTCCAAACACGCCGATGGCCTG
+TGCCACCGCCTCACCACCGTGTGCCCCACGTCCAAGCCGCAGACTCAGGGCCTGGCCAAG
+GATGCCTGGGAGATCCCTCGGGAGTCGCTGCGGCTGGAGGTCAAGCTGGGCCAGGGCTGC
+TTTGGCGAGGTGTGGATGGGGACCTGGAACGGTACCACCAGGGTGGCCATCAAAACCCTG
+AAGCCTGGCACGATGTCTCCAGAGGCCTTCCTGCAGGAGGCCCAGGTCATGAAGAAGCTG
+AGGCATGAGAAGCTGGTGCAGTTGTATGCTGTGGTTTCAGAGGAGCCCATTTACATCGTC
+ACGGAGTACATGAGCAAGGGGAGTTTGCTGGACTTTCTCAAGGGGGAGACAGGCAAGTAC
+CTGCGGCTGCCTCAGCTGGTGGACATGGCTGCTCAGATCGCCTCAGGCATGGCGTACGTG
+GAGCGGATGAACTACGTCCACCGGGACCTTCGTGCAGCCAACATCCTGGTGGGAGAGAAC
+CTGGTGTGCAAAGTGGCCGACTTTGGGCTGGCTCGGCTCATTGAAGACAATGAGTACACG
+GCGCGGCAAGGTGCCAAATTCCCCATCAAGTGGACGGCTCCAGAAGCTGCCCTCTATGGC
+CGCTTCACCATCAAGTCGGACGTGTGGTCCTTCGGGATCCTGCTGACTGAGCTCACCACA
+AAGGGACGGGTGCCCTACCCTGGGATGGTGAACCGCGAGGTGCTGGACCAGGTGGAGCGG
+GGCTACCGGATGCCCTGCCCGCCGGAGTGTCCCGAGTCCCTGCACGACCTCATGTGCCAG
+TGCTGGCGGAAGGAGCCTGAGGAGCGGCCCACCTTCGAGTACCTGCAGGCCTTCCTGGAG
+GACTACTTCACGTCCACCGAGCCCCAGTACCAGCCCGGGGAGAACCTCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07714</identifier>
+            <name>Pkinase_Tyr</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00017</identifier>
+            <name>SH2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00018</identifier>
+            <name>SH3_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>actin filament</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extrinsic component of cytoplasmic side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>late endosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>perinuclear region of cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>ruffle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>enzyme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ephrin receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>growth factor receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hormone receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>integrin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ion channel binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>kinase binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>non-membrane spanning protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphoprotein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>protein tyrosine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>scaffold protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>SH2 domain binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>SH3/SH2 adaptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiotensin-activated signaling pathway involved in heart process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bone resorption</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>branching involved in mammary gland duct morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to fluid shear stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to peptide hormone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to platelet-derived growth factor stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to progesterone stimulus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to reactive oxygen species</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ephrin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-gamma receptor signaling pathway involved in phagocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>forebrain development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>integrin-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>intracellular signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>membrane organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of anoikis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cysteine-type endopeptidase activity involved in apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of focal adhesion assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of intrinsic apoptotic signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of mitochondrial depolarization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein homooligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of telomerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of telomere maintenance via telomerase</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>osteoclast development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of canonical Wnt signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of epithelial cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of ERK1 and ERK2 cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of integrin activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of lamellipodium morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of peptidyl-tyrosine phosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of podosome assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein kinase B signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of protein serine/threonine kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>progesterone receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein autophosphorylation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein destabilization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of bone resorption</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of caveolin-mediated endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell cycle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell projection assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell-cell adhesion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of early endosome to late endosome transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of epithelial cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of intracellular estrogen receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of podosome assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of vascular permeability</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to interleukin-1</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal complex assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stimulatory C-type lectin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>stress fiber assembly</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substrate adhesion-dependent cell spreading</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>T cell costimulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transforming growth factor beta receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>uterus development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>viral process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

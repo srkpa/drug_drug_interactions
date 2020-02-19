@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05224</drugbank-id>
+  <name>REP8839</name>
+  <description>REP8839 is a novel methionyl-tRNA synthetase (MetS) inhibitor being developed by Replidyne (GlaxoSmithKline licensed REP8839 to Replidyne in June of 2003).</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3293</ref-id>
+        <pubmed-id>16189105</pubmed-id>
+        <citation>Critchley IA, Young CL, Stone KC, Ochsner UA, Guiles J, Tarasow T, Janjic N: Antibacterial activity of REP8839, a new antibiotic for topical use. Antimicrob Agents Chemother. 2005 Oct;49(10):4247-52.</citation>
+      </article>
+      <article>
+        <ref-id>A3294</ref-id>
+        <pubmed-id>16189106</pubmed-id>
+        <citation>Ochsner UA, Young CL, Stone KC, Dean FB, Janjic N, Critchley IA: Mode of action and biochemical characterization of REP8839, a novel inhibitor of methionyl-tRNA synthetase. Antimicrob Agents Chemother. 2005 Oct;49(10):4253-62.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of bacterial infections caused by susceptible microorganisms (&lt;i&gt;Staphylococcus aureus&lt;/i&gt;, including methicillin-resistant &lt;i&gt;S. aureus&lt;/i&gt; (MRSA), and &lt;i&gt;Streptococcus pyogenes&lt;/i&gt;).</indication>
+  <pharmacodynamics>REP8839 is a novel methionyl-tRNA synthetase (MetS) inhibitor with potent antibacterial activity against clinical isolates of Staphylococcus aureus, Streptococcus pyogenes, and other clinically important gram-positive bacteria but little activity against gram-negative bacteria.</pharmacodynamics>
+  <mechanism-of-action>REP8839 exerts its antibacterial activity through specific inhibition of MetS, a novel target.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding>REP8839 is highly bound to human serum proteins.</protein-binding>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amines</category>
+      <mesh-id>D000588</mesh-id>
+    </category>
+    <category>
+      <category>Polyamines</category>
+      <mesh-id>D011073</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Bacteria</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910034</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002381</id>
+      <name>Methionine--tRNA ligase</name>
+      <organism>Staphylococcus aureus (strain MRSA252)</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A3294</ref-id>
+            <pubmed-id>16189106</pubmed-id>
+            <citation>Ochsner UA, Young CL, Stone KC, Dean FB, Janjic N, Critchley IA: Mode of action and biochemical characterization of REP8839, a novel inhibitor of methionyl-tRNA synthetase. Antimicrob Agents Chemother. 2005 Oct;49(10):4253-62.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q6GJI1" source="Swiss-Prot">
+        <name>Methionine--tRNA ligase</name>
+        <general-function>Trna binding</general-function>
+        <specific-function>Is required not only for elongation of protein synthesis but also for the initiation of all mRNA translation through initiator tRNA(fMet) aminoacylation.</specific-function>
+        <gene-name>metG</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.86</theoretical-pi>
+        <molecular-weight>74896.93</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="282458">Staphylococcus aureus (strain MRSA252)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BX571856</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q6GJI1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SYM_STAAR</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>6.1.1.10</synonym>
+          <synonym>Methionyl-tRNA synthetase</synonym>
+          <synonym>MetRS</synonym>
+          <synonym>metS</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0019278|Methionine--tRNA ligase
+MAKETFYITTPIYYPSGNLHIGHAYSTVAGDVIARYKRMQGYDVRYLTGTDEHGQKIQEK
+AQKAGKTEIEYLDEMIAGIKQLWAKLEISNDDFIRTTEERHKHVVEQVFERLLKQGDIYL
+GEYEGWYSVPDETYYTESQLVDPQYENGKIIGGKSPDSGHEVELVKEESYFFNISKYTDR
+LLEFYDQNPDFIQPPSRKNEMINNFIKPGLADLAVSRTSFNWGVHVPSNPKHVVYVWIDA
+LVNYISALGYLSDDESLFNKYWPADIHLMAKEIVRFHSIIWPILLMALDLPLPKKVFAHG
+WILMKDGKMSKSKGNVVDPNILIDRYGLDATRYYLMRELPFGSDGVFTPEAFVERTNFDL
+ANDLGNLVNRTISMINKYFDGELPAYQGPLHELDEEMEAMALETVKSYTESMESLQFSVA
+LSTVWKFISRTNKYIDETTPWVLAKDDSQKDMLGNVMAHLVENIRYAAVLLRPFLTHAPK
+EIFEQLNINNPQFMEFSSLEQYGVLTEPIMVTGQPKPIFPRLDSEAEIAYIKESMQPPAT
+EEEKEEIPSKPQIDIKDFDKVEIKAATIIDAEHVKKSDKLLKIQVDLDSEQRQIVSGIAK
+FYTPDDIIGKKVAVVTNLKPAKLMGQKSEGMILSAEKDGVLTLVSLPSAIPNGAVIK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019279|Methionine--tRNA ligase (metG)
+ATGGCTAAAGAAACATTTTATATAACAACCCCAATATACTATCCTAGTGGGAATTTACAT
+ATAGGACATGCATATTCTACAGTGGCTGGAGATGTTATTGCAAGATATAAGAGAATGCAA
+GGATATGATGTTCGTTATTTGACTGGAACGGATGAACACGGTCAAAAAATTCAAGAAAAA
+GCTCAAAAAGCTGGTAAGACAGAAATTGAATATTTGGATGAGATGATTGCTGGAATTAAA
+CAATTGTGGGCTAAGCTTGAAATTTCAAATGATGATTTTATCAGAACAACTGAAGAACGT
+CATAAACATGTCGTTGAGCAAGTATTTGAACGTTTATTAAAGCAAGGTGATATCTATTTA
+GGTGAATATGAAGGTTGGTATTCTGTTCCGGATGAAACATACTATACAGAGTCACAATTA
+GTAGACCCACAATACGAAAACGGTAAAATTATTGGTGGTAAAAGTCCAGATTCTGGACAT
+GAAGTTGAACTAGTAAAAGAAGAAAGTTATTTCTTTAATATTAGTAAATATACAGATCGT
+TTATTAGAGTTCTATGACCAAAATCCAGATTTTATACAACCACCATCAAGAAAAAATGAA
+ATGATTAACAACTTCATTAAACCAGGACTTGCTGATTTGGCTGTTTCTCGTACATCATTT
+AACTGGGGTGTCCATGTTCCGTCTAATCCAAAACATGTTGTTTATGTTTGGATTGATGCG
+TTAGTTAACTATATTTCAGCATTAGGCTATTTATCAGATGATGAGTCACTATTTAACAAA
+TACTGGCCAGCAGATATTCATTTAATGGCTAAGGAAATTGTGCGATTCCACTCAATTATT
+TGGCCTATTTTATTGATGGCATTAGACTTACCGTTACCTAAAAAAGTCTTTGCACATGGT
+TGGATTTTGATGAAAGATGGAAAAATGAGTAAATCTAAAGGTAATGTCGTAGACCCGAAT
+ATTTTAATTGATCGCTATGGTTTAGATGCCACACGTTATTATCTAATGCGTGAATTACCA
+TTTGGTTCAGATGGCGTATTTACACCTGAAGCATTTGTTGAGCGTACAAATTTCGATCTA
+GCAAATGACTTAGGAAACTTAGTAAACCGTACGATTTCTATGATTAATAAGTACTTTGAT
+GGCGAATTACCAGCGTATCAAGGTCCACTTCATGAATTAGATGAAGAAATGGAAGCTATG
+GCTTTAGAAACAGTGAAAAGTTATACTGAAAGCATGGAAAGTTTGCAATTTTCTGTGGCA
+TTATCTACGGTATGGAAGTTTATTAGTAGAACGAATAAGTATATTGACGAAACAACGCCT
+TGGGTATTAGCTAAGGACGATAGCCAAAAAGATATGTTAGGCAATGTTATGGCTCACTTA
+GTTGAAAATATTCGTTATGCAGCTGTATTATTGCGTCCATTCTTAACTCATGCGCCGAAA
+GAGATTTTTGAACAATTGAACATTAACAATCCTCAATTTATGGAATTTAGTAGTTTAGAG
+CAATATGGTGTGCTTACTGAGCCAATTATGGTTACTGGGCAACCTAAACCTATTTTCCCA
+AGATTGGATAGCGAAGCGGAAATTGCATATATCAAAGAATCAATGCAACCGCCTGCTACT
+GAAGAGGAAAAAGAAGAGATTCCTAGCAAACCTCAAATTGATATTAAAGACTTTGATAAA
+GTTGAAATTAAGGCAGCAACGATTATTGATGCTGAACATGTTAAGAAGTCAGATAAGCTT
+TTAAAAATTCAAGTAGACTTAGATTCTGAACAAAGACAAATCGTATCAGGAATTGCCAAA
+TTCTATACACCAGATGATATTATTGGTAAAAAAGTAGCAGTTGTTACTAACTTGAAACCA
+GCTAAATTAATGGGACAAAAATCTGAAGGTATGATATTATCTGCTGAAAAAGATGGTGTA
+TTAACCTTAGTAAGTTTACCAAGTGCAATTCCAAATGGTGCAGTGATTAAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF08264</identifier>
+            <name>Anticodon_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01588</identifier>
+            <name>tRNA_bind</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09334</identifier>
+            <name>tRNA-synt_1g</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>ATP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methionine-tRNA ligase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tRNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>methionyl-tRNA aminoacylation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

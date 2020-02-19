@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05200</drugbank-id>
+  <name>AT2220</name>
+  <description>AT2220 is an experimental, oral therapy for the treatment of Pompe disease and belongs to a class of molecules known as pharmacological chaperones. It is a small molecule designed to act as a pharmacological chaperone that specifically binds, stabilizes, and facilitates the proper folding and trafficking of α-glucosidase (GAA). GAA to the lysosome, where it can perform its normal function. AT2220 has been shown to increase GAA activity in cell lines derived from Pompe patients and in transfected cells expressing misfolded forms of GAA.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Pompe disease, also known as glycogen storage disease type II or acid maltase deficiency, is a relatively rare neuromuscular and lysosomal storage disorder caused by inherited genetic mutations in a key enzyme called α-glucosidase (Gaa).</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>AT2220 is designed to act as a pharmacological chaperone by selectively binding to the misfolded enzyme responsible for Pompe disease, Gaa. After binding to the enzyme, it is thought that AT2220 promotes the proper folding, processing, and trafficking of the enzyme from the endoplasmic reticulum to its final destination, the lysosome, the area of the cell where the enzyme does its work. Once it reaches the lysosome, the pharmacological chaperone is displaced, and the enzyme can perform its normal function, which is the breakdown of its natural substrate, glycogen.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910020</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000876</id>
+      <name>Lysosomal alpha-glucosidase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P10253" source="Swiss-Prot">
+        <name>Lysosomal alpha-glucosidase</name>
+        <general-function>Maltose alpha-glucosidase activity</general-function>
+        <specific-function>Essential for the degradation of glygogen to glucose in lysosomes.</specific-function>
+        <gene-name>GAA</gene-name>
+        <locus>17q25.2-q25.3</locus>
+        <cellular-location>Lysosome</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-27</signal-regions>
+        <theoretical-pi>5.91</theoretical-pi>
+        <molecular-weight>105322.935</molecular-weight>
+        <chromosome-location>17</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4065</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GAA</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>Y00839</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>31608</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2611</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P10253</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>LYAG_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.2.1.20</synonym>
+          <synonym>Acid maltase</synonym>
+          <synonym>Aglucosidase alfa</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010618|Lysosomal alpha-glucosidase
+MGVRHPPCSHRLLAVCALVSLATAALLGHILLHDFLLVPRELSGSSPVLEETHPAHQQGA
+SRPGPRDAQAHPGRPRAVPTQCDVPPNSRFDCAPDKAITQEQCEARGCCYIPAKQGLQGA
+QMGQPWCFFPPSYPSYKLENLSSSEMGYTATLTRTTPTFFPKDILTLRLDVMMETENRLH
+FTIKDPANRRYEVPLETPHVHSRAPSPLYSVEFSEEPFGVIVRRQLDGRVLLNTTVAPLF
+FADQFLQLSTSLPSQYITGLAEHLSPLMLSTSWTRITLWNRDLAPTPGANLYGSHPFYLA
+LEDGGSAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFLGPEPKSVVQQYLDVVGY
+PFMPPYWGLGFHLCRWGYSSTAITRQVVENMTRAHFPLDVQWNDLDYMDSRRDFTFNKDG
+FRDFPAMVQELHQGGRRYMMIVDPAISSSGPAGSYRPYDEGLRRGVFITNETGQPLIGKV
+WPGSTAFPDFTNPTALAWWEDMVAEFHDQVPFDGMWIDMNEPSNFIRGSEDGCPNNELEN
+PPYVPGVVGGTLQAATICASSHQFLSTHYNLHNLYGLTEAIASHRALVKARGTRPFVISR
+STFAGHGRYAGHWTGDVWSSWEQLASSVPEILQFNLLGVPLVGADVCGFLGNTSEELCVR
+WTQLGAFYPFMRNHNSLLSLPQEPYSFSEPAQQAMRKALTLRYALLPHLYTLFHQAHVAG
+ETVARPLFLEFPKDSSTWTVDHQLLWGEALLITPVLQAGKAEVTGYFPLGTWYDLQTVPV
+EALGSLPPPPAAPREPAIHSEGQWVTLPAPLDTINVHLRAGYIIPLQGPGLTTTESRQQP
+MALAVALTKGGEARGELFWDDGESLEVLERGAYTQVIFLARNNTIVNELVRVTSEGAGLQ
+LQKVTVLGVATAPQQVLSNGVPVSNFTYSPDTKVLDICVSLLMGEQFLVSWC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010619|Lysosomal alpha-glucosidase (GAA)
+ATGGGAGTGAGGCACCCGCCCTGCTCCCACCGGCTCCTGGCCGTCTGCGCCCTCGTGTCC
+TTGGCAACCGCTGCACTCCTGGGGCACATCCTACTCCATGATTTCCTGCTGGTTCCCCGA
+GAGCTGAGTGGCTCCTCCCCAGTCCTGGAGGAGACTCACCCAGCTCACCAGCAGGGAGCC
+AGCAGACCAGGGCCCCGGGATGCCCAGGCACACCCCGGCCGTCCCAGAGCAGTGCCCACA
+CAGTGCGACGTCCCCCCCAACAGCCGCTTCGATTGCGCCCCTGACAAGGCCATCACCCAG
+GAACAGTGCGAGGCCCGCGGCTGTTGCTACATCCCTGCAAAGCAGGGGCTGCAGGGAGCC
+CAGATGGGGCAGCCCTGGTGCTTCTTCCCACCCAGCTACCCCAGCTACAAGCTGGAGAAC
+CTGAGCTCCTCTGAAATGGGCTACACGGCCACCCTGACCCGTACCACCCCCACCTTCTTC
+CCCAAGGACATCCTGACCCTGCGGCTGGACGTGATGATGGAGACTGAGAACCGCCTCCAC
+TTCACGATCAAAGATCCAGCTAACAGGCGCTACGAGGTGCCCTTGGAGACCCCGCATGTC
+CACAGCCGGGCACCGTCCCCACTCTACAGCGTGGAGTTCTCCGAGGAGCCCTTCGGGGTG
+ATCGTGCGCCGGCAGCTGGACGGCCGCGTGCTGCTGAACACGACGGTGGCGCCCCTGTTC
+TTTGCGGACCAGTTCCTTCAGCTGTCCACCTCGCTGCCCTCGCAGTATATCACAGGCCTC
+GCCGAGCACCTCAGTCCCCTGATGCTCAGCACCAGCTGGACCAGGATCACCCTGTGGAAC
+CGGGACCTTGCGCCCACGCCCGGTGCGAACCTCTACGGGTCTCACCCTTTCTACCTGGCG
+CTGGAGGACGGCGGGTCGGCACACGGGGTGTTCCTGCTAAACAGCAATGCCATGGATGTG
+GTCCTGCAGCCGAGCCCTGCCCTTAGCTGGAGGTCGACAGGTGGGATCCTGGATGTCTAC
+ATCTTCCTGGGCCCAGAGCCCAAGAGCGTGGTGCAGCAGTACCTGGACGTTGTGGGATAC
+CCGTTCATGCCGCCATACTGGGGCCTGGGCTTCCACCTGTGCCGCTGGGGCTACTCCTCC
+ACCGCTATCACCCGCCAGGTGGTGGAGAACATGACCAGGGCCCACTTCCCCCTGGACGTC
+CAGTGGAACGACCTGGACTACATGGACTCCCGGAGGGACTTCACGTTCAACAAGGATGGC
+TTCCGGGACTTCCCGGCCATGGTGCAGGAGCTGCACCAGGGCGGCCGGCGCTACATGATG
+ATCGTGGATCCTGCCATCAGCAGCTCGGGCCCTGCCGGGAGCTACAGGCCCTACGACGAG
+GGTCTGCGGAGGGGGGTTTTCATCACCAACGAGACCGGCCAGCCGCTGATTGGGAAGGTA
+TGGCCCGGGTCCACTGCCTTCCCCGACTTCACCAACCCCACAGCCCTGGCCTGGTGGGAG
+GACATGGTGGCTGAGTTCCATGACCAGGTGCCCTTCGACGGCATGTGGATTGACATGAAC
+GAGCCTTCCAACTTCATCAGGGGCTCTGAGGACGGCTGCCCCAACAATGAGCTGGAGAAC
+CCACCCTACGTGCCTGGGGTGGTTGGGGGGACCCTCCAGGCGGCCACCATCTGTGCCTCC
+AGCCACCAGTTTCTCTCCACACACTACAACCTGCACAACCTCTACGGCCTGACCGAAGCC
+ATCGCCTCCCACAGGGCGCTGGTGAAGGCTCGGGGGACACGCCCATTTGTGATCTCCCGC
+TCGACCTTTGCTGGCCACGGCCGATACGCCGGCCACTGGACGGGGGACGTGTGGAGCTCC
+TGGGAGCAGCTCGCCTCCTCCGTGCCAGAAATCCTGCAGTTTAACCTGCTGGGGGTGCCT
+CTGGTCGGGGCCGACGTCTGCGGCTTCCTGGGCAACACCTCAGAGGAGCTGTGTGTGCGC
+TGGACCCAGCTGGGGGCCTTCTACCCCTTCATGCGGAACCACAACAGCCTGCTCAGTCTG
+CCCCAGGAGCCGTACAGCTTCAGCGAGCCGGCCCAGCAGGCCATGAGGAAGGCCCTCACC
+CTGCGCTACGCACTCCTCCCCCACCTCTACACACTGTTCCACCAGGCCCACGTCGCGGGG
+GAGACCGTGGCCCGGCCCCTCTTCCTGGAGTTCCCCAAGGACTCTAGCACCTGGACTGTG
+GACCACCAGCTCCTGTGGGGGGAGGCCCTGCTCATCACCCCAGTGCTCCAGGCCGGGAAG
+GCCGAAGTGACTGGCTACTTCCCCTTGGGCACATGGTACGACCTGCAGACGGTGCCAGTA
+GAGGCCCTTGGCAGCCTCCCACCCCCACCTGCAGCTCCCCGTGAGCCAGCCATCCACAGC
+GAGGGGCAGTGGGTGACGCTGCCGGCCCCCCTGGACACCATCAACGTCCACCTCCGGGCT
+GGGTACATCATCCCCCTGCAGGGCCCTGGCCTCACAACCACAGAGTCCCGCCAGCAGCCC
+ATGGCCCTGGCTGTGGCCCTGACCAAGGGTGGGGAGGCCCGAGGGGAGCTGTTCTGGGAC
+GATGGAGAGAGCCTGGAAGTGCTGGAGCGAGGGGCCTACACACAGGTCATCTTCCTGGCC
+AGGAATAACACGATCGTGAATGAGCTGGTACGTGTGACCAGTGAGGGAGCTGGCCTGCAG
+CTGCAGAAGGTGACTGTCCTGGGCGTGGCCACGGCGCCCCAGCAGGTCCTCTCCAACGGT
+GTCCCTGTCTCCAACTTCACCTACAGCCCCGACACCAAGGTCCTGGACATCTGTGTCTCG
+CTGTTGATGGGAGAGCAGTTTCTCGTCAGCTGGTGTTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01055</identifier>
+            <name>Glyco_hydro_31</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00088</identifier>
+            <name>Trefoil</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13802</identifier>
+            <name>Gal_mutarotas_2</name>
+          </pfam>
+          <pfam>
+            <identifier>PF16863</identifier>
+            <name>NtCtMGAM_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosomal membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lysosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-1,4-glucosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>maltose alpha-glucosidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cardiac muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>diaphragm contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycogen catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>heart morphogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>locomotory behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lysosome organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maltose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>muscle cell cellular homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular process controlling balance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular process controlling posture</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of the force of heart contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sucrose metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>tissue development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vacuolar sequestering</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

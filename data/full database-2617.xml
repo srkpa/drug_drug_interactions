@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02776</drugbank-id>
+  <drugbank-id>EXPT01716</drugbank-id>
+  <name>1-Hexadecanosulfonic Acid</name>
+  <description/>
+  <cas-number>15015-81-3</cas-number>
+  <unii>84694Z0M9P</unii>
+  <average-mass>306.504</average-mass>
+  <monoisotopic-mass>306.222865644</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as organosulfonic acids. These are compounds containing the sulfonic acid group, which has the general structure RS(=O)2OH (R is not a hydrogen atom).</description>
+    <direct-parent>Organosulfonic acids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Organic sulfonic acids and derivatives</class>
+    <subclass>Organosulfonic acids and derivatives</subclass>
+    <alternative-parent>Alkanesulfonic acids</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Sulfonyls</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Alkanesulfonic acid</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organosulfonic acid</substituent>
+    <substituent>Organosulfur compound</substituent>
+    <substituent>Sulfonyl</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1exw</pdb-entry>
+    <pdb-entry>1lic</pdb-entry>
+    <pdb-entry>1lpo</pdb-entry>
+    <pdb-entry>1lpp</pdb-entry>
+    <pdb-entry>1qd6</pdb-entry>
+    <pdb-entry>1qz3</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.03</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-5.6</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.57e-04 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>5.85</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>hexadecane-1-sulfonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>1-hexadecanesulfonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>306.504</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>306.222865644</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CCCCCCCCCCCCCCCCS(O)(=O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C16H34O3S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C16H34O3S/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-20(17,18)19/h2-16H2,1H3,(H,17,18,19)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>SSILHZFTFWOUJR-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>54.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>85.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>38.82</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>-0.59</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>43043</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>14253</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46504870</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>13615</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>HDS</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1208309</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002837</id>
+      <name>Hydrolase</name>
+      <organism>Alicyclobacillus acidocaldarius</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q7SIG1" source="TrEMBL">
+        <name>Hydrolase</name>
+        <general-function>Hydrolase activity</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.85</theoretical-pi>
+        <molecular-weight>34302.735</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1388">Alicyclobacillus acidocaldarius</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q7SIG1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q7SIG1_ALIAC</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022041|Hydrolase
+MPLDPVIQQVLDQLNRMPAPDYKHLSAQQFRSQQSLFPPVKKEPVAEVREFDMDLPGRTL
+KVRMYRPEGVEPPYPALVYYHGGGWVVGDLETHDPVCRVLAKDGRAVVFSVDYRLAPEHK
+FPAAVEDAYDALQWIAERAADFHLDPARIAVGGDSAGGNLAAVTSILAKERGGPALAFQL
+LIYPSTGYDPAHPPASIEENAEGYLLTGGMMLWFRDQYLNSLEELTHPWFSPVLYPDLSG
+LPPAYIATAQYDPLRDVGKLYAEALNKAGVKVEIENFEDLIHGFAQFYSLSPGATKALVR
+IAEKLRDALA</amino-acid-sequence>
+        <gene-sequence format="FASTA"/>
+        <pfams>
+          <pfam>
+            <identifier>PF07859</identifier>
+            <name>Abhydrolase_3</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0001696</id>
+      <name>Lipase 1</name>
+      <organism>Yeast</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P20261" source="Swiss-Prot">
+        <name>Lipase 1</name>
+        <general-function>Triglyceride lipase activity</general-function>
+        <specific-function/>
+        <gene-name>LIP1</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>4.43</theoretical-pi>
+        <molecular-weight>58549.5</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="237561">Yeast</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X64703</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1325987</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P20261</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>LIP1_CANRU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.1.3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011209|Lipase 1
+MELALALSLIASVAAAPTATLANGDTITGLNAIINEAFLGIPFAEPPVGNLRFKDPVPYS
+GSLDGQKFTSYGPSCMQQNPEGTYEENLPKAALDLVMQSKVFEAVSPSSEDCLTINVVRP
+PGTKAGANLPVMLWIFGGGFEVGGTSTFPPAQMITKSIAMGKPIIHVSVNYRVSSWGFLA
+GDEIKAEGSANAGLKDQRLGMQWVADNIAAFGGDPTKVTIFGESAGSMSVMCHILWNDGD
+NTYKGKPLFRAGIMQSGAMVPSDAVDGIYGNEIFDLLASNAGCGSASDKLACLRGVSSDT
+LEDATNNTPGFLAYSSLRLSYLPRPDGVNITDDMYALVREGKYANIPVIIGDQNDEGTFF
+GTSSLNVTTDAQAREYFKQSFVHASDAEIDTLMTAYPGDITQGSPFDTGILNALTPQFKR
+ISAVLGDLGFTLARRYFLNHYTGGTKYSFLSKQLSGLPVLGTFHSNDIVFQDYLLGSGSL
+IYNNAFIAFATDLDPNTAGLLVKWPEYTSSSQSGNNLMMINALGLYTGKDNFRTAGYDAL
+FSNPPSFFV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0003362|1650 bp
+ATGGAGCTCGCTCTTGCGCTCCTGCTCATTGCCTCGGTGGCTGCTGCCCCCACCGCCACG
+CTCGCCAACGGCGACACCATCACCGGTCTCAACGCCATCATCAACGAGGCGTTCCTCGGC
+ATTCCCTTTGCCGAGCCGCCGGTGGGCAACCTCCGCTTCAAGGACCCCGTGCCGTACTCC
+GGCTCGCTCGATGGCCAGAAGTTCACGCTGTACGGCCCGCTGTGCATGCAGCAGAACCCC
+GAGGGCACCTACGAGGAGAACCTCCCCAAGGCAGCGCTCGACTTGGTGATGCAGTCCAAG
+GTGTTTGAGGCGGTGCTGCCGCTGAGCGAGGACTGTCTCACCATCAACGTGGTGCGGCCG
+CCGGGCACCAAGGCGGGTGCCAACCTCCCGGTGATGCTCTGGATCTTTGGCGGCGGGTTT
+GAGGTGGGTGGCACCAGCACCTTCCCTCCCGCCCAGATGATCACCAAGAGCATTGCCATG
+GGCAAGCCCATCATCCACGTGAGCGTCAACTACCGCGTGTCGTCGTGGGGGTTCTTGGCT
+GGCGACGAGATCAAGGCCGAGGGCAGTGCCAACGCCGGTTTGAAGGACCAGCGCTTGGGC
+ATGCAGTGGGTGGCGGACAACATTGCGGCGTTTGGCGGCGACCCGACCAAGGTGACCATC
+TTTGGCGAGCTGGCGGGCAGCATGTCGGTCATGTGCCACATTCTCTGGAACGACGGCGAC
+AACACGTACAAGGGCAAGCCGCTCTTCCGCGCGGGCATCATGCAGCTGGGGGCCATGGTG
+CCGCTGGACGCCGTGGACGGCATCTACGGCAACGAGATCTTTGACCTCTTGGCGTCGAAC
+GCGGGCTGCGGCAGCGCCAGCGACAAGCTTGCGTGCTTGCGCGGTGTGCTGAGCGACACG
+TTGGAGGACGCCACCAACAACACCCCTGGGTTCTTGGCGTACTCCTCGTTGCGGTTGCTG
+TACCTCCCCCGGCCCGACGGCGTGAACATCACCGACGACATGTACGCCTTGGTGCGCGAG
+GGCAAGTATGCCAACATCCCTGTGATCATCGGCGACCAGAACGACGAGGGCACCTTCTTT
+GGCACCCTGCTGTTGAACGTGACCACGGATGCCCAGGCCCGCGAGTACTTCAAGCAGCTG
+TTTGTCCACGCCAGCGACGCGGAGATCGACACGTTGATGACGGCGTACCCCGGCGACATC
+ACCCAGGGCCTGCCGTTCGACACGGGTATTCTCAACGCCCTCACCCCGCAGTTCAAGAGA
+ATCCTGGCGGTGCTCGGCGACCTTGGCTTTACGCTTGCTCGTCGCTACTTCCTCAACCAC
+TACACCGGCGGCACCAAGTACTCATTCCTCCTGAAGCAGCTCCTGGGCTTGCCGGTGCTC
+GGAACGTTCCACTCCAACGACATTGTCTTCCAGGACTACTTGTTGGGCAGCGGCTCGCTC
+ATCTACAACAACGCGTTCATTGCGTTTGCCACGGACTTGGACCCCAACACCGCGGGGTTG
+TTGGTGAAGTGGCCCGAGTACACCAGCAGCCTGCAGCTGGGCAACAACTTGATGATGATC
+AACGCCTTGGGCTTGTACACCGGCAAGGACAACTTCCGCACCGCCGGCTACGACGCGTTG
+TTCTCCAACCCGCCGCTGTTCTTTGTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00135</identifier>
+            <name>COesterase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>triglyceride lipase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid catabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers>
+    <carrier>
+      <id>BE0001194</id>
+      <name>Fatty acid-binding protein, adipocyte</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P15090" source="Swiss-Prot">
+        <name>Fatty acid-binding protein, adipocyte</name>
+        <general-function>Transporter activity</general-function>
+        <specific-function>Lipid transport protein in adipocytes. Binds both long chain fatty acids and retinoic acid. Delivers long-chain fatty acids and retinoic acid to their cognate receptors in the nucleus (By similarity).</specific-function>
+        <gene-name>FABP4</gene-name>
+        <locus>8q21</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.25</theoretical-pi>
+        <molecular-weight>14718.815</molecular-weight>
+        <chromosome-location>8</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:3559</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>FABP4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J02874</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>178347</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2534</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P15090</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FABP4_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>A-FABP</synonym>
+          <synonym>Adipocyte lipid-binding protein</synonym>
+          <synonym>Adipocyte-type fatty acid-binding protein</synonym>
+          <synonym>AFABP</synonym>
+          <synonym>ALBP</synonym>
+          <synonym>Fatty acid-binding protein 4</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016343|Fatty acid-binding protein, adipocyte
+MCDAFVGTWKLVSSENFDDYMKEVGVGFATRKVAGMAKPNMIISVNGDVITIKSESTFKN
+TEISFILGQEFDEVTADDRKVKSTITLDGGVLVHVQKWDGKSTTIKRKREDDKLVVECVM
+KGVTSTRVYERA</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016344|Fatty acid-binding protein, adipocyte (FABP4)
+ATGTGTGATGCTTTTGTAGGTACCTGGAAACTTGTCTCCAGTGAAAACTTTGATGATTAT
+ATGAAAGAAGTAGGAGTGGGCTTTGCCACCAGGAAAGTGGCTGGCATGGCCAAACCTAAC
+ATGATCATCAGTGTGAATGGGGATGTGATCACCATTAAATCTGAAAGTACCTTTAAAAAT
+ACTGAGATTTCCTTCATACTGGGCCAGGAATTTGACGAAGTCACTGCAGATGACAGGAAA
+GTCAAGAGCACCATAACCTTAGATGGGGGTGTCCTGGTACATGTGCAGAAATGGGATGGA
+AAATCAACCACCATAAAGAGAAAACGAGAGGATGATAAACTGGTGGTGGAATGCGTCATG
+AAAGGCGTCACTTCCACGAGAGTTTATGAGAGAGCATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00061</identifier>
+            <name>Lipocalin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lipid particle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brown fat cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to lithium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cholesterol homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cytokine production</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of protein kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transcription, DNA-templated</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>triglyceride catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>white fat cell differentiation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters/>
+</drug>

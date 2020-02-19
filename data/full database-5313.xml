@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-11-18" updated="2019-12-02">
+  <drugbank-id primary="true">DB05867</drugbank-id>
+  <name>99mTc-14 F7 Mab</name>
+  <description>99mTc 14F7 Mab has strong anti tumor activity against myeloma cells in vivo. Growth inhibition and prolonged survival of the myeloma tumor were obtained as evidences of anti tumor effect after treatment with 99mTc 14F7 Mab. </description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in breast cancer.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>The 99mTc 14F7 Mab has shown to bind specifically to GM3 (NeuGc) and that it also reacts with human breast and melanoma tumors in contrast with its low reactivity in normal tissues. N-Glycolyl GM3 is considered a heterophilic antigen since is not present in all species, humans are normally lacking them. The discovery of the presence of this molecule in significant amounts in breast tumors allowed considering it as an advantageous target for cancer immunotherapy.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910280</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0004604</id>
+      <name>Lactosylceramide alpha-2,3-sialyltransferase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9UNP4" source="Swiss-Prot">
+        <name>Lactosylceramide alpha-2,3-sialyltransferase</name>
+        <general-function>Sialyltransferase activity</general-function>
+        <specific-function>Catalyzes the formation of ganglioside GM3 (alpha-N-acetylneuraminyl-2,3-beta-D-galactosyl-1, 4-beta-D-glucosylceramide).</specific-function>
+        <gene-name>ST3GAL5</gene-name>
+        <locus/>
+        <cellular-location>Golgi apparatus membrane</cellular-location>
+        <transmembrane-regions>62-82</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>47989.385</molecular-weight>
+        <chromosome-location>2</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10872</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9UNP4</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>SIAT9_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.99.9</synonym>
+          <synonym>CMP-NeuAc:lactosylceramide alpha-2,3-sialyltransferase</synonym>
+          <synonym>Ganglioside GM3 synthase</synonym>
+          <synonym>Sialyltransferase 9</synonym>
+          <synonym>SIAT9</synonym>
+          <synonym>ST3Gal V</synonym>
+          <synonym>ST3GalV</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009525|Lactosylceramide alpha-2,3-sialyltransferase
+MRTKAAGCAERRPLQPRTEAAAAPAGRAMPSEYTYVKLRSDCSRPSLQWYTRAQSKMRRP
+SLLLKDILKCTLLVFGVWILYILKLNYTTEECDMKKMHYVDPDHVKRAQKYAQQVLQKEC
+RPKFAKTSMALLFEHRYSVDLLPFVQKAPKDSEAESKYDPPFGFRKFSSKVQTLLELLPE
+HDLPEHLKAKTCRRCVVIGSGGILHGLELGHTLNQFDVVIRLNSAPVEGYSEHVGNKTTI
+RMTYPEGAPLSDLEYYSNDLFVAVLFKSVDFNWLQAMVKKETLPFWVRLFFWKQVAEKIP
+LQPKHFRILNPVIIKETAFDILQYSEPQSRFWGRDKNVPTIGVIAVVLATHLCDEVSLAG
+FGYDLNQPRTPLHYFDSQCMAAMNFQTMHNVTTETKFLLKLVKEGVVKDLSGGIDREF</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013214|Lactosylceramide alpha-2,3-sialyltransferase (ST3GAL5)
+ATGGCTTCTGTTCCAATGCCAAGTGAGTACACCTATGTGAAACTGAGAAGTGATTGCTCG
+AGGCCTTCCCTGCAATGGTACACCCGAGCTCAAAGCAAGATGAGAAGGCCCAGCTTGTTA
+TTAAAAGACATCCTCAAATGTACATTGCTTGTGTTTGGAGTGTGGATCCTTTATATCCTC
+AAGTTAAATTATACTACTGAAGAATGTGACATGAAAAAAATGCATTATGTGGACCCTGAC
+CATGTAAAGAGAGCTCAGAAATATGCTCAGCAAGTCTTGCAGAAGGAATGTCGTCCCAAG
+TTTGCCAAGACATCAATGGCGCTGTTATTTGAGCACAGGTATAGCGTGGACTTACTCCCT
+TTTGTGCAGAAGGCCCCCAAAGACAGTGAAGCTGAGTCCAAGTACGATCCTCCTTTTGGG
+TTCCGGAAGTTCTCCAGTAAAGTCCAGACCCTCTTGGAACTCTTGCCAGAGCACGACCTC
+CCTGAACACTTGAAAGCCAAGACCTGTCGGCGCTGTGTGGTTATTGGAAGCGGAGGAATA
+CTGCACGGATTAGAACTGGGCCACACCCTGAACCAGTTCGATGTTGTGATAAGGTTAAAC
+AGTGCACCAGTTGAGGGATATTCAGAACATGTTGGAAATAAAACTACTATAAGGATGACT
+TATCCAGAGGGCGCACCACTGTCTGACCTTGAATATTATTCCAATGACTTATTTGTTGCT
+GTTTTATTTAAGAGTGTTGATTTCAACTGGCTTCAAGCAATGGTAAAAAAGGAAACCCTG
+CCATTCTGGGTACGACTCTTCTTTTGGAAGCAGGTGGCAGAAAAAATCCCACTGCAGCCA
+AAACATTTCAGGATTTTGAATCCAGTTATCATCAAAGAGACTGCCTTTGACATCCTTCAG
+TACTCAGAGCCTCAGTCAAGGTTCTGGGGCCGAGATAAGAACGTCCCCACAATCGGTGTC
+ATTGCCGTTGTCTTAGCCACACATCTGTGCGATGAAGTCAGTTTGGCGGGTTTTGGATAT
+GACCTCAATCAACCCAGAACACCTTTGCACTACTTCGACAGTCAATGCATGGCTGCTATG
+AACTTTCAGACCATGCATAATGTGACAACGGAAACCAAGTTCCTCTTAAAGCTGGTCAAA
+GAGGGAGTGGTGAAAGATCTCAGTGGAGGCATTGATCGTGAATTTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00777</identifier>
+            <name>Glyco_transf_29</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>beta-galactoside (CMP) alpha-2,3-sialyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lactosylceramide alpha-2,3-sialyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>neolactotetraosylceramide alpha-2,3-sialyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sialyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dolichol-linked oligosaccharide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ganglioside biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glycosphingolipid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>keratan sulfate biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>O-glycan processing</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>oligosaccharide metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>post-translational protein modification</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein N-linked glycosylation via asparagine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sialylation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02589</drugbank-id>
+  <drugbank-id>EXPT01939</drugbank-id>
+  <name>Se-Ethyl-Isoselenourea</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>151.07</average-mass>
+  <monoisotopic-mass>151.985270094</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as selenoethers. These are organic compounds containing a selenoether group, with the general formula RseR' ( where R, R' are not H atoms).</description>
+    <direct-parent>Selenoethers</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organometallic compounds</superclass>
+    <class>Organometalloid compounds</class>
+    <subclass>Organoselenium compounds</subclass>
+    <alternative-parent>Carboximidamides</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Imines</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Carboximidamide</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Imine</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Selenoether</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Selenium Compounds</category>
+      <mesh-id>D018036</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>9nse</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB06210</drugbank-id>
+      <name>Eltrombopag</name>
+      <description>The bioavailability of Se-Ethyl-Isoselenourea can be decreased when combined with Eltrombopag.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.25</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.60e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>0.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(ethylselanyl)methanimidamide</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>se-ethyl-isoselenourea</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>151.07</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>151.985270094</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC[Se]C(N)=N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C3H8N2Se</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C3H8N2Se/c1-2-6-3(4)5/h2H2,1H3,(H3,4,5)</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>FFKYNFXDBBLWGF-UHFFFAOYSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>49.87</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>45.1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>10.34</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>9.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>449633</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46504841</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>396099</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>ISU</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000263</id>
+      <name>Nitric oxide synthase, endothelial</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P29474" source="Swiss-Prot">
+        <name>Nitric oxide synthase, endothelial</name>
+        <general-function>Tetrahydrobiopterin binding</general-function>
+        <specific-function>Produces nitric oxide (NO) which is implicated in vascular smooth muscle relaxation through a cGMP-mediated signal transduction pathway. NO mediates vascular endothelial growth factor (VEGF)-induced angiogenesis in coronary vessels and promotes blood clotting through the activation of platelets.Isoform eNOS13C: Lacks eNOS activity, dominant-negative form that may down-regulate eNOS activity by forming heterodimers with isoform 1.</specific-function>
+        <gene-name>NOS3</gene-name>
+        <locus>7q36</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>7.27</theoretical-pi>
+        <molecular-weight>133287.62</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:7876</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>NOS3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M93718</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>189212</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1249</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P29474</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>NOS3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.14.13.39</synonym>
+          <synonym>cNOS</synonym>
+          <synonym>Constitutive NOS</synonym>
+          <synonym>EC-NOS</synonym>
+          <synonym>Endothelial NOS</synonym>
+          <synonym>eNOS</synonym>
+          <synonym>NOS type III</synonym>
+          <synonym>NOSIII</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0036981|Nitric oxide synthase, endothelial
+MGNLKSVAQEPGPPCGLGLGLGLGLCGKQGPATPAPEPSRAPASLLPPAPEHSPPSSPLT
+QPPEGPKFPRVKNWEVGSITYDTLSAQAQQDGPCTPRRCLGSLVFPRKLQGRPSPGPPAP
+EQLLSQARDFINQYYSSIKRSGSQAHEQRLQEVEAEVAATGTYQLRESELVFGAKQAWRN
+APRCVGRIQWGKLQVFDARDCRSAQEMFTYICNHIKYATNRGNLRSAITVFPQRCPGRGD
+FRIWNSQLVRYAGYRQQDGSVRGDPANVEITELCIQHGWTPGNGRFDVLPLLLQAPDEPP
+ELFLLPPELVLEVPLEHPTLEWFAALGLRWYALPAVSNMLLEIGGLEFPAAPFSGWYMST
+EIGTRNLCDPHRYNILEDVAVCMDLDTRTTSSLWKDKAAVEINVAVLHSYQLAKVTIVDH
+HAATASFMKHLENEQKARGGCPADWAWIVPPISGSLTPVFHQEMVNYFLSPAFRYQPDPW
+KGSAAKGTGITRKKTFKEVANAVKISASLMGTVMAKRVKATILYGSETGRAQSYAQQLGR
+LFRKAFDPRVLCMDEYDVVSLEHETLVLVVTSTFGNGDPPENGESFAAALMEMSGPYNSS
+PRPEQHKSYKIRFNSISCSDPLVSSWRRKRKESSNTDSAGALGTLRFCVFGLGSRAYPHF
+CAFARAVDTRLEELGGERLLQLGQGDELCGQEEAFRGWAQAAFQAACETFCVGEDAKAAA
+RDIFSPKRSWKRQRYRLSAQAEGLQLLPGLIHVHRRKMFQATIRSVENLQSSKSTRATIL
+VRLDTGGQEGLQYQPGDHIGVCPPNRPGLVEALLSRVEDPPAPTEPVAVEQLEKGSPGGP
+PPGWVRDPRLPPCTLRQALTFFLDITSPPSPQLLRLLSTLAEEPREQQELEALSQDPRRY
+EEWKWFRCPTLLEVLEQFPSVALPAPLLLTQLPLLQPRYYSVSSAPSTHPGEIHLTVAVL
+AYRTQDGLGPLHYGVCSTWLSQLKPGDPVPCFIRGAPSFRLPPDPSLPCILVGPGTGIAP
+FRGFWQERLHDIESKGLQPTPMTLVFGCRCSQLDHLYRDEVQNAQQRGVFGRVLTAFSRE
+PDNPKTYVQDILRTELAAEVHRVLCLERGHMFVCGDVTMATNVLQTVQRILATEGDMELD
+EAGDVIGVLRDQQRYHEDIFGLTLRTQEVTSRIRTQSFSLQERQLRGAVPWAFDPPGSDT
+NSP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010225|Nitric oxide synthase, endothelial (NOS3)
+ATGGGCAACTTGAAGAGCGTGGCCCAGGAGCCTGGGCCACCCTGCGGCCTGGGGCTGGGG
+CTGGGCCTTGGGCTGTGCGGCAAGCAGGGCCCAGCCACCCCGGCCCCTGAGCCCAGCCGG
+GCCCCAGCATCCCTACTCCCACCAGCGCCAGAACACAGCCCCCCGAGCTCCCCGCTAACC
+CAGCCCCCAGAGGGGCCCAAGTTCCCTCGTGTGAAGAACTGGGAGGTGGGGAGCATCACC
+TATGACACCCTCAGCGCCCAGGCGCAGCAGGATGGGCCCTGCACCCCAAGACGCTGCCTG
+GGCTCCCTGGTATTTCCACGGAAACTACAGGGCCGGCCCTCCCCCGGCCCCCCGGCCCCT
+GAGCAGCTGCTGAGTCAGGCCCGGGACTTCATCAACCAGTACTACAGCTCCATTAAGAGG
+AGCGGCTCCCAGGCCCACGAACAGCGGCTTCAAGAGGTGGAAGCCGAGGTGGCAGCCACA
+GGCACCTACCAGCTTAGGGAGAGCGAGCTGGTGTTCGGGGCTAAGCAGGCCTGGCGCAAC
+GCTCCCCGCTGCGTGGGCCGGATCCAGTGGGGGAAGCTGCAGGTGTTCGATGCCCGGGAC
+TGCAGGTCTGCACAGGAAATGTTCACCTACATCTGCAACCACATCAAGTATGCCACCAAC
+CGGGGCAACCTTCGCTCGGCCATCACAGTGTTCCCGCAGCGCTGCCCTGGCCGAGGAGAC
+TTCCGAATCTGGAACAGCCAGCTGGTGCGCTACGCGGGCTACCGGCAGCAGGATGGCTCT
+GTGCGGGGGGACCCAGCCAACGTGGAGATCACCGAGCTCTGCATTCAGCACGGCTGGACC
+CCAGGAAACGGTCGCTTCGACGTGCTGCCCCTGCTGCTGCAGGCCCCAGATGATCCCCCA
+GAACTCTTCCTTCTGCCCCCCGAGCTGGTCCTTGAGGTGCCCCTGGAGCACCCCACGCTG
+GAGTGGTTTGCAGCCCTGGGCCTGCGCTGGTACGCCCTCCCGGCAGTGTCCAACATGCTG
+CTGGAAATTGGGGGCCTGGAGTTCCCCGCAGCCCCCTTCAGTGGCTGGTACATGAGCACT
+GAGATCGGCACGAGGAACCTGTGTGACCCTCACCGCTACAACATCCTGGAGGATGTGGCT
+GTCTGCATGGACCTGGATACCCGGACCACCTCGTCCCTGTGGAAAGACAAGGCAGCAGTG
+GAAATCAACGTGGCCGTGCTGCACAGTTACCAGCTAGCCAAAGTCACCATCGTGGACCAC
+CACGCCGCCACGGCCTCTTTCATGAAGCACCTGGAGAATGAGCAGAAGGCCAGGGGGGGC
+TGCCCTGCAGACTGGGCCTGGATCGTGCCCCCCATCTCGGGCAGCCTCACTCCTGTTTTC
+CATCAGGAGATGGTCAACTATTTCCTGTCCCCGGCCTTCCGCTACCAGCCAGACCCCTGG
+AAGGGGAGTGCCGCCAAGGGCACCGGCATCACCAGGAAGAAGACCTTTAAAGAAGTGGCC
+AACGCCGTGAAGATCTCCGCCTCGCTCATGGGCACGGTGATGGCGAAGCGAGTGAAGGCG
+ACAATCCTGTATGGCTCCGAGACCGGCCGGGCCCAGAGCTACGCACAGCAGCTGGGGAGA
+CTCTTCCGGAAGGCTTTTGATCCCCGGGTCCTGTGTATGGATGAGTATGACGTGGTGTCC
+CTCGAACACGAGACGCTGGTGCTGGTGGTAACCAGCACATTTGGGAATGGGGATCCCCCG
+GAGAATGGAGAGAGCTTTGCAGCTGCCCTGATGGAGATGTCCGGCCCCTACAACAGCTCC
+CCTCGGCCGGAACAGCACAAGAGTTATAAGATCCGCTTCAACAGCATCTCCTGCTCAGAC
+CCACTGGTGTCCTCTTGGCGGCGGAAGAGGAAGGAGTCCAGTAACACAGACAGTGCAGGG
+GCCCTGGGCACCCTCAGGTTCTGTGTGTTCGGGCTCGGCTCCCGGGCATACCCCCACTTC
+TGCGCCTTTGCTCGTGCCGTGGACACACGGCTGGAGGAACTGGGCGGGGAGCGGCTGCTG
+CAGCTGGGCCAGGGCGACGAGCTGTGCGGCCAGGAGGAGGCCTTCCGAGGCTGGGCCCAG
+GCTGCCTTCCAGGCCGCCTGTGAGACCTTCTGTGTGGGAGAGGATGCCAAGGCCGCCGCC
+CGAGACATCTTCAGCCCCAAACGGAGCTGGAAGCGCCAGAGGTACCGGCTGAGCGCCCAG
+GCCGAGGGCCTGCAGTTGCTGCCAGGTCTGATCCACGTGCACAGGCGGAAGATGTTCCAG
+GCTACAATCCGCTCAGTGGAAAACCTGCAAAGCAGCAAGTCCACGAGGGCCACCATCCTG
+GTGCGCCTGGACACCGGAGGCCAGGAGGGGCTGCAGTACCAGCCGGGGGACCACATAGGT
+GTCTGCCCGCCCAACCGGCCCGGCCTTGTGGAGGCGCTGCTGAGCCGCGTGGAGGACCCG
+CCGGCGCCCACTGAGCCCGTGGCAGTAGAGCAGCTGGAGAAGGGCAGCCCTGGTGGCCCT
+CCCCCCGGCTGGGTGCGGGACCCCCGGCTGCCCCCGTGCACGCTGCGCCAGGCTCTCACC
+TTCTTCCTGGACATCACCTCCCCACCCAGCCCTCAGCTCTTGCGGCTGCTCAGCACCTTG
+GCAGAAGAGCCCAGGGAACAGCAGGAGCTGGAGGCCCTCAGCCAGGATCCCCGACGCTAC
+GAGGAGTGGAAGTGGTTCCGCTGCCCCACGCTGCTGGAGGTGCTGGAGCAGTTCCCGTCG
+GTGGCGCTGCCTGCCCCACTGCTCCTCACCCAGCTGCCTCTGCTCCAGCCCCGGTACTAC
+TCAGTCAGCTCGGCACCCAGCACCCACCCAGGAGAGATCCACCTCACTGTAGCTGTGCTG
+GCATACAGGACTCAGGATGGGCTGGGCCCCCTGCACTATGGAGTCTGCTCCACGTGGCTA
+AGCCAGCTCAAGCCCGGAGACCCTGTGCCCTGCTTCATCCGGGGGGCTCCCTCCTTCCGG
+CTGCCACCCGATCCCAGCTTGCCCTGCATCCTGGTGGGTCCAGGCACTGGCATTGCCCCC
+TTCCGGGGATTCTGGCAGGAGCGGCTGCATGACATTGAGAGCAAAGGGCTGCAGCCCACT
+CCCATGACTTTGGTGTTCGGCTGCCGATGCTCCCAACTTGACCATCTCTACCGCGACGAG
+GTGCAGAACGCCCAGCAGCGCGGGGTGTTTGGCCGAGTCCTCACCGCCTTCTCCCGGGAA
+CCTGACAACCCCAAGACCTACGTGCAGGACATCCTGAGGACGGAGCTGGCTGCGGAGGTG
+CACCGCGTGCTGTGCCTCGAGCGGGGCCACATGTTTGTCTGCGGCGATGTTACCATGGCA
+ACCAACGTCCTGCAGACCGTGCAGCGCATCCTGGCGACGGAGGGCGACATGGAGCTGGAC
+GAGGCCGGCGACGTCATCGGCGTGCTGCGGGATCAGCAACGCTACCACGAAGACATTTTC
+GGGCTCACGCTGCGCACCCAGGAGGTGACAAGCCGCATACGCACCCAGAGCTTTTCCTTG
+CAGGAGCGTCAGTTGCGGGGCGCAGTGCCCTGGGCGTTCGACCCTCCCGGCTCAGACACC
+AACAGCCCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00667</identifier>
+            <name>FAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00258</identifier>
+            <name>Flavodoxin_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00175</identifier>
+            <name>NAD_binding_1</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02898</identifier>
+            <name>NO_synthase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoskeleton</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endocytic vesicle membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>actin monomer binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>arginine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cadmium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>FMN binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>heme binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>iron ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADP binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>NADPH-hemoprotein reductase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>tetrahydrobiopterin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>arginine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood vessel remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>endothelial cell migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>in utero embryonic development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipopolysaccharide-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lung development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mitochondrion organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of calcium ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of cell proliferation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of extrinsic apoptotic signaling pathway via death domain receptors</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of muscle hyperplasia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of potassium ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nitric oxide metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ovulation from ovarian follicle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phagosome maturation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of angiogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of guanylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of vasodilation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood pressure</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of blood vessel size</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of nitric-oxide synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of sodium ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of systemic arterial blood pressure by endothelin</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of the force of heart contraction by chemical signal</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>removal of superoxide radicals</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to fluid shear stress</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to heat</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>smooth muscle hyperplasia</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05222</drugbank-id>
+  <name>KB001</name>
+  <description>KB001 is a Humaneered&amp;trade; PEGylated monoclonal antibody fragment for the treatment of life-threatening Pseudomonas aeruginosa infections, a common problem of cystic fibrosis and mechanically ventilated patients.</description>
+  <cas-number/>
+  <unii/>
+  <state>liquid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of infections caused by multi-drug resistant &lt;em&gt;Pseudomonas aeruginosa&lt;/em&gt;.</indication>
+  <pharmacodynamics>KaloBios is developing KB001, a PEGylated engineered human Fab' fragment for the prevention and treatment of &lt;em&gt;Pseudomonas aeruginosa&lt;/em&gt; infections. The Fab' fragment is specific for the PcrV antigen, an essential component of the Type III secretion system, a key virulence factor with multiple roles in both infection and pathogenesis. KB001 shows potent activity in mouse models of pulmonary infection, reducing mortality and leading to effective clearance of bacteria from infected lungs. This molecule therefore represents an attractive candidate for clinical evaluation in the prevention or treatment of &lt;em&gt;Pseudomonas&lt;/em&gt; infection in Cystic Fibrosis, pneumonia, and other indications. </pharmacodynamics>
+  <mechanism-of-action>KB001 targets and neutralizes the PcrV protein of the Type III secretion system of the Pseudomonas bacterium, which directly inhibits its toxic effects. This mechanism of action is different from that of other antibiotics and represents a new approach in the treatment of bacterial infections. </mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms>
+    <affected-organism>Bacteria</affected-organism>
+  </affected-organisms>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910033</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002380</id>
+      <name>PcrV</name>
+      <organism>Pseudomonas aeruginosa</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O30527" source="TrEMBL">
+        <name>Low calcium response locus protein V</name>
+        <general-function/>
+        <specific-function/>
+        <gene-name>pcrV</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.77</theoretical-pi>
+        <molecular-weight>32283.085</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="">Pseudomonas aeruginosa</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF010149</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O30527</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>O30527_PSEAI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>lcrV</synonym>
+          <synonym>PcrV</synonym>
+          <synonym>Type III secretion cytoplasmic LcrG inhibitor</synonym>
+          <synonym>Type III secretion protein</synonym>
+          <synonym>Type III secretion protein PcrV</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011707|Low calcium response locus protein V
+MEVRNLNAARELFLDELLAASAAPASAEQEELLALLRSERIVLAHAGQPLSEAQVLKALA
+WLLAANPSAPPGQGLEVLREVLQARRQPGAQWDLREFLVSAYFSLHGRLDEDVIGVYKDV
+LQTQDGKRKALLDELKALTAELKVYSVIQSQINAALSAKQGIRIDAGGIDLVDPTLYGYA
+VGDPRWKDSPEYALLSNLDTFSGKLSIKDFLSGSPKQSGELKGLSDEYPFEKDNNPVGNF
+ATTVSDRSRPLNDKVNEKTTLLNDTSSRYNSAVEALNRFIQKYDSVLRDILSAI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0004674|885 bp
+ATGGAAGTCAGAAACCTTAATGCCGCTCGCGAGCTGTTCCTGGACGAGCTCCTGGCCGCG
+TCGGCGGCGCCTGCCAGTGCCGAGCAGGAGGAACTGCTGGCCCTGTTGCGCAGCGAGCGG
+ATCGTGCTGGCCCACGCCGGCCAGCCGCTGAGCGAGGCGCAAGTGCTCAAGGCGCTCGCC
+TGGTTGCTCGCGGCCAATCCGTCCGCGCCTCCGGGGCAGGGCCTCGAGGTACTCCGCGAA
+GTCCTGCAGGCACGTCGGCAGCCCGGTGCGCAGTGGGATCTGCGCGAGTTCCTGGTGTCG
+GCCTATTTCAGCCTGCACGGGCGTCTCGACGAGGATGTCATCGGTGTCTACAAGGATGTC
+CTGCAGACCCAGGACGGCAAGCGCAAGGCGCTGCTCGACGAGCTCAAGGCGCTGACCGCG
+GAGTTGAAGGTCTACAGCGTGATCCAGTCGCAGATCAACGCCGCGCTGTCGGCCAAGCAG
+GGCATCAGGATCGACGCTGGCGGTATCGATCTGGTCGACCCCACGCTATATGGCTATGCC
+GTCGGCGATCCCAGGTGGAAGGACAGCCCCGAGTATGCGCTGCTGAGCAATCTGGATACC
+TTCAGCGGCAAGCTGTCGATCAAGGATTTTCTCAGCGGCTCGCCGAAGCAGAGCGGGGAG
+CTCAAGGGCCTCAGCGATGAGTACCCCTTCGAGAAGGACAACAACCCGGTCGGCAATTTC
+GCCACCACGGTGAGCGACCGCTCGCGTCCGCTGAACGACAAGGTCAACGAGAAGACCACC
+CTGCTCAACGACACCAGCTCCCGCTACAACTCGGCGGTCGAGGCGCTCAACCGCTTCATC
+CAGAAATACGACAGCGTCCTGCGCGACATTCTCAGCGCGATCTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF04792</identifier>
+            <name>LcrV</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>type III protein secretion system complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pathogenesis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein secretion by the type III secretion system</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

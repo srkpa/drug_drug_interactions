@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03696</drugbank-id>
+  <drugbank-id>EXPT02002</drugbank-id>
+  <name>Lanosterol</name>
+  <description/>
+  <cas-number>79-63-0</cas-number>
+  <unii>1J05Z83K3M</unii>
+  <average-mass>426.7174</average-mass>
+  <monoisotopic-mass>426.386166222</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as triterpenoids. These are terpene molecules containing six isoprene units.</description>
+    <direct-parent>Triterpenoids</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Lipids and lipid-like molecules</superclass>
+    <class>Prenol lipids</class>
+    <subclass>Triterpenoids</subclass>
+    <alternative-parent>14-alpha-methylsteroids</alternative-parent>
+    <alternative-parent>3-beta-hydroxysteroids</alternative-parent>
+    <alternative-parent>Cyclic alcohols and derivatives</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <substituent>14-alpha-methylsteroid</substituent>
+    <substituent>3-beta-hydroxysteroid</substituent>
+    <substituent>3-hydroxysteroid</substituent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic homopolycyclic compound</substituent>
+    <substituent>Cyclic alcohol</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Hydroxysteroid</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Secondary alcohol</substituent>
+    <substituent>Steroid</substituent>
+    <substituent>Triterpenoid</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Cholestadienes</category>
+      <mesh-id>D002774</mesh-id>
+    </category>
+    <category>
+      <category>Cholestadienols</category>
+      <mesh-id>D002775</mesh-id>
+    </category>
+    <category>
+      <category>Cholestanes</category>
+      <mesh-id>D002776</mesh-id>
+    </category>
+    <category>
+      <category>Cholestenes</category>
+      <mesh-id>D002782</mesh-id>
+    </category>
+    <category>
+      <category>Fused-Ring Compounds</category>
+      <mesh-id>D000072473</mesh-id>
+    </category>
+    <category>
+      <category>Lanosterol, metabolism</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Lipids</category>
+      <mesh-id>D008055</mesh-id>
+    </category>
+    <category>
+      <category>Membrane Lipids</category>
+      <mesh-id>D008563</mesh-id>
+    </category>
+    <category>
+      <category>Steroids</category>
+      <mesh-id>D013256</mesh-id>
+    </category>
+    <category>
+      <category>Sterols</category>
+      <mesh-id>D013261</mesh-id>
+    </category>
+    <category>
+      <category>Terpenes</category>
+      <mesh-id>D013729</mesh-id>
+    </category>
+    <category>
+      <category>Triterpenes</category>
+      <mesh-id>D014315</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1w6k</pdb-entry>
+    <pdb-entry>4lxj</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>7.72</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-6.1</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>3.76e-04 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>7.71</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S,5S,7R,11R,14R,15R)-2,6,6,11,15-pentamethyl-14-[(2R)-6-methylhept-5-en-2-yl]tetracyclo[8.7.0.0²,⁷.0¹¹,¹⁵]heptadec-1(10)-en-5-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>lanosterol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>426.7174</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>426.386166222</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@@]1(CC[C@@]2(C)C3=C(CC[C@]12C)[C@@]1(C)CC[C@H](O)C(C)(C)[C@]1([H])CC3)[C@H](C)CCC=C(C)C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C30H50O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22-,25+,26+,28-,29-,30+/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>CAHGCLMLTWQZNJ-BQNIITSRSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>20.23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>134.54</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>54.97</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>19.55</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-0.81</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>140.5 °C</value>
+      <source>PhysProp</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>16521</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>246983</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506323</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C01724</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>216175</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>LAN</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>IUPHAR</resource>
+      <identifier>2746</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Guide to Pharmacology</resource>
+      <identifier>2746</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Lanosterol</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL225111</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001466</id>
+      <name>Lanosterol synthase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P48449" source="Swiss-Prot">
+        <name>Lanosterol synthase</name>
+        <general-function>Lanosterol synthase activity</general-function>
+        <specific-function>Catalyzes the cyclization of (S)-2,3 oxidosqualene to lanosterol, a reaction that forms the sterol nucleus.</specific-function>
+        <gene-name>LSS</gene-name>
+        <locus/>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.6</theoretical-pi>
+        <molecular-weight>83308.065</molecular-weight>
+        <chromosome-location>21</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6708</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>LSS</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U22526</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>951314</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2434</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P48449</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ERG7_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2,3-epoxysqualene--lanosterol cyclase</synonym>
+          <synonym>5.4.99.7</synonym>
+          <synonym>hOSC</synonym>
+          <synonym>OSC</synonym>
+          <synonym>Oxidosqualene--lanosterol cyclase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0002910|Lanosterol synthase
+MTEGTCLRRRGGPYKTEPATDLGRWRLNCERGRQTWTYLQDERAGREQTGLEAYALGLDT
+KNYFKDLPKAHTAFEGALNGMTFYVGLQAEDGHWTGDYGGPLFLLPGLLITCHVARIPLP
+AGYREEIVRYLRSVQLPDGGWGLHIEDKSTVFGTALNYVSLRILGVGPDDPDLVRARNIL
+HKKGGAVAIPSWGKFWLAVLNVYSWEGLNTLFPEMWLFPDWAPAHPSTLWCHCRQVYLPM
+SYCYAVRLSAAEDPLVQSLRQELYVEDFASIDWLAQRNNVAPDELYTPHSWLLRVVYALL
+NLYEHHHSAHLRQRAVQKLYEHIVADDRFTKSISIGPISKTINMLVRWYVDGPASTAFQE
+HVSRIPDYLWMGLDGMKMQGTNGSQIWDTAFAIQALLEAGGHHRPEFSSCLQKAHEFLRL
+SQVPDNPPDYQKYYRQMRKGGFSFSTLDCGWIVSDCTAEALKAVLLLQEKCPHVTEHIPR
+ERLCDAVAVLLNMRNPDGGFATYETKRGGHLLELLNPSEVFGDIMIDYTYVECTSAVMQA
+LKYFHKRFPEHRAAEIRETLTQGLEFCRRQQRADGSWEGSWGVCFTYGTWFGLEAFACMG
+QTYRDGTACAEVSRACDFLLSRQMADGGWGEDFESCEERRYLQSAQSQIHNTCWAMMGLM
+AVRHPDIEAQERGVRCLLEKQLPNGDWPQENIAGVFNKSCAISYTSYRNIFPIWALGRFS
+QLYPERALAGHP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0019124|Lanosterol synthase (LSS)
+ATGACGGAGGGCACGTGTCTGCGGCGCCGAGGGGGCCCCTACAAGACCGAGCCCGCCACC
+GACCTCGGCCGCTGGCGACTCAACTGCGAGAGGGGCCGGCAGACGTGGACCTACCTGCAG
+GACGAGCGCGCCGGCCGCGAGCAGACCGGCCTGGAAGCCTACGCCCTGGGGCTGGACACC
+AAGAATTACTTTAAGGACTTGCCCAAAGCCCACACCGCCTTTGAGGGGGCTCTGAACGGG
+ATGACATTTTACGTGGGGCTGCAGGCTGAGGATGGGCACTGGACGGGTGATTATGGTGGC
+CCACTTTTCCTCCTGCCAGGCCTCCTGATCACTTGCCACGTGGCACGCATCCCTCTGCCA
+GCCGGATACAGAGAAGAGATTGTGCGGTACCTGCGGTCAGTGCAGCTCCCTGACGGTGGC
+TGGGGCCTGCACATTGAGGATAAGTCCACCGTGTTTGGGACTGCGCTCAACTATGTGTCT
+CTCAGAATTCTGGGTGTTGGGCCTGACGATCCTGACCTGGTACGAGCCCGGAACATTCTT
+CACAAGAAAGGTGGTGCTGTGGCCATCCCCTCCTGGGGGAAGTTCTGGCTGGCTGTCCTG
+AATGTTTACAGCTGGGAAGGCCTCAATACCCTGTTCCCAGAGATGTGGCTGTTTCCTGAC
+TGGGCACCGGCACACCCCTCCACACTCTGGTGCCACTGCCGGCAGGTGTACCTGCCCATG
+AGCTACTGCTACGCCGTTCGGCTGAGTGCCGCGGAAGACCCGCTGGTCCAGAGCCTCCGC
+CAGGAGCTCTATGTGGAGGACTTCGCCAGCATTGACTGGCTGGCGCAGAGGAACAACGTG
+GCCCCCGACGAGCTGTACACGCCGCACAGCTGGCTGCTCCGCGTGGTATATGCGCTCCTC
+AACCTGTATGAGCACCACCACAGTGCCCACCTGCGGCAGCGGGCCGTGCAGAAGCTGTAT
+GAACACATTGTGGCCGACGACCGATTCACCAAGAGCATCAGCATCGGCCCGATCTCGAAA
+ACCATCAACATGCTTGTGCGCTGGTATGTGGACGGGCCCGCCTCCACTGCCTTCCAGGAG
+CATGTCTCCAGAATCCCGGACTATCTCTGGATGGGCCTTGACGGCATGAAAATGCAGGGC
+ACCAACGGCTCACAGATCTGGGACACCGCATTCGCCATCCAGGCTCTGCTTGAGGCGGGC
+GGGCACCACAGGCCCGAGTTTTCGTCCTGCCTGCAGAAGGCTCATGAGTTCCTGAGGCTC
+TCACAGGTCCCAGATAACCCTCCCGACTACCAGAAGTACTACCGCCAGATGCGCAAGGGT
+GGCTTCTCCTTCAGTACGCTGGACTGCGGCTGGATCGTTTCTGACTGCACGGCTGAGGCC
+TTGAAGGCTGTGCTGCTCCTGCAGGAGAAGTGTCCCCATGTCACCGAGCACATCCCCAGA
+GAACGGCTCTGCGATGCTGTGGCTGTGCTGCTGAACATGAGAAATCCAGATGGAGGGTTC
+GCCACCTATGAGACCAAGCGTGGGGGGCACTTGCTGGAGCTGCTGAACCCCTCGGAGGTC
+TTCGGGGACATCATGATTGACTACACCTATGTGGAGTGCACCTCAGCCGTGATGCAGGCG
+CTTAAGTATTTCCACAAGCGTTTCCCGGAGCACAGGGCAGCGGAGATCCGGGAGACCCTC
+ACGCAGGGCTTAGAGTTCTGTCGGCGGCAGCAGAGGGCCGATGGCTCCTGGGAAGGCTCC
+TGGGGAGTTTGCTTCACCTACGGCACCTGGTTTGGCCTGGAGGCCTTCGCCTGTATGGGG
+CAGACCTACCGAGATGGGACTGCCTGTGCAGAGGTCTCCCGGGCCTGTGACTTCCTGCTG
+TCCCGGCAGATGGCAGACGGAGGCTGGGGGGAGGACTTTGAGTCCTGCGAGGAGCGGCGT
+TATTTGCAGAGTGCCCAGTCCCAGATCCATAACACATGCTGGGCCATGATGGGGCTGATG
+GCCGTTCGGCATCCTGACATCGAGGCCCAGGAGAGAGGAGTCCGGTGTCTACTTGAGAAA
+CAGCTCCCCAATGGCGACTGGCCGCAGGAAAACATTGCTGGGGTCTTCAACAAGTCCTGT
+GCCATCTCCTACACGAGCTACAGGAACATCTTCCCCATCTGGGCCCTCGGCCGCTTCTCC
+CAGCTGTACCCTGAGAGAGCCCTTGCTGGCCACCCCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF13243</identifier>
+            <name>SQHop_cyclase_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF13249</identifier>
+            <name>SQHop_cyclase_N</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>lipid particle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lanosterol synthase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cholesterol biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

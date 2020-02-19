@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2008-03-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB06503</drugbank-id>
+  <name>MLN2222</name>
+  <description>MLN2222 is a novel, proprietary recombinant protein that blocks both the C3 and C5 convertases, which are essential components of the complement activation pathway.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in coronary artery disease.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>MLN2222 is a proprietary recombinant protein that blocks both the C3 and C5 convertases, which are essential components of the complement activation pathway. Complement activation is believed to contribute to harmful inflammatory responses to heart bypass surgery that can result in significant complications; MLN2222 is being developed to reduce the incidence of death and heart attacks in patients undergoing procedures involving the use of cardiopulmonary bypass (CPB), a heart-lung bypass machine.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description/>
+    <direct-parent>Peptides</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Organic Acids</superclass>
+    <class>Carboxylic Acids and Derivatives</class>
+    <subclass>Amino Acids, Peptides, and Analogues</subclass>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers/>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001701</id>
+      <name>Complement factor B</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00751" source="Swiss-Prot">
+        <name>Complement factor B</name>
+        <general-function>Serine-type endopeptidase activity</general-function>
+        <specific-function>Factor B which is part of the alternate pathway of the complement system is cleaved by factor D into 2 fragments: Ba and Bb. Bb, a serine protease, then combines with complement factor 3b to generate the C3 or C5 convertase. It has also been implicated in proliferation and differentiation of preactivated B-lymphocytes, rapid spreading of peripheral blood monocytes, stimulation of lymphocyte blastogenesis and lysis of erythrocytes. Ba inhibits the proliferation of preactivated B-lymphocytes.</specific-function>
+        <gene-name>CFB</gene-name>
+        <locus>6p21.3</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>7.07</theoretical-pi>
+        <molecular-weight>85532.325</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1037</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CFB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X72875</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>297569</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2339</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00751</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CFAB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.21.47</synonym>
+          <synonym>BF</synonym>
+          <synonym>BFD</synonym>
+          <synonym>C3/C5 convertase</synonym>
+          <synonym>GBG</synonym>
+          <synonym>Glycine-rich beta glycoprotein</synonym>
+          <synonym>PBF2</synonym>
+          <synonym>Properdin factor B</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0003373|Complement factor B
+MGSNLSPQLCLMPFILGLLSGGVTTTPWSLARPQGSCSLEGVEIKGGSFRLLQEGQALEY
+VCPSGFYPYPVQTRTCRSTGSWSTLKTQDQKTVRKAECRAIHCPRPHDFENGEYWPRSPY
+YNVSDEISFHCYDGYTLRGSANRTCQVNGRWSGQTAICDNGAGYCSNPGIPIGTRKVGSQ
+YRLEDSVTYHCSRGLTLRGSQRRTCQEGGSWSGTEPSCQDSFMYDTPQEVAEAFLSSLTE
+TIEGVDAEDGHGPGEQQKRKIVLDPSGSMNIYLVLDGSDSIGASNFTGAKKCLVNLIEKV
+ASYGVKPRYGLVTYATYPKIWVKVSEADSSNADWVTKQLNEINYEDHKLKSGTNTKKALQ
+AVYSMMSWPDDVPPEGWNRTRHVIILMTDGLHNMGGDPITVIDEIRDLLYIGKDRKNPRE
+DYLDVYVFGVGPLVNQVNINALASKKDNEQHVFKVKDMENLEDVFYQMIDESQSLSLCGM
+VWEHRKGTDYHKQPWQAKISVIRPSKGHESCMGAVVSEYFVLTAAHCFTVDDKEHSIKVS
+VGGEKRDLEIEVVLFHPNYNINGKKEAGIPEFYDYDVALIKLKNKLKYGQTIRPICLPCT
+EGTTRALRLPPTTTCQQQKEELLPAQDIKALFVSEEEKKLTRKEVYIKNGDKKGSCERDA
+QYAPGYDKVKDISEVVTPRFLCTGGVSPYADPNTCRGDSGGPLIVHKRSRFIQVGVISWG
+VVDVCKNQKRQKQVPAHARDFHINLFQVLPWLKEKLQDEDLGFL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021670|Complement factor B (CFB)
+ATGGGGAGCAATCTCAGCCCCCAACTCTGCCTGATGCCCTTTATCTTGGGCCTCTTGTCT
+GGAGGTGTGACCACCACTCCATGGTCTTTGGCCCGGCCCCAGGGATCCTGCTCTCTGGAG
+GGGGTAGAGATCAAAGGCGGCTCCTTCCGACTTCTCCAAGAGGGCCAGGCACTGGAGTAC
+GTGTGTCCTTCTGGCTTCTACCCGTACCCTGTGCAGACACGTACCTGCAGATCTACGGGG
+TCCTGGAGCACCCTGAAGACTCAAGACCAAAAGACTGTCAGGAAGGCAGAGTGCAGAGCA
+ATCCACTGTCCAAGACCACACGACTTCGAGAACGGGGAATACTGGCCCCGGTCTCCCTAC
+TACAATGTGAGTGATGAGATCTCTTTCCACTGCTATGACGGTTACACTCTCCGGGGCTCT
+GCCAATCGCACCTGCCAAGTGAATGGCCGATGGAGTGGGCAGACAGCGATCTGTGACAAC
+GGAGCGGGGTACTGCTCCAACCCGGGCATCCCCATTGGCACAAGGAAGGTGGGCAGCCAG
+TACCGCCTTGAAGACAGCGTCACCTACCACTGCAGCCGGGGGCTTACCCTGCGTGGCTCC
+CAGCGGCGAACGTGTCAGGAAGGTGGCTCTTGGAGCGGGACGGAGCCTTCCTGCCAAGAC
+TCCTTCATGTACGACACCCCTCAAGAGGTGGCCGAAGCTTTCCTGTCTTCCCTGACAGAG
+ACCATAGAAGGAGTCGATGCTGAGGATGGGCACGGCCCAGGGGAACAACAGAAGCGGAAG
+ATCGTCCTGGACCCTTCAGGCTCCATGAACATCTACCTGGTGCTAGATGGATCAGACAGC
+ATTGGGGCCAGCAACTTCACAGGAGCCAAAAAGTGTCTAGTCAACTTAATTGAGAAGGTG
+GCAAGTTATGGTGTGAAGCCAAGATATGGTCTAGTGACATATGCCACATACCCCAAAATT
+TGGGTCAAAGTGTCTGAAGCAGACAGCAGTAATGCAGACTGGGTCACGAAGCAGCTCAAT
+GAAATCAATTATGAAGACCACAAGTTGAAGTCAGGGACTAACACCAAGAAGGCCCTCCAG
+GCAGTGTACAGCATGATGAGCTGGCCAGATGACGTCCCTCCTGAAGGCTGGAACCGCACC
+CGCCATGTCATCATCCTCATGACTGATGGATTGCACAACATGGGCGGGGACCCAATTACT
+GTCATTGATGAGATCCGGGACTTGCTATACATTGGCAAGGATCGCAAAAACCCAAGGGAG
+GATTATCTGGATGTCTATGTGTTTGGGGTCGGGCCTTTGGTGAACCAAGTGAACATCAAT
+GCTTTGGCTTCCAAGAAAGACAATGAGCAACATGTGTTCAAAGTCAAGGATATGGAAAAC
+CTGGAAGATGTTTTCTACCAAATGATCGATGAAAGCCAGTCTCTGAGTCTCTGTGGCATG
+GTTTGGGAACACAGGAAGGGTACCGATTACCACAAGCAACCATGGCAGGCCAAGATCTCA
+GTCATTCGCCCTTCAAAGGGACACGAGAGCTGTATGGGGGCTGTGGTGTCTGAGTACTTT
+GTGCTGACAGCAGCACATTGTTTCACTGTGGATGACAAGGAACACTCAATCAAGGTCAGC
+GTAGGAGGGGAGAAGCGGGACCTGGAGATAGAAGTAGTCCTATTTCACCCCAACTACAAC
+ATTAATGGGAAAAAAGAAGCAGGAATTCCTGAATTTTATGACTATGACGTTGCCCTGATC
+AAGCTCAAGAATAAGCTGAAATATGGCCAGACTATCAGGCCCATTTGTCTCCCCTGCACC
+GAGGGAACAACTCGAGCTTTGAGGCTTCCTCCAACTACCACTTGCCAGCAACAAAAGGAA
+GAGCTGCTCCCTGCACAGGATATCAAAGCTCTGTTTGTGTCTGAGGAGGAGAAAAAGCTG
+ACTCGGAAGGAGGTCTACATCAAGAATGGGGATAAGAAAGGCAGCTGTGAGAGAGATGCT
+CAATATGCCCCAGGCTATGACAAAGTCAAGGACATCTCAGAGGTGGTCACCCCTCGGTTC
+CTTTGTACTGGAGGAGTGAGTCCCTATGCTGACCCCAATACTTGCAGAGGTGATTCTGGC
+GGCCCCTTGATAGTTCACAAGAGAAGTCGTTTCATTCAAGTTGGTGTAATCAGCTGGGGA
+GTAGTGGATGTCTGCAAAAACCAGAAGCGGCAAAAGCAGGTACCTGCTCACGCCCGAGAC
+TTTCACATCAACCTCTTTCAAGTGCTGCCCTGGCTGAAGGAGAAACTCCAAGATGAGGAT
+TTGGGTTTTCTATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00089</identifier>
+            <name>Trypsin</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00084</identifier>
+            <name>Sushi</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00092</identifier>
+            <name>VWA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>complement binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type endopeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>complement activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>complement activation, alternative pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of complement activation</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

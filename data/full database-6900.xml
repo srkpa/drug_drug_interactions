@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2010-09-15" updated="2019-12-02">
+  <drugbank-id primary="true">DB07821</drugbank-id>
+  <name>(1R)-1,2,2-trimethylpropyl (R)-methylphosphinate</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>164.1824</average-mass>
+  <monoisotopic-mass>164.0966163</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as phosphinic acid esters. These are compounds containing a phosphinic acid ester group.</description>
+    <direct-parent>Phosphinic acid esters</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organophosphorus compounds</superclass>
+    <class>Organophosphinic acids and derivatives</class>
+    <subclass>Phosphinic acid esters</subclass>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>Aliphatic acyclic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Phosphinic acid ester</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>2hrq</pdb-entry>
+    <pdb-entry>2wfz</pdb-entry>
+    <pdb-entry>2wg2</pdb-entry>
+    <pdb-entry>3dt9</pdb-entry>
+    <pdb-entry>3f97</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.42</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-1.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.87e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.67</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2R)-3,3-dimethylbutan-2-yl methylphosphinate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(2R)-3,3-dimethylbutan-2-yl methylphosphinate</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>164.1824</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>164.0966163</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@](C)(O[P@]([H])(C)=O)C(C)(C)C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C7H17O2P</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C7H17O2P/c1-6(7(2,3)4)9-10(5)8/h6,10H,1-5H3/t6-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>QZUGWOMGKDLYKO-ZCFIWIBFSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>26.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>43</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>17.52</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-6.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>46937095</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>99444292</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>25056610</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>GD7</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0002705</id>
+      <name>Liver carboxylesterase 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P23141" source="Swiss-Prot">
+        <name>Liver carboxylesterase 1</name>
+        <general-function>Triglyceride lipase activity</general-function>
+        <specific-function>Involved in the detoxification of xenobiotics and in the activation of ester and amide prodrugs. Hydrolyzes aromatic and aliphatic esters, but has no catalytic activity toward amides or a fatty acyl-CoA ester. Hydrolyzes the methyl ester group of cocaine to form benzoylecgonine. Catalyzes the transesterification of cocaine to form cocaethylene. Displays fatty acid ethyl ester synthase activity, catalyzing the ethyl esterification of oleic acid to ethyloleate.</specific-function>
+        <gene-name>CES1</gene-name>
+        <locus>16q13-q22.1</locus>
+        <cellular-location>Endoplasmic reticulum lumen</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-17</signal-regions>
+        <theoretical-pi>6.58</theoretical-pi>
+        <molecular-weight>62520.62</molecular-weight>
+        <chromosome-location>16</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1863</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CES1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M73499</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2592</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P23141</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>EST1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ACAT</synonym>
+          <synonym>Acyl-coenzyme A:cholesterol acyltransferase</synonym>
+          <synonym>Brain carboxylesterase hBr1</synonym>
+          <synonym>Carboxylesterase 1</synonym>
+          <synonym>CE-1</synonym>
+          <synonym>CES2</synonym>
+          <synonym>Cocaine carboxylesterase</synonym>
+          <synonym>Egasyn</synonym>
+          <synonym>hCE-1</synonym>
+          <synonym>HMSE</synonym>
+          <synonym>Methylumbelliferyl-acetate deacetylase 1</synonym>
+          <synonym>Monocyte/macrophage serine esterase</synonym>
+          <synonym>REH</synonym>
+          <synonym>Retinyl ester hydrolase</synonym>
+          <synonym>Serine esterase 1</synonym>
+          <synonym>SES1</synonym>
+          <synonym>TGH</synonym>
+          <synonym>Triacylglycerol hydrolase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0005305|Liver carboxylesterase 1
+MWLRAFILATLSASAAWGHPSSPPVVDTVHGKVLGKFVSLEGFAQPVAIFLGIPFAKPPL
+GPLRFTPPQPAEPWSFVKNATSYPPMCTQDPKAGQLLSELFTNRKENIPLKLSEDCLYLN
+IYTPADLTKKNRLPVMVWIHGGGLMVGAASTYDGLALAAHENVVVVTIQYRLGIWGFFST
+GDEHSRGNWGHLDQVAALRWVQDNIASFGGNPGSVTIFGESAGGESVSVLVLSPLAKNLF
+HRAISESGVALTSVLVKKGDVKPLAEQIAITAGCKTTTSAVMVHCLRQKTEEELLETTLK
+MKFLSLDLQGDPRESQPLLGTVIDGMLLLKTPEELQAERNFHTVPYMVGINKQEFGWLIP
+MQLMSYPLSEGQLDQKTAMSLLWKSYPLVCIAKELIPEATEKYLGGTDDTVKKKDLFLDL
+IADVMFGVPSVIVARNHRDAGAPTYMYEFQYRPSFSSDMKPKTVIGDHGDELFSVFGAPF
+LKEGASEEEIRLSKMVMKFWANFARNGNPNGEGLPHWPEYNQKEGYLQIGANTQAAQKLK
+DKEVAFWTNLFAKKAVEKPPQTEHIEL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0021334|Liver carboxylesterase 1 (CES1)
+ATGTGGCTCCGTGCCTTTATCCTGGCCACTCTCTCTGCTTCCGCGGCTTGGGGGCATCCG
+TCCTCGCCACCTGTGGTGGACACCGTGCATGGCAAAGTGCTGGGGAAGTTCGTCAGCTTA
+GAAGGATTTGCACAGCCTGTGGCCATTTTCCTGGGAATCCCTTTTGCCAAGCCGCCTCTT
+GGACCCCTGAGGTTTACTCCACCGCAGCCTGCAGAACCATGGAGCTTTGTGAAGAATGCC
+ACCTCGTACCCTCCTATGTGCACCCAAGATCCCAAGGCGGGGCAGTTACTCTCAGAGCTA
+TTTACAAACCGAAAGGAGAACATTCCTCTCAAGCTTTCTGAAGACTGTCTTTACCTCAAT
+ATTTACACTCCTGCTGACTTGACCAAGAAAAACAGGCTGCCGGTGATGGTGTGGATCCAC
+GGAGGGGGGCTGATGGTGGGTGCGGCATCAACCTATGATGGGCTGGCCCTTGCTGCCCAT
+GAAAACGTGGTGGTGGTGACCATTCAATATCGCCTGGGCATCTGGGGATTCTTCAGCACA
+GGGGATGAACACAGCCGGGGGAACTGGGGTCACCTGGACCAGGTGGCTGCCCTGCGCTGG
+GTCCAGGACAACATTGCCAGCTTTGGAGGGAACCCAGGCTCTGTGACCATCTTTGGAGAG
+TCAGCGGGAGGAGAAAGTGTCTCTGTTCTTGTTTTGTCTCCATTGGCCAAGAACCTCTTC
+CACCGGGCCATTTCTGAGAGTGGCGTGGCCCTCACTTCTGTTCTGGTGAAGAAAGGTGAT
+GTCAAGCCCTTGGCTGAGCAAATTGCTATCACTGCTGGGTGCAAAACCACCACCTCTGCT
+GTCATGGTTCACTGCCTGCGACAGAAGACGGAAGAGGAGCTCTTGGAGACGACATTGAAA
+ATGAAATTCTTATCTCTGGACTTACAGGGAGACCCCAGAGAGAGTCAACCCCTTCTGGGC
+ACTGTGATTGATGGGATGCTGCTGCTGAAAACACCTGAAGAGCTTCAAGCTGAAAGGAAT
+TTCCACACTGTCCCCTACATGGTCGGAATTAACAAGCAGGAGTTTGGCTGGTTGATTCCA
+ATGCAGTTGATGAGCTATCCACTCTCCGAAGGGCAACTGGACCAGAAGACAGCCATGTCA
+CTCCTGTGGAAGTCCTATCCCCTTGTTTGCATTGCTAAGGAACTGATTCCAGAAGCCACT
+GAGAAATACTTAGGAGGAACAGACGACACTGTCAAAAAGAAAGACCTGTTCCTGGACTTG
+ATAGCAGATGTGATGTTTGGTGTCCCATCTGTGATTGTGGCCCGGAACCACAGAGATGCT
+GGAGCACCCACCTACATGTATGAGTTTCAGTACCGTCCAAGCTTCTCATCAGACATGAAA
+CCCAAGACGGTGATAGGAGACCACGGGGATGAGCTCTTCTCCGTCTTTGGGGCCCCATTT
+TTAAAAGAGGGTGCCTCAGAAGAGGAGATCAGACTTAGCAAGATGGTGATGAAATTCTGG
+GCCAACTTTGCTCGCAATGGAAACCCCAATGGGGAAGGGCTGCCCCACTGGCCAGAGTAC
+AACCAGAAGGAAGGGTATCTGCAGATTGGTGCCAACACCCAGGCGGCCCAGAAGCTGAAG
+GACAAAGAAGTAGCTTTCTGGACCAACCTCTTTGCCAAGAAGGCAGTGGAGAAGCCACCC
+CAGACAGAACACATAGAGCTGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00135</identifier>
+            <name>COesterase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carboxylic ester hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>methylumbelliferyl-acetate deacetylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sterol esterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>triglyceride lipase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epithelial cell differentiation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0004103</id>
+      <name>Platelet-activating factor acetylhydrolase IB subunit gamma</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q15102" source="Swiss-Prot">
+        <name>Platelet-activating factor acetylhydrolase IB subunit gamma</name>
+        <general-function>Platelet-activating factor acetyltransferase activity</general-function>
+        <specific-function>Inactivates paf by removing the acetyl group at the sn-2 position. This is a catalytic subunit. Plays an important role during the development of brain.</specific-function>
+        <gene-name>PAFAH1B3</gene-name>
+        <locus>19q13.1</locus>
+        <cellular-location>Cytoplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>6.84</theoretical-pi>
+        <molecular-weight>25734.13</molecular-weight>
+        <chromosome-location>19</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:8576</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D63391</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1122219</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q15102</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PA1B3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.1.1.47</synonym>
+          <synonym>PAF acetylhydrolase 29 kDa subunit</synonym>
+          <synonym>PAF-AH 29 kDa subunit</synonym>
+          <synonym>PAF-AH subunit gamma</synonym>
+          <synonym>PAFAH subunit gamma</synonym>
+          <synonym>PAFAHG</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012858|Platelet-activating factor acetylhydrolase IB subunit gamma
+MSGEENPASKPTPVQDVQGDGRWMSLHHRFVADSKDKEPEVVFIGDSLVQLMHQCEIWRE
+LFSPLHALNFGIGGDGTQHVLWRLENGELEHIRPKIVVVWVGTNNHGHTAEQVTGGIKAI
+VQLVNERQPQARVVVLGLLPRGQHPNPLREKNRQVNELVRAALAGHPRAHFLDADPGFVH
+SDGTISHHDMYDYLHLSRLGYTPVCRALHSLLLRLLAQDQGQGAPLLEPAP</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012859|Platelet-activating factor acetylhydrolase IB subunit gamma (PAFAH1B3)
+ATGAGTGGAGAGGAGAACCCAGCCAGCAAGCCCACGCCGGTGCAGGACGTACAGGGCGAC
+GGGCGCTGGATGTCCCTGCACCATCGGTTCGTGGCTGACAGCAAAGATAAGGAACCCGAA
+GTCGTCTTCATCGGGGACTCCTTGGTCCAGCTCATGCACCAGTGCGAGATCTGGCGCGAG
+CTCTTCTCTCCTCTGCATGCACTTAACTTTGGCATTGGTGGTGACGGCACACAGCATGTA
+CTGTGGCGGCTGGAGAATGGGGAGCTGGAACACATCCGGCCCAAGATTGTGGTGGTCTGG
+GTGGGCACCAACAACCACGGACACACAGCAGAGCAGGTGACTGGTGGCATCAAGGCCATT
+GTGCAACTGGTGAATGAGCGACAGCCCCAGGCCCGGGTTGTGGTGCTGGGCCTGCTTCCG
+CGAGGCCAACATCCCAACCCACTTCGGGAGAAGAACCGACAGGTGAACGAGCTGGTACGG
+GCGGCACTGGCTGGCCACCCTCGGGCCCACTTCCTAGATGCCGACCCTGGCTTTGTGCAC
+TCAGATGGCACCATCAGCCATCATGACATGTATGATTACCTGCATCTGAGCCGCCTGGGC
+TACACACCTGTTTGCCGGGCTCTGCACTCCCTGCTTCTGCGTCTGCTGGCCCAAGACCAG
+GGCCAAGGTGCTCCCCTGCTGGAGCCCGCACCCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF13472</identifier>
+            <name>Lipase_GDSL_2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-alkyl-2-acetylglycerophosphocholine esterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>identical protein binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>platelet-activating factor acetyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>brain development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>nervous system development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>spermatogenesis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0002409</id>
+      <name>Platelet-activating factor acetylhydrolase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q13093" source="Swiss-Prot">
+        <name>Platelet-activating factor acetylhydrolase</name>
+        <general-function>Phospholipid binding</general-function>
+        <specific-function>Modulates the action of platelet-activating factor (PAF) by hydrolyzing the sn-2 ester bond to yield the biologically inactive lyso-PAF. Has a specificity for substrates with a short residue at the sn-2 position. It is inactive against long-chain phospholipids.</specific-function>
+        <gene-name>PLA2G7</gene-name>
+        <locus>6p21.2-p12</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-21</signal-regions>
+        <theoretical-pi>7.61</theoretical-pi>
+        <molecular-weight>50076.99</molecular-weight>
+        <chromosome-location>6</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:9040</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>PLA2G7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U20157</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1432</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q13093</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PAFA_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1-alkyl-2-acetylglycerophosphocholine esterase</synonym>
+          <synonym>2-acetyl-1-alkylglycerophosphocholine esterase</synonym>
+          <synonym>3.1.1.47</synonym>
+          <synonym>Group-VIIA phospholipase A2</synonym>
+          <synonym>gVIIA-PLA2</synonym>
+          <synonym>LDL-associated phospholipase A2</synonym>
+          <synonym>LDL-PLA(2)</synonym>
+          <synonym>PAF 2-acylhydrolase</synonym>
+          <synonym>PAF acetylhydrolase</synonym>
+          <synonym>PAFAH</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011723|Platelet-activating factor acetylhydrolase
+MVPPKLHVLFCLCGCLAVVYPFDWQYINPVAHMKSSAWVNKIQVLMAAASFGQTKIPRGN
+GPYSVGCTDLMFDHTNKGTFLRLYYPSQDNDRLDTLWIPNKEYFWGLSKFLGTHWLMGNI
+LRLLFGSMTTPANWNSPLRPGEKYPLVVFSHGLGAFRTLYSAIGIDLASHGFIVAAVEHR
+DRSASATYYFKDQSAAEIGDKSWLYLRTLKQEEETHIRNEQVRQRAKECSQALSLILDID
+HGKPVKNALDLKFDMEQLKDSIDREKIAVIGHSFGGATVIQTLSEDQRFRCGIALDAWMF
+PLGDEVYSRIPQPLFFINSEYFQYPANIIKMKKCYSPDKERKMITIRGSVHQNFADFTFA
+TGKIIGHMLKLKGDIDSNVAIDLSNKASLAFLQKHLGLHKDFDQWDCLIEGDDENLIPGT
+NINTTNQHIMLQNSSGIEKYN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011724|Platelet-activating factor acetylhydrolase (PLA2G7)
+ATGGTGCCACCCAAATTGCATGTGCTTTTCTGCCTCTGCGGCTGCCTGGCTGTGGTTTAT
+CCTTTTGACTGGCAATACATAAATCCTGTTGCCCATATGAAATCATCAGCATGGGTCAAC
+AAAATACAAGTACTGATGGCTGCTGCAAGCTTTGGCCAAACTAAAATCCCCCGGGGAAAT
+GGGCCTTATTCCGTTGGTTGTACAGACTTAATGTTTGATCACACTAATAAGGGCACCTTC
+TTGCGTTTATATTATCCATCCCAAGATAATGATCGCCTTGACACCCTTTGGATCCCAAAT
+AAAGAATATTTTTGGGGTCTTAGCAAATTTCTTGGAACACACTGGCTTATGGGCAACATT
+TTGAGGTTACTCTTTGGTTCAATGACAACTCCTGCAAACTGGAATTCCCCTCTGAGGCCT
+GGTGAAAAATATCCACTTGTTGTTTTTTCTCATGGTCTTGGGGCATTCAGGACACTTTAT
+TCTGCTATTGGCATTGACCTGGCATCTCATGGGTTTATAGTTGCTGCTGTAGAACACAGA
+GATAGATCTGCATCTGCAACTTACTATTTCAAGGACCAATCTGCTGCAGAAATAGGGGAC
+AAGTCTTGGCTCTACCTTAGAACCCTGAAACAAGAGGAGGAGACACATATACGAAATGAG
+CAGGTACGGCAAAGAGCAAAAGAATGTTCCCAAGCTCTCAGTCTGATTCTTGACATTGAT
+CATGGAAAGCCAGTGAAGAATGCATTAGATTTAAAGTTTGATATGGAACAACTGAAGGAC
+TCTATTGATAGGGAAAAAATAGCAGTAATTGGACATTCTTTTGGTGGAGCAACGGTTATT
+CAGACTCTTAGTGAAGATCAGAGATTCAGATGTGGTATTGCCCTGGATGCATGGATGTTT
+CCACTGGGTGATGAAGTATATTCCAGAATTCCTCAGCCCCTCTTTTTTATCAACTCTGAA
+TATTTCCAATATCCTGCTAATATCATAAAAATGAAAAAATGCTACTCACCTGATAAAGAA
+AGAAAGATGATTACAATCAGGGGTTCAGTCCACCAGAATTTTGCTGACTTCACTTTTGCA
+ACTGGCAAAATAATTGGACACATGCTCAAATTAAAGGGAGACATAGATTCAAATGTAGCT
+ATTGATCTTAGCAACAAAGCTTCATTAGCATTCTTACAAAAGCATTTAGGACTTCATAAA
+GATTTTGATCAGTGGGACTGCTTGATTGAAGGAGATGATGAGAATCTTATTCCAGGGACC
+AACATTAACACAACCAATCAACACATCATGTTACAGAACTCTTCAGGAATAGAGAAATAC
+AATTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03403</identifier>
+            <name>PAF-AH_p_II</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>low-density lipoprotein particle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>1-alkyl-2-acetylglycerophosphocholine esterase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium-independent phospholipase A2 activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phospholipid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>low-density lipoprotein particle remodeling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>plasma lipoprotein particle oxidation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of inflammatory response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of monocyte chemotaxis</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

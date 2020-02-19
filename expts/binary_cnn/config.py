@@ -19,7 +19,7 @@ dataset_params = list(ParameterGrid(
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['binary'],
-         debug=[False]
+         debug=[True]
          )
 ))
 

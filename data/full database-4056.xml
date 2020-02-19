@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB04307</drugbank-id>
+  <drugbank-id>EXPT02781</drugbank-id>
+  <name>5-Hydroxy-N-Propargyl-1(R)-Aminoindan</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>187.2377</average-mass>
+  <monoisotopic-mass>187.099714043</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as indanes. These are compounds containing an indane moiety, which consists of a cyclopentane fused to a benzene ring.</description>
+    <direct-parent>Indanes</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Benzenoids</superclass>
+    <class>Indanes</class>
+    <subclass/>
+    <alternative-parent>1-hydroxy-2-unsubstituted benzenoids</alternative-parent>
+    <alternative-parent>Acetylides</alternative-parent>
+    <alternative-parent>Aralkylamines</alternative-parent>
+    <alternative-parent>Dialkylamines</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Organooxygen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <substituent>1-hydroxy-2-unsubstituted benzenoid</substituent>
+    <substituent>Acetylide</substituent>
+    <substituent>Amine</substituent>
+    <substituent>Aralkylamine</substituent>
+    <substituent>Aromatic homopolycyclic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Indane</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Secondary aliphatic amine</substituent>
+    <substituent>Secondary amine</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1s3e</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>1.32</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>6.79e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>1.85</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(3R)-3-[(prop-2-yn-1-yl)amino]-2,3-dihydro-1H-inden-5-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>(3R)-3-(prop-2-yn-1-ylamino)-2,3-dihydro-1H-inden-5-ol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>187.2377</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>187.099714043</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(CCC2=CC=C(O)C=C12)NCC#C</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C12H13NO</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C12H13NO/c1-2-7-13-12-6-4-9-3-5-10(14)8-11(9)12/h1,3,5,8,12-14H,4,6-7H2/t12-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>NRSDGDXUWMMUEV-GFCCVEGCSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>32.26</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>56.45</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>21.11</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>9.73</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.21</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5289289</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507374</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4451284</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>10799</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>RHP</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL371428</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002196</id>
+      <name>Amine oxidase [flavin-containing] B</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>ligand</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P27338" source="Swiss-Prot">
+        <name>Amine oxidase [flavin-containing] B</name>
+        <general-function>Primary amine oxidase activity</general-function>
+        <specific-function>Catalyzes the oxidative deamination of biogenic and xenobiotic amines and has important functions in the metabolism of neuroactive and vasoactive amines in the central nervous system and peripheral tissues. MAOB preferentially degrades benzylamine and phenylethylamine.</specific-function>
+        <gene-name>MAOB</gene-name>
+        <locus>Xp11.23</locus>
+        <cellular-location>Mitochondrion outer membrane</cellular-location>
+        <transmembrane-regions>490-516</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.55</theoretical-pi>
+        <molecular-weight>58762.475</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6834</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MAOB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S62734</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>398415</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2490</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P27338</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AOFB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.3.4</synonym>
+          <synonym>MAO-B</synonym>
+          <synonym>Monoamine oxidase type B</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004309|Amine oxidase [flavin-containing] B
+MSNKCDVVVVGGGISGMAAAKLLHDSGLNVVVLEARDRVGGRTYTLRNQKVKYVDLGGSY
+VGPTQNRILRLAKELGLETYKVNEVERLIHHVKGKSYPFRGPFPPVWNPITYLDHNNFWR
+TMDDMGREIPSDAPWKAPLAEEWDNMTMKELLDKLCWTESAKQLATLFVNLCVTAETHEV
+SALWFLWYVKQCGGTTRIISTTNGGQERKFVGGSGQVSERIMDLLGDRVKLERPVIYIDQ
+TRENVLVETLNHEMYEAKYVISAIPPTLGMKIHFNPPLPMMRNQMITRVPLGSVIKCIVY
+YKEPFWRKKDYCGTMIIDGEEAPVAYTLDDTKPEGNYAAIMGFILAHKARKLARLTKEER
+LKKLCELYAKVLGSLEALEPVHYEEKNWCEEQYSGGCYTTYFPPGILTQYGRVLRQPVDR
+IYFAGTETATHWSGYMEGAVEAGERAAREILHAMGKIPEDEIWQSEPESVDVPAQPITTT
+FLERHLPSVPGLLRLIGLTTIFSATALGFLAHKRGLLVRV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016709|Amine oxidase [flavin-containing] B (MAOB)
+ATGAGCAACAAATGCGACGTGGTCGTGGTGGGGGGCGGCATCTCAGGTATGGCAGCAGCC
+AAACTTCTGCATGACTCTGGACTGAATGTGGTTGTTCTGGAAGCCCGGGACCGTGTGGGA
+GGCAGGACTTACACTCTTAGGAACCAAAAGGTTAAATATGTGGACCTTGGAGGATCCTAT
+GTTGGACCAACCCAGAATCGTATCTTGAGATTAGCCAAGGAGCTAGGATTGGAGACCTAC
+AAAGTGAATGAGGTTGAGCGTCTGATCCACCATGTAAAGGGCAAATCATACCCCTTCAGG
+GGGCCATTCCCACCTGTATGGAATCCAATTACCTACTTAGATCATAACAACTTTTGGAGG
+ACAATGGATGACATGGGGCGAGAGATTCCGAGTGATGCCCCATGGAAGGCTCCCCTTGCA
+GAAGAGTGGGACAACATGACAATGAAGGAGCTACTGGACAAGCTCTGCTGGACTGAATCT
+GCAAAGCAGCTTGCCACTCTCTTTGTGAACCTGTGTGTCACTGCAGAGACCCATGAGGTC
+TCTGCTCTCTGGTTCCTGTGGTATGTGAAGCAGTGTGGAGGCACAACAAGAATCATCTCG
+ACAACAAATGGAGGACAGGAGAGGAAATTTGTGGGCGGATCTGGTCAAGTGAGTGAGCGG
+ATAATGGACCTCCTTGGAGACCGAGTGAAGCTGGAGAGGCCTGTGATCTACATTGACCAG
+ACAAGAGAAAATGTCCTTGTGGAGACCCTAAACCATGAGATGTATGAGGCTAAATATGTG
+ATTAGTGCTATTCCTCCTACTCTGGGCATGAAGATTCACTTCAATCCCCCTCTGCCAATG
+ATGAGAAACCAGATGATCACTCGTGTGCCTTTGGGTTCAGTCATCAAGTGTATAGTTTAT
+TATAAAGAGCCTTTCTGGAGGAAAAAGGATTACTGTGGAACCATGATTATTGATGGAGAA
+GAAGCTCCAGTTGCCTACACGTTGGATGATACCAAACCTGAAGGCAACTATGCTGCCATA
+ATGGGATTTATCCTGGCCCACAAAGCCAGAAAACTGGCACGTCTTACCAAAGAGGAAAGG
+TTGAAGAAACTTTGTGAACTCTATGCCAAGGTTCTGGGTTCCCTAGAAGCTCTGGAGCCA
+GTGCATTATGAAGAAAAGAACTGGTGTGAGGAGCAGTACTCTGGGGGCTGCTACACAACT
+TATTTCCCCCCTGGGATCCTGACTCAATATGGAAGGGTTCTACGCCAGCCAGTGGACAGG
+ATTTACTTTGCAGGCACCGAGACTGCCACACACTGGAGCGGCTACATGGAGGGGGCTGTA
+GAGGCCGGGGAGAGAGCAGCCCGAGAGATCCTGCATGCCATGGGGAAGATTCCAGAGGAT
+GAAATCTGGCAGTCAGAACCAGAGTCTGTGGATGTCCCTGCACAGCCCATCACCACCACC
+TTTTTGGAGAGACATTTGCCCTCCGTGCCAGGCCTGCTCAGGCTGATTGGATTGACCACC
+ATCTTTTCAGCAACGGCTCTTGGCTTCCTGGCCCACAAAAGGGGGCTACTTGTGAGAGTC
+TAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01593</identifier>
+            <name>Amino_oxidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial envelope</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>primary amine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dopamine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hydrogen peroxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of serotonin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of dopamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to aluminum ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to corticosterone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to selenium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substantia nigra development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme>
+      <id>BE0002196</id>
+      <name>Amine oxidase [flavin-containing] B</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>ligand</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P27338" source="Swiss-Prot">
+        <name>Amine oxidase [flavin-containing] B</name>
+        <general-function>Primary amine oxidase activity</general-function>
+        <specific-function>Catalyzes the oxidative deamination of biogenic and xenobiotic amines and has important functions in the metabolism of neuroactive and vasoactive amines in the central nervous system and peripheral tissues. MAOB preferentially degrades benzylamine and phenylethylamine.</specific-function>
+        <gene-name>MAOB</gene-name>
+        <locus>Xp11.23</locus>
+        <cellular-location>Mitochondrion outer membrane</cellular-location>
+        <transmembrane-regions>490-516</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>7.55</theoretical-pi>
+        <molecular-weight>58762.475</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:6834</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>MAOB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S62734</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>398415</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2490</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P27338</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AOFB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.4.3.4</synonym>
+          <synonym>MAO-B</synonym>
+          <synonym>Monoamine oxidase type B</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004309|Amine oxidase [flavin-containing] B
+MSNKCDVVVVGGGISGMAAAKLLHDSGLNVVVLEARDRVGGRTYTLRNQKVKYVDLGGSY
+VGPTQNRILRLAKELGLETYKVNEVERLIHHVKGKSYPFRGPFPPVWNPITYLDHNNFWR
+TMDDMGREIPSDAPWKAPLAEEWDNMTMKELLDKLCWTESAKQLATLFVNLCVTAETHEV
+SALWFLWYVKQCGGTTRIISTTNGGQERKFVGGSGQVSERIMDLLGDRVKLERPVIYIDQ
+TRENVLVETLNHEMYEAKYVISAIPPTLGMKIHFNPPLPMMRNQMITRVPLGSVIKCIVY
+YKEPFWRKKDYCGTMIIDGEEAPVAYTLDDTKPEGNYAAIMGFILAHKARKLARLTKEER
+LKKLCELYAKVLGSLEALEPVHYEEKNWCEEQYSGGCYTTYFPPGILTQYGRVLRQPVDR
+IYFAGTETATHWSGYMEGAVEAGERAAREILHAMGKIPEDEIWQSEPESVDVPAQPITTT
+FLERHLPSVPGLLRLIGLTTIFSATALGFLAHKRGLLVRV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016709|Amine oxidase [flavin-containing] B (MAOB)
+ATGAGCAACAAATGCGACGTGGTCGTGGTGGGGGGCGGCATCTCAGGTATGGCAGCAGCC
+AAACTTCTGCATGACTCTGGACTGAATGTGGTTGTTCTGGAAGCCCGGGACCGTGTGGGA
+GGCAGGACTTACACTCTTAGGAACCAAAAGGTTAAATATGTGGACCTTGGAGGATCCTAT
+GTTGGACCAACCCAGAATCGTATCTTGAGATTAGCCAAGGAGCTAGGATTGGAGACCTAC
+AAAGTGAATGAGGTTGAGCGTCTGATCCACCATGTAAAGGGCAAATCATACCCCTTCAGG
+GGGCCATTCCCACCTGTATGGAATCCAATTACCTACTTAGATCATAACAACTTTTGGAGG
+ACAATGGATGACATGGGGCGAGAGATTCCGAGTGATGCCCCATGGAAGGCTCCCCTTGCA
+GAAGAGTGGGACAACATGACAATGAAGGAGCTACTGGACAAGCTCTGCTGGACTGAATCT
+GCAAAGCAGCTTGCCACTCTCTTTGTGAACCTGTGTGTCACTGCAGAGACCCATGAGGTC
+TCTGCTCTCTGGTTCCTGTGGTATGTGAAGCAGTGTGGAGGCACAACAAGAATCATCTCG
+ACAACAAATGGAGGACAGGAGAGGAAATTTGTGGGCGGATCTGGTCAAGTGAGTGAGCGG
+ATAATGGACCTCCTTGGAGACCGAGTGAAGCTGGAGAGGCCTGTGATCTACATTGACCAG
+ACAAGAGAAAATGTCCTTGTGGAGACCCTAAACCATGAGATGTATGAGGCTAAATATGTG
+ATTAGTGCTATTCCTCCTACTCTGGGCATGAAGATTCACTTCAATCCCCCTCTGCCAATG
+ATGAGAAACCAGATGATCACTCGTGTGCCTTTGGGTTCAGTCATCAAGTGTATAGTTTAT
+TATAAAGAGCCTTTCTGGAGGAAAAAGGATTACTGTGGAACCATGATTATTGATGGAGAA
+GAAGCTCCAGTTGCCTACACGTTGGATGATACCAAACCTGAAGGCAACTATGCTGCCATA
+ATGGGATTTATCCTGGCCCACAAAGCCAGAAAACTGGCACGTCTTACCAAAGAGGAAAGG
+TTGAAGAAACTTTGTGAACTCTATGCCAAGGTTCTGGGTTCCCTAGAAGCTCTGGAGCCA
+GTGCATTATGAAGAAAAGAACTGGTGTGAGGAGCAGTACTCTGGGGGCTGCTACACAACT
+TATTTCCCCCCTGGGATCCTGACTCAATATGGAAGGGTTCTACGCCAGCCAGTGGACAGG
+ATTTACTTTGCAGGCACCGAGACTGCCACACACTGGAGCGGCTACATGGAGGGGGCTGTA
+GAGGCCGGGGAGAGAGCAGCCCGAGAGATCCTGCATGCCATGGGGAAGATTCCAGAGGAT
+GAAATCTGGCAGTCAGAACCAGAGTCTGTGGATGTCCCTGCACAGCCCATCACCACCACC
+TTTTTGGAGAGACATTTGCCCTCCGTGCCAGGCCTGCTCAGGCTGATTGGATTGACCACC
+ATCTTTTCAGCAACGGCTCTTGGCTTCCTGGCCCACAAAAGGGGGCTACTTGTGAGAGTC
+TAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01593</identifier>
+            <name>Amino_oxidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial envelope</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial inner membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrial outer membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>electron carrier activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>flavin adenine dinucleotide binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>primary amine oxidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>dopamine catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hydrogen peroxide biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of serotonin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of dopamine metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to aluminum ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to corticosterone</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to drug</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to ethanol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to lipopolysaccharide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to selenium ion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to toxic substance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>substantia nigra development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>xenobiotic metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB02355</drugbank-id>
+  <drugbank-id>EXPT03009</drugbank-id>
+  <name>Adenosine-5'-Rp-Alpha-Thio-Triphosphate</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>523.247</average-mass>
+  <monoisotopic-mass>522.972901227</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1cjk</pdb-entry>
+    <pdb-entry>1wc1</pdb-entry>
+    <pdb-entry>1wc6</pdb-entry>
+    <pdb-entry>3maa</pdb-entry>
+    <pdb-entry>5y0p</pdb-entry>
+    <pdb-entry>5y0t</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-0.36</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-2.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>2.03e+00 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-4.4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>[({[(R)-{[(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methoxy}(hydroxy)sulfanylidene-λ⁵-phosphanyl]oxy}(hydroxy)phosphoryl)oxy]phosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>{[(R)-{[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methoxy}(hydroxy)sulfanylidene-λ⁵-phosphanyl]oxy(hydroxy)phosphoryl}oxyphosphonic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>523.247</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>522.972901227</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(CO[P@@](O)(=S)OP(O)(=O)OP(O)(O)=O)O[C@@]([H])(N2C=NC3=C(N)N=CN=C23)[C@]([H])(O)[C@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C10H16N5O12P3S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C10H16N5O12P3S/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(17)6(16)4(25-10)1-24-30(23,31)27-29(21,22)26-28(18,19)20/h2-4,6-7,10,16-17H,1H2,(H,21,22)(H,23,31)(H2,11,12,13)(H2,18,19,20)/t4-,6-,7-,10-,30-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>ROYJKVPBJVNHCQ-AJBXOXQOSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>262.06</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>103.81</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>40.96</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>13</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>1.07</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>4.99</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>6858181</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46508000</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>TAT</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002733</id>
+      <name>Adenylate cyclase</name>
+      <organism>Arthrospira platensis</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O32393" source="TrEMBL">
+        <name>Adenylate cyclase</name>
+        <general-function>Phosphorelay sensor kinase activity</general-function>
+        <specific-function/>
+        <gene-name>cyaC</gene-name>
+        <locus/>
+        <cellular-location>Cytoplasmic</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>4.74</theoretical-pi>
+        <molecular-weight>133922.415</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="118562">Arthrospira platensis</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D49692</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O32393</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>O32393_ARTPT</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>EC 4.6.1.1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011927|Adenylate cyclase
+MSSPNRKLKPTILVVDDEPDNLDLLYRTFHREFKVLKAESGPAALKILEEVGEVAVIISD
+QRMPYMSGTEFLSLTATQYPDSIRIILTGYTDVEDLVEAINSGKVFKYVTKPWKSDELKA
+IVQQGLETHNVLKSRTEELRLAQKQESLLYEVTSTIRACPNSQEMLQRIVETVGKMFEVS
+YCLLRSFGVGSDLIGLGAGVSPTKQDITATQGKEWFAYLAEGQNHQNSTTDNISVINNND
+LELRSLVWETTEVMILSEGLGNDISDHDGPEWQQRRDVYQRADIRSSLIVPLYYRQELLA
+VLALHHTGSPRNWHEHEVQLAAGVADQAALALSQVRAYEQVRELARREALVNTITNAIRS
+SLDPQKIFAAITEQLGEALEVDGCALSLWSPGDEYMQCVGLYNAAIKETVVETRPAALSE
+PDTSTTTNLPLLGVETNQSIESDQSDDLPQSAAPISGNPVLQELIRTRAPVAIADIEQRP
+DSMVMLPLRSPSKALLVVPLLLDGDIIGSISLRQNHQVRHWQPSEIDMVLLVAAQAALAV
+QQARLYQKTRQQAERLLEADRLKTEFFQNVSHEFRTPLTLMIGPLETVVNQQQDLSLDQA
+KIALRNSRRLLRLVNQLLDLQRFDAGRMQPSFRPCDLVEFCQQTVESFKSYCDRKQINLV
+TNLQSCPQLYLDLERFDKVLYNLLSNAMKFTPTDGTITVSLQPEGNYCRLMVKDTGIGIK
+QEQLPHLFERFRQAEGSANRSFEGSGLGLALVKELVELHHGRITVESEYGQGTTFTVWLQ
+MGNLHLPPSPLLDVPAEFDARRAAVELADVEVDLPDVQIDDINLPEVLVADGSASLTDHG
+QLGSNTVLVVDDNPDLRRYVSMMLQNAGFNAVLAKNGADGFNKAQTYHPDVIVTDLMMPQ
+VSGLELIRMIRSSPELRGTPIILLTAKADEDTRIEGVERGADAYVSKPFNDRELIAEVRN
+LQALKAEERRVAHLNKYLTESVLRRFLPESMVKKAAAGDLTLDLRPEPRLITILFSDIVG
+FTRMSNALQSQGVAELLNEYLGEMTRAVFENQGTVDKFVGDAIMALYGAPEEMSPSEQVR
+RAIATARQMLVALEKLNQGWQERGLVGRNEVPPVRFRCGIHQGMAVVGLFGSQERSDFTA
+IGPSVNIAARLQEATAPNSIMVSAMVAQYVPDEEIIKREFLELKGIDEPVMTCVINPNML
+NQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005357|3609 bp
+ATGAGTTCCCCCAACAGAAAATTGAAGCCCACCATATTAGTGGTTGATGATGAGCCAGAT
+AATTTAGATCTGCTATACCGGACTTTCCATCGGGAATTTAAAGTTCTCAAAGCCGAAAGT
+GGGCCGGCTGCATTGAAGATCTTAGAAGAGGTGGGGGAAGTAGCAGTAATTATCTCTGAT
+CAGCGGATGCCCTATATGAGTGGCACAGAGTTTCTCAGTTTGACCGCGACTCAATATCCC
+GATTCGATCCGCATTATCCTCACTGGTTATACGGATGTTGAAGACCTGGTAGAGGCAATT
+AACTCCGGTAAGGTGTTTAAATATGTCACTAAACCTTGGAAATCTGATGAACTCAAGGCG
+ATCGTTCAGCAAGGTTTAGAAACTCATAATGTCCTGAAATCTCGCACAGAGGAACTACGC
+CTAGCACAAAAACAGGAATCGTTACTTTATGAAGTGACAAGTACCATTCGCGCCTGTCCT
+AATTCCCAGGAAATGTTGCAGCGCATAGTTGAAACAGTGGGTAAAATGTTTGAGGTGAGC
+TATTGTCTGCTGCGTTCATTCGGTGTGGGTTCAGACCTGATAGGGCTGGGGGCTGGAGTC
+AGCCCTACCAAACAGGATATCACTGCTACACAAGGGAAGGAGTGGTTCGCATACTTAGCG
+GAAGGTCAGAATCATCAAAATTCCACGACAGACAACATCAGCGTTATCAATAATAATGAT
+CTGGAATTGAGATCCCTGGTTTGGGAAACTACGGAAGTAATGATTCTTTCGGAAGGTTTG
+GGAAATGATATTTCTGACCACGATGGACCAGAATGGCAGCAGCGACGAGACGTTTACCAA
+CGTGCAGATATTCGCTCCAGTTTGATAGTGCCTCTGTATTACCGTCAGGAATTGTTGGCG
+GTTTTGGCGCTGCACCACACGGGATCGCCCCGTAATTGGCATGAACATGAAGTGCAGTTA
+GCTGCGGGTGTAGCAGATCAGGCGGCTTTGGCATTGTCTCAGGTGCGCGCATACGAGCAG
+GTGCGAGAATTGGCTCGTAGGGAAGCGCTGGTTAATACGATTACCAATGCTATTCGGTCT
+AGTCTTGACCCTCAGAAAATTTTTGCGGCTATCACTGAGCAATTGGGGGAGGCTTTGGAG
+GTTGATGGCTGTGCTTTGTCTCTCTGGAGTCCGGGAGATGAATATATGCAGTGTGTAGGC
+CTTTATAATGCGGCGATTAAAGAAACAGTAGTAGAGACTAGACCGGCGGCTTTGTCTGAA
+CCTGATACCAGCACGACGACGAATTTGCCCCTATTGGGGGTAGAAACTAATCAATCCATT
+GAGTCCGATCAGTCCGATGATTTGCCTCAGTCGGCGGCTCCTATTAGTGGCAACCCGGTG
+CTTCAGGAATTGATTAGAACTCGCGCTCCGGTGGCGATCGCTGATATCGAACAGCGACCA
+GACTCGATGGTGATGTTGCCTTTGCGATCGCCTTCTAAGGCTCTATTGGTTGTGCCACTA
+TTGCTCGATGGTGATATTATTGGCAGCATATCCCTACGCCAAAATCACCAAGTTCGCCAT
+TGGCAACCCTCCGAAATTGATATGGTCCTGTTGGTGGCAGCCCAAGCCGCTTTGGCGGTA
+CAGCAGGCTCGTCTATACCAAAAAACACGCCAGCAAGCAGAACGCCTATTAGAAGCCGAC
+CGCCTCAAAACTGAGTTTTTTCAAAATGTCTCCCACGAGTTTCGCACCCCTTTGACTTTG
+ATGATAGGTCCTTTGGAAACGGTGGTTAATCAACAGCAGGATCTGTCATTAGACCAAGCG
+AAAATTGCTCTGCGTAACTCCAGGCGACTATTGCGCTTGGTTAATCAATTATTGGATTTG
+CAACGGTTTGATGCGGGACGAATGCAGCCCAGTTTTCGCCCCTGTGACCTGGTGGAGTTT
+TGTCAGCAAACGGTGGAATCATTTAAGTCTTATTGCGATCGCAAACAAATTAATCTAGTT
+ACCAATTTACAGAGTTGCCCCCAACTTTATCTTGATCTGGAAAGGTTTGATAAAGTCCTT
+TACAATTTGCTCTCTAATGCCATGAAGTTTACCCCCACCGATGGCACTATTACCGTTAGT
+CTCCAGCCCGAAGGGAATTATTGCCGTCTTATGGTCAAAGATACCGGGATTGGTATTAAA
+CAAGAACAACTCCCCCATTTATTTGAACGCTTCCGACAAGCTGAAGGTTCAGCCAATCGC
+TCCTTTGAGGGGAGTGGCTTGGGATTGGCTCTGGTTAAAGAGTTGGTCGAACTCCATCAT
+GGTCGCATTACTGTAGAGTCTGAGTATGGTCAGGGAACTACATTTACCGTCTGGCTACAA
+ATGGGGAATCTTCATCTACCACCCTCGCCTCTCCTTGATGTTCCCGCTGAGTTTGATGCA
+CGTCGAGCAGCCGTAGAATTGGCTGATGTGGAGGTCGATTTACCAGATGTACAAATTGAC
+GACATAAATCTGCCGGAGGTTTTGGTTGCTGACGGTTCGGCTTCCCTCACGGACCACGGA
+CAGTTGGGGTCTAATACTGTCCTGGTGGTGGATGATAACCCCGATTTGCGCCGCTATGTG
+TCGATGATGTTGCAAAATGCCGGATTTAATGCGGTTTTGGCTAAGAATGGCGCTGATGGT
+TTTAACAAGGCTCAGACTTATCATCCTGATGTGATTGTTACTGATTTGATGATGCCCCAG
+GTGTCTGGGTTGGAGTTGATTCGCATGATTCGCTCCTCACCTGAACTTAGGGGAACTCCA
+ATTATTTTGTTGACTGCTAAGGCTGATGAGGATACCCGCATCGAAGGGGTTGAGCGCGGC
+GCTGATGCCTATGTTTCTAAGCCTTTTAATGACCGGGAGTTGATAGCTGAGGTCAGGAAT
+TTACAGGCCCTCAAGGCAGAGGAACGACGGGTAGCCCATTTGAATAAGTATCTGACTGAA
+TCAGTATTGCGACGGTTTTTGCCGGAGTCTATGGTCAAAAAGGCGGCGGCGGGGGACTTG
+ACTCTGGATTTGCGCCCGGAACCGAGGCTGATTACCATTTTATTTAGTGATATTGTCGGT
+TTTACTCGGATGTCTAATGCTCTACAGTCTCAGGGGGTGGCGGAATTGCTTAATGAGTAT
+TTGGGAGAAATGACTCGGGCGGTTTTTGAGAATCAGGGGACTGTTGACAAGTTTGTAGGA
+GATGCGATTATGGCTTTGTATGGAGCCCCGGAGGAGATGAGCCCCTCTGAACAAGTCCGA
+CGCGCGATCGCTACGGCTAGACAAATGTTGGTGGCTCTCGAAAAACTTAACCAGGGTTGG
+CAGGAACGAGGTTTGGTGGGCCGTAATGAGGTTCCTCCGGTGCGGTTCCGCTGTGGGATT
+CACCAGGGTATGGCTGTGGTGGGGTTGTTTGGTTCCCAAGAGCGATCGGATTTTACGGCG
+ATCGGTCCTTCGGTTAATATTGCTGCCCGTCTTCAGGAGGCTACTGCCCCCAACAGCATT
+ATGGTATCCGCTATGGTGGCTCAGTATGTCCCCGATGAGGAGATTATTAAGCGCGAATTT
+CTCGAACTTAAAGGCATTGATGAGCCGGTAATGACTTGTGTGATTAACCCAAATATGCTG
+AATCAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01590</identifier>
+            <name>GAF</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00211</identifier>
+            <name>Guanylate_cyc</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02518</identifier>
+            <name>HATPase_c</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00072</identifier>
+            <name>Response_reg</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00512</identifier>
+            <name>HisKA</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphorelay sensor kinase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein-chromophore linkage</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

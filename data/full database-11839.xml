@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="biotech" created="2017-10-19" updated="2019-12-02">
+  <drugbank-id primary="true">DB13915</drugbank-id>
+  <name>Axicabtagene ciloleucel</name>
+  <description>Axicabtagene ciloleucel is a chimeric antigen receptor (CAR) T cell therapy for the treatment of Diffuse large B-cell lymphoma (DLBCL), which is a type of a non-Hodgkin lymphoma (NHL). It is the second cell-based gene therapy that is FDA-approved but the first in the treatment of large B-cell lymphoma in adult patients. Uniquely, axicabtagene ciloleucel utilizes each patient’s own immune system where each dose of the drug consists of the patient's genetically modified T-cells that were previously collected. The modified version of the T-cell expresses a new gene that targets and kills the lymphoma cells and is infused back into the patient. &#13;
+&#13;
+Diffuse large B-cell lymphoma (DLBCL) is the most common type of NHL in adults that mostly originates from the lymph nodes but can initiate outside of the lymphatic system. Lymphoma cells appear to be much larger in size than normal lymphocytes. In a multicenter clinical trial, the patients who were treated with axicabtagene ciloleucel achieved the complete remission rate of 51%. &#13;
+ &#13;
+Developed by Kite Pharma, Inc., it was approved on October 18th, 2017 by the FDA as an intravenously infused anticancer therapy and is marketed under the brand name Yescarta.</description>
+  <cas-number/>
+  <unii>U2I8T43Y7R</unii>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A31176</ref-id>
+        <pubmed-id>8528044</pubmed-id>
+        <citation>Scheuermann RH, Racila E: CD19 antigen in leukemia and lymphoma diagnosis and immunotherapy. Leuk Lymphoma. 1995 Aug;18(5-6):385-97.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Indicated for the treatment of adult patients with relapsed or refractory large B-cell lymphoma after two or more lines of systemic therapy, including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma, and DLBCL arising from follicular lymphoma. </indication>
+  <pharmacodynamics>The levels of cytokines, chemokines and other blood molecules were measured over a 4-week interval after the drug infusion. There were transient elevations of chemokines such as IL-6, IL-8, IL-10, IL-15, TNF-α, IFN-γ, and sIL2Rα where the peak elevation was reached within the first 14 days after infusion, and the levels gradually returned to baseline within 28 days [FDA Label]. It is likely that axicabtagene ciloleucel may lead to B cell aplasia, or low numbers of B cells or absent B cells, as expected by other chimeric anntigen receptor T-cell therapies. </pharmacodynamics>
+  <mechanism-of-action>The CD 19 antigen is a 95 kDa integral membrane glycoprotein expressed on lymphocytes of the B-cell lineage but noton pluripotent stem cell. While this antigen is ubiquitously expressed on B lymphocyte lineage, the expression of this Ig protein is downregulated during terminal differentiation of premature and mature B cells into plasma cells [A31176]. In blood disorders, however, the expression CD19 is maintained in in B-lineage cells that has undergone neoplastic transformation [A31176]. Thus CD19 plays a critical role in clinical oncolgy as it aids in the diagnosis of blood cancers such as leukemias and lymphomas and serves as a therapeutic target for immunotherapies.&#13;
+&#13;
+Axicabtagene ciloleucel is a CD19-directed genetically modified autologous T cell immunotherapy that binds to CD19-expressing cancer cells and normal B cells. First, the patient's own peripheral blood mononuclear cells are obtained. The T cells are then harvested and genetically modified ex vivo by retroviral transduction to express a chimeric antigen receptor (CAR) comprising a murine anti-CD19 single chain variable fragment (scFv) linked to CD28 and CD3-zeta co-stimulatory domains [FDA Label]. These anti-CD19 CAR T cells are expanded and infused back into the patient. &#13;
+&#13;
+Once the modified CAR T cells recognize the CD19-expressing target cells, the CD28 and CD3-zeta co-stimulatory domains activate downstream signaling cascades that lead to T-cell activation, proliferation, acquisition of effector functions and secretion of inflammatory cytokines and chemokines [FDA Label]. These events lead to elimination of the target cells. </mechanism-of-action>
+  <toxicity>Axicabatagene ciloleucel is reported to induce cytokine release syndrome (CRS) and neurotoxicity. No carcinogenicity or genotoxicity studies as well as reproductive toxicity studies have not been conducted with axicabatagene ciloleucel. </toxicity>
+  <metabolism/>
+  <absorption>Following infusion of YESCARTA, anti-CD19 CAR T cells exhibited an initial rapid expansion followed by a decline to near baseline levels by 3 months. Peak levels of anti-CD19 CAR T cells occurred within the first 7-14 days after YESCARTA infusion [FDA Label]. The mean AUC in Day 0-28 in responding patient was 557.1 days x cells/μL [FDA Label]. </absorption>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">Autologous T cells transduced with retroviral vector encoding an anti-CD-19 CD28/CD3-zeta chimeric antigen receptor</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Yescarta</name>
+      <labeller>Kite Pharma, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code>71287-119</ndc-product-code>
+      <dpd-id/>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2017-10-18</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Suspension</dosage-form>
+      <strength>2000000 1/68mL</strength>
+      <route>Intravenous</route>
+      <fda-application-number>BLA125643</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Yescarta</name>
+      <labeller>Gilead Sciences</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02485648</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on/>
+      <ended-marketing-on/>
+      <dosage-form>Suspension</dosage-form>
+      <strength>200000000 cells</strength>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands/>
+  <mixtures>
+    <mixture>
+      <name>Yescarta</name>
+      <ingredients>Axicabtagene ciloleucel</ingredients>
+    </mixture>
+    <mixture>
+      <name>Yescarta</name>
+      <ingredients>Axicabtagene ciloleucel</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Antigens</category>
+      <mesh-id>D000941</mesh-id>
+    </category>
+    <category>
+      <category>Antigens, CD</category>
+      <mesh-id>D015703</mesh-id>
+    </category>
+    <category>
+      <category>Antigens, Differentiation</category>
+      <mesh-id>D000943</mesh-id>
+    </category>
+    <category>
+      <category>Antigens, Differentiation, B-Lymphocyte</category>
+      <mesh-id>D000944</mesh-id>
+    </category>
+    <category>
+      <category>Antigens, Surface</category>
+      <mesh-id>D000954</mesh-id>
+    </category>
+    <category>
+      <category>Biological Factors</category>
+      <mesh-id>D001685</mesh-id>
+    </category>
+    <category>
+      <category>Biomarkers</category>
+      <mesh-id>D015415</mesh-id>
+    </category>
+    <category>
+      <category>Histocompatibility Antigens</category>
+      <mesh-id>D006649</mesh-id>
+    </category>
+    <category>
+      <category>Immunization</category>
+      <mesh-id>D007114</mesh-id>
+    </category>
+    <category>
+      <category>Immunization, Passive</category>
+      <mesh-id>D007116</mesh-id>
+    </category>
+    <category>
+      <category>Immunologic Techniques</category>
+      <mesh-id>D007158</mesh-id>
+    </category>
+    <category>
+      <category>Immunomodulation</category>
+      <mesh-id>D056747</mesh-id>
+    </category>
+    <category>
+      <category>Immunotherapy</category>
+      <mesh-id>D007167</mesh-id>
+    </category>
+    <category>
+      <category>Investigative Techniques</category>
+      <mesh-id>D008919</mesh-id>
+    </category>
+    <category>
+      <category>Isoantigens</category>
+      <mesh-id>D007519</mesh-id>
+    </category>
+    <category>
+      <category>Minor Histocompatibility Antigens</category>
+      <mesh-id>D015778</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Humans and other mammals</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Suspension</form>
+      <route>Intravenous</route>
+      <strength>2000000 1/68mL</strength>
+    </dosage>
+    <dosage>
+      <form>Suspension</form>
+      <route>Intravenous</route>
+      <strength>200000000 cells</strength>
+    </dosage>
+  </dosages>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB13915.pdf?1508700759</fda-label>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <sequences/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>23099</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347911476</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Axicabtagene_ciloleucel</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0003496</id>
+      <name>B-lymphocyte antigen CD19</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>antibody</action>
+      </actions>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P15391" source="Swiss-Prot">
+        <name>B-lymphocyte antigen CD19</name>
+        <general-function>Receptor signaling protein activity</general-function>
+        <specific-function>Assembles with the antigen receptor of B-lymphocytes in order to decrease the threshold for antigen receptor-dependent stimulation.</specific-function>
+        <gene-name>CD19</gene-name>
+        <locus/>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>292-313</transmembrane-regions>
+        <signal-regions>1-19</signal-regions>
+        <theoretical-pi>4.61</theoretical-pi>
+        <molecular-weight>61127.985</molecular-weight>
+        <chromosome-location>16</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:1633</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CD19</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BC006338</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2764</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P15391</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CD19_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>B-lymphocyte surface antigen B4</synonym>
+          <synonym>Differentiation antigen CD19</synonym>
+          <synonym>T-cell surface antigen Leu-12</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0006768|B-lymphocyte antigen CD19
+MPPPRLLFFLLFLTPMEVRPEEPLVVKVEEGDNAVLQCLKGTSDGPTQQLTWSRESPLKP
+FLKLSLGLPGLGIHMRPLAIWLFIFNVSQQMGGFYLCQPGPPSEKAWQPGWTVNVEGSGE
+LFRWNVSDLGGLGCGLKNRSSEGPSSPSGKLMSPKLYVWAKDRPEIWEGEPPCLPPRDSL
+NQSLSQDLTMAPGSTLWLSCGVPPDSVSRGPLSWTHVHPKGPKSLLSLELKDDRPARDMW
+VMETGLLLPRATAQDAGKYYCHRGNLTMSFHLEITARPVLWHWLLRTGGWKVSAVTLAYL
+IFCLCSLVGILHLQRALVLRRKRKRMTDPTRRFFKVTPPPGSGPQNQYGNVLSLPTPTSG
+LGRAQRWAAGLGGTAPSYGNPSSDVQADGALGSRSPPGVGPEEEEGEGYEEPDSEEDSEF
+YENDSNLGQDQLSQDGSGYENPEDEPLGPEDEDSFSNAESYENEDEELTQPVARTMDFLS
+PHGSAWDPSREATSLGSQSYEDMRGILYAAPQLRSIRGQPGPNHEEDADSYENMDNPDGP
+DPAWGGGGRMGTWSTR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012436|B-lymphocyte antigen CD19 (CD19)
+ATGCCACCTCCTCGCCTCCTCTTCTTCCTCCTCTTCCTCACCCCCATGGAAGTCAGGCCC
+GAGGAACCTCTAGTGGTGAAGGTGGAAGAGGGAGATAACGCTGTGCTGCAGTGCCTCAAG
+GGGACCTCAGATGGCCCCACTCAGCAGCTGACCTGGTCTCGGGAGTCCCCGCTTAAACCC
+TTCTTAAAACTCAGCCTGGGGCTGCCAGGCCTGGGAATCCACATGAGGCCCCTGGCCATC
+TGGCTTTTCATCTTCAACGTCTCTCAACAGATGGGGGGCTTCTACCTGTGCCAGCCGGGG
+CCCCCCTCTGAGAAGGCCTGGCAGCCTGGCTGGACAGTCAATGTGGAGGGCAGCGGGGAG
+CTGTTCCGGTGGAATGTTTCGGACCTAGGTGGCCTGGGCTGTGGCCTGAAGAACAGGTCC
+TCAGAGGGCCCCAGCTCCCCTTCCGGGAAGCTCATGAGCCCCAAGCTGTATGTGTGGGCC
+AAAGACCGCCCTGAGATCTGGGAGGGAGAGCCTCCGTGTCTCCCACCGAGGGACAGCCTG
+AACCAGAGCCTCAGCCAGGACCTCACCATGGCCCCTGGCTCCACACTCTGGCTGTCCTGT
+GGGGTACCCCCTGACTCTGTGTCCAGGGGCCCCCTCTCCTGGACCCATGTGCACCCCAAG
+GGGCCTAAGTCATTGCTGAGCCTAGAGCTGAAGGACGATCGCCCGGCCAGAGATATGTGG
+GTAATGGAGACGGGTCTGTTGTTGCCCCGGGCCACAGCTCAAGACGCTGGAAAGTATTAT
+TGTCACCGTGGCAACCTGACCATGTCATTCCACCTGGAGATCACTGCTCGGCCAGTACTA
+TGGCACTGGCTGCTGAGGACTGGTGGCTGGAAGGTCTCAGCTGTGACTTTGGCTTATCTG
+ATCTTCTGCCTGTGTTCCCTTGTGGGCATTCTTCATCTTCAAAGAGCCCTGGTCCTGAGG
+AGGAAAAGAAAGCGAATGACTGACCCCACCAGGAGATTCTTCAAAGTGACGCCTCCCCCA
+GGAAGCGGGCCCCAGAACCAGTACGGGAACGTGCTGTCTCTCCCCACACCCACCTCAGGC
+CTCGGACGCGCCCAGCGTTGGGCCGCAGGCCTGGGGGGCACTGCCCCGTCTTATGGAAAC
+CCGAGCAGCGACGTCCAGGCGGATGGAGCCTTGGGGTCCCGGAGCCCGCCGGGAGTGGGC
+CCAGAAGAAGAGGAAGGGGAGGGCTATGAGGAACCTGACAGTGAGGAGGACTCCGAGTTC
+TATGAGAACGACTCCAACCTTGGGCAGGACCAGCTCTCCCAGGATGGCAGCGGCTACGAG
+AACCCTGAGGATGAGCCCCTGGGTCCTGAGGATGAAGACTCCTTCTCCAACGCTGAGTCT
+TATGAGAACGAGGATGAAGAGCTGACCCAGCCGGTCGCCAGGACAATGGACTTCCTGAGC
+CCTCATGGGTCAGCCTGGGACCCCAGCCGGGAAGCAACCTCCCTGGCAGGGTCCCAGTCC
+TATGAGGATATGAGAGGAATCCTGTATGCAGCCCCCCAGCTCCGCTCCATTCGGGGCCAG
+CCTGGACCCAATCATGAGGAAGATGCAGACTCTTATGAGAACATGGATAATCCCGATGGG
+CCAGACCCAGCCTGGGGAGGAGGGGGCCGCATGGGCACCTGGAGCACCAGGTGA</gene-sequence>
+        <pfams/>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor signaling protein activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>B cell receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell surface receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular defense response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chromosome breakage</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>phosphatidylinositol-mediated signaling</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of release of sequestered calcium ion into cytosol</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of immune response</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

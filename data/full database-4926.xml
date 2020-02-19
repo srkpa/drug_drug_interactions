@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05264</drugbank-id>
+  <name>NPI 32101</name>
+  <description>NPI 32101 possesses both anti-inflammatory and broad spectrum antimicrobial activities. This combination of pharmacological properties may have additional therapeutic uses beyond dermatology.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3327</ref-id>
+        <pubmed-id>17436088</pubmed-id>
+        <citation>Bhol KC, Schechter PJ: Effects of nanocrystalline silver (NPI 32101) in a rat model of ulcerative colitis. Dig Dis Sci. 2007 Oct;52(10):2732-42. Epub 2007 Apr 12.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Atopic dermatitis</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action> NPI 32101 cream serves as a broad-spectrum antimicrobial barrier to organisms including Pseudomonas aeruginosa and Staphylococcus aureus, including strains resistant to Methicillin (MRSA). NPI 32101 has dual action against both the vegetative and spore forms of C. difficile could lead to a first-in-class drug that both treats and prevents disease recurrence.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910053</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0002115</id>
+      <name>Cytokine receptor common subunit beta</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A3327</ref-id>
+            <pubmed-id>17436088</pubmed-id>
+            <citation>Bhol KC, Schechter PJ: Effects of nanocrystalline silver (NPI 32101) in a rat model of ulcerative colitis. Dig Dis Sci. 2007 Oct;52(10):2732-42. Epub 2007 Apr 12.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P32927" source="Swiss-Prot">
+        <name>Cytokine receptor common subunit beta</name>
+        <general-function>Receptor activity</general-function>
+        <specific-function>High affinity receptor for interleukin-3, interleukin-5 and granulocyte-macrophage colony-stimulating factor.</specific-function>
+        <gene-name>CSF2RB</gene-name>
+        <locus>22q13.1</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>444-460</transmembrane-regions>
+        <signal-regions>1-16</signal-regions>
+        <theoretical-pi>5.21</theoretical-pi>
+        <molecular-weight>97334.89</molecular-weight>
+        <chromosome-location>22</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:2436</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>CSF2RB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M59941</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>487425</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P32927</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>IL3RB_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>CDw131</synonym>
+          <synonym>GM-CSF/IL-3/IL-5 receptor common beta subunit</synonym>
+          <synonym>IL3RB</synonym>
+          <synonym>IL5RB</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004148|Cytokine receptor common subunit beta
+MVLAQGLLSMALLALCWERSLAGAEETIPLQTLRCYNDYTSHITCRWADTQDAQRLVNVT
+LIRRVNEDLLEPVSCDLSDDMPWSACPHPRCVPRRCVIPCQSFVVTDVDYFSFQPDRPLG
+TRLTVTLTQHVQPPEPRDLQISTDQDHFLLTWSVALGSPQSHWLSPGDLEFEVVYKRLQD
+SWEDAAILLSNTSQATLGPEHLMPSSTYVARVRTRLAPGSRLSGRPSKWSPEVCWDSQPG
+DEAQPQNLECFFDGAAVLSCSWEVRKEVASSVSFGLFYKPSPDAGEEECSPVLREGLGSL
+HTRHHCQIPVPDPATHGQYIVSVQPRRAEKHIKSSVNIQMAPPSLNVTKDGDSYSLRWET
+MKMRYEHIDHTFEIQYRKDTATWKDSKTETLQNAHSMALPALEPSTRYWARVRVRTSRTG
+YNGIWSEWSEARSWDTESVLPMWVLALIVIFLTIAVLLALRFCGIYGYRLRRKWEEKIPN
+PSKSHLFQNGSAELWPPGSMSAFTSGSPPHQGPWGSRFPELEGVFPVGFGDSEVSPLTIE
+DPKHVCDPPSGPDTTPAASDLPTEQPPSPQPGPPAASHTPEKQASSFDFNGPYLGPPHSR
+SLPDILGQPEPPQEGGSQKSPPPGSLEYLCLPAGGQVQLVPLAQAMGPGQAVEVERRPSQ
+GAAGSPSLESGGGPAPPALGPRVGGQDQKDSPVAIPMSSGDTEDPGVASGYVSSADLVFT
+PNSGASSVSLVPSLGLPSDQTPSLCPGLASGPPGAPGPVKSGFEGYVELPPIEGRSPRSP
+RNNPVPPEAKSPVLNPGERPADVSPTSPQPEGLLVLQQVGDYCFLPGLGPGPLSLRSKPS
+SPGPGPEIKNLDQAFQVKKPPGQAVPQVPVIQLFKALKQQDYLSLPPWEVNKPGEVC</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011533|Cytokine receptor common subunit beta (CSF2RB)
+ATGGTGCTGGCCCAGGGGCTGCTCTCCATGGCCCTGCTGGCCCTGTGCTGGGAGCGCAGC
+CTGGCAGGGGCAGAAGAAACCATCCCGCTGCAGACCCTGCGCTGCTACAACGACTACACC
+AGCCACATCACCTGCAGGTGGGCAGACACCCAGGATGCCCAGCGGCTCGTCAACGTGACC
+CTCATTCGCCGGGTGAATGAGGACCTCCTGGAGCCAGTGTCCTGTGACCTCAGTGATGAC
+ATGCCCTGGTCAGCCTGCCCCCATCCCCGCTGCGTGCCCAGGAGATGTGTCATTCCCTGC
+CAGAGTTTTGTCGTCACTGACGTTGACTACTTCTCATTCCAACCAGACAGGCCTCTGGGC
+ACCCGGCTCACCGTCACTCTGACCCAGCATGTCCAGCCTCCTGAGCCCAGGGACCTGCAG
+ATCAGCACCGACCAGGACCACTTCCTGCTGACCTGGAGTGTGGCCCTTGGGAGTCCCCAG
+AGCCACTGGTTGTCCCCAGGGGATCTGGAGTTTGAGGTGGTCTACAAGCGGCTTCAGGAC
+TCTTGGGAGGACGCAGCCATCCTCCTCTCCAACACCTCCCAGGCCACCCTGGGGCCAGAG
+CACCTCATGCCCAGCAGCACCTACGTGGCCCGAGTACGGACCCGCCTGGCCCCAGGTTCT
+CGGCTCTCAGGACGTCCCAGCAAGTGGAGCCCAGAGGTTTGCTGGGACTCCCAGCCAGGG
+GATGAGGCCCAGCCCCAGAACCTGGAGTGCTTCTTTGACGGGGCCGCCGTGCTCAGCTGC
+TCCTGGGAGGTGAGGAAGGAGGTGGCCAGCTCGGTCTCCTTTGGCCTATTCTACAAGCCC
+AGCCCAGATGCAGGGGAGGAAGAGTGCTCCCCAGTGCTGAGGGAGGGGCTCGGCAGCCTC
+CACACCAGGCACCACTGCCAGATTCCCGTGCCCGACCCCGCGACCCACGGCCAATACATC
+GTCTCTGTTCAGCCAAGGAGGGCAGAGAAACACATAAAGAGCTCAGTGAACATCCAGATG
+GCCCCTCCATCCCTCAACGTGACCAAGGATGGAGACAGCTACAGCCTGCGCTGGGAAACA
+ATGAAAATGCGATACGAACACATAGACCACACATTTGAGATCCAGTACAGGAAAGACACG
+GCCACGTGGAAGGACAGCAAGACCGAGACCCTCCAGAACGCCCACAGCATGGCCCTGCCA
+GCCCTGGAGCCCTCCACCAGGTACTGGGCCAGGGTGAGGGTCAGGACCTCCCGCACCGGC
+TACAACGGGATCTGGAGCGAGTGGAGTGAGGCGCGCTCCTGGGACACCGAGTCGGTGCTG
+CCTATGTGGGTGCTGGCCCTCATCGTGATCTTCCTCACCATCGCTGTGCTCCTGGCCCTC
+CGCTTCTGTGGCATCTACGGGTACAGGCTGCGCAGAAAGTGGGAGGAGAAGATCCCCAAC
+CCCAGCAAGAGCCACCTGTTCCAGAACGGGAGCGCAGAGCTTTGGCCCCCAGGCAGCATG
+TCGGCCTTCACTAGCGGGAGTCCCCCACACCAGGGGCCGTGGGGCAGCCGCTTCCCTGAG
+CTGGAGGGGGTGTTCCCTGTAGGATTCGGGGACAGCGAGGTGTCACCTCTCACCATAGAG
+GACCCCAAGCATGTCTGTGATCCACCATCTGGGCCTGACACGACTCCAGCTGCCTCAGAT
+CTACCCACAGAGCAGCCCCCCAGCCCCCAGCCAGGCCCGCCTGCCGCCTCCCACACACCT
+GAGAAACAGGCTTCCAGCTTTGACTTCAATGGGCCCTACCTGGGGCCGCCCCACAGCCGC
+TCCCTACCTGACATCCTGGGCCAGCCGGAGCCCCCACAGGAGGGTGGGAGCCAGAAGTCC
+CCACCTCCAGGGTCCCTGGAGTACCTGTGTCTGCCTGCTGGGGGGCAGGTGCAACTGGTC
+CCTCTGGCCCAGGCGATGGGACCAGGACAGGCCGTGGAAGTGGAGAGAAGGCCGAGCCAG
+GGGGCTGCAGGGAGTCCCTCCCTGGAGTCCGGGGGAGGCCCTGCCCCTCCTGCTCTTGGG
+CCAAGGGTGGGAGGACAGGACCAAAAGGACAGCCCTGTGGCTATACCCATGAGCTCTGGG
+GACACTGAGGACCCTGGAGTGGCCTCTGGTTATGTCTCCTCTGCAGACCTGGTATTCACC
+CCAAACTCAGGGGCCTCGTCTGTCTCCCTAGTTCCCTCTCTGGGCCTCCCCTCAGACCAG
+ACCCCCAGCTTATGTCCTGGGCTGGCCAGTGGACCCCCTGGAGCCCCAGGCCCTGTGAAG
+TCAGGGTTTGAGGGCTATGTGGAGCTCCCTCCAATTGAGGGCCGGTCCCCCAGGTCACCA
+AGGAACAATCCTGTCCCCCCTGAGGCCAAAAGCCCTGTCCTGAACCCAGGGGAACGCCCG
+GCAGATGTGTCCCCAACATCCCCACAGCCCGAGGGCCTCCTTGTCCTGCAGCAAGTGGGC
+GACTATTGCTTCCTCCCCGGCCTGGGGCCCGGCCCTCTCTCGCTCCGGAGTAAACCTTCT
+TCCCCGGGACCCGGTCCTGAGATCAAGAACCTAGACCAGGCTTTTCAAGTCAAGAAGCCC
+CCAGGCCAGGCTGTGCCCCAGGTGCCCGTCATTCAGCTCTTCAAAGCCCTGAAGCAGCAG
+GACTACCTGTCTCTGCCCCCTTGGGAGGTCAACAAGCCTGGGGAGGTGTGTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00041</identifier>
+            <name>fn3</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09240</identifier>
+            <name>IL6Ra-bind</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>granulocyte macrophage colony-stimulating factor receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cytokine receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>activation of MAPKK activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>axon guidance</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular protein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to interleukin-3</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>epidermal growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Fc-epsilon receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fibroblast growth factor receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>innate immune response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interleukin-3-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>interleukin-5-mediated signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>MAPK cascade</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neurotrophin TRK receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>Ras protein signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>respiratory gaseous exchange</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small GTPase mediated signal transduction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>vascular endothelial growth factor receptor signaling pathway</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

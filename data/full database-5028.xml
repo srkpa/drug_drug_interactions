@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-11-18" updated="2020-01-02">
+  <drugbank-id primary="true">DB05417</drugbank-id>
+  <name>GW 468816</name>
+  <description>GW 468816 is glycine receptor antagonist. It is designed to aid abstinence in people who have just quit smoking, delaying the time to relapse. It was undergoing phase II trials since December 2003.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles>
+      <article>
+        <ref-id>A3457</ref-id>
+        <pubmed-id>12486679</pubmed-id>
+        <citation>Iavarone L, Gomeni R: An application of nonlinear mixed-effects modeling to pharmacokinetic data exhibiting nonlinear and time-dependent behavior. J Pharm Sci. 2003 Jan;92(1):27-34.</citation>
+      </article>
+    </articles>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in tobacco dependence.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Receptors, N-Methyl-D-Aspartate, antagonists &amp; inhibitors</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910127</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000433</id>
+      <name>Glycine receptor subunit alpha-1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P23415" source="Swiss-Prot">
+        <name>Glycine receptor subunit alpha-1</name>
+        <general-function>Transmitter-gated ion channel activity</general-function>
+        <specific-function>The glycine receptor is a neurotransmitter-gated ion channel. Binding of glycine to its receptor increases the chloride conductance and thus produces hyperpolarization (inhibition of neuronal firing).</specific-function>
+        <gene-name>GLRA1</gene-name>
+        <locus>5q32</locus>
+        <cellular-location>Cell junction</cellular-location>
+        <transmembrane-regions>248-274
+281-298
+313-336
+429-446</transmembrane-regions>
+        <signal-regions>1-28</signal-regions>
+        <theoretical-pi>9.04</theoretical-pi>
+        <molecular-weight>52623.35</molecular-weight>
+        <chromosome-location>5</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4326</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GLRA1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X52009</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>31851</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>423</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>423</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P23415</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GLRA1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Glycine receptor 48 kDa subunit</synonym>
+          <synonym>Glycine receptor strychnine-binding subunit</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0000863|Glycine receptor subunit alpha-1
+MYSFNTLRLYLWETIVFFSLAASKEAEAARSAPKPMSPSDFLDKLMGRTSGYDARIRPNF
+KGPPVNVSCNIFINSFGSIAETTMDYRVNIFLRQQWNDPRLAYNEYPDDSLDLDPSMLDS
+IWKPDLFFANEKGAHFHEITTDNKLLRISRNGNVLYSIRITLTLACPMDLKNFPMDVQTC
+IMQLESFGYTMNDLIFEWQEQGAVQVADGLTLPQFILKEEKDLRYCTKHYNTGKFTCIEA
+RFHLERQMGYYLIQMYIPSLLIVILSWISFWINMDAAPARVGLGITTVLTMTTQSSGSRA
+SLPKVSYVKAIDIWMAVCLLFVFSALLEYAAVNFVSRQHKELLRFRRKRRHHKSPMLNLF
+QEDEAGEGRFNFSAYGMGPACLQAKDGISVKGANNSNTTNPPPAPSKSPEEMRKLFIQRA
+KKIDKISRIGFPMAFLIFNMFYWIIYKIVRREDVHNQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016090|Glycine receptor subunit alpha-1 (GLRA1)
+ATGTACAGCTTCAATACTCTTCGACTCTACCTTTGGGAGACCATTGTATTCTTCAGCCTT
+GCTGCTTCTAAGGAGGCTGAAGCTGCTCGCTCCGCACCCAAGCCTATGTCACCCTCGGAT
+TTCCTGGATAAGCTAATGGGGAGAACCTCCGGATATGATGCCAGGATCAGGCCCAATTTT
+AAAGGTCCCCCAGTGAACGTGAGCTGCAACATTTTCATCAACAGCTTTGGTTCCATTGCT
+GAGACAACCATGGACTATAGGGTCAACATCTTCCTGCGGCAGCAATGGAACGACCCCCGC
+CTGGCCTATAATGAATACCCTGACGACTCTCTGGACCTGGACCCATCCATGCTGGACTCC
+ATCTGGAAACCTGACCTGTTCTTTGCCAACGAGAAGGGGGCCCACTTCCATGAGATCACC
+ACAGACAACAAATTGCTAAGGATCTCCCGGAATGGGAATGTCCTCTACAGCATCAGAATC
+ACCCTGACACTGGCCTGCCCCATGGACTTGAAGAATTTCCCCATGGATGTCCAGACATGT
+ATCATGCAACTGGAAAGCTTTGGATATACGATGAATGACCTCATCTTTGAGTGGCAGGAA
+CAGGGAGCCGTGCAGGTAGCAGATGGACTAACTCTGCCCCAGTTTATCTTGAAGGAAGAG
+AAGGACTTGAGATACTGCACCAAGCACTACAACACAGGTAAATTCACCTGCATTGAGGCC
+CGGTTCCACCTGGAGCGGCAGATGGGTTACTACCTGATTCAGATGTATATTCCCAGCCTG
+CTCATTGTCATCCTCTCATGGATCTCCTTCTGGATCAACATGGATGCTGCACCTGCTCGT
+GTGGGCCTAGGCATCACCACTGTGCTCACCATGACCACCCAGAGCTCCGGCTCTCGAGCA
+TCTCTGCCCAAGGTGTCCTATGTGAAAGCCATTGACATTTGGATGGCAGTTTGCCTGCTC
+TTTGTGTTCTCAGCCCTATTAGAATATGCTGCCGTTAACTTTGTGTCTCGGCAACATAAG
+GAGCTGCTCCGATTCAGGAGGAAGCGGAGACATCACAAGGAGGATGAAGCTGGAGAAGGC
+CGCTTTAACTTCTCTGCCTATGGGATGGGCCCAGCCTGTCTACAGGCCAAGGATGGCATC
+TCAGTCAAGGGCGCCAACAACAGTAACACCACCAACCCCCCTCCTGCACCATCTAAGTCC
+CCAGAGGAGATGCGAAAACTCTTCATCCAGAGGGCCAAGAAGATCGACAAAATATCCCGC
+ATTGGCTTCCCCATGGCCTTCCTCATTTTCAACATGTTCTACTGGATCATCTACAAGATT
+GTCCGTAGAGAGGACGTCCACAACCAGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF02931</identifier>
+            <name>Neur_chan_LBD</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02932</identifier>
+            <name>Neur_chan_memb</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>chloride channel complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>external side of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>inhibitory synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular membrane-bounded organelle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>neuron projection</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>synapse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>extracellular-glycine-gated chloride channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glycine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>taurine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transmitter-gated ion channel activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>acrosome reaction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>action potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adult walking behavior</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>chloride transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>inhibitory postsynaptic potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>muscle contraction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of transmission of nerve impulse</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuromuscular process controlling posture</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>neuropeptide signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of acrosome reaction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of membrane potential</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of respiratory gaseous exchange by neurological system process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to amino acid</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>righting reflex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>startle response</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission, glycinergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>visual perception</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

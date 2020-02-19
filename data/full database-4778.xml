@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05096</drugbank-id>
+  <name>LY2140023</name>
+  <description>LY2140023 is an investigational drug from Lilly, which is being developed as a new treatment option for schizophrenia. LY2140023 is an oral "prodrug," meaning it is devoid of intrinsic biological activity and, once administered, is metabolized to provide the active mGlu2/3 receptor agonist called LY404039. Most currently approved antipsychotic medications work by affecting the neurotransmitters dopamine or serotonin. For LY2140023, the active substance, LY404039, is thought to work by reducing the presynaptic release of another neurotransmitter, glutamate, in brain regions where mGlu2/3 receptors are expressed. Further studies are planned or are ongoing to learn more about the safety and effectiveness, including determining an optimal therapeutic dose for LY2140023.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in psychosis and schizophrenia and schizoaffective disorders.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>LY2140023 is an antipsychotic agent that is a metabotropic glutamate 2/3 receptor agonist. This agent has a new mechanism of action that is efficacious in treating schizophrenia and potentially other neuropsychiatric conditions. Once absorbed, LY2140023 is efficiently hydrolyzed to produce the active mGlu2/3 receptor agonist LY404039. LY404039 and other mGlu2/3 agonists do not directly interact with dopamine or serotonin (5-HT2A) receptors. However, 'functional' 5-HT2A receptor antagonism in the prefrontal cortex may represent a common mechanism shared by clinically effective atypical antipsychotics and mGlu2/3 receptor agonists, and may contribute to the antipsychotic actions of LY2140023.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Amino Acids, Peptides, and Proteins</category>
+      <mesh-id>D000602</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909943</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>LY2140023</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000974</id>
+      <name>Metabotropic glutamate receptor 2</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q14416" source="Swiss-Prot">
+        <name>Metabotropic glutamate receptor 2</name>
+        <general-function>Group ii metabotropic glutamate receptor activity</general-function>
+        <specific-function>G-protein coupled receptor for glutamate. Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase. Signaling inhibits adenylate cyclase activity. May mediate suppression of neurotransmission or may be involved in synaptogenesis or synaptic stabilization.</specific-function>
+        <gene-name>GRM2</gene-name>
+        <locus>3p21.1</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>568-590
+605-625
+637-655
+680-700
+726-747
+761-783
+794-819</transmembrane-regions>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>8.16</theoretical-pi>
+        <molecular-weight>95566.715</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4594</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GRM2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L35318</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>999416</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>290</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>290</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q14416</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GRM2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GPRC1B</synonym>
+          <synonym>MGLUR2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010682|Metabotropic glutamate receptor 2
+MGSLLALLALLLLWGAVAEGPAKKVLTLEGDLVLGGLFPVHQKGGPAEDCGPVNEHRGIQ
+RLEAMLFALDRINRDPHLLPGVRLGAHILDSCSKDTHALEQALDFVRASLSRGADGSRHI
+CPDGSYATHGDAPTAITGVIGGSYSDVSIQVANLLRLFQIPQISYASTSAKLSDKSRYDY
+FARTVPPDFFQAKAMAEILRFFNWTYVSTVASEGDYGETGIEAFELEARARNICVATSEK
+VGRAMSRAAFEGVVRALLQKPSARVAVLFTRSEDARELLAASQRLNASFTWVASDGWGAL
+ESVVAGSEGAAEGAITIELASYPISDFASYFQSLDPWNNSRNPWFREFWEQRFRCSFRQR
+DCAAHSLRAVPFEQESKIMFVVNAVYAMAHALHNMHRALCPNTTRLCDAMRPVNGRRLYK
+DFVLNVKFDAPFRPADTHNEVRFDRFGDGIGRYNIFTYLRAGSGRYRYQKVGYWAEGLTL
+DTSLIPWASPSAGPLPASRCSEPCLQNEVKSVQPGEVCCWLCIPCQPYEYRLDEFTCADC
+GLGYWPNASLTGCFELPQEYIRWGDAWAVGPVTIACLGALATLFVLGVFVRHNATPVVKA
+SGRELCYILLGGVFLCYCMTFIFIAKPSTAVCTLRRLGLGTAFSVCYSALLTKTNRIARI
+FGGAREGAQRPRFISPASQVAICLALISGQLLIVVAWLVVEAPGTGKETAPERREVVTLR
+CNHRDASMLGSLAYNVLLIALCTLYAFKTRKCPENFNEAKFIGFTMYTTCIIWLAFLPIF
+YVTSSDYRVQTTTMCVSVSLSGSVVLGCLFAPKLHIILFQPQKNVVSHRAPTSRFGSAAA
+RASSSLGQGSGSQFVPTVCNGREVVDSTTSSL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010683|Metabotropic glutamate receptor 2 (GRM2)
+ATGGGATCGCTGCTTGCGCTCCTGGCACTGCTGCTGCTGTGGGGTGCTGTGGCTGAGGGC
+CCAGCCAAGAAGGTGCTGACCCTGGAGGGAGACTTGGTGCTGGGTGGGCTGTTCCCAGTG
+CACCAGAAGGGCGGCCCAGCAGAGGACTGTGGTCCTGTCAATGAGCACCGTGGCATCCAG
+CGCCTGGAGGCCATGCTTTTTGCACTGGACCGCATCAACCGTGACCCGCACCTGCTGCCT
+GGCGTGCGCCTGGGTGCACACATCCTCGACAGTTGCTCCAAGGACACACATGCGCTGGAG
+CAGGCACTGGACTTTGTGCGTGCCTCACTCAGCCGTGGTGCTGATGGCTCACGCCACATC
+TGCCCCGACGGCTCTTATGCGACCCATGGTGATGCTCCCACTGCCATCACTGGTGTTATT
+GGCGGTTCCTACAGTGATGTCTCCATCCAGGTGGCCAACCTCTTGAGGCTATTTCAGATC
+CCACAGATTAGCTACGCCTCTACCAGTGCCAAGCTGAGTGACAAGTCCCGCTATGACTAC
+TTTGCCCGCACAGTGCCTCCTGACTTCTTCCAAGCCAAGGCCATGGCTGAGATTCTCCGC
+TTCTTCAACTGGACCTATGTGTCCACTGTGGCGTCTGAGGGCGACTATGGCGAGACAGGC
+ATTGAGGCCTTTGAGCTAGAGGCTCGTGCCCGCAACATCTGTGTGGCCACCTCGGAGAAA
+GTGGGCCGTGCCATGAGCCGCGCGGCCTTTGAGGGTGTGGTGCGAGCCCTGCTGCAGAAG
+CCCAGTGCCCGCGTGGCTGTCCTGTTCACCCGTTCTGAGGATGCCCGGGAGCTGCTTGCT
+GCCAGCCAGCGCCTCAATGCCAGCTTCACCTGGGTGGCCAGTGATGGTTGGGGGGCCCTG
+GAGAGTGTGGTGGCAGGCAGTGAGGGGGCTGCTGAGGGTGCTATCACCATCGAGCTGGCC
+TCCTACCCCATCAGTGACTTTGCCTCCTACTTCCAGAGCCTGGACCCTTGGAACAACAGC
+CGGAACCCCTGGTTCCGTGAATTCTGGGAGCAGAGGTTCCGCTGCAGCTTCCGGCAGCGA
+GACTGCGCAGCCCACTCTCTCCGGGCTGTGCCCTTTGAGCAGGAGTCCAAGATCATGTTT
+GTGGTCAATGCAGTGTACGCCATGGCCCATGCGCTCCACAACATGCACCGTGCCCTCTGC
+CCCAACACCACCCGGCTCTGTGACGCGATGCGGCCAGTTAACGGGCGCCGCCTCTACAAG
+GACTTTGTGCTCAACGTCAAGTTTGATGCCCCCTTTCGCCCAGCTGACACCCACAATGAG
+GTCCGCTTTGACCGCTTTGGTGATGGTATTGGCCGCTACAACATCTTCACCTATCTGCGT
+GCAGGCAGTGGGCGCTATCGCTACCAGAAGGTGGGCTACTGGGCAGAAGGCTTGACTCTG
+GACACCAGCCTCATCCCATGGGCCTCACCCTCAGCCGGCCCCCTGCCCGCCTCTCGCTGC
+AGTGAGCCCTGCCTCCAGAATGAGGTGAAGAGTGTGCAGCCGGGCGAAGTCTGCTGCTGG
+CTCTGCATTCCGTGCCAGCCCTATGAGTACCGATTGGACGAATTCACTTGCGCTGATTGT
+GGCCTGGGCTACTGGCCCAATGCCAGCCTGACTGGCTGCTTCGAACTGCCCCAGGAGTAC
+ATCCGCTGGGGCGATGCCTGGGCTGTGGGACCTGTCACCATCGCCTGCCTCGGTGCCCTG
+GCCACCCTCTTTGTGCTGGGTGTCTTTGTGCGGCACAATGCCACACCAGTGGTCAAGGCC
+TCAGGTCGGGAGCTCTGCTACATCCTGCTGGGTGGTGTCTTCCTCTGCTACTGCATGACC
+TTCATCTTCATTGCCAAGCCATCCACGGCAGTGTGTACCTTACGGCGTCTTGGTTTGGGC
+ACTGCCTTCTCTGTCTGCTACTCAGCCCTGCTCACCAAGACCAACCGCATTGCACGCATC
+TTCGGTGGGGCCCGGGAGGGTGCCCAGCGGCCACGCTTCATCAGTCCTGCCTCACAGGTG
+GCCATCTGCCTGGCACTTATCTCGGGCCAGCTGCTCATCGTGGTCGCCTGGCTGGTGGTG
+GAGGCACCGGGCACAGGCAAGGAGACAGCCCCCGAACGGCGGGAGGTGGTGACACTGCGC
+TGCAACCACCGCGATGCAAGTATGTTGGGCTCGCTGGCCTACAATGTGCTCCTCATCGCG
+CTCTGCACGCTTTATGCCTTCAAGACTCGCAAGTGCCCCGAAAACTTCAACGAGGCCAAG
+TTCATTGGCTTCACCATGTACACCACCTGCATCATCTGGCTGGCATTCCTGCCCATCTTC
+TATGTCACCTCCAGTGACTACCGGGTACAGACCACCACCATGTGCGTGTCAGTCAGCCTC
+AGCGGCTCCGTGGTGCTTGGCTGCCTCTTTGCGCCCAAGCTGCACATCATCCTCTTCCAG
+CCGCAGAAGAACGTGGTTAGCCACCGGGCACCCACCAGCCGCTTTGGCAGTGCTGCTGCC
+AGGGCCAGCTCCAGCCTTGGCCAAGGGTCTGGCTCCCAGTTTGTCCCCACTGTTTGCAAT
+GGCCGTGAGGTGGTGGACTCGACAACGTCATCGCTTTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00003</identifier>
+            <name>7tm_3</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01094</identifier>
+            <name>ANF_receptor</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07562</identifier>
+            <name>NCD3G</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>cell junction</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendrite</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>intracellular</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>presynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>group II metabotropic glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>G-protein coupled glutamate receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glutamate secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic transmission, glutamatergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002342</id>
+      <name>Metabotropic glutamate receptor 3</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q14832" source="Swiss-Prot">
+        <name>Metabotropic glutamate receptor 3</name>
+        <general-function>Group ii metabotropic glutamate receptor activity</general-function>
+        <specific-function>G-protein coupled receptor for glutamate. Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors. Signaling inhibits adenylate cyclase activity.</specific-function>
+        <gene-name>GRM3</gene-name>
+        <locus>7q21.1-q21.2</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>577-599
+614-634
+646-664
+689-709
+735-756
+770-792
+803-828</transmembrane-regions>
+        <signal-regions>1-22</signal-regions>
+        <theoretical-pi>7.7</theoretical-pi>
+        <molecular-weight>98878.05</molecular-weight>
+        <chromosome-location>7</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:4595</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GRM3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X77748</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1171564</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>291</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>291</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q14832</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GRM3_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>GPRC1C</synonym>
+          <synonym>MGLUR3</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0004599|Metabotropic glutamate receptor 3
+MKMLTRLQVLTLALFSKGFLLSLGDHNFLRREIKIEGDLVLGGLFPINEKGTGTEECGRI
+NEDRGIQRLEAMLFAIDEINKDDYLLPGVKLGVHILDTCSRDTYALEQSLEFVRASLTKV
+DEAEYMCPDGSYAIQENIPLLIAGVIGGSYSSVSIQVANLLRLFQIPQISYASTSAKLSD
+KSRYDYFARTVPPDFYQAKAMAEILRFFNWTYVSTVASEGDYGETGIEAFEQEARLRNIC
+IATAEKVGRSNIRKSYDSVIRELLQKPNARVVVLFMRSDDSRELIAAASRANASFTWVAS
+DGWGAQESIIKGSEHVAYGAITLELASQPVRQFDRYFQSLNPYNNHRNPWFRDFWEQKFQ
+CSLQNKRNHRRVCDKHLAIDSSNYEQESKIMFVVNAVYAMAHALHKMQRTLCPNTTKLCD
+AMKILDGKKLYKDYLLKINFTAPFNPNKDADSIVKFDTFGDGMGRYNVFNFQNVGGKYSY
+LKVGHWAETLSLDVNSIHWSRNSVPTSQCSDPCAPNEMKNMQPGDVCCWICIPCEPYEYL
+ADEFTCMDCGSGQWPTADLTGCYDLPEDYIRWEDAWAIGPVTIACLGFMCTCMVVTVFIK
+HNNTPLVKASGRELCYILLFGVGLSYCMTFFFIAKPSPVICALRRLGLGSSFAICYSALL
+TKTNCIARIFDGVKNGAQRPKFISPSSQVFICLGLILVQIVMVSVWLILEAPGTRRYTLA
+EKRETVILKCNVKDSSMLISLTYDVILVILCTVYAFKTRKCPENFNEAKFIGFTMYTTCI
+IWLAFLPIFYVTSSDYRVQTTTMCISVSLSGFVVLGCLFAPKVHIILFQPQKNVVTHRLH
+LNRFSVSGTGTTYSQSSASTYVPTVCNGREVLDSTTSSL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011682|Metabotropic glutamate receptor 3 (GRM3)
+ATGAAGATGTTGACAAGACTGCAAGTTCTTACCTTAGCTTTGTTTTCAAAGGGATTTTTA
+CTCTCTTTAGGGGACCATAACTTTCTAAGGAGAGAGATTAAAATAGAAGGTGACCTTGTT
+TTAGGGGGCCTGTTTCCTATTAACGAAAAAGGCACTGGAACTGAAGAATGTGGGCGAATC
+AATGAAGACCGAGGGATTCAACGCCTGGAAGCCATGTTGTTTGCTATTGATGAAATCAAC
+AAAGATGATTACTTGCTACCAGGAGTGAAGTTGGGTGTTCACATTTTGGATACATGTTCA
+AGGGATACCTATGCATTGGAGCAATCACTGGAGTTTGTCAGGGCATCTTTGACAAAAGTG
+GATGAAGCTGAGTATATGTGTCCTGATGGATCCTATGCCATTCAAGAAAACATCCCACTT
+CTCATTGCAGGGGTCATTGGTGGCTCTTATAGCAGTGTTTCCATACAGGTGGCAAACCTG
+CTGCGGCTCTTCCAGATCCCTCAGATCAGCTACGCATCCACCAGCGCCAAACTCAGTGAT
+AAGTCGCGCTATGATTACTTTGCCAGGACCGTGCCCCCCGACTTCTACCAGGCCAAAGCC
+ATGGCTGAGATCTTGCGCTTCTTCAACTGGACCTACGTGTCCACAGTAGCCTCCGAGGGT
+GATTACGGGGAGACAGGGATCGAGGCCTTCGAGCAGGAAGCCCGCCTGCGCAACATCTGC
+ATCGCTACGGCGGAGAAGGTGGGCCGCTCCAACATCCGCAAGTCCTACGACAGCGTGATC
+CGAGAACTGTTGCAGAAGCCCAACGCGCGCGTCGTGGTCCTCTTCATGCGCAGCGACGAC
+TCGCGGGAGCTCATTGCAGCCGCCAGCCGCGCCAATGCCTCCTTCACCTGGGTGGCCAGC
+GACGGCTGGGGCGCGCAGGAGAGCATCATCAAGGGCAGCGAGCATGTGGCCTACGGCGCC
+ATCACCCTGGAGCTGGCCTCCCAGCCTGTCCGCCAGTTCGACCGCTACTTCCAGAGCCTC
+AACCCCTACAACAACCACCGCAACCCCTGGTTCCGGGACTTCTGGGAGCAAAAGTTTCAG
+TGCAGCCTCCAGAACAAACGCAACCACAGGCGCGTCTGCGACAAGCACCTGGCCATCGAC
+AGCAGCAACTACGAGCAAGAGTCCAAGATCATGTTTGTGGTGAACGCGGTGTATGCCATG
+GCCCACGCTTTGCACAAAATGCAGCGCACCCTCTGTCCCAACACTACCAAGCTTTGTGAT
+GCTATGAAGATCCTGGATGGGAAGAAGTTGTACAAGGATTACTTGCTGAAAATCAACTTC
+ACGGCTCCATTCAACCCAAATAAAGATGCAGATAGCATAGTCAAGTTTGACACTTTTGGA
+GATGGAATGGGGCGATACAACGTGTTCAATTTCCAAAATGTAGGTGGAAAGTATTCCTAC
+TTGAAAGTTGGTCACTGGGCAGAAACCTTATCGCTAGATGTCAACTCTATCCACTGGTCC
+CGGAACTCAGTCCCCACTTCCCAGTGCAGCGACCCCTGTGCCCCCAATGAAATGAAGAAT
+ATGCAACCAGGGGATGTCTGCTGCTGGATTTGCATCCCCTGTGAACCCTACGAATACCTG
+GCTGATGAGTTTACCTGTATGGATTGTGGGTCTGGACAGTGGCCCACTGCAGACCTAACT
+GGATGCTATGACCTTCCTGAGGACTACATCAGGTGGGAAGACGCCTGGGCCATTGGCCCA
+GTCACCATTGCCTGTCTGGGTTTTATGTGTACATGCATGGTTGTAACTGTTTTTATCAAG
+CACAACAACACACCCTTGGTCAAAGCATCGGGCCGAGAACTCTGCTACATCTTATTGTTT
+GGGGTTGGCCTGTCATACTGCATGACATTCTTCTTCATTGCCAAGCCATCACCAGTCATC
+TGTGCATTGCGCCGACTCGGGCTGGGGAGTTCCTTCGCTATCTGTTACTCAGCCCTGCTG
+ACCAAGACAAACTGCATTGCCCGCATCTTCGATGGGGTCAAGAATGGCGCTCAGAGGCCA
+AAATTCATCAGCCCCAGTTCTCAGGTTTTCATCTGCCTGGGTCTGATCCTGGTGCAAATT
+GTGATGGTGTCTGTGTGGCTCATCCTGGAGGCCCCAGGCACCAGGAGGTATACCCTTGCA
+GAGAAGCGGGAAACAGTCATCCTAAAATGCAATGTCAAAGATTCCAGCATGTTGATCTCT
+CTTACCTACGATGTGATCCTGGTGATCTTATGCACTGTGTACGCCTTCAAAACGCGGAAG
+TGCCCAGAAAATTTCAACGAAGCTAAGTTCATAGGTTTTACCATGTACACCACGTGCATC
+ATCTGGTTGGCCTTCCTCCCTATATTTTATGTGACATCAAGTGACTACAGAGTGCAGACG
+ACAACCATGTGCATCTCTGTCAGCCTGAGTGGCTTTGTGGTCTTGGGCTGTTTGTTTGCA
+CCCAAGGTTCACATCATCCTGTTTCAACCCCAGAAGAATGTTGTCACACACAGACTGCAC
+CTCAACAGGTTCAGTGTCAGTGGAACTGGGACCACATACTCTCAGTCCTCTGCAAGCACG
+TATGTGCCAACGGTGTGCAATGGGCGGGAAGTCCTCGACTCCACCACCTCATCTCTGTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00003</identifier>
+            <name>7tm_3</name>
+          </pfam>
+          <pfam>
+            <identifier>PF01094</identifier>
+            <name>ANF_receptor</name>
+          </pfam>
+          <pfam>
+            <identifier>PF07562</identifier>
+            <name>NCD3G</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>axon</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>dendritic spine</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic density</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>postsynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>presynaptic membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium channel regulator activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>group II metabotropic glutamate receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>adenylate cyclase-inhibiting G-protein coupled glutamate receptor signaling pathway</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of adenylate cyclase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of synaptic transmission, glutamatergic</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>synaptic transmission</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

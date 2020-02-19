@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03773</drugbank-id>
+  <drugbank-id>EXPT01536</drugbank-id>
+  <drugbank-id>EXPT01615</drugbank-id>
+  <drugbank-id>DB04319</drugbank-id>
+  <name>alpha-D-quinovopyranose</name>
+  <description>The pyranose form of D-quinovose with an α-configuration at the anomeric position .</description>
+  <cas-number>7658-08-4</cas-number>
+  <unii>68BDH91OBS</unii>
+  <average-mass>164.1565</average-mass>
+  <monoisotopic-mass>164.068473494</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as hexoses. These are monosaccharides in which the sugar unit is a is a six-carbon containing moeity.</description>
+    <direct-parent>Hexoses</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Carbohydrates and carbohydrate conjugates</subclass>
+    <alternative-parent>Hemiacetals</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Oxanes</alternative-parent>
+    <alternative-parent>Polyols</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <substituent>Alcohol</substituent>
+    <substituent>Aliphatic heteromonocyclic compound</substituent>
+    <substituent>Hemiacetal</substituent>
+    <substituent>Hexose monosaccharide</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Oxane</substituent>
+    <substituent>Polyol</substituent>
+    <substituent>Secondary alcohol</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="english" coder="">D-Chinovose</synonym>
+    <synonym language="english" coder="">D-Epifucose</synonym>
+    <synonym language="english" coder="">D-Glucomethylose</synonym>
+    <synonym language="english" coder="">D-Quinovose</synonym>
+    <synonym language="english" coder="">Isorhamnose</synonym>
+    <synonym language="english" coder="">Isorhodeose</synonym>
+    <synonym language="english" coder="">Quinovose</synonym>
+    <synonym language="english" coder="">α-D-quinovopyranose</synonym>
+  </synonyms>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>Carbohydrates</category>
+      <mesh-id>D002241</mesh-id>
+    </category>
+    <category>
+      <category>Deoxy Sugars</category>
+      <mesh-id>D003837</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1a47</pdb-entry>
+    <pdb-entry>1au1</pdb-entry>
+    <pdb-entry>1b2y</pdb-entry>
+    <pdb-entry>1dtu</pdb-entry>
+    <pdb-entry>1kck</pdb-entry>
+    <pdb-entry>1mmy</pdb-entry>
+    <pdb-entry>1ua7</pdb-entry>
+    <pdb-entry>1ukq</pdb-entry>
+    <pdb-entry>2cxg</pdb-entry>
+    <pdb-entry>2dij</pdb-entry>
+    <pdb-entry>3bc9</pdb-entry>
+    <pdb-entry>3bmw</pdb-entry>
+    <pdb-entry>3old</pdb-entry>
+    <pdb-entry>3ole</pdb-entry>
+    <pdb-entry>3olg</pdb-entry>
+    <pdb-entry>3oli</pdb-entry>
+    <pdb-entry>4e2o</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.4</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>8.27e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-1.9</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S,3R,4S,5S,6R)-6-methyloxane-2,3,4,5-tetrol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>6-deoxy-α-D-glucopyranose</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>164.1565</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>164.068473494</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(C)O[C@]([H])(O)[C@]([H])(O)[C@@]([H])(O)[C@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C6H12O5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C6H12O5/c1-2-3(7)4(8)5(9)6(10)11-2/h2-10H,1H3/t2-,3-,4+,5-,6+/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>SHZGCJCMOBCMKK-DVKNGEFBSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>90.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>34.38</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>15.17</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>11.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-3.6</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>42606</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>441480</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46506823</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C08352</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>390204</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>G6D</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0002639</id>
+      <name>Pancreatic alpha-amylase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04746" source="Swiss-Prot">
+        <name>Pancreatic alpha-amylase</name>
+        <general-function>Chloride ion binding</general-function>
+        <specific-function/>
+        <gene-name>AMY2A</gene-name>
+        <locus>1p21</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>7.05</theoretical-pi>
+        <molecular-weight>57706.51</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:477</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AMY2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18785</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04746</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMYP_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase</synonym>
+          <synonym>3.2.1.1</synonym>
+          <synonym>PA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0005176|Pancreatic alpha-amylase
+MKFFLLLFTIGFCWAQYSPNTQQGRTSIVHLFEWRWVDIALECERYLAPKGFGGVQVSPP
+NENVAIYNPFRPWWERYQPVSYKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMCGN
+AVSAGTSSTCGSYFNPGSRDFPAVPYSGWDFNDGKCKTGSGDIENYNDATQVRDCRLTGL
+LDLALEKDYVRSKIAEYMNHLIDIGVAGFRLDASKHMWPGDIKAILDKLHNLNSNWFPAG
+SKPFIYQEVIDLGGEPIKSSDYFGNGRVTEFKYGAKLGTVIRKWNGEKMSYLKNWGEGWG
+FVPSDRALVFVDNHDNQRGHGAGGASILTFWDARLYKMAVGFMLAHPYGFTRVMSSYRWP
+RQFQNGNDVNDWVGPPNNNGVIKEVTINPDTTCGNDWVCEHRWRQIRNMVIFRNVVDGQP
+FTNWYDNGSNQVAFGRGNRGFIVFNNDDWSFSLTLQTGLPAGTYCDVISGDKINGNCTGI
+KIYVSDDGKAHFSISNSAEDPFIAIHAESKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011869|Pancreatic alpha-amylase (AMY2A)
+ATGAAGTTCTTTCTGTTGCTTTTCACCATTGGGTTCTGCTGGGCTCAGTATTCCCCAAAT
+ACACAACAAGGACGGACATCTATTGTTCATCTGTTTGAATGGCGATGGGTTGATATTGCT
+CTTGAATGTGAGCGATATTTAGCTCCGAAGGGATTTGGAGGGGTTCAGGTCTCTCCACCA
+AATGAAAATGTTGCAATTTACAACCCTTTCAGACCTTGGTGGGAAAGATACCAACCAGTT
+AGCTATAAATTATGCACAAGATCTGGAAATGAAGATGAATTTAGAAACATGGTGACTAGA
+TGTAACAATGTTGGGGTTCGTATTTATGTGGATGCTGTAATTAATCATATGTGTGGTAAC
+GCTGTGAGTGCAGGAACAAGCAGTACCTGTGGAAGTTACTTCAACCCTGGAAGTAGGGAC
+TTTCCAGCAGTCCCATATTCTGGATGGGATTTCAATGATGGTAAATGTAAAACTGGAAGT
+GGAGATATCGAGAACTACAATGATGCTACTCAGGTCAGAGATTGTCGTCTGACTGGTCTT
+CTTGATCTTGCACTGGAGAAGGATTACGTGCGTTCTAAGATTGCCGAATATATGAACCAT
+CTCATTGACATTGGTGTTGCAGGGTTCAGACTTGATGCTTCCAAGCACATGTGGCCTGGA
+GACATAAAGGCAATTTTGGACAAACTGCATAATCTAAACAGTAACTGGTTCCCTGCAGGA
+AGTAAACCTTTCATTTACCAGGAGGTAATTGATCTGGGTGGTGAGCCAATTAAAAGCAGT
+GACTACTTTGGTAATGGCCGGGTGACAGAATTCAAGTATGGTGCAAAACTCGGCACAGTT
+ATTCGCAAGTGGAATGGAGAGAAGATGTCTTACTTAAAGAACTGGGGAGAAGGTTGGGGT
+TTCGTACCTTCTGACAGAGCGCTTGTCTTTGTGGATAACCATGACAATCAACGAGGACAT
+GGGGCTGGAGGAGCCTCTATTCTTACCTTCTGGGATGCTAGGCTGTACAAAATGGCAGTT
+GGATTTATGCTTGCTCATCCTTACGGATTTACACGAGTAATGTCAAGCTACCGTTGGCCA
+AGACAGTTTCAAAATGGAAACGATGTTAATGATTGGGTTGGGCCACCAAATAATAATGGA
+GTAATTAAAGAAGTTACTATTAATCCAGACACTACTTGTGGCAATGACTGGGTCTGTGAA
+CATCGATGGCGCCAAATAAGGAACATGGTTATTTTCCGCAATGTAGTGGATGGCCAGCCT
+TTTACAAATTGGTATGATAATGGGAGCAACCAAGTGGCTTTTGGGAGAGGAAACAGAGGA
+TTCATTGTTTTCAACAATGATGACTGGTCATTTTCTTTAACTTTGCAAACTGGTCTTCCT
+GCTGGCACATACTGTGATGTCATTTCTGGAGATAAAATTAATGGCAATTGCACAGGCATT
+AAAATTTACGTTTCTGATGATGGCAAAGCTCATTTTTCTATTAGTAACTCTGCTGAAGAT
+CCATTTATTGCAATTCATGCTGAATCTAAATTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polysaccharide digestion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="3">
+      <id>BE0001243</id>
+      <name>Cyclomaltodextrin glucanotransferase</name>
+      <organism>Bacillus circulans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P30920" source="Swiss-Prot">
+        <name>Cyclomaltodextrin glucanotransferase</name>
+        <general-function>Starch binding</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-34</signal-regions>
+        <theoretical-pi>6.65</theoretical-pi>
+        <molecular-weight>78046.265</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1397">Bacillus circulans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>X68326</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>39420</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P30920</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CDGT1_BACCI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.19</synonym>
+          <synonym>CGTase</synonym>
+          <synonym>Cyclodextrin-glycosyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016362|Cyclomaltodextrin glucanotransferase
+MFQMAKRAFLSTTLTLGLLAGSALPFLPASAVYADPDTAVTNKQSFSTDVIYQVFTDRFL
+DGNPSNNPTGAAYDATCSNLKLYCGGDWQGLINKINDNYFSDLGVTALWISQPVENIFAT
+INYSGVTNTAYHGYWARDFKKTNPYFGTMADFQNLITTAHAKGIKIVIDFAPNHTSPAME
+TDTSFAENGRLYDNGTLVGGYTNDTNGYFHHNGGSDFSSLENGIYKNLYDLADFNHNNAT
+IDKYFKDAIKLWLDMGVDGIRVDAVKHMPLGWQKSWMSSIYAHKPVFTFGEWFLGSAASD
+ADNTDFANKSGMSLLDFRFNSAVRNVFRDNTSNMYALDSMINSTATDYNQVNDQVTFIDN
+HDMDRFKTSAVNNRRLEQALAFTLTSRGVPAIYYGTEQYLTGNGDPDNRAKMPSFSKSTT
+AFNVISKLAPLRKSNPAIAYGSTQQRWINNDVYVYERKFGKSVAVVAVNRNLSTSASITG
+LSTSLPTGSYTDVLGGVLNGNNITSTNGSINNFTLAAGATAVWQYTTAETTPTIGHVGPV
+MGKPGNVVTIDGRGFGSTKGTVYFGTTAVTGAAITSWEDTQIKVTIPSVAAGNYAVKVAA
+SGVNSNAYNNFTILTGDQVTVRFVVNNASTTLGQNLYLTGNVAELGNWSTGSTAIGPAFN
+QVIHQYPTWYYDVSVPAGKQLEFKFFKKNGSTITWESGSNHTFTTPASGTATVTVNWQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0002474|2157 bp
+ATGTTTCAAATGGCCAAACGCGCATTCCTCAGCACCACACTGACCCTCGGCTTGCTTGCC
+GGCAGCGCCCTGCCGTTCTTGCCAGCTTCCGCTGTATACGCCGATCCGGACACTGCTGTG
+ACCAACAAACAGAGCTTCAGTACAGATGTGATCTACCAAGTATTTACGGATCGCTTTTTG
+GACGGCAATCCCTCCAACAACCCCACCGGAGCCGCTTATGATGCCACATGCAGCAATTTG
+AAGCTGTACTGCGGCGGAGACTGGCAAGGGTTAATCAACAAAATCAACGATAACTATTTC
+AGTGATCTGGGTGTCACAGCGTTGTGGATCTCCCAGCCTGTCGAAAATATTTTTGCGACG
+ATCAACTATAGCGGTGTAACCAATACTGCCTACCACGGCTACTGGGCTCGAGACTTCAAA
+AAGACCAATCCGTACTTCGGCACGATGGCGGACTTTCAGAACCTGATTACGACGGCTCAT
+GCCAAAGGCATCAAGATTGTCATTGACTTTGCACCGAATCACACCTCTCCAGCGATGGAA
+ACCGACACCTCTTTTGCCGAAAATGGCAGACTGTACGATAACGGTACACTGGTAGGCGGT
+TATACCAATGATACCAACGGGTACTTCCATCACAATGGCGGCTCCGACTTCTCTTCCCTG
+GAGAACGGCATCTACAAAAACCTGTATGACCTGGCCGACTTCAACCACAATAATGCGACC
+ATCGACAAATACTTCAAAGATGCGATCAAACTGTGGCTTGATATGGGCGTTGACGGTATT
+CGGGTGGATGCGGTGAAACATATGCCTCTCGGTTGGCAAAAGAGCTGGATGTCCTCCATC
+TACGCACACAAACCCGTGTTCACTTTTGGAGAATGGTTCTTGGGATCAGCTGCATCCGAT
+GCAGATAACACGGATTTTGCTAACAAGTCTGGTATGAGCCTGCTCGACTTCCGCTTTAAC
+TCTGCGGTGCGTAATGTGTTCCGTGACAACACGTCCAACATGTACGCTCTGGATTCCATG
+ATTAACAGCACAGCTACGGACTACAACCAAGTGAACGATCAGGTGACGTTCATCGACAAC
+CATGATATGGATCGTTTCAAAACAAGTGCGGTCAACAATCGCCGTCTGGAACAGGCTTTG
+GCCTTCACATTGACTTCACGTGGTGTACCTGCCATCTACTATGGTACTGAACAGTATTTG
+ACGGGGAATGGCGATCCAGATAACCGGGCCAAAATGCCTTCGTTCTCCAAATCCACTACA
+GCTTTTAACGTCATAAGTAAACTCGCGCCTCTGCGCAAATCCAATCCGGCCATTGCCTAC
+GGTTCCACACAGCAGCGCTGGATTAATAATGATGTATATGTTTATGAGCGTAAATTCGGC
+AAGAGCGTAGCCGTTGTCGCGGTAAACCGCAATCTTTCCACGTCTGCAAGCATTACAGGG
+TTAAGCACTTCCCTGCCTACAGGCTCATACACGGATGTGCTTGGCGGGGTGCTGAACGGA
+AATAACATCACCTCCACGAATGGTAGCATTAACAACTTCACCCTTGCTGCGGGTGCAACG
+GCAGTATGGCAATACACAACTGCCGAAACAACACCAACCATCGGTCATGTTGGTCCGGTT
+ATGGGGAAACCCGGTAATGTGGTGACAATTGATGGCCGTGGATTCGGCTCGACGAAAGGC
+ACGGTCTACTTCGGCACTACAGCGGTTACCGGAGCAGCGATTACGTCTTGGGAAGATACA
+CAGATTAAAGTAACCATCCCTTCCGTTGCCGCTGGCAACTATGCAGTCAAAGTTGCGGCA
+AGCGGGGTAAACAGCAATGCATACAACAACTTCACCATCCTGACTGGCGATCAGGTCACC
+GTTCGCTTCGTCGTAAACAATGCGTCCACAACGCTTGGACAGAACCTCTATTTGACAGGC
+AACGTAGCCGAGCTTGGCAACTGGAGCACCGGTTCGACTGCCATTGGACCCGCATTCAAT
+CAGGTCATTCATCAATACCCAACCTGGTACTATGATGTCAGCGTACCGGCAGGCAAACAG
+CTGGAGTTCAAATTTTTCAAGAAAAACGGTTCAACGATTACATGGGAAAGCGGTTCTAAC
+CACACATTCACTACACCAGCGAGCGGAACAGCCACCGTTACGGTGAACTGGCAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01833</identifier>
+            <name>TIG</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00686</identifier>
+            <name>CBM_20</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cyclomaltodextrin glucanotransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>starch binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="4">
+      <id>BE0001734</id>
+      <name>Alpha-amylase</name>
+      <organism>Bacillus amyloliquefaciens</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00692" source="Swiss-Prot">
+        <name>Alpha-amylase</name>
+        <general-function>Calcium ion binding</general-function>
+        <specific-function/>
+        <gene-name/>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-31</signal-regions>
+        <theoretical-pi>6.04</theoretical-pi>
+        <molecular-weight>58402.605</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1390">Bacillus amyloliquefaciens</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J01542</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>142429</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00692</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMY_BACAM</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase</synonym>
+          <synonym>3.2.1.1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016542|Alpha-amylase
+MIQKRKRTVSFRLVLMCTLLFVSLPITKTSAVNGTLMQYFEWYTPNDGQHWKRLQNDAEH
+LSDIGITAVWIPPAYKGLSQSDNGYGPYDLYDLGEFQQKGTVRTKYGTKSELQDAIGSLH
+SRNVQVYGDVVLNHKAGADATEDVTAVEVNPANRNQETSEEYQIKAWTDFRFPGRGNTYS
+DFKWHWYHFDGADWDESRKISRIFKFRGEGKAWDWEVSSENGNYDYLMYADVDYDHPDVV
+AETKKWGIWYANELSLDGFRIDAAKHIKFSFLRDWVQAVRQATGKEMFTVAEYWQNNAGK
+LENYLNKTSFNQSVFDVPLHFNLQAASSQGGGYDMRRLLDGTVVSRHPEKAVTFVENHDT
+QPGQSLESTVQTWFKPLAYAFILTRESGYPQVFYGDMYGTKGTSPKEIPSLKDNIEPILK
+ARKEYAYGPQHDYIDHPDVIGWTREGDSSAAKSGLAALITDGPGGSKRMYAGLKNAGETW
+YDITGNRSDTVKIGSDGWGEFHVNDGSVSIYVQK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0003437|1545 bp
+ATGATTCAAAAACGAAAGCGGACAGTTTCGTTCAGACTTGTGCTTATGTGCACGCTGTTA
+TTTGTCAGTTTGCCGATTACAAAAACATCAGCCGTAAATGGCACGCTGATGCAGTATTTT
+GAATGGTATACGCCGAACGACGGCCAGCATTGGAAACGATTGCAGAATGATGCGGAACAT
+TTATCGGATATCGGAATCACTGCCGTCTGGATTCCTCCCGCATACAAAGGATTGAGCCAA
+TCCGATAACGGATACGGACCTTATGATTTGTATGATTTAGGAGAATTCCAGCAAAAAGGG
+ACGGTCAGAACGAAATACGGCACAAAATCAGAGCTTCAAGATGCGATCGGCTCACTGCAT
+TCCCGGAACGTCCAAGTATACGGAGATGTGGTTTTGAATCATAAGGCTGGTGCTGATGCA
+ACAGAAGATGTAACTGCCGTCGAAGTCAATCCGGCCAATAGAAATCAGGAAACTTCGGAG
+GAATATCAAATCAAAGCGTGGACGGATTTTCGTTTTCCGGGCCGTGGAAACACGTACAGT
+GATTTTAAATGGCATTGGTATCATTTCGACGGAGCGGACTGGGATGAATCCCGGAAGATC
+AGCCGCATCTTTAAGTTTCGTGGGGAAGGAAAAGCGTGGGATTGGGAAGTATCAAGTGAA
+AACGGCAACTATGACTATTTAATGTATGCTGATGTTGACTACGACCACCCTGATGTCGTG
+GCAGAGACAAAAAAATGGGGTATCTGGTATGCGAATGAACTGTCATTAGACGGCTTCCGT
+ATTGATGCCGCCAAACATATTAAATTTTCATTTCTGCGTGATTGGGTTCAGGCGGTCAGA
+CAGGCGACGGGAAAAGAAATGTTTACGGTTGCGGAGTATTGGCAGAATAATGCCGGGAAA
+CTCGAAAACTACTTGAATAAAACAAGCTTTAATCAATCCGTGTTTGATGTTCCGCTTCAT
+TTCAATTTACAGGCGGCTTCCTCACAAGGAGGCGGATATGATATGAGGCGTTTGCTGGAC
+GGTACCGTTGTGTCCAGGCATCCGGAAAAGGCGGTTACATTTGTTGAAAATCATGACACA
+CAGCCGGGACAGTCATTGGAATCGACAGTCCAAACTTGGTTTAAACCGCTTGCATACGCC
+TTTATTTTGACAAGAGAATCCGGTTATCCTCAGGTGTTCTATGGGGATATGTACGGGACA
+AAAGGGACATCGCCAAAGGAAATTCCCTCACTGAAAGATAATATAGAGCCGATTTTAAAA
+GCGCGTAAGGAGTACGCATACGGGCCCCAGCACGATTATATTGACCACCCGGATGTGATC
+GGATGGACGAGGGAAGGTGACAGCTCCGCCGCCAAATCAGGTTTGGCCGCTTTAATCACG
+GACGGACCCGGCGGATCAAAGCGGATGTATGCCGGCCTGAAAAATGCCGGCGAGACATGG
+TATGACATAACGGGCAACCGTTCAGATACTGTAAAAATCGGATCTGACGGCTGGGGAGAG
+TTTCATGTAAACGATGGGTCCGTCTCCATTTATGTTCAGAAATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF09154</identifier>
+            <name>DUF1939</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="5">
+      <id>BE0002844</id>
+      <name>Aldose 1-epimerase</name>
+      <organism>Lactococcus lactis</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q9ZB17" source="TrEMBL">
+        <name>Aldose 1-epimerase</name>
+        <general-function>Carbohydrate binding</general-function>
+        <specific-function>Converts alpha-aldose to the beta-anomer.</specific-function>
+        <gene-name>galM</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions/>
+        <signal-regions/>
+        <theoretical-pi>5.01</theoretical-pi>
+        <molecular-weight>37610.85</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="1358">Lactococcus lactis</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U60828</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q9ZB17</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q9ZB17_9LACT</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>5.1.3.3</synonym>
+          <synonym>Galactose mutarotase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012000|Aldose 1-epimerase
+MEIKIRDFGLGSDLISLTNKAGVTISFTNLGARIVDWQKDGKHLILGFDSAKEYLEKDAY
+PGATVGPTAGRIKDGLVKISGKDYILNQNEGPQTLHGGEESIHTKLWTYEVTDLGAEVQV
+KFSLVTNDGTNGYPGKIEMSVTHSFDDYNKWKIHYEAISDKDTVFNPTGHVYFNLNGDAS
+ESVENHGLRLAASRFVPLKDQTEIVRGDIVDIKNTDLDFRQEKQLSNAFNSNMEQVQLVK
+GIDHPFLLDQLGLDKEQARLTLDDTSISVFTDQPSIVIFTANFGDLGTLYHEKKQVHHGG
+ITFECQVSPGSEQIPELGDISLKAGEKYQATTIYSLHTK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0005568|1020 bp
+ATGGAAATTAAAATAAGAGATTTTGGCTTAGGAAGTGACTTAATTAGTCTAACCAATAAA
+GCAGGTGTCACAATTTCTTTTACAAATCTGGGCGCTCGGATTGTTGACTGGCAAAAAGAT
+GGAAAGCATCTGATTCTAGGCTTTGATTCAGCTAAAGAATATTTAGAAAAAGATGCCTAT
+CCTGGTGCAACAGTTGGACCTACAGCAGGAAGAATTAAGGATGGTTTGGTCAAAATTTCT
+GGAAAAGATTATATCTTAAATCAAAATGAAGGCCCTCAAACCTTACATGGTGGGGAAGAA
+AGTATTCATACTAAACTTTGGACATATGAAGTTACCGATTTAGGAGCTGAAGTTCAAGTC
+AAATTTTCCTTAGTTACTAATGACGGAACAAATGGTTATCCTGGTAAAATAGAAATGTCA
+GTAACTCATTCTTTTGATGATTACAATAAGTGGAAAATTCATTATGAGGCCATTTCTGAT
+AAAGACACTGTGTTTAATCCAACTGGGCATGTCTATTTTAATTTGAATGGTGATGCTAGT
+GAATCTGTTGAAAATCATGGACTTCGACTGGCCGCTTCAAGATTTGTTCCTTTAAAAGAC
+CAAACAGAAATTGTTCGTGGTGATATCGTTGATATAAAAAATACAGACTTGGATTTCCGT
+CAGGAAAAACAATTATCAAATGCCTTCAATTCTAATATGGAACAAGTTCAATTAGTTAAA
+GGAATTGACCATCCTTTCTTGTTAGACCAGTTAGGACTTGATAAAGAACAAGCTCGTTTA
+ACGCTTGATGATACTTCAATTTCAGTCTTTACCGACCAACCAAGTATTGTGATATTTACA
+GCAAATTTTGGTGATTTAGGAACTCTTTATCATGAGAAAAAGCAAGTGCACCATGGTGGA
+ATTACTTTTGAATGTCAAGTATCACCTGGGTCTGAGCAAATTCCAGAGCTTGGAGATATC
+AGCCTAAAAGCGGGAGAAAAATATCAAGCAACCACAATTTACAGCTTGCATACAAAATAA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01263</identifier>
+            <name>Aldose_epim</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>function</category>
+            <description>aldose 1-epimerase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>carbohydrate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>galactose metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="6">
+      <id>BE0001762</id>
+      <name>Cyclomaltodextrin glucanotransferase</name>
+      <organism>Thermoanaerobacter thermosulfurogenes</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P26827" source="Swiss-Prot">
+        <name>Cyclomaltodextrin glucanotransferase</name>
+        <general-function>Starch binding</general-function>
+        <specific-function>Degrades starch to alpha-, beta-, and gamma-cyclodextrins, as well as linear sugars.</specific-function>
+        <gene-name>amyA</gene-name>
+        <locus/>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-27</signal-regions>
+        <theoretical-pi>5.44</theoretical-pi>
+        <molecular-weight>78416.955</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="33950">Thermoanaerobacterium thermosulfurigenes</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M57692</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>1004352</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P26827</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>CDGT_THETU</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>2.4.1.19</synonym>
+          <synonym>CGTase</synonym>
+          <synonym>Cyclodextrin-glycosyltransferase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016550|Cyclomaltodextrin glucanotransferase
+MKKTFKLILVLMLSLTLVFGLTAPIQAASDTAVSNVVNYSTDVIYQIVTDRFVDGNTSNN
+PTGDLYDPTHTSLKKYFGGDWQGIINKINDGYLTGMGVTAIWISQPVENIYAVLPDSTFG
+GSTSYHGYWARDFKRTNPYFGSFTDFQNLINTAHAHNIKVIIDFAPNHTSPASETDPTYA
+ENGRLYDNGTLLGGYTNDTNGYFHHYGGTDFSSYEDGIYRNLFDLADLNQQNSTIDSYLK
+SAIKVWLDMGIDGIRLDAVKHMPFGWQKNFMDSILSYRPVFTFGEWFLGTNEIDVNNTYF
+ANESGMSLLDFRFSQKVRQVFRDNTDTMYGLDSMIQSTASDYNFINDMVTFIDNHDMDRF
+YNGGSTRPVEQALAFTLTSRGVPAIYYGTEQYMTGNGDPYNRAMMTSFNTSTTAYNVIKK
+LAPLRKSNPAIAYGTTQQRWINNDVYIYERKFGNNVALVAINRNLSTSYNITGLYTALPA
+GTYTDVLGGLLNGNSISVASDGSVTPFTLSAGEVAVWQYVSSSNSPLIGHVGPTMTKAGQ
+TITIDGRGFGTTSGQVLFGSTAGTIVSWDDTEVKVKVPSVTPGKYNISLKTSSGATSNTY
+NNINILTGNQICVRFVVNNASTVYGENVYLTGNVAELGNWDTSKAIGPMFNQVVYQYPTW
+YYDVSVPAGTTIQFKFIKKNGNTITWEGGSNHTYTVPSSSTGTVIVNWQQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0003493|2133 bp
+ATGAAAAAAACGTTTAAATTGATATTGGTGCTGATGCTTTCACTTACACTTGTTTTTGGA
+TTGACAGCACCAATACAGGCAGCTTCTGATACAGCAGTAAGTAATGTTGTCAATTACTCG
+ACGGATGTAATTTATCAGATTGTCACTGATAGATTTGTTGATGGAAATACCAGCAACAAT
+CCAACTGGTGATTTGTATGATCCAACACATACAAGTCTGAAAAAGTACTTTGGTGGAGAC
+TGGCAGGGTATTATTAACAAGATAAATGATGGTTATCTAACAGGAATGGGTGTAACAGCA
+ATTTGGATATCTCAGCCTGTAGAAAATATTTATGCAGTCTTACCTGATTCAACTTTTGGT
+GGAAGTACATCGTACCATGGTTATTGGGCTCGTGATTTTAAGAGAACAAATCCATACTTT
+GGAAGCTTTACTGATTTTCAAAATTTGATTAATACAGCTCATGCACATAACATAAAAGTA
+ATTATCGATTTTGCACCAAATCATACTTCACCTGCATCTGAAACCGATCCGACTTATGCT
+GAAAATGGAAGGCTATACGACAATGGAACATTACTTGGTGGGTATACAAATGATACAAAC
+GGGTATTTTCATCATTATGGAGGAACAGATTTTTCATCTTATGAAGATGGCATTTATCGT
+AACTTATTTGATTTAGCAGATTTAAATCAACAGAATAGTACAATCGATTCATACTTAAAA
+TCAGCAATTAAGGTGTGGCTCGATATGGGAATAGACGGTATACGTCTAGATGCTGTAAAA
+CATATGCCGTTTGGATGGCAGAAGAATTTTATGGATAGCATATTGAGCTATAGGCCTGTA
+TTTACATTTGGAGAGTGGTTTCTTGGAACGAATGAAATTGATGTAAATAACACATACTTT
+GCAAATGAAAGCGGTATGAGTCTTTTGGACTTTAGGTTTTCTCAAAAAGTGAGGCAGGTA
+TTTAGGGATAATACGGATACTATGTATGGACTTGATTCAATGATTCAATCAACTGCATCT
+GATTATAATTTTATAAATGATATGGTTACTTTTATTGATAATCATGATATGGATAGATTC
+TATAATGGTGGTTCTACTCGTCCAGTTGAACAAGCATTAGCATTTACTTTGACTTCGAGG
+GGAGTACCTGCTATATATTATGGAACAGAACAGTATATGACAGGCAATGGAGACCCTTAT
+AATAGAGCTATGATGACCTCATTTAATACATCAACTACAGCATATAATGTAATTAAAAAA
+CTTGCTCCTTTGCGCAAATCTAATCCTGCAATTGCTTATGGTACTACTCAGCAACGTTGG
+ATAAACAATGATGTTTATATATATGAAAGAAAATTTGGGAATAATGTTGCTCTTGTTGCT
+ATAAATAGAAATCTTTCAACAAGTTATAATATAACAGGACTGTATACAGCGCTTCCTGCT
+GGTACTTATACTGATGTTCTTGGTGGACTTTTAAATGGTAATAGTATTTCTGTCGCGAGT
+GATGGTTCTGTAACACCATTTACACTTAGTGCCGGTGAAGTTGCAGTATGGCAGTATGTA
+AGTTCAAGTAATTCTCCGTTGATAGGACATGTTGGGCCAACAATGACAAAAGCAGGGCAA
+ACTATAACAATAGATGGAAGAGGTTTTGGTACGACATCAGGACAAGTTTTGTTTGGTTCG
+ACGGCTGGTACTATTGTCTCTTGGGATGATACAGAGGTAAAAGTAAAAGTTCCTTCGGTG
+ACACCTGGTAAATATAATATATCATTAAAAACTTCAAGTGGTGCTACAAGCAATACTTAT
+AATAATATTAACATTCTTACAGGCAATCAGATATGTGTTAGATTTGTTGTAAATAATGCA
+AGTACAGTGTATGGAGAGAATGTTTATCTTACTGGTAATGTAGCTGAATTGGGAAACTGG
+GATACGTCAAAAGCAATAGGACCAATGTTTAATCAGGTAGTATATCAGTATCCTACATGG
+TATTATGATGTAAGTGTTCCAGCGGGTACAACAATACAATTTAAGTTTATAAAGAAAAAT
+GGCAATACGATAACATGGGAAGGTGGTAGTAACCATACTTATACAGTTCCATCATCTAGT
+ACAGGTACTGTAATTGTAAACTGGCAACAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF01833</identifier>
+            <name>TIG</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00686</identifier>
+            <name>CBM_20</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>cyclomaltodextrin glucanotransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>starch binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters>
+    <transporter position="2">
+      <id>BE0000440</id>
+      <name>Monocarboxylate transporter 2</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16096</ref-id>
+            <pubmed-id>9786900</pubmed-id>
+            <citation>Lin RY, Vera JC, Chaganti RS, Golde DW: Human monocarboxylate transporter 2 (MCT2) is a high affinity pyruvate transporter. J Biol Chem. 1998 Oct 30;273(44):28959-65.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="O60669" source="Swiss-Prot">
+        <name>Monocarboxylate transporter 2</name>
+        <general-function>Symporter activity</general-function>
+        <specific-function>Proton-coupled monocarboxylate transporter. Catalyzes the rapid transport across the plasma membrane of many monocarboxylates such as lactate, pyruvate, branched-chain oxo acids derived from leucine, valine and isoleucine, and the ketone bodies acetoacetate, beta-hydroxybutyrate and acetate. Functions as high-affinity pyruvate transporter.</specific-function>
+        <gene-name>SLC16A7</gene-name>
+        <locus>12q13</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>16-36
+60-80
+90-110
+116-136
+149-169
+174-194
+247-267
+283-303
+313-333
+339-359
+374-394
+407-427</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.68</theoretical-pi>
+        <molecular-weight>52199.745</molecular-weight>
+        <chromosome-location>12</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10928</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC16A7</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF058056</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3047402</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>990</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>O60669</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MOT2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>MCT 2</synonym>
+          <synonym>MCT2</synonym>
+          <synonym>Solute carrier family 16 member 7</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010306|Monocarboxylate transporter 2
+MPPMPSAPPVHPPPDGGWGWIVVGAAFISIGFSYAFPKAVTVFFKEIQQIFHTTYSEIAW
+ISSIMLAVMYAGGPVSSVLVNKYGSRPVVIAGGLLCCLGMVLASFSSSVVQLYLTMGFIT
+GLGLAFNLQPALTIIGKYFYRKRPMANGLAMAGSPVFLSSLAPFNQYLFNTFGWKGSFLI
+LGSLLLNACVAGSLMRPLGPNQTTSKSKNKTGKTEDDSSPKKIKTKKSTWEKVNKYLDFS
+LFKHRGFLIYLSGNVIMFLGFFAPIIFLAPYAKDQGIDEYSAAFLLSVMAFVDMFARPSV
+GLIANSKYIRPRIQYFFSFAIMFNGVCHLLCPLAQDYTSLVLYAVFFGLGFGSVSSVLFE
+TLMDLVGAPRFSSAVGLVTIVECGPVLLGPPLAGKLVDLTGEYKYMYMSCGAIVVAASVW
+LLIGNAINYRLLAKERKEENARQKTRESEPLSKSKHSEDVNVKVSNAQSVTSERETNI</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010307|Monocarboxylate transporter 2 (SLC16A7)
+ATGCCACCAATGCCAAGTGCCCCACCTGTGCATCCACCTCCAGATGGAGGATGGGGTTGG
+ATTGTGGTTGGAGCAGCTTTTATCTCCATTGGATTTTCCTATGCATTCCCCAAAGCTGTC
+ACCGTATTCTTCAAAGAAATTCAGCAAATATTCCACACTACCTACAGTGAAATAGCATGG
+ATTTCATCCATTATGCTGGCTGTTATGTACGCAGGAGGTCCTGTAAGTAGTGTTTTGGTG
+AATAAATACGGCAGCCGGCCGGTGGTGATAGCAGGAGGCTTATTATGCTGTCTTGGAATG
+GTGTTGGCCTCCTTTAGTAGCAGCGTGGTACAGCTGTACCTCACTATGGGATTCATTACA
+GGTTTAGGTTTAGCCTTCAACCTGCAACCCGCCTTAACCATAATTGGCAAATACTTCTAT
+AGGAAGCGACCCATGGCAAATGGATTGGCCATGGCAGGAAGTCCTGTTTTCTTAAGTTCA
+TTGGCTCCTTTCAATCAGTACCTTTTTAATACTTTTGGCTGGAAAGGAAGCTTCCTGATT
+TTGGGAAGTCTACTTTTGAATGCCTGTGTGGCTGGTTCCCTCATGAGACCCCTTGGACCC
+AATCAAACCACTTCTAAGTCTAAAAATAAGACTGGCAAAACAGAAGATGATTCAAGCCCA
+AAGAAAATCAAAACGAAGAAATCAACTTGGGAAAAAGTTAATAAGTATTTAGATTTCTCC
+CTTTTTAAGCATAGAGGATTTCTGATATATCTGTCTGGAAATGTCATTATGTTCCTAGGT
+TTTTTTGCCCCCATTATATTCTTGGCTCCATATGCTAAAGACCAAGGAATTGATGAGTAC
+TCGGCAGCTTTTCTGCTATCTGTTATGGCTTTCGTTGATATGTTTGCTAGGCCTTCTGTA
+GGATTAATTGCAAACTCCAAATATATTCGACCTCGAATTCAGTACTTCTTCAGTTTTGCA
+ATCATGTTCAATGGAGTGTGTCACCTCTTGTGCCCACTGGCACAGGACTACACAAGCCTG
+GTATTATATGCTGTATTTTTTGGCCTTGGATTTGGGAGTGTTAGCAGTGTTCTCTTTGAA
+ACTCTCATGGACCTCGTGGGTGCACCAAGATTTTCCAGTGCCGTCGGACTTGTCACAATT
+GTGGAGTGTGGCCCAGTTCTTCTTGGCCCTCCTCTTGCAGGTAAATTGGTGGATTTAACT
+GGAGAATATAAATACATGTACATGTCCTGTGGGGCTATTGTGGTAGCAGCAAGCGTGTGG
+CTGCTCATTGGCAATGCTATCAACTATAGATTGCTTGCAAAGGAAAGGAAGGAGGAAAAT
+GCAAGGCAGAAGACCAGAGAATCTGAACCCTTGAGCAAATCTAAACATTCGGAAGATGTT
+AACGTCAAAGTTTCAAATGCACAGAGTGTAACCTCAGAAAGAGAAACTAACATTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07690</identifier>
+            <name>MFS_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>cytoplasm</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lactate transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyruvate secondary active transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyruvate transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>symporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lactate transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>plasma membrane lactate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="7">
+      <id>BE0000669</id>
+      <name>Monocarboxylate transporter 1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16096</ref-id>
+            <pubmed-id>9786900</pubmed-id>
+            <citation>Lin RY, Vera JC, Chaganti RS, Golde DW: Human monocarboxylate transporter 2 (MCT2) is a high affinity pyruvate transporter. J Biol Chem. 1998 Oct 30;273(44):28959-65.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P53985" source="Swiss-Prot">
+        <name>Monocarboxylate transporter 1</name>
+        <general-function>Symporter activity</general-function>
+        <specific-function>Proton-coupled monocarboxylate transporter. Catalyzes the rapid transport across the plasma membrane of many monocarboxylates such as lactate, pyruvate, branched-chain oxo acids derived from leucine, valine and isoleucine, and the ketone bodies acetoacetate, beta-hydroxybutyrate and acetate. Depending on the tissue and on cicumstances, mediates the import or export of lactic acid and ketone bodies. Required for normal nutrient assimilation, increase of white adipose tissue and body weight gain when on a high-fat diet. Plays a role in cellular responses to a high-fat diet by modulating the cellular levels of lactate and pyruvate, small molecules that contribute to the regulation of central metabolic pathways and insulin secretion, with concomitant effects on plasma insulin levels and blood glucose homeostasis.</specific-function>
+        <gene-name>SLC16A1</gene-name>
+        <locus>1p12</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>16-36
+60-80
+87-107
+112-132
+144-164
+167-187
+263-283
+299-319
+329-349
+354-374
+390-410
+423-443</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.82</theoretical-pi>
+        <molecular-weight>53943.685</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10922</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC16A1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>L31801</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>561722</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>988</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P53985</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>MOT1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>MCT 1</synonym>
+          <synonym>MCT1</synonym>
+          <synonym>Solute carrier family 16 member 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037057|Monocarboxylate transporter 1
+MPPAVGGPVGYTPPDGGWGWAVVIGAFISIGFSYAFPKSITVFFKEIEGIFHATTSEVSW
+ISSIMLAVMYGGGPISSILVNKYGSRIVMIVGGCLSGCGLIAASFCNTVQQLYVCIGVIG
+GLGLAFNLNPALTMIGKYFYKRRPLANGLAMAGSPVFLCTLAPLNQVFFGIFGWRGSFLI
+LGGLLLNCCVAGALMRPIGPKPTKAGKDKSKASLEKAGKSGVKKDLHDANTDLIGRHPKQ
+EKRSVFQTINQFLDLTLFTHRGFLLYLSGNVIMFFGLFAPLVFLSSYGKSQHYSSEKSAF
+LLSILAFVDMVARPSMGLVANTKPIRPRIQYFFAASVVANGVCHMLAPLSTTYVGFCVYA
+GFFGFAFGWLSSVLFETLMDLVGPQRFSSAVGLVTIVECCPVLLGPPLLGRLNDMYGDYK
+YTYWACGVVLIISGIYLFIGMGINYRLLAKEQKANEQKKESKEEETSIDVAGKPNEVTKA
+AESPDQKDTDGGPKEEESPV</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010466|Monocarboxylate transporter 1 (SLC16A1)
+ATGCCACCAGCAGTTGGAGGTCCAGTTGGATACACCCCCCCAGATGGAGGCTGGGGCTGG
+GCAGTGGTAATTGGAGCTTTCATTTCCATCGGCTTCTCTTATGCATTTCCCAAATCAATT
+ACTGTCTTCTTCAAAGAGATTGAAGGTATATTCCATGCCACCACCAGCGAAGTGTCATGG
+ATATCCTCCATAATGTTGGCTGTCATGTATGGTGGAGGTCCTATCAGCAGTATCCTGGTG
+AATAAATATGGAAGTCGTATAGTCATGATTGTTGGTGGCTGCTTGTCAGGCTGTGGCTTG
+ATTGCAGCTTCTTTCTGTAACACCGTACAGCAACTATACGTCTGTATTGGAGTCATTGGA
+GGTCTTGGGCTTGCCTTCAACTTGAATCCAGCTCTGACCATGATTGGCAAGTATTTCTAC
+AAGAGGCGACCATTGGCCAACGGACTGGCCATGGCAGGCAGCCCTGTGTTCCTCTGTACT
+CTGGCCCCCCTCAATCAGGTTTTCTTCGGTATCTTTGGATGGAGAGGAAGCTTTCTAATT
+CTTGGGGGCTTGCTACTAAACTGCTGTGTTGCTGGAGCCCTCATGCGACCAATCGGGCCC
+AAGCCAACCAAGGCAGGGAAAGATAAGTCTAAAGCATCCCTTGAGAAAGCTGGAAAATCT
+GGTGTGAAAAAAGATCTGCATGATGCAAATACAGATCTTATTGGAAGACACCCTAAACAA
+GAGAAACGATCAGTCTTCCAAACAATTAATCAGTTCCTGGACTTAACCCTATTCACCCAC
+AGAGGCTTTTTGCTATACCTCTCTGGAAATGTGATCATGTTTTTTGGACTCTTTGCACCT
+TTGGTGTTTCTTAGTAGTTATGGGAAGAGTCAGCATTATTCTAGTGAGAAGTCTGCCTTC
+CTTCTTTCCATTCTGGCTTTTGTTGACATGGTAGCCCGACCATCTATGGGACTTGTAGCC
+AACACAAAGCCAATAAGACCTCGAATTCAGTATTTCTTTGCGGCTTCCGTTGTTGCAAAT
+GGAGTGTGTCATATGCTAGCACCTTTATCCACTACCTATGTTGGATTCTGTGTCTATGCG
+GGATTCTTTGGATTTGCCTTCGGGTGGCTCAGCTCCGTATTGTTTGAAACATTGATGGAC
+CTTGTTGGACCCCAGAGGTTCTCCAGCGCTGTGGGATTGGTGACCATTGTGGAATGCTGT
+CCTGTCCTCCTGGGGCCACCACTTTTAGGTCGGCTCAATGACATGTATGGAGACTACAAA
+TACACATACTGGGCATGTGGCGTCGTCCTAATTATTTCAGGTATCTATCTCTTCATTGGC
+ATGGGCATCAATTATCGACTTTTGGCAAAAGAACAGAAAGCAAACGAGCAGAAAAAGGAA
+AGTAAAGAGGAAGAGACCAGTATAGATGTTGCTGGGAAGCCAAATGAAGTTACCAAAGCA
+GCAGAATCTCCGGACCAGAAAGACACAGATGGAGGGCCCAAGGAGGAGGAAAGTCCAGTC
+TGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07690</identifier>
+            <name>MFS_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>centrosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>mitochondrion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>lactate transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>mevalonate transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>monocarboxylic acid transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic cyclic compound binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>symporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>behavioral response to nutrient</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to organic cyclic compound</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>centrosome organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucose homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>leukocyte migration</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>mevalonate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>monocarboxylic acid transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>plasma membrane lactate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>pyruvate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of insulin secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to food</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

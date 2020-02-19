@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB03092</drugbank-id>
+  <drugbank-id>EXPT01756</drugbank-id>
+  <name>5-Hydroxymethyl-Chonduritol</name>
+  <description/>
+  <cas-number/>
+  <unii/>
+  <average-mass>176.1672</average-mass>
+  <monoisotopic-mass>176.068473494</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>experimental</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication/>
+  <pharmacodynamics/>
+  <mechanism-of-action/>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as cyclitols and derivatives. These are compounds containing a cycloalkane moiety with one hydroxyl group on each of three or more ring atoms. These of also include derivatives where the hydrogen atom of one or more of the hydroxyl groups is replaced with another atom.</description>
+    <direct-parent>Cyclitols and derivatives</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic oxygen compounds</superclass>
+    <class>Organooxygen compounds</class>
+    <subclass>Alcohols and polyols</subclass>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Polyols</alternative-parent>
+    <alternative-parent>Primary alcohols</alternative-parent>
+    <alternative-parent>Secondary alcohols</alternative-parent>
+    <substituent>Aliphatic homomonocyclic compound</substituent>
+    <substituent>Cyclitol or derivatives</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Polyol</substituent>
+    <substituent>Primary alcohol</substituent>
+    <substituent>Secondary alcohol</substituent>
+  </classification>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries>
+    <pdb-entry>1cpu</pdb-entry>
+    <pdb-entry>1mfu</pdb-entry>
+    <pdb-entry>1mfv</pdb-entry>
+    <pdb-entry>1nm9</pdb-entry>
+    <pdb-entry>1pig</pdb-entry>
+    <pdb-entry>1z32</pdb-entry>
+    <pdb-entry>3blk</pdb-entry>
+    <pdb-entry>3blp</pdb-entry>
+    <pdb-entry>3dhp</pdb-entry>
+    <pdb-entry>5csu</pdb-entry>
+  </pdb-entries>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>-2.3</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>0.37</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>4.12e+02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>-3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(1S,2S,3S,4R)-5-(hydroxymethyl)cyclohex-5-ene-1,2,3,4-tetrol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>valienol</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>176.1672</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>176.068473494</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]1(O)C=C(CO)[C@@]([H])(O)[C@]([H])(O)[C@@]1([H])O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C7H12O5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C7H12O5/c8-2-3-1-4(9)6(11)7(12)5(3)10/h1,4-12H,2H2/t4-,5+,6-,7-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>PJPGMULJEYSZBS-VZFHVOOUSA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>101.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>40.23</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>16.56</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>12.65</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-2.8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>5288564</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505091</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>4450703</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>HMC</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL1233349</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0001671</id>
+      <name>Alpha-amylase 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04745" source="Swiss-Prot">
+        <name>Alpha-amylase 1</name>
+        <general-function>Metal ion binding</general-function>
+        <specific-function/>
+        <gene-name>AMY1A</gene-name>
+        <locus>1p21</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>6.92</theoretical-pi>
+        <molecular-weight>57767.49</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:474</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AMY1A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18786</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>178585</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04745</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMY1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase 1</synonym>
+          <synonym>3.2.1.1</synonym>
+          <synonym>AMY1</synonym>
+          <synonym>Salivary alpha-amylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0011190|Alpha-amylase 1
+MKLFWLLFTIGFCWAQYSSNTQQGRTSIVHLFEWRWVDIALECERYLAPKGFGGVQVSPP
+NENVAIHNPFRPWWERYQPVSYKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMCGN
+AVSAGTSSTCGSYFNPGSRDFPAVPYSGWDFNDGKCKTGSGDIENYNDATQVRDCRLSGL
+LDLALGKDYVRSKIAEYMNHLIDIGVAGFRIDASKHMWPGDIKAILDKLHNLNSNWFPEG
+SKPFIYQEVIDLGGEPIKSSDYFGNGRVTEFKYGAKLGTVIRKWNGEKMSYLKNWGEGWG
+FMPSDRALVFVDNHDNQRGHGAGGASILTFWDARLYKMAVGFMLAHPYGFTRVMSSYRWP
+RYFENGKDVNDWVGPPNDNGVTKEVTINPDTTCGNDWVCEHRWRQIRNMVNFRNVVDGQP
+FTNWYDNGSNQVAFGRGNRGFIVFNNDDWTFSLTLQTGLPAGTYCDVISGDKINGNCTGI
+KIYVSDDGKAHFSISNSAEDPFIAIHAESKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011191|Alpha-amylase 1 (AMY1A)
+ATGAAGCTCTTTTGGTTGCTTTTCACCATTGGGTTCTGCTGGGCTCAGTATTCCTCAAAT
+ACACAACAAGGACGAACATCTATTGTTCATCTGTTTGAATGGCGATGGGTTGATATTGCT
+CTTGAATGTGAGCGATATTTAGCTCCCAAGGGATTTGGAGGGGTTCAGGTCTCTCCACCA
+AATGAAAATGTTGCCATTCACAACCCTTTCAGACCTTGGTGGGAAAGATACCAACCAGTT
+AGCTATAAATTATGCACAAGATCTGGAAATGAAGATGAATTTAGAAACATGGTGACTAGA
+TGCAACAATGTTGGGGTTCGTATTTATGTGGATGCTGTAATTAATCATATGTGTGGTAAT
+GCTGTGAGTGCAGGAACAAGCAGTACCTGTGGAAGTTACTTCAACCCTGGAAGTAGGGAC
+TTTCCAGCAGTCCCATATTCTGGATGGGATTTTAATGATGGTAAATGTAAAACTGGAAGT
+GGAGATATCGAGAACTATAATGATGCTACTCAGGTCAGAGATTGTCGTCTGTCTGGTCTT
+CTCGATCTTGCACTGGGGAAGGATTATGTGCGTTCTAAGATTGCCGAATATATGAACCAT
+CTCATTGACATTGGTGTTGCAGGGTTCAGAATTGATGCTTCCAAGCACATGTGGCCTGGA
+GACATAAAGGCAATTTTGGACAAACTGCATAATCTAAACAGTAACTGGTTCCCGGAAGGT
+AGTAAACCTTTCATTTACCAGGAGGTAATTGATCTGGGTGGTGAGCCAATTAAAAGCAGT
+GACTACTTTGGTAATGGCCGGGTGACAGAATTCAAGTATGGTGCAAAACTCGGCACAGTT
+ATTCGCAAGTGGAATGGAGAGAAGATGTCTTACTTAAAGAACTGGGGAGAAGGTTGGGGT
+TTCATGCCTTCTGACAGAGCGCTTGTCTTTGTGGATAACCATGACAATCAACGAGGACAT
+GGCGCTGGAGGAGCCTCTATACTTACCTTCTGGGATGCTAGGCTGTACAAAATGGCAGTT
+GGATTTATGCTTGCTCATCCTTATGGATTTACACGAGTAATGTCAAGCTACCGTTGGCCA
+AGATATTTTGAAAATGGAAAAGATGTTAATGATTGGGTTGGGCCACCAAATGATAATGGA
+GTAACTAAAGAAGTTACTATTAATCCAGACACTACTTGTGGCAATGACTGGGTCTGTGAA
+CATCGATGGCGCCAAATAAGGAACATGGTTAATTTCCGCAATGTAGTGGATGGCCAGCCT
+TTTACAAACTGGTATGATAATGGGAGCAACCAAGTGGCTTTTGGGAGAGGAAACAGAGGA
+TTCATTGTTTTCAACAATGATGACTGGACATTTTCTTTAACTTTGCAAACTGGTCTTCCT
+GCTGGCACATACTGTGATGTCATTTCTGGAGATAAAATTAATGGCAACTGCACAGGCATT
+AAAATCTACGTTTCTGATGATGGCAAAGCTCATTTTTCTATTAGTAACTCTGCTGAAGAT
+CCATTTATTGCAATTCATGCTGAATCTAAATTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestion</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0002639</id>
+      <name>Pancreatic alpha-amylase</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04746" source="Swiss-Prot">
+        <name>Pancreatic alpha-amylase</name>
+        <general-function>Chloride ion binding</general-function>
+        <specific-function/>
+        <gene-name>AMY2A</gene-name>
+        <locus>1p21</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>7.05</theoretical-pi>
+        <molecular-weight>57706.51</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:477</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AMY2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18785</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04746</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMYP_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase</synonym>
+          <synonym>3.2.1.1</synonym>
+          <synonym>PA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0005176|Pancreatic alpha-amylase
+MKFFLLLFTIGFCWAQYSPNTQQGRTSIVHLFEWRWVDIALECERYLAPKGFGGVQVSPP
+NENVAIYNPFRPWWERYQPVSYKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMCGN
+AVSAGTSSTCGSYFNPGSRDFPAVPYSGWDFNDGKCKTGSGDIENYNDATQVRDCRLTGL
+LDLALEKDYVRSKIAEYMNHLIDIGVAGFRLDASKHMWPGDIKAILDKLHNLNSNWFPAG
+SKPFIYQEVIDLGGEPIKSSDYFGNGRVTEFKYGAKLGTVIRKWNGEKMSYLKNWGEGWG
+FVPSDRALVFVDNHDNQRGHGAGGASILTFWDARLYKMAVGFMLAHPYGFTRVMSSYRWP
+RQFQNGNDVNDWVGPPNNNGVIKEVTINPDTTCGNDWVCEHRWRQIRNMVIFRNVVDGQP
+FTNWYDNGSNQVAFGRGNRGFIVFNNDDWSFSLTLQTGLPAGTYCDVISGDKINGNCTGI
+KIYVSDDGKAHFSISNSAEDPFIAIHAESKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011869|Pancreatic alpha-amylase (AMY2A)
+ATGAAGTTCTTTCTGTTGCTTTTCACCATTGGGTTCTGCTGGGCTCAGTATTCCCCAAAT
+ACACAACAAGGACGGACATCTATTGTTCATCTGTTTGAATGGCGATGGGTTGATATTGCT
+CTTGAATGTGAGCGATATTTAGCTCCGAAGGGATTTGGAGGGGTTCAGGTCTCTCCACCA
+AATGAAAATGTTGCAATTTACAACCCTTTCAGACCTTGGTGGGAAAGATACCAACCAGTT
+AGCTATAAATTATGCACAAGATCTGGAAATGAAGATGAATTTAGAAACATGGTGACTAGA
+TGTAACAATGTTGGGGTTCGTATTTATGTGGATGCTGTAATTAATCATATGTGTGGTAAC
+GCTGTGAGTGCAGGAACAAGCAGTACCTGTGGAAGTTACTTCAACCCTGGAAGTAGGGAC
+TTTCCAGCAGTCCCATATTCTGGATGGGATTTCAATGATGGTAAATGTAAAACTGGAAGT
+GGAGATATCGAGAACTACAATGATGCTACTCAGGTCAGAGATTGTCGTCTGACTGGTCTT
+CTTGATCTTGCACTGGAGAAGGATTACGTGCGTTCTAAGATTGCCGAATATATGAACCAT
+CTCATTGACATTGGTGTTGCAGGGTTCAGACTTGATGCTTCCAAGCACATGTGGCCTGGA
+GACATAAAGGCAATTTTGGACAAACTGCATAATCTAAACAGTAACTGGTTCCCTGCAGGA
+AGTAAACCTTTCATTTACCAGGAGGTAATTGATCTGGGTGGTGAGCCAATTAAAAGCAGT
+GACTACTTTGGTAATGGCCGGGTGACAGAATTCAAGTATGGTGCAAAACTCGGCACAGTT
+ATTCGCAAGTGGAATGGAGAGAAGATGTCTTACTTAAAGAACTGGGGAGAAGGTTGGGGT
+TTCGTACCTTCTGACAGAGCGCTTGTCTTTGTGGATAACCATGACAATCAACGAGGACAT
+GGGGCTGGAGGAGCCTCTATTCTTACCTTCTGGGATGCTAGGCTGTACAAAATGGCAGTT
+GGATTTATGCTTGCTCATCCTTACGGATTTACACGAGTAATGTCAAGCTACCGTTGGCCA
+AGACAGTTTCAAAATGGAAACGATGTTAATGATTGGGTTGGGCCACCAAATAATAATGGA
+GTAATTAAAGAAGTTACTATTAATCCAGACACTACTTGTGGCAATGACTGGGTCTGTGAA
+CATCGATGGCGCCAAATAAGGAACATGGTTATTTTCCGCAATGTAGTGGATGGCCAGCCT
+TTTACAAATTGGTATGATAATGGGAGCAACCAAGTGGCTTTTGGGAGAGGAAACAGAGGA
+TTCATTGTTTTCAACAATGATGACTGGTCATTTTCTTTAACTTTGCAAACTGGTCTTCCT
+GCTGGCACATACTGTGATGTCATTTCTGGAGATAAAATTAATGGCAATTGCACAGGCATT
+AAAATTTACGTTTCTGATGATGGCAAAGCTCATTTTTCTATTAGTAACTCTGCTGAAGAT
+CCATTTATTGCAATTCATGCTGAATCTAAATTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polysaccharide digestion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target>
+      <id>BE0004457</id>
+      <name>Alpha-amylase 2B</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P19961" source="Swiss-Prot">
+        <name>Alpha-amylase 2B</name>
+        <general-function/>
+        <specific-function>Alpha-amylase activity</specific-function>
+        <gene-name>AMY2B</gene-name>
+        <locus>1p21.1</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi/>
+        <molecular-weight>57709.49</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:478</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P19961</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMY2B_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase 2B</synonym>
+          <synonym>3.2.1.1</synonym>
+          <synonym>Carcinoid alpha-amylase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0009378|Alpha-amylase 2B
+MKFFLLLFTIGFCWAQYSPNTQQGRTSIVHLFEWRWVDIALECERYLAPKGFGGVQVSPP
+NENVAIHNPFRPWWERYQPVSYKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMSGN
+AVSAGTSSTCGSYFNPGSRDFPAVPYSGWDFNDGKCKTGSGDIENYNDATQVRDCRLVGL
+LDLALEKDYVRSKIAEYMNHLIDIGVAGFRLDASKHMWPGDIKAILDKLHNLNSNWFPAG
+SKPFIYQEVIDLGGEPIKSSDYFGNGRVTEFKYGAKLGTVIRKWNGEKMSYLKNWGEGWG
+FMPSDRALVFVDNHDNQRGHGAGGASILTFWDARLYKMAVGFMLAHPYGFTRVMSSYRWP
+RQFQNGNDVNDWVGPPNNNGVIKEVTINPDTTCGNDWVCEHRWRQIRNMVNFRNVVDGQP
+FTNWYDNGSNQVAFGRGNRGFIVFNNDDWTFSLTLQTGLPAGTYCDVISGDKINGNCTGI
+KIYVSDDGKAHFSISNSAEDPFIAIHAESKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0013121|Alpha-amylase 2B (AMY2B)
+ATGAAGTTCTTTCTGTTGCTTTTCACCATTGGGTTCTGCTGGGCTCAGTATTCCCCAAAT
+ACACAACAAGGACGGACATCTATTGTTCATCTGTTTGAATGGCGATGGGTTGATATTGCT
+CTTGAATGTGAGCGATATTTAGCTCCCAAGGGATTTGGAGGGGTTCAGGTCTCTCCACCA
+AATGAAAATGTTGCAATTCACAACCCTTTCAGACCTTGGTGGGAAAGATACCAACCAGTT
+AGCTATAAATTATGCACAAGATCTGGAAATGAAGATGAATTTAGAAACATGGTGACTAGA
+TGTAACAATGTTGGGGTTCGTATTTATGTGGATGCTGTAATTAATCATATGTCTGGTAAT
+GCTGTGAGTGCAGGAACAAGCAGTACCTGTGGAAGTTACTTCAACCCTGGAAGTAGGGAC
+TTTCCAGCAGTCCCATATTCTGGATGGGATTTTAATGATGGTAAATGTAAAACTGGAAGT
+GGAGATATCGAGAACTACAATGATGCTACTCAGGTCAGAGATTGTCGTCTGGTTGGTCTT
+CTTGATCTTGCACTGGAGAAAGATTATGTGCGTTCCAAGATTGCCGAATATATGAATCAT
+CTCATTGACATTGGTGTTGCAGGGTTCAGACTTGATGCTTCCAAGCACATGTGGCCTGGA
+GACATAAAGGCAATTTTGGACAAACTGCATAATCTAAACAGTAACTGGTTCCCTGCAGGA
+AGTAAACCTTTCATTTACCAGGAGGTAATTGATCTGGGTGGTGAGCCAATTAAAAGCAGT
+GACTACTTTGGAAATGGCCGGGTGACAGAATTCAAGTATGGTGCAAAACTCGGCACAGTT
+ATTCGCAAGTGGAATGGAGAGAAGATGTCTTACCTAAAGAACTGGGGAGAAGGTTGGGGT
+TTCATGCCTTCTGACAGAGCACTTGTCTTTGTGGATAACCATGACAATCAACGAGGACAT
+GGGGCTGGAGGAGCCTCTATTCTTACCTTCTGGGATGCTAGGCTGTATAAAATGGCAGTT
+GGATTTATGCTTGCTCATCCTTATGGTTTTACACGAGTAATGTCAAGCTACCGTTGGCCA
+AGACAGTTTCAAAATGGAAACGATGTTAATGATTGGGTTGGGCCACCAAATAATAATGGA
+GTAATTAAAGAAGTTACTATTAATCCAGACACTACTTGTGGCAATGACTGGGTCTGTGAA
+CATCGATGGCGCCAAATAAGGAACATGGTTAATTTCCGCAATGTAGTGGATGGCCAGCCT
+TTTACAAACTGGTATGATAATGGGAGCAACCAAGTGGCTTTTGGGAGAGGAAACAGAGGA
+TTCATTGTTTTCAACAATGATGACTGGACATTTTCTTTAACTTTGCAAACTGGTCTTCCT
+GCTGGCACATACTGTGATGTCATTTCTGGAGATAAAATTAATGGCAATTGCACAGGCATT
+AAAATCTACGTTTCTGACGATGGCAAAGCTCATTTTTCTATTAGTAACTCTGCTGAGGAT
+CCATTTATTGCAATTCATGCTGAATCTAAATTATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>metal ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestion</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes>
+    <enzyme>
+      <id>BE0002639</id>
+      <name>Pancreatic alpha-amylase</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>ligand</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1991</ref-id>
+            <pubmed-id>10592235</pubmed-id>
+            <citation>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P04746" source="Swiss-Prot">
+        <name>Pancreatic alpha-amylase</name>
+        <general-function>Chloride ion binding</general-function>
+        <specific-function/>
+        <gene-name>AMY2A</gene-name>
+        <locus>1p21</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-15</signal-regions>
+        <theoretical-pi>7.05</theoretical-pi>
+        <molecular-weight>57706.51</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:477</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>AMY2A</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M18785</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P04746</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMYP_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1,4-alpha-D-glucan glucanohydrolase</synonym>
+          <synonym>3.2.1.1</synonym>
+          <synonym>PA</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0005176|Pancreatic alpha-amylase
+MKFFLLLFTIGFCWAQYSPNTQQGRTSIVHLFEWRWVDIALECERYLAPKGFGGVQVSPP
+NENVAIYNPFRPWWERYQPVSYKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMCGN
+AVSAGTSSTCGSYFNPGSRDFPAVPYSGWDFNDGKCKTGSGDIENYNDATQVRDCRLTGL
+LDLALEKDYVRSKIAEYMNHLIDIGVAGFRLDASKHMWPGDIKAILDKLHNLNSNWFPAG
+SKPFIYQEVIDLGGEPIKSSDYFGNGRVTEFKYGAKLGTVIRKWNGEKMSYLKNWGEGWG
+FVPSDRALVFVDNHDNQRGHGAGGASILTFWDARLYKMAVGFMLAHPYGFTRVMSSYRWP
+RQFQNGNDVNDWVGPPNNNGVIKEVTINPDTTCGNDWVCEHRWRQIRNMVIFRNVVDGQP
+FTNWYDNGSNQVAFGRGNRGFIVFNNDDWSFSLTLQTGLPAGTYCDVISGDKINGNCTGI
+KIYVSDDGKAHFSISNSAEDPFIAIHAESKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0011869|Pancreatic alpha-amylase (AMY2A)
+ATGAAGTTCTTTCTGTTGCTTTTCACCATTGGGTTCTGCTGGGCTCAGTATTCCCCAAAT
+ACACAACAAGGACGGACATCTATTGTTCATCTGTTTGAATGGCGATGGGTTGATATTGCT
+CTTGAATGTGAGCGATATTTAGCTCCGAAGGGATTTGGAGGGGTTCAGGTCTCTCCACCA
+AATGAAAATGTTGCAATTTACAACCCTTTCAGACCTTGGTGGGAAAGATACCAACCAGTT
+AGCTATAAATTATGCACAAGATCTGGAAATGAAGATGAATTTAGAAACATGGTGACTAGA
+TGTAACAATGTTGGGGTTCGTATTTATGTGGATGCTGTAATTAATCATATGTGTGGTAAC
+GCTGTGAGTGCAGGAACAAGCAGTACCTGTGGAAGTTACTTCAACCCTGGAAGTAGGGAC
+TTTCCAGCAGTCCCATATTCTGGATGGGATTTCAATGATGGTAAATGTAAAACTGGAAGT
+GGAGATATCGAGAACTACAATGATGCTACTCAGGTCAGAGATTGTCGTCTGACTGGTCTT
+CTTGATCTTGCACTGGAGAAGGATTACGTGCGTTCTAAGATTGCCGAATATATGAACCAT
+CTCATTGACATTGGTGTTGCAGGGTTCAGACTTGATGCTTCCAAGCACATGTGGCCTGGA
+GACATAAAGGCAATTTTGGACAAACTGCATAATCTAAACAGTAACTGGTTCCCTGCAGGA
+AGTAAACCTTTCATTTACCAGGAGGTAATTGATCTGGGTGGTGAGCCAATTAAAAGCAGT
+GACTACTTTGGTAATGGCCGGGTGACAGAATTCAAGTATGGTGCAAAACTCGGCACAGTT
+ATTCGCAAGTGGAATGGAGAGAAGATGTCTTACTTAAAGAACTGGGGAGAAGGTTGGGGT
+TTCGTACCTTCTGACAGAGCGCTTGTCTTTGTGGATAACCATGACAATCAACGAGGACAT
+GGGGCTGGAGGAGCCTCTATTCTTACCTTCTGGGATGCTAGGCTGTACAAAATGGCAGTT
+GGATTTATGCTTGCTCATCCTTACGGATTTACACGAGTAATGTCAAGCTACCGTTGGCCA
+AGACAGTTTCAAAATGGAAACGATGTTAATGATTGGGTTGGGCCACCAAATAATAATGGA
+GTAATTAAAGAAGTTACTATTAATCCAGACACTACTTGTGGCAATGACTGGGTCTGTGAA
+CATCGATGGCGCCAAATAAGGAACATGGTTATTTTCCGCAATGTAGTGGATGGCCAGCCT
+TTTACAAATTGGTATGATAATGGGAGCAACCAAGTGGCTTTTGGGAGAGGAAACAGAGGA
+TTCATTGTTTTCAACAATGATGACTGGTCATTTTCTTTAACTTTGCAAACTGGTCTTCCT
+GCTGGCACATACTGTGATGTCATTTCTGGAGATAAAATTAATGGCAATTGCACAGGCATT
+AAAATTTACGTTTCTGATGATGGCAAAGCTCATTTTTCTATTAGTAACTCTGCTGAAGAT
+CCATTTATTGCAATTCATGCTGAATCTAAATTGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00128</identifier>
+            <name>Alpha-amylase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF02806</identifier>
+            <name>Alpha-amylase_C</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>alpha-amylase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>calcium ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>carbohydrate metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>polysaccharide digestion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+      <inhibition-strength/>
+      <induction-strength/>
+    </enzyme>
+  </enzymes>
+  <carriers/>
+  <transporters/>
+</drug>

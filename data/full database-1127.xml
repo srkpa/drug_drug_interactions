@@ -1,0 +1,4063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2005-06-13" updated="2020-01-02">
+  <drugbank-id primary="true">DB01147</drugbank-id>
+  <drugbank-id>APRD00882</drugbank-id>
+  <drugbank-id>EXPT01068</drugbank-id>
+  <name>Cloxacillin</name>
+  <description>A semi-synthetic antibiotic that is a chlorinated derivative of oxacillin.</description>
+  <cas-number>61-72-3</cas-number>
+  <unii>O6X5QGC2VB</unii>
+  <average-mass>435.881</average-mass>
+  <monoisotopic-mass>435.065569098</monoisotopic-mass>
+  <state>solid</state>
+  <groups>
+    <group>approved</group>
+    <group>investigational</group>
+    <group>vet_approved</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference>Doyle, F.P. and Nayler, J.H.C.; British Patent 905,778; September 12, 1962; assigned to Beecham Research Laboratories, Ltd. &#13;
+Doyle, F.P. and Nayler, J.H.C.; US. Patent 2,996,501; August 15, 1961. </synthesis-reference>
+  <indication>Used to treat infections caused by penicillinase-producing staphylococci, including pneumococci, group A beta-hemolytic streptococci, and penicillin G-sensitive and penicillin G-resistant staphylococci.</indication>
+  <pharmacodynamics>Cloxacillin is a semisynthetic antibiotic in the same class as penicillin. Cloxacillin is for use against staphylococci that produce beta-lactamase.</pharmacodynamics>
+  <mechanism-of-action>By binding to specific penicillin-binding proteins (PBPs) located inside the bacterial cell wall, cloxacillin inhibits the third and last stage of bacterial cell wall synthesis. Cell lysis is then mediated by bacterial cell wall autolytic enzymes such as autolysins; it is possible that cloxacillin interferes with an autolysin inhibitor.</mechanism-of-action>
+  <toxicity>Oral LD&lt;sub&gt;50&lt;/sub&gt; in rat and mouse is 5000 mg/kg. Intravenous LD&lt;sub&gt;50&lt;/sub&gt; in rat is 1660 mg/kg. Symptoms of overdose include wheezing, tightness in the chest, fever, itching, bad cough, blue skin color, fits, and swelling of face, lips, tongue, or throat.</toxicity>
+  <metabolism/>
+  <absorption>Well absorbed from the gastrointestinal tract.</absorption>
+  <half-life/>
+  <protein-binding>95%</protein-binding>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the class of organic compounds known as dipeptides. These are organic compounds containing a sequence of exactly two alpha-amino acids joined by a peptide bond.</description>
+    <direct-parent>Dipeptides</direct-parent>
+    <kingdom>Organic compounds</kingdom>
+    <superclass>Organic acids and derivatives</superclass>
+    <class>Carboxylic acids and derivatives</class>
+    <subclass>Amino acids, peptides, and analogues</subclass>
+    <alternative-parent>Aryl chlorides</alternative-parent>
+    <alternative-parent>Azacyclic compounds</alternative-parent>
+    <alternative-parent>Azetidines</alternative-parent>
+    <alternative-parent>Carbonyl compounds</alternative-parent>
+    <alternative-parent>Carboxylic acids</alternative-parent>
+    <alternative-parent>Chlorobenzenes</alternative-parent>
+    <alternative-parent>Dialkylthioethers</alternative-parent>
+    <alternative-parent>Heteroaromatic compounds</alternative-parent>
+    <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+    <alternative-parent>Isoxazoles</alternative-parent>
+    <alternative-parent>Monocarboxylic acids and derivatives</alternative-parent>
+    <alternative-parent>N-acyl-alpha amino acids and derivatives</alternative-parent>
+    <alternative-parent>Organic oxides</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <alternative-parent>Organonitrogen compounds</alternative-parent>
+    <alternative-parent>Organopnictogen compounds</alternative-parent>
+    <alternative-parent>Oxacyclic compounds</alternative-parent>
+    <alternative-parent>Penicillins</alternative-parent>
+    <alternative-parent>Secondary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Tertiary carboxylic acid amides</alternative-parent>
+    <alternative-parent>Thiazolidines</alternative-parent>
+    <alternative-parent>Thiohemiaminal derivatives</alternative-parent>
+    <substituent>Alpha-amino acid or derivatives</substituent>
+    <substituent>Alpha-dipeptide</substituent>
+    <substituent>Aromatic heteropolycyclic compound</substituent>
+    <substituent>Aryl chloride</substituent>
+    <substituent>Aryl halide</substituent>
+    <substituent>Azacycle</substituent>
+    <substituent>Azetidine</substituent>
+    <substituent>Azole</substituent>
+    <substituent>Benzenoid</substituent>
+    <substituent>Beta-lactam</substituent>
+    <substituent>Carbonyl group</substituent>
+    <substituent>Carboxamide group</substituent>
+    <substituent>Carboxylic acid</substituent>
+    <substituent>Chlorobenzene</substituent>
+    <substituent>Dialkylthioether</substituent>
+    <substituent>Halobenzene</substituent>
+    <substituent>Hemithioaminal</substituent>
+    <substituent>Heteroaromatic compound</substituent>
+    <substituent>Hydrocarbon derivative</substituent>
+    <substituent>Isoxazole</substituent>
+    <substituent>Lactam</substituent>
+    <substituent>Monocarboxylic acid or derivatives</substituent>
+    <substituent>Monocyclic benzene moiety</substituent>
+    <substituent>N-acyl-alpha amino acid or derivatives</substituent>
+    <substituent>Organic nitrogen compound</substituent>
+    <substituent>Organic oxide</substituent>
+    <substituent>Organic oxygen compound</substituent>
+    <substituent>Organochloride</substituent>
+    <substituent>Organohalogen compound</substituent>
+    <substituent>Organoheterocyclic compound</substituent>
+    <substituent>Organonitrogen compound</substituent>
+    <substituent>Organooxygen compound</substituent>
+    <substituent>Organopnictogen compound</substituent>
+    <substituent>Oxacycle</substituent>
+    <substituent>Penam</substituent>
+    <substituent>Penicillin</substituent>
+    <substituent>Secondary carboxylic acid amide</substituent>
+    <substituent>Tertiary carboxylic acid amide</substituent>
+    <substituent>Thiazolidine</substituent>
+    <substituent>Thioether</substituent>
+  </classification>
+  <salts>
+    <salt>
+      <drugbank-id primary="true">DBSALT001648</drugbank-id>
+      <name>Cloxacillin benzathine</name>
+      <unii>AC79L7PV2G</unii>
+      <cas-number>23736-58-5</cas-number>
+      <inchikey>COCFKSXGORCFOW-VZHMHXRYSA-N</inchikey>
+      <average-mass>1112.11</average-mass>
+      <monoisotopic-mass>1110.2937878</monoisotopic-mass>
+    </salt>
+    <salt>
+      <drugbank-id primary="true">DBSALT000249</drugbank-id>
+      <name>Cloxacillin sodium</name>
+      <unii>MWQ645MKMF</unii>
+      <cas-number>642-78-4</cas-number>
+      <inchikey>SCLZRKVZRBKZCR-UHFFFAOYSA-M</inchikey>
+      <average-mass>457.863</average-mass>
+      <monoisotopic-mass>457.047513741</monoisotopic-mass>
+    </salt>
+    <salt>
+      <drugbank-id primary="true">DBSALT002444</drugbank-id>
+      <name>Cloxacillin sodium hydrate</name>
+      <unii>65LCB00B4Y</unii>
+      <cas-number>7081-44-9</cas-number>
+      <inchikey>KCUWTKOTPIUBRI-VICXVTCVSA-M</inchikey>
+      <average-mass>475.88</average-mass>
+      <monoisotopic-mass>475.0580785</monoisotopic-mass>
+    </salt>
+  </salts>
+  <synonyms>
+    <synonym language="english" coder="">(2S,5R,6R)-6-({[3-(2-chlorophenyl)-5-methylisoxazol-4-yl]carbonyl}amino)-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid</synonym>
+    <synonym language="english" coder="">(3-(o-chlorophenyl)-5-methyl-4-isoxazolyl)penicillin</synonym>
+    <synonym language="english" coder="">6-(3-(o-chlorophenyl)-5-methyl-4-isoxazolecarboxamido)penicillanic acid</synonym>
+    <synonym language="spanish" coder="inn">Cloxacilina</synonym>
+    <synonym language="english" coder="inn">Cloxacillin</synonym>
+    <synonym language="french" coder="inn">Cloxacilline</synonym>
+    <synonym language="latin" coder="inn">Cloxacillinum</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Apo Cloxi Cap 250mg</name>
+      <labeller>Apotex Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00618292</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1984-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Apo Cloxi Cap 500mg</name>
+      <labeller>Apotex Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00618284</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1984-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Apo Cloxi for Oral Soln 125mg/5ml</name>
+      <labeller>Apotex Corporation</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00644633</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1985-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin</name>
+      <labeller>Pro Doc Limitee</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02069679</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1994-12-31</started-marketing-on>
+      <ended-marketing-on>2013-07-15</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin for Injection</name>
+      <labeller>Sterimax Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02367408</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2011-09-14</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin for Injection</name>
+      <labeller>Sterimax Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02367416</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2011-07-28</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin for Injection</name>
+      <labeller>Sterimax Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02367424</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2011-07-28</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin for Injection</name>
+      <labeller>Sterimax Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02400081</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>2013-04-03</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin Sodium for Injection</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01912410</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2017-12-01</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin Sodium for Injection</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01912429</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2017-12-01</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin Sodium for Injection</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01975447</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2017-12-01</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin Sodium Sterile Inj 250mg/vial</name>
+      <labeller>Novopharm Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>01912194</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1992-12-31</started-marketing-on>
+      <ended-marketing-on>2005-08-10</ended-marketing-on>
+      <dosage-form>Liquid</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Cloxacillin-250 Cap</name>
+      <labeller>Pro Doc Limitee</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02069660</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1994-12-31</started-marketing-on>
+      <ended-marketing-on>2009-07-23</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Nu-cloxi Capsules 250mg</name>
+      <labeller>Nu Pharm Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00717584</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1990-12-31</started-marketing-on>
+      <ended-marketing-on>2012-09-04</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Nu-cloxi Capsules 500mg</name>
+      <labeller>Nu Pharm Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00717592</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1990-12-31</started-marketing-on>
+      <ended-marketing-on>2012-09-04</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Nu-cloxi Solution 125mg/5ml</name>
+      <labeller>Nu Pharm Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00717630</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1990-12-31</started-marketing-on>
+      <ended-marketing-on>2012-09-04</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin 500 Cap 500mg</name>
+      <labeller>Wyeth Ayerst Canada Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02042932</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1995-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-02</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Cap 250mg</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002046</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1963-12-31</started-marketing-on>
+      <ended-marketing-on>1998-12-15</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Cap 500mg</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002054</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1963-12-31</started-marketing-on>
+      <ended-marketing-on>1997-11-24</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Inj 2000mg</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002186</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1966-12-31</started-marketing-on>
+      <ended-marketing-on>1999-04-12</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Inj 250mg</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002151</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1964-12-31</started-marketing-on>
+      <ended-marketing-on>1999-04-12</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Inj 500mg</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002178</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1966-12-31</started-marketing-on>
+      <ended-marketing-on>1999-04-12</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Pwr 125mg/5ml</name>
+      <labeller>Ayerst Laboratories</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00002445</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1966-12-31</started-marketing-on>
+      <ended-marketing-on>1996-09-10</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Orbenin Pws 125mg/5ml</name>
+      <labeller>Wyeth Ayerst Canada Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02042975</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1995-12-31</started-marketing-on>
+      <ended-marketing-on>1998-01-28</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Riva-cloxacillin 250 Mg Capsules</name>
+      <labeller>Laboratoire Riva Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02241195</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1999-11-19</started-marketing-on>
+      <ended-marketing-on>2003-07-28</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Riva-cloxacillin 500 Mg Capsules</name>
+      <labeller>Laboratoire Riva Inc</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02241196</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1999-11-19</started-marketing-on>
+      <ended-marketing-on>2003-07-28</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Taro-cloxacillin Cap 250mg</name>
+      <labeller>Taro Pharmaceuticals, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02030500</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1993-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-31</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Taro-cloxacillin Cap 500mg</name>
+      <labeller>Taro Pharmaceuticals, Inc.</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>02030519</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1993-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-31</ended-marketing-on>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Tegopen Inj 2000mg/vial</name>
+      <labeller>Bristol Labs Division Of Bristol Myers Squibb</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00407615</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1973-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-29</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Tegopen Inj 250mg/vial</name>
+      <labeller>Bristol Labs Division Of Bristol Myers Squibb</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00407593</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1973-12-31</started-marketing-on>
+      <ended-marketing-on>1996-09-09</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Tegopen Inj 500mg/vial</name>
+      <labeller>Bristol Labs Division Of Bristol Myers Squibb</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00407607</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1973-12-31</started-marketing-on>
+      <ended-marketing-on>2000-08-29</ended-marketing-on>
+      <dosage-form>Powder, for solution</dosage-form>
+      <strength/>
+      <route>Intramuscular; Intravenous</route>
+      <fda-application-number/>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Teva-cloxacillin</name>
+      <labeller>Teva</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00337757</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1980-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Granule, for solution</dosage-form>
+      <strength>125 mg</strength>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Teva-cloxacillin</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00337765</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1975-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+    <product>
+      <name>Teva-cloxacillin</name>
+      <labeller>TEVA Canada Limited</labeller>
+      <ndc-id/>
+      <ndc-product-code/>
+      <dpd-id>00337773</dpd-id>
+      <ema-product-code/>
+      <ema-ma-number/>
+      <started-marketing-on>1975-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>Capsule</dosage-form>
+      <strength/>
+      <route>Oral</route>
+      <fda-application-number/>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>Canada</country>
+      <source>DPD</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand>
+      <name>Aclox</name>
+      <company>Southshourne</company>
+    </international-brand>
+    <international-brand>
+      <name>Apo-Cloxi</name>
+      <company>Apotex</company>
+    </international-brand>
+    <international-brand>
+      <name>Auropen Inj.</name>
+      <company>Cirin</company>
+    </international-brand>
+    <international-brand>
+      <name>Cloxacil</name>
+      <company>Saiph</company>
+    </international-brand>
+    <international-brand>
+      <name>Cloxam</name>
+      <company>MacroPhar</company>
+    </international-brand>
+    <international-brand>
+      <name>Orbenin</name>
+      <company>GlaxoSmithKline</company>
+    </international-brand>
+    <international-brand>
+      <name>Vaclox</name>
+      <company>Atlantic</company>
+    </international-brand>
+    <international-brand>
+      <name>Vamcloxil</name>
+      <company>Vamsler</company>
+    </international-brand>
+  </international-brands>
+  <mixtures>
+    <mixture>
+      <name>Teva-cloxacillin</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Nu-cloxi Solution 125mg/5ml</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Nu-cloxi Capsules 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Nu-cloxi Capsules 250mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin Sodium Sterile Inj 250mg/vial</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taro-cloxacillin Cap 250mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Taro-cloxacillin Cap 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin-250 Cap</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Pws 125mg/5ml</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin 500 Cap 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Tegopen Inj 250mg/vial</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Tegopen Inj 500mg/vial</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Tegopen Inj 2000mg/vial</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Cap 250mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Pwr 125mg/5ml</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Riva-cloxacillin 250 Mg Capsules</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Riva-cloxacillin 500 Mg Capsules</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Inj 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Inj 2000mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Inj 250mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Orbenin Cap 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Teva-cloxacillin</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Teva-cloxacillin</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Apo Cloxi Cap 500mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Apo Cloxi Cap 250mg</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Apo Cloxi for Oral Soln 125mg/5ml</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin Sodium for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin Sodium for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+    <mixture>
+      <name>Cloxacillin Sodium for Injection</name>
+      <ingredients>Cloxacillin</ingredients>
+    </mixture>
+  </mixtures>
+  <packagers>
+    <packager>
+      <name>Apothecon</name>
+      <url>http://www.apothecon.nl</url>
+    </packager>
+    <packager>
+      <name>Dispensing Solutions</name>
+      <url>http://www.drxdispensing.com</url>
+    </packager>
+    <packager>
+      <name>H.J. Harkins Co. Inc.</name>
+      <url>http://hjharkinscompanyinc.com</url>
+    </packager>
+    <packager>
+      <name>PD-Rx Pharmaceuticals Inc.</name>
+      <url>http://www.pdrx.com</url>
+    </packager>
+    <packager>
+      <name>Teva Pharmaceutical Industries Ltd.</name>
+      <url>http://www.tevapharm.com</url>
+    </packager>
+  </packagers>
+  <manufacturers/>
+  <prices>
+    <price>
+      <description>Cloxacillin Sodium 500 mg/vial</description>
+      <cost currency="USD">4.79</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Cloxacillin Sodium 1 g/vial</description>
+      <cost currency="USD">5.89</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Cloxacillin Sodium 2 g/vial</description>
+      <cost currency="USD">7.69</cost>
+      <unit>vial</unit>
+    </price>
+    <price>
+      <description>Apo-Cloxi 25 mg/ml Liquid</description>
+      <cost currency="USD">0.05</cost>
+      <unit>ml</unit>
+    </price>
+    <price>
+      <description>Novo-Cloxin 25 mg/ml Liquid</description>
+      <cost currency="USD">0.05</cost>
+      <unit>ml</unit>
+    </price>
+    <price>
+      <description>Nu-Cloxi 25 mg/ml Liquid</description>
+      <cost currency="USD">0.05</cost>
+      <unit>ml</unit>
+    </price>
+    <price>
+      <description>Apo-Cloxi 250 mg Capsule</description>
+      <cost currency="USD">0.19</cost>
+      <unit>capsule</unit>
+    </price>
+    <price>
+      <description>Novo-Cloxin 250 mg Capsule</description>
+      <cost currency="USD">0.19</cost>
+      <unit>capsule</unit>
+    </price>
+    <price>
+      <description>Nu-Cloxi 250 mg Capsule</description>
+      <cost currency="USD">0.19</cost>
+      <unit>capsule</unit>
+    </price>
+    <price>
+      <description>Apo-Cloxi 500 mg Capsule</description>
+      <cost currency="USD">0.38</cost>
+      <unit>capsule</unit>
+    </price>
+    <price>
+      <description>Novo-Cloxin 500 mg Capsule</description>
+      <cost currency="USD">0.38</cost>
+      <unit>capsule</unit>
+    </price>
+    <price>
+      <description>Nu-Cloxi 500 mg Capsule</description>
+      <cost currency="USD">0.38</cost>
+      <unit>capsule</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Amides</category>
+      <mesh-id>D000577</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Bacterial Agents</category>
+      <mesh-id>D000900</mesh-id>
+    </category>
+    <category>
+      <category>Anti-Infective Agents</category>
+      <mesh-id>D000890</mesh-id>
+    </category>
+    <category>
+      <category>Antibacterials for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Antiinfectives for Systemic Use</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Beta-Lactam Antibacterials</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Beta-Lactamase Resistant Penicillins</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>beta-Lactams</category>
+      <mesh-id>D047090</mesh-id>
+    </category>
+    <category>
+      <category>Heterocyclic Compounds, Fused-Ring</category>
+      <mesh-id>D000072471</mesh-id>
+    </category>
+    <category>
+      <category>Lactams</category>
+      <mesh-id>D007769</mesh-id>
+    </category>
+    <category>
+      <category>OAT1/SLC22A6 inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Penicillinase-resistant Penicillins</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Penicillins</category>
+      <mesh-id>D010406</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Enteric bacteria and other eubacteria</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intramuscular; Intravenous</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Intravenous</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Liquid</form>
+      <route>Intramuscular; Intravenous</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Capsule</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Powder, for solution</form>
+      <route>Oral</route>
+      <strength/>
+    </dosage>
+    <dosage>
+      <form>Granule, for solution</form>
+      <route>Oral</route>
+      <strength>125 mg</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="J01CR50">
+      <level code="J01CR">Combinations of penicillins, incl. beta-lactamase inhibitors</level>
+      <level code="J01C">BETA-LACTAM ANTIBACTERIALS, PENICILLINS</level>
+      <level code="J01">ANTIBACTERIALS FOR SYSTEMIC USE</level>
+      <level code="J">ANTIINFECTIVES FOR SYSTEMIC USE</level>
+    </atc-code>
+    <atc-code code="J01CF02">
+      <level code="J01CF">Beta-lactamase resistant penicillins</level>
+      <level code="J01C">BETA-LACTAM ANTIBACTERIALS, PENICILLINS</level>
+      <level code="J01">ANTIBACTERIALS FOR SYSTEMIC USE</level>
+      <level code="J">ANTIINFECTIVES FOR SYSTEMIC USE</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>08:12.16</ahfs-code>
+    <ahfs-code>08:12.16.12</ahfs-code>
+  </ahfs-codes>
+  <pdb-entries/>
+  <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB01147.pdf?1265922735</msds>
+  <patents/>
+  <food-interactions>
+    <food-interaction>Take on an empty stomach.</food-interaction>
+  </food-interactions>
+  <drug-interactions>
+    <drug-interaction>
+      <drugbank-id>DB09124</drugbank-id>
+      <name>Medrogestone</name>
+      <description>The serum concentration of Medrogestone can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00563</drugbank-id>
+      <name>Methotrexate</name>
+      <description>The excretion of Methotrexate can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01032</drugbank-id>
+      <name>Probenecid</name>
+      <description>The excretion of Cloxacillin can be decreased when combined with Probenecid.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00335</drugbank-id>
+      <name>Atenolol</name>
+      <description>The bioavailability of Atenolol can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00254</drugbank-id>
+      <name>Doxycycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Doxycycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00256</drugbank-id>
+      <name>Lymecycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Lymecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00453</drugbank-id>
+      <name>Clomocycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Clomocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00560</drugbank-id>
+      <name>Tigecycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Tigecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00595</drugbank-id>
+      <name>Oxytetracycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Oxytetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00618</drugbank-id>
+      <name>Demeclocycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Demeclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00759</drugbank-id>
+      <name>Tetracycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Tetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00931</drugbank-id>
+      <name>Metacycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Metacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01017</drugbank-id>
+      <name>Minocycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Minocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01301</drugbank-id>
+      <name>Rolitetracycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Rolitetracycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12035</drugbank-id>
+      <name>Sarecycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Sarecycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12329</drugbank-id>
+      <name>Eravacycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Eravacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12455</drugbank-id>
+      <name>Omadacycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Omadacycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13092</drugbank-id>
+      <name>Meclocycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Meclocycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13264</drugbank-id>
+      <name>Penimepicycline</name>
+      <description>The therapeutic efficacy of Cloxacillin can be decreased when used in combination with Penimepicycline.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00688</drugbank-id>
+      <name>Mycophenolate mofetil</name>
+      <description>The serum concentration of Mycophenolate mofetil can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01024</drugbank-id>
+      <name>Mycophenolic acid</name>
+      <description>The serum concentration of Mycophenolic acid can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09268</drugbank-id>
+      <name>Picosulfuric acid</name>
+      <description>The therapeutic efficacy of Picosulfuric acid can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00266</drugbank-id>
+      <name>Dicoumarol</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Dicoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00498</drugbank-id>
+      <name>Phenindione</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Phenindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00682</drugbank-id>
+      <name>Warfarin</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00946</drugbank-id>
+      <name>Phenprocoumon</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Phenprocoumon.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01418</drugbank-id>
+      <name>Acenocoumarol</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Acenocoumarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03410</drugbank-id>
+      <name>4-hydroxycoumarin</name>
+      <description>Cloxacillin may increase the anticoagulant activities of 4-hydroxycoumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04665</drugbank-id>
+      <name>Coumarin</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Coumarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08496</drugbank-id>
+      <name>(R)-warfarin</name>
+      <description>Cloxacillin may increase the anticoagulant activities of (R)-warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08794</drugbank-id>
+      <name>Ethyl biscoumacetate</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Ethyl biscoumacetate.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13136</drugbank-id>
+      <name>Fluindione</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Fluindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13275</drugbank-id>
+      <name>Clorindione</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Clorindione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13347</drugbank-id>
+      <name>Diphenadione</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Diphenadione.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13451</drugbank-id>
+      <name>Tioclomarol</name>
+      <description>Cloxacillin may increase the anticoagulant activities of Tioclomarol.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14055</drugbank-id>
+      <name>(S)-Warfarin</name>
+      <description>Cloxacillin may increase the anticoagulant activities of (S)-Warfarin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00255</drugbank-id>
+      <name>Diethylstilbestrol</name>
+      <description>The therapeutic efficacy of Diethylstilbestrol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00294</drugbank-id>
+      <name>Etonogestrel</name>
+      <description>The therapeutic efficacy of Etonogestrel can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00304</drugbank-id>
+      <name>Desogestrel</name>
+      <description>The therapeutic efficacy of Desogestrel can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00351</drugbank-id>
+      <name>Megestrol acetate</name>
+      <description>The therapeutic efficacy of Megestrol acetate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00367</drugbank-id>
+      <name>Levonorgestrel</name>
+      <description>The therapeutic efficacy of Levonorgestrel can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00396</drugbank-id>
+      <name>Progesterone</name>
+      <description>The therapeutic efficacy of Progesterone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00603</drugbank-id>
+      <name>Medroxyprogesterone acetate</name>
+      <description>The therapeutic efficacy of Medroxyprogesterone acetate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00717</drugbank-id>
+      <name>Norethisterone</name>
+      <description>The therapeutic efficacy of Norethisterone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00783</drugbank-id>
+      <name>Estradiol</name>
+      <description>The therapeutic efficacy of Estradiol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00823</drugbank-id>
+      <name>Ethynodiol diacetate</name>
+      <description>The therapeutic efficacy of Ethynodiol diacetate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00834</drugbank-id>
+      <name>Mifepristone</name>
+      <description>The therapeutic efficacy of Mifepristone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00957</drugbank-id>
+      <name>Norgestimate</name>
+      <description>The therapeutic efficacy of Norgestimate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00977</drugbank-id>
+      <name>Ethinylestradiol</name>
+      <description>The therapeutic efficacy of Ethinylestradiol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01115</drugbank-id>
+      <name>Nifedipine</name>
+      <description>The therapeutic efficacy of Nifedipine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01357</drugbank-id>
+      <name>Mestranol</name>
+      <description>The therapeutic efficacy of Mestranol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01395</drugbank-id>
+      <name>Drospirenone</name>
+      <description>The therapeutic efficacy of Drospirenone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04066</drugbank-id>
+      <name>para-Coumaric Acid</name>
+      <description>The therapeutic efficacy of para-Coumaric Acid can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04574</drugbank-id>
+      <name>Estrone sulfate</name>
+      <description>The therapeutic efficacy of Estrone sulfate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04682</drugbank-id>
+      <name>Octylphenoxy polyethoxyethanol</name>
+      <description>The therapeutic efficacy of Octylphenoxy polyethoxyethanol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04839</drugbank-id>
+      <name>Cyproterone acetate</name>
+      <description>The therapeutic efficacy of Cyproterone acetate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05830</drugbank-id>
+      <name>Trestolone</name>
+      <description>The therapeutic efficacy of Trestolone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06266</drugbank-id>
+      <name>Lonidamine</name>
+      <description>The therapeutic efficacy of Lonidamine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06713</drugbank-id>
+      <name>Norelgestromin</name>
+      <description>The therapeutic efficacy of Norelgestromin can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06730</drugbank-id>
+      <name>Gestodene</name>
+      <description>The therapeutic efficacy of Gestodene can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06789</drugbank-id>
+      <name>Hydroxyprogesterone caproate</name>
+      <description>The therapeutic efficacy of Hydroxyprogesterone caproate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08867</drugbank-id>
+      <name>Ulipristal</name>
+      <description>The therapeutic efficacy of Ulipristal can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09123</drugbank-id>
+      <name>Dienogest</name>
+      <description>The therapeutic efficacy of Dienogest can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09371</drugbank-id>
+      <name>Norethynodrel</name>
+      <description>The therapeutic efficacy of Norethynodrel can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09389</drugbank-id>
+      <name>Norgestrel</name>
+      <description>The therapeutic efficacy of Norgestrel can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09401</drugbank-id>
+      <name>Isosorbide</name>
+      <description>The therapeutic efficacy of Isosorbide can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11507</drugbank-id>
+      <name>Cloprostenol</name>
+      <description>The therapeutic efficacy of Cloprostenol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11619</drugbank-id>
+      <name>Gestrinone</name>
+      <description>The therapeutic efficacy of Gestrinone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11636</drugbank-id>
+      <name>Nomegestrol</name>
+      <description>The therapeutic efficacy of Nomegestrol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12025</drugbank-id>
+      <name>Triptolide</name>
+      <description>The therapeutic efficacy of Triptolide can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12474</drugbank-id>
+      <name>Lynestrenol</name>
+      <description>The therapeutic efficacy of Lynestrenol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13044</drugbank-id>
+      <name>Gossypol</name>
+      <description>The therapeutic efficacy of Gossypol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13310</drugbank-id>
+      <name>Ormeloxifene</name>
+      <description>The therapeutic efficacy of Ormeloxifene can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13528</drugbank-id>
+      <name>Chlormadinone</name>
+      <description>The therapeutic efficacy of Chlormadinone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13563</drugbank-id>
+      <name>Norgestrienone</name>
+      <description>The therapeutic efficacy of Norgestrienone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13685</drugbank-id>
+      <name>Quingestanol</name>
+      <description>The therapeutic efficacy of Quingestanol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13857</drugbank-id>
+      <name>Demegestone</name>
+      <description>The therapeutic efficacy of Demegestone can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13866</drugbank-id>
+      <name>Etynodiol</name>
+      <description>The therapeutic efficacy of Etynodiol can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13944</drugbank-id>
+      <name>Testosterone enanthate</name>
+      <description>The therapeutic efficacy of Testosterone enanthate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13953</drugbank-id>
+      <name>Estradiol benzoate</name>
+      <description>The therapeutic efficacy of Estradiol benzoate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13954</drugbank-id>
+      <name>Estradiol cypionate</name>
+      <description>The therapeutic efficacy of Estradiol cypionate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13956</drugbank-id>
+      <name>Estradiol valerate</name>
+      <description>The therapeutic efficacy of Estradiol valerate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13981</drugbank-id>
+      <name>Nomegestrol acetate</name>
+      <description>The therapeutic efficacy of Nomegestrol acetate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14678</drugbank-id>
+      <name>Norethindrone enanthate</name>
+      <description>The therapeutic efficacy of Norethindrone enanthate can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00314</drugbank-id>
+      <name>Capreomycin</name>
+      <description>The serum concentration of Capreomycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00452</drugbank-id>
+      <name>Framycetin</name>
+      <description>The serum concentration of Framycetin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00479</drugbank-id>
+      <name>Amikacin</name>
+      <description>The serum concentration of Amikacin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00684</drugbank-id>
+      <name>Tobramycin</name>
+      <description>The serum concentration of Tobramycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00798</drugbank-id>
+      <name>Gentamicin</name>
+      <description>The serum concentration of Gentamicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00955</drugbank-id>
+      <name>Netilmicin</name>
+      <description>The serum concentration of Netilmicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00994</drugbank-id>
+      <name>Neomycin</name>
+      <description>The serum concentration of Neomycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01082</drugbank-id>
+      <name>Streptomycin</name>
+      <description>The serum concentration of Streptomycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01172</drugbank-id>
+      <name>Kanamycin</name>
+      <description>The serum concentration of Kanamycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01421</drugbank-id>
+      <name>Paromomycin</name>
+      <description>The serum concentration of Paromomycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03615</drugbank-id>
+      <name>Ribostamycin</name>
+      <description>The serum concentration of Ribostamycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04263</drugbank-id>
+      <name>Geneticin</name>
+      <description>The serum concentration of Geneticin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04626</drugbank-id>
+      <name>Apramycin</name>
+      <description>The serum concentration of Apramycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04729</drugbank-id>
+      <name>Gentamicin C1a</name>
+      <description>The serum concentration of Gentamicin C1a can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04808</drugbank-id>
+      <name>Neamine</name>
+      <description>The serum concentration of Neamine can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06696</drugbank-id>
+      <name>Arbekacin</name>
+      <description>The serum concentration of Arbekacin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08437</drugbank-id>
+      <name>Puromycin</name>
+      <description>The serum concentration of Puromycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11512</drugbank-id>
+      <name>Dihydrostreptomycin</name>
+      <description>The serum concentration of Dihydrostreptomycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11520</drugbank-id>
+      <name>Hygromycin B</name>
+      <description>The serum concentration of Hygromycin B can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12604</drugbank-id>
+      <name>Sisomicin</name>
+      <description>The serum concentration of Sisomicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12615</drugbank-id>
+      <name>Plazomicin</name>
+      <description>The serum concentration of Plazomicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13270</drugbank-id>
+      <name>Dibekacin</name>
+      <description>The serum concentration of Dibekacin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13274</drugbank-id>
+      <name>Micronomicin</name>
+      <description>The serum concentration of Micronomicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13540</drugbank-id>
+      <name>Isepamicin</name>
+      <description>The serum concentration of Isepamicin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13673</drugbank-id>
+      <name>Bekanamycin</name>
+      <description>The serum concentration of Bekanamycin can be decreased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12768</drugbank-id>
+      <name>BCG vaccine</name>
+      <description>The therapeutic efficacy of BCG vaccine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB14022</drugbank-id>
+      <name>Typhoid vaccine</name>
+      <description>The therapeutic efficacy of Typhoid vaccine can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13783</drugbank-id>
+      <name>Acemetacin</name>
+      <description>Acemetacin may decrease the excretion rate of Cloxacillin which could result in a higher serum level.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00155</drugbank-id>
+      <name>Citrulline</name>
+      <description>The excretion of Citrulline can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00229</drugbank-id>
+      <name>Cefotiam</name>
+      <description>The excretion of Cefotiam can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00300</drugbank-id>
+      <name>Tenofovir disoproxil</name>
+      <description>The excretion of Tenofovir disoproxil can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00328</drugbank-id>
+      <name>Indomethacin</name>
+      <description>The excretion of Indomethacin can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00345</drugbank-id>
+      <name>Aminohippuric acid</name>
+      <description>The excretion of Aminohippuric acid can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00369</drugbank-id>
+      <name>Cidofovir</name>
+      <description>The excretion of Cidofovir can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00432</drugbank-id>
+      <name>Trifluridine</name>
+      <description>The excretion of Trifluridine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00495</drugbank-id>
+      <name>Zidovudine</name>
+      <description>The excretion of Zidovudine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00501</drugbank-id>
+      <name>Cimetidine</name>
+      <description>The excretion of Cimetidine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00535</drugbank-id>
+      <name>Cefdinir</name>
+      <description>The excretion of Cefdinir can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00567</drugbank-id>
+      <name>Cephalexin</name>
+      <description>The excretion of Cephalexin can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00649</drugbank-id>
+      <name>Stavudine</name>
+      <description>The excretion of Stavudine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00693</drugbank-id>
+      <name>Fluorescein</name>
+      <description>The excretion of Fluorescein can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00709</drugbank-id>
+      <name>Lamivudine</name>
+      <description>The excretion of Lamivudine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00718</drugbank-id>
+      <name>Adefovir dipivoxil</name>
+      <description>The excretion of Adefovir dipivoxil can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00770</drugbank-id>
+      <name>Alprostadil</name>
+      <description>The excretion of Alprostadil can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00787</drugbank-id>
+      <name>Acyclovir</name>
+      <description>The excretion of Acyclovir can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00863</drugbank-id>
+      <name>Ranitidine</name>
+      <description>The excretion of Ranitidine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00900</drugbank-id>
+      <name>Didanosine</name>
+      <description>The excretion of Didanosine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00917</drugbank-id>
+      <name>Dinoprostone</name>
+      <description>The excretion of Dinoprostone can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00943</drugbank-id>
+      <name>Zalcitabine</name>
+      <description>The excretion of Zalcitabine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01197</drugbank-id>
+      <name>Captopril</name>
+      <description>The excretion of Captopril can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01327</drugbank-id>
+      <name>Cefazolin</name>
+      <description>The excretion of Cefazolin can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01332</drugbank-id>
+      <name>Ceftizoxime</name>
+      <description>The excretion of Ceftizoxime can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01414</drugbank-id>
+      <name>Cefacetrile</name>
+      <description>The excretion of Cefacetrile can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01415</drugbank-id>
+      <name>Ceftibuten</name>
+      <description>The excretion of Ceftibuten can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01606</drugbank-id>
+      <name>Tazobactam</name>
+      <description>The excretion of Tazobactam can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB02527</drugbank-id>
+      <name>Cyclic adenosine monophosphate</name>
+      <description>The excretion of Cyclic adenosine monophosphate can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB03553</drugbank-id>
+      <name>Glutaric Acid</name>
+      <description>The excretion of Glutaric Acid can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04348</drugbank-id>
+      <name>Taurocholic acid</name>
+      <description>The excretion of Taurocholic acid can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08846</drugbank-id>
+      <name>Ellagic acid</name>
+      <description>The excretion of Ellagic acid can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09008</drugbank-id>
+      <name>Cefaloridine</name>
+      <description>The excretion of Cefaloridine can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09298</drugbank-id>
+      <name>Silibinin</name>
+      <description>The excretion of Silibinin can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB09299</drugbank-id>
+      <name>Tenofovir alafenamide</name>
+      <description>The excretion of Tenofovir alafenamide can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB12243</drugbank-id>
+      <name>Edaravone</name>
+      <description>The excretion of Edaravone can be decreased when combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00416</drugbank-id>
+      <name>Metocurine iodide</name>
+      <description>The therapeutic efficacy of Metocurine iodide can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00483</drugbank-id>
+      <name>Gallamine triethiodide</name>
+      <description>The therapeutic efficacy of Gallamine triethiodide can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00565</drugbank-id>
+      <name>Cisatracurium</name>
+      <description>The therapeutic efficacy of Cisatracurium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00728</drugbank-id>
+      <name>Rocuronium</name>
+      <description>The therapeutic efficacy of Rocuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00732</drugbank-id>
+      <name>Atracurium besylate</name>
+      <description>The therapeutic efficacy of Atracurium besylate can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01135</drugbank-id>
+      <name>Doxacurium</name>
+      <description>The therapeutic efficacy of Doxacurium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01199</drugbank-id>
+      <name>Tubocurarine</name>
+      <description>The therapeutic efficacy of Tubocurarine can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01226</drugbank-id>
+      <name>Mivacurium</name>
+      <description>The therapeutic efficacy of Mivacurium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01336</drugbank-id>
+      <name>Metocurine</name>
+      <description>The therapeutic efficacy of Metocurine can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01337</drugbank-id>
+      <name>Pancuronium</name>
+      <description>The therapeutic efficacy of Pancuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01338</drugbank-id>
+      <name>Pipecuronium</name>
+      <description>The therapeutic efficacy of Pipecuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01339</drugbank-id>
+      <name>Vecuronium</name>
+      <description>The therapeutic efficacy of Vecuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04834</drugbank-id>
+      <name>Rapacuronium</name>
+      <description>The therapeutic efficacy of Rapacuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13295</drugbank-id>
+      <name>Atracurium</name>
+      <description>The therapeutic efficacy of Atracurium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13584</drugbank-id>
+      <name>Gallamine</name>
+      <description>The therapeutic efficacy of Gallamine can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13648</drugbank-id>
+      <name>Alcuronium</name>
+      <description>The therapeutic efficacy of Alcuronium can be increased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00365</drugbank-id>
+      <name>Grepafloxacin</name>
+      <description>The serum concentration of Grepafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01137</drugbank-id>
+      <name>Levofloxacin</name>
+      <description>The serum concentration of Levofloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00218</drugbank-id>
+      <name>Moxifloxacin</name>
+      <description>The serum concentration of Moxifloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00467</drugbank-id>
+      <name>Enoxacin</name>
+      <description>The serum concentration of Enoxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00487</drugbank-id>
+      <name>Pefloxacin</name>
+      <description>The serum concentration of Pefloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00537</drugbank-id>
+      <name>Ciprofloxacin</name>
+      <description>The serum concentration of Ciprofloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00685</drugbank-id>
+      <name>Trovafloxacin</name>
+      <description>The serum concentration of Trovafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00779</drugbank-id>
+      <name>Nalidixic acid</name>
+      <description>The serum concentration of Nalidixic acid can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00817</drugbank-id>
+      <name>Rosoxacin</name>
+      <description>The serum concentration of Rosoxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00827</drugbank-id>
+      <name>Cinoxacin</name>
+      <description>The serum concentration of Cinoxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00978</drugbank-id>
+      <name>Lomefloxacin</name>
+      <description>The serum concentration of Lomefloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01044</drugbank-id>
+      <name>Gatifloxacin</name>
+      <description>The serum concentration of Gatifloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01059</drugbank-id>
+      <name>Norfloxacin</name>
+      <description>The serum concentration of Norfloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01155</drugbank-id>
+      <name>Gemifloxacin</name>
+      <description>The serum concentration of Gemifloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01165</drugbank-id>
+      <name>Ofloxacin</name>
+      <description>The serum concentration of Ofloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01208</drugbank-id>
+      <name>Sparfloxacin</name>
+      <description>The serum concentration of Sparfloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB01405</drugbank-id>
+      <name>Temafloxacin</name>
+      <description>The serum concentration of Temafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB04576</drugbank-id>
+      <name>Fleroxacin</name>
+      <description>The serum concentration of Fleroxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB05488</drugbank-id>
+      <name>Technetium Tc-99m ciprofloxacin</name>
+      <description>The serum concentration of Technetium Tc-99m ciprofloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06160</drugbank-id>
+      <name>Garenoxacin</name>
+      <description>The serum concentration of Garenoxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB06600</drugbank-id>
+      <name>Nemonoxacin</name>
+      <description>The serum concentration of Nemonoxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB08972</drugbank-id>
+      <name>Flumequine</name>
+      <description>The serum concentration of Flumequine can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11404</drugbank-id>
+      <name>Enrofloxacin</name>
+      <description>The serum concentration of Enrofloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11443</drugbank-id>
+      <name>Orbifloxacin</name>
+      <description>The serum concentration of Orbifloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11491</drugbank-id>
+      <name>Sarafloxacin</name>
+      <description>The serum concentration of Sarafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11511</drugbank-id>
+      <name>Difloxacin</name>
+      <description>The serum concentration of Difloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11774</drugbank-id>
+      <name>Pazufloxacin</name>
+      <description>The serum concentration of Pazufloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11892</drugbank-id>
+      <name>Prulifloxacin</name>
+      <description>The serum concentration of Prulifloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB11943</drugbank-id>
+      <name>Delafloxacin</name>
+      <description>The serum concentration of Delafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13261</drugbank-id>
+      <name>Sitafloxacin</name>
+      <description>The serum concentration of Sitafloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13627</drugbank-id>
+      <name>Oxolinic acid</name>
+      <description>The serum concentration of Oxolinic acid can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13772</drugbank-id>
+      <name>Rufloxacin</name>
+      <description>The serum concentration of Rufloxacin can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB13823</drugbank-id>
+      <name>Pipemidic acid</name>
+      <description>The serum concentration of Pipemidic acid can be increased when it is combined with Cloxacillin.</description>
+    </drug-interaction>
+    <drug-interaction>
+      <drugbank-id>DB00581</drugbank-id>
+      <name>Lactulose</name>
+      <description>The therapeutic efficacy of Lactulose can be decreased when used in combination with Cloxacillin.</description>
+    </drug-interaction>
+  </drug-interactions>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>2.61</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-3.9</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>5.32e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>(2S,5R,6R)-6-[3-(2-chlorophenyl)-5-methyl-1,2-oxazole-4-amido]-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>cloxacillin</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>435.881</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>435.065569098</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)C1=C(C)ON=C1C1=CC=CC=C1Cl)C(O)=O</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C19H18ClN3O5S</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C19H18ClN3O5S/c1-8-11(12(22-28-8)9-6-4-5-7-10(9)20)15(24)21-13-16(25)23-14(18(26)27)19(2,3)29-17(13)23/h4-7,13-14,17H,1-3H3,(H,21,24)(H,26,27)/t13-,14+,17-/m1/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>LQOLIRLGBULYKD-JKIFEVAISA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>112.74</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>106.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>41.64</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>2</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest acidic)</kind>
+      <value>3.75</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>-0.41</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>-1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>4</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rule of Five</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Ghose Filter</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>13.9 mg/L</value>
+      <source/>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>2.48</value>
+      <source>SANGSTER (1994)</source>
+    </property>
+    <property>
+      <kind>pKa</kind>
+      <value>2.78</value>
+      <source>SANGSTER (1994)</source>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>8411</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>8375</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Drugs Product Database (DPD)</resource>
+      <identifier>8368</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEBI</resource>
+      <identifier>49566</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>6098</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46507109</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C06923</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>5873</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>BindingDB</resource>
+      <identifier>50022788</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA449059</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PDB</resource>
+      <identifier>CXN</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Therapeutic Targets Database</resource>
+      <identifier>DAP001161</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Cloxacillin</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChEMBL</resource>
+      <identifier>CHEMBL891</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/mtm/cloxacillin.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000576</id>
+      <name>Penicillin-binding protein 1A</name>
+      <organism>Clostridium perfringens (strain 13 / Type A)</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A6382</ref-id>
+            <pubmed-id>6810758</pubmed-id>
+            <citation>Kleppe G, Yu W, Strominger JL: Penicillin-binding proteins in Bacillus subtilis mutants. Antimicrob Agents Chemother. 1982 Jun;21(6):979-83.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="Q8XJ01" source="Swiss-Prot">
+        <name>Penicillin-binding protein 1A</name>
+        <general-function>Transferase activity, transferring glycosyl groups</general-function>
+        <specific-function>Cell wall formation. Synthesis of cross-linked peptidoglycan from the lipid intermediates. The enzyme has a penicillin-insensitive transglycosylase N-terminal domain (formation of linear glycan strands) and a penicillin-sensitive transpeptidase C-terminal domain (cross-linking of the peptide subunits) (By similarity).</specific-function>
+        <gene-name>pbpA</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>31-51</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>9.09</theoretical-pi>
+        <molecular-weight>75176.35</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="195102">Clostridium perfringens (strain 13 / Type A)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>BA000016</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>18145626</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8XJ01</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PBPA_CLOPE</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>PBP1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016139|Penicillin-binding protein 1A
+MTERKREHKDRKQNKNSPKNQSKVTKFLKWFFIGILLLGITAVTVVGIYVLSIIRSSPEL
+DVQAIQSLNQPSILYDDQGNFMDNVITREQRYVVKSEEIPDNLKKAFVAIEDERFYEHKG
+IDIKRIFGVIASNIKGKLSGSNTVQGASTITQQLIKNAVLTNEVSYERKIKEMYLALELE
+KHLSKDEILTTYLNTIPMGGYQYGVSAAAQRFFSKNVSDLNLVECAYLGGLTQAPTSYDG
+LSEANKENPSRYLNRTKSVLFKMHELGYISSEQYNDAINEIDTNGIKFTPNNKLSKTNFE
+WFTRPAITQVKQDLMDKYKYTQEEVDKLIANGGLKIYTSMDRNLQNNVQKVLDDPNNYKA
+ITNNPNEKNEDGVYKLQASATIIDYKTGHVKALVGGRGEQPAMSHNRAYYDLKSIGSATK
+PLTVYGPAIDLGLGGAGSVVNDSPLSNKELSSTGYKDQPKNEYNSYRGPLTFREAIKISS
+NLAAIKVANEVGVSNSIAYGEKLGLVYGPHSRGISTTALGQFQNDPNNPDGGNTYTLASA
+FGVFGNNGVKTNAKLYTKVLDSHGNVILDTSTPEETKIFSPQASYIVYDMLKDQVESGSA
+KSAKFGNIPVAGKTGTTTGDKDYLFAGLTPYYSAAIWIGYDKPREMRTSSGTVTSPIFGK
+IMGLAHKDLQYKEVDNLVE</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016140|Penicillin-binding protein 1A (pbpA)
+ATGACTGAAAGAAAAAGAGAGCATAAAGATAGAAAGCAGAATAAAAATTCACCTAAAAAT
+CAATCGAAAGTAACAAAATTTTTGAAATGGTTCTTTATAGGGATTCTGCTTCTAGGGATA
+ACTGCCGTAACAGTAGTTGGAATTTACGTTCTTTCTATTATACGTTCATCTCCAGAGTTA
+GATGTTCAGGCAATTCAATCTCTAAATCAGCCATCCATTCTTTACGATGATCAGGGAAAC
+TTTATGGATAATGTTATAACTCGTGAACAACGTTATGTAGTTAAATCTGAAGAGATACCT
+GATAACTTAAAAAAGGCTTTTGTAGCTATTGAAGACGAAAGATTTTATGAGCATAAAGGA
+ATAGACATTAAAAGAATTTTTGGGGTAATAGCTTCTAATATTAAAGGTAAACTTTCAGGA
+AGTAATACAGTTCAAGGGGCTTCAACCATAACTCAGCAACTTATAAAAAATGCCGTACTT
+ACTAATGAAGTTAGTTATGAAAGAAAAATTAAAGAAATGTACTTAGCTTTGGAATTAGAA
+AAGCACCTTTCAAAAGATGAAATCCTTACTACGTATTTAAATACAATTCCTATGGGTGGA
+TACCAATATGGGGTTAGCGCAGCTGCTCAAAGATTTTTTAGTAAGAATGTTTCAGATTTG
+AATTTAGTTGAGTGCGCTTATTTAGGAGGACTTACTCAAGCACCAACTTCTTATGATGGT
+CTTTCAGAAGCAAATAAAGAAAATCCAAGTAGATATTTAAATAGAACTAAATCTGTACTA
+TTTAAAATGCATGAACTTGGATATATTTCAAGTGAACAATATAATGACGCAATAAATGAA
+ATTGACACAAATGGTATAAAATTCACACCAAATAATAAATTAAGTAAAACTAACTTTGAG
+TGGTTCACAAGACCAGCTATAACTCAAGTTAAACAAGACTTAATGGATAAATATAAATAT
+ACACAAGAGGAAGTTGACAAACTTATAGCTAATGGTGGATTAAAAATCTATACTTCAATG
+GATAGAAATCTTCAAAATAATGTTCAAAAAGTTTTAGATGATCCAAATAACTATAAAGCT
+ATAACTAATAATCCTAATGAAAAAAATGAAGATGGTGTTTATAAATTACAAGCATCTGCC
+ACAATAATAGACTATAAAACAGGCCATGTTAAGGCTTTAGTTGGAGGAAGAGGGGAACAA
+CCTGCTATGTCTCACAATAGAGCTTATTATGATTTAAAATCTATAGGTTCTGCAACAAAA
+CCATTAACAGTTTATGGTCCTGCTATTGATTTAGGACTTGGTGGCGCTGGCTCTGTAGTA
+AATGATTCTCCATTAAGTAATAAAGAGTTATCTTCTACAGGATATAAAGATCAACCTAAG
+AATGAATACAATAGTTATAGAGGCCCTTTAACTTTTAGAGAAGCAATTAAAATCTCTAGT
+AACTTAGCAGCCATAAAAGTTGCTAATGAAGTAGGTGTTTCAAACTCTATAGCTTATGGA
+GAAAAATTAGGTCTTGTTTATGGACCTCATTCTAGAGGTATTTCCACAACAGCCTTAGGT
+CAATTCCAAAATGACCCTAATAATCCTGATGGAGGAAATACTTATACTCTAGCTTCAGCC
+TTCGGTGTTTTTGGTAATAACGGTGTTAAAACAAATGCTAAATTATATACAAAGGTATTA
+GATTCTCATGGAAATGTAATTCTTGATACAAGTACTCCAGAAGAAACTAAAATATTTAGT
+CCTCAAGCGTCTTATATAGTTTATGATATGCTTAAGGATCAAGTAGAAAGTGGCTCTGCA
+AAATCTGCTAAATTTGGTAATATTCCTGTGGCGGGTAAAACAGGAACTACTACTGGAGAT
+AAAGACTATTTATTTGCAGGATTAACTCCATATTATTCTGCGGCTATTTGGATTGGATAT
+GATAAGCCTAGAGAAATGAGAACTAGTAGTGGTACTGTTACCTCTCCTATTTTCGGAAAA
+ATAATGGGCTTAGCTCATAAAGACTTACAGTACAAAGAGGTTGACAACCTAGTGGAATAA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00905</identifier>
+            <name>Transpeptidase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00912</identifier>
+            <name>Transgly</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>hydrolase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>penicillin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transferase activity, transferring glycosyl groups</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell wall organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidoglycan biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="2">
+      <id>BE0001358</id>
+      <name>Beta-lactamase</name>
+      <organism>Escherichia coli (strain K12)</organism>
+      <actions>
+        <action>inducer</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A1713</ref-id>
+            <pubmed-id>17139284</pubmed-id>
+            <citation>Overington JP, Al-Lazikani B, Hopkins AL: How many drug targets are there? Nat Rev Drug Discov. 2006 Dec;5(12):993-6.</citation>
+          </article>
+          <article>
+            <ref-id>A1715</ref-id>
+            <pubmed-id>17016423</pubmed-id>
+            <citation>Imming P, Sinning C, Meyer A: Drugs, their targets and the nature and number of drug targets. Nat Rev Drug Discov. 2006 Oct;5(10):821-34.</citation>
+          </article>
+          <article>
+            <ref-id>A12873</ref-id>
+            <pubmed-id>16792938</pubmed-id>
+            <citation>Mirelis B, Rivera A, Miro E, Mesa RJ, Navarro F, Coll P: A simple phenotypic method for differentiation between acquired and chromosomal AmpC beta-lactamases in Escherichia coli. Enferm Infecc Microbiol Clin. 2006 Jun-Jul;24(6):370-2.</citation>
+          </article>
+          <article>
+            <ref-id>A12918</ref-id>
+            <pubmed-id>16971653</pubmed-id>
+            <citation>Ruppe E, Bidet P, Verdet C, Arlet G, Bingen E: First detection of the Ambler class C 1 AmpC beta-lactamase in Citrobacter freundii by a new, simple double-disk synergy test. J Clin Microbiol. 2006 Nov;44(11):4204-7. Epub 2006 Sep 13.</citation>
+          </article>
+          <article>
+            <ref-id>A12919</ref-id>
+            <pubmed-id>15631796</pubmed-id>
+            <citation>Guan XZ, Liu YN, Luo YP, She DY, Zhou G, Chen LA, Xu YP: [A new member of CMY type cephalosporinase prevailing in Escherichia coli]. Zhonghua Yi Xue Za Zhi. 2004 Nov 17;84(22):1872-5.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P00811" source="Swiss-Prot">
+        <name>Beta-lactamase</name>
+        <general-function>Beta-lactamase activity</general-function>
+        <specific-function>This protein is a serine beta-lactamase with a substrate specificity for cephalosporins.</specific-function>
+        <gene-name>ampC</gene-name>
+        <locus/>
+        <cellular-location>Periplasm</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-19</signal-regions>
+        <theoretical-pi>9.07</theoretical-pi>
+        <molecular-weight>41555.3</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="83333">Escherichia coli (strain K12)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>J01611</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>145267</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P00811</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>AMPC_ECOLI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.5.2.6</synonym>
+          <synonym>ampA</synonym>
+          <synonym>Cephalosporinase</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010950|Beta-lactamase
+MFKTTLCALLITASCSTFAAPQQINDIVHRTITPLIEQQKIPGMAVAVIYQGKPYYFTWG
+YADIAKKQPVTQQTLFELGSVSKTFTGVLGGDAIARGEIKLSDPTTKYWPELTAKQWNGI
+TLLHLATYTAGGLPLQVPDEVKSSSDLLRFYQNWQPAWAPGTQRLYANSSIGLFGALAVK
+PSGLSFEQAMQTRVFQPLKLNHTWINVPPAEEKNYAWGYREGKAVHVSPGALDAEAYGVK
+STIEDMARWVQSNLKPLDINEKTLQQGIQLAQSRYWQTGDMYQGLGWEMLDWPVNPDSII
+NGSDNKIALAARPVKAITPPTPAVRASWVHKTGATGGFGSYVAFIPEKELGIVMLANKNY
+PNPARVDAAWQILNALQ</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010951|Beta-lactamase (ampC)
+ATGTTCAAAACGACGCTCTGCGCCTTATTAATTACCGCCTCTTGCTCCACATTTGCTGCC
+CCTCAACAAATCAACGATATTGTGCATCGCACAATTACCCCGCTTATAGAGCAACAAAAG
+ATCCCGGGTATGGCGGTGGCGGTAATTTATCAGGGTAAACCTTATTACTTTACCTGGGGC
+TATGCGGACATCGCCAAAAAGCAGCCCGTCACACAGCAAACGTTGTTTGAGTTAGGTTCG
+GTCAGCAAAACATTTACTGGCGTGCTTGGTGGCGACGCTATTGCTCGAGGGGAAATCAAG
+TTAAGCGATCCCACAACAAAATACTGGCCTGAACTTACCGCTAAACAGTGGAATGGGATC
+ACACTATTACATCTCGCAACCTACACTGCTGGCGGCCTGCCATTGCAGGTGCCGGATGAG
+GTGAAATCCTCAAGCGACTTGCTGCGCTTCTATCAAAACTGGCAGCCTGCATGGGCTCCA
+GGAACACAACGTCTGTATGCCAACTCCAGTATCGGTTTGTTCGGCGCACTGGCTGTGAAG
+CCGTCTGGTTTGAGTTTTGAGCAGGCGATGCAAACTCGTGTCTTCCAGCCACTCAAACTC
+AACCATACGTGGATTAATGTACCGCCCGCAGAAGAAAAGAATTACGCCTGGGGATATCGC
+GAAGGTAAGGCAGTGCATGTTTCGCCTGGGGCGTTAGATGCTGAAGCTTATGGTGTGAAG
+TCGACCATTGAAGATATGGCCCGCTGGGTGCAAAGCAATTTAAAACCCCTTGATATCAAT
+GAGAAAACGCTTCAACAAGGGATACAACTGGCACAATCTCGCTACTGGCAAACCGGCGAT
+ATGTATCAGGGCCTGGGCTGGGAAATGCTGGACTGGCCGGTAAATCCTGACAGCATCATT
+AACGGCAGTGACAATAAAATTGCACTGGCAGCACGCCCCGTAAAAGCGATTACGCCCCCA
+ACTCCTGCAGTACGCGCATCATGGGTACATAAAACAGGGGCGACCGGCGGATTTGGTAGC
+TATGTCGCGTTTATTCCAGAAAAAGAGCTGGGTATCGTGATGCTGGCAAACAAAAACTAT
+CCCAATCCAGCGAGAGTCGACGCCGCCTGGCAGATTCTTAACGCTCTACAGTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00144</identifier>
+            <name>Beta-lactamase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>outer membrane-bounded periplasmic space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>beta-lactamase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>antibiotic catabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="7">
+      <id>BE0004644</id>
+      <name>Penicillin-binding protein 2a</name>
+      <organism>Streptococcus pneumoniae (strain ATCC BAA-255 / R6)</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16688</ref-id>
+            <pubmed-id>7447421</pubmed-id>
+            <citation>Williamson R, Hakenbeck R, Tomasz A: In vivo interaction of beta-lactam antibiotics with the penicillin-binding proteins of Streptococcus pneumoniae. Antimicrob Agents Chemother. 1980 Oct;18(4):629-37.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="Q8DNB6" source="TrEMBL">
+        <name>Penicillin-binding protein 2a</name>
+        <general-function>Transferase activity, transferring acyl groups</general-function>
+        <specific-function/>
+        <gene-name>pbp2a</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions>57-77</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>80797.94</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="171101">Streptococcus pneumoniae (strain ATCC BAA-255 / R6)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8DNB6</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q8DNB6_STRR6</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms/>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022113|Penicillin-binding protein 2a
+MKLDKLFEKFLSLFKKETSELEDSDSTILRRSRSDRKKLAQVGPIRKFWRRYHLTKIILI
+LGLSAGLLVGIYLFAVAKSTNVNDLQNALKTRTLIFDREEKEAGALSGQKGTYVELTDIS
+KNLQNAVIATEDRSFYKNDGINYGRFFLAIVTAGRSGGGSTITQQLAKNAYLSQDQTVER
+KAKEFFLALELSKKYSKEQILTMYLNNAYFGNGVWGVEDASKKYFGVSASEVSLDQAATL
+AGMLKGPELYNPLNSVEDSTNRRDTVLQNMVAAGYIDKNQETEAAEVDMTSQLHDKYEGK
+ISDYRYPSYFDAVVNEAVSKYNLTEEEIVNNGYRIYTELDQNYQANMQIVYENTSLFPRA
+EDGTFAQSGSVALEPKTGGVRGVVGQVADNDKTGFRNFNYATQSKRSPGSTIKPLVVYTP
+AVEAGWALNKQLDNHTMQYDSYKVDNYAGIKTSREVPMYQSLAESLNLPAVATVNDLGVD
+KAFEAGEKFGLNMEKVDRVLGVALGSGVETNPLQMAQAYAAFANEGLMPEAHFISRIENA
+SGQVIASHKNSQKRVIDKSVADKMTSMMLGTFTNGTGISSSPADYVMAGKTGTTEAVFNP
+EYTSDQWVIGYTPDVVISHWLGFPTTDENHYLAGSTSNGAAHVFRNIANTILPYTPGSTF
+TVENAYKQNGIAPANTKRQVQTNDNSQTDDNLSDIRGRAQSLVDEASRAISDAKIKEKAQ
+TIWDSIVNLFR</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0022114|Penicillin-binding protein 2a (pbp2a)
+ATGAAATTAGATAAATTATTTGAGAAATTTCTTTCTCTTTTTAAAAAAGAAACAAGTGAA
+CTAGAGGACTCTGATTCTACTATCTTACGTCGCTCTCGTAGTGATCGAAAAAAATTAGCC
+CAAGTAGGTCCGATTCGAAAATTCTGGCGTCGTTATCATCTAACAAAGATTATCCTTATA
+CTAGGTTTGAGTGCAGGCTTGCTAGTTGGAATCTATTTGTTTGCTGTAGCCAAGTCGACC
+AATGTCAATGATTTGCAAAATGCCTTGAAAACTCGGACTCTTATTTTTGACCGTGAAGAA
+AAAGAGGCTGGTGCCTTGTCTGGTCAAAAGGGAACCTATGTTGAGCTGACTGACATCAGT
+AAAAACTTGCAGAATGCTGTTATTGCGACAGAAGACCGTTCTTTCTATAAAAATGACGGG
+ATTAACTATGGCCGTTTCTTCTTGGCTATTGTCACTGCTGGACGTTCAGGTGGTGGCTCT
+ACCATTACCCAACAGCTGGCTAAAAACGCCTATTTATCGCAGGATCAAACTGTTGAGAGA
+AAAGCGAAAGAATTTTTCCTTGCCTTAGAATTAAGCAAAAAATATAGTAAGGAGCAAATT
+CTAACCATGTACCTTAACAACGCTTATTTTGGAAATGGTGTGTGGGGTGTAGAAGATGCG
+AGTAAGAAATACTTTGGAGTTTCTGCATCAGAAGTGAGTCTGGATCAAGCTGCGACTCTG
+GCAGGGATGCTCAAGGGGCCGGAACTGTATAATCCCTTGAATTCCGTAGAAGATTCTACT
+AATCGGCGCGATACTGTCTTGCAGAATATGGTTGCAGCAGGATATATTGATAAAAACCAA
+GAAACCGAAGCTGCTGAAGTTGATATGACTTCGCAATTGCACGATAAGTATGAAGGAAAA
+ATCTCAGATTACCGTTACCCCTCTTATTTTGATGCGGTGGTTAATGAAGCTGTTTCCAAG
+TATAATCTAACAGAGGAAGAGATTGTCAATAATGGCTACCGCATTTACACAGAGCTGGAC
+CAAAACTACCAAGCAAATATGCAGATTGTTTATGAAAACACATCGCTATTTCCGAGGGCA
+GAGGATGGAACGTTTGCTCAATCAGGAAGTGTAGCTCTCGAACCGAAAACAGGGGGAGTT
+CGTGGAGTTGTCGGTCAAGTTGCTGACAATGATAAAACTGGATTCCGGAATTTCAACTAT
+GCAACCCAATCAAAGCGTAGTCCTGGTTCTACAATTAAGCCTTTAGTTGTTTATACACCA
+GCAGTTGAAGCAGGCTGGGCTTTGAATAAGCAGTTGGATAACCATACCATGCAGTATGAT
+AGCTATAAGGTTGATAACTATGCAGGGATCAAAACAAGTCGAGAAGTTCCTATGTATCAA
+TCCTTGGCAGAATCGCTTAATCTACCTGCTGTTGCCACTGTTAATGATTTGGGTGTTGAC
+AAGGCTTTTGAGGCAGGCGAAAAATTCGGACTCAACATGGAAAAGGTCGACCGTGTTCTT
+GGTGTCGCCTTGGGAAGCGGTGTTGAAACCAACCCTCTTCAAATGGCTCAAGCATACGCT
+GCCTTTGCAAATGAAGGTTTAATGCCTGAAGCTCATTTTATTAGTAGAATTGAAAATGCT
+AGTGGACAAGTTATTGCGAGTCATAAAAATTCACAAAAACGGGTGATTGATAAGTCTGTA
+GCTGACAAGATGACCAGTATGATGTTGGGGACTTTCACCAACGGTACCGGTATTAGTTCA
+TCGCCTGCAGACTATGTCATGGCAGGGAAAACTGGAACAACTGAAGCAGTTTTCAATCCG
+GAGTACACAAGTGACCAGTGGGTAATTGGTTATACTCCGGATGTAGTGATTAGCCACTGG
+CTTGGCTTTCCGACCACTGATGAAAATCACTATCTAGCTGGCTCTACTTCAAACGGTGCA
+GCTCATGTCTTTAGAAACATTGCCAATACTATTTTACCTTATACGCCAGGAAGTACCTTT
+ACGGTTGAAAATGCTTATAAGCAAAATGGAATTGCACCAGCCAATACAAAAAGACAAGTA
+CAAACCAATGATAATAGCCAGACAGATGATAATTTGTCTGATATTCGAGGGCGTGCGCAA
+AGTCTAGTAGATGAGGCTAGCCGGGCTATCTCAGATGCGAAGATTAAGGAAAAGGCTCAA
+ACAATATGGGATTCGATAGTCAATCTATTTCGCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00905</identifier>
+            <name>Transpeptidase</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00912</identifier>
+            <name>Transgly</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>penicillin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidoglycan glycosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>transferase activity, transferring acyl groups</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="8">
+      <id>BE0000142</id>
+      <name>Penicillin-binding protein 2B</name>
+      <organism>Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16688</ref-id>
+            <pubmed-id>7447421</pubmed-id>
+            <citation>Williamson R, Hakenbeck R, Tomasz A: In vivo interaction of beta-lactam antibiotics with the penicillin-binding proteins of Streptococcus pneumoniae. Antimicrob Agents Chemother. 1980 Oct;18(4):629-37.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="P0A3M5" source="Swiss-Prot">
+        <name>Penicillin-binding protein 2B</name>
+        <general-function>Penicillin binding</general-function>
+        <specific-function/>
+        <gene-name>penA</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>9-29</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>4.85</theoretical-pi>
+        <molecular-weight>73872.305</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="170187">Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE005672</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>14973165</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0A3M5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>PBP2_STRPN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>pbp2b</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016021|Penicillin-binding protein 2B
+MRKFNSHSIPIRLNLLFSIVILLFMTIIGRLLYMQVLNKDFYEKKLASASQTKITSSSAR
+GEIYDASGKPLVENTLKQVVSFTRSNKMTATDLKETAKKLLTYVSISSPNLTERQLADYY
+LADPEIYKKIVEALPSEKRLDSDGNRLSESELYNNAVDSVQTSQLNYTEDEKKEIYLFSQ
+LNAVGNFATGTIATDPLNDSQVAVIASISKEMPGISISTSWDRKVLETSLSSIVGSVSSE
+KAGLPAEEAEAYLKKGYSLNDRVGTSYLEKQYEETLQGKRSVKEIHLDKYGNMESVDTIE
+EGSKGNNIKLTIDLAFQDSVDALLKSYFNSELENGGAKYSEGVYAVALNPKTGAVLSMSG
+IKHDLKTGELTPDSLGTVTNVFVPGSVVKAATISSGWENGVLSGNQTLTDQSIVFQGSAP
+INSWYTQAYGSFPITAVQALEYSSNTYMVQTALGLMGQTYQPNMFVGTSNLESAMEKLRS
+TFGEYGLGTATGIDLPDESTGFVPKEYSFANYITNAFGQFDNYTPMQLAQYVATIANNGV
+RVAPRIVEGIYGNNDKGGLGDLIQQLQPTEMNKVNISDSDMSILHQGFYQVAHGTSGLTT
+GRAFSNGALVSISGKTGTAESYVADGQQATNTNAVAYAPSDNPQIAVAVVFPHNTNLTNG
+VGPSIARDIINLYQKYHPMN</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016022|Penicillin-binding protein 2B (penA)
+ATGAGAAAATTTAACAGCCATTCGATTCCGATTCGGCTTAATTTATTGTTTTCAATCGTC
+ATTTTACTCTTTATGACCATTATTGGTCGTTTGTTGTATATGCAGGTTTTGAACAAGGAT
+TTTTACGAAAAAAAGCTAGCTTCAGCTAGTCAGACCAAGATTACAAGCAGTTCAGCCCGT
+GGGGAAATTTATGATGCTAGTGGAAAACCTTTGGTAGAAAATACGTTAAAGCAGGTTGTT
+TCCTTTACGCGTAGCAATAAAATGACGGCTACAGACTTAAAAGAAACAGCTAAAAAGTTA
+CTGACTTATGTGAGCATCAGTTCTCCAAATTTGACAGAACGCCAGCTGGCGGATTACTAT
+TTGGCTGATCCTGAAATCTATAAAAAAATAGTGGAAGCTCTCCCAAGTGAGAAACGCTTG
+GATTCAGATGGCAATCGTCTATCCGAATCAGAACTGTATAACAATGCGGTCGATAGTGTA
+CAAACGAGTCAACTAAACTATACAGAGGATGAAAAGAAAGAAATCTATCTTTTTAGTCAG
+TTAAATGCTGTTGGAAACTTTGCGACAGGAACCATTGCGACAGATCCTCTAAATGATTCT
+CAGGTGGCTGTTATTGCCTCTATTTCAAAGGAGATGCCTGGCATTAGTATTTCTACTTCT
+TGGGATAGAAAGGTTTTGGAAACTTCCCTTTCTTCTATAGTTGGGAGTGTATCCAGTGAA
+AAAGCTGGTCTCCCAGCGGAAGAAGCAGAAGCCTATCTTAAAAAAGGCTATTCTCTAAAT
+GACCGTGTAGGAACCTCCTATTTGGAAAAGCAATATGAAGAGACCTTACAAGGAAAACGC
+TCGGTAAAAGAAATCCATCTGGATAAATATGGCAATATGGAAAGCGTGGATACAATTGAG
+GAAGGTAGTAAGGGAAACAATATCAAACTGACCATTGATTTGGCTTTCCAAGATAGCGTG
+GATGCTTTACTGAAAAGTTATTTCAATTCTGAGCTAGAAAATGGTGGAGCCAAGTATTCT
+GAAGGTGTCTATGCAGTCGCCCTTAACCCAAAAACAGGTGCGGTTTTGTCTATGTCAGGG
+ATTAAACATGACTTGAAAACGGGAGAGTTGACGCCTGATTCCTTGGGAACGGTAACCAAT
+GTCTTTGTTCCAGGTTCGGTTGTCAAGGCGGCGACCATCAGCTCAGGTTGGGAAAATGGA
+GTCTTGTCAGGAAACCAGACCTTGACAGACCAGTCCATTGTCTTCCAAGGTTCAGCTCCC
+ATCAATTCTTGGTATACTCAGGCTTACGGTTCATTCCCTATCACAGCGGTCCAAGCTCTG
+GAGTATTCATCAAATACCTATATGGTCCAAACAGCCTTAGGTCTTATGGGGCAAACCTAT
+CAACCCAATATGTTTGTCGGCACCAGCAATCTAGAGTCTGCTATGGAGAAACTGCGTTCA
+ACCTTTGGCGAATATGGCTTGGGTACTGCGACAGGAATTGACCTACCAGATGAATCTACT
+GGATTTGTTCCCAAAGAGTATAGCTTTGCTAATTACATTACTAATGCCTTTGGGCAGTTT
+GATAACTATACGCCGATGCAGTTGGCTCAGTATGTAGCAACTATTGCAAATAATGGTGTT
+CGTGTGGCTCCTCGTATTGTTGAAGGCATTTATGGTAATAATGATAAGGGAGGACTGGGT
+GACTTGATTCAGCAACTGCAACCGACAGAGATGAATAAGGTCAATATATCCGACTCCGAT
+ATGAGCATCTTGCACCAAGGTTTTTATCAGGTTGCCCATGGTACTAGTGGATTGACAACT
+GGACGTGCCTTTTCAAATGGTGCCTTGGTATCCATTAGCGGAAAAACAGGTACAGCCGAA
+AGCTATGTGGCAGATGGTCAGCAAGCAACCAATACCAATGCGGTGGCCTATGCCCCATCT
+GATAATCCCCAAATCGCTGTCGCAGTGGTCTTTCCTCATAATACCAATCTAACAAATGGT
+GTAGGACCTTCCATTGCGCGTGACATTATCAATCTGTATCAAAAATACCATCCAATGAAT
+TAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03717</identifier>
+            <name>PBP_dimer</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00905</identifier>
+            <name>Transpeptidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>penicillin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell wall organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidoglycan biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to antibiotic</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="9">
+      <id>BE0004647</id>
+      <name>Penicillin-binding protein 3</name>
+      <organism>Pseudomonas aeruginosa</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16688</ref-id>
+            <pubmed-id>7447421</pubmed-id>
+            <citation>Williamson R, Hakenbeck R, Tomasz A: In vivo interaction of beta-lactam antibiotics with the penicillin-binding proteins of Streptococcus pneumoniae. Antimicrob Agents Chemother. 1980 Oct;18(4):629-37.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>yes</known-action>
+      <polypeptide id="Q51504" source="TrEMBL">
+        <name>Cell division protein</name>
+        <general-function>Peptidoglycan glycosyltransferase activity</general-function>
+        <specific-function/>
+        <gene-name>pbpB</gene-name>
+        <locus/>
+        <cellular-location/>
+        <transmembrane-regions>12-34</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi/>
+        <molecular-weight>62855.78</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="">Pseudomonas aeruginosa</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q51504</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>Q51504_PSEAI</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>ftsI</synonym>
+          <synonym>ftsI_1</synonym>
+          <synonym>ftsI_2</synonym>
+          <synonym>Penicillin-binding protein 3</synonym>
+          <synonym>Peptidoglycan synthase FtsI</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0022449|Cell division protein
+MKLNYFQGALYPWRFCVIVGLLLAMVGAIVWRIVDLHVIDHDFLKGQGDARSVRHIAIPA
+HRGLITDRNGEPLAVSTPVTTLWANPKELMTAKERWPQLAAALGQDTKLFADRIEQNAER
+EFIYLVRGLTPEQGEGVIALKVPGVYSIEEFRRFYPAGEVVAHAVGFTDVDDRGREGIEL
+AFDEWLAGVPGKRQVLKDRRGRVIKDVQVTKNAKPGKTLALSIDLRLQYLAHRELRNALL
+ENGAKAGSLVIMDVKTGEILAMTNQPTYNPNNRRNLQPAAMRNRAMIDVFEPGSTVKPFS
+MSAALASGRWKPSDIVDVYPGTLQIGRYTIRDVSRNSRQLDLTGILIKSSNVGISKIAFD
+IGAESIYSVMQQVGLGQDTGLGFPGERVGNLPNHRKWPKAETATLAYGYGLSVTAIQLAH
+AYAALANDGKSVPLSMTRVDRVPDGVQVISPEVASTVQGMLQQVVEAQGGVFRAQVPGYH
+AAGKSGTARKVSVGTKGYRENAYRSLFAGFAPATDPRIAMVVVIDEPSKAGYFGGLVSAP
+VFSKVMAGALRLMNVPPDNLPTATEQQQVNAAPAKGGRG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0022450|Cell division protein (pbpB)
+ATGAAACTGAATTATTTCCAGGGCGCCCTCTACCCATGGCGGTTCTGCGTGATCGTCGGC
+CTGCTGCTGGCGATGGTCGGCGCCATCGTCTGGCGAATCGTCGACCTGCACGTGATCGAC
+CATGACTTCCTCAAGGGCCAGGGCGACGCGCGTAGCGTGCGGCATATCGCCATCCCTGCG
+CACCGGGGCCTGATCACTGACCGCAACGGCGAACCGCTGGCGGTGAGCACCCCGGTCACC
+ACCCTGTGGGCCAACCCCAAGGAGCTGATGACCGCCAAGGAACGCTGGCCGCAACTGGCG
+GCGGCGCTCGGGCAGGATACCAAGCTGTTCGCCGACCGCATCGAGCAGAACGCCGAGCGC
+GAGTTCATCTATCTGGTCCGTGGGCTGACCCCGGAGCAGGGCGAAGGCGTGATCGCCCTG
+AAGGTGCCCGGCGTGTACTCCATCGAGGAGTTTCGGCGTTTCTACCCGGCTGGCGAAGTG
+GTGGCCCATGCGGTCGGCTTTACCGATGTCGACGACCGCGGTCGCGAAGGTATCGAGCTG
+GCTTTCGACGAATGGCTGGCCGGCGTGCCGGGCAAGCGCCAGGTGCTCAAGGATCGCCGT
+GGCCGCGTGATCAAGGACGTGCAGGTCACCAAGAATGCCAAACCGGGCAAGACCCTTGCG
+CTGTCCATCGACCTGCGCCTGCAGTACCTGGCTCATCGCGAACTGCGCAACGCTCTGCTG
+GAAAACGGCGCCAAGGCCGGCAGCTTGGTGATCATGGACGTGAAGACCGGGGAGATCCTG
+GCCATGACCAACCAGCCCACCTACAACCCGAACAATCGTCGTAACCTGCAGCCGGCGGCC
+ATGCGCAACCGGGCGATGATCGACGTGTTCGAGCCGGGCTCGACGGTCAAGCCGTTCTCG
+ATGAGCGCGGCGCTGGCCAGCGGGCGCTGGAAACCCAGCGATATCGTCGACGTCTACCCG
+GGCACCCTGCAGATCGGCCGCTACACCATTCGCGACGTATCGCGCAATTCGCGGCAACTC
+GATCTCACCGGCATCCTGATCAAGTCGAGCAACGTCGGCATCAGCAAGATCGCCTTCGAC
+ATCGGCGCCGAATCCATCTACTCGGTCATGCAACAGGTCGGTCTCGGGCAGGACACGGGG
+TTGGGCTTCCCCGGCGAGCGCGTCGGCAACCTGCCCAACCACCGCAAGTGGCCGAAGGCG
+GAAACCGCGACCCTGGCCTACGGCTACGGTCTCTCGGTAACCGCGATCCAGTTGGCGCAT
+GCCTATGCGGCCCTGGCCAACGACGGCAAGAGCGTGCCGCTGAGCATGACCCGAGTCGAC
+CGCGTGCCGGATGGTGTGCAGGTGATCTCGCCTGAAGTGGCTTCCACCGTGCAGGGCATG
+CTGCAACAAGTGGTCGAGGCCCAGGGCGGGGTGTTCCGCGCCCAGGTGCCGGGTTACCAC
+GCCGCCGGCAAGAGCGGGACCGCGCGCAAGGTCTCGGTCGGCACCAAGGGCTACCGGGAA
+AACGCCTATCGCTCGCTGTTCGCCGGTTTCGCCCCGGCCACCGATCCGCGCATCGCGATG
+GTCGTGGTGATCGACGAGCCGAGCAAGGCGGGCTACTTCGGCGGCCTGGTGTCGGCGCCG
+GTGTTCAGTAAGGTCATGGCTGGCGCGCTGCGCCTGATGAACGTGCCGCCGGATAACCTG
+CCGACGGCCACCGAACAGCAGCAGGTCAATGCTGCGCCCGCAAAAGGAGGGCGTGGCTGA
+</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF03717</identifier>
+            <name>PBP_dimer</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00905</identifier>
+            <name>Transpeptidase</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>penicillin binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptidoglycan glycosyltransferase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell division</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+    <target position="10">
+      <id>BE0002475</id>
+      <name>D-alanyl-D-alanine carboxypeptidase DacA</name>
+      <organism>Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC)</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16745</ref-id>
+            <pubmed-id>20726582</pubmed-id>
+            <citation>Nicola G, Tomberg J, Pratt RF, Nicholas RA, Davies C: Crystal structures of covalent complexes of beta-lactam antibiotics with Escherichia coli penicillin-binding protein 5: toward an understanding of antibiotic specificity. Biochemistry. 2010 Sep 21;49(37):8094-104. doi: 10.1021/bi100879m.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P0AEB3" source="Swiss-Prot">
+        <name>D-alanyl-D-alanine carboxypeptidase DacA</name>
+        <general-function>Removes C-terminal D-alanyl residues from sugar-peptide cell wall precursors.</general-function>
+        <specific-function>Serine-type d-ala-d-ala carboxypeptidase activity</specific-function>
+        <gene-name>dacA</gene-name>
+        <locus/>
+        <cellular-location>Cell inner membrane</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-29</signal-regions>
+        <theoretical-pi>8.58</theoretical-pi>
+        <molecular-weight>44443.62</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="199310">Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AE014075</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P0AEB3</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DACA_ECOL6</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>3.4.16.4</synonym>
+          <synonym>DD-carboxypeptidase</synonym>
+          <synonym>PBP-5</synonym>
+          <synonym>Penicillin-binding protein 5</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0016801|D-alanyl-D-alanine carboxypeptidase DacA
+MNTIFSARIMKRLALTTALCTAFISAAHADDLNIKTMIPGVPQIDAESYILIDYNSGKVL
+AEQNADVRRDPASLTKMMTSYVIGQAMKAGKFKETDLVTIGNDAWATGNPVFKGSSLMFL
+KPGMQVPVSQLIRGINLQSGNDACVAMADFAAGSQDAFVGLMNSYVNALGLKNTHFQTVH
+GLDADGQYSSARDMALIGQALIRDVPNEYSIYKEKEFTFNGIRQLNRNGLLWDNSLNVDG
+IKTGHTDKAGYNLVASATEGQMRLISAVMGGRTFKGREAESKKLLTWGFRFFETVNPLKV
+GKEFASEPVWFGDSDRASLGVDKDVYLTIPRGRMKDLKASYVLNSSELHAPLQKNQVVGT
+INFQLDGKTIEQRPLVVLQEIPEGNFFGKIIDYIKLMFHHWFG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0016802|D-alanyl-D-alanine carboxypeptidase DacA (dacA)
+ATGAATACCATTTTTTCCGCTCGTATCATGAAGCGCCTGGCGCTCACCACGGCTCTTTGC
+ACAGCCTTTATCTCTGCTGCACATGCCGATGACCTGAATATCAAAACCATGATCCCGGGT
+GTACCGCAGATCGACGCGGAGTCCTACATCCTGATTGACTACAACTCCGGCAAAGTACTC
+GCCGAACAGAACGCTGATGTCCGCCGCGATCCTGCCAGCCTGACCAAAATGATGACCAGT
+TACGTTATCGGCCAGGCAATGAAAGCCGGTAAATTTAAAGAAACTGATTTAGTCACTATC
+GGCAACGACGCATGGGCCACCGGTAACCCGGTGTTTAAAGGTTCTTCGCTGATGTTCCTC
+AAACCGGGCATGCAGGTTCCGGTTTCTCAGCTGATCCGCGGTATTAACCTGCAATCGGGT
+AACGATGCTTGTGTCGCCATGGCCGATTTTGCCGCTGGTAGCCAGGACGCTTTTGTTGGC
+TTGATGAACAGCTACGTTAACGCCCTGGGCCTGAAAAATACCCACTTCCAGACGGTACAC
+GGTCTGGATGCTGATGGTCAGTACAGCTCCGCGCGAGATATGGCGCTGATCGGCCAGGCG
+TTGATCCGTGACGTACCGAATGAATACTCGATCTATAAAGAAAAAGAATTTACGTTTAAC
+GGTATTCGCCAGCTGAACCGTAACGGCCTGTTATGGGATAACAGCCTGAATGTCGACGGC
+ATCAAAACCGGACACACTGACAAAGCAGGGTACAACCTTGTTGCTTCTGCGACTGAAGGC
+CAGATGCGCTTGATCTCTGCGGTGATGGGCGGACGTACTTTTAAAGGCCGTGAAGCCGAA
+AGTAAAAAATTGCTAACCTGGGGCTTCCGTTTCTTCGAAACCGTTAACCCACTGAAAGTA
+GGTAAAGAGTTCGCCTCTGAACCGGTTTGGTTTGGTGATTCTGATCGCGCTTCGTTAGGG
+GTTGATAAAGACGTGTACCTGACCATTCCGCGTGGTCGCATGAAAGATCTGAAAGCCAGC
+TATGTGCTGAACAGCAGTGAATTGCATGCGCCGCTGCAAAAGAATCAGGTCGTCGGAACT
+ATCAACTTCCAGCTTGATGGCAAAACGATCGAACAACGCCCGCTGGTTGTGCTGCAAGAA
+ATACCGGAAGGTAACTTCTTCGGCAAAATCATTGATTACATTAAATTAATGTTCCATCAC
+TGGTTTGGTTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF07943</identifier>
+            <name>PBP5_C</name>
+          </pfam>
+          <pfam>
+            <identifier>PF00768</identifier>
+            <name>Peptidase_S11</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>serine-type D-Ala-D-Ala carboxypeptidase activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cell wall organization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>peptidoglycan biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>regulation of cell shape</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers>
+    <carrier position="3">
+      <id>BE0000530</id>
+      <name>Serum albumin</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A15505</ref-id>
+            <pubmed-id>1031216</pubmed-id>
+            <citation>Bratlid D, Bergan T: Displacement of albumin-bound antimicrobial agents by bilirubin. Pharmacology. 1976;14(5):464-72.</citation>
+          </article>
+          <article>
+            <ref-id>A15506</ref-id>
+            <pubmed-id>7356894</pubmed-id>
+            <citation>Friedman LA, Lewis PJ: The effect of semisynthetic penicillins on the binding of bilirubin by neonatal serum. Br J Clin Pharmacol. 1980 Jan;9(1):61-5.</citation>
+          </article>
+          <article>
+            <ref-id>A15507</ref-id>
+            <pubmed-id>8024646</pubmed-id>
+            <citation>Okore VC: Effect of ascorbic acid on the binding of cloxacillin sodium to bovine serum albumin. Arzneimittelforschung. 1994 May;44(5):671-3.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P02768" source="Swiss-Prot">
+        <name>Serum albumin</name>
+        <general-function>Toxic substance binding</general-function>
+        <specific-function>Serum albumin, the main protein of plasma, has a good binding capacity for water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs. Its main function is the regulation of the colloidal osmotic pressure of blood. Major zinc transporter in plasma, typically binds about 80% of all plasma zinc.</specific-function>
+        <gene-name>ALB</gene-name>
+        <locus>4q11-q13</locus>
+        <cellular-location>Secreted</cellular-location>
+        <transmembrane-regions/>
+        <signal-regions>1-18</signal-regions>
+        <theoretical-pi>6.21</theoretical-pi>
+        <molecular-weight>69365.94</molecular-weight>
+        <chromosome-location>4</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:399</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>ALB</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>V00494</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>28590</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P02768</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>ALBU_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Serum albumin precursor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0001058|Serum albumin
+MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPF
+EDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEP
+ERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLF
+FAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKAWAV
+ARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLK
+ECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYEYAR
+RHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFE
+QLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYLSVV
+LNQLCVLHEKTPVSDRVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADICTL
+SEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLV
+AASQAALGL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010372|Serum albumin (ALB)
+ATGAAGTGGGTAACCTTTATTTCCCTTCTTTTTCTCTTTAGCTCGGCTTATTCCAGGGGT
+GTGTTTCGTCGAGATGCACACAAGAGTGAGGTTGCTCATCGGTTTAAAGATTTGGGAGAA
+GAAAATTTCAAAGCCTTGGTGTTGATTGCCTTTGCTCAGTATCTTCAGCAGTGTCCATTT
+GAAGATCATGTAAAATTAGTGAATGAAGTAACTGAATTTGCAAAAACATGTGTTGCTGAT
+GAGTCAGCTGAAAATTGTGACAAATCACTTCATACCCTTTTTGGAGACAAATTATGCACA
+GTTGCAACTCTTCGTGAAACCTATGGTGAAATGGCTGACTGCTGTGCAAAACAAGAACCT
+GAGAGAAATGAATGCTTCTTGCAACACAAAGATGACAACCCAAACCTCCCCCGATTGGTG
+AGACCAGAGGTTGATGTGATGTGCACTGCTTTTCATGACAATGAAGAGACATTTTTGAAA
+AAATACTTATATGAAATTGCCAGAAGACATCCTTACTTTTATGCCCCGGAACTCCTTTTC
+TTTGCTAAAAGGTATAAAGCTGCTTTTACAGAATGTTGCCAAGCTGCTGATAAAGCTGCC
+TGCCTGTTGCCAAAGCTCGATGAACTTCGGGATGAAGGGAAGGCTTCGTCTGCCAAACAG
+AGACTCAAGTGTGCCAGTCTCCAAAAATTTGGAGAAAGAGCTTTCAAAGCATGGGCAGTA
+GCTCGCCTGAGCCAGAGATTTCCCAAAGCTGAGTTTGCAGAAGTTTCCAAGTTAGTGACA
+GATCTTACCAAAGTCCACACGGAATGCTGCCATGGAGATCTGCTTGAATGTGCTGATGAC
+AGGGCGGACCTTGCCAAGTATATCTGTGAAAATCAAGATTCGATCTCCAGTAAACTGAAG
+GAATGCTGTGAAAAACCTCTGTTGGAAAAATCCCACTGCATTGCCGAAGTGGAAAATGAT
+GAGATGCCTGCTGACTTGCCTTCATTAGCTGCTGATTTTGTTGAAAGTAAGGATGTTTGC
+AAAAACTATGCTGAGGCAAAGGATGTCTTCCTGGGCATGTTTTTGTATGAATATGCAAGA
+AGGCATCCTGATTACTCTGTCGTGCTGCTGCTGAGACTTGCCAAGACATATGAAACCACT
+CTAGAGAAGTGCTGTGCCGCTGCAGATCCTCATGAATGCTATGCCAAAGTGTTCGATGAA
+TTTAAACCTCTTGTGGAAGAGCCTCAGAATTTAATCAAACAAAATTGTGAGCTTTTTGAG
+CAGCTTGGAGAGTACAAATTCCAGAATGCGCTATTAGTTCGTTACACCAAGAAAGTACCC
+CAAGTGTCAACTCCAACTCTTGTAGAGGTCTCAAGAAACCTAGGAAAAGTGGGCAGCAAA
+TGTTGTAAACATCCTGAAGCAAAAAGAATGCCCTGTGCAGAAGACTATCTATCCGTGGTC
+CTGAACCAGTTATGTGTGTTGCATGAGAAAACGCCAGTAAGTGACAGAGTCACCAAATGC
+TGCACAGAATCCTTGGTGAACAGGCGACCATGCTTTTCAGCTCTGGAAGTCGATGAAACA
+TACGTTCCCAAAGAGTTTAATGCTGAAACATTCACCTTCCATGCAGATATATGCACACTT
+TCTGAGAAGGAGAGACAAATCAAGAAACAAACTGCACTTGTTGAGCTCGTGAAACACAAG
+CCCAAGGCAACAAAAGAGCAACTGAAAGCTGTTATGGATGATTTCGCAGCTTTTGTAGAG
+AAGTGCTGCAAGGCTGACGATAAGGAGACCTGCTTTGCCGAGGAGGGTAAAAAACTTGTT
+GCTGCAAGTCAAGCTGCCTTAGGCTTATAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00273</identifier>
+            <name>Serum_albumin</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>blood microparticle</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular region</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular space</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>Golgi apparatus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>myelin sheath</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>nucleus</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>platelet alpha granule lumen</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>antioxidant activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chaperone binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>copper ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>DNA binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>drug binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>fatty acid binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>pyridoxal phosphate binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>toxic substance binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid and bile salt transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>bile acid metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>blood coagulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>cellular response to starvation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>hemolysis by symbiont of host erythrocytes</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lipoprotein metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>maintenance of mitochondrion location</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of apoptotic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>negative regulation of programmed cell death</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet activation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>platelet degranulation</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>receptor-mediated endocytosis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>retina homeostasis</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </carrier>
+  </carriers>
+  <transporters>
+    <transporter position="4">
+      <id>BE0001018</id>
+      <name>Solute carrier family 15 member 1</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16239</ref-id>
+            <pubmed-id>15567297</pubmed-id>
+            <citation>Luckner P, Brandsch M: Interaction of 31 beta-lactam antibiotics with the H+/peptide symporter PEPT2: analysis of affinity constants and comparison with PEPT1. Eur J Pharm Biopharm. 2005 Jan;59(1):17-24.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P46059" source="Swiss-Prot">
+        <name>Solute carrier family 15 member 1</name>
+        <general-function>Proton-dependent oligopeptide secondary active transmembrane transporter activity</general-function>
+        <specific-function>Proton-coupled intake of oligopeptides of 2 to 4 amino acids with a preference for dipeptides. May constitute a major route for the absorption of protein digestion end-products.</specific-function>
+        <gene-name>SLC15A1</gene-name>
+        <locus>13q33-q34</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>1-21
+54-74
+83-103
+119-139
+162-182
+199-219
+277-297
+328-348
+362-382
+585-605
+620-640
+646-666</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.64</theoretical-pi>
+        <molecular-weight>78805.265</molecular-weight>
+        <chromosome-location>13</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10920</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC15A1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>U13173</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>773588</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>984</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P46059</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S15A1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Intestinal H(+)/peptide cotransporter</synonym>
+          <synonym>Oligopeptide transporter, small intestine isoform</synonym>
+          <synonym>PEPT1</synonym>
+          <synonym>Peptide transporter 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010713|Solute carrier family 15 member 1
+MGMSKSHSFFGYPLSIFFIVVNEFCERFSYYGMRAILILYFTNFISWDDNLSTAIYHTFV
+ALCYLTPILGALIADSWLGKFKTIVSLSIVYTIGQAVTSVSSINDLTDHNHDGTPDSLPV
+HVVLSLIGLALIALGTGGIKPCVSAFGGDQFEEGQEKQRNRFFSIFYLAINAGSLLSTII
+TPMLRVQQCGIHSKQACYPLAFGVPAALMAVALIVFVLGSGMYKKFKPQGNIMGKVAKCI
+GFAIKNRFRHRSKAFPKREHWLDWAKEKYDERLISQIKMVTRVMFLYIPLPMFWALFDQQ
+GSRWTLQATTMSGKIGALEIQPDQMQTVNAILIVIMVPIFDAVLYPLIAKCGFNFTSLKK
+MAVGMVLASMAFVVAAIVQVEIDKTLPVFPKGNEVQIKVLNIGNNTMNISLPGEMVTLGP
+MSQTNAFMTFDVNKLTRINISSPGSPVTAVTDDFKQGQRHTLLVWAPNHYQVVKDGLNQK
+PEKGENGIRFVNTFNELITITMSGKVYANISSYNASTYQFFPSGIKGFTISSTEIPPQCQ
+PNFNTFYLEFGSAYTYIVQRKNDSCPEVKVFEDISANTVNMALQIPQYFLLTCGEVVFSV
+TGLEFSYSQAPSNMKSVLQAGWLLTVAVGNIIVLIVAGAGQFSKQWAEYILFAALLLVVC
+VIFAIMARFYTYINPAEIEAQFDEDEKKNRLEKSNPYFMSGANSQKQM</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010714|Solute carrier family 15 member 1 (SLC15A1)
+ATGGGAATGTCCAAATCACACAGTTTCTTTGGTTATCCCCTGAGCATCTTCTTCATCGTG
+GTCAATGAGTTTTGCGAAAGATTTTCCTACTATGGAATGCGAGCAATCCTGATTCTGTAC
+TTCACAAATTTCATCAGCTGGGATGATAACCTGTCCACCGCCATCTACCATACGTTTGTG
+GCTCTGTGCTACCTGACGCCAATTCTCGGAGCTCTTATCGCCGACTCGTGGCTGGGAAAG
+TTCAAGACCATTGTGTCGCTCTCCATTGTCTACACAATTGGACAAGCAGTCACCTCAGTA
+AGCTCCATTAATGACCTCACAGACCACAACCATGATGGCACCCCCGACAGCCTTCCTGTG
+CACGTGGTGCTGTCCTTGATCGGCCTGGCCCTGATAGCTCTCGGGACTGGAGGAATCAAA
+CCCTGTGTGTCTGCGTTTGGTGGAGATCAGTTTGAAGAGGGCCAGGAGAAACAAAGAAAC
+AGATTTTTTTCCATCTTTTACTTGGCTATTAATGCTGGAAGTTTGCTTTCCACAATCATC
+ACACCCATGCTCAGAGTTCAACAATGTGGAATTCACAGTAAACAAGCTTGTTACCCACTG
+GCCTTTGGGGTTCCTGCTGCTCTCATGGCTGTAGCCCTGATTGTGTTTGTCCTTGGCAGT
+GGGATGTACAAGAAGTTCAAGCCACAGGGCAACATCATGGGTAAAGTGGCCAAGTGCATC
+GGTTTTGCCATCAAAAATAGATTTAGGCATCGGAGTAAGGCATTTCCCAAGAGGGAGCAC
+TGGCTGGACTGGGCTAAAGAGAAATACGATGAGCGGCTCATCTCCCAAATTAAGATGGTT
+ACGAGGGTGATGTTCCTGTATATTCCACTCCCAATGTTCTGGGCCTTGTTTGACCAGCAG
+GGCTCCAGGTGGACACTGCAGGCAACAACTATGTCCGGGAAAATCGGAGCTCTTGAAATT
+CAGCCCGATCAGATGCAGACCGTGAACGCCATCCTGATCGTGATCATGGTCCCGATCTTC
+GATGCTGTGCTGTACCCTCTCATTGCAAAATGTGGCTTCAATTTCACCTCCTTGAAGAAG
+ATGGCAGTTGGCATGGTCCTGGCCTCCATGGCCTTTGTGGTGGCTGCCATCGTGCAGGTG
+GAAATCGATAAAACTCTTCCAGTCTTCCCCAAAGGAAACGAAGTCCAAATTAAAGTTTTG
+AATATAGGAAACAATACCATGAATATATCTCTTCCTGGAGAGATGGTGACACTTGGCCCA
+ATGTCTCAAACAAATGCATTTATGACTTTTGATGTAAACAAACTGACAAGGATAAACATT
+TCTTCTCCTGGATCACCAGTCACTGCTGTAACTGACGACTTCAAGCAGGGCCAACGCCAC
+ACGCTTCTAGTGTGGGCCCCCAATCACTACCAGGTGGTAAAGGATGGTCTTAACCAGAAG
+CCAGAAAAAGGGGAAAATGGAATCAGATTTGTAAATACTTTTAACGAGCTCATCACCATC
+ACAATGAGTGGGAAAGTTTATGCAAACATCAGCAGCTACAATGCCAGCACATACCAGTTT
+TTTCCTTCTGGCATAAAAGGCTTCACAATAAGCTCAACAGAGATTCCGCCACAATGTCAA
+CCTAATTTCAATACTTTCTACCTTGAATTTGGTAGTGCTTATACCTATATAGTCCAAAGG
+AAGAATGACAGCTGCCCTGAAGTGAAGGTGTTTGAAGATATTTCAGCCAACACAGTTAAC
+ATGGCTCTGCAAATCCCGCAGTATTTTCTTCTCACCTGTGGCGAAGTGGTCTTCTCTGTC
+ACGGGATTGGAATTCTCATATTCTCAGGCTCCTTCCAACATGAAGTCGGTGCTTCAGGCA
+GGATGGCTGCTGACCGTGGCTGTTGGCAACATCATTGTGCTCATCGTGGCAGGGGCAGGC
+CAGTTCAGCAAACAGTGGGCCGAGTACATTCTATTTGCCGCGTTGCTTCTGGTCGTCTGT
+GTAATTTTTGCCATCATGGCTCGGTTCTATACTTACATCAACCCAGCGGAGATCGAAGCT
+CAATTTGATGAGGATGAAAAGAAAAACAGACTGGAAAAGAGTAACCCATATTTCATGTCA
+GGGGCCAATTCACAGAAACAGATGTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00854</identifier>
+            <name>PTR2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>brush border</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>proton-dependent oligopeptide secondary active transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>digestion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proton transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="5">
+      <id>BE0001134</id>
+      <name>Solute carrier family 15 member 2</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A16239</ref-id>
+            <pubmed-id>15567297</pubmed-id>
+            <citation>Luckner P, Brandsch M: Interaction of 31 beta-lactam antibiotics with the H+/peptide symporter PEPT2: analysis of affinity constants and comparison with PEPT1. Eur J Pharm Biopharm. 2005 Jan;59(1):17-24.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q16348" source="Swiss-Prot">
+        <name>Solute carrier family 15 member 2</name>
+        <general-function>Peptide:proton symporter activity</general-function>
+        <specific-function>Proton-coupled intake of oligopeptides of 2 to 4 amino acids with a preference for dipeptides.</specific-function>
+        <gene-name>SLC15A2</gene-name>
+        <locus>3q13.33</locus>
+        <cellular-location>Membrane</cellular-location>
+        <transmembrane-regions>58-78
+88-108
+115-135
+140-160
+184-204
+218-238
+296-316
+344-364
+381-401
+568-588
+612-632
+644-664
+675-695</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.38</theoretical-pi>
+        <molecular-weight>81782.77</molecular-weight>
+        <chromosome-location>3</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10921</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>SLC15A2</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>S78203</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>999213</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q16348</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S15A2_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Kidney H(+)/peptide cotransporter</synonym>
+          <synonym>Oligopeptide transporter, kidney isoform</synonym>
+          <synonym>PEPT2</synonym>
+          <synonym>Peptide transporter 2</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037126|Solute carrier family 15 member 2
+MNPFQKNESKETLFSPVSIEEVPPRPPSPPKKPSPTICGSNYPLSIAFIVVNEFCERFSY
+YGMKAVLILYFLYFLHWNEDTSTSIYHAFSSLCYFTPILGAAIADSWLGKFKTIIYLSLV
+YVLGHVIKSLGALPILGGQVVHTVLSLIGLSLIALGTGGIKPCVAAFGGDQFEEKHAEER
+TRYFSVFYLSINAGSLISTFITPMLRGDVQCFGEDCYALAFGVPGLLMVIALVVFAMGSK
+IYNKPPPEGNIVAQVFKCIWFAISNRFKNRSGDIPKRQHWLDWAAEKYPKQLIMDVKALT
+RVLFLYIPLPMFWALLDQQGSRWTLQAIRMNRNLGFFVLQPDQMQVLNPLLVLIFIPLFD
+FVIYRLVSKCGINFSSLRKMAVGMILACLAFAVAAAVEIKINEMAPAQPGPQEVFLQVLN
+LADDEVKVTVVGNENNSLLIESIKSFQKTPHYSKLHLKTKSQDFHFHLKYHNLSLYTEHS
+VQEKNWYSLVIREDGNSISSMMVKDTESRTTNGMTTVRFVNTLHKDVNISLSTDTSLNVG
+EDYGVSAYRTVQRGEYPAVHCRTEDKNFSLNLGLLDFGAAYLFVITNNTNQGLQAWKIED
+IPANKMSIAWQLPQYALVTAGEVMFSVTGLEFSYSQAPSSMKSVLQAAWLLTIAVGNIIV
+LVVAQFSGLVQWAEFILFSCLLLVICLIFSIMGYYYVPVKTEDMRGPADKHIPHIQGNMI
+KLETKKTKL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010792|Solute carrier family 15 member 2 (SLC15A2)
+ATGAATCCTTTCCAGAAAAATGAGTCCAAGGAAACTCTTTTTTCACCTGTCTCCATTGAA
+GAGGTACCACCTCGACCACCTAGCCCTCCAAAGAAGCCATCTCCGACAATCTGTGGCTCC
+AACTATCCACTGAGCATTGCCTTCATTGTGGTGAATGAATTCTGCGAGCGCTTTTCCTAT
+TATGGAATGAAAGCTGTGCTGATCCTGTATTTCCTGTATTTCCTGCACTGGAATGAAGAT
+ACCTCCACATCTATATACCATGCCTTCAGCAGCCTCTGTTATTTTACTCCCATCCTGGGA
+GCAGCCATTGCTGACTCGTGGTTGGGAAAATTCAAAGTCCTATCATTGATCGGCCTGAGT
+CTAATAGCTTTGGGGACAGGAGGCATCAAACCCTGTGTGGCAGCTTTTGGTGGAGACCAG
+TTTGAAGAAAAACATGCAGAGGAACGGACTAGATACTTCTCAGTCTTCTACCTGTCCATC
+AATGCAGGGAGCTTGATTTCTACATTTATCACACCCATGCTGAGAGGAGATGTGCAATGT
+TTTGGAGAAGACTGCTATGCATTGGCTTTTGGAGTTCCAGGACTGCTCATGGTAATTGCA
+CTTGTTGTGTTTGCAATGGGAAGCAAAATATACAATAAACCACCCCCTGAAGGAAACATA
+GTGGCTCAAGTTTTCAAATGTATCTGGTTTGCTATTTCCAATCGTTTCAAGAACCGTTCT
+GGAGACATTCCAAAGCGACAGCACTGGCTAGACTGGGCGGCTGAGAAATATCCAAAGCAG
+CTCATTATGGATGTAAAGGCACTGACCAGGGTACTATTCCTTTATATCCCATTGCCCATG
+TTCTGGGCTCTTTTGGATCAGCAGGGTTCACGATGGACTTTGCAAGCCATCAGGATGAAT
+AGGAATTTGGGGTTTTTTGTGCTTCAGCCGGACCAGATGCAGGTTCTAAATCCCCTTCTG
+GTTCTTATCTTCATCCCGTTGTTTGACTTTGTCATTTATCGTCTGGTCTCCAAGTGTGGA
+ATTAACTTCTCATCACTTAGGAAAATGGCTGTTGGTATGATCCTAGCATGCCTGGCATTT
+GCAGTTGCGGCAGCTGTAGAGATAAAAATAAATGAAATGGCCCCAGCCCAGCCAGGTCCC
+CAGGAGGTTTTCCTACAAGTCTTGAATCTGGCAGATGATGAGGTGAAGGTGACAGTGGTG
+GGAAATGAAAACAATTCTCTGTTGATAGAGTCCATCAAATCCTTTCAGAAAACACCACAC
+TATTCCAAACTGCACCTGAAAACAAAAAGCCAGGATTTTCACTTCCACCTGAAATATCAC
+AATTTGTCTCTCTACACTGAGCATTCTGTGCAGGAGAAGAACTGGTACAGTCTTGTCATT
+CGTGAAGATGGGAACAGTATCTCCAGCATGATGGTAAAGGATACAGAAAGCAGAACAACC
+AATGGGATGACAACCGTGAGGTTTGTTAACACTTTGCATAAAGATGTCAACATCTCCCTG
+AGTACAGATACCTCTCTCAATGTTGGTGAAGACTATGGTGTGTCTGCTTATAGAACTGTG
+CAAAGAGGAGAATACCCTGCAGTGCACTGTAGAACAGAAGATAAGAACTTTTCTCTGAAT
+TTGGGTCTTCTAGACTTTGGTGCAGCATATCTGTTTGTTATTACTAATAACACCAATCAG
+GGTCTTCAGGCCTGGAAGATTGAAGACATTCCAGCCAACAAAATGTCCATTGCGTGGCAG
+CTACCACAATATGCCCTGGTTACAGCTGGGGAGGTCATGTTCTCTGTCACAGGTCTTGAG
+TTTTCTTATTCTCAGGCTCCCTCTAGCATGAAATCTGTGCTCCAGGCAGCTTGGCTATTG
+ACAATTGCAGTTGGGAATATCATCGTGCTTGTTGTGGCACAGTTCAGTGGCCTGGTACAG
+TGGGCCGAATTCATTTTGTTTTCCTGCCTCCTGCTGGTGATCTGCCTGATCTTCTCCATC
+ATGGGCTACTACTATGTTCCTGTAAAGACAGAGGATATGCGGGGTCCAGCAGATAAGCAC
+ATTCCTCACATCCAGGGGAACATGATCAAACTAGAGACCAAGAAGACAAAACTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00854</identifier>
+            <name>PTR2</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>antibiotic transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>dipeptide transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>high-affinity oligopeptide transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>peptide</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>drug transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>ion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>proton transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+    <transporter position="6">
+      <id>BE0001066</id>
+      <name>Solute carrier family 22 member 6</name>
+      <organism>Humans</organism>
+      <actions>
+        <action>inhibitor</action>
+      </actions>
+      <references>
+        <articles>
+          <article>
+            <ref-id>A15733</ref-id>
+            <pubmed-id>10411577</pubmed-id>
+            <citation>Jariyawat S, Sekine T, Takeda M, Apiwattanakul N, Kanai Y, Sophasan S, Endou H: The interaction and transport of beta-lactam antibiotics with the cloned rat renal organic anion transporter 1. J Pharmacol Exp Ther. 1999 Aug;290(2):672-7.</citation>
+          </article>
+        </articles>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q4U2R8" source="Swiss-Prot">
+        <name>Solute carrier family 22 member 6</name>
+        <general-function>Sodium-independent organic anion transmembrane transporter activity</general-function>
+        <specific-function>Involved in the renal elimination of endogenous and exogenous organic anions. Functions as organic anion exchanger when the uptake of one molecule of organic anion is coupled with an efflux of one molecule of endogenous dicarboxylic acid (glutarate, ketoglutarate, etc). Mediates the sodium-independent uptake of 2,3-dimercapto-1-propanesulfonic acid (DMPS) (By similarity). Mediates the sodium-independent uptake of p-aminohippurate (PAH), ochratoxin (OTA), acyclovir (ACV), 3'-azido-3-'deoxythymidine (AZT), cimetidine (CMD), 2,4-dichloro-phenoxyacetate (2,4-D), hippurate (HA), indoleacetate (IA), indoxyl sulfate (IS) and 3-carboxy-4-methyl-5-propyl-2-furanpropionate (CMPF), cidofovir, adefovir, 9-(2-phosphonylmethoxyethyl) guanine (PMEG), 9-(2-phosphonylmethoxyethyl) diaminopurine (PMEDAP) and edaravone sulfate. PAH uptake is inhibited by p-chloromercuribenzenesulphonate (PCMBS), diethyl pyrocarbonate (DEPC), sulindac, diclofenac, carprofen, glutarate and okadaic acid (By similarity). PAH uptake is inhibited by benzothiazolylcysteine (BTC), S-chlorotrifluoroethylcysteine (CTFC), cysteine S-conjugates S-dichlorovinylcysteine (DCVC), furosemide, steviol, phorbol 12-myristate 13-acetate (PMA), calcium ionophore A23187, benzylpenicillin, furosemide, indomethacin, bumetamide, losartan, probenecid, phenol red, urate, and alpha-ketoglutarate.</specific-function>
+        <gene-name>SLC22A6</gene-name>
+        <locus/>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>10-30
+136-156
+165-187
+191-213
+225-245
+249-269
+338-358
+369-389
+396-416
+426-446
+456-475
+485-505</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.78</theoretical-pi>
+        <molecular-weight>61815.78</molecular-weight>
+        <chromosome-location>11</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:10970</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>hROAT1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AF057039</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>3831566</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>1025</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q4U2R8</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>S22A6_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>hOAT1</synonym>
+          <synonym>hPAHT</synonym>
+          <synonym>hROAT1</synonym>
+          <synonym>OAT1</synonym>
+          <synonym>Organic anion transporter 1</synonym>
+          <synonym>PAH transporter</synonym>
+          <synonym>PAHT</synonym>
+          <synonym>Renal organic anion transporter 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0037120|Solute carrier family 22 member 6
+MAFNDLLQQVGGVGRFQQIQVTLVVLPLLLMASHNTLQNFTAAIPTHHCRPPADANLSKN
+GGLEVWLPRDRQGQPESCLRFTSPQWGLPFLNGTEANGTGATEPCTDGWIYDNSTFPSTI
+VTEWDLVCSHRALRQLAQSLYMVGVLLGAMVFGYLADRLGRRKVLILNYLQTAVSGTCAA
+FAPNFPIYCAFRLLSGMALAGISLNCMTLNVEWMPIHTRACVGTLIGYVYSLGQFLLAGV
+AYAVPHWRHLQLLVSAPFFAFFIYSWFFIESARWHSSSGRLDLTLRALQRVARINGKREE
+GAKLSMEVLRASLQKELTMGKGQASAMELLRCPTLRHLFLCLSMLWFATSFAYYGLVMDL
+QGFGVSIYLIQVIFGAVDLPAKLVGFLVINSLGRRPAQMAALLLAGICILLNGVIPQDQS
+IVRTSLAVLGKGCLAASFNCIFLYTGELYPTMIRQTGMGMGSTMARVGSIVSPLVSMTAE
+LYPSMPLFIYGAVPVAASAVTVLLPETLGQPLPDTVQDLESRWAPTQKEAGIYPRKGKQT
+RQQQEHQKYMVPLQASAQEKNGL</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010747|Solute carrier family 22 member 6 (SLC22A6)
+ATGGCCTTTAATGACCTCCTGCAGCAGGTGGGGGGTGTCGGCCGCTTCCAGCAGATCCAG
+GTCACCCTGGTGGTCCTCCCCCTGCTCCTGATGGCTTCTCACAACACCCTGCAGAACTTC
+ACTGCTGCCATCCCTACCCACCACTGCCGCCCGCCTGCCGATGCCAACCTCAGCAAGAAC
+GGGGGGCTGGAGGTCTGGCTGCCCCGGGACAGGCAGGGGCAGCCTGAGTCCTGCCTCCGC
+TTCACCTCCCCGCAGTGGGGACTGCCCTTTCTCAATGGCACAGAAGCCAATGGCACAGGG
+GCCACAGAGCCCTGCACCGATGGCTGGATCTATGACAACAGCACCTTCCCATCTACCATC
+GTGACTGAGTGGGACCTTGTGTGCTCTCACAGGGCCCTACGCCAGCTGGCCCAGTCCTTG
+TACATGGTGGGGGTGCTGCTCGGAGCCATGGTGTTCGGCTACCTTGCAGACAGGCTAGGC
+CGCCGGAAGGTACTCATCTTGAACTACCTGCAGACAGCTGTGTCAGGGACCTGCGCAGCC
+TTCGCACCCAACTTCCCCATCTACTGCGCCTTCCGGCTCCTCTCGGGCATGGCTCTGGCT
+GGCATCTCCCTCAACTGCATGACACTGAATGTGGAGTGGATGCCCATTCACACACGGGCC
+TGCGTGGGCACCTTGATTGGCTATGTCTACAGCCTGGGCCAGTTCCTCCTGGCTGGTGTG
+GCCTACGCTGTGCCCCACTGGCGCCACCTGCAGCTACTGGTCTCTGCGCCTTTTTTTGCC
+TTCTTCATCTACTCCTGGTTCTTCATTGAGTCGGCCCGCTGGCACTCCTCCTCCGGGAGG
+CTGGACCTCACCCTGAGGGCCCTGCAGAGAGTCGCCCGGATCAATGGGAAGCGGGAAGAA
+GGAGCCAAATTGAGTATGGAGGTACTCCGGGCCAGTCTGCAGAAGGAGCTGACCATGGGC
+AAAGGCCAGGCATCGGCCATGGAGCTGCTGCGCTGCCCCACCCTCCGCCACCTCTTCCTC
+TGCCTCTCCATGCTGTGGTTTGCCACTAGCTTTGCATACTATGGGCTGGTCATGGACCTG
+CAGGGCTTTGGAGTCAGCATCTACCTAATCCAGGTGATCTTTGGTGCTGTGGACCTGCCT
+GCCAAGCTTGTGGGCTTCCTTGTCATCAACTCCCTGGGTCGCCGGCCTGCCCAGATGGCT
+GCACTGCTGCTGGCAGGCATCTGCATCCTGCTCAATGGGGTGATACCCCAGGACCAGTCC
+ATTGTCCGAACCTCTCTTGCTGTGCTGGGGAAGGGTTGTCTGGCTGCCTCCTTCAACTGC
+ATCTTCCTGTATACTGGGGAACTGTATCCCACAATGATCCGGCAGACAGGCATGGGAATG
+GGCAGCACCATGGCCCGAGTGGGCAGCATCGTGAGCCCACTGGTGAGCATGACTGCCGAG
+CTCTACCCCTCCATGCCTCTCTTCATCTACGGTGCTGTTCCTGTGGCCGCCAGCGCTGTC
+ACTGTCCTCCTGCCAGAGACCCTGGGCCAGCCACTGCCAGACACGGTGCAGGACCTGGAG
+AGCAGGTGGGCCCCCACTCAGAAAGAAGCAGGGATATATCCCAGGAAAGGGAAACAGACG
+CGACAGCAACAAGAGCACCAGAAGTATATGGTCCCACTGCAGGCCTCAGCACAAGAGAAG
+AATGGACTCTGA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00083</identifier>
+            <name>Sugar_tr</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>basolateral plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>caveola</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>extracellular exosome</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>protein complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>chloride ion binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>inorganic anion exchanger activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>sodium-independent organic anion transmembrane transporter activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>alpha-ketoglutarate transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>anion transmembrane transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>protein homooligomerization</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>renal tubular secretion</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>response to methotrexate</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>sodium-independent organic anion transport</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>transmembrane transport</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </transporter>
+  </transporters>
+</drug>

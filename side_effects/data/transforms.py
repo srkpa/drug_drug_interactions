@@ -1,3 +1,4 @@
+import glob
 import re
 from collections import defaultdict
 from itertools import combinations
@@ -15,20 +16,13 @@ from ivbase.transformers.features.targets import GeneEntityTransformer
 from ivbase.utils.constants.alphabet import SMILES_ALPHABET
 from ivbase.utils.datasets.datacache import DataCache
 from ivbase.utils.datasets.external_databases import ExternalDatabaseLoader
+from lxml import etree
 from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import shortest_path
 from sklearn.decomposition import PCA
-
-
-# def bioword_to_vec(filepath, terms):
-#     embedding = KeyedVectors.load_word2vec_format(
-#         datapath(filepath),
-#         binary=True)
-#     out = torch.Tensor([embedding(t) for t in terms])
-#     return dict(zip)
 
 
 def gene_entity_transformer(drugs, targets):
@@ -61,6 +55,9 @@ def deepddi_transformer(drugs, smiles, approved_drug):
     appr_drugs_fps = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in appr_drugs_mol]
     drugs_involved_in_mol = [Chem.MolFromSmiles(m) for m in smiles]
     drugs_involved_in_fps = [AllChem.GetMorganFingerprintAsBitVect(X, 4) for X in drugs_involved_in_mol]
+    # m = dict(zip(drugs, drugs_involved_in_mol))
+    # pk.dump(m, open("save.p", "wb"))
+    # exit()
     all_ssp = [[DataStructs.FingerprintSimilarity(drg, appr_drugs_fps[i]) for i in range(len(appr_drugs_fps))] for
                ids, drg in enumerate(drugs_involved_in_fps)]
     pca = PCA(n_components=50)
@@ -150,6 +147,9 @@ def __download_gene_go_terms():
 def download_drug_gene_targets():
     g = ExternalDatabaseLoader.load_drugbank()
     g = g[pd.notnull(g['gene-name'])]
+    print(g)
+    print(list(g))
+    exit()
     drug_2_gene = defaultdict(set)
     drug_2_name = {}
     name_2_drug = {}
@@ -274,10 +274,32 @@ def lee_et_al_transformer(drugs, smiles):
     return output
 
 
+def parse_drugbank(fp="../../data/"):
+    fin = {}
+    for xmlfile in glob.glob(f"{fp}/*-*.xml"):
+        print(xmlfile)
+        with open(xmlfile) as f:
+            tree = etree.parse(f)
+            root = tree.getroot()
+            for d in root.iter():
+                for elem in d.getchildren():
+                    for k in elem.getchildren():
+                        if elem.tag not in fin or fin[elem.tag] is None:
+                            fin[elem.tag] = {}
+                        if k.tag not in fin[elem.tag]:
+                            fin[elem.tag][k.tag] = []
+                        fin[elem.tag][k.tag] += [k.text]
+                if d.tag not in fin:
+                    fin[d.tag] = d.text
+
+        print(fin)
+
 if __name__ == '__main__':
-    p = pd.read_table("/home/rogia/.invivo/cache/datasets-ressources/DDI/drugbank/drugbank-drugs-all.csv", sep=",",
-                      index_col=0)
-    d = p["drug_id"].values.tolist()
-    smi = p["PubChem Canonical Smiles"].values.tolist()
-    assert len(d) == len(smi)
-    o = lee_et_al_transformer(d, smi)
+    # p = pd.read_table("/home/rogia/.invivo/cache/datasets-ressources/DDI/drugbank/drugbank-drugs-all.csv", sep=",",
+    #                   index_col=0)
+    # d = p["drug_id"].values.tolist()
+    # smi = p["PubChem Canonical Smiles"].values.tolist()
+    # assert len(d) == len(smi)
+    # o = lee_et_al_transformer(d, smi)
+    # download_drug_gene_targets()
+    parse_drugbank()

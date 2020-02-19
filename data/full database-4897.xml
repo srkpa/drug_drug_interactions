@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05226</drugbank-id>
+  <name>BTA9881</name>
+  <description>BTA9881 is a respiratory syncytial virus (RSV) antiviral drug developed by the Australian company Biota Holdings. It is currently in phase I trials.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>For the treatment of respiratory syncytial virus infections.</indication>
+  <pharmacodynamics>BTA9881 will be used to stop replication of RSV in an infected patient with the aim of clearing the infection or reducing the clinical impact of the disease. Respiratory syncytial virus (RSV) infects people of all ages, but particularly infants, causing similar symptoms to influenza. In the northern hemisphere, the RSV season usually starts in the fall and runs through the spring. The virus is highly contagious, infecting virtually all infants under the age of two and re-infection is common. For example approximately 50 percent of children will experience two RSV infections by the age of two.</pharmacodynamics>
+  <mechanism-of-action>BTA9881 is a small molecule fusion glycoprotein inhibitor, designed to specifically inhibit the process by which respiratory syncytial virus (RSV) infects a cell.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption>Orally available.</absorption>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347910036</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000686</id>
+      <name>Fusion glycoprotein F0</name>
+      <organism>Human respiratory syncytial virus B (strain 18537)</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P13843" source="Swiss-Prot">
+        <name>Fusion glycoprotein F0</name>
+        <general-function/>
+        <specific-function>During virus entry, induces fusion of viral and cellular membranes leading to delivery of the nucleocapsid into the cytoplasm. The fusogenic activity is inactive untill entry into host cell endosome, where a furin-like protease cleaves off a small peptide between F1 and F2. Interacts directly with heparan sulfate and may participates in virus attachment. Furthermore, the F2 subunit was identifed as the major determinant of RSV host cell specificity. Later in infection, proteins F expressed at the plasma membrane of infected cells can mediate fusion with adjacent cells to form syncytia, a cytopathic effect that could lead to tissue necrosis. The fusion protein is also able to trigger p53-dependent apoptosis.</specific-function>
+        <gene-name>F</gene-name>
+        <locus/>
+        <cellular-location>Virion membrane</cellular-location>
+        <transmembrane-regions>530-550</transmembrane-regions>
+        <signal-regions>1-25</signal-regions>
+        <theoretical-pi>9.14</theoretical-pi>
+        <molecular-weight>63687.815</molecular-weight>
+        <chromosome-location/>
+        <organism ncbi-taxonomy-id="11251">Human respiratory syncytial virus B (strain 18537)</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>D00334</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>222565</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P13843</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>FUS_HRSV1</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>Fusion glycoprotein F0 precursor</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010478|Fusion glycoprotein F0
+MELLIHRSSAIFLTLAVNALYLTSSQNITEEFYQSTCSAVSRGYFSALRTGWYTSVITIE
+LSNIKETKCNGTDTKVKLIKQELDKYKNAVTELQLLMQNTPAANNRARREAPQYMNYTIN
+TTKNLNVSISKKRKRRFLGFLLGVGSAIASGIAVSKVLHLEGEVNKIKNALLSTNKAVVS
+LSNGVSVLTSKVLDLKNYINNRLLPIVNQQSCRISNIETVIEFQQMNSRLLEITREFSVN
+AGVTTPLSTYMLTNSELLSLINDMPITNDQKKLMSSNVQIVRQQSYSIMSIIKEEVLAYV
+VQLPIYGVIDTPCWKLHTSPLCTTNIKEGSNICLTRTDRGWYCDNAGSVSFFPQADTCKV
+QSNRVFCDTMNSLTLPSEVSLCNTDIFNSKYDCKIMTSKTDISSSVITSLGAIVSCYGKT
+KCTASNKNRGIIKTFSNGCDYVSNKGVDTVSVGNTLYYVNKLEGKNLYVKGEPIINYYDP
+LVFPSDEFDASISQVNEKINQSLAFIRRSDELLHNVNTGKSTTNIMITTIIIVIIVVLLS
+LIAIGLLLYCKAKNTPVTLSKDQLSGINNIAFSK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0001367|1725 bp
+ATGGAGTTGCTGATCCACAGGTCAAGTGCAATCTTCCTAACTCTTGCTGTTAATGCATTG
+TACCTCACCTCAAGTCAGAACATAACTGAGGAGTTTTACCAATCGACATGTAGTGCAGTT
+AGCAGAGGTTATTTTAGTGCTTTAAGAACAGGTTGGTATACCAGTGTCATAACAATAGAA
+TTAAGTAATATAAAAGAAACCAAATGCAATGGAACTGACACTAAAGTAAAACTTATAAAA
+CAAGAATTAGATAAGTATAAGAATGCAGTAACAGAATTACAGCTACTTATGCAAAACACG
+CCAGCTGCCAACAACCGGGCCAGAAGAGAAGCACCACAGTACATGAACTACACAATCAAT
+ACCACAAAAAACCTAAATGTATCAATAAGCAAGAAAAGGAAACGAAGATTTCTGGGCTTC
+TTGTTAGGTGTAGGATCTGCAATAGCAAGTGGTATAGCTGTATCCAAAGTTTTACACCTT
+GAAGGAGAAGTGAACAAAATCAAAAATGCTTTGTTGTCTACAAACAAAGCTGTAGTCAGT
+CTATCAAATGGGGTCAGTGTTTTAACCAGCAAAGTGTTAGATCTCAAGAATTACATAAAT
+AACCGATTATTACCCATAGTAAATCAACAGAGCTGTCGCATCTCCAACATTGAAACAGTT
+ATAGAATTCCAGCAGATGAATAGCAGATTGTTGGAAATCACCAGAGAATTTAGTGTTAAT
+GCAGGTGTAACAACACCTTTAAGCACTTACATGTTAACAAACAGTGAGTTACTATCATTG
+ATCAATGATATGCCTATAACAAATGACCAGAAAAAATTAATGTCAAGCAATGTTCAGATA
+GTAAGGCAACAAAGTTATTCTATCATGTCTATAATAAAGGAAGAAGTCCTTGCATATGTT
+GTACAGCTACCTATCTATGGTGTAATAGATACACCTTGCTGGAAATTACACACATCACCT
+CTATGCACCACCAACATCAAAGAAGGATCAAATATTTGTTTAACAAGGACTGATAGAGGA
+TGGTATTGTGATAATGCAGGATCAGTATCCTTCTTCCCACAGGCTGATACTTGCAAAGTA
+CAGTCCAATCGAGTATTTTGTGACACTATGAACAGTTTAACATTACCAAGTGAAGTCAGC
+CTTTGTAACACTGACATATTCAATTCCAAGTATGACTGCAAAATTATGACATCAAAAACA
+GACATAAGCAGCTCAGTAATTACTTCTCTTGGAGCTATAGTGTCATGCTATGGAAAAACT
+AAATGCACTGCATCCAATAAAAATCGTGGGATTATAAAGACATTTTCTAATGGTTGTGAC
+TATGTGTCAAACAAAGGAGTAGATACTGTGTCAGTGGGCAACACTTTATACTATGTAAAC
+AAGCTGGAAGGCAAAAACCTTTATGTAAAAGGGGAACCTATAATAAATTACTATGATCCT
+CTAGTGTTTCCTTCTGATGAGTTTGATGCATCAATATCTCAAGTCAATGAAAAAATCAAT
+CAAAGTTTAGCTTTTATTCGTAGATCTGATGAATTACTACATAATGTAAATACTGGCAAA
+TCTACTACAAATATTATGATAACTACAATTATTATAGTAATCATTGTAGTATTGTTATCA
+TTAATAGCTATTGGTTTACTGTTGTATTGCAAAGCCAAAAACACACCAGTTACACTAAGC
+AAAGACCAACTAAGTGGAATCAATAATATTGCATTCAGCAAATAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00523</identifier>
+            <name>Fusion_gly</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>host cell plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>viral envelope</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>virion membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>fusion of virus membrane with host plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>positive regulation of syncytium formation by virus</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

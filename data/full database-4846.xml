@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05166</drugbank-id>
+  <name>APD668</name>
+  <description>APD668 is a novel, highly potent and orally active glucose-dependent insulinotropic receptor (GDIR) agonist intended to more efficiently stimulate insulin release by beta cells in response to elevated blood glucose levels, and to also avoid hypoglycemia. </description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in diabetes mellitus type 2.</indication>
+  <pharmacodynamics/>
+  <mechanism-of-action>The GDIR mechanism is glucose dependent: in preclinical studies, GDIR agonists only lowered blood glucose when it rose above normal levels, such as after a meal. Therefore, unlike the glucose-insensitive sulfonylureas, Arena's GDIR agonists are not expected to lower normal fasting blood glucose levels or cause hypoglycemia. In addition, GDIR stimulation has been found to increase the levels and activity of intracellular factors thought to be involved in the preservation of beta cells. &#13;
+</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories/>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909994</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0003378</id>
+      <name>Glucose-dependent insulinotropic receptor</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="Q8TDV5" source="Swiss-Prot">
+        <name>Glucose-dependent insulinotropic receptor</name>
+        <general-function>Phosphatidylcholine binding</general-function>
+        <specific-function>Receptor for the endogenous fatty-acid ethanolamide oleoylethanolamide (OEA) and lysophosphatidylcholine (LPC). Functions as a glucose-dependent insulinotropic receptor. The activity of this receptor is mediated by G proteins which activate adenylate cyclase. Seems to act through a G(s) mediated pathway.</specific-function>
+        <gene-name>GPR119</gene-name>
+        <locus>Xq25</locus>
+        <cellular-location>Cell membrane</cellular-location>
+        <transmembrane-regions>13-33
+38-58
+82-102
+126-146
+165-185
+227-247
+263-283</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.96</theoretical-pi>
+        <molecular-weight>36888.36</molecular-weight>
+        <chromosome-location>X</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:19060</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>GPR119</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>AB083584</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>IUPHAR</resource>
+            <identifier>126</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>126</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>Q8TDV5</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>GP119_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>G-protein coupled receptor 119</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0012362|Glucose-dependent insulinotropic receptor
+MESSFSFGVILAVLASLIIATNTLVAVAVLLLIHKNDGVSLCFTLNLAVADTLIGVAISG
+LLTDQLSSPSRPTQKTLCSLRMAFVTSSAAASVLTVMLITFDRYLAIKQPFRYLKIMSGF
+VAGACIAGLWLVSYLIGFLPLGIPMFQQTAYKGQCSFFAVFHPHFVLTLSCVGFFPAMLL
+FVFFYCDMLKIASMHSQQIRKMEHAGAMAGGYRSPRTPSDFKALRTVSVLIGSFALSWTP
+FLITGIVQVACQECHLYLVLERYLWLLGVGNSLLNPLIYAYWQKEVRLQLYHMALGVKKV
+LTSFLLFLSARNCGPERPRESSCHIVTISSSEFDG</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0012363|Glucose-dependent insulinotropic receptor (GPR119)
+ATGGAATCATCTTTCTCATTTGGAGTGATCCTTGCTGTCCTGGCCTCCCTCATCATTGCT
+ACTAACACACTAGTGGCTGTGGCTGTGCTGCTGTTGATCCACAAGAATGATGGTGTCAGT
+CTCTGCTTCACCTTGAATCTGGCTGTGGCTGACACCTTGATTGGTGTGGCCATCTCTGGC
+CTACTCACAGACCAGCTCTCCAGCCCTTCTCGGCCCACACAGAAGACCCTGTGCAGCCTG
+CGGATGGCATTTGTCACTTCCTCCGCAGCTGCCTCTGTCCTCACGGTCATGCTGATCACC
+TTTGACAGGTACCTTGCCATCAAGCAGCCCTTCCGCTACTTGAAGATCATGAGTGGGTTC
+GTGGCCGGGGCCTGCATTGCCGGGCTGTGGTTAGTGTCTTACCTCATTGGCTTCCTCCCA
+CTCGGAATCCCCATGTTCCAGCAGACTGCCTACAAAGGGCAGTGCAGCTTCTTTGCTGTA
+TTTCACCCTCACTTCGTGCTGACCCTCTCCTGCGTTGGCTTCTTCCCAGCCATGCTCCTC
+TTTGTCTTCTTCTACTGCGACATGCTCAAGATTGCCTCCATGCACAGCCAGCAGATTCGA
+AAGATGGAACATGCAGGAGCCATGGCTGGAGGTTATCGATCCCCACGGACTCCCAGCGAC
+TTCAAAGCTCTCCGTACTGTGTCTGTTCTCATTGGGAGCTTTGCTCTATCCTGGACCCCC
+TTCCTTATCACTGGCATTGTGCAGGTGGCCTGCCAGGAGTGTCACCTCTACCTAGTGCTG
+GAACGGTACCTGTGGCTGCTCGGCGTGGGCAACTCCCTGCTCAACCCACTCATCTATGCC
+TATTGGCAGAAGGAGGTGCGACTGCAGCTCTACCACATGGCCCTAGGAGTGAAGAAGGTG
+CTCACCTCATTCCTCCTCTTTCTCTCGGCCAGGAATTGTGGCCCAGAGAGGCCCAGGGAA
+AGTTCCTGTCACATCGTCACTATCTCCAGCTCAGAGTTTGATGGCTAA</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00001</identifier>
+            <name>7tm_1</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>plasma membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>receptor complex</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>G-protein coupled receptor activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>phosphatidylcholine binding</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>insulin secretion</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>

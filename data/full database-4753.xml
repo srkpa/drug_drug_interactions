@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drug type="small molecule" created="2007-10-21" updated="2020-01-02">
+  <drugbank-id primary="true">DB05064</drugbank-id>
+  <name>INCB13739</name>
+  <description>INCB13739 is developed as a new treatment for type 2 diabetes. &#13;
+It is an orally available small molecule inhibitor of 11beta-HSD1 (11-beta hydroxysteroid dehydrogenase type 1). 11beta-HSD1 is an enzyme that appears to be critical to the development of type 2 diabetes.</description>
+  <cas-number/>
+  <unii/>
+  <state>solid</state>
+  <groups>
+    <group>investigational</group>
+  </groups>
+  <general-references>
+    <articles/>
+    <textbooks/>
+    <links/>
+    <attachments/>
+  </general-references>
+  <synthesis-reference/>
+  <indication>Investigated for use/treatment in diabetes mellitus type 2 and diabetes prevention.</indication>
+  <pharmacodynamics>11beta-HSD1 is an enzyme that converts cortisone into the potent biologically active hormone cortisol. This conversion occurs intra-cellularly within several key metabolic tissues including the liver, adipose, muscle and pancreas. Cortisol acts as an antagonist of insulin action, and 11beta-HSD1 mediated production of cortisol has been hypothesized to contribute to human insulin resistance and type 2 diabetes. INCB13739 inhibits 11beta-HSD1 and has the potential to provide a broad spectrum impact on the multiple components seen in patients with type 2 diabetes.</pharmacodynamics>
+  <mechanism-of-action>INCB13739 is an inhibitor of 11beta-HSD1 (11-beta hydroxysteroid dehydrogenase type 1). 11beta-HSD1 is an enzyme that appears to be critical to the development of type 2 diabetes. INCB13739 completely inhibits the production of intra-adipose and intra-hepatic cortisol by 11beta-HSD1, while maintaining normal systemic cortisol levels, which are essential for immune function and response to stress.</mechanism-of-action>
+  <toxicity/>
+  <metabolism/>
+  <absorption/>
+  <half-life/>
+  <protein-binding/>
+  <route-of-elimination/>
+  <volume-of-distribution/>
+  <clearance/>
+  <salts/>
+  <synonyms/>
+  <products/>
+  <international-brands/>
+  <mixtures/>
+  <packagers/>
+  <manufacturers/>
+  <prices/>
+  <categories>
+    <category>
+      <category>11-beta-Hydroxysteroid Dehydrogenase Type 1, antagonists &amp; inhibitors</category>
+      <mesh-id/>
+    </category>
+    <category>
+      <category>Amides</category>
+      <mesh-id>D000577</mesh-id>
+    </category>
+    <category>
+      <category>Sulfones</category>
+      <mesh-id>D013450</mesh-id>
+    </category>
+    <category>
+      <category>Sulfur Compounds</category>
+      <mesh-id>D013457</mesh-id>
+    </category>
+  </categories>
+  <affected-organisms/>
+  <dosages/>
+  <atc-codes/>
+  <ahfs-codes/>
+  <pdb-entries/>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties/>
+  <experimental-properties/>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>347909924</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links/>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target>
+      <id>BE0000329</id>
+      <name>Corticosteroid 11-beta-dehydrogenase isozyme 1</name>
+      <organism>Humans</organism>
+      <actions/>
+      <references>
+        <articles/>
+        <textbooks/>
+        <links/>
+        <attachments/>
+      </references>
+      <known-action>unknown</known-action>
+      <polypeptide id="P28845" source="Swiss-Prot">
+        <name>Corticosteroid 11-beta-dehydrogenase isozyme 1</name>
+        <general-function>11-beta-hydroxysteroid dehydrogenase [nad(p)] activity</general-function>
+        <specific-function>Catalyzes reversibly the conversion of cortisol to the inactive metabolite cortisone. Catalyzes reversibly the conversion of 7-ketocholesterol to 7-beta-hydroxycholesterol. In intact cells, the reaction runs only in one direction, from 7-ketocholesterol to 7-beta-hydroxycholesterol (By similarity).</specific-function>
+        <gene-name>HSD11B1</gene-name>
+        <locus>1q32-q41</locus>
+        <cellular-location>Endoplasmic reticulum membrane</cellular-location>
+        <transmembrane-regions>8-24</transmembrane-regions>
+        <signal-regions/>
+        <theoretical-pi>8.77</theoretical-pi>
+        <molecular-weight>32400.665</molecular-weight>
+        <chromosome-location>1</chromosome-location>
+        <organism ncbi-taxonomy-id="9606">Humans</organism>
+        <external-identifiers>
+          <external-identifier>
+            <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+            <identifier>HGNC:5208</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenAtlas</resource>
+            <identifier>HSD11B1</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Gene Database</resource>
+            <identifier>M76665</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>GenBank Protein Database</resource>
+            <identifier>179475</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>Guide to Pharmacology</resource>
+            <identifier>2763</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProtKB</resource>
+            <identifier>P28845</identifier>
+          </external-identifier>
+          <external-identifier>
+            <resource>UniProt Accession</resource>
+            <identifier>DHI1_HUMAN</identifier>
+          </external-identifier>
+        </external-identifiers>
+        <synonyms>
+          <synonym>1.1.1.146</synonym>
+          <synonym>11-beta-HSD1</synonym>
+          <synonym>11-beta-hydroxysteroid dehydrogenase 1</synonym>
+          <synonym>11-DH</synonym>
+          <synonym>HSD11</synonym>
+          <synonym>HSD11L</synonym>
+          <synonym>SDR26C1</synonym>
+          <synonym>Short chain dehydrogenase/reductase family 26C member 1</synonym>
+        </synonyms>
+        <amino-acid-sequence format="FASTA">&gt;lcl|BSEQ0010089|Corticosteroid 11-beta-dehydrogenase isozyme 1
+MAFMKKYLLPILGLFMAYYYYSANEEFRPEMLQGKKVIVTGASKGIGREMAYHLAKMGAH
+VVVTARSKETLQKVVSHCLELGAASAHYIAGTMEDMTFAEQFVAQAGKLMGGLDMLILNH
+ITNTSLNLFHDDIHHVRKSMEVNFLSYVVLTVAALPMLKQSNGSIVVVSSLAGKVAYPMV
+AAYSASKFALDGFFSSIRKEYSVSRVNVSITLCVLGLIDTETAMKAVSGIVHMQAAPKEE
+CALEIIKGGALRQEEVYYDSSLWTTLLIRNPCRKILEFLYSTSYNMDRFINK</amino-acid-sequence>
+        <gene-sequence format="FASTA">&gt;lcl|BSEQ0010090|Corticosteroid 11-beta-dehydrogenase isozyme 1 (HSD11B1)
+ATGGCTTTTATGAAAAAATATCTCCTCCCCATTCTGGGGCTCTTCATGGCCTACTACTAC
+TATTCTGCAAACGAGGAATTCAGACCAGAGATGCTCCAAGGAAAGAAAGTGATTGTCACA
+GGGGCCAGCAAAGGGATCGGAAGAGAGATGGCTTATCATCTGGCGAAGATGGGAGCCCAT
+GTGGTGGTGACAGCGAGGTCAAAAGAAACTCTACAGAAGGTGGTATCCCACTGCCTGGAG
+CTTGGAGCAGCCTCAGCACACTACATTGCTGGCACCATGGAAGACATGACCTTCGCAGAG
+CAATTTGTTGCCCAAGCAGGAAAGCTCATGGGAGGACTAGACATGCTCATTCTCAACCAC
+ATCACCAACACTTCTTTGAATCTTTTTCATGATGATATTCACCATGTGCGCAAAAGCATG
+GAAGTCAACTTCCTCAGTTACGTGGTCCTGACTGTAGCTGCCTTGCCCATGCTGAAGCAG
+AGCAATGGAAGCATTGTTGTCGTCTCCTCTCTGGCTGGGAAAGTGGCTTATCCAATGGTT
+GCTGCCTATTCTGCAAGCAAGTTTGCTTTGGATGGGTTCTTCTCCTCCATCAGAAAGGAA
+TATTCAGTGTCCAGGGTCAATGTATCAATCACTCTCTGTGTTCTTGGCCTCATAGACACA
+GAAACAGCCATGAAGGCAGTTTCTGGGATAGTCCATATGCAAGCAGCTCCAAAGGAGGAA
+TGTGCCCTGGAGATCATCAAAGGGGGAGCTCTGCGCCAAGAAGAAGTGTATTATGACAGC
+TCACTCTGGACCACTCTTCTGATCAGAAATCCATGCAGGAAGATCCTGGAATTTCTCTAC
+TCAACGAGCTATAATATGGACAGATTCATAAACAAGTAG</gene-sequence>
+        <pfams>
+          <pfam>
+            <identifier>PF00106</identifier>
+            <name>adh_short</name>
+          </pfam>
+        </pfams>
+        <go-classifiers>
+          <go-classifier>
+            <category>component</category>
+            <description>endoplasmic reticulum membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>integral component of membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>component</category>
+            <description>membrane</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>11-beta-hydroxysteroid dehydrogenase (NADP+) activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>function</category>
+            <description>11-beta-hydroxysteroid dehydrogenase [NAD(P)] activity</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>glucocorticoid biosynthetic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>lung development</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>small molecule metabolic process</description>
+          </go-classifier>
+          <go-classifier>
+            <category>process</category>
+            <description>steroid metabolic process</description>
+          </go-classifier>
+        </go-classifiers>
+      </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>
