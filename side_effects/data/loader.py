@@ -1,4 +1,5 @@
 import inspect
+import json
 import random
 import string
 from itertools import product, chain
@@ -236,11 +237,11 @@ class DDIdataset(Dataset):
             self.prepare_test_feeding_insts()
         if self.has_graph:
             self.build_graph()
-        if self.sampler:
-            print(self.labels_vectorizer.classes_)
-            self.sample_pairs()
-
-        exit()
+        # if self.sampler:
+        #     print(self.labels_vectorizer.classes_)
+        #     self.sample_pairs()
+        #
+        # exit()
 
     def __len__(self):
         return len(self.samples) if not self.testing else len(self.samples) * len(
@@ -350,14 +351,14 @@ class DDIdataset(Dataset):
         self.targets = np.array([1] * len(pos_insts) + [0] * len(neg_insts))
         print("target shape", self.targets.shape)
 
-    #
-    def sample_pairs(self):
-        n_classes = len(
-            self.labels_vectorizer.classes_)
-        samples = list(zip(*self.samples))[2]
-        p = [len(labels) for i, labels in enumerate(samples) if len(labels) >= 100]
-        print(max(p), len(p), len(samples))
-        exit()
+    # #
+    # def sample_pairs(self):
+    #     n_classes = len(
+    #         self.labels_vectorizer.classes_)
+    #     samples = list(zip(*self.samples))[2]
+    #     p = [len(labels) for i, labels in enumerate(samples) if len(labels) >= 100]
+    #     print(max(p), len(p), len(samples))
+    #     exit()
 
     def set_input_dim(self):
         adme_dim = list(self.drugspharm.values())[0].shape[0] if self.drugspharm else 0
@@ -440,7 +441,7 @@ def _rank(data, v=100):
 def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_clusters=False, use_as_filter=None, use_targets=False, use_side_effect=False,
-                        use_pharm=False, n_folds=0, test_fold=0, label='ml', debug=False, density=False):
+                        use_pharm=False, n_folds=0, test_fold=0, label='ml', debug=False, density=False, syn=True):
     data, drugs2smiles = load_data(input_path, dataset_name)
     load_data(input_path, dataset_name)
     drug_offsides, drug2targets, drugs2pharm = {}, {}, {}
@@ -461,6 +462,22 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     if use_clusters:
         side_effects_mapping = load_side_effect_mapping(input_path, use_as_filter)
         data = relabel(data, side_effects_mapping)
+
+    if not syn:
+        output = defaultdict(set)
+        with open(f"{input_path}/twosides_umls_fin.json", "r") as cf:
+            cls = json.load(cf)
+            for par, chld in cls.items():
+                for ld in chld:
+                    output[ld].add(par)
+        for pair, lab in data.items():
+            nw = []
+            for phen in lab:
+                if phen in output:
+                    nw.extend(list(output[phen]))
+                else:
+                    nw += [phen]
+            data[pair] = nw
 
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
     transformer = all_transformers_dict.get(transformer)
@@ -492,10 +509,6 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
     mbl = MultiLabelBinarizer().fit(labels)
     labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
-
-    side_effect_dict = pd.read_csv("/home/rogia/Bureau/side_effects_dict.csv", sep=",")
-    print(set(side_effect_dict["side effect"].values) - set(labels_mapping.keys())  )
-    exit()
 
     if decagon:
         ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"

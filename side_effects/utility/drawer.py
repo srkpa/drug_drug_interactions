@@ -1,3 +1,4 @@
+import json
 import os
 from collections import Counter
 from itertools import chain
@@ -12,7 +13,7 @@ from sklearn.metrics import jaccard_score
 from tqdm import tqdm
 
 from side_effects.data.loader import load_ddis_combinations, load_side_effect_mapping, relabel
-from side_effects.utility.exp_utils import visualize_test_perf, __collect_data__, get_similarity, wrapped_partial
+from side_effects.utility.exp_utils import visualize_test_perf, __collect_data__, get_similarity, wrapped_partial, load
 
 # rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
 # rc('font', **{'family': 'serif', 'serif': ['Times'], 'size': 20})
@@ -27,13 +28,13 @@ def plot_distribution(dist, title="", x_label="", y_label="", file_name=None):
     sns.set_context("paper", font_scale=1.2)
     sns.set_style("ticks")
     sns.set_style({"xtick.direction": "in", "ytick.direction": "in"})
-    # sns.distplot(dist, kde=True, color=sns.xkcd_rgb['denim blue'], bins=20, hist_kws={"alpha": 1}, norm_hist=False, hist=False,)
-    sns.kdeplot(dist, shade=True, color=sns.xkcd_rgb['denim blue'])
+    sns.distplot(dist, kde=False, color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1})
+    # sns.kdeplot(dist, shade=True, color=sns.xkcd_rgb['denim blue'])
     plt.xlabel(x_label)
     plt.title(title)
-    plt.tight_layout()
-    plt.gcf().subplots_adjust(left=0.2, right=0.8, top=0.8, bottom=0.2)
+    #plt.gcf().subplots_adjust(left=0.2, right=0.8, top=0.8, bottom=0.2)
     plt.ylabel(y_label)
+    plt.tight_layout()
     if file_name:
         plt.savefig(file_name)
     else:
@@ -243,11 +244,11 @@ def plot_test_dens(fp, leg=False):
                 yr)
             df.loc[:, "Scores"] = ya + yr
             df.loc[:, "Density"] = dens * 2
-            out+= [df]
+            out += [df]
         df = pd.concat(out, ignore_index=True)
         k = list(set(sorted(density['random'])))
-        tck = [k[0], k[len(k)//2], k[-1]]
-        tck=[0.0] + tck[0:2] if tck[1]==tck[2] else tck
+        tck = [k[0], k[len(k) // 2], k[-1]]
+        tck = [0.0] + tck[0:2] if tck[1] == tck[2] else tck
         fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(25, 10))
         ax1 = sns.boxplot(x='Density', y='Scores', hue='Metric name', data=df[df['split'] == 'random'],
                           ax=ax1
@@ -256,16 +257,18 @@ def plot_test_dens(fp, leg=False):
         ax1.set_xticklabels(tck)
         k = list(set(sorted(density['leave_drugs_out (test_set 1)'])))
         tck = [k[0], k[len(k) // 2], k[-1]]
-        tck=[0.0] + tck[0:2] if tck[1]==tck[2] else tck
-        ax2 = sns.boxplot(x='Density', y='Scores', hue='Metric name', data=df[df['split'] ==  'leave_drugs_out (test_set 1)'],
+        tck = [0.0] + tck[0:2] if tck[1] == tck[2] else tck
+        ax2 = sns.boxplot(x='Density', y='Scores', hue='Metric name',
+                          data=df[df['split'] == 'leave_drugs_out (test_set 1)'],
                           ax=ax2
                           )
         ax2.xaxis.set_major_locator(plt.LinearLocator(3))
         ax2.set_xticklabels(tck)
         k = list(set(sorted(density['leave_drugs_out (test_set 2)'])))
         tck = [k[0], k[len(k) // 2], k[-1]]
-        tck=[0.0] + tck[0:2] if tck[1]==tck[2] else tck
-        ax3 = sns.boxplot(x='Density', y='Scores', hue='Metric name', data=df[df['split'] ==  'leave_drugs_out (test_set 2)'],
+        tck = [0.0] + tck[0:2] if tck[1] == tck[2] else tck
+        ax3 = sns.boxplot(x='Density', y='Scores', hue='Metric name',
+                          data=df[df['split'] == 'leave_drugs_out (test_set 2)'],
                           ax=ax3
                           )
         ax3.xaxis.set_major_locator(plt.LinearLocator(3))
@@ -366,14 +369,14 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
                            'Liberation Sans'})
         ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
                           ax=ax1
-                          )#palette=['dodgerblue', 'lime'],
+                          )  # palette=['dodgerblue', 'lime'],
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
         dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 1)']
         ax2 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
                           , ax=ax2
-                          )  #palette=['dodgerblue', 'lime']
+                          )  # palette=['dodgerblue', 'lime']
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
@@ -568,6 +571,66 @@ def plot_sim(true_positives, false_negatives, true_negatives, falses_positives, 
     plt.savefig(f"/home/rogia/Bureau/figs/{saved_file}.png")
 
 
+def compute_phenotype_cooccurence(cluster_file="../data/twosides_umls_fin.json",
+                                  config_file="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json"):
+    train, valid, test1, test2 = __collect_data__(config_file)
+    mbl = train.labels_vectorizer
+    side_effects = list(mbl.classes_)
+
+    # Load side effect cluster file
+    with open(cluster_file, "r") as cf:
+        cls = json.load(cf)
+        print(len(cls), len(set(chain.from_iterable(list(cls.values())))))
+
+    i = 0
+    y = set(chain.from_iterable(list(cls.values())))
+    for se in side_effects:
+        if se not in cls and se not in y:
+            print(se)
+            i += 1
+
+    exit()
+    print(i, len(y), len(cls), i + len(y) + len(cls))
+    cach_path = "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/"
+    data = load_ddis_combinations(cach_path + "twosides.csv", True, "twosides")
+    samples = list(data.values())
+    target = mbl.transform(samples).astype(np.float32)
+    n_samples, n_side_effect = target.shape
+    assert n_samples == len(samples)
+    assert n_side_effect == len(set(chain.from_iterable(samples)))
+
+    def __jaccard_score(x, y, target):
+        # print(x, len(y), target.shape)
+        n = len(y)
+        side_effect = np.repeat(a=np.expand_dims(target[:, x], axis=1), repeats=n, axis=1)
+        target = target[:, y]
+        # print(side_effect.shape, target.shape)
+        out = jaccard_score(y_true=target, y_pred=side_effect, average=None)
+        return out
+
+    output = list(chain.from_iterable(
+        list(map(wrapped_partial(__jaccard_score, target=target), tqdm([side_effects.index(label) for label in cls]),
+                 tqdm([[side_effects.index(l) for l in cls[label]] for label in cls])))))
+    print(len(output))
+    plot_distribution(output, title="Jaccard correlation among synonym", x_label="Jaccard Score",
+                      y_label="Phenotypes (Count)",
+                      file_name="/home/rogia/Bureau/figs/figure_jaccard_corr_among_synonym_twosides.png")
+
+    # target = load(open("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_preds.pkl", "rb"))
+    # print(target)
+    # #target = target < 0.5
+    # target = target >= 0.7
+    # print(target.astype(int))
+    # output = list(chain.from_iterable(
+    #     list(map(wrapped_partial(__jaccard_score, target=target), tqdm([side_effects.index(label) for label in cls]),
+    #              tqdm([[side_effects.index(l) for l in cls[label]] for label in cls])))))
+    # print(len(output))
+    # plot_distribution(output, title="Jaccard correlation models preditions (threshold = 0.5)", x_label="Jaccard Score",
+    #                   y_label="Phenotypes (Count)",
+    #                   file_name="")  #/home/rogia/Bureau/figs/figure_jaccard_corr_among_synonym_predicted_vec_twosides.png
+
+
+# target = target
 if __name__ == '__main__':
     # plot_data_distribution()
     # visualize_loss_progress("/media/rogia/5123-CDC3/SOC/cl_deepddi/twosides_deepddi_1d1fb1d1_log.log")
@@ -596,10 +659,10 @@ if __name__ == '__main__':
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="f1")
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc")
 
-    plot_test_perf("/home/rogia/Documents/exps_results/temp-SOC/temp.csv", met1="ap", met2="roc")
-    #plot_test_dens("/home/rogia/Documents/exps_results/temp-2/temp.csv")
-    #plot_test_dens("/home/rogia/Documents/exps_results/temp-SOC/temp.csv")
-    exit()
+    # plot_test_perf("/home/rogia/Documents/exps_results/temp-SOC/temp.csv", met1="ap", met2="roc")
+    # plot_test_dens("/home/rogia/Documents/exps_results/temp-2/temp.csv")
+    # plot_test_dens("/home/rogia/Documents/exps_results/temp-SOC/temp.csv")
+
     # Step 3
     # res = scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", split="random",
     #              req=["muscle spasm", "drug withdrawal"]) #'hepatitis c', 'hepatitis a', 'hiv disease', 'hiv disease', 'flu', 'road traffic accident',
@@ -640,3 +703,4 @@ if __name__ == '__main__':
     #          debug=False, prob=False)
     # # plot_sim(true="../../results/bad_pred.csv", false=tab10, fp="", ref=None, debug=True)
     # exit()
+    compute_phenotype_cooccurence()
