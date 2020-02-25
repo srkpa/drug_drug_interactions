@@ -5,14 +5,14 @@ from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
-         transformer=["seq"],
-         split_mode=["random", "leave_drugs_out"],
+         transformer=["dgl"],
+         split_mode=["random", "leave_drugs_out"],  #
          test_size=[0.10],
          valid_size=[0.15],
          seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
-         use_clusters=[False],
-         use_as_filter=[None],
+         #use_clusters=[True],
+         #use_as_filter=['SOC'],
          use_targets=[False],
          use_side_effect=[False],
          use_pharm=[False],
@@ -27,30 +27,32 @@ dataset_params = list(ParameterGrid(
 fit_params = list(ParameterGrid(
     dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
 
-drug_features_extractor_params = list(ParameterGrid(
-    dict(arch=['conv1d'],
-         vocab_size=[151],
-         embedding_size=[512],
-         cnn_sizes=[
-             [1024]
-         ],
-         kernel_size=[[17]],
-         pooling_len=[2],
-         b_norm=[False],
-         pooling=["max"]
-         #  use_self_attention=[True]
+pool_arch = list(ParameterGrid(
+    dict(arch=[None]
          )
+))
+
+drug_features_extractor_params = list(ParameterGrid([
+    dict(arch=['dglgraph'],
+         input_dim=[79],
+         conv_layer_dims=[[[64], [64]]],
+         dropout=[0.],
+         activation=['ReLU'],
+         glayer=["dgl-gin"],
+         pooling=["avg"],
+         pool_arch=pool_arch,
+         )]
 ))
 
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
-    ss_embedding_dim=[32],
-    fc_layers_dim=[[1024]],
-    mode=["concat"],
-    dropout=[0],
+    fc_layers_dim=[[128] * 2],
+    mode=['concat'],
+    dropout=[0.10],
     b_norm=[True],
-    is_binary_output=[False]
+    is_binary_output=[False],
+    ss_embedding_dim=[None]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -66,9 +68,9 @@ model_params = list(ParameterGrid(dict(
     optimizer=['adam'],
     lr=[1e-4],
     loss=['bce'],
-    metrics_names=[['micro_roc', 'micro_auprc']],
+    metrics_names=[['macro_roc', 'macro_auprc', 'micro_roc', 'micro_auprc']],
     loss_params=loss_params,
-    dataloader=[True]
+    dataloader=[False]
 )))
 
 

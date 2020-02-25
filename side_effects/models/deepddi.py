@@ -12,7 +12,7 @@ class DeepDDI(nn.Module):
         layers = []
         in_ = input_dim
         self.is_binary_output = is_binary_output
-        self.testing = True #testing
+        self.testing = testing
         self.exp_prefix = exp_prefix
         output_dim = 1 if is_binary_output else nb_side_effects
         if is_binary_output:

@@ -237,11 +237,6 @@ class DDIdataset(Dataset):
             self.prepare_test_feeding_insts()
         if self.has_graph:
             self.build_graph()
-        # if self.sampler:
-        #     print(self.labels_vectorizer.classes_)
-        #     self.sample_pairs()
-        #
-        # exit()
 
     def __len__(self):
         return len(self.samples) if not self.testing else len(self.samples) * len(
@@ -286,8 +281,12 @@ class DDIdataset(Dataset):
                     drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
                     drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
                     target = to_tensor(np.expand_dims(target, axis=0), self.gpu)
-            res = ((drug1, drug2), to_tensor(target, self.gpu))  # C,est ici qui faut mettre cela sur tensor
+                    res = ((drug1, drug2), to_tensor(target, self.gpu))
+
+            else:
+                res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
         else:
+
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
 
@@ -464,6 +463,16 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         data = relabel(data, side_effects_mapping)
 
     if not syn:
+        to_remove = ["animal bite",
+                     "abnormal laboratory findings",
+                     "adverse drug effect",
+                     "drug withdrawal",
+                     "drug addiction",
+                     "alcohol consumption",
+                     "abuse",
+                     "substance abuse",
+                     "drug toxicity nos",
+                     "alcoholic intoxication, road traffic accident"]
         output = defaultdict(set)
         with open(f"{input_path}/twosides_umls_fin.json", "r") as cf:
             cls = json.load(cf)
@@ -477,7 +486,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                     nw.extend(list(output[phen]))
                 else:
                     nw += [phen]
-            data[pair] = nw
+            nw = set(nw) - set(to_remove)
+            data[pair] = list(nw)
 
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
     transformer = all_transformers_dict.get(transformer)
