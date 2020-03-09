@@ -62,18 +62,18 @@ loss_params = list(ParameterGrid([
         use_sampling=[False],
         samp_weight=[True],
         rescale_freq=[True]
-     )#,
-    # dict(
-    #     use_negative_sampling=[True],
-    #     use_fixed_binary_cost=[False],
-    #     use_fixed_label_cost=[False],
-    #     use_binary_cost_per_batch=[False],
-    #     use_label_cost_per_batch=[False],
-    #     neg_rate=[0.2, 0.5, 0.7, 1., 2],
-    #     use_sampling=[False],
-    #     samp_weight=[False],
-    #     rescale_freq=[False]
-    # )
+     ),
+    dict(
+        use_negative_sampling=[True],
+        use_fixed_binary_cost=[False],
+        use_fixed_label_cost=[False],
+        use_binary_cost_per_batch=[False],
+        use_label_cost_per_batch=[False],
+        neg_rate=[0.2, 0.5, 0.7, 1., 2],
+        use_sampling=[False],
+        samp_weight=[False],
+        rescale_freq=[False]
+    )
 ]))
 
 model_params = list(ParameterGrid(dict(
