@@ -213,10 +213,10 @@ def plot_results(params, title="", file_name="", leg=True, smothing=False):
         ax1.set_ylim(0.90, 1)
     else:
         if smothing:
-            ax1.set_ylim(0.75, 1)
-            ax2.set_ylim(0.75, 1)
-        else:
             ax1.set_ylim(0.7, 1)
+            ax2.set_ylim(0.3, 1)
+        # else:
+        #     ax1.set_ylim(0.7, 1)
     if not leg:
         ax1.get_legend().remove()
     else:
@@ -417,7 +417,7 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
         ax2.set_xlabel("")
         # ax2.set_ylabel(f"{dataset}\nScores", fontsize=35)
         # ax3.set_ylabel(f"{dataset}\nScores", fontsize=35)
-        ax1.set_ylabel(f"{dataset}-SOC\nScores", fontsize=35)
+        ax1.set_ylabel(f"{dataset}-NOSYN\nScores", fontsize=35)
         # ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=35) ###
         ax3.set_ylabel("")
         ax2.set_ylabel("")
@@ -703,9 +703,12 @@ if __name__ == '__main__':
     # plot_results(["/home/rogia/Téléchargements/table-1 - table-1 - all_raw-exp-res.csv", "drugbank"], leg=False)
     # plot_results(["/home/rogia/Téléchargements/table-1 - table-1 - all_raw-exp-res.csv", "twosides"], leg=True)
     # plot_results(["/home/rogia/Bureau/figs/soc.csv", "twosides"], leg=False, smothing=True)
+   # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
 
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="f1")
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc")
+    plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
+    exit()
 
    # plot_test_perf("/home/rogia/Documents/exps_results/temp-SOC/temp.csv", met1="ap", met2="roc")
     # plot_test_dens("/home/rogia/Documents/exps_results/temp-2/temp.csv")

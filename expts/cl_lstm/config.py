@@ -21,7 +21,7 @@ dataset_params = list(ParameterGrid(
          debug=[False],
          n_folds=[0],
          test_fold=[0],
-         syn=[False]
+         syn=[True]
          )
 ))
 
@@ -59,7 +59,10 @@ loss_params = list(ParameterGrid(dict(
     use_fixed_binary_cost=[False],
     use_fixed_label_cost=[False],
     use_binary_cost_per_batch=[False],
-    use_label_cost_per_batch=[False]
+    use_label_cost_per_batch=[False],
+    neg_rate=[1.],
+    use_sampling=[True],
+    samp_weight=[1.]
 )))
 
 model_params = list(ParameterGrid(dict(

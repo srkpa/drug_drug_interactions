@@ -289,7 +289,10 @@ def __loop_through_exp(path, compute_metric=True):
             os.path.split(fp)[-1])
         params_file = os.path.join(path, task_id[:-3] + "params.json")
         if os.path.exists(params_file):
-            config = json.load(open(params_file, "rb"))
+            #config = json.load(open(params_file, "rb"))
+            print("y", params_file)
+            with open(params_file,"rb") as fh:
+                config = json.load(fh)
             exp = config.get("model_params.network_params.drug_feature_extractor_params.arch", None)
             exp = exp if exp else config.get("model_params.network_params.network_name", None)
             pool_arch = config.get("model_params.network_params.drug_feature_extractor_params.pool_arch.arch", None)
@@ -862,7 +865,9 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-    # summarize_experiments("/home/rogia/Documents/exps_results/kfolds", cm=False)
+    summarize_experiments("/media/rogia/5123-CDC3/SYN", cm=False)
+    get_best_hp()
+    exit()
     # # ('cid000003345', 'cid000005076', 'malignant melanoma')
     # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
     # data = pd.read_csv(input_path, sep="\t")

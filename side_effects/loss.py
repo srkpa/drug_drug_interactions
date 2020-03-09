@@ -4,7 +4,7 @@ from torch.distributions.categorical import Categorical
 from torch.nn import Module
 from torch.nn import Parameter
 from torch.nn.functional import binary_cross_entropy
-from ivbase.utils.commons import to_tensor
+
 from side_effects.data.loader import compute_labels_density, compute_classes_weight
 
 
@@ -55,7 +55,8 @@ class WeightedBinaryCrossEntropy1(Module):
 class BinaryCrossEntropyP(Module):
 
     def __init__(self, use_negative_sampling, weight, density,
-                 use_binary_cost_per_batch, use_label_cost_per_batch, loss='bce'):
+                 use_binary_cost_per_batch, use_label_cost_per_batch, loss='bce', neg_rate=1., use_sampling=False,
+                 samp_weight=1., rescale_freq=False):
         super(BinaryCrossEntropyP, self).__init__()
         self.loss_fn = get_loss_or_metric(loss)
         self.use_negative_sampling = use_negative_sampling
@@ -63,30 +64,46 @@ class BinaryCrossEntropyP(Module):
                                          batch_density=use_label_cost_per_batch,
                                          weight=weight,
                                          density=density)
-        print(self.weighted_loss_params)
+        # print(self.weighted_loss_params, neg_rate, use_sampling, samp_weight)
         self.use_weighted_loss = any(
             [isinstance(val, torch.Tensor) or val is True for val in list(self.weighted_loss_params.values())])
+        self.neg_rate = neg_rate
+        self.use_sampling = use_sampling
+        self.samp_weight = samp_weight
+        self.rescale_freq = rescale_freq
 
     def forward(self, input, target):
-        #print(input.shape, target.shape)
+        # print(input.shape, target.shape)
         assert input.shape == target.shape
         if self.use_negative_sampling and self.training:
+            print("i in resa  + neg")
             mask = (target == 1).float()
             for i, col in enumerate(target.t()):
                 nb_pos = int(col.sum())
                 if nb_pos > 0:
-                    idx = Categorical((col == 0).float().flatten()).sample((nb_pos,))
+                    idx = Categorical((col == 0).float().flatten()).sample((int(nb_pos * self.neg_rate),))
                     mask[idx, i] = 1.0
             loss = (binary_cross_entropy(input, target, reduction='none') * mask).mean()
-
         elif self.use_weighted_loss and self.training:
             loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(input, target)
+        elif self.use_sampling and self.training:
+            mask = (target == 1).float()
+            for i, row in enumerate(target):
+                nb_neg = int(row.sum() * self.neg_rate)
+                if nb_neg > 0:
+                    idx = Categorical((row == 0).float().flatten()).sample((nb_neg,))
+                    mask[i, idx] = 1.0
+            loss = (self.samp_weight * (binary_cross_entropy(input, target, reduction='none') * mask).mean()).sum()
+        elif self.rescale_freq and self.training:
+            loss = (self.samp_weight * binary_cross_entropy(input, target, reduction='none').mean(dim=0)).sum()
+
         else:
             loss = self.loss_fn(input, target)  # hinge_embedding_loss(input, target) #
         return loss
 
 
 class ULoss(Module):
+
     def __init__(self, nb_tasks):
         super(ULoss, self).__init__()
         self.weights = Parameter(torch.ones(nb_tasks))

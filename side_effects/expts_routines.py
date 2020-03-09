@@ -6,6 +6,8 @@ import warnings
 from collections import MutableMapping
 from itertools import chain
 
+import torch
+
 import side_effects.models.mhcaddi.data_download as dd
 import side_effects.models.mhcaddi.data_preprocess as dp
 import side_effects.models.mhcaddi.split_cv_data as cv
@@ -203,6 +205,10 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
             loss_params["use_fixed_binary_cost"] else None
         model_params["loss_params"]["density"] = compute_labels_density(train_data.get_targets()) if \
             loss_params["use_fixed_label_cost"] else None
+
+        model_params["loss_params"]["samp_weight"] = compute_labels_density(train_data.get_targets(),
+                                                                            return_freq=True) if \
+            loss_params["samp_weight"] else torch.ones(train_data.nb_labels)
         del (model_params["loss_params"]["use_fixed_binary_cost"])
         del (model_params["loss_params"]["use_fixed_label_cost"])
 

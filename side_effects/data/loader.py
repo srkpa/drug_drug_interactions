@@ -25,10 +25,13 @@ all_transformers_dict = dict(
 )
 
 
-def compute_labels_density(y):
+def compute_labels_density(y, return_freq=False):
+    n_samples, n_labels = y.shape
     if isinstance(y, torch.Tensor):
         y = y.numpy()
     one_w = np.sum(y, axis=0)
+    if return_freq:
+        return 1 / torch.from_numpy(one_w / n_samples)
     zero_w = y.shape[0] - one_w
     w = np.maximum(one_w, zero_w) / np.minimum(one_w, zero_w)
     return torch.from_numpy(w)

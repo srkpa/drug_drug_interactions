@@ -6,18 +6,20 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["leave_drugs_out", "random"],  # "leave_drugs_out"
+         split_mode=["leave_drugs_out", "random"],
          test_size=[0.10],
          valid_size=[0.15],
-         seed=[0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
+         seed=[42], #0, 10, 21, 33, 42, 55, 64, 101, 350, 505],
          decagon=[False],
-         use_clusters=[True],
-         use_as_filter=['SOC'],
+         use_clusters=[False],
+         use_as_filter=[None],
          use_targets=[False],
          use_side_effect=[False],
          use_pharm=[False],
          n_folds=[0],
-         test_fold=[0]
+         test_fold=[0],
+         syn=[True],
+         label=['ml']
          )
 ))
 
@@ -46,15 +48,33 @@ network_params = list(ParameterGrid(dict(
     mode=["concat"],
     dropout=[0],
     b_norm=[True],
+    is_binary_output=[False]
 )))
 
-loss_params = list(ParameterGrid(dict(
-    use_negative_sampling=[False],
-    use_fixed_binary_cost=[False],
-    use_fixed_label_cost=[False],
-    use_binary_cost_per_batch=[False],
-    use_label_cost_per_batch=[False]
-)))
+loss_params = list(ParameterGrid([
+    dict(
+        use_negative_sampling=[False],
+        use_fixed_binary_cost=[False],
+        use_fixed_label_cost=[False],
+        use_binary_cost_per_batch=[False],
+        use_label_cost_per_batch=[False],
+        neg_rate=[1.],
+        use_sampling=[False],
+        samp_weight=[True],
+        rescale_freq=[True]
+     )#,
+    # dict(
+    #     use_negative_sampling=[True],
+    #     use_fixed_binary_cost=[False],
+    #     use_fixed_label_cost=[False],
+    #     use_binary_cost_per_batch=[False],
+    #     use_label_cost_per_batch=[False],
+    #     neg_rate=[0.2, 0.5, 0.7, 1., 2],
+    #     use_sampling=[False],
+    #     samp_weight=[False],
+    #     rescale_freq=[False]
+    # )
+]))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
