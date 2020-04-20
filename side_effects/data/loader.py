@@ -236,6 +236,7 @@ class DDIdataset(Dataset):
         self.targets = []
         if self.l1000_samples:
             self.samples_updated = list(zip(cycle(self.samples), self.l1000_samples))
+            print("Nb samples", len(self.samples_updated))
         if self.use_binary_labels:
             self.criteria = criteria
             self.drug_pairs, self.se_pos_dps, self.se_neg_dps = [], [], []
@@ -248,6 +249,8 @@ class DDIdataset(Dataset):
             self.build_graph()
 
     def __len__(self):
+        if self.l1000_samples:
+            return len(self.samples_updated)
         return len(self.samples) if not self.testing else len(self.samples) * len(
             self.labels_vectorizer.classes_)
 
@@ -461,7 +464,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         drugs2smiles = load_smiles(fname=all_drugs_path)
         if use_cmap_scores:
             l1000_pairs = load_ddis_combinations(input_path + "/ReSimNet_dataset.csv", header=True)
-            l1000_pairs = {(d1, d2):[float(x)/100 for x in y] for (d1, d2), y in l1000_pairs.items()}
+            l1000_pairs = {(d1, d2): [float(x) / 100 for x in y] for (d1, d2), y in l1000_pairs.items()}
             l1000_drugs = load_smiles(fname=input_path + "/ReSimNet_drugs-all.csv")
             drugs2smiles.update(l1000_drugs)
     if use_side_effect:
@@ -524,8 +527,9 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
             l1000_valid_data = dict(sorted(l1000_valid_data.items())[:100])
             l1000_test_data = dict(sorted(l1000_test_data.items())[:100])
             l1000_unseen_data = dict(sorted(l1000_unseen_data.items())[:100])
-            print(
-                f"---l1000---\nlen train {len(l1000_train_data)}\nlen test_ddi {len(l1000_test_data)}\nlen valid {len(l1000_valid_data)}\nlen unseen {len(l1000_unseen_data)}")
+
+    print(
+        f"---l1000---\nlen train {len(l1000_train_data)}\nlen test_ddi {len(l1000_test_data)}\nlen valid {len(l1000_valid_data)}\nlen unseen {len(l1000_unseen_data)}")
 
     print(
         f"---ddis---len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")

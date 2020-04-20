@@ -52,7 +52,7 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
-      "debug": true,
+      "debug": false,
       "decagon": false,
       "label": "ml",
       "n_folds": 0,
@@ -71,7 +71,7 @@
     },
     {
       "dataset_name": "twosides",
-      "debug": true,
+      "debug": false,
       "decagon": false,
       "label": "ml",
       "n_folds": 0,
@@ -91,8 +91,8 @@
   ],
   "fit_params": [
     {
-      "batch_size": 5,
-      "n_epochs": 1,
+      "batch_size": 256,
+      "n_epochs": 100,
       "with_early_stopping": true
     }
   ]
