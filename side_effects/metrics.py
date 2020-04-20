@@ -12,6 +12,8 @@ def wrapped_partial(func, **kwargs):
 
 
 def roc_auc_score(y_pred, y_true, average):
+    if isinstance(y_true, list):
+        y_true = y_true[0]
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:
         out = []
@@ -25,7 +27,16 @@ def roc_auc_score(y_pred, y_true, average):
     return ivbm.roc_auc_score(y_pred, y_true, average=average)
 
 
+def mtk_roc_auc_score(y_preds, y_trues, average):
+    print(y_preds)
+    y_pred_1, y_pred_2 = y_preds
+    y_true_1, y_true_2 = y_trues
+    return roc_auc_score(y_pred_1, y_true_1, average), roc_auc_score(y_pred_2.squeeze(), y_true_2)
+
+
 def auprc_score(y_pred, y_true, average):
+    if isinstance(y_true, list):
+        y_true = y_true[0]
     assert y_true.shape == y_pred.shape
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:

@@ -289,12 +289,14 @@ def __loop_through_exp(path, compute_metric=True):
             os.path.split(fp)[-1])
         params_file = os.path.join(path, task_id[:-3] + "params.json")
         if os.path.exists(params_file):
-            #config = json.load(open(params_file, "rb"))
-            print("y", params_file)
-            with open(params_file,"rb") as fh:
-                config = json.load(fh)
+            config = json.load(open(params_file, "rb"))
+            # print("y", params_file)
+            # with open(params_file,"rb") as fh:
+            #     config = json.load(fh)
             exp = config.get("model_params.network_params.drug_feature_extractor_params.arch", None)
             exp = exp if exp else config.get("model_params.network_params.network_name", None)
+            neg_rate = config.get("model_params.loss_params.neg_rate", None)
+            use_weight_rescaling = config.get("model_params.loss_params.rescale_freq", None)
             pool_arch = config.get("model_params.network_params.drug_feature_extractor_params.pool_arch.arch", None)
             graph_net = config.get("model_params.network_params.graph_network_params.kernel_sizes", None)
             att_params = config.get("model_params.network_params.drug_feature_extractor_params.use_self_attention",
@@ -326,7 +328,8 @@ def __loop_through_exp(path, compute_metric=True):
 
                 res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
                            task_id=task_id,
-                           path=params_file, fmode=fmode, test_fold=test_fold,
+                           path=params_file, fmode=fmode, test_fold=test_fold, neg_rate=neg_rate,
+                           rescale=use_weight_rescaling,
                            **out)
                 print(i_mode)
                 outs.append(res)
@@ -344,7 +347,7 @@ def __loop_through_exp(path, compute_metric=True):
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
                 res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
                            task_id=task_id, test_fold=test_fold,
-                           path=params_file, fmode=fmode,
+                           path=params_file, fmode=fmode, neg_rate=neg_rate, rescale=use_weight_rescaling,
                            **out)
                 outs.append(res)
 
@@ -352,7 +355,7 @@ def __loop_through_exp(path, compute_metric=True):
     return outs
 
 
-def summarize_experiments(main_dir=None, cm=True):
+def summarize_experiments(main_dir=None, cm=True, save=True):
     main_dir = f"{os.path.expanduser('~')}/expts" if main_dir is None else main_dir
     rand = []
     for i, root in enumerate(os.listdir(main_dir)):
@@ -363,10 +366,13 @@ def summarize_experiments(main_dir=None, cm=True):
             print(res)
             if len(res) > 0:
                 rand.extend(res)
-    print(rand)
+
     if rand:
         out = pd.DataFrame(rand)
-        out.to_csv("../../results/all_raw-exp-res.csv")
+        print(out[out["rescale"]==True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
+        exit()
+        if save:
+            out.to_csv("../../results/all_raw-exp-res.csv")
         modes = out["split_mode"].unique()
         out["split_mode"].fillna(inplace=True, value="null")
         out["fmode"].fillna(inplace=True, value="null")
@@ -384,7 +390,9 @@ def summarize_experiments(main_dir=None, cm=True):
                 str)
             t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
                 3).astype(str)
-            t_mean.to_csv(f"../../results/{mod}.csv")
+            if save:
+                t_mean.to_csv(f"../../results/{mod}.csv")
+    return rand
 
 
 def __collect_data__(config_file, return_config=False):
@@ -674,6 +682,9 @@ def __get_dataset_stats__(task_id, level='pair'):
     test1_drugs = set([d1 for (d1, _, _) in test1_samples] + [d2 for (_, d2, _) in test1_samples])
     valid_drugs = set([d1 for (d1, _, _) in valid.samples] + [d2 for (_, d2, _) in valid.samples])
 
+    drugs_dict = pickle.load(open("/home/rogia/Documents/projects/drug_drug_interactions/expts/save.p", "rb"))
+    drugs_dict = {x: v for x, v in drugs_dict.items()}
+
     if level == "drugs":
         b = train_drugs.intersection(valid_drugs)
         l = train_drugs.intersection(test1_drugs)
@@ -681,6 +692,23 @@ def __get_dataset_stats__(task_id, level='pair'):
         prec = dataset_name, seed, detailed_split_scheme, len(train_drugs), len(valid_drugs), len(test1_drugs), len(
             b), len(
             l), len(g)
+
+        d1 = test1_drugs.difference(train_drugs)
+        print(len(d1))
+
+        fps = [FingerprintMols.FingerprintMol(x) for x in [drugs_dict[i] for i in train_drugs]]
+        train_sim_scores = [DataStructs.FingerprintSimilarity(fgp, me) for fgp in fps for me in fps]
+        print(train_sim_scores)
+        print(len(train_sim_scores))
+        fpss = [FingerprintMols.FingerprintMol(x) for x in [drugs_dict[i] for i in d1]]
+        d1_sim_scores = [max([DataStructs.FingerprintSimilarity(fgp, me) for me in fps]) for fgp in fpss]
+        print(d1_sim_scores)
+        import seaborn as sns
+        plt.figure(figsize=(8, 6))
+        sns.distplot(train_sim_scores, color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, kde=False, norm_hist=True, label="train")
+        sns.distplot(d1_sim_scores, color=sns.xkcd_rgb['pastel orange'], hist_kws={"alpha": 1}, kde=False, norm_hist=True,
+                     label="test")
+        plt.show()
     else:
         i, j, k = __check_if_overlaps(train_drugs, test)
         prec = dataset_name, seed, detailed_split_scheme, len(set(test)), i, j, k
@@ -703,10 +731,25 @@ def __get_dataset_stats__(task_id, level='pair'):
             prec = dataset_name, seed, "hard early", len(train_drugs), len(valid_drugs), len(
                 test2_drugs), len(b), len(
                 l), len(g)
+            d2 = test2_drugs.difference(train_drugs)
+            print(len(d2))
+            fpss = [FingerprintMols.FingerprintMol(x) for x in [drugs_dict[i] for i in d2]]
+            d2_sim_scores = [max([DataStructs.FingerprintSimilarity(fgp, me) for me in fps]) for fgp in fpss]
+            print(d2_sim_scores)
+            import seaborn as sns
+            plt.figure(figsize=(8, 6))
+            sns.distplot(train_sim_scores, color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, kde=False,
+                         norm_hist=True, label="train")
+            sns.distplot(d2_sim_scores, color=sns.xkcd_rgb['pastel orange'], hist_kws={"alpha": 1}, kde=False,
+                         norm_hist=True,
+                         label="test")
+            plt.show()
         else:
             i, j, k = __check_if_overlaps(train_drugs, test)
             prec = dataset_name, seed, "hard early", len(set(test)), i, j, k
         test_stats += [prec]
+
+
 
     df = pd.DataFrame(test_stats, columns=columns)
     return df
@@ -865,9 +908,13 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-    summarize_experiments("/media/rogia/5123-CDC3/SYN", cm=False)
-    get_best_hp()
+   # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
     exit()
+   # summarize_experiments("/media/rogia/5123-CDC3/NOISE/", cm=False)
+    #exit()
+    #get_best_hp()
+    #exit()
     # # ('cid000003345', 'cid000005076', 'malignant melanoma')
     # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
     # data = pd.read_csv(input_path, sep="\t")

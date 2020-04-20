@@ -145,37 +145,3 @@ def load_side_effects(filepath=""):
     clusters = {key: list(value) for key, value in clusters.items()}
     with open("twosides_umls.json", "w") as cf:
         json.dump(clusters, cf, indent=4)
-
-#
-# def __select_by_name(filepath="../data/UMLS.json"):
-#     with open(filepath, "r") as cf:
-#         cls = json.load(cf)
-#
-#     cach_path = "/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/"
-#     data1 = load_ddis_combinations(cach_path + "twosides.csv", True, "twosides")
-#
-#     side_effects = list(set(chain.from_iterable(data1.values())))
-#     out = defaultdict(set)
-#     # Load side effect cluster file
-#     with open(filepath, "r") as cf:
-#         cls = json.load(cf)
-#         for side_effect, relations in cls.items():
-#             if side_effect in side_effects:
-#               for rel in relations:
-#                 if rel["relationLabel"] == "RN":
-#                     out[rel["relatedIdName"].lower()].add(side_effect)
-#                 # elif rel["relationLabel"] == "RB":
-#                 #    # if rel["relatedIdName"].lower() in side_effects:
-#                 #         out[side_effect].add(rel["relatedIdName"].lower())
-#
-#     for k, v in out.items():
-#             print(k, v)
-#     print(len(out))
-#
-#
-# if __name__ == '__main__':
-#     # parse_twosides(output_file="/home/rogia/Documents/projects/drug_drug_interactions/side_effects/data/umls.json")
-#     #load_side_effects(filepath="/home/rogia/Documents/projects/drug_drug_interactions/side_effects/data/UMLS.json")
-#     __select_by_name()
-#
-#    #{'blood sodium decreased', 'hypomagnesaemia', 'excess potassium', 'hypochloraemia'}

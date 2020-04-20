@@ -199,7 +199,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     elif model_name == "deeprf":
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
-        # Set up of loss function params
+        # Set up of loss function params -- main process
         loss_params = model_params["loss_params"]
         model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
             loss_params["use_fixed_binary_cost"] else None

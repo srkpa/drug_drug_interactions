@@ -56,7 +56,7 @@ class BinaryCrossEntropyP(Module):
 
     def __init__(self, use_negative_sampling, weight, density,
                  use_binary_cost_per_batch, use_label_cost_per_batch, loss='bce', neg_rate=1., use_sampling=False,
-                 samp_weight=1., rescale_freq=False):
+                 samp_weight=1., rescale_freq=False, is_mtk=False):
         super(BinaryCrossEntropyP, self).__init__()
         self.loss_fn = get_loss_or_metric(loss)
         self.use_negative_sampling = use_negative_sampling
@@ -71,12 +71,17 @@ class BinaryCrossEntropyP(Module):
         self.use_sampling = use_sampling
         self.samp_weight = samp_weight
         self.rescale_freq = rescale_freq
+        self.is_mtk = is_mtk
+        if self.is_mtk:
+            self.add_loss = get_loss_or_metric('mse')
 
-    def forward(self, input, target):
-        # print(input.shape, target.shape)
+    def forward(self, inputs, outputs):
+        #print(inputs)
+        target, output_scores = outputs[0], outputs[1].squeeze() if self.is_mtk else outputs,
+        input, input_scores = inputs[0], inputs[1] if self.is_mtk else inputs,
+       # print(input.shape, target.shape)
         assert input.shape == target.shape
         if self.use_negative_sampling and self.training:
-            print("i in resa  + neg")
             mask = (target == 1).float()
             for i, col in enumerate(target.t()):
                 nb_pos = int(col.sum())
@@ -99,6 +104,9 @@ class BinaryCrossEntropyP(Module):
 
         else:
             loss = self.loss_fn(input, target)  # hinge_embedding_loss(input, target) #
+
+        if self.is_mtk:
+            loss += self.add_loss(input_scores, output_scores)
         return loss
 
 

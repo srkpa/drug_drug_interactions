@@ -1,7 +1,6 @@
-import csv
-
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 from .attention import AttentionLayer
 from .features_extraction import FeaturesExtractorFactory
@@ -39,7 +38,8 @@ class SelfAttentionLayer(AttentionLayer):
 class BMNDDI(nn.Module):
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, nb_side_effects=None, mode='concat',
                  att_mode=None, ss_embedding_dim=None,
-                 add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None, **kwargs):
+                 add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None, cmap_task=False,
+                 **kwargs):
 
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
@@ -48,6 +48,7 @@ class BMNDDI(nn.Module):
         self.is_binary_output = is_binary_output
         self.testing = testing
         self.exp_prefix = exp_prefix
+        self.cmap_task = cmap_task
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
         in_size = 2 * self.drug_feature_extractor.output_dim
         if self.mode in ['sum', 'max', "elementwise"]:
@@ -65,10 +66,17 @@ class BMNDDI(nn.Module):
                                      output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
 
     def forward(self, batch):
-        did1 = did2 = sid = side_eff_features = None
+        did1 = did2 = sid = side_eff_features = add_feats = similarity = features_drug3 = features_drug4 = None
         if not self.is_binary_output:
-            drugs_a, drugs_b, = batch[:2]
-            add_feats = batch[2:]
+            if self.cmap_task:
+                drugs_a, drugs_b, drugs_c, drugs_d = batch
+                features_drug3, features_drug4 = self.drug_feature_extractor(drugs_c), self.drug_feature_extractor(
+                    drugs_d)
+                similarity = F.cosine_similarity(
+                    features_drug3 + 1e-16, features_drug4 + 1e-16, dim=-1)
+            else:
+                drugs_a, drugs_b, = batch[:2]
+                add_feats = batch[2:]
         else:
             if self.testing:
                 did1, did2, sid, drugs_a, drugs_b, side_eff = batch[:6]
@@ -101,12 +109,15 @@ class BMNDDI(nn.Module):
             ddi = torch.cat((ddi, side_eff_features), 1)
         out = self.classifier(ddi)
 
+        if similarity is not None:
+            return out, similarity
+
         # Just for binary cases, i want to have all output effortless way
-        if did1 is not None and did2 is not None:
-            output = list(zip(did1, did2, sid, out.squeeze().tolist()))
-            with open(self.exp_prefix, 'a') as f:
-                writer = csv.writer(f)
-                writer.writerows(output)
+        # if did1 is not None and did2 is not None:
+        #     output = list(zip(did1, did2, sid, out.squeeze().tolist()))
+        #     with open(self.exp_prefix, 'a') as f:
+        #         writer = csv.writer(f)
+        #         writer.writerows(output)
         return out
 
     def set_graph(self, nodes, edges):

@@ -93,6 +93,7 @@ def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressourc
             side_effects_mapping = load_side_effect_mapping(filepath, 'SOC')
             data = relabel(data, side_effects_mapping)
         elif not syn:
+            dataset_name += "-NOSYN"
             filepath = os.path.dirname(filepath)
             output = defaultdict(set)
             with open(f"{filepath}/twosides_umls_fin.json", "r") as cf:
@@ -117,11 +118,12 @@ def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressourc
               "Median of |y| = ", np.mean(distribution_combos), "\n", f"LD = {ld}")
         return per_combo_counter, dataset_name, len(data), len(combo_counter), nb_drugs, np.mean(distribution_combos)
 
-    out0 = data_info("twosides", smothing=False, syn=False)
-    exit()
+    # out0 = data_info("twosides", smothing=False, syn=False)
+    # exit()
     out1 = data_info("drugbank", smothing=False)
     out2 = data_info("twosides", smothing=False)
-    out3 = data_info("twosides", smothing=True)
+    # out3 = data_info("twosides", smothing=True)
+    out3 = data_info("twosides", smothing=False, syn=False)
 
     filename = "/home/rogia/Bureau/figs/figure_phenotype_hist.png"
     fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(30, 12))
@@ -148,7 +150,7 @@ def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressourc
 
     ax1.set_title("Drugbank\n", fontsize=44)
     ax2.set_title("Twosides\n", fontsize=44)
-    ax3.set_title("Twosides-SOC\n", fontsize=44)
+    ax3.set_title("Twosides-NOSYN\n", fontsize=44)
     ax1.set_xlabel("")
     ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=44)
     ax3.set_xlabel("")
@@ -167,7 +169,7 @@ def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressourc
         tick.label.set_fontsize(40)
 
     plt.tight_layout()
-    plt.gcf().subplots_adjust(left=0.2, right=0.8, top=0.8, bottom=0.2)
+    plt.gcf().subplots_adjust(left=0.2, right=0.9, top=0.8, bottom=0.2)
     if filename:
         plt.tight_layout()
         plt.savefig(filename)
@@ -349,7 +351,7 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
                 ticks[3] = f'{str(freq[2])},{str(freq[3])}['  # finit ici
             elif freq[3] <= j < freq[4]:
                 y += [4]
-                ticks[4] = f'{str(freq[3])},{str(freq[4])}['  # {str(freq[4])
+                ticks[4] = f'{str(freq[3])},{str(freq[4])}['  #
             elif freq[4] <= j < freq[5]:
                 y += [5]
                 ticks[5] = f'{str(freq[4])}, {str(freq[5])}['
@@ -375,53 +377,64 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
         return ticks, result
 
     output = visualize_test_perf(fp, eval_on_train=True)
-    output = {"twosides": output["twosides"]}
+   # output = {"twosides": output["twosides"]}
     for dataset, res_dict in output.items():
         file_name = f"/home/rogia/Bureau/figs/figure_phenotype_freq_{dataset}.png"
         n_samples = 63472 if dataset == "twosides" else 191878
         print(dataset, res_dict.keys())
         tks, dist = define_categories(dataset, res_dict, n_samples)
         tks = sorted(list(tks.items()))
+        dist["Frequence (%)"].replace(dict(tks), inplace=True)
         print(dist)
         fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(25, 8))
+
         dist_data = dist[dist['split'] == 'random']
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
-        ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
-                          ax=ax1
-                          )  # palette=['dodgerblue', 'lime'],
+        # ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+        #                   ax=ax1
+        #                  )
+        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+                    ax=ax1, kind="line" ,ci="sd")
+
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
         dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 1)']
-        ax2 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
-                          , ax=ax2
-                          )  # palette=['dodgerblue', 'lime']
+        # ax2 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
+        #                   , ax=ax2
+        # )  # palette=['dodgerblue', 'lime']
+        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
+                    , ax=ax2, kind="line")
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
         dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 2)']
-        ax3 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3,
-                          )
-        ax2.get_legend().remove()  # '#fb9a99' rose
-        ax3.get_legend().remove()
-        leg = True
+        # ax3 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3,
+        #                   )
+        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3, kind="line")
+        #                   )
+        # ax2.get_legend().remove()  # '#fb9a99' rose
+        # ax3.get_legend().remove()
+        # leg = True
         if leg:
-            ax1.get_legend().remove()
-        ax1.set_title("Random", fontsize=35)
-        ax2.set_title("One-unseen", fontsize=35)
-        ax3.set_title("Both-unseen", fontsize=35)
+            # ax1.get_legend().remove
+            ax1.add_legend()
+        ax1.set_title("Random\n", fontsize=35)
+        ax2.set_title("One-unseen\n", fontsize=35)
+        ax3.set_title("Both-unseen\n", fontsize=35)
+
         ax1.set_xlabel("")
         ax3.set_xlabel("")
         ax2.set_xlabel("")
-        # ax2.set_ylabel(f"{dataset}\nScores", fontsize=35)
+        ax1.set_ylabel(f"{dataset}\nScores", fontsize=35)
         # ax3.set_ylabel(f"{dataset}\nScores", fontsize=35)
-        ax1.set_ylabel(f"{dataset}-NOSYN\nScores", fontsize=35)
+        # ax1.set_ylabel(f"{dataset}-NOSYN\nScores", fontsize=35)
         # ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=35) ###
         ax3.set_ylabel("")
         ax2.set_ylabel("")
-        # ax3.set_ylabel("")
+
         ax1.set_xticklabels(list(zip(*tks))[1], fontsize=33)
         ax2.set_xticklabels(list(zip(*tks))[1], fontsize=33)
         ax3.set_xticklabels(list(zip(*tks))[1], fontsize=33)
@@ -438,10 +451,10 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
             tick.label.set_fontsize(35)
         # plt.setp(ax1.get_legend().get_texts(), fontsize=30)
         # plt.setp(ax1.get_legend().get_title(), fontsize=30)
+        #
         plt.tight_layout()
-        # plt.show()
-        plt.savefig(file_name)
-        exit()
+        plt.show()
+        # plt.savefig(file_name)
 
 
 def get_correlation(config_file="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json"):
@@ -595,8 +608,9 @@ def plot_sim(true_positives, false_negatives, true_negatives, falses_positives, 
     plt.savefig(f"/home/rogia/Bureau/figs/{saved_file}.png")
 
 
-def compute_phenotype_cooccurence(cluster_file="/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides_umls_fin.json",
-                                  config_file="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json"):
+def compute_phenotype_cooccurence(
+        cluster_file="/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/twosides_umls_fin.json",
+        config_file="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json"):
     train, valid, test1, test2 = __collect_data__(config_file)
     mbl = train.labels_vectorizer
     side_effects = list(mbl.classes_)
@@ -678,8 +692,8 @@ def compute_phenotype_cooccurence(cluster_file="/home/rogia/.invivo/cache/datase
 #     plt.show()
 
 if __name__ == '__main__':
-    #plot_data_stats()
-   # exit()
+    # plot_data_stats()
+    # exit()
     # plot_data_distribution()
     # visualize_loss_progress("/media/rogia/5123-CDC3/SOC/cl_deepddi/twosides_deepddi_1d1fb1d1_log.log")
     # exit()
@@ -703,55 +717,55 @@ if __name__ == '__main__':
     # plot_results(["/home/rogia/Téléchargements/table-1 - table-1 - all_raw-exp-res.csv", "drugbank"], leg=False)
     # plot_results(["/home/rogia/Téléchargements/table-1 - table-1 - all_raw-exp-res.csv", "twosides"], leg=True)
     # plot_results(["/home/rogia/Bureau/figs/soc.csv", "twosides"], leg=False, smothing=True)
-   # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
+    # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
 
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="f1")
-    # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc")
-    plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
+    plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
+    # plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
     exit()
 
-   # plot_test_perf("/home/rogia/Documents/exps_results/temp-SOC/temp.csv", met1="ap", met2="roc")
-    # plot_test_dens("/home/rogia/Documents/exps_results/temp-2/temp.csv")
-    # plot_test_dens("/home/rogia/Documents/exps_results/temp-SOC/temp.csv")
+# plot_test_perf("/home/rogia/Documents/exps_results/temp-SOC/temp.csv", met1="ap", met2="roc")
+# plot_test_dens("/home/rogia/Documents/exps_results/temp-2/temp.csv")
+# plot_test_dens("/home/rogia/Documents/exps_results/temp-SOC/temp.csv")
 
-    # Step 3
-    # res = scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", split="random",
-    #              req=["muscle spasm", "drug withdrawal"]) #'hepatitis c', 'hepatitis a', 'hiv disease', 'hiv disease', 'flu', 'road traffic accident',
-    #                   #'herpes simplex', 'adverse drug effect'
-    # scores = []
-    # for i, j in res.items():
-    #     k = (i, *j)
-    #     scores.append(k)
-    #     print(k)
-    # df = pd.DataFrame(scores,
-    #                   columns=["se", "AUPRC", "ROC-AUC", "F1-scores",
-    #                            "Frequency(%)"])
-    # exit()
-    # df.to_csv("/home/rogia/Bureau/figs/tab_9_side_effect_description.csv")
-    # Step 4
-    # get_correlation()
-    # Step 5
-    # plot_corr()
-    # tab10 = [("bupropion", "benazepril", "heart attack"),  # ("didanosine", "stavudine", "acidosis"),
-    #          ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
-    #          # ("tramadol", "zolpidem", "diaphragmatic hernia"),  # ("paroxetine", "fluticasone", "muscle spasm"),
-    #          # ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
-    #          ("carboplatin", "cisplatin", "blood sodium decreased")]
-    # ("chlorthalidone", "fluticasone", "high blood pressure")]
+# Step 3
+# res = scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", split="random",
+#              req=["muscle spasm", "drug withdrawal"]) #'hepatitis c', 'hepatitis a', 'hiv disease', 'hiv disease', 'flu', 'road traffic accident',
+#                   #'herpes simplex', 'adverse drug effect'
+# scores = []
+# for i, j in res.items():
+#     k = (i, *j)
+#     scores.append(k)
+#     print(k)
+# df = pd.DataFrame(scores,
+#                   columns=["se", "AUPRC", "ROC-AUC", "F1-scores",
+#                            "Frequency(%)"])
+# exit()
+# df.to_csv("/home/rogia/Bureau/figs/tab_9_side_effect_description.csv")
+# Step 4
+# get_correlation()
+# Step 5
+# plot_corr()
+# tab10 = [("bupropion", "benazepril", "heart attack"),  # ("didanosine", "stavudine", "acidosis"),
+#          ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
+#          # ("tramadol", "zolpidem", "diaphragmatic hernia"),  # ("paroxetine", "fluticasone", "muscle spasm"),
+#          # ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
+#          ("carboplatin", "cisplatin", "blood sodium decreased")]
+# ("chlorthalidone", "fluticasone", "high blood pressure")]
 
-    # plot_sim(true_positi="../../results/1_as_1.csv", pot_ddis=tab10, fp="1AS1", ref=None, debug=False, legend="TP",
-    #          label=1)  # doit etre similaires
-    # plot_sim(true="../../results/1_as_0.csv", pot_ddis=tab10, fp="1AS0", ref=None, debug=False, legend="FN", label=1)
-    # plot_sim(true="../../results/0_as_0.csv", pot_ddis=tab10, fp="0AS0", ref=None, debug=False, legend="TN",
-    #          label=0)  # doit etre different
-    # plot_sim(true="../../results/0_as_1.csv", pot_ddis=tab10, fp="0AS1", ref=None, debug=False, legend="FP",
-    #          label=0)  # autres potentielles ddi
-    #
-    # plot_sim(true_positives="../../results/1_as_1.csv", true_negatives="../../results/0_as_0.csv",
-    #          falses_positives="../../results/0_as_1.csv", false_negatives="../../results/1_as_0.csv",
-    #          saved_file="figure_similarity_tp_fp",
-    #          ref=None,
-    #          debug=False, prob=False)
-    # # plot_sim(true="../../results/bad_pred.csv", false=tab10, fp="", ref=None, debug=True)
-    # exit()
-    compute_phenotype_cooccurence()
+# plot_sim(true_positi="../../results/1_as_1.csv", pot_ddis=tab10, fp="1AS1", ref=None, debug=False, legend="TP",
+#          label=1)  # doit etre similaires
+# plot_sim(true="../../results/1_as_0.csv", pot_ddis=tab10, fp="1AS0", ref=None, debug=False, legend="FN", label=1)
+# plot_sim(true="../../results/0_as_0.csv", pot_ddis=tab10, fp="0AS0", ref=None, debug=False, legend="TN",
+#          label=0)  # doit etre different
+# plot_sim(true="../../results/0_as_1.csv", pot_ddis=tab10, fp="0AS1", ref=None, debug=False, legend="FP",
+#          label=0)  # autres potentielles ddi
+#
+# plot_sim(true_positives="../../results/1_as_1.csv", true_negatives="../../results/0_as_0.csv",
+#          falses_positives="../../results/0_as_1.csv", false_negatives="../../results/1_as_0.csv",
+#          saved_file="figure_similarity_tp_fp",
+#          ref=None,
+#          debug=False, prob=False)
+# # plot_sim(true="../../results/bad_pred.csv", false=tab10, fp="", ref=None, debug=True)
+# exit()
+# compute_phenotype_cooccurence()

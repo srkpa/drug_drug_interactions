@@ -30,7 +30,8 @@ def get_metrics():
         micro_rec=wrapped_partial(recall_score, average='micro'),
         macro_rec=wrapped_partial(recall_score, average='macro'),
         apk=apk,
-        mapk=mapk
+        mapk=mapk,
+        mtk_micro_roc= wrapped_partial(mtk_roc_auc_score, average='micro')
     )
     return all_metrics_dict
 
@@ -162,16 +163,16 @@ class Trainer(ivbt.Trainer):
                 _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
             else:
                 _, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
-        y_pred = np.concatenate(y_pred, axis=0)
+        #y_pred = np.concatenate(y_pred, axis=0)
         if torch.cuda.is_available():
             y_true = y.cpu().numpy()
         else:
             y_true = y.numpy() if not isinstance(y, np.ndarray) else y
-        y_pred = y_pred.squeeze()
+       # y_pred = y_pred.squeeze()
+
         res = dict(auprc=auprc_score(y_pred=y_pred, y_true=y_true, average="micro"),
                    roc=roc_auc_score(y_pred=y_pred, y_true=y_true, average="micro")) if not self.metrics else dict(
             zip(self.metrics_names, metrics_val))
-        print(res)
 
         return y_true, y_pred, res
 
