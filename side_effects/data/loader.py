@@ -1,7 +1,6 @@
 import inspect
 import json
 import random
-from itertools import cycle
 from itertools import product, chain
 
 import dgl
@@ -206,15 +205,24 @@ def train_test_valid_split(data, mode='random', test_size=0.25, valid_size=0.25,
     return train_data, valid_data, test_data, unseen_data
 
 
+class MTKDataset(Dataset):
+    def __init__(self, args):
+        self.args = args
+    def __len__(self):
+        return min([len(dataset) for dataset in self.args])
+
+    def __getitem__(self, item):
+        pass
+
+
 class DDIdataset(Dataset):
     def __init__(self, samples, drug_to_smiles, label_vectorizer,
                  build_graph=False, side_effects_idx_dict=None, graph_drugs_mapping=None, gene_net=None,
                  drug_gene_net=None, decagon=False,
                  drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward", switch='ml',
-                 negative_sampling=False, read_as_triplets=False, criteria=0.5, density=False, l1000_pairs=None):
+                 negative_sampling=False, read_as_triplets=False, criteria=0.5, density=False):
 
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
-        self.l1000_samples = [(d1, d2, l1000_pairs[(d1, d2)]) for (d1, d2) in l1000_pairs]
         self.drug_to_smiles = drug_to_smiles
         self.data_type = all([isinstance(v, (torch.Tensor, np.ndarray)) for v in list(drug_to_smiles.values())])
         self.drugs_targets = drugstargets
@@ -234,9 +242,6 @@ class DDIdataset(Dataset):
         self.use_binary_labels = (switch == "binary") and (side_effects_idx_dict is not None) and len(self.samples) > 0
         self.testing = switch == "binary" and (len(self.samples) > 0) and read_as_triplets
         self.targets = []
-        if self.l1000_samples:
-            self.samples_updated = list(zip(cycle(self.samples), self.l1000_samples))
-            print("Nb samples", len(self.samples_updated))
         if self.use_binary_labels:
             self.criteria = criteria
             self.drug_pairs, self.se_pos_dps, self.se_neg_dps = [], [], []
@@ -249,24 +254,17 @@ class DDIdataset(Dataset):
             self.build_graph()
 
     def __len__(self):
-        if self.l1000_samples:
-            return len(self.samples_updated)
         return len(self.samples) if not self.testing else len(self.samples) * len(
             self.labels_vectorizer.classes_)
 
     def __getitem__(self, item):
-        if self.l1000_samples:
-            drug1_id, drug2_id, label = self.samples_updated[item][0]
-            drug3_id, drug4_id, scores = self.samples_updated[item][1]
-            target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
-            drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
-            drug3, drug4 = self.drug_to_smiles[drug3_id], self.drug_to_smiles[drug4_id]
-            return ((to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu), to_tensor(drug3, self.gpu),
-                     to_tensor(drug4, self.gpu)), (to_tensor(target, self.gpu), to_tensor(scores, self.gpu)))
         if self.use_binary_labels:
             return self.__get_binary_inst(item)
         drug1_id, drug2_id, label = self.samples[item]
-        target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
+        if self.labels_vectorizer is not None:
+            target = self.labels_vectorizer.transform([label]).astype(np.float32)[0]
+        else:
+            target = label
         if self.graph_nodes_mapping is None:
             drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
         elif self.has_graph or self.decagon:
@@ -281,7 +279,8 @@ class DDIdataset(Dataset):
             assert drug1_id in self.graph_nodes_mapping, f"None of those drugs ({drug1_id}-{drug2_id}) is in the train, check your train test split"
             drug1 = np.array([self.graph_nodes_mapping[drug1_id]])
             drug2 = self.drug_to_smiles[drug2_id]
-
+        # Additionnal features added
+        res = None
         if self.drugspharm:
             res = (to_tensor(drug1, self.gpu), to_tensor(drug2, self.gpu),
                    to_tensor(self.drugspharm[(drug1_id, drug2_id)], self.gpu), to_tensor(target, self.gpu))
@@ -310,8 +309,8 @@ class DDIdataset(Dataset):
             res = ((to_tensor(drug1, gpu=self.gpu), to_tensor(drug2, self.gpu)),
                    to_tensor(target, self.gpu))
 
-        if self.has_purpose == "autoencoder":
-            res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
+        # if self.has_purpose == "autoencoder":
+        #     res = 2 * (to_tensor(torch.cat(res[0]), gpu=self.gpu),)
         return res
 
     def __get_binary_inst(self, item):
@@ -386,6 +385,9 @@ class DDIdataset(Dataset):
         return samples
 
     def get_targets(self):
+        if self.labels_vectorizer is None:
+            targets = np.concatenate(list(zip(*self.samples))[2])
+            return to_tensor(targets, self.gpu)
         return to_tensor(self.labels_vectorizer.transform(list(zip(*self.samples))[2]).astype(np.float32),
                          self.gpu) if not self.use_binary_labels else to_tensor(self.targets, self.gpu)
 
@@ -503,6 +505,10 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
+
+    labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
+    mbl = MultiLabelBinarizer().fit(labels)
+    labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
     if use_cmap_scores:
         l1000_pairs = _filter_pairs_both_exists(l1000_pairs, filtering_set=drugs2smiles)
         l1000_train_data, l1000_valid_data, l1000_test_data, l1000_unseen_data = train_test_valid_split(l1000_pairs,
@@ -512,16 +518,11 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                                                                         valid_size=valid_size,
                                                                                                         n_folds=n_folds,
                                                                                                         test_fold=test_fold)
-
-    labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
-    mbl = MultiLabelBinarizer().fit(labels)
-    labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
-
     if debug:
-        train_data = dict(sorted(train_data.items())[:100])
-        valid_data = dict(sorted(valid_data.items())[:100])
-        test_data = dict(sorted(test_data.items())[:100])
-        unseen_data = dict(sorted(unseen_data.items())[:100])
+        train_data = dict(sorted(train_data.items())[:50])
+        valid_data = dict(sorted(valid_data.items())[:50])
+        test_data = dict(sorted(test_data.items())[:50])
+        unseen_data = dict(sorted(unseen_data.items())[:50])
         if use_cmap_scores:
             l1000_train_data = dict(sorted(l1000_train_data.items())[:100])
             l1000_valid_data = dict(sorted(l1000_valid_data.items())[:100])
@@ -532,23 +533,29 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         f"---l1000---\nlen train {len(l1000_train_data)}\nlen test_ddi {len(l1000_test_data)}\nlen valid {len(l1000_valid_data)}\nlen unseen {len(l1000_unseen_data)}")
 
     print(
-        f"---ddis---len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}")
-    if unseen_data:
-        print("len unseen", len(unseen_data))
+        f"---ddis---len train {len(train_data)}\nlen test_ddi {len(test_data)}\nlen valid {len(valid_data)}\nlen unseen {len(unseen_data)}")
 
     train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                               read_as_triplets=True, density=density, l1000_pairs=l1000_train_data)
+                               read_as_triplets=True, density=density)
     valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                               read_as_triplets=True, density=density, l1000_pairs=l1000_valid_data)
+                               read_as_triplets=True, density=density)
     test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                               drugse=drug_offsides, side_effects_idx_dict=labels_mapping, switch=label,
-                              read_as_triplets=True, density=density, l1000_pairs=l1000_test_data)
+                              read_as_triplets=True, density=density)
     print(train_dataset.nb_labels)
     unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
                                 drugstargets=drug2targets, side_effects_idx_dict=labels_mapping, switch=label,
-                                drugse=drug_offsides, read_as_triplets=True, l1000_pairs=l1000_unseen_data)
+                                drugse=drug_offsides, read_as_triplets=True)
+
+    if use_cmap_scores:
+        l1000_train_dataset = DDIdataset(l1000_train_data, drugs2smiles, label_vectorizer=None, read_as_triplets=True)
+        l1000_valid_dataset = DDIdataset(l1000_valid_data, drugs2smiles, label_vectorizer=None, read_as_triplets=True)
+        l1000_test_dataset = DDIdataset(l1000_test_data, drugs2smiles, label_vectorizer=None, read_as_triplets=True)
+        l1000_unseen_dataset = DDIdataset(l1000_unseen_data, drugs2smiles, label_vectorizer=None, read_as_triplets=True)
+        return (train_dataset, l1000_train_dataset), (valid_dataset, l1000_valid_dataset), (
+            test_dataset, l1000_test_dataset), (unseen_dataset, l1000_unseen_dataset)
 
     # if decagon:
     #     ppi_path, dgi_path = f"{input_path}/ppi.csv", f"{input_path}/dgi.csv"

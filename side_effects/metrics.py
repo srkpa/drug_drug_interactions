@@ -3,7 +3,7 @@ from functools import partial, update_wrapper
 import ivbase.utils.metrics as ivbm
 import numpy as np
 import sklearn.metrics as skm
-
+from sklearn.metrics import mean_squared_error
 
 def wrapped_partial(func, **kwargs):
     partial_func = partial(func, **kwargs)
@@ -12,8 +12,6 @@ def wrapped_partial(func, **kwargs):
 
 
 def roc_auc_score(y_pred, y_true, average):
-    if isinstance(y_true, list):
-        y_true = y_true[0]
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:
         out = []
@@ -27,16 +25,25 @@ def roc_auc_score(y_pred, y_true, average):
     return ivbm.roc_auc_score(y_pred, y_true, average=average)
 
 
-def mtk_roc_auc_score(y_preds, y_trues, average):
-    print(y_preds)
-    y_pred_1, y_pred_2 = y_preds
-    y_true_1, y_true_2 = y_trues
-    return roc_auc_score(y_pred_1, y_true_1, average), roc_auc_score(y_pred_2.squeeze(), y_true_2)
+def mse(y_preds, y_trues):
+    _, y_pred_2 = y_preds
+    _, y_true_2 = y_trues
+    y_true_2 = ivbm.torch_to_numpy(y_true_2).squeeze()
+    y_pred_2 = ivbm.torch_to_numpy(y_pred_2)
+    return mean_squared_error(y_true_2, y_pred_2)
 
+
+def roc(y_preds, y_trues, average):
+    y_pred_1, _ = y_preds
+    y_true_1,_ = y_trues
+    return roc_auc_score(y_pred_1, y_true_1, average)
+
+def aup(y_preds, y_trues, average):
+    y_pred_1, _ = y_preds
+    y_true_1,_ = y_trues
+    return auprc_score(y_pred_1, y_true_1, average)
 
 def auprc_score(y_pred, y_true, average):
-    if isinstance(y_true, list):
-        y_true = y_true[0]
     assert y_true.shape == y_pred.shape
     y_pred, y_true = ivbm.torch_to_numpy(y_pred), ivbm.torch_to_numpy(y_true)
     if average == 'macro' or average is None:

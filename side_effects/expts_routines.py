@@ -131,6 +131,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     debug = dataset_params.pop("debug", False)
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params,
                                                                               input_path=cach_path, debug=debug)
+
     model_name = model_params['network_params'].get('network_name')
     # Variable declaration
     targets, preds, test_perf = {}, {}, {}
@@ -200,28 +201,31 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
         # Set up of loss function params -- main process
+        vec1 = train_data[0].get_targets() if isinstance(train_data, tuple) else train_data.get_targets()
+        vec2 = train_data[0].set_input_dim() if isinstance(train_data, tuple) else train_data.set_input_dim()
+        vec3 = train_data[0].nb_labels if isinstance(train_data, tuple) else train_data.nb_labels
         loss_params = model_params["loss_params"]
-        model_params["loss_params"]["weight"] = compute_classes_weight(train_data.get_targets()) if \
+        model_params["loss_params"]["weight"] = compute_classes_weight(vec1) if \
             loss_params["use_fixed_binary_cost"] else None
-        model_params["loss_params"]["density"] = compute_labels_density(train_data.get_targets()) if \
+        model_params["loss_params"]["density"] = compute_labels_density(vec1) if \
             loss_params["use_fixed_label_cost"] else None
 
-        model_params["loss_params"]["samp_weight"] = compute_labels_density(train_data.get_targets(),
+        model_params["loss_params"]["samp_weight"] = compute_labels_density(vec1,
                                                                             return_freq=True) if \
-            loss_params["samp_weight"] else torch.ones(train_data.nb_labels)
+            loss_params["samp_weight"] else torch.ones(vec3)
         del (model_params["loss_params"]["use_fixed_binary_cost"])
         del (model_params["loss_params"]["use_fixed_label_cost"])
 
         # Configure the auxiliary network who process additional features
         if model_params['network_params'].get('auxnet_params', None):
-            model_params['network_params']["auxnet_params"]["input_dim"] = train_data.set_input_dim()
+            model_params['network_params']["auxnet_params"]["input_dim"] = vec2
 
         if model_name == "adnn":
             train_data, valid_data, model_params = fit_encoders(model_params=model_params, train_data=train_data,
                                                                 valid_data=valid_data, fit_params=fit_params)
         # Train and save
         model_params['network_params'].update(
-            dict(nb_side_effects=train_data.nb_labels, exp_prefix=paths["raw_preds_filename"]))
+            dict(nb_side_effects=vec3, exp_prefix=paths["raw_preds_filename"]))
         model = Trainer(**model_params, snapshot_dir=restore_path)
         print(model.model)
         model.cuda()
@@ -229,15 +233,23 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         print(f"Training details: \n{training}")
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
-        targets, preds, test_perf = model.test(test_data)
+        targets, preds, test_perf = model.test(test_data, batch_size=fit_params.get("batch_size", 64))
         # Save model  test results
         pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
         pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
         pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
 
-        if len(unseen_test_data.samples):
+        is_unseen_data = False
+        if isinstance(unseen_test_data, (tuple, list)):
+            if len(unseen_test_data[0].samples) and len(
+                    unseen_test_data[0].samples):
+                is_unseen_data = True
+        else:
+            if len(unseen_test_data.samples):
+                is_unseen_data = True
+        if is_unseen_data:
             model.model.exp_prefix = paths.get("raw_preds_2_filename")
-            uy_true, uy_probs, u_output = model.test(unseen_test_data)
+            uy_true, uy_probs, u_output = model.test(unseen_test_data, fit_params.get("batch_size", 64))
             pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
             pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
             pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))

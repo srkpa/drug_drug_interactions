@@ -5,7 +5,7 @@
 #SBATCH --mem=32G
 #SBATCH --time=42:00:00
 #SBATCH --account=rrg-corbeilj-ac
-#SBATCH --array=0-19
+#SBATCH --array=0-2
 ##SBATCH --mail-user=sewagnouin-rogia.kpanou.1@ulaval.ca
 ##SBATCH --mail-type=ALL
 

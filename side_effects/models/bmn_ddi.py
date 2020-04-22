@@ -38,7 +38,8 @@ class SelfAttentionLayer(AttentionLayer):
 class BMNDDI(nn.Module):
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, nb_side_effects=None, mode='concat',
                  att_mode=None, ss_embedding_dim=None,
-                 add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None, cmap_task=False,
+                 add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None,
+                 is_multitask_output=False,
                  **kwargs):
 
         super(BMNDDI, self).__init__()
@@ -48,7 +49,7 @@ class BMNDDI(nn.Module):
         self.is_binary_output = is_binary_output
         self.testing = testing
         self.exp_prefix = exp_prefix
-        self.cmap_task = cmap_task
+        self.is_multitask_output = is_multitask_output
         self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
         in_size = 2 * self.drug_feature_extractor.output_dim
         if self.mode in ['sum', 'max', "elementwise"]:
@@ -66,18 +67,14 @@ class BMNDDI(nn.Module):
                                      output_dim=output_dim, last_layer_activation='Sigmoid', **kwargs)
 
     def forward(self, batch):
-        did1 = did2 = sid = side_eff_features = add_feats = similarity = features_drug3 = features_drug4 = None
-        if not self.is_binary_output:
-            if self.cmap_task:
-                drugs_a, drugs_b, drugs_c, drugs_d = batch
-                features_drug3, features_drug4 = self.drug_feature_extractor(drugs_c), self.drug_feature_extractor(
-                    drugs_d)
-                similarity = F.cosine_similarity(
-                    features_drug3 + 1e-16, features_drug4 + 1e-16, dim=-1)
-            else:
-                drugs_a, drugs_b, = batch[:2]
-                add_feats = batch[2:]
-        else:
+        did1 = None
+        did2 = None
+        sid = None
+        side_eff_features = None
+        add_feats = None
+        similarity = None
+
+        if self.is_binary_output:
             if self.testing:
                 did1, did2, sid, drugs_a, drugs_b, side_eff = batch[:6]
                 add_feats = batch[6:]
@@ -89,6 +86,19 @@ class BMNDDI(nn.Module):
                 if isinstance(side_eff, tuple):
                     side_eff = torch.cat(side_eff)
             side_eff_features = self.embedding(side_eff).squeeze()
+
+        if self.is_multitask_output:
+            task_a, task_b = batch
+            drugs_a, drugs_b = task_a
+            drugs_c, drugs_d = task_b
+            #print(drugs_a.shape, drugs_b.shape, drugs_c.shape, drugs_d.shape)
+            features_drug3, features_drug4 = self.drug_feature_extractor(drugs_c), self.drug_feature_extractor(drugs_d)
+            #print(features_drug4.shape)
+            similarity = F.cosine_similarity(
+                features_drug3 + 1e-16, features_drug4 + 1e-16, dim=-1)
+        else:
+            drugs_a, drugs_b, = batch[:2]
+            add_feats = batch[2:]
 
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
 

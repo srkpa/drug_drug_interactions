@@ -1,15 +1,22 @@
+import traceback
 from math import ceil
 
 import ivbase.utils.trainer as ivbt
 import torch
 from ivbase.nn.commons import get_optimizer
+from ivbase.utils.commons import params_getter
 from ivbase.utils.snapshotcallback import SnapshotCallback
 from ivbase.utils.trainer import TrainerCheckpoint
 from poutyne.framework.callbacks import BestModelRestore
-from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ReduceLROnPlateau, Logger
-from tensorboardX.writer import SummaryWriter
-from torch.utils.data import DataLoader
+from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ReduceLROnPlateau
+from pytoune.framework.callbacks import *
+from tensorboardX import SummaryWriter
+from torch.utils.data import DataLoader, Dataset
 
+name2callback = {"early_stopping": EarlyStopping,
+                 "reduce_lr": ReduceLROnPlateau,
+                 "norm_clip": ClipNorm}
+from side_effects.data.loader import MTKDataset
 from side_effects.loss import BinaryCrossEntropyP
 from side_effects.metrics import *
 from side_effects.models import all_networks_dict
@@ -31,7 +38,11 @@ def get_metrics():
         macro_rec=wrapped_partial(recall_score, average='macro'),
         apk=apk,
         mapk=mapk,
-        mtk_micro_roc= wrapped_partial(mtk_roc_auc_score, average='micro')
+        miroc=wrapped_partial(roc, average='micro'),
+        miaup=wrapped_partial(aup, average='micro'),
+        maroc=wrapped_partial(roc, average='macro'),
+        maaup=wrapped_partial(aup, average='macro'),
+        mse=mse
     )
     return all_metrics_dict
 
@@ -136,16 +147,109 @@ class Trainer(ivbt.Trainer):
                                               epochs=n_epochs,
                                               callbacks=callbacks)
         else:
-            step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
-            self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
-                                    validation_steps=step_valid, generator_fn=batch_generator,
-                                    batch_size=batch_size, shuffle=True, callbacks=callbacks)
+            if isinstance(train_dataset, tuple) and isinstance(valid_dataset, tuple):
+                train_dataset = MTKDataset(train_dataset)
+                valid_dataset = MTKDataset(valid_dataset)
+                step_train, step_valid = int(min([len(dataset) for dataset in train_dataset.args]) / batch_size), int(
+                    min([len(dataset) for dataset in valid_dataset.args]) / batch_size)
+                self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
+                                        validation_steps=step_valid, batch_size=batch_size, shuffle=True,
+                                        callbacks=callbacks,
+                                        generator_fn=generator_fn)
+            else:
+                step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
+                self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
+                                        validation_steps=step_valid, generator_fn=batch_generator,
+                                        batch_size=batch_size, shuffle=True, callbacks=callbacks)
         return self
+
+    def fit(self, train_dt, valid_dt, epochs=1000, shuffle=False, batch_size=32,
+            callbacks=[], log_path=None, checkpoint=None, tboardX=".logs", **kwargs):
+        valid_generator = None
+        generator_fn = kwargs.get(
+            "generator_fn", self._dataloader_from_dataset)
+        if isinstance(train_dt, Dataset):
+            train_generator = generator_fn(
+                train_dt, batch_size=batch_size, shuffle=shuffle)
+        else:
+            train_generator = self._dataloader_from_data(
+                *train_dt, batch_size=batch_size)
+
+        if valid_dt is not None: # changed
+            if isinstance(valid_dt, Dataset):
+                valid_generator = generator_fn(
+                    valid_dt, batch_size=batch_size, shuffle=shuffle)
+            else:
+                valid_generator = self._dataloader_from_data(
+                    valid_dt, batch_size=batch_size)
+
+        callbacks = (callbacks or [])
+        # Check if early stopping is asked for
+        for name in ["early_stopping", "reduce_lr"]:
+            cback = kwargs.get(name)
+            if cback:
+                if not isinstance(cback, dict):
+                    cback = {}
+                try:
+                    cback = name2callback[name](**cback)
+                    callbacks += [cback]
+                except:
+                    print("Exception in callback {}".format(name))
+                    traceback.print_exc(file=sys.stdout)
+
+        clip_val = kwargs.get("norm_clip", None)
+        if clip_val is not None:
+            clip_cback = name2callback["norm_clip"](self.model.parameters(), clip_val)
+            callbacks.append(clip_cback)
+
+        if checkpoint:
+            if isinstance(checkpoint, bool):
+                checkpoint = 'model.epoch:{epoch:02d}-loss:{val_loss:.2f}.pth.tar'
+            checkpoint = os.path.join(self.model_dir, checkpoint)
+            checkpoint_params = dict(monitor='val_loss', save_best_only=True,
+                                     temporary_filename=checkpoint + ".tmp")
+            checkpoint_params.update(params_getter(
+                kwargs, ("checkpoint__", "check__", "c__")))
+            check_callback = TrainerCheckpoint(checkpoint, **checkpoint_params)
+            callbacks += [check_callback]
+
+        if log_path:
+            log_path = os.path.join(self.model_dir, log_path)
+            logger = CSVLogger(
+                log_path, batch_granularity=False, separator='\t')
+            callbacks += [logger]
+
+        if tboardX:
+            if isinstance(tboardX, dict):
+                tboardX["logdir"] = os.path.join(self.model_dir, tboardX["logdir"])
+            else:
+                tboardX = {"logdir": os.path.join(self.model_dir, tboardX)}
+            self.writer = SummaryWriter(
+                **tboardX)  # this has a purpose, which is to access the writer from the GradFlow Callback
+            callbacks += [TensorBoardLogger(self.writer)]
+
+        return self.fit_generator(train_generator,
+                                  valid_generator=valid_generator,
+                                  epochs=epochs,
+                                  steps_per_epoch=kwargs.get(
+                                      "steps_per_epoch"),
+                                  validation_steps=kwargs.get(
+                                      "validation_steps"),
+                                  initial_epoch=kwargs.get("initial_epoch", 1),
+                                  verbose=kwargs.get("verbose", True),
+                                  callbacks=callbacks)
+
+    def _compute_metrics(self, pred_y, y):
+        if isinstance(pred_y, tuple):
+            pred_y = [pred.detach() for pred in pred_y]
+            return np.array([float(metric(pred_y, *y)) for metric in self.metrics])
+
+        return np.array([float(metric(pred_y.detach(), *y)) for metric in self.metrics])
 
     def test(self, dataset, batch_size=256):
         self.model.testing = True
         metrics_val = []
-        y = dataset.get_targets()
+        y = [d.get_targets() for d in dataset] if isinstance(dataset, tuple) else dataset.get_targets()
         if self.model.is_binary_output:
             self.metrics_names = []
             self.metrics = {}
@@ -157,19 +261,32 @@ class Trainer(ivbt.Trainer):
             else:
                 _, y_pred = self.evaluate_generator(loader, return_pred=True)
         else:
-            loader = batch_generator(dataset, batch_size, infinite=False, shuffle=False)
-            nsteps = ceil(len(dataset) / (batch_size * 1.0))
+            if isinstance(dataset, tuple):
+                dataset = MTKDataset(dataset)
+                loader = generator_fn(dataset, batch_size, infinite=False, shuffle=False)
+            else:
+                loader = batch_generator(dataset, batch_size, infinite=False, shuffle=False)
+            len_data = len(dataset)
+            nsteps = ceil(len_data / (batch_size * 1.0))
             if self.metrics:
                 _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
             else:
                 _, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
-        #y_pred = np.concatenate(y_pred, axis=0)
-        if torch.cuda.is_available():
-            y_true = y.cpu().numpy()
-        else:
-            y_true = y.numpy() if not isinstance(y, np.ndarray) else y
-       # y_pred = y_pred.squeeze()
 
+        if isinstance(y, (list, tuple)) and isinstance(y_pred, (list, tuple)):
+            y_pred = list(zip(*y_pred))
+            y_pred = [np.concatenate(ii) for ii in y_pred]
+            if torch.cuda.is_available():
+                y_true = [yt.cpu().numpy() for yt in y]
+            else:
+                y_true = [yt.numpy() for yt in y]
+        else:
+            y_pred = np.concatenate(y_pred, axis=0)
+            if torch.cuda.is_available():
+                y_true = y.cpu().numpy()
+            else:
+                y_true = y.numpy() if not isinstance(y, np.ndarray) else y
+        # y_pred = y_pred.squeeze()
         res = dict(auprc=auprc_score(y_pred=y_pred, y_true=y_true, average="micro"),
                    roc=roc_auc_score(y_pred=y_pred, y_true=y_true, average="micro")) if not self.metrics else dict(
             zip(self.metrics_names, metrics_val))
@@ -195,7 +312,43 @@ def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
             end = min(i + batch_size, len(dataset))
             a = [dataset[idx[ii]] for ii in range(start, end)]
             x, y = zip(*a)
-            #y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
-            y = torch.cat(y, dim=0)#.unsqueeze(dim=1)
+            # y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
+            y = torch.cat(y, dim=0)  # .unsqueeze(dim=1)
             yield list(zip(*x)), y
+        loop += 1
+
+
+def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
+    loop = 0
+    datasets = datasets.args
+    min_len = min([len(dataset) for dataset in datasets])
+    n_steps = int(min_len / batch_size)
+    batch_sizes = [int(len(dataset) / n_steps) for dataset in datasets]
+    idx = [np.arange(len(dataset)) for dataset in datasets]
+
+    while loop < 1 or infinite:
+        for i in range(n_steps):
+            batch_x = []
+            batch_y = []
+            for task_id, dataset in enumerate(datasets[:]):
+                start = batch_sizes[task_id] * i
+                end = min(i * batch_sizes[task_id] + batch_sizes[task_id], len(dataset))
+                a = [dataset[idx[task_id][ii]] for ii in range(start, end)]
+                x, y = zip(*a)
+                y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
+                y = torch.cat(y, dim=0)
+                # print(len(x), y.shape, len(list(zip(*x))))
+                assert y.shape[0] == batch_sizes[task_id], f"task_{task_id}: wrong shape for y"
+                assert len(x) == batch_sizes[task_id], "wrong number of instances fecthed!"
+                assert all([len(k) == 2 for k in x]), "Must be pair of drugs"
+                x = [torch.cat(list(map(wrapped_partial(torch.unsqueeze, dim=0), drugs_list)), dim=0) for drugs_list in
+                     list(zip(*x))]
+                assert len(x) == 2, "Must be drug a and b, not more!"
+                assert x[0].shape[0] == batch_sizes[task_id], " > batch_size"
+                batch_x += [x]
+                # print(len(batch_x))
+                batch_y += [y]
+                # print(len(batch_y))
+            assert len(batch_x) == len(batch_y) == len(datasets), "Must be equal to len(tasks)!"
+            yield batch_x, batch_y
         loop += 1
