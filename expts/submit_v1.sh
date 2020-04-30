@@ -3,8 +3,8 @@
 #SBATCH --cpus-per-task=16
 ##SBATCH --gres=gpu:v100:1
 #SBATCH --mem=32G
-#SBATCH --time=42:00:00
-#SBATCH --account=rrg-corbeilj-ac
+#SBATCH --time=24:00:00
+#SBATCH --account=def-corbeilj ##rrg-corbeilj-ac
 #SBATCH --array=0-2
 ##SBATCH --mail-user=sewagnouin-rogia.kpanou.1@ulaval.ca
 ##SBATCH --mail-type=ALL

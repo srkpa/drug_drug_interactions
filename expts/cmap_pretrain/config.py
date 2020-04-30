@@ -4,9 +4,9 @@ import click
 from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["twosides"],
+    dict(dataset_name=["L1000"],
          transformer=["seq"],
-         split_mode=["leave_drugs_out", "random"],
+         split_mode=["random"],
          test_size=[0.10],
          valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
@@ -19,13 +19,12 @@ dataset_params = list(ParameterGrid(
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
-         debug=[False],
-         use_cmap_scores=[True]
+         debug=[False]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[32], with_early_stopping=[True])))
+    dict(n_epochs=[6], batch_size=[32], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -51,7 +50,7 @@ network_params = list(ParameterGrid(dict(
     dropout=[0],
     b_norm=[True],
     is_binary_output=[False],
-    is_multitask_output=[True]
+    op_mode=["cos"]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -64,17 +63,18 @@ loss_params = list(ParameterGrid(dict(
     use_sampling=[False],
     samp_weight=[False],
     rescale_freq=[False],
-    is_mtk=[True]
+    #is_mtk=[True]
 )))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
+    weight_decay=[0.0],
     lr=[1e-4],
-    loss=['bce'],
-    metrics_names=[['miroc', 'miaup', 'mse', 'maroc', 'maaup']],
+    loss=['mse'],
+    metrics_names=[['imse']],
     loss_params=loss_params,
-    dataloader=[False]
+    dataloader=[True]
 )))
 
 

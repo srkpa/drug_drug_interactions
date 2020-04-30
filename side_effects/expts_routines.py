@@ -13,7 +13,8 @@ import side_effects.models.mhcaddi.data_preprocess as dp
 import side_effects.models.mhcaddi.split_cv_data as cv
 import side_effects.models.mhcaddi.test as test
 import side_effects.models.mhcaddi.train as train
-from side_effects.data.loader import get_data_partitions, compute_classes_weight, compute_labels_density
+from side_effects.data.loader import get_data_partitions, compute_classes_weight, compute_labels_density, \
+    get_multi_data_partitions
 from side_effects.models.deep_rf import DeepRF
 from side_effects.models.rgcn.link_predict import main
 from side_effects.trainer import Trainer
@@ -116,8 +117,8 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     paths, output_prefix = get_all_output_filenames(output_path, all_params)
     paths["checkpoint_path"] = checkpoint_path
 
-    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/" + str(
-        dataset_params.get('dataset_name'))
+    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"  # + str(
+    # dataset_params.get('dataset_name'))
     # dc = DataCache()
     # cach_path = dc.sync_dir(dir_path="s3://datasets-ressources/DDI/{}".format(
     #     dataset_params.get('dataset_name')))
@@ -129,11 +130,16 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Restore path if any: {restore_path}")
     save_config(all_params, paths.pop('config_filename'))
     debug = dataset_params.pop("debug", False)
-    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**dataset_params,
-                                                                              input_path=cach_path, debug=debug)
+    is_multioutput = len(dataset_params.get('dataset_name')) >= 2 if isinstance(dataset_params.get('dataset_name'),
+                                                                                list) else False
+    print("Multitask - Learning Setting = ", is_multioutput)
+    loader_fn = get_multi_data_partitions if is_multioutput else get_data_partitions
+    train_data, valid_data, test_data, unseen_test_data = loader_fn(**dataset_params,
+                                                                    input_path=cach_path, debug=debug)
+    print("Final dataset: ", len(train_data), len(valid_data), len(test_data), len(unseen_test_data))
 
     model_name = model_params['network_params'].get('network_name')
-    # Variable declaration
+    # Variable
     targets, preds, test_perf = {}, {}, {}
     uy_true, uy_probs, u_output = {}, {}, {}
     # Params processing
@@ -201,24 +207,30 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         targets, preds, test_perf = DeepRF(**model_params)(train_data, valid_data, test_data)
     else:
         # Set up of loss function params -- main process
-        vec1 = train_data[0].get_targets() if isinstance(train_data, tuple) else train_data.get_targets()
-        vec2 = train_data[0].set_input_dim() if isinstance(train_data, tuple) else train_data.set_input_dim()
-        vec3 = train_data[0].nb_labels if isinstance(train_data, tuple) else train_data.nb_labels
-        loss_params = model_params["loss_params"]
-        model_params["loss_params"]["weight"] = compute_classes_weight(vec1) if \
-            loss_params["use_fixed_binary_cost"] else None
-        model_params["loss_params"]["density"] = compute_labels_density(vec1) if \
-            loss_params["use_fixed_label_cost"] else None
+        vec1 = train_data.get_targets()
+        vec2 = train_data.set_input_dim()
+        vec3 = train_data.nb_labels
+        if not is_multioutput:
+            loss_params = model_params["loss_params"]
+            model_params["loss_params"]["weight"] = compute_classes_weight(vec1) if \
+                loss_params["use_fixed_binary_cost"] else None
+            model_params["loss_params"]["density"] = compute_labels_density(vec1) if \
+                loss_params["use_fixed_label_cost"] else None
 
-        model_params["loss_params"]["samp_weight"] = compute_labels_density(vec1,
-                                                                            return_freq=True) if \
-            loss_params["samp_weight"] else torch.ones(vec3)
+            model_params["loss_params"]["samp_weight"] = compute_labels_density(vec1,
+                                                                                return_freq=True) if \
+                loss_params["samp_weight"] else torch.ones(vec3)
         del (model_params["loss_params"]["use_fixed_binary_cost"])
         del (model_params["loss_params"]["use_fixed_label_cost"])
 
         # Configure the auxiliary network who process additional features
         if model_params['network_params'].get('auxnet_params', None):
             model_params['network_params']["auxnet_params"]["input_dim"] = vec2
+
+        if is_multioutput:
+            model_params["network_params"]["on_multi_dataset"] = not dataset_params.get("init", False)
+            model_params["network_params"]["is_multitask_output"] = True
+            model_params["loss_params"]["is_mtk"] = True
 
         if model_name == "adnn":
             train_data, valid_data, model_params = fit_encoders(model_params=model_params, train_data=train_data,
@@ -233,23 +245,19 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
         print(f"Training details: \n{training}")
         model.train(train_data, valid_data, **fit_params, **paths)
         # Test and save
-        targets, preds, test_perf = model.test(test_data, batch_size=fit_params.get("batch_size", 64))
+        print("Starting the testing.")
+        batch_size = fit_params.get("batch_size", 32)
+        targets, preds, test_perf = model.test(test_data, batch_size)  #
         # Save model  test results
         pickle.dump(targets, open(paths.get('targets_filename'), "wb"))
         pickle.dump(preds, open(paths.get('preds_filename'), "wb"))
         pickle.dump(test_perf, open(paths.get('result_filename'), "wb"))
 
-        is_unseen_data = False
-        if isinstance(unseen_test_data, (tuple, list)):
-            if len(unseen_test_data[0].samples) and len(
-                    unseen_test_data[0].samples):
-                is_unseen_data = True
-        else:
-            if len(unseen_test_data.samples):
-                is_unseen_data = True
-        if is_unseen_data:
+        split_mode = dataset_params.get("split_mode", None)
+        if split_mode != "random":
+            is_unseen_data = True
             model.model.exp_prefix = paths.get("raw_preds_2_filename")
-            uy_true, uy_probs, u_output = model.test(unseen_test_data, fit_params.get("batch_size", 64))
+            uy_true, uy_probs, u_output = model.test(unseen_test_data, batch_size)
             pickle.dump(uy_true, open(paths.get('targets_2_filename'), "wb"))
             pickle.dump(uy_probs, open(paths.get('preds_2_filename'), "wb"))
             pickle.dump(u_output, open(paths.get('result_2_filename'), "wb"))

@@ -1,3 +1,4 @@
+import datetime
 import glob
 import json
 import multiprocessing
@@ -99,8 +100,12 @@ def _unpack_results(folder):
     return expt_config, expt_results, y_true, y_preds
 
 
-def visualize_loss_progress(filepath):
+def visualize_loss_progress(filepath, n_epochs=100):
     df = pd.read_table(filepath, sep="\t")
+    seconds = df['time'][0]
+    total_time = str(datetime.timedelta(seconds=seconds * n_epochs))
+    print(f"Time per epoch: {str(datetime.timedelta(seconds=seconds))}")
+    print(f"Total time needeed over {n_epochs}: ", total_time)
     plt.figure()
     df.plot(x="epoch", y=["loss", "val_loss"])
     plt.show()
@@ -369,7 +374,7 @@ def summarize_experiments(main_dir=None, cm=True, save=True):
 
     if rand:
         out = pd.DataFrame(rand)
-        print(out[out["rescale"]==True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
+        print(out[out["rescale"] == True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
         exit()
         if save:
             out.to_csv("../../results/all_raw-exp-res.csv")
@@ -705,8 +710,10 @@ def __get_dataset_stats__(task_id, level='pair'):
         print(d1_sim_scores)
         import seaborn as sns
         plt.figure(figsize=(8, 6))
-        sns.distplot(train_sim_scores, color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, kde=False, norm_hist=True, label="train")
-        sns.distplot(d1_sim_scores, color=sns.xkcd_rgb['pastel orange'], hist_kws={"alpha": 1}, kde=False, norm_hist=True,
+        sns.distplot(train_sim_scores, color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, kde=False,
+                     norm_hist=True, label="train")
+        sns.distplot(d1_sim_scores, color=sns.xkcd_rgb['pastel orange'], hist_kws={"alpha": 1}, kde=False,
+                     norm_hist=True,
                      label="test")
         plt.show()
     else:
@@ -748,8 +755,6 @@ def __get_dataset_stats__(task_id, level='pair'):
             i, j, k = __check_if_overlaps(train_drugs, test)
             prec = dataset_name, seed, "hard early", len(set(test)), i, j, k
         test_stats += [prec]
-
-
 
     df = pd.DataFrame(test_stats, columns=columns)
     return df
@@ -908,178 +913,180 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-   # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-    __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
+    visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
     exit()
-   # summarize_experiments("/media/rogia/5123-CDC3/NOISE/", cm=False)
-    #exit()
-    #get_best_hp()
-    #exit()
-    # # ('cid000003345', 'cid000005076', 'malignant melanoma')
-    # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
-    # data = pd.read_csv(input_path, sep="\t")
-    # print(list(data))
-    # l = data[(data['drug1'].str.lower() == 'fenofibrate') & (data['drug2'].str.lower() == 'valsartan') & (data['event_name'].str.lower() == 'hepatitis c')]
-    # print(l)
-    #
-    #
-    # exit()
-    # request_pairs = [("fenofibrate", "valsartan", "hepatitis c"), ("verapamil", "fluvoxamine", 'hepatitis c'),
-    #                  ("bupropion", "fluoxetine", 'hepatitis a'), ("bupropion", "fluoxetine", "hiv disease"),
-    #                  ("paroxetine", "risperidone", "hiv disease"), ("mupirocin", "sertraline", "drug withdrawal"),
-    #                  ("amlodipine", "cerivastatin", "flu"), ("metoclopramide", "minoxidil", "road traffic accident"),
-    #                  ("n-acetylcysteine", "cefuroxime", "herpes simplex"),
-    #                  ("clonazepam", "salmeterol", "adverse drug effect")]
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-    #        req_pairs=request_pairs, inf=0.6, sup=1.,  save_filename="tab9") # goog predictions
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 1)', label=1,
-    #            req_pairs=request_pairs)
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=1,
-    #            req_pairs=request_pairs)
-
-    request_pairs = [("bupropion", "benazepril", "heart attack"), ("didanosine", "stavudine", "acidosis"),
-                     ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
-                     ("tramadol", "zolpidem", "diaphragmatic hernia"), ("paroxetine", "fluticasone", "muscle spasm"),
-                     ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
-                     ("carboplatin", "cisplatin", "blood sodium decreased"),
-                     ("chlorthalidone", "fluticasone", "high blood pressure")]
-
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-    #            req_pairs=request_pairs, inf=0.0, sup=0.1, save_filename="tab-10")
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-    #            req_pairs=request_pairs, inf=0.7, sup=1., save_filename="bad_pred")
-    find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-               req_pairs=request_pairs, inf=0.7, sup=1, save_filename="1_as_1")
-    find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-               req_pairs=request_pairs, inf=0., sup=0.1, save_filename="1_as_0")
-    find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-               req_pairs=request_pairs, inf=0., sup=0.1, save_filename="0_as_0")
-    find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-               req_pairs=request_pairs, inf=0.7, sup=1., save_filename="0_as_1")
-    exit()
-    # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=0,
-    #            req_pairs=request_pairs)
-
-    # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv", split_mode="leave_drugs_out (test_set 1)", false_pos=1., false_neg=0.)
-    # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv",
-    # #                            split_mode="leave_drugs_out (test_set 2)",false_pos=1., false_neg=0)
-    # # # # cli()
-    # # #
-    # # #  reload(path="/home/rogia/Documents/exps_results/binary/cl_gin")
-    # #exit()
-    # # # summarize_experiments("/media/rogia/5123-CDC3/SOC", cm=True)
-    # # # get_best_hp()
-    # # # exit()
-    # #
-    # # # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-    # # # exit()
-    # # # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
-    # # # print(list(raw_data))
-    # # # print(raw_data[(raw_data["drug1"].str.lower() == "aprepitant")  & (raw_data["drug2"].str.lower() == "cisplatin")  & (raw_data["event_name"].str.lower() =="hepatitis c" )][["drug2", "event_name"]])  #
-    # # #
-    # # # exit()
-    # # # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
-    # analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.)
-    # analyse_kfold_predictions(mod="random", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
-    # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
-    # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=1, sup=0.1, inf=0.)
-    # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0.7)
-    # #
-    # res = pd.read_csv("/home/rogia/Documents/projects/temp-SOC/all_raw-exp-res.csv", index_col=0)
-    # # y1 = res[res["split_mode"] == "random"]
-    # # y1 = y1.groupby(["test_fold", "model_name"], as_index=True)[["micro_roc", "micro_auprc"]].max()
-    # # y1.to_csv("../../results/random_exp_grouped_by_test_fold.csv")
-    # # y2 = res[res["split_mode"] == "leave_drugs_out (test_set 1)"]
-    # # y2 = y2.groupby(["test_fold", "model_name"], as_index=True)[
-    # #     ["micro_roc", "micro_auprc"]].max()
-    # # y2.to_csv("../../results/early_exp_grouped_by_test_fold.csv")
-    # # exit()
-    # # visualize_loss_progress("../../../twosides_bmnddi_6b85a591_log.log")
-    # # exit()
-    # # #
-    # # # exit()
-    # # #
-    # # #
-    # # # exit()
-    # # visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
-    # #
-    # # exit()
-    # #
-    # # exit()
-    # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
-    # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
-    # # exit()
-    # # df = __get_dataset_stats__("/home/rogia/.invivo/result/cl_deepddi/twosides_deepddi_4ebbb144_params.json")
-    # # print(df)
-    # # exit()
-    # # # summarize_experiments("/media/rogia/CLé USB/expts/")
-    # # visualize_test_perf()
-    # #
-    # # exit()
-    # # # bt = pd.read_csv("../../results/best_hp.csv")
-    # # # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
-    # # # # print(c)
-    # # # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
-    # # #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
-    # # # analyze_models_predictions([c[::-1][1]])
-    # #
-    # # # analysis_test_perf(c)
-    # # exit()
-    # # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-    # # exit()
-    # # # get_misclassified_labels(
-    # # #     "/home/rogia/Documents/projects/drug_drug_interactions/results/twosides_bmnddi_6936e1f9_1_sis.csv", items=10)
-    # # # exit()
-    # # # combine(exp_path="/media/rogia/CLé USB/expts/DeepDDI", split=False)
-    # # exit()
-    # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=1, threshold=0.1)
-    # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=0, threshold=0.7)
-    # # choose o.1 as threshold for false positive
-    # # combine(["/home/rogia/Documents/projects/twosides_bmnddi_390811c9",
-    # #          "/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9"])
-    #
-    # exit()
-    # exp_folder = "/home/rogia/Documents/exps_results/IMB"  # /media/rogia/CLé USB/expts"  # f"{os.path.expanduser('~')}/expts"
-    # # summarize(exp_folder)
-    # # Scorer twosides random split
-    # scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="random")
-    # # Scorer twosides early split stage
-    # scorer("twosides", task_path="/home/rogia/Documents/projects/twosides_bmnddi_390811c9", save="early+stage")
-    # exit()
-    # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_48d052b6", save="cnn+NS")
-    # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_5cbedb4a", save="cnn+CS")
-    #
-    # # Scorer drugbank random split
-    # scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
-    # # Scorer drugbank early split
-    # exit()
-    #
-    # f = __loop_through_exp(exp_folder + "/CNN")
-    # # # # # d = __loop_through_exp(exp_folder + "/BiLSTM")
-    # # # # # a = __loop_through_exp(exp_folder + "/DeepDDI")
-    # # # # # b = __loop_through_exp(exp_folder + "/Lapool")
-    # # # # # c = __loop_through_exp(exp_folder + "/MolGraph")
-    # # # # #
-    # # # # # e = a + b + c + d
-    # out = pd.DataFrame(f)
-    # print(out)
-    # out.to_csv("temp.csv")
-    # t = out.groupby(['dataset_name', 'model_name', "split_mode"], as_index=True)[
-    #     ["micro_roc", "micro_auprc"]].mean()
-    # print(t)
-    # # out.to_csv("sum-exp.xlsx")
-    # # get_exp_stats("sum-exp.xlsx")
-    # # exit()
-    # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
-    # exit()
-    # summarize()
-    # # display("/home/rogia/Documents/cl_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
-    # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
-    # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/cl_lstm/_hp_0/")
-    # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-    # # display_H("/home/rogia/.invivo/result/cl_lapool/drugbank_bmnddi_12c974de_log.log")
-    # # exit()
-    # c = get_expt_results("/home/rogia/.invivo/result/")
-    # print(c)
-    # exit()
-    # c.to_excel("graph_mol_as_extract.xlsx")
+#    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+#    # __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
+# #exit()
+#     #summarize_experiments("/media/rogia/5123-CDC3/NOISE/", cm=False)
+#     #exit()
+#     #get_best_hp()
+#     #exit()
+#     # # ('cid000003345', 'cid000005076', 'malignant melanoma')
+#     # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
+#     # data = pd.read_csv(input_path, sep="\t")
+#     # print(list(data))
+#     # l = data[(data['drug1'].str.lower() == 'fenofibrate') & (data['drug2'].str.lower() == 'valsartan') & (data['event_name'].str.lower() == 'hepatitis c')]
+#     # print(l)
+#     #
+#     #
+#     # exit()
+#     # request_pairs = [("fenofibrate", "valsartan", "hepatitis c"), ("verapamil", "fluvoxamine", 'hepatitis c'),
+#     #                  ("bupropion", "fluoxetine", 'hepatitis a'), ("bupropion", "fluoxetine", "hiv disease"),
+#     #                  ("paroxetine", "risperidone", "hiv disease"), ("mupirocin", "sertraline", "drug withdrawal"),
+#     #                  ("amlodipine", "cerivastatin", "flu"), ("metoclopramide", "minoxidil", "road traffic accident"),
+#     #                  ("n-acetylcysteine", "cefuroxime", "herpes simplex"),
+#     #                  ("clonazepam", "salmeterol", "adverse drug effect")]
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+#     #        req_pairs=request_pairs, inf=0.6, sup=1.,  save_filename="tab9") # goog predictions
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 1)', label=1,
+#     #            req_pairs=request_pairs)
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=1,
+#     #            req_pairs=request_pairs)
+#
+#     request_pairs = [("bupropion", "benazepril", "heart attack"), ("didanosine", "stavudine", "acidosis"),
+#                      ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
+#                      ("tramadol", "zolpidem", "diaphragmatic hernia"), ("paroxetine", "fluticasone", "muscle spasm"),
+#                      ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
+#                      ("carboplatin", "cisplatin", "blood sodium decreased"),
+#                      ("chlorthalidone", "fluticasone", "high blood pressure")]
+#
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+#     #            req_pairs=request_pairs, inf=0.0, sup=0.1, save_filename="tab-10")
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+#     #            req_pairs=request_pairs, inf=0.7, sup=1., save_filename="bad_pred")
+#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+#                req_pairs=request_pairs, inf=0.7, sup=1, save_filename="1_as_1")
+#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+#                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="1_as_0")
+#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+#                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="0_as_0")
+#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+#                req_pairs=request_pairs, inf=0.7, sup=1., save_filename="0_as_1")
+#     exit()
+#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=0,
+#     #            req_pairs=request_pairs)
+#
+#     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv", split_mode="leave_drugs_out (test_set 1)", false_pos=1., false_neg=0.)
+#     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv",
+#     # #                            split_mode="leave_drugs_out (test_set 2)",false_pos=1., false_neg=0)
+#     # # # # cli()
+#     # # #
+#     # # #  reload(path="/home/rogia/Documents/exps_results/binary/cl_gin")
+#     # #exit()
+#     # # # summarize_experiments("/media/rogia/5123-CDC3/SOC", cm=True)
+#     # # # get_best_hp()
+#     # # # exit()
+#     # #
+#     # # # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+#     # # # exit()
+#     # # # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
+#     # # # print(list(raw_data))
+#     # # # print(raw_data[(raw_data["drug1"].str.lower() == "aprepitant")  & (raw_data["drug2"].str.lower() == "cisplatin")  & (raw_data["event_name"].str.lower() =="hepatitis c" )][["drug2", "event_name"]])  #
+#     # # #
+#     # # # exit()
+#     # # # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
+#     # analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.)
+#     # analyse_kfold_predictions(mod="random", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
+#     # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
+#     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=1, sup=0.1, inf=0.)
+#     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0.7)
+#     # #
+#     # res = pd.read_csv("/home/rogia/Documents/projects/temp-SOC/all_raw-exp-res.csv", index_col=0)
+#     # # y1 = res[res["split_mode"] == "random"]
+#     # # y1 = y1.groupby(["test_fold", "model_name"], as_index=True)[["micro_roc", "micro_auprc"]].max()
+#     # # y1.to_csv("../../results/random_exp_grouped_by_test_fold.csv")
+#     # # y2 = res[res["split_mode"] == "leave_drugs_out (test_set 1)"]
+#     # # y2 = y2.groupby(["test_fold", "model_name"], as_index=True)[
+#     # #     ["micro_roc", "micro_auprc"]].max()
+#     # # y2.to_csv("../../results/early_exp_grouped_by_test_fold.csv")
+#     # # exit()
+#     # # visualize_loss_progress("../../../twosides_bmnddi_6b85a591_log.log")
+#     # # exit()
+#     # # #
+#     # # # exit()
+#     # # #
+#     # # #
+#     # # # exit()
+#     # # visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
+#     # #
+#     # # exit()
+#     # #
+#     # # exit()
+#     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
+#     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
+#     # # exit()
+#     # # df = __get_dataset_stats__("/home/rogia/.invivo/result/cl_deepddi/twosides_deepddi_4ebbb144_params.json")
+#     # # print(df)
+#     # # exit()
+#     # # # summarize_experiments("/media/rogia/CLé USB/expts/")
+#     # # visualize_test_perf()
+#     # #
+#     # # exit()
+#     # # # bt = pd.read_csv("../../results/best_hp.csv")
+#     # # # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
+#     # # # # print(c)
+#     # # # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
+#     # # #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
+#     # # # analyze_models_predictions([c[::-1][1]])
+#     # #
+#     # # # analysis_test_perf(c)
+#     # # exit()
+#     # # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+#     # # exit()
+#     # # # get_misclassified_labels(
+#     # # #     "/home/rogia/Documents/projects/drug_drug_interactions/results/twosides_bmnddi_6936e1f9_1_sis.csv", items=10)
+#     # # # exit()
+#     # # # combine(exp_path="/media/rogia/CLé USB/expts/DeepDDI", split=False)
+#     # # exit()
+#     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=1, threshold=0.1)
+#     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=0, threshold=0.7)
+#     # # choose o.1 as threshold for false positive
+#     # # combine(["/home/rogia/Documents/projects/twosides_bmnddi_390811c9",
+#     # #          "/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9"])
+#     #
+#     # exit()
+#     # exp_folder = "/home/rogia/Documents/exps_results/IMB"  # /media/rogia/CLé USB/expts"  # f"{os.path.expanduser('~')}/expts"
+#     # # summarize(exp_folder)
+#     # # Scorer twosides random split
+#     # scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="random")
+#     # # Scorer twosides early split stage
+#     # scorer("twosides", task_path="/home/rogia/Documents/projects/twosides_bmnddi_390811c9", save="early+stage")
+#     # exit()
+#     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_48d052b6", save="cnn+NS")
+#     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_5cbedb4a", save="cnn+CS")
+#     #
+#     # # Scorer drugbank random split
+#     # scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
+#     # # Scorer drugbank early split
+#     # exit()
+#     #
+#     # f = __loop_through_exp(exp_folder + "/CNN")
+#     # # # # # d = __loop_through_exp(exp_folder + "/BiLSTM")
+#     # # # # # a = __loop_through_exp(exp_folder + "/DeepDDI")
+#     # # # # # b = __loop_through_exp(exp_folder + "/Lapool")
+#     # # # # # c = __loop_through_exp(exp_folder + "/MolGraph")
+#     # # # # #
+#     # # # # # e = a + b + c + d
+#     # out = pd.DataFrame(f)
+#     # print(out)
+#     # out.to_csv("temp.csv")
+#     # t = out.groupby(['dataset_name', 'model_name', "split_mode"], as_index=True)[
+#     #     ["micro_roc", "micro_auprc"]].mean()
+#     # print(t)
+#     # # out.to_csv("sum-exp.xlsx")
+#     # # get_exp_stats("sum-exp.xlsx")
+#     # # exit()
+#     # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
+#     # exit()
+#     # summarize()
+#     # # display("/home/rogia/Documents/cl_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
+#     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
+#     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/cl_lstm/_hp_0/")
+#     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
+#     # # display_H("/home/rogia/.invivo/result/cl_lapool/drugbank_bmnddi_12c974de_log.log")
+#     # # exit()
+#     # c = get_expt_results("/home/rogia/.invivo/result/")
+#     # print(c)
+#     # exit()
+#     # c.to_excel("graph_mol_as_extract.xlsx")

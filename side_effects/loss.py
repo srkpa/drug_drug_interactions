@@ -54,8 +54,9 @@ class WeightedBinaryCrossEntropy1(Module):
 
 class BinaryCrossEntropyP(Module):
 
-    def __init__(self, use_negative_sampling, weight, density,
-                 use_binary_cost_per_batch, use_label_cost_per_batch, loss='bce', neg_rate=1., use_sampling=False,
+    def __init__(self, use_negative_sampling=False, weight=None, density=None,
+                 use_binary_cost_per_batch=None, use_label_cost_per_batch=None, loss="bce", neg_rate=1.,
+                 use_sampling=False,
                  samp_weight=1., rescale_freq=False, is_mtk=False):
         super(BinaryCrossEntropyP, self).__init__()
         self.loss_fn = get_loss_or_metric(loss)
@@ -71,42 +72,57 @@ class BinaryCrossEntropyP(Module):
         self.use_sampling = use_sampling
         self.samp_weight = samp_weight
         self.rescale_freq = rescale_freq
-        self.is_mtk = is_mtk
-        if self.is_mtk:
-            self.add_loss = get_loss_or_metric('mse')
+        self.is_multioutput = is_mtk
+        if self.is_multioutput:
+            self.losses_fn = [self.loss_fn] + [get_loss_or_metric("mse")]
 
-    def forward(self, inputs, outputs):
-        #print(inputs)
-        target, output_scores = outputs[0], outputs[1].squeeze() if self.is_mtk else outputs,
-        input, input_scores = inputs[0], inputs[1] if self.is_mtk else inputs,
-       # print(input.shape, target.shape)
-        assert input.shape == target.shape
-        if self.use_negative_sampling and self.training:
-            mask = (target == 1).float()
-            for i, col in enumerate(target.t()):
+    def forward(self, pred_y, true_y):
+        # print(inputs)
+        #print("preds", pred_y[0].shape, pred_y[1].shape)
+        #print("ouptu", true_y[0].shape, true_y[1].shape)
+        #
+        # print("ouptu", true_y[0].shape, true_y[1].shape)
+
+        if self.is_multioutput:
+            true_y = [y.view(-1, y.size(-1)) for y in true_y]
+            masks = [(y[:, 0] == y[:, 0]) for y in true_y]
+            #masks = [mask for mask in masks ]
+            #print(true_y, masks)
+            true_y = [true_y[i][mask, :] for i, mask in enumerate(masks) if sum(mask) > 0]
+            pred_y = [pred_y[i][mask, :] for i, mask in enumerate(masks) if sum(mask) > 0]
+            #print(pred_y, masks)
+            #print("y_true", true_y[0].shape, true_y[1].shape)
+           # print("val after mask", true_y[0], true_y[1])
+          #  print("pred after mask", pred_y[0].shape, pred_y[1].shape)
+            loss = sum([self.losses_fn[i](y_pred, y_true) for i, (y_pred, y_true) in enumerate(zip(pred_y, true_y))])
+
+        elif self.use_negative_sampling and self.training:
+            mask = (true_y == 1).float()
+            for i, col in enumerate(true_y.t()):
                 nb_pos = int(col.sum())
                 if nb_pos > 0:
                     idx = Categorical((col == 0).float().flatten()).sample((int(nb_pos * self.neg_rate),))
                     mask[idx, i] = 1.0
-            loss = (binary_cross_entropy(input, target, reduction='none') * mask).mean()
+            loss = (binary_cross_entropy(pred_y, true_y, reduction='none') * mask).mean()
+
         elif self.use_weighted_loss and self.training:
-            loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(input, target)
+            loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(pred_y, true_y)
+
         elif self.use_sampling and self.training:
-            mask = (target == 1).float()
-            for i, row in enumerate(target):
+            mask = (true_y == 1).float()
+            for i, row in enumerate(true_y):
                 nb_neg = int(row.sum() * self.neg_rate)
                 if nb_neg > 0:
                     idx = Categorical((row == 0).float().flatten()).sample((nb_neg,))
                     mask[i, idx] = 1.0
-            loss = (self.samp_weight * (binary_cross_entropy(input, target, reduction='none') * mask).mean()).sum()
+            loss = (self.samp_weight * (binary_cross_entropy(pred_y, true_y, reduction='none') * mask).mean()).sum()
+
         elif self.rescale_freq and self.training:
-            loss = (self.samp_weight * binary_cross_entropy(input, target, reduction='none').mean(dim=0)).sum()
+            loss = (self.samp_weight * binary_cross_entropy(pred_y, true_y, reduction='none').mean(dim=0)).sum()
 
         else:
-            loss = self.loss_fn(input, target)  # hinge_embedding_loss(input, target) #
+            loss = self.loss_fn(pred_y, true_y)  # hinge_embedding_loss(input, target) #
 
-        if self.is_mtk:
-            loss += self.add_loss(input_scores, output_scores)
         return loss
 
 
