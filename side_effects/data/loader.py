@@ -514,8 +514,8 @@ class MultitaskDDIDataset(Dataset):
                 label = torch.tensor(label)
                 if (torch.isnan(label).sum() > 0) and not self.is_ordered:
                     label = self.raw_data[i].get((drug_1, drug_2), torch.tensor([np.nan] * self.sizes[i]))
-                if (torch.isnan(label).sum() == 0):
-                    label = to_tensor(label, gpu=self.gpu)
+                #if (torch.isnan(label).sum() == 0):
+                label = to_tensor(label, gpu=self.gpu)
                 labels += [label]
             drug_1, drug_2 = self.drugs2smi[drug_1], self.drugs2smi[drug_2]
             return (to_tensor(drug_1, gpu=self.gpu), to_tensor(drug_2, gpu=self.gpu)), labels

@@ -128,7 +128,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Config params: {expt_params}\n")
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
-    save_config(all_params, paths.pop('config_filename'))
+    save_config(all_params, paths.pop('config_filename')) ##TOD concat the name of dataset if list is given
     debug = dataset_params.pop("debug", False)
     is_multioutput = len(dataset_params.get('dataset_name')) >= 2 if isinstance(dataset_params.get('dataset_name'),
                                                                                 list) else False
