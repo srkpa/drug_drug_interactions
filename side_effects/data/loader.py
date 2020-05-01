@@ -481,7 +481,7 @@ class MultitaskDDIDataset(Dataset):
                 self.max_len += diff
 
             elif self.min_len * max(self.ratios) < self.max_len:
-                diff = - (self.min_len * max(self.ratios)) + self.max_len
+                diff = round(self.max_len / max(self.ratios)) - self.min_len #- (self.min_len * max(self.ratios)) + self.max_len
                 self.fill_with_nan(diff, 0)
                 self.min_len += diff
 
