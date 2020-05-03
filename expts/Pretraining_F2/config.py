@@ -4,7 +4,7 @@ import click
 from sklearn.model_selection import ParameterGrid
 
 dataset_params = list(ParameterGrid(
-    dict(dataset_name=["L1000"],
+    dict(dataset_name=["twosides"],
          transformer=["seq"],
          split_mode=["random"],
          test_size=[0.10],
@@ -19,7 +19,10 @@ dataset_params = list(ParameterGrid(
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
-         debug=[False]
+         debug=[False],
+         is_ordered=[False],
+         init=[False],
+         drugname_as_id=[False]
          )
 ))
 
@@ -27,17 +30,10 @@ fit_params = list(ParameterGrid(
     dict(n_epochs=[6], batch_size=[32], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
-    dict(arch=['conv1d'],
-         vocab_size=[151],
-         embedding_size=[20],
-         cnn_sizes=[
-             [300]
-         ],
-         kernel_size=[[17]],
-         pooling_len=[2],
-         b_norm=[False],
-         pooling=["max"]
-         #  use_self_attention=[True]
+    dict(
+         task_id=["/home/rogia/Téléchargements/pretrained_cmap/L1000_bmnddi_8d931fff"],
+         requires_grad=[True]
+
          )
 ))
 
@@ -45,12 +41,13 @@ network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     ss_embedding_dim=[32],
-    fc_layers_dim=[[]],
+    fc_layers_dim=[[1024]],
     mode=["concat"],
     dropout=[0],
     b_norm=[True],
     is_binary_output=[False],
-    op_mode=["cos"]
+    op_mode=["cos"],
+    pretrained_feature_extractor=[True],
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -63,16 +60,16 @@ loss_params = list(ParameterGrid(dict(
     use_sampling=[False],
     samp_weight=[False],
     rescale_freq=[False],
-    #is_mtk=[True]
+    # is_mtk=[True]
 )))
 
 model_params = list(ParameterGrid(dict(
     network_params=network_params,
     optimizer=['adam'],
     weight_decay=[0.0],
-    lr=[1e-4],
-    loss=['mse'],
-    metrics_names=[['imse']],
+    lr=[1e-6],
+    loss=['bce'],
+    metrics_names=[['micro_roc', "macro_roc", "micro_auprc", "macro_auprc"]],
     loss_params=loss_params,
     dataloader=[True]
 )))

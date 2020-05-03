@@ -19,26 +19,6 @@ dataset_params = list(ParameterGrid([
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
-         debug=[True],
-         is_ordered=[False],
-         init=[True],
-         drugname_as_id=[True]
-         ),
-    dict(dataset_name=[["twosides", "L1000"]],
-         transformer=["seq"],
-         split_mode=["random"],
-         test_size=[0.10],
-         valid_size=[0.15],
-         seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
-         decagon=[False],
-         use_clusters=[False],
-         use_as_filter=[None],
-         use_targets=[False],
-         use_side_effect=[False],
-         use_pharm=[False],
-         n_folds=[0],
-         test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
-         label=['ml'],
          debug=[False],
          is_ordered=[False],
          init=[False],
@@ -97,7 +77,7 @@ model_params = list(ParameterGrid(dict(
     loss=['bce'],
     metrics_names=[['miroc', 'miaup', 'mse', 'maroc', 'maaup']],
     loss_params=loss_params,
-    dataloader=[True]
+    dataloader=[False]
 )))
 
 

@@ -2,7 +2,7 @@
   "model_params": [
     {
       "dataloader": true,
-      "loss": "mse",
+      "loss": "bce",
       "loss_params": {
         "neg_rate": 1.0,
         "rescale_freq": false,
@@ -16,30 +16,26 @@
       },
       "lr": 0.0001,
       "metrics_names": [
-        "imse"
+        "micro_roc",
+        "macro_roc",
+        "micro_auprc",
+        "macro_auprc"
       ],
       "network_params": {
         "b_norm": true,
         "dropout": 0,
         "drug_feature_extractor_params": {
-          "arch": "conv1d",
-          "b_norm": false,
-          "cnn_sizes": [
-            300
-          ],
-          "embedding_size": 20,
-          "kernel_size": [
-            17
-          ],
-          "pooling": "max",
-          "pooling_len": 2,
-          "vocab_size": 151
+          "requires_grad": false,
+          "task_id": "/home/rogia/T\u00e9l\u00e9chargements/pretrained_cmap/L1000_bmnddi_8d931fff"
         },
-        "fc_layers_dim": [],
+        "fc_layers_dim": [
+          1024
+        ],
         "is_binary_output": false,
         "mode": "concat",
         "network_name": "bmnddi",
         "op_mode": "cos",
+        "pretrained_feature_extractor": true,
         "ss_embedding_dim": 32
       },
       "optimizer": "adam",
@@ -48,9 +44,12 @@
   ],
   "dataset_params": [
     {
-      "dataset_name": "L1000",
+      "dataset_name": "twosides",
       "debug": false,
       "decagon": false,
+      "drugname_as_id": false,
+      "init": false,
+      "is_ordered": false,
       "label": "ml",
       "n_folds": 0,
       "seed": 42,

@@ -1,9 +1,11 @@
 import torch
+import json
 import torch.nn as nn
 import torch.nn.functional as F
 
 from .attention import AttentionLayer
 from .features_extraction import FeaturesExtractorFactory
+
 
 
 class SelfAttentionLayer(AttentionLayer):
@@ -36,15 +38,14 @@ class SelfAttentionLayer(AttentionLayer):
 
 
 class BMNDDI(nn.Module):
-    def __init__(self, drug_feature_extractor_params, fc_layers_dim, nb_side_effects=None, mode='concat',
-                 att_mode=None, ss_embedding_dim=None,
-                 add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None,
-                 is_multitask_output=False, on_multi_dataset=False, op_mode=None,
-                 **kwargs):
+    def __init__(self, drug_feature_extractor_params, fc_layers_dim, nb_side_effects=1, mode='concat',
+                 att_mode=None, ss_embedding_dim=None, add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None,
+                 is_multitask_output=False, on_multi_dataset=False, op_mode=None, pretrained_feature_extractor =False, trainer=None, **kwargs):
 
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
         self.mode = mode
+        self.train_fn = trainer
         self.att_mode = att_mode
         self.is_binary_output = is_binary_output
         self.testing = testing
@@ -53,7 +54,16 @@ class BMNDDI(nn.Module):
         self.on_multidataset = on_multi_dataset
         self.op_mode = op_mode
         self.use_basic_model = (not is_binary_output) and (not is_multitask_output)
-        self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
+        self.trainer = trainer
+
+        # This the place that need to be update
+        if pretrained_feature_extractor:
+            self.drug_feature_extractor = self.load_pretrained_features_extractor(**drug_feature_extractor_params)
+
+        else:
+            self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
+
+
         in_size = 2 * self.drug_feature_extractor.output_dim
 
         if self.mode in ['sum', 'max', "elementwise"]:
@@ -67,6 +77,7 @@ class BMNDDI(nn.Module):
             self.add_feature_extractor = fe_factory(arch='fcnet', last_layer_activation=None, **add_feats_params,
                                                     **kwargs)
             in_size += add_feats_params.pop("nb_side_effects")
+
         output_dim = 1 if is_binary_output else nb_side_effects
 
         # This part is not so clean ---
@@ -176,3 +187,16 @@ class BMNDDI(nn.Module):
             vec = torch.cat((vec1, vec2), 1)
 
         return vec
+
+    def load_pretrained_features_extractor(self, task_id, requires_grad):
+        config = json.load(open(f"{task_id}_params.json"))
+        model_params = config["model_params"]
+        model = self.trainer(network_params=model_params["network_params"])
+        checkpoint = torch.load(f"{task_id}.checkpoint.pth", map_location="cpu")
+        model.model.load_state_dict(checkpoint['net'])
+
+        if not requires_grad:
+            for param in model.model.parameters():
+                param.requires_grad = False
+        return model.model.drug_feature_extractor
+

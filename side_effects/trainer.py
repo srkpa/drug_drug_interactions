@@ -77,7 +77,7 @@ class TensorBoardLogger2(Logger):
 
 class Trainer(ivbt.Trainer):
 
-    def __init__(self, network_params, loss_params, optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
+    def __init__(self, network_params, loss_params=dict(), optimizer='adam', lr=1e-3, weight_decay=0.0, loss=None,
                  metrics_names=None, snapshot_dir="", dataloader=True, **kwargs):
 
         self.history = None
@@ -111,19 +111,23 @@ class Trainer(ivbt.Trainer):
         #         print("we are here")
         #         self.model.module.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
 
+        callbacks = []
+        collate_fn, generator = None, batch_generator
+
         if hasattr(self.model, 'set_graph') and hasattr(train_dataset, 'graph_nodes'):
             self.model.set_graph(train_dataset.graph_nodes, train_dataset.graph_edges)
 
+        if hasattr(train_dataset, "collate_fn") and callable(train_dataset.collate_fn):
+            collate_fn = train_dataset.collate_fn
+
+        if hasattr(train_dataset, "batch_generator"):
+            generator = train_dataset.batch_generator
+
         # self.loss_function = get_loss(self.loss_name, y_train=train_dataset.get_targets(), **self.loss_params)
-        callbacks = []
-        collate_fn = None
 
         if with_early_stopping:
             early_stopping = EarlyStopping(monitor='val_loss', patience=patience, verbose=True)
             callbacks += [early_stopping]
-
-        if hasattr(train_dataset, "collate_fn") and callable(train_dataset.collate_fn):
-            collate_fn = train_dataset.collate_fn
 
         reduce_lr = ReduceLROnPlateau(patience=5, factor=1 / 4, min_lr=min_lr, verbose=True)
         best_model_restore = BestModelRestore()
@@ -150,9 +154,10 @@ class Trainer(ivbt.Trainer):
                                               epochs=n_epochs,
                                               callbacks=callbacks)
         else:
+
             step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
             self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
-                                    validation_steps=step_valid, generator_fn=batch_generator,
+                                    validation_steps=step_valid, generator_fn=generator,
                                     batch_size=batch_size, shuffle=True, callbacks=callbacks)
         return self
 
@@ -249,37 +254,3 @@ def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
         loop += 1
 
 
-def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
-    loop = 0
-    datasets = datasets.args
-    min_len = min([len(dataset) for dataset in datasets])
-    n_steps = int(min_len / batch_size)
-    batch_sizes = [int(len(dataset) / n_steps) for dataset in datasets]
-    idx = [np.arange(len(dataset)) for dataset in datasets]
-
-    while loop < 1 or infinite:
-        for i in range(n_steps):
-            batch_x = []
-            batch_y = []
-            for task_id, dataset in enumerate(datasets[:]):
-                start = batch_sizes[task_id] * i
-                end = min(i * batch_sizes[task_id] + batch_sizes[task_id], len(dataset))
-                a = [dataset[idx[task_id][ii]] for ii in range(start, end)]
-                x, y = zip(*a)
-                y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
-                y = torch.cat(y, dim=0)
-                # print(len(x), y.shape, len(list(zip(*x))))
-                assert y.shape[0] == batch_sizes[task_id], f"task_{task_id}: wrong shape for y"
-                assert len(x) == batch_sizes[task_id], "wrong number of instances fecthed!"
-                assert all([len(k) == 2 for k in x]), "Must be pair of drugs"
-                x = [torch.cat(list(map(wrapped_partial(torch.unsqueeze, dim=0), drugs_list)), dim=0) for drugs_list in
-                     list(zip(*x))]
-                assert len(x) == 2, "Must be drug a and b, not more!"
-                assert x[0].shape[0] == batch_sizes[task_id], " > batch_size"
-                batch_x += [x]
-                # print(len(batch_x))
-                batch_y += [y]
-                # print(len(batch_y))
-            assert len(batch_x) == len(batch_y) == len(datasets), "Must be equal to len(tasks)!"
-            yield batch_x, batch_y
-        loop += 1

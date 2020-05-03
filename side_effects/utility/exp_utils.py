@@ -913,10 +913,15 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-    visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
-    visualize_loss_progress("/home/rogia/Téléchargements/cmap_cotrain/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=10)
-    visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
-                            n_epochs=10)
+    visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
+    visualize_loss_progress("/home/rogia/Téléchargements/cotraining_R/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
+    #                         n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
+    #                         n_epochs=100)
+    visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
+                            n_epochs=200)
+    #
     #visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
     exit()
 #    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")

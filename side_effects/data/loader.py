@@ -322,7 +322,7 @@ class DDIdataset(Dataset):
         if self.labels_vectorizer is None:
             return np.stack(list(zip(*self.samples))[2], axis=0)
         return to_tensor(self.labels_vectorizer.transform(list(zip(*self.samples))[2]).astype(np.float32),
-                         False) if not self.use_binary_labels else to_tensor(self.targets, False)
+                         False)
 
     def build_graph(self):
         graph_drugs = list(set([d1 for (d1, _, _) in self.samples] + [d2 for (_, d2, _) in self.samples]))
@@ -451,6 +451,7 @@ class BinaryClassDataset(DDIdataset):
         if self.labels_vectorizer is None:
             targets = np.concatenate(list(zip(*self.samples))[2])
             return to_tensor(targets, self.gpu)
+            #if not self.use_binary_labels else to_tensor(self.targets, False)
 
 
 
@@ -471,19 +472,24 @@ class MultitaskDDIDataset(Dataset):
         self.testing = testing
         self.masks = None
 
+        print("I am init", init)
         if init:
             self.samples = self.init_samples(task_data_lst)
-
         else:
-            if self.min_len * max(self.ratios) > self.max_len:
-                diff = (self.min_len * max(self.ratios)) - self.max_len
-                self.fill_with_nan(diff, 1)
-                self.max_len += diff
+            print("Je suis la")
+            self.batch_generator = generator_fn
 
-            elif self.min_len * max(self.ratios) < self.max_len:
-                diff = round(self.max_len / max(self.ratios)) - self.min_len #- (self.min_len * max(self.ratios)) + self.max_len
-                self.fill_with_nan(diff, 0)
-                self.min_len += diff
+
+        # else:
+        #     if self.min_len * max(self.ratios) > self.max_len:
+        #         diff = (self.min_len * max(self.ratios)) - self.max_len
+        #         self.fill_with_nan(diff, 1)
+        #         self.max_len += diff
+        #
+        #     elif self.min_len * max(self.ratios) < self.max_len:
+        #         diff = round(self.max_len / max(self.ratios)) - self.min_len #- (self.min_len * max(self.ratios)) + self.max_len
+        #         self.fill_with_nan(diff, 0)
+        #         self.min_len += diff
 
         if testing:
             self.get_targets()
@@ -990,3 +996,38 @@ def load_mono_se(fname='bio-decagon-mono.csv'):
         stitch_id, se = contents[0], contents[-1].lower()
         stitch2se[stitch_id].add(se)
     return stitch2se
+
+
+def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
+    loop = 0
+    min_len = min([len(dataset) for dataset in datasets])
+    n_steps = int(min_len / batch_size)
+    batch_sizes = [int(len(dataset) / n_steps) for dataset in datasets]
+    idx = [np.arange(len(dataset)) for dataset in datasets]
+
+    while loop < 1 or infinite:
+        for i in range(n_steps):
+            batch_x = []
+            batch_y = []
+            for task_id, dataset in enumerate(datasets[:]):
+                start = batch_sizes[task_id] * i
+                end = min(i * batch_sizes[task_id] + batch_sizes[task_id], len(dataset))
+                a = [dataset[idx[task_id][ii]] for ii in range(start, end)]
+                x, y = zip(*a)
+                y = list(map(wrapped_partial(torch.unsqueeze, dim=0), y))
+                y = torch.cat(y, dim=0)
+                # print(len(x), y.shape, len(list(zip(*x))))
+                assert y.shape[0] == batch_sizes[task_id], f"task_{task_id}: wrong shape for y"
+                assert len(x) == batch_sizes[task_id], "wrong number of instances fecthed!"
+                assert all([len(k) == 2 for k in x]), "Must be pair of drugs"
+                x = [torch.cat(list(map(wrapped_partial(torch.unsqueeze, dim=0), drugs_list)), dim=0) for drugs_list in
+                     list(zip(*x))]
+                assert len(x) == 2, "Must be drug a and b, not more!"
+                assert x[0].shape[0] == batch_sizes[task_id], " > batch_size"
+                batch_x += [x]
+                # print(len(batch_x))
+                batch_y += [y]
+                # print(len(batch_y))
+            assert len(batch_x) == len(batch_y) == len(datasets), "Must be equal to len(tasks)!"
+            yield batch_x, batch_y
+        loop += 1
