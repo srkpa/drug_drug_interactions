@@ -451,8 +451,7 @@ class BinaryClassDataset(DDIdataset):
         if self.labels_vectorizer is None:
             targets = np.concatenate(list(zip(*self.samples))[2])
             return to_tensor(targets, self.gpu)
-            #if not self.use_binary_labels else to_tensor(self.targets, False)
-
+            # if not self.use_binary_labels else to_tensor(self.targets, False)
 
 
 class MultitaskDDIDataset(Dataset):
@@ -465,20 +464,21 @@ class MultitaskDDIDataset(Dataset):
         self.drugs2smi = smi
         self.min_len = min([len(task) for task in task_data_lst])
         self.max_len = max([len(task) for task in task_data_lst])
-        self.ratios = [round(len(task) / self.min_len) for task in task_data_lst]
-        self.sizes = [len(list(task.values())[0]) for task in task_data_lst]
+        self.target_sizes = [len(list(task.values())[0]) if len(task) > 0 else 1 for task in task_data_lst]
         self.is_merged = init
         self.nb_labels = nb_labels
         self.testing = testing
         self.masks = None
 
-        print("I am init", init)
+        if self.min_len != 0:
+            self.ratios = [round(len(task) / self.min_len) for task in task_data_lst]
+            print(self.ratios)
+
         if init:
             self.samples = self.init_samples(task_data_lst)
         else:
-            print("Je suis la")
-            self.batch_generator = generator_fn
 
+            self.batch_generator = generator_fn
 
         # else:
         #     if self.min_len * max(self.ratios) > self.max_len:
@@ -494,8 +494,8 @@ class MultitaskDDIDataset(Dataset):
         if testing:
             self.get_targets()
 
-        print(self.sizes)
-        print(self.ratios)
+       # print(self.target_sizes)
+
 
     def __len__(self):
         if self.is_merged:
@@ -516,23 +516,23 @@ class MultitaskDDIDataset(Dataset):
             drug_1, drug_2 = self.samples[item]
             labels = []
             for i in range(self.nb_tasks):
-                label = self.raw_data[i].get((drug_1, drug_2), [np.nan] * self.sizes[i])
+                label = self.raw_data[i].get((drug_1, drug_2), [np.nan] * self.target_sizes[i])
                 label = torch.tensor(label)
                 if (torch.isnan(label).sum() > 0) and not self.is_ordered:
-                    label = self.raw_data[i].get((drug_1, drug_2), torch.tensor([np.nan] * self.sizes[i]))
-                #if (torch.isnan(label).sum() == 0):
+                    label = self.raw_data[i].get((drug_1, drug_2), torch.tensor([np.nan] * self.target_sizes[i]))
+                # if (torch.isnan(label).sum() == 0):
                 label = to_tensor(label, gpu=self.gpu)
                 labels += [label]
             drug_1, drug_2 = self.drugs2smi[drug_1], self.drugs2smi[drug_2]
             return (to_tensor(drug_1, gpu=self.gpu), to_tensor(drug_2, gpu=self.gpu)), labels
         else:
             x, y = [], []
-            #print("it", item)
+            # print("it", item)
             for i in range(self.nb_tasks):
                 start = min(item * self.ratios[i], len(self.raw_data[i]))
                 end = min(start + self.ratios[i], len(self.raw_data[i]))
                 slice = list(self.raw_data[i].items())[start:end]
-                #print(i, start, end, len(slice))
+                # print(i, start, end, len(slice))
 
                 smi_a = [self.drugs2smi.get(drug_1, np.array([0] * self.set_input_dim())) for ((drug_1, _), _) in
                          slice]
@@ -555,7 +555,7 @@ class MultitaskDDIDataset(Dataset):
 
     def fill_with_nan(self, diff, index):
         print("I am diff", diff, index)
-        yy = np.empty((self.sizes[index]))
+        yy = np.empty((self.target_sizes[index]))
         yy[:] = np.nan
         for i in range(diff):
             xa, xb = f"OUT_OF_{i}_1", f"OUT_OF_{i}_2"
@@ -677,7 +677,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     mbl = MultiLabelBinarizer().fit(labels) if dataset_name in ["twosides", "drugbank"] else None
 
-    #labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
+    # labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
     if debug:
         train_data = dict(sorted(train_data.items())[:53])
         valid_data = dict(sorted(valid_data.items())[:53])
@@ -710,6 +710,10 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
     samples_dict = {}
     output = defaultdict(list)
     nb_labels = 0
+
+    evaluation_schemes = dict(zip(dataset_name, split_mode))
+    split_mode = ""
+
     for name in dataset_name:
         smiles, dt, _ = load_data(input_path, name, use_side_effect,
                                   use_targets,
@@ -722,13 +726,17 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
                              transformer)  # let's assume that we will use the same transformation for all tasks
 
     for name, dt in samples_dict.items():
+
+        print(f"Dataset:{name} - split_mode: {split_mode}")
         data = _filter_pairs_both_exists(dt, filtering_set=drugs2smiles)
-        train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
+        train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, evaluation_schemes[name],
+                                                                                seed=seed,
                                                                                 test_size=test_size,
                                                                                 valid_size=valid_size,
                                                                                 n_folds=n_folds,
                                                                                 test_fold=test_fold)
         if name in ["twosides", "drugbank"]:
+            split_mode = evaluation_schemes[name]
             if debug:
                 train_data = dict(sorted(train_data.items())[:6])
                 valid_data = dict(sorted(valid_data.items())[:6])
@@ -768,13 +776,11 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     if split_mode != "random":
         unsen_dataset = MultitaskDDIDataset(task_data_lst=output["unseen"], smi=drugs2smiles, is_ordered=is_ordered,
-                                        init=init, nb_labels=nb_labels, testing=True)
+                                            init=init, nb_labels=nb_labels, testing=True)
         return train_dataset, valid_dataset, test_dataset, unsen_dataset
     else:
         return train_dataset, valid_dataset, test_dataset, []
     # print(train_dataset.get_targets())
-
-
 
 
 # if auxiliary_dataset is not None:

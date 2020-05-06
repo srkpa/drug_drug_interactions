@@ -181,6 +181,8 @@ class Trainer(ivbt.Trainer):
         # #     print("hehe")
         # else:
         #     print("je ne suis pas entrée")
+       # if hasattr(self.model, "on_multidataset"):
+
         if self.use_dataloader:
             loader = DataLoader(dataset, batch_size=batch_size)
             # if self.metrics:
@@ -195,7 +197,6 @@ class Trainer(ivbt.Trainer):
             #     _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
             # else:
             #     _, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
-
         print(len(dataset), batch_size)
         _, y_pred = self.evaluate_generator(loader, return_pred=True)
         y_true = dataset.get_targets()
@@ -203,11 +204,13 @@ class Trainer(ivbt.Trainer):
         print("true", len(y_true))
         print(y_true[0].shape, y_true[1].shape)
 
+
         if self.model.is_multitask_output:
             y_pred = list(zip(*y_pred))
             print("pred", len(y_pred))
             y_pred = [np.concatenate(ii) for ii in y_pred]
             assert len(y_true) == len(y_pred), "length (pred) != length(true); M. Learning"
+
 
         else:
             y_pred = np.concatenate(y_pred, axis=0)
@@ -219,7 +222,11 @@ class Trainer(ivbt.Trainer):
             masks  = dataset.masks
             assert len(masks) == len(y_pred), "length (pred) != length(masks)."
             y_pred  = [pred[masks[i]] for i, pred in enumerate(y_pred)]
-            print("hehe", y_pred[0].shape, y_pred[1].shape)  # il faudra garder les masks
+            print("hehe", y_pred[0].shape, y_pred[1].shape)
+            # Update
+            y_pred = [ii for ii in y_pred if len(ii) > 0]
+            y_true = [ii for ii in y_true if len(ii) > 0]
+            #print("final hehe", y_pred[0].shape, y_pred[1].shape)
 
         metrics = list(self.test_metrics.values())
         res = dict(zip(self.test_metrics.keys(), self.compute_metrics(y_pred, y_true, metrics)))

@@ -1,7 +1,7 @@
 {
   "model_params": [
     {
-      "dataloader": false,
+      "dataloader": true,
       "loss": "bce",
       "loss_params": {
         "neg_rate": 1.0,
@@ -58,15 +58,18 @@
         "twosides",
         "L1000"
       ],
-      "debug": false,
+      "debug": true,
       "decagon": false,
-      "drugname_as_id": false,
-      "init": false,
+      "drugname_as_id": true,
+      "init": true,
       "is_ordered": false,
       "label": "ml",
       "n_folds": 0,
       "seed": 42,
-      "split_mode": "random",
+      "split_mode": [
+        "leave_drugs_out",
+        "random"
+      ],
       "test_fold": 0,
       "test_size": 0.1,
       "transformer": "seq",
@@ -80,8 +83,8 @@
   ],
   "fit_params": [
     {
-      "batch_size": 32,
-      "n_epochs": 6,
+      "batch_size": 3,
+      "n_epochs": 1,
       "with_early_stopping": false
     }
   ]

@@ -6,7 +6,7 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid([
     dict(dataset_name=[["twosides", "L1000"]],
          transformer=["seq"],
-         split_mode=["random"],
+         split_mode=[['leave_drugs_out', "random"]],
          test_size=[0.10],
          valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
@@ -19,15 +19,15 @@ dataset_params = list(ParameterGrid([
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
-         debug=[False],
+         debug=[True],
          is_ordered=[False],
-         init=[False],
-         drugname_as_id=[False]
+         init=[True],
+         drugname_as_id=[True]
          )]
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[6], batch_size=[32], with_early_stopping=[False])))
+    dict(n_epochs=[1], batch_size=[3], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -77,7 +77,7 @@ model_params = list(ParameterGrid(dict(
     loss=['bce'],
     metrics_names=[['miroc', 'miaup', 'mse', 'maroc', 'maaup']],
     loss_params=loss_params,
-    dataloader=[False]
+    dataloader=[True]
 )))
 
 

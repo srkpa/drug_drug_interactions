@@ -27,7 +27,7 @@ dataset_params = list(ParameterGrid(
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[6], batch_size=[32], with_early_stopping=[False])))
+    dict(n_epochs=[100], batch_size=[32], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(

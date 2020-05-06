@@ -111,6 +111,32 @@ def visualize_loss_progress(filepath, n_epochs=100):
     plt.show()
 
 
+def load_learning_curves(log_files, ylim=0.4):
+    result = []
+    fig, ax = plt.subplots(1, 2, figsize=(8,5), sharey='row')
+
+    t = np.arange(100)
+
+    for filepath in log_files:
+        df = pd.read_table(filepath, sep="\t")
+        epoch = df["epoch"]
+        loss, val_loss = df["loss"], df["val_loss"]
+        result += [(epoch, loss, val_loss)]
+    plt.ylim(0.15,0.7)
+
+    i = 0
+    for row in ax:
+            row.plot(result[i][0], result[i][1], result[i][2])
+            row.set(xlabel='epoch')
+            i += 1
+
+    ax[0].set_title("Feat. Extractor Freezed")
+    ax[0].set_ylabel("loss")
+    ax[1].set_title('Feat Extractor not freezed')
+    #plt.show()
+    plt.savefig("transfer_learning.png")
+
+
 def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN", **kwargs):
     output = defaultdict(dict)
     bt = pd.read_csv(fp)
@@ -913,17 +939,27 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-    visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
-    visualize_loss_progress("/home/rogia/Téléchargements/cotraining_R/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
+    load_learning_curves(["/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log",
+                          "/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log"])
+
+
+    # load_learning_curves(["/home/rogia/.invivo/result/on_multi_dataset/twosides_bmnddi_d6ee066d_log.log",
+    #                       "/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log"])
+    # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cotraining_R/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
     # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
     #                         n_epochs=100)
     # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
     #                         n_epochs=100)
-    visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
-                            n_epochs=200)
-    #
-    #visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
-    exit()
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
+    #                        n_epochs=200)
+    #exit()
+    #visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log")
+   # visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log", n_epochs=76)
+    # /home/rogia/Téléchargements/same_dataset
+    # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
+    #exit()
 #    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
 #    # __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
 # #exit()

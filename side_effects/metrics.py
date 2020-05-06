@@ -5,6 +5,7 @@ import numpy as np
 import sklearn.metrics as skm
 from sklearn.metrics import mean_squared_error
 
+
 def wrapped_partial(func, **kwargs):
     partial_func = partial(func, **kwargs)
     update_wrapper(partial_func, func)
@@ -26,22 +27,33 @@ def roc_auc_score(y_pred, y_true, average):
 
 
 def mse(y_preds, y_trues):
-    _, y_pred_2 = y_preds
-    _, y_true_2 = y_trues
+    if len(y_preds) > 1 and len(y_trues) > 1:
+        _, y_pred_2 = y_preds
+        _, y_true_2 = y_trues
+    else:
+        y_pred_2, y_true_2 = y_preds[-1], y_trues[-1]
     y_true_2 = ivbm.torch_to_numpy(y_true_2).squeeze()
     y_pred_2 = ivbm.torch_to_numpy(y_pred_2)
     return mean_squared_error(y_true_2, y_pred_2)
 
 
 def roc(y_preds, y_trues, average):
-    y_pred_1, _ = y_preds
-    y_true_1,_ = y_trues
+    if len(y_preds) > 1 and len(y_trues) > 1:
+        y_pred_1, _ = y_preds
+        y_true_1, _ = y_trues
+    else:
+        y_pred_1, y_true_1 = y_preds[-1], y_trues[-1]
     return roc_auc_score(y_pred_1, y_true_1, average)
 
+
 def aup(y_preds, y_trues, average):
-    y_pred_1, _ = y_preds
-    y_true_1,_ = y_trues
+    if len(y_preds) > 1 and len(y_trues) > 1:
+        y_pred_1, _ = y_preds
+        y_true_1, _ = y_trues
+    else:
+        y_pred_1, y_true_1 = y_preds[-1], y_trues[-1]
     return auprc_score(y_pred_1, y_true_1, average)
+
 
 def auprc_score(y_pred, y_true, average):
     assert y_true.shape == y_pred.shape
