@@ -98,6 +98,14 @@ class Trainer(ivbt.Trainer):
         ivbt.Trainer.__init__(self, net=network, optimizer=optimizer, gpu=gpu,
                               loss_fn=BinaryCrossEntropyP(loss=loss, **loss_params), snapshot_path=snapshot_dir)
 
+        if kwargs.get("checkpoint_path"):
+            print("Loading checkoint file weights ....start!")
+            self.prev_checkpoint = kwargs.get("checkpoint_path")
+            weights = torch.load(self.prev_checkpoint, map_location="cpu")
+            self.set_weights(weights["net"])
+            print("Loading checkoint file weights ....End!")
+
+
         # Model.__init__(self, model=network, optimizer=optimizer,
         #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
         # self.metrics_names = metrics_names

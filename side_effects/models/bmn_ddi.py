@@ -1,11 +1,11 @@
-import torch
 import json
+
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
 from .attention import AttentionLayer
 from .features_extraction import FeaturesExtractorFactory
-
 
 
 class SelfAttentionLayer(AttentionLayer):
@@ -39,8 +39,10 @@ class SelfAttentionLayer(AttentionLayer):
 
 class BMNDDI(nn.Module):
     def __init__(self, drug_feature_extractor_params, fc_layers_dim, nb_side_effects=1, mode='concat',
-                 att_mode=None, ss_embedding_dim=None, add_feats_params=None, is_binary_output=False, testing=False, exp_prefix=None,
-                 is_multitask_output=False, on_multi_dataset=False, op_mode=None, pretrained_feature_extractor =False, trainer=None, **kwargs):
+                 att_mode=None, ss_embedding_dim=None, add_feats_params=None, is_binary_output=False, testing=False,
+                 exp_prefix=None,
+                 is_multitask_output=False, on_multi_dataset=False, op_mode=None, pretrained_feature_extractor=False,
+                 trainer=None, **kwargs):
 
         super(BMNDDI, self).__init__()
         fe_factory = FeaturesExtractorFactory()
@@ -63,7 +65,6 @@ class BMNDDI(nn.Module):
         else:
             self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
 
-
         in_size = 2 * self.drug_feature_extractor.output_dim
 
         if self.mode in ['sum', 'max', "elementwise"]:
@@ -82,9 +83,8 @@ class BMNDDI(nn.Module):
 
         # This part is not so clean ---
         # ##TOD -- make the last_layer more suitble for the task type
-        ##TOD Lpad the weight from a pretrained model
 
-        if output_dim  == 1 and (not is_binary_output):
+        if output_dim == 1 and (not is_binary_output):
             last_layer = None
         else:
             last_layer = "Sigmoid"
@@ -92,17 +92,17 @@ class BMNDDI(nn.Module):
         self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                      output_dim=output_dim, last_layer_activation=last_layer, **kwargs)
 
-        if self.is_multitask_output and op_mode is None:  # chabge op for task param
+        if self.is_multitask_output and op_mode is None:  # chabge op for task param; need to be set all the auxiliary task layer ouptus
             self.dist_fc = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                       output_dim=1, last_layer_activation=None, **kwargs)
 
     def forward(self, batch):
-        side_eff_features = None
+
         add_feats = None
         similarity = None
-        #print("ok")
+        # print("ok")
         if self.is_binary_output:
-            #print("1")
+            # print("1")
             if self.testing:
                 did1, did2, sid, drugs_a, drugs_b, side_eff = batch[:6]
                 add_feats = batch[6:]
@@ -116,39 +116,27 @@ class BMNDDI(nn.Module):
             side_eff_features = self.embedding(side_eff).squeeze()
 
         if self.is_multitask_output and self.on_multidataset:
-            #print("2")
+            # print("2") -- need to be updated since the data loader was
             task_a, task_b = batch
             drugs_a, drugs_b = task_a
             drugs_c, drugs_d = task_b
             drugs_a, drugs_b, drugs_c, drugs_d = drugs_a.view(-1, drugs_a.size(2)), drugs_b.view(-1, drugs_b.size(
                 2)), drugs_c.view(-1, drugs_c.size(2)), drugs_d.view(-1, drugs_d.size(2))
-            #print(drugs_a.shape, drugs_b.shape, drugs_c.shape, drugs_d.shape)
+            # print(drugs_a.shape, drugs_b.shape, drugs_c.shape, drugs_d.shape)
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
-            #print(features_drug1.shape, features_drug2.shape)
+            # print(features_drug1.shape, features_drug2.shape)
             features_drug3, features_drug4 = self.drug_feature_extractor(drugs_c), self.drug_feature_extractor(drugs_d)
-            #print(features_drug3.shape, features_drug4.shape)
+            # print(features_drug3.shape, features_drug4.shape)
             ddi_feats = torch.cat((features_drug1, features_drug2), 1)
             op_feats = torch.cat((features_drug3, features_drug4), 1)
-            #print(ddi_feats.shape)
+            # print(ddi_feats.shape)
             ddi = self.classifier(ddi_feats)
-            sim = self.distance_layer(features_drug3, features_drug4,
-                                      mode=self.op_mode) if self.op_mode else self.dist_fc(op_feats)
+            sim = self.fusion_layer(features_drug3, features_drug4,
+                                    mode=self.op_mode) if self.op_mode else self.dist_fc(op_feats)
             return ddi, sim
 
         if self.use_basic_model:
-            #print("3")
-            drugs_a, drugs_b, = batch[:2]
-            add_feats = batch[2:]
-            features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
-            ddi = self.distance_layer(features_drug1, features_drug2, mode=self.mode)
-            if add_feats:
-                add_feats = self.add_feature_extractor(torch.cat(add_feats, 1))
-                ddi = torch.cat((ddi, add_feats), 1)
-
-            if side_eff_features is not None:
-                ddi = torch.cat((ddi, side_eff_features), 1)
-            out = self.classifier(ddi)
-            return out
+            return self.bmn_basic(batch)
 
         if self.is_multitask_output and not self.on_multidataset:
             drugs_a, drugs_b = batch
@@ -156,8 +144,8 @@ class BMNDDI(nn.Module):
             features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
             feats = torch.cat((features_drug1, features_drug2), 1)
             ddi = self.classifier(feats)
-            sim = self.distance_layer(features_drug1, features_drug2,
-                                      mode=self.op_mode) if self.op_mode else self.dist_fc(feats)
+            sim = self.fusion_layer(features_drug1, features_drug2,
+                                    mode=self.op_mode) if self.op_mode else self.dist_fc(feats)
             return ddi, sim
 
     def set_graph(self, nodes, edges):
@@ -166,7 +154,7 @@ class BMNDDI(nn.Module):
         self.edges = edges
         self.adj_mat = (edges.sum(2) > 0).float()
 
-    def distance_layer(self, vec1, vec2, mode="cc"):
+    def fusion_layer(self, vec1, vec2, mode="cc"):
         if mode == 'cos':
             vec = F.cosine_similarity(
                 vec1 + 1e-16, vec2 + 1e-16, dim=-1)
@@ -200,3 +188,17 @@ class BMNDDI(nn.Module):
                 param.requires_grad = False
         return model.model.drug_feature_extractor
 
+    def bmn_basic(self, batch):
+      #  side_eff_features = None
+        drugs_a, drugs_b, = batch[:2]
+        add_feats = batch[2:]
+        features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
+        ddi = self.fusion_layer(features_drug1, features_drug2, mode=self.mode)
+        if add_feats:
+            add_feats = self.add_feature_extractor(torch.cat(add_feats, 1))
+            ddi = torch.cat((ddi, add_feats), 1)
+        #
+        # if side_eff_features is not None:
+        #     ddi = torch.cat((ddi, side_eff_features), 1)
+        side_effect = self.classifier(ddi)
+        return side_effect

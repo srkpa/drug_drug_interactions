@@ -939,15 +939,26 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
-    load_learning_curves(["/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log",
-                          "/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log"])
+    # -5
+   # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_3c0355b2_log.log")
+    # -6
+    #visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_d60506d4_log.log")
+    # -4
+    visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_log.log", n_epochs=20)
+    import pickle as pk
+    print(pk.load(open("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_res.pkl", "rb")))
+    print(pk.load(open("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99-res.pkl", "rb")))
+    # exit()
+    # load_learning_curves(["/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log",
+    #                       "/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log"])
 
 
     # load_learning_curves(["/home/rogia/.invivo/result/on_multi_dataset/twosides_bmnddi_d6ee066d_log.log",
     #                       "/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log"])
     # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
-    # visualize_loss_progress("/home/rogia/Téléchargements/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=100)
-    # visualize_loss_progress("/home/rogia/Téléchargements/cotraining_R/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
+    visualize_loss_progress("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=20)
+    print(pk.load(open("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_res.pkl", "rb")))
+    # visualize_loss_progress("/home/rogia/Téléchargements/RegT/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
     # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
     #                         n_epochs=100)
     # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",

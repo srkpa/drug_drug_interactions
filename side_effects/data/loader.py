@@ -504,11 +504,22 @@ class MultitaskDDIDataset(Dataset):
         return self.min_len
 
     def init_samples(self, task_samples_list):
-        drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
         if not self.is_ordered:
+            drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
             tmp = [x for tk in task_samples_list[1:] for x in tk.keys()]
             dup_pairs = set([input[::-1] for input in drug_pairs if input[::-1] in tmp])
+            print("Len of dup. pairs-->", len(dup_pairs))
             drug_pairs -= dup_pairs
+
+        else:
+            for dp in task_samples_list[0].keys():
+                if dp[::-1] in task_samples_list[0]:
+                    if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
+                        print("First case")
+                        task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
+            drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
+            print("ppp", list(drug_pairs)[0:1])
+
         return list(drug_pairs)
 
     def __getitem__(self, item):
@@ -519,7 +530,7 @@ class MultitaskDDIDataset(Dataset):
                 label = self.raw_data[i].get((drug_1, drug_2), [np.nan] * self.target_sizes[i])
                 label = torch.tensor(label)
                 if (torch.isnan(label).sum() > 0) and not self.is_ordered:
-                    label = self.raw_data[i].get((drug_1, drug_2), torch.tensor([np.nan] * self.target_sizes[i]))
+                    label = self.raw_data[i].get((drug_2, drug_1), torch.tensor([np.nan] * self.target_sizes[i]))
                 # if (torch.isnan(label).sum() == 0):
                 label = to_tensor(label, gpu=self.gpu)
                 labels += [label]
@@ -727,7 +738,7 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     for name, dt in samples_dict.items():
 
-        print(f"Dataset:{name} - split_mode: {split_mode}")
+        print(f"Dataset:{name} - split_mode: {evaluation_schemes[name]}")
         data = _filter_pairs_both_exists(dt, filtering_set=drugs2smiles)
         train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, evaluation_schemes[name],
                                                                                 seed=seed,
