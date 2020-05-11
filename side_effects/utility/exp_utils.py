@@ -100,7 +100,7 @@ def _unpack_results(folder):
     return expt_config, expt_results, y_true, y_preds
 
 
-def visualize_loss_progress(filepath, n_epochs=100):
+def visualize_loss_progress(filepath, n_epochs=100, title=""):
     df = pd.read_table(filepath, sep="\t")
     seconds = df['time'][0]
     total_time = str(datetime.timedelta(seconds=seconds * n_epochs))
@@ -108,12 +108,14 @@ def visualize_loss_progress(filepath, n_epochs=100):
     print(f"Total time needeed over {n_epochs}: ", total_time)
     plt.figure()
     df.plot(x="epoch", y=["loss", "val_loss"])
-    plt.show()
+    plt.title(f"dropout rate = {str(title)}")
+    # plt.show()
+    plt.savefig(f"dropout rate = {str(title)}" + ".png")
 
 
 def load_learning_curves(log_files, ylim=0.4):
     result = []
-    fig, ax = plt.subplots(1, 2, figsize=(8,5), sharey='row')
+    fig, ax = plt.subplots(1, 2, figsize=(8, 5), sharey='row')
 
     t = np.arange(100)
 
@@ -122,18 +124,18 @@ def load_learning_curves(log_files, ylim=0.4):
         epoch = df["epoch"]
         loss, val_loss = df["loss"], df["val_loss"]
         result += [(epoch, loss, val_loss)]
-    plt.ylim(0.15,0.7)
+    plt.ylim(0.15, 0.7)
 
     i = 0
     for row in ax:
-            row.plot(result[i][0], result[i][1], result[i][2])
-            row.set(xlabel='epoch')
-            i += 1
+        row.plot(result[i][0], result[i][1], result[i][2])
+        row.set(xlabel='epoch')
+        i += 1
 
     ax[0].set_title("Feat. Extractor Freezed")
     ax[0].set_ylabel("loss")
     ax[1].set_title('Feat Extractor not freezed')
-    #plt.show()
+    # plt.show()
     plt.savefig("transfer_learning.png")
 
 
@@ -940,37 +942,67 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 if __name__ == '__main__':
     # -5
-   # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_3c0355b2_log.log")
+    # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_3c0355b2_log.log")
     # -6
-    #visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_d60506d4_log.log")
+    # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_d60506d4_log.log")
     # -4
-    visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_log.log", n_epochs=20)
+    visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_log.log",
+                            n_epochs=20, title="C1-No Reg.")
     import pickle as pk
+
     print(pk.load(open("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_res.pkl", "rb")))
     print(pk.load(open("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99-res.pkl", "rb")))
     # exit()
     # load_learning_curves(["/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log",
     #                       "/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log"])
 
+    visualize_loss_progress("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_log.log",
+                            n_epochs=20, title=json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_params.json"))[
+            "model_params.network_params.dropout"])
+
+    print(json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_params.json"))[
+            "model_params.network_params.dropout"])
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_res.pkl", "rb")))
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92-res.pkl", "rb")))
+    visualize_loss_progress("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_log.log",
+                            n_epochs=20, title=json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_params.json"))[
+                                "model_params.network_params.dropout"])
+    print(json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_params.json"))[
+                                "model_params.network_params.dropout"])
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_res.pkl", "rb")))
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40-res.pkl", "rb")))
+    visualize_loss_progress("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_log.log",
+                            n_epochs=20,  title=json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_params.json"))[
+                                "model_params.network_params.dropout"])
+    print(json.load(
+            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_params.json"))[
+                                "model_params.network_params.dropout"])
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_res.pkl", "rb")))
+    print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3-res.pkl", "rb")))
 
     # load_learning_curves(["/home/rogia/.invivo/result/on_multi_dataset/twosides_bmnddi_d6ee066d_log.log",
     #                       "/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log"])
     # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
-    visualize_loss_progress("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=20)
-    print(pk.load(open("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_res.pkl", "rb")))
-    # visualize_loss_progress("/home/rogia/Téléchargements/RegT/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
-    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
-    #                         n_epochs=100)
-    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
-    #                         n_epochs=100)
-    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
-    #                        n_epochs=200)
-    #exit()
-    #visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log")
-   # visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log", n_epochs=76)
-    # /home/rogia/Téléchargements/same_dataset
-    # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
-    #exit()
+# visualize_loss_progress("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=20)
+# print(pk.load(open("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_res.pkl", "rb")))
+# visualize_loss_progress("/home/rogia/Téléchargements/RegT/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
+# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
+#                         n_epochs=100)
+# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
+#                         n_epochs=100)
+# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
+#                        n_epochs=200)
+# exit()
+# visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log")
+# visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log", n_epochs=76)
+# /home/rogia/Téléchargements/same_dataset
+# visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
+# exit()
 #    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
 #    # __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
 # #exit()

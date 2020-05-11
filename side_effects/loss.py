@@ -97,18 +97,23 @@ class BinaryCrossEntropyP(Module):
             loss = sum([self.losses_fn[i](y_pred, y_true) for i, (y_pred, y_true) in enumerate(zip(pred_y, true_y))])
 
         elif self.use_negative_sampling and self.training:
-            mask = (true_y == 1).float()
+            #mask = (true_y == 1).float()
+            mask2 = (true_y == 1)
             for i, col in enumerate(true_y.t()):
                 nb_pos = int(col.sum())
                 if nb_pos > 0:
                     idx = Categorical((col == 0).float().flatten()).sample((int(nb_pos * self.neg_rate),))
-                    mask[idx, i] = 1.0
-            loss = (binary_cross_entropy(pred_y, true_y, reduction='none') * mask).mean()
+                    #mask[idx, i] = 1.0
+                    mask2[idx, i] = True
+
+            loss = binary_cross_entropy(pred_y[mask2], true_y[mask2])
+            #loss2 = (binary_cross_entropy(pred_y, true_y, reduction='none') * mask).mean()
+            #print("new loss ", loss, "old loss ", loss2)
 
         elif self.use_weighted_loss and self.training:
             loss = WeightedBinaryCrossEntropy1(**self.weighted_loss_params)(pred_y, true_y)
 
-        elif self.use_sampling and self.training:
+        elif self.use_sampling and self.training: # a little bit conf
             mask = (true_y == 1).float()
             for i, row in enumerate(true_y):
                 nb_neg = int(row.sum() * self.neg_rate)
