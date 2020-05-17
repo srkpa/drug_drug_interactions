@@ -224,7 +224,7 @@ class DDIdataset(Dataset):
                  build_graph=False, graph_drugs_mapping=None, gene_net=None,
                  drug_gene_net=None, decagon=False,
                  drugse=None, drugstargets=None, drugspharm=None, purpose="feed-forward",
-                 negative_sampling=False, density=False):
+                 negative_sampling=False, density=False, **kwargs):
 
         self.samples = [(d1, d2, samples[(d1, d2)]) for (d1, d2) in samples]
         self.drug_to_smiles = drug_to_smiles
@@ -242,6 +242,17 @@ class DDIdataset(Dataset):
         self.has_purpose = purpose
         self.neg_sampling = negative_sampling
         self.sampler = density
+        self.use_randomized_smiles = kwargs.get("randomized_smiles", False)
+
+        if self.use_randomized_smiles:
+            self.rand_smile_to_dict = defaultdict(list)
+            canoniq_drugs = [drug_id for drug_id in self.drug_to_smiles if not re.match(".+-r\d+", drug_id)]
+
+            for drug_id in canoniq_drugs:
+                for dg in self.drug_to_smiles:
+                    if dg.startswith(f"{drug_id}-r"):
+                        self.rand_smile_to_dict[drug_id].append(dg)
+
         if self.has_graph:
             self.build_graph()
 
@@ -255,6 +266,15 @@ class DDIdataset(Dataset):
         else:
             target = label
         if self.graph_nodes_mapping is None:
+            if self.use_randomized_smiles:
+                random_drugs1 = self.rand_smile_to_dict[drug1_id] + [drug1_id]
+                random_drugs2 = self.rand_smile_to_dict[drug2_id] + [drug2_id]
+                #print("I m here", drug1_id, drug2_id)
+                drug1_id, drug2_id = random.choice(random_drugs1), random.choice(random_drugs2)
+                #print(random_drugs1, drug1_id)
+                #print(random_drugs2, drug2_id)
+                #print("------------")
+
             drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
         elif self.has_graph or self.decagon:
             drug1, drug2 = np.array([self.graph_nodes_mapping[drug1_id]]), np.array(
@@ -518,10 +538,10 @@ class MultitaskDDIDataset(Dataset):
         #
         # else:
         for dp in task_samples_list[0].keys():
-                if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
-                    task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
-                    if (self.is_ordered and  dp[::-1] not in task_samples_list[0]) or (not self.is_ordered):
-                        del (task_samples_list[-1][dp[::-1]])
+            if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
+                task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
+                if (self.is_ordered and dp[::-1] not in task_samples_list[0]) or (not self.is_ordered):
+                    del (task_samples_list[-1][dp[::-1]])
 
         drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
 
@@ -645,7 +665,7 @@ def _mol_repr(input_path, drugs2smiles, transformer_fn):
 
 
 def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False, use_pharm=False,
-              use_clusters=False, remove_syn=False, use_as_filter="", drugname_as_id=False):
+              use_clusters=False, remove_syn=False, use_as_filter="", drugname_as_id=False, randomized_smiles=0):
     if dataset_name == "mixed":
         data, drugs2smiles = join_datasets()
     else:
@@ -661,6 +681,26 @@ def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False
             data = {(drugs2name[d1], drugs2name[d2]): val for ((d1, d2), val) in data.items() if
                     d1 in drugs2name and d2 in drugs2name}
             drugs2smiles = {drugs2name[idx]: smi for idx, smi in drugs2smiles.items()}
+
+    print("Before random smiles gen. nb drugs", len(drugs2smiles))
+    if randomized_smiles != 0:
+        rand_dr = {}
+        for id, smile in drugs2smiles.items():
+            try:
+                mol = Chem.MolFromSmiles(smile)
+                rds = list(
+                    set([Chem.MolToSmiles(mol, doRandom=True, canonical=False) for i in range(randomized_smiles)]))
+                if smile in rds:
+                    rds.remove(smile)
+                print(id, len(rds))
+                for i, rs in enumerate(rds):
+                    rand_dr[f"{id}-r{i}"] = rs
+            except:
+                pass
+        drugs2smiles.update(rand_dr)
+
+    print("After random smiles gen. nb drugs", len(drugs2smiles))
+
     drug_offsides = {}
     if use_side_effect:
         drug2se = load_mono_se()
@@ -694,13 +734,13 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         remove_syn=False, **kwargs):
     drugs2smiles, data, (
         drug_offsides, drug2targets, drugs2pharm) = load_data(input_path, dataset_name, use_side_effect, use_targets,
-                                                              use_pharm, use_clusters, remove_syn, use_as_filter)
+                                                              use_pharm, use_clusters, remove_syn, use_as_filter,
+                                                              randomized_smiles=kwargs.get("randomized_smiles", 0))
     drugs2smiles = _mol_repr(input_path, drugs2smiles, transformer)
     data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
-    # using randomized smiles
 
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
 
@@ -716,7 +756,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
         f"Dataset:\nlen train: {len(train_data)}\nlen test_ddi: {len(test_data)}\nlen valid: {len(valid_data)}\nlen unseen: {len(unseen_data)}")
 
     train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
-                               drugse=drug_offsides, density=density)
+                               drugse=drug_offsides, density=density,
+                               randomized_smiles=kwargs.get("randomized_smiles", False))
     valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, density=density)
     test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
@@ -1067,20 +1108,21 @@ def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
             yield batch_x, batch_y
         loop += 1
 
-if __name__ == '__main__':
-    mol = Chem.MolFromSmiles('CC(N)C1CC1')
-    smis = []
-    for i in range(100):
-        smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
-
-    smis_set = list(set(smis))
-    smis_set.append("C[N+](C)(C)CCO")
-    print(len(smis_set))
-    print(smis_set[1])
-    transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=False)
-    tf = transformer.fit_transform(X=smis_set)
-    print(tf)
-
-    # generer toutes les molecules pour un smiles  donnes avant de passer à la rpresentation de  la molecule
-
 #
+# if __name__ == '__main__':
+#     mol = Chem.MolFromSmiles('CC(N)C1CC1')
+#     smis = []
+#     for i in range(100):
+#         smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
+#
+#     smis_set = list(set(smis))
+#     smis_set.append("C[N+](C)(C)CCO")
+#     print(len(smis_set))
+#     print(smis_set[1])
+#     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=False)
+#     tf = transformer.fit_transform(X=smis_set)
+#     print(tf)
+#
+#     # generer toutes les molecules pour un smiles  donnes avant de passer à la rpresentation de  la molecule
+#
+# #

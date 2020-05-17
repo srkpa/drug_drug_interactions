@@ -115,8 +115,9 @@ class BMNDDI(nn.Module):
                     side_eff = torch.cat(side_eff)
             side_eff_features = self.embedding(side_eff).squeeze()
 
+        # this part wil be removed soon
         if self.is_multitask_output and self.on_multidataset:
-            # print("2") -- need to be updated since the data loader was
+            # print("2") -- need to be updated since the data loader was removed
             task_a, task_b = batch
             drugs_a, drugs_b = task_a
             drugs_c, drugs_d = task_b

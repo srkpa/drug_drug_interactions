@@ -100,7 +100,7 @@ def _unpack_results(folder):
     return expt_config, expt_results, y_true, y_preds
 
 
-def visualize_loss_progress(filepath, n_epochs=100, title=""):
+def visualize_loss_progress(filepath, n_epochs=20, title=""):
     df = pd.read_table(filepath, sep="\t")
     seconds = df['time'][0]
     total_time = str(datetime.timedelta(seconds=seconds * n_epochs))
@@ -944,21 +944,23 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 if __name__ == '__main__':
 
-    summarize_experiments(fp="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv")
-    exit()
-
-    visualize_loss_progress("/home/rogia/.invivo/result/NegS/twosides_bmnddi_ea12b738_log.log")
-
-    exit()
-
-    summarize_experiments("/home/rogia/.invivo/result/res", cm=False)
-    get_best_hp()
-    exit()
+    # summarize_experiments(fp="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv")
+    # exit()
+    #
+    visualize_loss_progress("/home/rogia/.invivo/result/NegS/twosides_bmnddi_dd7a577f_log.log")
+    #
+    # exit()
+    #
+    # summarize_experiments("/home/rogia/.invivo/result/res", cm=False)
+    # get_best_hp()
+    # exit()
     # -5
     # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_3c0355b2_log.log")
     # -6
     # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_d60506d4_log.log")
     # -4
+
+    exit()
     visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99_log.log",
                             n_epochs=20, title="C1-No Reg.")
     import pickle as pk
