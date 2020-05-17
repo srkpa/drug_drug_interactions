@@ -108,9 +108,10 @@ def visualize_loss_progress(filepath, n_epochs=100, title=""):
     print(f"Total time needeed over {n_epochs}: ", total_time)
     plt.figure()
     df.plot(x="epoch", y=["loss", "val_loss"])
-    plt.title(f"dropout rate = {str(title)}")
-    # plt.show()
-    plt.savefig(f"dropout rate = {str(title)}" + ".png")
+    plt.show()
+    # plt.title(f"dropout rate = {str(title)}")
+    # # plt.show()
+    # plt.savefig(f"dropout rate = {str(title)}" + ".png")
 
 
 def load_learning_curves(log_files, ylim=0.4):
@@ -158,17 +159,6 @@ def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN", **kwargs)
             n_samples, x, ap, roc, f1 = res
             output[dataset][split].update(dict(total=n_samples, x=x, roc=roc, ap=ap, f1=f1))
     return output
-    # for row in ax:
-    #     for col in row:
-    #         dataset, task_id, split, path = c[i]
-    #         print(split)
-    #         scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, ax=col)
-    #         i += 1
-    # plt.show()
-    # plt.savefig(f"../../results/scores.png")
-
-
-# plt.show()
 
 
 # /media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json -- best result
@@ -388,44 +378,56 @@ def __loop_through_exp(path, compute_metric=True):
     return outs
 
 
-def summarize_experiments(main_dir=None, cm=True, save=True):
-    main_dir = f"{os.path.expanduser('~')}/expts" if main_dir is None else main_dir
-    rand = []
-    for i, root in enumerate(os.listdir(main_dir)):
-        path = os.path.join(main_dir, root)
-        if os.path.isdir(path):
-            print("__Path__: ", path)
-            res = __loop_through_exp(path, compute_metric=cm)
-            print(res)
-            if len(res) > 0:
-                rand.extend(res)
+def summarize_experiments(main_dir=None, cm=True, save=False, fp=""):
 
-    if rand:
-        out = pd.DataFrame(rand)
-        print(out[out["rescale"] == True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
-        exit()
-        if save:
-            out.to_csv("../../results/all_raw-exp-res.csv")
-        modes = out["split_mode"].unique()
-        out["split_mode"].fillna(inplace=True, value="null")
-        out["fmode"].fillna(inplace=True, value="null")
-        print("modes", modes)
-        for mod in modes:
+    if os.path.isfile(fp):
+        out = pd.read_csv(fp, index_col=0)
+        print(list(out))
+
+    else:
+        main_dir = f"{os.path.expanduser('~')}/expts" if main_dir is None else main_dir
+        rand = []
+        for i, root in enumerate(os.listdir(main_dir)):
+            path = os.path.join(main_dir, root)
+            if os.path.isdir(path):
+                print("__Path__: ", path)
+                res = __loop_through_exp(path, compute_metric=cm)
+                print(res)
+                if len(res) > 0:
+                    rand.extend(res)
+            if rand:
+                out = pd.DataFrame(rand)
+                if save:
+                    out.to_csv("../../results/all_raw-exp-res.csv")
+
+
+    #print(out[out["rescale"] == True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
+
+    modes = out["split_mode"].unique()
+    out["split_mode"].fillna(inplace=True, value="null")
+    out["fmode"].fillna(inplace=True, value="null")
+    print("modes", modes)
+    for mod in modes:
             df = out[out["split_mode"] == mod]
             t = df.groupby(['dataset_name', 'model_name', 'split_mode', "fmode"], as_index=True)
             print("t", t)
-            t_mean = t[["micro_roc", "micro_auprc"]].mean()
+            t_mean = t[['macro_roc', 'macro_auprc',"micro_roc", "micro_auprc"]].mean()
             print("mean", t_mean)
-            t_std = t[["micro_roc", "micro_auprc"]].std()
+            t_std = t[['macro_roc', 'macro_auprc', "micro_roc", "micro_auprc"]].std()
             print("std", t_std)
             t_mean['micro_roc'] = t_mean[["micro_roc"]].round(3).astype(str) + " ± " + t_std[["micro_roc"]].round(
                 3).astype(
                 str)
             t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
                 3).astype(str)
-            if save:
-                t_mean.to_csv(f"../../results/{mod}.csv")
-    return rand
+            t_mean['macro_roc'] = t_mean[["macro_roc"]].round(3).astype(str) + " ± " + t_std[["macro_roc"]].round(
+                3).astype(
+                str)
+            t_mean['macro_auprc'] = t_mean[["macro_auprc"]].round(3).astype(str) + " ± " + t_std[["macro_auprc"]].round(
+                3).astype(str)
+
+            t_mean.to_csv(f"../../results/{mod}.csv")
+    #return rand
 
 
 def __collect_data__(config_file, return_config=False):
@@ -436,7 +438,7 @@ def __collect_data__(config_file, return_config=False):
     dataset_params = {key: val for key, val in dataset_params.items() if
                       key in get_data_partitions.__code__.co_varnames}
     dataset_name = dataset_params["dataset_name"]
-    input_path = f"{cach_path}/datasets-ressources/DDI/{dataset_name}"
+    input_path = f"{cach_path}/datasets-ressources/DDI/"    # {dataset_name}
     dataset_params["input_path"] = input_path
     train, valid, test1, test2 = get_data_partitions(**dataset_params)
     if return_config:
@@ -941,6 +943,17 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 
 
 if __name__ == '__main__':
+
+    summarize_experiments(fp="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv")
+    exit()
+
+    visualize_loss_progress("/home/rogia/.invivo/result/NegS/twosides_bmnddi_ea12b738_log.log")
+
+    exit()
+
+    summarize_experiments("/home/rogia/.invivo/result/res", cm=False)
+    get_best_hp()
+    exit()
     # -5
     # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset_LO/twosides_L1000_bmnddi_3c0355b2_log.log")
     # -6

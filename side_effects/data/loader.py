@@ -283,15 +283,19 @@ class DDIdataset(Dataset):
                    to_tensor(self.drugs_targets[drug1_id], self.gpu),
                    to_tensor(self.drugs_targets[drug2_id], self.gpu)), to_tensor(target, self.gpu)
         elif not self.data_type:
+            print(1)
             if not (isinstance(drug1, dgl.DGLGraph) and isinstance(drug2, dgl.DGLGraph)):
+                print(11)
                 if isinstance(drug1, tuple) and isinstance(drug2, tuple) and all(
                         [isinstance(x, (torch.Tensor, np.ndarray)) for x in drug1 + drug2]):
+                    print(111)
                     drug1 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug1))
                     drug2 = tuple(map(wrapped_partial(to_tensor, gpu=self.gpu), drug2))
                     target = to_tensor(np.expand_dims(target, axis=0), self.gpu)
                     res = ((drug1, drug2), to_tensor(target, self.gpu))
 
             else:
+                print(2)
                 res = ((drug1, drug2), to_tensor(np.expand_dims(target, axis=0), self.gpu))
         else:
 
@@ -469,7 +473,7 @@ class MultitaskDDIDataset(Dataset):
         self.nb_labels = nb_labels
         self.testing = testing
         self.masks = None
-
+        self.is_graph = kwargs.get("graph", False)
         if self.min_len != 0:
             self.ratios = [round(len(task) / self.min_len) for task in task_data_lst]
             print(self.ratios)
@@ -477,8 +481,10 @@ class MultitaskDDIDataset(Dataset):
         if init:
             self.samples = self.init_samples(task_data_lst)
         else:
-
             self.batch_generator = generator_fn
+
+        if self.is_graph:
+            self.collate_fn = self.collate_drug_pairs
 
         # else:
         #     if self.min_len * max(self.ratios) > self.max_len:
@@ -494,8 +500,7 @@ class MultitaskDDIDataset(Dataset):
         if testing:
             self.get_targets()
 
-       # print(self.target_sizes)
-
+    # print(self.target_sizes)
 
     def __len__(self):
         if self.is_merged:
@@ -513,12 +518,18 @@ class MultitaskDDIDataset(Dataset):
 
         else:
             for dp in task_samples_list[0].keys():
+
                 if dp[::-1] in task_samples_list[0]:
                     if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
                         print("First case")
                         task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
+                else:
+                    print("2nd case....")
+                    if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
+                        task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
+                        del (task_samples_list[-1][::-1])
+
             drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
-            print("ppp", list(drug_pairs)[0:1])
 
         return list(drug_pairs)
 
@@ -535,6 +546,10 @@ class MultitaskDDIDataset(Dataset):
                 label = to_tensor(label, gpu=self.gpu)
                 labels += [label]
             drug_1, drug_2 = self.drugs2smi[drug_1], self.drugs2smi[drug_2]
+
+            if isinstance(drug_1, dgl.DGLGraph) and isinstance(drug_2, dgl.DGLGraph):
+                return (drug_1, drug_2, labels)
+
             return (to_tensor(drug_1, gpu=self.gpu), to_tensor(drug_2, gpu=self.gpu)), labels
         else:
             x, y = [], []
@@ -602,6 +617,12 @@ class MultitaskDDIDataset(Dataset):
 
         return targets
 
+    def collate_drug_pairs(self, batch):
+        drug_1, drug_2, labels = list(zip(*batch))
+        label1, label2 = list(zip(*labels))
+        label1, label2 = torch.stack(label1), torch.stack(label2)
+        return (drug_1, drug_2), (label1, label2)
+
 
 def _rank(data, v=100):
     from collections import Counter
@@ -643,7 +664,8 @@ def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False
         if dataset_name == "L1000":
             data = {(d1, d2): [float(x) / 100 for x in y] for (d1, d2), y in data.items()}
         if drugname_as_id:
-            data = {(drugs2name[d1], drugs2name[d2]): val for ((d1, d2), val) in data.items()}
+            data = {(drugs2name[d1], drugs2name[d2]): val for ((d1, d2), val) in data.items() if
+                    d1 in drugs2name and d2 in drugs2name}
             drugs2smiles = {drugs2name[idx]: smi for idx, smi in drugs2smiles.items()}
     drug_offsides = {}
     if use_side_effect:
@@ -684,6 +706,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
+    # using randomized smiles
+
     labels = list(train_data.values()) + list(test_data.values()) + list(valid_data.values())
 
     mbl = MultiLabelBinarizer().fit(labels) if dataset_name in ["twosides", "drugbank"] else None
@@ -779,15 +803,15 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
     assert len(samples_dict) == len(output["train"]) == len(output["valid"]) == len(output["test"]) == len(output[
                                                                                                                "unseen"]), "Length Check failed!"
     train_dataset = MultitaskDDIDataset(task_data_lst=output["train"], smi=drugs2smiles, is_ordered=is_ordered,
-                                        init=init, nb_labels=nb_labels)
+                                        init=init, nb_labels=nb_labels, **kwargs)
     valid_dataset = MultitaskDDIDataset(task_data_lst=output["valid"], smi=drugs2smiles, is_ordered=is_ordered,
-                                        init=init, nb_labels=nb_labels)
+                                        init=init, nb_labels=nb_labels, **kwargs)
     test_dataset = MultitaskDDIDataset(task_data_lst=output["test"], smi=drugs2smiles, is_ordered=is_ordered,
-                                       init=init, nb_labels=nb_labels, testing=True)
+                                       init=init, nb_labels=nb_labels, testing=True, **kwargs)
 
     if split_mode != "random":
         unsen_dataset = MultitaskDDIDataset(task_data_lst=output["unseen"], smi=drugs2smiles, is_ordered=is_ordered,
-                                            init=init, nb_labels=nb_labels, testing=True)
+                                            init=init, nb_labels=nb_labels, testing=True, **kwargs)
         return train_dataset, valid_dataset, test_dataset, unsen_dataset
     else:
         return train_dataset, valid_dataset, test_dataset, []
@@ -1048,3 +1072,15 @@ def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
             assert len(batch_x) == len(batch_y) == len(datasets), "Must be equal to len(tasks)!"
             yield batch_x, batch_y
         loop += 1
+
+# if __name__ == '__main__':
+#     mol = Chem.MolFromSmiles('CC(N)C1CC1')
+#     smis = []
+#     for i in range(100):
+#         smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
+#
+#     smis_set = list(set(smis))
+#     print(smis_set)
+#     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=False)
+#     tf = transformer.fit()
+# #

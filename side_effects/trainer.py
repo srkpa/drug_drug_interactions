@@ -128,6 +128,7 @@ class Trainer(ivbt.Trainer):
         if hasattr(train_dataset, "collate_fn") and callable(train_dataset.collate_fn):
             collate_fn = train_dataset.collate_fn
 
+
         if hasattr(train_dataset, "batch_generator"):
             generator = train_dataset.batch_generator
 
@@ -157,12 +158,12 @@ class Trainer(ivbt.Trainer):
         if self.use_dataloader:
             train_loader = DataLoader(train_dataset, batch_size=batch_size, collate_fn=collate_fn)
             valid_loader = DataLoader(valid_dataset, batch_size=batch_size, collate_fn=collate_fn)
+            self.collate_fn = collate_fn
             self.history = self.fit_generator(train_generator=train_loader,
                                               valid_generator=valid_loader,
                                               epochs=n_epochs,
                                               callbacks=callbacks)
         else:
-
             step_train, step_valid = int(len(train_dataset) / batch_size), int(len(valid_dataset) / batch_size)
             self.history = self.fit(train_dataset, valid_dataset, epochs=n_epochs, steps_per_epoch=step_train,
                                     validation_steps=step_valid, generator_fn=generator,
@@ -192,7 +193,7 @@ class Trainer(ivbt.Trainer):
        # if hasattr(self.model, "on_multidataset"):
 
         if self.use_dataloader:
-            loader = DataLoader(dataset, batch_size=batch_size)
+            loader = DataLoader(dataset, batch_size=batch_size, collate_fn=self.collate_fn)
             # if self.metrics:
             #     _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
             # else:

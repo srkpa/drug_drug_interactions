@@ -392,11 +392,11 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
-        # ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
-        #                   ax=ax1
-        #                  )
-        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
-                    ax=ax1, kind="line" ,ci="sd")
+        ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+                          ax=ax1
+                         )
+        # sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+        #             ax=ax1, kind="line" ,ci="sd")
 
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
@@ -692,6 +692,7 @@ def compute_phenotype_cooccurence(
 #     plt.show()
 
 if __name__ == '__main__':
+    plot_test_perf("../../results/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_data_stats()
     # exit()
     # plot_data_distribution()
@@ -720,7 +721,7 @@ if __name__ == '__main__':
     # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
 
     # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="f1")
-    plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
+    #plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
     exit()
 
