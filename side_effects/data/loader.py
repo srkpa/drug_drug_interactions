@@ -509,27 +509,21 @@ class MultitaskDDIDataset(Dataset):
         return self.min_len
 
     def init_samples(self, task_samples_list):
-        if not self.is_ordered:
-            drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
-            tmp = [x for tk in task_samples_list[1:] for x in tk.keys()]
-            dup_pairs = set([input[::-1] for input in drug_pairs if input[::-1] in tmp])
-            print("Len of dup. pairs-->", len(dup_pairs))
-            drug_pairs -= dup_pairs
+        # if not self.is_ordered:
+        #     drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
+        #     tmp = [x for tk in task_samples_list[1:] for x in tk.keys()]
+        #     dup_pairs = set([input[::-1] for input in drug_pairs if input[::-1] in tmp])
+        #     print("Len of dup. pairs-->", len(dup_pairs))
+        #     drug_pairs -= dup_pairs
+        #
+        # else:
+        for dp in task_samples_list[0].keys():
+                if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
+                    task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
+                    if (self.is_ordered and  dp[::-1] not in task_samples_list[0]) or (not self.is_ordered):
+                        del (task_samples_list[-1][dp[::-1]])
 
-        else:
-            for dp in task_samples_list[0].keys():
-
-                if dp[::-1] in task_samples_list[0]:
-                    if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
-                        print("First case")
-                        task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
-                else:
-                    print("2nd case....")
-                    if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
-                        task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
-                        del (task_samples_list[-1][::-1])
-
-            drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
+        drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
 
         return list(drug_pairs)
 
@@ -540,8 +534,8 @@ class MultitaskDDIDataset(Dataset):
             for i in range(self.nb_tasks):
                 label = self.raw_data[i].get((drug_1, drug_2), [np.nan] * self.target_sizes[i])
                 label = torch.tensor(label)
-                if (torch.isnan(label).sum() > 0) and not self.is_ordered:
-                    label = self.raw_data[i].get((drug_2, drug_1), torch.tensor([np.nan] * self.target_sizes[i]))
+                # if (torch.isnan(label).sum() > 0) and not self.is_ordered:
+                #     label = self.raw_data[i].get((drug_2, drug_1), torch.tensor([np.nan] * self.target_sizes[i]))
                 # if (torch.isnan(label).sum() == 0):
                 label = to_tensor(label, gpu=self.gpu)
                 labels += [label]
@@ -1073,14 +1067,20 @@ def generator_fn(datasets, batch_size=32, infinite=True, shuffle=True):
             yield batch_x, batch_y
         loop += 1
 
-# if __name__ == '__main__':
-#     mol = Chem.MolFromSmiles('CC(N)C1CC1')
-#     smis = []
-#     for i in range(100):
-#         smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
+if __name__ == '__main__':
+    mol = Chem.MolFromSmiles('CC(N)C1CC1')
+    smis = []
+    for i in range(100):
+        smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
+
+    smis_set = list(set(smis))
+    smis_set.append("C[N+](C)(C)CCO")
+    print(len(smis_set))
+    print(smis_set[1])
+    transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=False)
+    tf = transformer.fit_transform(X=smis_set)
+    print(tf)
+
+    # generer toutes les molecules pour un smiles  donnes avant de passer à la rpresentation de  la molecule
+
 #
-#     smis_set = list(set(smis))
-#     print(smis_set)
-#     transformer = SequenceTransformer(alphabet=SMILES_ALPHABET, one_hot=False)
-#     tf = transformer.fit()
-# #
