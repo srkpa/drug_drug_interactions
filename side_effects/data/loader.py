@@ -1001,7 +1001,7 @@ def replace_by_drug_name(dataset_name):
 
 def group_by_concept(input_path, data):
     output = defaultdict(set)
-    with open(f"{input_path}/twosides_umls_fin.json", "r") as cf:
+    with open(f"{input_path}/twosides/twosides_umls_fin.json", "r") as cf:
         cls = json.load(cf)
         for par, chld in cls.items():
             for ld in chld:

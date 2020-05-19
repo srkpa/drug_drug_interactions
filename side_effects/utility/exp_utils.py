@@ -151,6 +151,7 @@ def visualize_test_perf(fp="../../results/temp.csv", model_name="CNN", **kwargs)
     on_test = kwargs.get('eval_on_test')
     for dataset, task_id, split, path in c:
         output[dataset][split] = {}
+        print(task_id)
         res = scorer(dataset_name=dataset, task_path=path[:-12], split=split, f1_score=True, **kwargs)
         if on_test:
             y_true, ap, roc = res
@@ -188,6 +189,7 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
         print(len(train.samples), train.get_targets().shape)
         n_samples = dict(zip(g, list(map(int, train_freq.tolist()))))
         total = len(train.samples)
+        print("Je suis ici total", total)
 
     else:
         data_set = pd.read_csv(f"{cach_path}/datasets-ressources/DDI/{dataset_name}/{dataset_name}.csv",

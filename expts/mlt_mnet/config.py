@@ -27,7 +27,7 @@ dataset_params = list(ParameterGrid([
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[20], batch_size=[32], with_early_stopping=[False])))
+    dict(n_epochs=[100], batch_size=[32], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -45,16 +45,21 @@ drug_features_extractor_params = list(ParameterGrid(
          )
 ))
 
+mnet_params = list(ParameterGrid(dict(
+    output_dim=[1], activation=['relu'], last_layer_activation=[None],
+    dropout=[0.1], b_norm=[True], fc_layer_dims=[[100]]
+)))
+
 network_params = list(ParameterGrid(dict(
     network_name=['bmnddi'],
     drug_feature_extractor_params=drug_features_extractor_params,
     ss_embedding_dim=[32],
     fc_layers_dim=[[1024]],
     mode=["concat"],
-    dropout=[0.2, 0.4, 0.8],
+    dropout=[0.1],
     b_norm=[True],
     is_binary_output=[False],
-    op_mode=["cos"]
+    mnet_params=mnet_params
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -67,7 +72,6 @@ loss_params = list(ParameterGrid(dict(
     use_sampling=[False],
     samp_weight=[False],
     rescale_freq=[False],
-    #is_mtk=[True]
 )))
 
 model_params = list(ParameterGrid(dict(
@@ -79,7 +83,7 @@ model_params = list(ParameterGrid(dict(
     metrics_names=[['miroc', 'miaup', 'mse', 'maroc', 'maaup']],
     loss_params=loss_params,
     dataloader=[True],
-    checkpoint_path=["/home/srkpa/expts/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99.checkpoint.pth"]
+    #checkpoint_path=["/home/srkpa/expts/same_dataset_LO/twosides_L1000_bmnddi_e0f8ef99.checkpoint.pth"]
 )))
 
 

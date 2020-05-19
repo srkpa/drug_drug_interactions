@@ -321,14 +321,12 @@ def plot_test_dens(fp, leg=False):
         plt.savefig(file_name)
         plt.show()
 
-
-def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
-    sns.set_context("paper", font_scale=2.5)
-    sns.set_style("ticks")
-
-    def define_categories(dataset, res_dict, n_samples=63472):
+def define_categories(dataset, res_dict, met1, met2):
         ticks = {}
         x = res_dict['random']['x']
+        #n_samples = res_dict["random"]["total"]
+        n_samples = 63472 if dataset == "twosides" else 191878
+        print("n samples", n_samples)
         out = []
         y = []
         max_freq = max(x)
@@ -338,6 +336,7 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
             freq = [0, 3, 5, 7] + freq[1:]
         print(freq)
         i = 0
+        print("xx", x)
         for i, j in enumerate(x):
             j = int((j / n_samples) * 100)
             if freq[0] <= j < freq[1]:
@@ -376,84 +375,110 @@ def plot_test_perf(fp, leg=False, met1="ap", met2="f1"):
         result = pd.concat(out, ignore_index=True)
         return ticks, result
 
-    output = visualize_test_perf(fp, eval_on_train=True)
-   # output = {"twosides": output["twosides"]}
+def plot_test_perf(fp, leg=False, model_name="CNN", met1="ap", met2="f1"):
+    sns.set_context("paper", font_scale=2.5)
+    sns.set_style("ticks")
+
+    output = visualize_test_perf(fp, eval_on_train=True, model_name=model_name)
+
     for dataset, res_dict in output.items():
-        file_name = f"/home/rogia/Bureau/figs/figure_phenotype_freq_{dataset}.png"
-        n_samples = 63472 if dataset == "twosides" else 191878
+        file_name = f"/home/rogia/Bureau/figs/figure_phenotype_freq_{dataset}_Syn_facet_grid.png"
+        #n_samples = 63472 if dataset == "twosides" else 191878
         print(dataset, res_dict.keys())
-        tks, dist = define_categories(dataset, res_dict, n_samples)
+        tks, dist = define_categories(dataset, res_dict, met1, met2) # le faire à chaque split.
         tks = sorted(list(tks.items()))
         dist["Frequence (%)"].replace(dict(tks), inplace=True)
         print(dist)
-        fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(25, 8))
+        dist.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen", "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
 
-        dist_data = dist[dist['split'] == 'random']
-        sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
-                       'font.sans-serif':
-                           'Liberation Sans'})
-        ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
-                          ax=ax1
-                         )
-        # sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
-        #             ax=ax1, kind="line" ,ci="sd")
+        dist.sort_values(by=["Frequence (%)"], ascending=True, inplace=True)
 
+        plt.figure(figsize=(25, 8))
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
-        dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 1)']
-        # ax2 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
-        #                   , ax=ax2
-        # )  # palette=['dodgerblue', 'lime']
-        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
-                    , ax=ax2, kind="line")
-        sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
-                       'font.sans-serif':
-                           'Liberation Sans'})
-        dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 2)']
-        # ax3 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3,
-        #                   )
-        sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3, kind="line")
+        g = sns.catplot(x="Frequence (%)", y="Scores",
+                        hue="Metric name", col="split",
+                        data=dist, kind="box", col_order=["Random", "One-unseen", "Both-unseen"],
+                         aspect=1., legend_out=False, legend=False
+                        )
+
+        plt.tight_layout()
+        plt.show()
+        #plt.savefig(file_name)
+        #exit()
+        #
+        # fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(25, 8))
+        #
+        # dist_data = dist[dist['split'] == 'random']
+        #
+        # print(dist_data)
+        # exit()
+        # sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+        #                'font.sans-serif':
+        #                    'Liberation Sans'})
+        # ax1 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+        #                   ax=ax1
+        #                  )
+        # # sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data,
+        # #             ax=ax1, kind="line" ,ci="sd")
+        #
+        # sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+        #                'font.sans-serif':
+        #                    'Liberation Sans'})
+        # dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 1)']
+        # # ax2 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
+        # #                   , ax=ax2
+        # # )  # palette=['dodgerblue', 'lime']
+        # sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data
+        #             , ax=ax2, kind="line")
+        # sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+        #                'font.sans-serif':
+        #                    'Liberation Sans'})
+        # dist_data = dist[dist['split'] == 'leave_drugs_out (test_set 2)']
+        # # ax3 = sns.boxplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3,
+        # #                   )
+        # sns.relplot(x='Frequence (%)', y='Scores', hue='Metric name', data=dist_data, ax=ax3, kind="line")
         #                   )
         # ax2.get_legend().remove()  # '#fb9a99' rose
         # ax3.get_legend().remove()
         # leg = True
-        if leg:
-            # ax1.get_legend().remove
-            ax1.add_legend()
-        ax1.set_title("Random\n", fontsize=35)
-        ax2.set_title("One-unseen\n", fontsize=35)
-        ax3.set_title("Both-unseen\n", fontsize=35)
-
-        ax1.set_xlabel("")
-        ax3.set_xlabel("")
-        ax2.set_xlabel("")
-        ax1.set_ylabel(f"{dataset}\nScores", fontsize=35)
-        # ax3.set_ylabel(f"{dataset}\nScores", fontsize=35)
-        # ax1.set_ylabel(f"{dataset}-NOSYN\nScores", fontsize=35)
-        # ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=35) ###
-        ax3.set_ylabel("")
-        ax2.set_ylabel("")
-
-        ax1.set_xticklabels(list(zip(*tks))[1], fontsize=33)
-        ax2.set_xticklabels(list(zip(*tks))[1], fontsize=33)
-        ax3.set_xticklabels(list(zip(*tks))[1], fontsize=33)
-        # ax2.set_yticklabels([])
-        # ax3.set_yticklabels([])
-        ax1.set_ylim(0.0, 1.1)
-        ax2.set_ylim(0.0, 1.1)
-        ax3.set_ylim(0.0, 1.1)
-        for tick in ax1.yaxis.get_major_ticks():
-            tick.label.set_fontsize(35)
-        for tick in ax2.yaxis.get_major_ticks():
-            tick.label.set_fontsize(35)
-        for tick in ax3.yaxis.get_major_ticks():
-            tick.label.set_fontsize(35)
+        # if leg:
+        #     # ax1.get_legend().remove
+        #     ax1.add_legend()
+        # ax1.set_title("Random\n", fontsize=35)
+        # ax2.set_title("One-unseen\n", fontsize=35)
+        # ax3.set_title("Both-unseen\n", fontsize=35)
+        #
+        # ax1.set_xlabel("")
+        # ax3.set_xlabel("")
+        # ax2.set_xlabel("")
+        # ax1.set_ylabel(f"{dataset}\nScores", fontsize=35)
+        # # ax3.set_ylabel(f"{dataset}\nScores", fontsize=35)
+        # # ax1.set_ylabel(f"{dataset}-NOSYN\nScores", fontsize=35)
+        # # ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=35) ###
+        # ax3.set_ylabel("")
+        # ax2.set_ylabel("")
+        #
+        # ax1.set_xticklabels(list(zip(*tks))[1], fontsize=33)
+        # ax2.set_xticklabels(list(zip(*tks))[1], fontsize=33)
+        # ax3.set_xticklabels(list(zip(*tks))[1], fontsize=33)
+        # # ax2.set_yticklabels([])
+        # # ax3.set_yticklabels([])
+        # ax1.set_ylim(0.0, 1.1)
+        # ax2.set_ylim(0.0, 1.1)
+        # ax3.set_ylim(0.0, 1.1)
+        # for tick in ax1.yaxis.get_major_ticks():
+        #     tick.label.set_fontsize(35)
+        # for tick in ax2.yaxis.get_major_ticks():
+        #     tick.label.set_fontsize(35)
+        # for tick in ax3.yaxis.get_major_ticks():
+        #     tick.label.set_fontsize(35)
         # plt.setp(ax1.get_legend().get_texts(), fontsize=30)
         # plt.setp(ax1.get_legend().get_title(), fontsize=30)
         #
-        plt.tight_layout()
-        plt.show()
+        #plt.tight_layout()
+        #plt.show()
         # plt.savefig(file_name)
 
 
@@ -692,7 +717,7 @@ def compute_phenotype_cooccurence(
 #     plt.show()
 
 if __name__ == '__main__':
-    plot_test_perf("../../results/temp.csv", met1="ap", met2="roc", leg=False)
+    #plot_test_perf("../../results/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_data_stats()
     # exit()
     # plot_data_distribution()
@@ -720,7 +745,7 @@ if __name__ == '__main__':
     # plot_results(["/home/rogia/Bureau/figs/soc.csv", "twosides"], leg=False, smothing=True)
     # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
 
-    # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="f1")
+    plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", model_name="MolGraph")
     #plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
     exit()

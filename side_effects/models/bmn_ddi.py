@@ -54,14 +54,11 @@ class BMNDDI(nn.Module):
         self.exp_prefix = exp_prefix
         self.is_multitask_output = is_multitask_output
         self.on_multidataset = on_multi_dataset
-        self.op_mode = op_mode
         self.use_basic_model = (not is_binary_output) and (not is_multitask_output)
         self.trainer = trainer
 
-        # This the place that need to be update
         if pretrained_feature_extractor:
             self.drug_feature_extractor = self.load_pretrained_features_extractor(**drug_feature_extractor_params)
-
         else:
             self.drug_feature_extractor = fe_factory(**drug_feature_extractor_params)
 
@@ -81,20 +78,20 @@ class BMNDDI(nn.Module):
 
         output_dim = 1 if is_binary_output else nb_side_effects
 
-        # This part is not so clean ---
-        # ##TOD -- make the last_layer more suitble for the task type
-
         if output_dim == 1 and (not is_binary_output):
             last_layer = None
         else:
             last_layer = "Sigmoid"
 
+        if self.is_multitask_output:
+            if kwargs.get("mnet_params", None) is None:
+                self.last_mnet_layer = "cos"
+            else:
+                self.mnet = fe_factory(arch="fcnet", input_size=in_size, **kwargs.get("mnet_params"))
+                del(kwargs["mnet_params"])
+
         self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                      output_dim=output_dim, last_layer_activation=last_layer, **kwargs)
-
-        if self.is_multitask_output and op_mode is None:  # chabge op for task param; need to be set all the auxiliary task layer ouptus
-            self.dist_fc = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
-                                      output_dim=1, last_layer_activation=None, **kwargs)
 
     def forward(self, batch):
 
@@ -146,7 +143,7 @@ class BMNDDI(nn.Module):
             feats = torch.cat((features_drug1, features_drug2), 1)
             ddi = self.classifier(feats)
             sim = self.fusion_layer(features_drug1, features_drug2,
-                                    mode=self.op_mode) if self.op_mode else self.dist_fc(feats)
+                                    mode=self.last_mnet_layer) if hasattr(self, "last_mnet_layer") else self.mnet(feats)
             return ddi, sim
 
     def set_graph(self, nodes, edges):
@@ -190,7 +187,7 @@ class BMNDDI(nn.Module):
         return model.model.drug_feature_extractor
 
     def bmn_basic(self, batch):
-      #  side_eff_features = None
+        #  side_eff_features = None
         drugs_a, drugs_b, = batch[:2]
         add_feats = batch[2:]
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
