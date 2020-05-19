@@ -6,7 +6,7 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid([
     dict(dataset_name=[["twosides", "L1000"]],
          transformer=["seq"],
-         split_mode=[['leave_drugs_out', "random"]],
+         split_mode=[['leave_drugs_out', "random"], ['random', "random"]],
          test_size=[0.10],
          valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
