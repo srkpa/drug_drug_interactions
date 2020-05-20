@@ -20,7 +20,8 @@ dataset_params = list(ParameterGrid(
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
          debug=[False],
-         randomized_smiles=[10, 20]
+         randomized_smiles=[10, 20],
+         add=[True]
          )
 ))
 
@@ -55,7 +56,7 @@ network_params = list(ParameterGrid(dict(
 )))
 
 loss_params = list(ParameterGrid(dict(
-    use_negative_sampling=[True],
+    use_negative_sampling=[False],
     use_fixed_binary_cost=[False],
     use_fixed_label_cost=[False],
     use_binary_cost_per_batch=[False],

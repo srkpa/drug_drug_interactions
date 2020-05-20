@@ -247,11 +247,24 @@ class DDIdataset(Dataset):
         if self.use_randomized_smiles:
             self.rand_smile_to_dict = defaultdict(list)
             canoniq_drugs = [drug_id for drug_id in self.drug_to_smiles if not re.match(".+-r\d+", drug_id)]
-
             for drug_id in canoniq_drugs:
                 for dg in self.drug_to_smiles:
                     if dg.startswith(f"{drug_id}-r"):
                         self.rand_smile_to_dict[drug_id].append(dg)
+
+            add = kwargs.get("add")
+            self.adding_samples = add
+            if add:
+                tmp = []
+                for (d1, d2, l) in self.samples:
+                    rn_d1 = self.rand_smile_to_dict[d1]
+                    rn_d2 =  self.rand_smile_to_dict[d2]
+                    cmp = list(product(rn_d1, rn_d2))
+                    tmp.extend([(d1, d2, l) for (d1, d2) in cmp])
+                self.samples.extend(tmp)
+                print("I m done. nb samples: ", len(self.samples))
+
+
 
         if self.has_graph:
             self.build_graph()
@@ -266,7 +279,7 @@ class DDIdataset(Dataset):
         else:
             target = label
         if self.graph_nodes_mapping is None:
-            if self.use_randomized_smiles:
+            if self.use_randomized_smiles and not self.adding_samples:
                 random_drugs1 = self.rand_smile_to_dict[drug1_id] + [drug1_id]
                 random_drugs2 = self.rand_smile_to_dict[drug2_id] + [drug2_id]
                 #print("I m here", drug1_id, drug2_id)
@@ -757,7 +770,7 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, density=density,
-                               randomized_smiles=kwargs.get("randomized_smiles", False))
+                               randomized_smiles=kwargs.get("randomized_smiles", False), add=kwargs.get("add", False))
     valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, density=density)
     test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,

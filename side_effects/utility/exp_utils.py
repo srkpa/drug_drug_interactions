@@ -22,7 +22,6 @@ from rdkit.Chem.Fingerprints import FingerprintMols
 from tqdm import tqdm
 
 from side_effects.data.loader import get_data_partitions
-from side_effects.expts_routines import run_experiment
 from side_effects.metrics import auprc_score, roc_auc_score
 from side_effects.trainer import wrapped_partial
 
@@ -100,7 +99,7 @@ def _unpack_results(folder):
     return expt_config, expt_results, y_true, y_preds
 
 
-def visualize_loss_progress(filepath, n_epochs=20, title=""):
+def visualize_loss_progress(filepath, n_epochs=20, title="", save_as=""):
     df = pd.read_table(filepath, sep="\t")
     seconds = df['time'][0]
     total_time = str(datetime.timedelta(seconds=seconds * n_epochs))
@@ -108,6 +107,7 @@ def visualize_loss_progress(filepath, n_epochs=20, title=""):
     print(f"Total time needeed over {n_epochs}: ", total_time)
     plt.figure()
     df.plot(x="epoch", y=["loss", "val_loss"])
+    # plt.savefig(f"/home/rogia/Bureau/figs/{save_as}")
     plt.show()
     # plt.title(f"dropout rate = {str(title)}")
     # # plt.show()
@@ -307,7 +307,7 @@ def __compute_metrics(y_pred, y_true):
     )
 
 
-def __loop_through_exp(path, compute_metric=True):
+def __loop_through_exp(path, compute_metric=True, param_names=None):
     outs = []
     for fp in glob.glob(f"{path}/*.pkl"):
         task_id, _ = os.path.splitext(
@@ -315,32 +315,46 @@ def __loop_through_exp(path, compute_metric=True):
         params_file = os.path.join(path, task_id[:-3] + "params.json")
         if os.path.exists(params_file):
             config = json.load(open(params_file, "rb"))
-            # print("y", params_file)
-            # with open(params_file,"rb") as fh:
-            #     config = json.load(fh)
             exp = config.get("model_params.network_params.drug_feature_extractor_params.arch", None)
             exp = exp if exp else config.get("model_params.network_params.network_name", None)
-            neg_rate = config.get("model_params.loss_params.neg_rate", None)
-            use_weight_rescaling = config.get("model_params.loss_params.rescale_freq", None)
-            pool_arch = config.get("model_params.network_params.drug_feature_extractor_params.pool_arch.arch", None)
-            graph_net = config.get("model_params.network_params.graph_network_params.kernel_sizes", None)
-            att_params = config.get("model_params.network_params.drug_feature_extractor_params.use_self_attention",
-                                    None)
-            att_params = config.get("model_params.network_params.drug_feature_extractor_params.gather",
-                                    None) if att_params is None else att_params
-            att_params = config.get(
-                "model_params.network_params.att_hidden_dim", 0) if att_params is None else att_params
-            att_params = 0 if att_params is None else att_params
-            exp_name = set_model_name(exp, pool_arch, graph_net, att_params)
             dataset_name = config["dataset_params.dataset_name"]
             mode = config["dataset_params.split_mode"]
+            if isinstance(mode, list):
+                mode, _ = mode
+
+            if isinstance(dataset_name, list):
+                dataset_name, _ = dataset_name
             # print(mode)
             seed = config["dataset_params.seed"]
             fmode = config.get("model_params.network_params.mode", None)
-            test_fold = config.get("dataset_params.test_fold", None)
+            config_params = dict(model_name=exp, dataset_name=dataset_name, seed=seed, task_id=task_id,
+                                 path=params_file, fmode=fmode)
+
+            if param_names is None:
+                neg_rate = config.get("model_params.loss_params.neg_rate", None)
+                use_weight_rescaling = config.get("model_params.loss_params.rescale_freq", None)
+                pool_arch = config.get("model_params.network_params.drug_feature_extractor_params.pool_arch.arch", None)
+                graph_net = config.get("model_params.network_params.graph_network_params.kernel_sizes", None)
+                att_params = config.get("model_params.network_params.drug_feature_extractor_params.use_self_attention",
+                                        None)
+                att_params = config.get("model_params.network_params.drug_feature_extractor_params.gather",
+                                        None) if att_params is None else att_params
+                att_params = config.get(
+                    "model_params.network_params.att_hidden_dim", 0) if att_params is None else att_params
+                att_params = 0 if att_params is None else att_params
+                exp_name = set_model_name(exp, pool_arch, graph_net, att_params)
+                test_fold = config.get("dataset_params.test_fold", None)
+                config_params.update(
+                    dict(
+                        neg_rate=neg_rate, rescale=use_weight_rescaling, test_fold=test_fold, model_name=exp_name
+                    )
+                )
+            else:
+                config_params.update({met: config.get(met, None) for met in param_names})
+
             if task_id.endswith("_res") and os.path.exists(os.path.join(path, task_id[:-3] + "preds.pkl")):
                 i_mode = ""
-                print("Config file:", params_file, "result file:", fp, "exp:", exp_name)
+                print("Config file:", params_file, "result file:", fp, "exp:", config_params.get("exp_name"))
                 out = pickle.load(open(fp, "rb"))
                 if mode == "leave_drugs_out":
                     i_mode = mode + " (test_set 1)"
@@ -351,17 +365,14 @@ def __loop_through_exp(path, compute_metric=True):
                     y_true = load(open(os.path.join(path, task_id[:-3] + "targets.pkl"), "rb"))
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
 
-                res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
-                           task_id=task_id,
-                           path=params_file, fmode=fmode, test_fold=test_fold, neg_rate=neg_rate,
-                           rescale=use_weight_rescaling,
-                           **out)
+                res = dict(split_mode=i_mode,
+                           **out, **config_params)
                 print(i_mode)
                 outs.append(res)
 
             if mode == "leave_drugs_out" and os.path.exists(os.path.join(path, task_id[:-4] + "-res.pkl")):
                 print("Config file:", params_file, "result file:", os.path.join(path, task_id[:-4] + "-preds.pkl"),
-                      "exp:", exp_name)
+                      "exp:", config_params.get("exp_name"))
                 i_mode = mode + " (test_set 2)"
                 print(i_mode)
                 out = pickle.load(open(os.path.join(path, task_id[:-4] + "-res.pkl"), "rb"))
@@ -370,17 +381,19 @@ def __loop_through_exp(path, compute_metric=True):
                     y_true = load(open(os.path.join(path, task_id[:-4] + "-targets.pkl"), "rb"))
 
                     out = __compute_metrics(y_true=y_true, y_pred=y_pred)
-                res = dict(model_name=exp_name, dataset_name=dataset_name, split_mode=i_mode, seed=seed,
-                           task_id=task_id, test_fold=test_fold,
-                           path=params_file, fmode=fmode, neg_rate=neg_rate, rescale=use_weight_rescaling,
-                           **out)
+                res = dict(split_mode=i_mode,
+                           **out, **config_params)
                 outs.append(res)
 
             # outs.append(res)
     return outs
 
 
-def summarize_experiments(main_dir=None, cm=True, save=False, fp=""):
+def summarize_experiments(main_dir=None, cm=True, fp="", param_names=None, save_as="", metric_names=None):
+    out = None
+    default_metric_names = ['macro_roc', 'macro_auprc', "micro_roc", "micro_auprc"]
+    if metric_names is not None:
+        default_metric_names = metric_names
 
     if os.path.isfile(fp):
         out = pd.read_csv(fp, index_col=0)
@@ -391,45 +404,44 @@ def summarize_experiments(main_dir=None, cm=True, save=False, fp=""):
         rand = []
         for i, root in enumerate(os.listdir(main_dir)):
             path = os.path.join(main_dir, root)
+            print(path)
             if os.path.isdir(path):
                 print("__Path__: ", path)
-                res = __loop_through_exp(path, compute_metric=cm)
-                print(res)
+                res = __loop_through_exp(path, compute_metric=cm, param_names=param_names)
                 if len(res) > 0:
                     rand.extend(res)
-            if rand:
-                out = pd.DataFrame(rand)
-                if save:
-                    out.to_csv("../../results/all_raw-exp-res.csv")
 
+        if rand:
+            out = pd.DataFrame(rand)
+        else:
+            out = pd.DataFrame(__loop_through_exp(main_dir, compute_metric=cm, param_names=param_names))
 
-    #print(out[out["rescale"] == True][["neg_rate", "rescale", "split_mode", "micro_auprc"]])
+        out.to_csv(f"../../results/{save_as}-all_raw-exp-res.csv")
 
     modes = out["split_mode"].unique()
     out["split_mode"].fillna(inplace=True, value="null")
     out["fmode"].fillna(inplace=True, value="null")
     print("modes", modes)
     for mod in modes:
-            df = out[out["split_mode"] == mod]
-            t = df.groupby(['dataset_name', 'model_name', 'split_mode', "fmode"], as_index=True)
-            print("t", t)
-            t_mean = t[['macro_roc', 'macro_auprc',"micro_roc", "micro_auprc"]].mean()
-            print("mean", t_mean)
-            t_std = t[['macro_roc', 'macro_auprc', "micro_roc", "micro_auprc"]].std()
-            print("std", t_std)
-            t_mean['micro_roc'] = t_mean[["micro_roc"]].round(3).astype(str) + " ± " + t_std[["micro_roc"]].round(
-                3).astype(
-                str)
-            t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
-                3).astype(str)
-            t_mean['macro_roc'] = t_mean[["macro_roc"]].round(3).astype(str) + " ± " + t_std[["macro_roc"]].round(
-                3).astype(
-                str)
-            t_mean['macro_auprc'] = t_mean[["macro_auprc"]].round(3).astype(str) + " ± " + t_std[["macro_auprc"]].round(
-                3).astype(str)
+        df = out[out["split_mode"] == mod]
+        t = df.groupby(['dataset_name', 'model_name', 'split_mode', "fmode"] + param_names, as_index=True)
+        t_mean = t[default_metric_names].mean()
+        t_std = t[default_metric_names].std()
 
-            t_mean.to_csv(f"../../results/{mod}.csv")
-    #return rand
+        for met in default_metric_names:
+            t_mean[met] = t_mean[[met]].round(3).astype(str) + " ± " + t_std[[met]].round(
+                3).astype(
+                str)
+        # t_mean['micro_auprc'] = t_mean[["micro_auprc"]].round(3).astype(str) + " ± " + t_std[["micro_auprc"]].round(
+        #     3).astype(str)
+        # t_mean['macro_roc'] = t_mean[["macro_roc"]].round(3).astype(str) + " ± " + t_std[["macro_roc"]].round(
+        #     3).astype(
+        #     str)
+        # t_mean['macro_auprc'] = t_mean[["macro_auprc"]].round(3).astype(str) + " ± " + t_std[["macro_auprc"]].round(
+        #     3).astype(str)
+
+        t_mean.to_csv(f"../../results/{save_as}-{mod}.csv")
+    # return rand
 
 
 def __collect_data__(config_file, return_config=False):
@@ -440,7 +452,7 @@ def __collect_data__(config_file, return_config=False):
     dataset_params = {key: val for key, val in dataset_params.items() if
                       key in get_data_partitions.__code__.co_varnames}
     dataset_name = dataset_params["dataset_name"]
-    input_path = f"{cach_path}/datasets-ressources/DDI/"    # {dataset_name}
+    input_path = f"{cach_path}/datasets-ressources/DDI/"  # {dataset_name}
     dataset_params["input_path"] = input_path
     train, valid, test1, test2 = get_data_partitions(**dataset_params)
     if return_config:
@@ -459,84 +471,87 @@ def cli():
 # @click.option('--path', '-r',
 #               help="Model path.")
 def reload(path):
-    for fp in tqdm(glob.glob(f"{path}/*.pth")):
-        train_params = defaultdict(dict)
-        config = json.load(open(fp[:-15] + "_params.json", "rb"))
-        for param, val in config.items():
-            keys = param.split(".")
-            if 1 < len(keys) <= 2:
-                mk, sk = keys
-                train_params[mk][sk] = val
-            elif len(keys) == 3:
-                mk, sk, skk = keys
-                if sk not in train_params[mk]:
-                    train_params[mk][sk] = {}
-                train_params[mk][sk][skk] = val
-            elif len(keys) == 4:
-                mk, sk, skk, skkk = keys
-                if sk in train_params[mk]:
-                    if skk not in train_params[mk][sk]:
-                        train_params[mk][sk][skk] = {}
-                train_params[mk][sk][skk][skkk] = val
+    # for fp in tqdm(glob.glob(f"{path}/*.pth")):
+    train_params = defaultdict(dict)
+    config = json.load(open(path, "rb"))
+    for param, val in config.items():
+        keys = param.split(".")
+        if 1 < len(keys) <= 2:
+            mk, sk = keys
+            train_params[mk][sk] = val
+        elif len(keys) == 3:
+            mk, sk, skk = keys
+            if sk not in train_params[mk]:
+                train_params[mk][sk] = {}
+            train_params[mk][sk][skk] = val
+        elif len(keys) == 4:
+            mk, sk, skk, skkk = keys
+            if sk in train_params[mk]:
+                if skk not in train_params[mk][sk]:
+                    train_params[mk][sk][skk] = {}
+            train_params[mk][sk][skk][skkk] = val
 
-            elif len(keys) >= 5:
-                mk, sk, skk, skkk, sk5 = keys
-                if sk in train_params[mk]:
-                    if skk in train_params[mk][sk]:
-                        if skkk not in train_params[mk][sk][skk]:
-                            train_params[mk][sk][skk][skkk] = {}
-                train_params[mk][sk][skk][skkk][sk5] = val
-            else:
-                print(f"None of my selected keys, {param}")
-        print(list(train_params.keys()))
-        run_experiment(**train_params, restore_path=fp, checkpoint_path=fp, input_path=None,
-                       output_path="/home/rogia/Documents/exps_results/nw_bin")
+        elif len(keys) >= 5:
+            mk, sk, skk, skkk, sk5 = keys
+            if sk in train_params[mk]:
+                if skk in train_params[mk][sk]:
+                    if skkk not in train_params[mk][sk][skk]:
+                        train_params[mk][sk][skk][skkk] = {}
+            train_params[mk][sk][skk][skkk][sk5] = val
+        else:
+            print(f"None of my selected keys, {param}")
+    print(list(train_params.keys()))
 
-    exit()
-    raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
-                           sep="\t")
-    main_backup = raw_data[['stitch_id1', 'stitch_id2', 'event_name', 'confidence']]
-    data_dict = {(did1, did2, name.lower()): conf for did1, did2, name, conf in
-                 tqdm(main_backup.values.tolist())}
+    return train_params
+    # run_experiment(**train_params, restore_path=fp, checkpoint_path=fp, input_path=None,
+    #                output_path="/home/rogia/Documents/exps_results/nw_bin")
 
-    # train, valid, test1, test2 = __collect_data__(fp)
-    # print(test1.feeding_insts)
-    # exit()
-    # e = []
-    # req = pd.read_csv(fp, sep=",", header=None)
-    # for index, row in tqdm(req.iterrows()):
-    #     k = row[0], row[1], row[2]
-    #     r = row[3]
-    #     e.append(k)
-    #     p = data_dict.get(k, None)
-    #     y_pred += [r]
-    #     if p is None:
-    #         y_true.append(0)
-    #     else:
-    #         y_true.append(1)
-    # print(Counter(y_true))
-    # for k, j in dict(Counter(e)).items():
-    #     if j > 1:
-    #         print(k, j)
-    # print(skm.average_precision_score(np.array(y_true), np.array(y_pred), average='micro'))
-    # print(Counter(y_true))
 
-    # exit()
-    # train, valid, test1, test2 = __collect_data__(path)
-    # y_pred = load(open(path[:-12] + "_preds.pkl", "rb"))
-    # y_true = test1.get_targets()
-    # samples = test1.samples
-    # labels = test1.labels_vectorizer.classes_
-    # output = [(*samples[r][:2], labels[c], y_pred[r, c]) for (r, c) in (y_true == 1).nonzero()]
-    # print("done")
-    # conf = [data_dict[(drug1, drug2, lab.lower())] for drug1, drug2, lab, _ in tqdm(output)]
-    # probs = [probability for did1, did2, lab, probability in tqdm(output)]
-    #
-    # b = defaultdict(list)
-    # for i, j in enumerate(conf):
-    #     b[j].append(probs[i])
-    # for k, v in b.items():
-    #     print(k, sum(v) / len(v))
+# exit()
+# raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv",
+#                        sep="\t")
+# main_backup = raw_data[['stitch_id1', 'stitch_id2', 'event_name', 'confidence']]
+# data_dict = {(did1, did2, name.lower()): conf for did1, did2, name, conf in
+#              tqdm(main_backup.values.tolist())}
+#
+# # train, valid, test1, test2 = __collect_data__(fp)
+# print(test1.feeding_insts)
+# exit()
+# e = []
+# req = pd.read_csv(fp, sep=",", header=None)
+# for index, row in tqdm(req.iterrows()):
+#     k = row[0], row[1], row[2]
+#     r = row[3]
+#     e.append(k)
+#     p = data_dict.get(k, None)
+#     y_pred += [r]
+#     if p is None:
+#         y_true.append(0)
+#     else:
+#         y_true.append(1)
+# print(Counter(y_true))
+# for k, j in dict(Counter(e)).items():
+#     if j > 1:
+#         print(k, j)
+# print(skm.average_precision_score(np.array(y_true), np.array(y_pred), average='micro'))
+# print(Counter(y_true))
+
+# exit()
+# train, valid, test1, test2 = __collect_data__(path)
+# y_pred = load(open(path[:-12] + "_preds.pkl", "rb"))
+# y_true = test1.get_targets()
+# samples = test1.samples
+# labels = test1.labels_vectorizer.classes_
+# output = [(*samples[r][:2], labels[c], y_pred[r, c]) for (r, c) in (y_true == 1).nonzero()]
+# print("done")
+# conf = [data_dict[(drug1, drug2, lab.lower())] for drug1, drug2, lab, _ in tqdm(output)]
+# probs = [probability for did1, did2, lab, probability in tqdm(output)]
+#
+# b = defaultdict(list)
+# for i, j in enumerate(conf):
+#     b[j].append(probs[i])
+# for k, v in b.items():
+#     print(k, sum(v) / len(v))
 
 
 def analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0., selected_pairs=None):
@@ -934,7 +949,7 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
         fps = [FingerprintMols.FingerprintMol(x) for x in [smi1a, smi1b, smi2a, smi2b]]
         k = [max(DataStructs.FingerprintSimilarity(fps[0], fps[2]), DataStructs.FingerprintSimilarity(fps[0], fps[3])),
              max(DataStructs.FingerprintSimilarity(fps[1], fps[2]), DataStructs.FingerprintSimilarity(fps[1], fps[3]))]
-        return mean(k) - 0.001
+        return mean(k)  # - 0.001
 
     # ref_smiles = ref_smiles[:2]
     output = list(map(wrapped_partial(compute_sim, smi1a=smi1, smi1b=smi2), tqdm(ref_smiles)))
@@ -944,11 +959,112 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
     return output
 
 
-if __name__ == '__main__':
+def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="", title="", **kwargs):
+    import seaborn as sns
+    sns.set_context("paper", font_scale=2.5)
+    sns.set_style("ticks")
+    from side_effects.data.loader import load_smiles, Chem, AllChem, get_data_partitions
+    import umap
+    rng = np.random.RandomState(0)
+    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"
+    path = f"{cach_path}/{dataset_name}/{dataset_name}-drugs-all.csv"
+    smiles, idx2name = load_smiles(fname=path)
+    molecules = [Chem.MolFromSmiles(X) for X in list(smiles.values())]
+    fingerprints = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in molecules]
+    ssp = [[DataStructs.FingerprintSimilarity(drg, fingerprints[i]) for i in range(len(fingerprints))] for
+           ids, drg in enumerate(fingerprints)]
+    catalog = dict(zip(list(smiles.keys()), ssp))
+    colors = np.random.rand(len(ssp), 2)
 
+    result = pd.read_csv(filepath, index_col=0)
+    result = result.loc[(result["dataset_name"] == dataset_name) & (result["model_name"] == model) & (
+                result["split_mode"] == split_mode)]
+    config_file = result["path"].values[-1]
+    print("Config: ", config_file)
+    params = reload(config_file)
+    print(params)
+
+    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**params["dataset_params"],
+                                                                              input_path=cach_path, debug=False)
+
+    train_drugs = list(set([d1 for (d1, _, _) in train_data.samples] + [d2 for (_, d2, _) in train_data.samples]))
+
+    if split_mode == "leave_drugs_out (test_set 2)":
+        test_data = unseen_test_data
+
+    test_drugs = list(set([d1 for (d1, _, _) in test_data.samples] + [d2 for (_, d2, _) in test_data.samples]))
+
+    train_test_drugs = list(set(train_drugs).intersection(set(test_drugs)))
+
+    train_feats = [catalog[d] for d in train_drugs]
+    test_feats = [catalog[d] for d in test_drugs ] #if d not in train_drugs
+    ##train_test_feats = [catalog[d] for d in train_test_drugs]
+
+
+    print("nb. train drugs ", len(train_drugs), "\nnb test drugs ", len(test_drugs), "\nnb train feats ", len(train_feats), "\nnb test feats ", len(test_feats))
+    #assert len(train_drugs) == len(train_feats), "Ty 1"
+    #assert len(test_drugs) == len(test_feats), "Ty 2"
+
+    fit1 = umap.UMAP(random_state=42, **kwargs)
+    fit2 = umap.UMAP(random_state=42, **kwargs)
+    u1 = fit1.fit(ssp)
+    #u2 = fit2.fit(test_feats)
+    u1 = fit1.transform(train_feats)
+    u2 = fit1.transform(test_feats)
+    #u3 = fit1.transform(train_test_feats)
+    # umap.plot.points(u1)
+    # umap.plot.points(u2)
+   # plt.scatter(u1[:, 0], u1[:, 1], label="train")
+
+
+   # plt.scatter(u3[:, 0], u3[:, 1], label="")
+    plt.scatter(u2[:, 0], u2[:, 1], label="test")
+
+    if split_mode == "random":
+        plt.legend()
+    plt.title(f"split = {title}")
+    plt.tight_layout()
+    plt.savefig(f"/home/rogia/Bureau/figs/{save_as}.png")
+
+    #plt.show()
+
+
+if __name__ == '__main__':
+    # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                         model="CNN", split_mode="leave_drugs_out (test_set 1)",
+    #                         save_as="figure_sim_distribution_one_unseen", title="One-unseen")
+    #
+    #
+    # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                         model="CNN", split_mode="leave_drugs_out (test_set 2)",
+    #                         save_as="figure_sim_distribution_both_unseen", title="Both-unseen")
+    # # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    # #                         model="CNN", split_mode="random",
+    # #                         save_as="figure_sim_random", title="Random")
+    # # exit()
+    # # visualize_drug_features(dataset_name="drugbank")
+    #
+    # exit()
+    # visualize_loss_progress("/media/rogia/CLé USB/expts/BiLSTM/twosides_bmnddi_a556e5b3_log.log")
+    # exit()
+    # summarize_experiments(main_dir="/home/rogia/.invivo/result/NegS", cm=False,
+    #                       param_names=["model_params.loss_params.use_negative_sampling"], save_as="negative_samp",
+    #                      )
+
+    # summarize_experiments(main_dir="/home/rogia/.invivo/result/GIN_MLT", cm=False, param_names=["model_params.weight_decay"], save_as="graph_multitask", metric_names=["miroc", "miaup", "mse", "maroc", "maaup"])
     # summarize_experiments(fp="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv")
     # exit()
-    #
+    summarize_experiments(main_dir="/home/rogia/.invivo/result/randomized_smi_cnn", cm=False,
+                          param_names=["dataset_params.randomized_smiles"], save_as="rand_smiles")
+    visualize_loss_progress("/home/rogia/.invivo/result/randomized_smi_cnn/twosides_bmnddi_7982c9b9_log.log")
+    visualize_loss_progress("/home/rogia/.invivo/result/randomized_smi_cnn/twosides_bmnddi_b812d329_log.log")
+
+    exit()
+    visualize_loss_progress("/home/rogia/.invivo/result/GIN_MLT/drugbank_L1000_bmnddi_195ea68d_log.log",
+                            save_as="gin_drugbank_mlt.png")
+    visualize_loss_progress("/home/rogia/.invivo/result/GIN_MLT/twosides_L1000_bmnddi_06e744f2_log.log",
+                            save_as="twosides_drugbank_mlt.png")
+    exit()
     visualize_loss_progress("/home/rogia/.invivo/result/NegS/twosides_bmnddi_dd7a577f_log.log")
     #
     # exit()
@@ -979,26 +1095,26 @@ if __name__ == '__main__':
             "model_params.network_params.dropout"])
 
     print(json.load(
-            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_params.json"))[
-            "model_params.network_params.dropout"])
+        open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_params.json"))[
+              "model_params.network_params.dropout"])
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92_res.pkl", "rb")))
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_3f971e92-res.pkl", "rb")))
     visualize_loss_progress("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_log.log",
                             n_epochs=20, title=json.load(
             open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_params.json"))[
-                                "model_params.network_params.dropout"])
+            "model_params.network_params.dropout"])
     print(json.load(
-            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_params.json"))[
-                                "model_params.network_params.dropout"])
+        open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_params.json"))[
+              "model_params.network_params.dropout"])
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40_res.pkl", "rb")))
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_06cffa40-res.pkl", "rb")))
     visualize_loss_progress("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_log.log",
-                            n_epochs=20,  title=json.load(
+                            n_epochs=20, title=json.load(
             open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_params.json"))[
-                                "model_params.network_params.dropout"])
+            "model_params.network_params.dropout"])
     print(json.load(
-            open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_params.json"))[
-                                "model_params.network_params.dropout"])
+        open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_params.json"))[
+              "model_params.network_params.dropout"])
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3_res.pkl", "rb")))
     print(pk.load(open("/home/rogia/.invivo/result/RegT/twosides_L1000_bmnddi_c98a7ab3-res.pkl", "rb")))
 

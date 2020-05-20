@@ -11,7 +11,7 @@
         "use_fixed_binary_cost": false,
         "use_fixed_label_cost": false,
         "use_label_cost_per_batch": false,
-        "use_negative_sampling": true,
+        "use_negative_sampling": false,
         "use_sampling": false
       },
       "lr": 0.0001,
@@ -53,6 +53,7 @@
   ],
   "dataset_params": [
     {
+      "add": true,
       "dataset_name": "twosides",
       "debug": true,
       "decagon": false,
@@ -72,6 +73,7 @@
       "valid_size": 0.15
     },
     {
+      "add": true,
       "dataset_name": "twosides",
       "debug": true,
       "decagon": false,
