@@ -1,0 +1,148 @@
+{
+  "model_params": [
+    {
+      "dataloader": false,
+      "loss": "bce",
+      "loss_params": {
+        "neg_rate": 1.0,
+        "rescale_freq": false,
+        "samp_weight": false,
+        "use_binary_cost_per_batch": false,
+        "use_fixed_binary_cost": false,
+        "use_fixed_label_cost": false,
+        "use_label_cost_per_batch": false,
+        "use_negative_sampling": false,
+        "use_sampling": false
+      },
+      "lr": 0.0001,
+      "metrics_names": [
+        "micro_roc",
+        "macro_roc",
+        "micro_auprc",
+        "macro_auprc"
+      ],
+      "network_params": {
+        "b_norm": true,
+        "dropout": 0.1,
+        "drug_feature_extractor_params": {
+          "activation": "ReLU",
+          "arch": "dglgraph",
+          "conv_layer_dims": [
+            [
+              64
+            ],
+            [
+              64
+            ]
+          ],
+          "dropout": 0.0,
+          "glayer": "dgl-gin",
+          "input_dim": 79,
+          "pool_arch": {
+            "arch": null
+          },
+          "pooling": "avg"
+        },
+        "fc_layers_dim": [
+          128,
+          128
+        ],
+        "is_binary_output": false,
+        "mode": "concat",
+        "network_name": "bmnddi",
+        "ss_embedding_dim": null
+      },
+      "optimizer": "adam",
+      "weight_decay": 0.0
+    }
+  ],
+  "dataset_params": [
+    {
+      "add": false,
+      "dataset_name": "twosides",
+      "debug": true,
+      "decagon": false,
+      "label": "ml",
+      "n_folds": 0,
+      "randomized_smiles": 1,
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_fold": 0,
+      "test_size": 0.1,
+      "transformer": "dgl",
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": false,
+      "use_targets": false,
+      "valid_size": 0.15
+    },
+    {
+      "add": false,
+      "dataset_name": "twosides",
+      "debug": true,
+      "decagon": false,
+      "label": "ml",
+      "n_folds": 0,
+      "randomized_smiles": 1,
+      "seed": 42,
+      "split_mode": "random",
+      "test_fold": 0,
+      "test_size": 0.1,
+      "transformer": "dgl",
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": false,
+      "use_targets": false,
+      "valid_size": 0.15
+    },
+    {
+      "add": false,
+      "dataset_name": "drugbank",
+      "debug": false,
+      "decagon": false,
+      "label": "ml",
+      "n_folds": 0,
+      "randomized_smiles": 100,
+      "seed": 42,
+      "split_mode": "leave_drugs_out",
+      "test_fold": 0,
+      "test_size": 0.2,
+      "transformer": "dgl",
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": false,
+      "use_targets": false,
+      "valid_size": 0.25
+    },
+    {
+      "add": false,
+      "dataset_name": "drugbank",
+      "debug": false,
+      "decagon": false,
+      "label": "ml",
+      "n_folds": 0,
+      "randomized_smiles": 100,
+      "seed": 42,
+      "split_mode": "random",
+      "test_fold": 0,
+      "test_size": 0.2,
+      "transformer": "dgl",
+      "use_as_filter": null,
+      "use_clusters": false,
+      "use_pharm": false,
+      "use_side_effect": false,
+      "use_targets": false,
+      "valid_size": 0.25
+    }
+  ],
+  "fit_params": [
+    {
+      "batch_size": 32,
+      "n_epochs": 1,
+      "with_early_stopping": true
+    }
+  ]
+}

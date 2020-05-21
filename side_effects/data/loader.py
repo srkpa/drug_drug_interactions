@@ -282,11 +282,11 @@ class DDIdataset(Dataset):
             if self.use_randomized_smiles and not self.adding_samples:
                 random_drugs1 = self.rand_smile_to_dict[drug1_id] + [drug1_id]
                 random_drugs2 = self.rand_smile_to_dict[drug2_id] + [drug2_id]
-                #print("I m here", drug1_id, drug2_id)
+                print("I m here", drug1_id, drug2_id)
                 drug1_id, drug2_id = random.choice(random_drugs1), random.choice(random_drugs2)
-                #print(random_drugs1, drug1_id)
-                #print(random_drugs2, drug2_id)
-                #print("------------")
+                print(random_drugs1, drug1_id)
+                print(random_drugs2, drug2_id)
+                print("------------")
 
             drug1, drug2 = self.drug_to_smiles[drug1_id], self.drug_to_smiles[drug2_id]
         elif self.has_graph or self.decagon:
@@ -725,6 +725,7 @@ def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False
     if use_targets:
         targets = download_drug_gene_targets()
         drug2targets = gene_entity_transformer(targets.keys(), targets.values())
+        print(list(drug2targets.values())[0].shape)
         print(list(drug2targets.values())[0].shape)
     drugs2pharm = {}
     if use_pharm:

@@ -8,7 +8,7 @@ from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ReduceLROnPlat
 from pytoune.framework.callbacks import *
 from tensorboardX import SummaryWriter
 from torch.utils.data import DataLoader
-
+from math import ceil
 name2callback = {"early_stopping": EarlyStopping,
                  "reduce_lr": ReduceLROnPlateau,
                  "norm_clip": ClipNorm}
@@ -194,20 +194,21 @@ class Trainer(ivbt.Trainer):
 
         if self.use_dataloader:
             loader = DataLoader(dataset, batch_size=batch_size, collate_fn=self.collate_fn)
+            nsteps = -1
             # if self.metrics:
             #     _, metrics_val, y_pred = self.evaluate_generator(loader, return_pred=True)
             # else:
             # _, y_pred = self.evaluate_generator(loader, return_pred=True)
         else:
             loader = batch_generator(dataset, batch_size, infinite=False, shuffle=False)
-            # len_data = len(dataset)
-            # nsteps = ceil(len_data / (batch_size * 1.0))
+            len_data = len(dataset)
+            nsteps = ceil(len_data / (batch_size * 1.0))
             # if self.metrics:
             #     _, metrics_val, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
             # else:
             #     _, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
         print(len(dataset), batch_size)
-        _, y_pred = self.evaluate_generator(loader, return_pred=True)
+        _, y_pred = self.evaluate_generator(loader, return_pred=True) if nsteps < 0 else self.evaluate_generator(loader, steps=nsteps, return_pred=True)
         y_true = dataset.get_targets()
         print("pred", len(y_pred))
         print("true", len(y_true))

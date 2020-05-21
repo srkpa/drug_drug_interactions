@@ -959,88 +959,161 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
     return output
 
 
-def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="", title="", **kwargs):
+def umap_plot(train_feats, test_feats, split_mode, save_as, title, **kwargs):
     import seaborn as sns
+    import umap
+    from sklearn.manifold import TSNE
     sns.set_context("paper", font_scale=2.5)
     sns.set_style("ticks")
-    from side_effects.data.loader import load_smiles, Chem, AllChem, get_data_partitions
-    import umap
-    rng = np.random.RandomState(0)
-    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"
-    path = f"{cach_path}/{dataset_name}/{dataset_name}-drugs-all.csv"
-    smiles, idx2name = load_smiles(fname=path)
-    molecules = [Chem.MolFromSmiles(X) for X in list(smiles.values())]
-    fingerprints = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in molecules]
-    ssp = [[DataStructs.FingerprintSimilarity(drg, fingerprints[i]) for i in range(len(fingerprints))] for
-           ids, drg in enumerate(fingerprints)]
-    catalog = dict(zip(list(smiles.keys()), ssp))
-    colors = np.random.rand(len(ssp), 2)
+    from mpl_toolkits.mplot3d import Axes3D
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
 
-    result = pd.read_csv(filepath, index_col=0)
-    result = result.loc[(result["dataset_name"] == dataset_name) & (result["model_name"] == model) & (
-                result["split_mode"] == split_mode)]
-    config_file = result["path"].values[-1]
-    print("Config: ", config_file)
-    params = reload(config_file)
-    print(params)
+    fit1 = umap.UMAP(random_state=42, n_components=3, min_dist=0, **kwargs)
+    u1 = fit1.fit(train_feats)
+    u1 = u1.embedding_
+    #plt.scatter(u1[:, 0], u1[:, 1], label="train")
+    ax.scatter(u1[:, 0], u1[:, 1], u1[:, 2], label="training")
 
-    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**params["dataset_params"],
-                                                                              input_path=cach_path, debug=False)
-
-    train_drugs = list(set([d1 for (d1, _, _) in train_data.samples] + [d2 for (_, d2, _) in train_data.samples]))
-
-    if split_mode == "leave_drugs_out (test_set 2)":
-        test_data = unseen_test_data
-
-    test_drugs = list(set([d1 for (d1, _, _) in test_data.samples] + [d2 for (_, d2, _) in test_data.samples]))
-
-    train_test_drugs = list(set(train_drugs).intersection(set(test_drugs)))
-
-    train_feats = [catalog[d] for d in train_drugs]
-    test_feats = [catalog[d] for d in test_drugs ] #if d not in train_drugs
-    ##train_test_feats = [catalog[d] for d in train_test_drugs]
-
-
-    print("nb. train drugs ", len(train_drugs), "\nnb test drugs ", len(test_drugs), "\nnb train feats ", len(train_feats), "\nnb test feats ", len(test_feats))
-    #assert len(train_drugs) == len(train_feats), "Ty 1"
-    #assert len(test_drugs) == len(test_feats), "Ty 2"
-
-    fit1 = umap.UMAP(random_state=42, **kwargs)
-    fit2 = umap.UMAP(random_state=42, **kwargs)
-    u1 = fit1.fit(ssp)
-    #u2 = fit2.fit(test_feats)
-    u1 = fit1.transform(train_feats)
-    u2 = fit1.transform(test_feats)
-    #u3 = fit1.transform(train_test_feats)
-    # umap.plot.points(u1)
-    # umap.plot.points(u2)
-   # plt.scatter(u1[:, 0], u1[:, 1], label="train")
-
-
-   # plt.scatter(u3[:, 0], u3[:, 1], label="")
-    plt.scatter(u2[:, 0], u2[:, 1], label="test")
+    if len(test_feats) != 0:
+        try:
+            fit2 = umap.UMAP(random_state=42, n_components=3, min_dist=0, **kwargs)
+            u2 = fit2.fit(test_feats)
+            u2 = u2.embedding_
+           # plt.scatter(u2[:, 0], u2[:, 1], label="test")
+            ax.scatter(u2[:, 0], u2[:, 1], u2[:, 2], label="testing")
+        except:
+            pass
 
     if split_mode == "random":
         plt.legend()
     plt.title(f"split = {title}")
     plt.tight_layout()
     plt.savefig(f"/home/rogia/Bureau/figs/{save_as}.png")
+    plt.show()
 
-    #plt.show()
+
+def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="", title="", extract=False, **kwargs):
+    from side_effects.data.loader import load_smiles, Chem, AllChem, get_data_partitions, to_tensor
+    from side_effects.trainer import Trainer
+
+    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"
+
+    result = pd.read_csv(filepath, index_col=0)
+    result = result.loc[(result["dataset_name"] == dataset_name) & (result["model_name"] == model) & (
+            result["split_mode"] == split_mode)]
+    config_file = result["path"].values[-1]
+    print("Config: ", config_file)
+    params = reload(config_file)
+    print(params)
+
+    nb_side_effects = 964 if dataset_name == "twosides" else 86
+    ds = params["dataset_params"]
+    ds["seed"] = 42
+    train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**ds,
+                                                                              input_path=cach_path, debug=False)
+    if split_mode == "leave_drugs_out (test_set 2)":
+        test_data = unseen_test_data
+
+    train_drugs = list(set([d1 for (d1, _, _) in train_data.samples] + [d2 for (_, d2, _) in train_data.samples]))
+    test_drugs = list(set([d1 for (d1, _, _) in test_data.samples] + [d2 for (_, d2, _) in test_data.samples]))
+    # train_test_drugs = list(set(train_drugs).intersection(set(test_drugs)))
+
+    catalog = {}
+    path = f"{cach_path}/{dataset_name}/{dataset_name}-drugs-all.csv"
+    smiles, idx2name = load_smiles(fname=path)
+
+    if not extract:
+        molecules = [Chem.MolFromSmiles(X) for X in list(smiles.values())]
+        fingerprints = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in molecules]
+        ssp = [[DataStructs.FingerprintSimilarity(drg, fingerprints[i]) for i in range(len(fingerprints))] for
+               ids, drg in enumerate(fingerprints)]
+        catalog = dict(zip(list(smiles.keys()), ssp))
+    else:
+        # tranformer_fn = params["dataset_params"]["transformer"]
+        # transformer = all_transformers_dict.get(transformer_fn)
+        # smi_tfs = transformer(drugs=list(smiles.keys()), smiles=list(smiles.values()))
+        print(params["model_params"]["network_params"])
+
+        model_params = params["model_params"]
+        model_params['network_params'].update(
+            dict(nb_side_effects=nb_side_effects))
+
+        if "att_hidden_dim" in model_params["network_params"]:
+            del (model_params["network_params"]["att_hidden_dim"])
+
+        if "auxnet_params" in model_params["network_params"]:
+            del (model_params["network_params"]["auxnet_params"])
+
+        model = Trainer(network_params=model_params["network_params"],
+                        checkpoint_path=config_file[:-12] + ".checkpoint.pth")
+        model.model.eval()
+        fc = model.model.drug_feature_extractor
+        print(fc)
+        seq = [train_data.drug_to_smiles[d] for d, _ in smiles.items()]
+        if isinstance(seq[0], (torch.Tensor, np.ndarray)):
+            seq = to_tensor(seq, gpu=False, dtype=torch.LongTensor)
+            print("Seq. Shape:", seq.shape)
+        # exit()
+        catalog = dict(zip(list(smiles.keys()), fc(seq).detach().numpy()))
+
+    train_feats = [catalog[d] for d in train_drugs]
+    test_feats = [catalog[d] for d in test_drugs if d not in train_drugs]
+
+    print("nb. train drugs ", len(train_drugs), "\nnb test drugs ", len(test_drugs), "\nnb train feats ",
+          len(train_feats), "\nnb test feats ", len(test_feats))
+    # assert len(train_drugs) == len(train_feats), "Ty 1"
+    # assert len(test_drugs) == len(test_feats), "Ty 2"
+
+    umap_plot(train_feats, test_feats, split_mode, save_as, title)
+
+
+def __main__umaps(model):
+    for t in ["twosides", "drugbank"]:
+            e = True
+            print(f"{t} - {str(e)}")
+            visualize_drug_features(dataset_name=t,
+                                    filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                    model=model, split_mode="random",
+                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
+                                    title="Random", extract=e)
+            visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                    model=model, split_mode="leave_drugs_out (test_set 1)",
+                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
+                                    title="One-unseen", extract=e)
+
+            visualize_drug_features(dataset_name=t,
+                                    filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                    model=model, split_mode="leave_drugs_out (test_set 2)",
+                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
+                                    title="Both-unseen", extract=e)
 
 
 if __name__ == '__main__':
-    # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-    #                         model="CNN", split_mode="leave_drugs_out (test_set 1)",
-    #                         save_as="figure_sim_distribution_one_unseen", title="One-unseen")
-    #
-    #
-    # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-    #                         model="CNN", split_mode="leave_drugs_out (test_set 2)",
-    #                         save_as="figure_sim_distribution_both_unseen", title="Both-unseen")
-    # # visualize_drug_features(dataset_name="twosides", filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-    # #                         model="CNN", split_mode="random",
-    # #                         save_as="figure_sim_random", title="Random")
+    visualize_loss_progress("/media/rogia/CLé USB/expts/BiLSTM/drugbank_bmnddi_c1ac805a_log.log", n_epochs=100)
+    exit()
+    __main__umaps("BiLSTM")
+    __main__umaps("MolGraph")
+    e = False
+    model = "BiLSTM"
+    for t in ["twosides", "drugbank"]:
+        print(f"{t} - {str(e)}")
+        visualize_drug_features(dataset_name=t,
+                                filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                model=model, split_mode="random",
+                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
+                                title="Random", extract=e)
+        visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                model=model, split_mode="leave_drugs_out (test_set 1)",
+                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
+                                title="One-unseen", extract=e)
+
+        visualize_drug_features(dataset_name=t,
+                                filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                model=model, split_mode="leave_drugs_out (test_set 2)",
+                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
+                                title="Both-unseen", extract=e)
+    exit()
     # # exit()
     # # visualize_drug_features(dataset_name="drugbank")
     #
