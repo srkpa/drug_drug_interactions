@@ -11,7 +11,6 @@ from collections import Counter, defaultdict
 from pickle import load
 from statistics import mean
 
-import click
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -179,6 +178,11 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
         assert len(ind) == len(auroc) == len(auprc) == len(dens)
         return dens, auprc, auroc
 
+    if np.isnan(y_preds).any():
+        filter = np.isnan(y_preds).any(axis=1)
+        y_preds = y_preds[~filter]
+        y_true = y_true[~filter]
+
     ap_scores = auprc_score(y_pred=y_preds, y_true=y_true, average=None)
     rc_scores = roc_auc_score(y_pred=y_preds, y_true=y_true, average=None)
     if eval_on_train:
@@ -271,7 +275,7 @@ def scorer(dataset_name, task_path=None, upper_bound=None, f1_score=True, split=
 # plt.show()
 
 
-def set_model_name(exp_name, pool_arch, graph_net_params, attention_params):
+def set_model_name(exp_name, pool_arch="", graph_net_params="", attention_params=0):
     has = False
     if exp_name == "lstm":
         exp_name = "BLSTM"
@@ -461,15 +465,6 @@ def __collect_data__(config_file, return_config=False):
     return train, valid, test1, test2
 
 
-@click.group()
-def cli():
-    pass
-
-
-#
-# @cli.command()
-# @click.option('--path', '-r',
-#               help="Model path.")
 def reload(path):
     # for fp in tqdm(glob.glob(f"{path}/*.pth")):
     train_params = defaultdict(dict)
@@ -962,17 +957,15 @@ def get_similarity(pairs, task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnd
 def umap_plot(train_feats, test_feats, split_mode, save_as, title, **kwargs):
     import seaborn as sns
     import umap
-    from sklearn.manifold import TSNE
     sns.set_context("paper", font_scale=2.5)
     sns.set_style("ticks")
-    from mpl_toolkits.mplot3d import Axes3D
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
     fit1 = umap.UMAP(random_state=42, n_components=3, min_dist=0, **kwargs)
     u1 = fit1.fit(train_feats)
     u1 = u1.embedding_
-    #plt.scatter(u1[:, 0], u1[:, 1], label="train")
+    # plt.scatter(u1[:, 0], u1[:, 1], label="train")
     ax.scatter(u1[:, 0], u1[:, 1], u1[:, 2], label="training")
 
     if len(test_feats) != 0:
@@ -980,7 +973,7 @@ def umap_plot(train_feats, test_feats, split_mode, save_as, title, **kwargs):
             fit2 = umap.UMAP(random_state=42, n_components=3, min_dist=0, **kwargs)
             u2 = fit2.fit(test_feats)
             u2 = u2.embedding_
-           # plt.scatter(u2[:, 0], u2[:, 1], label="test")
+            # plt.scatter(u2[:, 0], u2[:, 1], label="test")
             ax.scatter(u2[:, 0], u2[:, 1], u2[:, 2], label="testing")
         except:
             pass
@@ -993,9 +986,8 @@ def umap_plot(train_feats, test_feats, split_mode, save_as, title, **kwargs):
     plt.show()
 
 
-def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="", title="", extract=False, **kwargs):
-    from side_effects.data.loader import load_smiles, Chem, AllChem, get_data_partitions, to_tensor
-    from side_effects.trainer import Trainer
+def ssp(filepath, dataset_name, model, split_mode, save_as="", title="", extract=False, **kwargs):
+    from side_effects.data.loader import load_smiles, Chem, AllChem, get_data_partitions
 
     cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"
 
@@ -1007,7 +999,6 @@ def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="
     params = reload(config_file)
     print(params)
 
-    nb_side_effects = 964 if dataset_name == "twosides" else 86
     ds = params["dataset_params"]
     ds["seed"] = 42
     train_data, valid_data, test_data, unseen_test_data = get_data_partitions(**ds,
@@ -1022,98 +1013,536 @@ def visualize_drug_features(filepath, dataset_name, model, split_mode, save_as="
     catalog = {}
     path = f"{cach_path}/{dataset_name}/{dataset_name}-drugs-all.csv"
     smiles, idx2name = load_smiles(fname=path)
+    molecules = [Chem.MolFromSmiles(X) for X in list(smiles.values())]
+    fingerprints = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in molecules]
+    ssp = [[DataStructs.FingerprintSimilarity(drg, fingerprints[i]) for i in range(len(fingerprints))] for
+           ids, drg in enumerate(fingerprints)]
+    catalog1 = dict(zip(list(smiles.keys()), ssp))
+    if kwargs.get("return_all"):
+        return catalog1, train_drugs, test_drugs
 
-    if not extract:
-        molecules = [Chem.MolFromSmiles(X) for X in list(smiles.values())]
-        fingerprints = [AllChem.GetMorganFingerprintAsBitVect(mol, 4) for mol in molecules]
-        ssp = [[DataStructs.FingerprintSimilarity(drg, fingerprints[i]) for i in range(len(fingerprints))] for
-               ids, drg in enumerate(fingerprints)]
-        catalog = dict(zip(list(smiles.keys()), ssp))
+    return catalog1
+
+
+def extract_features(filepath, dataset_name, model, split_mode, inputs={}, level="drug"):
+    from side_effects.data.loader import load_smiles, get_data_partitions, to_tensor, all_transformers_dict
+    from side_effects.trainer import Trainer
+
+    iprefix = model
+    cach_path = str(os.environ["HOME"]) + "/.invivo/cache" + "/datasets-ressources/DDI/"
+
+    result = pd.read_csv(filepath, index_col=0)
+    result = result.loc[(result["dataset_name"] == dataset_name) & (result["model_name"] == model) & (
+            result["split_mode"] == split_mode)]
+    config_file = result["path"].values[-1]
+    print("Config: ", config_file)
+    params = reload(config_file)
+    print(params)
+    nb_side_effects = 964 if dataset_name == "twosides" else 86
+    partitions = {}
+
+    if not inputs:
+        ds = params["dataset_params"]
+        ds["seed"] = 42
+        train_data, valid_data, test_data, unseen_data = get_data_partitions(**ds,
+                                                                             input_path=cach_path, debug=False)
+        if split_mode == "leave_drugs_out (test_set 2)":
+            test_data = unseen_data
+
+        partitions["train"] = train_data
+        partitions["test"] = test_data
+        partitions["valid"] = valid_data
+
+        path = f"{cach_path}/{dataset_name}/{dataset_name}-drugs-all.csv"
+        smiles, idx2name = load_smiles(fname=path)
     else:
-        # tranformer_fn = params["dataset_params"]["transformer"]
-        # transformer = all_transformers_dict.get(transformer_fn)
-        # smi_tfs = transformer(drugs=list(smiles.keys()), smiles=list(smiles.values()))
-        print(params["model_params"]["network_params"])
+        print("OUTSIDE DATASET..", len(inputs))
+        smiles = inputs
+        transformer_fn = params["dataset_params"]["transformer"]
+        transformer = all_transformers_dict.get(transformer_fn)
+        smiles = transformer(drugs=list(smiles.keys())
+                             , smiles=list(smiles.values()))
+        print("Nb SMILES..", len(smiles))
 
-        model_params = params["model_params"]
-        model_params['network_params'].update(
-            dict(nb_side_effects=nb_side_effects))
+    print(params["model_params"]["network_params"])
 
-        if "att_hidden_dim" in model_params["network_params"]:
-            del (model_params["network_params"]["att_hidden_dim"])
+    model_params = params["model_params"]
+    model_params['network_params'].update(
+        dict(nb_side_effects=nb_side_effects))
 
-        if "auxnet_params" in model_params["network_params"]:
-            del (model_params["network_params"]["auxnet_params"])
+    if "att_hidden_dim" in model_params["network_params"]:
+        del (model_params["network_params"]["att_hidden_dim"])
 
-        model = Trainer(network_params=model_params["network_params"],
-                        checkpoint_path=config_file[:-12] + ".checkpoint.pth")
-        model.model.eval()
+    if "auxnet_params" in model_params["network_params"]:
+        del (model_params["network_params"]["auxnet_params"])
+
+    model = Trainer(network_params=model_params["network_params"],
+                    checkpoint_path=config_file[:-12] + ".checkpoint.pth")
+    model.model.eval()
+    if level == "drug":
         fc = model.model.drug_feature_extractor
         print(fc)
-        seq = [train_data.drug_to_smiles[d] for d, _ in smiles.items()]
+        seq = []
+        if partitions["train"] is not None:
+            seq = [partitions["train"].drug_to_smiles[d] for d, _ in smiles.items()]
+
+        else:
+            seq = list(smiles.values())
+
         if isinstance(seq[0], (torch.Tensor, np.ndarray)):
             seq = to_tensor(seq, gpu=False, dtype=torch.LongTensor)
             print("Seq. Shape:", seq.shape)
-        # exit()
-        catalog = dict(zip(list(smiles.keys()), fc(seq).detach().numpy()))
 
-    train_feats = [catalog[d] for d in train_drugs]
-    test_feats = [catalog[d] for d in test_drugs if d not in train_drugs]
+        catalog2 = dict(zip(list(smiles.keys()), fc(seq).detach().numpy()))
+        return catalog2
 
-    print("nb. train drugs ", len(train_drugs), "\nnb test drugs ", len(test_drugs), "\nnb train feats ",
-          len(train_feats), "\nnb test feats ", len(test_feats))
-    # assert len(train_drugs) == len(train_feats), "Ty 1"
-    # assert len(test_drugs) == len(test_feats), "Ty 2"
+    else:
+        import torch.nn as nn
+        fc = model.model
+        fc.classifier.net = nn.Sequential(*list(model.model.classifier.net.children())[:-2])
+        transf_dict = partitions["train"].drug_to_smiles
+        out = {}
+        print(fc)
 
-    umap_plot(train_feats, test_feats, split_mode, save_as, title)
+        for k in partitions:
+            a, b, _ = list(zip(*partitions[k].samples))
+            a, b = [transf_dict[d] for d in a], [transf_dict[d] for d in b]
+
+            if isinstance(a, (list, torch.Tensor, np.ndarray)):
+                a = to_tensor(a, gpu=False, dtype=torch.LongTensor)
+                b = to_tensor(b, gpu=False, dtype=torch.LongTensor)
+                print("Seq. Shape:", a.shape, b.shape)
+                assert a.shape == b.shape
+
+            # let use minibatches to reduce memory use
+            batch_size = 1
+            lens = a.shape[0]
+            n_minibatches = int(lens / batch_size)
+            output = []
+            for i in range(n_minibatches):
+                start = batch_size * i
+                ends = min(i * batch_size + batch_size, lens)
+                feats = fc([a[start:ends, :], b[start:ends, :]])
+                print("Loop ", i, feats.shape)
+                output += [feats.detach().numpy()]
+            feats = np.concatenate(output, axis=0)
+            print("OUT", feats.shape, a.shape)
+            assert feats.shape[0] == a.shape[0]
+
+            with open(f'{dataset_name}_{split_mode}_{iprefix}_{k}.feats.npy', 'wb') as f:
+                np.save(f, feats)
+            out[k] = feats
 
 
-def __main__umaps(model):
-    for t in ["twosides", "drugbank"]:
-            e = True
-            print(f"{t} - {str(e)}")
-            visualize_drug_features(dataset_name=t,
-                                    filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                    model=model, split_mode="random",
-                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
-                                    title="Random", extract=e)
-            visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                    model=model, split_mode="leave_drugs_out (test_set 1)",
-                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
-                                    title="One-unseen", extract=e)
+def rbf_kernel(x, y, gamma=1.0):
+    x_y_distance = ((x[:, None, :] - y[None, :, :]) ** 2).sum(-1)
+    if isinstance(x_y_distance, torch.Tensor):
+        res = torch.exp(-1 * x_y_distance / gamma)
+    else:
+        res = np.exp(-1 * x_y_distance / gamma)
+    return res
 
-            visualize_drug_features(dataset_name=t,
-                                    filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                    model=model, split_mode="leave_drugs_out (test_set 2)",
-                                    save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
-                                    title="Both-unseen", extract=e)
+
+def __compute_mmd__(x, y, gamma=1.0):
+    x_kernel = rbf_kernel(x, x, gamma)
+    y_kernel = rbf_kernel(y, y, gamma)
+    xy_kernel = rbf_kernel(x, y, gamma)
+    return x_kernel.mean() + y_kernel.mean() - 2 * xy_kernel.mean()
+
+
+def compute_mmd(path, dataset, mode, model):
+    train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
+    test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
+    valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
+
+    a, b, c = __compute_mmd__(train, valid),    __compute_mmd__(train, test),  __compute_mmd__(valid, test)
+    return a, b, c
+
+
+def mean_similarity(filepath, dataset_name, model, save_as="", title="", extract=False, **kwargs):
+    import seaborn as sns
+    sns.set_context("paper", font_scale=1.5, rc={"lines.linewidth": 2.8, "axes.labelsize": 25})
+    sns.set_style("ticks")
+    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+                   'font.sans-serif': 'Liberation Sans'})
+
+    output = []
+
+    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+        fmri = pd.DataFrame()
+        result, train, test = ssp(filepath, dataset_name, model, split_mode, save_as="", title="", extract=False,
+                                  return_all=True)
+        result = {drug: np.array(sp).std() for drug, sp in result.items()}
+        if split_mode == "random":
+            test = [result[drug] for drug in test]
+        else:
+            test = [result[drug] for drug in test if drug not in train]
+        print(dataset_name, split_mode, len(test))
+        train = [result[drug] for drug in train]
+
+        fmri.loc[:, "mean SSP"] = train + test
+        fmri.loc[:, "Partition"] = ["Train"] * len(train) + ["Test"] * len(test)
+        fmri.loc[:, "split"] = [split_mode] * (len(train) + len(test))
+        output.append(fmri)
+
+    output = pd.concat(output)
+    output.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen",
+                    "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
+
+    print(output)
+    g = sns.catplot(y="mean SSP",
+                    x="split", hue="Partition",
+                    data=output, kind="box",
+                    saturation=.5,
+                    sharex=False, margin_titles=False)
+    plt.show()
+
+
+def cosine_sim(inputs, split, dataset, **kwargs):
+    from sklearn.decomposition import PCA
+
+    dim = min([len(list(drug_features.values())[0]) for method, drug_features in inputs.items()])
+    print("Min. len ", dim)
+
+    dim = 64
+    pca = PCA(n_components=dim)
+
+    out = {}
+    for method, drug_features in inputs.items():
+        ot = pca.fit_transform(np.array(list(drug_features.values()))).astype(np.float32)
+        out[method] = ot
+
+    from scipy import spatial
+    keys = [i for i in list(out.keys()) if i != "ssp"]
+
+    result = pd.DataFrame()
+    tmp = []
+    label = []
+    # for k in keys:
+    output = list(map(lambda x, y: 1 - spatial.distance.cosine(x, y), out[keys[0]], out[keys[1]]))
+    tmp.extend(output)
+    # label.extend([k] * len(output))
+
+    # result.loc[:, "Model"] = label
+    result.loc[:, "Cosine similarity"] = tmp
+    result.loc[:, "split"] = split
+    result.loc[:, "D"] = [dataset] * len(tmp)
+
+    return result
+
+
+def visualize_drug_features():
+    import seaborn as sns
+
+    sns.set_context("paper", rc={"lines.linewidth": 2.8, "axes.labelsize": 20})
+    sns.set_style("ticks")
+    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+                   'font.sans-serif':
+                       'Liberation Sans'})
+    file_name = f"/home/rogia/Bureau/figs/figure_comparison_rn_&_gcn_nt_features.png"
+
+    def _sub_features(dataset):
+        output = []
+        for mod in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+            ref = ssp(dataset_name=dataset,
+                      filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                      split_mode=mod, model="BiLSTM")
+            bilstm = extract_features(dataset_name=dataset,
+                                      filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                      model="BiLSTM", split_mode=mod)
+
+            molgraph = extract_features(dataset_name="twosides",
+                                        filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                                        model="MolGraph", split_mode=mod)
+
+            inputs = dict(
+                ssp=ref, bilstm=bilstm, molgraph=molgraph
+            )
+
+            res = cosine_sim(inputs, mod, dataset)
+            output.append(res)
+        data = pd.concat(output)
+        return data
+
+    result = pd.concat([_sub_features(d) for d in ["drugbank", "twosides"]])
+    result.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen",
+                    "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
+    g = sns.catplot(x="split", y="Cosine similarity",
+                    data=result, kind="violin", col="D",
+                    saturation=.5, margin_titles=False, legend=True)
+    sns.despine(top=False, right=False)
+
+    for ax in g.axes.flat:
+        ax.set_ylabel(ax.get_ylabel(), fontsize="xx-large")
+        for tick in ax.yaxis.get_major_ticks():
+            tick.label.set_fontsize(18)
+        for tick in ax.xaxis.get_major_ticks():
+            tick.label.set_fontsize(18)
+
+    plt.tight_layout()
+    plt.savefig(file_name, bbox_inches='tight')
+    plt.show()
+    plt.clf()
+    plt.close()
+
+
+def train_and_validate_using_ML(model, dataset, mod):
+    from rdkit.Chem import PandasTools
+    from sklearn.model_selection import StratifiedKFold
+    from sklearn.ensemble import RandomForestClassifier
+
+    def __run__(X, y):
+        kf = StratifiedKFold(n_splits=4, shuffle=True, random_state=0)
+        y_values = []
+        predictions = []
+        probas = []
+        for train, test in kf.split(X, y):
+            clf = RandomForestClassifier(n_estimators=500, random_state=0)
+            clf.fit(X[train], y[train])
+            predictions.append(clf.predict(X[test]))
+            probas.append(clf.predict_proba(X[test]).T[1])  # )  # Probabilities for class 1
+            y_values.append(y[test])
+            del clf
+        return y_values, probas
+
+    def __rep__(y_values, probas):
+        from sklearn.metrics import roc_auc_score, average_precision_score
+        aucs = [roc_auc_score(y, proba, average="micro") for y, proba in zip(y_values, probas)]
+        aps = [average_precision_score(y, proba, average="micro") for y, proba in zip(y_values, probas)]
+        return (np.mean(aucs), np.std(aucs)), (np.mean(aps), np.std(aps))
+
+    df = PandasTools.LoadSDF('../../data/ames.sdf.txt', smilesName='SMILES')
+    print(df["ID"].unique())
+    print(len(df["ID"].unique()))
+    print(len(df))
+    smiles_dict = dict(zip(df["ID"], df["SMILES"]))
+    feats = extract_features(dataset_name=dataset,
+                             filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                             model=model, split_mode=mod, outside=True, inputs=smiles_dict)
+
+    X = np.array(list(feats.values()))
+    y = np.array(df['class'].astype(int))
+
+    print("X ", X.shape, "Y ", y.shape)
+
+    y_val, probs = __run__(X, y)
+    (a1, a2), (b1, b2) = __rep__(y_val, probs)
+    return (a1, a2), (b1, b2)
+
+
+def main():
+    result = []
+    modes = ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]
+    datasets = ["drugbank", "twosides"]
+    models = ["MolGraph", "BiLSTM"]
+    p = [(mode, dat, model) for mode in modes for dat in datasets for model in models]
+    for mode, dataset, model in p:
+        (a1, a2), (b1, b2) = train_and_validate_using_ML(model, dataset, mode)
+        line = [dataset, mode, model, str(a1.round(3)) + " ± " + str(a2.round(3)),
+                str(b1.round(3)) + " ± " + str(b2.round(3))]
+        result.append(line)
+        print(line)
+    result = pd.DataFrame(result, columns=["Dataset", "Split", "Model", "micro_roc", "micro_auprc"])
+    result.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen",
+                    "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
+    result.to_csv("ames_result.csv")
+
+
+def reformatter(file, ref="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv", save_as=""):
+    # keep a place to save x smiles
+    raw_data = []
+    ref = pd.read_csv(ref, index_col=0)
+    outptut = pd.read_csv(file, index_col=0)
+    print(list(outptut))
+    for i in outptut.itertuples():
+        i = split, model, seed, dataset, micro_roc, micro_auprc, n_smiles = i.split_mode, set_model_name(
+            i.model_name), i.seed, i.dataset_name, i.micro_roc, i.micro_auprc, i._12
+        if model == "GIN":
+            model = "MolGraph"
+        old = ref[(ref["split_mode"] == split) & (ref["model_name"] == model) & (ref["seed"] == seed) & (
+                ref["dataset_name"] == dataset)]
+        old = old["split_mode"].values[-1], old["model_name"].values[-1], old["seed"].values[-1], \
+              old["dataset_name"].values[-1], old["micro_roc"].values[-1], old["micro_auprc"].values[-1], n_smiles
+        # print(i)
+        # print(old)
+        # print("----------------")
+        raw_data.append(["ref"] + list(old))
+        raw_data.append(["Rand. SMILES"] + list(i))
+
+    raw_data = pd.DataFrame(raw_data,
+                            columns=["exp", "split", "Model", "seed", "dataset", "micro_roc", "micro_auprc", "rand"])
+    raw_data.to_csv(f"{save_as}_comparing_to_ref_all_raw_data.csv")
+
+    # |Random - One-unseen|, |Random - Both-unseen|, |One-unseen - Both-unseen|
+    statistiq = []
+    df = raw_data.groupby(["rand"], as_index=False)
+
+    for name, group in df:
+        for expname in ["ref", "Rand. SMILES"]:
+            stats = pd.DataFrame()
+            sb1 = group[group["exp"] == expname]
+            sb1.set_index(["split", "dataset"], inplace=True)
+
+            stats.loc["twosides", "|Random - One-unseen|"] = sb1.loc[
+                                                                 (sb1.index.get_level_values("split") == "random") & (
+                                                                         sb1.index.get_level_values(
+                                                                             "dataset") == "twosides"), "micro_auprc"].values - \
+                                                             sb1.loc[
+                                                                 (sb1.index.get_level_values(
+                                                                     "split") == "leave_drugs_out (test_set 1)") & (
+                                                                         sb1.index.get_level_values(
+                                                                             "dataset") == "twosides"), "micro_auprc"].values
+            a = sb1.loc[
+                (sb1.index.get_level_values("split") == "random") & (
+                        sb1.index.get_level_values(
+                            "dataset") == "drugbank"), "micro_auprc"].values
+            if len(a) == 0:
+                a = [np.nan]  # C'est just je n,ai pas encore les resultats de drugbank
+
+            stats.loc["drugbank", "|Random - One-unseen|"] = a - \
+                                                             sb1.loc[
+                                                                 (sb1.index.get_level_values(
+                                                                     "split") == "leave_drugs_out (test_set 1)") & (
+                                                                         sb1.index.get_level_values(
+                                                                             "dataset") == "drugbank"), "micro_auprc"].values
+
+            stats.loc["twosides", "|Random - Both-unseen|"] = sb1.loc[
+                                                                  (sb1.index.get_level_values("split") == "random") & (
+                                                                          sb1.index.get_level_values(
+                                                                              "dataset") == "twosides"), "micro_auprc"].values - \
+                                                              sb1.loc[
+                                                                  (sb1.index.get_level_values(
+                                                                      "split") == "leave_drugs_out (test_set 2)") & (
+                                                                          sb1.index.get_level_values(
+                                                                              "dataset") == "twosides"), "micro_auprc"].values
+            stats.loc["drugbank", "|Random - Both-unseen|"] = a - \
+                                                              sb1.loc[
+                                                                  (sb1.index.get_level_values(
+                                                                      "split") == "leave_drugs_out (test_set 2)") & (
+                                                                          sb1.index.get_level_values(
+                                                                              "dataset") == "drugbank"), "micro_auprc"].values
+
+            stats.loc["twosides", "|One-unseen - Both-unseen|"] = sb1.loc[
+                                                                      (sb1.index.get_level_values(
+                                                                          "split") == "leave_drugs_out (test_set 1)") & (
+                                                                              sb1.index.get_level_values(
+                                                                                  "dataset") == "twosides"), "micro_auprc"].values - \
+                                                                  sb1.loc[
+                                                                      (sb1.index.get_level_values(
+                                                                          "split") == "leave_drugs_out (test_set 2)") & (
+                                                                              sb1.index.get_level_values(
+                                                                                  "dataset") == "twosides"), "micro_auprc"].values
+            stats.loc["drugbank", "|One-unseen - Both-unseen|"] = sb1.loc[
+                                                                      (sb1.index.get_level_values(
+                                                                          "split") == "leave_drugs_out (test_set 1)") & (
+                                                                              sb1.index.get_level_values(
+                                                                                  "dataset") == "drugbank"), "micro_auprc"].values - \
+                                                                  sb1.loc[
+                                                                      (sb1.index.get_level_values(
+                                                                          "split") == "leave_drugs_out (test_set 2)") & (
+                                                                              sb1.index.get_level_values(
+                                                                                  "dataset") == "drugbank"), "micro_auprc"].values
+
+            stats.loc[:, "expname"] = expname
+            stats.loc[:, "X"] = name
+            print(stats)
+            statistiq.append(stats)
+
+    output = pd.concat(statistiq)
+    print("op", output)
+    output.to_csv(f"{save_as}-statistiq.csv")
+    # def __main__umaps(model):
+    #     for t in ["twosides", "drugbank"]:
+    #             e = True
+    #             print(f"{t} - {str(e)}")
+    #             visualize_drug_features(dataset_name=t,
+    #                                     filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                                     model=model, split_mode="random",
+    #                                     save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
+    #                                     title="Random", extract=e)
+    #             visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                                     model=model, split_mode="leave_drugs_out (test_set 1)",
+    #                                     save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
+    #                                     title="One-unseen", extract=e)
+    #
+    #             visualize_drug_features(dataset_name=t,
+    #                                     filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                                     model=model, split_mode="leave_drugs_out (test_set 2)",
+    #                                     save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
+    #                                     title="Both-unseen", extract=e)
+    #
 
 
 if __name__ == '__main__':
-    visualize_loss_progress("/media/rogia/CLé USB/expts/BiLSTM/drugbank_bmnddi_c1ac805a_log.log", n_epochs=100)
-    exit()
-    __main__umaps("BiLSTM")
-    __main__umaps("MolGraph")
-    e = False
-    model = "BiLSTM"
-    for t in ["twosides", "drugbank"]:
-        print(f"{t} - {str(e)}")
-        visualize_drug_features(dataset_name=t,
-                                filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                model=model, split_mode="random",
-                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
-                                title="Random", extract=e)
-        visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                model=model, split_mode="leave_drugs_out (test_set 1)",
-                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
-                                title="One-unseen", extract=e)
 
-        visualize_drug_features(dataset_name=t,
-                                filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                                model=model, split_mode="leave_drugs_out (test_set 2)",
-                                save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
-                                title="Both-unseen", extract=e)
+    outs = []
+    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+        for dataset in ["twosides", "drugbank"]:
+            a, b, c = compute_mmd(path=".", model="BLSTM", mode=split_mode, dataset=dataset)
+            print(a, b, c)
+            outs.append([dataset, split_mode, a, b, c])
+
+    result = pd.DataFrame(outs, columns=["dataset", "split", "train_test", "train_valid", "test_valid"])
+    result.to_csv("mmd.csv")
     exit()
+    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+        extract_features(dataset_name="twosides",
+                         filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                         model="BiLSTM", split_mode=split_mode, level="pair")
+
+    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+        extract_features(dataset_name="drugbank",
+                         filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+                         model="BiLSTM", split_mode=split_mode, level="pair")
+    exit()
+
+    exit()
+    # main()
+    # exit()
+    # visualize_drug_features()
+    #
+    # exit()
+    # reformatter("../../results/GH_100_RD-all_raw-exp-res.csv", save_as="GH_100_RD")
+    #
+    reformatter("../../results/RN_100_RD-all_raw-exp-res.csv", save_as="RN_100_RD")
+
+    exit()
+    # mean_similarity(dataset_name="drugbank",
+    #                 filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                 model="BiLSTM")
+    #
+    # mean_similarity(dataset_name="twosides",
+    #                 filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                 model="BiLSTM")
+    #
+    # exit()
+    # visualize_drug_features()
+    # exit()
+    #
+    # visualize_loss_progress("/media/rogia/CLé USB/expts/BiLSTM/drugbank_bmnddi_c1ac805a_log.log", n_epochs=100)
+    # exit()
+    # __main__umaps("BiLSTM")
+    # __main__umaps("MolGraph")
+    # e = False
+    # model = "BiLSTM"
+    # for t in ["twosides", "drugbank"]:
+    #     print(f"{t} - {str(e)}")
+    #     visualize_drug_features(dataset_name=t,
+    #                             filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                             model=model, split_mode="random",
+    #                             save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_random",
+    #                             title="Random", extract=e)
+    #     visualize_drug_features(dataset_name=t, filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                             model=model, split_mode="leave_drugs_out (test_set 1)",
+    #                             save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_one_unseen",
+    #                             title="One-unseen", extract=e)
+    #
+    #     visualize_drug_features(dataset_name=t,
+    #                             filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                             model=model, split_mode="leave_drugs_out (test_set 2)",
+    #                             save_as=f"figure_{t}_{model}_fp_{str(not e)}_feat_distribution_both_unseen",
+    #                             title="Both-unseen", extract=e)
+
     # # exit()
     # # visualize_drug_features(dataset_name="drugbank")
     #
@@ -1127,8 +1556,22 @@ if __name__ == '__main__':
     # summarize_experiments(main_dir="/home/rogia/.invivo/result/GIN_MLT", cm=False, param_names=["model_params.weight_decay"], save_as="graph_multitask", metric_names=["miroc", "miaup", "mse", "maroc", "maaup"])
     # summarize_experiments(fp="/home/rogia/Documents/exps_results/temp-2/all_raw-exp-res.csv")
     # exit()
-    summarize_experiments(main_dir="/home/rogia/.invivo/result/randomized_smi_cnn", cm=False,
-                          param_names=["dataset_params.randomized_smiles"], save_as="rand_smiles")
+    # summarize_experiments(main_dir="/home/rogia/.invivo/result/GH_RAND_SMI_V1_ALL_GRAND_BATCH", cm=False,
+    #                       param_names=["dataset_params.randomized_smiles"], save_as="GH_100_RD")
+    # #
+    exit()
+    summarize_experiments(main_dir="/home/rogia/.invivo/result/RN_RAND_SMI_V1_ALL_GRAND_BATCH", cm=False,
+                          param_names=["dataset_params.randomized_smiles"], save_as="RN_100_RD")
+
+    exit()
+
+    # path = "/home/rogia/.invivo/result/RN_RAND_SMI_V1_ALL_GRAND_BATCH"
+    # for fp in glob.glob(f"{path}/*.log"):
+    #     print(fp)
+    #     visualize_loss_progress(os.path.join(path, fp))
+
+    exit()
+
     visualize_loss_progress("/home/rogia/.invivo/result/randomized_smi_cnn/twosides_bmnddi_7982c9b9_log.log")
     visualize_loss_progress("/home/rogia/.invivo/result/randomized_smi_cnn/twosides_bmnddi_b812d329_log.log")
 
@@ -1194,193 +1637,193 @@ if __name__ == '__main__':
     # load_learning_curves(["/home/rogia/.invivo/result/on_multi_dataset/twosides_bmnddi_d6ee066d_log.log",
     #                       "/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log"])
     # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=100)
-# visualize_loss_progress("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=20)
-# print(pk.load(open("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_res.pkl", "rb")))
-# visualize_loss_progress("/home/rogia/Téléchargements/RegT/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
-# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
-#                         n_epochs=100)
-# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
-#                         n_epochs=100)
-# visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
-#                        n_epochs=200)
-# exit()
-# visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log")
-# visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log", n_epochs=76)
-# /home/rogia/Téléchargements/same_dataset
-# visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
-# exit()
-#    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-#    # __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
-# #exit()
-#     #summarize_experiments("/media/rogia/5123-CDC3/NOISE/", cm=False)
-#     #exit()
-#     #get_best_hp()
-#     #exit()
-#     # # ('cid000003345', 'cid000005076', 'malignant melanoma')
-#     # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
-#     # data = pd.read_csv(input_path, sep="\t")
-#     # print(list(data))
-#     # l = data[(data['drug1'].str.lower() == 'fenofibrate') & (data['drug2'].str.lower() == 'valsartan') & (data['event_name'].str.lower() == 'hepatitis c')]
-#     # print(l)
-#     #
-#     #
-#     # exit()
-#     # request_pairs = [("fenofibrate", "valsartan", "hepatitis c"), ("verapamil", "fluvoxamine", 'hepatitis c'),
-#     #                  ("bupropion", "fluoxetine", 'hepatitis a'), ("bupropion", "fluoxetine", "hiv disease"),
-#     #                  ("paroxetine", "risperidone", "hiv disease"), ("mupirocin", "sertraline", "drug withdrawal"),
-#     #                  ("amlodipine", "cerivastatin", "flu"), ("metoclopramide", "minoxidil", "road traffic accident"),
-#     #                  ("n-acetylcysteine", "cefuroxime", "herpes simplex"),
-#     #                  ("clonazepam", "salmeterol", "adverse drug effect")]
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-#     #        req_pairs=request_pairs, inf=0.6, sup=1.,  save_filename="tab9") # goog predictions
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 1)', label=1,
-#     #            req_pairs=request_pairs)
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=1,
-#     #            req_pairs=request_pairs)
-#
-#     request_pairs = [("bupropion", "benazepril", "heart attack"), ("didanosine", "stavudine", "acidosis"),
-#                      ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
-#                      ("tramadol", "zolpidem", "diaphragmatic hernia"), ("paroxetine", "fluticasone", "muscle spasm"),
-#                      ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
-#                      ("carboplatin", "cisplatin", "blood sodium decreased"),
-#                      ("chlorthalidone", "fluticasone", "high blood pressure")]
-#
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-#     #            req_pairs=request_pairs, inf=0.0, sup=0.1, save_filename="tab-10")
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-#     #            req_pairs=request_pairs, inf=0.7, sup=1., save_filename="bad_pred")
-#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-#                req_pairs=request_pairs, inf=0.7, sup=1, save_filename="1_as_1")
-#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
-#                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="1_as_0")
-#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-#                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="0_as_0")
-#     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
-#                req_pairs=request_pairs, inf=0.7, sup=1., save_filename="0_as_1")
-#     exit()
-#     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=0,
-#     #            req_pairs=request_pairs)
-#
-#     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv", split_mode="leave_drugs_out (test_set 1)", false_pos=1., false_neg=0.)
-#     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv",
-#     # #                            split_mode="leave_drugs_out (test_set 2)",false_pos=1., false_neg=0)
-#     # # # # cli()
-#     # # #
-#     # # #  reload(path="/home/rogia/Documents/exps_results/binary/cl_gin")
-#     # #exit()
-#     # # # summarize_experiments("/media/rogia/5123-CDC3/SOC", cm=True)
-#     # # # get_best_hp()
-#     # # # exit()
-#     # #
-#     # # # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-#     # # # exit()
-#     # # # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
-#     # # # print(list(raw_data))
-#     # # # print(raw_data[(raw_data["drug1"].str.lower() == "aprepitant")  & (raw_data["drug2"].str.lower() == "cisplatin")  & (raw_data["event_name"].str.lower() =="hepatitis c" )][["drug2", "event_name"]])  #
-#     # # #
-#     # # # exit()
-#     # # # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
-#     # analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.)
-#     # analyse_kfold_predictions(mod="random", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
-#     # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
-#     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=1, sup=0.1, inf=0.)
-#     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0.7)
-#     # #
-#     # res = pd.read_csv("/home/rogia/Documents/projects/temp-SOC/all_raw-exp-res.csv", index_col=0)
-#     # # y1 = res[res["split_mode"] == "random"]
-#     # # y1 = y1.groupby(["test_fold", "model_name"], as_index=True)[["micro_roc", "micro_auprc"]].max()
-#     # # y1.to_csv("../../results/random_exp_grouped_by_test_fold.csv")
-#     # # y2 = res[res["split_mode"] == "leave_drugs_out (test_set 1)"]
-#     # # y2 = y2.groupby(["test_fold", "model_name"], as_index=True)[
-#     # #     ["micro_roc", "micro_auprc"]].max()
-#     # # y2.to_csv("../../results/early_exp_grouped_by_test_fold.csv")
-#     # # exit()
-#     # # visualize_loss_progress("../../../twosides_bmnddi_6b85a591_log.log")
-#     # # exit()
-#     # # #
-#     # # # exit()
-#     # # #
-#     # # #
-#     # # # exit()
-#     # # visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
-#     # #
-#     # # exit()
-#     # #
-#     # # exit()
-#     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
-#     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
-#     # # exit()
-#     # # df = __get_dataset_stats__("/home/rogia/.invivo/result/cl_deepddi/twosides_deepddi_4ebbb144_params.json")
-#     # # print(df)
-#     # # exit()
-#     # # # summarize_experiments("/media/rogia/CLé USB/expts/")
-#     # # visualize_test_perf()
-#     # #
-#     # # exit()
-#     # # # bt = pd.read_csv("../../results/best_hp.csv")
-#     # # # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
-#     # # # # print(c)
-#     # # # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
-#     # # #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
-#     # # # analyze_models_predictions([c[::-1][1]])
-#     # #
-#     # # # analysis_test_perf(c)
-#     # # exit()
-#     # # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
-#     # # exit()
-#     # # # get_misclassified_labels(
-#     # # #     "/home/rogia/Documents/projects/drug_drug_interactions/results/twosides_bmnddi_6936e1f9_1_sis.csv", items=10)
-#     # # # exit()
-#     # # # combine(exp_path="/media/rogia/CLé USB/expts/DeepDDI", split=False)
-#     # # exit()
-#     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=1, threshold=0.1)
-#     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=0, threshold=0.7)
-#     # # choose o.1 as threshold for false positive
-#     # # combine(["/home/rogia/Documents/projects/twosides_bmnddi_390811c9",
-#     # #          "/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9"])
-#     #
-#     # exit()
-#     # exp_folder = "/home/rogia/Documents/exps_results/IMB"  # /media/rogia/CLé USB/expts"  # f"{os.path.expanduser('~')}/expts"
-#     # # summarize(exp_folder)
-#     # # Scorer twosides random split
-#     # scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="random")
-#     # # Scorer twosides early split stage
-#     # scorer("twosides", task_path="/home/rogia/Documents/projects/twosides_bmnddi_390811c9", save="early+stage")
-#     # exit()
-#     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_48d052b6", save="cnn+NS")
-#     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_5cbedb4a", save="cnn+CS")
-#     #
-#     # # Scorer drugbank random split
-#     # scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
-#     # # Scorer drugbank early split
-#     # exit()
-#     #
-#     # f = __loop_through_exp(exp_folder + "/CNN")
-#     # # # # # d = __loop_through_exp(exp_folder + "/BiLSTM")
-#     # # # # # a = __loop_through_exp(exp_folder + "/DeepDDI")
-#     # # # # # b = __loop_through_exp(exp_folder + "/Lapool")
-#     # # # # # c = __loop_through_exp(exp_folder + "/MolGraph")
-#     # # # # #
-#     # # # # # e = a + b + c + d
-#     # out = pd.DataFrame(f)
-#     # print(out)
-#     # out.to_csv("temp.csv")
-#     # t = out.groupby(['dataset_name', 'model_name', "split_mode"], as_index=True)[
-#     #     ["micro_roc", "micro_auprc"]].mean()
-#     # print(t)
-#     # # out.to_csv("sum-exp.xlsx")
-#     # # get_exp_stats("sum-exp.xlsx")
-#     # # exit()
-#     # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
-#     # exit()
-#     # summarize()
-#     # # display("/home/rogia/Documents/cl_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
-#     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
-#     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/cl_lstm/_hp_0/")
-#     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
-#     # # display_H("/home/rogia/.invivo/result/cl_lapool/drugbank_bmnddi_12c974de_log.log")
-#     # # exit()
-#     # c = get_expt_results("/home/rogia/.invivo/result/")
-#     # print(c)
-#     # exit()
-#     # c.to_excel("graph_mol_as_extract.xlsx")
+    # visualize_loss_progress("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_log.log", n_epochs=20)
+    # print(pk.load(open("/home/rogia/.invivo/result/same_dataset/twosides_L1000_bmnddi_ea7b8d1f_res.pkl", "rb")))
+    # visualize_loss_progress("/home/rogia/Téléchargements/RegT/twosides_L1000_bmnddi_48c6cca1_log.log", n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_2bb10187_log.log",
+    #                         n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_f3f9d5de_log.log",
+    #                         n_epochs=100)
+    # visualize_loss_progress("/home/rogia/Téléchargements/cmap_pretrain/L1000_bmnddi_8d931fff_log.log",
+    #                        n_epochs=200)
+    # exit()
+    # visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F1/twosides_bmnddi_7c0f7c7b_log.log")
+    # visualize_loss_progress("/home/rogia/.invivo/result/Pretraining_F2/twosides_bmnddi_32b0f70d_log.log", n_epochs=76)
+    # /home/rogia/Téléchargements/same_dataset
+    # visualize_loss_progress("/home/rogia/Téléchargements/twosides_bmnddi_d6ee066d_log.log", n_epochs=10)
+    # exit()
+    #    # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    #    # __get_dataset_stats__("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_b01dd329_params.json", level="drugs")
+    # #exit()
+    #     #summarize_experiments("/media/rogia/5123-CDC3/NOISE/", cm=False)
+    #     #exit()
+    #     #get_best_hp()
+    #     #exit()
+    #     # # ('cid000003345', 'cid000005076', 'malignant melanoma')
+    #     # input_path = f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv"
+    #     # data = pd.read_csv(input_path, sep="\t")
+    #     # print(list(data))
+    #     # l = data[(data['drug1'].str.lower() == 'fenofibrate') & (data['drug2'].str.lower() == 'valsartan') & (data['event_name'].str.lower() == 'hepatitis c')]
+    #     # print(l)
+    #     #
+    #     #
+    #     # exit()
+    #     # request_pairs = [("fenofibrate", "valsartan", "hepatitis c"), ("verapamil", "fluvoxamine", 'hepatitis c'),
+    #     #                  ("bupropion", "fluoxetine", 'hepatitis a'), ("bupropion", "fluoxetine", "hiv disease"),
+    #     #                  ("paroxetine", "risperidone", "hiv disease"), ("mupirocin", "sertraline", "drug withdrawal"),
+    #     #                  ("amlodipine", "cerivastatin", "flu"), ("metoclopramide", "minoxidil", "road traffic accident"),
+    #     #                  ("n-acetylcysteine", "cefuroxime", "herpes simplex"),
+    #     #                  ("clonazepam", "salmeterol", "adverse drug effect")]
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+    #     #        req_pairs=request_pairs, inf=0.6, sup=1.,  save_filename="tab9") # goog predictions
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 1)', label=1,
+    #     #            req_pairs=request_pairs)
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=1,
+    #     #            req_pairs=request_pairs)
+    #
+    #     request_pairs = [("bupropion", "benazepril", "heart attack"), ("didanosine", "stavudine", "acidosis"),
+    #                      ("bupropion", "fluoxetine", "panic attack"), ("bupropion", "orphenadrine", "muscle spasm"),
+    #                      ("tramadol", "zolpidem", "diaphragmatic hernia"), ("paroxetine", "fluticasone", "muscle spasm"),
+    #                      ("paroxetine", "fluticasone", "fatigue"), ("fluoxetine", "methadone", "pain"),
+    #                      ("carboplatin", "cisplatin", "blood sodium decreased"),
+    #                      ("chlorthalidone", "fluticasone", "high blood pressure")]
+    #
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+    #     #            req_pairs=request_pairs, inf=0.0, sup=0.1, save_filename="tab-10")
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+    #     #            req_pairs=request_pairs, inf=0.7, sup=1., save_filename="bad_pred")
+    #     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+    #                req_pairs=request_pairs, inf=0.7, sup=1, save_filename="1_as_1")
+    #     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=1,
+    #                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="1_as_0")
+    #     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+    #                req_pairs=request_pairs, inf=0., sup=0.1, save_filename="0_as_0")
+    #     find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='random', label=0,
+    #                req_pairs=request_pairs, inf=0.7, sup=1., save_filename="0_as_1")
+    #     exit()
+    #     # find_pairs("/home/rogia/Documents/projects/temp-2/all_raw-exp-res.csv", mod='leave_drugs_out (test_set 2)', label=0,
+    #     #            req_pairs=request_pairs)
+    #
+    #     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv", split_mode="leave_drugs_out (test_set 1)", false_pos=1., false_neg=0.)
+    #     # # analyze_models_predictions(fp="/home/rogia/Documents/projects/temp-2/temp.csv",
+    #     # #                            split_mode="leave_drugs_out (test_set 2)",false_pos=1., false_neg=0)
+    #     # # # # cli()
+    #     # # #
+    #     # # #  reload(path="/home/rogia/Documents/exps_results/binary/cl_gin")
+    #     # #exit()
+    #     # # # summarize_experiments("/media/rogia/5123-CDC3/SOC", cm=True)
+    #     # # # get_best_hp()
+    #     # # # exit()
+    #     # #
+    #     # # # brou("/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    #     # # # exit()
+    #     # # # raw_data = pd.read_csv(f"/home/rogia/.invivo/cache/datasets-ressources/DDI/twosides/3003377s-twosides.tsv", sep="\t")
+    #     # # # print(list(raw_data))
+    #     # # # print(raw_data[(raw_data["drug1"].str.lower() == "aprepitant")  & (raw_data["drug2"].str.lower() == "cisplatin")  & (raw_data["event_name"].str.lower() =="hepatitis c" )][["drug2", "event_name"]])  #
+    #     # # #
+    #     # # # exit()
+    #     # # # summarize_experiments(main_dir="/home/rogia/Documents/exps_results")
+    #     # analyse_kfold_predictions(mod="random", config="CNN", label=1, sup=0.1, inf=0.)
+    #     # analyse_kfold_predictions(mod="random", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
+    #     # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0., selected_pairs=request_pairs)
+    #     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=1, sup=0.1, inf=0.)
+    #     # # # analyse_kfold_predictions(mod="leave_drugs_out (test_set 1)", config="CNN", label=0, sup=1., inf=0.7)
+    #     # #
+    #     # res = pd.read_csv("/home/rogia/Documents/projects/temp-SOC/all_raw-exp-res.csv", index_col=0)
+    #     # # y1 = res[res["split_mode"] == "random"]
+    #     # # y1 = y1.groupby(["test_fold", "model_name"], as_index=True)[["micro_roc", "micro_auprc"]].max()
+    #     # # y1.to_csv("../../results/random_exp_grouped_by_test_fold.csv")
+    #     # # y2 = res[res["split_mode"] == "leave_drugs_out (test_set 1)"]
+    #     # # y2 = y2.groupby(["test_fold", "model_name"], as_index=True)[
+    #     # #     ["micro_roc", "micro_auprc"]].max()
+    #     # # y2.to_csv("../../results/early_exp_grouped_by_test_fold.csv")
+    #     # # exit()
+    #     # # visualize_loss_progress("../../../twosides_bmnddi_6b85a591_log.log")
+    #     # # exit()
+    #     # # #
+    #     # # # exit()
+    #     # # #
+    #     # # #
+    #     # # # exit()
+    #     # # visualize_loss_progress("/home/rogia/Documents/projects/twosides_deepddi_7a8da2c0_log.log")
+    #     # #
+    #     # # exit()
+    #     # #
+    #     # # exit()
+    #     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='pair')
+    #     # # get_dataset_stats(exp_path="/media/rogia/CLé USB/expts/DeepDDI", level='drugs')
+    #     # # exit()
+    #     # # df = __get_dataset_stats__("/home/rogia/.invivo/result/cl_deepddi/twosides_deepddi_4ebbb144_params.json")
+    #     # # print(df)
+    #     # # exit()
+    #     # # # summarize_experiments("/media/rogia/CLé USB/expts/")
+    #     # # visualize_test_perf()
+    #     # #
+    #     # # exit()
+    #     # # # bt = pd.read_csv("../../results/best_hp.csv")
+    #     # # # # c = bt[bt["model_name"] == 'CNN'][['dataset_name', 'task_id', 'split_mode', 'path']].values
+    #     # # # # print(c)
+    #     # # # c = bt[(bt["dataset_name"] == 'twosides') & (bt["split_mode"] == "random")][
+    #     # # #     ['dataset_name', "model_name", 'task_id', 'split_mode', 'path']].values
+    #     # # # analyze_models_predictions([c[::-1][1]])
+    #     # #
+    #     # # # analysis_test_perf(c)
+    #     # # exit()
+    #     # # get_dataset_stats(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json")
+    #     # # exit()
+    #     # # # get_misclassified_labels(
+    #     # # #     "/home/rogia/Documents/projects/drug_drug_interactions/results/twosides_bmnddi_6936e1f9_1_sis.csv", items=10)
+    #     # # # exit()
+    #     # # # combine(exp_path="/media/rogia/CLé USB/expts/DeepDDI", split=False)
+    #     # # exit()
+    #     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=1, threshold=0.1)
+    #     # # analyse_model_predictions(task_id="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", label=0, threshold=0.7)
+    #     # # choose o.1 as threshold for false positive
+    #     # # combine(["/home/rogia/Documents/projects/twosides_bmnddi_390811c9",
+    #     # #          "/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9"])
+    #     #
+    #     # exit()
+    #     # exp_folder = "/home/rogia/Documents/exps_results/IMB"  # /media/rogia/CLé USB/expts"  # f"{os.path.expanduser('~')}/expts"
+    #     # # summarize(exp_folder)
+    #     # # Scorer twosides random split
+    #     # scorer("twosides", task_path="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9", save="random")
+    #     # # Scorer twosides early split stage
+    #     # scorer("twosides", task_path="/home/rogia/Documents/projects/twosides_bmnddi_390811c9", save="early+stage")
+    #     # exit()
+    #     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_48d052b6", save="cnn+NS")
+    #     # scorer("twosides", task_path="/home/rogia/Documents/exps_results/imb/twosides_bmnddi_5cbedb4a", save="cnn+CS")
+    #     #
+    #     # # Scorer drugbank random split
+    #     # scorer("drugbank", task_path="/media/rogia/CLé USB/expts/CNN/drugbank_bmnddi_54c9f5bd", save="drugbank")
+    #     # # Scorer drugbank early split
+    #     # exit()
+    #     #
+    #     # f = __loop_through_exp(exp_folder + "/CNN")
+    #     # # # # # d = __loop_through_exp(exp_folder + "/BiLSTM")
+    #     # # # # # a = __loop_through_exp(exp_folder + "/DeepDDI")
+    #     # # # # # b = __loop_through_exp(exp_folder + "/Lapool")
+    #     # # # # # c = __loop_through_exp(exp_folder + "/MolGraph")
+    #     # # # # #
+    #     # # # # # e = a + b + c + d
+    #     # out = pd.DataFrame(f)
+    #     # print(out)
+    #     # out.to_csv("temp.csv")
+    #     # t = out.groupby(['dataset_name', 'model_name', "split_mode"], as_index=True)[
+    #     #     ["micro_roc", "micro_auprc"]].mean()
+    #     # print(t)
+    #     # # out.to_csv("sum-exp.xlsx")
+    #     # # get_exp_stats("sum-exp.xlsx")
+    #     # # exit()
+    #     # visualize_loss_progress("/home/rogia/Documents/lee/drugbank_adnn_bc985d58_log.log")
+    #     # exit()
+    #     # summarize()
+    #     # # display("/home/rogia/Documents/cl_lstm/_hp_0/twosides_bmnddi_8aa095b0_log.log")
+    #     # # display(dataset_name="drugbank", exp_folder="/home/rogia/Documents/no_e_graph/_hp_0")
+    #     # # display(dataset_name="twosides", exp_folder="/home/rogia/Documents/cl_lstm/_hp_0/")
+    #     # # display_H("/home/rogia/Documents/graph_mol/drugbank_bget_expt_results("/home/rogia/Documents/graph_mol/")mnddi_a556debd_log.log")
+    #     # # display_H("/home/rogia/.invivo/result/cl_lapool/drugbank_bmnddi_12c974de_log.log")
+    #     # # exit()
+    #     # c = get_expt_results("/home/rogia/.invivo/result/")
+    #     # print(c)
+    #     # exit()
+    #     # c.to_excel("graph_mol_as_extract.xlsx")

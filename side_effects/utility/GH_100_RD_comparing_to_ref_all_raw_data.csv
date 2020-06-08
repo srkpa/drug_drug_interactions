@@ -1,0 +1,13 @@
+,exp,split,Model,seed,dataset,micro_roc,micro_auprc
+0,ref,leave_drugs_out (test_set 1),MolGraph,42,drugbank,0.9693161702976228,0.4767330714629291
+1,n100-Randomized SMILES,leave_drugs_out (test_set 1),GIN,42,drugbank,0.9680493353362714,0.468073898258829
+2,ref,leave_drugs_out (test_set 2),MolGraph,42,drugbank,0.9509104490689322,0.324356845664364
+3,n100-Randomized SMILES,leave_drugs_out (test_set 2),GIN,42,drugbank,0.9462351873318592,0.3094699076126405
+4,ref,leave_drugs_out (test_set 1),MolGraph,42,twosides,0.7898492333539309,0.23840610330872386
+5,n100-Randomized SMILES,leave_drugs_out (test_set 1),GIN,42,twosides,0.7874237727761276,0.2360336276177556
+6,ref,leave_drugs_out (test_set 2),MolGraph,42,twosides,0.7748131560672571,0.21823002571922884
+7,n100-Randomized SMILES,leave_drugs_out (test_set 2),GIN,42,twosides,0.7732408569293616,0.21595826507865332
+8,ref,random,MolGraph,42,twosides,0.8064150972648141,0.27009881294192745
+9,n100-Randomized SMILES,random,GIN,42,twosides,0.8159774211695922,0.2858538568244236
+10,ref,random,MolGraph,42,drugbank,0.9927124307127376,0.7482753646128018
+11,n100-Randomized SMILES,random,GIN,42,drugbank,0.9917585180244856,0.7159750340494468

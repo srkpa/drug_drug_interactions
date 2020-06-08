@@ -82,17 +82,15 @@ def plot_percentage_hist(data, title="", x_label="", y_label="", file_name=None)
     else:
         plt.show()
 
-
-def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressources/DDI"):
-    def data_info(dataset_name, filepath="/home/rogia/.invivo/cache/datasets-ressources/DDI", smothing=False, syn=True):
+def data_info(dataset_name, filepath="/home/rogia/.invivo/cache/datasets-ressources/DDI", smothing=False, syn=False):
         filepath += f"/{dataset_name}/{dataset_name}.csv"
-        data = load_ddis_combinations(filepath, header=True, dataset_name=dataset_name)
+        data = load_ddis_combinations(filepath, header=True)
         if smothing:
             filepath = os.path.dirname(filepath)
             dataset_name += "-SOC"
             side_effects_mapping = load_side_effect_mapping(filepath, 'SOC')
             data = relabel(data, side_effects_mapping)
-        elif not syn:
+        elif syn:
             dataset_name += "-NOSYN"
             filepath = os.path.dirname(filepath)
             output = defaultdict(set)
@@ -118,55 +116,82 @@ def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressourc
               "Median of |y| = ", np.mean(distribution_combos), "\n", f"LD = {ld}")
         return per_combo_counter, dataset_name, len(data), len(combo_counter), nb_drugs, np.mean(distribution_combos)
 
-    # out0 = data_info("twosides", smothing=False, syn=False)
-    # exit()
+def plot_data_distribution(filepath="/home/rogia/.invivo/cache/datasets-ressources/DDI"):
+    return_out = pd.DataFrame()
+
+    outs = []
     out1 = data_info("drugbank", smothing=False)
     out2 = data_info("twosides", smothing=False)
-    # out3 = data_info("twosides", smothing=True)
-    out3 = data_info("twosides", smothing=False, syn=False)
+    out3 = data_info("twosides", smothing=False, syn=True)
+    outs.append(out1)
+    outs.append(out2)
+    outs.append(out3)
+    return_out.loc[:, "Dataset"] =  ["Drugbank"] * len(out1[0]) + ["Twosides"] * len(out2[0]) + ["Twosides-NOSYN"] * len(out3[0])
+    return_out.loc[:, "Frequency (%)"] = list(out1[0].values()) + list(out2[0].values()) + list(out3[0].values())
 
-    filename = "/home/rogia/Bureau/figs/figure_phenotype_hist.png"
-    fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(30, 12))
-    sns.set_context("paper", font_scale=3)
-    sns.set_style("ticks")
-    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'Times New Roman'})
+    filename = "/home/rogia/Bureau/figs/figure_phenotype_hist_v2.png"
+    #fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(30, 12))
+    sns.set_context("paper", font_scale=1.1)
+    #sns.set_style("ticks")
+    #sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'Times New Roman'})
+    print(return_out)
 
-    ax1 = sns.distplot(list(zip(*out1[0].items()))[1], ax=ax1, kde=False, color=sns.xkcd_rgb['denim blue'],
-                       hist_kws={"alpha": 1})
-    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
-                   'font.sans-serif':
-                       'Liberation Sans'})
-    ax2 = sns.distplot(list(zip(*out2[0].items()))[1], color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, ax=ax2,
-                       kde=False)
-    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
-                   'font.sans-serif':
-                       'Liberation Sans'})
-    ax3 = sns.distplot(list(zip(*out3[0].items()))[1], color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, ax=ax3,
-                       kde=False, bins=10)
+    g = sns.catplot(x="Frequency (%)", col="Dataset",
+                    data=return_out, kind="count",
+                    height=5, aspect=.7, sharey=False, sharex=False, color=sns.xkcd_rgb['denim blue'])
 
-    ax1.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out1[3], decimals=0, symbol=""))
-    ax2.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out2[3], decimals=0, symbol=""))
-    ax3.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out3[3], decimals=0, symbol=""))
+    sns.despine(top=False, right=False)
 
-    ax1.set_title("Drugbank\n", fontsize=44)
-    ax2.set_title("Twosides\n", fontsize=44)
-    ax3.set_title("Twosides-NOSYN\n", fontsize=44)
-    ax1.set_xlabel("")
-    ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=44)
-    ax3.set_xlabel("")
-    ax1.set_ylabel("Percentage of phenotype (%)\n", fontsize=44)
-    for tick in ax1.xaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
-    for tick in ax2.xaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
-    for tick in ax3.xaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
-    for tick in ax1.yaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
-    for tick in ax2.yaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
-    for tick in ax3.yaxis.get_major_ticks():
-        tick.label.set_fontsize(40)
+    for i, ax in enumerate(g.axes.flat):
+        ax.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=len(outs[i][0]), decimals=0, symbol=""))
+        xlim = ax.get_xticks()
+        ax.xaxis.set_ticks(np.arange(xlim[0], xlim[-1]+10, 10))
+        xlabels = [i for i in xlim if i % 10 == 0]
+        ax.set_xticklabels(xlabels)
+        ax.set_ylabel("#Side effects (%) ")
+
+    plt.tight_layout()
+    plt.savefig(filename)
+    plt.show()
+
+    exit()
+
+    # ax1 = sns.distplot(list(zip(*out1[0].items()))[1], ax=ax1, kde=False, color=sns.xkcd_rgb['denim blue'],
+    #                    hist_kws={"alpha": 1})
+    # sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+    #                'font.sans-serif':
+    #                    'Liberation Sans'})
+    # ax2 = sns.distplot(list(zip(*out2[0].items()))[1], color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, ax=ax2,
+    #                    kde=False)
+    # sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+    #                'font.sans-serif':
+    #                    'Liberation Sans'})
+    # ax3 = sns.distplot(list(zip(*out3[0].items()))[1], color=sns.xkcd_rgb['denim blue'], hist_kws={"alpha": 1}, ax=ax3,
+    #                    kde=False, bins=10)
+    #
+    # ax1.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out1[3], decimals=0, symbol=""))
+    # ax2.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out2[3], decimals=0, symbol=""))
+    # ax3.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=out3[3], decimals=0, symbol=""))
+    #
+    # ax1.set_title("Drugbank\n", fontsize=44)
+    # ax2.set_title("Twosides\n", fontsize=44)
+    # ax3.set_title("Twosides-NOSYN\n", fontsize=44)
+    # ax1.set_xlabel("")
+    # ax2.set_xlabel("\nPhenotype Frequency (%)", fontsize=44)
+    # ax3.set_xlabel("")
+    # ax1.set_ylabel("Percentage of phenotype (%)\n", fontsize=44)
+    # for tick in ax1.xaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
+    # for tick in ax2.xaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
+    # for tick in ax3.xaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
+    # for tick in ax1.yaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
+    # for tick in ax2.yaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
+    # for tick in ax3.yaxis.get_major_ticks():
+    #     tick.label.set_fontsize(40)
 
     plt.tight_layout()
     plt.gcf().subplots_adjust(left=0.2, right=0.9, top=0.8, bottom=0.2)
@@ -321,59 +346,61 @@ def plot_test_dens(fp, leg=False):
         plt.savefig(file_name)
         plt.show()
 
+
 def define_categories(dataset, res_dict, met1, met2):
-        ticks = {}
-        x = res_dict['random']['x']
-        #n_samples = res_dict["random"]["total"]
-        n_samples = 63472 if dataset == "twosides" else 191878
-        print("n samples", n_samples)
-        out = []
-        y = []
-        max_freq = max(x)
-        freq = list(range(0, max_freq + int(max_freq / 3), int(max_freq / 3)))
-        freq = [int((count * 100) / n_samples) for count in freq]
-        if dataset == "drugbank":
-            freq = [0, 3, 5, 7] + freq[1:]
-        print(freq)
-        i = 0
-        print("xx", x)
-        for i, j in enumerate(x):
-            j = int((j / n_samples) * 100)
-            if freq[0] <= j < freq[1]:
-                y += [1]
-                ticks[1] = f'{str(freq[0])},{str(freq[1])}['
-            elif freq[1] <= j < freq[2]:
-                y += [2]
-                ticks[2] = f'{str(freq[1])},{str(freq[2])}['
-            elif freq[2] <= j < freq[3]:
-                y += [3]
-                ticks[3] = f'{str(freq[2])},{str(freq[3])}['  # finit ici
-            elif freq[3] <= j < freq[4]:
-                y += [4]
-                ticks[4] = f'{str(freq[3])},{str(freq[4])}['  #
-            elif freq[4] <= j < freq[5]:
-                y += [5]
-                ticks[5] = f'{str(freq[4])}, {str(freq[5])}['
-            elif freq[5] <= j < freq[6]:
-                y += [6]
-                ticks[6] = f'{str(freq[5])}, {str(freq[6])}['
-            elif freq[6] <= j < freq[7]:
-                y += [7]
-                ticks[7] = f'{str(freq[6])},{str(freq[7])}['
-            else:
-                y += [8]
-                ticks[8] = f'{str(freq[7])}, 100]'
-        for split, rdict in res_dict.items():
-            df = pd.DataFrame()
-            print(len(x), len(y), len(rdict['roc']), len(rdict['ap']), len(rdict['f1']))
-            df.loc[:, "split"] = [split] * len(y) * 2
-            df.loc[:, "Frequence (%)"] = y * 2
-            df.loc[:, "Metric name"] = ["AUPRC"] * len(y) + ["F1-score"] * len(
-                y) if met1 == "ap" and met2 == "f1" else ["AUPRC"] * len(y) + ["AUROC"] * len(y)
-            df.loc[:, "Scores"] = rdict[met1] + rdict[met2]  # rdict['ap'] + rdict['f1']
-            out += [df]
-        result = pd.concat(out, ignore_index=True)
-        return ticks, result
+    ticks = {}
+    x = res_dict['random']['x']
+    # n_samples = res_dict["random"]["total"]
+    n_samples = 63472 if dataset == "twosides" else 191878
+    print("n samples", n_samples)
+    out = []
+    y = []
+    max_freq = max(x)
+    freq = list(range(0, max_freq + int(max_freq / 3), int(max_freq / 3)))
+    freq = [int((count * 100) / n_samples) for count in freq]
+    if dataset == "drugbank":
+        freq = [0, 3, 5, 7] + freq[1:]
+    print(freq)
+    i = 0
+    print("xx", x)
+    for i, j in enumerate(x):
+        j = int((j / n_samples) * 100)
+        if freq[0] <= j < freq[1]:
+            y += [1]
+            ticks[1] = f'{str(freq[0])},{str(freq[1])}['
+        elif freq[1] <= j < freq[2]:
+            y += [2]
+            ticks[2] = f'{str(freq[1])},{str(freq[2])}['
+        elif freq[2] <= j < freq[3]:
+            y += [3]
+            ticks[3] = f'{str(freq[2])},{str(freq[3])}['  # finit ici
+        elif freq[3] <= j < freq[4]:
+            y += [4]
+            ticks[4] = f'{str(freq[3])},{str(freq[4])}['  #
+        elif freq[4] <= j < freq[5]:
+            y += [5]
+            ticks[5] = f'{str(freq[4])}, {str(freq[5])}['
+        elif freq[5] <= j < freq[6]:
+            y += [6]
+            ticks[6] = f'{str(freq[5])}, {str(freq[6])}['
+        elif freq[6] <= j < freq[7]:
+            y += [7]
+            ticks[7] = f'{str(freq[6])},{str(freq[7])}['
+        else:
+            y += [8]
+            ticks[8] = f'{str(freq[7])}, 100]'
+    for split, rdict in res_dict.items():
+        df = pd.DataFrame()
+        print(len(x), len(y), len(rdict['roc']), len(rdict['ap']), len(rdict['f1']))
+        df.loc[:, "split"] = [split] * len(y) * 2
+        df.loc[:, "Frequence (%)"] = y * 2
+        df.loc[:, "Metric name"] = ["AUPRC"] * len(y) + ["F1-score"] * len(
+            y) if met1 == "ap" and met2 == "f1" else ["AUPRC"] * len(y) + ["AUROC"] * len(y)
+        df.loc[:, "Scores"] = rdict[met1] + rdict[met2]  # rdict['ap'] + rdict['f1']
+        out += [df]
+    result = pd.concat(out, ignore_index=True)
+    return ticks, result
+
 
 def plot_test_perf(fp, leg=False, model_name="CNN", met1="ap", met2="f1"):
     sns.set_context("paper", font_scale=2.5)
@@ -383,30 +410,31 @@ def plot_test_perf(fp, leg=False, model_name="CNN", met1="ap", met2="f1"):
 
     for dataset, res_dict in output.items():
         file_name = f"/home/rogia/Bureau/figs/figure_phenotype_freq_{dataset}_Syn_facet_grid.png"
-        #n_samples = 63472 if dataset == "twosides" else 191878
+        # n_samples = 63472 if dataset == "twosides" else 191878
         print(dataset, res_dict.keys())
-        tks, dist = define_categories(dataset, res_dict, met1, met2) # le faire à chaque split.
+        tks, dist = define_categories(dataset, res_dict, met1, met2)  # le faire à chaque split.
         tks = sorted(list(tks.items()))
         dist["Frequence (%)"].replace(dict(tks), inplace=True)
         print(dist)
-        dist.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen", "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
+        dist.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen",
+                      "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
 
         dist.sort_values(by=["Frequence (%)"], ascending=True, inplace=True)
 
-        plt.figure(figsize=(25, 8))
+        plt.figure(figsize=(2, 30))
         sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
                        'font.sans-serif':
                            'Liberation Sans'})
         g = sns.catplot(x="Frequence (%)", y="Scores",
                         hue="Metric name", col="split",
                         data=dist, kind="box", col_order=["Random", "One-unseen", "Both-unseen"],
-                         aspect=1., legend_out=False, legend=False
+                        aspect=1., legend_out=False, height=2.5
                         )
 
         plt.tight_layout()
         plt.show()
-        #plt.savefig(file_name)
-        #exit()
+        # plt.savefig(file_name)
+        # exit()
         #
         # fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(25, 8))
         #
@@ -477,9 +505,88 @@ def plot_test_perf(fp, leg=False, model_name="CNN", met1="ap", met2="f1"):
         # plt.setp(ax1.get_legend().get_texts(), fontsize=30)
         # plt.setp(ax1.get_legend().get_title(), fontsize=30)
         #
-        #plt.tight_layout()
-        #plt.show()
+        # plt.tight_layout()
+        # plt.show()
         # plt.savefig(file_name)
+
+
+def plot_test_perf_v2(fp, leg=False, model_name="CNN", met1="ap", met2="f1", files=None):
+    sns.set_context("paper", font_scale=3, rc={"lines.linewidth": 2.8, "axes.labelsize": 45})
+    sns.set_style("ticks")
+    sns.set_style({"xtick.direction": "in", "ytick.direction": "in", 'font.family': 'sans-serif',
+                   'font.sans-serif':
+                       'Liberation Sans'})
+
+    dist = []
+    tk = {}
+    a, b = files
+    if os.path.isfile(a):  # Need a consensus file
+        dist = pd.read_csv(a)
+        if os.path.isfile(b):
+            tk = json.load(open(b, "rb"))
+    else:
+        output = visualize_test_perf(fp, eval_on_train=True, model_name=model_name)
+        for dataset, res_dict in output.items():
+            # n_samples = 63472 if dataset == "twosides" else 191878
+            print(dataset, res_dict.keys())
+            tks, out = define_categories(dataset, res_dict, met1, met2)  # le faire à chaque split.
+            # tks = sorted(list(tks.items()))
+            # out["Frequence (%)"].replace(dict(tks), inplace=True)
+            tk[dataset] = tks
+            out.loc[:, "D"] = dataset
+            out.loc[:, "M"] = out.loc[:, "Metric name"]
+            dist.append(out)
+
+        dist = pd.concat(dist)
+        dist.to_csv("twos_drug_data_phen_data.csv")
+        with open('twos_drug_data_phen_data_tks.json', 'w') as json_file:
+            json.dump(tk, json_file)
+
+    dist.replace({"random": "Random", "leave_drugs_out (test_set 1)": "One-unseen",
+                  "leave_drugs_out (test_set 2)": "Both-unseen"}, inplace=True)
+
+    dist.sort_values(by=["Frequence (%)"], ascending=True, inplace=True)
+
+    # plt.tick_params(labelsize='large', width=2)
+
+    for d in dist.D.unique():
+        dt = dist[dist["D"] == d]
+        file_name = f"/home/rogia/Bureau/figs/figure_phenotype_freq_{d}_mixplot_grid.png"
+
+        g = sns.catplot(x="Frequence (%)", y="Scores",
+                        hue="split",
+                        data=dt, col="D", kind="box", row="M", ci="sd",
+                        hue_order=["Random", "One-unseen", "Both-unseen"], saturation=.5,
+                        sharex=False, margin_titles=False, row_order=["AUROC", "AUPRC"],
+                        height=8)  # height should be three times width)
+        sns.despine(top=False, right=False)
+
+        if d != "drugbank":
+            g._legend.remove()
+        else:
+            handles = g._legend_data.values()
+            labels = g._legend_data.keys()
+            g._legend.remove()
+            g.fig.legend(handles, labels, ncol=1,
+                         fontsize='medium', loc='lower left')
+
+        print(tk)
+        g.set(xticklabels=[tk[d.split("-")[0]][x] for x in sorted(list(tk[d.split("-")[0]].keys()))])
+
+        for ax in g.axes.flat:
+            ax.set_ylabel(ax.get_ylabel(), fontsize="xx-large")
+            for tick in ax.yaxis.get_major_ticks():
+                tick.label.set_fontsize(40)
+            for tick in ax.xaxis.get_major_ticks():
+                tick.label.set_fontsize(40)
+
+        plt.tight_layout()
+        plt.savefig(file_name, bbox_inches='tight')
+        plt.show()
+        plt.clf()
+        plt.close()
+
+    # plt.show()
 
 
 def get_correlation(config_file="/media/rogia/CLé USB/expts/CNN/twosides_bmnddi_6936e1f9_params.json"):
@@ -718,10 +825,11 @@ def compute_phenotype_cooccurence(
 
 
 if __name__ == '__main__':
-    #plot_test_perf("../../results/temp.csv", met1="ap", met2="roc", leg=False)
+    # plot_test_perf("../../results/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_data_stats()
     # exit()
-    # plot_data_distribution()
+    plot_data_distribution()
+    exit()
     # visualize_loss_progress("/media/rogia/5123-CDC3/SOC/cl_deepddi/twosides_deepddi_1d1fb1d1_log.log")
     # exit()
     # Step 1
@@ -746,8 +854,11 @@ if __name__ == '__main__':
     # plot_results(["/home/rogia/Bureau/figs/soc.csv", "twosides"], leg=False, smothing=True)
     # plot_results(["../../results/all_raw-exp-res.csv", "twosides"], leg=False, smothing=True)
 
-    plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", model_name="MolGraph")
-    #plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
+    plot_test_perf_v2("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", model_name="CNN",
+                      files=("synonym_data_phen_data.csv", "synonym_data_phen_data_tks.json"))
+    plot_test_perf_v2("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", model_name="CNN",
+                      files=("twos_drug_data_phen_data.csv", "twos_drug_data_phen_data_tks.json"))
+    # plot_test_perf("/home/rogia/Documents/exps_results/temp-2/temp.csv", met1="ap", met2="roc", leg=False)
     # plot_test_perf("../../results/temp.csv", met1="ap", met2="roc")
     exit()
 

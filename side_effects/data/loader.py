@@ -519,16 +519,6 @@ class MultitaskDDIDataset(Dataset):
         if self.is_graph:
             self.collate_fn = self.collate_drug_pairs
 
-        # else:
-        #     if self.min_len * max(self.ratios) > self.max_len:
-        #         diff = (self.min_len * max(self.ratios)) - self.max_len
-        #         self.fill_with_nan(diff, 1)
-        #         self.max_len += diff
-        #
-        #     elif self.min_len * max(self.ratios) < self.max_len:
-        #         diff = round(self.max_len / max(self.ratios)) - self.min_len #- (self.min_len * max(self.ratios)) + self.max_len
-        #         self.fill_with_nan(diff, 0)
-        #         self.min_len += diff
 
         if testing:
             self.get_targets()
@@ -542,14 +532,6 @@ class MultitaskDDIDataset(Dataset):
         return self.min_len
 
     def init_samples(self, task_samples_list):
-        # if not self.is_ordered:
-        #     drug_pairs = set([input for task in task_samples_list for input, _ in task.items()])
-        #     tmp = [x for tk in task_samples_list[1:] for x in tk.keys()]
-        #     dup_pairs = set([input[::-1] for input in drug_pairs if input[::-1] in tmp])
-        #     print("Len of dup. pairs-->", len(dup_pairs))
-        #     drug_pairs -= dup_pairs
-        #
-        # else:
         for dp in task_samples_list[0].keys():
             if dp not in task_samples_list[-1] and dp[::-1] in task_samples_list[-1]:
                 task_samples_list[-1][dp] = task_samples_list[-1][dp[::-1]]
@@ -580,7 +562,6 @@ class MultitaskDDIDataset(Dataset):
             return (to_tensor(drug_1, gpu=self.gpu), to_tensor(drug_2, gpu=self.gpu)), labels
         else:
             x, y = [], []
-            # print("it", item)
             for i in range(self.nb_tasks):
                 start = min(item * self.ratios[i], len(self.raw_data[i]))
                 end = min(start + self.ratios[i], len(self.raw_data[i]))
