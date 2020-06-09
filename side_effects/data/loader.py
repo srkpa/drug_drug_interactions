@@ -258,13 +258,11 @@ class DDIdataset(Dataset):
                 tmp = []
                 for (d1, d2, l) in self.samples:
                     rn_d1 = self.rand_smile_to_dict[d1]
-                    rn_d2 =  self.rand_smile_to_dict[d2]
+                    rn_d2 = self.rand_smile_to_dict[d2]
                     cmp = list(product(rn_d1, rn_d2))
                     tmp.extend([(d1, d2, l) for (d1, d2) in cmp])
                 self.samples.extend(tmp)
                 print("I m done. nb samples: ", len(self.samples))
-
-
 
         if self.has_graph:
             self.build_graph()
@@ -519,7 +517,6 @@ class MultitaskDDIDataset(Dataset):
         if self.is_graph:
             self.collate_fn = self.collate_drug_pairs
 
-
         if testing:
             self.get_targets()
 
@@ -658,8 +655,30 @@ def _mol_repr(input_path, drugs2smiles, transformer_fn):
     return drugs2smiles
 
 
+def randomize_smiles(mol, random_type="restricted", isomericSmiles=False):
+    """
+    Returns a random SMILES given a SMILES of a molecule.
+    :param mol: A Mol object
+    :param random_type: The type (unrestricted, restricted) of randomization performed.
+    :return : A random SMILES string of the same molecule or None if the molecule is invalid.
+    """
+    if not mol:
+        return None
+
+    if random_type == "unrestricted":
+        return Chem.MolToSmiles(mol, canonical=False, doRandom=True, isomericSmiles=isomericSmiles)
+
+    if random_type == "restricted":
+        new_atom_order = list(range(mol.GetNumAtoms()))
+        random.shuffle(new_atom_order)
+        random_mol = Chem.RenumberAtoms(mol, newOrder=new_atom_order)
+        return Chem.MolToSmiles(random_mol, canonical=False, isomericSmiles=isomericSmiles)
+    raise ValueError("Type '{}' is not valid".format(random_type))
+
+
 def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False, use_pharm=False,
-              use_clusters=False, remove_syn=False, use_as_filter="", drugname_as_id=False, randomized_smiles=0):
+              use_clusters=False, remove_syn=False, use_as_filter="", drugname_as_id=False, random_smiles=0,
+              random_type="", isomericSmiles=True):
     if dataset_name == "mixed":
         data, drugs2smiles = join_datasets()
     else:
@@ -677,13 +696,14 @@ def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False
             drugs2smiles = {drugs2name[idx]: smi for idx, smi in drugs2smiles.items()}
 
     print("Before random smiles gen. nb drugs", len(drugs2smiles))
-    if randomized_smiles != 0:
+    if random_smiles != 0:
         rand_dr = {}
         for id, smile in drugs2smiles.items():
             try:
                 mol = Chem.MolFromSmiles(smile)
                 rds = list(
-                    set([Chem.MolToSmiles(mol, doRandom=True, canonical=False) for i in range(randomized_smiles)]))
+                    set([randomize_smiles(mol, random_type=random_type, isomericSmiles=isomericSmiles) for i in
+                         range(random_smiles)]))  # Chem.MolToSmiles(mol, doRandom=True, canonical=False)
                 if smile in rds:
                     rds.remove(smile)
                 print(id, len(rds))
@@ -730,7 +750,9 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
     drugs2smiles, data, (
         drug_offsides, drug2targets, drugs2pharm) = load_data(input_path, dataset_name, use_side_effect, use_targets,
                                                               use_pharm, use_clusters, remove_syn, use_as_filter,
-                                                              randomized_smiles=kwargs.get("randomized_smiles", 0))
+                                                              random_smiles=kwargs.get("randomized_smiles", 0),
+                                                              random_type=kwargs.get("random_type", ""),
+                                                              isomericSmiles=kwargs.get("isomeric", True))
     drugs2smiles = _mol_repr(input_path, drugs2smiles, transformer)
     data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,

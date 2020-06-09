@@ -1150,13 +1150,58 @@ def __compute_mmd__(x, y, gamma=1.0):
     return x_kernel.mean() + y_kernel.mean() - 2 * xy_kernel.mean()
 
 
-def compute_mmd(path, dataset, mode, model):
+def compute_mmd(path, dataset, mode, model, n_repeats=100):
     train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
     test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
     valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
 
-    a, b, c = __compute_mmd__(train, valid),    __compute_mmd__(train, test),  __compute_mmd__(valid, test)
-    return a, b, c
+    print(train.shape, test.shape, valid.shape)
+    a1, b1, c1 = [], [], []
+
+    def mmd(X, Y, n=1000):
+        x_indexes = np.random.choice(len(X), n)
+        y_indexes = np.random.choice(len(Y), n)
+        x = X[x_indexes, :]
+        y = Y[y_indexes, :]
+        return __compute_mmd__(x, y)
+
+    for i in range(n_repeats):
+        a, b, c = mmd(train, valid), mmd(train, test), mmd(valid, test)
+        a1 += [a]
+        b1 += [b]
+        c1 += [c]
+
+    mmda1 = str(mean(a1).round(6)) + " ± " + str(np.std(a1).round(3))
+    mmdb1 = str(mean(b1).round(6)) + " ± " + str(np.std(b1).round(3))
+    mmdc1 = str(mean(c1).round(6)) + " ± " + str(np.std(c1).round(3))
+    return mmda1, mmdb1, mmdc1
+
+
+def plot_umap(path, dataset, mode, model):
+    train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
+    test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
+    valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
+
+    labels = [0] * len(train)  + [1] * len (valid) + [2] * len(test)
+
+    import umap
+    import seaborn as sns
+    reducer = umap.UMAP()
+    ck = np.concatenate([train, valid, test])
+    print(ck.shape)
+    embedding = reducer.fit_transform(ck)
+    print(embedding.shape)
+
+    plt.scatter(
+        embedding[:, 0],
+        embedding[:, 1],
+        c=labels, cmap='Spectral')
+    plt.title(f"{split_mode} | {dataset}")
+    plt.gca().set_aspect('equal', 'datalim')
+    plt.colorbar(boundaries=np.arange(4) - 0.5).set_ticks(np.arange(3))
+    plt.savefig(f"{dataset}_{split_mode}.png")
+    plt.show()
+
 
 
 def mean_similarity(filepath, dataset_name, model, save_as="", title="", extract=False, **kwargs):
@@ -1476,14 +1521,17 @@ def reformatter(file, ref="/home/rogia/Documents/exps_results/temp-2/all_raw-exp
 if __name__ == '__main__':
 
     outs = []
-    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
-        for dataset in ["twosides", "drugbank"]:
-            a, b, c = compute_mmd(path=".", model="BLSTM", mode=split_mode, dataset=dataset)
-            print(a, b, c)
-            outs.append([dataset, split_mode, a, b, c])
+    for split_mode in ["leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+            dataset = "drugbank"
+            print(dataset, split_mode)
+        #for dataset in ["twosides", "drugbank"]:
+            plot_umap(path=".", model="BLSTM", mode=split_mode, dataset=dataset)
+            #a, b, c = compute_mmd(path=".", model="BLSTM", mode=split_mode, dataset=dataset, n_repeats=1000)
+            #print(dataset, split_mode, a, b, c)
+            #outs.append([dataset, split_mode, a, b, c])
 
-    result = pd.DataFrame(outs, columns=["dataset", "split", "train_test", "train_valid", "test_valid"])
-    result.to_csv("mmd.csv")
+   # result = pd.DataFrame(outs, columns=["dataset", "split", "train_valid", "train_test", "test_valid"])
+    #result.to_csv("mmd-1000.csv")
     exit()
     for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
         extract_features(dataset_name="twosides",
