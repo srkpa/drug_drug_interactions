@@ -1094,6 +1094,19 @@ def extract_features(filepath, dataset_name, model, split_mode, inputs={}, level
             print("Seq. Shape:", seq.shape)
 
         catalog2 = dict(zip(list(smiles.keys()), fc(seq).detach().numpy()))
+
+        out = {}
+        for k in partitions:
+            a, b, _ = list(zip(*partitions[k].samples))
+            c = list(set(a + b))
+            print(k, len(c))
+            feats = np.stack([catalog2[kk] for kk in c])
+            print("c", feats.shape)
+            out[k] = feats
+
+            with open(f'{dataset_name}_{split_mode}_{iprefix}_{k}_drug.feats.npy', 'wb') as f:
+                np.save(f, feats)
+
         return catalog2
 
     else:
@@ -1150,21 +1163,33 @@ def __compute_mmd__(x, y, gamma=1.0):
     return x_kernel.mean() + y_kernel.mean() - 2 * xy_kernel.mean()
 
 
-def compute_mmd(path, dataset, mode, model, n_repeats=100):
-    train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
-    test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
-    valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
+def compute_mmd(path, dataset, mode, model, n_repeats=100, level="drug"):
+    if level == "drug":
+        train = np.load(f"{path}/{dataset}_{mode}_{model}_train_drug.feats.npy")
+        test = np.load(f"{path}/{dataset}_{mode}_{model}_test_drug.feats.npy")
+        valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid_drug.feats.npy")
+    else:
+        train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
+        test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
+        valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
 
     print(train.shape, test.shape, valid.shape)
     a1, b1, c1 = [], [], []
 
     def mmd(X, Y, n=1000):
-        x_indexes = np.random.choice(len(X), n)
-        y_indexes = np.random.choice(len(Y), n)
-        x = X[x_indexes, :]
-        y = Y[y_indexes, :]
-        return __compute_mmd__(x, y)
+        #
+        # x_indexes = np.random.choice(len(X), n)
+        # y_indexes = np.random.choice(len(Y), n)
+        # x = X[x_indexes, :]
+        # y = Y[y_indexes, :]
+        #gamma = np.std(np.concatenate([x, y]))
 
+        gamma = np.std(np.concatenate([X, Y]))
+       # print("gamma ", gamma)
+        #return __compute_mmd__(x, y, gamma=float(gamma))
+        return __compute_mmd__(X, Y, gamma=float(gamma))
+
+    n_repeats = 1
     for i in range(n_repeats):
         a, b, c = mmd(train, valid), mmd(train, test), mmd(valid, test)
         a1 += [a]
@@ -1177,29 +1202,39 @@ def compute_mmd(path, dataset, mode, model, n_repeats=100):
     return mmda1, mmdb1, mmdc1
 
 
-def plot_umap(path, dataset, mode, model):
-    train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
-    test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
-    valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
+def plot_umap(path, dataset, mode, model, n_components=2, level="drug"):
+    from mpl_toolkits.mplot3d import Axes3D
+    if level == "drug":
+        train = np.load(f"{path}/{dataset}_{mode}_{model}_train_drug.feats.npy")
+        test = np.load(f"{path}/{dataset}_{mode}_{model}_test_drug.feats.npy")
+        valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid_drug.feats.npy")
+    else:
+        train = np.load(f"{path}/{dataset}_{mode}_{model}_train.feats.npy")
+        test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
+        valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
 
     labels = [0] * len(train)  + [1] * len (valid) + [2] * len(test)
 
     import umap
     import seaborn as sns
-    reducer = umap.UMAP()
+    reducer = umap.UMAP(n_components=n_components)
     ck = np.concatenate([train, valid, test])
     print(ck.shape)
     embedding = reducer.fit_transform(ck)
     print(embedding.shape)
 
-    plt.scatter(
-        embedding[:, 0],
-        embedding[:, 1],
-        c=labels, cmap='Spectral')
+    fig = plt.figure()
+
+    if n_components == 2:
+        plt.scatter(embedding[:, 0], embedding[:, 1], s=1, c=labels, cmap='Spectral')
+        plt.gca().set_aspect('equal', 'datalim')
+        plt.colorbar(boundaries=np.arange(4) - 0.5).set_ticks(np.arange(3))
+    if n_components == 3:
+        ax = fig.add_subplot(111, projection='3d')
+        ax.scatter(embedding[:, 0], embedding[:, 1], embedding[:, 2], c=labels, cmap='Spectral')
+
     plt.title(f"{split_mode} | {dataset}")
-    plt.gca().set_aspect('equal', 'datalim')
-    plt.colorbar(boundaries=np.arange(4) - 0.5).set_ticks(np.arange(3))
-    plt.savefig(f"{dataset}_{split_mode}.png")
+    plt.savefig(f"{dataset}_{split_mode}_{level}.png")
     plt.show()
 
 
@@ -1519,29 +1554,40 @@ def reformatter(file, ref="/home/rogia/Documents/exps_results/temp-2/all_raw-exp
 
 
 if __name__ == '__main__':
+    summarize_experiments(main_dir="/home/rogia/.invivo/result/rand", cm=False,
+                                                 param_names=["dataset_params.randomized_smiles", "dataset_params.random_type", "dataset_params.isomeric"], save_as="test",
+                                                )
+
+    exit()
 
     outs = []
-    for split_mode in ["leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
-            dataset = "drugbank"
-            print(dataset, split_mode)
-        #for dataset in ["twosides", "drugbank"]:
-            plot_umap(path=".", model="BLSTM", mode=split_mode, dataset=dataset)
-            #a, b, c = compute_mmd(path=".", model="BLSTM", mode=split_mode, dataset=dataset, n_repeats=1000)
-            #print(dataset, split_mode, a, b, c)
-            #outs.append([dataset, split_mode, a, b, c])
+    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+           # dataset = "twosides"
+            #print(dataset, split_mode)
+        for dataset in ["twosides", "drugbank"]:
 
-   # result = pd.DataFrame(outs, columns=["dataset", "split", "train_valid", "train_test", "test_valid"])
-    #result.to_csv("mmd-1000.csv")
+           a, b, c = compute_mmd(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode, dataset=dataset, n_repeats=10, level="drug")
+           print(dataset, split_mode, a, b, c)
+           outs.append([dataset, split_mode, a, b, c])
+           # plot_umap(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode, dataset=dataset,
+                #     n_components=2)
+
+
+    result = pd.DataFrame(outs, columns=["dataset", "split", "train_valid", "train_test", "test_valid"])
+
+    result.to_csv("single_mol_mmd_no_bootstraping.csv")
+
+
     exit()
+    # for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
+    #     extract_features(dataset_name="twosides",
+    #                      filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
+    #                      model="BiLSTM", split_mode=split_mode, level="pair")
+
     for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
         extract_features(dataset_name="twosides",
                          filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                         model="BiLSTM", split_mode=split_mode, level="pair")
-
-    for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
-        extract_features(dataset_name="drugbank",
-                         filepath="/home/rogia/Documents/exps_results/temp-2/temp.csv",
-                         model="BiLSTM", split_mode=split_mode, level="pair")
+                         model="BiLSTM", split_mode=split_mode, level="drug")
     exit()
 
     exit()

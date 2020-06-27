@@ -85,7 +85,7 @@ def load_ddis_combinations(fname, header):
     return combo2se
 
 
-def _filter_pairs_both_exists(samples, filtering_set=None):
+def filter_pairs_both_exists(samples, filtering_set=None):
     to_remove = [
         (id_1, id_2) for (id_1, id_2) in samples
         if (id_1 not in filtering_set) or (id_2 not in filtering_set)
@@ -641,7 +641,7 @@ def _rank(data, v=100):
     return data
 
 
-def _mol_repr(input_path, drugs2smiles, transformer_fn):
+def get_mol_repr(input_path, drugs2smiles, transformer_fn):
     drugs, smiles = list(drugs2smiles.keys()), list(drugs2smiles.values())
     transformer = all_transformers_dict.get(transformer_fn)
     args = inspect.signature(transformer)
@@ -753,8 +753,8 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                                                               random_smiles=kwargs.get("randomized_smiles", 0),
                                                               random_type=kwargs.get("random_type", ""),
                                                               isomericSmiles=kwargs.get("isomeric", True))
-    drugs2smiles = _mol_repr(input_path, drugs2smiles, transformer)
-    data = _filter_pairs_both_exists(data, filtering_set=drugs2smiles)
+    drugs2smiles = get_mol_repr(input_path, drugs2smiles, transformer)
+    data = filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
                                                                             test_size=test_size, valid_size=valid_size,
                                                                             n_folds=n_folds, test_fold=test_fold)
@@ -809,13 +809,13 @@ def get_multi_data_partitions(dataset_name, input_path, transformer, split_mode,
         mols_smi.update(smiles)
         samples_dict[name] = dt
 
-    drugs2smiles = _mol_repr(input_path, mols_smi,
-                             transformer)  # let's assume that we will use the same transformation for all tasks
+    drugs2smiles = get_mol_repr(input_path, mols_smi,
+                                transformer)  # let's assume that we will use the same transformation for all tasks
 
     for name, dt in samples_dict.items():
 
         print(f"Dataset:{name} - split_mode: {evaluation_schemes[name]}")
-        data = _filter_pairs_both_exists(dt, filtering_set=drugs2smiles)
+        data = filter_pairs_both_exists(dt, filtering_set=drugs2smiles)
         train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, evaluation_schemes[name],
                                                                                 seed=seed,
                                                                                 test_size=test_size,

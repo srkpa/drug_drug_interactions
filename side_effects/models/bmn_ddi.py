@@ -189,8 +189,10 @@ class BMNDDI(nn.Module):
     def bmn_basic(self, batch):
         #  side_eff_features = None
         drugs_a, drugs_b, = batch[:2]
+        print("druh a", drugs_b.shape)
         add_feats = batch[2:]
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
+        print("f", features_drug1.shape, features_drug2.shape)
         ddi = self.fusion_layer(features_drug1, features_drug2, mode=self.mode)
         if add_feats:
             add_feats = self.add_feature_extractor(torch.cat(add_feats, 1))

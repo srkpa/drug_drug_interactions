@@ -1,3 +1,5 @@
+from math import ceil
+
 import ivbase.utils.trainer as ivbt
 import torch
 from ivbase.nn.commons import get_optimizer
@@ -8,7 +10,7 @@ from poutyne.framework.callbacks import CSVLogger, EarlyStopping, ReduceLROnPlat
 from pytoune.framework.callbacks import *
 from tensorboardX import SummaryWriter
 from torch.utils.data import DataLoader
-from math import ceil
+
 name2callback = {"early_stopping": EarlyStopping,
                  "reduce_lr": ReduceLROnPlateau,
                  "norm_clip": ClipNorm}
@@ -105,7 +107,6 @@ class Trainer(ivbt.Trainer):
             self.set_weights(weights["net"])
             print("Loading checkoint file weights ....End!")
 
-
         # Model.__init__(self, model=network, optimizer=optimizer,
         #                loss_function=BinaryCrossEntropyP(use_negative_sampled_loss), metrics=metrics)
         # self.metrics_names = metrics_names
@@ -127,7 +128,6 @@ class Trainer(ivbt.Trainer):
 
         if hasattr(train_dataset, "collate_fn") and callable(train_dataset.collate_fn):
             collate_fn = train_dataset.collate_fn
-
 
         if hasattr(train_dataset, "batch_generator"):
             generator = train_dataset.batch_generator
@@ -190,7 +190,7 @@ class Trainer(ivbt.Trainer):
         # #     print("hehe")
         # else:
         #     print("je ne suis pas entrée")
-       # if hasattr(self.model, "on_multidataset"):
+        # if hasattr(self.model, "on_multidataset"):
 
         if self.use_dataloader:
             loader = DataLoader(dataset, batch_size=batch_size, collate_fn=self.collate_fn)
@@ -208,12 +208,13 @@ class Trainer(ivbt.Trainer):
             # else:
             #     _, y_pred = self.evaluate_generator(loader, steps=nsteps, return_pred=True)
         print(len(dataset), batch_size)
-        _, y_pred = self.evaluate_generator(loader, return_pred=True) if nsteps < 0 else self.evaluate_generator(loader, steps=nsteps, return_pred=True)
+        _, y_pred = self.evaluate_generator(loader, return_pred=True) if nsteps < 0 else self.evaluate_generator(loader,
+                                                                                                                 steps=nsteps,
+                                                                                                                 return_pred=True)
         y_true = dataset.get_targets()
         print("pred", len(y_pred))
         print("true", len(y_true))
         print(y_true[0].shape, y_true[1].shape)
-
 
         if self.model.is_multitask_output:
             y_pred = list(zip(*y_pred))
@@ -227,16 +228,15 @@ class Trainer(ivbt.Trainer):
             print(y_pred.shape, y_true.shape)
             assert y_pred.shape == y_true.shape, "length (pred) != length(true); S.learning"
 
-
         if hasattr(dataset, "masks"):
-            masks  = dataset.masks
+            masks = dataset.masks
             assert len(masks) == len(y_pred), "length (pred) != length(masks)."
-            y_pred  = [pred[masks[i]] for i, pred in enumerate(y_pred)]
+            y_pred = [pred[masks[i]] for i, pred in enumerate(y_pred)]
             print("hehe", y_pred[0].shape, y_pred[1].shape)
             # Update
             y_pred = [ii for ii in y_pred if len(ii) > 0]
             y_true = [ii for ii in y_true if len(ii) > 0]
-            #print("final hehe", y_pred[0].shape, y_pred[1].shape)
+            # print("final hehe", y_pred[0].shape, y_pred[1].shape)
 
         metrics = list(self.test_metrics.values())
         res = dict(zip(self.test_metrics.keys(), self.compute_metrics(y_pred, y_true, metrics)))
@@ -269,5 +269,3 @@ def batch_generator(dataset, batch_size=32, infinite=True, shuffle=True):
             y = torch.cat(y, dim=0)  # .unsqueeze(dim=1)
             yield list(zip(*x)), y
         loop += 1
-
-
