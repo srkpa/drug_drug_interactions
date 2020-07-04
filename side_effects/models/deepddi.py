@@ -10,20 +10,23 @@ class DeepDDI(nn.Module):
                  is_binary_output=False, testing=False):
         super(DeepDDI, self).__init__()
         layers = []
-        in_ = input_dim
+
         self.is_binary_output = is_binary_output
         self.testing = testing
         self.exp_prefix = exp_prefix
         output_dim = 1 if is_binary_output else nb_side_effects
+
+        in_ = input_dim
         if is_binary_output:
             self.embedding = nn.Embedding(nb_side_effects, ss_embedding_dim)
             in_ += ss_embedding_dim
+
         for out_ in hidden_sizes:
             layers.append(nn.Linear(in_, out_))
-            #  layers.append(nn.ReLU())
             layers.append(nn.BatchNorm1d(out_))
             layers.append(nn.ReLU())
             in_ = out_
+
         self.net = nn.Sequential(*layers, nn.Linear(in_, output_dim
                                                     ), nn.Sigmoid())
 

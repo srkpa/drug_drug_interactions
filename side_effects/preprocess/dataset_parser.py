@@ -5,7 +5,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-
+# Need to be deleted
 def load_raw_data(raw_data_file, mapping_file):
     case = 0
     data = {}

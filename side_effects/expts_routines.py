@@ -18,6 +18,7 @@ from side_effects.data.loader import get_data_partitions, compute_classes_weight
 from side_effects.models.deep_rf import DeepRF
 from side_effects.models.rgcn.link_predict import main
 
+
 from side_effects.trainer import Trainer
 
 SAVING_DIR_FORMAT = '{expts_dir}/results_{dataset_name}_{algo}_{arch}'
@@ -129,7 +130,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
     print(f"Config params: {expt_params}\n")
     print(f"Checkpoint path: {checkpoint_path}")
     print(f"Restore path if any: {restore_path}")
-    save_config(all_params, paths.pop('config_filename')) ##TOD concat the name of dataset if list is given
+    save_config(all_params, paths.pop('config_filename'))  ##TOD concat the name of dataset if list is given
     debug = dataset_params.pop("debug", False)
     is_multioutput = len(dataset_params.get('dataset_name')) >= 2 if isinstance(dataset_params.get('dataset_name'),
                                                                                 list) else False
@@ -241,7 +242,7 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
             dict(trainer=Trainer, nb_side_effects=vec3, exp_prefix=paths["raw_preds_filename"]))
         model = Trainer(**model_params, snapshot_dir=restore_path)
         print(model.model)
-       # exit()
+        # exit()
         model.cuda()
         training = "\n".join([f"{i}:\t{v}" for (i, v) in fit_params.items()])
         print(f"Training details: \n{training}")

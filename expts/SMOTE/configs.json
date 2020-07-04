@@ -11,7 +11,7 @@
         "use_fixed_binary_cost": false,
         "use_fixed_label_cost": false,
         "use_label_cost_per_batch": false,
-        "use_negative_sampling": true,
+        "use_negative_sampling": false,
         "use_sampling": false
       },
       "lr": 0.0001,
@@ -52,9 +52,10 @@
   "dataset_params": [
     {
       "dataset_name": "twosides",
-      "debug": false,
+      "debug": true,
       "decagon": false,
       "label": "ml",
+      "mlsmote": true,
       "n_folds": 0,
       "seed": 42,
       "split_mode": "random",
@@ -71,8 +72,8 @@
   ],
   "fit_params": [
     {
-      "batch_size": 256,
-      "n_epochs": 6,
+      "batch_size": 4,
+      "n_epochs": 100,
       "with_early_stopping": false
     }
   ]

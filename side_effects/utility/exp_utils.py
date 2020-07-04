@@ -1643,7 +1643,7 @@ if __name__ == '__main__':
     # exit()
     # visualize_loss_progress("/media/rogia/CLé USB/expts/BiLSTM/twosides_bmnddi_a556e5b3_log.log")
     # exit()
-    # summarize_experiments(main_dir="/home/rogia/.invivo/result/NegS", cm=False,
+    # summarize_experiments(main_dir="/home/rogia/.invivo/result/SMOTE", cm=False,
     #                       param_names=["model_params.loss_params.use_negative_sampling"], save_as="negative_samp",
     #                      )
 
@@ -1675,7 +1675,7 @@ if __name__ == '__main__':
     visualize_loss_progress("/home/rogia/.invivo/result/GIN_MLT/twosides_L1000_bmnddi_06e744f2_log.log",
                             save_as="twosides_drugbank_mlt.png")
     exit()
-    visualize_loss_progress("/home/rogia/.invivo/result/NegS/twosides_bmnddi_dd7a577f_log.log")
+    visualize_loss_progress("/home/rogia/.invivo/result/SMOTE/twosides_bmnddi_dd7a577f_log.log")
     #
     # exit()
     #

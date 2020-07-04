@@ -13,6 +13,7 @@ from torch.utils.data import Dataset
 
 from side_effects.data.transforms import *
 from side_effects.metrics import wrapped_partial
+from side_effects.data.mlsmote import *
 
 all_transformers_dict = dict(
     seq=sequence_transformer,
@@ -716,26 +717,33 @@ def load_data(input_path, dataset_name, use_side_effect=False, use_targets=False
     print("After random smiles gen. nb drugs", len(drugs2smiles))
 
     drug_offsides = {}
+
     if use_side_effect:
         drug2se = load_mono_se()
         data = {pair: set(labels).difference(drug2se[pair[0]].union(drug2se[pair[1]])) for pair, labels in
                 data.items()}
         drug_offsides = dict(
             zip(drug2se.keys(), MultiLabelBinarizer().fit_transform(drug2se.values()).astype(np.float32)))
+
     drug2targets = {}
+
     if use_targets:
         targets = download_drug_gene_targets()
         drug2targets = gene_entity_transformer(targets.keys(), targets.values())
         print(list(drug2targets.values())[0].shape)
         print(list(drug2targets.values())[0].shape)
+
     drugs2pharm = {}
+
     if use_pharm:
         drugs2pharm = load_pharm()
         drugs2pharm = dict(
             zip(drugs2pharm.keys(), MultiLabelBinarizer().fit_transform(drugs2pharm.values()).astype(np.float32)))
+
     if use_clusters:
         side_effects_mapping = load_side_effect_mapping(input_path, use_as_filter)
         data = relabel(data, side_effects_mapping)
+
     if remove_syn:
         data = group_by_concept(input_path, data)
 
@@ -746,13 +754,15 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
                         seed=None, test_size=0.25, valid_size=0.25, use_graph=False, decagon=False,
                         use_clusters=False, use_as_filter=None, use_targets=False, use_side_effect=False,
                         use_pharm=False, n_folds=0, test_fold=0, label='ml', debug=False, density=False,
-                        remove_syn=False, **kwargs):
+                        remove_syn=False, mlsmote=False, **kwargs):
     drugs2smiles, data, (
-        drug_offsides, drug2targets, drugs2pharm) = load_data(input_path, dataset_name, use_side_effect, use_targets,
-                                                              use_pharm, use_clusters, remove_syn, use_as_filter,
-                                                              random_smiles=kwargs.get("randomized_smiles", 0),
-                                                              random_type=kwargs.get("random_type", ""),
-                                                              isomericSmiles=kwargs.get("isomeric", True))
+        drug_offsides, drug2targets, drugs2pharm
+    ) = load_data(input_path, dataset_name, use_side_effect, use_targets,
+                  use_pharm, use_clusters, remove_syn, use_as_filter,
+                  random_smiles=kwargs.get("randomized_smiles", 0),
+                  random_type=kwargs.get("random_type", ""),
+                  isomericSmiles=kwargs.get("isomeric", True))
+
     drugs2smiles = get_mol_repr(input_path, drugs2smiles, transformer)
     data = filter_pairs_both_exists(data, filtering_set=drugs2smiles)
     train_data, valid_data, test_data, unseen_data = train_test_valid_split(data, split_mode, seed=seed,
@@ -765,20 +775,36 @@ def get_data_partitions(dataset_name, input_path, transformer, split_mode,
 
     # labels_mapping = {label: i for i, label in enumerate(mbl.classes_)}
     if debug:
-        train_data = dict(sorted(train_data.items())[:53])
-        valid_data = dict(sorted(valid_data.items())[:53])
-        test_data = dict(sorted(test_data.items())[:53])
-        unseen_data = dict(sorted(unseen_data.items())[:53])
-    print(
-        f"Dataset:\nlen train: {len(train_data)}\nlen test_ddi: {len(test_data)}\nlen valid: {len(valid_data)}\nlen unseen: {len(unseen_data)}")
+        train_data = dict(sorted(train_data.items())[:5000])
+        valid_data = dict(sorted(valid_data.items())[:5000])
+        test_data = dict(sorted(test_data.items())[:5000])
+        unseen_data = dict(sorted(unseen_data.items())[:5000])
 
-    train_dataset = DDIdataset(train_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
+    print(
+        f"Dataset:\nlen train: {len(train_data)}"
+        f"\nlen test_ddi: {len(test_data)}"
+        f"\nlen valid: {len(valid_data)}"
+        f"\nlen unseen: {len(unseen_data)}")
+
+    if mlsmote:
+        n_synthetic_samples = kwargs.get("n_synth", 100)
+        samples_dict, drugs_dict = create_mlsmote_dataset(train_data, drugs2smiles, mbl, n_samples=n_synthetic_samples)
+        train_data.update(samples_dict)
+        drugs2smiles.update(drugs_dict)
+
+    train_dataset = DDIdataset(train_data, drugs2smiles, mbl,
+                               drugspharm=drugs2pharm,
+                               drugstargets=drug2targets,
                                drugse=drug_offsides, density=density,
-                               randomized_smiles=kwargs.get("randomized_smiles", False), add=kwargs.get("add", False))
+                               randomized_smiles=kwargs.get("randomized_smiles", False),
+                               add=kwargs.get("add", False))
+
     valid_dataset = DDIdataset(valid_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                                drugse=drug_offsides, density=density)
+
     test_dataset = DDIdataset(test_data, drugs2smiles, mbl, drugspharm=drugs2pharm, drugstargets=drug2targets,
                               drugse=drug_offsides, density=density)
+
     print(train_dataset.nb_labels)
     unseen_dataset = DDIdataset(unseen_data, drugs2smiles, mbl, drugspharm=drugs2pharm,
                                 drugstargets=drug2targets,
