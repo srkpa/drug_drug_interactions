@@ -412,6 +412,7 @@ def summarize_experiments(main_dir=None, cm=True, fp="", param_names=None, save_
             if os.path.isdir(path):
                 print("__Path__: ", path)
                 res = __loop_through_exp(path, compute_metric=cm, param_names=param_names)
+                print(res)
                 if len(res) > 0:
                     rand.extend(res)
 
@@ -422,6 +423,7 @@ def summarize_experiments(main_dir=None, cm=True, fp="", param_names=None, save_
 
         out.to_csv(f"../../results/{save_as}-all_raw-exp-res.csv")
 
+    print(out)
     modes = out["split_mode"].unique()
     out["split_mode"].fillna(inplace=True, value="null")
     out["fmode"].fillna(inplace=True, value="null")
@@ -1182,11 +1184,11 @@ def compute_mmd(path, dataset, mode, model, n_repeats=100, level="drug"):
         # y_indexes = np.random.choice(len(Y), n)
         # x = X[x_indexes, :]
         # y = Y[y_indexes, :]
-        #gamma = np.std(np.concatenate([x, y]))
+        # gamma = np.std(np.concatenate([x, y]))
 
         gamma = np.std(np.concatenate([X, Y]))
-       # print("gamma ", gamma)
-        #return __compute_mmd__(x, y, gamma=float(gamma))
+        # print("gamma ", gamma)
+        # return __compute_mmd__(x, y, gamma=float(gamma))
         return __compute_mmd__(X, Y, gamma=float(gamma))
 
     n_repeats = 1
@@ -1213,7 +1215,7 @@ def plot_umap(path, dataset, mode, model, n_components=2, level="drug"):
         test = np.load(f"{path}/{dataset}_{mode}_{model}_test.feats.npy")
         valid = np.load(f"{path}/{dataset}_{mode}_{model}_valid.feats.npy")
 
-    labels = [0] * len(train)  + [1] * len (valid) + [2] * len(test)
+    labels = [0] * len(train) + [1] * len(valid) + [2] * len(test)
 
     import umap
     import seaborn as sns
@@ -1236,7 +1238,6 @@ def plot_umap(path, dataset, mode, model, n_components=2, level="drug"):
     plt.title(f"{split_mode} | {dataset}")
     plt.savefig(f"{dataset}_{split_mode}_{level}.png")
     plt.show()
-
 
 
 def mean_similarity(filepath, dataset_name, model, save_as="", title="", extract=False, **kwargs):
@@ -1553,30 +1554,59 @@ def reformatter(file, ref="/home/rogia/Documents/exps_results/temp-2/all_raw-exp
     #
 
 
+
+
+
 if __name__ == '__main__':
+
+   # ---plot (alpha, gamma), metrics
+    import numpy as np
+    import matplotlib.pyplot as plt
+    exp_focal_loss_res = pd.read_csv("../../results/exp_focal_loss-all_raw-exp-res.csv", index_col=0)
+
+    print(exp_focal_loss_res)
+    print(list(exp_focal_loss_res))
+    fig = plt.figure()
+    ax = plt.axes(projection="3d")
+    x_pos = exp_focal_loss_res['model_params.loss_params.alpha']
+    y_pos = exp_focal_loss_res['model_params.loss_params.gamma']
+    z_pos = exp_focal_loss_res["macro_roc"]
+    size = len(x_pos)
+    ax.bar3d(x_pos, y_pos, z_pos,size, size, size, color='aqua')
+    plt.show()
+    exit()
+
+
+    summarize_experiments(main_dir="/home/rogia/Bureau/FLoss/", cm=False,
+                          param_names=["model_params.loss_params.alpha", "model_params.loss_params.gamma"],
+                          save_as="exp_focal_loss",
+                          metric_names=["micro_roc",
+                                        "macro_roc",
+                                        "micro_auprc",
+                                        "macro_auprc"])
+    exit()
     summarize_experiments(main_dir="/home/rogia/.invivo/result/rand", cm=False,
-                                                 param_names=["dataset_params.randomized_smiles", "dataset_params.random_type", "dataset_params.isomeric"], save_as="test",
-                                                )
+                          param_names=["dataset_params.randomized_smiles", "dataset_params.random_type",
+                                       "dataset_params.isomeric"], save_as="test",
+                          )
 
     exit()
 
     outs = []
     for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:
-           # dataset = "twosides"
-            #print(dataset, split_mode)
+        # dataset = "twosides"
+        # print(dataset, split_mode)
         for dataset in ["twosides", "drugbank"]:
-
-           a, b, c = compute_mmd(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode, dataset=dataset, n_repeats=10, level="drug")
-           print(dataset, split_mode, a, b, c)
-           outs.append([dataset, split_mode, a, b, c])
-           # plot_umap(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode, dataset=dataset,
-                #     n_components=2)
-
+            a, b, c = compute_mmd(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode,
+                                  dataset=dataset, n_repeats=10, level="drug")
+            print(dataset, split_mode, a, b, c)
+            outs.append([dataset, split_mode, a, b, c])
+            # plot_umap(path="/home/rogia/Documents/exps_results/smi_1/", model="BiLSTM", mode=split_mode, dataset=dataset,
+            #     n_components=2)
 
     result = pd.DataFrame(outs, columns=["dataset", "split", "train_valid", "train_test", "test_valid"])
 
     result.to_csv("single_mol_mmd_no_bootstraping.csv")
-
 
     exit()
     # for split_mode in ["random", "leave_drugs_out (test_set 1)", "leave_drugs_out (test_set 2)"]:

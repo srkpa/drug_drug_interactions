@@ -350,7 +350,7 @@ class DDIdataset(Dataset):
         return len(self.labels_vectorizer.classes_)
 
     def get_samples(self):
-        samples = [(np.expand_dims(self.drug_to_smiles[d2], axis=0), np.expand_dims(self.drug_to_smiles[d2], axis=0))
+        samples = [[self.drug_to_smiles[d1], self.drug_to_smiles[d2]]
                    for d1, d2, _ in self.samples]
         return samples
 

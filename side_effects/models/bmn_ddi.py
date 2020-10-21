@@ -88,7 +88,7 @@ class BMNDDI(nn.Module):
                 self.last_mnet_layer = "cos"
             else:
                 self.mnet = fe_factory(arch="fcnet", input_size=in_size, **kwargs.get("mnet_params"))
-                del(kwargs["mnet_params"])
+                del (kwargs["mnet_params"])
 
         self.classifier = fe_factory(arch='fcnet', input_size=in_size, fc_layer_dims=fc_layers_dim,
                                      output_dim=output_dim, last_layer_activation=last_layer, **kwargs)
@@ -188,10 +188,11 @@ class BMNDDI(nn.Module):
 
     def bmn_basic(self, batch):
         #  side_eff_features = None
+        print("I am using basic")
         drugs_a, drugs_b, = batch[:2]
         add_feats = batch[2:]
         features_drug1, features_drug2 = self.drug_feature_extractor(drugs_a), self.drug_feature_extractor(drugs_b)
-      #  print("f", features_drug1.shape, features_drug2.shape)
+        #  print("f", features_drug1.shape, features_drug2.shape)
         ddi = self.fusion_layer(features_drug1, features_drug2, mode=self.mode)
         if add_feats:
             add_feats = self.add_feature_extractor(torch.cat(add_feats, 1))
