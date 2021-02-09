@@ -62,7 +62,7 @@ def get_loss(loss_name: str, *args, **kwargs) -> Callable:
     if loss_name == "focal loss":
         loss_fn = WeightedFocalLoss(*args, **kwargs)
     elif loss_name == 'adapt. focal_loss':
-        loss_fn = AdaptiveWeightedFocalLoss(*args, **kwargs)
+        loss_fn = AdaptativeWeightedFocalLoss(*args, **kwargs)
     else:
         loss_fn = get_loss_or_metric(loss_name)
 
@@ -182,20 +182,23 @@ class WeightedFocalLoss(Module):
         return F_loss.mean()
 
 
-class AdaptiveWeightedFocalLoss(Module):
+class AdaptativeWeightedFocalLoss(Module):
 
-    def __init__(self, gamma):
-        super(AdaptiveWeightedFocalLoss, self).__init__()
+    def __init__(self, gamma:int, alpha: Optional[np.ndarray, torch.Tensor] = None):
+        super(AdaptativeWeightedFocalLoss, self).__init__()
         self.gamma = gamma
+        self.alpha = alpha
 
     def forward(self, inputs, targets):
-
         K = targets.shape[1]
-        one_w = torch.sum(targets, dim=0) / targets.shape[1]
-        assert one_w.nelement() == K, f"wrong weights shape : K = {K}, w = {one_w.shape, one_w.nelement()}"
-        k_losses = torch.zeros_like(one_w)
+        alpha = self.alpha
+        if alpha is None:
+            print("Ne doit pas s'afficher")
+            alpha = torch.sum(targets, dim=0) / targets.shape[0]
+        assert alpha.nelement() == K, f"wrong weights shape : K = {K}, w = {alpha.shape, alpha.nelement()}"
+        k_losses = torch.zeros_like(alpha)
         for k in range(K):
-            alpha_t = one_w[k]
+            alpha_t =alpha[k]
             gamma_t = self.gamma
             obj = WeightedFocalLoss(alpha=alpha_t, gamma=gamma_t)
             loss = obj.forward(inputs[:, k], targets[:, k])
