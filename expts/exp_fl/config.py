@@ -62,6 +62,7 @@ loss_params = list(ParameterGrid(dict(
     use_fixed_label_cost=[False],
     use_binary_cost_per_batch=[False],
     use_label_cost_per_batch=[False],
+    compute_alpha = [True],
     neg_rate=[1.],
     use_sampling=[False],
     samp_weight=[False],
