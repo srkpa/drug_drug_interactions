@@ -182,16 +182,16 @@ class WeightedFocalLoss(Module):
         return F_loss.mean()
 
 
-class AdaptiveWeightedFocalLoss(Module):
+class AdaptativeWeightedBatchFocalLoss(Module):
 
     def __init__(self, gamma):
-        super(AdaptiveWeightedFocalLoss, self).__init__()
+        super(AdaptativeWeightedBatchFocalLoss, self).__init__()
         self.gamma = gamma
 
     def forward(self, inputs, targets):
 
         K = targets.shape[1]
-        one_w = torch.sum(targets, dim=0) / targets.shape[1]
+        one_w = torch.sum(targets, dim=0) / targets.shape[1] # 0
         assert one_w.nelement() == K, f"wrong weights shape : K = {K}, w = {one_w.shape, one_w.nelement()}"
         k_losses = torch.zeros_like(one_w)
         for k in range(K):
