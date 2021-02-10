@@ -6,7 +6,7 @@ from sklearn.model_selection import ParameterGrid
 dataset_params = list(ParameterGrid(
     dict(dataset_name=["twosides"],
          transformer=["seq"],
-         split_mode=["random"],
+         split_mode=["random", "leave_drugs_out"],
          test_size=[0.10],
          valid_size=[0.15],
          seed=[42],  # , 10, 21, 33, 42, 55, 64, 101, 350, 505],
@@ -19,15 +19,14 @@ dataset_params = list(ParameterGrid(
          n_folds=[0],
          test_fold=[0],  # 1, 2, 3, 4, 5, 6, 7, 8, 9],
          label=['ml'],
-         debug=[False],
-         is_ordered=[False],
-         init=[False],
-         drugname_as_id=[False]
+         debug=[True],
+         mlsmote=[True],
+         n_synth=[100, 1000, 10000]
          )
 ))
 
 fit_params = list(ParameterGrid(
-    dict(n_epochs=[100], batch_size=[256], with_early_stopping=[True])))
+    dict(n_epochs=[100], batch_size=[4], with_early_stopping=[False])))
 
 drug_features_extractor_params = list(ParameterGrid(
     dict(arch=['conv1d'],
@@ -53,7 +52,7 @@ network_params = list(ParameterGrid(dict(
     dropout=[0],
     b_norm=[True],
     is_binary_output=[False],
-    pretrained_feature_extractor=[False],
+    op_mode=["cos"]
 )))
 
 loss_params = list(ParameterGrid(dict(
@@ -65,9 +64,7 @@ loss_params = list(ParameterGrid(dict(
     neg_rate=[1.],
     use_sampling=[False],
     samp_weight=[False],
-    rescale_freq=[False],
-    gamma=[2]
-    # is_mtk=[True]
+    rescale_freq=[False]
 )))
 
 model_params = list(ParameterGrid(dict(
@@ -75,7 +72,7 @@ model_params = list(ParameterGrid(dict(
     optimizer=['adam'],
     weight_decay=[0.0],
     lr=[1e-4],
-    loss=['adapt. focal_loss'],
+    loss=['bce'],
     metrics_names=[['micro_roc', "macro_roc", "micro_auprc", "macro_auprc"]],
     loss_params=loss_params,
     dataloader=[True]

@@ -219,6 +219,12 @@ def run_experiment(model_params, dataset_params, input_path, output_path, restor
             model_params["loss_params"]["density"] = compute_labels_density(vec1) if \
                 loss_params["use_fixed_label_cost"] else None
 
+            if loss_params["compute_alpha"]:
+                print("Compute alpha")
+                model_params["loss_params"]["alpha"] = torch.sum(vec1, dim=0) / vec1.shape[0]
+                print("Compute alpha", len( model_params["loss_params"]["alpha"]),  model_params["loss_params"]["alpha"])
+                del (model_params["loss_params"]["compute_alpha"])
+
             model_params["loss_params"]["samp_weight"] = compute_labels_density(vec1,
                                                                                 return_freq=True) if \
                 loss_params["samp_weight"] else torch.ones(vec3)
